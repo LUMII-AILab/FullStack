@@ -6,7 +6,7 @@
 
 ## Publications
 
-Normunds Gruzitis, Lauma Pretkalnina, Baiba Saulite, Laura Rituma, Gunta Nespore, Arturs Znotins, Peteris Paikens. Creation of a Balanced State-of-the-Art Multilayer Corpus for NLU. Proceedings of the 11th International Conference on Language Resources and Evaluation (LREC), May 2018 (to appear)
+Normunds Gruzitis, Lauma Pretkalnina, Baiba Saulite, Laura Rituma, Gunta Nespore, Arturs Znotins, Peteris Paikens. *Creation of a Balanced State-of-the-Art Multilayer Corpus for NLU*. Proceedings of the 11th International Conference on Language Resources and Evaluation (LREC), May 2018 (to appear)
 
 ## Acknowledgements
 
@@ -19,3 +19,5 @@ This data set by [AiLab](http://ailab.lv) is licensed under a [Creative Commons 
 ## Contacts
 
 Coordinator of the project: [Normunds Grūzītis](https://www.linkedin.com/in/normundsg), `normunds.gruzitis@ailab.lv`
+
+Team members: Ilze Auziņa, Guntis Bārzdiņš, Roberts Darģis, Mikus Grasmanis, Kristīne Levāne-Petrova, Gunta Nešpore-Bērzkalne, Pēteris Paikens, Lauma Pretkalniņa, Laura Rituma, Inguna Skadiņa, Baiba Valkovska (Saulīte), Artūrs Znotiņš

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repository contains a work-in-progress data set - a multilayer text corpus of Latvian. The broad application area we address is natural language understanding (NLU) and generation (NLG), and the aim of the corpus creation is to develop a data-driven NLU and NLG toolchain for Latvian. Both the multilayered corpus and the downstream applications are anchored in cross-lingual state-of-the-art representations: [Universal Dependencies](http://universaldependencies.org/) (UD), [FrameNet](https://framenet.icsi.berkeley.edu/fndrupal/), [PropBank](https://propbank.github.io/) and [Abstract Meaning Representation](https://amr.isi.edu/) (AMR). A complementary representation, language resource and technology for NLG, which is being developed separately, is [Grammatical Framework](http://www.grammaticalframework.org/) (GF).
+This repository contains a work-in-progress data set - a multilayer text corpus of Latvian. The broad application area we address is natural language understanding (NLU) and generation (NLG), and the aim of the corpus creation is to develop a data-driven NLU and NLG [toolchain for Latvian](http://nlp.ailab.lv/). Both the multilayered corpus and the downstream applications are anchored in cross-lingual state-of-the-art representations: [Universal Dependencies](http://universaldependencies.org/) (UD), [FrameNet](https://framenet.icsi.berkeley.edu/fndrupal/), [PropBank](https://propbank.github.io/) and [Abstract Meaning Representation](https://amr.isi.edu/) (AMR). A complementary representation, language resource and technology for NLG, which is being developed separately, is [Grammatical Framework](http://www.grammaticalframework.org/) (GF).
 
 The UD representation is automatically derived from a more elaborated and manually annotated [hybrid dependency-constituency representation](http://sintakse.korpuss.lv/).
 The FrameNet annotations are manually added, guided by the underlying UD annotations. Consequently, frame elements are represented by the root nodes of the respective subtrees instead of text spans; the spans can be easily calculated from the subtrees.
@@ -20,11 +20,22 @@ As for the lexical units, our goal is to cover 1,000-2,000 most frequently occur
 
 ## Publications
 
-Normunds Gruzitis, Lauma Pretkalnina, Baiba Saulite, Laura Rituma, Gunta Nespore-Berzkalne, Arturs Znotins, Peteris Paikens. [Creation of a balanced state-of-the-art multilayer corpus for NLU](http://www.lrec-conf.org/proceedings/lrec2018/pdf/935.pdf). Proceedings of the 11th International Conference on Language Resources and Evaluation (LREC), 2018, pp. 4506-4513
+N. Gruzitis, L. Pretkalnina, B. Saulite, L. Rituma, G. Nespore-Berzkalne, A. Znotins, P. Paikens. [Creation of a balanced state-of-the-art multilayer corpus for NLU](http://www.lrec-conf.org/proceedings/lrec2018/pdf/935.pdf). Proceedings of the 11th International Conference on Language Resources and Evaluation (LREC), 2018
 
-Normunds Gruzitis, Gunta Nespore-Berzkalne, Baiba Saulite. [Creation of Latvian FrameNet based on Universal Dependencies](http://lrec-conf.org/workshops/lrec2018/W5/pdf/9_W5.pdf). Proceedings of the International FrameNet Workshop 2018: Multilingual FrameNets and Constructicons (IFNW), 2018, pp. 23-27
+A. Znotins, E. Cirule. [NLP-PIPE: Latvian NLP Tool Pipeline](http://ebooks.iospress.nl/volumearticle/50320). Human Language Technologies - The Baltic Perspective. Frontiers in Artificial Intelligence and Applications, vol. 307, IOS Press, 2018
 
-Normunds Gruzitis, Didzis Gosko, Guntis Barzdins. [RIGOTRIO at SemEval-2017 Task 9: Combining machine learning and grammar engineering for AMR parsing and generation](http://www.aclweb.org/anthology/S17-2159). Proceedings of the 11th International Workshop on Semantic Evaluation (SemEval), 2017, pp. 924-928
+N. Gruzitis, G. Nespore-Berzkalne, B. Saulite. [Creation of Latvian FrameNet based on Universal Dependencies](http://lrec-conf.org/workshops/lrec2018/W5/pdf/9_W5.pdf). Proceedings of the International FrameNet Workshop 2018: Multilingual FrameNets and Constructicons (IFNW), 2018
+
+G. Nespore-Berzkalne, B. Saulite, N. Gruzitis. [Latvian FrameNet: Cross-Lingual Issues](http://ebooks.iospress.nl/volumearticle/50309). Human Language Technologies - The Baltic Perspective. Frontiers in Artificial Intelligence and Applications, vol. 307, IOS Press, 2018
+
+L. Pretkalnina, L. Rituma, B. Saulite. [Deriving Enhanced Universal Dependencies from a Hybrid Dependency-Constituency Treebank](https://link.springer.com/chapter/10.1007/978-3-030-00794-2_10). Text, Speech, and Dialogue. Lecture Notes in Computer Science, vol. 11107, Springer, 2018
+
+N. Gruzitis, D. Gosko, G. Barzdins. [RIGOTRIO at SemEval-2017 Task 9: Combining machine learning and grammar engineering for AMR parsing and generation](http://www.aclweb.org/anthology/S17-2159). Proceedings of the 11th International Workshop on Semantic Evaluation (SemEval), 2017
+
+## Related work
+
+- [NLP-PIPE: Latvian NLP Tool Pipeline](http://nlp.ailab.lv/)
+- [The largest open lexical database for Latvian](https://github.com/LUMII-AILab/Tezaurs)
 
 ## Acknowledgements
 

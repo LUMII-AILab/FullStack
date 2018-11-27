@@ -1,0 +1,33 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text="Nu un ko mēs tagad darīsim?
+1-1	0-1	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	_	_	punct|punct	basic|enhanced	1-7|1-7	
+1-2	1-3	Nu	_	_	_	_	_	_	_	_	_	_	_	_	q	nu	_	_	discourse|discourse	basic|enhanced	1-7|1-7	
+1-3	4-6	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	cc|cc	basic|enhanced	1-7|1-7	
+1-4	7-9	ko	*	*	Acc	*	*	*	*	*	*	Case=Acc\|PronType=Int	*	*	pq000an	kas	_	_	obj|obj	basic|enhanced	1-7|1-7	
+1-5	10-13	mēs	*	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Number=Plur\|Person=1\|PronType=Prs	1	*	pp10pnn	mēs	*[1]	*->1-1	nsubj|nsubj	basic|enhanced	1-7|1-7	
+1-6	14-19	tagad	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	tagad	_	_	advmod|advmod	basic|enhanced	1-7|1-7	
+1-7	20-27	darīsim	*	Plur	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	1	*	vmnift31pan	darīt	_	_	root|root	basic|enhanced	1-7|1-7	
+1-8	27-28	?	_	_	_	_	_	_	_	_	_	_	_	_	zs	?	_	_	punct|punct	basic|enhanced	1-7|1-7	
+
+#Text=Viņa aizies un pastāstīs savējiem par mums, un mums gals klāt."
+2-1	30-34	Viņa	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsnn	viņa	_	_	nsubj|nsubj	basic|enhanced	2-2|2-2	
+2-2	35-41	aizies	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vmnifii30an	aiziet	_	_	root|root	basic|enhanced	2-2|2-2	
+2-3	42-44	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	cc|cc	basic|enhanced	2-4|2-4	
+2-4	45-54	pastāstīs	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vmnift330an	pastāstīt	_	_	conj|conj	basic|enhanced	2-2|2-2	
+2-5	55-63	savējiem	Masc	Plur	Dat	Pos	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpdnp	savējs	_	_	iobj|iobj	basic|enhanced	2-4|2-4	
+2-6	64-67	par	_	_	_	_	_	_	_	_	_	_	_	_	sppd	par	_	_	case|case	basic|enhanced	2-7|2-7	
+2-7	68-72	mums	*	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Number=Plur\|Person=1\|PronType=Prs	1	*	pp10pdn	mēs	*[1]	*->1-2	iobj|iobj	basic|enhanced	2-4|2-4	
+2-8	72-73	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct|punct	basic|enhanced	2-12|2-12	
+2-9	74-76	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	cc|cc	basic|enhanced	2-12|2-12	
+2-10	77-81	mums	*	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Number=Plur\|Person=1\|PronType=Prs	1	*	pp10pdn	mēs	*[1]	*->1-3	obl|obl	basic|enhanced	2-12|2-12	
+2-11	82-86	gals	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	gals	_	_	nsubj|nsubj	basic|enhanced	2-12|2-12	
+2-12	87-91	klāt	_	_	_	_	_	_	_	_	_	_	_	_	r0p	klāt	_	_	conj|conj	basic|enhanced	2-2|2-2	
+2-13	91-92	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct|punct	basic|enhanced	2-2|2-2	
+2-14	92-93	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	_	_	punct|punct	basic|enhanced	2-2|2-2	

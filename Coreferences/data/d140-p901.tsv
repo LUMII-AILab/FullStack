@@ -1,0 +1,56 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=VERONIKA.
+1-1	0-8	VERONIKA	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Veronika	person	*	*[1]	*->1-1	root|root	basic|enhanced	1-1|1-1	
+1-2	8-9	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	*[1]	*->1-1	punct|punct	basic|enhanced	1-1|1-1	
+
+#Text=Nespēju.
+2-1	11-18	Nespēju	*	Sing	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	1	*	vonist11san	nespēt	_	_	_	_	root|root	basic|enhanced	2-1|2-1	
+2-2	18-19	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	2-1|2-1	
+
+#Text=Man visu laiku šķita, ka tas viņu sāpinās.
+3-1	21-24	Man	*	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10sdn	es	_	_	*[1]	*->1-2	obl|obl	basic|enhanced	3-4|3-4	
+3-2	25-29	visu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msan	viss	_	_	_	_	det|det	basic|enhanced	3-3|3-3	
+3-3	30-35	laiku	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	laiks	_	_	_	_	obl|obl	basic|enhanced	3-4|3-4	
+3-4	36-41	šķita	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi130an	šķist	_	_	_	_	root|root	basic|enhanced	3-4|3-4	
+3-5	41-42	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	3-9|3-9	
+3-6	43-45	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark|mark	basic|enhanced	3-9|3-9	
+3-7	46-49	tas	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	3	*	pd3msnn	tas	_	_	_	_	nsubj|nsubj	basic|enhanced	3-9|3-9	
+3-8	50-54	viņu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msan	viņš	_	_	*[2]	*->2-1	obj|obj	basic|enhanced	3-9|3-9	
+3-9	55-62	sāpinās	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vmnift330an	sāpināt	_	_	_	_	csubj|csubj	basic|enhanced	3-4|3-4	
+3-10	62-63	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	3-4|3-4	
+
+#Text=Un tāpēc es viņu ienīdu.
+4-1	65-67	Un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	4-5|4-5	
+4-2	68-73	tāpēc	_	_	_	_	_	_	_	_	_	_	_	_	r0c	tāpēc	_	_	_	_	advmod|advmod	basic|enhanced	4-5|4-5	
+4-3	74-76	es	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10snn	es	_	_	*[1]	*->1-3	nsubj|nsubj	basic|enhanced	4-5|4-5	
+4-4	77-81	viņu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msan	viņš	_	_	*[2]	*->2-2	obj|obj	basic|enhanced	4-5|4-5	
+4-5	82-88	ienīdu	*	Sing	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	1	*	vmnist11san	ienīst	_	_	_	_	root|root	basic|enhanced	4-5|4-5	
+4-6	88-89	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	4-5|4-5	
+
+#Text=Par to, ka nespēju būt līdz galam atklāta.
+5-1	91-94	Par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	_	_	case|case	basic|enhanced	5-2|5-2	
+5-2	95-97	to	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	3	*	pd3msan	tas	_	_	_	_	root|root	basic|enhanced	5-2|5-2	
+5-3	97-98	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	5-5|5-5	
+5-4	99-101	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark|mark	basic|enhanced	5-5|5-5	
+5-5	102-109	nespēju	*	Sing	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	1	*	vonist11san	nespēt	_	_	_	_	ccomp|ccomp	basic|enhanced	5-2|5-2	
+5-6	110-113	būt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vcnn0ii000n	būt	_	_	_	_	cop|cop	basic|enhanced	5-9|5-9	
+5-7	114-118	līdz	_	_	_	_	_	_	_	_	_	_	_	_	spsd	līdz	_	_	_	_	case|case	basic|enhanced	5-8|5-8	
+5-8	119-124	galam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	gals	_	_	_	_	obl|obl	basic|enhanced	5-9|5-9	
+5-9	125-132	atklāta	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	atklāt	_	_	_	_	xcomp|xcomp	basic|enhanced	5-5|5-5	
+5-10	132-133	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	5-2|5-2	
+
+#Text=Vai tagad tu saproti visu?
+6-1	135-138	Vai	_	_	_	_	_	_	_	_	_	_	_	_	q	vai	_	_	_	_	discourse|discourse	basic|enhanced	6-4|6-4	
+6-2	139-144	tagad	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	tagad	_	_	_	_	advmod|advmod	basic|enhanced	6-4|6-4	
+6-3	145-147	tu	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=2\|PronType=Prs	2	*	pp20snn	tu	_	_	_	_	nsubj|nsubj	basic|enhanced	6-4|6-4	
+6-4	148-155	saproti	*	Sing	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=2\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	2	*	vmnipt12san	saprast	_	_	_	_	root|root	basic|enhanced	6-4|6-4	
+6-5	156-160	visu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msan	viss	_	_	_	_	obj|obj	basic|enhanced	6-4|6-4	
+6-6	160-161	?	_	_	_	_	_	_	_	_	_	_	_	_	zs	?	_	_	_	_	punct|punct	basic|enhanced	6-4|6-4	

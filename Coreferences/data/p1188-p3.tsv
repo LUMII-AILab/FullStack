@@ -1,0 +1,101 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Pirmā uzstājās izglītības darbinieku vietējās arodorganizācijas līdere Irēna Opšteine.
+1-1	0-5	Pirmā	mosfsn	pirmā	_	_	_	_	acl	basic	1-2	
+1-2	6-14	uzstājās	vmyisi130an	uzstāties	_	_	_	_	root	basic	1-2	
+1-3	15-25	izglītības	ncfsg4	izglītība	_	_	_	_	nmod	basic	1-4	
+1-4	26-36	darbinieku	ncmpg1	darbinieks	_	_	_	_	nmod	basic	1-6	
+1-5	37-45	vietējās	arfsgyp	vietēja	_	_	_	_	amod	basic	1-6	
+1-6	46-63	arodorganizācijas	ncfsg4	arodorganizācija	_	_	_	_	nmod	basic	1-7	
+1-7	64-70	līdere	ncfsn5	līdere	_	_	*[2]	*->2-1	nmod	basic	1-8	
+1-8	71-76	Irēna	npfsn4	Irēna	person[1]	*[1]	*[2]	*->2-2	nsubj	basic	1-2	
+1-9	77-85	Opšteine	npfsn5	Opšteine	person[1]	*[1]	*[2]	*->2-2	flat:name	basic	1-8	
+1-10	85-86	.	zs	.	_	_	_	_	punct	basic	1-2	
+
+#Text=Viņa paziņoja, ka valstī vienkārši ir ienākušas šausmas un neviens nav paskaidrojis, kur palikusi Latvijas nauda.
+2-1	88-92	Viņa	pp3fsnn	viņa	_	_	*[2]	*->2-3	nsubj	basic	2-2	
+2-2	93-101	paziņoja	vmnist230an	paziņot	_	_	_	_	root	basic	2-2	
+2-3	101-102	,	zc	,	_	_	_	_	punct	basic	2-8	
+2-4	103-105	ka	cs	ka	_	_	_	_	mark	basic	2-8	
+2-5	106-112	valstī	ncfsl6	valsts	_	_	_	_	obl	basic	2-8	
+2-6	113-122	vienkārši	q	vienkārši	_	_	_	_	discourse	basic	2-8	
+2-7	123-125	ir	vcnipii30an	būt	_	_	_	_	aux	basic	2-8	
+2-8	126-135	ienākušas	vmnpdfpnasnp	ienākt	_	_	_	_	ccomp	basic	2-2	
+2-9	136-143	šausmas	ncfdn4	šausmas	_	_	_	_	nsubj	basic	2-8	
+2-10	144-146	un	cc	un	_	_	_	_	cc	basic	2-13	
+2-11	147-154	neviens	pi0msny	neviens	_	_	_	_	nsubj	basic	2-13	
+2-12	155-158	nav	vcnipii30ay	nebūt	_	_	_	_	aux	basic	2-13	
+2-13	159-171	paskaidrojis	vmnpdmsnasnp	paskaidrot	_	_	_	_	conj	basic	2-8	
+2-14	171-172	,	zc	,	_	_	_	_	punct	basic	2-16	
+2-15	173-176	kur	r0p	kur	_	_	_	_	advmod	basic	2-16	
+2-16	177-185	palikusi	vmnpdfsnasnp	palikt	_	_	_	_	ccomp	basic	2-13	
+2-17	186-194	Latvijas	npfsg4	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	_	_	nmod	basic	2-18	
+2-18	195-200	nauda	ncfsn4	nauda	_	_	_	_	nsubj	basic	2-16	
+2-19	200-201	.	zs	.	_	_	_	_	punct	basic	2-2	
+
+#Text=Un arī norādīja, ka valsts aģentūras turpina sēdēt īrētos un greznos privātnamos.
+3-1	203-205	Un	cc	un	_	_	_	_	cc	basic	3-3	
+3-2	206-209	arī	q	arī	_	_	_	_	discourse	basic	3-3	
+3-3	210-218	norādīja	vmnist330an	norādīt	_	_	_	_	root	basic	3-3	
+3-4	218-219	,	zc	,	_	_	_	_	punct	basic	3-8	
+3-5	220-222	ka	cs	ka	_	_	_	_	mark	basic	3-8	
+3-6	223-229	valsts	ncfsg6	valsts	_	_	_	_	nmod	basic	3-7	
+3-7	230-239	aģentūras	ncfpn4	aģentūra	_	_	_	_	nsubj	basic	3-8	
+3-8	240-247	turpina	vpnipt330an	turpināt	_	_	_	_	ccomp	basic	3-3	
+3-9	248-253	sēdēt	vmnn0i3000n	sēdēt	_	_	_	_	xcomp	basic	3-8	
+3-10	254-260	īrētos	vmnpdmpapsyp	īrēt	_	_	_	_	amod	basic	3-13	
+3-11	261-263	un	cc	un	_	_	_	_	cc	basic	3-12	
+3-12	264-271	greznos	afmplnp	grezns	_	_	_	_	conj	basic	3-10	
+3-13	272-283	privātnamos	ncmpl1	privātnams	_	_	_	_	obl	basic	3-9	
+3-14	283-284	.	zs	.	_	_	_	_	punct	basic	3-3	
+
+#Text="Sapulce parādīs, ka mēs neesam mierā ar to, ka mūs apzog.
+4-1	286-287	"	zq	"	_	_	_	_	punct	basic	4-3	
+4-2	287-294	Sapulce	ncfsn5	sapulce	_	_	_	_	nsubj	basic	4-3	
+4-3	295-302	parādīs	vmnift330an	parādīt	_	_	_	_	root	basic	4-3	
+4-4	302-303	,	zc	,	_	_	_	_	punct	basic	4-8	
+4-5	304-306	ka	cs	ka	_	_	_	_	mark	basic	4-8	
+4-6	307-310	mēs	pp10pnn	mēs	_	_	*[3]	*->3-1	nsubj	basic	4-8	
+4-7	311-317	neesam	vcnipii1pay	nebūt	_	_	_	_	cop	basic	4-8	
+4-8	318-323	mierā	ncmvl1	miers	_	_	_	_	ccomp	basic	4-3	
+4-9	324-326	ar	spsa	ar	_	_	_	_	case	basic	4-10	
+4-10	327-329	to	pd0msan	tas	_	_	_	_	iobj	basic	4-8	
+4-11	329-330	,	zc	,	_	_	_	_	punct	basic	4-14	
+4-12	331-333	ka	cs	ka	_	_	_	_	mark	basic	4-14	
+4-13	334-337	mūs	pp10pan	mēs	_	_	*[3]	*->3-2	obj	basic	4-14	
+4-14	338-343	apzog	vmnipt130an	apzagt	_	_	_	_	ccomp	basic	4-10	
+4-15	343-344	.	zs	.	_	_	_	_	punct	basic	4-3	
+
+#Text=Lai to redz arī Starptautiskā valūtas fonda zēni.
+5-1	346-349	Lai	cs	lai	_	_	_	_	mark	basic	5-3	
+5-2	350-352	to	pd0msan	tas	_	_	_	_	obj	basic	5-3	
+5-3	353-357	redz	vmnipt330an	redzēt	_	_	_	_	root	basic	5-3	
+5-4	358-361	arī	q	arī	_	_	_	_	discourse	basic	5-8	
+5-5	362-375	Starptautiskā	arfsnyp	starptautiska	organization[2]	https://en.wikipedia.org/wiki/International\_Monetary\_Fund[2]	_	_	amod	basic	5-7	
+5-6	376-383	valūtas	ncfsg4	valūta	organization[2]	https://en.wikipedia.org/wiki/International\_Monetary\_Fund[2]	_	_	nmod	basic	5-7	
+5-7	384-389	fonda	ncmsg1	fonds	organization[2]	https://en.wikipedia.org/wiki/International\_Monetary\_Fund[2]	_	_	nmod	basic	5-8	
+5-8	390-394	zēni	ncmpn1	zēns	_	_	_	_	nsubj	basic	5-3	
+5-9	394-395	.	zs	.	_	_	_	_	punct	basic	5-3	
+
+#Text=Un jānodod tiesai tie, kas Latvijas naudu pazaudēja," aicināja I. Opšteine.
+6-1	397-399	Un	cc	un	_	_	_	_	cc	basic	6-2	
+6-2	400-407	jānodod	vmnd0ti00an	nodot	_	_	_	_	parataxis	basic	6-12	
+6-3	408-414	tiesai	ncfsd4	tiesa	_	_	_	_	iobj	basic	6-2	
+6-4	415-418	tie	pd0mpnn	tas	_	_	*[1]	*->1-1	obj	basic	6-2	
+6-5	418-419	,	zc	,	_	_	_	_	punct	basic	6-9	
+6-6	420-423	kas	pr000nn	kas	_	_	*[1]	*->1-2	nsubj	basic	6-9	
+6-7	424-432	Latvijas	npfsg4	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	_	_	nmod	basic	6-8	
+6-8	433-438	naudu	ncfsa4	nauda	_	_	_	_	obj	basic	6-9	
+6-9	439-448	pazaudēja	vmnist230an	pazaudēt	_	_	_	_	acl	basic	6-4	
+6-10	448-449	,	zc	,	_	_	_	_	punct	basic	6-2	
+6-11	449-450	"	zq	"	_	_	_	_	punct	basic	6-2	
+6-12	451-459	aicināja	vmnist330an	aicināt	_	_	_	_	root	basic	6-12	
+6-13	460-462	I.	yp	I.	person[3]	*[3]	*[2]	*->2-4	nsubj	basic	6-12	
+6-14	463-471	Opšteine	npfsn5	Opšteine	person[3]	*[3]	*[2]	*->2-4	flat:name	basic	6-13	
+6-15	471-472	.	zs	.	_	_	_	_	punct	basic	6-12	

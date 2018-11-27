@@ -1,0 +1,26 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Bagdādes slimnīcas farmaceite Entisara Mohammada Ariabi preses konferencē raudāja, stāstot žurnālistiem par stāvokli Irākā.
+1-1	0-8	Bagdādes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	Bagdāde	organization[1]|GPE[2]	*[1]|https://en.wikipedia.org/wiki/Baghdad[2]	_	_	nmod|nmod	basic|enhanced	1-2|1-2	
+1-2	9-18	slimnīcas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	slimnīca	organization[1]	*[1]	_	_	nmod|nmod	basic|enhanced	1-3|1-3	
+1-3	19-29	farmaceite	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	farmaceite	_	_	*[1]	*->1-1	nmod|nmod	basic|enhanced	1-4|1-4	
+1-4	30-38	Entisara	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Entisara	person[3]	*[3]	*[1]	*->1-2	nsubj|nsubj	basic|enhanced	1-9|1-9	
+1-5	39-48	Mohammada	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Mohammada	person[3]	*[3]	*[1]	*->1-2	flat:name|flat	basic|enhanced	1-4|1-4	
+1-6	49-55	Ariabi	_	_	_	_	_	_	_	_	_	_	_	_	np0000	Ariabi	person[3]	*[3]	*[1]	*->1-2	nmod|nmod	basic|enhanced	1-8|1-8	
+1-7	56-62	preses	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	prese	_	_	_	_	nmod|nmod	basic|enhanced	1-8|1-8	
+1-8	63-73	konferencē	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	konference	_	_	_	_	obl|obl	basic|enhanced	1-9|1-9	
+1-9	74-81	raudāja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	raudāt	_	_	_	_	root|root	basic|enhanced	1-9|1-9	
+1-10	81-82	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-11|1-11	
+1-11	83-90	stāstot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000	stāstīt	_	_	_	_	advcl|advcl	basic|enhanced	1-9|1-9	
+1-12	91-103	žurnālistiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	žurnālists	_	_	_	_	iobj|iobj	basic|enhanced	1-11|1-11	
+1-13	104-107	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	_	_	case|case	basic|enhanced	1-14|1-14	
+1-14	108-116	stāvokli	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	stāvoklis	_	_	_	_	iobj|iobj	basic|enhanced	1-11|1-11	
+1-15	117-122	Irākā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	Irāka	GPE	https://en.wikipedia.org/wiki/Iraq	_	_	acl|acl	basic|enhanced	1-14|1-14	
+1-16	122-123	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-9|1-9	

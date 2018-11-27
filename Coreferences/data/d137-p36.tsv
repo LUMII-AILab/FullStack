@@ -1,0 +1,61 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Jasmīne.
+1-1	0-7	Jasmīne	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	Jasmīne	person	*	*[1]	*->1-1	root|root	basic|enhanced	1-1|1-1	
+1-2	7-8	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-1|1-1	
+
+#Text=To tu man stāstīji jau pirms divām nedēļām.
+2-1	10-12	To	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	tas	_	_	_	_	obj|obj	basic|enhanced	2-4|2-4	
+2-2	13-15	tu	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=2\|PronType=Prs	2	*	pp20snn	tu	_	_	*[2]	*->2-1	nsubj|nsubj	basic|enhanced	2-4|2-4	
+2-3	16-19	man	*	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10sdn	es	_	_	*[1]	*->1-2	iobj|iobj	basic|enhanced	2-4|2-4	
+2-4	20-28	stāstīji	*	Sing	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=2\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	2	*	vmnist32san	stāstīt	_	_	_	_	root|root	basic|enhanced	2-4|2-4	
+2-5	29-32	jau	_	_	_	_	_	_	_	_	_	_	_	_	r0t	jau	_	_	_	_	advmod|advmod	basic|enhanced	2-4|2-4	
+2-6	33-38	pirms	_	_	_	_	_	_	_	_	_	_	_	_	sppd	pirms	_	_	_	_	case|case	basic|enhanced	2-8|2-8	
+2-7	39-44	divām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur\|NumType=Card	*	*	mcsfpd	divas	_	_	_	_	nummod|nummod	basic|enhanced	2-8|2-8	
+2-8	45-52	nedēļām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	nedēļa	_	_	_	_	obl|obl	basic|enhanced	2-4|2-4	
+2-9	52-53	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	2-4|2-4	
+
+#Text=Un tagad katru otro dienu tu cep viņai kūku.
+3-1	55-57	Un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	3-7|3-7	
+3-2	58-63	tagad	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	tagad	_	_	_	_	advmod|advmod	basic|enhanced	3-7|3-7	
+3-3	64-69	katru	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Tot	*	*	pg0fsan	katra	_	_	_	_	det|det	basic|enhanced	3-4|3-4	
+3-4	70-74	otro	Fem	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|NumType=Ord	*	*	mosfsa	otrā	_	_	_	_	amod|amod	basic|enhanced	3-5|3-5	
+3-5	75-80	dienu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	diena	_	_	_	_	obl|obl	basic|enhanced	3-7|3-7	
+3-6	81-83	tu	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=2\|PronType=Prs	2	*	pp20snn	tu	_	_	*[2]	*->2-2	nsubj|nsubj	basic|enhanced	3-7|3-7	
+3-7	84-87	cep	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt130an	cept	_	_	_	_	root|root	basic|enhanced	3-7|3-7	
+3-8	88-93	viņai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsdn	viņa	_	_	_	_	iobj|iobj	basic|enhanced	3-7|3-7	
+3-9	94-98	kūku	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	kūka	_	_	_	_	obj|obj	basic|enhanced	3-7|3-7	
+3-10	98-99	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	3-7|3-7	
+
+#Text=Kurš var pateikt, vai tu to neesi izdomājusi vai dzirdējusi sapnī?
+4-1	101-105	Kurš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Int	*	*	pq0msnn	kurš	_	_	_	_	nsubj|nsubj	basic|enhanced	4-2|4-2	
+4-2	106-109	var	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vonipt330an	varēt	_	_	_	_	root|root	basic|enhanced	4-2|4-2	
+4-3	110-117	pateikt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	pateikt	_	_	_	_	xcomp|xcomp	basic|enhanced	4-2|4-2	
+4-4	117-118	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	4-9|4-9	
+4-5	119-122	vai	_	_	_	_	_	_	_	_	_	_	_	_	cc	vai	_	_	_	_	mark|mark	basic|enhanced	4-9|4-9	
+4-6	123-125	tu	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=2\|PronType=Prs	2	*	pp20snn	tu	_	_	*[2]	*->2-3	nsubj|nsubj	basic|enhanced	4-9|4-9	
+4-7	126-128	to	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	tas	_	_	_	_	obj|obj	basic|enhanced	4-9|4-9	
+4-8	129-134	neesi	*	Sing	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=2\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	2	*	vcnipii2say	nebūt	_	_	_	_	aux|aux	basic|enhanced	4-9|4-9	
+4-9	135-145	izdomājusi	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnasnp	izdomāt	_	_	_	_	ccomp|ccomp	basic|enhanced	4-2|4-2	
+4-10	146-149	vai	_	_	_	_	_	_	_	_	_	_	_	_	cc	vai	_	_	_	_	cc|cc	basic|enhanced	4-11|4-11	
+4-11	150-160	dzirdējusi	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnasnp	dzirdēt	_	_	_	_	conj|conj	basic|enhanced	4-9|4-9	
+4-12	161-166	sapnī	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	sapnis	_	_	_	_	obl|obl	basic|enhanced	4-11|4-11	
+4-13	166-167	?	_	_	_	_	_	_	_	_	_	_	_	_	zs	?	_	_	_	_	punct|punct	basic|enhanced	4-2|4-2	
+
+#Text=Mums jau tā iet tik grūti ar naudu.
+5-1	169-173	Mums	*	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Number=Plur\|Person=1\|PronType=Prs	1	*	pp10pdn	mēs	_	_	_	_	obl|obl	basic|enhanced	5-6|5-6	
+5-2	174-177	jau	_	_	_	_	_	_	_	_	_	_	_	_	q	jau	_	_	_	_	discourse|discourse	basic|enhanced	5-3|5-3	
+5-3	178-180	tā	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0m	tā	_	_	_	_	advmod|advmod	basic|enhanced	5-6|5-6	
+5-4	181-184	iet	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vtnipii30an	iet	_	_	_	_	aux|aux	basic|enhanced	5-6|5-6	
+5-5	185-188	tik	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0q	tik	_	_	_	_	advmod|advmod	basic|enhanced	5-6|5-6	
+5-6	189-194	grūti	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	grūti	_	_	_	_	root|root	basic|enhanced	5-6|5-6	
+5-7	195-197	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case|case	basic|enhanced	5-8|5-8	
+5-8	198-203	naudu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	nauda	_	_	_	_	iobj|iobj	basic|enhanced	5-6|5-6	
+5-9	203-204	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	5-6|5-6	

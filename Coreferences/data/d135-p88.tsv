@@ -1,0 +1,55 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Viņš iegāja istabā, kur stāvēja redeļgultiņa.
+1-1	0-4	Viņš	pp3msnn	viņš	_	_	*[2]	*->2-1	nsubj	basic	1-2	
+1-2	5-11	iegāja	vmnisii30an	ieiet	_	_	_	_	root	basic	1-2	
+1-3	12-18	istabā	ncfsl4	istaba	_	_	*[1]	*->1-1	obl	basic	1-2	
+1-4	18-19	,	zc	,	_	_	_	_	punct	basic	1-6	
+1-5	20-23	kur	r0p	kur	_	_	*[1]	*->1-2	advmod	basic	1-6	
+1-6	24-31	stāvēja	vmnist330an	stāvēt	_	_	_	_	acl	basic	1-3	
+1-7	32-44	redeļgultiņa	ncfsn4	redeļgultiņa	_	_	_	_	nsubj	basic	1-6	
+1-8	44-45	.	zs	.	_	_	_	_	punct	basic	1-2	
+
+#Text=Nebija nevienas mantiņas.
+2-1	47-53	Nebija	vgnisii30ay	nebūt	_	_	_	_	root	basic	2-1	
+2-2	54-62	nevienas	pi0fsgy	neviena	_	_	_	_	det	basic	2-3	
+2-3	63-71	mantiņas	ncfsg4	mantiņa	_	_	_	_	nsubj	basic	2-1	
+2-4	71-72	.	zs	.	_	_	_	_	punct	basic	2-1	
+
+#Text=Gastons apsēdās uz paklāja.
+3-1	74-81	Gastons	npmsn1	Gastons	person	*	*[2]	*->2-2	nsubj	basic	3-2	
+3-2	82-89	apsēdās	vmyist130an	apsēsties	_	_	_	_	root	basic	3-2	
+3-3	90-92	uz	spsg	uz	_	_	_	_	case	basic	3-4	
+3-4	93-100	paklāja	ncmsg1	paklājs	_	_	_	_	obl	basic	3-2	
+3-5	100-101	.	zs	.	_	_	_	_	punct	basic	3-2	
+
+#Text=Pēc brīža viņš saliecās, cik nu spēja, tādā pat pozā, kādu izpildīja viena no vingrotājām.
+4-1	103-106	Pēc	spsg	pēc	_	_	_	_	case	basic	4-2	
+4-2	107-112	brīža	ncmsg2	brīdis	_	_	_	_	obl	basic	4-4	
+4-3	113-117	viņš	pp3msnn	viņš	_	_	*[2]	*->2-3	nsubj	basic	4-4	
+4-4	118-126	saliecās	vmyisi130an	saliekties	_	_	_	_	root	basic	4-4	
+4-5	126-127	,	zc	,	_	_	_	_	punct	basic	4-8	
+4-6	128-131	cik	r0q	cik	_	_	_	_	advmod	basic	4-8	
+4-7	132-134	nu	q	nu	_	_	_	_	discourse	basic	4-8	
+4-8	135-140	spēja	ncfsn4	spēja	_	_	_	_	advcl	basic	4-4	
+4-9	140-141	,	zc	,	_	_	_	_	punct	basic	4-8	
+4-10	142-146	tādā	pd0fsln	tāda	_	_	_	_	det	basic	4-12	
+4-11	147-150	pat	q	pat	_	_	_	_	discourse	basic	4-10	
+4-12	151-155	pozā	ncfsl4	poza	_	_	*[3]	*->3-1	obl	basic	4-4	
+4-13	155-156	,	zc	,	_	_	_	_	punct	basic	4-8	
+4-14	157-161	kādu	pi0msan	kāds	_	_	*[3]	*->3-2	obj	basic	4-15	
+4-15	162-171	izpildīja	vmnist330an	izpildīt	_	_	_	_	acl	basic	4-12	
+4-16	172-177	viena	mcsfsn	viena	_	_	_	_	nsubj	basic	4-15	
+4-17	178-180	no	sppd	no	_	_	_	_	case	basic	4-18	
+4-18	181-192	vingrotājām	ncfpd4	vingrotāja	_	_	_	_	compound	basic	4-16	
+4-19	192-193	.	zs	.	_	_	_	_	punct	basic	4-4	
+
+#Text=Ignate.
+5-1	195-201	Ignate	npfsn5	Ignate	person	*	_	_	root	basic	5-1	
+5-2	201-202	.	zs	.	_	_	_	_	punct	basic	5-1	

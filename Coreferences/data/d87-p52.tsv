@@ -1,0 +1,38 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Lai sevi savaldītu, Gruntmaņa kundze soļoja šurpu turpu gar verandas stikloto sienu.
+1-1	0-3	Lai	cs	lai	_	_	_	_	mark	basic	1-3	
+1-2	4-8	sevi	px000an	sevis	_	_	*[1]	*->1-1	obj	basic	1-3	
+1-3	9-18	savaldītu	vmnc0t300an	savaldīt	_	_	_	_	advcl	basic	1-7	
+1-4	18-19	,	zc	,	_	_	_	_	punct	basic	1-3	
+1-5	20-29	Gruntmaņa	npmsg2	Gruntmanis	person[1]	*[1]	*[1]	*->1-2	nmod	basic	1-6	
+1-6	30-36	kundze	ncfsn5	kundze	person[1]	*[1]	*[1]	*->1-2	nsubj	basic	1-7	
+1-7	37-43	soļoja	vmnisi230an	soļot	_	_	_	_	root	basic	1-7	
+1-8	44-49	šurpu	r0p	šurpu	_	_	_	_	advmod	basic	1-7	
+1-9	50-55	turpu	r0p	turpu	_	_	_	_	compound	basic	1-8	
+1-10	56-59	gar	spsa	gar	_	_	_	_	case	basic	1-13	
+1-11	60-68	verandas	ncfsg4	veranda	_	_	_	_	nmod	basic	1-13	
+1-12	69-77	stikloto	vmnpdfsapsyp	stiklot	_	_	_	_	amod	basic	1-13	
+1-13	78-83	sienu	ncfsa4	siena	_	_	_	_	obl	basic	1-7	
+1-14	83-84	.	zs	.	_	_	_	_	punct	basic	1-7	
+
+#Text=Viņas melnā un kustīgā ēna brīžam krustojās ar ārā stāvošās Danielas ēnu.
+2-1	86-91	Viņas	pp3fsgn	viņa	_	_	*[1]	*->1-3	det	basic	2-5	
+2-2	92-97	melnā	affslnp	melna	_	_	_	_	amod	basic	2-5	
+2-3	98-100	un	cc	un	_	_	_	_	cc	basic	2-4	
+2-4	101-108	kustīgā	affsnyp	kustīga	_	_	_	_	conj	basic	2-2	
+2-5	109-112	ēna	ncfsn4	ēna	_	_	_	_	nsubj	basic	2-7	
+2-6	113-119	brīžam	r0t	brīžam	_	_	_	_	advmod	basic	2-7	
+2-7	120-129	krustojās	vmyisi230an	krustoties	_	_	_	_	root	basic	2-7	
+2-8	130-132	ar	spsa	ar	_	_	_	_	case	basic	2-12	
+2-9	133-136	ārā	r0p	ārā	_	_	_	_	dep	basic	2-10	
+2-10	137-145	stāvošās	vmnpdfpnapyp	stāvēt	_	_	_	_	amod	basic	2-11	
+2-11	146-154	Danielas	npfsg4	Danielas	person	*	_	_	nmod	basic	2-12	
+2-12	155-158	ēnu	ncfsa4	ēna	_	_	_	_	iobj	basic	2-7	
+2-13	158-159	.	zs	.	_	_	_	_	punct	basic	2-7	

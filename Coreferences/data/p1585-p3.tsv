@@ -1,0 +1,60 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Grāmatas sastādītāja Ināra Melgalve teic, ka darbs tapa sešus gadus un gāja diezgan grūti.
+1-1	0-8	Grāmatas	ncfsg4	grāmata	_	_	_	_	nmod	basic	1-2	
+1-2	9-20	sastādītāja	ncfsn4	sastādītāja	_	_	*[1]	*->1-1	nmod	basic	1-3	
+1-3	21-26	Ināra	npfsn4	Ināra	person[1]	*[1]	*[1]	*->1-2	nsubj	basic	1-5	
+1-4	27-35	Melgalve	npfsn5	Melgalve	person[1]	*[1]	*[1]	*->1-2	flat:name	basic	1-3	
+1-5	36-40	teic	vmnipt130an	teikt	_	_	_	_	root	basic	1-5	
+1-6	40-41	,	zc	,	_	_	_	_	punct	basic	1-9	
+1-7	42-44	ka	cs	ka	_	_	_	_	mark	basic	1-9	
+1-8	45-50	darbs	ncmsn1	darbs	_	_	_	_	nsubj	basic	1-9	
+1-9	51-55	tapa	vmnisi130an	tapt	_	_	_	_	ccomp	basic	1-5	
+1-10	56-61	sešus	mcsmpa	seši	_	_	_	_	nummod	basic	1-11	
+1-11	62-67	gadus	ncmpa1	gads	_	_	_	_	obl	basic	1-9	
+1-12	68-70	un	cc	un	_	_	_	_	cc	basic	1-13	
+1-13	71-75	gāja	vmnisii30an	iet	_	_	_	_	conj	basic	1-9	
+1-14	76-83	diezgan	r0q	diezgan	_	_	_	_	advmod	basic	1-15	
+1-15	84-89	grūti	rpm	grūti	_	_	_	_	advmod	basic	1-13	
+1-16	89-90	.	zs	.	_	_	_	_	punct	basic	1-5	
+
+#Text=Vairāki uzaicinātie V.Timofejeva laikabiedri esot atteikušies rakstīt savas atmiņas, aizbildinoties, ka tas bija padomju okupācijas laiks ar citām vērtībām un nostādnēm.
+2-1	92-99	Vairāki	pi0mpnn	vairāki	_	_	_	_	det	basic	2-5	
+2-2	100-111	uzaicinātie	vmnpdmpnpsyp	uzaicināt	_	_	_	_	amod	basic	2-5	
+2-3	112-114	V.	yp	V.	person[2]	*[2]	_	_	nmod	basic	2-5	
+2-4	114-124	Timofejeva	npmsg1	Timofejevs	person[2]	*[2]	_	_	flat:name	basic	2-3	
+2-5	125-136	laikabiedri	ncmpn1	laikabiedrs	_	_	_	_	nsubj	basic	2-7	
+2-6	137-141	esot	vcnrpii00an	būt	_	_	_	_	aux	basic	2-7	
+2-7	142-153	atteikušies	vmypdmpnasnp	atteikties	_	_	_	_	root	basic	2-7	
+2-8	154-161	rakstīt	vmnn0t3000n	rakstīt	_	_	_	_	ccomp	basic	2-7	
+2-9	162-167	savas	ps0fpan	sava	_	_	_	_	det	basic	2-10	
+2-10	168-175	atmiņas	ncfda4	atmiņas	_	_	_	_	obj	basic	2-8	
+2-11	175-176	,	zc	,	_	_	_	_	punct	basic	2-12	
+2-12	177-191	aizbildinoties	vmypu0000000	aizbildināties	_	_	_	_	advcl	basic	2-7	
+2-13	191-192	,	zc	,	_	_	_	_	punct	basic	2-19	
+2-14	193-195	ka	cs	ka	_	_	_	_	mark	basic	2-19	
+2-15	196-199	tas	pd0msnn	tas	_	_	*[2]	*->2-1	nsubj	basic	2-19	
+2-16	200-204	bija	vcnisii30an	būt	_	_	_	_	cop	basic	2-19	
+2-17	205-212	padomju	ncfpg5	padome	_	_	*[2]	*->2-2	nmod	basic	2-18	
+2-18	213-223	okupācijas	ncfsg4	okupācija	_	_	*[2]	*->2-2	nmod	basic	2-19	
+2-19	224-229	laiks	ncmsn1	laiks	_	_	*[2]	*->2-2	ccomp	basic	2-12	
+2-20	230-232	ar	sppd	ar	_	_	_	_	case	basic	2-22	
+2-21	233-238	citām	pi0fpdn	cita	_	_	_	_	det	basic	2-22	
+2-22	239-247	vērtībām	ncfpd4	vērtība	_	_	_	_	nmod	basic	2-19	
+2-23	248-250	un	cc	un	_	_	_	_	cc	basic	2-24	
+2-24	251-260	nostādnēm	ncfpd5	nostādne	_	_	_	_	conj	basic	2-22	
+2-25	260-261	.	zs	.	_	_	_	_	punct	basic	2-7	
+
+#Text=Grāmatas tapšanā piedalījušies 24 autori.
+3-1	263-271	Grāmatas	ncfsg4	grāmata	_	_	_	_	nmod	basic	3-2	
+3-2	272-279	tapšanā	ncfsl4	tapšana	_	_	_	_	obl	basic	3-3	
+3-3	280-293	piedalījušies	vmypdmpnasnp	piedalīties	_	_	_	_	root	basic	3-3	
+3-4	294-296	24	xn	24	_	_	_	_	nummod	basic	3-5	
+3-5	297-303	autori	ncmpn1	autors	_	_	_	_	nsubj	basic	3-3	
+3-6	303-304	.	zs	.	_	_	_	_	punct	basic	3-3	

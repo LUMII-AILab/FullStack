@@ -1,0 +1,46 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Pozitīvi domā arī Larisa, kuras ģimenē nesen piedzimis trešais dēls.
+1-1	0-8	Pozitīvi	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	pozitīvi	_	_	_	_	advmod|advmod	basic|enhanced	1-2|1-2	
+1-2	9-13	domā	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt230an	domāt	_	_	_	_	root|root	basic|enhanced	1-2|1-2	
+1-3	14-17	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse|discourse	basic|enhanced	1-4|1-4	
+1-4	18-24	Larisa	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Larisa	person	*	*[1]	*->1-1	nsubj|nsubj	basic|enhanced	1-2|1-2	
+1-5	24-25	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-9|1-9	
+1-6	26-31	kuras	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsgn	kura	_	_	*[1]	*->1-2	det|det	basic|enhanced	1-7|1-7	
+1-7	32-38	ģimenē	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	ģimene	_	_	_	_	obl|obl	basic|enhanced	1-9|1-9	
+1-8	39-44	nesen	*	*	*	*	*	*	*	*	*	PronType=Neg	*	*	r0t	nesen	_	_	_	_	advmod|advmod	basic|enhanced	1-9|1-9	
+1-9	45-54	piedzimis	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnasnp	piedzimt	_	_	_	_	acl|acl	basic|enhanced	1-4|1-4	
+1-10	55-62	trešais	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|NumType=Ord	*	*	mosmsn	trešais	_	_	_	_	amod|amod	basic|enhanced	1-11|1-11	
+1-11	63-67	dēls	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	dēls	_	_	_	_	obl|obl	basic|enhanced	1-9|1-9	
+1-12	67-68	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-2|1-2	
+
+#Text=Viņa un vīrs allaž ir gribējuši kuplu ģimeni.
+2-1	70-74	Viņa	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsnn	viņa	_	_	*[1]	*->1-3	nsubj|nsubj	basic|enhanced	2-6|2-6	
+2-2	75-77	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	2-3|2-3	
+2-3	78-82	vīrs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	vīrs	_	_	_	_	conj|conj	basic|enhanced	2-1|2-1	
+2-4	83-88	allaž	_	_	_	_	_	_	_	_	_	_	_	_	r0t	allaž	_	_	_	_	advmod|advmod	basic|enhanced	2-6|2-6	
+2-5	89-91	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	aux|aux	basic|enhanced	2-6|2-6	
+2-6	92-101	gribējuši	Masc	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vonpdmpnasnp	gribēt	_	_	_	_	root|root	basic|enhanced	2-6|2-6	
+2-7	102-107	kuplu	Fem	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsanp	kupla	_	_	_	_	amod|amod	basic|enhanced	2-8|2-8	
+2-8	108-114	ģimeni	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	ģimene	_	_	_	_	obj|obj	basic|enhanced	2-6|2-6	
+2-9	114-115	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	2-6|2-6	
+
+#Text=Larisa cer, ka Latvija drīz izkļūs no smagās situācijas.
+3-1	117-123	Larisa	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Larisa	person	*	*[1]	*->1-4	nsubj|nsubj	basic|enhanced	3-2|3-2	
+3-2	124-127	cer	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	cerēt	_	_	_	_	root|root	basic|enhanced	3-2|3-2	
+3-3	127-128	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	3-7|3-7	
+3-4	129-131	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark|mark	basic|enhanced	3-7|3-7	
+3-5	132-139	Latvija	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	_	_	nsubj|nsubj	basic|enhanced	3-7|3-7	
+3-6	140-144	drīz	_	_	_	_	_	_	_	_	_	_	_	_	r0t	drīz	_	_	_	_	advmod|advmod	basic|enhanced	3-7|3-7	
+3-7	145-151	izkļūs	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vtnifi130an	izkļūt	_	_	_	_	ccomp|ccomp	basic|enhanced	3-2|3-2	
+3-8	152-154	no	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	_	_	_	_	case|case	basic|enhanced	3-10|3-10	
+3-9	155-161	smagās	Fem	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsgyp	smaga	_	_	_	_	amod|amod	basic|enhanced	3-10|3-10	
+3-10	162-172	situācijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	situācija	_	_	_	_	obl|obl	basic|enhanced	3-7|3-7	
+3-11	172-173	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	3-2|3-2	

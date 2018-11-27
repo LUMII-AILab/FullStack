@@ -1,0 +1,55 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Pēc Haidparka devāmies uz termālo baseinu Soltavā.
+1-1	0-3	Pēc	sppd	pēc	_	_	_	_	case	basic	1-2	
+1-2	4-13	Haidparka	npmsg1	Haidparka	location	https://en.wikipedia.org/wiki/Hyde\_Park,\_London	_	_	obl	basic	1-3	
+1-3	14-22	devāmies	vmyisti1pan	doties	_	_	_	_	root	basic	1-3	
+1-4	23-25	uz	spsa	uz	_	_	_	_	case	basic	1-6	
+1-5	26-33	termālo	armsayp	termāls	_	_	_	_	amod	basic	1-6	
+1-6	34-41	baseinu	ncmsa1	baseins	_	_	_	_	obl	basic	1-3	
+1-7	42-49	Soltavā	npfsl4	Soltava	GPE	https://en.wikipedia.org/wiki/Soltau	*[1]	*->1-1	acl	basic	1-6	
+1-8	49-50	.	zs	.	_	_	_	_	punct	basic	1-3	
+
+#Text=Tur bija vairāki baseini ar dažādām burbuļvannām, sāls ūdeņiem.
+2-1	52-55	Tur	r0p	tur	_	_	*[1]	*->1-2	advmod	basic	2-2	
+2-2	56-60	bija	vmnisii30an	būt	_	_	_	_	root	basic	2-2	
+2-3	61-68	vairāki	pi0mpnn	vairāki	_	_	_	_	det	basic	2-4	
+2-4	69-76	baseini	ncmpn1	baseins	_	_	_	_	nsubj	basic	2-2	
+2-5	77-79	ar	sppd	ar	_	_	_	_	case	basic	2-7	
+2-6	80-87	dažādām	arfpdnp	dažāda	_	_	_	_	amod	basic	2-7	
+2-7	88-100	burbuļvannām	ncfpd4	burbuļvanna	_	_	_	_	nmod	basic	2-4	
+2-8	100-101	,	zc	,	_	_	_	_	punct	basic	2-10	
+2-9	102-106	sāls	ncfsg6	sāls	_	_	_	_	nmod	basic	2-10	
+2-10	107-114	ūdeņiem	ncmpd2	ūdens	_	_	_	_	conj	basic	2-7	
+2-11	114-115	.	zs	.	_	_	_	_	punct	basic	2-2	
+
+#Text=Bija arī pāris cauruļu, pa kurām varēja laisties lejup.
+3-1	117-121	Bija	vmnisii30an	būt	_	_	_	_	root	basic	3-1	
+3-2	122-125	arī	q	arī	_	_	_	_	discourse	basic	3-3	
+3-3	126-131	pāris	ncmsn2	pāris	_	_	_	_	nsubj	basic	3-1	
+3-4	132-139	cauruļu	ncfpg5	caurule	_	_	*[2]	*->2-1	nmod	basic	3-3	
+3-5	139-140	,	zc	,	_	_	_	_	punct	basic	3-8	
+3-6	141-143	pa	sppd	pa	_	_	*[2]	*->2-2	case	basic	3-7	
+3-7	144-149	kurām	pr0fpdn	kura	_	_	*[2]	*->2-2	obl	basic	3-8	
+3-8	150-156	varēja	vonist330an	varēt	_	_	_	_	acl	basic	3-4	
+3-9	157-165	laisties	vmyn0i1000n	laisties	_	_	_	_	xcomp	basic	3-8	
+3-10	166-171	lejup	r0p	lejup	_	_	_	_	advmod	basic	3-9	
+3-11	171-172	.	zs	.	_	_	_	_	punct	basic	3-1	
+
+#Text=Apmeklēt baseinu pēc tik svelmainas dienas bija īpaši patīkami.
+4-1	174-182	Apmeklēt	vmnn0t2000n	apmeklēt	_	_	_	_	ccomp	basic	4-9	
+4-2	183-190	baseinu	ncmsa1	baseins	_	_	_	_	obj	basic	4-1	
+4-3	191-194	pēc	spsg	pēc	_	_	_	_	case	basic	4-6	
+4-4	195-198	tik	r0q	tik	_	_	_	_	advmod	basic	4-5	
+4-5	199-209	svelmainas	affsgnp	svelmaina	_	_	_	_	amod	basic	4-6	
+4-6	210-216	dienas	ncfsg4	diena	_	_	_	_	advcl	basic	4-1	
+4-7	217-221	bija	vcnisii30an	būt	_	_	_	_	aux	basic	4-9	
+4-8	222-227	īpaši	rpm	īpaši	_	_	_	_	advmod	basic	4-9	
+4-9	228-236	patīkami	rpm	patīkami	_	_	_	_	root	basic	4-9	
+4-10	236-237	.	zs	.	_	_	_	_	punct	basic	4-9	

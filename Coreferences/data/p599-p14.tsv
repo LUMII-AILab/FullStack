@@ -1,0 +1,93 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Biļešu cenu pieaugums ir neizbēgams.
+1-1	0-6	Biļešu	ncfpg5	biļete	_	_	nmod	basic	1-2	
+1-2	7-11	cenu	ncfpg4	cena	*[1]	*->1-1	nmod	basic	1-3	
+1-3	12-21	pieaugums	ncmsn1	pieaugums	*[1]	*->1-1	nsubj	basic	1-5	
+1-4	22-24	ir	vcnipii30an	būt	_	_	aux	basic	1-5	
+1-5	25-35	neizbēgams	vmnpdmsnppnp	neizbēgams	_	_	root	basic	1-5	
+1-6	35-36	.	zs	.	_	_	punct	basic	1-5	
+
+#Text=Tam ir arī ekonomiski cēloņi.
+2-1	38-41	Tam	pd0msdn	tas	*[1]	*->1-2	obl	basic	2-2	
+2-2	42-44	ir	vmnipii30an	būt	_	_	root	basic	2-2	
+2-3	45-48	arī	q	arī	_	_	discourse	basic	2-4	
+2-4	49-59	ekonomiski	afmpnnp	ekonomisks	_	_	amod	basic	2-5	
+2-5	60-66	cēloņi	ncmpn2	cēlonis	_	_	nsubj	basic	2-2	
+2-6	66-67	.	zs	.	_	_	punct	basic	2-2	
+
+#Text=Sadārdzinās degviela, tātad -- arī viss pārējais.
+3-1	69-80	Sadārdzinās	vmyipi330an	sadārdzināties	_	_	root	basic	3-1	
+3-2	81-89	degviela	ncfsn4	degviela	_	_	nsubj	basic	3-1	
+3-3	89-90	,	zc	,	_	_	punct	basic	3-5	
+3-4	91-96	tātad	r0c	tātad	_	_	cc	basic	3-5	
+3-5	97-98	-	zd	-	_	_	conj	basic	3-1	
+3-6	98-99	-	zd	-	_	_	punct	basic	3-5	
+3-7	100-103	arī	q	arī	_	_	discourse	basic	3-8	
+3-8	104-108	viss	pg0msnn	viss	_	_	nsubj	basic	3-5	
+3-9	109-117	pārējais	armsnyp	pārējs	_	_	compound	basic	3-8	
+3-10	117-118	.	zs	.	_	_	punct	basic	3-1	
+
+#Text=Neņemot vērā organizatoriskos izdevumus, viena spīdvejista starts sacensībās izmaksā 1040 eiro.
+4-1	120-127	Neņemot	vmnpu0000000	neņemt	_	_	advcl	basic	4-10	
+4-2	128-132	vērā	r0m	vērā	_	_	advmod	basic	4-1	
+4-3	133-149	organizatoriskos	armpayp	organizatorisks	_	_	amod	basic	4-4	
+4-4	150-159	izdevumus	ncmda1	izdevumi	_	_	obj	basic	4-1	
+4-5	159-160	,	zc	,	_	_	punct	basic	4-1	
+4-6	161-166	viena	mcsmsg	viens	_	_	nummod	basic	4-7	
+4-7	167-178	spīdvejista	ncmsg1	spīdvejists	_	_	nmod	basic	4-8	
+4-8	179-185	starts	ncmsn1	starts	_	_	nsubj	basic	4-10	
+4-9	186-196	sacensībās	ncfpl4	sacensība	_	_	obl	basic	4-10	
+4-10	197-204	izmaksā	vmnipt230an	izmaksāt	_	_	root	basic	4-10	
+4-11	205-209	1040	xn	1040	_	_	nummod	basic	4-12	
+4-12	210-214	eiro	nc0000	eiro	_	_	iobj	basic	4-10	
+4-13	214-215	.	zs	.	_	_	punct	basic	4-10	
+
+#Text=Arī mehāniķis par velti nestrādā.
+5-1	217-220	Arī	q	arī	_	_	discourse	basic	5-2	
+5-2	221-230	mehāniķis	ncmsn2	mehāniķis	_	_	nsubj	basic	5-5	
+5-3	231-234	par	spsa	par	_	_	case	basic	5-4	
+5-4	235-240	velti	ncfsa5	velte	_	_	obl	basic	5-5	
+5-5	241-249	nestrādā	vmnipt230ay	nestrādāt	_	_	root	basic	5-5	
+5-6	249-250	.	zs	.	_	_	punct	basic	5-5	
+
+#Text=Izdevumus prasa arī treniņi.
+6-1	252-261	Izdevumus	ncmda1	izdevumi	_	_	obj	basic	6-2	
+6-2	262-267	prasa	vmnipt330an	prasīt	_	_	root	basic	6-2	
+6-3	268-271	arī	q	arī	_	_	discourse	basic	6-4	
+6-4	272-279	treniņi	ncmpn1	treniņš	_	_	nsubj	basic	6-2	
+6-5	279-280	.	zs	.	_	_	punct	basic	6-2	
+
+#Text=Spīdveja skaistums un svētki, kas turpinās pusotru vai divas stundas, ir dārgs prieks.
+7-1	282-290	Spīdveja	ncmsg1	spīdvejs	_	_	nmod	basic	7-2	
+7-2	291-300	skaistums	ncmsn1	skaistums	_	_	nsubj	basic	7-15	
+7-3	301-303	un	cc	un	_	_	cc	basic	7-4	
+7-4	304-310	svētki	ncmdn1	svētki	*[2]	*->2-1	conj	basic	7-2	
+7-5	310-311	,	zc	,	_	_	punct	basic	7-7	
+7-6	312-315	kas	pr000nn	kas	*[2]	*->2-2	nsubj	basic	7-7	
+7-7	316-324	turpinās	vpnift330an	turpināt	_	_	acl	basic	7-4	
+7-8	325-332	pusotru	mfcmsn	pusotru	_	_	nummod	basic	7-11	
+7-9	333-336	vai	cc	vai	_	_	cc	basic	7-10	
+7-10	337-342	divas	mcsfpn	divas	_	_	conj	basic	7-8	
+7-11	343-350	stundas	ncfpn4	stunda	_	_	iobj	basic	7-7	
+7-12	350-351	,	zc	,	_	_	punct	basic	7-7	
+7-13	352-354	ir	vcnipii30an	būt	_	_	cop	basic	7-15	
+7-14	355-360	dārgs	afmsnnp	dārgs	_	_	amod	basic	7-15	
+7-15	361-367	prieks	ncmsn1	prieks	_	_	root	basic	7-15	
+7-16	367-368	.	zs	.	_	_	punct	basic	7-15	
+
+#Text=Un šī sporta veida cienītājiem tas ir jāapzinās.
+8-1	370-372	Un	cc	un	_	_	cc	basic	8-8	
+8-2	373-375	šī	pd0msgn	šis	_	_	det	basic	8-4	
+8-3	376-382	sporta	ncmsg1	sports	_	_	nmod	basic	8-4	
+8-4	383-388	veida	ncmsg1	veids	_	_	nmod	basic	8-5	
+8-5	389-400	cienītājiem	ncmpd1	cienītājs	_	_	nsubj	basic	8-8	
+8-6	401-404	tas	pd0msnn	tas	_	_	obj	basic	8-8	
+8-7	405-407	ir	vcnipii30an	būt	_	_	aux	basic	8-8	
+8-8	408-417	jāapzinās	vmyd0t300an	apzināties	_	_	root	basic	8-8	
+8-9	417-418	.	zs	.	_	_	punct	basic	8-8	

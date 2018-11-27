@@ -1,0 +1,30 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Tomiņš līda un līda.
+1-1	0-6	Tomiņš	npmsn1	Tomiņš	person	*	*[1]	*->1-1	nsubj	basic	1-2	
+1-2	7-11	līda	vmnisi130an	līst	_	_	_	_	root	basic	1-2	
+1-3	12-14	un	cc	un	_	_	_	_	cc	basic	1-4	
+1-4	15-19	līda	vmnisi130an	līst	_	_	_	_	conj	basic	1-2	
+1-5	19-20	.	zs	.	_	_	_	_	punct	basic	1-2	
+
+#Text=Viņa ganiņa svārks kļuva netīrs un apdriskājās pret asajām klinšu radzēm un stalaktītiem.
+2-1	22-26	Viņa	pp3msgn	viņš	_	_	*[1]	*->1-2	det	basic	2-3	
+2-2	27-33	ganiņa	npfsg1	ganiņš	_	_	_	_	nmod	basic	2-3	
+2-3	34-40	svārks	ncmsg1	svārks	_	_	_	_	nsubj	basic	2-4	
+2-4	41-46	kļuva	vtnisi130an	kļūt	_	_	_	_	root	basic	2-4	
+2-5	47-53	netīrs	afmsnnp	netīrs	_	_	_	_	xcomp	basic	2-4	
+2-6	54-56	un	cc	un	_	_	_	_	cc	basic	2-7	
+2-7	57-68	apdriskājās	vmyisi230an	apdriskāties	_	_	_	_	conj	basic	2-4	
+2-8	69-73	pret	sppd	pret	_	_	_	_	case	basic	2-11	
+2-9	74-80	asajām	affpdyp	asa	_	_	_	_	amod	basic	2-11	
+2-10	81-87	klinšu	ncfpg6	klints	_	_	_	_	nmod	basic	2-11	
+2-11	88-94	radzēm	ncfpd5	radze	_	_	_	_	obl	basic	2-7	
+2-12	95-97	un	cc	un	_	_	_	_	cc	basic	2-13	
+2-13	98-110	stalaktītiem	ncmpd1	stalaktīts	_	_	_	_	conj	basic	2-11	
+2-14	110-111	.	zs	.	_	_	_	_	punct	basic	2-4	

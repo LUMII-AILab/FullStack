@@ -1,0 +1,55 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Neticu, ka uz kuģa vai zobenus rijot tu sapelnīji tik daudz naudas, lai tagad varētu braukāt apkārt pasaulei ...
+1-1	0-6	Neticu	vmnipt31say	neticēt	_	_	_	_	root	basic	1-1	
+1-2	6-7	,	zc	,	_	_	_	_	punct	basic	1-10	
+1-3	8-10	ka	cs	ka	_	_	_	_	mark	basic	1-10	
+1-4	11-13	uz	spsg	uz	_	_	_	_	case	basic	1-5	
+1-5	14-18	kuģa	ncmsg2	kuģis	_	_	_	_	obl	basic	1-10	
+1-6	19-22	vai	cc	vai	_	_	_	_	cc	basic	1-8	
+1-7	23-30	zobenus	ncmpa1	zobens	_	_	_	_	obj	basic	1-8	
+1-8	31-36	rijot	vmnpu0000000	rīt	_	_	_	_	conj	basic	1-5	
+1-9	37-39	tu	pp20snn	tu	_	_	*[1]	*->1-1	nsubj	basic	1-10	
+1-10	40-49	sapelnīji	vmnist32san	sapelnīt	_	_	_	_	ccomp	basic	1-1	
+1-11	50-53	tik	r0q	tik	_	_	_	_	advmod	basic	1-12	
+1-12	54-59	daudz	rpq	daudz	_	_	_	_	advmod	basic	1-13	
+1-13	60-66	naudas	ncfsg4	nauda	_	_	_	_	iobj	basic	1-10	
+1-14	66-67	,	zc	,	_	_	_	_	punct	basic	1-17	
+1-15	68-71	lai	cs	lai	_	_	_	_	mark	basic	1-17	
+1-16	72-77	tagad	r0t	tagad	_	_	_	_	advmod	basic	1-18	
+1-17	78-84	varētu	vonc0t300an	varēt	_	_	_	_	advcl	basic	1-10	
+1-18	85-92	braukāt	vmnn0t2000n	braukāt	_	_	_	_	xcomp	basic	1-17	
+1-19	93-99	apkārt	rrp	apkārt	_	_	_	_	xcomp	basic	1-20	
+1-20	100-108	pasaulei	ncfsd5	pasaule	_	_	_	_	obl	basic	1-18	
+1-21	109-112	...	zs	...	_	_	_	_	punct	basic	1-1	
+
+#Text=Mihaels tev dod naudu.
+2-1	114-121	Mihaels	npmsn1	Mihaels	person	*	_	_	nsubj	basic	2-3	
+2-2	122-125	tev	pp20sdn	tu	_	_	*[1]	*->1-2	iobj	basic	2-3	
+2-3	126-129	dod	vmnipti30an	dot	_	_	_	_	root	basic	2-3	
+2-4	130-135	naudu	ncfsa4	nauda	_	_	_	_	obj	basic	2-3	
+2-5	135-136	.	zs	.	_	_	_	_	punct	basic	2-3	
+
+#Text=Mihaels tev pērk viskiju.
+3-1	138-145	Mihaels	npmsn0	Mihaels	person	*	_	_	nsubj	basic	3-3	
+3-2	146-149	tev	pp20sdn	tu	_	_	*[1]	*->1-3	iobj	basic	3-3	
+3-3	150-154	pērk	vmnipt130an	pirkt	_	_	_	_	root	basic	3-3	
+3-4	155-162	viskiju	ncmsa1	viskijs	_	_	_	_	obj	basic	3-3	
+3-5	162-163	.	zs	.	_	_	_	_	punct	basic	3-3	
+
+#Text=Jo Mihaels no tevis baidās, vai ne?
+4-1	165-167	Jo	cs	jo	_	_	_	_	mark	basic	4-5	
+4-2	168-175	Mihaels	npmsn1	Mihaels	person	*	_	_	nsubj	basic	4-5	
+4-3	176-178	no	spsg	no	_	_	_	_	case	basic	4-4	
+4-4	179-184	tevis	pp20sgn	tu	_	_	*[1]	*->1-4	iobj	basic	4-5	
+4-5	185-191	baidās	vmyipi330an	baidīties	_	_	_	_	root	basic	4-5	
+4-6	191-192	,	zc	,	_	_	_	_	punct	basic	4-7	
+4-7	193-196	vai	cc	vai	_	_	_	_	discourse	basic	4-5	
+4-8	197-199	ne	q	ne	_	_	_	_	discourse	basic	4-7	
+4-9	199-200	?	zs	?	_	_	_	_	punct	basic	4-5	

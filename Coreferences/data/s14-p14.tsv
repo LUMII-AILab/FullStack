@@ -1,0 +1,40 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Es atkārtoju: šis uzdevums nav viegls!
+1-1	0-2	Es	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10snn	es	_	_	*[2]	*->2-1	nsubj|nsubj	basic|enhanced	1-2|1-2	
+1-2	3-12	atkārtoju	*	Sing	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	1	*	vmnipt21san	atkārtot	_	_	_	_	root|root	basic|enhanced	1-2|1-2	
+1-3	12-13	:	_	_	_	_	_	_	_	_	_	_	_	_	zo	:	_	_	_	_	punct|punct	basic|enhanced	1-7|1-7	
+1-4	14-17	šis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	šis	_	_	_	_	det|det	basic|enhanced	1-5|1-5	
+1-5	18-26	uzdevums	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	uzdevums	_	_	_	_	nsubj|nsubj	basic|enhanced	1-7|1-7	
+1-6	27-30	nav	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30ay	nebūt	_	_	_	_	cop|cop	basic|enhanced	1-7|1-7	
+1-7	31-37	viegls	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	viegls	_	_	_	_	ccomp|ccomp	basic|enhanced	1-2|1-2	
+1-8	37-38	!	_	_	_	_	_	_	_	_	_	_	_	_	zs	!	_	_	_	_	punct|punct	basic|enhanced	1-2|1-2	
+
+#Text=Bet es esmu pārliecināts, ka šajā Saeimā ir politiskie spēki, kuri var vienoties un īstenot šīs lietas.
+2-1	40-43	Bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	_	_	cc|cc	basic|enhanced	2-4|2-4	
+2-2	44-46	es	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10snn	es	_	_	*[2]	*->2-2	nsubj|nsubj	basic|enhanced	2-4|2-4	
+2-3	47-51	esmu	*	Sing	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	1	*	vcnipii1san	būt	_	_	_	_	aux|aux	basic|enhanced	2-4|2-4	
+2-4	52-64	pārliecināts	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnp	pārliecināt	_	_	_	_	root|root	basic|enhanced	2-4|2-4	
+2-5	64-65	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-9|2-9	
+2-6	66-68	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark|mark	basic|enhanced	2-9|2-9	
+2-7	69-73	šajā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsln	šī	_	_	_	_	det|det	basic|enhanced	2-8|2-8	
+2-8	74-80	Saeimā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	saeima	organization	https://en.wikipedia.org/wiki/Saeima	_	_	obl|obl	basic|enhanced	2-9|2-9	
+2-9	81-83	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipii30an	būt	_	_	_	_	ccomp|ccomp	basic|enhanced	2-4|2-4	
+2-10	84-94	politiskie	Masc	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpnyp	politisks	_	_	*[1]	*->1-1	amod|amod	basic|enhanced	2-11|2-11	
+2-11	95-100	spēki	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	spēks	_	_	*[1]	*->1-1	nsubj|nsubj	basic|enhanced	2-9|2-9	
+2-12	100-101	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-14|2-14	
+2-13	102-106	kuri	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Rel	*	*	pr0mpnn	kurš	_	_	*[1]	*->1-2	nsubj|nsubj	basic|enhanced	2-14|2-14	
+2-14	107-110	var	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vonipt330an	varēt	_	_	_	_	acl|acl	basic|enhanced	2-11|2-11	
+2-15	111-120	vienoties	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i2000n	vienoties	_	_	_	_	xcomp|xcomp	basic|enhanced	2-14|2-14	
+2-16	121-123	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	2-17|2-17	
+2-17	124-131	īstenot	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	īstenot	_	_	_	_	conj|conj	basic|enhanced	2-15|2-15	
+2-18	132-135	šīs	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur\|PronType=Dem	*	*	pd0fpan	šī	_	_	_	_	det|det	basic|enhanced	2-19|2-19	
+2-19	136-142	lietas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	lieta	_	_	_	_	iobj|iobj	basic|enhanced	2-17|2-17	
+2-20	142-143	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	2-4|2-4	

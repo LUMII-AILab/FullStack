@@ -1,0 +1,63 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Viesībās ir raksturīgi, ka lielu daudzumu pārtikas apēd īsā laika sprīdī un zūd sāta sajūta, kam seko ciešanas.
+1-1	0-8	Viesībās	ncfdl4	viesības	_	_	obl	basic	1-3	
+1-2	9-11	ir	vcnipii30an	būt	_	_	aux	basic	1-3	
+1-3	12-22	raksturīgi	rpm	raksturīgi	_	_	root	basic	1-3	
+1-4	22-23	,	zc	,	_	_	punct	basic	1-9	
+1-5	24-26	ka	cs	ka	_	_	mark	basic	1-9	
+1-6	27-32	lielu	afmsanp	liels	_	_	amod	basic	1-7	
+1-7	33-41	daudzumu	ncmsa1	daudzums	_	_	obj	basic	1-9	
+1-8	42-50	pārtikas	ncfsg4	pārtika	_	_	nsubj	basic	1-9	
+1-9	51-55	apēd	vmnipt130an	apēst	_	_	csubj	basic	1-3	
+1-10	56-59	īsā	afmsgyp	īss	_	_	amod	basic	1-12	
+1-11	60-65	laika	ncmsg1	laiks	_	_	nmod	basic	1-12	
+1-12	66-72	sprīdī	ncmsl2	sprīdis	_	_	obl	basic	1-9	
+1-13	73-75	un	cc	un	_	_	cc	basic	1-14	
+1-14	76-79	zūd	vmnipi130an	zust	_	_	conj	basic	1-9	
+1-15	80-84	sāta	ncmsg1	sāts	_	_	nmod	basic	1-16	
+1-16	85-91	sajūta	ncfsn4	sajūta	*[1]	*->1-1	nsubj	basic	1-14	
+1-17	91-92	,	zc	,	_	_	punct	basic	1-19	
+1-18	93-96	kam	pr000dn	kas	*[1]	*->1-2	iobj	basic	1-19	
+1-19	97-101	seko	vmnipi230an	sekot	_	_	advcl	basic	1-9	
+1-20	102-110	ciešanas	ncfpn4	ciešana	_	_	nsubj	basic	1-19	
+1-21	110-111	.	zs	.	_	_	punct	basic	1-3	
+
+#Text=Pārēšanos svētkos bieži novēro cilvēkiem, kas iesaistījušies dažādās svaru samazināšanas programmās.
+2-1	113-122	Pārēšanos	ncfslr	Pārēšanos	_	_	iobj	basic	2-4	
+2-2	123-130	svētkos	ncmdl1	svētki	_	_	acl	basic	2-1	
+2-3	131-136	bieži	r0q	bieži	_	_	advmod	basic	2-4	
+2-4	137-143	novēro	vmnipt230an	novērot	_	_	root	basic	2-4	
+2-5	144-153	cilvēkiem	ncmpd1	cilvēks	*[2]	*->2-1	iobj	basic	2-4	
+2-6	153-154	,	zc	,	_	_	punct	basic	2-8	
+2-7	155-158	kas	pr000nn	kas	*[2]	*->2-2	nsubj	basic	2-8	
+2-8	159-173	iesaistījušies	vmypdmpnasnp	iesaistīties	_	_	acl	basic	2-5	
+2-9	174-181	dažādās	arfplnp	dažāda	_	_	amod	basic	2-12	
+2-10	182-187	svaru	ncmpg1	svars	_	_	nmod	basic	2-11	
+2-11	188-201	samazināšanas	ncfsg4	samazināšana	_	_	nmod	basic	2-12	
+2-12	202-212	programmās	ncfpl4	programma	_	_	obl	basic	2-8	
+2-13	212-213	.	zs	.	_	_	punct	basic	2-4	
+
+#Text=Šiem ļaudīm parasti ir izteikta aptaukošanās, svars bieži strauji tiek zaudēts un pēc tam atkal aug.
+3-1	215-219	Šiem	pd0mpdn	šis	*[2]	*->2-3	det	basic	3-2	
+3-2	220-226	ļaudīm	ncmdd6	ļaudis	*[2]	*->2-3	obl	basic	3-4	
+3-3	227-234	parasti	r0t	parasti	_	_	advmod	basic	3-4	
+3-4	235-237	ir	vcnipii30an	būt	_	_	root	basic	3-4	
+3-5	238-246	izteikta	vmnpdfsnpsnp	izteikt	_	_	amod	basic	3-6	
+3-6	247-259	aptaukošanās	ncfsnr	aptaukošanās	_	_	nsubj	basic	3-4	
+3-7	259-260	,	zc	,	_	_	punct	basic	3-12	
+3-8	261-266	svars	ncmsn1	svars	_	_	nsubj:pass	basic	3-12	
+3-9	267-272	bieži	r0q	bieži	_	_	advmod	basic	3-12	
+3-10	273-280	strauji	rpq	strauji	_	_	advmod	basic	3-12	
+3-11	281-285	tiek	vtnipi130an	tikt	_	_	aux	basic	3-12	
+3-12	286-293	zaudēts	vmnpdmsnpsnp	zaudēt	_	_	conj	basic	3-4	
+3-13	294-296	un	cc	un	_	_	cc	basic	3-17	
+3-14	297-300	pēc	spsd	pēc	_	_	case	basic	3-15	
+3-15	301-304	tam	pd0msdn	tas	_	_	obl	basic	3-17	
+3-16	305-310	atkal	r0t	atkal	_	_	advmod	basic	3-17	
+3-17	311-315	aug.	y	aug.	_	_	conj	basic	3-12	

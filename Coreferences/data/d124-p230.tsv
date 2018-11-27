@@ -1,0 +1,70 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Milzenis atlaida novērotāju.
+1-1	0-8	Milzenis	ncmsn2	milzenis	*[1]	*->1-1	nsubj	basic	1-2	
+1-2	9-16	atlaida	vmnist130an	atlaist	_	_	root	basic	1-2	
+1-3	17-27	novērotāju	ncmsa1	novērotājs	*[2]	*->2-1	obj	basic	1-2	
+1-4	27-28	.	zs	.	_	_	punct	basic	1-2	
+
+#Text=Taču viņš nebija paredzējis, ka novērotājs metīsies bēgt.
+2-1	30-34	Taču	cc	taču	_	_	cc	basic	2-4	
+2-2	35-39	viņš	pp3msnn	viņš	*[1]	*->1-2	nsubj	basic	2-4	
+2-3	40-46	nebija	vcnisii30ay	nebūt	_	_	aux	basic	2-4	
+2-4	47-57	paredzējis	vmnpdmsnasnp	paredzēt	_	_	root	basic	2-4	
+2-5	57-58	,	zc	,	_	_	punct	basic	2-8	
+2-6	59-61	ka	cs	ka	_	_	mark	basic	2-8	
+2-7	62-72	novērotājs	ncmsn1	novērotājs	*[2]	*->2-2	nsubj	basic	2-8	
+2-8	73-81	metīsies	vpyifi130an	mesties	_	_	ccomp	basic	2-4	
+2-9	82-86	bēgt	vmnn0i1000n	bēgt	_	_	xcomp	basic	2-8	
+2-10	86-87	.	zs	.	_	_	punct	basic	2-4	
+
+#Text=Tas ātri izslīdēja pa pavērto durvju starpu un, sākdams bļaut, joņoja pa koridoru, atsizdamies pret citu mantu skapjiem.
+3-1	89-92	Tas	pd0msnn	tas	*[2]	*->2-3	nsubj	basic	3-3	
+3-2	93-97	ātri	rpm	ātri	_	_	advmod	basic	3-3	
+3-3	98-107	izslīdēja	vmnisi330an	izslīdēt	_	_	root	basic	3-3	
+3-4	108-110	pa	spsa	pa	_	_	case	basic	3-7	
+3-5	111-118	pavērto	vmnpdmsapsyp	pavērt	_	_	amod	basic	3-6	
+3-6	119-125	durvju	ncfdg6	durvis	_	_	nmod	basic	3-7	
+3-7	126-132	starpu	ncfsa4	starpa	_	_	obl	basic	3-3	
+3-8	133-135	un	cc	un	_	_	cc	basic	3-13	
+3-9	135-136	,	zc	,	_	_	punct	basic	3-10	
+3-10	137-144	sākdams	vpnppmsnap0p	sākt	_	_	acl	basic	3-13	
+3-11	145-150	bļaut	vmnn0i1000n	bļaut	_	_	xcomp	basic	3-10	
+3-12	150-151	,	zc	,	_	_	punct	basic	3-10	
+3-13	152-158	joņoja	vmnisi230an	joņot	_	_	conj	basic	3-3	
+3-14	159-161	pa	spsa	pa	_	_	case	basic	3-15	
+3-15	162-170	koridoru	ncmsa1	koridors	_	_	obl	basic	3-13	
+3-16	170-171	,	zc	,	_	_	punct	basic	3-17	
+3-17	172-183	atsizdamies	vmyppmsnapnp	atsizdamies	_	_	acl	basic	3-13	
+3-18	184-188	pret	spsa	pret	_	_	case	basic	3-21	
+3-19	189-193	citu	pi0fpgn	cita	_	_	det	basic	3-20	
+3-20	194-199	mantu	ncfpg4	manta	_	_	nmod	basic	3-21	
+3-21	200-208	skapjiem	ncmpd2	skapis	_	_	iobj	basic	3-17	
+3-22	208-209	.	zs	.	_	_	punct	basic	3-3	
+
+#Text=Komunālajā dzīvoklī atvērās visas durvis, pa kurām ārā lūkojās piepampušas, dažas neskuvušās, bet visas neapmierinātas sejas.
+4-1	211-221	Komunālajā	armslyp	komunāls	_	_	amod	basic	4-2	
+4-2	222-230	dzīvoklī	ncmsl2	dzīvoklis	_	_	obl	basic	4-3	
+4-3	231-238	atvērās	vmyisi130an	atvērties	_	_	root	basic	4-3	
+4-4	239-244	visas	pg0fpnn	visa	_	_	det	basic	4-5	
+4-5	245-251	durvis	ncfdn6	durvis	*[3]	*->3-1	nsubj	basic	4-3	
+4-6	251-252	,	zc	,	_	_	punct	basic	4-10	
+4-7	253-255	pa	sppd	pa	*[3]	*->3-2	case	basic	4-8	
+4-8	256-261	kurām	pr0fpdn	kura	*[3]	*->3-2	obl	basic	4-10	
+4-9	262-265	ārā	r0p	ārā	_	_	advmod	basic	4-10	
+4-10	266-273	lūkojās	vmyisi230an	lūkoties	_	_	acl	basic	4-5	
+4-11	274-285	piepampušas	vmnpdfpnasnp	piepampt	_	_	amod	basic	4-19	
+4-12	285-286	,	zc	,	_	_	punct	basic	4-14	
+4-13	287-292	dažas	pi0fpnn	daža	_	_	det	basic	4-14	
+4-14	293-303	neskuvušās	vmypdfpnasnp	neskūties	_	_	conj	basic	4-11	
+4-15	303-304	,	zc	,	_	_	punct	basic	4-18	
+4-16	305-308	bet	cc	bet	_	_	cc	basic	4-18	
+4-17	309-314	visas	pg0fpnn	visa	_	_	det	basic	4-18	
+4-18	315-329	neapmierinātas	arfpnnp	neapmierināta	_	_	conj	basic	4-11	
+4-19	330-335	sejas	ncfpn4	seja	_	_	nsubj	basic	4-10	
+4-20	335-336	.	zs	.	_	_	punct	basic	4-3	

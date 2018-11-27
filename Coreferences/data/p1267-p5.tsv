@@ -1,0 +1,34 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Līdz 1. jūlijam pagarināja termiņu Vilgāles darbnīcu privatizācijas pretendentiem.
+1-1	0-4	Līdz	_	_	_	_	_	_	_	_	_	_	_	_	spsd	līdz	_	_	_	_	case|case	basic|enhanced	1-3|1-3	
+1-2	5-7	1.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	1.	time[1]	*[1]	_	_	amod|amod	basic|enhanced	1-3|1-3	
+1-3	8-15	jūlijam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	jūlijs	time[1]	*[1]	_	_	obl|obl	basic|enhanced	1-4|1-4	
+1-4	16-26	pagarināja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	pagarināt	_	_	_	_	root|root	basic|enhanced	1-4|1-4	
+1-5	27-34	termiņu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	termiņš	_	_	_	_	obj|obj	basic|enhanced	1-4|1-4	
+1-6	35-43	Vilgāles	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	Vilgāle	organization[2]|GPE[3]	*[2]|https://lv.wikipedia.org/wiki/Vilgāle[3]	_	_	nmod|nmod	basic|enhanced	1-7|1-7	
+1-7	44-52	darbnīcu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	darbnīca	organization[2]	*[2]	_	_	nmod|nmod	basic|enhanced	1-8|1-8	
+1-8	53-67	privatizācijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	privatizācija	_	_	_	_	nmod|nmod	basic|enhanced	1-9|1-9	
+1-9	68-81	pretendentiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	pretendents	_	_	_	_	iobj|iobj	basic|enhanced	1-4|1-4	
+1-10	81-82	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-4|1-4	
+
+#Text=Deputāti piekrita apdrošināt piecus pašvaldības darbiniekus, kuriem ir bīstams darbs.
+2-1	84-92	Deputāti	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	deputāts	_	_	_	_	nsubj|nsubj	basic|enhanced	2-2|2-2	
+2-2	93-101	piekrita	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi130an	piekrist	_	_	_	_	root|root	basic|enhanced	2-2|2-2	
+2-3	102-112	apdrošināt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	apdrošināt	_	_	_	_	ccomp|ccomp	basic|enhanced	2-2|2-2	
+2-4	113-119	piecus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpa	pieci	_	_	_	_	nummod|nummod	basic|enhanced	2-6|2-6	
+2-5	120-131	pašvaldības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	pašvaldība	_	_	_	_	nmod|nmod	basic|enhanced	2-6|2-6	
+2-6	132-143	darbiniekus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	darbinieks	_	_	*[1]	*->1-1	obj|obj	basic|enhanced	2-3|2-3	
+2-7	143-144	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-9|2-9	
+2-8	145-151	kuriem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|PronType=Rel	*	*	pr0mpdn	kurš	_	_	*[1]	*->1-2	obl|obl	basic|enhanced	2-9|2-9	
+2-9	152-154	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipii30an	būt	_	_	_	_	acl|acl	basic|enhanced	2-6|2-6	
+2-10	155-162	bīstams	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	bīstams	_	_	_	_	amod|amod	basic|enhanced	2-11|2-11	
+2-11	163-168	darbs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	darbs	_	_	_	_	nsubj|nsubj	basic|enhanced	2-9|2-9	
+2-12	168-169	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	2-2|2-2	

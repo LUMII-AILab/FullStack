@@ -1,0 +1,62 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Virtuve.
+1-1	0-7	Virtuve	ncfsn5	virtuve	_	_	_	_	root	basic	1-1	
+1-2	7-8	.	zs	.	_	_	_	_	punct	basic	1-1	
+
+#Text=No pieliekamā iznāk Artis.
+2-1	10-12	No	spsg	no	_	_	_	_	case	basic	2-2	
+2-2	13-23	pieliekamā	vmnpdmsgppyp	pieliekamais	_	_	_	_	obl	basic	2-3	
+2-3	24-29	iznāk	venipi130an	iznākt	_	_	_	_	root	basic	2-3	
+2-4	30-35	Artis	npmsn2	Artis	person	*	*[1]	*->1-1	nsubj	basic	2-3	
+2-5	35-36	.	zs	.	_	_	_	_	punct	basic	2-3	
+
+#Text=Viņš pieiet pie Jasmīnes, tad pie loga, paskatās lejā, pieiet pie Ģertrūdes, sažņaudz dūres, apsēžas pie galda, grib iezvelt pa to, bet apraujas.
+3-1	38-42	Viņš	pp3msnn	viņš	_	_	*[1]	*->1-2	nsubj	basic	3-2	
+3-2	43-49	pieiet	vmnipii30an	pieiet	_	_	_	_	root	basic	3-2	
+3-3	50-53	pie	spsg	pie	_	_	_	_	case	basic	3-4	
+3-4	54-62	Jasmīnes	npfsg5	Jasmīne	person	*	_	_	iobj	basic	3-2	
+3-5	62-63	,	zc	,	_	_	_	_	punct	basic	3-8	
+3-6	64-67	tad	r0t	tad	_	_	_	_	advmod	basic	3-8	
+3-7	68-71	pie	spsg	pie	_	_	_	_	case	basic	3-8	
+3-8	72-76	loga	ncmsg1	logs	_	_	_	_	conj	basic	3-4	
+3-9	76-77	,	zc	,	_	_	_	_	punct	basic	3-10	
+3-10	78-86	paskatās	vmyipt330an	paskatīties	_	_	_	_	conj	basic	3-2	
+3-11	87-91	lejā	r0p	lejā	_	_	_	_	advmod	basic	3-10	
+3-12	91-92	,	zc	,	_	_	_	_	punct	basic	3-13	
+3-13	93-99	pieiet	vmnipii30an	pieiet	_	_	_	_	conj	basic	3-2	
+3-14	100-103	pie	spsg	pie	_	_	_	_	case	basic	3-15	
+3-15	104-113	Ģertrūdes	npfsg5	Ģertrūde	person	*	_	_	iobj	basic	3-13	
+3-16	113-114	,	zc	,	_	_	_	_	punct	basic	3-17	
+3-17	115-123	sažņaudz	vmnm0t12san	sažņaugt	_	_	_	_	conj	basic	3-2	
+3-18	124-129	dūres	ncfpa5	dūre	_	_	_	_	obj	basic	3-17	
+3-19	129-130	,	zc	,	_	_	_	_	punct	basic	3-20	
+3-20	131-138	apsēžas	vmyipt130an	apsēsties	_	_	_	_	conj	basic	3-2	
+3-21	139-142	pie	spsg	pie	_	_	_	_	case	basic	3-22	
+3-22	143-148	galda	ncmsg1	galds	_	_	*[2]	*->2-1	iobj	basic	3-20	
+3-23	148-149	,	zc	,	_	_	_	_	punct	basic	3-24	
+3-24	150-154	grib	vonipt330an	gribēt	_	_	_	_	conj	basic	3-2	
+3-25	155-162	iezvelt	vmnn0i1000n	iezvelt	_	_	_	_	xcomp	basic	3-24	
+3-26	163-165	pa	spsa	pa	_	_	_	_	case	basic	3-27	
+3-27	166-168	to	pd0msan	tas	_	_	*[2]	*->2-2	iobj	basic	3-25	
+3-28	168-169	,	zc	,	_	_	_	_	punct	basic	3-30	
+3-29	170-173	bet	cc	bet	_	_	_	_	cc	basic	3-30	
+3-30	174-182	apraujas	vmyipt130an	aprauties	_	_	_	_	conj	basic	3-2	
+3-31	182-183	.	zs	.	_	_	_	_	punct	basic	3-2	
+
+#Text=Tad paliek nekustīgs, galvu piespiedis galda dēlim.
+4-1	185-188	Tad	r0t	tad	_	_	_	_	advmod	basic	4-2	
+4-2	189-195	paliek	vmnipi130an	palikt	_	_	_	_	root	basic	4-2	
+4-3	196-205	nekustīgs	armsnnp	nekustīgs	_	_	_	_	acl	basic	4-2	
+4-4	205-206	,	zc	,	_	_	_	_	punct	basic	4-6	
+4-5	207-212	galvu	ncfsa4	galva	_	_	_	_	obj	basic	4-6	
+4-6	213-223	piespiedis	vmnpdmsnasnp	piespiest	_	_	_	_	conj	basic	4-3	
+4-7	224-229	galda	ncmsg1	galds	_	_	_	_	nmod	basic	4-8	
+4-8	230-235	dēlim	ncmsd2	dēlis	_	_	_	_	iobj	basic	4-6	
+4-9	235-236	.	zs	.	_	_	_	_	punct	basic	4-2	

@@ -1,0 +1,22 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Nesper sunītim, viņam sāp.
+1-1	0-6	Nesper	*	*	*	*	*	Pres	Imp	Act	*	Mood=Imp\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnmpt130ay	nespert	_	_	root|root	basic|enhanced	1-1|1-1	
+1-2	7-14	sunītim	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd2	sunītis	*[1]	*->1-1	iobj|iobj	basic|enhanced	1-1|1-1	
+1-3	14-15	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct|punct	basic|enhanced	1-5|1-5	
+1-4	16-21	viņam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msdn	viņš	*[1]	*->1-2	obl|obl	basic|enhanced	1-5|1-5	
+1-5	22-25	sāp	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipi330an	sāpēt	_	_	conj|conj	basic|enhanced	1-1|1-1	
+1-6	25-26	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct|punct	basic|enhanced	1-1|1-1	
+
+#Text=Dažkārt tie ir tikai vārdi
+2-1	28-35	Dažkārt	_	_	_	_	_	_	_	_	_	_	_	_	r0t	dažkārt	_	_	advmod|advmod	basic|enhanced	2-5|2-5	
+2-2	36-39	tie	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpnn	tas	*[2]	*->2-1	nsubj|nsubj	basic|enhanced	2-5|2-5	
+2-3	40-42	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	cop|cop	basic|enhanced	2-5|2-5	
+2-4	43-48	tikai	_	_	_	_	_	_	_	_	_	_	_	_	q	tikai	_	_	discourse|discourse	basic|enhanced	2-5|2-5	
+2-5	49-54	vārdi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	vārds	*[2]	*->2-2	root|root	basic|enhanced	2-5|2-5	

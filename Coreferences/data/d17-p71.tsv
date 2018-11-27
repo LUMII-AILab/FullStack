@@ -1,0 +1,69 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Vents tomēr saņēmās, piespieda sevi izlikties jautram.
+1-1	0-5	Vents	npmsn1	Vents	person	*	*[1]	*->1-1	nsubj	basic	1-3	
+1-2	6-11	tomēr	q	tomēr	_	_	_	_	discourse	basic	1-3	
+1-3	12-19	saņēmās	vmyisi130an	saņemties	_	_	_	_	root	basic	1-3	
+1-4	19-20	,	zc	,	_	_	_	_	punct	basic	1-5	
+1-5	21-30	piespieda	vmnist130an	piespiest	_	_	_	_	conj	basic	1-3	
+1-6	31-35	sevi	px000an	sevis	_	_	*[1]	*->1-2	obj	basic	1-5	
+1-7	36-45	izlikties	vmyn0i1000n	izlikties	_	_	_	_	ccomp	basic	1-5	
+1-8	46-53	jautram	afmsdnp	jautrs	_	_	_	_	dep	basic	1-7	
+1-9	53-54	.	zs	.	_	_	_	_	punct	basic	1-3	
+
+#Text=Lai vairāk apgrozītos ļaudīs, viņš atteicās no braucieniem automašīnā, pa centru gāja kājām, burzījās sabiedriskajā transportā.
+2-1	56-59	Lai	cs	lai	_	_	_	_	mark	basic	2-3	
+2-2	60-66	vairāk	rcq	daudz	_	_	_	_	advmod	basic	2-3	
+2-3	67-77	apgrozītos	vmyc0i300an	apgrozīties	_	_	_	_	advcl	basic	2-7	
+2-4	78-84	ļaudīs	ncfpl6	ļaudis	_	_	_	_	obl	basic	2-3	
+2-5	84-85	,	zc	,	_	_	_	_	punct	basic	2-3	
+2-6	86-90	viņš	pp3msnn	viņš	_	_	*[1]	*->1-3	nsubj	basic	2-7	
+2-7	91-99	atteicās	vmyisi130an	atteikties	_	_	_	_	root	basic	2-7	
+2-8	100-102	no	sppd	no	_	_	_	_	case	basic	2-9	
+2-9	103-114	braucieniem	ncmpd1	brauciens	_	_	_	_	iobj	basic	2-7	
+2-10	115-125	automašīnā	ncfsl4	automašīna	_	_	_	_	acl	basic	2-9	
+2-11	125-126	,	zc	,	_	_	_	_	punct	basic	2-14	
+2-12	127-129	pa	spsa	pa	_	_	_	_	case	basic	2-13	
+2-13	130-136	centru	ncmsa1	centrs	_	_	_	_	obl	basic	2-14	
+2-14	137-141	gāja	vmnisii30an	iet	_	_	_	_	conj	basic	2-7	
+2-15	142-147	kājām	ncfpd4	kāja	_	_	_	_	obl	basic	2-14	
+2-16	147-148	,	zc	,	_	_	_	_	punct	basic	2-17	
+2-17	149-157	burzījās	vmyisi330an	burzīties	_	_	_	_	conj	basic	2-7	
+2-18	158-171	sabiedriskajā	afmslyp	sabiedrisks	_	_	_	_	amod	basic	2-19	
+2-19	172-182	transportā	ncmsl1	transports	_	_	_	_	obl	basic	2-17	
+2-20	182-183	.	zs	.	_	_	_	_	punct	basic	2-7	
+
+#Text=Personīgais braucamais bija dzelžu būris, kurā cilvēki paši sevi iespundēja, atšķirdami no citiem, nozogot sev ļaužu vārdu un smaidu glāstus un sastingstot lietišķumā...
+3-1	185-196	Personīgais	afmsnyp	personīgs	_	_	_	_	amod	basic	3-2	
+3-2	197-207	braucamais	vmnpdmsnppyp	braukt	_	_	_	_	nsubj	basic	3-5	
+3-3	208-212	bija	vcnisii30an	būt	_	_	_	_	cop	basic	3-5	
+3-4	213-219	dzelžu	ncmpg2	dzelzis	_	_	_	_	nmod	basic	3-5	
+3-5	220-225	būris	ncmsn2	būris	_	_	*[2]	*->2-1	root	basic	3-5	
+3-6	225-226	,	zc	,	_	_	_	_	punct	basic	3-11	
+3-7	227-231	kurā	pr0msln	kurš	_	_	*[2]	*->2-2	obl	basic	3-11	
+3-8	232-239	cilvēki	ncmpn1	cilvēks	_	_	*[3]	*->3-1	nsubj	basic	3-11	
+3-9	240-244	paši	pg0mpnn	pats	_	_	*[3]	*->3-2	acl	basic	3-11	
+3-10	245-249	sevi	px000an	sevis	_	_	*[3]	*->3-2	obj	basic	3-11	
+3-11	250-260	iespundēja	vmnist230an	iespundēt	_	_	_	_	acl	basic	3-5	
+3-12	260-261	,	zc	,	_	_	_	_	punct	basic	3-13	
+3-13	262-272	atšķirdami	vmnppmpnap00	atšķirt	_	_	_	_	acl	basic	3-11	
+3-14	273-275	no	sppd	no	_	_	_	_	case	basic	3-15	
+3-15	276-282	citiem	pi0mpdn	cits	_	_	_	_	iobj	basic	3-13	
+3-16	282-283	,	zc	,	_	_	_	_	punct	basic	3-17	
+3-17	284-291	nozogot	vmnpu0000000	nozagt	_	_	_	_	conj	basic	3-13	
+3-18	292-295	sev	px000dn	sevis	_	_	*[3]	*->3-3	iobj	basic	3-17	
+3-19	296-301	ļaužu	ncmdg6	ļaudis	_	_	_	_	nmod	basic	3-20	
+3-20	302-307	vārdu	ncmsa1	vārds	_	_	_	_	obj	basic	3-17	
+3-21	308-310	un	cc	un	_	_	_	_	cc	basic	3-23	
+3-22	311-317	smaidu	ncmsa1	smaids	_	_	_	_	nmod	basic	3-23	
+3-23	318-325	glāstus	ncmpa1	glāsts	_	_	_	_	conj	basic	3-20	
+3-24	326-328	un	cc	un	_	_	_	_	cc	basic	3-25	
+3-25	329-340	sastingstot	vmnpu0000000	sastingt	_	_	_	_	conj	basic	3-13	
+3-26	341-351	lietišķumā	ncmsl1	lietišķums	_	_	_	_	obl	basic	3-25	
+3-27	351-354	...	zs	...	_	_	_	_	punct	basic	3-5	

@@ -1,0 +1,92 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Mūsu mamma nāca no diezgan nabadzīgas ģimenes.
+1-1	0-4	Mūsu	pp10pgn	mēs	_	_	det	basic	1-2	
+1-2	5-10	mamma	ncfsn4	mamma	*[1]	*->1-1	nsubj	basic	1-3	
+1-3	11-15	nāca	vmnisi130an	nākt	_	_	root	basic	1-3	
+1-4	16-18	no	spsg	no	_	_	case	basic	1-7	
+1-5	19-26	diezgan	r0q	diezgan	_	_	advmod	basic	1-6	
+1-6	27-37	nabadzīgas	affpnnp	nabadzīga	_	_	amod	basic	1-7	
+1-7	38-45	ģimenes	ncfsg5	ģimene	_	_	obl	basic	1-3	
+1-8	45-46	.	zs	.	_	_	punct	basic	1-3	
+
+#Text=Viņa stāstīja, cik ļoti gribējusi iet skolā, taču pašai bija daudz bērnu un varēja nomācīties vien pusgadu.
+2-1	48-52	Viņa	pp3fsnn	viņa	*[1]	*->1-2	nsubj	basic	2-2	
+2-2	53-61	stāstīja	vmnist330an	stāstīt	_	_	root	basic	2-2	
+2-3	61-62	,	zc	,	_	_	punct	basic	2-6	
+2-4	63-66	cik	r0q	cik	_	_	advmod	basic	2-6	
+2-5	67-71	ļoti	r0q	ļoti	_	_	advmod	basic	2-6	
+2-6	72-81	gribējusi	vonpdfsnasnp	gribēt	_	_	ccomp	basic	2-2	
+2-7	82-85	iet	vmnn0ii000n	iet	_	_	xcomp	basic	2-6	
+2-8	86-91	skolā	ncfsl4	skola	_	_	obl	basic	2-7	
+2-9	91-92	,	zc	,	_	_	punct	basic	2-12	
+2-10	93-97	taču	cc	taču	_	_	cc	basic	2-12	
+2-11	98-103	pašai	pg0fsdn	pati	*[1]	*->1-3	obl	basic	2-12	
+2-12	104-108	bija	vmnisii30an	būt	_	_	conj	basic	2-2	
+2-13	109-114	daudz	rpq	daudz	_	_	advmod	basic	2-14	
+2-14	115-120	bērnu	ncmpg1	bērns	_	_	nsubj	basic	2-12	
+2-15	121-123	un	cc	un	_	_	cc	basic	2-16	
+2-16	124-130	varēja	vonist330an	varēt	_	_	conj	basic	2-2	
+2-17	131-141	nomācīties	vmyn0i3000n	nomācīties	_	_	xcomp	basic	2-16	
+2-18	142-146	vien	q	vien	_	_	discourse	basic	2-19	
+2-19	147-154	pusgadu	ncmsa1	pusgads	_	_	obl	basic	2-17	
+2-20	154-155	.	zs	.	_	_	punct	basic	2-2	
+
+#Text=Taču viņa vienmēr centās atlicināt kādu kapeiciņu, lai mēs varētu aiziet uz kino.
+3-1	157-161	Taču	cc	taču	_	_	cc	basic	3-4	
+3-2	162-166	viņa	pp3fsnn	viņa	*[1]	*->1-4	nsubj	basic	3-4	
+3-3	167-174	vienmēr	r0t	vienmēr	_	_	advmod	basic	3-4	
+3-4	175-181	centās	voyist130an	censties	_	_	root	basic	3-4	
+3-5	182-191	atlicināt	vmnn0t3000n	atlicināt	_	_	xcomp	basic	3-4	
+3-6	192-196	kādu	pi0fsan	kāda	_	_	det	basic	3-7	
+3-7	197-206	kapeiciņu	ncfsa4	kapeiciņa	_	_	obj	basic	3-5	
+3-8	206-207	,	zc	,	_	_	punct	basic	3-11	
+3-9	208-211	lai	cs	lai	_	_	mark	basic	3-11	
+3-10	212-215	mēs	pp10pnn	mēs	_	_	nsubj	basic	3-11	
+3-11	216-222	varētu	vonc0t300an	varēt	_	_	dep	basic	3-4	
+3-12	223-229	aiziet	vmnn0ii000n	aiziet	_	_	xcomp	basic	3-11	
+3-13	230-232	uz	spsa	uz	_	_	case	basic	3-14	
+3-14	233-237	kino	nc0000	kino	_	_	obl	basic	3-12	
+3-15	237-238	.	zs	.	_	_	punct	basic	3-4	
+
+#Text=Sēžot zālē, filmas mani tik ļoti satrieca, ka negribēju iet ārā.
+4-1	240-245	Sēžot	vmnpu00000n0	sēdēt	_	_	advcl	basic	4-8	
+4-2	246-250	zālē	ncfsl5	zāle	_	_	obl	basic	4-1	
+4-3	250-251	,	zc	,	_	_	punct	basic	4-1	
+4-4	252-258	filmas	ncfpn4	filma	_	_	nsubj	basic	4-8	
+4-5	259-263	mani	pp10san	es	*[2]	*->2-1	obj	basic	4-8	
+4-6	264-267	tik	r0q	tik	_	_	advmod	basic	4-7	
+4-7	268-272	ļoti	r0q	ļoti	_	_	advmod	basic	4-8	
+4-8	273-281	satrieca	vmnist130an	satriekt	_	_	root	basic	4-8	
+4-9	281-282	,	zc	,	_	_	punct	basic	4-11	
+4-10	283-285	ka	cs	ka	_	_	mark	basic	4-11	
+4-11	286-295	negribēju	vonist31say	negribēt	_	_	advcl	basic	4-8	
+4-12	296-299	iet	vmnn0ii000n	iet	_	_	xcomp	basic	4-11	
+4-13	300-303	ārā	r0p	ārā	_	_	advmod	basic	4-12	
+4-14	303-304	.	zs	.	_	_	punct	basic	4-8	
+
+#Text=Vienmēr sēdēju pirmajā rindā, jo tad man likās, ka pati esmu filmā, skatījos kā apmāta.
+5-1	306-313	Vienmēr	r0t	vienmēr	_	_	advmod	basic	5-2	
+5-2	314-320	sēdēju	vmnisi31san	sēdēt	_	_	root	basic	5-2	
+5-3	321-328	pirmajā	mosfsl	pirmā	_	_	amod	basic	5-4	
+5-4	329-334	rindā	ncfsl4	rinda	_	_	obl	basic	5-2	
+5-5	334-335	,	zc	,	_	_	punct	basic	5-9	
+5-6	336-338	jo	cs	jo	_	_	mark	basic	5-9	
+5-7	339-342	tad	r0t	tad	_	_	advmod	basic	5-9	
+5-8	343-346	man	pp10sdn	es	*[2]	*->2-2	obl	basic	5-9	
+5-9	347-352	likās	vmyisi130an	likties	_	_	advcl	basic	5-2	
+5-10	352-353	,	zc	,	_	_	punct	basic	5-13	
+5-11	354-356	ka	cs	ka	_	_	mark	basic	5-13	
+5-12	357-361	pati	pg0fsnn	pati	*[2]	*->2-3	nsubj	basic	5-13	
+5-13	362-366	esmu	vmnipii1san	būt	_	_	csubj	basic	5-9	
+5-14	367-372	filmā	ncfsl4	filma	_	_	obl	basic	5-13	
+5-15	372-373	,	zc	,	_	_	punct	basic	5-16	
+5-16	374-382	skatījos	vmyist31san	skatīties	_	_	conj	basic	5-2	
+5-17	383-385	kā	cs	kā	_	_	mark	basic	5-18	
+5-18	386-392	apmāta	vmnpdfsnpsnp	apmāt	_	_	acl	basic	5-16	
+5-19	392-393	.	zs	.	_	_	punct	basic	5-2	

@@ -1,0 +1,56 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Pērn pasākumā skolotāji rādīja leļļu teātri, bet šogad L. Ozoliņa pārvērtās par Biti, bet metodiķe Ina Libruka - par Bizbizmārīti.
+1-1	0-4	Pērn	r0t	pērn	_	_	_	_	advmod	basic	1-4	
+1-2	5-13	pasākumā	ncmsl1	pasākums	_	_	_	_	obl	basic	1-4	
+1-3	14-23	skolotāji	ncmpn1	skolotājs	_	_	_	_	nsubj	basic	1-4	
+1-4	24-30	rādīja	vmnist330an	rādīt	_	_	_	_	root	basic	1-4	
+1-5	31-36	leļļu	ncfpg5	lelle	_	_	_	_	nmod	basic	1-6	
+1-6	37-43	teātri	ncmsa2	teātris	_	_	_	_	obj	basic	1-4	
+1-7	43-44	,	zc	,	_	_	_	_	punct	basic	1-12	
+1-8	45-48	bet	cc	bet	_	_	_	_	cc	basic	1-12	
+1-9	49-54	šogad	r0t	šogad	_	_	_	_	advmod	basic	1-12	
+1-10	55-57	L.	yp	L.	person[1]	*[1]	_	_	nsubj	basic	1-12	
+1-11	58-65	Ozoliņa	npfsn4	Ozoliņa	person[1]	*[1]	_	_	flat:name	basic	1-10	
+1-12	66-75	pārvērtās	vmyisi130an	pārvērsties	_	_	_	_	conj	basic	1-4	
+1-13	76-79	par	spsa	par	_	_	_	_	case	basic	1-14	
+1-14	80-84	Biti	ncfsa5	bite	_	_	_	_	iobj	basic	1-12	
+1-15	84-85	,	zc	,	_	_	_	_	punct	basic	1-20	
+1-16	86-89	bet	cc	bet	_	_	_	_	cc	basic	1-20	
+1-17	90-98	metodiķe	ncfsn5	metodiķe	_	_	_	_	nmod	basic	1-18	
+1-18	99-102	Ina	npfsa4	Ina	person[2]	*[2]	_	_	nsubj	basic	1-20	
+1-19	103-110	Libruka	npfsa4	Libruka	person[2]	*[2]	_	_	flat:name	basic	1-18	
+1-20	111-112	-	zd	-	_	_	_	_	conj	basic	1-4	
+1-21	113-116	par	spsa	par	_	_	_	_	case	basic	1-22	
+1-22	117-129	Bizbizmārīti	ncfsa5	Bizbizmārīte	person	*	_	_	iobj	basic	1-20	
+1-23	129-130	.	zs	.	_	_	_	_	punct	basic	1-4	
+
+#Text=Pirmie svētki patikuši visai lielajai "Pasaciņas" saimei, tāpēc nolemts, ka to rīkošana būs vēl viena jauna tradīcija.
+2-1	132-138	Pirmie	mosmpn	pirmais	_	_	_	_	amod	basic	2-2	
+2-2	139-145	svētki	ncmdn1	svētki	_	_	*[1]	*->1-1	nsubj	basic	2-3	
+2-3	146-154	patikuši	vmnpdmpnasnp	patikt	_	_	_	_	root	basic	2-3	
+2-4	155-160	visai	pg0fsdn	visa	_	_	_	_	obl	basic	2-9	
+2-5	161-169	lielajai	affsdyp	liela	_	_	_	_	amod	basic	2-9	
+2-6	170-171	"	zq	"	organization[3]	*[3]	_	_	punct	basic	2-7	
+2-7	171-180	Pasaciņas	ncfsg4	pasaciņa	organization[3]	*[3]	_	_	nmod	basic	2-9	
+2-8	180-181	"	zq	"	organization[3]	*[3]	_	_	punct	basic	2-7	
+2-9	182-188	saimei	ncfsd5	saime	_	_	_	_	iobj	basic	2-3	
+2-10	188-189	,	zc	,	_	_	_	_	punct	basic	2-12	
+2-11	190-195	tāpēc	r0c	tāpēc	_	_	_	_	cc	basic	2-12	
+2-12	196-203	nolemts	vmnpdmsnpsnp	nolemt	_	_	_	_	conj	basic	2-3	
+2-13	203-204	,	zc	,	_	_	_	_	punct	basic	2-21	
+2-14	205-207	ka	cs	ka	_	_	_	_	mark	basic	2-21	
+2-15	208-210	to	pd0fpgn	tā	_	_	*[1]	*->1-2	det	basic	2-16	
+2-16	211-219	rīkošana	ncfsn4	rīkošana	_	_	_	_	nsubj	basic	2-21	
+2-17	220-223	būs	vcnifii30an	būt	_	_	_	_	cop	basic	2-21	
+2-18	224-227	vēl	r0t	vēl	_	_	_	_	advmod	basic	2-19	
+2-19	228-233	viena	mcsfsn	viena	_	_	_	_	nummod	basic	2-21	
+2-20	234-239	jauna	affsnnp	jauna	_	_	_	_	amod	basic	2-21	
+2-21	240-249	tradīcija	ncfsn4	tradīcija	_	_	_	_	csubj:pass	basic	2-12	
+2-22	249-250	.	zs	.	_	_	_	_	punct	basic	2-3	

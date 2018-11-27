@@ -1,0 +1,79 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Pāvils satvēra viņu pie pleciem un rāva.
+1-1	0-6	Pāvils	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Pāvils	person	*	_	_	nsubj|nsubj	basic|enhanced	1-2|1-2	
+1-2	7-14	satvēra	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	satvert	_	_	_	_	root|root	basic|enhanced	1-2|1-2	
+1-3	15-19	viņu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsan	viņa	_	_	*[2]	*->2-1	obj|obj	basic|enhanced	1-2|1-2	
+1-4	20-23	pie	_	_	_	_	_	_	_	_	_	_	_	_	sppd	pie	_	_	_	_	case|case	basic|enhanced	1-5|1-5	
+1-5	24-31	pleciem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	plecs	_	_	_	_	obl|obl	basic|enhanced	1-2|1-2	
+1-6	32-34	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	1-7|1-7	
+1-7	35-39	rāva	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	raut	_	_	_	_	conj|conj	basic|enhanced	1-2|1-2	
+1-8	39-40	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-2|1-2	
+
+#Text=Viņa sabijās un pārsteigumā klusi iesaucās, kamēr viņai pielēca, ka Pāvils grib nogāzt viņu zemē.
+2-1	42-46	Viņa	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsnn	viņa	_	_	*[2]	*->2-2	nsubj|nsubj	basic|enhanced	2-2|2-2	
+2-2	47-54	sabijās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi130an	sabīties	_	_	_	_	root|root	basic|enhanced	2-2|2-2	
+2-3	55-57	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	2-6|2-6	
+2-4	58-69	pārsteigumā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	pārsteigums	_	_	_	_	acl|acl	basic|enhanced	2-6|2-6	
+2-5	70-75	klusi	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	klusi	_	_	_	_	advmod|advmod	basic|enhanced	2-6|2-6	
+2-6	76-84	iesaucās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi130an	iesaukties	_	_	_	_	conj|conj	basic|enhanced	2-2|2-2	
+2-7	84-85	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-10|2-10	
+2-8	86-91	kamēr	_	_	_	_	_	_	_	_	_	_	_	_	r0t	kamēr	_	_	_	_	advmod|advmod	basic|enhanced	2-10|2-10	
+2-9	92-97	viņai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsdn	viņa	_	_	*[2]	*->2-3	obl|obl	basic|enhanced	2-10|2-10	
+2-10	98-105	pielēca	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi130an	pielēkt	_	_	_	_	advcl|advcl	basic|enhanced	2-2|2-2	
+2-11	105-106	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-14|2-14	
+2-12	107-109	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark|mark	basic|enhanced	2-14|2-14	
+2-13	110-116	Pāvils	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Pāvils	person	*	_	_	nsubj|nsubj	basic|enhanced	2-14|2-14	
+2-14	117-121	grib	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vonipt330an	gribēt	_	_	_	_	ccomp|ccomp	basic|enhanced	2-10|2-10	
+2-15	122-128	nogāzt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	nogāzt	_	_	_	_	xcomp|xcomp	basic|enhanced	2-14|2-14	
+2-16	129-133	viņu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Prs	3	*	pp3mpgn	viņš	_	_	*[2]	*->2-4	iobj|iobj	basic|enhanced	2-15|2-15	
+2-17	134-138	zemē	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	zeme	_	_	_	_	acl|acl	basic|enhanced	2-15|2-15	
+2-18	138-139	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	2-2|2-2	
+
+#Text=Labu brīdi viņi klusēdami cīnījās, mati sakrita ap seju, kājas slīdēja uz zaļganā ledus spoguļa, zvaigznes ziņkārīgi nolūkojās no augstumiem un arī no saviem atspulgiem zem viņu kājām.
+3-1	141-145	Labu	Masc	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsanp	labs	_	_	_	_	amod|amod	basic|enhanced	3-2|3-2	
+3-2	146-151	brīdi	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	brīdis	_	_	_	_	obl|obl	basic|enhanced	3-5|3-5	
+3-3	152-156	viņi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Prs	3	*	pp3mpnn	viņš	_	_	*[3]	*->3-1	nsubj|nsubj	basic|enhanced	3-5|3-5	
+3-4	157-166	klusēdami	Masc	Plur	Nom	*	*	*	*	Pass	*	Case=Nom\|Gender=Masc\|Number=Plur\|VerbForm=Conv\|Voice=Pass	*	*	vmnppmpnap00	klusēt	_	_	_	_	acl|acl	basic|enhanced	3-5|3-5	
+3-5	167-174	cīnījās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi330an	cīnīties	_	_	_	_	root|root	basic|enhanced	3-5|3-5	
+3-6	174-175	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	3-8|3-8	
+3-7	176-180	mati	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	mats	_	_	_	_	nsubj|nsubj	basic|enhanced	3-8|3-8	
+3-8	181-188	sakrita	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi130an	sakrist	_	_	_	_	conj|conj	basic|enhanced	3-5|3-5	
+3-9	189-191	ap	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ap	_	_	_	_	case|case	basic|enhanced	3-10|3-10	
+3-10	192-196	seju	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	seja	_	_	_	_	obl|obl	basic|enhanced	3-8|3-8	
+3-11	196-197	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	3-13|3-13	
+3-12	198-203	kājas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	kāja	_	_	_	_	nsubj|nsubj	basic|enhanced	3-13|3-13	
+3-13	204-211	slīdēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi330an	slīdēt	_	_	_	_	conj|conj	basic|enhanced	3-5|3-5	
+3-14	212-214	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsg	uz	_	_	_	_	case|case	basic|enhanced	3-17|3-17	
+3-15	215-222	zaļganā	Masc	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsgyp	zaļgans	_	_	_	_	amod|amod	basic|enhanced	3-17|3-17	
+3-16	223-228	ledus	Masc	Coll	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Coll	*	*	ncmvg3	ledus	_	_	_	_	nmod|nmod	basic|enhanced	3-17|3-17	
+3-17	229-236	spoguļa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	spogulis	_	_	_	_	obl|obl	basic|enhanced	3-13|3-13	
+3-18	236-237	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	3-21|3-21	
+3-19	238-247	zvaigznes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	zvaigzne	_	_	*[1]	*->1-1	nsubj|nsubj	basic|enhanced	3-21|3-21	
+3-20	248-257	ziņkārīgi	_	_	_	_	_	_	_	_	_	_	_	_	r0m	ziņkārīgi	_	_	_	_	advmod|advmod	basic|enhanced	3-21|3-21	
+3-21	258-267	nolūkojās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi230an	nolūkoties	_	_	_	_	conj|conj	basic|enhanced	3-5|3-5	
+3-22	268-270	no	_	_	_	_	_	_	_	_	_	_	_	_	sppd	no	_	_	_	_	case|case	basic|enhanced	3-23|3-23	
+3-23	271-281	augstumiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	augstums	_	_	_	_	obl|obl	basic|enhanced	3-21|3-21	
+3-24	282-284	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	3-28|3-28	
+3-25	285-288	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse|discourse	basic|enhanced	3-28|3-28	
+3-26	289-291	no	_	_	_	_	_	_	_	_	_	_	_	_	sppd	no	_	_	_	_	case|case	basic|enhanced	3-28|3-28	
+3-27	292-298	saviem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|Poss=Yes\|PronType=Prs	*	*	ps0mpdn	savs	_	_	*[1]	*->1-2	det|det	basic|enhanced	3-28|3-28	
+3-28	299-309	atspulgiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	atspulgs	_	_	_	_	conj|conj	basic|enhanced	3-23|3-23	
+3-29	310-313	zem	_	_	_	_	_	_	_	_	_	_	_	_	spsg	zem	_	_	_	_	case|case	basic|enhanced	3-31|3-31	
+3-30	314-318	viņu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Prs	3	*	pp3mpgn	viņš	_	_	*[3]	*->3-2	det|det	basic|enhanced	3-31|3-31	
+3-31	319-324	kājām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	kāja	_	_	_	_	nmod|nmod	basic|enhanced	3-28|3-28	
+3-32	324-325	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	3-5|3-5	
+
+#Text=Odrija rēja kā traka.
+4-1	327-333	Odrija	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Odrija	person	*	_	_	nsubj|nsubj	basic|enhanced	4-2|4-2	
+4-2	334-338	rēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi130an	riet	_	_	_	_	root|root	basic|enhanced	4-2|4-2	
+4-3	339-341	kā	_	_	_	_	_	_	_	_	_	_	_	_	cs	kā	_	_	_	_	mark|mark	basic|enhanced	4-4|4-4	
+4-4	342-347	traka	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	traks	_	_	_	_	obl|obl	basic|enhanced	4-2|4-2	
+4-5	347-348	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	4-2|4-2	

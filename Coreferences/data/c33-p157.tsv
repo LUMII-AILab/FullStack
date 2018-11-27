@@ -1,0 +1,128 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Taču nedēļas vidū pēkšņi dēls man piezvanīja un paziņoja, ka braukšot uz Rīgu, jo esot nokritis un pamatīgi sadauzījis labo roku.
+1-1	0-4	Taču	_	_	_	_	_	_	_	_	_	_	_	_	cc	taču	_	_	_	_	dep|dep	basic|enhanced	1-7|1-7	
+1-2	5-12	nedēļas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	nedēļa	_	_	_	_	nmod|nmod	basic|enhanced	1-3|1-3	
+1-3	13-17	vidū	Masc	Coll	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Coll	*	*	ncmvl3	vidus	_	_	_	_	obl|obl	basic|enhanced	1-7|1-7	
+1-4	18-24	pēkšņi	_	_	_	_	_	_	_	_	_	_	_	_	r0m	pēkšņi	_	_	_	_	advmod|advmod	basic|enhanced	1-7|1-7	
+1-5	25-29	dēls	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	dēls	_	_	*[1]	*->1-1	nsubj|nsubj	basic|enhanced	1-7|1-7	
+1-6	30-33	man	*	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10sdn	es	_	_	*[3]	*->3-1	iobj|iobj	basic|enhanced	1-7|1-7	
+1-7	34-44	piezvanīja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi330an	piezvanīt	_	_	_	_	root|root	basic|enhanced	1-7|1-7	
+1-8	45-47	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	1-9|1-9	
+1-9	48-56	paziņoja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist230an	paziņot	_	_	_	_	conj|conj	basic|enhanced	1-7|1-7	
+1-10	56-57	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-12|1-12	
+1-11	58-60	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark|mark	basic|enhanced	1-12|1-12	
+1-12	61-69	braukšot	*	*	*	*	*	Fut	Qot	Act	*	Evident=Nfh\|Mood=Qot\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	*	vmnrft100an	braukt	_	_	_	_	ccomp|ccomp	basic|enhanced	1-9|1-9	
+1-13	70-72	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsa	uz	_	_	_	_	case|case	basic|enhanced	1-14|1-14	
+1-14	73-77	Rīgu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	Rīga	GPE[1]|GPE[2]	https://en.wikipedia.org/wiki/Riga[1]|*[2]	_	_	obl|obl	basic|enhanced	1-12|1-12	
+1-15	77-78	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-18|1-18	
+1-16	79-81	jo	_	_	_	_	_	_	_	_	_	_	_	_	cs	jo	_	_	_	_	mark|mark	basic|enhanced	1-18|1-18	
+1-17	82-86	esot	*	*	*	*	*	Pres	Qot	Act	*	Evident=Nfh\|Mood=Qot\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	*	vcnrpii00an	būt	_	_	_	_	aux|aux	basic|enhanced	1-18|1-18	
+1-18	87-95	nokritis	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnasnp	nokrist	_	_	_	_	advcl|advcl	basic|enhanced	1-12|1-12	
+1-19	96-98	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	1-21|1-21	
+1-20	99-107	pamatīgi	_	_	_	_	_	_	_	_	_	_	_	_	r0m	pamatīgi	_	_	_	_	advmod|advmod	basic|enhanced	1-21|1-21	
+1-21	108-118	sadauzījis	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnasnp	sadauzīt	_	_	_	_	conj|conj	basic|enhanced	1-18|1-18	
+1-22	119-123	labo	Fem	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsayp	laba	_	_	_	_	amod|amod	basic|enhanced	1-23|1-23	
+1-23	124-128	roku	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	roka	_	_	_	_	obj|obj	basic|enhanced	1-21|1-21	
+1-24	128-129	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-7|1-7	
+
+#Text=Es uzreiz piezvanīju meistariem, jo domāju, ka puisis blefo, lai tikai tiktu atpakaļ uz Rīgu.
+2-1	131-133	Es	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10snn	es	_	_	*[3]	*->3-2	nsubj|nsubj	basic|enhanced	2-3|2-3	
+2-2	134-140	uzreiz	_	_	_	_	_	_	_	_	_	_	_	_	r0t	uzreiz	_	_	_	_	advmod|advmod	basic|enhanced	2-3|2-3	
+2-3	141-151	piezvanīju	*	Sing	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	1	*	vmnisi31san	piezvanīt	_	_	_	_	root|root	basic|enhanced	2-3|2-3	
+2-4	152-162	meistariem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	meistars	_	_	*[2]	*->2-1	iobj|iobj	basic|enhanced	2-3|2-3	
+2-5	162-163	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-7|2-7	
+2-6	164-166	jo	_	_	_	_	_	_	_	_	_	_	_	_	cs	jo	_	_	_	_	mark|mark	basic|enhanced	2-7|2-7	
+2-7	167-173	domāju	*	Sing	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	1	*	vmnipt21san	domāt	_	_	_	_	advcl|advcl	basic|enhanced	2-3|2-3	
+2-8	173-174	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-11|2-11	
+2-9	175-177	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark|mark	basic|enhanced	2-11|2-11	
+2-10	178-184	puisis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	puisis	_	_	*[1]	*->1-2	nsubj|nsubj	basic|enhanced	2-11|2-11	
+2-11	185-190	blefo	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipi230an	blefot	_	_	_	_	ccomp|ccomp	basic|enhanced	2-7|2-7	
+2-12	190-191	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-15|2-15	
+2-13	192-195	lai	_	_	_	_	_	_	_	_	_	_	_	_	cs	lai	_	_	_	_	mark|mark	basic|enhanced	2-15|2-15	
+2-14	196-201	tikai	_	_	_	_	_	_	_	_	_	_	_	_	q	tikai	_	_	_	_	discourse|discourse	basic|enhanced	2-15|2-15	
+2-15	202-207	tiktu	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vmnc0i100an	tikt	_	_	_	_	advcl|advcl	basic|enhanced	2-11|2-11	
+2-16	208-215	atpakaļ	_	_	_	_	_	_	_	_	_	_	_	_	r0p	atpakaļ	_	_	_	_	advmod|advmod	basic|enhanced	2-15|2-15	
+2-17	216-218	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsa	uz	_	_	_	_	case|case	basic|enhanced	2-18|2-18	
+2-18	219-223	Rīgu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	Rīga	GPE[3]|GPE[4]	https://en.wikipedia.org/wiki/Riga[3]|*[4]	_	_	obl|obl	basic|enhanced	2-15|2-15	
+2-19	223-224	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	2-3|2-3	
+
+#Text=Elmārs pastāstīja, ka patiešām zēnam neesot paveicies, roka esot diezgan nopietni traumēta (lauzta gan neesot, tik daudz viņi saprotot), sadauzīts arī plecs un mugura.
+3-1	226-232	Elmārs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Elmārs	person	*	_	_	nsubj|nsubj	basic|enhanced	3-2|3-2	
+3-2	233-243	pastāstīja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	pastāstīt	_	_	_	_	root|root	basic|enhanced	3-2|3-2	
+3-3	243-244	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	3-8|3-8	
+3-4	245-247	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark|mark	basic|enhanced	3-8|3-8	
+3-5	248-256	patiešām	_	_	_	_	_	_	_	_	_	_	_	_	q	patiešām	_	_	_	_	discourse|discourse	basic|enhanced	3-8|3-8	
+3-6	257-262	zēnam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	zēns	_	_	*[1]	*->1-3	obl|obl	basic|enhanced	3-8|3-8	
+3-7	263-269	neesot	*	*	*	*	*	Pres	Qot	Act	*	Evident=Nfh\|Mood=Qot\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	*	vcnrpii00ay	nebūt	_	_	_	_	aux|aux	basic|enhanced	3-8|3-8	
+3-8	270-279	paveicies	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	Perf	vmypdmsnasnp	paveikties	_	_	_	_	ccomp|ccomp	basic|enhanced	3-2|3-2	
+3-9	279-280	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	3-14|3-14	
+3-10	281-285	roka	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	roka	_	_	_	_	nsubj:pass|nsubj	basic|enhanced	3-14|3-14	
+3-11	286-290	esot	*	*	*	*	*	Pres	Qot	Act	*	Evident=Nfh\|Mood=Qot\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	*	vcnrpii00an	būt	_	_	_	_	aux|aux	basic|enhanced	3-14|3-14	
+3-12	291-298	diezgan	_	_	_	_	_	_	_	_	_	_	_	_	r0q	diezgan	_	_	_	_	advmod|advmod	basic|enhanced	3-13|3-13	
+3-13	299-307	nopietni	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	nopietni	_	_	_	_	advmod|advmod	basic|enhanced	3-14|3-14	
+3-14	308-316	traumēta	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnpsnp	traumēt	_	_	_	_	conj|conj	basic|enhanced	3-8|3-8	
+3-15	317-318	(	_	_	_	_	_	_	_	_	_	_	_	_	zb	(	_	_	_	_	punct|punct	basic|enhanced	3-16|3-16	
+3-16	318-324	lauzta	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnpsnp	lauzt	_	_	_	_	parataxis|parataxis	basic|enhanced	3-14|3-14	
+3-17	325-328	gan	_	_	_	_	_	_	_	_	_	_	_	_	q	gan	_	_	_	_	discourse|discourse	basic|enhanced	3-18|3-18	
+3-18	329-335	neesot	*	*	*	*	*	Pres	Qot	Act	*	Evident=Nfh\|Mood=Qot\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	*	vcnrpii00ay	nebūt	_	_	_	_	aux|aux	basic|enhanced	3-16|3-16	
+3-19	335-336	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	3-23|3-23	
+3-20	337-340	tik	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0q	tik	_	_	_	_	advmod|advmod	basic|enhanced	3-21|3-21	
+3-21	341-346	daudz	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpq	daudz	_	_	_	_	advmod|advmod	basic|enhanced	3-23|3-23	
+3-22	347-351	viņi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Prs	3	*	pp3mpnn	viņš	_	_	*[2]	*->2-2	nsubj|nsubj	basic|enhanced	3-23|3-23	
+3-23	352-360	saprotot	*	*	*	*	*	Pres	Qot	Act	*	Evident=Nfh\|Mood=Qot\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	*	vmnrpt100ay	saprast	_	_	_	_	conj|conj	basic|enhanced	3-16|3-16	
+3-24	360-361	)	_	_	_	_	_	_	_	_	_	_	_	_	zb	)	_	_	_	_	punct|punct	basic|enhanced	3-16|3-16	
+3-25	361-362	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	3-26|3-26	
+3-26	363-372	sadauzīts	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnp	sadauzīt	_	_	_	_	conj|conj	basic|enhanced	3-8|3-8	
+3-27	373-376	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse|discourse	basic|enhanced	3-28|3-28	
+3-28	377-382	plecs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	plecs	_	_	_	_	nsubj:pass|nsubj	basic|enhanced	3-26|3-26	
+3-29	383-385	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	3-30|3-30	
+3-30	386-392	mugura	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	mugura	_	_	_	_	conj|conj	basic|enhanced	3-28|3-28	
+3-31	392-393	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	3-2|3-2	
+
+#Text=Pašlaik viņš vairs blokus nestiepjot, bet ar kreiso roku mēģinot vēl krāsot ar antiseptiķi jumta spāres.
+4-1	395-402	Pašlaik	_	_	_	_	_	_	_	_	_	_	_	_	r0t	pašlaik	_	_	_	_	advmod|advmod	basic|enhanced	4-5|4-5	
+4-2	403-407	viņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msnn	viņš	_	_	*[1]	*->1-4	nsubj|nsubj	basic|enhanced	4-5|4-5	
+4-3	408-413	vairs	_	_	_	_	_	_	_	_	_	_	_	_	r0t	vairs	_	_	_	_	advmod|advmod	basic|enhanced	4-5|4-5	
+4-4	414-420	blokus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	bloks	_	_	_	_	obj|obj	basic|enhanced	4-5|4-5	
+4-5	421-431	nestiepjot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000	nestiept	_	_	_	_	root|root	basic|enhanced	4-5|4-5	
+4-6	431-432	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	4-11|4-11	
+4-7	433-436	bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	_	_	cc|cc	basic|enhanced	4-11|4-11	
+4-8	437-439	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case|case	basic|enhanced	4-10|4-10	
+4-9	440-446	kreiso	Fem	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsayp	kreisa	_	_	_	_	amod|amod	basic|enhanced	4-10|4-10	
+4-10	447-451	roku	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	roka	_	_	_	_	iobj|iobj	basic|enhanced	4-13|4-13	
+4-11	452-459	mēģinot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000	mēģināt	_	_	_	_	conj|conj	basic|enhanced	4-5|4-5	
+4-12	460-463	vēl	_	_	_	_	_	_	_	_	_	_	_	_	r0t	vēl	_	_	_	_	advmod|advmod	basic|enhanced	4-13|4-13	
+4-13	464-470	krāsot	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	krāsot	_	_	_	_	xcomp|xcomp	basic|enhanced	4-11|4-11	
+4-14	471-473	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case|case	basic|enhanced	4-15|4-15	
+4-15	474-485	antiseptiķi	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	antiseptiķis	_	_	_	_	iobj|iobj	basic|enhanced	4-13|4-13	
+4-16	486-491	jumta	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	jumts	_	_	_	_	nmod|nmod	basic|enhanced	4-17|4-17	
+4-17	492-498	spāres	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	spāre	_	_	_	_	iobj|iobj	basic|enhanced	4-13|4-13	
+4-18	498-499	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	4-5|4-5	
+
+#Text=Tā izvilkšot vēl to stundu līdz darba dienas beigām, un tad aizvedīšot manu dēlu uz vilcienu.
+5-1	501-503	Tā	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0m	tā	_	_	_	_	advmod|advmod	basic|enhanced	5-2|5-2	
+5-2	504-513	izvilkšot	*	*	*	*	*	Fut	Qot	Act	*	Evident=Nfh\|Mood=Qot\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	*	vmnrft100an	izvilkt	_	_	_	_	root|root	basic|enhanced	5-2|5-2	
+5-3	514-517	vēl	_	_	_	_	_	_	_	_	_	_	_	_	r0t	vēl	_	_	_	_	advmod|advmod	basic|enhanced	5-4|5-4	
+5-4	518-520	to	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpgn	tas	_	_	_	_	det|det	basic|enhanced	5-5|5-5	
+5-5	521-527	stundu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	stunda	_	_	_	_	obl|obl	basic|enhanced	5-2|5-2	
+5-6	528-532	līdz	_	_	_	_	_	_	_	_	_	_	_	_	spsd	līdz	_	_	_	_	case|case	basic|enhanced	5-9|5-9	
+5-7	533-538	darba	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	darbs	_	_	_	_	nmod|nmod	basic|enhanced	5-8|5-8	
+5-8	539-545	dienas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	diena	_	_	_	_	nmod|nmod	basic|enhanced	5-9|5-9	
+5-9	546-552	beigām	Fem	Ptan	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Ptan	*	*	ncfdd4	beigas	_	_	_	_	nmod|nmod	basic|enhanced	5-5|5-5	
+5-10	552-553	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	5-13|5-13	
+5-11	554-556	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	5-13|5-13	
+5-12	557-560	tad	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	tad	_	_	_	_	advmod|advmod	basic|enhanced	5-13|5-13	
+5-13	561-571	aizvedīšot	*	*	*	*	*	Fut	Qot	Act	*	Evident=Nfh\|Mood=Qot\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	*	vmnrft100an	aizvest	_	_	_	_	conj|conj	basic|enhanced	5-2|5-2	
+5-14	572-576	manu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0msan	mans	_	_	*[3]	*->3-3	det|det	basic|enhanced	5-15|5-15	
+5-15	577-581	dēlu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	dēls	_	_	*[1]	*->1-5	obj|obj	basic|enhanced	5-13|5-13	
+5-16	582-584	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsa	uz	_	_	_	_	case|case	basic|enhanced	5-17|5-17	
+5-17	585-593	vilcienu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	vilciens	_	_	_	_	obl|obl	basic|enhanced	5-15|5-15	
+5-18	593-594	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	5-2|5-2	

@@ -1,0 +1,74 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Taču tās ir labas ziņas uzņēmējiem, kuriem vairs nav jāpieņem darbā tie cilvēki, kuri ir pieejami, bet kuri, gadījumā ja parādās vakantās vietas, var sākt izvēlēties labākos kandidātus.
+1-1	0-4	Taču	cc	taču	_	_	cc	basic	1-5	
+1-2	5-8	tās	pd0fpnn	tā	_	_	nsubj	basic	1-5	
+1-3	9-11	ir	vcnipii30an	būt	_	_	cop	basic	1-5	
+1-4	12-17	labas	affpnnp	laba	_	_	amod	basic	1-5	
+1-5	18-23	ziņas	ncfpn4	ziņa	_	_	root	basic	1-5	
+1-6	24-34	uzņēmējiem	ncmpd1	uzņēmējs	*[1]	*->1-1	iobj	basic	1-5	
+1-7	34-35	,	zc	,	_	_	punct	basic	1-11	
+1-8	36-42	kuriem	pr0mpdn	kurš	*[1]	*->1-2	nsubj	basic	1-11	
+1-9	43-48	vairs	r0t	vairs	_	_	advmod	basic	1-11	
+1-10	49-52	nav	vcnipii30ay	nebūt	_	_	aux	basic	1-11	
+1-11	53-61	jāpieņem	vmnd0t100an	pieņemt	_	_	acl	basic	1-6	
+1-12	62-67	darbā	ncmsl1	darbs	_	_	obl	basic	1-11	
+1-13	68-71	tie	pd0mpnn	tas	_	_	det	basic	1-14	
+1-14	72-79	cilvēki	ncmpn1	cilvēks	*[2]	*->2-1	obj	basic	1-11	
+1-15	79-80	,	zc	,	_	_	punct	basic	1-18	
+1-16	81-85	kuri	pr0mpnn	kurš	*[2]	*->2-2	nsubj	basic	1-18	
+1-17	86-88	ir	vcnipii30an	būt	_	_	cop	basic	1-18	
+1-18	89-97	pieejami	armpnnp	pieejams	_	_	acl	basic	1-14	
+1-19	97-98	,	zc	,	_	_	punct	basic	1-18	
+1-20	99-102	bet	cc	bet	_	_	cc	basic	1-29	
+1-21	103-107	kuri	pr0mpnn	kurš	*[2]	*->2-3	nsubj	basic	1-29	
+1-22	107-108	,	zc	,	_	_	punct	basic	1-25	
+1-23	109-117	gadījumā	ncmsl1	gadījums	_	_	obl	basic	1-25	
+1-24	118-120	ja	cs	ja	_	_	mark	basic	1-25	
+1-25	121-128	parādās	vmyipi330an	parādīties	_	_	advcl	basic	1-29	
+1-26	129-137	vakantās	arfpnyp	vakanta	_	_	amod	basic	1-27	
+1-27	138-144	vietas	ncfpn4	vieta	_	_	nsubj	basic	1-25	
+1-28	144-145	,	zc	,	_	_	punct	basic	1-25	
+1-29	146-149	var	vonipt330an	varēt	_	_	conj	basic	1-11	
+1-30	150-154	sākt	vpnn0t1000n	sākt	_	_	xcomp	basic	1-29	
+1-31	155-165	izvēlēties	vmyn0i3000n	izvēlēties	_	_	xcomp	basic	1-30	
+1-32	166-173	labākos	afmpayc	labs	_	_	amod	basic	1-33	
+1-33	174-184	kandidātus	ncmpa1	kandidāts	_	_	obj	basic	1-31	
+1-34	184-185	.	zs	.	_	_	punct	basic	1-5	
+
+#Text=Arī mūsu apkopotā informācija pierāda, ka darbinieki pret savu darba devēju un algas maksātāju ir kļuvuši lojālāki un beidzies laiks, kad strādājošo mainība bija mērāma desmitos procentu.
+2-1	187-190	Arī	q	arī	_	_	discourse	basic	2-4	
+2-2	191-195	mūsu	pp10pgn	mēs	_	_	det	basic	2-3	
+2-3	196-204	apkopotā	vmnpdfsnpsyp	apkopot	_	_	amod	basic	2-4	
+2-4	205-216	informācija	ncfsn4	informācija	_	_	nsubj	basic	2-5	
+2-5	217-224	pierāda	vmnipt330an	pierādīt	_	_	root	basic	2-5	
+2-6	224-225	,	zc	,	_	_	punct	basic	2-17	
+2-7	226-228	ka	cs	ka	_	_	mark	basic	2-17	
+2-8	229-239	darbinieki	ncmpn1	darbinieks	*[3]	*->3-1	nsubj	basic	2-17	
+2-9	240-244	pret	spsa	pret	_	_	case	basic	2-12	
+2-10	245-249	savu	ps0fsan	sava	*[3]	*->3-2	det	basic	2-12	
+2-11	250-255	darba	ncmsg1	darbs	_	_	nmod	basic	2-12	
+2-12	256-262	devēju	ncmsa1	devējs	_	_	iobj	basic	2-17	
+2-13	263-265	un	cc	un	_	_	cc	basic	2-15	
+2-14	266-271	algas	ncfsg4	alga	_	_	nmod	basic	2-15	
+2-15	272-281	maksātāju	ncmsa1	maksātājs	_	_	conj	basic	2-12	
+2-16	282-284	ir	vcnipii30an	būt	_	_	aux	basic	2-17	
+2-17	285-292	kļuvuši	vtnpdmpnasnp	kļūt	_	_	ccomp	basic	2-5	
+2-18	293-301	lojālāki	armpnnc	lojāls	_	_	xcomp	basic	2-17	
+2-19	302-304	un	cc	un	_	_	cc	basic	2-20	
+2-20	305-313	beidzies	vmypdmsnasnp	beigties	_	_	conj	basic	2-17	
+2-21	314-319	laiks	ncmsn1	laiks	_	_	nsubj	basic	2-20	
+2-22	319-320	,	zc	,	_	_	punct	basic	2-27	
+2-23	321-324	kad	r0t	kad	_	_	advmod	basic	2-27	
+2-24	325-335	strādājošo	vmnpdmpgapyp	strādāt	_	_	amod	basic	2-25	
+2-25	336-343	mainība	ncfsn4	mainība	_	_	nsubj	basic	2-27	
+2-26	344-348	bija	vcnisii30an	būt	_	_	aux	basic	2-27	
+2-27	349-355	mērāma	vmnpdfsnppnp	mērīt	_	_	acl	basic	2-21	
+2-28	356-364	desmitos	ncmpl1	desmits	_	_	obl	basic	2-27	
+2-29	365-373	procentu	ncmsa1	procents	_	_	nmod	basic	2-28	
+2-30	373-374	.	zs	.	_	_	punct	basic	2-5	

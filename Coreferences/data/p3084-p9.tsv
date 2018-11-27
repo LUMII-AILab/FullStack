@@ -1,0 +1,116 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Dailes teātra aktieris Ģirts Ķesteris ir kā labs vīns – jo ilgāk tas gatavojas, jo izcilāks un gardāks top!
+1-1	0-6	Dailes	ncfsg5	daile	organization[1]	https://en.wikipedia.org/wiki/Dailes\_Theatre[1]	*[6]	*->6-1	nmod	basic	1-2	
+1-2	7-13	teātra	ncmsg2	teātris	organization[1]	https://en.wikipedia.org/wiki/Dailes\_Theatre[1]	*[6]	*->6-1	nmod	basic	1-3	
+1-3	14-22	aktieris	ncmsn2	aktieris	_	_	*[6]	*->6-1	nmod	basic	1-4	
+1-4	23-28	Ģirts	npmsn1	Ģirts	person[2]	https://en.wikipedia.org/wiki/Ģirts\_Ķesteris[2]	*[6]	*->6-2	nsubj	basic	1-9	
+1-5	29-37	Ķesteris	npmsn2	ķesteris	person[2]	https://en.wikipedia.org/wiki/Ģirts\_Ķesteris[2]	*[6]	*->6-2	flat:name	basic	1-4	
+1-6	38-40	ir	vcnipii30an	būt	_	_	_	_	cop	basic	1-9	
+1-7	41-43	kā	cs	kā	_	_	_	_	discourse	basic	1-9	
+1-8	44-48	labs	afmsnnp	labs	_	_	_	_	amod	basic	1-9	
+1-9	49-53	vīns	ncmsn1	vīns	_	_	*[5]	*->5-1	root	basic	1-9	
+1-10	54-55	–	zd	–	_	_	_	_	punct	basic	1-20	
+1-11	56-58	jo	cs	jo	_	_	_	_	mark	basic	1-14	
+1-12	59-64	ilgāk	rct	ilgi	_	_	_	_	advmod	basic	1-14	
+1-13	65-68	tas	pd0msnn	tas	_	_	*[5]	*->5-2	nsubj	basic	1-14	
+1-14	69-78	gatavojas	vmyipi230an	gatavoties	_	_	_	_	advcl	basic	1-20	
+1-15	78-79	,	zc	,	_	_	_	_	punct	basic	1-14	
+1-16	80-82	jo	cs	jo	_	_	_	_	mark	basic	1-20	
+1-17	83-91	izcilāks	afmsnnc	izcils	_	_	_	_	xcomp	basic	1-20	
+1-18	92-94	un	cc	un	_	_	_	_	cc	basic	1-19	
+1-19	95-102	gardāks	afmsnnc	gards	_	_	_	_	conj	basic	1-17	
+1-20	103-106	top	vtnipi130an	tapt	_	_	_	_	conj	basic	1-9	
+1-21	106-107	!	zs	!	_	_	_	_	punct	basic	1-9	
+
+#Text=Viņa skatuves talants ir neapstrīdams, kā arī fiziskā forma četrdesmit četru gadu vecumā ir pat citu vīriešu apskaužama.
+2-1	109-113	Viņa	pp3msgn	viņš	_	_	*[6]	*->6-3	det	basic	2-3	
+2-2	114-122	skatuves	ncfsg5	skatuve	_	_	_	_	nmod	basic	2-3	
+2-3	123-130	talants	ncmsn1	talants	_	_	_	_	nsubj	basic	2-5	
+2-4	131-133	ir	vcnipii30an	būt	_	_	_	_	cop	basic	2-5	
+2-5	134-146	neapstrīdams	armsnnp	neapstrīdams	_	_	_	_	root	basic	2-5	
+2-6	146-147	,	zc	,	_	_	_	_	punct	basic	2-19	
+2-7	148-150	kā	cs	kā	_	_	_	_	cc	basic	2-19	
+2-8	151-154	arī	q	arī	_	_	_	_	discourse	basic	2-7	
+2-9	155-162	fiziskā	arfsnyp	fiziska	_	_	_	_	amod	basic	2-10	
+2-10	163-168	forma	ncfsn4	forma	_	_	_	_	nsubj	basic	2-19	
+2-11	169-179	četrdesmit	mcc0p0	četrdesmit	_	_	_	_	compound	basic	2-12	
+2-12	180-185	četru	mcsmpg	četri	_	_	_	_	nummod	basic	2-13	
+2-13	186-190	gadu	ncmpg1	gads	_	_	_	_	nmod	basic	2-14	
+2-14	191-197	vecumā	ncmsl1	vecums	_	_	_	_	acl	basic	2-10	
+2-15	198-200	ir	vcnipii30an	būt	_	_	_	_	aux	basic	2-19	
+2-16	201-204	pat	q	pat	_	_	_	_	discourse	basic	2-18	
+2-17	205-209	citu	pi0mpgn	cits	_	_	_	_	det	basic	2-18	
+2-18	210-217	vīriešu	ncmpg2	vīrietis	_	_	_	_	nmod	basic	2-19	
+2-19	218-228	apskaužama	vmnpdfsnppnp	apskaust	_	_	_	_	conj	basic	2-5	
+2-20	228-229	.	zs	.	_	_	_	_	punct	basic	2-5	
+
+#Text=Šīs sezonas teātra gardēžiem, kuru favorīts ir Ķesteris, noteikti jānoskatās Dailes teātra izrādes “Psihs” un “Nekrofils”.
+3-1	231-234	Šīs	pd0fsgn	šī	_	_	_	_	det	basic	3-2	
+3-2	235-242	sezonas	ncfsg4	sezona	_	_	_	_	nmod	basic	3-4	
+3-3	243-249	teātra	ncmsg2	teātris	_	_	_	_	nmod	basic	3-4	
+3-4	250-259	gardēžiem	ncmpd2	gardēdis	_	_	*[1]	*->1-1	nsubj	basic	3-12	
+3-5	259-260	,	zc	,	_	_	_	_	punct	basic	3-7	
+3-6	261-265	kuru	pr0mpgn	kurš	_	_	*[1]	*->1-2	det	basic	3-7	
+3-7	266-274	favorīts	ncmsn1	favorīts	_	_	_	_	acl	basic	3-4	
+3-8	275-277	ir	vcnipii30an	būt	_	_	_	_	cop	basic	3-7	
+3-9	278-286	Ķesteris	npmsn2	ķesteris	_	_	*[6]	*->6-4	nsubj	basic	3-7	
+3-10	286-287	,	zc	,	_	_	_	_	punct	basic	3-7	
+3-11	288-296	noteikti	r0m	noteikti	_	_	_	_	advmod	basic	3-12	
+3-12	297-307	jānoskatās	vmyd0t300an	noskatīties	_	_	_	_	root	basic	3-12	
+3-13	308-314	Dailes	ncfsg5	daile	organization[3]	https://en.wikipedia.org/wiki/Dailes\_Theatre[3]	_	_	nmod	basic	3-14	
+3-14	315-321	teātra	ncmsg2	teātris	organization[3]	https://en.wikipedia.org/wiki/Dailes\_Theatre[3]	_	_	nmod	basic	3-15	
+3-15	322-329	izrādes	ncfpn5	izrāde	_	_	*[2]	*->2-1	nmod	basic	3-17	
+3-16	330-331	“	zq	“	product[4]	*[4]	*[2]	*->2-2	punct	basic	3-17	
+3-17	331-336	Psihs	ncmsn1	psihs	product[4]	*[4]	*[2]	*->2-2	obj	basic	3-12	
+3-18	336-337	”	zq	”	product[4]	*[4]	*[2]	*->2-2	punct	basic	3-17	
+3-19	338-340	un	cc	un	_	_	_	_	cc	basic	3-20	
+3-20	341-342	“	zq	“	product[5]	*[5]	*[2]	*->2-3	conj	basic	3-17	
+3-21	342-351	Nekrofils	ncmsn1	nekrofils	product[5]	*[5]	*[2]	*->2-3	dep	basic	3-20	
+3-22	351-352	”	zq	”	product[5]	*[5]	*[2]	*->2-3	punct	basic	3-20	
+3-23	352-353	.	zs	.	_	_	_	_	punct	basic	3-12	
+
+#Text=Abas ir gluži netipiskas lomas un pretstati Ģirta tēlotajam romantiķim un mieramikam Leonam no seriāla “Neprāta cena”, taču jāatzīst, ka dziļāko dziņu apmierinājums būs gan garantēts, jo trakajiem jau pieder pasaule!
+4-1	355-359	Abas	pg0fpnn	abas	_	_	_	_	nsubj	basic	4-5	
+4-2	360-362	ir	vcnipii30an	būt	_	_	_	_	cop	basic	4-5	
+4-3	363-368	gluži	r0q	gluži	_	_	_	_	advmod	basic	4-4	
+4-4	369-379	netipiskas	arfpnnp	netipiska	_	_	_	_	amod	basic	4-5	
+4-5	380-385	lomas	ncfsg4	loma	_	_	_	_	root	basic	4-5	
+4-6	386-388	un	cc	un	_	_	_	_	cc	basic	4-7	
+4-7	389-398	pretstati	ncmpn1	pretstats	_	_	_	_	conj	basic	4-5	
+4-8	399-404	Ģirta	npmsg1	Ģirts	person	https://en.wikipedia.org/wiki/Ģirts\_Ķesteris	*[6]	*->6-5	nmod	basic	4-9	
+4-9	405-414	tēlotajam	vmnpdmsdpsyp	tēlot	_	_	_	_	amod	basic	4-10	
+4-10	415-425	romantiķim	ncmsd2	romantiķis	_	_	*[4]	*->4-1	nmod	basic	4-13	
+4-11	426-428	un	cc	un	_	_	_	_	cc	basic	4-12	
+4-12	429-439	mieramikam	ncmsd4	mieramika	_	_	*[4]	*->4-2	conj	basic	4-10	
+4-13	440-446	Leonam	npmpd1	Leons	person	*	*[4]	*->4-3	nmod	basic	4-7	
+4-14	447-449	no	spsg	no	_	_	_	_	case	basic	4-18	
+4-15	450-457	seriāla	ncmsg1	seriāls	_	_	*[3]	*->3-1	nmod	basic	4-18	
+4-16	458-459	“	zq	“	product[6]	https://lv.wikipedia.org/wiki/Neprāta\_cena[6]	*[3]	*->3-2	punct	basic	4-18	
+4-17	459-466	Neprāta	ncmsg1	neprāts	product[6]	https://lv.wikipedia.org/wiki/Neprāta\_cena[6]	*[3]	*->3-2	nmod	basic	4-18	
+4-18	467-471	cena	ncfsn4	cena	product[6]	https://lv.wikipedia.org/wiki/Neprāta\_cena[6]	*[3]	*->3-2	nmod	basic	4-13	
+4-19	471-472	”	zq	”	product[6]	https://lv.wikipedia.org/wiki/Neprāta\_cena[6]	*[3]	*->3-2	punct	basic	4-18	
+4-20	472-473	,	zc	,	_	_	_	_	punct	basic	4-22	
+4-21	474-478	taču	cc	taču	_	_	_	_	cc	basic	4-22	
+4-22	479-487	jāatzīst	vmnd0t100an	atzīt	_	_	_	_	conj	basic	4-5	
+4-23	487-488	,	zc	,	_	_	_	_	punct	basic	4-30	
+4-24	489-491	ka	cs	ka	_	_	_	_	mark	basic	4-30	
+4-25	492-499	dziļāko	affpgyc	dziļa	_	_	_	_	amod	basic	4-26	
+4-26	500-505	dziņu	ncfpg4	dziņa	_	_	_	_	nmod	basic	4-27	
+4-27	506-519	apmierinājums	ncmsn1	apmierinājums	_	_	_	_	nsubj	basic	4-30	
+4-28	520-523	būs	vcnifii30an	būt	_	_	_	_	aux	basic	4-30	
+4-29	524-527	gan	q	gan	_	_	_	_	discourse	basic	4-30	
+4-30	528-537	garantēts	vmnpdmsnpsnp	garantēt	_	_	_	_	ccomp	basic	4-22	
+4-31	537-538	,	zc	,	_	_	_	_	punct	basic	4-35	
+4-32	539-541	jo	cs	jo	_	_	_	_	mark	basic	4-35	
+4-33	542-551	trakajiem	afmpdyp	trakajiem	_	_	_	_	obl	basic	4-35	
+4-34	552-555	jau	q	jau	_	_	_	_	discourse	basic	4-35	
+4-35	556-562	pieder	vmnipi330an	piederēt	_	_	_	_	advcl	basic	4-30	
+4-36	563-570	pasaule	ncfsn5	pasaule	_	_	_	_	nsubj	basic	4-35	
+4-37	570-571	!	zs	!	_	_	_	_	punct	basic	4-5	

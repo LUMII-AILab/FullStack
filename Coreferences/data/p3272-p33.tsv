@@ -1,0 +1,63 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Kaimiņos.
+1-1	0-8	Kaimiņos	npmpl1	kaimiņš	_	_	root	basic	1-1	
+1-2	8-9	.	zs	.	_	_	punct	basic	1-1	
+
+#Text=Uzmanies no dīkām pļāpām ar blakus mājas iemītniekiem.
+2-1	11-19	Uzmanies	vmym0i32san	uzmanīties	_	_	root	basic	2-1	
+2-2	20-22	no	sppd	no	_	_	case	basic	2-4	
+2-3	23-28	dīkām	affpdnp	dīka	_	_	amod	basic	2-4	
+2-4	29-35	pļāpām	ncfdd4	pļāpas	_	_	iobj	basic	2-1	
+2-5	36-38	ar	spsa	ar	_	_	case	basic	2-8	
+2-6	39-45	blakus	r0p	blakus	_	_	advmod	basic	2-7	
+2-7	46-51	mājas	ncfsg4	māja	_	_	nmod	basic	2-8	
+2-8	52-64	iemītniekiem	ncmpd1	iemītnieks	_	_	iobj	basic	2-4	
+2-9	64-65	.	zs	.	_	_	punct	basic	2-1	
+
+#Text=Ja kāds no taviem kaimiņiem ir divkosis, tu nekad nezini, kad tevis izpaustā informācija nāks atpakaļ kā bumerangs.
+3-1	67-69	Ja	cs	ja	_	_	mark	basic	3-7	
+3-2	70-74	kāds	pi0msnn	kāds	_	_	nsubj	basic	3-7	
+3-3	75-77	no	sppd	no	_	_	case	basic	3-5	
+3-4	78-84	taviem	ps0mpdn	tavs	*[2]	*->2-1	det	basic	3-5	
+3-5	85-94	kaimiņiem	ncmpd1	kaimiņš	_	_	compound	basic	3-2	
+3-6	95-97	ir	vcnipii30an	būt	_	_	cop	basic	3-7	
+3-7	98-106	divkosis	ncmsn2	divkosis	_	_	advcl	basic	3-11	
+3-8	106-107	,	zc	,	_	_	punct	basic	3-7	
+3-9	108-110	tu	pp20snn	tu	*[2]	*->2-2	nsubj	basic	3-11	
+3-10	111-116	nekad	r0t	nekad	_	_	advmod	basic	3-11	
+3-11	117-123	nezini	vmnm0t32say	nezināt	_	_	root	basic	3-11	
+3-12	123-124	,	zc	,	_	_	punct	basic	3-17	
+3-13	125-128	kad	r0t	kad	_	_	advmod	basic	3-17	
+3-14	129-134	tevis	pp20sgn	tu	*[2]	*->2-3	det	basic	3-15	
+3-15	135-143	izpaustā	vmnpdfsnpsyp	izpaust	_	_	amod	basic	3-16	
+3-16	144-155	informācija	ncfsn4	informācija	_	_	nsubj	basic	3-17	
+3-17	156-160	nāks	vmnifi130an	nākt	_	_	ccomp	basic	3-11	
+3-18	161-168	atpakaļ	r0p	atpakaļ	_	_	advmod	basic	3-17	
+3-19	169-171	kā	cs	kā	_	_	mark	basic	3-20	
+3-20	172-181	bumerangs	ncmsn1	bumerangs	_	_	acl	basic	3-17	
+3-21	181-182	.	zs	.	_	_	punct	basic	3-11	
+
+#Text=Labām kaimiņattiecībām pietiks ar padomiem balkona puķu audzēšanā vai atsvaidzinošu limonādi, ko pasniedz pār sētu.
+4-1	184-189	Labām	affpdnp	laba	_	_	amod	basic	4-2	
+4-2	190-206	kaimiņattiecībām	ncfdd4	kaimiņattiecības	_	_	acl	basic	4-3	
+4-3	207-214	pietiks	vgnifi130an	pietikt	_	_	root	basic	4-3	
+4-4	215-217	ar	sppd	ar	_	_	case	basic	4-5	
+4-5	218-226	padomiem	ncmpd1	padoms	_	_	iobj	basic	4-3	
+4-6	227-234	balkona	ncmsg1	balkons	_	_	nmod	basic	4-7	
+4-7	235-239	puķu	ncfpg5	puķe	_	_	nmod	basic	4-8	
+4-8	240-249	audzēšanā	ncfsl4	audzēšana	_	_	acl	basic	4-5	
+4-9	250-253	vai	cc	vai	_	_	cc	basic	4-11	
+4-10	254-267	atsvaidzinošu	vmnpdmpgapnp	atsvaidzināt	_	_	amod	basic	4-11	
+4-11	268-276	limonādi	ncfsa5	limonāde	*[1]	*->1-1	conj	basic	4-5	
+4-12	276-277	,	zc	,	_	_	punct	basic	4-14	
+4-13	278-280	ko	pr000an	kas	*[1]	*->1-2	obj	basic	4-14	
+4-14	281-289	pasniedz	vmnipt130an	pasniegt	_	_	acl	basic	4-11	
+4-15	290-293	pār	spsa	pār	_	_	case	basic	4-16	
+4-16	294-298	sētu	ncfsa4	sēta	_	_	obl	basic	4-14	
+4-17	298-299	.	zs	.	_	_	punct	basic	4-3	

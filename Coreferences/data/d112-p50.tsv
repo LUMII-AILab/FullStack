@@ -1,0 +1,69 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Uz aizsalušās upes ir neticams skats.
+1-1	0-2	Uz	spsa	uz	_	_	_	_	case	basic	1-3	
+1-2	3-13	aizsalušās	arfsgyp	aizsalušās	_	_	_	_	amod	basic	1-3	
+1-3	14-18	upes	ncfsg5	upe	_	_	_	_	obl	basic	1-4	
+1-4	19-21	ir	vmnipii30an	būt	_	_	_	_	root	basic	1-4	
+1-5	22-30	neticams	afmsnnp	neticams	_	_	_	_	amod	basic	1-6	
+1-6	31-36	skats	ncmsn1	skats	_	_	_	_	nsubj	basic	1-4	
+1-7	36-37	.	zs	.	_	_	_	_	punct	basic	1-4	
+
+#Text=Viņā krastā rūc mašīna, tajā iestiprināta vinča, kas velk gaisā izpletnī iekārušos Stefanu.
+2-1	39-43	Viņā	pd0msln	Viņš	_	_	_	_	det	basic	2-2	
+2-2	44-50	krastā	ncmsl1	krasts	_	_	_	_	obl	basic	2-3	
+2-3	51-54	rūc	vmnipi130an	rūkt	_	_	_	_	root	basic	2-3	
+2-4	55-61	mašīna	ncfsn4	mašīna	_	_	*[3]	*->3-1	nsubj	basic	2-3	
+2-5	61-62	,	zc	,	_	_	_	_	punct	basic	2-7	
+2-6	63-67	tajā	pd0fsln	tā	_	_	*[3]	*->3-2	obl	basic	2-7	
+2-7	68-80	iestiprināta	vmnpdfsnpsnp	iestiprināt	_	_	_	_	conj	basic	2-3	
+2-8	81-86	vinča	ncfsn4	vinča	_	_	*[4]	*->4-1	nsubj:pass	basic	2-7	
+2-9	86-87	,	zc	,	_	_	_	_	punct	basic	2-11	
+2-10	88-91	kas	pr000nn	kas	_	_	*[4]	*->4-2	nsubj	basic	2-11	
+2-11	92-96	velk	vmnipt130an	vilkt	_	_	_	_	acl	basic	2-8	
+2-12	97-102	gaisā	ncmsl1	gaiss	_	_	_	_	acl	basic	2-15	
+2-13	103-111	izpletnī	ncmsl2	izpletnis	_	_	_	_	obl	basic	2-14	
+2-14	112-121	iekārušos	vmypdmsaasnp	iekārties	_	_	_	_	amod	basic	2-15	
+2-15	122-129	Stefanu	npmsa1	Stefans	person	*	*[1]	*->1-1	obj	basic	2-11	
+2-16	129-130	.	zs	.	_	_	*[1]	*->1-1	punct	basic	2-3	
+
+#Text=Augstu pelēkajās debesīs viņš atāķējas no vinčas un līgani, lokus mezdams, laižas lejā.
+3-1	132-138	Augstu	r0p	augstu	_	_	_	_	advmod	basic	3-3	
+3-2	139-148	pelēkajās	affplyp	pelēka	_	_	_	_	amod	basic	3-3	
+3-3	149-156	debesīs	ncfpl6	debess	_	_	_	_	obl	basic	3-5	
+3-4	157-161	viņš	pp3msnn	viņš	_	_	*[1]	*->1-2	nsubj	basic	3-5	
+3-5	162-170	atāķējas	vmyipi230an	atāķēties	_	_	_	_	root	basic	3-5	
+3-6	171-173	no	spsg	no	_	_	_	_	case	basic	3-7	
+3-7	174-180	vinčas	ncfsg4	vinča	_	_	*[4]	*->4-3	iobj	basic	3-5	
+3-8	181-183	un	cc	un	_	_	_	_	cc	basic	3-9	
+3-9	184-190	līgani	afmpnnp	līgans	_	_	_	_	conj	basic	3-5	
+3-10	190-191	,	zc	,	_	_	_	_	punct	basic	3-12	
+3-11	192-197	lokus	ncmpa1	loks	_	_	_	_	obj	basic	3-12	
+3-12	198-205	mezdams	vmnppmsnap0p	mest	_	_	_	_	acl	basic	3-14	
+3-13	205-206	,	zc	,	_	_	_	_	punct	basic	3-12	
+3-14	207-213	laižas	vmyipi130an	laisties	_	_	_	_	conj	basic	3-5	
+3-15	214-218	lejā	r0p	lejā	_	_	_	_	advmod	basic	3-14	
+3-16	218-219	.	zs	.	_	_	_	_	punct	basic	3-5	
+
+#Text=Suns drāžas šurpu turpu pa ledu, mēģinādams notrāpīt vietu, kur Stefans nolaidīsies.
+4-1	221-225	Suns	ncmsn2	suns	_	_	_	_	nsubj	basic	4-2	
+4-2	226-232	drāžas	vmyipi130an	drāzties	_	_	_	_	root	basic	4-2	
+4-3	233-238	šurpu	r0p	šurpu	_	_	_	_	advmod	basic	4-2	
+4-4	239-244	turpu	r0p	turpu	_	_	_	_	compound	basic	4-3	
+4-5	245-247	pa	spsa	pa	_	_	_	_	case	basic	4-6	
+4-6	248-252	ledu	ncmva3	ledus	_	_	_	_	obl	basic	4-2	
+4-7	252-253	,	zc	,	_	_	_	_	punct	basic	4-8	
+4-8	254-264	mēģinādams	vmnppmsnap0p	mēģināt	_	_	_	_	acl	basic	4-2	
+4-9	265-273	notrāpīt	vmnn0t3000n	notrāpīt	_	_	_	_	ccomp	basic	4-8	
+4-10	274-279	vietu	ncfsa4	vieta	_	_	*[2]	*->2-1	obj	basic	4-9	
+4-11	279-280	,	zc	,	_	_	_	_	punct	basic	4-14	
+4-12	281-284	kur	r0p	kur	_	_	*[2]	*->2-2	advmod	basic	4-14	
+4-13	285-292	Stefans	npmsn1	Stefans	person	*	*[1]	*->1-3	nsubj	basic	4-14	
+4-14	293-304	nolaidīsies	vmyifi130an	nolaisties	_	_	_	_	acl	basic	4-10	
+4-15	304-305	.	zs	.	_	_	_	_	punct	basic	4-2	

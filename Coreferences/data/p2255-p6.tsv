@@ -1,0 +1,105 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Tāpēc katrai no dalībvalstīm jāveido žūrija piecu cilvēku sastāvā.
+1-1	0-5	Tāpēc	_	_	_	_	_	_	_	_	_	_	_	_	r0c	tāpēc	_	_	_	_	advmod|advmod	basic|enhanced	1-5|1-5	
+1-2	6-12	katrai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing\|PronType=Tot	*	*	pg0fsdn	katra	_	_	_	_	nsubj|nsubj	basic|enhanced	1-5|1-5	
+1-3	13-15	no	_	_	_	_	_	_	_	_	_	_	_	_	sppd	no	_	_	_	_	case|case	basic|enhanced	1-4|1-4	
+1-4	16-28	dalībvalstīm	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd6	dalībvalsts	_	_	_	_	compound|compound	basic|enhanced	1-2|1-2	
+1-5	29-36	jāveido	*	*	*	*	*	*	Nec	Act	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vmnd0t200an	veidot	_	_	_	_	root|root	basic|enhanced	1-5|1-5	
+1-6	37-43	žūrija	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	žūrija	_	_	*[1]	*->1-1	nsubj|nsubj	basic|enhanced	1-5|1-5	
+1-7	44-49	piecu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpg	pieci	_	_	_	_	nummod|nummod	basic|enhanced	1-8|1-8	
+1-8	50-57	cilvēku	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	cilvēks	_	_	_	_	nmod|nmod	basic|enhanced	1-9|1-9	
+1-9	58-65	sastāvā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	sastāvs	_	_	_	_	acl|acl	basic|enhanced	1-6|1-6	
+1-10	65-66	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-5|1-5	
+
+#Text=Tajā esošo personu vārdi netiek atklāti līdz pat fināla norises dienai.
+2-1	68-72	Tajā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msln	tas	_	_	*[1]	*->1-2	obl|obl	basic|enhanced	2-2|2-2	
+2-2	73-78	esošo	Fem	Plur	Gen	Pos	*	Pres	*	Pass	*	Aspect=Imp\|Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Plur\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Imp	vmnpdfpgapyp	būt	_	_	_	_	amod|amod	basic|enhanced	2-3|2-3	
+2-3	79-86	personu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	persona	_	_	_	_	nmod|nmod	basic|enhanced	2-4|2-4	
+2-4	87-92	vārdi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	vārds	_	_	_	_	nsubj:pass|nsubj	basic|enhanced	2-6|2-6	
+2-5	93-99	netiek	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vtnipi130ay	netikt	_	_	_	_	aux|aux	basic|enhanced	2-6|2-6	
+2-6	100-107	atklāti	Masc	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpnpsnp	atklāti	_	_	_	_	root|root	basic|enhanced	2-6|2-6	
+2-7	108-112	līdz	_	_	_	_	_	_	_	_	_	_	_	_	spsd	līdz	_	_	_	_	case|case	basic|enhanced	2-11|2-11	
+2-8	113-116	pat	_	_	_	_	_	_	_	_	_	_	_	_	q	pat	_	_	_	_	discourse|discourse	basic|enhanced	2-11|2-11	
+2-9	117-123	fināla	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	fināls	_	_	_	_	nmod|nmod	basic|enhanced	2-10|2-10	
+2-10	124-131	norises	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	norise	_	_	_	_	nmod|nmod	basic|enhanced	2-11|2-11	
+2-11	132-138	dienai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	diena	_	_	_	_	obl|obl	basic|enhanced	2-6|2-6	
+2-12	138-139	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	2-6|2-6	
+
+#Text=Žūrijas sastāvā jāiekļauj profesionāli komponisti, izpildītāji, producenti.
+3-1	141-148	Žūrijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	žūrija	_	_	_	_	nmod|nmod	basic|enhanced	3-2|3-2	
+3-2	149-156	sastāvā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	sastāvs	_	_	_	_	obl|obl	basic|enhanced	3-3|3-3	
+3-3	157-166	jāiekļauj	*	*	*	*	*	*	Nec	Act	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vmnd0t100an	iekļaut	_	_	_	_	root|root	basic|enhanced	3-3|3-3	
+3-4	167-179	profesionāli	Masc	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnnp	profesionāls	_	_	_	_	amod|amod	basic|enhanced	3-5|3-5	
+3-5	180-190	komponisti	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	komponists	_	_	_	_	obj|obj	basic|enhanced	3-3|3-3	
+3-6	190-191	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	3-7|3-7	
+3-7	192-203	izpildītāji	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	izpildītājs	_	_	_	_	conj|conj	basic|enhanced	3-5|3-5	
+3-8	203-204	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	3-9|3-9	
+3-9	205-215	producenti	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	producents	_	_	_	_	conj|conj	basic|enhanced	3-5|3-5	
+3-10	215-216	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	3-3|3-3	
+
+#Text=Vecuma diapazons – neierobežots, tomēr viens aizliegums eksistē: neviens no žūrijas pārstāvjiem nedrīkst būt jebkā saistīts ar kādu no izpildītājiem vai dziesmu autoriem.
+4-1	218-224	Vecuma	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	vecums	_	_	_	_	nmod|nmod	basic|enhanced	4-2|4-2	
+4-2	225-234	diapazons	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	diapazons	_	_	_	_	nsubj|nsubj	basic|enhanced	4-3|4-3	
+4-3	235-236	–	_	_	_	_	_	_	_	_	_	_	_	_	zd	–	_	_	_	_	root|root	basic|enhanced	4-3|4-3	
+4-4	237-249	neierobežots	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsnnp	neierobežots	_	_	_	_	xcomp|xcomp	basic|enhanced	4-3|4-3	
+4-5	249-250	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	4-9|4-9	
+4-6	251-256	tomēr	_	_	_	_	_	_	_	_	_	_	_	_	cc	tomēr	_	_	_	_	cc|cc	basic|enhanced	4-9|4-9	
+4-7	257-262	viens	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|NumType=Card	*	*	mcsmsn	viens	_	_	_	_	nummod|nummod	basic|enhanced	4-8|4-8	
+4-8	263-273	aizliegums	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	aizliegums	_	_	_	_	nsubj|nsubj	basic|enhanced	4-9|4-9	
+4-9	274-281	eksistē	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipi230an	eksistēt	_	_	_	_	conj|conj	basic|enhanced	4-3|4-3	
+4-10	281-282	:	_	_	_	_	_	_	_	_	_	_	_	_	zo	:	_	_	_	_	punct|punct	basic|enhanced	4-15|4-15	
+4-11	283-290	neviens	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Ind,Neg	*	*	pi0msny	neviens	_	_	_	_	nsubj|nsubj	basic|enhanced	4-15|4-15	
+4-12	291-293	no	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	_	_	_	_	case|case	basic|enhanced	4-14|4-14	
+4-13	294-301	žūrijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	žūrija	_	_	_	_	nmod|nmod	basic|enhanced	4-14|4-14	
+4-14	302-313	pārstāvjiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd2	pārstāvis	_	_	_	_	compound|compound	basic|enhanced	4-11|4-11	
+4-15	314-322	nedrīkst	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vonipt330ay	nedrīkstēt	_	_	_	_	conj|conj	basic|enhanced	4-3|4-3	
+4-16	323-326	būt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vcnn0ii000n	būt	_	_	_	_	aux|aux	basic|enhanced	4-18|4-18	
+4-17	327-332	jebkā	_	_	_	_	_	_	_	_	_	_	_	_	r0m	jebkā	_	_	_	_	advmod|advmod	basic|enhanced	4-18|4-18	
+4-18	333-341	saistīts	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnp	saistīt	_	_	_	_	xcomp|xcomp	basic|enhanced	4-15|4-15	
+4-19	342-344	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case|case	basic|enhanced	4-20|4-20	
+4-20	345-349	kādu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Ind	*	*	pi0msan	kāds	_	_	_	_	iobj|iobj	basic|enhanced	4-18|4-18	
+4-21	350-352	no	_	_	_	_	_	_	_	_	_	_	_	_	sppd	no	_	_	_	_	case|case	basic|enhanced	4-22|4-22	
+4-22	353-366	izpildītājiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	izpildītājs	_	_	_	_	compound|compound	basic|enhanced	4-20|4-20	
+4-23	367-370	vai	_	_	_	_	_	_	_	_	_	_	_	_	cc	vai	_	_	_	_	cc|cc	basic|enhanced	4-25|4-25	
+4-24	371-378	dziesmu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	dziesma	_	_	_	_	nmod|nmod	basic|enhanced	4-25|4-25	
+4-25	379-387	autoriem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	autors	_	_	_	_	conj|conj	basic|enhanced	4-22|4-22	
+4-26	387-388	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	4-3|4-3	
+
+#Text=Žūrijas darbu katrā valstī uzraudzīs neatkarīgs novērotājs – notārs, kas apstiprinās balsošanas procedūras godīgumu.
+5-1	390-397	Žūrijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	žūrija	_	_	_	_	nmod|nmod	basic|enhanced	5-2|5-2	
+5-2	398-403	darbu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	darbs	_	_	_	_	obj|obj	basic|enhanced	5-5|5-5	
+5-3	404-409	katrā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|PronType=Tot	*	*	pg0fsln	katra	_	_	_	_	det|det	basic|enhanced	5-4|5-4	
+5-4	410-416	valstī	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl6	valsts	_	_	_	_	obl|obl	basic|enhanced	5-5|5-5	
+5-5	417-426	uzraudzīs	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vmnift330an	uzraudzīt	_	_	_	_	root|root	basic|enhanced	5-5|5-5	
+5-6	427-437	neatkarīgs	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	neatkarīgs	_	_	_	_	amod|amod	basic|enhanced	5-7|5-7	
+5-7	438-448	novērotājs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	novērotājs	_	_	*[2]	*->2-1	nsubj|nsubj	basic|enhanced	5-5|5-5	
+5-8	449-450	–	_	_	_	_	_	_	_	_	_	_	_	_	zd	–	_	_	_	_	punct|punct	basic|enhanced	5-9|5-9	
+5-9	451-457	notārs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	notārs	_	_	*[2]	*->2-2	acl|acl	basic|enhanced	5-7|5-7	
+5-10	457-458	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	5-12|5-12	
+5-11	459-462	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	*[2]	*->2-3	nsubj|nsubj	basic|enhanced	5-12|5-12	
+5-12	463-474	apstiprinās	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vmnift330an	apstiprināt	_	_	_	_	acl|acl	basic|enhanced	5-9|5-9	
+5-13	475-485	balsošanas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	balsošana	_	_	_	_	nmod|nmod	basic|enhanced	5-14|5-14	
+5-14	486-496	procedūras	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	procedūra	_	_	_	_	nmod|nmod	basic|enhanced	5-15|5-15	
+5-15	497-505	godīgumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	godīgums	_	_	_	_	obj|obj	basic|enhanced	5-12|5-12	
+5-16	505-506	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	5-5|5-5	
+
+#Text=Pēc tam šie rezultāti tiks nosūtīti uz EBU un apstiprināti.
+6-1	508-511	Pēc	_	_	_	_	_	_	_	_	_	_	_	_	sppd	pēc	_	_	_	_	case|case	basic|enhanced	6-2|6-2	
+6-2	512-515	tam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msdn	tas	_	_	_	_	obl|obl	basic|enhanced	6-6|6-6	
+6-3	516-519	šie	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpnn	šis	_	_	_	_	det|det	basic|enhanced	6-4|6-4	
+6-4	520-529	rezultāti	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	rezultāts	_	_	_	_	nsubj:pass|nsubj	basic|enhanced	6-6|6-6	
+6-5	530-534	tiks	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vtnifi130an	tikt	_	_	_	_	aux|aux	basic|enhanced	6-6|6-6	
+6-6	535-543	nosūtīti	Masc	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpnpsnp	nosūtīt	_	_	_	_	root|root	basic|enhanced	6-6|6-6	
+6-7	544-546	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsa	uz	_	_	_	_	case|case	basic|enhanced	6-8|6-8	
+6-8	547-550	EBU	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	EBU	organization	https://en.wikipedia.org/wiki/European\_Broadcasting\_Union	_	_	obl|obl	basic|enhanced	6-6|6-6	
+6-9	551-553	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	6-10|6-10	
+6-10	554-566	apstiprināti	Masc	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpnpsnp	apstiprināt	_	_	_	_	conj|conj	basic|enhanced	6-6|6-6	
+6-11	566-567	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	6-6|6-6	

@@ -1,0 +1,265 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Atbildot uz E. Krieviņa ziņojumu par sarunu ar B. fon Bīlovu, V. Munters 18. jūlijā nosūtīja viņam jaunu instruktīvu vēstuli.
+1-1	0-8	Atbildot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000	atbildēt	_	_	_	_	advcl|advcl	basic|enhanced	1-17|1-17	
+1-2	9-11	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsa	uz	_	_	_	_	case|case	basic|enhanced	1-5|1-5	
+1-3	12-14	E.	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	e.	person[1]	*[1]	*[1]	*->1-1	nmod|nmod	basic|enhanced	1-5|1-5	
+1-4	15-23	Krieviņa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Krieviņš	person[1]	*[1]	*[1]	*->1-1	flat:name|flat	basic|enhanced	1-3|1-3	
+1-5	24-32	ziņojumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	ziņojums	_	_	_	_	iobj|iobj	basic|enhanced	1-1|1-1	
+1-6	33-36	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	_	_	case|case	basic|enhanced	1-7|1-7	
+1-7	37-43	sarunu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	saruna	_	_	_	_	nmod|nmod	basic|enhanced	1-5|1-5	
+1-8	44-46	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case|case	basic|enhanced	1-9|1-9	
+1-9	47-49	B.	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	b.	person[2]	https://en.wikipedia.org/wiki/Bernhard\_von\_Bülow[2]	*[8]	*->8-1	nmod|nmod	basic|enhanced	1-7|1-7	
+1-10	50-53	fon	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	fon	person[2]	https://en.wikipedia.org/wiki/Bernhard\_von\_Bülow[2]	*[8]	*->8-1	flat:name|flat	basic|enhanced	1-9|1-9	
+1-11	54-60	Bīlovu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	Bīlovs	person[2]	https://en.wikipedia.org/wiki/Bernhard\_von\_Bülow[2]	*[8]	*->8-1	flat:name|flat	basic|enhanced	1-9|1-9	
+1-12	60-61	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-1|1-1	
+1-13	62-64	V.	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	v.	person[3]	https://lv.wikipedia.org/wiki/Vilhelms\_Munters[3]	*[7]	*->7-1	nsubj|nsubj	basic|enhanced	1-17|1-17	
+1-14	65-72	Munters	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Munters	person[3]	https://lv.wikipedia.org/wiki/Vilhelms\_Munters[3]	*[7]	*->7-1	flat:name|flat	basic|enhanced	1-13|1-13	
+1-15	73-76	18.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	18.	time[4]	*[4]	_	_	amod|amod	basic|enhanced	1-16|1-16	
+1-16	77-83	jūlijā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	jūlijs	time[4]	*[4]	_	_	obl|obl	basic|enhanced	1-17|1-17	
+1-17	84-92	nosūtīja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	nosūtīt	_	_	_	_	root|root	basic|enhanced	1-17|1-17	
+1-18	93-98	viņam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msdn	viņš	_	_	*[1]	*->1-2	iobj|iobj	basic|enhanced	1-17|1-17	
+1-19	99-104	jaunu	Fem	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsanp	jauna	_	_	_	_	amod|amod	basic|enhanced	1-21|1-21	
+1-20	105-116	instruktīvu	Fem	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsanp	instruktīva	_	_	_	_	amod|amod	basic|enhanced	1-21|1-21	
+1-21	117-124	vēstuli	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	vēstule	_	_	_	_	obj|obj	basic|enhanced	1-17|1-17	
+1-22	124-125	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-17|1-17	
+
+#Text=Viņš vēlreiz uzsvēra, ka Latvijas nodomu noslēgt līgumu ar PSRS izraisījusi vēlēšanās “līdzrunāt” PSRS un Francijas attiecībās, un uzsvēra, ka atrisinājums ar Vācijas līdzdalību [100.lp.] būtu “daudz patīkamāks”.
+2-1	127-131	Viņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msnn	viņš	_	_	*[7]	*->7-2	nsubj|nsubj	basic|enhanced	2-3|2-3	
+2-2	132-139	vēlreiz	_	_	_	_	_	_	_	_	_	_	_	_	r0t	vēlreiz	_	_	_	_	advmod|advmod	basic|enhanced	2-3|2-3	
+2-3	140-147	uzsvēra	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	uzsvērt	_	_	_	_	root|root	basic|enhanced	2-3|2-3	
+2-4	147-148	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-12|2-12	
+2-5	149-151	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark|mark	basic|enhanced	2-12|2-12	
+2-6	152-160	Latvijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	_	_	nmod|nmod	basic|enhanced	2-7|2-7	
+2-7	161-167	nodomu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	nodoms	_	_	_	_	obj|obj	basic|enhanced	2-12|2-12	
+2-8	168-175	noslēgt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	noslēgt	_	_	_	_	acl|acl	basic|enhanced	2-7|2-7	
+2-9	176-182	līgumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	līgums	_	_	_	_	obj|obj	basic|enhanced	2-8|2-8	
+2-10	183-185	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case|case	basic|enhanced	2-11|2-11	
+2-11	186-190	PSRS	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	PSRS	GPE	https://en.wikipedia.org/wiki/Soviet\_Union	_	_	nmod|nmod	basic|enhanced	2-9|2-9	
+2-12	191-202	izraisījusi	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnasnp	izraisīt	_	_	_	_	ccomp|ccomp	basic|enhanced	2-3|2-3	
+2-13	203-212	vēlēšanās	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsnr	vēlēšanās	_	_	_	_	nsubj|nsubj	basic|enhanced	2-12|2-12	
+2-14	213-214	“	_	_	_	_	_	_	_	_	_	_	_	_	zq	“	_	_	_	_	punct|punct	basic|enhanced	2-15|2-15	
+2-15	214-223	līdzrunāt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0i2000n	līdzrunāt	_	_	_	_	dep|dep	basic|enhanced	2-13|2-13	
+2-16	223-224	”	_	_	_	_	_	_	_	_	_	_	_	_	zq	”	_	_	_	_	punct|punct	basic|enhanced	2-15|2-15	
+2-17	225-229	PSRS	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	PSRS	GPE	https://en.wikipedia.org/wiki/Soviet\_Union	_	_	nmod|nmod	basic|enhanced	2-20|2-20	
+2-18	230-232	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	2-19|2-19	
+2-19	233-242	Francijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Francija	GPE	https://en.wikipedia.org/wiki/France	_	_	conj|conj	basic|enhanced	2-17|2-17	
+2-20	243-253	attiecībās	Fem	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	attiecība	_	_	_	_	acl|acl	basic|enhanced	2-15|2-15	
+2-21	253-254	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-12|2-12	
+2-22	255-257	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	2-23|2-23	
+2-23	258-265	uzsvēra	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	uzsvērt	_	_	_	_	conj|conj	basic|enhanced	2-3|2-3	
+2-24	265-266	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-37|2-37	
+2-25	267-269	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark|mark	basic|enhanced	2-37|2-37	
+2-26	270-282	atrisinājums	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	atrisinājums	_	_	_	_	nsubj|nsubj	basic|enhanced	2-37|2-37	
+2-27	283-285	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case|case	basic|enhanced	2-29|2-29	
+2-28	286-293	Vācijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Vācija	GPE	https://en.wikipedia.org/wiki/Germany	_	_	nmod|nmod	basic|enhanced	2-29|2-29	
+2-29	294-304	līdzdalību	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	līdzdalība	_	_	_	_	nmod|nmod	basic|enhanced	2-26|2-26	
+2-30	305-306	[	_	_	_	_	_	_	_	_	_	_	_	_	zb	\[	_	_	_	_	punct|punct	basic|enhanced	2-32|2-32	
+2-31	306-310	100.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	100.	_	_	_	_	amod|amod	basic|enhanced	2-32|2-32	
+2-32	310-313	lp.	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	lp.	_	_	_	_	parataxis|parataxis	basic|enhanced	2-26|2-26	
+2-33	313-314	]	_	_	_	_	_	_	_	_	_	_	_	_	zb	\]	_	_	_	_	punct|punct	basic|enhanced	2-32|2-32	
+2-34	315-319	būtu	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vcnc0ii00an	būt	_	_	_	_	cop|cop	basic|enhanced	2-37|2-37	
+2-35	320-321	“	_	_	_	_	_	_	_	_	_	_	_	_	zq	“	_	_	_	_	punct|punct	basic|enhanced	2-37|2-37	
+2-36	321-326	daudz	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpq	daudz	_	_	_	_	advmod|advmod	basic|enhanced	2-37|2-37	
+2-37	327-337	patīkamāks	Masc	Sing	Nom	Cmp	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Masc\|Number=Sing	*	*	afmsnnc	patīkams	_	_	_	_	ccomp|ccomp	basic|enhanced	2-23|2-23	
+2-38	337-338	”	_	_	_	_	_	_	_	_	_	_	_	_	zq	”	_	_	_	_	punct|punct	basic|enhanced	2-37|2-37	
+2-39	338-339	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	2-3|2-3	
+
+#Text=Viņš aicināja Vāciju prasīt jauna kolektīva līguma noslēgšanu Austrumeiropā, kas atvietotu PSRS un Francijas līgumu sistēmu.
+3-1	341-345	Viņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msnn	viņš	_	_	*[7]	*->7-3	nsubj|nsubj	basic|enhanced	3-2|3-2	
+3-2	346-354	aicināja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	aicināt	_	_	_	_	root|root	basic|enhanced	3-2|3-2	
+3-3	355-361	Vāciju	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	Vācija	GPE	https://en.wikipedia.org/wiki/Germany	_	_	obj|obj	basic|enhanced	3-2|3-2	
+3-4	362-368	prasīt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	prasīt	_	_	_	_	ccomp|ccomp	basic|enhanced	3-2|3-2	
+3-5	369-374	jauna	Masc	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsgnp	jauns	_	_	_	_	amod|amod	basic|enhanced	3-7|3-7	
+3-6	375-384	kolektīva	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	kolektīvs	_	_	_	_	nmod|nmod	basic|enhanced	3-7|3-7	
+3-7	385-391	līguma	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	līgums	_	_	*[2]	*->2-1	nmod|nmod	basic|enhanced	3-8|3-8	
+3-8	392-402	noslēgšanu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	noslēgšana	_	_	*[2]	*->2-1	obj|obj	basic|enhanced	3-4|3-4	
+3-9	403-416	Austrumeiropā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	Austrumeiropa	GPE	https://en.wikipedia.org/wiki/Eastern\_Europe	_	_	obl|obl	basic|enhanced	3-8|3-8	
+3-10	416-417	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	3-12|3-12	
+3-11	418-421	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	*[2]	*->2-2	nsubj|nsubj	basic|enhanced	3-12|3-12	
+3-12	422-431	atvietotu	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vmnc0t200an	atvietot	_	_	_	_	acl|acl	basic|enhanced	3-8|3-8	
+3-13	432-436	PSRS	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	PSRS	GPE	https://en.wikipedia.org/wiki/Soviet\_Union	_	_	nmod|nmod	basic|enhanced	3-17|3-17	
+3-14	437-439	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	3-15|3-15	
+3-15	440-449	Francijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Francija	GPE	https://en.wikipedia.org/wiki/France	_	_	conj|conj	basic|enhanced	3-13|3-13	
+3-16	450-456	līgumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	līgums	_	_	_	_	nmod|nmod	basic|enhanced	3-17|3-17	
+3-17	457-464	sistēmu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	sistēma	_	_	_	_	obj|obj	basic|enhanced	3-12|3-12	
+3-18	464-465	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	3-2|3-2	
+
+#Text=V. Munters izteica izbrīnu par Vācijas pārāk vieglo atteikšanos no Strezas priekšlikumiem.
+4-1	467-469	V.	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	v.	person[5]	https://lv.wikipedia.org/wiki/Vilhelms\_Munters[5]	*[7]	*->7-4	nsubj|nsubj	basic|enhanced	4-3|4-3	
+4-2	470-477	Munters	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Munters	person[5]	https://lv.wikipedia.org/wiki/Vilhelms\_Munters[5]	*[7]	*->7-4	flat:name|flat	basic|enhanced	4-1|4-1	
+4-3	478-485	izteica	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	izteikt	_	_	_	_	root|root	basic|enhanced	4-3|4-3	
+4-4	486-493	izbrīnu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	izbrīns	_	_	_	_	obj|obj	basic|enhanced	4-3|4-3	
+4-5	494-497	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	_	_	case|case	basic|enhanced	4-9|4-9	
+4-6	498-505	Vācijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Vācija	GPE	https://en.wikipedia.org/wiki/Germany	_	_	nmod|nmod	basic|enhanced	4-9|4-9	
+4-7	506-511	pārāk	_	_	_	_	_	_	_	_	_	_	_	_	r0q	pārāk	_	_	_	_	advmod|advmod	basic|enhanced	4-8|4-8	
+4-8	512-518	vieglo	Fem	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsayp	viegla	_	_	_	_	amod|amod	basic|enhanced	4-9|4-9	
+4-9	519-530	atteikšanos	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsar	atteikšanās	_	_	_	_	nmod|nmod	basic|enhanced	4-4|4-4	
+4-10	531-533	no	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	_	_	_	_	case|case	basic|enhanced	4-12|4-12	
+4-11	534-541	Strezas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Streza	entity[6]|GPE[7]	https://en.wikipedia.org/wiki/Stresa[6]|*[7]	_	_	nmod|nmod	basic|enhanced	4-12|4-12	
+4-12	542-556	priekšlikumiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	priekšlikums	entity[6]	https://en.wikipedia.org/wiki/Stresa[6]	_	_	nmod|nmod	basic|enhanced	4-9|4-9	
+4-13	556-557	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	4-3|4-3	
+
+#Text=Viņš atkal atgriezās pie idejas par neuzbrukšanas līgumu ķēdi ar Vāciju, kuru varētu apvienot ar tādu pašu līgumu ķēdi, kas jau izveidota ar Padomju Savienību.
+5-1	559-563	Viņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msnn	viņš	_	_	*[7]	*->7-5	nsubj|nsubj	basic|enhanced	5-3|5-3	
+5-2	564-569	atkal	_	_	_	_	_	_	_	_	_	_	_	_	r0t	atkal	_	_	_	_	advmod|advmod	basic|enhanced	5-3|5-3	
+5-3	570-579	atgriezās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi130an	atgriezties	_	_	_	_	root|root	basic|enhanced	5-3|5-3	
+5-4	580-583	pie	_	_	_	_	_	_	_	_	_	_	_	_	spsg	pie	_	_	_	_	case|case	basic|enhanced	5-5|5-5	
+5-5	584-590	idejas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	ideja	_	_	_	_	obl|obl	basic|enhanced	5-3|5-3	
+5-6	591-594	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	_	_	case|case	basic|enhanced	5-9|5-9	
+5-7	595-608	neuzbrukšanas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsgr	neuzbrukšana	_	_	*[3]	*->3-1	nmod|nmod	basic|enhanced	5-8|5-8	
+5-8	609-615	līgumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	līgums	_	_	*[3]	*->3-1	nmod|nmod	basic|enhanced	5-9|5-9	
+5-9	616-620	ķēdi	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	ķēde	_	_	*[3]	*->3-1	nmod|nmod	basic|enhanced	5-5|5-5	
+5-10	621-623	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case|case	basic|enhanced	5-11|5-11	
+5-11	624-630	Vāciju	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	Vācija	GPE	https://en.wikipedia.org/wiki/Germany	_	_	nmod|nmod	basic|enhanced	5-9|5-9	
+5-12	630-631	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	5-15|5-15	
+5-13	632-636	kuru	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsan	kura	_	_	*[3]	*->3-2	obj|obj	basic|enhanced	5-15|5-15	
+5-14	637-643	varētu	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vonc0t300an	varēt	_	_	_	_	xcomp|xcomp	basic|enhanced	5-15|5-15	
+5-15	644-652	apvienot	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	apvienot	_	_	_	_	acl|acl	basic|enhanced	5-9|5-9	
+5-16	653-655	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case|case	basic|enhanced	5-20|5-20	
+5-17	656-660	tādu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	tāds	_	_	_	_	det|det	basic|enhanced	5-19|5-19	
+5-18	661-665	pašu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msan	pats	_	_	_	_	det|det	basic|enhanced	5-19|5-19	
+5-19	666-672	līgumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	līgums	_	_	*[4]	*->4-1	nmod|nmod	basic|enhanced	5-20|5-20	
+5-20	673-677	ķēdi	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	ķēde	_	_	*[4]	*->4-1	iobj|iobj	basic|enhanced	5-15|5-15	
+5-21	677-678	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	5-24|5-24	
+5-22	679-682	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	*[4]	*->4-2	nsubj:pass|nsubj	basic|enhanced	5-24|5-24	
+5-23	683-686	jau	_	_	_	_	_	_	_	_	_	_	_	_	r0t	jau	_	_	_	_	advmod|advmod	basic|enhanced	5-24|5-24	
+5-24	687-696	izveidota	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnpsnp	izveidot	_	_	_	_	acl|acl	basic|enhanced	5-20|5-20	
+5-25	697-699	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case|case	basic|enhanced	5-27|5-27	
+5-26	700-707	Padomju	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg5	padome	GPE[8]	https://en.wikipedia.org/wiki/Soviet\_Union[8]	_	_	nmod|nmod	basic|enhanced	5-27|5-27	
+5-27	708-717	Savienību	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	savienība	GPE[8]	https://en.wikipedia.org/wiki/Soviet\_Union[8]	_	_	iobj|iobj	basic|enhanced	5-24|5-24	
+5-28	717-718	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	5-3|5-3	
+
+#Text=Ģenerālsekretārs atkal pasvītroja, ka šādas idejas realizācija izslēgtu Čehoslovākiju no Austrumeiropas drošības sistēmas, kas, pēc viņa domām, bija pozitīvs moments.
+6-1	720-736	Ģenerālsekretārs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	ģenerālsekretārs	_	_	*[6]	*->6-1	nsubj|nsubj	basic|enhanced	6-3|6-3	
+6-2	737-742	atkal	_	_	_	_	_	_	_	_	_	_	_	_	r0t	atkal	_	_	_	_	advmod|advmod	basic|enhanced	6-3|6-3	
+6-3	743-753	pasvītroja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist230an	pasvītrot	_	_	_	_	root|root	basic|enhanced	6-3|6-3	
+6-4	753-754	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	6-9|6-9	
+6-5	755-757	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark|mark	basic|enhanced	6-9|6-9	
+6-6	758-763	šādas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsgn	šāda	_	_	_	_	det|det	basic|enhanced	6-7|6-7	
+6-7	764-770	idejas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	ideja	_	_	_	_	nmod|nmod	basic|enhanced	6-8|6-8	
+6-8	771-782	realizācija	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	realizācija	_	_	_	_	nsubj|nsubj	basic|enhanced	6-9|6-9	
+6-9	783-791	izslēgtu	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vmnc0t100an	izslēgt	_	_	_	_	ccomp|ccomp	basic|enhanced	6-3|6-3	
+6-10	792-805	Čehoslovākiju	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	Čehoslovākija	GPE	https://en.wikipedia.org/wiki/Czechoslovakia	_	_	obj|obj	basic|enhanced	6-9|6-9	
+6-11	806-808	no	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	_	_	_	_	case|case	basic|enhanced	6-14|6-14	
+6-12	809-823	Austrumeiropas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Austrumeiropa	GPE	https://en.wikipedia.org/wiki/Eastern\_Europe	_	_	nmod|nmod	basic|enhanced	6-13|6-13	
+6-13	824-832	drošības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	drošība	_	_	*[5]	*->5-1	nmod|nmod	basic|enhanced	6-14|6-14	
+6-14	833-841	sistēmas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	sistēma	_	_	*[5]	*->5-1	iobj|iobj	basic|enhanced	6-9|6-9	
+6-15	841-842	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	6-24|6-24	
+6-16	843-846	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	*[5]	*->5-2	nsubj|nsubj	basic|enhanced	6-24|6-24	
+6-17	846-847	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	6-20|6-20	
+6-18	848-851	pēc	_	_	_	_	_	_	_	_	_	_	_	_	spsg	pēc	_	_	_	_	case|case	basic|enhanced	6-20|6-20	
+6-19	852-856	viņa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msgn	viņš	_	_	*[6]	*->6-2	det|det	basic|enhanced	6-20|6-20	
+6-20	857-862	domām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	doma	_	_	_	_	parataxis|parataxis	basic|enhanced	6-24|6-24	
+6-21	862-863	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	6-20|6-20	
+6-22	864-868	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vcnisii30an	būt	_	_	_	_	cop|cop	basic|enhanced	6-24|6-24	
+6-23	869-877	pozitīvs	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	pozitīvs	_	_	_	_	amod|amod	basic|enhanced	6-24|6-24	
+6-24	878-885	moments	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	moments	_	_	_	_	advcl|advcl	basic|enhanced	6-3|6-3	
+6-25	885-886	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	6-3|6-3	
+
+#Text=V. Munteram likās “tīri patīkami.. Beneša kungu mazliet atsēdināt”.
+7-1	888-890	V.	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	v.	person[9]	https://lv.wikipedia.org/wiki/Vilhelms\_Munters[9]	*[7]	*->7-6	obl|obl	basic|enhanced	7-6|7-6	
+7-2	891-899	Munteram	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	npmsd1	Munters	person[9]	https://lv.wikipedia.org/wiki/Vilhelms\_Munters[9]	*[7]	*->7-6	flat:name|flat	basic|enhanced	7-1|7-1	
+7-3	900-905	likās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vtyisi130an	likties	_	_	_	_	aux|aux	basic|enhanced	7-6|7-6	
+7-4	906-907	“	_	_	_	_	_	_	_	_	_	_	_	_	zq	“	_	_	_	_	punct|punct	basic|enhanced	7-6|7-6	
+7-5	907-911	tīri	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	tīri	_	_	_	_	advmod|advmod	basic|enhanced	7-6|7-6	
+7-6	912-920	patīkami	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	patīkami	_	_	_	_	root|root	basic|enhanced	7-6|7-6	
+7-7	920-922	..	_	_	_	_	_	_	_	_	_	_	_	_	zx	..	_	_	_	_	punct|punct	basic|enhanced	7-6|7-6	
+7-8	923-929	Beneša	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Benešs	person[10]	*[10]	_	_	nmod|nmod	basic|enhanced	7-9|7-9	
+7-9	930-935	kungu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	kungs	person[10]	*[10]	_	_	obj|obj	basic|enhanced	7-11|7-11	
+7-10	936-943	mazliet	_	_	_	_	_	_	_	_	_	_	_	_	r0q	mazliet	_	_	_	_	advmod|advmod	basic|enhanced	7-11|7-11	
+7-11	944-953	atsēdināt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	atsēdināt	_	_	_	_	ccomp|ccomp	basic|enhanced	7-6|7-6	
+7-12	953-954	”	_	_	_	_	_	_	_	_	_	_	_	_	zq	”	_	_	_	_	punct|punct	basic|enhanced	7-6|7-6	
+7-13	954-955	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	7-6|7-6	
+
+#Text=Visbeidzot, viņš nevarēja piekrist fon Bīlova argumentiem par savstarpējo konsultāciju nelietderību.
+8-1	957-967	Visbeidzot	_	_	_	_	_	_	_	_	_	_	_	_	r0t	visbeidzot	_	_	_	_	parataxis|parataxis	basic|enhanced	8-4|8-4	
+8-2	967-968	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	8-1|8-1	
+8-3	969-973	viņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msnn	viņš	_	_	*[7]	*->7-7	nsubj|nsubj	basic|enhanced	8-4|8-4	
+8-4	974-982	nevarēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vonist330an	nevarēt	_	_	_	_	root|root	basic|enhanced	8-4|8-4	
+8-5	983-991	piekrist	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0i1000n	piekrist	_	_	_	_	xcomp|xcomp	basic|enhanced	8-4|8-4	
+8-6	992-995	fon	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	fon	person[11]	https://en.wikipedia.org/wiki/Bernhard\_von\_Bülow[11]	*[8]	*->8-2	nmod|nmod	basic|enhanced	8-8|8-8	
+8-7	996-1002	Bīlova	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Bīlovs	person[11]	https://en.wikipedia.org/wiki/Bernhard\_von\_Bülow[11]	*[8]	*->8-2	flat:name|flat	basic|enhanced	8-6|8-6	
+8-8	1003-1014	argumentiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	arguments	_	_	_	_	iobj|iobj	basic|enhanced	8-5|8-5	
+8-9	1015-1018	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	_	_	case|case	basic|enhanced	8-12|8-12	
+8-10	1019-1030	savstarpējo	Fem	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsayp	savstarpēja	_	_	_	_	amod|amod	basic|enhanced	8-11|8-11	
+8-11	1031-1043	konsultāciju	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	konsultācija	_	_	_	_	nmod|nmod	basic|enhanced	8-12|8-12	
+8-12	1044-1056	nelietderību	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	nelietderība	_	_	_	_	nmod|nmod	basic|enhanced	8-8|8-8	
+8-13	1056-1057	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	8-4|8-4	
+
+#Text=Viņaprāt, reģionāls konsultāciju pakts būtu daudz efektīvāks nekā konsultācijas Tautu Savienībā.
+9-1	1059-1067	Viņaprāt	_	_	_	_	_	_	_	_	_	_	_	_	r00	viņaprāt	_	_	_	_	parataxis|parataxis	basic|enhanced	9-8|9-8	
+9-2	1067-1068	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	9-1|9-1	
+9-3	1069-1078	reģionāls	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsnnp	reģionāls	_	_	_	_	amod|amod	basic|enhanced	9-5|9-5	
+9-4	1079-1091	konsultāciju	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	konsultācija	_	_	_	_	nmod|nmod	basic|enhanced	9-5|9-5	
+9-5	1092-1097	pakts	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	pakts	_	_	_	_	nsubj|nsubj	basic|enhanced	9-8|9-8	
+9-6	1098-1102	būtu	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vcnc0ii00an	būt	_	_	_	_	cop|cop	basic|enhanced	9-8|9-8	
+9-7	1103-1108	daudz	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpq	daudz	_	_	_	_	advmod|advmod	basic|enhanced	9-8|9-8	
+9-8	1109-1119	efektīvāks	Masc	Sing	Nom	Cmp	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Masc\|Number=Sing	*	*	afmsnnc	efektīvs	_	_	_	_	root|root	basic|enhanced	9-8|9-8	
+9-9	1120-1124	nekā	_	_	_	_	_	_	_	_	_	_	_	_	cs	nekā	_	_	_	_	mark|mark	basic|enhanced	9-10|9-10	
+9-10	1125-1138	konsultācijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	konsultācija	_	_	_	_	obl|obl	basic|enhanced	9-8|9-8	
+9-11	1139-1144	Tautu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	tauta	organization[12]	https://en.wikipedia.org/wiki/League\_of\_Nations[12]	_	_	nmod|nmod	basic|enhanced	9-12|9-12	
+9-12	1145-1154	Savienībā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	savienība	organization[12]	https://en.wikipedia.org/wiki/League\_of\_Nations[12]	_	_	obl|obl	basic|enhanced	9-10|9-10	
+9-13	1154-1155	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	9-8|9-8	
+
+#Text=[93] Tādējādi Latvijas puse uzskatīja līgumu ar PSRS par līdzekli spiedienam pret Vāciju.
+10-1	1156-1157	[	_	_	_	_	_	_	_	_	_	_	_	_	zb	\[	_	_	_	_	punct|punct	basic|enhanced	10-2|10-2	
+10-2	1157-1159	93	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	93	_	_	_	_	parataxis|parataxis	basic|enhanced	10-7|10-7	
+10-3	1159-1160	]	_	_	_	_	_	_	_	_	_	_	_	_	zb	\]	_	_	_	_	punct|punct	basic|enhanced	10-2|10-2	
+10-4	1161-1169	Tādējādi	_	_	_	_	_	_	_	_	_	_	_	_	r0m	tādējādi	_	_	_	_	advmod|advmod	basic|enhanced	10-7|10-7	
+10-5	1170-1178	Latvijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	_	_	nmod|nmod	basic|enhanced	10-6|10-6	
+10-6	1179-1183	puse	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	puse	_	_	_	_	nsubj|nsubj	basic|enhanced	10-7|10-7	
+10-7	1184-1193	uzskatīja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	uzskatīt	_	_	_	_	root|root	basic|enhanced	10-7|10-7	
+10-8	1194-1200	līgumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	līgums	_	_	_	_	obj|obj	basic|enhanced	10-7|10-7	
+10-9	1201-1203	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case|case	basic|enhanced	10-10|10-10	
+10-10	1204-1208	PSRS	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	PSRS	GPE	https://en.wikipedia.org/wiki/Soviet\_Union	_	_	nmod|nmod	basic|enhanced	10-8|10-8	
+10-11	1209-1212	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	_	_	case|case	basic|enhanced	10-12|10-12	
+10-12	1213-1221	līdzekli	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	līdzeklis	_	_	_	_	iobj|iobj	basic|enhanced	10-7|10-7	
+10-13	1222-1232	spiedienam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	spiediens	_	_	_	_	nmod|nmod	basic|enhanced	10-12|10-12	
+10-14	1233-1237	pret	_	_	_	_	_	_	_	_	_	_	_	_	spsa	pret	_	_	_	_	case|case	basic|enhanced	10-15|10-15	
+10-15	1238-1244	Vāciju	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	Vācija	GPE	https://en.wikipedia.org/wiki/Germany	_	_	nmod|nmod	basic|enhanced	10-13|10-13	
+10-16	1244-1245	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	10-7|10-7	
+
+#Text=Protams, nekādi Latvijas argumenti nevarēja šai jautājumā pārliecināt Vāciju.
+11-1	1247-1254	Protams	_	_	_	_	_	_	_	_	_	_	_	_	q	protams	_	_	_	_	parataxis|parataxis	basic|enhanced	11-6|11-6	
+11-2	1254-1255	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	11-1|11-1	
+11-3	1256-1262	nekādi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Ind,Neg	*	*	pi0mpny	nekāds	_	_	_	_	det|det	basic|enhanced	11-5|11-5	
+11-4	1263-1271	Latvijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	_	_	nmod|nmod	basic|enhanced	11-5|11-5	
+11-5	1272-1281	argumenti	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	arguments	_	_	_	_	nsubj|nsubj	basic|enhanced	11-6|11-6	
+11-6	1282-1290	nevarēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vonist330an	nevarēt	_	_	_	_	root|root	basic|enhanced	11-6|11-6	
+11-7	1291-1294	šai	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msln	šis	_	_	_	_	det|det	basic|enhanced	11-8|11-8	
+11-8	1295-1304	jautājumā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	jautājums	_	_	_	_	obl|obl	basic|enhanced	11-9|11-9	
+11-9	1305-1316	pārliecināt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	pārliecināt	_	_	_	_	xcomp|xcomp	basic|enhanced	11-6|11-6	
+11-10	1317-1323	Vāciju	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	Vācija	GPE	https://en.wikipedia.org/wiki/Germany	_	_	obj|obj	basic|enhanced	11-9|11-9	
+11-11	1323-1324	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	11-6|11-6	
+
+#Text=Apzīmējums “esam pacēluši jautājumu” neļauj spriest, vai šāds priekšlikums jau iesniegts PSRS, vai tikai tiek apspriests Latvijā.
+12-1	1326-1336	Apzīmējums	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	apzīmējums	_	_	_	_	nmod|nmod	basic|enhanced	12-4|12-4	
+12-2	1337-1338	“	_	_	_	_	_	_	_	_	_	_	_	_	zq	“	_	_	_	_	punct|punct	basic|enhanced	12-4|12-4	
+12-3	1338-1342	esam	*	Plur	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	1	*	vcnipii1pan	būt	_	_	_	_	aux|aux	basic|enhanced	12-4|12-4	
+12-4	1343-1351	pacēluši	Masc	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpnasnp	pacelt	_	_	_	_	dep|dep	basic|enhanced	12-7|12-7	
+12-5	1352-1361	jautājumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	jautājums	_	_	_	_	obj|obj	basic|enhanced	12-4|12-4	
+12-6	1361-1362	”	_	_	_	_	_	_	_	_	_	_	_	_	zq	”	_	_	_	_	punct|punct	basic|enhanced	12-4|12-4	
+12-7	1363-1369	neļauj	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt130ay	neļaut	_	_	_	_	root|root	basic|enhanced	12-7|12-7	
+12-8	1370-1377	spriest	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	spriest	_	_	_	_	ccomp|ccomp	basic|enhanced	12-7|12-7	
+12-9	1377-1378	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	12-14|12-14	
+12-10	1379-1382	vai	_	_	_	_	_	_	_	_	_	_	_	_	cc	vai	_	_	_	_	mark|mark	basic|enhanced	12-14|12-14	
+12-11	1383-1387	šāds	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	šāds	_	_	_	_	det|det	basic|enhanced	12-12|12-12	
+12-12	1388-1400	priekšlikums	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	priekšlikums	_	_	_	_	nsubj:pass|nsubj	basic|enhanced	12-14|12-14	
+12-13	1401-1404	jau	_	_	_	_	_	_	_	_	_	_	_	_	r0t	jau	_	_	_	_	advmod|advmod	basic|enhanced	12-14|12-14	
+12-14	1405-1414	iesniegts	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnp	iesniegt	_	_	_	_	ccomp|ccomp	basic|enhanced	12-8|12-8	
+12-15	1415-1419	PSRS	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	psrs	GPE	https://en.wikipedia.org/wiki/Soviet\_Union	_	_	iobj|iobj	basic|enhanced	12-14|12-14	
+12-16	1419-1420	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	12-20|12-20	
+12-17	1421-1424	vai	_	_	_	_	_	_	_	_	_	_	_	_	cc	vai	_	_	_	_	mark|mark	basic|enhanced	12-20|12-20	
+12-18	1425-1430	tikai	_	_	_	_	_	_	_	_	_	_	_	_	q	tikai	_	_	_	_	discourse|discourse	basic|enhanced	12-20|12-20	
+12-19	1431-1435	tiek	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vtnipi130an	tikt	_	_	_	_	aux|aux	basic|enhanced	12-20|12-20	
+12-20	1436-1446	apspriests	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnp	apspriest	_	_	_	_	conj|conj	basic|enhanced	12-14|12-14	
+12-21	1447-1454	Latvijā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	_	_	obl|obl	basic|enhanced	12-20|12-20	
+12-22	1454-1455	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	12-7|12-7	

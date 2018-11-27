@@ -1,0 +1,71 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Trīsdesmitgadniekiem pirmajā vietā esot pelnīšana, rūpes nezaudēt darbu, bet par veselību domāt laika neatliek.
+1-1	0-20	Trīsdesmitgadniekiem	ncmpd1	Trīsdesmitgadnieks	_	_	_	_	obl	basic	1-4	
+1-2	21-28	pirmajā	mosfsl	pirmā	_	_	_	_	amod	basic	1-3	
+1-3	29-34	vietā	ncfsl4	vieta	_	_	_	_	obl	basic	1-4	
+1-4	35-39	esot	vmnrpii00an	būt	_	_	_	_	root	basic	1-4	
+1-5	40-49	pelnīšana	ncfsn4	pelnīšana	_	_	_	_	nsubj	basic	1-4	
+1-6	49-50	,	zc	,	_	_	_	_	punct	basic	1-7	
+1-7	51-56	rūpes	ncfdn5	rūpes	_	_	_	_	conj	basic	1-5	
+1-8	57-65	nezaudēt	vmnn0t2000y	nezaudēt	_	_	_	_	acl	basic	1-7	
+1-9	66-71	darbu	ncmsa1	darbs	_	_	_	_	obj	basic	1-8	
+1-10	71-72	,	zc	,	_	_	_	_	punct	basic	1-16	
+1-11	73-76	bet	cc	bet	_	_	_	_	cc	basic	1-16	
+1-12	77-80	par	spsa	par	_	_	_	_	case	basic	1-13	
+1-13	81-89	veselību	ncfsa4	veselība	_	_	_	_	iobj	basic	1-14	
+1-14	90-95	domāt	vmnn0t2000n	domāt	_	_	_	_	acl	basic	1-15	
+1-15	96-101	laika	ncmsg1	laiks	_	_	_	_	nsubj	basic	1-16	
+1-16	102-110	neatliek	vgnipt130ay	neatlikt	_	_	_	_	conj	basic	1-4	
+1-17	110-111	.	zs	.	_	_	_	_	punct	basic	1-4	
+
+#Text=Ārste domā, ka šī paaudze vairs nemainīsies, jāaudzina jaunieši.
+2-1	113-118	Ārste	ncfsn5	ārste	_	_	*[1]	*->1-1	nsubj	basic	2-2	
+2-2	119-123	domā	vmnipt230an	domāt	_	_	_	_	root	basic	2-2	
+2-3	123-124	,	zc	,	_	_	_	_	punct	basic	2-8	
+2-4	125-127	ka	cs	ka	_	_	_	_	mark	basic	2-8	
+2-5	128-130	šī	pd0fsnn	šī	_	_	_	_	det	basic	2-6	
+2-6	131-138	paaudze	ncfsn5	paaudze	_	_	_	_	nsubj	basic	2-8	
+2-7	139-144	vairs	r0t	vairs	_	_	_	_	advmod	basic	2-8	
+2-8	145-156	nemainīsies	vmyifi330ay	nemainīties	_	_	_	_	ccomp	basic	2-2	
+2-9	156-157	,	zc	,	_	_	_	_	punct	basic	2-10	
+2-10	158-167	jāaudzina	vmnd0t300an	audzināt	_	_	_	_	conj	basic	2-8	
+2-11	168-176	jaunieši	ncmpn2	jaunietis	_	_	_	_	nsubj	basic	2-10	
+2-12	176-177	.	zs	.	_	_	_	_	punct	basic	2-2	
+
+#Text=Ja cilvēks ikdienā par veselību rūpējas, ārste to pamana un novērtē.
+3-1	179-181	Ja	cs	ja	_	_	_	_	mark	basic	3-6	
+3-2	182-189	cilvēks	ncmsn1	cilvēks	_	_	_	_	nsubj	basic	3-6	
+3-3	190-197	ikdienā	ncfsl4	ikdiena	_	_	_	_	obl	basic	3-6	
+3-4	198-201	par	spsa	par	_	_	_	_	case	basic	3-5	
+3-5	202-210	veselību	ncfsa4	veselība	_	_	_	_	iobj	basic	3-6	
+3-6	211-218	rūpējas	vmyipi230an	rūpēties	_	_	_	_	advcl	basic	3-10	
+3-7	218-219	,	zc	,	_	_	_	_	punct	basic	3-6	
+3-8	220-225	ārste	ncfsn5	ārste	_	_	*[1]	*->1-2	nsubj	basic	3-10	
+3-9	226-228	to	pd0msan	tas	_	_	_	_	obj	basic	3-10	
+3-10	229-235	pamana	vmnipt330an	pamanīt	_	_	_	_	root	basic	3-10	
+3-11	236-238	un	cc	un	_	_	_	_	cc	basic	3-12	
+3-12	239-246	novērtē	vmnipt230an	novērtēt	_	_	_	_	conj	basic	3-10	
+3-13	246-247	.	zs	.	_	_	_	_	punct	basic	3-10	
+
+#Text=Pie ģimenes ārsta vajadzētu nākt pēc padoma, profilaktiski, skaidro B.Neibarte.
+4-1	249-252	Pie	spsg	pie	_	_	_	_	case	basic	4-3	
+4-2	253-260	ģimenes	ncfsg5	ģimene	_	_	_	_	nmod	basic	4-3	
+4-3	261-266	ārsta	ncmsg1	ārsts	_	_	_	_	obl	basic	4-5	
+4-4	267-276	vajadzētu	vonc0t300an	vajadzēt	_	_	_	_	ccomp	basic	4-11	
+4-5	277-281	nākt	vmnn0i1000n	nākt	_	_	_	_	xcomp	basic	4-4	
+4-6	282-285	pēc	spsg	pēc	_	_	_	_	case	basic	4-7	
+4-7	286-292	padoma	ncmsg1	padoms	_	_	_	_	obl	basic	4-5	
+4-8	292-293	,	zc	,	_	_	_	_	punct	basic	4-9	
+4-9	294-307	profilaktiski	r0m	profilaktiski	_	_	_	_	conj	basic	4-7	
+4-10	307-308	,	zc	,	_	_	_	_	punct	basic	4-4	
+4-11	309-316	skaidro	vmnipt230an	skaidrot	_	_	_	_	root	basic	4-11	
+4-12	317-319	B.	yp	B.	person[1]	*[1]	*[1]	*->1-3	nsubj	basic	4-11	
+4-13	319-327	Neibarte	npfsn5	Neibarte	person[1]	*[1]	*[1]	*->1-3	flat:name	basic	4-12	
+4-14	327-328	.	zs	.	_	_	_	_	punct	basic	4-11	

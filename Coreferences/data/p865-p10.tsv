@@ -1,0 +1,77 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Kā uzsver gids Ludviks Bērziņš, muzeja atvēršana ir apsveicama, jo Rīga ir jūgendstila galvaspilsēta, bet līdz šim nav bijusi iespēja aplūkot interjerus.
+1-1	0-2	Kā	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0m	kā	_	_	_	_	advmod|advmod	basic|enhanced	1-2|1-2	
+1-2	3-9	uzsver	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt130an	uzsvērt	_	_	_	_	advcl|advcl	basic|enhanced	1-10|1-10	
+1-3	10-14	gids	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	gids	_	_	*[1]	*->1-1	nmod|nmod	basic|enhanced	1-4|1-4	
+1-4	15-22	Ludviks	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Ludviks	person[1]	*[1]	*[1]	*->1-2	nsubj|nsubj	basic|enhanced	1-2|1-2	
+1-5	23-30	Bērziņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Bērziņš	person[1]	*[1]	*[1]	*->1-2	flat:name|flat	basic|enhanced	1-4|1-4	
+1-6	30-31	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-2|1-2	
+1-7	32-38	muzeja	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	muzejs	_	_	_	_	nmod|nmod	basic|enhanced	1-8|1-8	
+1-8	39-48	atvēršana	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	atvēršana	_	_	_	_	nsubj|nsubj	basic|enhanced	1-10|1-10	
+1-9	49-51	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	aux|aux	basic|enhanced	1-10|1-10	
+1-10	52-62	apsveicama	Fem	Sing	Nom	Pos	*	Pres	*	Pass	*	Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	*	vmnpdfsnppnp	apsveikt	_	_	_	_	root|root	basic|enhanced	1-10|1-10	
+1-11	62-63	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-10|1-10	
+1-12	64-66	jo	_	_	_	_	_	_	_	_	_	_	_	_	cs	jo	_	_	_	_	mark|mark	basic|enhanced	1-16|1-16	
+1-13	67-71	Rīga	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Rīga	GPE	https://en.wikipedia.org/wiki/Riga	_	_	dep|dep	basic|enhanced	1-16|1-16	
+1-14	72-74	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	cop|cop	basic|enhanced	1-16|1-16	
+1-15	75-86	jūgendstila	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	jūgendstils	_	_	_	_	nmod|nmod	basic|enhanced	1-16|1-16	
+1-16	87-100	galvaspilsēta	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	galvaspilsēta	_	_	_	_	advcl|advcl	basic|enhanced	1-10|1-10	
+1-17	100-101	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-22|1-22	
+1-18	102-105	bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	_	_	cc|cc	basic|enhanced	1-22|1-22	
+1-19	106-110	līdz	_	_	_	_	_	_	_	_	_	_	_	_	spsd	līdz	_	_	_	_	case|case	basic|enhanced	1-20|1-20	
+1-20	111-114	šim	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msdn	šis	_	_	_	_	obl|obl	basic|enhanced	1-22|1-22	
+1-21	115-118	nav	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30ay	nebūt	_	_	_	_	aux|aux	basic|enhanced	1-22|1-22	
+1-22	119-125	bijusi	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnasnp	būt	_	_	_	_	conj|conj	basic|enhanced	1-16|1-16	
+1-23	126-133	iespēja	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	iespēja	_	_	_	_	nsubj|nsubj	basic|enhanced	1-22|1-22	
+1-24	134-141	aplūkot	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	aplūkot	_	_	_	_	acl|acl	basic|enhanced	1-23|1-23	
+1-25	142-152	interjerus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	interjers	_	_	_	_	obj|obj	basic|enhanced	1-24|1-24	
+1-26	152-153	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-10|1-10	
+
+#Text="Lielākoties man ir vācu tūristi – viņi ir kompetenti un ir lasījuši iepriekš par Rīgu.
+2-1	155-156	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	_	_	_	_	punct|punct	basic|enhanced	2-4|2-4	
+2-2	156-167	Lielākoties	_	_	_	_	_	_	_	_	_	_	_	_	r0q	lielākoties	_	_	_	_	advmod|advmod	basic|enhanced	2-4|2-4	
+2-3	168-171	man	*	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10sdn	es	_	_	*[1]	*->1-3	obl|obl	basic|enhanced	2-4|2-4	
+2-4	172-174	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipii30an	būt	_	_	_	_	root|root	basic|enhanced	2-4|2-4	
+2-5	175-179	vācu	Masc	Ptan	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	ncmdgs	vācu	_	_	*[2]	*->2-1	nmod|nmod	basic|enhanced	2-6|2-6	
+2-6	180-187	tūristi	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	tūriste	_	_	*[2]	*->2-1	nsubj|nsubj	basic|enhanced	2-4|2-4	
+2-7	188-189	–	_	_	_	_	_	_	_	_	_	_	_	_	zd	–	_	_	_	_	punct|punct	basic|enhanced	2-10|2-10	
+2-8	190-194	viņi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Prs	3	*	pp3mpnn	viņš	_	_	*[2]	*->2-2	nsubj|nsubj	basic|enhanced	2-10|2-10	
+2-9	195-197	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	cop|cop	basic|enhanced	2-10|2-10	
+2-10	198-208	kompetenti	Masc	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpnnp	kompetents	_	_	_	_	conj|conj	basic|enhanced	2-4|2-4	
+2-11	209-211	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	2-13|2-13	
+2-12	212-214	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	aux|aux	basic|enhanced	2-13|2-13	
+2-13	215-223	lasījuši	Masc	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpnasnp	lasīt	_	_	_	_	conj|conj	basic|enhanced	2-10|2-10	
+2-14	224-232	iepriekš	_	_	_	_	_	_	_	_	_	_	_	_	r0t	iepriekš	_	_	_	_	advmod|advmod	basic|enhanced	2-13|2-13	
+2-15	233-236	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	_	_	case|case	basic|enhanced	2-16|2-16	
+2-16	237-241	Rīgu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	Rīga	GPE	https://en.wikipedia.org/wiki/Riga	_	_	iobj|iobj	basic|enhanced	2-13|2-13	
+2-17	241-242	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	2-4|2-4	
+
+#Text=Grupās mēdz būt arī Baltijas vāciešu atvases, un tā viņiem šeit ir zināma nostalģija," sacīja gids.
+3-1	244-250	Grupās	Fem	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	grupa	_	_	_	_	obl|obl	basic|enhanced	3-2|3-2	
+3-2	251-255	mēdz	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vonipt130an	mēgt	_	_	_	_	parataxis|parataxis	basic|enhanced	3-18|3-18	
+3-3	256-259	būt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0ii000n	būt	_	_	_	_	xcomp|xcomp	basic|enhanced	3-2|3-2	
+3-4	260-263	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse|discourse	basic|enhanced	3-7|3-7	
+3-5	264-272	Baltijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Baltija	GPE	https://en.wikipedia.org/wiki/Baltic\_states	*[3]	*->3-1	nmod|nmod	basic|enhanced	3-6|3-6	
+3-6	273-280	vāciešu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	vācietis	_	_	*[3]	*->3-1	nmod|nmod	basic|enhanced	3-7|3-7	
+3-7	281-288	atvases	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	atvase	_	_	*[3]	*->3-1	nsubj|nsubj	basic|enhanced	3-2|3-2	
+3-8	288-289	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	3-15|3-15	
+3-9	290-292	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	3-15|3-15	
+3-10	293-295	tā	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsnn	tā	_	_	_	_	nsubj|nsubj	basic|enhanced	3-15|3-15	
+3-11	296-302	viņiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Prs	3	*	pp3mpdn	viņš	_	_	*[3]	*->3-2	obl|obl	basic|enhanced	3-15|3-15	
+3-12	303-307	šeit	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0p	šeit	_	_	_	_	advmod|advmod	basic|enhanced	3-15|3-15	
+3-13	308-310	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	cop|cop	basic|enhanced	3-15|3-15	
+3-14	311-317	zināma	Fem	Sing	Nom	Pos	*	Pres	*	Pass	*	Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	*	vmnpdfsnppnp	zināt	_	_	_	_	amod|amod	basic|enhanced	3-15|3-15	
+3-15	318-328	nostalģija	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	nostalģija	_	_	_	_	conj|conj	basic|enhanced	3-2|3-2	
+3-16	328-329	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	3-2|3-2	
+3-17	329-330	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	_	_	_	_	punct|punct	basic|enhanced	3-2|3-2	
+3-18	331-337	sacīja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	sacīt	_	_	_	_	root|root	basic|enhanced	3-18|3-18	
+3-19	338-342	gids	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	gids	_	_	*[1]	*->1-4	nsubj|nsubj	basic|enhanced	3-18|3-18	
+3-20	342-343	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	3-18|3-18	

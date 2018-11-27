@@ -1,0 +1,36 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Jasmīne.
+1-1	0-7	Jasmīne	npfsn5	Jasmīne	person	*	_	_	root	basic	1-1	
+1-2	7-8	.	zs	.	_	_	_	_	punct	basic	1-1	
+
+#Text=Tu nedzirdēji visu.
+2-1	10-12	Tu	pp20snn	tu	_	_	*[1]	*->1-1	nsubj	basic	2-2	
+2-2	13-23	nedzirdēji	vmnist32say	nedzirdēt	_	_	_	_	root	basic	2-2	
+2-3	24-28	visu	pg0msan	viss	_	_	_	_	obj	basic	2-2	
+2-4	28-29	.	zs	.	_	_	_	_	punct	basic	2-2	
+
+#Text=No viena vārda tev radās iemesls piedzerties.
+3-1	31-33	No	spsg	no	_	_	_	_	case	basic	3-3	
+3-2	34-39	viena	mcsmsg	viens	_	_	_	_	nummod	basic	3-3	
+3-3	40-45	vārda	ncmsg1	vārds	_	_	_	_	obl	basic	3-5	
+3-4	46-49	tev	pp20sdn	tu	_	_	*[1]	*->1-2	obl	basic	3-5	
+3-5	50-55	radās	vmyisi130an	rasties	_	_	_	_	root	basic	3-5	
+3-6	56-63	iemesls	ncmsn1	iemesls	_	_	_	_	nsubj	basic	3-5	
+3-7	64-75	piedzerties	vmyn0i1000n	piedzerties	_	_	_	_	acl	basic	3-6	
+3-8	75-76	.	zs	.	_	_	_	_	punct	basic	3-5	
+
+#Text=Un arī tagad tu esi dzēris.
+4-1	78-80	Un	cc	un	_	_	_	_	cc	basic	4-6	
+4-2	81-84	arī	q	arī	_	_	_	_	discourse	basic	4-3	
+4-3	85-90	tagad	r0t	tagad	_	_	_	_	advmod	basic	4-6	
+4-4	91-93	tu	pp20snn	tu	_	_	*[1]	*->1-3	nsubj	basic	4-6	
+4-5	94-97	esi	vcnipii2san	būt	_	_	_	_	aux	basic	4-6	
+4-6	98-104	dzēris	vmnpdmsnasnp	dzert	_	_	_	_	root	basic	4-6	
+4-7	104-105	.	zs	.	_	_	_	_	punct	basic	4-6	

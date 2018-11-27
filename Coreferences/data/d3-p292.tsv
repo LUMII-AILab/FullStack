@@ -1,0 +1,38 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=ZITA.
+1-1	0-4	ZITA	npfsn4	Zita	person	*	_	_	root	basic	1-1	
+1-2	4-5	.	zs	.	_	_	_	_	punct	basic	1-1	
+
+#Text=Tu nāci mājā no meža, tā bija saulaina un arī melna diena...
+2-1	7-9	Tu	pp20snn	tu	_	_	*[2]	*->2-1	nsubj	basic	2-2	
+2-2	10-14	nāci	vmnisi12san	nākt	_	_	_	_	root	basic	2-2	
+2-3	15-19	mājā	ncfsl4	māja	_	_	_	_	obl	basic	2-2	
+2-4	20-22	no	spsg	no	_	_	_	_	case	basic	2-5	
+2-5	23-27	meža	ncmsg1	mežs	_	_	_	_	obl	basic	2-2	
+2-6	27-28	,	zc	,	_	_	_	_	punct	basic	2-13	
+2-7	29-31	tā	pd0fsnn	tā	_	_	*[1]	*->1-1	nsubj	basic	2-13	
+2-8	32-36	bija	vcnisii30an	būt	_	_	_	_	cop	basic	2-13	
+2-9	37-45	saulaina	affsnnp	saulaina	_	_	_	_	amod	basic	2-13	
+2-10	46-48	un	cc	un	_	_	_	_	cc	basic	2-12	
+2-11	49-52	arī	q	arī	_	_	_	_	discourse	basic	2-12	
+2-12	53-58	melna	affsnnp	melna	_	_	_	_	conj	basic	2-9	
+2-13	59-64	diena	ncfsn4	diena	_	_	*[1]	*->1-2	conj	basic	2-2	
+2-14	64-67	...	zs	...	_	_	_	_	punct	basic	2-2	
+
+#Text=Pār ezeru laidās putns, un tu izšāvi.
+3-1	69-72	Pār	spsa	pār	_	_	_	_	case	basic	3-2	
+3-2	73-78	ezeru	ncmsa1	ezers	_	_	_	_	obl	basic	3-3	
+3-3	79-85	laidās	vmyisi130an	laisties	_	_	_	_	root	basic	3-3	
+3-4	86-91	putns	ncmsn1	putns	_	_	_	_	nsubj	basic	3-3	
+3-5	91-92	,	zc	,	_	_	_	_	punct	basic	3-8	
+3-6	93-95	un	cc	un	_	_	_	_	cc	basic	3-8	
+3-7	96-98	tu	pp20snn	tu	_	_	*[2]	*->2-2	nsubj	basic	3-8	
+3-8	99-105	izšāvi	vmnist12san	izšaut	_	_	_	_	conj	basic	3-3	
+3-9	105-106	.	zs	.	_	_	_	_	punct	basic	3-3	

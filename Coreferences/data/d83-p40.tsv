@@ -1,0 +1,86 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Tēvs nopūtās, atsāka iet līkiem, vaļīgiem ceļgaliem, nevarīgi kustinādams garās rokas.
+1-1	0-4	Tēvs	ncmsn1	tēvs	*[2]	*->2-1	nsubj	basic	1-2	
+1-2	5-12	nopūtās	vmyisi130an	nopūsties	_	_	root	basic	1-2	
+1-3	12-13	,	zc	,	_	_	punct	basic	1-4	
+1-4	14-20	atsāka	vpnist130an	atsākt	_	_	conj	basic	1-2	
+1-5	21-24	iet	vmnn0ii000n	iet	_	_	xcomp	basic	1-4	
+1-6	25-31	līkiem	afmpdnp	līks	_	_	amod	basic	1-9	
+1-7	31-32	,	zc	,	_	_	punct	basic	1-8	
+1-8	33-41	vaļīgiem	afmpdnp	vaļīgs	_	_	conj	basic	1-6	
+1-9	42-51	ceļgaliem	ncmpd1	ceļgals	_	_	acl	basic	1-4	
+1-10	51-52	,	zc	,	_	_	punct	basic	1-11	
+1-11	53-61	nevarīgi	rpm	nevarīgi	_	_	advcl	basic	1-4	
+1-12	62-73	kustinādams	vmnppmsnap00	kustināt	_	_	dep	basic	1-11	
+1-13	74-79	garās	affpayp	gara	_	_	amod	basic	1-14	
+1-14	80-85	rokas	ncfpn4	roka	_	_	iobj	basic	1-12	
+1-15	85-86	.	zs	.	_	_	punct	basic	1-2	
+
+#Text=Viņš nekādi netika līdzi tiem, kas spiegdami kūleņoja ūdenī, sizdami cits pret citu sudrabainas šaltis.
+2-1	88-92	Viņš	pp3msnn	viņš	*[2]	*->2-2	nsubj	basic	2-3	
+2-2	93-99	nekādi	pi0mpny	nekāds	_	_	obl	basic	2-3	
+2-3	100-106	netika	vmnisi130ay	netikt	_	_	root	basic	2-3	
+2-4	107-112	līdzi	rrp	līdzi	_	_	case	basic	2-5	
+2-5	113-117	tiem	pd0mpdn	tas	*[1]	*->1-1	obl	basic	2-3	
+2-6	117-118	,	zc	,	_	_	punct	basic	2-9	
+2-7	119-122	kas	pr000nn	kas	*[1]	*->1-2	nsubj	basic	2-9	
+2-8	123-132	spiegdami	vmnppmpnap00	spiegt	_	_	dep	basic	2-9	
+2-9	133-141	kūleņoja	vmnisi230an	kūleņot	_	_	acl	basic	2-5	
+2-10	142-147	ūdenī	ncmsl2	ūdens	_	_	obl	basic	2-9	
+2-11	147-148	,	zc	,	_	_	punct	basic	2-12	
+2-12	149-156	sizdami	vmnppmpnap00	sist	_	_	acl	basic	2-9	
+2-13	157-161	cits	pi0msnn	cits	_	_	obl	basic	2-12	
+2-14	162-166	pret	spsa	pret	_	_	case	basic	2-15	
+2-15	167-171	citu	pi0mpgn	cits	_	_	compound	basic	2-13	
+2-16	172-183	sudrabainas	arfpanp	sudrabaina	_	_	amod	basic	2-17	
+2-17	184-190	šaltis	ncfpa6	šalts	_	_	obj	basic	2-12	
+2-18	190-191	.	zs	.	_	_	punct	basic	2-3	
+
+#Text=Nedz tika līdzi, nedz nokļuva dziļumā.
+3-1	193-197	Nedz	cc	nedz	_	_	cc	basic	3-2	
+3-2	198-202	tika	vtnisi130an	tikt	_	_	root	basic	3-2	
+3-3	203-208	līdzi	rrp	līdzi	_	_	advmod	basic	3-2	
+3-4	208-209	,	zc	,	_	_	punct	basic	3-6	
+3-5	210-214	nedz	cc	nedz	_	_	cc	basic	3-6	
+3-6	215-222	nokļuva	vmnisi130an	nokļūt	_	_	conj	basic	3-2	
+3-7	223-230	dziļumā	ncmsl1	dziļumā	_	_	obl	basic	3-6	
+3-8	230-231	.	zs	.	_	_	punct	basic	3-2	
+
+#Text=Jūra bija visur vienāda — sekla un remdena līdz pašam apvārsnim.
+4-1	233-237	Jūra	ncfsn4	jūra	*[3]	*->3-1	nsubj	basic	4-4	
+4-2	238-242	bija	vcnisii30an	būt	_	_	cop	basic	4-4	
+4-3	243-248	visur	r0p	visur	_	_	advmod	basic	4-4	
+4-4	249-256	vienāda	arfsnnp	vienāda	_	_	root	basic	4-4	
+4-5	257-258	—	zd	—	_	_	punct	basic	4-6	
+4-6	259-264	sekla	affsnnp	sekla	_	_	acl	basic	4-4	
+4-7	265-267	un	cc	un	_	_	cc	basic	4-8	
+4-8	268-275	remdena	affsnnp	remdena	_	_	conj	basic	4-6	
+4-9	276-280	līdz	spsd	līdz	_	_	case	basic	4-11	
+4-10	281-286	pašam	pg0msdn	pats	_	_	det	basic	4-11	
+4-11	287-296	apvārsnim	ncmsd2	apvārsnis	_	_	obl	basic	4-6	
+4-12	296-297	.	zs	.	_	_	punct	basic	4-4	
+
+#Text=Šur tur nosēta akmeņu pūtēm.
+5-1	299-302	Šur	r0p	šur	_	_	advmod	basic	5-3	
+5-2	303-306	tur	r0p	tur	_	_	compound	basic	5-1	
+5-3	307-313	nosēta	vmnpdfsnpsnp	nosēt	_	_	root	basic	5-3	
+5-4	314-320	akmeņu	ncmpg2	akmens	_	_	nmod	basic	5-5	
+5-5	321-326	pūtēm	ncfpd5	pūte	_	_	iobj	basic	5-3	
+5-6	326-327	.	zs	.	_	_	punct	basic	5-3	
+
+#Text=Viņš, klusi lādēdamies, brida to cauri.
+6-1	329-333	Viņš	pp3msnn	viņš	*[2]	*->2-3	nsubj	basic	6-6	
+6-2	333-334	,	zc	,	_	_	punct	basic	6-4	
+6-3	335-340	klusi	rpm	klusi	_	_	advmod	basic	6-4	
+6-4	341-351	lādēdamies	vmyppm0nap00	lādēties	_	_	acl	basic	6-6	
+6-5	351-352	,	zc	,	_	_	punct	basic	6-4	
+6-6	353-358	brida	vmnisi130an	brist	_	_	root	basic	6-6	
+6-7	359-361	to	pd0fsan	tā	*[3]	*->3-2	obj	basic	6-6	
+6-8	362-367	cauri	rrp	cauri	_	_	iobj	basic	6-6	
+6-9	367-368	.	zs	.	_	_	punct	basic	6-6	

@@ -1,0 +1,54 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Iesim, saudzīgi drošina Bērts un nezina, ko iesākt.
+1-1	0-5	Iesim	*	Plur	*	*	*	*	Imp	Act	*	Mood=Imp\|Number=Plur\|Person=1\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	1	*	vmnm0ii1pan	iet	_	_	_	_	ccomp|ccomp	basic|enhanced	1-4|1-4	
+1-2	5-6	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-1|1-1	
+1-3	7-15	saudzīgi	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	saudzīgi	_	_	_	_	advmod|advmod	basic|enhanced	1-4|1-4	
+1-4	16-23	drošina	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	drošināt	_	_	_	_	root|root	basic|enhanced	1-4|1-4	
+1-5	24-29	Bērts	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Bērts	person	*	*[1]	*->1-1	nsubj|nsubj	basic|enhanced	1-4|1-4	
+1-6	30-32	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	1-7|1-7	
+1-7	33-39	nezina	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330ay	nezināt	_	_	_	_	conj|conj	basic|enhanced	1-4|1-4	
+1-8	39-40	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-10|1-10	
+1-9	41-43	ko	*	*	Acc	*	*	*	*	*	*	Case=Acc\|PronType=Rel	*	*	pr000an	kas	_	_	_	_	obj|obj	basic|enhanced	1-10|1-10	
+1-10	44-50	iesākt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	iesākt	_	_	_	_	ccomp|ccomp	basic|enhanced	1-7|1-7	
+1-11	50-51	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-4|1-4	
+
+#Text=Un pēc laika, kad brālis vēl aizvien nekustas: es tev gribēju jautāt — vai tu vēl aizvien dzirdi tās balsis?
+2-1	53-55	Un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	dep|dep	basic|enhanced	2-3|2-3	
+2-2	56-59	pēc	_	_	_	_	_	_	_	_	_	_	_	_	spsg	pēc	_	_	_	_	case|case	basic|enhanced	2-3|2-3	
+2-3	60-65	laika	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	laiks	_	_	_	_	root|root	basic|enhanced	2-3|2-3	
+2-4	65-66	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-9|2-9	
+2-5	67-70	kad	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0t	kad	_	_	_	_	advmod|advmod	basic|enhanced	2-9|2-9	
+2-6	71-77	brālis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	brālis	_	_	*[2]	*->2-1	nsubj|nsubj	basic|enhanced	2-9|2-9	
+2-7	78-81	vēl	_	_	_	_	_	_	_	_	_	_	_	_	r0t	vēl	_	_	_	_	advmod|advmod	basic|enhanced	2-9|2-9	
+2-8	82-89	aizvien	_	_	_	_	_	_	_	_	_	_	_	_	r0t	aizvien	_	_	_	_	advmod|advmod	basic|enhanced	2-9|2-9	
+2-9	90-98	nekustas	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipi130an	nekustēties	_	_	_	_	advcl|advcl	basic|enhanced	2-3|2-3	
+2-10	98-99	:	_	_	_	_	_	_	_	_	_	_	_	_	zo	:	_	_	_	_	punct|punct	basic|enhanced	2-13|2-13	
+2-11	100-102	es	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10snn	es	_	_	*[1]	*->1-2	nsubj|nsubj	basic|enhanced	2-13|2-13	
+2-12	103-106	tev	*	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Number=Sing\|Person=2\|PronType=Prs	2	*	pp20sdn	tu	_	_	*[2]	*->2-2	iobj|iobj	basic|enhanced	2-14|2-14	
+2-13	107-114	gribēju	*	Sing	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	1	*	vonist31san	gribēt	_	_	_	_	parataxis|parataxis	basic|enhanced	2-3|2-3	
+2-14	115-121	jautāt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	jautāt	_	_	_	_	xcomp|xcomp	basic|enhanced	2-13|2-13	
+2-15	122-123	—	_	_	_	_	_	_	_	_	_	_	_	_	zd	—	_	_	_	_	punct|punct	basic|enhanced	2-20|2-20	
+2-16	124-127	vai	_	_	_	_	_	_	_	_	_	_	_	_	q	vai	_	_	_	_	discourse|discourse	basic|enhanced	2-20|2-20	
+2-17	128-130	tu	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=2\|PronType=Prs	2	*	pp20snn	tu	_	_	*[2]	*->2-3	nsubj|nsubj	basic|enhanced	2-20|2-20	
+2-18	131-134	vēl	_	_	_	_	_	_	_	_	_	_	_	_	r0t	vēl	_	_	_	_	advmod|advmod	basic|enhanced	2-19|2-19	
+2-19	135-142	aizvien	_	_	_	_	_	_	_	_	_	_	_	_	r0t	aizvien	_	_	_	_	advmod|advmod	basic|enhanced	2-20|2-20	
+2-20	143-149	dzirdi	*	Sing	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=2\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	2	*	vmnipt32san	dzirdēt	_	_	_	_	ccomp|ccomp	basic|enhanced	2-14|2-14	
+2-21	150-153	tās	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur\|PronType=Dem	*	*	pd0fpan	tā	_	_	_	_	det|det	basic|enhanced	2-22|2-22	
+2-22	154-160	balsis	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn6	balss	_	_	_	_	iobj|iobj	basic|enhanced	2-20|2-20	
+2-23	160-161	?	_	_	_	_	_	_	_	_	_	_	_	_	zs	?	_	_	_	_	punct|punct	basic|enhanced	2-3|2-3	
+
+#Text=Vai tad tas nav pārgājis?
+3-1	163-166	Vai	_	_	_	_	_	_	_	_	_	_	_	_	q	vai	_	_	_	_	discourse|discourse	basic|enhanced	3-5|3-5	
+3-2	167-170	tad	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	tad	_	_	_	_	advmod|advmod	basic|enhanced	3-5|3-5	
+3-3	171-174	tas	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	tas	_	_	_	_	nsubj|nsubj	basic|enhanced	3-5|3-5	
+3-4	175-178	nav	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30ay	nebūt	_	_	_	_	aux|aux	basic|enhanced	3-5|3-5	
+3-5	179-187	pārgājis	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnasnp	pāriet	_	_	_	_	root|root	basic|enhanced	3-5|3-5	
+3-6	187-188	?	_	_	_	_	_	_	_	_	_	_	_	_	zs	?	_	_	_	_	punct|punct	basic|enhanced	3-5|3-5	

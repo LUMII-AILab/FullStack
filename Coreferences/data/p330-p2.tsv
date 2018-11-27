@@ -1,0 +1,30 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Lielbritānijas premjeru Gordonu Braunu, kurš pirms nepilna mēneša piedzīvoja pazemojošu sakāvi municipālajās vēlēšanās, gaida atkal jauns pārbaudījums.
+1-1	0-14	Lielbritānijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Lielbritānija	GPE	https://en.wikipedia.org/wiki/United\_Kingdom	*[1]	*->1-1	nmod|nmod	basic|enhanced	1-2|1-2	
+1-2	15-23	premjeru	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	premjers	_	_	*[1]	*->1-1	nmod|nmod	basic|enhanced	1-3|1-3	
+1-3	24-31	Gordonu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	Gordons	person[1]	https://en.wikipedia.org/wiki/Gordon\_Brown[1]	*[1]	*->1-2	obj|obj	basic|enhanced	1-16|1-16	
+1-4	32-38	Braunu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	Brauns	person[1]	https://en.wikipedia.org/wiki/Gordon\_Brown[1]	*[1]	*->1-2	flat:name|flat	basic|enhanced	1-3|1-3	
+1-5	38-39	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-10|1-10	
+1-6	40-44	kurš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msnn	kurš	_	_	*[1]	*->1-3	nsubj|nsubj	basic|enhanced	1-10|1-10	
+1-7	45-50	pirms	_	_	_	_	_	_	_	_	_	_	_	_	spsg	pirms	_	_	_	_	case|case	basic|enhanced	1-9|1-9	
+1-8	51-58	nepilna	Masc	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsgnp	nepilns	_	_	_	_	amod|amod	basic|enhanced	1-9|1-9	
+1-9	59-65	mēneša	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	mēnesis	_	_	_	_	obl|obl	basic|enhanced	1-10|1-10	
+1-10	66-76	piedzīvoja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist230an	piedzīvot	_	_	_	_	acl|acl	basic|enhanced	1-3|1-3	
+1-11	77-87	pazemojošu	Fem	Sing	Acc	Pos	*	Pres	*	Pass	*	Aspect=Imp\|Case=Acc\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Imp	vmnpdfsaapn0	pazemot	_	_	_	_	amod|amod	basic|enhanced	1-12|1-12	
+1-12	88-94	sakāvi	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	sakāve	_	_	_	_	obj|obj	basic|enhanced	1-10|1-10	
+1-13	95-108	municipālajās	Fem	Plur	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	arfplyp	municipāla	_	_	_	_	amod|amod	basic|enhanced	1-14|1-14	
+1-14	109-118	vēlēšanās	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsnr	vēlēšanās	_	_	_	_	acl|acl	basic|enhanced	1-12|1-12	
+1-15	118-119	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-10|1-10	
+1-16	120-125	gaida	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	gaidīt	_	_	_	_	root|root	basic|enhanced	1-16|1-16	
+1-17	126-131	atkal	_	_	_	_	_	_	_	_	_	_	_	_	r0t	atkal	_	_	_	_	advmod|advmod	basic|enhanced	1-18|1-18	
+1-18	132-137	jauns	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	jauns	_	_	_	_	amod|amod	basic|enhanced	1-19|1-19	
+1-19	138-150	pārbaudījums	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	pārbaudījums	_	_	_	_	nsubj|nsubj	basic|enhanced	1-16|1-16	
+1-20	150-151	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-16|1-16	

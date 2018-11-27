@@ -1,0 +1,41 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Durbē svētkos izgaismotu objektu gan nebūs, pauž V. Kārkliņš.
+1-1	0-5	Durbē	npfsl5	Durbe	GPE	https://en.wikipedia.org/wiki/Durbe	_	_	obl	basic	1-6	
+1-2	6-13	svētkos	ncmdl1	svētki	_	_	_	_	obl	basic	1-6	
+1-3	14-24	izgaismotu	vmnpdmsapsnp	izgaismot	_	_	_	_	amod	basic	1-4	
+1-4	25-32	objektu	ncmpg1	objekts	_	_	_	_	nsubj	basic	1-6	
+1-5	33-36	gan	q	gan	_	_	_	_	discourse	basic	1-6	
+1-6	37-42	nebūs	vgnifii30ay	nebūt	_	_	_	_	ccomp	basic	1-8	
+1-7	42-43	,	zc	,	_	_	_	_	punct	basic	1-6	
+1-8	44-48	pauž	vmnipt130an	paust	_	_	_	_	root	basic	1-8	
+1-9	49-51	V.	yp	V.	person[1]	*[1]	_	_	nsubj	basic	1-8	
+1-10	52-60	Kārkliņš	npmsn1	Kārkliņš	person[1]	*[1]	_	_	flat:name	basic	1-9	
+1-11	60-61	.	zs	.	_	_	_	_	punct	basic	1-8	
+
+#Text=Arī Aizputē īpaša svētku apgaismojuma nebūs, taču to kompensēs salūts pilsētas centrālajā laukumā, pastāsta J. Grasmanis.
+2-1	63-66	Arī	q	arī	_	_	_	_	discourse	basic	2-2	
+2-2	67-74	Aizputē	npfsl5	Aizpute	GPE	https://en.wikipedia.org/wiki/Aizpute	_	_	obl	basic	2-6	
+2-3	75-80	īpaša	afmsgnp	īpašs	_	_	_	_	amod	basic	2-5	
+2-4	81-87	svētku	ncmdg1	svētki	_	_	_	_	nmod	basic	2-5	
+2-5	88-100	apgaismojuma	ncmsg1	apgaismojums	_	_	*[1]	*->1-1	nsubj	basic	2-6	
+2-6	101-106	nebūs	vgnifii30ay	nebūt	_	_	_	_	ccomp	basic	2-16	
+2-7	106-107	,	zc	,	_	_	_	_	punct	basic	2-10	
+2-8	108-112	taču	cc	taču	_	_	_	_	cc	basic	2-10	
+2-9	113-115	to	pd0msan	tas	_	_	*[1]	*->1-2	obj	basic	2-10	
+2-10	116-125	kompensēs	vmnift230an	kompensēt	_	_	_	_	conj	basic	2-6	
+2-11	126-132	salūts	ncmsn1	salūts	_	_	_	_	nsubj	basic	2-10	
+2-12	133-141	pilsētas	ncfsg4	pilsēta	_	_	_	_	nmod	basic	2-14	
+2-13	142-152	centrālajā	armslyp	centrāls	_	_	_	_	amod	basic	2-14	
+2-14	153-160	laukumā	ncmsl1	laukums	_	_	_	_	acl	basic	2-11	
+2-15	160-161	,	zc	,	_	_	_	_	punct	basic	2-10	
+2-16	162-170	pastāsta	vmnipt330an	pastāstīt	_	_	_	_	root	basic	2-16	
+2-17	171-173	J.	yp	J.	person[2]	*[2]	_	_	nsubj	basic	2-16	
+2-18	174-183	Grasmanis	npmsn2	Grasmanis	person[2]	*[2]	_	_	flat:name	basic	2-17	
+2-19	183-184	.	zs	.	_	_	_	_	punct	basic	2-16	

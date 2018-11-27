@@ -1,0 +1,94 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Nordic Walking jeb nūjošana ir sportiska pastaiga ar speciāli veidotām atbalsta nūjām.
+1-1	0-6	Nordic	xf	Nordic	event[1]	https://en.wikipedia.org/wiki/Nordic\_walking[1]	*[1]	*->1-1	nsubj	basic	1-7	
+1-2	7-14	Walking	xf	Walking	event[1]	https://en.wikipedia.org/wiki/Nordic\_walking[1]	*[1]	*->1-1	flat:foreign	basic	1-1	
+1-3	15-18	jeb	cc	jeb	_	_	_	_	cc	basic	1-4	
+1-4	19-27	nūjošana	ncfsn4	nūjošana	_	_	*[1]	*->1-2	conj	basic	1-1	
+1-5	28-30	ir	vcnipii30an	būt	_	_	_	_	cop	basic	1-7	
+1-6	31-40	sportiska	affsnnp	sportiska	_	_	_	_	amod	basic	1-7	
+1-7	41-49	pastaiga	ncfsn4	pastaiga	_	_	*[1]	*->1-3	root	basic	1-7	
+1-8	50-52	ar	sppd	ar	_	_	_	_	case	basic	1-12	
+1-9	53-61	speciāli	rpm	speciāli	_	_	_	_	advmod	basic	1-10	
+1-10	62-70	veidotām	vmnpdfpdpsnp	veidot	_	_	_	_	amod	basic	1-12	
+1-11	71-79	atbalsta	ncmsg1	atbalsts	_	_	_	_	nmod	basic	1-12	
+1-12	80-85	nūjām	ncfpd4	nūja	_	_	_	_	nmod	basic	1-7	
+1-13	85-86	.	zs	.	_	_	_	_	punct	basic	1-7	
+
+#Text=Pastaigas laikā tiek nodarbināta arī ķermeņa augšdaļa un rokas, kas uzlabo asinsriti un līdz ar to arī sirds darbību.
+2-1	88-97	Pastaigas	ncfsg4	pastaiga	_	_	*[1]	*->1-4	nmod	basic	2-2	
+2-2	98-103	laikā	ncmsl1	laiks	_	_	_	_	acl	basic	2-4	
+2-3	104-108	tiek	vtnipi130an	tikt	_	_	_	_	aux	basic	2-4	
+2-4	109-120	nodarbināta	vmnpdfsnpsnp	nodarbināt	_	_	_	_	root	basic	2-4	
+2-5	121-124	arī	q	arī	_	_	_	_	discourse	basic	2-7	
+2-6	125-132	ķermeņa	ncmsg2	ķermenis	_	_	_	_	nmod	basic	2-7	
+2-7	133-141	augšdaļa	ncfsn4	augšdaļa	_	_	_	_	nsubj:pass	basic	2-4	
+2-8	142-144	un	cc	un	_	_	_	_	cc	basic	2-9	
+2-9	145-150	rokas	ncfpn4	roka	_	_	_	_	conj	basic	2-7	
+2-10	150-151	,	zc	,	_	_	_	_	punct	basic	2-12	
+2-11	152-155	kas	pr000nn	kas	_	_	_	_	nsubj	basic	2-12	
+2-12	156-162	uzlabo	vmnipt230an	uzlabot	_	_	_	_	advcl	basic	2-4	
+2-13	163-172	asinsriti	ncfsa5	asinsrite	_	_	_	_	obj	basic	2-12	
+2-14	173-175	un	cc	un	_	_	_	_	cc	basic	2-20	
+2-15	176-180	līdz	r0m	līdz	_	_	_	_	advmod	basic	2-12	
+2-16	181-183	ar	spsa	ar	_	_	_	_	case	basic	2-17	
+2-17	184-186	to	pd0msan	tas	_	_	_	_	iobj	basic	2-15	
+2-18	187-190	arī	q	arī	_	_	_	_	discourse	basic	2-20	
+2-19	191-196	sirds	ncfsg6	sirds	_	_	_	_	nmod	basic	2-20	
+2-20	197-204	darbību	ncfsa4	darbība	_	_	_	_	conj	basic	2-13	
+2-21	204-205	.	zs	.	_	_	_	_	punct	basic	2-4	
+
+#Text=Nūjošana ir veids, kā efektīvi un viegli uzlabot cilvēka fizisko formu.
+3-1	207-215	Nūjošana	ncfsn4	nūjošana	_	_	*[1]	*->1-5	nsubj	basic	3-3	
+3-2	216-218	ir	vcnipii30an	būt	_	_	_	_	cop	basic	3-3	
+3-3	219-224	veids	ncmsn1	veids	_	_	_	_	root	basic	3-3	
+3-4	224-225	,	zc	,	_	_	_	_	punct	basic	3-9	
+3-5	226-228	kā	r0m	kā	_	_	_	_	advmod	basic	3-9	
+3-6	229-237	efektīvi	rpm	efektīvi	_	_	_	_	advmod	basic	3-9	
+3-7	238-240	un	cc	un	_	_	_	_	cc	basic	3-8	
+3-8	241-247	viegli	rpm	viegli	_	_	_	_	conj	basic	3-6	
+3-9	248-255	uzlabot	vmnn0t2000n	uzlabot	_	_	_	_	acl	basic	3-3	
+3-10	256-263	cilvēka	ncmsg1	cilvēks	_	_	_	_	nmod	basic	3-12	
+3-11	264-271	fizisko	arfpgyp	fiziska	_	_	_	_	amod	basic	3-12	
+3-12	272-277	formu	ncfsa4	forma	_	_	_	_	obj	basic	3-9	
+3-13	277-278	.	zs	.	_	_	_	_	punct	basic	3-3	
+
+#Text=Nūjošana ir pieejama ikvienam, neskatoties uz vecumu, dzimumu vai fizisko sagatavotību.
+4-1	280-288	Nūjošana	q	Nūjošana	_	_	*[1]	*->1-6	dep	basic	4-3	
+4-2	289-291	ir	vcnipii30an	būt	_	_	_	_	cop	basic	4-3	
+4-3	292-300	pieejama	affsnnp	pieejama	_	_	_	_	root	basic	4-3	
+4-4	301-309	ikvienam	pg0msdn	ikviens	_	_	_	_	obl	basic	4-3	
+4-5	309-310	,	zc	,	_	_	_	_	punct	basic	4-6	
+4-6	311-322	neskatoties	vmypu0000000	neskatīties	_	_	_	_	advcl	basic	4-3	
+4-7	323-325	uz	spsa	uz	_	_	_	_	case	basic	4-8	
+4-8	326-332	vecumu	ncmsa1	vecums	_	_	_	_	iobj	basic	4-6	
+4-9	332-333	,	zc	,	_	_	_	_	punct	basic	4-10	
+4-10	334-341	dzimumu	ncmsa1	dzimums	_	_	_	_	conj	basic	4-8	
+4-11	342-345	vai	cc	vai	_	_	_	_	cc	basic	4-13	
+4-12	346-353	fizisko	arfpgyp	fiziska	_	_	_	_	amod	basic	4-13	
+4-13	354-366	sagatavotību	ncfsa4	sagatavotība	_	_	_	_	conj	basic	4-8	
+4-14	366-367	.	zs	.	_	_	_	_	punct	basic	4-3	
+
+#Text=Procesa specifika ir arī tā, ka tas piemērots cilvēkiem ar ceļu un mugurkaula problēmām.
+5-1	369-376	Procesa	ncmsg1	process	_	_	_	_	nmod	basic	5-2	
+5-2	377-386	specifika	ncfsn4	specifika	_	_	_	_	nsubj	basic	5-5	
+5-3	387-389	ir	vcnipii30an	būt	_	_	_	_	cop	basic	5-5	
+5-4	390-393	arī	q	arī	_	_	_	_	discourse	basic	5-5	
+5-5	394-396	tā	pd0fsnn	tā	_	_	_	_	root	basic	5-5	
+5-6	396-397	,	zc	,	_	_	_	_	punct	basic	5-9	
+5-7	398-400	ka	cs	ka	_	_	_	_	mark	basic	5-9	
+5-8	401-404	tas	pd0msnn	tas	_	_	_	_	nsubj	basic	5-9	
+5-9	405-414	piemērots	vmnpdmsnpsnp	piemērot	_	_	_	_	ccomp	basic	5-5	
+5-10	415-424	cilvēkiem	ncmpd1	cilvēks	_	_	_	_	obl	basic	5-9	
+5-11	425-427	ar	spsa	ar	_	_	_	_	case	basic	5-15	
+5-12	428-432	ceļu	ncmsa1	ceļš	_	_	_	_	nmod	basic	5-15	
+5-13	433-435	un	cc	un	_	_	_	_	cc	basic	5-14	
+5-14	436-446	mugurkaula	ncmsg1	mugurkauls	_	_	_	_	conj	basic	5-12	
+5-15	447-456	problēmām	ncfpd4	problēma	_	_	_	_	nmod	basic	5-10	
+5-16	456-457	.	zs	.	_	_	_	_	punct	basic	5-5	

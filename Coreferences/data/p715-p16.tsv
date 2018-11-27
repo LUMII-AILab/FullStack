@@ -1,0 +1,93 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=24 gadus vecais viesstrādnieks Marūns Abū Naders telesabiedrībai Al Jazeera atzīst, ka Dubaija sāk līdzināties spoku pilsētai.
+1-1	0-2	24	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	24	_	_	_	_	nummod|nummod	basic|enhanced	1-2|1-2	
+1-2	3-8	gadus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	gads	_	_	_	_	nmod|nmod	basic|enhanced	1-3|1-3	
+1-3	9-15	vecais	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnyp	vecs	_	_	_	_	amod|amod	basic|enhanced	1-4|1-4	
+1-4	16-30	viesstrādnieks	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	viesstrādnieks	_	_	*[1]	*->1-1	nmod|nmod	basic|enhanced	1-5|1-5	
+1-5	31-37	Marūns	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Marūns	person[1]	*[1]	*[1]	*->1-2	nsubj|nsubj	basic|enhanced	1-11|1-11	
+1-6	38-41	Abū	_	_	_	_	_	_	_	_	_	_	_	_	np0000	Abū	person[1]	*[1]	*[1]	*->1-2	flat:name|flat	basic|enhanced	1-5|1-5	
+1-7	42-48	Naders	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Naders	person[1]	*[1]	*[1]	*->1-2	flat:name|flat	basic|enhanced	1-5|1-5	
+1-8	49-64	telesabiedrībai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	telesabiedrībai	_	_	*[2]	*->2-1	nmod|nmod	basic|enhanced	1-9|1-9	
+1-9	65-67	Al	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Al	organization[2]	https://en.wikipedia.org/wiki/Al\_Jazeera[2]	_	_	iobj|iobj	basic|enhanced	1-11|1-11	
+1-10	68-75	Jazeera	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Jazeera	organization[2]	https://en.wikipedia.org/wiki/Al\_Jazeera[2]	*[2]	*->2-2	flat:name|flat	basic|enhanced	1-9|1-9	
+1-11	76-82	atzīst	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt130an	atzīt	_	_	_	_	root|root	basic|enhanced	1-11|1-11	
+1-12	82-83	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-15|1-15	
+1-13	84-86	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark|mark	basic|enhanced	1-15|1-15	
+1-14	87-94	Dubaija	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Dubaija	GPE	https://en.wikipedia.org/wiki/Dubai	_	_	nsubj|nsubj	basic|enhanced	1-15|1-15	
+1-15	95-98	sāk	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vpnipt130an	sākt	_	_	_	_	acl|acl	basic|enhanced	1-11|1-11	
+1-16	99-110	līdzināties	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i3000n	līdzināties	_	_	_	_	xcomp|xcomp	basic|enhanced	1-15|1-15	
+1-17	111-116	spoku	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	spoks	_	_	_	_	nmod|nmod	basic|enhanced	1-18|1-18	
+1-18	117-125	pilsētai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	pilsēta	_	_	_	_	iobj|iobj	basic|enhanced	1-16|1-16	
+1-19	125-126	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-11|1-11	
+
+#Text="Cilvēki bariem vien pamet pilsētu, atstājot aiz sevis visu iedzīvi, jo nespēj nomaksāt kredītus."
+2-1	128-129	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	_	_	_	_	punct|punct	basic|enhanced	2-5|2-5	
+2-2	129-136	Cilvēki	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	cilvēks	_	_	*[3]	*->3-1	nsubj|nsubj	basic|enhanced	2-5|2-5	
+2-3	137-143	bariem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	bars	_	_	_	_	obl|obl	basic|enhanced	2-5|2-5	
+2-4	144-148	vien	_	_	_	_	_	_	_	_	_	_	_	_	q	vien	_	_	_	_	discourse|discourse	basic|enhanced	2-5|2-5	
+2-5	149-154	pamet	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt130an	pamest	_	_	_	_	root|root	basic|enhanced	2-5|2-5	
+2-6	155-162	pilsētu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	pilsēta	_	_	_	_	obj|obj	basic|enhanced	2-5|2-5	
+2-7	162-163	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-8|2-8	
+2-8	164-172	atstājot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000	atstāt	_	_	_	_	advcl|advcl	basic|enhanced	2-5|2-5	
+2-9	173-176	aiz	_	_	_	_	_	_	_	_	_	_	_	_	spsg	aiz	_	_	_	_	case|case	basic|enhanced	2-10|2-10	
+2-10	177-182	sevis	*	*	Gen	*	*	*	*	*	*	Case=Gen\|PronType=Rcp\|Reflex=Yes	*	*	px000gn	sevis	_	_	*[3]	*->3-2	obl|obl	basic|enhanced	2-8|2-8	
+2-11	183-187	visu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Tot	*	*	pg0fsan	visa	_	_	*[3]	*->3-3	det|det	basic|enhanced	2-12|2-12	
+2-12	188-195	iedzīvi	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	iedzīve	_	_	_	_	obj|obj	basic|enhanced	2-8|2-8	
+2-13	195-196	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-15|2-15	
+2-14	197-199	jo	_	_	_	_	_	_	_	_	_	_	_	_	cs	jo	_	_	_	_	mark|mark	basic|enhanced	2-15|2-15	
+2-15	200-206	nespēj	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vonipt130an	nespēt	_	_	_	_	advcl|advcl	basic|enhanced	2-5|2-5	
+2-16	207-215	nomaksāt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	nomaksāt	_	_	_	_	xcomp|xcomp	basic|enhanced	2-15|2-15	
+2-17	216-224	kredītus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	kredīts	_	_	_	_	obj|obj	basic|enhanced	2-16|2-16	
+2-18	224-225	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	2-5|2-5	
+2-19	225-226	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	_	_	_	_	punct|punct	basic|enhanced	2-5|2-5	
+
+#Text=Izvairīšanās no kredītu nomaksas Dubaijā nav nekāda joka lieta, jo nemaksātājus var ieslodzīt parādnieku cietumā.
+3-1	228-240	Izvairīšanās	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsnr	izvairīšanās	_	_	_	_	dep|dep	basic|enhanced	3-9|3-9	
+3-2	241-243	no	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	_	_	_	_	case|case	basic|enhanced	3-4|3-4	
+3-3	244-251	kredītu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	kredīts	_	_	_	_	nmod|nmod	basic|enhanced	3-4|3-4	
+3-4	252-260	nomaksas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	nomaksa	_	_	_	_	nmod|nmod	basic|enhanced	3-1|3-1	
+3-5	261-268	Dubaijā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	Dubaijā	GPE	https://en.wikipedia.org/wiki/Dubai	_	_	obl|obl	basic|enhanced	3-9|3-9	
+3-6	269-272	nav	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30ay	nebūt	_	_	_	_	cop|cop	basic|enhanced	3-9|3-9	
+3-7	273-279	nekāda	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Ind,Neg	*	*	pi0fsny	nekāda	_	_	_	_	det|det	basic|enhanced	3-8|3-8	
+3-8	280-284	joka	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	joks	_	_	_	_	nmod|nmod	basic|enhanced	3-9|3-9	
+3-9	285-290	lieta	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	lieta	_	_	_	_	root|root	basic|enhanced	3-9|3-9	
+3-10	290-291	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	3-13|3-13	
+3-11	292-294	jo	_	_	_	_	_	_	_	_	_	_	_	_	cs	jo	_	_	_	_	mark|mark	basic|enhanced	3-13|3-13	
+3-12	295-307	nemaksātājus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	nemaksātājs	_	_	_	_	obj|obj	basic|enhanced	3-13|3-13	
+3-13	308-311	var	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vonipt330an	varēt	_	_	_	_	advcl|advcl	basic|enhanced	3-9|3-9	
+3-14	312-321	ieslodzīt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	ieslodzīt	_	_	_	_	xcomp|xcomp	basic|enhanced	3-13|3-13	
+3-15	322-332	parādnieku	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	parādnieks	_	_	_	_	nmod|nmod	basic|enhanced	3-16|3-16	
+3-16	333-340	cietumā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	cietums	_	_	_	_	obl|obl	basic|enhanced	3-14|3-14	
+3-17	340-341	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	3-9|3-9	
+
+#Text=Rietumvalstu prese ziņo, ka Dubaijas lidostā atstātas neskaitāmas automašīnas, jo viesstrādnieki aizbēguši uz dzimteni, pametot aiz sevis visu.
+4-1	343-355	Rietumvalstu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg6	rietumvalsts	_	_	_	_	nmod|nmod	basic|enhanced	4-2|4-2	
+4-2	356-361	prese	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	prese	_	_	_	_	nsubj|nsubj	basic|enhanced	4-3|4-3	
+4-3	362-366	ziņo	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt230an	ziņot	_	_	_	_	root|root	basic|enhanced	4-3|4-3	
+4-4	366-367	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	4-8|4-8	
+4-5	368-370	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark|mark	basic|enhanced	4-8|4-8	
+4-6	371-379	Dubaijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Dubaijas	organization[3]|GPE[4]	https://en.wikipedia.org/wiki/Dubai\_International\_Airport[3]|https://en.wikipedia.org/wiki/Dubai[4]	_	_	nmod|nmod	basic|enhanced	4-7|4-7	
+4-7	380-387	lidostā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	lidosta	organization[3]	https://en.wikipedia.org/wiki/Dubai\_International\_Airport[3]	_	_	obl|obl	basic|enhanced	4-8|4-8	
+4-8	388-396	atstātas	Fem	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfpnpsnp	atstāt	_	_	_	_	ccomp|ccomp	basic|enhanced	4-3|4-3	
+4-9	397-408	neskaitāmas	Fem	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	arfpnnp	neskaitāma	_	_	_	_	amod|amod	basic|enhanced	4-10|4-10	
+4-10	409-420	automašīnas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	automašīna	_	_	_	_	nsubj:pass|nsubj	basic|enhanced	4-8|4-8	
+4-11	420-421	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	4-14|4-14	
+4-12	422-424	jo	_	_	_	_	_	_	_	_	_	_	_	_	cs	jo	_	_	_	_	mark|mark	basic|enhanced	4-14|4-14	
+4-13	425-439	viesstrādnieki	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	viesstrādnieks	_	_	*[4]	*->4-1	nsubj|nsubj	basic|enhanced	4-14|4-14	
+4-14	440-449	aizbēguši	Masc	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpnasnp	aizbēgt	_	_	_	_	advcl|advcl	basic|enhanced	4-8|4-8	
+4-15	450-452	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsa	uz	_	_	_	_	case|case	basic|enhanced	4-16|4-16	
+4-16	453-461	dzimteni	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	dzimtene	_	_	_	_	obl|obl	basic|enhanced	4-14|4-14	
+4-17	461-462	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	4-18|4-18	
+4-18	463-470	pametot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000	pamest	_	_	_	_	advcl|advcl	basic|enhanced	4-14|4-14	
+4-19	471-474	aiz	_	_	_	_	_	_	_	_	_	_	_	_	spsg	aiz	_	_	_	_	case|case	basic|enhanced	4-20|4-20	
+4-20	475-480	sevis	*	*	Gen	*	*	*	*	*	*	Case=Gen\|PronType=Rcp\|Reflex=Yes	*	*	px000gn	sevis	_	_	*[4]	*->4-2	obl|obl	basic|enhanced	4-18|4-18	
+4-21	481-485	visu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msan	viss	_	_	_	_	obj|obj	basic|enhanced	4-18|4-18	
+4-22	485-486	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	dep|dep	basic|enhanced	4-3|4-3	

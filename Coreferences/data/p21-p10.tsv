@@ -1,0 +1,94 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=R. Auševs esot nodevis teroristu prasības Ziemeļosetijas Iekšlietu ministrijas štābam, bet pēc tam par tām informēts Krievijas prezidents Vladimirs Putins.
+1-1	0-2	R.	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	r.	person[1]	https://en.wikipedia.org/wiki/Ruslan\_Aushev[1]	*[3]	*->3-1	nsubj|nsubj	basic|enhanced	1-4|1-4	
+1-2	3-9	Auševs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Auševs	person[1]	https://en.wikipedia.org/wiki/Ruslan\_Aushev[1]	*[3]	*->3-1	flat:name|flat	basic|enhanced	1-1|1-1	
+1-3	10-14	esot	*	*	*	*	*	Pres	Qot	Act	*	Evident=Nfh\|Mood=Qot\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	*	vcnrpii00an	būt	_	_	_	_	aux|aux	basic|enhanced	1-4|1-4	
+1-4	15-22	nodevis	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnasnp	nodot	_	_	_	_	root|root	basic|enhanced	1-4|1-4	
+1-5	23-32	teroristu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	terorists	_	_	_	_	nmod|nmod	basic|enhanced	1-6|1-6	
+1-6	33-41	prasības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	prasība	_	_	*[2]	*->2-1	nmod|nmod	basic|enhanced	1-4|1-4	
+1-7	42-56	Ziemeļosetijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Ziemeļosetijas	organization[2]|organization[3]|GPE[4]	*[2]|*[3]|https://lv.wikipedia.org/wiki/Ziemeļosetija-Alānija[4]	_	_	nmod|nmod	basic|enhanced	1-9|1-9	
+1-8	57-66	Iekšlietu	Fem	Ptan	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Ptan	*	*	ncfdg4	iekšlietas	organization[2]|organization[3]	*[2]|*[3]	_	_	nmod|nmod	basic|enhanced	1-9|1-9	
+1-9	67-78	ministrijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	ministrija	organization[2]|organization[3]	*[2]|*[3]	_	_	nmod|nmod	basic|enhanced	1-10|1-10	
+1-10	79-85	štābam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	štābs	organization[2]	*[2]	_	_	iobj|iobj	basic|enhanced	1-4|1-4	
+1-11	85-86	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-17|1-17	
+1-12	87-90	bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	_	_	cc|cc	basic|enhanced	1-17|1-17	
+1-13	91-94	pēc	_	_	_	_	_	_	_	_	_	_	_	_	spsd	pēc	_	_	_	_	case|case	basic|enhanced	1-14|1-14	
+1-14	95-98	tam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msdn	tas	_	_	_	_	obl|obl	basic|enhanced	1-17|1-17	
+1-15	99-102	par	_	_	_	_	_	_	_	_	_	_	_	_	sppd	par	_	_	_	_	case|case	basic|enhanced	1-16|1-16	
+1-16	103-106	tām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur\|PronType=Dem	*	*	pd0fpdn	tā	_	_	*[2]	*->2-2	iobj|iobj	basic|enhanced	1-17|1-17	
+1-17	107-116	informēts	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnp	informēt	_	_	_	_	conj|conj	basic|enhanced	1-4|1-4	
+1-18	117-126	Krievijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Krievija	GPE	https://en.wikipedia.org/wiki/Russia	_	_	nmod|nmod	basic|enhanced	1-19|1-19	
+1-19	127-137	prezidents	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	prezidents	_	_	*[1]	*->1-1	nmod|nmod	basic|enhanced	1-20|1-20	
+1-20	138-147	Vladimirs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Vladimirs	person[5]	https://en.wikipedia.org/wiki/Vladimir\_Putin[5]	*[1]	*->1-2	nsubj:pass|nsubj	basic|enhanced	1-17|1-17	
+1-21	148-154	Putins	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Putins	person[5]	https://en.wikipedia.org/wiki/Vladimir\_Putin[5]	*[1]	*->1-2	flat:name|flat	basic|enhanced	1-20|1-20	
+1-22	154-155	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-4|1-4	
+
+#Text=Tomēr viņš atzina, ka štābā tās neesot apspriestas, jo nevienam nebija tādu pilnvaru.
+2-1	157-162	Tomēr	_	_	_	_	_	_	_	_	_	_	_	_	cc	tomēr	_	_	_	_	cc|cc	basic|enhanced	2-3|2-3	
+2-2	163-167	viņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msnn	viņš	_	_	*[3]	*->3-2	nsubj|nsubj	basic|enhanced	2-3|2-3	
+2-3	168-174	atzina	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	atzīt	_	_	_	_	root|root	basic|enhanced	2-3|2-3	
+2-4	174-175	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-9|2-9	
+2-5	176-178	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark|mark	basic|enhanced	2-9|2-9	
+2-6	179-184	štābā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	štābs	_	_	_	_	obl|obl	basic|enhanced	2-9|2-9	
+2-7	185-188	tās	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur\|PronType=Dem	*	*	pd0fpan	tā	_	_	*[2]	*->2-3	nsubj:pass|nsubj	basic|enhanced	2-9|2-9	
+2-8	189-195	neesot	*	*	*	*	*	Pres	Qot	Act	*	Evident=Nfh\|Mood=Qot\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	*	vcnrpii00ay	nebūt	_	_	_	_	aux|aux	basic|enhanced	2-9|2-9	
+2-9	196-207	apspriestas	Fem	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfpnpsnp	apspriest	_	_	_	_	ccomp|ccomp	basic|enhanced	2-3|2-3	
+2-10	207-208	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-13|2-13	
+2-11	209-211	jo	_	_	_	_	_	_	_	_	_	_	_	_	cs	jo	_	_	_	_	mark|mark	basic|enhanced	2-13|2-13	
+2-12	212-220	nevienam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|PronType=Ind,Neg	*	*	pi0msdy	neviens	_	_	_	_	obl|obl	basic|enhanced	2-13|2-13	
+2-13	221-227	nebija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisii30ay	nebūt	_	_	_	_	advcl|advcl	basic|enhanced	2-9|2-9	
+2-14	228-232	tādu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsan	tāda	_	_	_	_	det|det	basic|enhanced	2-15|2-15	
+2-15	233-241	pilnvaru	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	pilnvara	_	_	_	_	nsubj|nsubj	basic|enhanced	2-13|2-13	
+2-16	241-242	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	2-3|2-3	
+
+#Text=Arī no Maskavas tuvākajās dienās atbilde netika atsūtīta.
+3-1	244-247	Arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse|discourse	basic|enhanced	3-3|3-3	
+3-2	248-250	no	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	_	_	_	_	case|case	basic|enhanced	3-3|3-3	
+3-3	251-259	Maskavas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Maskava	GPE	https://en.wikipedia.org/wiki/Moscow	_	_	obl|obl	basic|enhanced	3-8|3-8	
+3-4	260-269	tuvākajās	Fem	Plur	Loc	Cmp	*	*	*	*	*	Case=Loc\|Degree=Cmp\|Gender=Fem\|Number=Plur	*	*	arfplyc	tuva	_	_	_	_	amod|amod	basic|enhanced	3-5|3-5	
+3-5	270-276	dienās	Fem	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	diena	_	_	_	_	acl|acl	basic|enhanced	3-8|3-8	
+3-6	277-284	atbilde	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	atbilde	_	_	_	_	nsubj:pass|nsubj	basic|enhanced	3-8|3-8	
+3-7	285-291	netika	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vtnisi130ay	netikt	_	_	_	_	aux|aux	basic|enhanced	3-8|3-8	
+3-8	292-300	atsūtīta	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnpsnp	atsūtīt	_	_	_	_	root|root	basic|enhanced	3-8|3-8	
+3-9	300-301	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	dep|dep	basic|enhanced	3-8|3-8	
+
+#Text=R. Auševs apstiprināja aizdomas, ka ieradies, lai radītu apstākļus separātistu līdera Aslana Mashadova piesaistīšanai sarunām.
+4-1	303-305	R.	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	r.	person[6]	https://en.wikipedia.org/wiki/Ruslan\_Aushev[6]	*[3]	*->3-3	nsubj|nsubj	basic|enhanced	4-3|4-3	
+4-2	306-312	Auševs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Auševs	person[6]	https://en.wikipedia.org/wiki/Ruslan\_Aushev[6]	*[3]	*->3-3	flat:name|flat	basic|enhanced	4-1|4-1	
+4-3	313-325	apstiprināja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	apstiprināt	_	_	_	_	root|root	basic|enhanced	4-3|4-3	
+4-4	326-334	aizdomas	Fem	Ptan	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Ptan	*	*	ncfda4	aizdomas	_	_	_	_	obj|obj	basic|enhanced	4-3|4-3	
+4-5	334-335	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	4-7|4-7	
+4-6	336-338	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark|mark	basic|enhanced	4-7|4-7	
+4-7	339-347	ieradies	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	Perf	vmypdmsnasnp	ierasties	_	_	_	_	acl|acl	basic|enhanced	4-4|4-4	
+4-8	347-348	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	4-10|4-10	
+4-9	349-352	lai	_	_	_	_	_	_	_	_	_	_	_	_	cs	lai	_	_	_	_	mark|mark	basic|enhanced	4-10|4-10	
+4-10	353-359	radītu	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vmnc0t300an	radīt	_	_	_	_	advcl|advcl	basic|enhanced	4-7|4-7	
+4-11	360-369	apstākļus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa2	apstāklis	_	_	_	_	obj|obj	basic|enhanced	4-10|4-10	
+4-12	370-381	separātistu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	separātists	_	_	_	_	nmod|nmod	basic|enhanced	4-13|4-13	
+4-13	382-388	līdera	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	līderis	_	_	*[4]	*->4-1	nmod|nmod	basic|enhanced	4-14|4-14	
+4-14	389-395	Aslana	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Aslans	person[7]	https://en.wikipedia.org/wiki/Aslan\_Maskhadov[7]	*[4]	*->4-2	nmod|nmod	basic|enhanced	4-16|4-16	
+4-15	396-405	Mashadova	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Mashadovs	person[7]	https://en.wikipedia.org/wiki/Aslan\_Maskhadov[7]	*[4]	*->4-2	flat:name|flat	basic|enhanced	4-14|4-14	
+4-16	406-420	piesaistīšanai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	piesaistīšana	_	_	_	_	nmod|nmod	basic|enhanced	4-17|4-17	
+4-17	421-428	sarunām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	saruna	_	_	*[5]	*->5-1	nmod|nmod	basic|enhanced	4-11|4-11	
+4-18	428-429	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	4-3|4-3	
+
+#Text=Tās esot bijušas pavisam reālas un ļautu izvairīties no upuriem.
+5-1	431-434	Tās	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur\|PronType=Dem	*	*	pd0fpan	tā	_	_	*[5]	*->5-2	nsubj|nsubj	basic|enhanced	5-5|5-5	
+5-2	435-439	esot	*	*	*	*	*	Pres	Qot	Act	*	Evident=Nfh\|Mood=Qot\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	*	vcnrpii00an	būt	_	_	_	_	aux|aux	basic|enhanced	5-5|5-5	
+5-3	440-447	bijušas	Fem	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vcnpdfpnasnp	būt	_	_	_	_	cop|cop	basic|enhanced	5-5|5-5	
+5-4	448-455	pavisam	_	_	_	_	_	_	_	_	_	_	_	_	r0q	pavisam	_	_	_	_	advmod|advmod	basic|enhanced	5-5|5-5	
+5-5	456-462	reālas	Fem	Plur	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	arfpanp	reāla	_	_	_	_	root|root	basic|enhanced	5-5|5-5	
+5-6	463-465	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	5-7|5-7	
+5-7	466-471	ļautu	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vmnc0t100an	ļaut	_	_	_	_	conj|conj	basic|enhanced	5-5|5-5	
+5-8	472-483	izvairīties	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn003000n	izvairīties	_	_	_	_	ccomp|ccomp	basic|enhanced	5-7|5-7	
+5-9	484-486	no	_	_	_	_	_	_	_	_	_	_	_	_	sppd	no	_	_	_	_	case|case	basic|enhanced	5-10|5-10	
+5-10	487-494	upuriem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd2	upuris	_	_	_	_	iobj|iobj	basic|enhanced	5-8|5-8	
+5-11	494-495	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	5-5|5-5	

@@ -1,0 +1,61 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Saūda Arābijā sievietēm ir liegts vadīt automašīnu un tikties ar vīriešiem, kas nepieder pie ģimenes.
+1-1	0-5	Saūda	Fem	*	*	*	*	*	*	*	*	Gender=Fem	*	*	npf000	Saūda	GPE[1]	https://en.wikipedia.org/wiki/Saudi\_Arabia[1]	_	_	obl|obl	basic|enhanced	1-5|1-5	
+1-2	6-13	Arābijā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	Arābija	GPE[1]	https://en.wikipedia.org/wiki/Saudi\_Arabia[1]	_	_	flat:name|flat	basic|enhanced	1-1|1-1	
+1-3	14-23	sievietēm	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd5	sieviete	_	_	_	_	nsubj|nsubj	basic|enhanced	1-5|1-5	
+1-4	24-26	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	aux|aux	basic|enhanced	1-5|1-5	
+1-5	27-33	liegts	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnp	liegt	_	_	_	_	root|root	basic|enhanced	1-5|1-5	
+1-6	34-39	vadīt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	vadīt	_	_	_	_	ccomp|ccomp	basic|enhanced	1-5|1-5	
+1-7	40-50	automašīnu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	automašīna	_	_	_	_	iobj|iobj	basic|enhanced	1-6|1-6	
+1-8	51-53	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	1-9|1-9	
+1-9	54-61	tikties	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i1000n	tikties	_	_	_	_	conj|conj	basic|enhanced	1-6|1-6	
+1-10	62-64	ar	_	_	_	_	_	_	_	_	_	_	_	_	sppd	ar	_	_	_	_	case|case	basic|enhanced	1-11|1-11	
+1-11	65-74	vīriešiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd2	vīrietis	_	_	*[1]	*->1-1	iobj|iobj	basic|enhanced	1-9|1-9	
+1-12	74-75	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-14|1-14	
+1-13	76-79	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	*[1]	*->1-2	nsubj|nsubj	basic|enhanced	1-14|1-14	
+1-14	80-88	nepieder	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipi330ay	nepiederēt	_	_	_	_	acl|acl	basic|enhanced	1-11|1-11	
+1-15	89-92	pie	_	_	_	_	_	_	_	_	_	_	_	_	spsg	pie	_	_	_	_	case|case	basic|enhanced	1-16|1-16	
+1-16	93-100	ģimenes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	ģimene	_	_	_	_	obl|obl	basic|enhanced	1-14|1-14	
+1-17	100-101	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-5|1-5	
+
+#Text=Karalistes garīdznieki gandrīz katru gadu arī mēdz izdot speciālus ediktus, kas aizliedz Valentīna dienā iegādāties sarkanas rozes.
+2-1	103-113	Karalistes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	karaliste	_	_	_	_	nmod|nmod	basic|enhanced	2-2|2-2	
+2-2	114-125	garīdznieki	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	garīdznieks	_	_	_	_	nsubj|nsubj	basic|enhanced	2-7|2-7	
+2-3	126-133	gandrīz	_	_	_	_	_	_	_	_	_	_	_	_	r0q	gandrīz	_	_	_	_	advmod|advmod	basic|enhanced	2-4|2-4	
+2-4	134-139	katru	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msan	katra	_	_	_	_	det|det	basic|enhanced	2-5|2-5	
+2-5	140-144	gadu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	gads	_	_	_	_	obl|obl	basic|enhanced	2-7|2-7	
+2-6	145-148	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse|discourse	basic|enhanced	2-7|2-7	
+2-7	149-153	mēdz	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vonipt130an	mēgt	_	_	_	_	root|root	basic|enhanced	2-7|2-7	
+2-8	154-159	izdot	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0ti000n	izdot	_	_	_	_	xcomp|xcomp	basic|enhanced	2-7|2-7	
+2-9	160-169	speciālus	Masc	Plur	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpanp	speciāls	_	_	_	_	amod|amod	basic|enhanced	2-10|2-10	
+2-10	170-177	ediktus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	edikts	_	_	*[2]	*->2-1	obj|obj	basic|enhanced	2-7|2-7	
+2-11	177-178	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-13|2-13	
+2-12	179-182	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	*[2]	*->2-2	nsubj|nsubj	basic|enhanced	2-13|2-13	
+2-13	183-191	aizliedz	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt130an	aizliegt	_	_	_	_	acl|acl	basic|enhanced	2-10|2-10	
+2-14	192-201	Valentīna	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Valentīns	event[2]	https://en.wikipedia.org/wiki/Valentine's\_Day[2]	_	_	nmod|nmod	basic|enhanced	2-15|2-15	
+2-15	202-207	dienā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	diena	event[2]	https://en.wikipedia.org/wiki/Valentine's\_Day[2]	_	_	obl|obl	basic|enhanced	2-13|2-13	
+2-16	208-218	iegādāties	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0t2000n	iegādāties	_	_	_	_	ccomp|ccomp	basic|enhanced	2-13|2-13	
+2-17	219-227	sarkanas	Fem	Plur	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpanp	sarkana	_	_	_	_	amod|amod	basic|enhanced	2-18|2-18	
+2-18	228-233	rozes	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa5	roze	_	_	_	_	obj|obj	basic|enhanced	2-16|2-16	
+2-19	233-234	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	2-7|2-7	
+
+#Text=Jūlija beigās Saūda Arābijā tika aizliegti arī suņi un kaķi.
+3-1	236-242	Jūlija	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn1	jūlijs	time[3]	*[3]	_	_	nmod|nmod	basic|enhanced	3-2|3-2	
+3-2	243-249	beigās	Fem	Ptan	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Ptan	*	*	ncfdl4	beigas	time[3]	*[3]	_	_	obl|obl	basic|enhanced	3-6|3-6	
+3-3	250-255	Saūda	Fem	*	*	*	*	*	*	*	*	Gender=Fem	*	*	npf000	Saūda	GPE[4]	https://en.wikipedia.org/wiki/Saudi\_Arabia[4]	_	_	obl|obl	basic|enhanced	3-6|3-6	
+3-4	256-263	Arābijā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	Arābija	GPE[4]	https://en.wikipedia.org/wiki/Saudi\_Arabia[4]	_	_	flat:name|flat	basic|enhanced	3-3|3-3	
+3-5	264-268	tika	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vtnisi130an	tikt	_	_	_	_	aux|aux	basic|enhanced	3-6|3-6	
+3-6	269-278	aizliegti	Masc	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpnpsnp	aizliegt	_	_	_	_	root|root	basic|enhanced	3-6|3-6	
+3-7	279-282	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse|discourse	basic|enhanced	3-8|3-8	
+3-8	283-287	suņi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn2	suns	_	_	_	_	nsubj:pass|nsubj	basic|enhanced	3-6|3-6	
+3-9	288-290	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	3-10|3-10	
+3-10	291-295	kaķi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn2	kaķis	_	_	_	_	conj|conj	basic|enhanced	3-8|3-8	
+3-11	295-296	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	3-6|3-6	

@@ -1,0 +1,39 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Ērikam izklausījās, ka mācītājs sarunājas pats ar sevi un tikai viņam pašam saprotamā valodā.
+1-1	0-6	Ērikam	npmsd1	Ēriks	person	*	*[2]	*->2-1	obl	basic	1-2	
+1-2	7-18	izklausījās	vmyisi330an	izklausīties	_	_	_	_	root	basic	1-2	
+1-3	18-19	,	zc	,	_	_	_	_	punct	basic	1-6	
+1-4	20-22	ka	cs	ka	_	_	_	_	mark	basic	1-6	
+1-5	23-31	mācītājs	ncmsn1	mācītājs	_	_	*[1]	*->1-1	nsubj	basic	1-6	
+1-6	32-41	sarunājas	vmyipi230an	sarunāties	_	_	_	_	csubj	basic	1-2	
+1-7	42-46	pats	pg0msnn	pats	_	_	*[1]	*->1-2	acl	basic	1-6	
+1-8	47-49	ar	spsa	ar	_	_	*[1]	*->1-2	case	basic	1-9	
+1-9	50-54	sevi	px000an	sevis	_	_	*[1]	*->1-2	iobj	basic	1-6	
+1-10	55-57	un	cc	un	_	_	_	_	cc	basic	1-15	
+1-11	58-63	tikai	q	tikai	_	_	_	_	discourse	basic	1-12	
+1-12	64-69	viņam	pp3msdn	viņš	_	_	*[1]	*->1-3	iobj	basic	1-14	
+1-13	70-75	pašam	pg0msdn	pats	_	_	*[1]	*->1-3	compound	basic	1-12	
+1-14	76-85	saprotamā	vmnpdfslppnp	saprast	_	_	_	_	amod	basic	1-15	
+1-15	86-92	valodā	ncfsl4	valoda	_	_	_	_	conj	basic	1-6	
+1-16	92-93	.	zs	.	_	_	_	_	punct	basic	1-2	
+
+#Text=Tomēr Ēriks uzmanīgi klausījās cerībā kaut ko apjēdzamu izlobīt arī sev.
+2-1	95-100	Tomēr	cc	tomēr	_	_	_	_	cc	basic	2-4	
+2-2	101-106	Ēriks	npmsn1	Ēriks	person	*	*[2]	*->2-2	nsubj	basic	2-4	
+2-3	107-115	uzmanīgi	rpm	uzmanīgi	_	_	_	_	advmod	basic	2-4	
+2-4	116-125	klausījās	vmyist330an	klausīties	_	_	_	_	root	basic	2-4	
+2-5	126-132	cerībā	ncfsl4	cerība	_	_	_	_	obl	basic	2-4	
+2-6	133-137	kaut	q	kaut	_	_	_	_	discourse	basic	2-7	
+2-7	138-140	ko	pi000an	kas	_	_	_	_	obj	basic	2-9	
+2-8	141-150	apjēdzamu	vmnpdmsappnp	apjēgt	_	_	_	_	compound	basic	2-7	
+2-9	151-158	izlobīt	vmnn0t3000n	izlobīt	_	_	_	_	acl	basic	2-5	
+2-10	159-162	arī	q	arī	_	_	_	_	discourse	basic	2-11	
+2-11	163-166	sev	px000dn	sevis	_	_	*[2]	*->2-3	iobj	basic	2-9	
+2-12	166-167	.	zs	.	_	_	_	_	punct	basic	2-4	

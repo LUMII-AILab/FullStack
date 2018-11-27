@@ -1,0 +1,29 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=ASV delegācijas vadītājs Stjuarts Eizenšatats atzinīgi novērtēja gan deklarāciju kopumā, gan tajā ietverto atsauci uz sociālo palīdzību.
+1-1	0-3	ASV	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	ASV	GPE	https://en.wikipedia.org/wiki/United\_States	_	_	nmod|nmod	basic|enhanced	1-2|1-2	
+1-2	4-15	delegācijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	delegācija	_	_	_	_	nmod|nmod	basic|enhanced	1-3|1-3	
+1-3	16-24	vadītājs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	vadītājs	_	_	*[1]	*->1-1	nmod|nmod	basic|enhanced	1-4|1-4	
+1-4	25-33	Stjuarts	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Stjuarts	person[1]	https://en.wikipedia.org/wiki/Stuart\_E.\_Eizenstat[1]	*[1]	*->1-2	nsubj|nsubj	basic|enhanced	1-7|1-7	
+1-5	34-45	Eizenšatats	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Eizenšatats	person[1]	https://en.wikipedia.org/wiki/Stuart\_E.\_Eizenstat[1]	*[1]	*->1-2	flat:name|flat	basic|enhanced	1-4|1-4	
+1-6	46-54	atzinīgi	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	atzinīgi	_	_	_	_	advmod|advmod	basic|enhanced	1-7|1-7	
+1-7	55-64	novērtēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist230an	novērtēt	_	_	_	_	root|root	basic|enhanced	1-7|1-7	
+1-8	65-68	gan	_	_	_	_	_	_	_	_	_	_	_	_	cc	gan	_	_	_	_	cc|cc	basic|enhanced	1-9|1-9	
+1-9	69-80	deklarāciju	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	deklarācija	_	_	*[2]	*->2-1	obj|obj	basic|enhanced	1-7|1-7	
+1-10	81-87	kopumā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	kopums	_	_	_	_	acl|acl	basic|enhanced	1-9|1-9	
+1-11	87-88	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-15|1-15	
+1-12	89-92	gan	_	_	_	_	_	_	_	_	_	_	_	_	cc	gan	_	_	_	_	cc|cc	basic|enhanced	1-15|1-15	
+1-13	93-97	tajā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msln	tas	_	_	*[2]	*->2-2	obl|obl	basic|enhanced	1-14|1-14	
+1-14	98-106	ietverto	Fem	Sing	Acc	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsapsyp	ietvert	_	_	_	_	amod|amod	basic|enhanced	1-15|1-15	
+1-15	107-114	atsauci	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	atsauce	_	_	_	_	conj|conj	basic|enhanced	1-9|1-9	
+1-16	115-117	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsa	uz	_	_	_	_	case|case	basic|enhanced	1-18|1-18	
+1-17	118-125	sociālo	Fem	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsayp	sociāla	_	_	_	_	amod|amod	basic|enhanced	1-18|1-18	
+1-18	126-135	palīdzību	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	palīdzība	_	_	_	_	nmod|nmod	basic|enhanced	1-15|1-15	
+1-19	135-136	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-7|1-7	

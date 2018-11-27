@@ -1,0 +1,54 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Tas bija parasts rīts.
+1-1	0-3	Tas	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	tas	_	_	_	_	nsubj|nsubj	basic|enhanced	1-4|1-4	
+1-2	4-8	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vcnisii30an	būt	_	_	_	_	cop|cop	basic|enhanced	1-4|1-4	
+1-3	9-16	parasts	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	parasts	_	_	_	_	amod|amod	basic|enhanced	1-4|1-4	
+1-4	17-21	rīts	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	rīts	_	_	_	_	root|root	basic|enhanced	1-4|1-4	
+1-5	21-22	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-4|1-4	
+
+#Text=Diemžēl priekšnojauta, kas parasti mani brīdina, pasargā, līdz izsprukt sveikā, todien mulsi klusēja, varbūt pat snauda.
+2-1	24-31	Diemžēl	_	_	_	_	_	_	_	_	_	_	_	_	q	diemžēl	_	_	_	_	discourse|discourse	basic|enhanced	2-17|2-17	
+2-2	32-45	priekšnojauta	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	priekšnojauta	_	_	*[1]	*->1-1	nsubj|nsubj	basic|enhanced	2-17|2-17	
+2-3	45-46	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-7|2-7	
+2-4	47-50	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	*[1]	*->1-2	nsubj|nsubj	basic|enhanced	2-7|2-7	
+2-5	51-58	parasti	_	_	_	_	_	_	_	_	_	_	_	_	r0t	parasti	_	_	_	_	advmod|advmod	basic|enhanced	2-7|2-7	
+2-6	59-63	mani	*	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10san	es	_	_	_	_	obj|obj	basic|enhanced	2-7|2-7	
+2-7	64-71	brīdina	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	brīdināt	_	_	_	_	acl|acl	basic|enhanced	2-2|2-2	
+2-8	71-72	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-9|2-9	
+2-9	73-80	pasargā	*	Sing	*	*	*	*	Imp	Act	*	Mood=Imp\|Number=Sing\|Person=2\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	2	*	vmnm0t22san	pasargāt	_	_	_	_	conj|conj	basic|enhanced	2-7|2-7	
+2-10	80-81	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-11|2-11	
+2-11	82-86	līdz	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipi230an	līdzēt	_	_	_	_	conj|conj	basic|enhanced	2-7|2-7	
+2-12	87-95	izsprukt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0i1000n	izsprukt	_	_	_	_	ccomp|ccomp	basic|enhanced	2-11|2-11	
+2-13	96-102	sveikā	_	_	_	_	_	_	_	_	_	_	_	_	r0m	sveikā	_	_	_	_	advmod|advmod	basic|enhanced	2-12|2-12	
+2-14	102-103	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-7|2-7	
+2-15	104-110	todien	_	_	_	_	_	_	_	_	_	_	_	_	r0t	todien	_	_	_	_	advmod|advmod	basic|enhanced	2-17|2-17	
+2-16	111-116	mulsi	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	mulsi	_	_	_	_	advmod|advmod	basic|enhanced	2-17|2-17	
+2-17	117-124	klusēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi230an	klusēt	_	_	_	_	root|root	basic|enhanced	2-17|2-17	
+2-18	124-125	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-21|2-21	
+2-19	126-132	varbūt	_	_	_	_	_	_	_	_	_	_	_	_	q	varbūt	_	_	_	_	discourse|discourse	basic|enhanced	2-21|2-21	
+2-20	133-136	pat	_	_	_	_	_	_	_	_	_	_	_	_	q	pat	_	_	_	_	discourse|discourse	basic|enhanced	2-21|2-21	
+2-21	137-143	snauda	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi130an	snaust	_	_	_	_	conj|conj	basic|enhanced	2-17|2-17	
+2-22	143-144	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	2-17|2-17	
+
+#Text=Ufo un Fredis laika ziņās solīja siltu un saulainu dienu bez nokrišņiem.
+3-1	146-149	Ufo	_	_	_	_	_	_	_	_	_	_	_	_	np0000	Ufo	person	*	_	_	nsubj|nsubj	basic|enhanced	3-6|3-6	
+3-2	150-152	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	3-3|3-3	
+3-3	153-159	Fredis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	Fredis	person	https://lv.wikipedia.org/wiki/Andris\_Freidenfelds	_	_	conj|conj	basic|enhanced	3-1|3-1	
+3-4	160-165	laika	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	laiks	_	_	_	_	nmod|nmod	basic|enhanced	3-5|3-5	
+3-5	166-171	ziņās	Fem	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	ziņa	_	_	_	_	obl|obl	basic|enhanced	3-6|3-6	
+3-6	172-178	solīja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	solīt	_	_	_	_	root|root	basic|enhanced	3-6|3-6	
+3-7	179-184	siltu	Fem	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsanp	silta	_	_	_	_	amod|amod	basic|enhanced	3-10|3-10	
+3-8	185-187	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	3-9|3-9	
+3-9	188-196	saulainu	Fem	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsanp	saulaina	_	_	_	_	conj|conj	basic|enhanced	3-7|3-7	
+3-10	197-202	dienu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	diena	_	_	_	_	obj|obj	basic|enhanced	3-6|3-6	
+3-11	203-206	bez	_	_	_	_	_	_	_	_	_	_	_	_	sppd	bez	_	_	_	_	case|case	basic|enhanced	3-12|3-12	
+3-12	207-217	nokrišņiem	Masc	Ptan	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Ptan	*	*	ncmdd2	nokrišņi	_	_	_	_	nmod|nmod	basic|enhanced	3-10|3-10	
+3-13	217-218	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	3-6|3-6	

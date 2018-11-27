@@ -1,0 +1,26 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Atstājot aiz sevis plašu postažu Francijā un Spānijā, tagad vētra virzās pāri Vidusjūrai uz Itāliju.
+1-1	0-8	Atstājot	vmnpu0000000	atstāt	_	_	_	_	advcl	basic	1-12	
+1-2	9-12	aiz	spsg	aiz	_	_	_	_	case	basic	1-3	
+1-3	13-18	sevis	px000gn	sevis	_	_	*[1]	*->1-1	obl	basic	1-1	
+1-4	19-24	plašu	afmsanp	plašs	_	_	_	_	amod	basic	1-5	
+1-5	25-32	postažu	ncfsa4	postaža	_	_	_	_	obj	basic	1-1	
+1-6	33-41	Francijā	npfsl4	Francija	GPE	https://en.wikipedia.org/wiki/France	_	_	obl	basic	1-1	
+1-7	42-44	un	cc	un	_	_	_	_	cc	basic	1-8	
+1-8	45-52	Spānijā	npfsl4	Spānija	GPE	https://en.wikipedia.org/wiki/Spain	_	_	conj	basic	1-6	
+1-9	52-53	,	zc	,	_	_	_	_	punct	basic	1-1	
+1-10	54-59	tagad	r0t	tagad	_	_	_	_	advmod	basic	1-12	
+1-11	60-65	vētra	ncfsn4	vētra	_	_	*[1]	*->1-2	dep	basic	1-12	
+1-12	66-72	virzās	ncfpl4	virza	_	_	_	_	root	basic	1-12	
+1-13	73-77	pāri	spsd	pāri	_	_	_	_	case	basic	1-14	
+1-14	78-88	Vidusjūrai	npfsd4	Vidusjūra	location	https://en.wikipedia.org/wiki/Mediterranean\_Sea	_	_	obl	basic	1-12	
+1-15	89-91	uz	spsa	uz	_	_	_	_	case	basic	1-16	
+1-16	92-99	Itāliju	npfsa4	Itālija	GPE	https://en.wikipedia.org/wiki/Italy	_	_	obl	basic	1-12	
+1-17	99-100	.	zs	.	_	_	_	_	punct	basic	1-12	

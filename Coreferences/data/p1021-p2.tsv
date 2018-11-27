@@ -1,0 +1,37 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Tehniskā sporta kluba "Smiltene" valdes priekšsēdētājs Vairis Tralla pastāstīja, ka pirms sacensībām trase tika pilnveidota un pirmo reizi starts tika dots ar luksoforu.
+1-1	0-8	Tehniskā	Masc	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsgyp	tehnisks	organization[1]	*[1]	*[2]	*->2-1	amod|amod	basic|enhanced	1-2|1-2	
+1-2	9-15	sporta	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	sports	organization[1]	*[1]	*[2]	*->2-1	nmod|nmod	basic|enhanced	1-3|1-3	
+1-3	16-21	kluba	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	klubs	organization[1]	*[1]	*[2]	*->2-1	nmod|nmod	basic|enhanced	1-5|1-5	
+1-4	22-23	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[1]	*[1]	*[2]	*->2-2	punct|punct	basic|enhanced	1-5|1-5	
+1-5	23-31	Smiltene	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	Smiltene	organization[1]|GPE[2]	*[1]|https://en.wikipedia.org/wiki/Smiltene[2]	*[2]	*->2-2	nmod|nmod	basic|enhanced	1-7|1-7	
+1-6	31-32	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[1]	*[1]	*[2]	*->2-2	punct|punct	basic|enhanced	1-5|1-5	
+1-7	33-39	valdes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	valde	_	_	_	_	nmod|nmod	basic|enhanced	1-8|1-8	
+1-8	40-54	priekšsēdētājs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	priekšsēdētājs	_	_	*[1]	*->1-1	nmod|nmod	basic|enhanced	1-9|1-9	
+1-9	55-61	Vairis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	Vairis	person[3]	*[3]	*[1]	*->1-2	nsubj|nsubj	basic|enhanced	1-11|1-11	
+1-10	62-68	Tralla	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn4	Tralla	person[3]	*[3]	*[1]	*->1-2	flat:name|flat	basic|enhanced	1-9|1-9	
+1-11	69-79	pastāstīja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	pastāstīt	_	_	_	_	root|root	basic|enhanced	1-11|1-11	
+1-12	79-80	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-18|1-18	
+1-13	81-83	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark|mark	basic|enhanced	1-18|1-18	
+1-14	84-89	pirms	_	_	_	_	_	_	_	_	_	_	_	_	sppd	pirms	_	_	_	_	case|case	basic|enhanced	1-15|1-15	
+1-15	90-100	sacensībām	Fem	Ptan	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Ptan	*	*	ncfdd4	sacensības	_	_	_	_	obl|obl	basic|enhanced	1-16|1-16	
+1-16	101-106	trase	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	trase	_	_	_	_	nsubj:pass|nsubj	basic|enhanced	1-18|1-18	
+1-17	107-111	tika	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vtnisi130an	tikt	_	_	_	_	aux|aux	basic|enhanced	1-18|1-18	
+1-18	112-123	pilnveidota	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnpsnp	pilnveidot	_	_	_	_	ccomp|ccomp	basic|enhanced	1-11|1-11	
+1-19	124-126	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	1-24|1-24	
+1-20	127-132	pirmo	Fem	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|NumType=Ord	*	*	mosfsa	pirmā	_	_	_	_	amod|amod	basic|enhanced	1-21|1-21	
+1-21	133-138	reizi	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	reize	_	_	_	_	obl|obl	basic|enhanced	1-24|1-24	
+1-22	139-145	starts	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	starts	_	_	_	_	nsubj:pass|nsubj	basic|enhanced	1-24|1-24	
+1-23	146-150	tika	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vtnisi130an	tikt	_	_	_	_	aux|aux	basic|enhanced	1-24|1-24	
+1-24	151-155	dots	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnp	dot	_	_	_	_	conj|conj	basic|enhanced	1-18|1-18	
+1-25	156-158	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case|case	basic|enhanced	1-26|1-26	
+1-26	159-168	luksoforu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	luksofors	_	_	_	_	iobj|iobj	basic|enhanced	1-24|1-24	
+1-27	168-169	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-11|1-11	

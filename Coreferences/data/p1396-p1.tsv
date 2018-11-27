@@ -1,0 +1,58 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=To vien dzirdam, ka Latvijā iznīkst ražošana.
+1-1	0-2	To	pd0msan	tas	_	_	_	_	obj	basic	1-3	
+1-2	3-7	vien	q	vien	_	_	_	_	discourse	basic	1-3	
+1-3	8-15	dzirdam	vmnipt31pan	dzirdēt	_	_	_	_	root	basic	1-3	
+1-4	15-16	,	zc	,	_	_	_	_	punct	basic	1-7	
+1-5	17-19	ka	cs	ka	_	_	_	_	mark	basic	1-7	
+1-6	20-27	Latvijā	npfsl4	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	_	_	obl	basic	1-7	
+1-7	28-35	iznīkst	vmnipi130an	iznīkt	_	_	_	_	ccomp	basic	1-1	
+1-8	36-44	ražošana	ncfsn4	ražošana	_	_	_	_	nsubj	basic	1-7	
+1-9	44-45	.	zs	.	_	_	_	_	punct	basic	1-3	
+
+#Text=Vairs neaudzējam, neražojam pat to, ko vienmēr paši savam patēriņam ražojām.
+2-1	47-52	Vairs	r0t	vairs	_	_	_	_	advmod	basic	2-2	
+2-2	53-63	neaudzējam	vmnipt21pay	neaudzēt	_	_	_	_	root	basic	2-2	
+2-3	63-64	,	zc	,	_	_	_	_	punct	basic	2-4	
+2-4	65-74	neražojam	vmnipt21pay	neražot	_	_	_	_	conj	basic	2-2	
+2-5	75-78	pat	q	pat	_	_	_	_	discourse	basic	2-6	
+2-6	79-81	to	pd0msan	tas	_	_	*[1]	*->1-1	obj	basic	2-2	
+2-7	81-82	,	zc	,	_	_	_	_	punct	basic	2-13	
+2-8	83-85	ko	pr000an	kas	_	_	*[1]	*->1-2	obj	basic	2-13	
+2-9	86-93	vienmēr	r0t	vienmēr	_	_	_	_	advmod	basic	2-13	
+2-10	94-98	paši	pg0mpnn	pats	_	_	*[2]	*->2-1	nsubj	basic	2-13	
+2-11	99-104	savam	ps0msdn	savs	_	_	*[2]	*->2-2	det	basic	2-12	
+2-12	105-114	patēriņam	ncmsd1	patēriņš	_	_	_	_	iobj	basic	2-13	
+2-13	115-122	ražojām	vmnist21pan	ražot	_	_	_	_	ccomp	basic	2-6	
+2-14	122-123	.	zs	.	_	_	_	_	punct	basic	2-2	
+
+#Text=Veikalos pārdod vien importētos ābolus, galvenokārt no Polijas.
+3-1	125-133	Veikalos	ncmpl1	veikals	_	_	_	_	obl	basic	3-2	
+3-2	134-140	pārdod	vmnipti30an	pārdot	_	_	_	_	root	basic	3-2	
+3-3	141-145	vien	q	vien	_	_	_	_	discourse	basic	3-4	
+3-4	146-156	importētos	vmnpdmpapsyp	importēt	_	_	_	_	amod	basic	3-5	
+3-5	157-163	ābolus	ncmpa1	ābols	_	_	_	_	obj	basic	3-2	
+3-6	163-164	,	zc	,	_	_	_	_	punct	basic	3-9	
+3-7	165-176	galvenokārt	q	galvenokārt	_	_	_	_	discourse	basic	3-9	
+3-8	177-179	no	spsg	no	_	_	_	_	case	basic	3-9	
+3-9	180-187	Polijas	npfsg4	Polija	GPE	https://en.wikipedia.org/wiki/Poland	_	_	obl	basic	3-5	
+3-10	187-188	.	zs	.	_	_	_	_	punct	basic	3-2	
+
+#Text=Vai tiešām mēs paši vairs neprotam izaudzēt labu preci?
+4-1	190-193	Vai	q	vai	_	_	_	_	discourse	basic	4-6	
+4-2	194-200	tiešām	q	tiešām	_	_	_	_	discourse	basic	4-6	
+4-3	201-204	mēs	pp10pnn	mēs	_	_	*[2]	*->2-3	nsubj	basic	4-6	
+4-4	205-209	paši	pg0mpnn	pats	_	_	*[2]	*->2-4	compound	basic	4-3	
+4-5	210-215	vairs	r0t	vairs	_	_	_	_	advmod	basic	4-6	
+4-6	216-224	neprotam	vonipt11pay	neprast	_	_	_	_	root	basic	4-6	
+4-7	225-233	izaudzēt	vmnn0t2000n	izaudzēt	_	_	_	_	xcomp	basic	4-6	
+4-8	234-238	labu	affsanp	laba	_	_	_	_	amod	basic	4-9	
+4-9	239-244	preci	ncfsa5	prece	_	_	_	_	obj	basic	4-7	
+4-10	244-245	?	zs	?	_	_	_	_	punct	basic	4-6	

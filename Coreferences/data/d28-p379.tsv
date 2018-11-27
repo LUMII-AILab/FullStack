@@ -1,0 +1,43 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Viņš dzirdēja, ka viņa murmina.
+1-1	0-4	Viņš	pp3msnn	viņš	*[1]	*->1-1	nsubj	basic	1-2	
+1-2	5-13	dzirdēja	vmnist330an	dzirdēt	_	_	root	basic	1-2	
+1-3	13-14	,	zc	,	_	_	punct	basic	1-6	
+1-4	15-17	ka	cs	ka	_	_	mark	basic	1-6	
+1-5	18-22	viņa	pp3fsnn	viņa	*[2]	*->2-1	nsubj	basic	1-6	
+1-6	23-30	murmina	vmnipt330an	murmināt	_	_	ccomp	basic	1-2	
+1-7	30-31	.	zs	.	_	_	punct	basic	1-2	
+
+#Text=Viņš piecēlās no saviem mīlas ratiem, klusi zagās klāt un atlaidās viņai līdzās.
+2-1	33-37	Viņš	pp3msnn	viņš	*[1]	*->1-2	nsubj	basic	2-2	
+2-2	38-46	piecēlās	vmyist130an	piecelties	_	_	root	basic	2-2	
+2-3	47-49	no	sppd	no	_	_	case	basic	2-6	
+2-4	50-56	saviem	ps0mpdn	savs	*[1]	*->1-3	det	basic	2-6	
+2-5	57-62	mīlas	ncfsg4	mīla	_	_	nmod	basic	2-6	
+2-6	63-69	ratiem	ncmpd1	rats	_	_	obl	basic	2-2	
+2-7	69-70	,	zc	,	_	_	punct	basic	2-9	
+2-8	71-76	klusi	rpm	klusi	_	_	advmod	basic	2-9	
+2-9	77-82	zagās	vmnipi130an	zagties	_	_	conj	basic	2-2	
+2-10	83-87	klāt	r0p	klāt	_	_	advmod	basic	2-9	
+2-11	88-90	un	cc	un	_	_	cc	basic	2-12	
+2-12	91-99	atlaidās	vmyisi130an	atlaisties	_	_	conj	basic	2-2	
+2-13	100-105	viņai	pp3fsdn	viņa	*[2]	*->2-2	obl	basic	2-12	
+2-14	106-112	līdzās	rrp	līdzās	_	_	case	basic	2-13	
+2-15	112-113	.	zs	.	_	_	punct	basic	2-2	
+
+#Text=Viņš dzirdēja, ka murmināšana traucē viņai elpot.
+3-1	115-119	Viņš	pp3msnn	viņš	*[1]	*->1-4	nsubj	basic	3-2	
+3-2	120-128	dzirdēja	vmnist330an	dzirdēt	_	_	root	basic	3-2	
+3-3	128-129	,	zc	,	_	_	punct	basic	3-6	
+3-4	130-132	ka	cs	ka	_	_	mark	basic	3-6	
+3-5	133-144	murmināšana	ncfsn4	murmināšana	_	_	nsubj	basic	3-6	
+3-6	145-151	traucē	vmnipt230an	traucēt	_	_	ccomp	basic	3-2	
+3-7	152-157	viņai	pp3fsdn	viņa	*[2]	*->2-3	iobj	basic	3-6	
+3-8	158-163	elpot	vmnn0t2000n	elpot	_	_	ccomp	basic	3-6	
+3-9	163-164	.	zs	.	_	_	punct	basic	3-2	

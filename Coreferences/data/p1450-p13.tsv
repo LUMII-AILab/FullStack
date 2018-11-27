@@ -1,0 +1,46 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Tā ir aizraušanās, kas prasa izdevumus.
+1-1	0-2	Tā	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsnn	tā	_	_	nsubj|nsubj	basic|enhanced	1-3|1-3	
+1-2	3-5	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	cop|cop	basic|enhanced	1-3|1-3	
+1-3	6-17	aizraušanās	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsnr	aizraušanās	*[1]	*->1-1	root|root	basic|enhanced	1-3|1-3	
+1-4	17-18	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct|punct	basic|enhanced	1-6|1-6	
+1-5	19-22	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	*[1]	*->1-2	nsubj|nsubj	basic|enhanced	1-6|1-6	
+1-6	23-28	prasa	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	prasīt	_	_	acl|acl	basic|enhanced	1-3|1-3	
+1-7	29-38	izdevumus	Masc	Ptan	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Ptan	*	*	ncmda1	izdevumi	_	_	obj|obj	basic|enhanced	1-6|1-6	
+1-8	38-39	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct|punct	basic|enhanced	1-3|1-3	
+
+#Text=Iegūtās fotogrāfijas tiek liktas kaudzītē.
+2-1	41-48	Iegūtās	Fem	Plur	Acc	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfpapsyp	iegūt	_	_	amod|amod	basic|enhanced	2-2|2-2	
+2-2	49-61	fotogrāfijas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	fotogrāfija	_	_	nsubj:pass|nsubj	basic|enhanced	2-4|2-4	
+2-3	62-66	tiek	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vtnipi130an	tikt	_	_	aux|aux	basic|enhanced	2-4|2-4	
+2-4	67-73	liktas	Fem	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfpnpsnp	likt	_	_	root|root	basic|enhanced	2-4|2-4	
+2-5	74-82	kaudzītē	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	kaudzīte	_	_	obl|obl	basic|enhanced	2-4|2-4	
+2-6	82-83	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct|punct	basic|enhanced	2-4|2-4	
+
+#Text=Taču atrodas cilvēki, kas bildes grib redzēt — kāda sava saimniecība un ēkas izskatās no putna lidojuma?
+3-1	85-89	Taču	_	_	_	_	_	_	_	_	_	_	_	_	cc	taču	_	_	cc|cc	basic|enhanced	3-2|3-2	
+3-2	90-97	atrodas	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipi130an	atrasties	_	_	root|root	basic|enhanced	3-2|3-2	
+3-3	98-105	cilvēki	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	cilvēks	*[2]	*->2-1	nsubj|nsubj	basic|enhanced	3-2|3-2	
+3-4	105-106	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct|punct	basic|enhanced	3-7|3-7	
+3-5	107-110	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	*[2]	*->2-2	nsubj|nsubj	basic|enhanced	3-7|3-7	
+3-6	111-117	bildes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	bilde	_	_	iobj|iobj	basic|enhanced	3-7|3-7	
+3-7	118-122	grib	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vonipt330an	gribēt	_	_	acl|acl	basic|enhanced	3-3|3-3	
+3-8	123-129	redzēt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	redzēt	_	_	xcomp|xcomp	basic|enhanced	3-7|3-7	
+3-9	130-131	—	_	_	_	_	_	_	_	_	_	_	_	_	zd	—	_	_	punct|punct	basic|enhanced	3-15|3-15	
+3-10	132-136	kāda	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Ind	*	*	pi0fsnn	kāda	_	_	xcomp|xcomp	basic|enhanced	3-15|3-15	
+3-11	137-141	sava	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0fsnn	sava	*[2]	*->2-3	det|det	basic|enhanced	3-12|3-12	
+3-12	142-153	saimniecība	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	saimniecība	_	_	nsubj|nsubj	basic|enhanced	3-15|3-15	
+3-13	154-156	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	cc|cc	basic|enhanced	3-14|3-14	
+3-14	157-161	ēkas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	ēka	_	_	conj|conj	basic|enhanced	3-12|3-12	
+3-15	162-170	izskatās	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcyipt330an	izskatīties	_	_	conj|conj	basic|enhanced	3-2|3-2	
+3-16	171-173	no	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	_	_	case|case	basic|enhanced	3-18|3-18	
+3-17	174-179	putna	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	putns	_	_	nmod|nmod	basic|enhanced	3-18|3-18	
+3-18	180-188	lidojuma	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	lidojums	_	_	obl|obl	basic|enhanced	3-15|3-15	
+3-19	188-189	?	_	_	_	_	_	_	_	_	_	_	_	_	zs	?	_	_	punct|punct	basic|enhanced	3-2|3-2	

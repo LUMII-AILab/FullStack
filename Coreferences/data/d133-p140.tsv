@@ -1,0 +1,126 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Pienāca parītdiena.
+1-1	0-7	Pienāca	vmnisi130an	pienākt	_	_	_	_	root	basic	1-1	
+1-2	8-18	parītdiena	ncfsn4	parītdiena	_	_	_	_	nsubj	basic	1-1	
+1-3	18-19	.	zs	.	_	_	_	_	punct	basic	1-1	
+
+#Text=Pobedska izkāpa no taksometra lidostā.
+2-1	21-29	Pobedska	npfsn4	Pobedska	person	*	*[1]	*->1-1	nsubj	basic	2-2	
+2-2	30-36	izkāpa	vmnist130an	izkāpt	_	_	_	_	root	basic	2-2	
+2-3	37-39	no	spsg	no	_	_	_	_	case	basic	2-4	
+2-4	40-50	taksometra	ncmsg1	taksometrs	_	_	_	_	obl	basic	2-2	
+2-5	51-58	lidostā	ncfsl4	lidosta	_	_	_	_	obl	basic	2-2	
+2-6	58-59	.	zs	.	_	_	_	_	punct	basic	2-2	
+
+#Text=Vadītājs no bagāžnieka izņēma divus čemodānus, Pobedskai rokā bija vecmodīgs koferis ar viņas simfoniju partitūrām, ierakstiem, rekomendācijām un citiem dokumentiem.
+3-1	61-69	Vadītājs	ncmsn1	vadītājs	_	_	_	_	nsubj	basic	3-4	
+3-2	70-72	no	spsg	no	_	_	_	_	case	basic	3-3	
+3-3	73-83	bagāžnieka	ncmsg1	bagāžnieks	_	_	_	_	obl	basic	3-4	
+3-4	84-90	izņēma	vmnist130an	izņemt	_	_	_	_	root	basic	3-4	
+3-5	91-96	divus	mcsmpa	divi	_	_	_	_	nummod	basic	3-6	
+3-6	97-106	čemodānus	ncmpa1	čemodāns	_	_	_	_	obj	basic	3-4	
+3-7	106-107	,	zc	,	_	_	_	_	punct	basic	3-4	
+3-8	108-117	Pobedskai	xx	Pobedskai	person	*	*[1]	*->1-2	nsubj	basic	3-10	
+3-9	118-122	rokā	ncfsl4	roka	_	_	_	_	obl	basic	3-10	
+3-10	123-127	bija	vmnisii30an	būt	_	_	_	_	conj	basic	3-4	
+3-11	128-137	vecmodīgs	afmsnnp	vecmodīgs	_	_	_	_	amod	basic	3-12	
+3-12	138-145	koferis	ncmsn2	koferis	_	_	_	_	nsubj	basic	3-10	
+3-13	146-148	ar	sppd	ar	_	_	_	_	case	basic	3-16	
+3-14	149-154	viņas	pp3fsgn	viņa	_	_	*[1]	*->1-3	det	basic	3-16	
+3-15	155-164	simfoniju	ncfpg4	simfonija	_	_	_	_	nmod	basic	3-16	
+3-16	165-175	partitūrām	ncfpd4	partitūra	_	_	_	_	nmod	basic	3-12	
+3-17	175-176	,	zc	,	_	_	_	_	punct	basic	3-18	
+3-18	177-187	ierakstiem	ncmpd1	ieraksts	_	_	_	_	conj	basic	3-16	
+3-19	187-188	,	zc	,	_	_	_	_	punct	basic	3-20	
+3-20	189-203	rekomendācijām	ncfpd4	rekomendācija	_	_	_	_	conj	basic	3-16	
+3-21	204-206	un	cc	un	_	_	_	_	cc	basic	3-23	
+3-22	207-213	citiem	pi0mpdn	cits	_	_	_	_	det	basic	3-23	
+3-23	214-225	dokumentiem	ncmpd1	dokuments	_	_	_	_	conj	basic	3-16	
+3-24	225-226	.	zs	.	_	_	_	_	punct	basic	3-4	
+
+#Text=Lidmašīna pacēlās gaisā.
+4-1	228-237	Lidmašīna	ncfsn4	lidmašīna	_	_	_	_	nsubj	basic	4-2	
+4-2	238-245	pacēlās	vmyisi130an	pacelties	_	_	_	_	root	basic	4-2	
+4-3	246-251	gaisā	ncmsl1	gaiss	_	_	_	_	obl	basic	4-2	
+4-4	251-252	.	zs	.	_	_	_	_	punct	basic	4-2	
+
+#Text=Brige pacēlās augstu virs zemes, pār cilvēku dzīvēm.
+5-1	254-259	Brige	npfsn5	Brige	person	*	*[2]	*->2-1	nsubj	basic	5-2	
+5-2	260-267	pacēlās	vmyisi130an	pacelties	_	_	_	_	root	basic	5-2	
+5-3	268-274	augstu	rpp	augstu	_	_	_	_	advmod	basic	5-2	
+5-4	275-279	virs	spsg	virs	_	_	_	_	case	basic	5-5	
+5-5	280-285	zemes	ncfsg5	zeme	_	_	_	_	obl	basic	5-2	
+5-6	285-286	,	zc	,	_	_	_	_	punct	basic	5-9	
+5-7	287-290	pār	spsa	pār	_	_	_	_	case	basic	5-9	
+5-8	291-298	cilvēku	ncmpg1	cilvēks	_	_	_	_	nmod	basic	5-9	
+5-9	299-305	dzīvēm	ncfpd5	dzīve	_	_	_	_	acl	basic	5-5	
+5-10	305-306	.	zs	.	_	_	_	_	punct	basic	5-2	
+
+#Text=Nesen viņa bija ierauta ar visām iekšām zemes dzīves dzīlēs un cilvēku jūtās.
+6-1	308-313	Nesen	r0t	nesen	_	_	_	_	advmod	basic	6-4	
+6-2	314-318	viņa	pp3fsnn	viņa	_	_	*[2]	*->2-2	nsubj:pass	basic	6-4	
+6-3	319-323	bija	vcnisii30an	būt	_	_	_	_	aux	basic	6-4	
+6-4	324-331	ierauta	vmnpdfsnpsnp	ieraut	_	_	_	_	root	basic	6-4	
+6-5	332-334	ar	sppd	ar	_	_	_	_	case	basic	6-7	
+6-6	335-340	visām	pg0fpdn	visa	_	_	_	_	det	basic	6-7	
+6-7	341-347	iekšām	ncfdd4	iekšas	_	_	_	_	obl	basic	6-4	
+6-8	348-353	zemes	ncfsg5	zeme	_	_	_	_	nmod	basic	6-9	
+6-9	354-360	dzīves	ncfsg5	dzīve	_	_	_	_	nmod	basic	6-10	
+6-10	361-367	dzīlēs	ncfpl5	dzīle	_	_	_	_	obl	basic	6-4	
+6-11	368-370	un	cc	un	_	_	_	_	cc	basic	6-13	
+6-12	371-378	cilvēku	ncmpg1	cilvēks	_	_	_	_	nmod	basic	6-13	
+6-13	379-384	jūtās	ncfdl4	jūtas	_	_	_	_	conj	basic	6-10	
+6-14	384-385	.	zs	.	_	_	_	_	punct	basic	6-4	
+
+#Text=Brige vairs negribēja dzīvot cilvēku dzīvi.
+7-1	387-392	Brige	npfsn5	Brige	person	*	*[2]	*->2-3	nsubj	basic	7-3	
+7-2	393-398	vairs	r0t	vairs	_	_	_	_	advmod	basic	7-3	
+7-3	399-408	negribēja	vonist330ay	negribēt	_	_	_	_	root	basic	7-3	
+7-4	409-415	dzīvot	vmnn0t2000n	dzīvot	_	_	_	_	xcomp	basic	7-3	
+7-5	416-423	cilvēku	ncmpg1	cilvēks	_	_	_	_	nmod	basic	7-6	
+7-6	424-429	dzīvi	ncfsa5	dzīve	_	_	_	_	obj	basic	7-4	
+7-7	429-430	.	zs	.	_	_	_	_	punct	basic	7-3	
+
+#Text=Viņa gribēja, lai pūķis tik ceļas un ceļas, arvien augstāk un augstāk, kur viss ir sterils, matērijas nav, kur klusums skan visskaistāk un dziedējoši.
+8-1	432-436	Viņa	pp3fsnn	viņa	_	_	*[2]	*->2-4	nsubj	basic	8-2	
+8-2	437-444	gribēja	vmnist330an	gribēt	_	_	_	_	root	basic	8-2	
+8-3	444-445	,	zc	,	_	_	_	_	punct	basic	8-7	
+8-4	446-449	lai	cs	lai	_	_	_	_	mark	basic	8-7	
+8-5	450-455	pūķis	ncmsn2	pūķis	_	_	_	_	nsubj	basic	8-7	
+8-6	456-459	tik	r0q	tik	_	_	_	_	advmod	basic	8-7	
+8-7	460-465	ceļas	vmyipt130an	celties	_	_	_	_	ccomp	basic	8-2	
+8-8	466-468	un	cc	un	_	_	_	_	cc	basic	8-9	
+8-9	469-474	ceļas	vmyipt130an	celties	_	_	_	_	conj	basic	8-7	
+8-10	474-475	,	zc	,	_	_	_	_	punct	basic	8-12	
+8-11	476-482	arvien	r0t	arvien	_	_	_	_	advmod	basic	8-12	
+8-12	483-490	augstāk	rcp	augsti	_	_	_	_	advcl	basic	8-7	
+8-13	491-493	un	cc	un	_	_	_	_	cc	basic	8-14	
+8-14	494-501	augstāk	rcp	augsti	_	_	_	_	conj	basic	8-12	
+8-15	501-502	,	zc	,	_	_	_	_	punct	basic	8-19	
+8-16	503-506	kur	r0p	kur	_	_	_	_	advmod	basic	8-19	
+8-17	507-511	viss	pg0msnn	viss	_	_	_	_	nsubj	basic	8-19	
+8-18	512-514	ir	vcnipii30an	būt	_	_	_	_	cop	basic	8-19	
+8-19	515-522	sterils	armsnnp	sterils	_	_	_	_	advcl	basic	8-7	
+8-20	522-523	,	zc	,	_	_	_	_	punct	basic	8-22	
+8-21	524-533	matērijas	ncfsg4	matērija	_	_	_	_	nsubj	basic	8-22	
+8-22	534-537	nav	vmnipii30ay	nebūt	_	_	_	_	conj	basic	8-19	
+8-23	537-538	,	zc	,	_	_	_	_	punct	basic	8-26	
+8-24	539-542	kur	r0p	kur	_	_	_	_	advmod	basic	8-26	
+8-25	543-550	klusums	ncmsn1	klusums	_	_	_	_	nsubj	basic	8-26	
+8-26	551-555	skan	vmnipt330an	skanēt	_	_	_	_	conj	basic	8-19	
+8-27	556-567	visskaistāk	rsm	skaisti	_	_	_	_	advmod	basic	8-26	
+8-28	568-570	un	cc	un	_	_	_	_	cc	basic	8-29	
+8-29	571-581	dziedējoši	vmnpdmpnapnp	dziedēt	_	_	_	_	conj	basic	8-27	
+8-30	581-582	.	zs	.	_	_	_	_	punct	basic	8-2	
+
+#Text=Pie Mocarta.
+9-1	584-587	Pie	spsg	pie	_	_	_	_	case	basic	9-2	
+9-2	588-595	Mocarta	npmsg1	Mocarta	person	https://az.wikipedia.org/wiki/Volfqanq\_Amadey\_Motsart	_	_	root	basic	9-2	
+9-3	595-596	.	zs	.	_	_	_	_	punct	basic	9-2	

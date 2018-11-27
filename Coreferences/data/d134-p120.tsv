@@ -1,0 +1,66 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Šurp nāca fizikas skolotājs, lai slēgtu vaļā durvis.
+1-1	0-4	Šurp	_	_	_	_	_	_	_	_	_	_	_	_	r0p	šurp	_	_	_	_	advmod|advmod	basic|enhanced	1-2|1-2	
+1-2	5-9	nāca	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi130an	nākt	_	_	_	_	root|root	basic|enhanced	1-2|1-2	
+1-3	10-17	fizikas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	fizika	_	_	*[1]	*->1-1	nmod|nmod	basic|enhanced	1-4|1-4	
+1-4	18-27	skolotājs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	skolotājs	_	_	*[1]	*->1-1	nsubj|nsubj	basic|enhanced	1-2|1-2	
+1-5	27-28	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-7|1-7	
+1-6	29-32	lai	_	_	_	_	_	_	_	_	_	_	_	_	cs	lai	_	_	_	_	mark|mark	basic|enhanced	1-7|1-7	
+1-7	33-39	slēgtu	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vmnc0t100an	slēgt	_	_	_	_	advcl|advcl	basic|enhanced	1-2|1-2	
+1-8	40-44	vaļā	_	_	_	_	_	_	_	_	_	_	_	_	r0m	vaļā	_	_	_	_	advmod|advmod	basic|enhanced	1-7|1-7	
+1-9	45-51	durvis	Fem	Ptan	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Ptan	*	*	ncfdn6	durvis	_	_	_	_	iobj|iobj	basic|enhanced	1-7|1-7	
+1-10	51-52	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-2|1-2	
+
+#Text=Viņš bija piezemēts pragmatiķis, kurš spieda rēķināt dīzeļpīzdeļdzinēja jaudu, ienīda atomfiziku, jebkādas fizikas sasaistes ar metafiziku, bet klusībā rēķināja Dieva neesamības pierādījumu.
+2-1	54-58	Viņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msnn	viņš	_	_	*[1]	*->1-2	nsubj|nsubj	basic|enhanced	2-4|2-4	
+2-2	59-63	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vcnisii30an	būt	_	_	_	_	cop|cop	basic|enhanced	2-4|2-4	
+2-3	64-73	piezemēts	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnp	piezemēt	_	_	_	_	amod|amod	basic|enhanced	2-4|2-4	
+2-4	74-85	pragmatiķis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	pragmatiķis	_	_	*[1]	*->1-3	root|root	basic|enhanced	2-4|2-4	
+2-5	85-86	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	*[1]	*->1-3	punct|punct	basic|enhanced	2-7|2-7	
+2-6	87-91	kurš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msnn	kurš	_	_	*[1]	*->1-4	nsubj|nsubj	basic|enhanced	2-7|2-7	
+2-7	92-98	spieda	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	spiest	_	_	_	_	acl|acl	basic|enhanced	2-4|2-4	
+2-8	99-106	rēķināt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	rēķināt	_	_	_	_	ccomp|ccomp	basic|enhanced	2-7|2-7	
+2-9	107-125	dīzeļpīzdeļdzinēja	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	dīzeļpīzdeļdzinējs	_	_	_	_	nmod|nmod	basic|enhanced	2-10|2-10	
+2-10	126-131	jaudu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	jauda	_	_	_	_	obj|obj	basic|enhanced	2-8|2-8	
+2-11	131-132	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-12|2-12	
+2-12	133-139	ienīda	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	ienīst	_	_	_	_	conj|conj	basic|enhanced	2-7|2-7	
+2-13	140-150	atomfiziku	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	atomfizika	_	_	_	_	obj|obj	basic|enhanced	2-12|2-12	
+2-14	150-151	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-17|2-17	
+2-15	152-160	jebkādas	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur\|PronType=Ind	*	*	pi0fpan	jebkāda	_	_	_	_	det|det	basic|enhanced	2-17|2-17	
+2-16	161-168	fizikas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	fizika	_	_	_	_	nmod|nmod	basic|enhanced	2-17|2-17	
+2-17	169-178	sasaistes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	sasaiste	_	_	_	_	conj|conj	basic|enhanced	2-13|2-13	
+2-18	179-181	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case|case	basic|enhanced	2-19|2-19	
+2-19	182-192	metafiziku	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	metafizika	_	_	_	_	nmod|nmod	basic|enhanced	2-17|2-17	
+2-20	192-193	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-23|2-23	
+2-21	194-197	bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	_	_	cc|cc	basic|enhanced	2-23|2-23	
+2-22	198-205	klusībā	_	_	_	_	_	_	_	_	_	_	_	_	r0m	klusībā	_	_	_	_	advmod|advmod	basic|enhanced	2-23|2-23	
+2-23	206-214	rēķināja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	rēķināt	_	_	_	_	conj|conj	basic|enhanced	2-7|2-7	
+2-24	215-220	Dieva	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	dievs	person	https://en.wikipedia.org/wiki/God	_	_	nmod|nmod	basic|enhanced	2-25|2-25	
+2-25	221-231	neesamības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	neesamība	_	_	_	_	nmod|nmod	basic|enhanced	2-26|2-26	
+2-26	232-243	pierādījumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	pierādījums	_	_	_	_	obj|obj	basic|enhanced	2-23|2-23	
+2-27	243-244	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	2-4|2-4	
+
+#Text=Viņš neuzdeva prezidentei nevienu jautājumu un dīvaino transpersonālo fenomenu uztvēra ar interesi un skepsi.
+3-1	246-250	Viņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msnn	viņš	_	_	*[1]	*->1-5	nsubj|nsubj	basic|enhanced	3-2|3-2	
+3-2	251-259	neuzdeva	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisti30ay	neuzdot	_	_	_	_	root|root	basic|enhanced	3-2|3-2	
+3-3	260-271	prezidentei	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd5	prezidente	_	_	_	_	iobj|iobj	basic|enhanced	3-2|3-2	
+3-4	272-279	nevienu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Ind,Neg	*	*	pi0msay	neviens	_	_	_	_	det|det	basic|enhanced	3-5|3-5	
+3-5	280-289	jautājumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	jautājums	_	_	_	_	obj|obj	basic|enhanced	3-2|3-2	
+3-6	290-292	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	3-10|3-10	
+3-7	293-300	dīvaino	Masc	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsayp	dīvains	_	_	_	_	amod|amod	basic|enhanced	3-9|3-9	
+3-8	301-315	transpersonālo	Masc	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsayp	transpersonāls	_	_	_	_	amod|amod	basic|enhanced	3-9|3-9	
+3-9	316-324	fenomenu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	fenomens	_	_	_	_	obj|obj	basic|enhanced	3-10|3-10	
+3-10	325-332	uztvēra	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	uztvert	_	_	_	_	conj|conj	basic|enhanced	3-2|3-2	
+3-11	333-335	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case|case	basic|enhanced	3-12|3-12	
+3-12	336-344	interesi	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	interese	_	_	_	_	obl|obl	basic|enhanced	3-10|3-10	
+3-13	345-347	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	3-14|3-14	
+3-14	348-354	skepsi	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	skepse	_	_	_	_	conj|conj	basic|enhanced	3-12|3-12	
+3-15	354-355	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	3-2|3-2	

@@ -1,0 +1,196 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Filmēšanās seriālā un kāpšana uz Dailes teātra skatuves izrādē “Manu sievu sauc Moriss” nav vienīgais iemesls, kāpēc Egons ik nedēļu sēžas savā “Hondā” un mēro ceļu no Liepājas uz Rīgu.
+1-1	0-10	Filmēšanās	ncfsnr	filmēšanās	_	_	_	_	nsubj	basic	1-18	
+1-2	11-18	seriālā	arfsnyp	seriāla	_	_	_	_	dep	basic	1-1	
+1-3	19-21	un	cc	un	_	_	_	_	cc	basic	1-4	
+1-4	22-29	kāpšana	ncfsn4	kāpšana	_	_	_	_	conj	basic	1-1	
+1-5	30-32	uz	spsg	uz	_	_	_	_	case	basic	1-8	
+1-6	33-39	Dailes	npfsg5	daile	organization[1]	https://en.wikipedia.org/wiki/Dailes\_Theatre[1]	_	_	nmod	basic	1-7	
+1-7	40-46	teātra	ncmsg2	teātris	organization[1]	https://en.wikipedia.org/wiki/Dailes\_Theatre[1]	_	_	nmod	basic	1-8	
+1-8	47-55	skatuves	ncfsg5	skatuve	_	_	_	_	obl	basic	1-4	
+1-9	56-62	izrādē	ncfsl5	izrāde	_	_	*[1]	*->1-1	nmod	basic	1-13	
+1-10	63-64	“	zq	“	product[2]	*[2]	*[1]	*->1-2	punct	basic	1-13	
+1-11	64-68	Manu	ps0fsan	mana	product[2]	*[2]	*[1]	*->1-2	det	basic	1-12	
+1-12	69-74	sievu	ncfsa4	sieva	product[2]	*[2]	*[1]	*->1-2	obj	basic	1-13	
+1-13	75-79	sauc	vmnipt130an	saukt	product[2]	*[2]	*[1]	*->1-2	obl	basic	1-4	
+1-14	80-86	Moriss	npmsn1	Moriss	product[2]	*[2]	*[1]	*->1-2	acl	basic	1-13	
+1-15	86-87	”	zq	”	product[2]	*[2]	*[1]	*->1-2	punct	basic	1-13	
+1-16	88-91	nav	vcnipii30ay	nebūt	_	_	_	_	cop	basic	1-18	
+1-17	92-101	vienīgais	armsnyp	vienīgs	_	_	_	_	amod	basic	1-18	
+1-18	102-109	iemesls	ncmsn1	iemesls	_	_	_	_	root	basic	1-18	
+1-19	109-110	,	zc	,	_	_	_	_	punct	basic	1-24	
+1-20	111-116	kāpēc	r0c	kāpēc	_	_	_	_	advmod	basic	1-24	
+1-21	117-122	Egons	npmsn1	Egons	person	https://lv.wikipedia.org/wiki/Egons\_Dombrovskis	*[5]	*->5-1	nsubj	basic	1-24	
+1-22	123-125	ik	q	ik	_	_	_	_	discourse	basic	1-23	
+1-23	126-132	nedēļu	ncfpg4	nedēļa	_	_	_	_	obl	basic	1-24	
+1-24	133-138	sēžas	vmyipi130an	sēsties	_	_	_	_	acl	basic	1-18	
+1-25	139-143	savā	ps0fsln	sava	_	_	_	_	det	basic	1-27	
+1-26	144-145	“	zq	“	product[3]	*[3]	_	_	punct	basic	1-27	
+1-27	145-150	Hondā	npfsl4	Honda	product[3]|product[4]	*[3]|https://en.wikipedia.org/wiki/Honda[4]	_	_	obl	basic	1-24	
+1-28	150-151	”	zq	”	product[3]	*[3]	_	_	punct	basic	1-27	
+1-29	152-154	un	cc	un	_	_	_	_	cc	basic	1-30	
+1-30	155-159	mēro	vmnipt230an	mērot	_	_	_	_	conj	basic	1-24	
+1-31	160-164	ceļu	ncmsa1	ceļš	_	_	_	_	obj	basic	1-30	
+1-32	165-167	no	spsg	no	_	_	_	_	case	basic	1-33	
+1-33	168-176	Liepājas	npfsg4	Liepāja	GPE	https://en.wikipedia.org/wiki/Liepāja	_	_	obl	basic	1-30	
+1-34	177-179	uz	spsa	uz	_	_	_	_	case	basic	1-35	
+1-35	180-184	Rīgu	npfsa4	Rīga	GPE	https://en.wikipedia.org/wiki/Riga	_	_	obl	basic	1-30	
+1-36	184-185	.	zs	.	_	_	_	_	punct	basic	1-18	
+
+#Text=Šeit ir arī viņa mājas un ģimene – sieva Evita.
+2-1	187-191	Šeit	r0p	šeit	_	_	_	_	advmod	basic	2-2	
+2-2	192-194	ir	vmnipii30an	būt	_	_	_	_	root	basic	2-2	
+2-3	195-198	arī	q	arī	_	_	_	_	discourse	basic	2-5	
+2-4	199-203	viņa	pp3msgn	viņš	_	_	*[5]	*->5-2	det	basic	2-5	
+2-5	204-209	mājas	ncfsg4	māja	_	_	_	_	nsubj	basic	2-2	
+2-6	210-212	un	cc	un	_	_	_	_	cc	basic	2-7	
+2-7	213-219	ģimene	ncfsn5	ģimene	_	_	_	_	conj	basic	2-5	
+2-8	220-221	–	zd	–	_	_	_	_	punct	basic	2-10	
+2-9	222-227	sieva	ncfsn4	sieva	_	_	*[7]	*->7-1	nmod	basic	2-10	
+2-10	228-233	Evita	npfsn4	Evita	person	*	*[7]	*->7-2	acl	basic	2-7	
+2-11	233-234	.	zs	.	_	_	_	_	punct	basic	2-2	
+
+#Text=Egons gan spītīgi turas pretī un negrib atbildēt uz jautājumiem par savu sievu, bet es zinu, ka viņu iepazīšanās notika ziedu veikalā, kurā Evita strādāja.
+3-1	236-241	Egons	npmsn1	Egons	person	https://lv.wikipedia.org/wiki/Egons\_Dombrovskis	*[5]	*->5-3	nsubj	basic	3-4	
+3-2	242-245	gan	q	gan	_	_	_	_	discourse	basic	3-4	
+3-3	246-253	spītīgi	r0m	spītīgi	_	_	_	_	advmod	basic	3-4	
+3-4	254-259	turas	vmyipi330an	turēties	_	_	_	_	root	basic	3-4	
+3-5	260-265	pretī	rrp	pretī	_	_	_	_	advmod	basic	3-4	
+3-6	266-268	un	cc	un	_	_	_	_	cc	basic	3-7	
+3-7	269-275	negrib	vonipt330ay	negribēt	_	_	_	_	conj	basic	3-4	
+3-8	276-284	atbildēt	vmnn0t3000n	atbildēt	_	_	_	_	xcomp	basic	3-7	
+3-9	285-287	uz	sppd	uz	_	_	_	_	case	basic	3-10	
+3-10	288-299	jautājumiem	ncmpd1	jautājums	_	_	_	_	iobj	basic	3-8	
+3-11	300-303	par	spsa	par	_	_	_	_	case	basic	3-13	
+3-12	304-308	savu	ps0fsan	sava	_	_	*[5]	*->5-4	det	basic	3-13	
+3-13	309-314	sievu	ncfsa4	sieva	_	_	*[7]	*->7-3	nmod	basic	3-10	
+3-14	314-315	,	zc	,	_	_	_	_	punct	basic	3-17	
+3-15	316-319	bet	cc	bet	_	_	_	_	cc	basic	3-17	
+3-16	320-322	es	pp10snn	es	_	_	_	_	nsubj	basic	3-17	
+3-17	323-327	zinu	vmnipt31san	zināt	_	_	_	_	conj	basic	3-4	
+3-18	327-328	,	zc	,	_	_	_	_	punct	basic	3-22	
+3-19	329-331	ka	cs	ka	_	_	_	_	mark	basic	3-22	
+3-20	332-336	viņu	pp3mpgn	viņš	_	_	*[6]	*->6-1	det	basic	3-21	
+3-21	337-348	iepazīšanās	ncfsnr	iepazīšanās	_	_	_	_	nsubj	basic	3-22	
+3-22	349-355	notika	vmnisi130an	notikt	_	_	_	_	ccomp	basic	3-17	
+3-23	356-361	ziedu	ncmpg1	zieds	_	_	_	_	nmod	basic	3-24	
+3-24	362-369	veikalā	ncmsl1	veikals	_	_	*[2]	*->2-1	obl	basic	3-22	
+3-25	369-370	,	zc	,	_	_	_	_	punct	basic	3-28	
+3-26	371-375	kurā	pr0fsln	kura	_	_	*[2]	*->2-2	obl	basic	3-28	
+3-27	376-381	Evita	npfsn4	Evita	person	*	*[7]	*->7-4	nsubj	basic	3-28	
+3-28	382-390	strādāja	vmnist230an	strādāt	_	_	_	_	acl	basic	3-24	
+3-29	390-391	.	zs	.	_	_	_	_	punct	basic	3-4	
+
+#Text=Viņa ir puķu meitene jeb floriste, un Egons reiz pie viņas pirka ziedus savām kolēģēm.
+4-1	393-397	Viņa	pp3fsnn	viņa	_	_	*[7]	*->7-5	nsubj	basic	4-4	
+4-2	398-400	ir	vcnipii30an	būt	_	_	_	_	cop	basic	4-4	
+4-3	401-405	puķu	ncfpg5	puķe	_	_	_	_	nmod	basic	4-4	
+4-4	406-413	meitene	ncfsn5	meitene	_	_	*[7]	*->7-6	root	basic	4-4	
+4-5	414-417	jeb	cc	jeb	_	_	_	_	cc	basic	4-6	
+4-6	418-426	floriste	ncfsn5	floriste	_	_	*[7]	*->7-7	conj	basic	4-4	
+4-7	426-427	,	zc	,	_	_	_	_	punct	basic	4-13	
+4-8	428-430	un	cc	un	_	_	_	_	cc	basic	4-13	
+4-9	431-436	Egons	npmsn1	Egons	person	https://lv.wikipedia.org/wiki/Egons\_Dombrovskis	*[5]	*->5-5	nsubj	basic	4-13	
+4-10	437-441	reiz	r0t	reiz	_	_	_	_	advmod	basic	4-13	
+4-11	442-445	pie	spsg	pie	_	_	_	_	case	basic	4-12	
+4-12	446-451	viņas	pp3fsgn	viņa	_	_	*[7]	*->7-8	obl	basic	4-13	
+4-13	452-457	pirka	vmnist130an	pirkt	_	_	_	_	conj	basic	4-4	
+4-14	458-464	ziedus	ncmpa1	zieds	_	_	_	_	obj	basic	4-13	
+4-15	465-470	savām	ps0fpdn	sava	_	_	*[5]	*->5-6	det	basic	4-16	
+4-16	471-478	kolēģēm	ncfpd5	kolēģe	_	_	_	_	iobj	basic	4-13	
+4-17	478-479	.	zs	.	_	_	_	_	punct	basic	4-4	
+
+#Text=Tolaik viņš vēl bija Dailes teātra aktieris.
+5-1	481-487	Tolaik	r0t	tolaik	_	_	_	_	advmod	basic	5-7	
+5-2	488-492	viņš	pp3msnn	viņš	_	_	*[5]	*->5-7	nsubj	basic	5-7	
+5-3	493-496	vēl	r0t	vēl	_	_	_	_	advmod	basic	5-7	
+5-4	497-501	bija	vcnisii30an	būt	_	_	_	_	cop	basic	5-7	
+5-5	502-508	Dailes	npfsg5	daile	organization[5]	https://en.wikipedia.org/wiki/Dailes\_Theatre[5]	_	_	nmod	basic	5-6	
+5-6	509-515	teātra	ncmsg2	teātris	organization[5]	https://en.wikipedia.org/wiki/Dailes\_Theatre[5]	_	_	nmod	basic	5-7	
+5-7	516-524	aktieris	ncmsn2	aktieris	_	_	_	_	root	basic	5-7	
+5-8	524-525	.	zs	.	_	_	_	_	punct	basic	5-7	
+
+#Text=Tagad Egons spēlē Liepājā, bet Evita saimnieko viņu kopīgi izveidotajā ziedu salonā, kas tika radīts laikā, kad Egonam Dailes teātrī lomu kļuva arvien mazāk, bet Liepājā viņš vēl nebija atgriezies.
+6-1	527-532	Tagad	r0t	tagad	_	_	_	_	advmod	basic	6-3	
+6-2	533-538	Egons	npmsn1	Egons	person	https://lv.wikipedia.org/wiki/Egons\_Dombrovskis	*[5]	*->5-8	nsubj	basic	6-3	
+6-3	539-544	spēlē	vmnipt230an	spēlēt	_	_	_	_	root	basic	6-3	
+6-4	545-552	Liepājā	npfsl4	Liepāja	GPE	https://en.wikipedia.org/wiki/Liepāja	_	_	obl	basic	6-3	
+6-5	552-553	,	zc	,	_	_	_	_	punct	basic	6-8	
+6-6	554-557	bet	cc	bet	_	_	_	_	cc	basic	6-8	
+6-7	558-563	Evita	ncfsn4	Evita	person	*	*[7]	*->7-9	nsubj	basic	6-8	
+6-8	564-573	saimnieko	vmnipi230an	saimniekot	_	_	_	_	conj	basic	6-3	
+6-9	574-578	viņu	pp3fsan	viņa	_	_	*[6]	*->6-2	det	basic	6-11	
+6-10	579-585	kopīgi	r0m	kopīgi	_	_	_	_	advmod	basic	6-11	
+6-11	586-597	izveidotajā	vmnpdfslpsyp	izveidot	_	_	_	_	amod	basic	6-13	
+6-12	598-603	ziedu	ncmpg1	zieds	_	_	_	_	nmod	basic	6-13	
+6-13	604-610	salonā	ncmsl1	salons	_	_	*[3]	*->3-1	obl	basic	6-8	
+6-14	610-611	,	zc	,	_	_	_	_	punct	basic	6-17	
+6-15	612-615	kas	pr000nn	kas	_	_	*[3]	*->3-2	nsubj:pass	basic	6-17	
+6-16	616-620	tika	vtnisi130an	tikt	_	_	_	_	aux	basic	6-17	
+6-17	621-627	radīts	vmnpdmsnpsnp	radīt	_	_	_	_	acl	basic	6-13	
+6-18	628-633	laikā	ncmsl1	laiks	_	_	_	_	obl	basic	6-17	
+6-19	633-634	,	zc	,	_	_	_	_	punct	basic	6-27	
+6-20	635-638	kad	r0t	kad	_	_	_	_	advmod	basic	6-27	
+6-21	639-645	Egonam	npmsd1	Egons	person	https://lv.wikipedia.org/wiki/Egons\_Dombrovskis	*[5]	*->5-9	obl	basic	6-27	
+6-22	646-652	Dailes	npfsg5	daile	organization[6]	https://en.wikipedia.org/wiki/Dailes\_Theatre[6]	_	_	nmod	basic	6-23	
+6-23	653-659	teātrī	ncmsl2	teātris	organization[6]	https://en.wikipedia.org/wiki/Dailes\_Theatre[6]	_	_	acl	basic	6-24	
+6-24	660-664	lomu	ncfsa4	loma	_	_	_	_	nsubj	basic	6-27	
+6-25	665-670	kļuva	vtnisi130an	kļūt	_	_	_	_	aux	basic	6-27	
+6-26	671-677	arvien	r0t	arvien	_	_	_	_	advmod	basic	6-27	
+6-27	678-683	mazāk	rcq	maz	_	_	_	_	acl	basic	6-18	
+6-28	683-684	,	zc	,	_	_	_	_	punct	basic	6-34	
+6-29	685-688	bet	cc	bet	_	_	_	_	cc	basic	6-34	
+6-30	689-696	Liepājā	npfsl4	Liepāja	GPE	https://en.wikipedia.org/wiki/Liepāja	_	_	obl	basic	6-34	
+6-31	697-701	viņš	pp3msnn	viņš	_	_	*[5]	*->5-10	nsubj	basic	6-34	
+6-32	702-705	vēl	r0t	vēl	_	_	_	_	advmod	basic	6-34	
+6-33	706-712	nebija	vcnisii30ay	nebūt	_	_	_	_	aux	basic	6-34	
+6-34	713-723	atgriezies	vmypdmsnasnp	atgriezties	_	_	_	_	conj	basic	6-27	
+6-35	723-724	.	zs	.	_	_	_	_	punct	basic	6-3	
+
+#Text=Sievai bija sapnis par savu ziedu veikalu, par savu mazo biznesiņu, un Egons to piepildīja, bet pats viņš tagad reti iegriežas ziedu salonā, jo teātris esot ļoti greizsirdīgs un paņem gandrīz visu Egona laiku.
+7-1	726-732	Sievai	ncfsd4	sieva	_	_	*[7]	*->7-10	obl	basic	7-2	
+7-2	733-737	bija	vmnisii30an	būt	_	_	_	_	root	basic	7-2	
+7-3	738-744	sapnis	ncmsn2	sapnis	_	_	_	_	nsubj	basic	7-2	
+7-4	745-748	par	spsa	par	_	_	_	_	case	basic	7-7	
+7-5	749-753	savu	ps0msan	savs	_	_	*[7]	*->7-11	det	basic	7-7	
+7-6	754-759	ziedu	ncmpg1	zieds	_	_	_	_	nmod	basic	7-7	
+7-7	760-767	veikalu	ncmsa1	veikals	_	_	_	_	nmod	basic	7-3	
+7-8	767-768	,	zc	,	_	_	_	_	punct	basic	7-12	
+7-9	769-772	par	spsa	par	_	_	_	_	case	basic	7-12	
+7-10	773-777	savu	ps0fsan	sava	_	_	*[7]	*->7-12	det	basic	7-12	
+7-11	778-782	mazo	afmsayp	mazs	_	_	_	_	amod	basic	7-12	
+7-12	783-792	biznesiņu	ncmsa1	biznesiņš	_	_	*[4]	*->4-1	conj	basic	7-7	
+7-13	792-793	,	zc	,	_	_	_	_	punct	basic	7-17	
+7-14	794-796	un	cc	un	_	_	_	_	cc	basic	7-17	
+7-15	797-802	Egons	npmsn1	Egons	person	https://lv.wikipedia.org/wiki/Egons\_Dombrovskis	*[5]	*->5-11	nsubj	basic	7-17	
+7-16	803-805	to	pd0msan	tas	_	_	*[4]	*->4-2	obj	basic	7-17	
+7-17	806-816	piepildīja	vmnist330an	piepildīt	_	_	_	_	conj	basic	7-2	
+7-18	816-817	,	zc	,	_	_	_	_	punct	basic	7-24	
+7-19	818-821	bet	cc	bet	_	_	_	_	cc	basic	7-24	
+7-20	822-826	pats	pg0msnn	pats	_	_	*[5]	*->5-12	nsubj	basic	7-24	
+7-21	827-831	viņš	pp3msnn	viņš	_	_	*[5]	*->5-13	compound	basic	7-20	
+7-22	832-837	tagad	r0t	tagad	_	_	_	_	advmod	basic	7-24	
+7-23	838-842	reti	rpt	reti	_	_	_	_	advmod	basic	7-24	
+7-24	843-852	iegriežas	vmyipi130an	iegriezties	_	_	_	_	conj	basic	7-2	
+7-25	853-858	ziedu	ncmpg1	zieds	_	_	_	_	nmod	basic	7-26	
+7-26	859-865	salonā	ncmsl1	salons	_	_	_	_	obl	basic	7-24	
+7-27	865-866	,	zc	,	_	_	_	_	punct	basic	7-32	
+7-28	867-869	jo	cs	jo	_	_	_	_	mark	basic	7-32	
+7-29	870-877	teātris	ncmsn2	teātris	_	_	_	_	nsubj	basic	7-32	
+7-30	878-882	esot	vcnrpii00an	būt	_	_	_	_	cop	basic	7-32	
+7-31	883-887	ļoti	r0q	ļoti	_	_	_	_	advmod	basic	7-32	
+7-32	888-900	greizsirdīgs	afmsnnp	greizsirdīgs	_	_	_	_	advcl	basic	7-24	
+7-33	901-903	un	cc	un	_	_	_	_	cc	basic	7-34	
+7-34	904-909	paņem	vmnipt130an	paņemt	_	_	_	_	conj	basic	7-32	
+7-35	910-917	gandrīz	r0q	gandrīz	_	_	_	_	advmod	basic	7-36	
+7-36	918-922	visu	pg0msan	viss	_	_	_	_	det	basic	7-38	
+7-37	923-928	Egona	ncmsg1	Egona	person	https://lv.wikipedia.org/wiki/Egons\_Dombrovskis	*[5]	*->5-14	nmod	basic	7-38	
+7-38	929-934	laiku	ncmsa1	laiks	_	_	_	_	obj	basic	7-34	
+7-39	934-935	.	zs	.	_	_	_	_	punct	basic	7-2	

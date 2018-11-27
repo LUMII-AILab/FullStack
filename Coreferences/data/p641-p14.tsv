@@ -1,0 +1,125 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Kad pēc nepilnas stundas stāstījuma nelaimīgā pircēja aizgāja, ieradās policijas darbinieks Andersona kungs, kurš bija veikalā, kad pārmeklēja šo sievieti.
+1-1	0-3	Kad	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0t	kad	_	_	_	_	advmod|advmod	basic|enhanced	1-8|1-8	
+1-2	4-7	pēc	_	_	_	_	_	_	_	_	_	_	_	_	spsg	pēc	_	_	_	_	case|case	basic|enhanced	1-5|1-5	
+1-3	8-16	nepilnas	Fem	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsgnp	nepilna	_	_	_	_	amod|amod	basic|enhanced	1-4|1-4	
+1-4	17-24	stundas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	stunda	_	_	_	_	nmod|nmod	basic|enhanced	1-5|1-5	
+1-5	25-35	stāstījuma	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	stāstījums	_	_	_	_	obl|obl	basic|enhanced	1-8|1-8	
+1-6	36-45	nelaimīgā	Masc	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsgyp	nelaimīgs	_	_	_	_	amod|amod	basic|enhanced	1-7|1-7	
+1-7	46-53	pircēja	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	pircēja	_	_	_	_	iobj|iobj	basic|enhanced	1-8|1-8	
+1-8	54-61	aizgāja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisii30an	aiziet	_	_	_	_	advcl|advcl	basic|enhanced	1-10|1-10	
+1-9	61-62	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-8|1-8	
+1-10	63-70	ieradās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi130an	ierasties	_	_	_	_	root|root	basic|enhanced	1-10|1-10	
+1-11	71-80	policijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	policija	_	_	*[1]	*->1-1	nmod|nmod	basic|enhanced	1-12|1-12	
+1-12	81-91	darbinieks	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	darbinieks	_	_	*[1]	*->1-1	nmod|nmod	basic|enhanced	1-14|1-14	
+1-13	92-101	Andersona	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Andersons	person[1]	*[1]	*[1]	*->1-2	nmod|nmod	basic|enhanced	1-14|1-14	
+1-14	102-107	kungs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	kungs	person[1]	*[1]	*[1]	*->1-2	nsubj|nsubj	basic|enhanced	1-10|1-10	
+1-15	107-108	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-17|1-17	
+1-16	109-113	kurš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msnn	kurš	_	_	*[1]	*->1-3	nsubj|nsubj	basic|enhanced	1-17|1-17	
+1-17	114-118	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisii30an	būt	_	_	_	_	acl|acl	basic|enhanced	1-14|1-14	
+1-18	119-126	veikalā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	veikals	_	_	_	_	obl|obl	basic|enhanced	1-17|1-17	
+1-19	126-127	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-21|1-21	
+1-20	128-131	kad	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0t	kad	_	_	_	_	advmod|advmod	basic|enhanced	1-21|1-21	
+1-21	132-142	pārmeklēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist230an	pārmeklēt	_	_	_	_	advcl|advcl	basic|enhanced	1-17|1-17	
+1-22	143-145	šo	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsan	šī	_	_	_	_	det|det	basic|enhanced	1-23|1-23	
+1-23	146-154	sievieti	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	sieviete	_	_	*[4]	*->4-1	obj|obj	basic|enhanced	1-21|1-21	
+1-24	154-155	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	dep|dep	basic|enhanced	1-10|1-10	
+
+#Text=Viņš stāstīja, ka sieviete melo — viņa pārbaudītājiem nosaukusi neeksistējošu uzvārdu, tas policijā pārbaudīts pēc iedzīvotāju reģistra.
+2-1	157-161	Viņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msnn	viņš	_	_	*[1]	*->1-4	nsubj|nsubj	basic|enhanced	2-2|2-2	
+2-2	162-170	stāstīja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	stāstīt	_	_	_	_	root|root	basic|enhanced	2-2|2-2	
+2-3	170-171	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-6|2-6	
+2-4	172-174	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark|mark	basic|enhanced	2-6|2-6	
+2-5	175-183	sieviete	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	sieviete	_	_	*[4]	*->4-2	nsubj|nsubj	basic|enhanced	2-6|2-6	
+2-6	184-188	melo	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt230an	melot	_	_	_	_	ccomp|ccomp	basic|enhanced	2-2|2-2	
+2-7	189-190	—	_	_	_	_	_	_	_	_	_	_	_	_	zd	—	_	_	_	_	punct|punct	basic|enhanced	2-10|2-10	
+2-8	191-195	viņa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msgn	viņš	_	_	*[4]	*->4-3	nsubj|nsubj	basic|enhanced	2-10|2-10	
+2-9	196-210	pārbaudītājiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	pārbaudītājs	_	_	_	_	iobj|iobj	basic|enhanced	2-10|2-10	
+2-10	211-220	nosaukusi	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnasnp	nosaukt	_	_	_	_	conj|conj	basic|enhanced	2-6|2-6	
+2-11	221-234	neeksistējošu	Masc	Sing	Acc	Pos	*	Pres	*	Pass	*	Aspect=Imp\|Case=Acc\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Imp	vmnpdmsaapnp	neeksistēt	_	_	_	_	amod|amod	basic|enhanced	2-12|2-12	
+2-12	235-242	uzvārdu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	uzvārds	_	_	*[2]	*->2-1	obj|obj	basic|enhanced	2-10|2-10	
+2-13	242-243	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-16|2-16	
+2-14	244-247	tas	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	tas	_	_	*[2]	*->2-2	nsubj:pass|nsubj	basic|enhanced	2-16|2-16	
+2-15	248-256	policijā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	policija	_	_	_	_	acl|acl	basic|enhanced	2-16|2-16	
+2-16	257-267	pārbaudīts	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnp	pārbaudīt	_	_	_	_	conj|conj	basic|enhanced	2-6|2-6	
+2-17	268-271	pēc	_	_	_	_	_	_	_	_	_	_	_	_	sppd	pēc	_	_	_	_	case|case	basic|enhanced	2-19|2-19	
+2-18	272-283	iedzīvotāju	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	iedzīvotājs	_	_	_	_	nmod|nmod	basic|enhanced	2-19|2-19	
+2-19	284-292	reģistra	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	reģistrs	_	_	_	_	obl|obl	basic|enhanced	2-16|2-16	
+2-20	292-293	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	2-2|2-2	
+
+#Text=Arī stāstot par dēlu, kurš it kā strādājot policijā, nosaukusi pirms sešiem gadiem miruša cilvēka vārdu.
+3-1	295-298	Arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse|discourse	basic|enhanced	3-2|3-2	
+3-2	299-306	stāstot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000	stāstīt	_	_	_	_	advcl|advcl	basic|enhanced	3-12|3-12	
+3-3	307-310	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	_	_	case|case	basic|enhanced	3-4|3-4	
+3-4	311-315	dēlu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	dēls	_	_	*[3]	*->3-1	iobj|iobj	basic|enhanced	3-2|3-2	
+3-5	315-316	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	3-9|3-9	
+3-6	317-321	kurš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msnn	kurš	_	_	*[3]	*->3-2	acl|acl	basic|enhanced	3-9|3-9	
+3-7	322-324	it	_	_	_	_	_	_	_	_	_	_	_	_	q	it	_	_	_	_	discourse|discourse	basic|enhanced	3-9|3-9	
+3-8	325-327	kā	_	_	_	_	_	_	_	_	_	_	_	_	q	kā	_	_	_	_	compound|compound	basic|enhanced	3-7|3-7	
+3-9	328-337	strādājot	*	*	*	*	*	Pres	Qot	Act	*	Evident=Nfh\|Mood=Qot\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	*	vmnrpi200an	strādāt	_	_	_	_	acl|acl	basic|enhanced	3-4|3-4	
+3-10	338-346	policijā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	policija	_	_	_	_	acl|acl	basic|enhanced	3-9|3-9	
+3-11	346-347	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	3-2|3-2	
+3-12	348-357	nosaukusi	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnasnp	nosaukt	_	_	_	_	root|root	basic|enhanced	3-12|3-12	
+3-13	358-363	pirms	_	_	_	_	_	_	_	_	_	_	_	_	sppd	pirms	_	_	_	_	case|case	basic|enhanced	3-15|3-15	
+3-14	364-370	sešiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpd	seši	_	_	_	_	nummod|nummod	basic|enhanced	3-15|3-15	
+3-15	371-377	gadiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	gads	_	_	_	_	obl|obl	basic|enhanced	3-16|3-16	
+3-16	378-384	miruša	Masc	Sing	Gen	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Gen\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsgasnp	mirt	_	_	_	_	amod|amod	basic|enhanced	3-17|3-17	
+3-17	385-392	cilvēka	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	cilvēks	_	_	_	_	nmod|nmod	basic|enhanced	3-18|3-18	
+3-18	393-398	vārdu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	vārds	_	_	_	_	obj|obj	basic|enhanced	3-12|3-12	
+3-19	398-399	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	3-12|3-12	
+
+#Text=Policists apstiprināja kundzes stāstīto, ka pārmeklēšanas laikā viņas somā patiešām nekas neesot atrasts, bet tas nebūt neliecinot, ka viņa nav vainīga.
+4-1	401-410	Policists	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	policists	_	_	_	_	nsubj|nsubj	basic|enhanced	4-2|4-2	
+4-2	411-423	apstiprināja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	apstiprināt	_	_	_	_	root|root	basic|enhanced	4-2|4-2	
+4-3	424-431	kundzes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	kundze	_	_	*[4]	*->4-4	nmod|nmod	basic|enhanced	4-4|4-4	
+4-4	432-440	stāstīto	Masc	Sing	Acc	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsapsyp	stāstīt	_	_	_	_	obj|obj	basic|enhanced	4-2|4-2	
+4-5	440-441	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	4-14|4-14	
+4-6	442-444	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark|mark	basic|enhanced	4-14|4-14	
+4-7	445-458	pārmeklēšanas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	pārmeklēšana	_	_	_	_	nmod|nmod	basic|enhanced	4-8|4-8	
+4-8	459-464	laikā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	laiks	_	_	_	_	obl|obl	basic|enhanced	4-14|4-14	
+4-9	465-470	viņas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsgn	viņa	_	_	*[4]	*->4-5	det|det	basic|enhanced	4-10|4-10	
+4-10	471-475	somā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	soma	_	_	_	_	acl|acl	basic|enhanced	4-14|4-14	
+4-11	476-484	patiešām	_	_	_	_	_	_	_	_	_	_	_	_	q	patiešām	_	_	_	_	discourse|discourse	basic|enhanced	4-14|4-14	
+4-12	485-490	nekas	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Ind,Neg	*	*	pi0msny	nekas	_	_	_	_	nsubj:pass|nsubj	basic|enhanced	4-14|4-14	
+4-13	491-497	neesot	*	*	*	*	*	Pres	Qot	Act	*	Evident=Nfh\|Mood=Qot\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	*	vcnrpii00ay	nebūt	_	_	_	_	aux|aux	basic|enhanced	4-14|4-14	
+4-14	498-505	atrasts	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnp	atrast	_	_	_	_	ccomp|ccomp	basic|enhanced	4-4|4-4	
+4-15	505-506	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	4-19|4-19	
+4-16	507-510	bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	_	_	cc|cc	basic|enhanced	4-19|4-19	
+4-17	511-514	tas	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	tas	_	_	_	_	nsubj|nsubj	basic|enhanced	4-19|4-19	
+4-18	515-520	nebūt	_	_	_	_	_	_	_	_	_	_	_	_	q	nebūt	_	_	_	_	discourse|discourse	basic|enhanced	4-19|4-19	
+4-19	521-531	neliecinot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000	neliecināt	_	_	_	_	conj|conj	basic|enhanced	4-2|4-2	
+4-20	531-532	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	4-24|4-24	
+4-21	533-535	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark|mark	basic|enhanced	4-24|4-24	
+4-22	536-540	viņa	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsnn	viņa	_	_	*[4]	*->4-6	nsubj|nsubj	basic|enhanced	4-24|4-24	
+4-23	541-544	nav	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30ay	nebūt	_	_	_	_	cop|cop	basic|enhanced	4-24|4-24	
+4-24	545-552	vainīga	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsnnp	vainīga	_	_	_	_	ccomp|ccomp	basic|enhanced	4-19|4-19	
+4-25	552-553	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	4-2|4-2	
+
+#Text=Vēlreiz zvanīju pa Valentīnas kundzes uzrādīto tālruņa numuru, un viņa atkal apgalvoja, ka dati esot pareizi.
+5-1	555-562	Vēlreiz	_	_	_	_	_	_	_	_	_	_	_	_	r0t	vēlreiz	_	_	_	_	advmod|advmod	basic|enhanced	5-2|5-2	
+5-2	563-570	zvanīju	*	Sing	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	1	*	vmnist31san	zvanīt	_	_	_	_	root|root	basic|enhanced	5-2|5-2	
+5-3	571-573	pa	_	_	_	_	_	_	_	_	_	_	_	_	spsa	pa	_	_	_	_	case|case	basic|enhanced	5-8|5-8	
+5-4	574-584	Valentīnas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Valentīna	person[2]	*[2]	*[4]	*->4-7	nmod|nmod	basic|enhanced	5-5|5-5	
+5-5	585-592	kundzes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	kundze	person[2]	*[2]	*[4]	*->4-7	nmod|nmod	basic|enhanced	5-6|5-6	
+5-6	593-601	uzrādīto	Masc	Sing	Acc	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsapsyp	uzrādīt	_	_	_	_	amod|amod	basic|enhanced	5-8|5-8	
+5-7	602-609	tālruņa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	tālrunis	_	_	_	_	nmod|nmod	basic|enhanced	5-8|5-8	
+5-8	610-616	numuru	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	numurs	_	_	_	_	obl|obl	basic|enhanced	5-2|5-2	
+5-9	616-617	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	5-13|5-13	
+5-10	618-620	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	5-13|5-13	
+5-11	621-625	viņa	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsnn	viņa	_	_	*[4]	*->4-8	nsubj|nsubj	basic|enhanced	5-13|5-13	
+5-12	626-631	atkal	_	_	_	_	_	_	_	_	_	_	_	_	r0t	atkal	_	_	_	_	advmod|advmod	basic|enhanced	5-13|5-13	
+5-13	632-641	apgalvoja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist230an	apgalvot	_	_	_	_	conj|conj	basic|enhanced	5-2|5-2	
+5-14	641-642	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	5-18|5-18	
+5-15	643-645	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark|mark	basic|enhanced	5-18|5-18	
+5-16	646-650	dati	Masc	Ptan	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Ptan	*	*	ncmdn1	dati	_	_	_	_	nsubj|nsubj	basic|enhanced	5-18|5-18	
+5-17	651-655	esot	*	*	*	*	*	Pres	Qot	Act	*	Evident=Nfh\|Mood=Qot\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	*	vcnrpii00an	būt	_	_	_	_	cop|cop	basic|enhanced	5-18|5-18	
+5-18	656-663	pareizi	Masc	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpnyp	pareizi	_	_	_	_	ccomp|ccomp	basic|enhanced	5-13|5-13	
+5-19	663-664	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	5-2|5-2	

@@ -1,0 +1,41 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Tomēr tad uzdzīvotājam jau sekoja britu militārā policija.
+1-1	0-5	Tomēr	cc	tomēr	_	_	cc	basic	1-5	
+1-2	6-9	tad	r0t	tad	_	_	advmod	basic	1-5	
+1-3	10-22	uzdzīvotājam	ncmsd1	uzdzīvotājs	_	_	iobj	basic	1-5	
+1-4	23-26	jau	r0t	jau	_	_	advmod	basic	1-5	
+1-5	27-33	sekoja	vmnisi230an	sekot	_	_	root	basic	1-5	
+1-6	34-39	britu	ncmdg1	briti	_	_	nmod	basic	1-8	
+1-7	40-48	militārā	arfsnyp	militāra	_	_	amod	basic	1-8	
+1-8	49-57	policija	ncfsn4	policija	_	_	nsubj	basic	1-5	
+1-9	57-58	.	zs	.	_	_	punct	basic	1-5	
+
+#Text=Kad kārtības uzraugi centās tanka ceļu aizšķērsot, tas ietriecās ceļmalas kokā, un ar to šīs nakts izpriecas bija beigušās.
+2-1	60-63	Kad	r0t	kad	_	_	advmod	basic	2-4	
+2-2	64-72	kārtības	ncfsg4	kārtība	_	_	nmod	basic	2-3	
+2-3	73-80	uzraugi	ncmpn1	uzraugs	_	_	nsubj	basic	2-4	
+2-4	81-87	centās	voyist130an	censties	_	_	advcl	basic	2-10	
+2-5	88-93	tanka	ncmsg1	tanks	*[1]	*->1-1	nmod	basic	2-6	
+2-6	94-98	ceļu	ncmsa1	ceļš	_	_	obj	basic	2-7	
+2-7	99-109	aizšķērsot	vmnn0t2000n	aizšķērsot	_	_	xcomp	basic	2-4	
+2-8	109-110	,	zc	,	_	_	punct	basic	2-4	
+2-9	111-114	tas	pd0msnn	tas	*[1]	*->1-2	nsubj	basic	2-10	
+2-10	115-124	ietriecās	vmyisi130an	ietriekties	_	_	root	basic	2-10	
+2-11	125-133	ceļmalas	ncfsg4	ceļmala	_	_	nmod	basic	2-12	
+2-12	134-138	kokā	ncmsl1	koks	_	_	obl	basic	2-10	
+2-13	138-139	,	zc	,	_	_	punct	basic	2-21	
+2-14	140-142	un	cc	un	_	_	cc	basic	2-21	
+2-15	143-145	ar	spsa	ar	_	_	case	basic	2-16	
+2-16	146-148	to	pd0msan	tas	_	_	iobj	basic	2-21	
+2-17	149-152	šīs	pd0fsgn	šī	_	_	det	basic	2-18	
+2-18	153-158	nakts	ncfsg6	nakts	_	_	nmod	basic	2-19	
+2-19	159-168	izpriecas	ncfsg4	izprieca	_	_	nsubj	basic	2-21	
+2-20	169-173	bija	vcnisii30an	būt	_	_	aux	basic	2-21	
+2-21	174-182	beigušās	vmypdfpnasnp	beigties	_	_	conj	basic	2-10	
+2-22	182-183	.	zs	.	_	_	punct	basic	2-10	

@@ -1,0 +1,116 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Visbiežāk bērni strīdas par rotaļlietām.
+1-1	0-9	Visbiežāk	*	*	*	Sup	*	*	*	*	*	Degree=Sup	*	*	rsq	bieži	_	_	advmod|advmod	basic|enhanced	1-3|1-3	
+1-2	10-15	bērni	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	bērns	_	_	nsubj|nsubj	basic|enhanced	1-3|1-3	
+1-3	16-23	strīdas	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipi330an	strīdēties	_	_	root|root	basic|enhanced	1-3|1-3	
+1-4	24-27	par	_	_	_	_	_	_	_	_	_	_	_	_	sppd	par	_	_	case|case	basic|enhanced	1-5|1-5	
+1-5	28-39	rotaļlietām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	rotaļlieta	_	_	iobj|iobj	basic|enhanced	1-3|1-3	
+1-6	39-40	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct|punct	basic|enhanced	1-3|1-3	
+
+#Text=Protams, ja tev kāds no bērniem nepatīk, tad grūti viņam atvēlēt savu automašīnu vai lelli.
+2-1	42-49	Protams	_	_	_	_	_	_	_	_	_	_	_	_	q	protams	_	_	parataxis|parataxis	basic|enhanced	2-11|2-11	
+2-2	49-50	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct|punct	basic|enhanced	2-1|2-1	
+2-3	51-53	ja	_	_	_	_	_	_	_	_	_	_	_	_	cs	ja	_	_	mark|mark	basic|enhanced	2-8|2-8	
+2-4	54-57	tev	*	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Number=Sing\|Person=2\|PronType=Prs	2	*	pp20sdn	tu	_	_	obl|obl	basic|enhanced	2-8|2-8	
+2-5	58-62	kāds	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Ind	*	*	pi0msnn	kāds	*[2]	*->2-1	obl|obl	basic|enhanced	2-8|2-8	
+2-6	63-65	no	_	_	_	_	_	_	_	_	_	_	_	_	sppd	no	*[2]	*->2-1	case|case	basic|enhanced	2-7|2-7	
+2-7	66-73	bērniem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	bērns	*[2]	*->2-1	compound|compound	basic|enhanced	2-5|2-5	
+2-8	74-81	nepatīk	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipi130ay	nepatikt	_	_	advcl|advcl	basic|enhanced	2-11|2-11	
+2-9	81-82	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct|punct	basic|enhanced	2-8|2-8	
+2-10	83-86	tad	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	tad	_	_	advmod|advmod	basic|enhanced	2-11|2-11	
+2-11	87-92	grūti	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	grūti	_	_	root|root	basic|enhanced	2-11|2-11	
+2-12	93-98	viņam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msdn	viņš	*[2]	*->2-2	iobj|iobj	basic|enhanced	2-13|2-13	
+2-13	99-106	atvēlēt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vcnn0t3000n	atvēlēt	_	_	ccomp|ccomp	basic|enhanced	2-11|2-11	
+2-14	107-111	savu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0fsan	sava	_	_	det|det	basic|enhanced	2-15|2-15	
+2-15	112-122	automašīnu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	automašīna	_	_	obj|obj	basic|enhanced	2-13|2-13	
+2-16	123-126	vai	_	_	_	_	_	_	_	_	_	_	_	_	cc	vai	_	_	cc|cc	basic|enhanced	2-17|2-17	
+2-17	127-132	lelli	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	lelle	_	_	conj|conj	basic|enhanced	2-15|2-15	
+2-18	132-133	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct|punct	basic|enhanced	2-11|2-11	
+
+#Text=Lai nerastos konflikti, vecāki parasti pērk katram bērnam savas rotaļlietas.
+3-1	135-138	Lai	_	_	_	_	_	_	_	_	_	_	_	_	cs	lai	_	_	mark|mark	basic|enhanced	3-2|3-2	
+3-2	139-147	nerastos	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Neg\|Reflex=Yes\|VerbForm=Fin\|Voice=Act	*	*	vmyc0i100ay	nerasties	_	_	advcl|advcl	basic|enhanced	3-7|3-7	
+3-3	148-157	konflikti	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	konflikts	_	_	nsubj|nsubj	basic|enhanced	3-2|3-2	
+3-4	157-158	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct|punct	basic|enhanced	3-2|3-2	
+3-5	159-165	vecāki	Masc	Plur	Nom	Cmp	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Masc\|Number=Plur	*	*	afmpnnc	vecs	_	_	nsubj|nsubj	basic|enhanced	3-7|3-7	
+3-6	166-173	parasti	_	_	_	_	_	_	_	_	_	_	_	_	r0t	parasti	_	_	advmod|advmod	basic|enhanced	3-7|3-7	
+3-7	174-178	pērk	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt130an	pirkt	_	_	root|root	basic|enhanced	3-7|3-7	
+3-8	179-185	katram	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msdn	katrs	_	_	det|det	basic|enhanced	3-9|3-9	
+3-9	186-192	bērnam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	bērns	_	_	iobj|iobj	basic|enhanced	3-7|3-7	
+3-10	193-198	savas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0fsgn	sava	_	_	det|det	basic|enhanced	3-11|3-11	
+3-11	199-210	rotaļlietas	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	rotaļlieta	_	_	obj|obj	basic|enhanced	3-7|3-7	
+3-12	210-211	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct|punct	basic|enhanced	3-7|3-7	
+
+#Text=Tas nav pareizi.
+4-1	213-216	Tas	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	tas	_	_	nsubj|nsubj	basic|enhanced	4-3|4-3	
+4-2	217-220	nav	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30ay	nebūt	_	_	aux|aux	basic|enhanced	4-3|4-3	
+4-3	221-228	pareizi	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	pareizi	_	_	root|root	basic|enhanced	4-3|4-3	
+4-4	228-229	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct|punct	basic|enhanced	4-3|4-3	
+
+#Text=Greizsirdīgām atvasēm vienkāršāk rast kontaktus tieši rotaļās.
+5-1	231-244	Greizsirdīgām	Fem	Plur	Dat	Pos	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpdnp	greizsirdīga	_	_	amod|amod	basic|enhanced	5-2|5-2	
+5-2	245-252	atvasēm	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd5	atvase	_	_	obl|obl	basic|enhanced	5-3|5-3	
+5-3	253-263	vienkāršāk	*	*	*	Cmp	*	*	*	*	*	Degree=Cmp	*	*	rcm	vienkārši	_	_	root|root	basic|enhanced	5-3|5-3	
+5-4	264-268	rast	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	rast	_	_	ccomp|ccomp	basic|enhanced	5-3|5-3	
+5-5	269-278	kontaktus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	kontakts	_	_	obj|obj	basic|enhanced	5-4|5-4	
+5-6	279-284	tieši	_	_	_	_	_	_	_	_	_	_	_	_	q	tieši	_	_	discourse|discourse	basic|enhanced	5-7|5-7	
+5-7	285-292	rotaļās	Fem	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	rotaļa	_	_	obl|obl	basic|enhanced	5-4|5-4	
+5-8	292-293	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct|punct	basic|enhanced	5-3|5-3	
+
+#Text=Protams, vecāki nedrīkst pirkt tādas spēles, kuras var spēlēt viens bērns.
+6-1	295-302	Protams	_	_	_	_	_	_	_	_	_	_	_	_	q	protams	_	_	parataxis|parataxis	basic|enhanced	6-4|6-4	
+6-2	302-303	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct|punct	basic|enhanced	6-1|6-1	
+6-3	304-310	vecāki	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	vecāks	_	_	nsubj|nsubj	basic|enhanced	6-4|6-4	
+6-4	311-319	nedrīkst	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vonipt330ay	nedrīkstēt	_	_	root|root	basic|enhanced	6-4|6-4	
+6-5	320-325	pirkt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	pirkt	_	_	xcomp|xcomp	basic|enhanced	6-4|6-4	
+6-6	326-331	tādas	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur\|PronType=Dem	*	*	pd0fpan	tāda	_	_	det|det	basic|enhanced	6-7|6-7	
+6-7	332-338	spēles	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa5	spēle	*[1]	*->1-1	obj|obj	basic|enhanced	6-4|6-4	
+6-8	338-339	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct|punct	basic|enhanced	6-10|6-10	
+6-9	340-345	kuras	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur\|PronType=Rel	*	*	pr0fpan	kura	*[1]	*->1-2	obj|obj	basic|enhanced	6-10|6-10	
+6-10	346-349	var	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vonipt330an	varēt	_	_	acl|acl	basic|enhanced	6-7|6-7	
+6-11	350-356	spēlēt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	spēlēt	_	_	xcomp|xcomp	basic|enhanced	6-10|6-10	
+6-12	357-362	viens	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|NumType=Card	*	*	mcsmsn	viens	_	_	nummod|nummod	basic|enhanced	6-13|6-13	
+6-13	363-368	bērns	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	bērns	_	_	nsubj|nsubj	basic|enhanced	6-10|6-10	
+6-14	368-369	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct|punct	basic|enhanced	6-4|6-4	
+
+#Text=Tad būs nelaime mājās!
+7-1	371-374	Tad	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	tad	_	_	advmod|advmod	basic|enhanced	7-2|7-2	
+7-2	375-378	būs	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vmnifii30an	būt	_	_	root|root	basic|enhanced	7-2|7-2	
+7-3	379-386	nelaime	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	nelaime	_	_	nsubj|nsubj	basic|enhanced	7-2|7-2	
+7-4	387-392	mājās	Fem	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	māja	_	_	obl|obl	basic|enhanced	7-2|7-2	
+7-5	392-393	!	_	_	_	_	_	_	_	_	_	_	_	_	zs	!	_	_	punct|punct	basic|enhanced	7-2|7-2	
+
+#Text=Bet, ja spēle domāta diviem vai vairākiem, tad gribot negribot bērnu dusmas un savstarpējie aizvainojumi jāaizmirst.
+8-1	395-398	Bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	cc|cc	basic|enhanced	8-18|8-18	
+8-2	398-399	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct|punct	basic|enhanced	8-5|8-5	
+8-3	400-402	ja	_	_	_	_	_	_	_	_	_	_	_	_	cs	ja	_	_	mark|mark	basic|enhanced	8-5|8-5	
+8-4	403-408	spēle	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	spēle	_	_	nsubj|nsubj	basic|enhanced	8-5|8-5	
+8-5	409-415	domāta	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnpsnp	domāt	_	_	advcl|advcl	basic|enhanced	8-18|8-18	
+8-6	416-422	diviem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpd	divi	_	_	iobj|iobj	basic|enhanced	8-5|8-5	
+8-7	423-426	vai	_	_	_	_	_	_	_	_	_	_	_	_	cc	vai	_	_	cc|cc	basic|enhanced	8-8|8-8	
+8-8	427-436	vairākiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|PronType=Ind	*	*	pi0mpdn	vairāki	_	_	conj|conj	basic|enhanced	8-6|8-6	
+8-9	436-437	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct|punct	basic|enhanced	8-5|8-5	
+8-10	438-441	tad	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	tad	_	_	advmod|advmod	basic|enhanced	8-18|8-18	
+8-11	442-448	gribot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vonpu0000000	gribēt	_	_	dep|dep	basic|enhanced	8-18|8-18	
+8-12	449-457	negribot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vonpu0000000	negribēt	_	_	compound|compound	basic|enhanced	8-11|8-11	
+8-13	458-463	bērnu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	bērns	_	_	nmod|nmod	basic|enhanced	8-14|8-14	
+8-14	464-470	dusmas	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	dusmas	_	_	nsubj|nsubj	basic|enhanced	8-18|8-18	
+8-15	471-473	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	cc|cc	basic|enhanced	8-17|8-17	
+8-16	474-486	savstarpējie	Masc	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpnyp	savstarpējs	_	_	amod|amod	basic|enhanced	8-17|8-17	
+8-17	487-499	aizvainojumi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	aizvainojums	_	_	conj|conj	basic|enhanced	8-14|8-14	
+8-18	500-510	jāaizmirst	*	*	*	*	*	*	Nec	Act	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vmnd0t100an	aizmirst	_	_	root|root	basic|enhanced	8-18|8-18	
+8-19	510-511	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct|punct	basic|enhanced	8-18|8-18	
+
+#Text=Kaut arī uz laiku.
+9-1	513-517	Kaut	_	_	_	_	_	_	_	_	_	_	_	_	q	kaut	_	_	discourse|discourse	basic|enhanced	9-4|9-4	
+9-2	518-521	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	compound|compound	basic|enhanced	9-1|9-1	
+9-3	522-524	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsa	uz	_	_	case|case	basic|enhanced	9-4|9-4	
+9-4	525-530	laiku	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	laiks	_	_	root|root	basic|enhanced	9-4|9-4	
+9-5	530-531	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct|punct	basic|enhanced	9-4|9-4	

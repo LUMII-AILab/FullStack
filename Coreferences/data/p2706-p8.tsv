@@ -1,0 +1,48 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Kamēr Skolu dienesta darbiniece zvanīja Valsts policijai, jaunietis uzbruka sociālajai pedagoģei un sāka viņu žņaugt.
+1-1	0-5	Kamēr	_	_	_	_	_	_	_	_	_	_	_	_	r0t	kamēr	_	_	_	_	advmod|advmod	basic|enhanced	1-5|1-5	
+1-2	6-11	Skolu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	skola	organization[1]	*[1]	_	_	nmod|nmod	basic|enhanced	1-3|1-3	
+1-3	12-20	dienesta	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	dienests	organization[1]	*[1]	_	_	nmod|nmod	basic|enhanced	1-4|1-4	
+1-4	21-31	darbiniece	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	darbiniece	_	_	_	_	nsubj|nsubj	basic|enhanced	1-5|1-5	
+1-5	32-39	zvanīja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	zvanīt	_	_	_	_	advcl|advcl	basic|enhanced	1-10|1-10	
+1-6	40-46	Valsts	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	valsts	organization[2]	https://lv.wikipedia.org/wiki/Latvijas\_Valsts\_policija[2]	_	_	nmod|nmod	basic|enhanced	1-7|1-7	
+1-7	47-56	policijai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	policija	organization[2]	https://lv.wikipedia.org/wiki/Latvijas\_Valsts\_policija[2]	_	_	iobj|iobj	basic|enhanced	1-5|1-5	
+1-8	56-57	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-5|1-5	
+1-9	58-67	jaunietis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	jaunietis	_	_	*[2]	*->2-1	nsubj|nsubj	basic|enhanced	1-10|1-10	
+1-10	68-75	uzbruka	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi130an	uzbrukt	_	_	_	_	root|root	basic|enhanced	1-10|1-10	
+1-11	76-86	sociālajai	Fem	Sing	Dat	Pos	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsdyp	sociāla	_	_	_	_	amod|amod	basic|enhanced	1-12|1-12	
+1-12	87-96	pedagoģei	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd5	pedagoģe	_	_	*[1]	*->1-1	iobj|iobj	basic|enhanced	1-10|1-10	
+1-13	97-99	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	1-14|1-14	
+1-14	100-104	sāka	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vpnist130an	sākt	_	_	_	_	conj|conj	basic|enhanced	1-10|1-10	
+1-15	105-109	viņu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsan	viņa	_	_	*[1]	*->1-2	obj|obj	basic|enhanced	1-16|1-16	
+1-16	110-116	žņaugt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	žņaugt	_	_	_	_	xcomp|xcomp	basic|enhanced	1-14|1-14	
+1-17	116-117	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-10|1-10	
+
+#Text=Kad ieradās Valsts policijas darbinieki, jaunietis izrādīja pretošanos un agresivitāti, bet pēc tam tika nogādāts policijā.
+2-1	119-122	Kad	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0t	kad	_	_	_	_	advmod|advmod	basic|enhanced	2-2|2-2	
+2-2	123-130	ieradās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi130an	ierasties	_	_	_	_	advcl|advcl	basic|enhanced	2-8|2-8	
+2-3	131-137	Valsts	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	valsts	organization[3]	https://lv.wikipedia.org/wiki/Latvijas\_Valsts\_policija[3]	_	_	nmod|nmod	basic|enhanced	2-4|2-4	
+2-4	138-147	policijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	policija	organization[3]	https://lv.wikipedia.org/wiki/Latvijas\_Valsts\_policija[3]	_	_	nmod|nmod	basic|enhanced	2-5|2-5	
+2-5	148-158	darbinieki	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	darbinieks	_	_	_	_	nsubj|nsubj	basic|enhanced	2-2|2-2	
+2-6	158-159	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-2|2-2	
+2-7	160-169	jaunietis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	jaunietis	_	_	*[2]	*->2-2	nsubj|nsubj	basic|enhanced	2-8|2-8	
+2-8	170-178	izrādīja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	izrādīt	_	_	_	_	root|root	basic|enhanced	2-8|2-8	
+2-9	179-189	pretošanos	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsar	pretošanās	_	_	_	_	obj|obj	basic|enhanced	2-8|2-8	
+2-10	190-192	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	2-11|2-11	
+2-11	193-205	agresivitāti	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	agresivitāte	_	_	_	_	conj|conj	basic|enhanced	2-9|2-9	
+2-12	205-206	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-8|2-8	
+2-13	207-210	bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	_	_	cc|cc	basic|enhanced	2-17|2-17	
+2-14	211-214	pēc	_	_	_	_	_	_	_	_	_	_	_	_	spsd	pēc	_	_	_	_	case|case	basic|enhanced	2-15|2-15	
+2-15	215-218	tam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	3	*	pd3msdn	tas	_	_	_	_	acl|acl	basic|enhanced	2-17|2-17	
+2-16	219-223	tika	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vtnisi130an	tikt	_	_	_	_	aux|aux	basic|enhanced	2-17|2-17	
+2-17	224-232	nogādāts	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnp	nogādāt	_	_	_	_	conj|conj	basic|enhanced	2-8|2-8	
+2-18	233-241	policijā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	policija	_	_	_	_	obl|obl	basic|enhanced	2-17|2-17	
+2-19	241-242	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	2-8|2-8	

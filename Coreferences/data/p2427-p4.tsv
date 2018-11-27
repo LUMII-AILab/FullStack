@@ -1,0 +1,27 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Viņš piebilda, ka vardarbība var atjaunoties arī Kalnu Karabahā, caur kuru iet naftas cauruļvads.
+1-1	0-4	Viņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msnn	viņš	_	_	_	_	nsubj|nsubj	basic|enhanced	1-2|1-2	
+1-2	5-13	piebilda	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	piebilst	_	_	_	_	root|root	basic|enhanced	1-2|1-2	
+1-3	13-14	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-6|1-6	
+1-4	15-17	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark|mark	basic|enhanced	1-6|1-6	
+1-5	18-28	vardarbība	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	vardarbība	_	_	_	_	nsubj|nsubj	basic|enhanced	1-6|1-6	
+1-6	29-32	var	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vonipt330an	varēt	_	_	_	_	ccomp|ccomp	basic|enhanced	1-2|1-2	
+1-7	33-44	atjaunoties	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i2000n	atjaunoties	_	_	_	_	xcomp|xcomp	basic|enhanced	1-6|1-6	
+1-8	45-48	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse|discourse	basic|enhanced	1-9|1-9	
+1-9	49-54	Kalnu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	npmpg1	Kalns	GPE[1]	https://en.wikipedia.org/wiki/Nagorno-Karabakh[1]	*[1]	*->1-1	nsubj|nsubj	basic|enhanced	1-6|1-6	
+1-10	55-63	Karabahā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	Karabaha	GPE[1]	https://en.wikipedia.org/wiki/Nagorno-Karabakh[1]	*[1]	*->1-1	flat:name|flat	basic|enhanced	1-9|1-9	
+1-11	63-64	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-14|1-14	
+1-12	65-69	caur	_	_	_	_	_	_	_	_	_	_	_	_	spsa	caur	_	_	*[1]	*->1-2	case|case	basic|enhanced	1-13|1-13	
+1-13	70-74	kuru	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsan	kura	_	_	*[1]	*->1-2	obl|obl	basic|enhanced	1-14|1-14	
+1-14	75-78	iet	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0ii000n	iet	_	_	_	_	acl|acl	basic|enhanced	1-9|1-9	
+1-15	79-85	naftas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	nafta	_	_	_	_	nmod|nmod	basic|enhanced	1-16|1-16	
+1-16	86-96	cauruļvads	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	cauruļvads	_	_	_	_	nsubj|nsubj	basic|enhanced	1-14|1-14	
+1-17	96-97	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-2|1-2	

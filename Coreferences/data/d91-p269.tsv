@@ -1,0 +1,49 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Pēc gada mēs ar Ibisu braucām ar trolejbusu uz centru.
+1-1	0-3	Pēc	spsg	pēc	_	_	case	basic	1-2	
+1-2	4-8	gada	ncmsg1	gads	_	_	obl	basic	1-6	
+1-3	9-12	mēs	pp10pnn	mēs	_	_	nsubj	basic	1-6	
+1-4	13-15	ar	spsa	ar	_	_	case	basic	1-5	
+1-5	16-21	Ibisu	npmsa1	ibiss	person	*	compound	basic	1-3	
+1-6	22-29	braucām	vmnist11pan	braukt	_	_	root	basic	1-6	
+1-7	30-32	ar	spsa	ar	_	_	case	basic	1-8	
+1-8	33-43	trolejbusu	ncmsa1	trolejbuss	_	_	iobj	basic	1-6	
+1-9	44-46	uz	spsa	uz	_	_	case	basic	1-10	
+1-10	47-53	centru	ncmsa1	centrs	_	_	obl	basic	1-6	
+1-11	53-54	.	zs	.	_	_	punct	basic	1-6	
+
+#Text=Domīgi lūkojāmies, kā Dzelzceļa tilts met upē melnu, sarežģītu ēnu.
+2-1	56-62	Domīgi	rpm	domīgi	_	_	advmod	basic	2-2	
+2-2	63-73	lūkojāmies	vmyisi21pan	lūkoties	_	_	root	basic	2-2	
+2-3	73-74	,	zc	,	_	_	punct	basic	2-7	
+2-4	75-77	kā	r0m	kā	_	_	advmod	basic	2-7	
+2-5	78-87	Dzelzceļa	ncmsg1	dzelzceļš	location[1]	https://en.wikipedia.org/wiki/Railway\_Bridge,\_Riga[1]	nmod	basic	2-6	
+2-6	88-93	tilts	ncmsn1	tilts	location[1]	https://en.wikipedia.org/wiki/Railway\_Bridge,\_Riga[1]	nsubj	basic	2-7	
+2-7	94-97	met	vmnipt130an	mest	_	_	ccomp	basic	2-2	
+2-8	98-101	upē	ncfsl5	upe	_	_	obl	basic	2-7	
+2-9	102-107	melnu	afmsanp	melns	_	_	amod	basic	2-12	
+2-10	107-108	,	zc	,	_	_	punct	basic	2-11	
+2-11	109-118	sarežģītu	affsanp	sarežģīta	_	_	conj	basic	2-9	
+2-12	119-122	ēnu	ncfsa4	ēna	_	_	obj	basic	2-7	
+2-13	122-123	.	zs	.	_	_	punct	basic	2-2	
+
+#Text=Daugava todien bija tik gluda, it kā būtu pārklāta ar laminātu.
+3-1	125-132	Daugava	npfsn4	Daugava	location	https://en.wikipedia.org/wiki/Daugava	nsubj	basic	3-5	
+3-2	133-139	todien	r0t	todien	_	_	advmod	basic	3-5	
+3-3	140-144	bija	vcnisii30an	būt	_	_	cop	basic	3-5	
+3-4	145-148	tik	r0q	tik	_	_	advmod	basic	3-5	
+3-5	149-154	gluda	affsnnp	gluda	_	_	root	basic	3-5	
+3-6	154-155	,	zc	,	_	_	punct	basic	3-10	
+3-7	156-158	it	q	it	_	_	discourse	basic	3-8	
+3-8	159-161	kā	r0m	kā	_	_	advmod	basic	3-10	
+3-9	162-166	būtu	vcnc0ii00an	būt	_	_	aux	basic	3-10	
+3-10	167-175	pārklāta	vmnpdfsnpsnp	pārklāt	_	_	advcl	basic	3-4	
+3-11	176-178	ar	spsa	ar	_	_	case	basic	3-12	
+3-12	179-187	laminātu	ncmsa1	lamināts	_	_	iobj	basic	3-10	
+3-13	187-188	.	zs	.	_	_	punct	basic	3-5	

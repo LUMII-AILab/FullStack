@@ -1,0 +1,96 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Augstākās tiesas senatore Jautrīte Briede analizēja vispārējo tiesību principu piemērošanu administratīvajā procesā.
+1-1	0-9	Augstākās	Fem	Sing	Gen	Cmp	*	*	*	*	*	Case=Gen\|Degree=Cmp\|Gender=Fem\|Number=Sing	*	*	affsgyc	augsta	organization[1]	https://lv.wikipedia.org/wiki/Latvijas\_Augstākā\_tiesa[1]	_	_	amod|amod	basic|enhanced	1-2|1-2	
+1-2	10-16	tiesas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	tiesa	organization[1]	https://lv.wikipedia.org/wiki/Latvijas\_Augstākā\_tiesa[1]	_	_	nmod|nmod	basic|enhanced	1-3|1-3	
+1-3	17-25	senatore	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	senatore	_	_	*[1]	*->1-1	nmod|nmod	basic|enhanced	1-4|1-4	
+1-4	26-34	Jautrīte	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	Jautrīte	person[2]	*[2]	*[1]	*->1-2	nsubj|nsubj	basic|enhanced	1-6|1-6	
+1-5	35-41	Briede	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	Briede	person[2]	*[2]	*[1]	*->1-2	flat:name|flat	basic|enhanced	1-4|1-4	
+1-6	42-51	analizēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist230an	analizēt	_	_	_	_	root|root	basic|enhanced	1-6|1-6	
+1-7	52-61	vispārējo	Fem	Plur	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	arfpgyp	vispārēja	_	_	_	_	amod|amod	basic|enhanced	1-9|1-9	
+1-8	62-69	tiesību	Fem	Ptan	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Ptan	*	*	ncfdg4	tiesības	_	_	_	_	nmod|nmod	basic|enhanced	1-9|1-9	
+1-9	70-78	principu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	princips	_	_	_	_	nmod|nmod	basic|enhanced	1-10|1-10	
+1-10	79-90	piemērošanu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	piemērošana	_	_	_	_	obj|obj	basic|enhanced	1-6|1-6	
+1-11	91-107	administratīvajā	Masc	Sing	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armslyp	administratīvs	_	_	_	_	amod|amod	basic|enhanced	1-12|1-12	
+1-12	108-115	procesā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	process	_	_	_	_	obl|obl	basic|enhanced	1-6|1-6	
+1-13	115-116	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-6|1-6	
+
+#Text=Administratīvās tiesas vispārējos tiesību principus piemēro, interpretējot tiesību normas, aizpildot likuma robu, piemērojot principu kā tiesību normu, kā arī skaidrojot, kāpēc princips nav piemērojams.
+2-1	118-133	Administratīvās	Fem	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	arfpnyp	administratīva	_	_	_	_	amod|amod	basic|enhanced	2-2|2-2	
+2-2	134-140	tiesas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	tiesa	_	_	_	_	nmod|nmod	basic|enhanced	2-5|2-5	
+2-3	141-151	vispārējos	Masc	Plur	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpayp	vispārējs	_	_	_	_	amod|amod	basic|enhanced	2-5|2-5	
+2-4	152-159	tiesību	Fem	Ptan	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Ptan	*	*	ncfdg4	tiesības	_	_	_	_	nmod|nmod	basic|enhanced	2-5|2-5	
+2-5	160-169	principus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	princips	_	_	_	_	obj|obj	basic|enhanced	2-6|2-6	
+2-6	170-177	piemēro	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt230an	piemērot	_	_	_	_	root|root	basic|enhanced	2-6|2-6	
+2-7	177-178	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-8|2-8	
+2-8	179-192	interpretējot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000	interpretēt	_	_	_	_	advcl|advcl	basic|enhanced	2-6|2-6	
+2-9	193-200	tiesību	Fem	Ptan	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Ptan	*	*	ncfdg4	tiesības	_	_	_	_	nmod|nmod	basic|enhanced	2-10|2-10	
+2-10	201-207	normas	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	norma	_	_	_	_	obj|obj	basic|enhanced	2-8|2-8	
+2-11	207-208	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-12|2-12	
+2-12	209-218	aizpildot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000	aizpildīt	_	_	_	_	conj|conj	basic|enhanced	2-8|2-8	
+2-13	219-225	likuma	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	likums	_	_	_	_	nmod|nmod	basic|enhanced	2-14|2-14	
+2-14	226-230	robu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	robs	_	_	_	_	obj|obj	basic|enhanced	2-12|2-12	
+2-15	230-231	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-16|2-16	
+2-16	232-242	piemērojot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000	piemērot	_	_	_	_	conj|conj	basic|enhanced	2-8|2-8	
+2-17	243-251	principu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	princips	_	_	_	_	obj|obj	basic|enhanced	2-16|2-16	
+2-18	252-254	kā	_	_	_	_	_	_	_	_	_	_	_	_	cs	kā	_	_	_	_	mark|mark	basic|enhanced	2-20|2-20	
+2-19	255-262	tiesību	Fem	Ptan	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Ptan	*	*	ncfdg4	tiesības	_	_	_	_	nmod|nmod	basic|enhanced	2-20|2-20	
+2-20	263-268	normu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	norma	_	_	_	_	acl|acl	basic|enhanced	2-17|2-17	
+2-21	268-269	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-24|2-24	
+2-22	270-272	kā	_	_	_	_	_	_	_	_	_	_	_	_	cs	kā	_	_	_	_	cc|cc	basic|enhanced	2-24|2-24	
+2-23	273-276	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse|discourse	basic|enhanced	2-22|2-22	
+2-24	277-287	skaidrojot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000	skaidrot	_	_	_	_	conj|conj	basic|enhanced	2-8|2-8	
+2-25	287-288	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-29|2-29	
+2-26	289-294	kāpēc	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0c	kāpēc	_	_	_	_	advmod|advmod	basic|enhanced	2-29|2-29	
+2-27	295-303	princips	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	princips	_	_	_	_	nsubj|nsubj	basic|enhanced	2-29|2-29	
+2-28	304-307	nav	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30ay	nebūt	_	_	_	_	aux|aux	basic|enhanced	2-29|2-29	
+2-29	308-319	piemērojams	Masc	Sing	Nom	Pos	*	Pres	*	Pass	*	Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	*	vmnpdmsnppnp	piemērot	_	_	_	_	ccomp|ccomp	basic|enhanced	2-24|2-24	
+2-30	319-320	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	2-6|2-6	
+
+#Text=Tiesu nolēmumos var atrast atsauci uz konkrētu principu un tā satura, kā arī piemērojamības skaidrojumu.
+3-1	322-327	Tiesu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	tiesa	_	_	_	_	nmod|nmod	basic|enhanced	3-2|3-2	
+3-2	328-337	nolēmumos	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	nolēmums	_	_	_	_	obl|obl	basic|enhanced	3-3|3-3	
+3-3	338-341	var	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vonipt330an	varēt	_	_	_	_	root|root	basic|enhanced	3-3|3-3	
+3-4	342-348	atrast	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	atrast	_	_	_	_	xcomp|xcomp	basic|enhanced	3-3|3-3	
+3-5	349-356	atsauci	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	atsauce	_	_	_	_	obj|obj	basic|enhanced	3-3|3-3	
+3-6	357-359	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsa	uz	_	_	_	_	case|case	basic|enhanced	3-8|3-8	
+3-7	360-368	konkrētu	Masc	Plur	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpgnp	konkrēts	_	_	_	_	amod|amod	basic|enhanced	3-8|3-8	
+3-8	369-377	principu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	princips	_	_	*[2]	*->2-1	nmod|nmod	basic|enhanced	3-5|3-5	
+3-9	378-380	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	3-16|3-16	
+3-10	381-383	tā	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msgn	tas	_	_	*[2]	*->2-2	det|det	basic|enhanced	3-11|3-11	
+3-11	384-390	satura	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	saturs	_	_	_	_	nmod|nmod	basic|enhanced	3-16|3-16	
+3-12	390-391	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	3-15|3-15	
+3-13	392-394	kā	_	_	_	_	_	_	_	_	_	_	_	_	cs	kā	_	_	_	_	cc|cc	basic|enhanced	3-15|3-15	
+3-14	395-398	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse|discourse	basic|enhanced	3-13|3-13	
+3-15	399-413	piemērojamības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	piemērojamība	_	_	_	_	conj|conj	basic|enhanced	3-11|3-11	
+3-16	414-425	skaidrojumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	skaidrojums	_	_	_	_	conj|conj	basic|enhanced	3-5|3-5	
+3-17	425-426	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	3-3|3-3	
+
+#Text=Taču tāpat tiesas atsaucas uz principu, to nepaskaidrojot, vai arī piemēro principus, neatsaucoties tieši uz to.
+4-1	428-432	Taču	_	_	_	_	_	_	_	_	_	_	_	_	cc	taču	_	_	_	_	cc|cc	basic|enhanced	4-4|4-4	
+4-2	433-438	tāpat	_	_	_	_	_	_	_	_	_	_	_	_	q	tāpat	_	_	_	_	discourse|discourse	basic|enhanced	4-4|4-4	
+4-3	439-445	tiesas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	tiesa	_	_	_	_	nsubj|nsubj	basic|enhanced	4-4|4-4	
+4-4	446-454	atsaucas	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipi130an	atsaukties	_	_	_	_	root|root	basic|enhanced	4-4|4-4	
+4-5	455-457	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsa	uz	_	_	_	_	case|case	basic|enhanced	4-6|4-6	
+4-6	458-466	principu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	princips	_	_	*[3]	*->3-1	iobj|iobj	basic|enhanced	4-4|4-4	
+4-7	466-467	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	4-9|4-9	
+4-8	468-470	to	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	tas	_	_	*[3]	*->3-2	obj|obj	basic|enhanced	4-9|4-9	
+4-9	471-485	nepaskaidrojot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000	nepaskaidrot	_	_	_	_	advcl|advcl	basic|enhanced	4-4|4-4	
+4-10	485-486	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	4-9|4-9	
+4-11	487-490	vai	_	_	_	_	_	_	_	_	_	_	_	_	cc	vai	_	_	_	_	cc|cc	basic|enhanced	4-13|4-13	
+4-12	491-494	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse|discourse	basic|enhanced	4-11|4-11	
+4-13	495-502	piemēro	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt230an	piemērot	_	_	_	_	conj|conj	basic|enhanced	4-4|4-4	
+4-14	503-512	principus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	princips	_	_	_	_	obj|obj	basic|enhanced	4-13|4-13	
+4-15	512-513	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	4-16|4-16	
+4-16	514-527	neatsaucoties	*	*	*	*	*	*	*	*	*	Reflex=Yes\|VerbForm=Conv	*	*	vmypu0000000	neatsaukties	_	_	_	_	advcl|advcl	basic|enhanced	4-13|4-13	
+4-17	528-533	tieši	_	_	_	_	_	_	_	_	_	_	_	_	q	tieši	_	_	_	_	discourse|discourse	basic|enhanced	4-19|4-19	
+4-18	534-536	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsa	uz	_	_	_	_	case|case	basic|enhanced	4-19|4-19	
+4-19	537-539	to	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	3	*	pd3msan	tas	_	_	*[3]	*->3-3	iobj|iobj	basic|enhanced	4-16|4-16	
+4-20	539-540	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	4-4|4-4	

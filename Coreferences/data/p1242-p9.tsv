@@ -1,0 +1,78 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Bodes īpašnieks Arnis Iesaliņš pārliecināts, ka domes lēmums ir pretrunā ar ceļu satiksmes noteikumiem, kuros ierobežojumi attiecas tikai uz automašīnām, kas smagākas par piecām tonnām, tāpēc uzskata, ka šis pašvaldības noteikumu punkts nav jāievēro.
+1-1	0-5	Bodes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	bode	_	_	_	_	nmod|nmod	basic|enhanced	1-2|1-2	
+1-2	6-15	īpašnieks	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	īpašnieks	_	_	*[1]	*->1-1	nmod|nmod	basic|enhanced	1-3|1-3	
+1-3	16-21	Arnis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	Arnis	person[1]	*[1]	*[1]	*->1-2	nsubj:pass|nsubj	basic|enhanced	1-5|1-5	
+1-4	22-30	Iesaliņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Iesaliņš	person[1]	*[1]	*[1]	*->1-2	flat:name|flat	basic|enhanced	1-3|1-3	
+1-5	31-43	pārliecināts	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnp	pārliecināt	_	_	_	_	root|root	basic|enhanced	1-5|1-5	
+1-6	43-44	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-11|1-11	
+1-7	45-47	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark|mark	basic|enhanced	1-11|1-11	
+1-8	48-53	domes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	dome	_	_	_	_	nmod|nmod	basic|enhanced	1-9|1-9	
+1-9	54-60	lēmums	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	lēmums	_	_	_	_	nsubj|nsubj	basic|enhanced	1-11|1-11	
+1-10	61-63	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	cop|cop	basic|enhanced	1-11|1-11	
+1-11	64-72	pretrunā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	pretruna	_	_	_	_	ccomp|ccomp	basic|enhanced	1-5|1-5	
+1-12	73-75	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case|case	basic|enhanced	1-15|1-15	
+1-13	76-80	ceļu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	ceļš	_	_	_	_	nmod|nmod	basic|enhanced	1-14|1-14	
+1-14	81-90	satiksmes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	satiksme	_	_	_	_	nmod|nmod	basic|enhanced	1-15|1-15	
+1-15	91-102	noteikumiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	noteikums	_	_	*[3]	*->3-1	iobj|iobj	basic|enhanced	1-11|1-11	
+1-16	102-103	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-19|1-19	
+1-17	104-109	kuros	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur\|PronType=Rel	*	*	pr0mpln	kurš	_	_	*[3]	*->3-2	obl|obl	basic|enhanced	1-19|1-19	
+1-18	110-122	ierobežojumi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	ierobežojums	_	_	_	_	nsubj|nsubj	basic|enhanced	1-19|1-19	
+1-19	123-131	attiecas	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipi130an	attiekties	_	_	_	_	acl|acl	basic|enhanced	1-15|1-15	
+1-20	132-137	tikai	_	_	_	_	_	_	_	_	_	_	_	_	q	tikai	_	_	_	_	discourse|discourse	basic|enhanced	1-22|1-22	
+1-21	138-140	uz	_	_	_	_	_	_	_	_	_	_	_	_	sppd	uz	_	_	_	_	case|case	basic|enhanced	1-22|1-22	
+1-22	141-152	automašīnām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	automašīna	_	_	*[2]	*->2-1	iobj|iobj	basic|enhanced	1-19|1-19	
+1-23	152-153	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-25|1-25	
+1-24	154-157	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	*[2]	*->2-2	nsubj|nsubj	basic|enhanced	1-25|1-25	
+1-25	158-166	smagākas	Fem	Plur	Nom	Cmp	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Fem\|Number=Plur	*	*	affpnnc	smaga	_	_	_	_	acl|acl	basic|enhanced	1-22|1-22	
+1-26	167-170	par	_	_	_	_	_	_	_	_	_	_	_	_	sppd	par	_	_	_	_	case|case	basic|enhanced	1-28|1-28	
+1-27	171-177	piecām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur\|NumType=Card	*	*	mcsfpd	piecas	_	_	_	_	nummod|nummod	basic|enhanced	1-28|1-28	
+1-28	178-184	tonnām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	tonna	_	_	_	_	iobj|iobj	basic|enhanced	1-25|1-25	
+1-29	184-185	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-31|1-31	
+1-30	186-191	tāpēc	_	_	_	_	_	_	_	_	_	_	_	_	r0c	tāpēc	_	_	_	_	cc|cc	basic|enhanced	1-31|1-31	
+1-31	192-199	uzskata	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	uzskatīt	_	_	_	_	conj|conj	basic|enhanced	1-5|1-5	
+1-32	199-200	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-39|1-39	
+1-33	201-203	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark|mark	basic|enhanced	1-39|1-39	
+1-34	204-207	šis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	šis	_	_	_	_	det|det	basic|enhanced	1-37|1-37	
+1-35	208-219	pašvaldības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	pašvaldība	_	_	_	_	nmod|nmod	basic|enhanced	1-36|1-36	
+1-36	220-229	noteikumu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	noteikums	_	_	_	_	nmod|nmod	basic|enhanced	1-37|1-37	
+1-37	230-236	punkts	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	punkts	_	_	_	_	nsubj|nsubj	basic|enhanced	1-39|1-39	
+1-38	237-240	nav	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30ay	nebūt	_	_	_	_	aux|aux	basic|enhanced	1-39|1-39	
+1-39	241-249	jāievēro	*	*	*	*	*	*	Nec	Act	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vmnd0t200an	ievērot	_	_	_	_	ccomp|ccomp	basic|enhanced	1-31|1-31	
+1-40	249-250	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-5|1-5	
+
+#Text=Viņš stāsta, ka problēmas ar piegādi naktī esot nelielajām vairumtirdzniecības firmām.
+2-1	252-256	Viņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msnn	viņš	_	_	*[1]	*->1-3	nsubj|nsubj	basic|enhanced	2-2|2-2	
+2-2	257-263	stāsta	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	stāstīt	_	_	_	_	root|root	basic|enhanced	2-2|2-2	
+2-3	263-264	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-9|2-9	
+2-4	265-267	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark|mark	basic|enhanced	2-9|2-9	
+2-5	268-277	problēmas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	problēma	_	_	_	_	nsubj|nsubj	basic|enhanced	2-9|2-9	
+2-6	278-280	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case|case	basic|enhanced	2-7|2-7	
+2-7	281-288	piegādi	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	piegāde	_	_	_	_	nmod|nmod	basic|enhanced	2-5|2-5	
+2-8	289-294	naktī	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl6	nakts	_	_	_	_	acl|acl	basic|enhanced	2-7|2-7	
+2-9	295-299	esot	*	*	*	*	*	Pres	Qot	Act	*	Evident=Nfh\|Mood=Qot\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	*	vmnrpii00an	būt	_	_	_	_	ccomp|ccomp	basic|enhanced	2-2|2-2	
+2-10	300-310	nelielajām	Fem	Plur	Dat	Pos	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	arfpdyp	neliela	_	_	_	_	amod|amod	basic|enhanced	2-12|2-12	
+2-11	311-330	vairumtirdzniecības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	vairumtirdzniecība	_	_	_	_	nmod|nmod	basic|enhanced	2-12|2-12	
+2-12	331-337	firmām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	firma	_	_	_	_	obl|obl	basic|enhanced	2-9|2-9	
+2-13	337-338	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	2-2|2-2	
+
+#Text=Jebkuram darba režīmam pieskaņojas tādas kā Aldaris un Coca Cola.
+3-1	340-348	Jebkuram	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|PronType=Ind	*	*	pi0msdn	jebkurš	_	_	_	_	det|det	basic|enhanced	3-3|3-3	
+3-2	349-354	darba	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	darbs	_	_	_	_	nmod|nmod	basic|enhanced	3-3|3-3	
+3-3	355-362	režīmam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	režīms	_	_	_	_	iobj|iobj	basic|enhanced	3-4|3-4	
+3-4	363-374	pieskaņojas	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipi230an	pieskaņoties	_	_	_	_	root|root	basic|enhanced	3-4|3-4	
+3-5	375-380	tādas	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur\|PronType=Dem	*	*	pd0fpan	tāda	_	_	_	_	det|det	basic|enhanced	3-7|3-7	
+3-6	381-383	kā	_	_	_	_	_	_	_	_	_	_	_	_	cs	kā	_	_	_	_	discourse|discourse	basic|enhanced	3-7|3-7	
+3-7	384-391	Aldaris	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	aldaris	organization	https://lv.wikipedia.org/wiki/Aldaris\_(uzņēmums)	_	_	nsubj|nsubj	basic|enhanced	3-4|3-4	
+3-8	392-394	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	3-9|3-9	
+3-9	395-399	Coca	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Coca	organization[2]	https://en.wikipedia.org/wiki/Coca-Cola[2]	_	_	conj|conj	basic|enhanced	3-7|3-7	
+3-10	400-404	Cola	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Cola	organization[2]	https://en.wikipedia.org/wiki/Coca-Cola[2]	_	_	flat:name|flat	basic|enhanced	3-9|3-9	
+3-11	404-405	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	3-4|3-4	

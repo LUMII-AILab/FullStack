@@ -1,0 +1,36 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Neviens no apkalpes ūdens šļākšanos cauri vāka šķirbām acīmredzot nepamanīja.
+1-1	0-7	Neviens	pi0msny	neviens	_	_	nsubj	basic	1-10	
+1-2	8-10	no	spsg	no	_	_	case	basic	1-3	
+1-3	11-19	apkalpes	ncfsg5	apkalpe	*[2]	*->2-1	compound	basic	1-1	
+1-4	20-25	ūdens	ncmsg2	ūdens	*[1]	*->1-1	nmod	basic	1-5	
+1-5	26-35	šļākšanos	ncfsar	šļākšanās	*[1]	*->1-1	obj	basic	1-10	
+1-6	36-41	cauri	rrp	cauri	_	_	case	basic	1-8	
+1-7	42-46	vāka	ncmsg1	vāks	_	_	nmod	basic	1-8	
+1-8	47-54	šķirbām	ncfpd4	šķirba	_	_	nmod	basic	1-5	
+1-9	55-65	acīmredzot	q	acīmredzot	_	_	discourse	basic	1-10	
+1-10	66-76	nepamanīja	vmnist330ay	nepamanīt	_	_	root	basic	1-10	
+1-11	76-77	.	zs	.	_	_	punct	basic	1-10	
+
+#Text=Vēlāk izmeklēšanas komisija sprieda, ka viņi no sava komandtiltiņa varēja to arī neredzēt.
+2-1	79-84	Vēlāk	rct	vēlu	_	_	advmod	basic	2-4	
+2-2	85-97	izmeklēšanas	ncfsg4	izmeklēšana	_	_	nmod	basic	2-3	
+2-3	98-106	komisija	ncfsn4	komisija	_	_	nsubj	basic	2-4	
+2-4	107-114	sprieda	vmnist130an	spriest	_	_	root	basic	2-4	
+2-5	114-115	,	zc	,	_	_	punct	basic	2-11	
+2-6	116-118	ka	cs	ka	_	_	mark	basic	2-11	
+2-7	119-123	viņi	pp3mpnn	viņš	*[2]	*->2-2	nsubj	basic	2-11	
+2-8	124-126	no	spsg	no	_	_	case	basic	2-10	
+2-9	127-131	sava	ps0msgn	savs	*[2]	*->2-3	det	basic	2-10	
+2-10	132-145	komandtiltiņa	ncmsg1	komandtiltiņš	_	_	obl	basic	2-11	
+2-11	146-152	varēja	vonist330an	varēt	_	_	ccomp	basic	2-4	
+2-12	153-155	to	pd0msan	tas	*[1]	*->1-2	obj	basic	2-14	
+2-13	156-159	arī	q	arī	_	_	discourse	basic	2-14	
+2-14	160-168	neredzēt	vmnn0t3000y	neredzēt	_	_	xcomp	basic	2-11	
+2-15	168-169	.	zs	.	_	_	punct	basic	2-4	

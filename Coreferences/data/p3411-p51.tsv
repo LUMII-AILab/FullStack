@@ -1,0 +1,139 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Kad viņš pienāca man klāt un aizdedzināja sērkociņu, viņa acis neviļus sastapās ar manējām.
+1-1	0-3	Kad	r0t	kad	_	_	advmod	basic	1-3	
+1-2	4-8	viņš	pp3msnn	viņš	*[2]	*->2-1	nsubj	basic	1-3	
+1-3	9-16	pienāca	vmnisi130an	pienākt	_	_	advcl	basic	1-13	
+1-4	17-20	man	pp10sdn	es	*[3]	*->3-1	obl	basic	1-3	
+1-5	21-25	klāt	r0p	klāt	_	_	case	basic	1-4	
+1-6	26-28	un	cc	un	_	_	cc	basic	1-7	
+1-7	29-41	aizdedzināja	vmnist330an	aizdedzināt	_	_	conj	basic	1-3	
+1-8	42-51	sērkociņu	ncmsa1	sērkociņš	_	_	obj	basic	1-7	
+1-9	51-52	,	zc	,	_	_	punct	basic	1-7	
+1-10	53-57	viņa	pp3msgn	viņš	*[2]	*->2-2	det	basic	1-11	
+1-11	58-62	acis	ncfpn6	acs	_	_	nsubj	basic	1-13	
+1-12	63-70	neviļus	r0m	neviļus	_	_	advmod	basic	1-13	
+1-13	71-79	sastapās	vmyisi130an	sastapties	_	_	root	basic	1-13	
+1-14	80-82	ar	sppd	ar	_	_	case	basic	1-15	
+1-15	83-90	manējām	arfpdnp	manēja	*[3]	*->3-2	iobj	basic	1-13	
+1-16	90-91	.	zs	.	_	_	punct	basic	1-13	
+
+#Text=Šajā brīdī es pasmaidīju.
+2-1	93-97	Šajā	pd0msln	šis	_	_	det	basic	2-2	
+2-2	98-103	brīdī	ncmsl2	brīdis	_	_	obl	basic	2-4	
+2-3	104-106	es	pp10snn	es	*[3]	*->3-3	nsubj	basic	2-4	
+2-4	107-117	pasmaidīju	vmnist31san	pasmaidīt	_	_	root	basic	2-4	
+2-5	117-118	.	zs	.	_	_	punct	basic	2-4	
+
+#Text=Nezinu, kāpēc.
+3-1	120-126	Nezinu	vmnipt31say	nezināt	_	_	root	basic	3-1	
+3-2	126-127	,	zc	,	_	_	punct	basic	3-3	
+3-3	128-133	kāpēc	r0c	kāpēc	_	_	ccomp	basic	3-1	
+3-4	133-134	.	zs	.	_	_	punct	basic	3-1	
+
+#Text=Iespējams, tā izpaudās mana nervozitāte, iespējams, arī tāpēc, ka tad, kad cilvēki stāv tuvu viens otram, ir ļoti grūti nesmaidīt.
+4-1	136-145	Iespējams	armsnnp	iespējams	_	_	parataxis	basic	4-4	
+4-2	145-146	,	zc	,	_	_	punct	basic	4-1	
+4-3	147-149	tā	r0m	tā	_	_	advmod	basic	4-4	
+4-4	150-158	izpaudās	vmyist130an	izpausties	_	_	root	basic	4-4	
+4-5	159-163	mana	ps0fsnn	mana	*[3]	*->3-4	det	basic	4-6	
+4-6	164-175	nervozitāte	ncfsn5	nervozitāte	_	_	nsubj	basic	4-4	
+4-7	175-176	,	zc	,	_	_	punct	basic	4-8	
+4-8	177-186	iespējams	armsnnp	iespējams	_	_	parataxis	basic	4-11	
+4-9	186-187	,	zc	,	_	_	punct	basic	4-4	
+4-10	188-191	arī	q	arī	_	_	discourse	basic	4-11	
+4-11	192-197	tāpēc	r0c	tāpēc	_	_	conj	basic	4-4	
+4-12	197-198	,	zc	,	_	_	punct	basic	4-25	
+4-13	199-201	ka	cs	ka	_	_	mark	basic	4-25	
+4-14	202-205	tad	r0t	tad	*[4]	*->4-1	advmod	basic	4-25	
+4-15	205-206	,	zc	,	_	_	punct	basic	4-18	
+4-16	207-210	kad	r0t	kad	*[4]	*->4-2	advmod	basic	4-18	
+4-17	211-218	cilvēki	ncmpn1	cilvēks	_	_	nsubj	basic	4-18	
+4-18	219-223	stāv	vmnipt330an	stāvēt	_	_	advcl	basic	4-14	
+4-19	224-228	tuvu	rpp	tuvu	_	_	case	basic	4-21	
+4-20	229-234	viens	mcsmsn	viens	_	_	acl	basic	4-21	
+4-21	235-240	otram	mcsmsd	otrs	_	_	nummod	basic	4-18	
+4-22	240-241	,	zc	,	_	_	punct	basic	4-18	
+4-23	242-244	ir	vcnipii30an	būt	_	_	aux	basic	4-25	
+4-24	245-249	ļoti	r0q	ļoti	_	_	advmod	basic	4-25	
+4-25	250-255	grūti	rpm	grūti	_	_	advcl	basic	4-11	
+4-26	256-265	nesmaidīt	vmnn0t3000y	nesmaidīt	_	_	ccomp	basic	4-25	
+4-27	265-266	.	zs	.	_	_	punct	basic	4-4	
+
+#Text=Lai būtu kā būdams – es smaidīju.
+5-1	268-271	Lai	cs	lai	_	_	mark	basic	5-2	
+5-2	272-276	būtu	vmnc0ii00an	būt	_	_	advcl	basic	5-7	
+5-3	277-279	kā	cs	kā	_	_	mark	basic	5-4	
+5-4	280-286	būdams	vmnpdmsnpp00	būdams	_	_	acl	basic	5-2	
+5-5	287-288	–	zd	–	_	_	punct	basic	5-2	
+5-6	289-291	es	pp10snn	es	*[3]	*->3-5	nsubj	basic	5-7	
+5-7	292-300	smaidīju	vmnist31san	smaidīt	_	_	root	basic	5-7	
+5-8	300-301	.	zs	.	_	_	punct	basic	5-7	
+
+#Text=Tajā brīdī it kā dzirksteles pārlēca pāri aizai, kas šķīra mūsu sirdis, mūsu dvēseles.
+6-1	303-307	Tajā	pd0msln	tas	_	_	det	basic	6-2	
+6-2	308-313	brīdī	ncmsl2	brīdis	_	_	acl	basic	6-6	
+6-3	314-316	it	q	it	_	_	discourse	basic	6-5	
+6-4	317-319	kā	q	kā	_	_	compound	basic	6-3	
+6-5	320-331	dzirksteles	ncfpn5	dzirkstele	_	_	nsubj	basic	6-6	
+6-6	332-339	pārlēca	vmnisi130an	pārlēkt	_	_	root	basic	6-6	
+6-7	340-344	pāri	r0p	pāri	_	_	case	basic	6-8	
+6-8	345-350	aizai	ncfsd4	aiza	*[1]	*->1-1	obl	basic	6-6	
+6-9	350-351	,	zc	,	_	_	punct	basic	6-11	
+6-10	352-355	kas	pr000nn	kas	*[1]	*->1-2	nsubj	basic	6-11	
+6-11	356-361	šķīra	vmnist130an	šķirt	_	_	acl	basic	6-8	
+6-12	362-366	mūsu	pp10pgn	mēs	_	_	det	basic	6-13	
+6-13	367-373	sirdis	ncfpa6	sirds	_	_	obj	basic	6-11	
+6-14	373-374	,	zc	,	_	_	punct	basic	6-16	
+6-15	375-379	mūsu	pp10pgn	mēs	_	_	det	basic	6-16	
+6-16	380-388	dvēseles	ncfsg5	dvēsele	_	_	conj	basic	6-13	
+6-17	388-389	.	zs	.	_	_	punct	basic	6-6	
+
+#Text=Es zinu, ka viņš to nevēlējās, taču mans smaids izlauzās cauri restēm un raisīja smaidu arī uz viņa lūpām.
+7-1	391-393	Es	pp10snn	es	*[3]	*->3-6	nsubj	basic	7-2	
+7-2	394-398	zinu	vmnipt31san	zināt	_	_	root	basic	7-2	
+7-3	398-399	,	zc	,	_	_	punct	basic	7-7	
+7-4	400-402	ka	cs	ka	_	_	mark	basic	7-7	
+7-5	403-407	viņš	pp3msnn	viņš	*[2]	*->2-3	nsubj	basic	7-7	
+7-6	408-410	to	pd0msan	tas	_	_	obj	basic	7-7	
+7-7	411-420	nevēlējās	voyist330ay	nevēlēties	_	_	ccomp	basic	7-2	
+7-8	420-421	,	zc	,	_	_	punct	basic	7-12	
+7-9	422-426	taču	cc	taču	_	_	cc	basic	7-12	
+7-10	427-431	mans	ps0msnn	mans	*[3]	*->3-7	det	basic	7-11	
+7-11	432-438	smaids	ncmsn1	smaids	_	_	nsubj	basic	7-12	
+7-12	439-447	izlauzās	vmyipi330an	izlauzīties	_	_	conj	basic	7-2	
+7-13	448-453	cauri	rrp	cauri	_	_	case	basic	7-14	
+7-14	454-460	restēm	ncfdd5	restes	_	_	obl	basic	7-12	
+7-15	461-463	un	cc	un	_	_	cc	basic	7-16	
+7-16	464-471	raisīja	vmnist330an	raisīt	_	_	conj	basic	7-12	
+7-17	472-478	smaidu	ncmsa1	smaids	_	_	obj	basic	7-16	
+7-18	479-482	arī	q	arī	_	_	discourse	basic	7-21	
+7-19	483-485	uz	spsa	uz	_	_	case	basic	7-21	
+7-20	486-490	viņa	pp3msgn	viņš	*[2]	*->2-4	det	basic	7-21	
+7-21	491-496	lūpām	ncfpd4	lūpa	_	_	obl	basic	7-16	
+7-22	496-497	.	zs	.	_	_	punct	basic	7-2	
+
+#Text=Viņš aizdedzināja manu cigareti, taču negāja prom, bet raudzījās man tieši acīs, joprojām smaidīdams.
+8-1	499-503	Viņš	pp3msnn	viņš	*[2]	*->2-5	nsubj	basic	8-2	
+8-2	504-516	aizdedzināja	vmnist330an	aizdedzināt	_	_	root	basic	8-2	
+8-3	517-521	manu	ps0fsan	mana	*[3]	*->3-8	det	basic	8-4	
+8-4	522-530	cigareti	ncfsa5	cigarete	_	_	obj	basic	8-2	
+8-5	530-531	,	zc	,	_	_	punct	basic	8-7	
+8-6	532-536	taču	cc	taču	_	_	cc	basic	8-7	
+8-7	537-543	negāja	vmnisii30ay	neiet	_	_	conj	basic	8-2	
+8-8	544-548	prom	r0p	prom	_	_	advmod	basic	8-7	
+8-9	548-549	,	zc	,	_	_	punct	basic	8-11	
+8-10	550-553	bet	cc	bet	_	_	cc	basic	8-11	
+8-11	554-563	raudzījās	vmyisi330an	raudzīties	_	_	conj	basic	8-2	
+8-12	564-567	man	pp10sdn	es	*[3]	*->3-9	iobj	basic	8-14	
+8-13	568-573	tieši	q	tieši	_	_	discourse	basic	8-14	
+8-14	574-578	acīs	ncfpl6	acs	_	_	obl	basic	8-11	
+8-15	578-579	,	zc	,	_	_	punct	basic	8-17	
+8-16	580-588	joprojām	r0t	joprojām	_	_	advmod	basic	8-17	
+8-17	589-599	smaidīdams	vmnppmsnap00	smaidīt	_	_	acl	basic	8-11	
+8-18	599-600	.	zs	.	_	_	punct	basic	8-2	

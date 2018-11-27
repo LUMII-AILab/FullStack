@@ -1,0 +1,47 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Šobrīd darba tirgus saspringtajā situācijā katrs uzņēmums cīnās par labākajiem darbiniekiem savam kolektīvam.
+1-1	0-6	Šobrīd	_	_	_	_	_	_	_	_	_	_	_	_	r0t	šobrīd	_	_	advmod|advmod	basic|enhanced	1-8|1-8	
+1-2	7-12	darba	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	darbs	_	_	nmod|nmod	basic|enhanced	1-3|1-3	
+1-3	13-19	tirgus	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg3	tirgus	_	_	nmod|nmod	basic|enhanced	1-5|1-5	
+1-4	20-32	saspringtajā	Fem	Sing	Loc	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Loc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfslpsyp	saspringt	_	_	amod|amod	basic|enhanced	1-5|1-5	
+1-5	33-42	situācijā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	situācija	_	_	obl|obl	basic|enhanced	1-8|1-8	
+1-6	43-48	katrs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msnn	katrs	_	_	det|det	basic|enhanced	1-7|1-7	
+1-7	49-57	uzņēmums	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	uzņēmums	*[1]	*->1-1	nsubj|nsubj	basic|enhanced	1-8|1-8	
+1-8	58-63	cīnās	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipi330an	cīnīties	_	_	root|root	basic|enhanced	1-8|1-8	
+1-9	64-67	par	_	_	_	_	_	_	_	_	_	_	_	_	sppd	par	_	_	case|case	basic|enhanced	1-11|1-11	
+1-10	68-78	labākajiem	Masc	Plur	Dat	Cmp	*	*	*	*	*	Case=Dat\|Degree=Cmp\|Gender=Masc\|Number=Plur	*	*	afmpdyc	labs	_	_	amod|amod	basic|enhanced	1-11|1-11	
+1-11	79-91	darbiniekiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	darbinieks	_	_	iobj|iobj	basic|enhanced	1-8|1-8	
+1-12	92-97	savam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0msdn	savs	*[1]	*->1-2	det|det	basic|enhanced	1-13|1-13	
+1-13	98-108	kolektīvam	Masc	Sing	Dat	Pos	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsdnp	kolektīvs	_	_	acl|acl	basic|enhanced	1-11|1-11	
+1-14	108-109	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct|punct	basic|enhanced	1-8|1-8	
+
+#Text=Gan laikraksti, gan daudzi karjeras vortāli ir pilni ar darba piedāvājumiem, taču piesaistīt labu darbinieku nemaz nav tik viegli.
+2-1	111-114	Gan	_	_	_	_	_	_	_	_	_	_	_	_	cc	gan	_	_	cc|cc	basic|enhanced	2-2|2-2	
+2-2	115-125	laikraksti	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	laikraksts	_	_	nsubj|nsubj	basic|enhanced	2-9|2-9	
+2-3	125-126	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct|punct	basic|enhanced	2-7|2-7	
+2-4	127-130	gan	_	_	_	_	_	_	_	_	_	_	_	_	cc	gan	_	_	cc|cc	basic|enhanced	2-7|2-7	
+2-5	131-137	daudzi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Ind	*	*	pi0mpnn	daudzi	_	_	det|det	basic|enhanced	2-7|2-7	
+2-6	138-146	karjeras	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	karjera	_	_	nmod|nmod	basic|enhanced	2-7|2-7	
+2-7	147-154	vortāli	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	vortāls	_	_	conj|conj	basic|enhanced	2-2|2-2	
+2-8	155-157	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	cop|cop	basic|enhanced	2-9|2-9	
+2-9	158-163	pilni	Masc	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnnp	pilns	_	_	root|root	basic|enhanced	2-9|2-9	
+2-10	164-166	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	case|case	basic|enhanced	2-12|2-12	
+2-11	167-172	darba	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	darbs	_	_	nmod|nmod	basic|enhanced	2-12|2-12	
+2-12	173-186	piedāvājumiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	piedāvājums	_	_	iobj|iobj	basic|enhanced	2-9|2-9	
+2-13	186-187	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct|punct	basic|enhanced	2-21|2-21	
+2-14	188-192	taču	_	_	_	_	_	_	_	_	_	_	_	_	cc	taču	_	_	cc|cc	basic|enhanced	2-21|2-21	
+2-15	193-203	piesaistīt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	piesaistīt	_	_	ccomp|ccomp	basic|enhanced	2-21|2-21	
+2-16	204-208	labu	Masc	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsanp	labs	_	_	amod|amod	basic|enhanced	2-17|2-17	
+2-17	209-219	darbinieku	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	darbinieks	_	_	iobj|iobj	basic|enhanced	2-15|2-15	
+2-18	220-225	nemaz	*	*	*	*	*	*	*	*	*	PronType=Neg	*	*	r0q	nemaz	_	_	advmod|advmod	basic|enhanced	2-21|2-21	
+2-19	226-229	nav	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30ay	nebūt	_	_	aux|aux	basic|enhanced	2-21|2-21	
+2-20	230-233	tik	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0q	tik	_	_	advmod|advmod	basic|enhanced	2-21|2-21	
+2-21	234-240	viegli	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	viegli	_	_	conj|conj	basic|enhanced	2-9|2-9	
+2-22	240-241	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct|punct	basic|enhanced	2-9|2-9	

@@ -1,0 +1,60 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Viņš norāva nost kārtējo džemperi.
+1-1	0-4	Viņš	pp3msnn	viņš	_	_	*[1]	*->1-1	nsubj	basic	1-2	
+1-2	5-11	norāva	vmnist130an	noraut	_	_	_	_	root	basic	1-2	
+1-3	12-16	nost	r0p	nost	_	_	_	_	advmod	basic	1-2	
+1-4	17-24	kārtējo	armsayp	kārtējs	_	_	_	_	amod	basic	1-5	
+1-5	25-33	džemperi	ncmsa2	džemperis	_	_	_	_	obj	basic	1-2	
+1-6	33-34	.	zs	.	_	_	_	_	punct	basic	1-2	
+
+#Text=Ar niknāko skubu viņš zīmēja akmens laikmeta Afrodīti, indīgi pablenzdams uz Annu.
+2-1	36-38	Ar	spsa	ar	_	_	_	_	case	basic	2-3	
+2-2	39-46	niknāko	affsayc	nikna	_	_	_	_	amod	basic	2-3	
+2-3	47-52	skubu	ncfsa4	skuba	_	_	_	_	obl	basic	2-5	
+2-4	53-57	viņš	pp3msnn	viņš	_	_	*[1]	*->1-2	nsubj	basic	2-5	
+2-5	58-64	zīmēja	vmnist230an	zīmēt	_	_	_	_	root	basic	2-5	
+2-6	65-71	akmens	ncmsg2	akmens	_	_	_	_	nmod	basic	2-7	
+2-7	72-80	laikmeta	ncmsg1	laikmets	_	_	_	_	nmod	basic	2-8	
+2-8	81-89	Afrodīti	npfsa5	Afrodīte	person	https://en.wikipedia.org/wiki/Aphrodite	_	_	obj	basic	2-5	
+2-9	89-90	,	zc	,	_	_	_	_	punct	basic	2-11	
+2-10	91-97	indīgi	rpm	indīgi	_	_	_	_	advmod	basic	2-11	
+2-11	98-109	pablenzdams	vmnppmsnap00	pablenzt	_	_	_	_	acl	basic	2-5	
+2-12	110-112	uz	spsa	uz	_	_	_	_	case	basic	2-13	
+2-13	113-117	Annu	npfsa4	Annu	person	*	*[2]	*->2-1	iobj	basic	2-11	
+2-14	117-118	.	zs	.	_	_	_	_	punct	basic	2-5	
+
+#Text=Pametis zīmējumu, Oto metās pie Annas, rāva nost viņas šalles, lakatus, jakas, adenīšus, vamžus, taļļas, štrumbantes un ņieburus.
+3-1	120-127	Pametis	vmnpdmsnasnp	pamest	_	_	_	_	acl	basic	3-5	
+3-2	128-136	zīmējumu	ncmsa1	zīmējums	_	_	_	_	obj	basic	3-1	
+3-3	136-137	,	zc	,	_	_	_	_	punct	basic	3-1	
+3-4	138-141	Oto	np0000	Oto	person	*	*[1]	*->1-3	iobj	basic	3-5	
+3-5	142-147	metās	vmyisi130an	mesties	_	_	_	_	root	basic	3-5	
+3-6	148-151	pie	spsg	pie	_	_	_	_	case	basic	3-7	
+3-7	152-157	Annas	npfsg4	Annas	person	*	*[2]	*->2-2	iobj	basic	3-5	
+3-8	157-158	,	zc	,	_	_	_	_	punct	basic	3-9	
+3-9	159-163	rāva	vmnist130an	raut	_	_	_	_	conj	basic	3-5	
+3-10	164-168	nost	r0p	nost	_	_	_	_	advmod	basic	3-9	
+3-11	169-174	viņas	pp3fsgn	viņa	_	_	*[2]	*->2-3	det	basic	3-12	
+3-12	175-181	šalles	ncfsg5	šalle	_	_	_	_	iobj	basic	3-9	
+3-13	181-182	,	zc	,	_	_	_	_	punct	basic	3-14	
+3-14	183-190	lakatus	ncmpa1	lakats	_	_	_	_	conj	basic	3-12	
+3-15	190-191	,	zc	,	_	_	_	_	punct	basic	3-16	
+3-16	192-197	jakas	ncfsg4	jaka	_	_	_	_	conj	basic	3-12	
+3-17	197-198	,	zc	,	_	_	_	_	punct	basic	3-18	
+3-18	199-207	adenīšus	ncmpa2	adenītis	_	_	_	_	conj	basic	3-12	
+3-19	207-208	,	zc	,	_	_	_	_	punct	basic	3-20	
+3-20	209-215	vamžus	ncmpa2	vamzis	_	_	_	_	conj	basic	3-12	
+3-21	215-216	,	zc	,	_	_	_	_	punct	basic	3-22	
+3-22	217-223	taļļas	ncfsg4	taļļa	_	_	_	_	conj	basic	3-12	
+3-23	223-224	,	zc	,	_	_	_	_	punct	basic	3-24	
+3-24	225-236	štrumbantes	ncfpa5	štrumbante	_	_	_	_	conj	basic	3-12	
+3-25	237-239	un	cc	un	_	_	_	_	cc	basic	3-26	
+3-26	240-248	ņieburus	ncmpa1	ņieburs	_	_	_	_	conj	basic	3-12	
+3-27	248-249	.	zs	.	_	_	_	_	punct	basic	3-5	

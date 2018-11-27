@@ -1,0 +1,42 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Ķiploki ir viens no visplašāk lietotajiem afrodīzijiem.
+1-1	0-7	Ķiploki	ncmpn1	ķiploks	_	_	*[1]	*->1-1	nsubj	basic	1-3	
+1-2	8-10	ir	vcnipii30an	būt	_	_	_	_	cop	basic	1-3	
+1-3	11-16	viens	mcsmsn	viens	_	_	_	_	root	basic	1-3	
+1-4	17-19	no	sppd	no	_	_	_	_	case	basic	1-7	
+1-5	20-29	visplašāk	rsm	plaši	_	_	_	_	advmod	basic	1-6	
+1-6	30-41	lietotajiem	armpdyp	lietots	_	_	_	_	amod	basic	1-7	
+1-7	42-54	afrodīzijiem	ncmpd1	afrodīzijs	_	_	_	_	compound	basic	1-3	
+1-8	54-55	.	zs	.	_	_	_	_	punct	basic	1-3	
+
+#Text=Tie ir iecienīti Eiropā, Ēģiptē, Grieķijā, Ķīnā un Japānā.
+2-1	57-60	Tie	pd0mpnn	tas	_	_	*[1]	*->1-2	nsubj	basic	2-3	
+2-2	61-63	ir	vcnipii30an	būt	_	_	_	_	aux	basic	2-3	
+2-3	64-73	iecienīti	vmnpdmpnpsnp	iecienīt	_	_	_	_	root	basic	2-3	
+2-4	74-80	Eiropā	npfsl4	Eiropa	location	https://en.wikipedia.org/wiki/Europe	_	_	obl	basic	2-3	
+2-5	80-81	,	zc	,	_	_	_	_	punct	basic	2-6	
+2-6	82-88	Ēģiptē	npfsl5	Ēģipte	GPE	https://en.wikipedia.org/wiki/Egypt	_	_	conj	basic	2-4	
+2-7	88-89	,	zc	,	_	_	_	_	punct	basic	2-8	
+2-8	90-98	Grieķijā	npfsl4	Grieķija	GPE	https://en.wikipedia.org/wiki/Greece	_	_	conj	basic	2-4	
+2-9	98-99	,	zc	,	_	_	_	_	punct	basic	2-10	
+2-10	100-104	Ķīnā	npfsl4	Ķīna	GPE	https://en.wikipedia.org/wiki/China	_	_	conj	basic	2-4	
+2-11	105-107	un	cc	un	_	_	_	_	cc	basic	2-12	
+2-12	108-114	Japānā	npfsl4	Japāna	GPE	https://en.wikipedia.org/wiki/Japan	_	_	conj	basic	2-4	
+2-13	114-115	.	zs	.	_	_	_	_	punct	basic	2-3	
+
+#Text=Tie veicina kuņģa sulas izdalīšanos un asinsriti.
+3-1	117-120	Tie	pd0mpnn	tas	_	_	*[1]	*->1-3	nsubj	basic	3-2	
+3-2	121-128	veicina	vmnipt330an	veicināt	_	_	_	_	root	basic	3-2	
+3-3	129-134	kuņģa	ncmsg2	kuņģis	_	_	_	_	nmod	basic	3-4	
+3-4	135-140	sulas	ncfsg4	sula	_	_	_	_	nmod	basic	3-5	
+3-5	141-152	izdalīšanos	ncfsar	izdalīšanās	_	_	_	_	obj	basic	3-2	
+3-6	153-155	un	cc	un	_	_	_	_	cc	basic	3-7	
+3-7	156-165	asinsriti	ncfsa5	asinsrite	_	_	_	_	conj	basic	3-5	
+3-8	165-166	.	zs	.	_	_	_	_	punct	basic	3-2	

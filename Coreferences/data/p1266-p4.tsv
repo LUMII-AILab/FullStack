@@ -1,0 +1,41 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Rajona padomes apbalvojuma saņemšanai par godu valsts svētkiem rumbenieki izvirzīja zemnieku Edgaru Goldmani, pastnieci Aldu Siliņu un ģimenes ārsti Laimu Brišku.
+1-1	0-6	Rajona	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	rajons	_	_	_	_	nmod|nmod	basic|enhanced	1-2|1-2	
+1-2	7-14	padomes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	padome	_	_	_	_	nmod|nmod	basic|enhanced	1-3|1-3	
+1-3	15-26	apbalvojuma	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	apbalvojums	_	_	_	_	nmod|nmod	basic|enhanced	1-4|1-4	
+1-4	27-37	saņemšanai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	saņemšana	_	_	_	_	iobj|iobj	basic|enhanced	1-10|1-10	
+1-5	38-41	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	_	_	case|case	basic|enhanced	1-6|1-6	
+1-6	42-46	godu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	gods	_	_	_	_	obl|obl	basic|enhanced	1-4|1-4	
+1-7	47-53	valsts	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	valsts	_	_	_	_	nmod|nmod	basic|enhanced	1-8|1-8	
+1-8	54-62	svētkiem	Masc	Ptan	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Ptan	*	*	ncmdd1	svētki	_	_	_	_	iobj|iobj	basic|enhanced	1-6|1-6	
+1-9	63-73	rumbenieki	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	rumbenieks	_	_	_	_	nsubj|nsubj	basic|enhanced	1-10|1-10	
+1-10	74-83	izvirzīja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	izvirzīt	_	_	_	_	root|root	basic|enhanced	1-10|1-10	
+1-11	84-92	zemnieku	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	zemnieks	_	_	*[1]	*->1-1	nmod|nmod	basic|enhanced	1-12|1-12	
+1-12	93-99	Edgaru	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	Edgars	person[1]	*[1]	*[1]	*->1-2	obj|obj	basic|enhanced	1-10|1-10	
+1-13	100-108	Goldmani	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa2	Goldmanis	person[1]	*[1]	*[1]	*->1-2	flat:name|flat	basic|enhanced	1-12|1-12	
+1-14	108-109	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-16|1-16	
+1-15	110-119	pastnieci	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	pastniece	_	_	*[2]	*->2-1	nmod|nmod	basic|enhanced	1-16|1-16	
+1-16	120-124	Aldu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	Alda	person[2]	*[2]	*[2]	*->2-2	conj|conj	basic|enhanced	1-12|1-12	
+1-17	125-131	Siliņu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	Siliņa	person[2]	*[2]	*[2]	*->2-2	flat:name|flat	basic|enhanced	1-16|1-16	
+1-18	132-134	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	1-21|1-21	
+1-19	135-142	ģimenes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	ģimene	_	_	_	_	nmod|nmod	basic|enhanced	1-20|1-20	
+1-20	143-148	ārsti	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	ārste	_	_	*[3]	*->3-1	nmod|nmod	basic|enhanced	1-21|1-21	
+1-21	149-154	Laimu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	Laima	person[3]	*[3]	*[3]	*->3-2	conj|conj	basic|enhanced	1-12|1-12	
+1-22	155-161	Brišku	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	Briška	person[3]	*[3]	*[3]	*->3-2	flat:name|flat	basic|enhanced	1-21|1-21	
+1-23	161-162	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-10|1-10	
+
+#Text=Nākamā sēde paredzēta 21. novembrī.
+2-1	164-170	Nākamā	Fem	Sing	Nom	Pos	*	Pres	*	Pass	*	Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	*	vmnpdfsnppyp	nākt	_	_	_	_	amod|amod	basic|enhanced	2-2|2-2	
+2-2	171-175	sēde	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	sēde	_	_	_	_	nsubj|nsubj	basic|enhanced	2-3|2-3	
+2-3	176-185	paredzēta	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnpsnp	paredzēt	_	_	_	_	root|root	basic|enhanced	2-3|2-3	
+2-4	186-189	21.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	21.	time[4]	*[4]	_	_	amod|amod	basic|enhanced	2-5|2-5	
+2-5	190-198	novembrī	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	novembris	time[4]	*[4]	_	_	obl|obl	basic|enhanced	2-3|2-3	
+2-6	198-199	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	2-3|2-3	

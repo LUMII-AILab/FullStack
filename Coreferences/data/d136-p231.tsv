@@ -1,0 +1,88 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Tā nu mēs ar Doru, viena otru pavadīdamas, izgājām šīs dienas finiša taisnē un devāmies uz autobusu pieturu.
+1-1	0-2	Tā	r0m	tā	_	_	_	_	advmod	basic	1-11	
+1-2	3-5	nu	q	nu	_	_	_	_	discourse	basic	1-11	
+1-3	6-9	mēs	pp10pnn	mēs	_	_	*[1]	*->1-1	nsubj	basic	1-11	
+1-4	10-12	ar	spsa	ar	_	_	*[1]	*->1-1	case	basic	1-5	
+1-5	13-17	Doru	npfsa5	Dora	person	*	*[1]|*[3]	*->1-1|*->3-1	nmod	basic	1-3	
+1-6	17-18	,	zc	,	_	_	_	_	punct	basic	1-9	
+1-7	19-24	viena	mcsfsn	viena	_	_	*[1]	*->1-2	obl	basic	1-9	
+1-8	25-29	otru	mcsmsa	otrs	_	_	*[1]	*->1-2	obj	basic	1-9	
+1-9	30-41	pavadīdamas	vmnpdfpnapn0	pavadīdamas	_	_	_	_	acl	basic	1-11	
+1-10	41-42	,	zc	,	_	_	_	_	punct	basic	1-9	
+1-11	43-50	izgājām	vmnisii1pan	iziet	_	_	_	_	root	basic	1-11	
+1-12	51-54	šīs	pd0fsgn	šī	_	_	_	_	det	basic	1-13	
+1-13	55-61	dienas	ncfsg4	diena	_	_	_	_	nmod	basic	1-14	
+1-14	62-68	finiša	ncmsg1	finišs	_	_	_	_	nmod	basic	1-15	
+1-15	69-75	taisnē	ncfsl5	taisne	_	_	_	_	obl	basic	1-11	
+1-16	76-78	un	cc	un	_	_	_	_	cc	basic	1-17	
+1-17	79-87	devāmies	vmyisti1pan	doties	_	_	_	_	conj	basic	1-11	
+1-18	88-90	uz	spsa	uz	_	_	_	_	case	basic	1-20	
+1-19	91-99	autobusu	ncmsa1	autobuss	_	_	_	_	nmod	basic	1-20	
+1-20	100-107	pieturu	ncfsa4	pietura	_	_	_	_	obl	basic	1-17	
+1-21	107-108	.	zs	.	_	_	_	_	punct	basic	1-11	
+
+#Text=Nāca trolejbuss.
+2-1	110-114	Nāca	vmnisi130an	nākt	_	_	_	_	root	basic	2-1	
+2-2	115-125	trolejbuss	ncmsn1	trolejbuss	_	_	_	_	nsubj	basic	2-1	
+2-3	125-126	.	zs	.	_	_	_	_	punct	basic	2-1	
+
+#Text=Dorai bij jābrauc pēc Gabriela.
+3-1	128-133	Dorai	npfsd4	Dora	person	*	*[3]	*->3-2	nsubj	basic	3-3	
+3-2	134-137	bij	vcnisii30an	būt	_	_	_	_	aux	basic	3-3	
+3-3	138-145	jābrauc	vmnd0t100an	braukt	_	_	_	_	root	basic	3-3	
+3-4	146-149	pēc	spsg	pēc	_	_	_	_	case	basic	3-5	
+3-5	150-158	Gabriela	npmsg1	Gabriels	person	*	*[4]	*->4-1	iobj	basic	3-3	
+3-6	158-159	.	zs	.	_	_	_	_	punct	basic	3-3	
+
+#Text=Viņai atkal bija pliks kakls.
+4-1	161-166	Viņai	pp3fsdn	viņa	_	_	*[3]	*->3-3	obl	basic	4-3	
+4-2	167-172	atkal	r0t	atkal	_	_	_	_	advmod	basic	4-3	
+4-3	173-177	bija	vmnisii30an	būt	_	_	_	_	root	basic	4-3	
+4-4	178-183	pliks	afmsnnp	pliks	_	_	_	_	amod	basic	4-5	
+4-5	184-189	kakls	ncmsn1	kakls	_	_	_	_	nsubj	basic	4-3	
+4-6	189-190	.	zs	.	_	_	_	_	punct	basic	4-3	
+
+#Text=Iedevu viņai savu šalli, kurai omīte uzšuva zaķus.
+5-1	192-198	Iedevu	vmnisti1san	iedot	_	_	_	_	root	basic	5-1	
+5-2	199-204	viņai	pp3fsdn	viņa	_	_	*[3]	*->3-4	iobj	basic	5-1	
+5-3	205-209	savu	ps0fsan	sava	_	_	*[5]	*->5-1	det	basic	5-4	
+5-4	210-215	šalli	ncfsa5	šalle	_	_	*[2]	*->2-1	obj	basic	5-1	
+5-5	215-216	,	zc	,	_	_	_	_	punct	basic	5-8	
+5-6	217-222	kurai	pr0fsdn	kura	_	_	*[2]	*->2-2	iobj	basic	5-8	
+5-7	223-228	omīte	npfsn5	omīte	_	_	_	_	nsubj	basic	5-8	
+5-8	229-235	uzšuva	vmnist130an	uzšūt	_	_	_	_	acl	basic	5-4	
+5-9	236-241	zaķus	ncmpa2	zaķis	_	_	_	_	obj	basic	5-8	
+5-10	241-242	.	zs	.	_	_	_	_	punct	basic	5-1	
+
+#Text=Mana bērnudārza šalle.
+6-1	244-248	Mana	ps0fsgn	mana	_	_	*[5]	*->5-2	det	basic	6-3	
+6-2	249-259	bērnudārza	ncmsg1	bērnudārzs	_	_	_	_	nmod	basic	6-3	
+6-3	260-265	šalle	ncfsn5	šalle	_	_	*[2]	*->2-3	root	basic	6-3	
+6-4	265-266	.	zs	.	_	_	_	_	punct	basic	6-3	
+
+#Text=Iesēdināju Doru trolejbusā uz bērnudārzu.
+7-1	268-278	Iesēdināju	vmnist31san	iesēdināt	_	_	_	_	root	basic	7-1	
+7-2	279-283	Doru	npfpg5	Dora	person	*	*[3]	*->3-5	iobj	basic	7-1	
+7-3	284-294	trolejbusā	ncmsl1	trolejbuss	_	_	_	_	obl	basic	7-1	
+7-4	295-297	uz	spsa	uz	_	_	_	_	case	basic	7-5	
+7-5	298-308	bērnudārzu	ncmsa1	bērnudārzs	_	_	_	_	nmod	basic	7-3	
+7-6	308-309	.	zs	.	_	_	_	_	punct	basic	7-1	
+
+#Text=Viņa gāja vienā grupiņā ar savu dēlu Gabrielu.
+8-1	311-315	Viņa	pp3fsnn	viņa	_	_	*[3]	*->3-6	nsubj	basic	8-2	
+8-2	316-320	gāja	vmnisii30an	iet	_	_	_	_	root	basic	8-2	
+8-3	321-326	vienā	mcsfsl	viena	_	_	_	_	nummod	basic	8-4	
+8-4	327-334	grupiņā	ncfsl4	grupiņa	_	_	_	_	obl	basic	8-2	
+8-5	335-337	ar	spsa	ar	_	_	_	_	case	basic	8-8	
+8-6	338-342	savu	ps0msan	savs	_	_	*[3]	*->3-7	det	basic	8-7	
+8-7	343-347	dēlu	ncmsa1	dēls	_	_	*[4]	*->4-2	nmod	basic	8-8	
+8-8	348-356	Gabrielu	npmsa1	Gabriels	person	*	*[4]	*->4-3	iobj	basic	8-2	
+8-9	356-357	.	zs	.	_	_	*[4]	*->4-3	punct	basic	8-2	

@@ -1,0 +1,47 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Nopietnāk sākām trenēties augstskolā.
+1-1	0-9	Nopietnāk	*	*	*	Cmp	*	*	*	*	*	Degree=Cmp	*	*	rcm	nopietni	_	_	_	_	advmod|advmod	basic|enhanced	1-2|1-2	
+1-2	10-15	sākām	*	Plur	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	1	*	vpnist11pan	sākt	_	_	_	_	root|root	basic|enhanced	1-2|1-2	
+1-3	16-25	trenēties	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i2000n	trenēties	_	_	_	_	xcomp|xcomp	basic|enhanced	1-2|1-2	
+1-4	26-36	augstskolā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	augstskola	_	_	_	_	obl|obl	basic|enhanced	1-2|1-2	
+1-5	36-37	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-2|1-2	
+
+#Text=Izveidojās laba kompānija, kura fanātiski aizrāvās ar vieglatlētiku.
+2-1	39-49	Izveidojās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi230an	izveidoties	_	_	_	_	root|root	basic|enhanced	2-1|2-1	
+2-2	50-54	laba	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	laba	_	_	_	_	amod|amod	basic|enhanced	2-3|2-3	
+2-3	55-64	kompānija	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	kompānija	_	_	*[2]	*->2-1	nsubj|nsubj	basic|enhanced	2-1|2-1	
+2-4	64-65	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-7|2-7	
+2-5	66-70	kura	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsnn	kura	_	_	*[2]	*->2-2	nsubj|nsubj	basic|enhanced	2-7|2-7	
+2-6	71-80	fanātiski	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	fanātiski	_	_	_	_	advmod|advmod	basic|enhanced	2-7|2-7	
+2-7	81-89	aizrāvās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyist130an	aizrauties	_	_	_	_	acl|acl	basic|enhanced	2-3|2-3	
+2-8	90-92	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case|case	basic|enhanced	2-9|2-9	
+2-9	93-106	vieglatlētiku	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	vieglatlētika	_	_	_	_	iobj|iobj	basic|enhanced	2-7|2-7	
+2-10	106-107	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	2-1|2-1	
+
+#Text=Es arī biju viņu pulkā.
+3-1	109-111	Es	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10snn	es	_	_	*[1]	*->1-1	nsubj|nsubj	basic|enhanced	3-3|3-3	
+3-2	112-115	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse|discourse	basic|enhanced	3-3|3-3	
+3-3	116-120	biju	*	Sing	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	1	*	vmnisii1san	būt	_	_	_	_	root|root	basic|enhanced	3-3|3-3	
+3-4	121-125	viņu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Prs	3	*	pp3mpgn	viņš	_	_	_	_	det|det	basic|enhanced	3-5|3-5	
+3-5	126-131	pulkā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	pulka	_	_	_	_	obl|obl	basic|enhanced	3-3|3-3	
+3-6	131-132	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	3-3|3-3	
+
+#Text=Kad nokļuvu Dobelē, jau pats sāku trenēt bērnus.
+4-1	134-137	Kad	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0t	kad	_	_	_	_	advmod|advmod	basic|enhanced	4-2|4-2	
+4-2	138-145	nokļuvu	*	Sing	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	1	*	vmnisi11san	nokļūt	_	_	_	_	advcl|advcl	basic|enhanced	4-7|4-7	
+4-3	146-152	Dobelē	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl5	Dobele	GPE	https://en.wikipedia.org/wiki/Dobele	_	_	obl|obl	basic|enhanced	4-2|4-2	
+4-4	152-153	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	4-2|4-2	
+4-5	154-157	jau	_	_	_	_	_	_	_	_	_	_	_	_	r0t	jau	_	_	_	_	advmod|advmod	basic|enhanced	4-7|4-7	
+4-6	158-162	pats	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msnn	pats	_	_	*[1]	*->1-2	nsubj|nsubj	basic|enhanced	4-7|4-7	
+4-7	163-167	sāku	*	Sing	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	1	*	vpnist11san	sākt	_	_	_	_	root|root	basic|enhanced	4-7|4-7	
+4-8	168-174	trenēt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	trenēt	_	_	_	_	xcomp|xcomp	basic|enhanced	4-7|4-7	
+4-9	175-181	bērnus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	bērns	_	_	_	_	obj|obj	basic|enhanced	4-8|4-8	
+4-10	181-182	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	4-7|4-7	

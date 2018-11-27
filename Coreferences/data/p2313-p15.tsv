@@ -1,0 +1,69 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Likums stājas spēkā nākamajā dienā pēc tā izsludināšanas.
+1-1	0-6	Likums	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	likums	_	_	*[2]	*->2-1	nsubj|nsubj	basic|enhanced	1-2|1-2	
+1-2	7-13	stājas	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipi130an	stāties	_	_	_	_	root|root	basic|enhanced	1-2|1-2	
+1-3	14-19	spēkā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	spēks	_	_	_	_	obl|obl	basic|enhanced	1-2|1-2	
+1-4	20-28	nākamajā	Fem	Sing	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfslyp	nākamajā	_	_	_	_	amod|amod	basic|enhanced	1-5|1-5	
+1-5	29-34	dienā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	diena	_	_	_	_	obl|obl	basic|enhanced	1-2|1-2	
+1-6	35-38	pēc	_	_	_	_	_	_	_	_	_	_	_	_	spsg	pēc	_	_	_	_	case|case	basic|enhanced	1-8|1-8	
+1-7	39-41	tā	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	3	*	pd3msgn	tas	_	_	*[2]	*->2-2	det|det	basic|enhanced	1-8|1-8	
+1-8	42-56	izsludināšanas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	izsludināšana	_	_	_	_	nmod|nmod	basic|enhanced	1-5|1-5	
+1-9	56-57	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-2|1-2	
+
+#Text=Saeima pieņēma pārejas noteikumus, kas paredz, ka Ministru kabinets sagatavo un iesniedz Saeimā līdz 1.martam nepieciešamos grozījumus citos likumos.
+2-1	59-65	Saeima	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	saeima	organization	https://en.wikipedia.org/wiki/Saeima	_	_	nsubj|nsubj	basic|enhanced	2-2|2-2	
+2-2	66-73	pieņēma	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	pieņemt	_	_	_	_	root|root	basic|enhanced	2-2|2-2	
+2-3	74-81	pārejas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	pāreja	_	_	_	_	nmod|nmod	basic|enhanced	2-4|2-4	
+2-4	82-92	noteikumus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	noteikums	_	_	*[1]	*->1-1	obj|obj	basic|enhanced	2-2|2-2	
+2-5	92-93	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-7|2-7	
+2-6	94-97	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	*[1]	*->1-2	nsubj|nsubj	basic|enhanced	2-7|2-7	
+2-7	98-104	paredz	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	paredzēt	_	_	_	_	acl|acl	basic|enhanced	2-4|2-4	
+2-8	104-105	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-12|2-12	
+2-9	106-108	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark|mark	basic|enhanced	2-12|2-12	
+2-10	109-117	Ministru	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	ministrs	organization[1]	https://en.wikipedia.org/wiki/Government\_of\_Latvia[1]	_	_	nmod|nmod	basic|enhanced	2-11|2-11	
+2-11	118-126	kabinets	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	kabinets	organization[1]	https://en.wikipedia.org/wiki/Government\_of\_Latvia[1]	_	_	nsubj|nsubj	basic|enhanced	2-12|2-12	
+2-12	127-135	sagatavo	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt230an	sagatavot	_	_	_	_	ccomp|ccomp	basic|enhanced	2-7|2-7	
+2-13	136-138	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	2-14|2-14	
+2-14	139-147	iesniedz	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt130an	iesniegt	_	_	_	_	conj|conj	basic|enhanced	2-12|2-12	
+2-15	148-154	Saeimā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	saeima	organization	https://en.wikipedia.org/wiki/Saeima	_	_	obl|obl	basic|enhanced	2-14|2-14	
+2-16	155-159	līdz	_	_	_	_	_	_	_	_	_	_	_	_	spsd	līdz	time[2]	*[2]	_	_	case|case	basic|enhanced	2-18|2-18	
+2-17	160-162	1.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	1.	time[2]	*[2]	_	_	amod|amod	basic|enhanced	2-18|2-18	
+2-18	162-168	martam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	marts	time[2]	*[2]	_	_	obl|obl	basic|enhanced	2-12|2-12	
+2-19	169-182	nepieciešamos	Masc	Plur	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpayp	nepieciešams	_	_	_	_	amod|amod	basic|enhanced	2-20|2-20	
+2-20	183-193	grozījumus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	grozījums	_	_	_	_	obj|obj	basic|enhanced	2-12|2-12	
+2-21	194-199	citos	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur\|PronType=Ind	*	*	pi0mpln	cits	_	_	_	_	det|det	basic|enhanced	2-22|2-22	
+2-22	200-207	likumos	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	likums	_	_	_	_	acl|acl	basic|enhanced	2-20|2-20	
+2-23	207-208	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	2-2|2-2	
+
+#Text=Ja, pieņemot likumu, rodas pretrunas ar spēkā esošajiem likumiem, jaunais likums stāsies spēkā vienlaikus ar grozījumiem spēkā esošajos likumos.
+3-1	210-212	Ja	_	_	_	_	_	_	_	_	_	_	_	_	cs	ja	_	_	_	_	mark|mark	basic|enhanced	3-6|3-6	
+3-2	212-213	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	3-3|3-3	
+3-3	214-222	pieņemot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000	pieņemt	_	_	_	_	advcl|advcl	basic|enhanced	3-6|3-6	
+3-4	223-229	likumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	likums	_	_	_	_	obj|obj	basic|enhanced	3-3|3-3	
+3-5	229-230	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	3-3|3-3	
+3-6	231-236	rodas	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipi130an	rasties	_	_	_	_	advcl|advcl	basic|enhanced	3-15|3-15	
+3-7	237-246	pretrunas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	pretruna	_	_	_	_	nsubj|nsubj	basic|enhanced	3-6|3-6	
+3-8	247-249	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case|case	basic|enhanced	3-11|3-11	
+3-9	250-255	spēkā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	spēks	_	_	_	_	obl|obl	basic|enhanced	3-10|3-10	
+3-10	256-265	esošajiem	Masc	Plur	Dat	Pos	*	Pres	*	Pass	*	Aspect=Imp\|Case=Dat\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Imp	vmnpdmpdapyp	būt	_	_	_	_	amod|amod	basic|enhanced	3-11|3-11	
+3-11	266-274	likumiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	likums	_	_	_	_	iobj|iobj	basic|enhanced	3-7|3-7	
+3-12	274-275	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	3-6|3-6	
+3-13	276-283	jaunais	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnyp	jauns	_	_	_	_	amod|amod	basic|enhanced	3-14|3-14	
+3-14	284-290	likums	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	likums	_	_	_	_	nsubj|nsubj	basic|enhanced	3-15|3-15	
+3-15	291-298	stāsies	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vmyifi130an	stāties	_	_	_	_	root|root	basic|enhanced	3-15|3-15	
+3-16	299-304	spēkā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	spēks	_	_	_	_	obl|obl	basic|enhanced	3-15|3-15	
+3-17	305-315	vienlaikus	_	_	_	_	_	_	_	_	_	_	_	_	r0t	vienlaikus	_	_	_	_	advmod|advmod	basic|enhanced	3-15|3-15	
+3-18	316-318	ar	_	_	_	_	_	_	_	_	_	_	_	_	sppd	ar	_	_	_	_	case|case	basic|enhanced	3-19|3-19	
+3-19	319-330	grozījumiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	grozījums	_	_	_	_	iobj|iobj	basic|enhanced	3-17|3-17	
+3-20	331-336	spēkā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	spēks	_	_	_	_	obl|obl	basic|enhanced	3-21|3-21	
+3-21	337-345	esošajos	Masc	Plur	Loc	Pos	*	Pres	*	Pass	*	Aspect=Imp\|Case=Loc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Imp	vmnpdmplapyp	būt	_	_	_	_	amod|amod	basic|enhanced	3-22|3-22	
+3-22	346-353	likumos	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	likums	_	_	_	_	acl|acl	basic|enhanced	3-19|3-19	
+3-23	353-354	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	3-15|3-15	

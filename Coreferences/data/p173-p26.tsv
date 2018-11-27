@@ -1,0 +1,54 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Sekoja kino uzvaras gājiens pa Latviju.
+1-1	0-6	Sekoja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi230an	sekot	_	_	_	_	root|root	basic|enhanced	1-1|1-1	
+1-2	7-11	kino	_	_	_	_	_	_	_	_	_	_	_	_	nc0000	kino	_	_	_	_	nmod|nmod	basic|enhanced	1-3|1-3	
+1-3	12-19	uzvaras	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	uzvara	_	_	_	_	nmod|nmod	basic|enhanced	1-4|1-4	
+1-4	20-27	gājiens	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	gājiens	_	_	_	_	nsubj|nsubj	basic|enhanced	1-1|1-1	
+1-5	28-30	pa	_	_	_	_	_	_	_	_	_	_	_	_	spsa	pa	_	_	_	_	case|case	basic|enhanced	1-6|1-6	
+1-6	31-38	Latviju	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	_	_	obl|obl	basic|enhanced	1-1|1-1	
+1-7	38-39	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-1|1-1	
+
+#Text=Pilsētās cēla kinoteātrus, bet laukos demonstrēja mēmās filmas uz ekrāniem, ko veidoja gar šķūņa sienu nostiepts balts palags.
+2-1	41-49	Pilsētās	Fem	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	pilsēta	_	_	_	_	obl|obl	basic|enhanced	2-2|2-2	
+2-2	50-54	cēla	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	celt	_	_	_	_	root|root	basic|enhanced	2-2|2-2	
+2-3	55-66	kinoteātrus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa2	kinoteātris	_	_	_	_	obj|obj	basic|enhanced	2-2|2-2	
+2-4	66-67	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-7|2-7	
+2-5	68-71	bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	_	_	cc|cc	basic|enhanced	2-7|2-7	
+2-6	72-78	laukos	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	lauks	_	_	_	_	obl|obl	basic|enhanced	2-7|2-7	
+2-7	79-90	demonstrēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist230an	demonstrēt	_	_	_	_	conj|conj	basic|enhanced	2-2|2-2	
+2-8	91-96	mēmās	Fem	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsgyp	mēma	_	_	_	_	amod|amod	basic|enhanced	2-9|2-9	
+2-9	97-103	filmas	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	filma	_	_	_	_	obj|obj	basic|enhanced	2-7|2-7	
+2-10	104-106	uz	_	_	_	_	_	_	_	_	_	_	_	_	sppd	uz	_	_	_	_	case|case	basic|enhanced	2-11|2-11	
+2-11	107-115	ekrāniem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	ekrāns	_	_	*[1]	*->1-1	obl|obl	basic|enhanced	2-7|2-7	
+2-12	115-116	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-14|2-14	
+2-13	117-119	ko	*	*	Acc	*	*	*	*	*	*	Case=Acc\|PronType=Rel	*	*	pr000an	kas	_	_	*[1]	*->1-2	obj|obj	basic|enhanced	2-14|2-14	
+2-14	120-127	veidoja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist230an	veidot	_	_	_	_	acl|acl	basic|enhanced	2-11|2-11	
+2-15	128-131	gar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	gar	_	_	_	_	case|case	basic|enhanced	2-17|2-17	
+2-16	132-137	šķūņa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	šķūnis	_	_	_	_	nmod|nmod	basic|enhanced	2-17|2-17	
+2-17	138-143	sienu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	siena	_	_	_	_	obl|obl	basic|enhanced	2-18|2-18	
+2-18	144-153	nostiepts	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnp	nostiept	_	_	_	_	amod|amod	basic|enhanced	2-20|2-20	
+2-19	154-159	balts	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	balts	_	_	_	_	amod|amod	basic|enhanced	2-20|2-20	
+2-20	160-166	palags	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	palags	_	_	_	_	nsubj|nsubj	basic|enhanced	2-14|2-14	
+2-21	166-167	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	2-2|2-2	
+
+#Text=1930.gadā Latvijā bija 85 kinoteātri, tostarp Rīgā- 31.
+3-1	169-174	1930.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	1930.	time[1]	*[1]	_	_	amod|amod	basic|enhanced	3-2|3-2	
+3-2	174-178	gadā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	gads	time[1]	*[1]	_	_	obl|obl	basic|enhanced	3-4|3-4	
+3-3	179-186	Latvijā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	_	_	obl|obl	basic|enhanced	3-4|3-4	
+3-4	187-191	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisii30an	būt	_	_	_	_	root|root	basic|enhanced	3-4|3-4	
+3-5	192-194	85	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	85	_	_	_	_	nummod|nummod	basic|enhanced	3-6|3-6	
+3-6	195-205	kinoteātri	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	kinoteātris	_	_	_	_	nsubj|nsubj	basic|enhanced	3-4|3-4	
+3-7	205-206	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	3-10|3-10	
+3-8	207-214	tostarp	_	_	_	_	_	_	_	_	_	_	_	_	r0m	tostarp	_	_	_	_	advmod|advmod	basic|enhanced	3-10|3-10	
+3-9	215-219	Rīgā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	Rīga	GPE	https://en.wikipedia.org/wiki/Riga	_	_	obl|obl	basic|enhanced	3-10|3-10	
+3-10	219-220	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	_	_	dep|dep	basic|enhanced	3-6|3-6	
+3-11	221-223	31	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	31	_	_	_	_	dep|dep	basic|enhanced	3-10|3-10	
+3-12	223-224	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	3-4|3-4	

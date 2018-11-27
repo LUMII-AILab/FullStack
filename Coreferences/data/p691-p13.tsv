@@ -1,0 +1,37 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Pēc ticējumiem Mārtiņš reizi gadā atjāj aplūkot sētas un laukus.
+1-1	0-3	Pēc	sppd	pēc	_	_	_	_	case	basic	1-2	
+1-2	4-14	ticējumiem	ncmpd1	ticējums	_	_	_	_	obl	basic	1-6	
+1-3	15-22	Mārtiņš	npmsn1	Mārtiņš	person	*	*[1]	*->1-1	nsubj	basic	1-6	
+1-4	23-28	reizi	ncfsa5	reize	_	_	_	_	obl	basic	1-6	
+1-5	29-33	gadā	ncmsl1	gads	_	_	_	_	obl	basic	1-4	
+1-6	34-39	atjāj	vmnipt130an	atjāt	_	_	_	_	root	basic	1-6	
+1-7	40-47	aplūkot	vmnn0t2000n	aplūkot	_	_	_	_	ccomp	basic	1-6	
+1-8	48-53	sētas	ncfpa4	sēta	_	_	_	_	obj	basic	1-7	
+1-9	54-56	un	cc	un	_	_	_	_	cc	basic	1-10	
+1-10	57-63	laukus	ncmpa1	lauks	_	_	_	_	conj	basic	1-8	
+1-11	63-64	.	zs	.	_	_	_	_	punct	basic	1-6	
+
+#Text=Viņu pavada mārtiņbērni, kas nes svētību un auglību sētām, laukiem un lopiem.
+2-1	66-70	Viņu	pp3msan	viņš	_	_	*[1]	*->1-2	obj	basic	2-2	
+2-2	71-77	pavada	vmnipt330an	pavadīt	_	_	_	_	root	basic	2-2	
+2-3	78-89	mārtiņbērni	ncmpn1	mārtiņbērns	_	_	*[2]	*->2-1	nsubj	basic	2-2	
+2-4	89-90	,	zc	,	_	_	_	_	punct	basic	2-6	
+2-5	91-94	kas	pr000nn	kas	_	_	*[2]	*->2-2	nsubj	basic	2-6	
+2-6	95-98	nes	vmnipt130an	nest	_	_	_	_	acl	basic	2-3	
+2-7	99-106	svētību	ncfsa4	svētība	_	_	_	_	obj	basic	2-6	
+2-8	107-109	un	cc	un	_	_	_	_	cc	basic	2-9	
+2-9	110-117	auglību	ncfsa4	auglība	_	_	_	_	conj	basic	2-7	
+2-10	118-123	sētām	ncfpd4	sēta	_	_	_	_	iobj	basic	2-6	
+2-11	123-124	,	zc	,	_	_	_	_	punct	basic	2-12	
+2-12	125-132	laukiem	ncmpd1	lauks	_	_	_	_	conj	basic	2-10	
+2-13	133-135	un	cc	un	_	_	_	_	cc	basic	2-14	
+2-14	136-142	lopiem	ncmpd1	lops	_	_	_	_	conj	basic	2-10	
+2-15	142-143	.	zs	.	_	_	_	_	punct	basic	2-2	

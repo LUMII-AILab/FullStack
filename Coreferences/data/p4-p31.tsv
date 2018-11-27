@@ -1,0 +1,102 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Stundas ceturksni pirms deviņiem savā gaisa telpā 77. reisu sagaidīja vietējās satiksmes kontrolētājs Indianapolisā.
+1-1	0-7	Stundas	ncfsg4	stunda	time[1]	*[1]	_	_	nmod	basic	1-2	
+1-2	8-17	ceturksni	ncmsa2	ceturksnis	time[1]	*[1]	_	_	obl	basic	1-10	
+1-3	18-23	pirms	sppd	pirms	time[1]	*[1]	_	_	case	basic	1-4	
+1-4	24-32	deviņiem	mcsmpd	deviņi	time[1]	*[1]	_	_	nummod	basic	1-2	
+1-5	33-37	savā	ps0fsln	sava	_	_	_	_	det	basic	1-7	
+1-6	38-43	gaisa	ncmsg1	gaiss	_	_	_	_	nmod	basic	1-7	
+1-7	44-49	telpā	ncfsl4	telpa	_	_	_	_	obl	basic	1-10	
+1-8	50-53	77.	xo	77.	_	_	_	_	amod	basic	1-9	
+1-9	54-59	reisu	ncmsa1	reiss	_	_	_	_	obj	basic	1-10	
+1-10	60-69	sagaidīja	vmnist330an	sagaidīt	_	_	_	_	root	basic	1-10	
+1-11	70-78	vietējās	arfsgyp	vietēja	_	_	_	_	amod	basic	1-12	
+1-12	79-88	satiksmes	ncfsg5	satiksme	_	_	_	_	nmod	basic	1-13	
+1-13	89-101	kontrolētājs	ncmsn1	kontrolētājs	_	_	_	_	nsubj	basic	1-10	
+1-14	102-115	Indianapolisā	npfsl4	Indianapolisa	GPE	https://en.wikipedia.org/wiki/Indianapolis	_	_	acl	basic	1-13	
+1-15	115-116	.	zs	.	_	_	_	_	punct	basic	1-10	
+
+#Text=Lidmašīna ar 64 cilvēkiem bija ceļā no Vašingtonas uz Losandželosu.
+2-1	118-127	Lidmašīna	ncfsn4	lidmašīna	_	_	_	_	nsubj	basic	2-6	
+2-2	128-130	ar	sppd	ar	_	_	_	_	case	basic	2-4	
+2-3	131-133	64	xn	64	_	_	_	_	nummod	basic	2-4	
+2-4	134-143	cilvēkiem	ncmpd1	cilvēks	_	_	_	_	nmod	basic	2-1	
+2-5	144-148	bija	vcnisii30an	būt	_	_	_	_	cop	basic	2-6	
+2-6	149-153	ceļā	ncmsl1	ceļš	_	_	_	_	root	basic	2-6	
+2-7	154-156	no	spsg	no	_	_	_	_	case	basic	2-8	
+2-8	157-168	Vašingtonas	npfsg4	Vašingtona	GPE	https://en.wikipedia.org/wiki/Washington,\_D.C.	_	_	obl	basic	2-6	
+2-9	169-171	uz	spsa	uz	_	_	_	_	case	basic	2-10	
+2-10	172-184	Losandželosu	npfsa4	Losandželosa	GPE	https://en.wikipedia.org/wiki/Los\_Angeles	_	_	obl	basic	2-6	
+2-11	184-185	.	zs	.	_	_	_	_	punct	basic	2-6	
+
+#Text=Uzņemiet lielāku augstumu, norīkoja kontrolētājs.
+3-1	187-195	Uzņemiet	vmnm0t12pan	uzņemt	_	_	_	_	ccomp	basic	3-5	
+3-2	196-203	lielāku	afmsanc	liels	_	_	_	_	amod	basic	3-3	
+3-3	204-212	augstumu	ncmsa1	augstums	_	_	_	_	obj	basic	3-1	
+3-4	212-213	,	zc	,	_	_	_	_	punct	basic	3-1	
+3-5	214-222	norīkoja	vmnist230an	norīkot	_	_	_	_	root	basic	3-5	
+3-6	223-235	kontrolētājs	ncmsn1	kontrolētājs	_	_	_	_	nsubj	basic	3-5	
+3-7	235-236	.	zs	.	_	_	_	_	punct	basic	3-5	
+
+#Text=Piloti to izpildīja.
+4-1	238-244	Piloti	ncmpn1	pilots	_	_	*[1]	*->1-1	nsubj	basic	4-3	
+4-2	245-247	to	pd0msan	tas	_	_	_	_	obj	basic	4-3	
+4-3	248-257	izpildīja	vmnist330an	izpildīt	_	_	_	_	root	basic	4-3	
+4-4	257-258	.	zs	.	_	_	_	_	punct	basic	4-3	
+
+#Text=Bet jau pēc dažām minūtēm apklusa arī viņu lidmašīnas automātiskais raidītājs.
+5-1	260-263	Bet	cc	bet	_	_	_	_	cc	basic	5-6	
+5-2	264-267	jau	r0t	jau	_	_	_	_	advmod	basic	5-6	
+5-3	268-271	pēc	sppd	pēc	_	_	_	_	case	basic	5-5	
+5-4	272-277	dažām	pi0fpdn	daža	_	_	_	_	det	basic	5-5	
+5-5	278-285	minūtēm	ncfpd5	minūte	_	_	_	_	obl	basic	5-6	
+5-6	286-293	apklusa	vmnisi130an	apklust	_	_	_	_	root	basic	5-6	
+5-7	294-297	arī	q	arī	_	_	_	_	discourse	basic	5-11	
+5-8	298-302	viņu	pp3mpgn	viņš	_	_	*[1]	*->1-2	det	basic	5-9	
+5-9	303-313	lidmašīnas	ncfsg4	lidmašīna	_	_	_	_	nmod	basic	5-11	
+5-10	314-327	automātiskais	armsnyp	automātisks	_	_	_	_	amod	basic	5-11	
+5-11	328-337	raidītājs	ncmsn1	raidītājs	_	_	_	_	nsubj	basic	5-6	
+5-12	337-338	.	zs	.	_	_	_	_	punct	basic	5-6	
+
+#Text=Kontrolētājs, kas atbildīgs par šo reisu, sastinga — viņam šķita, ka lidmašīna ir nogāzusies.
+6-1	340-352	Kontrolētājs	ncmsn1	Kontrolētājs	_	_	*[2]	*->2-1	nsubj	basic	6-9	
+6-2	352-353	,	zc	,	_	_	*[2]	*->2-1	punct	basic	6-4	
+6-3	354-357	kas	pr000nn	kas	_	_	*[2]	*->2-2	nsubj	basic	6-4	
+6-4	358-367	atbildīgs	afmsnnp	atbildīgs	_	_	_	_	acl	basic	6-1	
+6-5	368-371	par	spsa	par	_	_	_	_	case	basic	6-7	
+6-6	372-374	šo	pd0msan	šis	_	_	_	_	det	basic	6-7	
+6-7	375-380	reisu	ncmsa1	reiss	_	_	_	_	iobj	basic	6-4	
+6-8	380-381	,	zc	,	_	_	_	_	punct	basic	6-4	
+6-9	382-390	sastinga	vmnisi130an	sastingt	_	_	_	_	root	basic	6-9	
+6-10	391-392	—	zd	—	_	_	_	_	punct	basic	6-12	
+6-11	393-398	viņam	pp3msdn	viņš	_	_	*[2]	*->2-3	obl	basic	6-12	
+6-12	399-404	šķita	vmnisi130an	šķist	_	_	_	_	advcl	basic	6-9	
+6-13	404-405	,	zc	,	_	_	_	_	punct	basic	6-17	
+6-14	406-408	ka	cs	ka	_	_	_	_	mark	basic	6-17	
+6-15	409-418	lidmašīna	ncfsn4	lidmašīna	_	_	_	_	nsubj	basic	6-17	
+6-16	419-421	ir	vcnipii30an	būt	_	_	_	_	aux	basic	6-17	
+6-17	422-432	nogāzusies	vmypdfsnasnp	nogāzties	_	_	_	_	ccomp	basic	6-12	
+6-18	432-433	.	zs	.	_	_	_	_	punct	basic	6-9	
+
+#Text=Par divām citām pirms tam nolaupītajām lidmašīnām viņu centrā ziņas vēl nebija pienākušas.
+7-1	435-438	Par	sppd	par	_	_	_	_	case	basic	7-7	
+7-2	439-444	divām	mcsfpd	divas	_	_	_	_	nummod	basic	7-7	
+7-3	445-450	citām	pi0fpdn	cita	_	_	_	_	det	basic	7-7	
+7-4	451-456	pirms	spsd	pirms	_	_	_	_	case	basic	7-5	
+7-5	457-460	tam	pd0msdn	tas	_	_	_	_	obl	basic	7-6	
+7-6	461-473	nolaupītajām	vmnpdfpdpsyp	nolaupīt	_	_	_	_	amod	basic	7-7	
+7-7	474-484	lidmašīnām	ncfpd4	lidmašīna	_	_	_	_	iobj	basic	7-13	
+7-8	485-489	viņu	pp3mpgn	viņš	_	_	_	_	det	basic	7-9	
+7-9	490-496	centrā	ncmsl1	centrs	_	_	_	_	nmod	basic	7-13	
+7-10	497-502	ziņas	ncfpn4	ziņa	_	_	_	_	nsubj	basic	7-13	
+7-11	503-506	vēl	r0t	vēl	_	_	_	_	advmod	basic	7-13	
+7-12	507-513	nebija	vcnisii30ay	nebūt	_	_	_	_	aux	basic	7-13	
+7-13	514-524	pienākušas	vmnpdfpnasnp	pienākt	_	_	_	_	root	basic	7-13	
+7-14	524-525	.	zs	.	_	_	_	_	punct	basic	7-13	

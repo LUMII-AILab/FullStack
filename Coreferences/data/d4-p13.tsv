@@ -1,0 +1,41 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Lauma!
+1-1	0-5	Lauma	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	lauma	person	*	_	_	root|root	basic|enhanced	1-1|1-1	
+1-2	5-6	!	_	_	_	_	_	_	_	_	_	_	_	_	zs	!	_	_	_	_	punct|punct	basic|enhanced	1-1|1-1	
+
+#Text=Es te kaut kur iekritu!
+2-1	8-10	Es	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10snn	es	_	_	*[2]	*->2-1	nsubj|nsubj	basic|enhanced	2-5|2-5	
+2-2	11-13	te	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0p	te	_	_	*[1]	*->1-1	advmod|advmod	basic|enhanced	2-5|2-5	
+2-3	14-18	kaut	_	_	_	_	_	_	_	_	_	_	_	_	q	kaut	_	_	*[1]	*->1-2	discourse|discourse	basic|enhanced	2-4|2-4	
+2-4	19-22	kur	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0p	kur	_	_	*[1]	*->1-2	advmod|advmod	basic|enhanced	2-5|2-5	
+2-5	23-30	iekritu	*	Sing	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	1	*	vmnisi11san	iekrist	_	_	_	_	root|root	basic|enhanced	2-5|2-5	
+2-6	30-31	!	_	_	_	_	_	_	_	_	_	_	_	_	zs	!	_	_	_	_	punct|punct	basic|enhanced	2-5|2-5	
+
+#Text=Šausmīgi sāp kāja...
+3-1	33-41	Šausmīgi	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	šausmīgi	_	_	_	_	advmod|advmod	basic|enhanced	3-2|3-2	
+3-2	42-45	sāp	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipi330an	sāpēt	_	_	_	_	root|root	basic|enhanced	3-2|3-2	
+3-3	46-50	kāja	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	kāja	_	_	_	_	nsubj|nsubj	basic|enhanced	3-2|3-2	
+3-4	50-53	...	_	_	_	_	_	_	_	_	_	_	_	_	zs	...	_	_	_	_	punct|punct	basic|enhanced	3-2|3-2	
+
+#Text=Lauma, palīdzi taču!
+4-1	55-60	Lauma	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	lauma	person	*	_	_	vocative|vocative	basic|enhanced	4-3|4-3	
+4-2	60-61	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	4-1|4-1	
+4-3	62-69	palīdzi	*	Sing	*	*	*	*	Imp	Act	*	Mood=Imp\|Number=Sing\|Person=2\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	2	*	vmnm0t32san	palīdzēt	_	_	_	_	root|root	basic|enhanced	4-3|4-3	
+4-4	70-74	taču	_	_	_	_	_	_	_	_	_	_	_	_	q	taču	_	_	_	_	discourse|discourse	basic|enhanced	4-3|4-3	
+4-5	74-75	!	_	_	_	_	_	_	_	_	_	_	_	_	zs	!	_	_	_	_	punct|punct	basic|enhanced	4-3|4-3	
+
+#Text=Es nevaru pakustēties, Lauma!
+5-1	77-79	Es	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10snn	es	_	_	*[2]	*->2-2	nsubj|nsubj	basic|enhanced	5-2|5-2	
+5-2	80-86	nevaru	*	Sing	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	1	*	vonipt31san	nevarēt	_	_	_	_	root|root	basic|enhanced	5-2|5-2	
+5-3	87-98	pakustēties	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i3000n	pakustēties	_	_	_	_	xcomp|xcomp	basic|enhanced	5-2|5-2	
+5-4	98-99	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	5-5|5-5	
+5-5	100-105	Lauma	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	lauma	person	*	_	_	vocative|vocative	basic|enhanced	5-2|5-2	
+5-6	105-106	!	_	_	_	_	_	_	_	_	_	_	_	_	zs	!	_	_	_	_	punct|punct	basic|enhanced	5-2|5-2	

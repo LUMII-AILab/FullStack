@@ -35,7 +35,7 @@ N. Gruzitis, D. Gosko, G. Barzdins. [RIGOTRIO at SemEval-2017 Task 9: Combining 
 ## Related work
 
 - [NLP-PIPE: Latvian NLP Tool Pipeline](http://nlp.ailab.lv/)
-- [The largest open lexical database for Latvian](https://github.com/LUMII-AILab/Tezaurs)
+- [Tēzaurs - The largest open lexical database for Latvian](https://github.com/LUMII-AILab/Tezaurs)
 
 ## Acknowledgements
 

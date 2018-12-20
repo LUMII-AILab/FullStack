@@ -1,0 +1,74 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Un nenoliedzami arī atskaites punkts, jo sevišķi tāpēc, ka Kristīnes Gailītes iepriekšējais solokoncerts notika pirms pieciem gadiem.
+1-1	0-2	Un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-5	
+1-2	3-15	nenoliedzami	*	*	*	*	*	*	*	*	*	PronType=Neg	*	*	r0m	nenoliedzami	_	_	_	_	advmod	basic	1-5	
+1-3	16-19	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse	basic	1-5	
+1-4	20-29	atskaites	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	atskaite	_	_	_	_	nmod	basic	1-5	
+1-5	30-36	punkts	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	punkts	_	_	_	_	root	basic	1-5	
+1-6	36-37	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-9	
+1-7	38-40	jo	_	_	_	_	_	_	_	_	_	_	_	_	q	jo	_	_	_	_	discourse	basic	1-8	
+1-8	41-48	sevišķi	_	_	_	_	_	_	_	_	_	_	_	_	r0m	sevišķi	_	_	_	_	advmod	basic	1-9	
+1-9	49-54	tāpēc	_	_	_	_	_	_	_	_	_	_	_	_	r0c	tāpēc	_	_	_	_	advcl	basic	1-5	
+1-10	54-55	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-16	
+1-11	56-58	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark	basic	1-16	
+1-12	59-68	Kristīnes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	Kristīne	person[1]	*[1]	*[1]	*->1-1	nmod	basic	1-15	
+1-13	69-77	Gailītes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	Gailīte	person[1]	*[1]	*[1]	*->1-1	flat:name	basic	1-12	
+1-14	78-91	iepriekšējais	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsnyp	iepriekšējs	_	_	_	_	amod	basic	1-15	
+1-15	92-104	solokoncerts	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	solokoncerts	_	_	_	_	nsubj	basic	1-16	
+1-16	105-111	notika	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi130an	notikt	_	_	_	_	advcl	basic	1-9	
+1-17	112-117	pirms	_	_	_	_	_	_	_	_	_	_	_	_	sppd	pirms	time[2]	*[2]	_	_	case	basic	1-19	
+1-18	118-125	pieciem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpd	pieci	time[2]	*[2]	_	_	nummod	basic	1-19	
+1-19	126-132	gadiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	gads	time[2]	*[2]	_	_	obl	basic	1-16	
+1-20	132-133	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-5	
+
+#Text="Saņemties uz solokoncertu nav tik vienkārši, ņemot vērā dzīves un darba ritmu.
+2-1	135-136	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	_	_	_	_	punct	basic	2-7	
+2-2	136-145	Saņemties	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i1000n	saņemties	_	_	_	_	ccomp	basic	2-7	
+2-3	146-148	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsa	uz	_	_	_	_	case	basic	2-4	
+2-4	149-161	solokoncertu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	solokoncerts	_	_	_	_	obl	basic	2-2	
+2-5	162-165	nav	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30ay	nebūt	_	_	_	_	cop	basic	2-7	
+2-6	166-169	tik	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0q	tik	_	_	_	_	advmod	basic	2-7	
+2-7	170-179	vienkārši	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	vienkārši	_	_	_	_	root	basic	2-7	
+2-8	179-180	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-9	
+2-9	181-186	ņemot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000n	ņemt	_	_	_	_	advcl	basic	2-7	
+2-10	187-191	vērā	_	_	_	_	_	_	_	_	_	_	_	_	r0p	vērā	_	_	_	_	advmod	basic	2-9	
+2-11	192-198	dzīves	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	dzīve	_	_	_	_	nmod	basic	2-14	
+2-12	199-201	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	2-13	
+2-13	202-207	darba	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	darbs	_	_	_	_	conj	basic	2-11	
+2-14	208-213	ritmu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	ritms	_	_	_	_	obj	basic	2-9	
+2-15	213-214	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-7	
+
+#Text=Turklāt teātrī laiks skrien ātri," pasmaida operdziedātāja.
+3-1	216-223	Turklāt	_	_	_	_	_	_	_	_	_	_	_	_	cs	turklāt	_	_	_	_	mark	basic	3-4	
+3-2	224-230	teātrī	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	teātris	_	_	_	_	obl	basic	3-4	
+3-3	231-236	laiks	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	laiks	_	_	_	_	nsubj	basic	3-4	
+3-4	237-243	skrien	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt130an	skriet	_	_	_	_	parataxis	basic	3-8	
+3-5	244-248	ātri	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	ātri	_	_	_	_	advmod	basic	3-4	
+3-6	248-249	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-4	
+3-7	249-250	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	_	_	_	_	punct	basic	3-4	
+3-8	251-259	pasmaida	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	pasmaidīt	_	_	_	_	root	basic	3-8	
+3-9	260-274	operdziedātāja	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	operdziedātāja	_	_	*[1]	*->1-2	nsubj	basic	3-8	
+3-10	274-275	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-8	
+
+#Text=Šovakar Kristīne Gailīte dziedās duetā ar Sergeju Jēgeru koncertā Duetā ar kontrtenoru.
+4-1	277-284	Šovakar	_	_	_	_	_	_	_	_	_	_	_	_	r0t	šovakar	_	_	_	_	advmod	basic	4-4	
+4-2	285-293	Kristīne	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	Kristīne	person[3]	*[3]	*[1]	*->1-3	nsubj	basic	4-4	
+4-3	294-301	Gailīte	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	Gailīte	person[3]	*[3]	*[1]	*->1-3	flat:name	basic	4-2	
+4-4	302-309	dziedās	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vmnift330an	dziedāt	_	_	_	_	root	basic	4-4	
+4-5	310-315	duetā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	duets	_	_	_	_	obl	basic	4-4	
+4-6	316-318	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case	basic	4-7	
+4-7	319-326	Sergeju	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	Sergejs	person[4]	*[4]	_	_	nmod	basic	4-5	
+4-8	327-333	Jēgeru	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	Jēgers	person[4]	*[4]	_	_	flat:name	basic	4-7	
+4-9	334-342	koncertā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	koncerts	_	_	_	_	nmod	basic	4-10	
+4-10	343-348	Duetā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	duets	event[5]	*[5]	_	_	obl	basic	4-4	
+4-11	349-351	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	event[5]	*[5]	_	_	case	basic	4-12	
+4-12	352-363	kontrtenoru	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	kontrtenoru	event[5]	*[5]	_	_	nmod	basic	4-10	
+4-13	363-364	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	4-4	

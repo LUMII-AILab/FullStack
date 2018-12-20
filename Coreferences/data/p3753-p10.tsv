@@ -1,0 +1,67 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Tieši šīs sarunas brīdī citviet "Lattelecom" birojā notiek tikšanās ar "Huawei" pārstāvjiem, kurā tiek prezentētas gan jaunas programmatūras funkcijas, ar kurām varam jaunināt esošo sistēmu, gan arī rādīti gala iekārtu risinājumi.
+1-1	0-5	Tieši	_	_	_	_	_	_	_	_	_	_	_	_	q	tieši	_	_	_	_	discourse	basic	1-3	
+1-2	6-9	šīs	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsgn	šī	_	_	_	_	det	basic	1-3	
+1-3	10-17	sarunas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	saruna	_	_	_	_	nmod	basic	1-4	
+1-4	18-23	brīdī	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	brīdis	_	_	_	_	obl	basic	1-10	
+1-5	24-31	citviet	_	_	_	_	_	_	_	_	_	_	_	_	r0p	citviet	_	_	_	_	advmod	basic	1-9	
+1-6	32-33	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[1]	*[1]	_	_	punct	basic	1-7	
+1-7	33-43	Lattelecom	_	_	_	_	_	_	_	_	_	_	_	_	np0000	Lattelecom	organization[1]	*[1]	_	_	nmod	basic	1-9	
+1-8	43-44	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[1]	*[1]	_	_	punct	basic	1-7	
+1-9	45-51	birojā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	birojs	_	_	_	_	obl	basic	1-10	
+1-10	52-58	notiek	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipi130an	notikt	_	_	_	_	root	basic	1-10	
+1-11	59-67	tikšanās	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsnr	tikšanās	_	_	*[1]	*->1-1	obl	basic	1-10	
+1-12	68-70	ar	_	_	_	_	_	_	_	_	_	_	_	_	sppd	ar	_	_	_	_	case	basic	1-16	
+1-13	71-72	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[2]	*[2]	_	_	punct	basic	1-14	
+1-14	72-78	Huawei	_	_	_	_	_	_	_	_	_	_	_	_	np0000	Huawei	organization[2]	*[2]	_	_	nmod	basic	1-16	
+1-15	78-79	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[2]	*[2]	_	_	punct	basic	1-14	
+1-16	80-91	pārstāvjiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd2	pārstāvis	_	_	_	_	iobj	basic	1-11	
+1-17	91-92	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-20	
+1-18	93-97	kurā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsln	kura	_	_	*[1]	*->1-2	obl	basic	1-20	
+1-19	98-102	tiek	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vtnipi130an	tikt	_	_	_	_	aux	basic	1-20	
+1-20	103-114	prezentētas	Fem	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfpnpsnp	prezentēt	_	_	_	_	acl	basic	1-11	
+1-21	115-118	gan	_	_	_	_	_	_	_	_	_	_	_	_	cc	gan	_	_	_	_	cc	basic	1-35	
+1-22	119-125	jaunas	Fem	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsgnp	jauna	_	_	*[2]	*->2-1	amod	basic	1-24	
+1-23	126-140	programmatūras	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	programmatūra	_	_	*[2]	*->2-1	nmod	basic	1-24	
+1-24	141-150	funkcijas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	funkcija	_	_	*[2]	*->2-1	nsubj:pass	basic	1-20	
+1-25	150-151	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-28	
+1-26	152-154	ar	_	_	_	_	_	_	_	_	_	_	_	_	sppd	ar	_	_	*[2]	*->2-2	case	basic	1-27	
+1-27	155-160	kurām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur\|PronType=Rel	*	*	pr0fpdn	kura	_	_	*[2]	*->2-2	iobj	basic	1-28	
+1-28	161-166	varam	*	Plur	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	1	*	vonipi31pan	varēt	_	_	_	_	acl	basic	1-24	
+1-29	167-175	jaunināt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	jaunināt	_	_	_	_	xcomp	basic	1-28	
+1-30	176-181	esošo	Fem	Sing	Acc	Pos	*	Pres	*	Pass	*	Aspect=Imp\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Imp	vmnpdfsaapyp	būt	_	_	_	_	amod	basic	1-31	
+1-31	182-189	sistēmu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	sistēma	_	_	_	_	obj	basic	1-29	
+1-32	189-190	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-35	
+1-33	191-194	gan	_	_	_	_	_	_	_	_	_	_	_	_	cc	gan	_	_	_	_	cc	basic	1-35	
+1-34	195-198	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse	basic	1-35	
+1-35	199-205	rādīti	Masc	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpnpsnp	rādīt	_	_	_	_	conj	basic	1-20	
+1-36	206-210	gala	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	gals	_	_	_	_	nmod	basic	1-38	
+1-37	211-218	iekārtu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	iekārta	_	_	_	_	nmod	basic	1-38	
+1-38	219-229	risinājumi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	risinājums	_	_	_	_	nsubj:pass	basic	1-35	
+1-39	229-230	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-10	
+
+#Text=Tātad tuvākajā laikā būs pieejamas gan "Huawei", gan citu ražotāju gala iekārtas.
+2-1	232-237	Tātad	_	_	_	_	_	_	_	_	_	_	_	_	r0c	tātad	_	_	_	_	advmod	basic	2-5	
+2-2	238-246	tuvākajā	Masc	Sing	Loc	Cmp	*	*	*	*	*	Case=Loc\|Degree=Cmp\|Gender=Masc\|Number=Sing	*	*	afmslyc	tuvs	_	_	_	_	amod	basic	2-3	
+2-3	247-252	laikā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	laiks	_	_	_	_	obl	basic	2-5	
+2-4	253-256	būs	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vcnifii30an	būt	_	_	_	_	aux	basic	2-5	
+2-5	257-266	pieejamas	Fem	Plur	Nom	Pos	*	Pres	*	Pass	*	Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	*	vmnpdfpnppnp	pieiet	_	_	_	_	root	basic	2-5	
+2-6	267-270	gan	_	_	_	_	_	_	_	_	_	_	_	_	cc	gan	_	_	_	_	cc	basic	2-8	
+2-7	271-272	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[3]	*[3]	_	_	punct	basic	2-8	
+2-8	272-278	Huawei	_	_	_	_	_	_	_	_	_	_	_	_	np0000	Huawei	organization[3]	*[3]	_	_	nmod	basic	2-15	
+2-9	278-279	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[3]	*[3]	_	_	punct	basic	2-8	
+2-10	279-280	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-13	
+2-11	281-284	gan	_	_	_	_	_	_	_	_	_	_	_	_	cc	gan	_	_	_	_	cc	basic	2-13	
+2-12	285-289	citu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur\|PronType=Ind	*	*	pi0mpgn	cits	_	_	_	_	det	basic	2-13	
+2-13	290-298	ražotāju	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	ražotājs	_	_	_	_	conj	basic	2-8	
+2-14	299-303	gala	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	gals	_	_	_	_	nmod	basic	2-15	
+2-15	304-312	iekārtas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	iekārta	_	_	_	_	nsubj	basic	2-5	
+2-16	312-313	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-5	

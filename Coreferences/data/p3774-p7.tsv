@@ -1,0 +1,140 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Pēc jaunās ēkas apmeklējuma Džovanni Polici ieradās LNB Reto grāmatu un rokrakstu nodaļā Jēkaba ielā, lai iepazītos ar bibliotēkas reto izdevumu kolekciju, kuru veido arī virkne itāļu un Itālijā izdotu grāmatu.
+1-1	0-3	Pēc	_	_	_	_	_	_	_	_	_	_	_	_	spsg	pēc	_	_	_	_	case	basic	1-4	
+1-2	4-10	jaunās	Fem	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsgyp	jauna	_	_	_	_	amod	basic	1-3	
+1-3	11-15	ēkas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	ēka	_	_	_	_	nmod	basic	1-4	
+1-4	16-27	apmeklējuma	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	apmeklējums	_	_	_	_	obl	basic	1-7	
+1-5	28-36	Džovanni	_	_	_	_	_	_	_	_	_	_	_	_	np0000	Džovanni	person[1]	*[1]	*[2]	*->2-1	nsubj	basic	1-7	
+1-6	37-43	Polici	_	_	_	_	_	_	_	_	_	_	_	_	np0000	Polici	person[1]	*[1]	*[2]	*->2-1	flat:name	basic	1-5	
+1-7	44-51	ieradās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi130an	ierasties	_	_	_	_	root	basic	1-7	
+1-8	52-55	LNB	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	LNB	organization[2]|organization[3]	*[2]|https://en.wikipedia.org/wiki/National\_Library\_of\_Latvia[3]	_	_	nmod	basic	1-13	
+1-9	56-60	Reto	Fem	Plur	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpgyp	reta	organization[2]	*[2]	_	_	amod	basic	1-10	
+1-10	61-68	grāmatu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	grāmata	organization[2]	*[2]	_	_	nmod	basic	1-13	
+1-11	69-71	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	organization[2]	*[2]	_	_	cc	basic	1-12	
+1-12	72-81	rokrakstu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	rokraksts	organization[2]	*[2]	_	_	conj	basic	1-10	
+1-13	82-88	nodaļā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	nodaļa	organization[2]	*[2]	_	_	obl	basic	1-7	
+1-14	89-95	Jēkaba	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Jēkabs	location[4]	*[4]	_	_	nmod	basic	1-15	
+1-15	96-100	ielā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	iela	location[4]	*[4]	_	_	acl	basic	1-13	
+1-16	100-101	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-18	
+1-17	102-105	lai	_	_	_	_	_	_	_	_	_	_	_	_	cs	lai	_	_	_	_	mark	basic	1-18	
+1-18	106-115	iepazītos	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Pos\|Reflex=Yes\|VerbForm=Fin\|Voice=Act	*	*	vmyc0i100an	iepazīties	_	_	_	_	advcl	basic	1-7	
+1-19	116-118	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case	basic	1-23	
+1-20	119-130	bibliotēkas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	bibliotēka	_	_	*[1]	*->1-1	nmod	basic	1-23	
+1-21	131-135	reto	Masc	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsayp	rets	_	_	*[1]	*->1-1	amod	basic	1-22	
+1-22	136-144	izdevumu	Masc	Ptan	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	ncmdg1	izdevumi	_	_	*[1]	*->1-1	nmod	basic	1-23	
+1-23	145-154	kolekciju	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	kolekcija	_	_	*[1]	*->1-1	iobj	basic	1-18	
+1-24	154-155	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-26	
+1-25	156-160	kuru	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsan	kura	_	_	*[1]	*->1-2	obj	basic	1-26	
+1-26	161-166	veido	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt230an	veidot	_	_	_	_	acl	basic	1-23	
+1-27	167-170	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse	basic	1-28	
+1-28	171-177	virkne	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	virkne	_	_	_	_	nsubj	basic	1-26	
+1-29	178-183	itāļu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	itālis	_	_	_	_	nmod	basic	1-33	
+1-30	184-186	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-32	
+1-31	187-194	Itālijā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	Itālija	GPE	*	_	_	obl	basic	1-32	
+1-32	195-201	izdotu	Fem	Plur	Gen	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Gen\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfpgpsnp	izdot	_	_	_	_	conj	basic	1-29	
+1-33	202-209	grāmatu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	grāmata	_	_	_	_	nmod	basic	1-28	
+1-34	209-210	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-7	
+
+#Text=LNB direktors vēstniekam bija sarūpējis pārsteigumu: rādot 1809. gadā izdoto Luidži Lanzi darbu “Storia pittorica della Italia dal risorgimento delle Belle Arti fin presso al fine del XVIII secolo" un stāstot, kā šis izdevums nokļuvis Nacionālajā bibliotēkā, noslēgumā Andris Vilks atšķīra grāmatas pēdējās lappuses, kuras rotāja unikāls fakts - Stendāla oriģinālajā rokrakstā lasāmi viņa pieraksti.
+2-1	212-215	LNB	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	LNB	organization	https://en.wikipedia.org/wiki/National\_Library\_of\_Latvia	*[3]	*->3-1	nmod	basic	2-2	
+2-2	216-225	direktors	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	direktors	_	_	*[3]	*->3-1	nsubj	basic	2-5	
+2-3	226-236	vēstniekam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	vēstnieks	_	_	*[2]	*->2-2	iobj	basic	2-5	
+2-4	237-241	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vcnisii30an	būt	_	_	_	_	aux	basic	2-5	
+2-5	242-251	sarūpējis	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnasnp	sarūpēt	_	_	_	_	root	basic	2-5	
+2-6	252-263	pārsteigumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	pārsteigums	_	_	_	_	obj	basic	2-5	
+2-7	263-264	:	_	_	_	_	_	_	_	_	_	_	_	_	zo	:	_	_	_	_	punct	basic	2-46	
+2-8	265-270	rādot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000	rādīt	_	_	_	_	advcl	basic	2-46	
+2-9	271-276	1809.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	1809.	time[5]	*[5]	_	_	amod	basic	2-10	
+2-10	277-281	gadā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	gads	time[5]	*[5]	_	_	obl	basic	2-11	
+2-11	282-288	izdoto	Fem	Sing	Acc	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsapsyp	izdot	_	_	_	_	amod	basic	2-14	
+2-12	289-295	Luidži	_	_	_	_	_	_	_	_	_	_	_	_	np0000	Luidži	person[6]	https://en.wikipedia.org/wiki/Luigi\_Lanzi[6]	*[4]	*->4-1	nmod	basic	2-14	
+2-13	296-301	Lanzi	_	_	_	_	_	_	_	_	_	_	_	_	np0000	Lanzi	person[6]	https://en.wikipedia.org/wiki/Luigi\_Lanzi[6]	*[4]	*->4-1	flat:name	basic	2-12	
+2-14	302-307	darbu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	darbs	_	_	*[4]	*->4-1	nmod	basic	2-16	
+2-15	308-309	“	_	_	_	_	_	_	_	_	_	_	_	_	zq	“	product[7]	*[7]	*[4]	*->4-2	punct	basic	2-16	
+2-16	309-315	Storia	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Storia	product[7]	*[7]	*[4]	*->4-2	obj	basic	2-8	
+2-17	316-325	pittorica	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	pittorica	product[7]	*[7]	*[4]	*->4-2	flat	basic	2-16	
+2-18	326-331	della	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	della	product[7]	*[7]	*[4]	*->4-2	flat	basic	2-16	
+2-19	332-338	Italia	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Italia	product[7]	*[7]	*[4]	*->4-2	flat	basic	2-16	
+2-20	339-342	dal	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	dal	product[7]	*[7]	*[4]	*->4-2	flat	basic	2-16	
+2-21	343-355	risorgimento	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	risorgimento	product[7]	*[7]	*[4]	*->4-2	flat	basic	2-16	
+2-22	356-361	delle	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	delle	product[7]	*[7]	*[4]	*->4-2	flat	basic	2-16	
+2-23	362-367	Belle	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Belle	product[7]	*[7]	*[4]	*->4-2	flat	basic	2-16	
+2-24	368-372	Arti	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Arti	product[7]	*[7]	*[4]	*->4-2	flat	basic	2-16	
+2-25	373-376	fin	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	fin	product[7]	*[7]	*[4]	*->4-2	flat	basic	2-16	
+2-26	377-383	presso	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	presso	product[7]	*[7]	*[4]	*->4-2	flat	basic	2-16	
+2-27	384-386	al	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	al	product[7]	*[7]	*[4]	*->4-2	flat	basic	2-16	
+2-28	387-391	fine	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	fine	product[7]	*[7]	*[4]	*->4-2	flat	basic	2-16	
+2-29	392-395	del	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	del	product[7]	*[7]	*[4]	*->4-2	flat	basic	2-16	
+2-30	396-401	XVIII	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	XVIII	product[7]	*[7]	*[4]	*->4-2	flat	basic	2-16	
+2-31	402-408	secolo	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	secolo	product[7]	*[7]	*[4]	*->4-2	flat	basic	2-16	
+2-32	408-409	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	product[7]	*[7]	*[4]	*->4-2	punct	basic	2-16	
+2-33	410-412	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	2-34	
+2-34	413-420	stāstot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000	stāstīt	_	_	_	_	conj	basic	2-8	
+2-35	420-421	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-39	
+2-36	422-424	kā	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0m	kā	_	_	_	_	advmod	basic	2-39	
+2-37	425-428	šis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	šis	_	_	*[4]	*->4-3	det	basic	2-38	
+2-38	429-437	izdevums	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	izdevums	_	_	*[4]	*->4-3	nsubj	basic	2-39	
+2-39	438-446	nokļuvis	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnasnp	nokļūt	_	_	_	_	ccomp	basic	2-34	
+2-40	447-458	Nacionālajā	Fem	Sing	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfslyp	nacionāla	organization[8]	https://en.wikipedia.org/wiki/National\_Library\_of\_Latvia[8]	_	_	amod	basic	2-41	
+2-41	459-469	bibliotēkā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	bibliotēka	organization[8]	https://en.wikipedia.org/wiki/National\_Library\_of\_Latvia[8]	_	_	obl	basic	2-39	
+2-42	469-470	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-39	
+2-43	471-480	noslēgumā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	noslēgums	_	_	_	_	obl	basic	2-46	
+2-44	481-487	Andris	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	Andris	person[9]	https://lv.wikipedia.org/wiki/Andris\_Vilks\_(filologs)[9]	*[3]	*->3-2	nsubj	basic	2-46	
+2-45	488-493	Vilks	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Vilks	person[9]	https://lv.wikipedia.org/wiki/Andris\_Vilks\_(filologs)[9]	*[3]	*->3-2	flat:name	basic	2-44	
+2-46	494-501	atšķīra	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	atšķirt	_	_	_	_	conj	basic	2-5	
+2-47	502-510	grāmatas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	grāmata	_	_	*[4]	*->4-4	nmod	basic	2-49	
+2-48	511-518	pēdējās	Fem	Plur	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	arfpayp	pēdējā	_	_	*[5]	*->5-1	amod	basic	2-49	
+2-49	519-527	lappuses	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa5	lappuse	_	_	*[5]	*->5-1	obj	basic	2-46	
+2-50	527-528	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-52	
+2-51	529-534	kuras	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur\|PronType=Rel	*	*	pr0fpan	kura	_	_	*[5]	*->5-2	obj	basic	2-52	
+2-52	535-541	rotāja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist230an	rotāt	_	_	_	_	acl	basic	2-49	
+2-53	542-549	unikāls	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsnnp	unikāls	_	_	_	_	amod	basic	2-54	
+2-54	550-555	fakts	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	fakts	_	_	_	_	nsubj	basic	2-52	
+2-55	556-557	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	_	_	punct	basic	2-61	
+2-56	558-566	Stendāla	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Stendāls	person	https://en.wikipedia.org/wiki/Stendhal	*[6]	*->6-1	nmod	basic	2-58	
+2-57	567-578	oriģinālajā	Masc	Sing	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armslyp	oriģināls	_	_	_	_	amod	basic	2-58	
+2-58	579-588	rokrakstā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	rokraksts	_	_	_	_	obl	basic	2-59	
+2-59	589-595	lasāmi	Masc	Plur	Nom	Pos	*	Pres	*	Pass	*	Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	*	vmnpdmpnppnp	lasīt	_	_	_	_	amod	basic	2-61	
+2-60	596-600	viņa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msgn	viņš	_	_	*[6]	*->6-2	det	basic	2-61	
+2-61	601-610	pieraksti	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	pieraksts	_	_	_	_	acl	basic	2-54	
+2-62	610-611	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-5	
+
+#Text=Itāļu delegācija bija sajūsmināta par šo pārsteigumu un izteica cerību, ka arī jaunajā ēkā bibliotēkas apmeklētājiem tiks piedāvāti aizraujoši stāsti par bibliotēkas vērtībām un veicināta kultūras pieejamība sabiedrībai.
+3-1	613-618	Itāļu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	itālis	_	_	_	_	nmod	basic	3-2	
+3-2	619-629	delegācija	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	delegācija	_	_	_	_	nsubj:pass	basic	3-4	
+3-3	630-634	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vcnisii30an	būt	_	_	_	_	aux	basic	3-4	
+3-4	635-646	sajūsmināta	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnpsnp	sajūsmināt	_	_	_	_	root	basic	3-4	
+3-5	647-650	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	_	_	case	basic	3-7	
+3-6	651-653	šo	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	šis	_	_	_	_	det	basic	3-7	
+3-7	654-665	pārsteigumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	pārsteigums	_	_	_	_	iobj	basic	3-4	
+3-8	666-668	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	3-9	
+3-9	669-676	izteica	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	izteikt	_	_	_	_	conj	basic	3-4	
+3-10	677-683	cerību	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	cerība	_	_	_	_	obj	basic	3-9	
+3-11	683-684	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-19	
+3-12	685-687	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark	basic	3-19	
+3-13	688-691	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse	basic	3-19	
+3-14	692-699	jaunajā	Fem	Sing	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affslyp	jauna	_	_	_	_	amod	basic	3-15	
+3-15	700-703	ēkā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	ēka	_	_	_	_	obl	basic	3-19	
+3-16	704-715	bibliotēkas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	bibliotēka	_	_	_	_	nmod	basic	3-17	
+3-17	716-729	apmeklētājiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	apmeklētājs	_	_	_	_	iobj	basic	3-19	
+3-18	730-734	tiks	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vtnifi130an	tikt	_	_	_	_	aux	basic	3-19	
+3-19	735-744	piedāvāti	Masc	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpnpsnp	piedāvāt	_	_	_	_	acl	basic	3-10	
+3-20	745-755	aizraujoši	Masc	Plur	Nom	Pos	*	*	*	Act	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur\|VerbForm=Part\|Voice=Act	*	*	afmpnnp	aizraujošs	_	_	_	_	amod	basic	3-21	
+3-21	756-762	stāsti	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	stāsts	_	_	_	_	nsubj:pass	basic	3-19	
+3-22	763-766	par	_	_	_	_	_	_	_	_	_	_	_	_	sppd	par	_	_	_	_	case	basic	3-24	
+3-23	767-778	bibliotēkas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	bibliotēka	_	_	_	_	nmod	basic	3-24	
+3-24	779-787	vērtībām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	vērtība	_	_	_	_	obl	basic	3-21	
+3-25	788-790	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	3-26	
+3-26	791-800	veicināta	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnpsnp	veicināt	_	_	_	_	conj	basic	3-19	
+3-27	801-809	kultūras	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	kultūra	_	_	_	_	nmod	basic	3-28	
+3-28	810-820	pieejamība	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	pieejamība	_	_	_	_	nsubj:pass	basic	3-26	
+3-29	821-832	sabiedrībai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	sabiedrība	_	_	_	_	nmod	basic	3-28	
+3-30	832-833	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-4	

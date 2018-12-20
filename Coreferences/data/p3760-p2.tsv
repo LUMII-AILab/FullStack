@@ -1,0 +1,330 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=6.jūlijā 20.00 Mārkalnes brīvdabas estrādē „Lakstīgalas" Latvijas Nacionālā teātra aktieru Zigurda Neimaņa un Voldemāra Šoriņa, dziedātājas Sandras koncerts.
+1-1	0-2	6.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	6.	time[1]	*[1]	_	_	amod	basic	1-2	
+1-2	2-8	jūlijā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	jūlijs	time[1]	*[1]	_	_	obl	basic	1-22	
+1-3	9-14	20.00	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	20.00	time[1]	*[1]	_	_	nummod	basic	1-22	
+1-4	15-24	Mārkalnes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	Mārkalne	location[2]|GPE[3]	*[2]|*[3]	*[1]	*->1-1	nmod	basic	1-6	
+1-5	25-34	brīvdabas	*	*	Gen	*	*	*	*	*	*	Case=Gen	*	*	nc00gg	brīvdabas	location[2]	*[2]	*[1]	*->1-1	nmod	basic	1-6	
+1-6	35-42	estrādē	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	estrāde	location[2]	*[2]	*[1]	*->1-1	nmod	basic	1-8	
+1-7	43-44	„	_	_	_	_	_	_	_	_	_	_	_	_	zq	„	location[2]	*[2]	*[1]	*->1-2	punct	basic	1-8	
+1-8	44-55	Lakstīgalas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	lakstīgala	location[2]	*[2]	*[1]	*->1-2	obl	basic	1-22	
+1-9	55-56	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	location[2]	*[2]	*[1]	*->1-2	punct	basic	1-8	
+1-10	57-65	Latvijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Latvija	organization[4]|GPE[5]	*[4]|*[5]	*[2]	*->2-1	nmod	basic	1-12	
+1-11	66-75	Nacionālā	Masc	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsgyp	nacionāls	organization[4]	*[4]	*[2]	*->2-1	amod	basic	1-12	
+1-12	76-82	teātra	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	teātris	organization[4]	*[4]	*[2]	*->2-1	nmod	basic	1-13	
+1-13	83-90	aktieru	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	aktieris	_	_	*[2]	*->2-1	nmod	basic	1-14	
+1-14	91-98	Zigurda	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Zigurds	person[6]	https://lv.wikipedia.org/wiki/Zigurds\_Neimanis[6]	*[2]	*->2-2	nmod	basic	1-22	
+1-15	99-106	Neimaņa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg2	Neimanis	person[6]	https://lv.wikipedia.org/wiki/Zigurds\_Neimanis[6]	*[2]	*->2-2	flat:name	basic	1-14	
+1-16	107-109	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	*[2]	*->2-2	cc	basic	1-17	
+1-17	110-119	Voldemāra	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Voldemārs	person[7]	*[7]	*[2]	*->2-2	conj	basic	1-14	
+1-18	120-126	Šoriņa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Šoriņš	person[7]	*[7]	*[2]	*->2-2	flat:name	basic	1-17	
+1-19	126-127	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-21	
+1-20	128-139	dziedātājas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	dziedātāja	_	_	*[3]	*->3-1	nmod	basic	1-21	
+1-21	140-147	Sandras	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Sandra	person	*	*[3]	*->3-2	conj	basic	1-14	
+1-22	148-156	koncerts	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	koncerts	_	_	_	_	root	basic	1-22	
+1-23	156-157	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-22	
+
+#Text=22.00 - balle, spēlēs „Sandra" un DJ Andža.
+2-1	159-164	22.00	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	22.00	time	*	_	_	nummod	basic	2-2	
+2-2	165-166	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	_	_	root	basic	2-2	
+2-3	167-172	balle	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	balle	_	_	_	_	nsubj	basic	2-2	
+2-4	172-173	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-5	
+2-5	174-180	spēlēs	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vmnift230an	spēlēt	_	_	_	_	conj	basic	2-2	
+2-6	181-182	„	_	_	_	_	_	_	_	_	_	_	_	_	zq	„	organization[8]	*[8]	_	_	punct	basic	2-7	
+2-7	182-188	Sandra	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Sandra	organization[8]	*[8]	_	_	nsubj	basic	2-5	
+2-8	188-189	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[8]	*[8]	_	_	punct	basic	2-7	
+2-9	190-192	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	2-11	
+2-10	193-195	DJ	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	DJ	person[9]	*[9]	_	_	nmod	basic	2-11	
+2-11	196-201	Andža	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn4	Andža	person[9]	*[9]	_	_	conj	basic	2-7	
+2-12	201-202	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-2	
+
+#Text=6.jūlijā 22.00 Pededzes estrādē (lietus gadījumā - tautas namā) diskotēka.
+3-1	204-206	6.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	6.	time[10]	*[10]	_	_	amod	basic	3-2	
+3-2	206-212	jūlijā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	jūlijs	time[10]	*[10]	_	_	obl	basic	3-13	
+3-3	213-218	22.00	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	22.00	time[10]	*[10]	_	_	nummod	basic	3-13	
+3-4	219-227	Pededzes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	Pededze	location[11]|GPE[12]	*[11]|*[12]	_	_	nmod	basic	3-5	
+3-5	228-235	estrādē	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	estrāde	location[11]	*[11]	_	_	obl	basic	3-13	
+3-6	236-237	(	_	_	_	_	_	_	_	_	_	_	_	_	zb	(	_	_	_	_	punct	basic	3-9	
+3-7	237-243	lietus	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg3	lietus	_	_	_	_	nmod	basic	3-8	
+3-8	244-252	gadījumā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	gadījums	_	_	_	_	obl	basic	3-9	
+3-9	253-254	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	_	_	parataxis	basic	3-13	
+3-10	255-261	tautas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	tauta	_	_	_	_	nmod	basic	3-11	
+3-11	262-266	namā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	nams	_	_	_	_	obl	basic	3-9	
+3-12	266-267	)	_	_	_	_	_	_	_	_	_	_	_	_	zb	)	_	_	_	_	punct	basic	3-9	
+3-13	268-277	diskotēka	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	diskotēka	_	_	_	_	root	basic	3-13	
+3-14	277-278	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-13	
+
+#Text=7.jūlijā 12.00 Alūksnes ezerā Baltijas čempionāts ūdens motosportā.
+4-1	280-282	7.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	7.	time[13]	*[13]	_	_	amod	basic	4-2	
+4-2	282-288	jūlijā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	jūlijs	time[13]	*[13]	_	_	obl	basic	4-7	
+4-3	289-294	12.00	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	12.00	time[13]	*[13]	_	_	nummod	basic	4-7	
+4-4	295-303	Alūksnes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	Alūksne	location[14]|GPE[15]	*[14]|*[15]	_	_	nmod	basic	4-5	
+4-5	304-309	ezerā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	ezers	location[14]	*[14]	_	_	obl	basic	4-7	
+4-6	310-318	Baltijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Baltija	event[16]|location[17]	*[16]|*[17]	_	_	nmod	basic	4-7	
+4-7	319-329	čempionāts	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	čempionāts	event[16]	*[16]	_	_	root	basic	4-7	
+4-8	330-335	ūdens	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	ūdens	event[16]	*[16]	_	_	nmod	basic	4-9	
+4-9	336-346	motosportā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	motosports	event[16]	*[16]	_	_	acl	basic	4-7	
+4-10	346-347	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	4-7	
+
+#Text=12.00 - sacensību atklāšana un starts (Pilssalā).
+5-1	349-354	12.00	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	12.00	time	*	_	_	nummod	basic	5-2	
+5-2	355-356	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	_	_	root	basic	5-2	
+5-3	357-366	sacensību	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	sacensība	_	_	_	_	nmod	basic	5-4	
+5-4	367-376	atklāšana	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	atklāšana	_	_	_	_	nsubj	basic	5-2	
+5-5	377-379	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	5-6	
+5-6	380-386	starts	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	starts	_	_	_	_	conj	basic	5-4	
+5-7	387-388	(	_	_	_	_	_	_	_	_	_	_	_	_	zb	(	_	_	_	_	punct	basic	5-8	
+5-8	388-396	Pilssalā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	Pilssala	location	*	_	_	parataxis	basic	5-6	
+5-9	396-397	)	_	_	_	_	_	_	_	_	_	_	_	_	zb	)	_	_	_	_	punct	basic	5-8	
+5-10	397-398	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	5-2	
+
+#Text=Pusstundu pirms atklāšanas pasākumā muzicēs Ernsta Glika Alūksnes Valsts ģimnāzijas pūtēju orķestris.
+6-1	400-409	Pusstundu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	pusstunda	_	_	_	_	obl	basic	6-5	
+6-2	410-415	pirms	_	_	_	_	_	_	_	_	_	_	_	_	spsg	pirms	_	_	_	_	case	basic	6-3	
+6-3	416-426	atklāšanas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	atklāšana	_	_	_	_	obl	basic	6-5	
+6-4	427-435	pasākumā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	pasākums	_	_	_	_	obl	basic	6-5	
+6-5	436-443	muzicēs	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vmnift230an	muzicēt	_	_	_	_	root	basic	6-5	
+6-6	444-450	Ernsta	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Ernsts	organization[18]|organization[19]|person[20]	*[18]|*[19]|*[20]	_	_	nmod	basic	6-10	
+6-7	451-456	Glika	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Gliks	organization[18]|organization[19]|person[20]	*[18]|*[19]|*[20]	_	_	flat:name	basic	6-6	
+6-8	457-465	Alūksnes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	Alūksne	organization[18]|organization[19]|GPE[21]	*[18]|*[19]|*[21]	_	_	nmod	basic	6-10	
+6-9	466-472	Valsts	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	valsts	organization[18]|organization[19]	*[18]|*[19]	_	_	nmod	basic	6-10	
+6-10	473-483	ģimnāzijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	ģimnāzija	organization[18]|organization[19]	*[18]|*[19]	_	_	nmod	basic	6-12	
+6-11	484-490	pūtēju	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	pūtējs	organization[18]	*[18]	_	_	nmod	basic	6-12	
+6-12	491-500	orķestris	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	orķestris	organization[18]	*[18]	_	_	nsubj	basic	6-5	
+6-13	500-501	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	6-5	
+
+#Text=19.00 - apbalvošanas ceremonija.
+7-1	503-508	19.00	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	19.00	time	*	_	_	nummod	basic	7-2	
+7-2	509-510	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	_	_	root	basic	7-2	
+7-3	511-523	apbalvošanas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	apbalvošana	_	_	_	_	nmod	basic	7-4	
+7-4	524-534	ceremonija	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	ceremonija	_	_	_	_	nsubj	basic	7-2	
+7-5	534-535	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	7-2	
+
+#Text=7. un 8.jūlijā 12.00 Alūksnes Muižas parkā - Livonijas kausa izcīņa apvidus loka šaušanā.
+8-1	537-539	7.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	7.	time[22]	*[22]	_	_	amod	basic	8-4	
+8-2	540-542	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	time[22]	*[22]	_	_	cc	basic	8-3	
+8-3	543-545	8.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	8.	time[22]	*[22]	_	_	conj	basic	8-1	
+8-4	545-551	jūlijā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	jūlijs	time[22]	*[22]	_	_	obl	basic	8-9	
+8-5	552-557	12.00	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	12.00	time[22]	*[22]	_	_	nummod	basic	8-9	
+8-6	558-566	Alūksnes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	Alūksne	location[23]|GPE[24]	*[23]|*[24]	_	_	nmod	basic	8-8	
+8-7	567-573	Muižas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	muiža	location[23]	*[23]	_	_	nmod	basic	8-8	
+8-8	574-579	parkā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	parks	location[23]	*[23]	_	_	obl	basic	8-9	
+8-9	580-581	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	_	_	root	basic	8-9	
+8-10	582-591	Livonijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Livonija	event[25]|location[26]	*[25]|*[26]	_	_	nmod	basic	8-11	
+8-11	592-597	kausa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	kauss	event[25]	*[25]	_	_	nmod	basic	8-12	
+8-12	598-604	izcīņa	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	izcīņa	event[25]	*[25]	_	_	nsubj	basic	8-9	
+8-13	605-612	apvidus	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg3	apvidus	event[25]	*[25]	_	_	nmod	basic	8-15	
+8-14	613-617	loka	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	loks	event[25]	*[25]	_	_	nmod	basic	8-15	
+8-15	618-625	šaušanā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	šaušana	event[25]	*[25]	_	_	acl	basic	8-12	
+8-16	625-626	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	8-9	
+
+#Text=7.jūlijā 19.00 Prinduļu kaujas vietā Ziemera pagasta „Prinduļos" - piemiņas brīdis.
+9-1	628-630	7.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	7.	time[27]	*[27]	_	_	amod	basic	9-2	
+9-2	630-636	jūlijā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	jūlijs	time[27]	*[27]	_	_	obl	basic	9-12	
+9-3	637-642	19.00	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	19.00	time[27]	*[27]	_	_	nummod	basic	9-12	
+9-4	643-651	Prinduļu	Masc	Ptan	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	npmdg1	Prinduļi	event[28]	*[28]	*[4]	*->4-1	nmod	basic	9-6	
+9-5	652-658	kaujas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	kauja	event[28]	*[28]	*[4]	*->4-1	nmod	basic	9-6	
+9-6	659-664	vietā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	vieta	_	_	*[4]	*->4-1	nmod	basic	9-10	
+9-7	665-672	Ziemera	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Ziemers	location[29]|GPE[30]	*[29]|*[30]	_	_	nmod	basic	9-8	
+9-8	673-680	pagasta	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	pagasts	location[29]|GPE[30]	*[29]|*[30]	_	_	nmod	basic	9-10	
+9-9	681-682	„	_	_	_	_	_	_	_	_	_	_	_	_	zq	„	location[29]	*[29]	*[4]	*->4-2	punct	basic	9-10	
+9-10	682-691	Prinduļos	Masc	Ptan	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Ptan	*	*	npmdl1	Prinduļi	location[29]	*[29]	*[4]	*->4-2	obl	basic	9-12	
+9-11	691-692	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	location[29]	*[29]	*[4]	*->4-2	punct	basic	9-10	
+9-12	693-694	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	_	_	root	basic	9-12	
+9-13	695-703	piemiņas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	piemiņa	_	_	_	_	nmod	basic	9-14	
+9-14	704-710	brīdis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	brīdis	_	_	_	_	nsubj	basic	9-12	
+9-15	710-711	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	9-12	
+
+#Text=7.jūlijā 22.00 Alūksnes Pilssalas estrādē - „Samantas Dance Party".
+10-1	713-715	7.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	7.	time[31]	*[31]	_	_	amod	basic	10-2	
+10-2	715-721	jūlijā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	jūlijs	time[31]	*[31]	_	_	obl	basic	10-7	
+10-3	722-727	22.00	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	22.00	time[31]	*[31]	_	_	nummod	basic	10-7	
+10-4	728-736	Alūksnes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	Alūksne	location[32]|GPE[33]	*[32]|*[33]	_	_	nmod	basic	10-6	
+10-5	737-746	Pilssalas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Pilssala	location[32]	*[32]	_	_	nmod	basic	10-6	
+10-6	747-754	estrādē	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	estrāde	location[32]	*[32]	_	_	obl	basic	10-7	
+10-7	755-756	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	_	_	root	basic	10-7	
+10-8	757-758	„	_	_	_	_	_	_	_	_	_	_	_	_	zq	„	event[34]	*[34]	_	_	punct	basic	10-10	
+10-9	758-766	Samantas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Samanta	event[34]|person[35]	*[34]|*[35]	_	_	nmod	basic	10-10	
+10-10	767-772	Dance	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Dance	event[34]	*[34]	_	_	nsubj	basic	10-7	
+10-11	773-778	Party	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Party	event[34]	*[34]	_	_	flat:name	basic	10-10	
+10-12	778-779	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	event[34]	*[34]	_	_	punct	basic	10-10	
+10-13	779-780	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	10-7	
+
+#Text=Piedalīsies Samanta Tīna, DJ Japānis, grupa „Mono".
+11-1	782-793	Piedalīsies	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vmyifi330an	piedalīties	_	_	_	_	root	basic	11-1	
+11-2	794-801	Samanta	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Samanta	person[36]	*[36]	_	_	nsubj	basic	11-1	
+11-3	802-806	Tīna	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Tīna	person[36]	*[36]	_	_	flat:name	basic	11-2	
+11-4	806-807	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	11-6	
+11-5	808-810	DJ	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	DJ	person[37]	*[37]	_	_	nmod	basic	11-6	
+11-6	811-818	Japānis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	japānis	person[37]	*[37]	_	_	conj	basic	11-2	
+11-7	818-819	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	11-10	
+11-8	820-825	grupa	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	grupa	_	_	*[5]	*->5-1	nmod	basic	11-10	
+11-9	826-827	„	_	_	_	_	_	_	_	_	_	_	_	_	zq	„	organization[38]	*[38]	*[5]	*->5-2	punct	basic	11-10	
+11-10	827-831	Mono	_	_	_	_	_	_	_	_	_	_	_	_	np0000	Mono	organization[38]	*[38]	*[5]	*->5-2	conj	basic	11-2	
+11-11	831-832	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[38]	*[38]	*[5]	*->5-2	punct	basic	11-10	
+11-12	832-833	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	11-1	
+
+#Text=9.jūlijā 17.00 Alūksnes Pilssalas stadionā - ielu basketbola sacensības „Ghetto basket".
+12-1	835-837	9.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	9.	time[39]	*[39]	_	_	amod	basic	12-2	
+12-2	837-843	jūlijā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	jūlijs	time[39]	*[39]	_	_	obl	basic	12-7	
+12-3	844-849	17.00	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	17.00	time[39]	*[39]	_	_	nummod	basic	12-7	
+12-4	850-858	Alūksnes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	Alūksne	location[40]|GPE[41]	*[40]|*[41]	_	_	nmod	basic	12-6	
+12-5	859-868	Pilssalas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Pilssala	location[40]	*[40]	_	_	nmod	basic	12-6	
+12-6	869-877	stadionā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	stadions	location[40]	*[40]	_	_	obl	basic	12-7	
+12-7	878-879	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	_	_	root	basic	12-7	
+12-8	880-884	ielu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	iela	_	_	*[6]	*->6-1	nmod	basic	12-10	
+12-9	885-895	basketbola	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	basketbols	_	_	*[6]	*->6-1	nmod	basic	12-10	
+12-10	896-906	sacensības	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	sacensība	_	_	*[6]	*->6-1	nmod	basic	12-12	
+12-11	907-908	„	_	_	_	_	_	_	_	_	_	_	_	_	zq	„	event[42]	*[42]	*[6]	*->6-2	punct	basic	12-12	
+12-12	908-914	Ghetto	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Ghetto	event[42]	*[42]	*[6]	*->6-2	nsubj	basic	12-7	
+12-13	915-921	basket	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	basket	event[42]	*[42]	*[6]	*->6-2	flat:name	basic	12-12	
+12-14	921-922	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	event[42]	*[42]	*[6]	*->6-2	punct	basic	12-12	
+12-15	922-923	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	12-7	
+
+#Text=9. - 11.jūlijā Alūksnē - pūtēju orķestru sadraudzības svētki „Mūzika veido Eiropu".
+13-1	925-927	9.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	9.	time[43]	*[43]	_	_	amod	basic	13-4	
+13-2	928-929	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	time[43]	*[43]	_	_	punct	basic	13-3	
+13-3	930-933	11.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	11.	time[43]	*[43]	_	_	conj	basic	13-1	
+13-4	933-939	jūlijā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	jūlijs	time[43]	*[43]	_	_	obl	basic	13-6	
+13-5	940-947	Alūksnē	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl5	Alūksne	GPE	*	_	_	obl	basic	13-6	
+13-6	948-949	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	_	_	root	basic	13-6	
+13-7	950-956	pūtēju	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	pūtējs	_	_	*[7]	*->7-1	nmod	basic	13-8	
+13-8	957-965	orķestru	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	orķestris	_	_	*[7]	*->7-1	nmod	basic	13-10	
+13-9	966-978	sadraudzības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	sadraudzība	_	_	*[7]	*->7-1	nmod	basic	13-10	
+13-10	979-985	svētki	Masc	Ptan	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Ptan	*	*	ncmdn1	svētki	_	_	*[7]	*->7-1	nmod	basic	13-13	
+13-11	986-987	„	_	_	_	_	_	_	_	_	_	_	_	_	zq	„	event[44]	*[44]	*[7]	*->7-2	punct	basic	13-13	
+13-12	987-993	Mūzika	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	mūzika	event[44]	*[44]	*[7]	*->7-2	nsubj	basic	13-13	
+13-13	994-999	veido	*	Sing	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=2\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	2	*	vmnipt22san	veidot	event[44]	*[44]	*[7]	*->7-2	nsubj	basic	13-6	
+13-14	1000-1006	Eiropu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	Eiropa	event[44]|location[45]	*[44]|*[45]	*[7]	*->7-2	obj	basic	13-13	
+13-15	1006-1007	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	event[44]	*[44]	*[7]	*->7-2	punct	basic	13-13	
+13-16	1007-1008	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	13-6	
+
+#Text=9.jūlijā 16.00 administratīvās ēkas laukumā - sadraudzības dienu oficiāla atklāšanas ceremonija un koncerts.
+14-1	1010-1012	9.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	9.	time[46]	*[46]	_	_	amod	basic	14-2	
+14-2	1012-1018	jūlijā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	jūlijs	time[46]	*[46]	_	_	obl	basic	14-7	
+14-3	1019-1024	16.00	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	16.00	time[46]	*[46]	_	_	nummod	basic	14-7	
+14-4	1025-1040	administratīvās	Fem	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsgyp	administratīva	_	_	_	_	amod	basic	14-5	
+14-5	1041-1045	ēkas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	ēka	_	_	_	_	nmod	basic	14-6	
+14-6	1046-1053	laukumā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	laukums	_	_	_	_	obl	basic	14-7	
+14-7	1054-1055	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	_	_	root	basic	14-7	
+14-8	1056-1068	sadraudzības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	sadraudzība	_	_	_	_	nmod	basic	14-9	
+14-9	1069-1074	dienu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	diena	_	_	_	_	nmod	basic	14-12	
+14-10	1075-1083	oficiāla	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsnnp	oficiāla	_	_	_	_	amod	basic	14-12	
+14-11	1084-1094	atklāšanas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	atklāšana	_	_	_	_	nmod	basic	14-12	
+14-12	1095-1105	ceremonija	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	ceremonija	_	_	_	_	nsubj	basic	14-7	
+14-13	1106-1108	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	14-14	
+14-14	1109-1117	koncerts	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	koncerts	_	_	_	_	conj	basic	14-12	
+14-15	1117-1118	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	14-7	
+
+#Text=10.jūlijā Alūksnes muzejā - Marsannay -la- Cote (Francija) pilsētas jubilejai veltīta izstāde, 11.jūlijā 20.00 Pilssalas estrādē sadraudzības dienu lielkoncerts „Mūzika veido Eiropu".
+15-1	1120-1123	10.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	10.	time[47]	*[47]	_	_	amod	basic	15-2	
+15-2	1123-1129	jūlijā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	jūlijs	time[47]	*[47]	_	_	obl	basic	15-5	
+15-3	1130-1138	Alūksnes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	Alūksne	organization[48]|GPE[49]	*[48]|*[49]	_	_	nmod	basic	15-4	
+15-4	1139-1145	muzejā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	muzejs	organization[48]	*[48]	_	_	obl	basic	15-5	
+15-5	1146-1147	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	_	_	root	basic	15-5	
+15-6	1148-1157	Marsannay	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Marsannay	GPE[50]	*[50]	_	_	nmod	basic	15-17	
+15-7	1158-1159	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	GPE[50]	*[50]	_	_	flat:name	basic	15-6	
+15-8	1159-1161	la	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	la	GPE[50]	*[50]	_	_	flat:name	basic	15-6	
+15-9	1161-1162	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	GPE[50]	*[50]	_	_	flat:name	basic	15-6	
+15-10	1163-1167	Cote	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Cote	GPE[50]	*[50]	_	_	flat:name	basic	15-6	
+15-11	1168-1169	(	_	_	_	_	_	_	_	_	_	_	_	_	zb	(	_	_	_	_	punct	basic	15-12	
+15-12	1169-1177	Francija	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Francija	GPE	*	_	_	parataxis	basic	15-6	
+15-13	1177-1178	)	_	_	_	_	_	_	_	_	_	_	_	_	zb	)	_	_	_	_	punct	basic	15-12	
+15-14	1179-1187	pilsētas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	pilsēta	_	_	_	_	nmod	basic	15-15	
+15-15	1188-1197	jubilejai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	jubileja	_	_	_	_	iobj	basic	15-16	
+15-16	1198-1205	veltīta	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnpsnp	veltīt	_	_	_	_	amod	basic	15-17	
+15-17	1206-1213	izstāde	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	izstāde	_	_	_	_	nsubj	basic	15-5	
+15-18	1213-1214	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	15-29	
+15-19	1215-1218	11.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	11.	time[51]	*[51]	_	_	amod	basic	15-20	
+15-20	1218-1224	jūlijā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	jūlijs	time[51]	*[51]	_	_	obl	basic	15-29	
+15-21	1225-1230	20.00	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	20.00	time[51]	*[51]	_	_	nummod	basic	15-29	
+15-22	1231-1240	Pilssalas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Pilssala	location[52]	*[52]	_	_	nmod	basic	15-23	
+15-23	1241-1248	estrādē	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	estrāde	location[52]	*[52]	_	_	obl	basic	15-29	
+15-24	1249-1261	sadraudzības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	sadraudzība	_	_	*[8]	*->8-1	nmod	basic	15-26	
+15-25	1262-1267	dienu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	diena	_	_	*[8]	*->8-1	nmod	basic	15-26	
+15-26	1268-1280	lielkoncerts	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	lielkoncerts	_	_	*[8]	*->8-1	nmod	basic	15-29	
+15-27	1281-1282	„	_	_	_	_	_	_	_	_	_	_	_	_	zq	„	event[53]	*[53]	*[8]	*->8-2	punct	basic	15-29	
+15-28	1282-1288	Mūzika	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	mūzika	event[53]	*[53]	*[8]	*->8-2	nsubj	basic	15-29	
+15-29	1289-1294	veido	*	Sing	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=2\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	2	*	vmnipt22san	veidot	event[53]	*[53]	*[8]	*->8-2	conj	basic	15-5	
+15-30	1295-1301	Eiropu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	Eiropa	event[53]|location[54]	*[53]|*[54]	*[8]	*->8-2	obj	basic	15-29	
+15-31	1301-1302	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	event[53]	*[53]	*[8]	*->8-2	punct	basic	15-29	
+15-32	1302-1303	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	15-5	
+
+#Text=12.jūlijā 14.00 Malienas tautas namā - disenīte bērniem un pusaudžiem.
+16-1	1305-1308	12.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	12.	time[55]	*[55]	_	_	amod	basic	16-2	
+16-2	1308-1314	jūlijā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	jūlijs	time[55]	*[55]	_	_	obl	basic	16-7	
+16-3	1315-1320	14.00	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	14.00	time[55]	*[55]	_	_	nummod	basic	16-7	
+16-4	1321-1329	Malienas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Maliena	location[56]|GPE[57]	*[56]|*[57]	_	_	nmod	basic	16-6	
+16-5	1330-1336	tautas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	tauta	location[56]	*[56]	_	_	nmod	basic	16-6	
+16-6	1337-1341	namā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	nams	location[56]	*[56]	_	_	obl	basic	16-7	
+16-7	1342-1343	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	_	_	root	basic	16-7	
+16-8	1344-1352	disenīte	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	disenīte	_	_	_	_	nsubj	basic	16-7	
+16-9	1353-1360	bērniem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	bērns	_	_	_	_	nmod	basic	16-8	
+16-10	1361-1363	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	16-11	
+16-11	1364-1374	pusaudžiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd2	pusaudzis	_	_	_	_	conj	basic	16-9	
+16-12	1374-1375	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	16-7	
+
+#Text=Spēlēs DJ, disenītes ietvaros nometnes „Paralēle" jauno dīdžeju konkurss.
+17-1	1377-1383	Spēlēs	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vmnift230an	spēlēt	_	_	_	_	root	basic	17-1	
+17-2	1384-1386	DJ	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	DJ	_	_	_	_	nsubj	basic	17-1	
+17-3	1386-1387	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	17-12	
+17-4	1388-1397	disenītes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	disenīte	_	_	_	_	nmod	basic	17-5	
+17-5	1398-1406	ietvaros	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	ietvars	_	_	_	_	obl	basic	17-12	
+17-6	1407-1415	nometnes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	nometne	_	_	*[9]	*->9-1	nmod	basic	17-8	
+17-7	1416-1417	„	_	_	_	_	_	_	_	_	_	_	_	_	zq	„	event[58]	*[58]	*[9]	*->9-2	punct	basic	17-8	
+17-8	1417-1425	Paralēle	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	paralēle	event[58]	*[58]	*[9]	*->9-2	nmod	basic	17-11	
+17-9	1425-1426	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	event[58]	*[58]	*[9]	*->9-2	punct	basic	17-8	
+17-10	1427-1432	jauno	Masc	Plur	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpgyp	jauns	_	_	_	_	amod	basic	17-11	
+17-11	1433-1440	dīdžeju	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	dīdžejs	_	_	_	_	nmod	basic	17-12	
+17-12	1441-1449	konkurss	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	konkurss	_	_	_	_	conj	basic	17-1	
+17-13	1449-1450	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	17-1	
+
+#Text=13.jūlijā 19.00 Alūksnes Pilssalas estrādē - „Miers un Bērziņš".
+18-1	1452-1455	13.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	13.	time[59]	*[59]	_	_	amod	basic	18-2	
+18-2	1455-1461	jūlijā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	jūlijs	time[59]	*[59]	_	_	obl	basic	18-7	
+18-3	1462-1467	19.00	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	19.00	time[59]	*[59]	_	_	nummod	basic	18-7	
+18-4	1468-1476	Alūksnes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	Alūksne	location[60]|GPE[61]	*[60]|*[61]	_	_	nmod	basic	18-6	
+18-5	1477-1486	Pilssalas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Pilssala	location[60]	*[60]	_	_	nmod	basic	18-6	
+18-6	1487-1494	estrādē	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	estrāde	location[60]	*[60]	_	_	obl	basic	18-7	
+18-7	1495-1496	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	_	_	root	basic	18-7	
+18-8	1497-1498	„	_	_	_	_	_	_	_	_	_	_	_	_	zq	„	event[62]	*[62]	_	_	punct	basic	18-9	
+18-9	1498-1503	Miers	Masc	Coll	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Coll	*	*	ncmvn1	miers	event[62]	*[62]	_	_	nsubj	basic	18-7	
+18-10	1504-1506	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	event[62]	*[62]	_	_	cc	basic	18-11	
+18-11	1507-1514	Bērziņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Bērziņš	event[62]	*[62]	_	_	conj	basic	18-9	
+18-12	1514-1515	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	event[62]	*[62]	_	_	punct	basic	18-9	
+18-13	1515-1516	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	18-7	
+
+#Text=Piedalās: Raimonda Paula ceremonijorķestris un pats maestro Raimonds Pauls, Jānis Paukštello, Harijs Spanovskis, Andris Bērziņš.
+19-1	1518-1526	Piedalās	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipi330an	piedalīties	_	_	_	_	root	basic	19-1	
+19-2	1526-1527	:	_	_	_	_	_	_	_	_	_	_	_	_	zo	:	_	_	_	_	punct	basic	19-1	
+19-3	1528-1536	Raimonda	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Raimonds	organization[63]|person[64]	*[63]|*[64]	*[10]	*->10-1	nmod	basic	19-5	
+19-4	1537-1542	Paula	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Pauls	organization[63]|person[64]	*[63]|*[64]	*[10]	*->10-1	nmod	basic	19-5	
+19-5	1543-1561	ceremonijorķestris	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	ceremonijorķestris	organization[63]	*[63]	_	_	nsubj	basic	19-1	
+19-6	1562-1564	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	19-9	
+19-7	1565-1569	pats	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msnn	pats	_	_	*[10]	*->10-2	det	basic	19-9	
+19-8	1570-1577	maestro	_	_	_	_	_	_	_	_	_	_	_	_	nc0000	maestro	_	_	*[10]	*->10-2	nmod	basic	19-9	
+19-9	1578-1586	Raimonds	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Raimonds	person[65]	*[65]	*[10]	*->10-3	conj	basic	19-5	
+19-10	1587-1592	Pauls	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Pauls	person[65]	*[65]	*[10]	*->10-3	flat:name	basic	19-9	
+19-11	1592-1593	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	*[10]	*->10-3	punct	basic	19-12	
+19-12	1594-1599	Jānis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	Jānis	person[66]	https://en.wikipedia.org/wiki/Jānis\_Paukštello[66]	_	_	conj	basic	19-5	
+19-13	1600-1610	Paukštello	_	_	_	_	_	_	_	_	_	_	_	_	np0000	Paukštello	person[66]	https://en.wikipedia.org/wiki/Jānis\_Paukštello[66]	_	_	flat:name	basic	19-12	
+19-14	1610-1611	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	19-15	
+19-15	1612-1618	Harijs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Harijs	person[67]	*[67]	_	_	conj	basic	19-5	
+19-16	1619-1629	Spanovskis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	Spanovskis	person[67]	*[67]	_	_	flat:name	basic	19-15	
+19-17	1629-1630	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	19-18	
+19-18	1631-1637	Andris	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	Andris	person[68]	https://lv.wikipedia.org/wiki/Andris\_Bērziņš\_(aktieris)[68]	_	_	conj	basic	19-5	
+19-19	1638-1645	Bērziņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Bērziņš	person[68]	https://lv.wikipedia.org/wiki/Andris\_Bērziņš\_(aktieris)[68]	_	_	flat:name	basic	19-18	
+19-20	1645-1646	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	19-1	
+
+#Text=Biļešu iepriekšpārdošana.
+20-1	1648-1654	Biļešu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg5	biļete	_	_	_	_	nmod	basic	20-2	
+20-2	1655-1672	iepriekšpārdošana	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	iepriekšpārdošana	_	_	_	_	root	basic	20-2	
+20-3	1672-1673	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	20-2	

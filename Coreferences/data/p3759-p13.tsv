@@ -1,0 +1,54 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Līdz šim "Imprimatur Capital Fund Management", kas ir bāzēta Rīgā, Latvijā, ir investējusi 11 kompānijās, kas piesaistītas no Baltijas, Ziemeļu un Krievijas reģiona tādos sektoros kā nano-tehnoloģijas, zaļās tehnoloģijas, elektronika, e-komercija un programmatūra.
+1-1	0-4	Līdz	_	_	_	_	_	_	_	_	_	_	_	_	spsd	līdz	_	_	_	_	case	basic	1-2	
+1-2	5-8	šim	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msdn	šis	_	_	_	_	obl	basic	1-18	
+1-3	9-10	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[1]	*[1]	*[1]	*->1-1	punct	basic	1-4	
+1-4	10-20	Imprimatur	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Imprimatur	organization[1]	*[1]	*[1]	*->1-1	nsubj	basic	1-18	
+1-5	21-28	Capital	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Capital	organization[1]	*[1]	*[1]	*->1-1	flat:name	basic	1-4	
+1-6	29-33	Fund	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Fund	organization[1]	*[1]	*[1]	*->1-1	flat:name	basic	1-4	
+1-7	34-44	Management	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Management	organization[1]	*[1]	*[1]	*->1-1	flat:name	basic	1-4	
+1-8	44-45	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[1]	*[1]	*[1]	*->1-1	punct	basic	1-4	
+1-9	45-46	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-12	
+1-10	47-50	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	*[1]	*->1-2	nsubj:pass	basic	1-12	
+1-11	51-53	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	aux	basic	1-12	
+1-12	54-60	bāzēta	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnpsnp	bāzēt	_	_	_	_	acl	basic	1-4	
+1-13	61-65	Rīgā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	Rīga	GPE	*	_	_	obl	basic	1-12	
+1-14	65-66	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-15	
+1-15	67-74	Latvijā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	Latvija	GPE	*	_	_	acl	basic	1-13	
+1-16	74-75	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-12	
+1-17	76-78	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	aux	basic	1-18	
+1-18	79-90	investējusi	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnasnp	investēt	_	_	_	_	root	basic	1-18	
+1-19	91-93	11	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	11	_	_	*[2]	*->2-1	nummod	basic	1-20	
+1-20	94-104	kompānijās	Fem	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	kompānija	_	_	*[2]	*->2-1	obl	basic	1-18	
+1-21	104-105	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-23	
+1-22	106-109	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	*[2]	*->2-2	nsubj:pass	basic	1-23	
+1-23	110-122	piesaistītas	Fem	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfpnpsnp	piesaistīt	_	_	_	_	acl	basic	1-20	
+1-24	123-125	no	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	_	_	_	_	case	basic	1-30	
+1-25	126-134	Baltijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Baltija	location	*	_	_	nmod	basic	1-30	
+1-26	134-135	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-27	
+1-27	136-143	Ziemeļu	Masc	Ptan	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	ncmdg2	ziemeļi	location	*	_	_	conj	basic	1-25	
+1-28	144-146	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-29	
+1-29	147-156	Krievijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Krievija	GPE	*	_	_	conj	basic	1-25	
+1-30	157-164	reģiona	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	reģions	_	_	_	_	obl	basic	1-23	
+1-31	165-170	tādos	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpln	tāds	_	_	_	_	det	basic	1-32	
+1-32	171-179	sektoros	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	sektors	_	_	_	_	obl	basic	1-23	
+1-33	180-182	kā	_	_	_	_	_	_	_	_	_	_	_	_	cs	kā	_	_	_	_	mark	basic	1-34	
+1-34	183-200	nano-tehnoloģijas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	nano-tehnoloģija	_	_	_	_	acl	basic	1-32	
+1-35	200-201	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-37	
+1-36	202-207	zaļās	Fem	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpnyp	zaļa	_	_	_	_	amod	basic	1-37	
+1-37	208-220	tehnoloģijas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	tehnoloģija	_	_	_	_	conj	basic	1-34	
+1-38	220-221	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-39	
+1-39	222-233	elektronika	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	elektronika	_	_	_	_	conj	basic	1-34	
+1-40	233-234	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-41	
+1-41	235-246	e-komercija	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	e-komercija	_	_	_	_	conj	basic	1-34	
+1-42	247-249	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-43	
+1-43	250-263	programmatūra	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	programmatūra	_	_	_	_	conj	basic	1-34	
+1-44	263-264	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-18	

@@ -1,0 +1,72 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=–– Varbūt, — es teicu, lai gan precēt viņu nepavisam netaisījos.
+1-1	0-1	–	_	_	_	_	_	_	_	_	_	_	_	_	zd	–	_	_	punct	basic	1-3	
+1-2	1-2	–	_	_	_	_	_	_	_	_	_	_	_	_	zd	–	_	_	punct	basic	1-3	
+1-3	3-9	Varbūt	_	_	_	_	_	_	_	_	_	_	_	_	q	varbūt	_	_	parataxis	basic	1-7	
+1-4	9-10	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-3	
+1-5	11-12	—	_	_	_	_	_	_	_	_	_	_	_	_	zd	—	_	_	punct	basic	1-3	
+1-6	13-15	es	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10snn	es	_	_	nsubj	basic	1-7	
+1-7	16-21	teicu	*	Sing	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	1	*	vmnipt11san	teikt	_	_	root	basic	1-7	
+1-8	21-22	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-14	
+1-9	23-26	lai	_	_	_	_	_	_	_	_	_	_	_	_	cc	lai	_	_	mark	basic	1-14	
+1-10	27-30	gan	_	_	_	_	_	_	_	_	_	_	_	_	q	gan	_	_	discourse	basic	1-9	
+1-11	31-37	precēt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	precēt	_	_	xcomp	basic	1-14	
+1-12	38-42	viņu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsan	viņa	*[1]	*->1-1	obj	basic	1-11	
+1-13	43-52	nepavisam	*	*	*	*	*	*	*	*	*	PronType=Neg	*	*	r0q	nepavisam	_	_	advmod	basic	1-14	
+1-14	53-63	netaisījos	*	Sing	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Neg\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	1	*	voyist31say	netaisīties	_	_	advcl	basic	1-7	
+1-15	63-64	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	1-7	
+
+#Text=Neiešu taču precēt tādu dumju veikala kasieri, kaut arī lādzīgu, ar jenota riņķīšiem.
+2-1	66-72	Neiešu	*	Sing	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Neg\|Tense=Fut\|VerbForm=Fin\|Voice=Act	1	*	vmnifii1say	neiet	_	_	root	basic	2-1	
+2-2	73-77	taču	_	_	_	_	_	_	_	_	_	_	_	_	q	taču	_	_	discourse	basic	2-1	
+2-3	78-84	precēt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	precēt	_	_	xcomp	basic	2-1	
+2-4	85-89	tādu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsan	tāda	_	_	det	basic	2-7	
+2-5	90-95	dumju	Fem	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsanp	dumja	_	_	amod	basic	2-7	
+2-6	96-103	veikala	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	veikals	_	_	nmod	basic	2-7	
+2-7	104-111	kasieri	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	kasiere	*[1]	*->1-2	obj	basic	2-3	
+2-8	111-112	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	2-11	
+2-9	113-117	kaut	_	_	_	_	_	_	_	_	_	_	_	_	q	kaut	_	_	discourse	basic	2-11	
+2-10	118-121	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	flat	basic	2-9	
+2-11	122-129	lādzīgu	Masc	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsanp	lādzīgs	_	_	acl	basic	2-7	
+2-12	129-130	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	2-15	
+2-13	131-133	ar	_	_	_	_	_	_	_	_	_	_	_	_	sppd	ar	_	_	case	basic	2-15	
+2-14	134-140	jenota	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	jenots	_	_	nmod	basic	2-15	
+2-15	141-150	riņķīšiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd2	riņķītis	_	_	acl	basic	2-7	
+2-16	150-151	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	2-1	
+
+#Text=Ticēt kaut kam tādam, — nu, tai jaunavu iemūrēšanai, — tur taču jābūt ne vien naivai, bet arī drusku jocīgai, vai ne?
+3-1	153-158	Ticēt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	ticēt	_	_	ccomp	basic	3-19	
+3-2	159-163	kaut	_	_	_	_	_	_	_	_	_	_	_	_	q	kaut	_	_	discourse	basic	3-3	
+3-3	164-167	kam	*	*	Dat	*	*	*	*	*	*	Case=Dat\|PronType=Ind	*	*	pi000dn	kas	_	_	iobj	basic	3-1	
+3-4	168-173	tādam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msdn	tāds	_	_	compound	basic	3-3	
+3-5	173-174	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	3-11	
+3-6	175-176	—	_	_	_	_	_	_	_	_	_	_	_	_	zd	—	_	_	punct	basic	3-11	
+3-7	177-179	nu	_	_	_	_	_	_	_	_	_	_	_	_	q	nu	_	_	discourse	basic	3-11	
+3-8	179-180	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	3-7	
+3-9	181-184	tai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsdn	tā	_	_	det	basic	3-11	
+3-10	185-192	jaunavu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	jaunava	_	_	nmod	basic	3-11	
+3-11	193-204	iemūrēšanai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	iemūrēšana	_	_	acl	basic	3-3	
+3-12	204-205	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	3-1	
+3-13	206-207	—	_	_	_	_	_	_	_	_	_	_	_	_	zd	—	_	_	punct	basic	3-1	
+3-14	208-211	tur	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0p	tur	_	_	advmod	basic	3-19	
+3-15	212-216	taču	_	_	_	_	_	_	_	_	_	_	_	_	q	taču	_	_	discourse	basic	3-19	
+3-16	217-222	jābūt	*	*	*	*	*	*	Nec	Act	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vcnd0ii00an	būt	_	_	cop	basic	3-19	
+3-17	223-225	ne	_	_	_	_	_	_	_	_	_	_	_	_	cc	ne	_	_	cc	basic	3-19	
+3-18	226-230	vien	_	_	_	_	_	_	_	_	_	_	_	_	q	vien	_	_	discourse	basic	3-17	
+3-19	231-237	naivai	Fem	Sing	Dat	Pos	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsdnp	naiva	_	_	root	basic	3-19	
+3-20	237-238	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	3-24	
+3-21	239-242	bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	cc	basic	3-24	
+3-22	243-246	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	discourse	basic	3-21	
+3-23	247-253	drusku	_	_	_	_	_	_	_	_	_	_	_	_	r0q	drusku	_	_	advmod	basic	3-24	
+3-24	254-261	jocīgai	Fem	Sing	Dat	Pos	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsdnp	jocīga	_	_	conj	basic	3-19	
+3-25	261-262	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	3-26	
+3-26	263-266	vai	_	_	_	_	_	_	_	_	_	_	_	_	q	vai	_	_	discourse	basic	3-19	
+3-27	267-269	ne	_	_	_	_	_	_	_	_	_	_	_	_	q	ne	_	_	flat	basic	3-26	
+3-28	269-270	?	_	_	_	_	_	_	_	_	_	_	_	_	zs	?	_	_	punct	basic	3-19	

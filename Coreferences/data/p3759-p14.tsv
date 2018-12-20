@@ -1,0 +1,46 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text="Imprimatur Capital Seed Fund" ir riska kapitāla fonds, kas sākotnēji tika finansēts no Eiropas Investīciju fonda pārvaldītās "JEREMIE programmas", kas tiek līdzfinansēta no Eiropas Savienības (ES) līdzekļiem.
+1-1	0-1	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[1]	*[1]	_	_	punct	basic	1-2	
+1-2	1-11	Imprimatur	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Imprimatur	organization[1]	*[1]	_	_	nsubj	basic	1-10	
+1-3	12-19	Capital	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Capital	organization[1]	*[1]	_	_	flat:name	basic	1-2	
+1-4	20-24	Seed	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Seed	organization[1]	*[1]	_	_	flat:name	basic	1-2	
+1-5	25-29	Fund	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Fund	organization[1]	*[1]	_	_	flat:name	basic	1-2	
+1-6	29-30	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[1]	*[1]	_	_	punct	basic	1-2	
+1-7	31-33	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	cop	basic	1-10	
+1-8	34-39	riska	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	risks	_	_	*[1]	*->1-1	nmod	basic	1-9	
+1-9	40-48	kapitāla	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	kapitāls	_	_	*[1]	*->1-1	nmod	basic	1-10	
+1-10	49-54	fonds	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	fonds	_	_	*[1]	*->1-1	root	basic	1-10	
+1-11	54-55	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-15	
+1-12	56-59	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	*[1]	*->1-2	nsubj:pass	basic	1-15	
+1-13	60-69	sākotnēji	_	_	_	_	_	_	_	_	_	_	_	_	r0c	sākotnēji	_	_	_	_	advmod	basic	1-15	
+1-14	70-74	tika	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vtnisi130an	tikt	_	_	_	_	aux	basic	1-15	
+1-15	75-84	finansēts	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnp	finansēt	_	_	_	_	acl	basic	1-10	
+1-16	85-87	no	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	_	_	_	_	case	basic	1-23	
+1-17	88-95	Eiropas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Eiropa	organization[2]|location[3]	*[2]|*[3]	_	_	nmod	basic	1-19	
+1-18	96-107	Investīciju	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	investīcija	organization[2]	*[2]	_	_	nmod	basic	1-19	
+1-19	108-113	fonda	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	fonds	organization[2]	*[2]	_	_	nmod	basic	1-20	
+1-20	114-125	pārvaldītās	Fem	Sing	Gen	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsgpsyp	pārvaldīt	_	_	_	_	amod	basic	1-23	
+1-21	126-127	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[4]	*[4]	*[2]	*->2-1	punct	basic	1-23	
+1-22	127-134	JEREMIE	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	JEREMIE	organization[4]	*[4]	*[2]	*->2-1	nmod	basic	1-23	
+1-23	135-145	programmas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	programma	organization[4]	*[4]	*[2]	*->2-1	obl	basic	1-15	
+1-24	145-146	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[4]	*[4]	*[2]	*->2-1	punct	basic	1-23	
+1-25	146-147	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-28	
+1-26	148-151	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	*[2]	*->2-2	nsubj:pass	basic	1-28	
+1-27	152-156	tiek	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vtnipi130an	tikt	_	_	_	_	aux	basic	1-28	
+1-28	157-170	līdzfinansēta	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnpsnp	līdzfinansēt	_	_	_	_	acl	basic	1-23	
+1-29	171-173	no	_	_	_	_	_	_	_	_	_	_	_	_	sppd	no	_	_	_	_	case	basic	1-35	
+1-30	174-181	Eiropas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Eiropa	GPE[5]	*[5]	*[3]	*->3-1	nmod	basic	1-31	
+1-31	182-192	Savienības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	savienība	GPE[5]	*[5]	*[3]	*->3-1	nmod	basic	1-35	
+1-32	193-194	(	_	_	_	_	_	_	_	_	_	_	_	_	zb	(	_	_	_	_	punct	basic	1-33	
+1-33	194-196	ES	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	ES	GPE	*	*[3]	*->3-2	parataxis	basic	1-31	
+1-34	196-197	)	_	_	_	_	_	_	_	_	_	_	_	_	zb	)	_	_	_	_	punct	basic	1-33	
+1-35	198-208	līdzekļiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd2	līdzeklis	_	_	_	_	obl	basic	1-28	
+1-36	208-209	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-10	

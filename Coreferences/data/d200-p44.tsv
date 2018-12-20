@@ -1,0 +1,37 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Šādi jautājumi nodarbinājuši cilvēkus visos laikos.
+1-1	0-4	Šādi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpnn	šāds	_	_	obl	basic	1-2	
+1-2	5-14	jautājumi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	jautājums	_	_	nsubj	basic	1-3	
+1-3	15-28	nodarbinājuši	Masc	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpnasnpn	nodarbināt	_	_	root	basic	1-3	
+1-4	29-37	cilvēkus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	cilvēks	_	_	obj	basic	1-3	
+1-5	38-43	visos	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur\|PronType=Tot	*	*	pg0mpln	visos	_	_	det	basic	1-6	
+1-6	44-50	laikos	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	laiks	_	_	obl	basic	1-3	
+1-7	50-51	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	1-3	
+
+#Text=Mēs nepazīstam nevienu kultūru, kuru nebūtu nodarbinājis jautājums par cilvēku vai par to, kā cēlusies pasaule.
+2-1	53-56	Mēs	*	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Number=Plur\|Person=1\|PronType=Prs	1	*	pp10pnn	mēs	_	_	nsubj	basic	2-2	
+2-2	57-67	nepazīstam	*	Plur	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	1	*	vmnipt11pay	nepazīt	_	_	root	basic	2-2	
+2-3	68-75	nevienu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Ind,Neg	*	*	pi0fsay	neviena	_	_	det	basic	2-4	
+2-4	76-83	kultūru	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	kultūra	*[1]	*->1-1	obj	basic	2-2	
+2-5	83-84	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	2-8	
+2-6	85-89	kuru	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsan	kura	*[1]	*->1-2	obj	basic	2-8	
+2-7	90-96	nebūtu	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Neg\|VerbForm=Fin\|Voice=Act	*	*	vcnc0ii00ay	nebūt	_	_	aux	basic	2-8	
+2-8	97-109	nodarbinājis	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnasnpn	nodarbināt	_	_	acl	basic	2-4	
+2-9	110-119	jautājums	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	jautājums	_	_	nsubj	basic	2-8	
+2-10	120-123	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	case	basic	2-11	
+2-11	124-131	cilvēku	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	cilvēks	_	_	nmod	basic	2-9	
+2-12	132-135	vai	_	_	_	_	_	_	_	_	_	_	_	_	cc	vai	_	_	cc	basic	2-14	
+2-13	136-139	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	case	basic	2-14	
+2-14	140-142	to	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	tas	_	_	conj	basic	2-11	
+2-15	142-143	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	2-17	
+2-16	144-146	kā	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0m	kā	_	_	advmod	basic	2-17	
+2-17	147-155	cēlusies	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	Perf	vmypdfsnasnpn	celties	_	_	acl	basic	2-14	
+2-18	156-163	pasaule	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	pasaule	_	_	nsubj	basic	2-17	
+2-19	163-164	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	2-2	

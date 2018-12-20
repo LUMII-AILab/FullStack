@@ -1,0 +1,93 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Baltijas valstu kopīgi sagatavotā nominācija "Baltijas Ceļš - cilvēku ķēde trīs valstu vienotiem centieniem pēc brīvības" UNESCO programmas "Pasaules atmiņa" starptautiskajā reģistrā tika iekļauta 2009.gadā.
+1-1	0-8	Baltijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Baltija	location[1]	*[1]	_	_	iobj	basic	1-2	
+1-2	9-15	valstu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg6	valsts	location[1]	*[1]	_	_	nmod	basic	1-4	
+1-3	16-22	kopīgi	_	_	_	_	_	_	_	_	_	_	_	_	r0m	kopīgi	_	_	*[1]	*->1-1	advmod	basic	1-4	
+1-4	23-33	sagatavotā	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnpsyp	sagatavot	_	_	*[1]	*->1-1	amod	basic	1-5	
+1-5	34-44	nominācija	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	nominācija	_	_	*[1]	*->1-1	nmod	basic	1-8	
+1-6	45-46	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	entity[2]	*[2]	*[1]	*->1-2	punct	basic	1-8	
+1-7	46-54	Baltijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Baltija	entity[2]	*[2]	*[1]	*->1-2	nmod	basic	1-8	
+1-8	55-59	Ceļš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	ceļš	entity[2]	*[2]	*[1]	*->1-2	nsubj:pass	basic	1-28	
+1-9	60-61	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	entity[2]	*[2]	*[1]	*->1-2	punct	basic	1-11	
+1-10	62-69	cilvēku	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	cilvēks	entity[2]	*[2]	*[1]	*->1-2	nmod	basic	1-11	
+1-11	70-74	ķēde	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	ķēde	entity[2]	*[2]	*[1]	*->1-2	acl	basic	1-8	
+1-12	75-79	trīs	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|NumType=Card	*	*	mcsfpn	trīs	entity[2]	*[2]	*[1]	*->1-2	nummod	basic	1-13	
+1-13	80-86	valstu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg6	valsts	entity[2]	*[2]	*[1]	*->1-2	nmod	basic	1-15	
+1-14	87-96	vienotiem	Masc	Plur	Dat	Pos	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpdnp	vienots	entity[2]	*[2]	*[1]	*->1-2	amod	basic	1-15	
+1-15	97-107	centieniem	Masc	Ptan	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Ptan	*	*	ncmdd1	centieni	entity[2]	*[2]	*[1]	*->1-2	acl	basic	1-11	
+1-16	108-111	pēc	_	_	_	_	_	_	_	_	_	_	_	_	spsg	pēc	entity[2]	*[2]	*[1]	*->1-2	case	basic	1-17	
+1-17	112-120	brīvības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	brīvība	entity[2]	*[2]	*[1]	*->1-2	nmod	basic	1-15	
+1-18	120-121	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	entity[2]	*[2]	*[1]	*->1-2	punct	basic	1-8	
+1-19	122-128	UNESCO	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	UNESCO	organization	*	*[2]	*->2-1	nmod	basic	1-20	
+1-20	129-139	programmas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	programma	_	_	*[2]	*->2-1	nmod	basic	1-23	
+1-21	140-141	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	entity[3]	*[3]	*[2]	*->2-2	punct	basic	1-23	
+1-22	141-149	Pasaules	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	pasaule	entity[3]	*[3]	*[2]	*->2-2	nmod	basic	1-23	
+1-23	150-156	atmiņa	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	atmiņa	entity[3]	*[3]	*[2]	*->2-2	nmod	basic	1-26	
+1-24	156-157	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	entity[3]	*[3]	*[2]	*->2-2	punct	basic	1-23	
+1-25	158-173	starptautiskajā	Masc	Sing	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armslyp	starptautisks	_	_	_	_	amod	basic	1-26	
+1-26	174-182	reģistrā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	reģistrs	_	_	_	_	obl	basic	1-28	
+1-27	183-187	tika	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vtnisi130an	tikt	_	_	_	_	aux	basic	1-28	
+1-28	188-196	iekļauta	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnpsnp	iekļaut	_	_	_	_	root	basic	1-28	
+1-29	197-202	2009.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	2009.	time[4]	*[4]	_	_	amod	basic	1-30	
+1-30	202-206	gadā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	gads	time[4]	*[4]	_	_	obl	basic	1-28	
+1-31	206-207	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-28	
+
+#Text=Baltijas Ceļš starptautiski tika atzīts par unikālu solidāru rīcību mierīgā masu demonstrācijā, kas notika 1989.gada 23.augustā.
+2-1	209-217	Baltijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Baltija	event[5]	*[5]	_	_	nmod	basic	2-2	
+2-2	218-222	Ceļš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	ceļš	event[5]	*[5]	_	_	nsubj:pass	basic	2-5	
+2-3	223-236	starptautiski	_	_	_	_	_	_	_	_	_	_	_	_	r0m	starptautiski	_	_	_	_	advmod	basic	2-5	
+2-4	237-241	tika	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vtnisi130an	tikt	_	_	_	_	aux	basic	2-5	
+2-5	242-248	atzīts	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnp	atzīt	_	_	_	_	root	basic	2-5	
+2-6	249-252	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	_	_	case	basic	2-9	
+2-7	253-260	unikālu	Masc	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsanp	unikāls	_	_	_	_	amod	basic	2-9	
+2-8	261-269	solidāru	Fem	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsanp	solidāra	_	_	_	_	amod	basic	2-9	
+2-9	270-276	rīcību	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	rīcība	_	_	_	_	obl	basic	2-5	
+2-10	277-284	mierīgā	Masc	Sing	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmslnp	mierīgs	_	_	*[3]	*->3-1	amod	basic	2-12	
+2-11	285-289	masu	*	*	Gen	*	*	*	*	*	*	Case=Gen	*	*	nc00gg	masu	_	_	*[3]	*->3-1	nmod	basic	2-12	
+2-12	290-303	demonstrācijā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	demonstrācija	_	_	*[3]	*->3-1	acl	basic	2-9	
+2-13	303-304	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-15	
+2-14	305-308	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	*[3]	*->3-2	nsubj	basic	2-15	
+2-15	309-315	notika	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi130an	notikt	_	_	_	_	acl	basic	2-12	
+2-16	316-321	1989.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	1989.	time[6]	*[6]	_	_	amod	basic	2-17	
+2-17	321-325	gada	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	gads	time[6]	*[6]	_	_	nmod	basic	2-19	
+2-18	326-329	23.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	23.	time[6]	*[6]	_	_	amod	basic	2-19	
+2-19	329-336	augustā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	augusts	time[6]	*[6]	_	_	obl	basic	2-15	
+2-20	336-337	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-5	
+
+#Text=Tās laikā vairāk nekā miljons cilvēku sadevās rokās 600 km garā cilvēku ķēdē cauri trim Baltijas valstīm, vienojot Igauniju, Latviju un Lietuvu centienos pēc brīvības.
+3-1	339-342	Tās	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsgn	tā	_	_	*[3]	*->3-3	det	basic	3-2	
+3-2	343-348	laikā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	laiks	_	_	_	_	obl	basic	3-7	
+3-3	349-355	vairāk	*	*	*	Cmp	*	*	*	*	*	Degree=Cmp	*	*	rcq	daudz	_	_	_	_	advmod	basic	3-5	
+3-4	356-360	nekā	_	_	_	_	_	_	_	_	_	_	_	_	cs	nekā	_	_	_	_	fixed	basic	3-3	
+3-5	361-368	miljons	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	miljons	_	_	_	_	nsubj	basic	3-7	
+3-6	369-376	cilvēku	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	cilvēks	_	_	_	_	nmod	basic	3-5	
+3-7	377-384	sadevās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisti30an	sadoties	_	_	_	_	root	basic	3-7	
+3-8	385-390	rokās	Fem	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	roka	_	_	_	_	obl	basic	3-7	
+3-9	391-394	600	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	600	_	_	_	_	nummod	basic	3-10	
+3-10	395-397	km	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	km	_	_	_	_	nmod	basic	3-11	
+3-11	398-402	garā	Fem	Sing	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affslnp	garš	_	_	_	_	amod	basic	3-13	
+3-12	403-410	cilvēku	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	cilvēks	_	_	_	_	nmod	basic	3-13	
+3-13	411-415	ķēdē	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	ķēde	_	_	_	_	obl	basic	3-7	
+3-14	416-421	cauri	_	_	_	_	_	_	_	_	_	_	_	_	rrp	cauri	_	_	_	_	case	basic	3-17	
+3-15	422-426	trim	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpd	trīs	_	_	_	_	nummod	basic	3-17	
+3-16	427-435	Baltijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Baltija	location[7]	*[7]	_	_	nmod	basic	3-17	
+3-17	436-443	valstīm	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd6	valsts	location[7]	*[7]	_	_	obl	basic	3-7	
+3-18	443-444	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-19	
+3-19	445-453	vienojot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000	vienot	_	_	_	_	advcl	basic	3-7	
+3-20	454-462	Igauniju	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	Igaunija	GPE	*	_	_	obj	basic	3-19	
+3-21	462-463	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-22	
+3-22	464-471	Latviju	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	Latvija	GPE	*	_	_	conj	basic	3-20	
+3-23	472-474	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	3-24	
+3-24	475-482	Lietuvu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	Lietuva	GPE	*	_	_	conj	basic	3-20	
+3-25	483-492	centienos	Masc	Ptan	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Ptan	*	*	ncmdl1	centieni	_	_	_	_	obl	basic	3-19	
+3-26	493-496	pēc	_	_	_	_	_	_	_	_	_	_	_	_	spsg	pēc	_	_	_	_	case	basic	3-27	
+3-27	497-505	brīvības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	brīvība	_	_	_	_	nmod	basic	3-25	
+3-28	505-506	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-7	

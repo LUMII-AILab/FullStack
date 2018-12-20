@@ -1,0 +1,78 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Latviešu literatūrā tas tomēr ir Aleksandrs Čaks, lai cik triviāli tas būtu.
+1-1	0-8	Latviešu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	latvietis	_	_	_	_	nmod	basic	1-2	
+1-2	9-19	literatūrā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	literatūra	_	_	_	_	obl	basic	1-6	
+1-3	20-23	tas	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	tas	_	_	_	_	nsubj	basic	1-6	
+1-4	24-29	tomēr	_	_	_	_	_	_	_	_	_	_	_	_	q	tomēr	_	_	_	_	discourse	basic	1-6	
+1-5	30-32	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	cop	basic	1-6	
+1-6	33-43	Aleksandrs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Aleksandrs	person[1]	https://en.wikipedia.org/wiki/Aleksandrs\_Čaks[1]	_	_	root	basic	1-6	
+1-7	44-48	Čaks	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Čaks	person[1]	https://en.wikipedia.org/wiki/Aleksandrs\_Čaks[1]	_	_	flat:name	basic	1-6	
+1-8	48-49	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-11	
+1-9	50-53	lai	_	_	_	_	_	_	_	_	_	_	_	_	cs	lai	_	_	_	_	mark	basic	1-11	
+1-10	54-57	cik	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0q	cik	_	_	_	_	advmod	basic	1-11	
+1-11	58-66	triviāli	_	_	_	_	_	_	_	_	_	_	_	_	r0c	triviāli	_	_	_	_	advcl	basic	1-6	
+1-12	67-70	tas	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	tas	_	_	_	_	nsubj	basic	1-11	
+1-13	71-75	būtu	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vcnc0ii00an	būt	_	_	_	_	aux	basic	1-11	
+1-14	75-76	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-6	
+
+#Text=Tas vairāk saistīts ar jaunības lietām, kad viss tika uztverts emocionālāk.
+2-1	78-81	Tas	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	tas	_	_	_	_	nsubj:pass	basic	2-3	
+2-2	82-88	vairāk	*	*	*	Cmp	*	*	*	*	*	Degree=Cmp	*	*	rcq	daudz	_	_	_	_	advmod	basic	2-3	
+2-3	89-97	saistīts	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnp	saistīt	_	_	_	_	root	basic	2-3	
+2-4	98-100	ar	_	_	_	_	_	_	_	_	_	_	_	_	sppd	ar	_	_	_	_	case	basic	2-6	
+2-5	101-109	jaunības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	jaunība	_	_	_	_	nmod	basic	2-6	
+2-6	110-116	lietām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	lieta	_	_	_	_	iobj	basic	2-3	
+2-7	116-117	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-11	
+2-8	118-121	kad	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0t	kad	_	_	_	_	advmod	basic	2-11	
+2-9	122-126	viss	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msnn	viss	_	_	_	_	nsubj:pass	basic	2-11	
+2-10	127-131	tika	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vtnisi130an	tikt	_	_	_	_	aux	basic	2-11	
+2-11	132-140	uztverts	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnp	uztvert	_	_	_	_	acl	basic	2-6	
+2-12	141-152	emocionālāk	*	*	*	Cmp	*	*	*	*	*	Degree=Cmp	*	*	rct	emocionāli	_	_	_	_	advmod	basic	2-11	
+2-13	152-153	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-3	
+
+#Text=Knuta Hamsuna Bads man ir kā tāds etalona romāns, kas, man šķiet, jāizlasa katram.
+3-1	155-160	Knuta	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Knuts	person[2]	https://en.wikipedia.org/wiki/Knut\_Hamsun[2]	_	_	nmod	basic	3-3	
+3-2	161-168	Hamsuna	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Hamsuns	person[2]	https://en.wikipedia.org/wiki/Knut\_Hamsun[2]	_	_	flat:name	basic	3-1	
+3-3	169-173	Bads	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	bads	product	https://en.wikipedia.org/wiki/Hunger\_(Hamsun\_novel)	*[1]	*->1-1	nsubj	basic	3-9	
+3-4	174-177	man	*	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10sdn	es	_	_	*[2]	*->2-1	obl	basic	3-9	
+3-5	178-180	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	cop	basic	3-9	
+3-6	181-183	kā	_	_	_	_	_	_	_	_	_	_	_	_	cs	kā	_	_	_	_	discourse	basic	3-9	
+3-7	184-188	tāds	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	tāds	_	_	_	_	det	basic	3-9	
+3-8	189-196	etalona	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	etalons	_	_	_	_	nmod	basic	3-9	
+3-9	197-203	romāns	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	romāns	_	_	*[1]	*->1-2	root	basic	3-9	
+3-10	203-204	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-16	
+3-11	205-208	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	*[1]	*->1-3	obj	basic	3-16	
+3-12	208-209	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-14	
+3-13	210-213	man	*	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10sdn	es	_	_	*[2]	*->2-2	obl	basic	3-14	
+3-14	214-219	šķiet	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipi130an	šķist	_	_	_	_	parataxis	basic	3-16	
+3-15	219-220	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-14	
+3-16	221-229	jāizlasa	*	*	*	*	*	*	Nec	Act	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vmnd0t300an	izlasīt	_	_	_	_	acl	basic	3-9	
+3-17	230-236	katram	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msdn	katrs	_	_	_	_	nsubj	basic	3-16	
+3-18	236-237	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-9	
+
+#Text=Gan tam, kuram dzīvē iet labi, gan sevišķi tam, kam dzīvē iet slikti.
+4-1	239-242	Gan	_	_	_	_	_	_	_	_	_	_	_	_	cc	gan	_	_	_	_	cc	basic	4-2	
+4-2	243-246	tam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msdn	tas	_	_	*[3]	*->3-1	root	basic	4-2	
+4-3	246-247	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	4-6	
+4-4	248-253	kuram	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msdn	kurš	_	_	*[3]	*->3-2	obl	basic	4-6	
+4-5	254-259	dzīvē	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	dzīve	_	_	_	_	obl	basic	4-6	
+4-6	260-263	iet	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipii30an	iet	_	_	_	_	acl	basic	4-2	
+4-7	264-268	labi	_	_	_	_	_	_	_	_	_	_	_	_	r0c	labi	_	_	_	_	advmod	basic	4-6	
+4-8	268-269	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	4-11	
+4-9	270-273	gan	_	_	_	_	_	_	_	_	_	_	_	_	cc	gan	_	_	_	_	cc	basic	4-11	
+4-10	274-281	sevišķi	_	_	_	_	_	_	_	_	_	_	_	_	r0m	sevišķi	_	_	_	_	advmod	basic	4-11	
+4-11	282-285	tam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msdn	tas	_	_	*[4]	*->4-1	conj	basic	4-2	
+4-12	285-286	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	4-15	
+4-13	287-290	kam	*	*	Dat	*	*	*	*	*	*	Case=Dat\|PronType=Rel	*	*	pr000dn	kas	_	_	*[4]	*->4-2	obl	basic	4-15	
+4-14	291-296	dzīvē	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	dzīve	_	_	_	_	obl	basic	4-15	
+4-15	297-300	iet	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipii30an	iet	_	_	_	_	acl	basic	4-11	
+4-16	301-307	slikti	_	_	_	_	_	_	_	_	_	_	_	_	r0c	slikti	_	_	_	_	advmod	basic	4-15	
+4-17	307-308	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	4-2	

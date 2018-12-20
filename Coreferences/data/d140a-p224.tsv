@@ -1,0 +1,75 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=EDUARDS.
+1-1	0-7	EDUARDS	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Eduards	person	*	*[1]	*->1-1	root	basic	1-1	
+1-2	7-8	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-1	
+
+#Text=Nu, zini, dārgā, vēl drusku, un izbesīsi mani galīgi.
+2-1	10-12	Nu	_	_	_	_	_	_	_	_	_	_	_	_	q	nu	_	_	_	_	discourse	basic	2-3	
+2-2	12-13	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-3	
+2-3	14-18	zini	*	Sing	*	*	*	*	Imp	Act	*	Mood=Imp\|Number=Sing\|Person=2\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	2	*	vmnm0t32san	zināt	_	_	_	_	root	basic	2-3	
+2-4	18-19	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-5	
+2-5	20-25	dārgā	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnyp	dārga	_	_	*[2]	*->2-1	vocative	basic	2-3	
+2-6	25-26	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-8	
+2-7	27-30	vēl	_	_	_	_	_	_	_	_	_	_	_	_	r0t	vēl	_	_	_	_	advmod	basic	2-8	
+2-8	31-37	drusku	_	_	_	_	_	_	_	_	_	_	_	_	r0q	drusku	_	_	_	_	conj	basic	2-3	
+2-9	37-38	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-11	
+2-10	39-41	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	2-11	
+2-11	42-50	izbesīsi	*	Sing	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=2\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	2	*	vmnift32san	izbesīt	_	_	_	_	conj	basic	2-3	
+2-12	51-55	mani	*	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10san	es	_	_	*[1]	*->1-2	obj	basic	2-11	
+2-13	56-62	galīgi	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	galīgi	_	_	_	_	advmod	basic	2-11	
+2-14	62-63	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-3	
+
+#Text=Labāk ej gulēt, varbūt, beigsi ņirgt.
+3-1	65-70	Labāk	*	*	*	Cmp	*	*	*	*	*	Degree=Cmp	*	*	rcm	labi	_	_	_	_	advmod	basic	3-2	
+3-2	71-73	ej	*	Sing	*	*	*	*	Imp	Act	*	Mood=Imp\|Number=Sing\|Person=2\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	2	*	vmnm0ii2san	iet	_	_	_	_	root	basic	3-2	
+3-3	74-79	gulēt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	gulēt	_	_	_	_	ccomp	basic	3-2	
+3-4	79-80	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-7	
+3-5	81-87	varbūt	_	_	_	_	_	_	_	_	_	_	_	_	q	varbūt	_	_	_	_	discourse	basic	3-7	
+3-6	87-88	,	_	_	_	_	_	_	_	_	_	_	_	_	z\_	_	_	_	_	_	punct	basic	3-5	
+3-7	89-95	beigsi	*	Sing	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=2\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	2	*	vpnift12san	beigt	_	_	_	_	conj	basic	3-2	
+3-8	96-101	ņirgt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0i1000n	ņirgt	_	_	_	_	xcomp	basic	3-7	
+3-9	101-102	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-2	
+
+#Text=Pauze.
+4-1	104-109	Pauze	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	pauze	_	_	_	_	root	basic	4-1	
+4-2	109-110	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	4-1	
+
+#Text=Eduards paņem savas papīra lapas, apsēžas.
+5-1	112-119	Eduards	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Eduards	person	*	*[1]	*->1-3	nsubj	basic	5-2	
+5-2	120-125	paņem	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt130an	paņemt	_	_	_	_	root	basic	5-2	
+5-3	126-131	savas	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur\|Poss=Yes\|PronType=Prs	*	*	ps0fpan	sava	_	_	*[1]	*->1-4	det	basic	5-5	
+5-4	132-138	papīra	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	papīrs	_	_	_	_	nmod	basic	5-5	
+5-5	139-144	lapas	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	lapa	_	_	_	_	obj	basic	5-2	
+5-6	144-145	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	5-7	
+5-7	146-153	apsēžas	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipt130an	apsēsties	_	_	_	_	conj	basic	5-2	
+5-8	153-154	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	5-2	
+
+#Text=Mēģina rakstīt, bet šķiet, ka viņa domas klīst kaut kur citur.
+6-1	156-162	Mēģina	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	mēģināt	_	_	_	_	root	basic	6-1	
+6-2	163-170	rakstīt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	rakstīt	_	_	_	_	xcomp	basic	6-1	
+6-3	170-171	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	6-5	
+6-4	172-175	bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	_	_	cc	basic	6-5	
+6-5	176-181	šķiet	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipi130an	šķist	_	_	_	_	conj	basic	6-1	
+6-6	181-182	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	6-10	
+6-7	183-185	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark	basic	6-10	
+6-8	186-190	viņa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msgn	viņš	_	_	*[1]	*->1-5	det	basic	6-9	
+6-9	191-196	domas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	doma	_	_	_	_	nsubj	basic	6-10	
+6-10	197-202	klīst	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipi130an	klīst	_	_	_	_	csubj	basic	6-5	
+6-11	203-207	kaut	_	_	_	_	_	_	_	_	_	_	_	_	q	kaut	_	_	_	_	discourse	basic	6-12	
+6-12	208-211	kur	*	*	*	*	*	*	*	*	*	PronType=Ind	*	*	r0p	kur	_	_	_	_	advmod	basic	6-13	
+6-13	212-217	citur	_	_	_	_	_	_	_	_	_	_	_	_	r0p	citur	_	_	_	_	advmod	basic	6-10	
+6-14	217-218	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	6-1	
+
+#Text=Elīza mazgā traukus.
+7-1	220-225	Elīza	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Elīza	person	*	*[2]	*->2-2	nsubj	basic	7-2	
+7-2	226-231	mazgā	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt230an	mazgāt	_	_	_	_	root	basic	7-2	
+7-3	232-239	traukus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	trauks	_	_	_	_	obj	basic	7-2	
+7-4	239-240	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	7-2	

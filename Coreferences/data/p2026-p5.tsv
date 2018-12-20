@@ -1,0 +1,40 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Speciālisti novēro upi, bet beigtas zivis tajā pagaidām nav atrastas.
+1-1	0-11	Speciālisti	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	speciālists	_	_	_	_	nsubj	basic	1-2	
+1-2	12-18	novēro	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt230an	novērot	_	_	_	_	root	basic	1-2	
+1-3	19-22	upi	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	upe	_	_	*[1]	*->1-1	obj	basic	1-2	
+1-4	22-23	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-11	
+1-5	24-27	bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	_	_	cc	basic	1-11	
+1-6	28-35	beigtas	Fem	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfpnpsnpn	beigt	_	_	_	_	amod	basic	1-7	
+1-7	36-41	zivis	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn6	zivs	_	_	_	_	nsubj:pass	basic	1-11	
+1-8	42-46	tajā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msln	tas	_	_	*[1]	*->1-2	obl	basic	1-11	
+1-9	47-55	pagaidām	_	_	_	_	_	_	_	_	_	_	_	_	r0t	pagaidām	_	_	_	_	advmod	basic	1-11	
+1-10	56-59	nav	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30ay	nebūt	_	_	_	_	aux:pass	basic	1-11	
+1-11	60-68	atrastas	Fem	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfpnpsnpn	atrast	_	_	_	_	conj	basic	1-2	
+1-12	68-69	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-2	
+
+#Text=Straujā kušana veicina piesārņojuma izkliedēšanos ūdenī, un Sventājas pilsētiņā smaka tikpat kā nav jūtama.
+2-1	71-78	Straujā	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnyp	strauja	_	_	_	_	amod	basic	2-2	
+2-2	79-85	kušana	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	kušana	_	_	_	_	nsubj	basic	2-3	
+2-3	86-93	veicina	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	veicināt	_	_	_	_	root	basic	2-3	
+2-4	94-106	piesārņojuma	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	piesārņojums	_	_	_	_	nmod	basic	2-5	
+2-5	107-120	izkliedēšanos	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsar	izkliedēšanās	_	_	_	_	obj	basic	2-3	
+2-6	121-126	ūdenī	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	ūdens	_	_	_	_	acl	basic	2-5	
+2-7	126-127	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-15	
+2-8	128-130	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	2-15	
+2-9	131-140	Sventājas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Sventāja	location[1]	*[1]	_	_	nmod	basic	2-10	
+2-10	141-150	pilsētiņā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	pilsētiņa	location[1]	*[1]	_	_	obl	basic	2-15	
+2-11	151-156	smaka	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	smaka	_	_	_	_	nsubj	basic	2-15	
+2-12	157-163	tikpat	_	_	_	_	_	_	_	_	_	_	_	_	r0q	tikpat	_	_	_	_	advmod	basic	2-15	
+2-13	164-166	kā	_	_	_	_	_	_	_	_	_	_	_	_	cs	kā	_	_	_	_	fixed	basic	2-12	
+2-14	167-170	nav	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30ay	nebūt	_	_	_	_	cop	basic	2-15	
+2-15	171-177	jūtama	Fem	Sing	Nom	Pos	*	Pres	*	Pass	*	Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	*	vmnpdfsnppnpn	just	_	_	_	_	conj	basic	2-3	
+2-16	177-178	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-3	

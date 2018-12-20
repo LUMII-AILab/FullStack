@@ -1,0 +1,44 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Vilhelmīne: — Mēs ģimenē esam četras māsas, es vecākā.
+1-1	0-10	Vilhelmīne	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	Vilhelmīne	person	*	*[1]	*->1-1	root	basic	1-1	
+1-2	10-11	:	_	_	_	_	_	_	_	_	_	_	_	_	zo	:	_	_	_	_	punct	basic	1-1	
+1-3	12-13	—	_	_	_	_	_	_	_	_	_	_	_	_	zd	—	_	_	_	_	punct	basic	1-8	
+1-4	14-17	Mēs	*	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Number=Plur\|Person=1\|PronType=Prs	1	*	pp10pnn	mēs	_	_	_	_	nsubj	basic	1-8	
+1-5	18-24	ģimenē	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	ģimene	_	_	_	_	obl	basic	1-8	
+1-6	25-29	esam	*	Plur	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	1	*	vcnipii1pan	būt	_	_	_	_	cop	basic	1-8	
+1-7	30-36	četras	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|NumType=Card	*	*	mcsfpn	četras	_	_	_	_	nummod	basic	1-8	
+1-8	37-42	māsas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	māsa	_	_	_	_	parataxis	basic	1-1	
+1-9	42-43	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-11	
+1-10	44-46	es	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10snn	es	_	_	*[1]	*->1-2	nsubj	basic	1-11	
+1-11	47-53	vecākā	Fem	Sing	Nom	Cmp	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Fem\|Number=Sing	*	*	affsnyc	veca	_	_	_	_	conj	basic	1-8	
+1-12	53-54	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-8	
+
+#Text=Kad man bija 18 gadu, mūžībā aizgāja tēvs, un man bija jāpalīdz mātei izaudzināt trīs mazās māsiņas.
+2-1	56-59	Kad	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0t	kad	_	_	_	_	advmod	basic	2-3	
+2-2	60-63	man	*	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10sdn	es	_	_	*[1]	*->1-3	obl	basic	2-3	
+2-3	64-68	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisii30an	būt	_	_	_	_	advcl	basic	2-8	
+2-4	69-71	18	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	18	_	_	_	_	nummod	basic	2-5	
+2-5	72-76	gadu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	gads	_	_	_	_	nsubj	basic	2-3	
+2-6	76-77	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-3	
+2-7	78-84	mūžībā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	mūžība	_	_	_	_	obl	basic	2-8	
+2-8	85-92	aizgāja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisii30an	aiziet	_	_	_	_	root	basic	2-8	
+2-9	93-97	tēvs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	tēvs	_	_	_	_	nsubj	basic	2-8	
+2-10	97-98	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-14	
+2-11	99-101	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	2-14	
+2-12	102-105	man	*	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10sdn	es	_	_	*[1]	*->1-4	nsubj	basic	2-14	
+2-13	106-110	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vcnisii30an	būt	_	_	_	_	aux	basic	2-14	
+2-14	111-119	jāpalīdz	*	*	*	*	*	*	Nec	Act	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vmnd0t300an	palīdzēt	_	_	_	_	conj	basic	2-8	
+2-15	120-125	mātei	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd5	māte	_	_	_	_	iobj	basic	2-16	
+2-16	126-136	izaudzināt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	izaudzināt	_	_	_	_	ccomp	basic	2-14	
+2-17	137-141	trīs	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur\|NumType=Card	*	*	mcsfpa	trīs	_	_	_	_	nummod	basic	2-19	
+2-18	142-147	mazās	Fem	Plur	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpayp	maza	_	_	_	_	amod	basic	2-19	
+2-19	148-155	māsiņas	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	māsiņa	_	_	_	_	obj	basic	2-16	
+2-20	155-156	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-8	

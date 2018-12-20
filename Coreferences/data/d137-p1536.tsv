@@ -1,0 +1,71 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Dārzs.
+1-1	0-5	Dārzs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	dārzs	_	_	_	_	root	basic	1-1	
+1-2	5-6	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-1	
+
+#Text=Pie galda sēž vecmamma un skatās tālumā.
+2-1	8-11	Pie	_	_	_	_	_	_	_	_	_	_	_	_	spsg	pie	_	_	_	_	case	basic	2-2	
+2-2	12-17	galda	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	galds	_	_	_	_	obl	basic	2-3	
+2-3	18-21	sēž	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipi130an	sēdēt	_	_	_	_	root	basic	2-3	
+2-4	22-30	vecmamma	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	vecmamma	_	_	*[1]	*->1-1	nsubj	basic	2-3	
+2-5	31-33	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	2-6	
+2-6	34-40	skatās	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipt330an	skatīties	_	_	_	_	conj	basic	2-3	
+2-7	41-47	tālumā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	tālums	_	_	_	_	obl	basic	2-6	
+2-8	47-48	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-3	
+
+#Text=Pūš nerimtīgs, spēcīgs vējš, koku lapotnes šalc.
+3-1	50-53	Pūš	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt130an	pūst	_	_	_	_	root	basic	3-1	
+3-2	54-63	nerimtīgs	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	nerimtīgs	_	_	_	_	amod	basic	3-5	
+3-3	63-64	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-4	
+3-4	65-72	spēcīgs	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	spēcīgs	_	_	_	_	conj	basic	3-2	
+3-5	73-77	vējš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	vējš	_	_	_	_	nsubj	basic	3-1	
+3-6	77-78	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-9	
+3-7	79-83	koku	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	koks	_	_	_	_	nmod	basic	3-8	
+3-8	84-92	lapotnes	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn5	lapotne	_	_	_	_	nsubj	basic	3-9	
+3-9	93-97	šalc	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipi130an	šalkt	_	_	_	_	conj	basic	3-1	
+3-10	97-98	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-1	
+
+#Text=Vecmamma skatās uz lapām, asaras tek viņai pār vaigiem, kaut sejā nemainās ne vaibsts.
+4-1	100-108	Vecmamma	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	vecmamma	_	_	*[1]	*->1-2	nsubj	basic	4-2	
+4-2	109-115	skatās	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipt330an	skatīties	_	_	_	_	root	basic	4-2	
+4-3	116-118	uz	_	_	_	_	_	_	_	_	_	_	_	_	sppd	uz	_	_	_	_	case	basic	4-4	
+4-4	119-124	lapām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	lapa	_	_	_	_	obl	basic	4-2	
+4-5	124-125	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	4-7	
+4-6	126-132	asaras	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	asara	_	_	_	_	nsubj	basic	4-7	
+4-7	133-136	tek	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipi330an	tecēt	_	_	_	_	conj	basic	4-2	
+4-8	137-142	viņai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsdn	viņa	_	_	*[1]	*->1-3	obl	basic	4-7	
+4-9	143-146	pār	_	_	_	_	_	_	_	_	_	_	_	_	sppd	pār	_	_	_	_	case	basic	4-10	
+4-10	147-154	vaigiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	vaigs	_	_	_	_	obl	basic	4-7	
+4-11	154-155	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	4-14	
+4-12	156-160	kaut	_	_	_	_	_	_	_	_	_	_	_	_	cs	kaut	_	_	_	_	mark	basic	4-14	
+4-13	161-165	sejā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	seja	_	_	_	_	acl	basic	4-14	
+4-14	166-174	nemainās	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipi330ay	nemainīties	_	_	_	_	advcl	basic	4-7	
+4-15	175-177	ne	_	_	_	_	_	_	_	_	_	_	_	_	q	ne	_	_	_	_	discourse	basic	4-16	
+4-16	178-185	vaibsts	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	vaibsts	_	_	_	_	nsubj	basic	4-14	
+4-17	185-186	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	4-2	
+
+#Text=No mājas iznāk Jasmīne un kar uz auklām baltu, pilošu, tikko izmazgātu palagu.
+5-1	188-190	No	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	_	_	_	_	case	basic	5-2	
+5-2	191-196	mājas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	māja	_	_	_	_	obl	basic	5-3	
+5-3	197-202	iznāk	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	venipi130an	iznākt	_	_	_	_	root	basic	5-3	
+5-4	203-210	Jasmīne	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	Jasmīne	person	*	_	_	nsubj	basic	5-3	
+5-5	211-213	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	5-6	
+5-6	214-217	kar	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt130an	kārt	_	_	_	_	conj	basic	5-3	
+5-7	218-220	uz	_	_	_	_	_	_	_	_	_	_	_	_	sppd	uz	_	_	_	_	case	basic	5-8	
+5-8	221-227	auklām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	aukla	_	_	_	_	obl	basic	5-6	
+5-9	228-233	baltu	Masc	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsanp	balts	_	_	_	_	amod	basic	5-15	
+5-10	233-234	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	5-11	
+5-11	235-241	pilošu	Masc	Sing	Acc	Pos	*	Pres	*	Pass	*	Aspect=Imp\|Case=Acc\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Imp	vmnpdmsaapnpn	pilēt	_	_	_	_	conj	basic	5-9	
+5-12	241-242	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	5-14	
+5-13	243-248	tikko	_	_	_	_	_	_	_	_	_	_	_	_	r0t	tikko	_	_	_	_	advmod	basic	5-14	
+5-14	249-258	izmazgātu	Masc	Sing	Acc	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Acc\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsapsnpn	izmazgāt	_	_	_	_	conj	basic	5-9	
+5-15	259-265	palagu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	palags	_	_	_	_	obj	basic	5-6	
+5-16	265-266	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	5-3	

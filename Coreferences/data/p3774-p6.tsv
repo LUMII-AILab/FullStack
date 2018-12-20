@@ -1,0 +1,83 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Pēc Gaismas pils apmeklējuma Itālijas vēstnieks Latvijā pauda gandarījumu par redzēto un raksturoja topošo bibliotēku kā civilizācijas pieminekli, salīdzinot to ar Ēģiptes piramīdām.
+1-1	0-3	Pēc	_	_	_	_	_	_	_	_	_	_	_	_	spsg	pēc	_	_	_	_	case	basic	1-4	
+1-2	4-11	Gaismas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	gaisma	location[1]	*[1]	*[3]	*->3-1	nmod	basic	1-3	
+1-3	12-16	pils	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	pils	location[1]	*[1]	*[3]	*->3-1	nmod	basic	1-4	
+1-4	17-28	apmeklējuma	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	apmeklējums	_	_	_	_	obl	basic	1-8	
+1-5	29-37	Itālijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Itālija	GPE	*	*[2]	*->2-1	nmod	basic	1-6	
+1-6	38-47	vēstnieks	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	vēstnieks	_	_	*[2]	*->2-1	nsubj	basic	1-8	
+1-7	48-55	Latvijā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	Latvija	GPE	*	_	_	acl	basic	1-6	
+1-8	56-61	pauda	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	paust	_	_	_	_	root	basic	1-8	
+1-9	62-73	gandarījumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	gandarījums	_	_	_	_	obj	basic	1-8	
+1-10	74-77	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	_	_	case	basic	1-11	
+1-11	78-85	redzēto	Masc	Sing	Acc	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsapsyp	redzēt	_	_	_	_	nmod	basic	1-9	
+1-12	86-88	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-13	
+1-13	89-99	raksturoja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist230an	raksturot	_	_	_	_	conj	basic	1-8	
+1-14	100-106	topošo	Fem	Sing	Acc	Pos	*	Pres	*	Pass	*	Aspect=Imp\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Imp	vmnpdfsaapyp	tapt	_	_	*[3]	*->3-2	amod	basic	1-15	
+1-15	107-117	bibliotēku	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	bibliotēka	_	_	*[3]	*->3-2	obj	basic	1-13	
+1-16	118-120	kā	_	_	_	_	_	_	_	_	_	_	_	_	cs	kā	_	_	_	_	mark	basic	1-18	
+1-17	121-134	civilizācijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	civilizācija	_	_	_	_	nmod	basic	1-18	
+1-18	135-145	pieminekli	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	piemineklis	_	_	_	_	acl	basic	1-13	
+1-19	145-146	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-20	
+1-20	147-157	salīdzinot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000	salīdzināt	_	_	_	_	advcl	basic	1-13	
+1-21	158-160	to	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	tas	_	_	*[3]	*->3-3	obj	basic	1-20	
+1-22	161-163	ar	_	_	_	_	_	_	_	_	_	_	_	_	sppd	ar	_	_	_	_	case	basic	1-24	
+1-23	164-171	Ēģiptes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	Ēģipte	GPE	*	_	_	nmod	basic	1-24	
+1-24	172-181	piramīdām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	piramīda	_	_	_	_	iobj	basic	1-20	
+1-25	181-182	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-8	
+
+#Text=Viņš atzinīgi novērtēja arhitekta Gunāra Birkerta un Nacionālās būvkompāniju apvienības veikumu, kā arī bija pārliecināts, ka Gaismas pils noteikti kļūs par Rīgas un visas Latvijas simbolu.
+2-1	184-188	Viņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msnn	viņš	_	_	*[2]	*->2-2	nsubj	basic	2-3	
+2-2	189-197	atzinīgi	_	_	_	_	_	_	_	_	_	_	_	_	r0m	atzinīgi	_	_	_	_	advmod	basic	2-3	
+2-3	198-207	novērtēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist230an	novērtēt	_	_	_	_	root	basic	2-3	
+2-4	208-217	arhitekta	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	arhitekts	_	_	*[1]	*->1-1	nmod	basic	2-5	
+2-5	218-224	Gunāra	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Gunārs	person[2]	https://en.wikipedia.org/wiki/Gunnar\_Birkerts[2]	*[1]	*->1-2	nmod	basic	2-11	
+2-6	225-233	Birkerta	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Birkerts	person[2]	https://en.wikipedia.org/wiki/Gunnar\_Birkerts[2]	*[1]	*->1-2	flat:name	basic	2-5	
+2-7	234-236	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	2-10	
+2-8	237-247	Nacionālās	Fem	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsgyp	nacionāla	organization[3]	*[3]	_	_	amod	basic	2-10	
+2-9	248-260	būvkompāniju	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	būvkompānija	organization[3]	*[3]	_	_	nmod	basic	2-10	
+2-10	261-271	apvienības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	apvienība	organization[3]	*[3]	_	_	conj	basic	2-5	
+2-11	272-279	veikumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	veikums	_	_	_	_	obj	basic	2-3	
+2-12	279-280	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-16	
+2-13	281-283	kā	_	_	_	_	_	_	_	_	_	_	_	_	cc	kā	_	_	_	_	cc	basic	2-16	
+2-14	284-287	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse	basic	2-13	
+2-15	288-292	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vcnisii30an	būt	_	_	_	_	aux	basic	2-16	
+2-16	293-305	pārliecināts	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnp	pārliecināt	_	_	_	_	conj	basic	2-3	
+2-17	305-306	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-22	
+2-18	307-309	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark	basic	2-22	
+2-19	310-317	Gaismas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	gaisma	location[4]	*[4]	*[3]	*->3-4	nmod	basic	2-20	
+2-20	318-322	pils	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn6	pils	location[4]	*[4]	*[3]	*->3-4	nsubj	basic	2-22	
+2-21	323-331	noteikti	_	_	_	_	_	_	_	_	_	_	_	_	r0m	noteikti	_	_	_	_	advmod	basic	2-22	
+2-22	332-336	kļūs	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vtnifi130an	kļūt	_	_	_	_	ccomp	basic	2-16	
+2-23	337-340	par	_	_	_	_	_	_	_	_	_	_	_	_	sppd	par	_	_	_	_	case	basic	2-28	
+2-24	341-346	Rīgas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Rīga	GPE	*	_	_	nmod	basic	2-28	
+2-25	347-349	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	2-27	
+2-26	350-355	visas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|PronType=Tot	*	*	pg0fpnn	visa	_	_	_	_	det	basic	2-27	
+2-27	356-364	Latvijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Latvija	GPE	*	_	_	conj	basic	2-24	
+2-28	365-372	simbolu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	simbols	_	_	_	_	xcomp	basic	2-22	
+2-29	372-373	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-3	
+
+#Text=Polici pauda lepnumu, ka šīs ēkas tapšanā savu roku pielikuši arī itāļu būvnieki.
+3-1	375-381	Polici	_	_	_	_	_	_	_	_	_	_	_	_	np0000	Polici	person	*	*[2]	*->2-3	nsubj	basic	3-2	
+3-2	382-387	pauda	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	paust	_	_	_	_	root	basic	3-2	
+3-3	388-395	lepnumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	lepnums	_	_	_	_	obj	basic	3-2	
+3-4	395-396	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-11	
+3-5	397-399	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark	basic	3-11	
+3-6	400-403	šīs	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsgn	šī	_	_	*[3]	*->3-5	det	basic	3-7	
+3-7	404-408	ēkas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	ēka	_	_	*[3]	*->3-5	nmod	basic	3-8	
+3-8	409-416	tapšanā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	tapšana	_	_	_	_	obl	basic	3-11	
+3-9	417-421	savu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0fsan	sava	_	_	_	_	det	basic	3-10	
+3-10	422-426	roku	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	roka	_	_	_	_	obj	basic	3-11	
+3-11	427-436	pielikuši	Masc	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpnasnp	pielikt	_	_	_	_	ccomp	basic	3-2	
+3-12	437-440	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse	basic	3-14	
+3-13	441-446	itāļu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	itālis	_	_	_	_	nmod	basic	3-14	
+3-14	447-455	būvnieki	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	būvnieks	_	_	_	_	nsubj	basic	3-11	
+3-15	455-456	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-2	

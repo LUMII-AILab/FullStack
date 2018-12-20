@@ -1,0 +1,161 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Nagu sastāvā ir keratīns, kura daudzums nosaka, cik veselīgi ir nagi.
+1-1	0-4	Nagu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	nags	_	_	nmod	basic	1-2	
+1-2	5-12	sastāvā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	sastāvs	_	_	obl	basic	1-3	
+1-3	13-15	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipii30an	būt	_	_	root	basic	1-3	
+1-4	16-24	keratīns	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	keratīns	*[1]	*->1-1	nsubj	basic	1-3	
+1-5	24-25	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-8	
+1-6	26-30	kura	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msgn	kura	*[1]	*->1-2	det	basic	1-7	
+1-7	31-39	daudzums	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	daudzums	_	_	nsubj	basic	1-8	
+1-8	40-46	nosaka	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	nosacīt	_	_	acl	basic	1-4	
+1-9	46-47	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-11	
+1-10	48-51	cik	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0q	cik	_	_	advmod	basic	1-11	
+1-11	52-60	veselīgi	Masc	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnnp	veselīgs	_	_	ccomp	basic	1-8	
+1-12	61-63	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	cop	basic	1-11	
+1-13	64-68	nagi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	nags	_	_	nsubj	basic	1-11	
+1-14	68-69	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	1-3	
+
+#Text=Vesela naga virsma ir gluda un līdzena.
+2-1	71-77	Vesela	Masc	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsgnp	vesels	_	_	amod	basic	2-2	
+2-2	78-82	naga	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	nags	_	_	nmod	basic	2-3	
+2-3	83-89	virsma	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	virsma	_	_	nsubj	basic	2-5	
+2-4	90-92	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	cop	basic	2-5	
+2-5	93-98	gluda	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	gluda	_	_	root	basic	2-5	
+2-6	99-101	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	cc	basic	2-7	
+2-7	102-109	līdzena	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	līdzena	_	_	conj	basic	2-5	
+2-8	109-110	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	2-5	
+
+#Text=Nagos ir daudz nervu galu, kas ir jutīgi pret sāpēm, arī tad, ja tiem pieskaras.
+3-1	112-117	Nagos	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	nags	*[6]	*->6-1	obl	basic	3-2	
+3-2	118-120	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipii30an	būt	_	_	root	basic	3-2	
+3-3	121-126	daudz	_	_	_	_	_	_	_	_	_	_	_	_	r0q	daudz	_	_	advmod	basic	3-5	
+3-4	127-132	nervu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	nervs	_	_	nmod	basic	3-5	
+3-5	133-137	galu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	gals	*[2]	*->2-1	nsubj	basic	3-2	
+3-6	137-138	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	3-9	
+3-7	139-142	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	*[2]	*->2-2	nsubj	basic	3-9	
+3-8	143-145	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	cop	basic	3-9	
+3-9	146-152	jutīgi	Masc	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnnp	jutīgs	_	_	acl	basic	3-5	
+3-10	153-157	pret	_	_	_	_	_	_	_	_	_	_	_	_	sppd	pret	_	_	case	basic	3-11	
+3-11	158-163	sāpēm	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd5	sāpes	_	_	iobj	basic	3-9	
+3-12	163-164	,	_	_	_	_	_	_	_	_	_	_	_	_	z\_	_	_	_	punct	basic	3-11	
+3-13	165-168	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	discourse	basic	3-14	
+3-14	169-172	tad	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	tad	_	_	advmod	basic	3-9	
+3-15	172-173	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	3-18	
+3-16	174-176	ja	_	_	_	_	_	_	_	_	_	_	_	_	cs	ja	_	_	mark	basic	3-18	
+3-17	177-181	tiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpdn	tas	*[6]	*->6-2	iobj	basic	3-18	
+3-18	182-191	pieskaras	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipi130an	pieskarties	_	_	advcl	basic	3-14	
+3-19	191-192	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	3-2	
+
+#Text=Asinsvadi, kas atrodas zem nagiem, piegādā tiem nepieciešamās barības vielas un piešķir nagiem rozā toni.
+4-1	194-203	Asinsvadi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	asinsvads	*[3]	*->3-1	nsubj	basic	4-8	
+4-2	203-204	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	4-4	
+4-3	205-208	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	*[3]	*->3-2	nsubj	basic	4-4	
+4-4	209-216	atrodas	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipi130an	atrasties	_	_	acl	basic	4-1	
+4-5	217-220	zem	_	_	_	_	_	_	_	_	_	_	_	_	sppd	zem	_	_	case	basic	4-6	
+4-6	221-227	nagiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	nags	_	_	obl	basic	4-4	
+4-7	227-228	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	4-4	
+4-8	229-236	piegādā	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt230an	piegādāt	_	_	root	basic	4-8	
+4-9	237-241	tiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpdn	tas	*[3]	*->3-3	iobj	basic	4-8	
+4-10	242-255	nepieciešamās	Fem	Plur	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpayp	nepieciešama	_	_	amod	basic	4-12	
+4-11	256-263	barības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	barība	_	_	nmod	basic	4-12	
+4-12	264-270	vielas	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	viela	_	_	obj	basic	4-8	
+4-13	271-273	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	cc	basic	4-14	
+4-14	274-281	piešķir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt130an	piešķirt	_	_	conj	basic	4-8	
+4-15	282-288	nagiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	nags	_	_	iobj	basic	4-14	
+4-16	289-293	rozā	Masc	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsanp	rozā	_	_	amod	basic	4-17	
+4-17	294-298	toni	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	tonis	_	_	obj	basic	4-14	
+4-18	298-299	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	4-8	
+
+#Text=Naga ataugšanas process no pamatnes līdz naga galam ilgst apmēram sešus mēnešus, bet nagu augšanas ātrums ir apmēram trīs milimetri mēnesī.
+5-1	301-305	Naga	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	nags	_	_	nmod	basic	5-2	
+5-2	306-316	ataugšanas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	ataugšana	_	_	nmod	basic	5-3	
+5-3	317-324	process	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	process	_	_	nsubj	basic	5-9	
+5-4	325-327	no	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	_	_	case	basic	5-5	
+5-5	328-336	pamatnes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	pamatne	_	_	obl	basic	5-9	
+5-6	337-341	līdz	_	_	_	_	_	_	_	_	_	_	_	_	spsd	līdz	_	_	case	basic	5-8	
+5-7	342-346	naga	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	nags	_	_	nmod	basic	5-8	
+5-8	347-352	galam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	gals	_	_	obl	basic	5-9	
+5-9	353-358	ilgst	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipi130an	ilgt	_	_	root	basic	5-9	
+5-10	359-366	apmēram	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	apmērs	_	_	obl	basic	5-11	
+5-11	367-372	sešus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpa	seši	_	_	nummod	basic	5-12	
+5-12	373-380	mēnešus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa2	mēnesis	_	_	obl	basic	5-9	
+5-13	380-381	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	5-21	
+5-14	382-385	bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	cc	basic	5-21	
+5-15	386-390	nagu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	nags	_	_	nmod	basic	5-16	
+5-16	391-399	augšanas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	augšana	_	_	nmod	basic	5-17	
+5-17	400-406	ātrums	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	ātrums	_	_	nsubj	basic	5-21	
+5-18	407-409	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	cop	basic	5-21	
+5-19	410-417	apmēram	_	_	_	_	_	_	_	_	_	_	_	_	r0q	apmēram	_	_	advmod	basic	5-20	
+5-20	418-422	trīs	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpn	trīs	_	_	nummod	basic	5-21	
+5-21	423-432	milimetri	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	milimetrs	_	_	conj	basic	5-9	
+5-22	433-439	mēnesī	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	mēnesis	_	_	acl	basic	5-21	
+5-23	439-440	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	5-9	
+
+#Text=Ir cilvēki, kam no dabas doti skaisti nagi, citiem turpretī rodas dažādas problēmas.
+6-1	442-444	Ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipii30an	būt	_	_	root	basic	6-1	
+6-2	445-452	cilvēki	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	cilvēks	*[4]	*->4-1	nsubj	basic	6-1	
+6-3	452-453	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	6-7	
+6-4	454-457	kam	*	*	Dat	*	*	*	*	*	*	Case=Dat\|PronType=Rel	*	*	pr000dn	kas	*[4]	*->4-2	iobj	basic	6-7	
+6-5	458-460	no	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	_	_	case	basic	6-6	
+6-6	461-466	dabas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	daba	_	_	obl	basic	6-7	
+6-7	467-471	doti	Masc	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpnpsnpn	dot	_	_	acl	basic	6-2	
+6-8	472-479	skaisti	Masc	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpnnp	skaists	_	_	amod	basic	6-9	
+6-9	480-484	nagi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	nags	_	_	nsubj	basic	6-7	
+6-10	484-485	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	6-13	
+6-11	486-492	citiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|PronType=Ind	*	*	pi0mpdn	cits	_	_	obl	basic	6-13	
+6-12	493-501	turpretī	_	_	_	_	_	_	_	_	_	_	_	_	cc	turpretī	_	_	cc	basic	6-13	
+6-13	502-507	rodas	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipi130an	rasties	_	_	conj	basic	6-1	
+6-14	508-515	dažādas	Fem	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	arfpnnp	dažāda	_	_	amod	basic	6-15	
+6-15	516-525	problēmas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	problēma	_	_	nsubj	basic	6-13	
+6-16	525-526	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	6-1	
+
+#Text=Kopti un veseli nagi ir svarīgs faktors, lai rokas būtu vizuāli pievilcīgas, tāpēc ir svarīgi, kā mēs tās kopjam.
+7-1	528-533	Kopti	Masc	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpnpsnpn	kopt	_	_	amod	basic	7-4	
+7-2	534-536	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	cc	basic	7-3	
+7-3	537-543	veseli	Masc	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnnp	vesels	_	_	conj	basic	7-1	
+7-4	544-548	nagi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	nags	_	_	nsubj	basic	7-7	
+7-5	549-551	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	cop	basic	7-7	
+7-6	552-559	svarīgs	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	svarīgs	_	_	amod	basic	7-7	
+7-7	560-567	faktors	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	faktors	_	_	root	basic	7-7	
+7-8	567-568	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	7-13	
+7-9	569-572	lai	_	_	_	_	_	_	_	_	_	_	_	_	cs	lai	_	_	mark	basic	7-13	
+7-10	573-578	rokas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	roka	*[5]	*->5-1	nsubj	basic	7-13	
+7-11	579-583	būtu	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vcnc0ii00an	būt	_	_	cop	basic	7-13	
+7-12	584-591	vizuāli	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	vizuāli	_	_	advmod	basic	7-13	
+7-13	592-603	pievilcīgas	Fem	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpnnp	pievilcīga	_	_	advcl	basic	7-7	
+7-14	603-604	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	7-17	
+7-15	605-610	tāpēc	_	_	_	_	_	_	_	_	_	_	_	_	r0c	tāpēc	_	_	advmod	basic	7-17	
+7-16	611-613	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	cop	basic	7-17	
+7-17	614-621	svarīgi	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	svarīgi	_	_	conj	basic	7-7	
+7-18	621-622	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	7-22	
+7-19	623-625	kā	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0m	kā	_	_	advmod	basic	7-22	
+7-20	626-629	mēs	*	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Number=Plur\|Person=1\|PronType=Prs	1	*	pp10pnn	mēs	_	_	nsubj	basic	7-22	
+7-21	630-633	tās	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur\|PronType=Dem	*	*	pd0fpan	tā	*[5]	*->5-2	obj	basic	7-22	
+7-22	634-640	kopjam	*	Plur	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	1	*	vmnipt11pan	kopt	_	_	csubj	basic	7-17	
+7-23	640-641	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	7-7	
+
+#Text=Gan sievietēm, gan vīriešiem svarīgi veikt manikīru, kura mērķis ir viens – koptas rokas.
+8-1	643-646	Gan	_	_	_	_	_	_	_	_	_	_	_	_	cc	gan	_	_	cc	basic	8-2	
+8-2	647-656	sievietēm	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd5	sieviete	_	_	obl	basic	8-6	
+8-3	656-657	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	8-5	
+8-4	658-661	gan	_	_	_	_	_	_	_	_	_	_	_	_	cc	gan	_	_	cc	basic	8-5	
+8-5	662-671	vīriešiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd2	vīrietis	_	_	conj	basic	8-2	
+8-6	672-679	svarīgi	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	svarīgi	_	_	root	basic	8-6	
+8-7	680-685	veikt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	veikt	_	_	ccomp	basic	8-6	
+8-8	686-694	manikīru	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	manikīrs	_	_	obj	basic	8-7	
+8-9	694-695	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	8-13	
+8-10	696-700	kura	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msgn	kurš	_	_	det	basic	8-11	
+8-11	701-707	mērķis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	mērķis	_	_	nsubj	basic	8-13	
+8-12	708-710	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	cop	basic	8-13	
+8-13	711-716	viens	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|NumType=Card	*	*	mcsmsn	viens	_	_	acl	basic	8-8	
+8-14	717-718	–	_	_	_	_	_	_	_	_	_	_	_	_	zd	–	_	_	punct	basic	8-16	
+8-15	719-725	koptas	Fem	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfpnpsnpn	kopt	_	_	amod	basic	8-16	
+8-16	726-731	rokas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	roka	_	_	acl	basic	8-13	
+8-17	731-732	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	8-6	

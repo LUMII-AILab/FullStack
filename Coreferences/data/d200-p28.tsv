@@ -1,0 +1,32 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Šerekāns palēkdamies sekoja viņai, bet lai nu tā būtu.
+1-1	0-8	Šerekāns	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Šerekāns	person	*	*[1]	*->1-1	nsubj	basic	1-3	
+1-2	9-20	palēkdamies	Masc	*	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Reflex=Yes\|VerbForm=Conv	*	*	vmyppm0n0000n	palēkties	_	_	_	_	acl	basic	1-3	
+1-3	21-27	sekoja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi230an	sekot	_	_	_	_	root	basic	1-3	
+1-4	28-33	viņai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsdn	viņa	_	_	*[2]	*->2-1	iobj	basic	1-3	
+1-5	33-34	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-10	
+1-6	35-38	bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	_	_	cc	basic	1-10	
+1-7	39-42	lai	_	_	_	_	_	_	_	_	_	_	_	_	q	lai	_	_	_	_	discourse	basic	1-10	
+1-8	43-45	nu	_	_	_	_	_	_	_	_	_	_	_	_	q	nu	_	_	_	_	discourse	basic	1-10	
+1-9	46-48	tā	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0m	tā	_	_	_	_	advmod	basic	1-10	
+1-10	49-53	būtu	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vcnc0ii00an	būt	_	_	_	_	conj	basic	1-3	
+1-11	53-54	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-3	
+
+#Text=Sofija bija droša, ka kaķis viņu nenodos.
+2-1	56-62	Sofija	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Sofija	person	*	*[2]	*->2-2	nsubj	basic	2-3	
+2-2	63-67	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vcnisii30an	būt	_	_	_	_	cop	basic	2-3	
+2-3	68-73	droša	Fem	Sing	Nom	Pos	*	*	*	Act	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing\|VerbForm=Part\|Voice=Act	*	*	affsnnp	droša	_	_	_	_	root	basic	2-3	
+2-4	73-74	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-8	
+2-5	75-77	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark	basic	2-8	
+2-6	78-83	kaķis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	kaķis	_	_	*[1]	*->1-2	nsubj	basic	2-8	
+2-7	84-88	viņu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsan	viņa	_	_	*[2]	*->2-3	obj	basic	2-8	
+2-8	89-96	nenodos	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vmnift230ay	nenodot	_	_	_	_	ccomp	basic	2-3	
+2-9	96-97	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-3	

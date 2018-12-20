@@ -1,0 +1,53 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Vakar LIZDA tikās ar Ministru prezidentu Valdi Dombrovski un iepazīstināja ar gājiena dalībnieku prasībām.
+1-1	0-5	Vakar	_	_	_	_	_	_	_	_	_	_	_	_	r0t	vakar	_	_	_	_	advmod	basic	1-3	
+1-2	6-11	LIZDA	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	LIZDA	organization	*	_	_	nsubj	basic	1-3	
+1-3	12-17	tikās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi130an	tikties	_	_	_	_	root	basic	1-3	
+1-4	18-20	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case	basic	1-7	
+1-5	21-29	Ministru	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	ministrs	_	_	*[1]	*->1-1	nmod	basic	1-6	
+1-6	30-40	prezidentu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	prezidents	_	_	*[1]	*->1-1	nmod	basic	1-7	
+1-7	41-46	Valdi	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	valde	person[1]	*[1]	*[1]	*->1-2	iobj	basic	1-3	
+1-8	47-57	Dombrovski	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa2	Dombrovskis	person[1]	*[1]	*[1]	*->1-2	flat:name	basic	1-7	
+1-9	58-60	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-10	
+1-10	61-74	iepazīstināja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	iepazīstināt	_	_	_	_	conj	basic	1-3	
+1-11	75-77	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case	basic	1-14	
+1-12	78-85	gājiena	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	gājiens	_	_	*[2]	*->2-1	nmod	basic	1-13	
+1-13	86-96	dalībnieku	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	dalībnieks	_	_	*[2]	*->2-1	nmod	basic	1-14	
+1-14	97-105	prasībām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	prasība	_	_	*[2]	*->2-1	iobj	basic	1-10	
+1-15	105-106	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-3	
+
+#Text=Tajās uzsvērta nepieciešamība saglabāt valsts budžeta finansējumu izglītības un zinātnes nozarei.
+2-1	108-113	Tajās	Fem	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur\|PronType=Dem	*	*	pd0fpln	tā	_	_	*[2]	*->2-2	obl	basic	2-2	
+2-2	114-122	uzsvērta	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnpsnpn	uzsvērt	_	_	_	_	root	basic	2-2	
+2-3	123-137	nepieciešamība	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	nepieciešamība	_	_	_	_	nsubj:pass	basic	2-2	
+2-4	138-146	saglabāt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	saglabāt	_	_	_	_	acl	basic	2-3	
+2-5	147-153	valsts	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	valsts	_	_	_	_	nmod	basic	2-6	
+2-6	154-161	budžeta	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	budžets	_	_	_	_	nmod	basic	2-7	
+2-7	162-173	finansējumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	finansējums	_	_	_	_	obj	basic	2-4	
+2-8	174-184	izglītības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	izglītība	_	_	_	_	nmod	basic	2-11	
+2-9	185-187	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	2-10	
+2-10	188-196	zinātnes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	zinātne	_	_	_	_	conj	basic	2-8	
+2-11	197-204	nozarei	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd5	nozare	_	_	_	_	nmod	basic	2-7	
+2-12	204-205	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-2	
+
+#Text=Premjers kategoriski noraidīja iespēju, ka finansējums varētu palikt iepriekšējā līmenī.
+3-1	207-215	Premjers	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	premjers	_	_	*[1]	*->1-3	nsubj	basic	3-3	
+3-2	216-227	kategoriski	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	kategoriski	_	_	_	_	advmod	basic	3-3	
+3-3	228-237	noraidīja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	noraidīt	_	_	_	_	root	basic	3-3	
+3-4	238-245	iespēju	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	iespēja	_	_	_	_	obj	basic	3-3	
+3-5	245-246	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-8	
+3-6	247-249	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark	basic	3-8	
+3-7	250-261	finansējums	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	finansējums	_	_	_	_	nsubj	basic	3-8	
+3-8	262-268	varētu	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vonc0t300an	varēt	_	_	_	_	acl	basic	3-4	
+3-9	269-275	palikt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0i1000n	palikt	_	_	_	_	xcomp	basic	3-8	
+3-10	276-287	iepriekšējā	Masc	Sing	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armslnp	iepriekšējs	_	_	_	_	amod	basic	3-11	
+3-11	288-294	līmenī	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	līmenis	_	_	_	_	obl	basic	3-9	
+3-12	294-295	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-3	

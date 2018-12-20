@@ -1,0 +1,86 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Sadursmes sākās pēc tam, kad sestdien demonstrācijā devās opozīcijas partiju piekritēji.
+1-1	0-9	Sadursmes	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn5	sadursme	_	_	_	_	nsubj	basic	1-2	
+1-2	10-15	sākās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi130an	sākties	_	_	_	_	root	basic	1-2	
+1-3	16-19	pēc	_	_	_	_	_	_	_	_	_	_	_	_	spsd	pēc	_	_	_	_	case	basic	1-4	
+1-4	20-23	tam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msdn	tas	_	_	_	_	obl	basic	1-2	
+1-5	23-24	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-9	
+1-6	25-28	kad	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0t	kad	_	_	_	_	advmod	basic	1-9	
+1-7	29-37	sestdien	_	_	_	_	_	_	_	_	_	_	_	_	r0t	sestdien	time	*	_	_	advmod	basic	1-9	
+1-8	38-51	demonstrācijā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	demonstrācija	_	_	_	_	obl	basic	1-9	
+1-9	52-57	devās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisti30an	doties	_	_	_	_	advcl	basic	1-4	
+1-10	58-68	opozīcijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	opozīcija	_	_	*[1]	*->1-1	nmod	basic	1-11	
+1-11	69-76	partiju	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	partija	_	_	*[1]	*->1-1	nmod	basic	1-12	
+1-12	77-87	piekritēji	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	piekritējs	_	_	*[1]	*->1-1	nsubj	basic	1-9	
+1-13	87-88	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-2	
+
+#Text=Viņi protestēja pret Mušarafa lēmumu atcelt no amata Augstāko valsts tiesnesi Iftiharu Čaudhri.
+2-1	90-94	Viņi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Prs	3	*	pp3mpnn	viņš	_	_	*[1]	*->1-2	nsubj	basic	2-2	
+2-2	95-105	protestēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi230an	protestēt	_	_	_	_	root	basic	2-2	
+2-3	106-110	pret	_	_	_	_	_	_	_	_	_	_	_	_	spsa	pret	_	_	_	_	case	basic	2-5	
+2-4	111-119	Mušarafa	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg1	Mušarafa	person	*	_	_	nmod	basic	2-5	
+2-5	120-126	lēmumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	lēmums	_	_	_	_	iobj	basic	2-2	
+2-6	127-133	atcelt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	atcelt	_	_	_	_	acl	basic	2-5	
+2-7	134-136	no	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	_	_	_	_	case	basic	2-8	
+2-8	137-142	amata	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	amats	_	_	_	_	obl	basic	2-6	
+2-9	143-151	Augstāko	Masc	Sing	Acc	Cmp	*	*	*	*	*	Case=Acc\|Degree=Cmp\|Gender=Masc\|Number=Sing	*	*	afmsayc	augsts	_	_	*[2]	*->2-1	amod	basic	2-11	
+2-10	152-158	valsts	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	valsts	_	_	*[2]	*->2-1	nmod	basic	2-11	
+2-11	159-167	tiesnesi	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	tiesnesis	_	_	*[2]	*->2-1	nmod	basic	2-12	
+2-12	168-176	Iftiharu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	Iftihars	person[1]	*[1]	*[2]	*->2-2	obj	basic	2-6	
+2-13	177-184	Čaudhri	_	_	_	_	_	_	_	_	_	_	_	_	np0000	Čaudhri	person[1]	*[1]	*[2]	*->2-2	flat:name	basic	2-12	
+2-14	184-185	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-2	
+
+#Text=Arī pats Čaudhri ieradās Karači, lai uzstātos demonstrantu priekšā, taču līdz manifestācijas vietai netika, jo valdošo spēku atbalstītāji sāka bloķēt ceļus, lai neielaistu pilsētā opozicionārus.
+3-1	187-190	Arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse	basic	3-3	
+3-2	191-195	pats	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msnn	pats	_	_	*[2]	*->2-3	det	basic	3-3	
+3-3	196-203	Čaudhri	_	_	_	_	_	_	_	_	_	_	_	_	np0000	Čaudhri	person	*	*[2]	*->2-4	nsubj	basic	3-4	
+3-4	204-211	ieradās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi130an	ierasties	_	_	_	_	root	basic	3-4	
+3-5	212-218	Karači	_	_	_	_	_	_	_	_	_	_	_	_	np0000	Karači	GPE	*	_	_	obl	basic	3-4	
+3-6	218-219	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-8	
+3-7	220-223	lai	_	_	_	_	_	_	_	_	_	_	_	_	cs	lai	_	_	_	_	mark	basic	3-8	
+3-8	224-232	uzstātos	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Pos\|Reflex=Yes\|VerbForm=Fin\|Voice=Act	*	*	vmyc0i100an	uzstāties	_	_	_	_	advcl	basic	3-4	
+3-9	233-245	demonstrantu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	demonstrants	_	_	_	_	nmod	basic	3-10	
+3-10	246-253	priekšā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	priekša	_	_	_	_	obl	basic	3-8	
+3-11	253-254	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-16	
+3-12	255-259	taču	_	_	_	_	_	_	_	_	_	_	_	_	cc	taču	_	_	_	_	cc	basic	3-16	
+3-13	260-264	līdz	_	_	_	_	_	_	_	_	_	_	_	_	spsd	līdz	_	_	_	_	case	basic	3-15	
+3-14	265-279	manifestācijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	manifestācija	_	_	_	_	nmod	basic	3-15	
+3-15	280-286	vietai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	vieta	_	_	_	_	obl	basic	3-16	
+3-16	287-293	netika	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vtnisi130ay	netikt	_	_	_	_	conj	basic	3-4	
+3-17	293-294	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-22	
+3-18	295-297	jo	_	_	_	_	_	_	_	_	_	_	_	_	cs	jo	_	_	_	_	mark	basic	3-22	
+3-19	298-305	valdošo	Masc	Plur	Gen	Pos	*	Pres	*	Pass	*	Aspect=Imp\|Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Imp	vmnpdmpgapypn	valdīt	_	_	_	_	amod	basic	3-20	
+3-20	306-311	spēku	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	spēks	_	_	_	_	nmod	basic	3-21	
+3-21	312-324	atbalstītāji	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	atbalstītājs	_	_	_	_	nsubj	basic	3-22	
+3-22	325-329	sāka	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vpnist130an	sākt	_	_	_	_	advcl	basic	3-16	
+3-23	330-336	bloķēt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	bloķēt	_	_	_	_	xcomp	basic	3-22	
+3-24	337-342	ceļus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	ceļš	_	_	_	_	obj	basic	3-23	
+3-25	342-343	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-27	
+3-26	344-347	lai	_	_	_	_	_	_	_	_	_	_	_	_	cs	lai	_	_	_	_	mark	basic	3-27	
+3-27	348-358	neielaistu	*	Sing	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	1	*	vmnipt31say	neielaistīt	_	_	_	_	advcl	basic	3-22	
+3-28	359-366	pilsētā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	pilsēta	_	_	_	_	obl	basic	3-27	
+3-29	367-380	opozicionārus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	opozicionārs	_	_	_	_	obj	basic	3-27	
+3-30	380-381	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-4	
+
+#Text=Rezultātā dažādās pilsētas vietās uzliesmoja sadursmes, kas pārtapa asiņainās ielu kaujās.
+4-1	383-392	Rezultātā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	rezultāts	_	_	_	_	obl	basic	4-5	
+4-2	393-400	dažādās	Fem	Plur	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	arfplnp	dažāda	_	_	_	_	amod	basic	4-4	
+4-3	401-409	pilsētas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	pilsēta	_	_	_	_	nmod	basic	4-4	
+4-4	410-416	vietās	Fem	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	vieta	_	_	_	_	obl	basic	4-5	
+4-5	417-427	uzliesmoja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi230an	uzliesmot	_	_	_	_	root	basic	4-5	
+4-6	428-437	sadursmes	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn5	sadursme	_	_	*[3]	*->3-1	nsubj	basic	4-5	
+4-7	437-438	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	4-9	
+4-8	439-442	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	*[3]	*->3-2	nsubj	basic	4-9	
+4-9	443-450	pārtapa	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi130an	pārtapt	_	_	_	_	acl	basic	4-6	
+4-10	451-460	asiņainās	Fem	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpnyp	asiņaina	_	_	_	_	amod	basic	4-12	
+4-11	461-465	ielu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	iela	_	_	_	_	nmod	basic	4-12	
+4-12	466-472	kaujās	Fem	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	kauja	_	_	_	_	obl	basic	4-9	
+4-13	472-473	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	4-5	

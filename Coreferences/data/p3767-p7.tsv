@@ -1,0 +1,79 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Grāmata sastāv no divām daļām.
+1-1	0-7	Grāmata	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	grāmata	_	_	_	_	nsubj	basic	1-2	
+1-2	8-14	sastāv	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	sastāvēt	_	_	_	_	root	basic	1-2	
+1-3	15-17	no	_	_	_	_	_	_	_	_	_	_	_	_	sppd	no	_	_	_	_	case	basic	1-5	
+1-4	18-23	divām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur\|NumType=Card	*	*	mcsfpd	divas	_	_	_	_	nummod	basic	1-5	
+1-5	24-29	daļām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	daļa	_	_	_	_	obl	basic	1-2	
+1-6	29-30	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-2	
+
+#Text=Pirmajā daļā galvenokārt tiek "zīmēts" Andra Grūtupa sociālpsiholoģiskais portrets, aprakstīta viņa meistarīgi īstenotā uzdrošināšanās juridiskajā un rakstniecības jomā, kā arī raksturoti grāmatas galvenā varoņa sociāli politiskie uzskati, viņa sabiedriskās domas veidotāja talants.
+2-1	32-39	Pirmajā	Fem	Sing	Loc	Pos	*	*	*	*	*	Case=Loc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|NumType=Ord	*	*	mosfsl	pirmā	_	_	_	_	amod	basic	2-2	
+2-2	40-44	daļā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	daļa	_	_	_	_	obl	basic	2-6	
+2-3	45-56	galvenokārt	_	_	_	_	_	_	_	_	_	_	_	_	r0m	galvenokārt	_	_	_	_	advmod	basic	2-6	
+2-4	57-61	tiek	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vtnipi130an	tikt	_	_	_	_	aux	basic	2-6	
+2-5	62-63	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	_	_	_	_	punct	basic	2-6	
+2-6	63-69	zīmēts	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnp	zīmēt	_	_	_	_	root	basic	2-6	
+2-7	69-70	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	_	_	_	_	punct	basic	2-6	
+2-8	71-76	Andra	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg2	Andris	person[1]	*[1]	*[1]	*->1-1	nmod	basic	2-11	
+2-9	77-84	Grūtupa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Grūtups	person[1]	*[1]	*[1]	*->1-1	flat:name	basic	2-8	
+2-10	85-105	sociālpsiholoģiskais	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsnyp	sociālpsiholoģisks	_	_	_	_	amod	basic	2-11	
+2-11	106-114	portrets	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	portrets	_	_	_	_	nsubj:pass	basic	2-6	
+2-12	114-115	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-13	
+2-13	116-126	aprakstīta	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnpsnp	aprakstīt	_	_	_	_	conj	basic	2-6	
+2-14	127-131	viņa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msgn	viņš	_	_	*[1]	*->1-2	det	basic	2-17	
+2-15	132-142	meistarīgi	_	_	_	_	_	_	_	_	_	_	_	_	r0m	meistarīgi	_	_	_	_	advmod	basic	2-16	
+2-16	143-151	īstenotā	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnpsyp	īstenot	_	_	_	_	amod	basic	2-17	
+2-17	152-166	uzdrošināšanās	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsar	uzdrošināšanās	_	_	_	_	nsubj:pass	basic	2-13	
+2-18	167-178	juridiskajā	Masc	Sing	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armslyp	juridisks	_	_	_	_	amod	basic	2-21	
+2-19	179-181	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	2-20	
+2-20	182-195	rakstniecības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	rakstniecība	_	_	_	_	conj	basic	2-18	
+2-21	196-200	jomā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	joma	_	_	_	_	acl	basic	2-17	
+2-22	200-201	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-25	
+2-23	202-204	kā	_	_	_	_	_	_	_	_	_	_	_	_	cc	kā	_	_	_	_	cc	basic	2-25	
+2-24	205-208	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse	basic	2-23	
+2-25	209-219	raksturoti	Masc	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpnpsnp	raksturot	_	_	_	_	conj	basic	2-6	
+2-26	220-228	grāmatas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	grāmata	_	_	*[1]	*->1-3	nmod	basic	2-28	
+2-27	229-236	galvenā	Masc	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsgyp	galvenais	_	_	*[1]	*->1-3	amod	basic	2-28	
+2-28	237-243	varoņa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	varonis	_	_	*[1]	*->1-3	nmod	basic	2-31	
+2-29	244-251	sociāli	_	_	_	_	_	_	_	_	_	_	_	_	r0m	sociāli	_	_	_	_	advmod	basic	2-31	
+2-30	252-262	politiskie	Masc	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpnyp	politisks	_	_	_	_	amod	basic	2-31	
+2-31	263-270	uzskati	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	uzskats	_	_	_	_	nsubj:pass	basic	2-25	
+2-32	270-271	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-37	
+2-33	272-276	viņa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msgn	viņš	_	_	*[1]	*->1-4	det	basic	2-35	
+2-34	277-289	sabiedriskās	Fem	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsgyp	sabiedriska	_	_	_	_	amod	basic	2-35	
+2-35	290-295	domas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	doma	_	_	_	_	nmod	basic	2-36	
+2-36	296-305	veidotāja	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	veidotājs	_	_	_	_	nmod	basic	2-37	
+2-37	306-313	talants	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	talants	_	_	_	_	conj	basic	2-31	
+2-38	313-314	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-6	
+
+#Text=Grāmatas otro daļu veido nozīmīgākās un nereti arī skandalozākās Andra Grūtupa intervijas, juridisko un dokumentālajai prozai veltīto grāmatu fragmenti.
+3-1	316-324	Grāmatas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	grāmata	_	_	_	_	nmod	basic	3-3	
+3-2	325-329	otro	Fem	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|NumType=Ord	*	*	mosfsa	otrā	_	_	_	_	amod	basic	3-3	
+3-3	330-334	daļu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	daļa	_	_	_	_	obj	basic	3-4	
+3-4	335-340	veido	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt230an	veidot	_	_	_	_	root	basic	3-4	
+3-5	341-352	nozīmīgākās	Fem	Plur	Nom	Cmp	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Fem\|Number=Plur	*	*	affpnyc	nozīmīga	_	_	_	_	amod	basic	3-12	
+3-6	353-355	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	3-9	
+3-7	356-362	nereti	*	*	*	*	*	*	*	*	*	PronType=Neg	*	*	r0t	nereti	_	_	_	_	advmod	basic	3-9	
+3-8	363-366	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse	basic	3-9	
+3-9	367-380	skandalozākās	Fem	Plur	Nom	Cmp	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Fem\|Number=Plur	*	*	affpnyc	skandaloza	_	_	_	_	conj	basic	3-5	
+3-10	381-386	Andra	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Andris	person[2]	*[2]	*[1]	*->1-5	nmod	basic	3-12	
+3-11	387-394	Grūtupa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Grūtups	person[2]	*[2]	*[1]	*->1-5	flat:name	basic	3-10	
+3-12	395-405	intervijas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	intervija	_	_	_	_	nsubj	basic	3-4	
+3-13	405-406	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-20	
+3-14	407-416	juridisko	Fem	Plur	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	arfpgyp	juridisks	_	_	_	_	amod	basic	3-19	
+3-15	417-419	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	3-18	
+3-16	420-434	dokumentālajai	Fem	Sing	Dat	Pos	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsdyp	dokumentāla	_	_	_	_	amod	basic	3-17	
+3-17	435-441	prozai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	proza	_	_	_	_	iobj	basic	3-18	
+3-18	442-449	veltīto	Fem	Plur	Gen	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfpgpsyp	veltīt	_	_	_	_	conj	basic	3-14	
+3-19	450-457	grāmatu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	grāmata	_	_	_	_	nmod	basic	3-20	
+3-20	458-467	fragmenti	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	fragments	_	_	_	_	conj	basic	3-12	
+3-21	467-468	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-4	

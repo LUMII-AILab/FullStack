@@ -1,0 +1,64 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Sarunā ar saimnieku Dmitriju PAVLOVU (attēlā) uzzināju, ka pamatus ābeļdārzam vēl Ulmaņlaikos licis Dmitrija vectēvs, tad viņa tēvs Aleksandrs 90. gados paņēmis vectēva zemi, iestādījis jaunus augļu kokus.
+1-1	0-6	Sarunā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	saruna	_	_	_	_	obl	basic	1-9	
+1-2	7-9	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case	basic	1-4	
+1-3	10-19	saimnieku	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	saimnieks	_	_	*[2]	*->2-1	nmod	basic	1-4	
+1-4	20-28	Dmitriju	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	Dmitrijs	person[1]	*[1]	*[2]	*->2-2	nmod	basic	1-1	
+1-5	29-36	PAVLOVU	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	Pavlovs	person[1]	*[1]	*[2]	*->2-2	flat:name	basic	1-4	
+1-6	37-38	(	_	_	_	_	_	_	_	_	_	_	_	_	zb	(	_	_	_	_	punct	basic	1-7	
+1-7	38-44	attēlā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	attēls	_	_	_	_	parataxis	basic	1-4	
+1-8	44-45	)	_	_	_	_	_	_	_	_	_	_	_	_	zb	)	_	_	_	_	punct	basic	1-7	
+1-9	46-54	uzzināju	*	Sing	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	1	*	vmnist31san	uzzināt	_	_	_	_	root	basic	1-9	
+1-10	54-55	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-16	
+1-11	56-58	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark	basic	1-16	
+1-12	59-66	pamatus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	pamats	_	_	_	_	obj	basic	1-16	
+1-13	67-77	ābeļdārzam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	ābeļdārzs	_	_	_	_	iobj	basic	1-16	
+1-14	78-81	vēl	_	_	_	_	_	_	_	_	_	_	_	_	r0t	vēl	_	_	_	_	advmod	basic	1-15	
+1-15	82-93	Ulmaņlaikos	Masc	Ptan	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Ptan	*	*	npmdl1	Ulmaņlaiki	time	*	_	_	obl	basic	1-16	
+1-16	94-99	licis	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnasnpn	likt	_	_	_	_	ccomp	basic	1-9	
+1-17	100-108	Dmitrija	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Dmitrijs	person	*	*[2]	*->2-3	nmod	basic	1-18	
+1-18	109-116	vectēvs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	vectēvs	_	_	_	_	nsubj	basic	1-16	
+1-19	116-117	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-26	
+1-20	118-121	tad	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	tad	_	_	_	_	advmod	basic	1-26	
+1-21	122-126	viņa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msgn	viņš	_	_	*[2]	*->2-4	det	basic	1-22	
+1-22	127-131	tēvs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	tēvs	_	_	*[1]	*->1-1	nmod	basic	1-23	
+1-23	132-142	Aleksandrs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Aleksandrs	person	*	*[1]	*->1-2	nsubj	basic	1-26	
+1-24	143-146	90.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	90.	time[2]	*[2]	_	_	amod	basic	1-25	
+1-25	147-152	gados	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	gads	time[2]	*[2]	_	_	obl	basic	1-26	
+1-26	153-160	paņēmis	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnasnpn	paņemt	_	_	_	_	conj	basic	1-16	
+1-27	161-168	vectēva	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	vectēvs	_	_	_	_	nmod	basic	1-28	
+1-28	169-173	zemi	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	zeme	_	_	_	_	obj	basic	1-26	
+1-29	173-174	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-30	
+1-30	175-185	iestādījis	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnasnpn	iestādīt	_	_	_	_	conj	basic	1-26	
+1-31	186-192	jaunus	Masc	Plur	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpanp	jauns	_	_	_	_	amod	basic	1-33	
+1-32	193-198	augļu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	auglis	_	_	_	_	nmod	basic	1-33	
+1-33	199-204	kokus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	koks	_	_	_	_	obj	basic	1-30	
+1-34	204-205	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-9	
+
+#Text=Auguši koki, auguši viņu bērni.
+2-1	207-213	Auguši	Masc	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpnasnpn	augt	_	_	_	_	root	basic	2-1	
+2-2	214-218	koki	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	koks	_	_	_	_	nsubj	basic	2-1	
+2-3	218-219	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-4	
+2-4	220-226	auguši	Masc	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpnasnpn	augt	_	_	_	_	conj	basic	2-1	
+2-5	227-231	viņu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Prs	3	*	pp3mpgn	viņš	_	_	_	_	det	basic	2-6	
+2-6	232-237	bērni	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	bērns	_	_	_	_	nsubj	basic	2-4	
+2-7	237-238	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-1	
+
+#Text=Tagad Dmitrijs ar savu ģimeni kopj šo saimniecību.
+3-1	240-245	Tagad	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	tagad	_	_	_	_	advmod	basic	3-6	
+3-2	246-254	Dmitrijs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Dmitrijs	person	*	*[2]	*->2-5	nsubj	basic	3-6	
+3-3	255-257	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case	basic	3-5	
+3-4	258-262	savu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0fsan	sava	_	_	*[2]	*->2-6	det	basic	3-5	
+3-5	263-269	ģimeni	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	ģimene	_	_	_	_	nmod	basic	3-2	
+3-6	270-274	kopj	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt130an	kopt	_	_	_	_	root	basic	3-6	
+3-7	275-277	šo	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsan	šī	_	_	_	_	det	basic	3-8	
+3-8	278-289	saimniecību	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	saimniecība	_	_	_	_	obj	basic	3-6	
+3-9	289-290	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-6	

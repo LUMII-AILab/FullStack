@@ -1,0 +1,60 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Izrādās, nemaz tik traki nav.
+1-1	0-7	Izrādās	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipi330an	izrādīties	_	_	_	_	root	basic	1-1	
+1-2	7-8	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-5	
+1-3	9-14	nemaz	_	_	_	_	_	_	_	_	_	_	_	_	q	nemaz	_	_	_	_	discourse	basic	1-6	
+1-4	15-18	tik	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0q	tik	_	_	_	_	advmod	basic	1-5	
+1-5	19-24	traki	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	traki	_	_	_	_	csubj	basic	1-1	
+1-6	25-28	nav	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30ay	nebūt	_	_	_	_	cop	basic	1-5	
+1-7	28-29	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-1	
+
+#Text=Nesen iegriezos Lendžu pagasta saimniecībā “Ķirši”.
+2-1	31-36	Nesen	*	*	*	*	*	*	*	*	*	PronType=Neg	*	*	r0t	nesen	_	_	_	_	advmod	basic	2-2	
+2-2	37-46	iegriezos	*	Sing	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	1	*	vmyisi11san	iegriezties	_	_	_	_	root	basic	2-2	
+2-3	47-53	Lendžu	Masc	Ptan	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	npmdg2	Lendži	GPE[1]	*[1]	_	_	nmod	basic	2-4	
+2-4	54-61	pagasta	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Pagasts	GPE[1]	*[1]	_	_	nmod	basic	2-5	
+2-5	62-73	saimniecībā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	saimniecība	_	_	*[1]	*->1-1	nmod	basic	2-7	
+2-6	74-75	“	_	_	_	_	_	_	_	_	_	_	_	_	zq	“	location[2]	*[2]	*[1]	*->1-2	punct	basic	2-7	
+2-7	75-80	Ķirši	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn2	ķirsis	location[2]	*[2]	*[1]	*->1-2	obl	basic	2-2	
+2-8	80-81	”	_	_	_	_	_	_	_	_	_	_	_	_	zq	”	location[2]	*[2]	*[1]	*->1-2	punct	basic	2-7	
+2-9	81-82	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-2	
+
+#Text=Te dzīvo un strādā ļoti darbīgi cilvēki.
+3-1	84-86	Te	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0p	te	_	_	*[1]	*->1-3	advmod	basic	3-2	
+3-2	87-92	dzīvo	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt230an	dzīvot	_	_	_	_	root	basic	3-2	
+3-3	93-95	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	3-4	
+3-4	96-102	strādā	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt230an	strādāt	_	_	_	_	conj	basic	3-2	
+3-5	103-107	ļoti	_	_	_	_	_	_	_	_	_	_	_	_	r0q	ļoti	_	_	_	_	advmod	basic	3-6	
+3-6	108-115	darbīgi	Masc	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnnp	darbīgs	_	_	_	_	amod	basic	3-7	
+3-7	116-123	cilvēki	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	cilvēks	_	_	_	_	nsubj	basic	3-2	
+3-8	123-124	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-2	
+
+#Text=16 hektāros zemes ierīkots milzīgs ābeļdārzs, kurā aug arī citi augļu koki — bumbieres, plūmes, ķirši.
+4-1	126-128	16	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	16	_	_	_	_	nummod	basic	4-2	
+4-2	129-137	hektāros	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	hektārs	_	_	_	_	obl	basic	4-4	
+4-3	138-143	zemes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	zeme	_	_	_	_	nmod	basic	4-2	
+4-4	144-152	ierīkots	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnpn	ierīkot	_	_	_	_	root	basic	4-4	
+4-5	153-160	milzīgs	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	milzīgs	_	_	*[2]	*->2-1	amod	basic	4-6	
+4-6	161-170	ābeļdārzs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	ābeļdārzs	_	_	*[2]	*->2-1	nsubj:pass	basic	4-4	
+4-7	170-171	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	4-9	
+4-8	172-176	kurā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msln	kurš	_	_	*[2]	*->2-2	obl	basic	4-9	
+4-9	177-180	aug	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipi130an	augt	_	_	_	_	acl	basic	4-6	
+4-10	181-184	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse	basic	4-11	
+4-11	185-189	citi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Ind	*	*	pi0mpnn	cits	_	_	*[3]	*->3-1	det	basic	4-13	
+4-12	190-195	augļu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	auglis	_	_	*[3]	*->3-1	nmod	basic	4-13	
+4-13	196-200	koki	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	koks	_	_	*[3]	*->3-1	nsubj	basic	4-9	
+4-14	201-202	—	_	_	_	_	_	_	_	_	_	_	_	_	zd	—	_	_	_	_	punct	basic	4-15	
+4-15	203-212	bumbieres	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn5	bumbiere	_	_	*[3]	*->3-2	acl	basic	4-13	
+4-16	212-213	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	*[3]	*->3-2	punct	basic	4-17	
+4-17	214-220	plūmes	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn5	plūme	_	_	*[3]	*->3-2	conj	basic	4-15	
+4-18	220-221	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	*[3]	*->3-2	punct	basic	4-19	
+4-19	222-227	ķirši	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn2	ķirsis	_	_	*[3]	*->3-2	conj	basic	4-15	
+4-20	227-228	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	4-4	

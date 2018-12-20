@@ -1,0 +1,39 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=AS "Grindeks" apgrozījums 2012.gada deviņos mēnešos bija 50,1 miljons latu, kas ir par 1,2 miljoniem latu jeb 2,5% vairāk nekā 2011.gada deviņos mēnešos.
+1-1	0-2	AS	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	AS	organization[1]	*[1]	nmod	basic	1-3	
+1-2	3-4	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[1]	*[1]	punct	basic	1-3	
+1-3	4-12	Grindeks	_	_	_	_	_	_	_	_	_	_	_	_	np0000	Grindeks	organization[1]	*[1]	nmod	basic	1-5	
+1-4	12-13	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[1]	*[1]	punct	basic	1-3	
+1-5	14-25	apgrozījums	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	apgrozījums	_	_	nsubj	basic	1-12	
+1-6	26-31	2012.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	2012.	time[2]	*[2]	amod	basic	1-7	
+1-7	31-35	gada	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	gads	time[2]	*[2]	nmod	basic	1-9	
+1-8	36-43	deviņos	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpl	deviņi	time[2]	*[2]	nummod	basic	1-9	
+1-9	44-51	mēnešos	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl2	mēness	time[2]	*[2]	obl	basic	1-12	
+1-10	52-56	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vcnisii30an	būt	_	_	cop	basic	1-12	
+1-11	57-61	50,1	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	50,1	_	_	nummod	basic	1-12	
+1-12	62-69	miljons	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	miljons	_	_	root	basic	1-12	
+1-13	70-74	latu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	lats	_	_	nmod	basic	1-12	
+1-14	74-75	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-24	
+1-15	76-79	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	nsubj	basic	1-24	
+1-16	80-82	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	aux	basic	1-24	
+1-17	83-86	par	_	_	_	_	_	_	_	_	_	_	_	_	sppd	par	_	_	case	basic	1-19	
+1-18	87-90	1,2	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	1,2	_	_	nummod	basic	1-19	
+1-19	91-100	miljoniem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	miljons	_	_	iobj	basic	1-24	
+1-20	101-105	latu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	lats	_	_	nmod	basic	1-19	
+1-21	106-109	jeb	_	_	_	_	_	_	_	_	_	_	_	_	cc	jeb	_	_	cc	basic	1-23	
+1-22	110-113	2,5	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	2,5	_	_	nummod	basic	1-23	
+1-23	113-114	%	_	_	_	_	_	_	_	_	_	_	_	_	xx	%	_	_	conj	basic	1-19	
+1-24	115-121	vairāk	*	*	*	Cmp	*	*	*	*	*	Degree=Cmp	*	*	rcq	daudz	_	_	advcl	basic	1-12	
+1-25	122-126	nekā	_	_	_	_	_	_	_	_	_	_	_	_	cs	nekā	_	_	mark	basic	1-29	
+1-26	127-132	2011.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	2011.	time[3]	*[3]	amod	basic	1-27	
+1-27	132-136	gada	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	gads	time[3]	*[3]	nmod	basic	1-29	
+1-28	137-144	deviņos	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpl	deviņi	time[3]	*[3]	nummod	basic	1-29	
+1-29	145-152	mēnešos	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl2	mēness	time[3]	*[3]	acl	basic	1-24	
+1-30	152-153	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	1-12	

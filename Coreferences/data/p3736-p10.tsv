@@ -1,0 +1,39 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=1972.gadā Ziedonim piešķirts nopelniem bagātā kultūras darbinieka nosaukums, 1977.gadā piešķirts Tautas dzejnieka goda nosaukums, 1983.gadā viņš apbalvots ar "Tautu draudzības" ordeni.
+1-1	0-5	1972.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	1972.	time[1]	*[1]	_	_	amod	basic	1-2	
+1-2	5-9	gadā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	gads	time[1]	*[1]	_	_	obl	basic	1-4	
+1-3	10-18	Ziedonim	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	npmsd2	Ziedonis	person	*	*[1]	*->1-1	iobj	basic	1-4	
+1-4	19-28	piešķirts	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnp	piešķirt	_	_	_	_	root	basic	1-4	
+1-5	29-38	nopelniem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	nopelns	_	_	_	_	obl	basic	1-6	
+1-6	39-45	bagātā	Masc	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsgyp	bagāts	_	_	_	_	amod	basic	1-8	
+1-7	46-54	kultūras	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	kultūra	_	_	_	_	nmod	basic	1-8	
+1-8	55-65	darbinieka	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	darbinieks	_	_	_	_	nmod	basic	1-9	
+1-9	66-75	nosaukums	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	nosaukums	_	_	_	_	nsubj:pass	basic	1-4	
+1-10	75-76	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-13	
+1-11	77-82	1977.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	1977.	time[2]	*[2]	_	_	amod	basic	1-12	
+1-12	82-86	gadā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	gads	time[2]	*[2]	_	_	obl	basic	1-13	
+1-13	87-96	piešķirts	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnp	piešķirt	_	_	_	_	conj	basic	1-4	
+1-14	97-103	Tautas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	tauta	_	_	_	_	nmod	basic	1-15	
+1-15	104-113	dzejnieka	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	dzejnieks	_	_	_	_	nmod	basic	1-17	
+1-16	114-118	goda	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	gods	_	_	_	_	nmod	basic	1-17	
+1-17	119-128	nosaukums	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	nosaukums	_	_	_	_	nsubj:pass	basic	1-13	
+1-18	128-129	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-22	
+1-19	130-135	1983.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	1983.	person[3]	*[3]	_	_	amod	basic	1-20	
+1-20	135-139	gadā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	gads	person[3]	*[3]	_	_	obl	basic	1-22	
+1-21	140-144	viņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msnn	viņš	_	_	*[1]	*->1-2	nsubj:pass	basic	1-22	
+1-22	145-154	apbalvots	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnp	apbalvot	_	_	_	_	conj	basic	1-4	
+1-23	155-157	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case	basic	1-28	
+1-24	158-159	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	entity[4]	*[4]	_	_	punct	basic	1-26	
+1-25	159-164	Tautu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	tauta	entity[4]	*[4]	_	_	nmod	basic	1-26	
+1-26	165-175	draudzības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	draudzība	entity[4]	*[4]	_	_	nmod	basic	1-28	
+1-27	175-176	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	entity[4]	*[4]	_	_	punct	basic	1-26	
+1-28	177-183	ordeni	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	ordenis	entity[4]	*[4]	_	_	iobj	basic	1-22	
+1-29	183-184	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-4	

@@ -1,0 +1,80 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Izrādes stāsts vērpjas ar notikumiem 1525.gadā pēc kaujas pie Pāvijas Itālijā, kurā Svētās Romas imperatora Kārļa V gūstā krita Francijas karalis Francisks I un Navarras valstiņas karalis Henrijs II (Anrī d`Albrē).
+1-1	0-7	Izrādes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	izrāde	_	_	_	_	nmod	basic	1-2	
+1-2	8-14	stāsts	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	stāsts	_	_	_	_	nsubj	basic	1-3	
+1-3	15-22	vērpjas	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipi130an	vērpties	_	_	_	_	root	basic	1-3	
+1-4	23-25	ar	_	_	_	_	_	_	_	_	_	_	_	_	sppd	ar	_	_	_	_	case	basic	1-5	
+1-5	26-36	notikumiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	notikums	_	_	_	_	iobj	basic	1-3	
+1-6	37-42	1525.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	1525.	time[1]	*[1]	_	_	amod	basic	1-7	
+1-7	42-46	gadā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	gads	time[1]	*[1]	_	_	obl	basic	1-5	
+1-8	47-50	pēc	_	_	_	_	_	_	_	_	_	_	_	_	spsg	pēc	_	_	_	_	case	basic	1-9	
+1-9	51-57	kaujas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	kauja	_	_	_	_	obl	basic	1-5	
+1-10	58-61	pie	_	_	_	_	_	_	_	_	_	_	_	_	spsg	pie	_	_	_	_	case	basic	1-11	
+1-11	62-69	Pāvijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Pāvija	GPE	https://en.wikipedia.org/wiki/Pavia	_	_	nmod	basic	1-9	
+1-12	70-77	Itālijā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	Itālija	GPE	https://en.wikipedia.org/wiki/Italy	_	_	acl	basic	1-11	
+1-13	77-78	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-21	
+1-14	79-83	kurā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsln	kura	_	_	_	_	obl	basic	1-21	
+1-15	84-90	Svētās	Fem	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsgyp	svēta	GPE[2]	https://en.wikipedia.org/wiki/Holy\_Roman\_Empire[2]	*[1]	*->1-1	amod	basic	1-16	
+1-16	91-96	Romas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Roma	GPE[2]	https://en.wikipedia.org/wiki/Holy\_Roman\_Empire[2]	*[1]	*->1-1	nmod	basic	1-17	
+1-17	97-107	imperatora	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	imperators	_	_	*[1]	*->1-1	nmod	basic	1-18	
+1-18	108-113	Kārļa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg2	Kārlis	person[3]	https://en.wikipedia.org/wiki/Charles\_V,\_Holy\_Roman\_Emperor[3]	*[1]	*->1-2	nmod	basic	1-20	
+1-19	114-115	V	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	V	person[3]	https://en.wikipedia.org/wiki/Charles\_V,\_Holy\_Roman\_Emperor[3]	*[1]	*->1-2	flat:name	basic	1-18	
+1-20	116-121	gūstā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	gūsts	_	_	_	_	obl	basic	1-21	
+1-21	122-127	krita	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi130an	krist	_	_	_	_	acl	basic	1-9	
+1-22	128-137	Francijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Francija	GPE	https://en.wikipedia.org/wiki/France	*[2]	*->2-1	nmod	basic	1-23	
+1-23	138-145	karalis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	karalis	_	_	*[2]	*->2-1	nmod	basic	1-24	
+1-24	146-155	Francisks	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Francisks	person[4]	https://en.wikipedia.org/wiki/Francis\_I\_of\_France[4]	*[2]	*->2-2	nsubj	basic	1-21	
+1-25	156-157	I	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	I	person[4]	https://en.wikipedia.org/wiki/Francis\_I\_of\_France[4]	*[2]	*->2-2	flat:name	basic	1-24	
+1-26	158-160	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-30	
+1-27	161-169	Navarras	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Navarra	GPE[5]	https://en.wikipedia.org/wiki/Kingdom\_of\_Navarre[5]	*[3]	*->3-1	nmod	basic	1-28	
+1-28	170-179	valstiņas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	valstiņa	GPE[5]	https://en.wikipedia.org/wiki/Kingdom\_of\_Navarre[5]	*[3]	*->3-1	nmod	basic	1-29	
+1-29	180-187	karalis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	karalis	_	_	*[3]	*->3-1	nmod	basic	1-30	
+1-30	188-195	Henrijs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Henrijs	person[6]	https://en.wikipedia.org/wiki/Henry\_II\_of\_Navarre[6]	*[3]	*->3-2	conj	basic	1-24	
+1-31	196-198	II	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	II	person[6]	https://en.wikipedia.org/wiki/Henry\_II\_of\_Navarre[6]	*[3]	*->3-2	flat:name	basic	1-30	
+1-32	199-200	(	_	_	_	_	_	_	_	_	_	_	_	_	zb	(	_	_	_	_	punct	basic	1-33	
+1-33	200-204	Anrī	_	_	_	_	_	_	_	_	_	_	_	_	np0000	Anrī	person[7]	https://en.wikipedia.org/wiki/Henry\_II\_of\_Navarre[7]	*[3]	*->3-3	appos	basic	1-30	
+1-34	205-212	d`Albrē	_	_	_	_	_	_	_	_	_	_	_	_	np0000	d`Albrē	person[7]	https://en.wikipedia.org/wiki/Henry\_II\_of\_Navarre[7]	*[3]	*->3-3	flat:name	basic	1-33	
+1-35	212-213	)	_	_	_	_	_	_	_	_	_	_	_	_	zb	)	_	_	_	_	punct	basic	1-33	
+1-36	213-214	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-3	
+
+#Text=Gūsta vietā Madridē ieradās Angulēmas Margarita un, lai atbrīvotu brāli Francisku I, viņa lika lietā savu diplomātes un stāstnieces talantu.
+2-1	216-221	Gūsta	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	gūsts	_	_	_	_	nmod	basic	2-2	
+2-2	222-227	vietā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	vieta	_	_	_	_	obl	basic	2-4	
+2-3	228-235	Madridē	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl5	Madride	GPE	https://en.wikipedia.org/wiki/Madrid	_	_	obl	basic	2-4	
+2-4	236-243	ieradās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi130an	ierasties	_	_	_	_	root	basic	2-4	
+2-5	244-253	Angulēmas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Angulēma	person[8]	https://en.wikipedia.org/wiki/Marguerite\_de\_Navarre[8]	*[4]	*->4-1	nmod	basic	2-6	
+2-6	254-263	Margarita	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Margarita	person[8]|person[9]	https://en.wikipedia.org/wiki/Marguerite\_de\_Navarre[8]|https://en.wikipedia.org/wiki/Marguerite\_de\_Navarre[9]	*[4]	*->4-1	nsubj	basic	2-4	
+2-7	264-266	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	2-16	
+2-8	266-267	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-10	
+2-9	268-271	lai	_	_	_	_	_	_	_	_	_	_	_	_	cs	lai	_	_	_	_	mark	basic	2-10	
+2-10	272-281	atbrīvotu	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vmnc0t200an	atbrīvot	_	_	_	_	advcl	basic	2-16	
+2-11	282-287	brāli	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	brālis	_	_	*[2]	*->2-3	nmod	basic	2-12	
+2-12	288-297	Francisku	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	Francisks	person[10]	https://en.wikipedia.org/wiki/Francis\_I\_of\_France[10]	*[2]	*->2-4	nsubj	basic	2-10	
+2-13	298-299	I	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	I	person[10]	https://en.wikipedia.org/wiki/Francis\_I\_of\_France[10]	*[2]	*->2-4	flat:name	basic	2-12	
+2-14	299-300	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-10	
+2-15	301-305	viņa	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsnn	viņa	_	_	*[4]	*->4-2	nsubj	basic	2-16	
+2-16	306-310	lika	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	likt	_	_	_	_	conj	basic	2-4	
+2-17	311-316	lietā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	lieta	_	_	_	_	obl	basic	2-16	
+2-18	317-321	savu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0fsan	sava	_	_	*[4]	*->4-3	det	basic	2-22	
+2-19	322-332	diplomātes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	diplomāte	_	_	_	_	nmod	basic	2-22	
+2-20	333-335	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	2-21	
+2-21	336-347	stāstnieces	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	stāstniece	_	_	_	_	conj	basic	2-19	
+2-22	348-355	talantu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	talants	_	_	_	_	obj	basic	2-16	
+2-23	355-356	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-4	
+
+#Text=Šī misija Margaritai vainagojās ar laulībām.
+3-1	358-360	Šī	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsnn	šī	_	_	_	_	det	basic	3-2	
+3-2	361-367	misija	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	misija	_	_	_	_	nsubj	basic	3-4	
+3-3	368-378	Margaritai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	npfsd4	Margarita	person	https://en.wikipedia.org/wiki/Marguerite\_de\_Navarre	*[4]	*->4-4	obl	basic	3-4	
+3-4	379-389	vainagojās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi230an	vainagoties	_	_	_	_	root	basic	3-4	
+3-5	390-392	ar	_	_	_	_	_	_	_	_	_	_	_	_	sppd	ar	_	_	_	_	case	basic	3-6	
+3-6	393-401	laulībām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	laulība	_	_	_	_	iobj	basic	3-4	
+3-7	401-402	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-4	

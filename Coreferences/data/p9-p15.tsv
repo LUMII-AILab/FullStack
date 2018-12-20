@@ -1,0 +1,73 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Pat tad klusums patiesībā bija relatīvs.
+1-1	0-3	Pat	_	_	_	_	_	_	_	_	_	_	_	_	q	pat	_	_	_	_	discourse	basic	1-2	
+1-2	4-7	tad	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	tad	_	_	_	_	advmod	basic	1-6	
+1-3	8-15	klusums	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	klusums	_	_	_	_	nsubj	basic	1-6	
+1-4	16-25	patiesībā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	patiesība	_	_	_	_	obl	basic	1-6	
+1-5	26-30	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vcnisii30an	būt	_	_	_	_	cop	basic	1-6	
+1-6	31-39	relatīvs	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsnnp	relatīvs	_	_	_	_	root	basic	1-6	
+1-7	39-40	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-6	
+
+#Text=Lieliski varēja dzirdēt cauri Irbes jūras šaurumam braucošo kuģu dzinējus, kuri nekādi nevarēja atrasties tuvāk par 20 kilometriem.
+2-1	42-50	Lieliski	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	lieliski	_	_	_	_	advmod	basic	2-2	
+2-2	51-57	varēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vonist330an	varēt	_	_	_	_	root	basic	2-2	
+2-3	58-65	dzirdēt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	dzirdēt	_	_	_	_	xcomp	basic	2-2	
+2-4	66-71	cauri	_	_	_	_	_	_	_	_	_	_	_	_	rrp	cauri	_	_	_	_	case	basic	2-7	
+2-5	72-77	Irbes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	irbe	location[1]|location[2]	*[1]|*[2]	_	_	nmod	basic	2-7	
+2-6	78-83	jūras	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	jūra	location[1]	*[1]	_	_	nmod	basic	2-7	
+2-7	84-92	šaurumam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	šaurums	location[1]	*[1]	_	_	nmod	basic	2-8	
+2-8	93-101	braucošo	Masc	Plur	Gen	Pos	*	Pres	*	Pass	*	Aspect=Imp\|Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Imp	vmnpdmpgapypn	braukt	_	_	_	_	amod	basic	2-9	
+2-9	102-106	kuģu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	kuģis	_	_	*[1]	*->1-1	nmod	basic	2-10	
+2-10	107-115	dzinējus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	dzinējs	_	_	*[1]	*->1-1	obj	basic	2-3	
+2-11	115-116	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-14	
+2-12	117-121	kuri	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Rel	*	*	pr0mpnn	kurš	_	_	*[1]	*->1-2	nsubj	basic	2-14	
+2-13	122-128	nekādi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Ind,Neg	*	*	pi0mpny	nekāds	_	_	_	_	obl	basic	2-14	
+2-14	129-137	nevarēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vonist330ay	nevarēt	_	_	_	_	acl	basic	2-9	
+2-15	138-147	atrasties	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i1000n	atrasties	_	_	_	_	xcomp	basic	2-14	
+2-16	148-153	tuvāk	_	_	_	_	_	_	_	_	_	_	_	_	r0p	tuvāk	_	_	_	_	advmod	basic	2-15	
+2-17	154-157	par	_	_	_	_	_	_	_	_	_	_	_	_	sppd	par	_	_	_	_	case	basic	2-19	
+2-18	158-160	20	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	20	_	_	_	_	nummod	basic	2-19	
+2-19	161-172	kilometriem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	kilometrs	_	_	_	_	obl	basic	2-16	
+2-20	172-173	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-2	
+
+#Text=Vienubrīd nakts mieru pārtrauca automašīna, pēc kartes spriežot, tā pārvietojās pa aptuveni piecus kilometrus attālu lielceļu.
+3-1	175-184	Vienubrīd	_	_	_	_	_	_	_	_	_	_	_	_	r0t	vienubrīd	_	_	_	_	advmod	basic	3-4	
+3-2	185-190	nakts	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	nakts	_	_	_	_	nmod	basic	3-3	
+3-3	191-196	mieru	Masc	Coll	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Coll	*	*	ncmva1	miers	_	_	_	_	obj	basic	3-4	
+3-4	197-206	pārtrauca	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	pārtraukt	_	_	_	_	root	basic	3-4	
+3-5	207-217	automašīna	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	automašīna	_	_	_	_	nsubj	basic	3-4	
+3-6	217-218	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-12	
+3-7	219-222	pēc	_	_	_	_	_	_	_	_	_	_	_	_	spsg	pēc	_	_	_	_	case	basic	3-8	
+3-8	223-229	kartes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	karte	_	_	_	_	iobj	basic	3-9	
+3-9	230-238	spriežot	*	*	*	*	*	Pres	Qot	Act	*	Evident=Nfh\|Mood=Qot\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	*	vmnrpt100an	spriest	_	_	_	_	dep	basic	3-12	
+3-10	238-239	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-9	
+3-11	240-242	tā	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsnn	tā	_	_	_	_	nsubj	basic	3-12	
+3-12	243-254	pārvietojās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi230an	pārvietoties	_	_	_	_	conj	basic	3-4	
+3-13	255-257	pa	_	_	_	_	_	_	_	_	_	_	_	_	sppd	pa	_	_	_	_	case	basic	3-18	
+3-14	258-266	aptuveni	_	_	_	_	_	_	_	_	_	_	_	_	r0m	aptuveni	_	_	_	_	advmod	basic	3-15	
+3-15	267-273	piecus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpa	pieci	_	_	_	_	nummod	basic	3-16	
+3-16	274-284	kilometrus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	kilometrs	_	_	_	_	obl	basic	3-17	
+3-17	285-291	attālu	Masc	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsanp	attāls	_	_	_	_	amod	basic	3-18	
+3-18	292-300	lielceļu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	lielceļš	_	_	_	_	obl	basic	3-12	
+3-19	300-301	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-4	
+
+#Text=Vecrīgā naktī nekādi nevar saklausīt atsevišķu automašīnu sacelto troksni Purvciemā.
+4-1	303-310	Vecrīgā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	Vecrīga	location	*	_	_	obl	basic	4-4	
+4-2	311-316	naktī	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl6	nakts	_	_	_	_	obl	basic	4-4	
+4-3	317-323	nekādi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Ind,Neg	*	*	pi0mpny	nekāds	_	_	_	_	obl	basic	4-4	
+4-4	324-329	nevar	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vonipt330ay	nevarēt	_	_	_	_	root	basic	4-4	
+4-5	330-339	saklausīt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	saklausīt	_	_	_	_	xcomp	basic	4-4	
+4-6	340-349	atsevišķu	Fem	Plur	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	arfpgnp	atsevišķa	_	_	_	_	amod	basic	4-7	
+4-7	350-360	automašīnu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	automašīna	_	_	_	_	nmod	basic	4-8	
+4-8	361-368	sacelto	Masc	Plur	Gen	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpgpsypn	sacelt	_	_	_	_	amod	basic	4-9	
+4-9	369-376	troksni	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	troksnis	_	_	_	_	obj	basic	4-5	
+4-10	377-386	Purvciemā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	npmsl1	Purvciems	location	*	_	_	acl	basic	4-9	
+4-11	386-387	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	4-4	

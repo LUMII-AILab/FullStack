@@ -1,0 +1,51 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Aizverot aiz sevis vārtiņus, viņa atklāja, ka uz vienas no lielajām dzeltenajām aploksnēm bija rakstīts viņas vārds.
+1-1	0-8	Aizverot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000n	aizvērt	_	_	advcl	basic	1-7	
+1-2	9-12	aiz	_	_	_	_	_	_	_	_	_	_	_	_	spsg	aiz	_	_	case	basic	1-3	
+1-3	13-18	sevis	*	*	Gen	*	*	*	*	*	*	Case=Gen\|PronType=Rcp\|Reflex=Yes	*	*	px000gn	sevis	*[1]	*->1-1	obl	basic	1-1	
+1-4	19-27	vārtiņus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	vārtiņš	_	_	obj	basic	1-1	
+1-5	27-28	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-1	
+1-6	29-33	viņa	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsnn	viņa	*[1]	*->1-2	nsubj	basic	1-7	
+1-7	34-41	atklāja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	atklāt	_	_	root	basic	1-7	
+1-8	41-42	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-17	
+1-9	43-45	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	mark	basic	1-17	
+1-10	46-48	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsg	uz	_	_	case	basic	1-11	
+1-11	49-55	vienas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|NumType=Card	*	*	mcsfsg	viena	_	_	nummod	basic	1-17	
+1-12	56-58	no	_	_	_	_	_	_	_	_	_	_	_	_	sppd	no	_	_	case	basic	1-15	
+1-13	59-67	lielajām	Fem	Plur	Dat	Pos	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpdyp	liela	_	_	amod	basic	1-15	
+1-14	68-79	dzeltenajām	Fem	Plur	Dat	Pos	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpdyp	dzeltena	_	_	amod	basic	1-15	
+1-15	80-89	aploksnēm	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd5	aploksne	_	_	nmod	basic	1-11	
+1-16	90-94	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vcnisii30an	būt	_	_	aux:pass	basic	1-17	
+1-17	95-103	rakstīts	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnpn	rakstīt	_	_	ccomp	basic	1-7	
+1-18	104-109	viņas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsgn	viņa	*[1]	*->1-3	det	basic	1-19	
+1-19	110-115	vārds	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	vārds	_	_	nsubj:pass	basic	1-17	
+1-20	115-116	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	1-7	
+
+#Text=Otrajā pusē, kur vajadzēja sūtījumu vērt vaļā, bija uzrakstīts: Filosofijas kurss.
+2-1	118-124	Otrajā	Fem	Sing	Loc	Pos	*	*	*	*	*	Case=Loc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|NumType=Ord	*	*	mosfsl	otrā	_	_	amod	basic	2-2	
+2-2	125-129	pusē	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	puse	_	_	obl	basic	2-11	
+2-3	129-130	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	2-5	
+2-4	131-134	kur	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0p	kur	_	_	advmod	basic	2-5	
+2-5	135-144	vajadzēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vonist330an	vajadzēt	_	_	advcl	basic	2-2	
+2-6	145-153	sūtījumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	sūtījums	_	_	obj	basic	2-7	
+2-7	154-158	vērt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	vērt	_	_	xcomp	basic	2-5	
+2-8	159-163	vaļā	_	_	_	_	_	_	_	_	_	_	_	_	r0m	vaļā	_	_	advmod	basic	2-7	
+2-9	163-164	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	2-5	
+2-10	165-169	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vcnisii30an	būt	_	_	aux:pass	basic	2-11	
+2-11	170-180	uzrakstīts	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnpn	uzrakstīt	_	_	root	basic	2-11	
+2-12	180-181	:	_	_	_	_	_	_	_	_	_	_	_	_	zo	:	_	_	punct	basic	2-14	
+2-13	182-193	Filosofijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	filosofija	_	_	nmod	basic	2-14	
+2-14	194-199	kurss	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	kurss	_	_	nsubj:pass	basic	2-11	
+2-15	199-200	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	2-11	
+
+#Text=Apieties saudzīgi...
+3-1	202-210	Apieties	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i1000n	apieties	_	_	root	basic	3-1	
+3-2	211-219	saudzīgi	_	_	_	_	_	_	_	_	_	_	_	_	r0m	saudzīgi	_	_	advmod	basic	3-1	
+3-3	219-222	...	_	_	_	_	_	_	_	_	_	_	_	_	zs	...	_	_	punct	basic	3-1	

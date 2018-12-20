@@ -1,0 +1,37 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=- Es? - man nevilšus izlauzās smiekli.
+1-1	0-1	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	punct	basic	1-2	
+1-2	2-4	Es	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10snn	es	*[1]	*->1-1	parataxis	basic	1-7	
+1-3	4-5	?	_	_	_	_	_	_	_	_	_	_	_	_	zs	?	_	_	punct	basic	1-2	
+1-4	6-7	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	punct	basic	1-2	
+1-5	8-11	man	*	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10sdn	es	*[1]	*->1-2	obl	basic	1-7	
+1-6	12-20	nevilšus	*	*	*	*	*	*	*	*	*	PronType=Neg	*	*	r0m	nevilšus	_	_	advmod	basic	1-7	
+1-7	21-29	izlauzās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi130an	izlauzties	_	_	root	basic	1-7	
+1-8	30-37	smiekli	Masc	Ptan	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Ptan	*	*	ncmdn1	smiekli	_	_	nsubj	basic	1-7	
+1-9	37-38	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	1-7	
+
+#Text=- Beidz.
+2-1	40-41	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	punct	basic	2-2	
+2-2	42-47	Beidz	*	Sing	*	*	*	*	Imp	Act	*	Mood=Imp\|Number=Sing\|Person=2\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	2	*	vmnm0t12san	beigt	_	_	root	basic	2-2	
+2-3	47-48	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	2-2	
+
+#Text=Es tevi piemānīju.
+3-1	50-52	Es	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10snn	es	*[1]	*->1-3	nsubj	basic	3-3	
+3-2	53-57	tevi	*	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Number=Sing\|Person=2\|PronType=Prs	2	*	pp20san	tu	_	_	obj	basic	3-3	
+3-3	58-67	piemānīju	*	Sing	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	1	*	vmnist31san	piemānīt	_	_	root	basic	3-3	
+3-4	67-68	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	3-3	
+
+#Text=Es taču neesmu nekāda rakstniece.
+4-1	70-72	Es	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10snn	es	*[1]	*->1-4	nsubj	basic	4-5	
+4-2	73-77	taču	_	_	_	_	_	_	_	_	_	_	_	_	q	taču	_	_	discourse	basic	4-5	
+4-3	78-84	neesmu	*	Sing	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	1	*	vcnipii1say	nebūt	_	_	cop	basic	4-5	
+4-4	85-91	nekāda	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Ind,Neg	*	*	pi0fsny	nekāda	_	_	det	basic	4-5	
+4-5	92-102	rakstniece	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	rakstniece	_	_	root	basic	4-5	
+4-6	102-103	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	4-5	

@@ -1,0 +1,33 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Pirms diviem mēnešiem no Ustjkutas izbrauca 26 cilvēki 10 laivās.
+1-1	0-5	Pirms	_	_	_	_	_	_	_	_	_	_	_	_	sppd	pirms	time[1]	*[1]	case	basic	1-3	
+1-2	6-12	diviem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpd	divi	time[1]	*[1]	nummod	basic	1-3	
+1-3	13-21	mēnešiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd2	mēnesis	time[1]	*[1]	obl	basic	1-6	
+1-4	22-24	no	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	_	_	case	basic	1-5	
+1-5	25-34	Ustjkutas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Ustjkuta	location	*	obl	basic	1-6	
+1-6	35-43	izbrauca	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	izbraukt	_	_	root	basic	1-6	
+1-7	44-46	26	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	26	_	_	nummod	basic	1-8	
+1-8	47-54	cilvēki	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	cilvēks	_	_	nsubj	basic	1-6	
+1-9	55-57	10	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	10	_	_	nummod	basic	1-10	
+1-10	58-64	laivās	Fem	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	laiva	_	_	acl	basic	1-8	
+1-11	64-65	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	1-6	
+
+#Text=Pie Žiganskas pa Ļenu uz priekšu traucās vairs tikai 11.
+2-1	67-70	Pie	_	_	_	_	_	_	_	_	_	_	_	_	spsg	pie	_	_	case	basic	2-2	
+2-2	71-80	Žiganskas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Žiganska	location	*	obl	basic	2-7	
+2-3	81-83	pa	_	_	_	_	_	_	_	_	_	_	_	_	spsa	pa	_	_	case	basic	2-4	
+2-4	84-88	Ļenu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa4	Ļena	location	*	obl	basic	2-7	
+2-5	89-91	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsa	uz	_	_	case	basic	2-6	
+2-6	92-99	priekšu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	priekša	_	_	obl	basic	2-7	
+2-7	100-107	traucās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi130an	traukties	_	_	root	basic	2-7	
+2-8	108-113	vairs	_	_	_	_	_	_	_	_	_	_	_	_	r0t	vairs	_	_	advmod	basic	2-10	
+2-9	114-119	tikai	_	_	_	_	_	_	_	_	_	_	_	_	q	tikai	_	_	discourse	basic	2-10	
+2-10	120-122	11	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	11	_	_	nsubj	basic	2-7	
+2-11	122-123	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	2-7	

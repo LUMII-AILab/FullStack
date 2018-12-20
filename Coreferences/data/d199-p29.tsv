@@ -1,0 +1,25 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Sofija piespieda rādītājpirkstu pie degungala spogulī un sacīja: „Tu esi es.”
+1-1	0-6	Sofija	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Sofija	person	*	*[1]	*->1-1	nsubj	basic	1-2	
+1-2	7-16	piespieda	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	piespiest	_	_	_	_	root	basic	1-2	
+1-3	17-31	rādītājpirkstu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	rādītājpirksts	_	_	_	_	obj	basic	1-2	
+1-4	32-35	pie	_	_	_	_	_	_	_	_	_	_	_	_	spsg	pie	_	_	_	_	case	basic	1-5	
+1-5	36-45	degungala	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	degungals	_	_	_	_	obl	basic	1-2	
+1-6	46-53	spogulī	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	spogulis	_	_	_	_	acl	basic	1-5	
+1-7	54-56	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-8	
+1-8	57-63	sacīja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	sacīt	_	_	_	_	conj	basic	1-2	
+1-9	63-64	:	_	_	_	_	_	_	_	_	_	_	_	_	zo	:	_	_	_	_	punct	basic	1-2	
+1-10	65-66	„	_	_	_	_	_	_	_	_	_	_	_	_	zq	„	_	_	_	_	punct	basic	1-13	
+1-11	66-68	Tu	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=2\|PronType=Prs	2	*	pp20snn	tu	_	_	_	_	nsubj	basic	1-13	
+1-12	69-72	esi	*	Sing	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=2\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	2	*	vcnipii2san	būt	_	_	_	_	cop	basic	1-13	
+1-13	73-75	es	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10snn	es	_	_	*[1]	*->1-2	parataxis	basic	1-8	
+1-14	75-76	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-13	
+1-15	76-77	”	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	_	_	_	_	punct	basic	1-13	

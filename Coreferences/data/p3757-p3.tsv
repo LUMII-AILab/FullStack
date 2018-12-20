@@ -1,0 +1,107 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Situācija Liepājas metalurgā pašlaik atgādina situāciju Parex bankā pēc 2008. gada 10. novembra, kad valsts bija atpirkusi bankas akciju kontrolpaketi no Valērija Kargina un Viktora Krasovicka.
+1-1	0-9	Situācija	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	situācija	_	_	_	_	nsubj	basic	1-5	
+1-2	10-18	Liepājas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	liepāja	organization[1]|GPE[2]	*[1]|*[2]	_	_	nmod	basic	1-3	
+1-3	19-28	metalurgā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	metalurgs	organization[1]	*[1]	_	_	acl	basic	1-1	
+1-4	29-36	pašlaik	_	_	_	_	_	_	_	_	_	_	_	_	r0t	pašlaik	_	_	_	_	advmod	basic	1-5	
+1-5	37-45	atgādina	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	atgādināt	_	_	_	_	root	basic	1-5	
+1-6	46-55	situāciju	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	situācija	_	_	_	_	obj	basic	1-5	
+1-7	56-61	Parex	_	_	_	_	_	_	_	_	_	_	_	_	np0000	Parex	organization[3]	*[3]	_	_	nmod	basic	1-8	
+1-8	62-67	bankā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	banka	organization[3]	*[3]	_	_	acl	basic	1-6	
+1-9	68-71	pēc	_	_	_	_	_	_	_	_	_	_	_	_	spsg	pēc	_	_	_	_	case	basic	1-13	
+1-10	72-77	2008.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	2008.	time[4]	*[4]	_	_	amod	basic	1-11	
+1-11	78-82	gada	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	gads	time[4]	*[4]	_	_	nmod	basic	1-13	
+1-12	83-86	10.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	10.	time[4]	*[4]	_	_	amod	basic	1-13	
+1-13	87-95	novembra	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	novembris	time[4]	*[4]	_	_	nmod	basic	1-6	
+1-14	95-96	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-18	
+1-15	97-100	kad	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0t	kad	_	_	_	_	advmod	basic	1-18	
+1-16	101-107	valsts	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn6	valsts	_	_	_	_	nsubj	basic	1-18	
+1-17	108-112	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vcnisii30an	būt	_	_	_	_	aux	basic	1-18	
+1-18	113-122	atpirkusi	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnasnp	atpirkt	_	_	_	_	acl	basic	1-6	
+1-19	123-129	bankas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	banka	_	_	_	_	nmod	basic	1-20	
+1-20	130-136	akciju	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	akcija	_	_	_	_	nmod	basic	1-21	
+1-21	137-150	kontrolpaketi	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa5	kontrolpakete	_	_	_	_	obj	basic	1-18	
+1-22	151-153	no	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	_	_	_	_	case	basic	1-23	
+1-23	154-162	Valērija	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Valērijs	person[5]	*[5]	_	_	obl	basic	1-18	
+1-24	163-170	Kargina	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Kargins	person[5]	*[5]	_	_	flat:name	basic	1-23	
+1-25	171-173	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-26	
+1-26	174-181	Viktora	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Viktors	person[6]	*[6]	_	_	conj	basic	1-23	
+1-27	182-192	Krasovicka	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg2	Krasovickis	person[6]	*[6]	_	_	flat:name	basic	1-26	
+1-28	192-193	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-5	
+
+#Text=Par diviem latiem valsts iestādes ieguva tiesības doties uz banku un tikai tad noskaidrot, ko īsti valsts nopirkusi.
+2-1	195-198	Par	_	_	_	_	_	_	_	_	_	_	_	_	sppd	par	_	_	_	_	case	basic	2-3	
+2-2	199-205	diviem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpd	divi	_	_	_	_	nummod	basic	2-3	
+2-3	206-212	latiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	lats	_	_	_	_	obl	basic	2-6	
+2-4	213-219	valsts	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	valsts	_	_	_	_	nmod	basic	2-5	
+2-5	220-228	iestādes	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn5	iestāde	_	_	_	_	nsubj	basic	2-6	
+2-6	229-235	ieguva	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	iegūt	_	_	_	_	root	basic	2-6	
+2-7	236-244	tiesības	Fem	Ptan	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Ptan	*	*	ncfda4	tiesības	_	_	_	_	obj	basic	2-6	
+2-8	245-251	doties	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0t1000n	doties	_	_	_	_	acl	basic	2-7	
+2-9	252-254	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsa	uz	_	_	_	_	case	basic	2-10	
+2-10	255-260	banku	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	banka	_	_	_	_	obl	basic	2-8	
+2-11	261-263	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	2-14	
+2-12	264-269	tikai	_	_	_	_	_	_	_	_	_	_	_	_	q	tikai	_	_	_	_	discourse	basic	2-13	
+2-13	270-273	tad	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	tad	_	_	_	_	advmod	basic	2-14	
+2-14	274-284	noskaidrot	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	noskaidrot	_	_	_	_	conj	basic	2-8	
+2-15	284-285	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-19	
+2-16	286-288	ko	*	*	Acc	*	*	*	*	*	*	Case=Acc\|PronType=Rel	*	*	pr000an	kas	_	_	_	_	obj	basic	2-19	
+2-17	289-293	īsti	_	_	_	_	_	_	_	_	_	_	_	_	r0c	īsti	_	_	_	_	advmod	basic	2-19	
+2-18	294-300	valsts	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn6	valsts	_	_	_	_	nsubj	basic	2-19	
+2-19	301-310	nopirkusi	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnasnp	nopirkt	_	_	_	_	ccomp	basic	2-14	
+2-20	310-311	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-6	
+
+#Text=Pēc tam pāris mēnešus iestādes rādīja viena uz otru un tielējās, kas kurai jādara vai nav jādara.
+3-1	313-316	Pēc	_	_	_	_	_	_	_	_	_	_	_	_	spsd	pēc	_	_	_	_	case	basic	3-2	
+3-2	317-320	tam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msdn	tas	_	_	_	_	obl	basic	3-6	
+3-3	321-326	pāris	Masc	Plur	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpanp	pāris	time[7]	*[7]	_	_	amod	basic	3-4	
+3-4	327-334	mēnešus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa2	mēness	time[7]	*[7]	_	_	obl	basic	3-6	
+3-5	335-343	iestādes	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn5	iestāde	_	_	*[1]	*->1-1	nsubj	basic	3-6	
+3-6	344-350	rādīja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	rādīt	_	_	_	_	root	basic	3-6	
+3-7	351-356	viena	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|NumType=Card	*	*	mcsfsn	viena	_	_	_	_	acl	basic	3-6	
+3-8	357-359	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsa	uz	_	_	_	_	case	basic	3-9	
+3-9	360-364	otru	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|NumType=Card	*	*	mcsfsa	otra	_	_	_	_	obl	basic	3-6	
+3-10	365-367	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	3-11	
+3-11	368-376	tielējās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi230an	tielēties	_	_	_	_	conj	basic	3-6	
+3-12	376-377	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-15	
+3-13	378-381	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Ind	*	*	pi000nn	kas	_	_	*[1]	*->1-2	obj	basic	3-15	
+3-14	382-387	kurai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing\|PronType=Ind	*	*	pi0fsdn	kura	_	_	*[1]	*->1-2	nsubj	basic	3-15	
+3-15	388-394	jādara	*	*	*	*	*	*	Nec	Act	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vmnd0t300an	darīt	_	_	_	_	ccomp	basic	3-11	
+3-16	395-398	vai	_	_	_	_	_	_	_	_	_	_	_	_	cc	vai	_	_	_	_	cc	basic	3-18	
+3-17	399-402	nav	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30ay	nebūt	_	_	_	_	aux	basic	3-18	
+3-18	403-409	jādara	*	*	*	*	*	*	Nec	Act	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vmnd0t300an	darīt	_	_	_	_	conj	basic	3-15	
+3-19	409-410	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-6	
+
+#Text=Kad beidzot tomēr sāka parādīties valstij piederošās bankas bilances pārvērtēšanas rezultāti, no bilances izrādījās pazuduši pāris miljardi (ne miljonu) latu.
+4-1	412-415	Kad	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0t	kad	_	_	_	_	advmod	basic	4-4	
+4-2	416-423	beidzot	_	_	_	_	_	_	_	_	_	_	_	_	r0t	beidzot	_	_	_	_	advmod	basic	4-4	
+4-3	424-429	tomēr	_	_	_	_	_	_	_	_	_	_	_	_	q	tomēr	_	_	_	_	discourse	basic	4-4	
+4-4	430-434	sāka	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vpnist130an	sākt	_	_	_	_	advcl	basic	4-15	
+4-5	435-445	parādīties	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0t3000n	parādīties	_	_	_	_	xcomp	basic	4-4	
+4-6	446-453	valstij	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd6	valsts	_	_	_	_	iobj	basic	4-7	
+4-7	454-464	piederošās	Fem	Sing	Gen	Pos	*	Pres	*	Pass	*	Aspect=Imp\|Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Imp	vmnpdfsgapyp	piederēt	_	_	_	_	amod	basic	4-8	
+4-8	465-471	bankas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	banka	_	_	_	_	nmod	basic	4-9	
+4-9	472-480	bilances	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	bilance	_	_	_	_	nmod	basic	4-10	
+4-10	481-494	pārvērtēšanas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	pārvērtēšana	_	_	_	_	nmod	basic	4-11	
+4-11	495-504	rezultāti	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	rezultāts	_	_	_	_	nsubj	basic	4-4	
+4-12	504-505	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	4-4	
+4-13	506-508	no	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	_	_	_	_	case	basic	4-14	
+4-14	509-517	bilances	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	bilance	_	_	_	_	obl	basic	4-16	
+4-15	518-527	izrādījās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	veyisi330an	izrādīties	_	_	_	_	root	basic	4-15	
+4-16	528-536	pazuduši	Masc	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpnasnp	pazust	_	_	_	_	xcomp	basic	4-15	
+4-17	537-542	pāris	Masc	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpnnp	pāris	_	_	_	_	amod	basic	4-18	
+4-18	543-551	miljardi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	miljards	_	_	_	_	nsubj	basic	4-15	
+4-19	552-553	(	_	_	_	_	_	_	_	_	_	_	_	_	zb	(	_	_	_	_	punct	basic	4-21	
+4-20	553-555	ne	_	_	_	_	_	_	_	_	_	_	_	_	q	ne	_	_	_	_	discourse	basic	4-21	
+4-21	556-563	miljonu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	npmpg1	miljons	_	_	_	_	parataxis	basic	4-18	
+4-22	563-564	)	_	_	_	_	_	_	_	_	_	_	_	_	zb	)	_	_	_	_	punct	basic	4-21	
+4-23	565-569	latu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	lats	_	_	_	_	nmod	basic	4-18	
+4-24	569-570	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	4-15	

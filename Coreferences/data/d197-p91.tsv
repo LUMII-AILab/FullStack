@@ -1,0 +1,56 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=- Eh.
+1-1	0-1	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	punct	basic	1-2	
+1-2	2-4	Eh	_	_	_	_	_	_	_	_	_	_	_	_	i	eh	_	_	root	basic	1-2	
+1-3	4-5	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	1-2	
+
+#Text=Viņš man tāds - kā lai pasaka...
+2-1	7-11	Viņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msnn	viņš	*[1]	*->1-1	nsubj	basic	2-3	
+2-2	12-15	man	*	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10sdn	es	*[2]	*->2-1	obl	basic	2-3	
+2-3	16-20	tāds	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	tāds	_	_	root	basic	2-3	
+2-4	21-22	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	punct	basic	2-7	
+2-5	23-25	kā	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0m	kā	_	_	advmod	basic	2-7	
+2-6	26-29	lai	_	_	_	_	_	_	_	_	_	_	_	_	q	lai	_	_	discourse	basic	2-7	
+2-7	30-36	pasaka	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	pasacīt	_	_	parataxis	basic	2-3	
+2-8	36-39	...	_	_	_	_	_	_	_	_	_	_	_	_	zs	...	_	_	punct	basic	2-3	
+
+#Text=kādreiz mans čalis bija, a tagad...
+3-1	41-48	kādreiz	_	_	_	_	_	_	_	_	_	_	_	_	r0t	kādreiz	_	_	advmod	basic	3-3	
+3-2	49-53	mans	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0msnn	mans	*[2]	*->2-2	det	basic	3-3	
+3-3	54-59	čalis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	čalis	*[1]	*->1-2	root	basic	3-3	
+3-4	60-64	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vcnisii30an	būt	_	_	cop	basic	3-3	
+3-5	64-65	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	3-7	
+3-6	66-67	a	_	_	_	_	_	_	_	_	_	_	_	_	cc	a	_	_	cc	basic	3-7	
+3-7	68-73	tagad	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	tagad	_	_	conj	basic	3-3	
+3-8	73-76	...	_	_	_	_	_	_	_	_	_	_	_	_	zs	...	_	_	punct	basic	3-3	
+
+#Text=nu, vobščem, pašķirāmies mēs.
+4-1	78-80	nu	_	_	_	_	_	_	_	_	_	_	_	_	q	nu	_	_	discourse	basic	4-5	
+4-2	80-81	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	4-1	
+4-3	82-89	vobščem	_	_	_	_	_	_	_	_	_	_	_	_	xx	vobščem	_	_	parataxis	basic	4-5	
+4-4	89-90	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	4-3	
+4-5	91-102	pašķirāmies	*	Plur	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	1	*	vmyisi11pan	pašķirties	_	_	root	basic	4-5	
+4-6	103-106	mēs	*	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Number=Plur\|Person=1\|PronType=Prs	1	*	pp10pnn	mēs	_	_	nsubj	basic	4-5	
+4-7	106-107	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	4-5	
+
+#Text=Bet viņš man darbu dod.
+5-1	109-112	Bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	cc	basic	5-5	
+5-2	113-117	viņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msnn	viņš	*[1]	*->1-3	nsubj	basic	5-5	
+5-3	118-121	man	*	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10sdn	es	*[2]	*->2-3	iobj	basic	5-5	
+5-4	122-127	darbu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	darbs	_	_	obj	basic	5-5	
+5-5	128-131	dod	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipti30an	dot	_	_	root	basic	5-5	
+5-6	131-132	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	5-5	
+
+#Text=Iztikt jau tagad grūti.
+6-1	134-140	Iztikt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0i1000n	iztikt	_	_	ccomp	basic	6-4	
+6-2	141-144	jau	_	_	_	_	_	_	_	_	_	_	_	_	q	jau	_	_	discourse	basic	6-4	
+6-3	145-150	tagad	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	tagad	_	_	advmod	basic	6-4	
+6-4	151-156	grūti	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	grūti	_	_	root	basic	6-4	
+6-5	156-157	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	6-4	

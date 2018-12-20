@@ -1,0 +1,26 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Kad pulksten piecos māte pārnāca mājās, Sofija ievilka viņu lielajā istabā un nosēdināja krēslā.
+1-1	0-3	Kad	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0t	kad	_	_	_	_	advmod	basic	1-5	
+1-2	4-12	pulksten	_	_	_	_	_	_	_	_	_	_	_	_	r0t	pulksten	time[1]	*[1]	_	_	advmod	basic	1-3	
+1-3	13-19	piecos	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpl	pieci	time[1]	*[1]	_	_	nummod	basic	1-5	
+1-4	20-24	māte	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	māte	_	_	*[1]	*->1-1	nsubj	basic	1-5	
+1-5	25-32	pārnāca	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi130an	pārnākt	_	_	_	_	advcl	basic	1-9	
+1-6	33-38	mājās	Fem	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	māja	_	_	_	_	obl	basic	1-5	
+1-7	38-39	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-5	
+1-8	40-46	Sofija	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Sofija	person	*	_	_	nsubj	basic	1-9	
+1-9	47-54	ievilka	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	ievilkt	_	_	_	_	root	basic	1-9	
+1-10	55-59	viņu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsan	viņa	_	_	*[1]	*->1-2	obj	basic	1-9	
+1-11	60-67	lielajā	Fem	Sing	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affslyp	liela	_	_	_	_	amod	basic	1-12	
+1-12	68-74	istabā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	istaba	_	_	_	_	obl	basic	1-9	
+1-13	75-77	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-14	
+1-14	78-88	nosēdināja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	nosēdināt	_	_	_	_	conj	basic	1-9	
+1-15	89-95	krēslā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	krēsls	_	_	_	_	obl	basic	1-14	
+1-16	95-96	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-9	

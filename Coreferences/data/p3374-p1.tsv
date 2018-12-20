@@ -1,0 +1,76 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Tēbas, vasaras rīts pēc jauna Mēness iestāšanās.
+1-1	0-5	Tēbas	Fem	Ptan	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Ptan	*	*	npfdn4	Tēbas	location	https://en.wikipedia.org/wiki/Thebes,\_Egypt	_	_	root	basic	1-1	
+1-2	5-6	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-4	
+1-3	7-14	vasaras	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	vasara	_	_	_	_	nmod	basic	1-4	
+1-4	15-19	rīts	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	rīts	_	_	_	_	conj	basic	1-1	
+1-5	20-23	pēc	_	_	_	_	_	_	_	_	_	_	_	_	spsg	pēc	_	_	_	_	case	basic	1-8	
+1-6	24-29	jauna	Masc	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsgnp	jauns	_	_	_	_	amod	basic	1-8	
+1-7	30-36	Mēness	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	mēness	location	https://en.wikipedia.org/wiki/Moon	_	_	nmod	basic	1-8	
+1-8	37-47	iestāšanās	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsgr	iestāšanās	_	_	_	_	nmod	basic	1-4	
+1-9	47-48	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-1	
+
+#Text=Lielais karstums tuvojas beigām, raža ir novākta.
+2-1	50-57	Lielais	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnyp	liels	_	_	_	_	amod	basic	2-2	
+2-2	58-66	karstums	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	karstums	_	_	_	_	nsubj	basic	2-3	
+2-3	67-74	tuvojas	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipi230an	tuvoties	_	_	_	_	root	basic	2-3	
+2-4	75-81	beigām	Fem	Ptan	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Ptan	*	*	ncfdd4	beigas	_	_	_	_	obl	basic	2-3	
+2-5	81-82	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-8	
+2-6	83-87	raža	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	raža	_	_	_	_	nsubj:pass	basic	2-8	
+2-7	88-90	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	aux	basic	2-8	
+2-8	91-98	novākta	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnpsnp	novākt	_	_	_	_	conj	basic	2-3	
+2-9	98-99	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-3	
+
+#Text=Šī ir diena, kad dzīvie vienosies ar mirušajiem, kad atvērsies Ēģiptes nozīmīgākais templis un pa vārtiem laukā plūdīs krāšņs gājiens.
+3-1	101-103	Šī	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsnn	šī	_	_	_	_	nsubj	basic	3-3	
+3-2	104-106	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	cop	basic	3-3	
+3-3	107-112	diena	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	diena	_	_	_	_	root	basic	3-3	
+3-4	112-113	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-7	
+3-5	114-117	kad	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0t	kad	_	_	_	_	advmod	basic	3-7	
+3-6	118-124	dzīvie	Masc	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnyp	dzīvs	_	_	_	_	nsubj	basic	3-7	
+3-7	125-134	vienosies	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vmyifi230an	vienoties	_	_	_	_	acl	basic	3-3	
+3-8	135-137	ar	_	_	_	_	_	_	_	_	_	_	_	_	sppd	ar	_	_	_	_	case	basic	3-9	
+3-9	138-148	mirušajiem	Masc	Plur	Dat	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Dat\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpdasyp	mirt	_	_	_	_	iobj	basic	3-7	
+3-10	148-149	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-12	
+3-11	150-153	kad	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0t	kad	_	_	_	_	advmod	basic	3-12	
+3-12	154-163	atvērsies	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vmyifi130an	atvērties	_	_	_	_	conj	basic	3-7	
+3-13	164-171	Ēģiptes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	Ēģipte	GPE	https://en.wikipedia.org/wiki/Egypt	_	_	nmod	basic	3-15	
+3-14	172-184	nozīmīgākais	Masc	Sing	Nom	Cmp	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Masc\|Number=Sing	*	*	afmsnyc	nozīmīgs	_	_	_	_	amod	basic	3-15	
+3-15	185-192	templis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	templis	_	_	_	_	nsubj	basic	3-12	
+3-16	193-195	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	3-20	
+3-17	196-198	pa	_	_	_	_	_	_	_	_	_	_	_	_	sppd	pa	_	_	_	_	case	basic	3-18	
+3-18	199-206	vārtiem	Masc	Ptan	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Ptan	*	*	ncmdd1	vārti	_	_	_	_	obl	basic	3-20	
+3-19	207-212	laukā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	lauks	_	_	_	_	obl	basic	3-20	
+3-20	213-219	plūdīs	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vmnifi130an	plūst	_	_	_	_	conj	basic	3-7	
+3-21	220-226	krāšņs	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	krāšņs	_	_	_	_	amod	basic	3-22	
+3-22	227-234	gājiens	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	gājiens	_	_	_	_	nsubj	basic	3-20	
+3-23	234-235	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-3	
+
+#Text=Tie būs ticības svētki, kuros galvenā loma piederēs mirušajiem, bet kas tomēr tiks svinēti līksmā greznībā.
+4-1	237-240	Tie	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpnn	tas	_	_	_	_	nsubj	basic	4-4	
+4-2	241-244	būs	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vcnifii30an	būt	_	_	_	_	cop	basic	4-4	
+4-3	245-252	ticības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	ticība	_	_	_	_	nmod	basic	4-4	
+4-4	253-259	svētki	Masc	Ptan	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Ptan	*	*	ncmdn1	svētki	_	_	*[1]	*->1-1	root	basic	4-4	
+4-5	259-260	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	4-9	
+4-6	261-266	kuros	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur\|PronType=Rel	*	*	pr0mpln	kurš	_	_	*[1]	*->1-2	obl	basic	4-9	
+4-7	267-274	galvenā	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsnyp	galvenā	_	_	_	_	amod	basic	4-8	
+4-8	275-279	loma	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	loma	_	_	_	_	nsubj	basic	4-9	
+4-9	280-288	piederēs	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vmnifi330an	piederēt	_	_	_	_	acl	basic	4-4	
+4-10	289-299	mirušajiem	Masc	Plur	Dat	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Dat\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpdasyp	mirt	_	_	_	_	obl	basic	4-9	
+4-11	299-300	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	4-16	
+4-12	301-304	bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	_	_	cc	basic	4-16	
+4-13	305-308	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	*[1]	*->1-3	nsubj:pass	basic	4-16	
+4-14	309-314	tomēr	_	_	_	_	_	_	_	_	_	_	_	_	q	tomēr	_	_	_	_	discourse	basic	4-16	
+4-15	315-319	tiks	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vtnifi130an	tikt	_	_	_	_	aux	basic	4-16	
+4-16	320-327	svinēti	Masc	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpnpsnp	svinēt	_	_	_	_	conj	basic	4-9	
+4-17	328-334	līksmā	Fem	Sing	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affslnp	līksma	_	_	_	_	amod	basic	4-18	
+4-18	335-343	greznībā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	greznība	_	_	_	_	obl	basic	4-16	
+4-19	343-344	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	4-4	

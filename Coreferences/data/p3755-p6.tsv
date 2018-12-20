@@ -1,0 +1,60 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Kā panākumus savā iepriekšējā darba pieredzē varu minēt vairākus.
+1-1	0-2	Kā	_	_	_	_	_	_	_	_	_	_	_	_	cs	kā	_	_	mark	basic	1-2	
+1-2	3-12	panākumus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	panākums	_	_	acl	basic	1-8	
+1-3	13-17	savā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0fsln	sava	_	_	det	basic	1-6	
+1-4	18-29	iepriekšējā	Fem	Sing	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfslnp	iepriekšēja	_	_	amod	basic	1-6	
+1-5	30-35	darba	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	darbs	_	_	nmod	basic	1-6	
+1-6	36-44	pieredzē	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	pieredze	_	_	acl	basic	1-2	
+1-7	45-49	varu	*	Sing	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	1	*	vonipt31san	varēt	_	_	root	basic	1-7	
+1-8	50-55	minēt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	minēt	_	_	xcomp	basic	1-7	
+1-9	56-64	vairākus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|PronType=Ind	*	*	pi0mpan	vairāki	_	_	obj	basic	1-8	
+1-10	64-65	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	1-7	
+
+#Text=Tieslietu ministrijā, darbojoties Eiropas lietu departamenta direktora amatā, par panākumu uzskatu veiksmīgu Latvijas pirmsiestāšanās Eiropas Savienībā sarunu vešanu tieslietu jomā, gan izstrādājot attiecīgu dokumentāciju, gan pārstāvot Tieslietu ministriju dažāda līmeņa sarunās Latvijā un Briselē.
+2-1	67-76	Tieslietu	Fem	Ptan	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Ptan	*	*	ncfdg4	tieslietas	organization[1]	*[1]	nmod	basic	2-2	
+2-2	77-87	ministrijā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	ministrija	organization[1]	*[1]	obl	basic	2-13	
+2-3	87-88	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	2-4	
+2-4	89-100	darbojoties	*	*	*	*	*	*	*	*	*	Reflex=Yes\|VerbForm=Conv	*	*	vmypu0000000	darboties	_	_	advcl	basic	2-13	
+2-5	101-108	Eiropas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Eiropa	organization[2]	*[2]	nmod	basic	2-6	
+2-6	109-114	lietu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	lieta	organization[2]	*[2]	nmod	basic	2-7	
+2-7	115-127	departamenta	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	departaments	organization[2]	*[2]	nmod	basic	2-8	
+2-8	128-137	direktora	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	direktors	_	_	nmod	basic	2-9	
+2-9	138-143	amatā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	amats	_	_	obl	basic	2-4	
+2-10	143-144	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	2-4	
+2-11	145-148	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	case	basic	2-12	
+2-12	149-157	panākumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	panākums	_	_	xcomp	basic	2-13	
+2-13	158-165	uzskatu	*	Sing	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	1	*	vmnipt31san	uzskatīt	_	_	root	basic	2-13	
+2-14	166-175	veiksmīgu	Fem	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsanp	veiksmīga	_	_	amod	basic	2-20	
+2-15	176-184	Latvijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Latvija	GPE	*	nmod	basic	2-19	
+2-16	185-200	pirmsiestāšanās	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsgr	pirmsiestāšanās	_	_	nmod	basic	2-19	
+2-17	201-208	Eiropas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Eiropa	GPE[3]	*[3]	nmod	basic	2-18	
+2-18	209-218	Savienībā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	savienība	GPE[3]	*[3]	obl	basic	2-16	
+2-19	219-225	sarunu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	saruna	_	_	nmod	basic	2-20	
+2-20	226-232	vešanu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	vesšana	_	_	obj	basic	2-13	
+2-21	233-242	tieslietu	Fem	Ptan	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Ptan	*	*	ncfdg4	tieslietas	_	_	nmod	basic	2-22	
+2-22	243-247	jomā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	joma	_	_	obl	basic	2-20	
+2-23	247-248	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	2-25	
+2-24	249-252	gan	_	_	_	_	_	_	_	_	_	_	_	_	cc	gan	_	_	cc	basic	2-25	
+2-25	253-264	izstrādājot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000	izstrādāt	_	_	advcl	basic	2-20	
+2-26	265-274	attiecīgu	Fem	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsanp	attiecīga	_	_	amod	basic	2-27	
+2-27	275-288	dokumentāciju	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	dokumentācija	_	_	obj	basic	2-25	
+2-28	288-289	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	2-30	
+2-29	290-293	gan	_	_	_	_	_	_	_	_	_	_	_	_	cc	gan	_	_	cc	basic	2-30	
+2-30	294-303	pārstāvot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000	pārstāvēt	_	_	conj	basic	2-25	
+2-31	304-313	Tieslietu	Fem	Ptan	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Ptan	*	*	ncfdg4	tieslietas	organization[4]	*[4]	nmod	basic	2-32	
+2-32	314-324	ministriju	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	ministrija	organization[4]	*[4]	obj	basic	2-30	
+2-33	325-331	dažāda	Masc	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsgnp	dažāds	_	_	amod	basic	2-34	
+2-34	332-338	līmeņa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	līmenis	_	_	nmod	basic	2-35	
+2-35	339-346	sarunās	Fem	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	saruna	_	_	obl	basic	2-30	
+2-36	347-354	Latvijā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	Latvija	GPE	*	obl	basic	2-30	
+2-37	355-357	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	cc	basic	2-38	
+2-38	358-365	Briselē	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl5	Brisele	GPE	https://en.wikipedia.org/wiki/Brussels	conj	basic	2-36	
+2-39	365-366	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	2-13	

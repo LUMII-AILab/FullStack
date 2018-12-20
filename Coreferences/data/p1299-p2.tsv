@@ -1,0 +1,118 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=„Tas, kas dziļi iecerēts, pārņem visas mūsu domas un darbus, un agri vai vēlu mēs redzam to piepildāmies,” teikts vēstījumā, kuru parakstījušas amatpersonas un citi tā brīža liecinieki.
+1-1	0-1	„	_	_	_	_	_	_	_	_	_	_	_	_	zq	„	_	_	_	_	punct	basic	1-8	
+1-2	1-4	Tas	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	tas	_	_	*[2]	*->2-1	nsubj	basic	1-8	
+1-3	4-5	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-6	
+1-4	6-9	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	*[2]	*->2-2	nsubj:pass	basic	1-6	
+1-5	10-15	dziļi	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	dziļi	_	_	_	_	advmod	basic	1-6	
+1-6	16-24	iecerēts	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnpn	iecerēt	_	_	_	_	acl	basic	1-2	
+1-7	24-25	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-6	
+1-8	26-32	pārņem	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt130an	pārņemt	_	_	_	_	parataxis	basic	1-25	
+1-9	33-38	visas	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur\|PronType=Tot	*	*	pg0fpan	visa	_	_	_	_	det	basic	1-11	
+1-10	39-43	mūsu	*	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Number=Plur\|Person=1\|PronType=Prs	1	*	pp10pgn	mēs	_	_	*[1]	*->1-1	det	basic	1-11	
+1-11	44-49	domas	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	doma	_	_	_	_	obj	basic	1-8	
+1-12	50-52	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-13	
+1-13	53-59	darbus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	darbs	_	_	_	_	conj	basic	1-11	
+1-14	59-60	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-20	
+1-15	61-63	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-20	
+1-16	64-68	agri	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpt	agri	_	_	_	_	advmod	basic	1-20	
+1-17	69-72	vai	_	_	_	_	_	_	_	_	_	_	_	_	cc	vai	_	_	_	_	cc	basic	1-18	
+1-18	73-77	vēlu	_	_	_	_	_	_	_	_	_	_	_	_	r0t	vēlu	_	_	_	_	conj	basic	1-16	
+1-19	78-81	mēs	*	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Number=Plur\|Person=1\|PronType=Prs	1	*	pp10pnn	mēs	_	_	*[1]	*->1-2	nsubj	basic	1-20	
+1-20	82-88	redzam	*	Plur	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	1	*	vmnipt31pan	redzēt	_	_	_	_	conj	basic	1-8	
+1-21	89-91	to	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	tas	_	_	*[2]	*->2-3	obl	basic	1-22	
+1-22	92-104	piepildāmies	*	*	*	*	*	*	*	*	*	Reflex=Yes\|VerbForm=Conv	*	*	vmypu0000000n	piepildīties	_	_	_	_	advcl	basic	1-20	
+1-23	104-105	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-8	
+1-24	105-106	”	_	_	_	_	_	_	_	_	_	_	_	_	zq	”	_	_	_	_	punct	basic	1-8	
+1-25	107-113	teikts	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnpn	teikt	_	_	_	_	root	basic	1-25	
+1-26	114-123	vēstījumā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	vēstījums	_	_	*[3]	*->3-1	obl	basic	1-25	
+1-27	123-124	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-29	
+1-28	125-129	kuru	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msan	kurš	_	_	*[3]	*->3-2	obj	basic	1-29	
+1-29	130-143	parakstījušas	Fem	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfpnasnpn	parakstīt	_	_	_	_	acl	basic	1-26	
+1-30	144-156	amatpersonas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	amatpersona	_	_	_	_	nsubj	basic	1-29	
+1-31	157-159	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-35	
+1-32	160-164	citi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Ind	*	*	pi0mpnn	cits	_	_	_	_	det	basic	1-35	
+1-33	165-167	tā	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msgn	tas	_	_	_	_	det	basic	1-34	
+1-34	168-173	brīža	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	brīdis	_	_	_	_	nmod	basic	1-35	
+1-35	174-184	liecinieki	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	liecinieks	_	_	_	_	conj	basic	1-30	
+1-36	184-185	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-25	
+
+#Text=Šī doma ēdolniekiem labi saprotama, jo uz sporta zāli skolēni cerēja jau 80. gadu beigās, kad bija nodoms celt šai nodarbei pielāgojamu angāru, taču pārmaiņu laikos ideja palika nerealizēta.
+2-1	187-189	Šī	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsnn	šī	_	_	_	_	det	basic	2-2	
+2-2	190-194	doma	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	doma	_	_	_	_	nsubj	basic	2-5	
+2-3	195-206	ēdolniekiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	ēdolnieks	_	_	_	_	obl	basic	2-5	
+2-4	207-211	labi	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	labi	_	_	_	_	advmod	basic	2-5	
+2-5	212-221	saprotama	Fem	Sing	Nom	Pos	*	Pres	*	Pass	*	Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	*	vmnpdfsnppnpn	saprast	_	_	_	_	root	basic	2-5	
+2-6	221-222	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-12	
+2-7	223-225	jo	_	_	_	_	_	_	_	_	_	_	_	_	cs	jo	_	_	_	_	mark	basic	2-12	
+2-8	226-228	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsa	uz	_	_	_	_	case	basic	2-10	
+2-9	229-235	sporta	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	sports	_	_	_	_	nmod	basic	2-10	
+2-10	236-240	zāli	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	zāle	_	_	_	_	iobj	basic	2-12	
+2-11	241-248	skolēni	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	skolēns	_	_	_	_	nsubj	basic	2-12	
+2-12	249-255	cerēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	cerēt	_	_	_	_	advcl	basic	2-5	
+2-13	256-259	jau	_	_	_	_	_	_	_	_	_	_	_	_	r0t	jau	_	_	_	_	advmod	basic	2-16	
+2-14	260-263	80.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	80.	time[1]	*[1]	*[4]	*->4-1	amod	basic	2-15	
+2-15	264-268	gadu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	gads	time[1]	*[1]	*[4]	*->4-1	nmod	basic	2-16	
+2-16	269-275	beigās	Fem	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	beigas	time[1]	*[1]	*[4]	*->4-1	obl	basic	2-12	
+2-17	275-276	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-19	
+2-18	277-280	kad	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0t	kad	_	_	*[4]	*->4-2	advmod	basic	2-19	
+2-19	281-285	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisii30an	būt	_	_	_	_	advcl	basic	2-16	
+2-20	286-292	nodoms	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	nodoms	_	_	_	_	nsubj	basic	2-19	
+2-21	293-297	celt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	celt	_	_	_	_	acl	basic	2-20	
+2-22	298-301	šai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsdn	šī	_	_	_	_	det	basic	2-23	
+2-23	302-310	nodarbei	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd5	nodarbe	_	_	_	_	iobj	basic	2-24	
+2-24	311-322	pielāgojamu	Masc	Sing	Acc	Pos	*	Pres	*	Pass	*	Case=Acc\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	*	vmnpdmsappnpn	pielāgot	_	_	_	_	acl	basic	2-25	
+2-25	323-329	angāru	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	angārs	_	_	_	_	obj	basic	2-21	
+2-26	329-330	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-31	
+2-27	331-335	taču	_	_	_	_	_	_	_	_	_	_	_	_	cc	taču	_	_	_	_	cc	basic	2-31	
+2-28	336-344	pārmaiņu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	pārmaiņa	_	_	_	_	nmod	basic	2-29	
+2-29	345-351	laikos	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	laiks	_	_	_	_	obl	basic	2-31	
+2-30	352-357	ideja	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	ideja	_	_	_	_	nsubj	basic	2-31	
+2-31	358-364	palika	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vtnisi130an	palikt	_	_	_	_	conj	basic	2-5	
+2-32	365-376	nerealizēta	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnpsnp\_	nerealizēt	_	_	_	_	xcomp	basic	2-31	
+2-33	376-377	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-5	
+
+#Text=„Tagad galvenais ir jauno zāli dabūt zem jumta.
+3-1	379-380	„	_	_	_	_	_	_	_	_	_	_	_	_	zq	„	_	_	_	_	punct	basic	3-3	
+3-2	380-385	Tagad	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	tagad	_	_	_	_	advmod	basic	3-3	
+3-3	386-395	galvenais	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsnyp	galvenais	_	_	_	_	root	basic	3-3	
+3-4	396-398	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	cop	basic	3-3	
+3-5	399-404	jauno	Fem	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsayp	jauna	_	_	*[5]	*->5-1	amod	basic	3-6	
+3-6	405-409	zāli	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	zāle	_	_	*[5]	*->5-1	obj	basic	3-7	
+3-7	410-415	dabūt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	dabūt	_	_	_	_	ccomp	basic	3-3	
+3-8	416-419	zem	_	_	_	_	_	_	_	_	_	_	_	_	spsg	zem	_	_	_	_	case	basic	3-9	
+3-9	420-425	jumta	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	jumts	_	_	_	_	obl	basic	3-7	
+3-10	425-426	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-3	
+
+#Text=Un vēl – lai tā ir uzcelta kvalitatīvi.
+4-1	428-430	Un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	4-2	
+4-2	431-434	vēl	_	_	_	_	_	_	_	_	_	_	_	_	r0q	vēl	_	_	_	_	parataxis	basic	4-7	
+4-3	435-436	–	_	_	_	_	_	_	_	_	_	_	_	_	zd	–	_	_	_	_	punct	basic	4-2	
+4-4	437-440	lai	_	_	_	_	_	_	_	_	_	_	_	_	q	lai	_	_	_	_	discourse	basic	4-7	
+4-5	441-443	tā	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsnn	tā	_	_	*[5]	*->5-2	nsubj:pass	basic	4-7	
+4-6	444-446	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	aux:pass	basic	4-7	
+4-7	447-454	uzcelta	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnpsnpn	uzcelt	_	_	_	_	root	basic	4-7	
+4-8	455-466	kvalitatīvi	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	kvalitatīvi	_	_	_	_	advmod	basic	4-7	
+4-9	466-467	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	4-7	
+
+#Text=Kolektīvs to ļoti gaida,” saka skolas direktors Aigars Matevičs.
+5-1	469-478	Kolektīvs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	kolektīvs	_	_	_	_	nsubj	basic	5-4	
+5-2	479-481	to	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsan	tā	_	_	*[5]	*->5-3	obj	basic	5-4	
+5-3	482-486	ļoti	_	_	_	_	_	_	_	_	_	_	_	_	r0q	ļoti	_	_	_	_	advmod	basic	5-4	
+5-4	487-492	gaida	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	gaidīt	_	_	_	_	parataxis	basic	5-7	
+5-5	492-493	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	5-4	
+5-6	493-494	”	_	_	_	_	_	_	_	_	_	_	_	_	zq	”	_	_	_	_	punct	basic	5-4	
+5-7	495-499	saka	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	sacīt	_	_	_	_	root	basic	5-7	
+5-8	500-506	skolas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	skola	_	_	*[6]	*->6-1	nmod	basic	5-9	
+5-9	507-516	direktors	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	direktors	_	_	*[6]	*->6-1	nmod	basic	5-10	
+5-10	517-523	Aigars	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Aigars	person[2]	*[2]	*[6]	*->6-2	nsubj	basic	5-7	
+5-11	524-532	Matevičs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Matevičs	person[2]	*[2]	*[6]	*->6-2	flat:name	basic	5-10	
+5-12	532-533	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	5-7	

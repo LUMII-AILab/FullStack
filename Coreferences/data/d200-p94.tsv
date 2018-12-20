@@ -1,0 +1,41 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Bet kā ir ar pasauli pašu, Sofij?
+1-1	0-3	Bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	_	_	cc	basic	1-3	
+1-2	4-6	kā	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0m	kā	_	_	_	_	advmod	basic	1-3	
+1-3	7-9	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipii30an	būt	_	_	_	_	root	basic	1-3	
+1-4	10-12	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case	basic	1-5	
+1-5	13-20	pasauli	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	pasaule	_	_	*[2]	*->2-1	iobj	basic	1-3	
+1-6	21-25	pašu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Tot	*	*	pg0fsan	pati	_	_	*[2]	*->2-2	acl	basic	1-5	
+1-7	25-26	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-8	
+1-8	27-32	Sofij	Fem	Sing	Voc	*	*	*	*	*	*	Case=Voc\|Gender=Fem\|Number=Sing	*	*	npfsv4	Sofija	person	*	*[1]	*->1-1	vocative	basic	1-3	
+1-9	32-33	?	_	_	_	_	_	_	_	_	_	_	_	_	zs	?	_	_	_	_	punct	basic	1-3	
+
+#Text=Vai Tev šķiet, ka ar to ir viss, kā nākas?
+2-1	35-38	Vai	_	_	_	_	_	_	_	_	_	_	_	_	q	vai	_	_	_	_	discourse	basic	2-3	
+2-2	39-42	Tev	*	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Number=Sing\|Person=2\|PronType=Prs	2	*	pp20sdn	tu	_	_	*[1]	*->1-2	obl	basic	2-3	
+2-3	43-48	šķiet	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipi130an	šķist	_	_	_	_	root	basic	2-3	
+2-4	48-49	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-8	
+2-5	50-52	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark	basic	2-8	
+2-6	53-55	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case	basic	2-7	
+2-7	56-58	to	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsan	tā	_	_	*[2]	*->2-3	iobj	basic	2-8	
+2-8	59-61	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipii30an	būt	_	_	_	_	csubj	basic	2-3	
+2-9	62-66	viss	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msnn	viss	_	_	_	_	nsubj	basic	2-8	
+2-10	66-67	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-12	
+2-11	68-70	kā	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0m	kā	_	_	_	_	advmod	basic	2-12	
+2-12	71-76	nākas	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipi130an	nākties	_	_	_	_	ccomp	basic	2-8	
+2-13	76-77	?	_	_	_	_	_	_	_	_	_	_	_	_	zs	?	_	_	_	_	punct	basic	2-3	
+
+#Text=Arī tā brīvi lidinās!
+3-1	79-82	Arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse	basic	3-2	
+3-2	83-85	tā	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsnn	tā	_	_	*[2]	*->2-4	nsubj	basic	3-4	
+3-3	86-91	brīvi	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	brīvi	_	_	_	_	advmod	basic	3-4	
+3-4	92-99	lidinās	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipi330an	lidināties	_	_	_	_	root	basic	3-4	
+3-5	99-100	!	_	_	_	_	_	_	_	_	_	_	_	_	zs	!	_	_	_	_	punct	basic	3-4	

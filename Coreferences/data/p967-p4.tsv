@@ -1,0 +1,46 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=A. Upīša Skrīveru vidusskolas direktors Aldis Rakstiņš “Staburagam” stāsta, ka jaunieši ierindas skatei gatavojušies jau laikus.
+1-1	0-2	A.	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	A.	organization[1]|person[2]	*[1]|*[2]	*[1]	*->1-1	nmod	basic	1-4	
+1-2	3-8	Upīša	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg2	Upītis	organization[1]|person[2]	*[1]|*[2]	*[1]	*->1-1	flat:name	basic	1-1	
+1-3	9-17	Skrīveru	Masc	Ptan	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	npmdg2	Skrīveri	organization[1]	*[1]	*[1]	*->1-1	nmod	basic	1-4	
+1-4	18-29	vidusskolas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	vidusskola	organization[1]	*[1]	*[1]	*->1-1	nmod	basic	1-5	
+1-5	30-39	direktors	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	direktors	_	_	*[1]	*->1-1	nmod	basic	1-6	
+1-6	40-45	Aldis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	Aldis	person[3]	*[3]	*[1]	*->1-2	nsubj	basic	1-11	
+1-7	46-54	Rakstiņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Raksts	person[3]	*[3]	*[1]	*->1-2	flat:name	basic	1-6	
+1-8	55-56	“	_	_	_	_	_	_	_	_	_	_	_	_	zq	“	product[4]	*[4]	_	_	punct	basic	1-9	
+1-9	56-66	Staburagam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	npmsd1	Staburags	product[4]	*[4]	_	_	iobj	basic	1-11	
+1-10	66-67	”	_	_	_	_	_	_	_	_	_	_	_	_	zq	”	product[4]	*[4]	_	_	punct	basic	1-9	
+1-11	68-74	stāsta	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	stāstīt	_	_	_	_	root	basic	1-11	
+1-12	74-75	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-17	
+1-13	76-78	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark	basic	1-17	
+1-14	79-87	jaunieši	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn2	jaunietis	_	_	_	_	nsubj	basic	1-17	
+1-15	88-96	ierindas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	ierinda	_	_	_	_	nmod	basic	1-16	
+1-16	97-103	skatei	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd5	skate	_	_	_	_	iobj	basic	1-17	
+1-17	104-116	gatavojušies	Masc	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	Perf	vmypdmpnasnpn	gatavoties	_	_	_	_	ccomp	basic	1-11	
+1-18	117-120	jau	_	_	_	_	_	_	_	_	_	_	_	_	r0t	jau	_	_	_	_	advmod	basic	1-19	
+1-19	121-127	laikus	_	_	_	_	_	_	_	_	_	_	_	_	r0t	laikus	_	_	_	_	advmod	basic	1-17	
+1-20	127-128	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-11	
+
+#Text=Turklāt vairākās klasēs komandiera pienākumi uzticēti ne tikai puišiem, bet arī meitenēm.
+2-1	130-137	Turklāt	_	_	_	_	_	_	_	_	_	_	_	_	cs	turklāt	_	_	_	_	mark	basic	2-6	
+2-2	138-146	vairākās	Fem	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur\|PronType=Ind	*	*	pi0fpln	vairākās	_	_	_	_	det	basic	2-3	
+2-3	147-153	klasēs	Fem	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl5	klase	_	_	_	_	obl	basic	2-6	
+2-4	154-164	komandiera	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	komandieris	_	_	_	_	nmod	basic	2-5	
+2-5	165-174	pienākumi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	pienākums	_	_	_	_	nsubj:pass	basic	2-6	
+2-6	175-183	uzticēti	Masc	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpnpsnpn	uzticēt	_	_	_	_	root	basic	2-6	
+2-7	184-186	ne	_	_	_	_	_	_	_	_	_	_	_	_	cc	ne	_	_	_	_	cc	basic	2-9	
+2-8	187-192	tikai	_	_	_	_	_	_	_	_	_	_	_	_	q	tikai	_	_	_	_	discourse	basic	2-7	
+2-9	193-200	puišiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd2	puisis	_	_	_	_	iobj	basic	2-6	
+2-10	200-201	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-13	
+2-11	202-205	bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	_	_	cc	basic	2-13	
+2-12	206-209	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse	basic	2-11	
+2-13	210-218	meitenēm	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd5	meitene	_	_	_	_	conj	basic	2-9	
+2-14	218-219	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-6	

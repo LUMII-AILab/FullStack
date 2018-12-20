@@ -1,0 +1,36 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Sentiments.
+1-1	0-10	Sentiments	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	sentiments	_	_	root	basic	1-1	
+1-2	10-11	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	1-1	
+
+#Text=Ak, es, vecā kļoša.
+2-1	13-15	Ak	_	_	_	_	_	_	_	_	_	_	_	_	i	ak	_	_	discourse	basic	2-3	
+2-2	15-16	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	2-1	
+2-3	17-19	es	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10snn	es	*[2]	*->2-1	root	basic	2-3	
+2-4	19-20	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	2-6	
+2-5	21-25	vecā	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnyp	veca	_	_	amod	basic	2-6	
+2-6	26-31	kļoša	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	kļoša	_	_	acl	basic	2-3	
+2-7	31-32	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	2-3	
+
+#Text=Katrā ziņā to, kas patlaban saucas mūzika, es pat klausīties nevaru.
+3-1	34-39	Katrā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	Katra	_	_	nmod	basic	3-2	
+3-2	40-44	ziņā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	ziņa	_	_	obl	basic	3-13	
+3-3	45-47	to	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	3	*	pd3msan	tas	*[1]	*->1-1	obj	basic	3-12	
+3-4	47-48	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	3-7	
+3-5	49-52	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	*[1]	*->1-2	nsubj	basic	3-7	
+3-6	53-61	patlaban	_	_	_	_	_	_	_	_	_	_	_	_	r0t	patlaban	_	_	advmod	basic	3-7	
+3-7	62-68	saucas	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipi130an	saukties	_	_	ccomp	basic	3-3	
+3-8	69-75	mūzika	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	mūzika	_	_	acl	basic	3-7	
+3-9	75-76	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	3-7	
+3-10	77-79	es	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10snn	es	*[2]	*->2-2	nsubj	basic	3-13	
+3-11	80-83	pat	_	_	_	_	_	_	_	_	_	_	_	_	q	pat	_	_	discourse	basic	3-13	
+3-12	84-94	klausīties	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0t3000n	klausīties	_	_	xcomp	basic	3-13	
+3-13	95-101	nevaru	*	Sing	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	1	*	vonipt31say	nevarēt	_	_	root	basic	3-13	
+3-14	101-102	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	3-13	

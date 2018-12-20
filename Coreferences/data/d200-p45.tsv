@@ -1,0 +1,45 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Būtībā nav nemaz tik daudz filosofisku jautājumu, ko varam uzdot.
+1-1	0-6	Būtībā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	būtība	_	_	obl	basic	1-2	
+1-2	7-10	nav	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vgnipii30ay	nebūt	_	_	root	basic	1-2	
+1-3	11-16	nemaz	*	*	*	*	*	*	*	*	*	PronType=Neg	*	*	r0q	nemaz	_	_	advmod	basic	1-5	
+1-4	17-20	tik	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0q	tik	_	_	advmod	basic	1-5	
+1-5	21-26	daudz	_	_	_	_	_	_	_	_	_	_	_	_	r0q	daudz	_	_	advmod	basic	1-7	
+1-6	27-38	filosofisku	Masc	Plur	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpgnp	filosofisks	_	_	amod	basic	1-7	
+1-7	39-48	jautājumu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	jautājums	*[1]	*->1-1	nsubj	basic	1-2	
+1-8	48-49	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-10	
+1-9	50-52	ko	*	*	Acc	*	*	*	*	*	*	Case=Acc\|PronType=Rel	*	*	pr000an	kas	*[1]	*->1-2	obj	basic	1-11	
+1-10	53-58	varam	*	Plur	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	1	*	vonipt31pan	varēt	_	_	acl	basic	1-7	
+1-11	59-64	uzdot	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	uzdot	_	_	xcomp	basic	1-10	
+1-12	64-65	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	1-2	
+
+#Text=Dažus vissvarīgākos esam jau nosaukuši.
+2-1	67-72	Dažus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|PronType=Ind	*	*	pi0mpan	dažs	_	_	obj	basic	2-5	
+2-2	73-86	vissvarīgākos	Masc	Plur	Acc	Sup	*	*	*	*	*	Case=Acc\|Degree=Sup\|Gender=Masc\|Number=Plur	*	*	afmpays	svarīgs	_	_	dep	basic	2-1	
+2-3	87-91	esam	*	Plur	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	1	*	vcnipii1pan	būt	_	_	aux	basic	2-5	
+2-4	92-95	jau	_	_	_	_	_	_	_	_	_	_	_	_	r0t	jau	_	_	advmod	basic	2-5	
+2-5	96-105	nosaukuši	Masc	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpnasnpn	nosaukt	_	_	root	basic	2-5	
+2-6	105-106	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	2-5	
+
+#Text=Bet no vēstures mums zināmas daudzas un dažādas atbildes uz katru no tiem.
+3-1	108-111	Bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	cc	basic	3-5	
+3-2	112-114	no	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	_	_	case	basic	3-3	
+3-3	115-123	vēstures	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	vēsture	_	_	obl	basic	3-5	
+3-4	124-128	mums	*	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Number=Plur\|Person=1\|PronType=Prs	1	*	pp10pdn	mēs	_	_	obl	basic	3-5	
+3-5	129-136	zināmas	Fem	Sing	Gen	Pos	*	Pres	*	Pass	*	Case=Gen\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	*	vmnpdfsgppnpn	zināt	_	_	root	basic	3-5	
+3-6	137-144	daudzas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|PronType=Ind	*	*	pi0fpnn	daudzas	_	_	det	basic	3-9	
+3-7	145-147	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	cc	basic	3-8	
+3-8	148-155	dažādas	Fem	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	arfpnnp	dažāda	_	_	conj	basic	3-6	
+3-9	156-164	atbildes	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn5	atbilde	_	_	nsubj	basic	3-5	
+3-10	165-167	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsa	uz	_	_	case	basic	3-11	
+3-11	168-173	katru	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Tot	*	*	pg0fsan	katrs	_	_	det	basic	3-9	
+3-12	174-176	no	_	_	_	_	_	_	_	_	_	_	_	_	sppd	no	_	_	case	basic	3-13	
+3-13	177-181	tiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpdn	tas	*[1]	*->1-3	det	basic	3-11	
+3-14	181-182	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	3-5	

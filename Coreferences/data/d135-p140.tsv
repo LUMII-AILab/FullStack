@@ -1,0 +1,76 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Protams, kad Gastonu izlaida un viņš ar sieriņu kabatā skrēja uz Vingrošanas skolu, vingrotājas jau bija aizbraukušas uz nometni.
+1-1	0-7	Protams	_	_	_	_	_	_	_	_	_	_	_	_	q	protams	_	_	_	_	parataxis	basic	1-19	
+1-2	7-8	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-1	
+1-3	9-12	kad	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0t	kad	_	_	_	_	advmod	basic	1-5	
+1-4	13-20	Gastonu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	Gastons	person	*	*[1]	*->1-1	obj	basic	1-5	
+1-5	21-28	izlaida	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	izlaist	_	_	_	_	advcl	basic	1-19	
+1-6	29-31	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-11	
+1-7	32-36	viņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msnn	viņš	_	_	*[1]	*->1-2	nsubj	basic	1-11	
+1-8	37-39	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case	basic	1-9	
+1-9	40-47	sieriņu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	sieriņš	_	_	_	_	acl	basic	1-11	
+1-10	48-54	kabatā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	kabata	_	_	_	_	acl	basic	1-9	
+1-11	55-61	skrēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	skriet	_	_	_	_	conj	basic	1-5	
+1-12	62-64	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsg	uz	_	_	_	_	case	basic	1-14	
+1-13	65-76	Vingrošanas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	vingrošana	location[1]	*[1]	_	_	nmod	basic	1-14	
+1-14	77-82	skolu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	skola	location[1]	*[1]	_	_	obl	basic	1-11	
+1-15	82-83	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-11	
+1-16	84-95	vingrotājas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	vingrotāja	_	_	_	_	nsubj	basic	1-19	
+1-17	96-99	jau	_	_	_	_	_	_	_	_	_	_	_	_	r0t	jau	_	_	_	_	advmod	basic	1-19	
+1-18	100-104	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vcnisii30an	būt	_	_	_	_	aux	basic	1-19	
+1-19	105-117	aizbraukušas	Fem	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfpnasnpn	aizbraukt	_	_	_	_	root	basic	1-19	
+1-20	118-120	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsa	uz	_	_	_	_	case	basic	1-21	
+1-21	121-128	nometni	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	nometne	_	_	_	_	obl	basic	1-19	
+1-22	128-129	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-19	
+
+#Text=Viņš iegāja parkā, pastaigājās, tad apsēdās uz soliņa.
+2-1	131-135	Viņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msnn	viņš	_	_	*[1]	*->1-3	nsubj	basic	2-2	
+2-2	136-142	iegāja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisii30an	ieiet	_	_	_	_	root	basic	2-2	
+2-3	143-148	parkā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	parks	_	_	_	_	acl	basic	2-2	
+2-4	148-149	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-5	
+2-5	150-161	pastaigājās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi230an	pastaigāties	_	_	_	_	conj	basic	2-2	
+2-6	161-162	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-8	
+2-7	163-166	tad	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	tad	_	_	_	_	advmod	basic	2-8	
+2-8	167-174	apsēdās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyist130an	apsēsties	_	_	_	_	conj	basic	2-2	
+2-9	175-177	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsg	uz	_	_	_	_	case	basic	2-10	
+2-10	178-184	soliņa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	soliņš	_	_	_	_	obl	basic	2-8	
+2-11	184-185	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-2	
+
+#Text=No skolas iznāca dežurants un nāca tieši pie viņa.
+3-1	187-189	No	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	_	_	_	_	case	basic	3-2	
+3-2	190-196	skolas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	skola	_	_	_	_	obl	basic	3-3	
+3-3	197-203	iznāca	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	venisi130an	iznākt	_	_	_	_	root	basic	3-3	
+3-4	204-213	dežurants	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	dežurants	_	_	_	_	nsubj	basic	3-3	
+3-5	214-216	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	3-6	
+3-6	217-221	nāca	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi130an	nākt	_	_	_	_	conj	basic	3-3	
+3-7	222-227	tieši	_	_	_	_	_	_	_	_	_	_	_	_	r0m	tieši	_	_	_	_	advmod	basic	3-9	
+3-8	228-231	pie	_	_	_	_	_	_	_	_	_	_	_	_	spsg	pie	_	_	_	_	case	basic	3-9	
+3-9	232-236	viņa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msgn	viņš	_	_	*[1]	*->1-4	obl	basic	3-6	
+3-10	236-237	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-3	
+
+#Text=Gastons piecēlās un gribēja iet prom, bet dežurants viņu aizturēja: — Jūs esat Gastronoms?
+4-1	239-246	Gastons	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Gastons	person	*	*[1]	*->1-5	nsubj	basic	4-2	
+4-2	247-255	piecēlās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyist130an	piecelties	_	_	_	_	root	basic	4-2	
+4-3	256-258	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	4-4	
+4-4	259-266	gribēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vonist330an	gribēt	_	_	_	_	conj	basic	4-2	
+4-5	267-270	iet	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0ii000n	iet	_	_	_	_	xcomp	basic	4-4	
+4-6	271-275	prom	_	_	_	_	_	_	_	_	_	_	_	_	r0p	prom	_	_	_	_	advmod	basic	4-5	
+4-7	275-276	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	4-11	
+4-8	277-280	bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	_	_	cc	basic	4-11	
+4-9	281-290	dežurants	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	dežurants	_	_	_	_	nsubj	basic	4-11	
+4-10	291-295	viņu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsan	viņa	_	_	*[1]	*->1-6	obj	basic	4-11	
+4-11	296-305	aizturēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	aizturēt	_	_	_	_	conj	basic	4-2	
+4-12	305-306	:	_	_	_	_	_	_	_	_	_	_	_	_	zo	:	_	_	_	_	punct	basic	4-16	
+4-13	307-308	—	_	_	_	_	_	_	_	_	_	_	_	_	zd	—	_	_	_	_	punct	basic	4-16	
+4-14	309-312	Jūs	*	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Number=Plur\|Person=2\|PronType=Prs	2	*	pp20pnn	jūs	_	_	*[1]	*->1-7	nsubj	basic	4-16	
+4-15	313-317	esat	*	Plur	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=2\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	2	*	vmnipii2pan	būt	_	_	_	_	cop	basic	4-16	
+4-16	318-328	Gastronoms	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Gastronoms	person	*	*[1]	*->1-8	parataxis	basic	4-11	
+4-17	328-329	?	_	_	_	_	_	_	_	_	_	_	_	_	zs	?	_	_	_	_	punct	basic	4-16	

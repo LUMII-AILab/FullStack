@@ -1,0 +1,56 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=(2) Direktīvas 89/987/EEK [4] mērķis ir paredzēt darbinieku aizsardzību to darba devēja maksātnespējas gadījumā.
+1-1	0-1	(	_	_	_	_	_	_	_	_	_	_	_	_	zb	(	_	_	_	_	punct	basic	1-2	
+1-2	1-2	2	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	2	_	_	_	_	parataxis	basic	1-15	
+1-3	2-3	)	_	_	_	_	_	_	_	_	_	_	_	_	zb	)	_	_	_	_	punct	basic	1-2	
+1-4	4-14	Direktīvas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	direktīva	entity[1]	*[1]	*[2]	*->2-1	nmod	basic	1-5	
+1-5	15-17	89	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	89	entity[1]	*[1]	_	_	nmod	basic	1-13	
+1-6	17-18	/	_	_	_	_	_	_	_	_	_	_	_	_	zx	/	entity[1]	*[1]	_	_	flat:name	basic	1-5	
+1-7	18-21	987	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	987	entity[1]	*[1]	_	_	flat:name	basic	1-5	
+1-8	21-22	/	_	_	_	_	_	_	_	_	_	_	_	_	zx	/	entity[1]	*[1]	_	_	flat:name	basic	1-5	
+1-9	22-25	EEK	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	EEK	entity[1]	*[1]	_	_	flat:name	basic	1-5	
+1-10	26-27	[	_	_	_	_	_	_	_	_	_	_	_	_	zb	\[	_	_	_	_	punct	basic	1-11	
+1-11	27-28	4	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	4	_	_	_	_	parataxis	basic	1-5	
+1-12	28-29	]	_	_	_	_	_	_	_	_	_	_	_	_	zb	\]	_	_	_	_	punct	basic	1-11	
+1-13	30-36	mērķis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	mērķis	_	_	_	_	nsubj	basic	1-15	
+1-14	37-39	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	cop	basic	1-15	
+1-15	40-48	paredzēt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	paredzēt	_	_	_	_	root	basic	1-15	
+1-16	49-59	darbinieku	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	darbinieks	_	_	*[1]	*->1-1	nmod	basic	1-17	
+1-17	60-71	aizsardzību	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	aizsardzība	_	_	_	_	obj	basic	1-15	
+1-18	72-74	to	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpgn	tas	_	_	*[1]	*->1-2	det	basic	1-20	
+1-19	75-80	darba	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	darbs	_	_	_	_	nmod	basic	1-20	
+1-20	81-87	devēja	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	devējs	_	_	_	_	nmod	basic	1-21	
+1-21	88-102	maksātnespējas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	maksātnespēja	_	_	_	_	nmod	basic	1-22	
+1-22	103-111	gadījumā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	gadījums	_	_	_	_	obl	basic	1-15	
+1-23	111-112	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-15	
+
+#Text=Šim nolūkam tā uzliek dalībvalstīm par pienākumu izveidot iestādi, kas garantē attiecīgo darbinieku prasījumu attiecībā uz darba samaksu apmierināšanu.
+2-1	114-117	Šim	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msdn	šis	_	_	_	_	det	basic	2-2	
+2-2	118-125	nolūkam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	nolūks	_	_	_	_	obl	basic	2-4	
+2-3	126-128	tā	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsnn	tā	_	_	*[2]	*->2-2	nsubj	basic	2-4	
+2-4	129-135	uzliek	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt130an	uzlikt	_	_	_	_	root	basic	2-4	
+2-5	136-148	dalībvalstīm	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd6	dalībvalsts	_	_	_	_	iobj	basic	2-4	
+2-6	149-152	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	_	_	case	basic	2-7	
+2-7	153-162	pienākumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	pienākums	_	_	_	_	iobj	basic	2-4	
+2-8	163-171	izveidot	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	izveidot	_	_	_	_	ccomp	basic	2-4	
+2-9	172-179	iestādi	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	iestāde	_	_	*[3]	*->3-1	obj	basic	2-8	
+2-10	179-180	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-12	
+2-11	181-184	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	*[3]	*->3-2	nsubj	basic	2-12	
+2-12	185-192	garantē	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt230an	garantēt	_	_	_	_	acl	basic	2-9	
+2-13	193-202	attiecīgo	Masc	Plur	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpgyp	attiecīgs	_	_	_	_	amod	basic	2-14	
+2-14	203-213	darbinieku	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	darbinieks	_	_	_	_	nmod	basic	2-15	
+2-15	214-223	prasījumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	prasījums	_	_	_	_	nmod	basic	2-20	
+2-16	224-233	attiecībā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	attiecība	_	_	_	_	acl	basic	2-15	
+2-17	234-236	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsa	uz	_	_	_	_	case	basic	2-19	
+2-18	237-242	darba	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	darbs	_	_	_	_	nmod	basic	2-19	
+2-19	243-250	samaksu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	samaksa	_	_	_	_	iobj	basic	2-16	
+2-20	251-264	apmierināšanu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	apmierināšana	_	_	_	_	obj	basic	2-12	
+2-21	264-265	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-4	

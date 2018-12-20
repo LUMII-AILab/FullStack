@@ -1,0 +1,52 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=- Negribi atbraukt pie manis?
+1-1	0-1	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	punct	basic	1-2	
+1-2	2-9	Negribi	*	Sing	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=2\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	2	*	vonipt32say	negribēt	_	_	root	basic	1-2	
+1-3	10-18	atbraukt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	atbraukt	_	_	xcomp	basic	1-2	
+1-4	19-22	pie	_	_	_	_	_	_	_	_	_	_	_	_	spsg	pie	_	_	case	basic	1-5	
+1-5	23-28	manis	*	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10sgn	es	*[1]	*->1-1	obl	basic	1-3	
+1-6	28-29	?	_	_	_	_	_	_	_	_	_	_	_	_	zs	?	_	_	punct	basic	1-2	
+
+#Text=Man nepieciešams iedzert labu tēju.
+2-1	31-34	Man	*	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10sdn	es	*[1]	*->1-2	obl	basic	2-2	
+2-2	35-47	nepieciešams	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	nepieciešams	_	_	root	basic	2-2	
+2-3	48-55	iedzert	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	iedzert	_	_	ccomp	basic	2-2	
+2-4	56-60	labu	Fem	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsanp	laba	_	_	amod	basic	2-5	
+2-5	61-65	tēju	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	tēja	_	_	obj	basic	2-3	
+2-6	65-66	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	2-2	
+
+#Text=Bet negribas to darīt vienai.
+3-1	68-71	Bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	cc	basic	3-2	
+3-2	72-80	negribas	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	voyipt330ay	negribēties	_	_	root	basic	3-2	
+3-3	81-83	to	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	tas	_	_	obj	basic	3-4	
+3-4	84-89	darīt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	darīt	_	_	xcomp	basic	3-2	
+3-5	90-96	vienai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing\|NumType=Card	*	*	mcsfsd	viena	_	_	acl	basic	3-4	
+3-6	96-97	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	3-2	
+
+#Text=Un tu dabūsi vēl šampanieti.
+4-1	99-101	Un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	cc	basic	4-3	
+4-2	102-104	tu	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=2\|PronType=Prs	2	*	pp20snn	tu	_	_	nsubj	basic	4-3	
+4-3	105-111	dabūsi	*	Sing	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=2\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	2	*	vmnift22san	dabūt	_	_	root	basic	4-3	
+4-4	112-115	vēl	_	_	_	_	_	_	_	_	_	_	_	_	r0m	vēl	_	_	advmod	basic	4-3	
+4-5	116-126	šampanieti	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	šampanietis	_	_	obj	basic	4-3	
+4-6	126-127	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	4-3	
+
+#Text=Ļoti labu šampanieti.
+5-1	129-133	Ļoti	_	_	_	_	_	_	_	_	_	_	_	_	r0q	ļoti	_	_	advmod	basic	5-2	
+5-2	134-138	labu	Masc	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsanp	labs	_	_	amod	basic	5-3	
+5-3	139-149	šampanieti	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	šampanietis	_	_	root	basic	5-3	
+5-4	149-150	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	5-3	
+
+#Text=Ja gribēsi, protams.
+6-1	152-154	Ja	_	_	_	_	_	_	_	_	_	_	_	_	cs	ja	_	_	mark	basic	6-2	
+6-2	155-162	gribēsi	*	Sing	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=2\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	2	*	vmnift32san	gribēt	_	_	root	basic	6-2	
+6-3	162-163	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	6-4	
+6-4	164-171	protams	_	_	_	_	_	_	_	_	_	_	_	_	q	protams	_	_	parataxis	basic	6-2	
+6-5	171-172	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	6-2	

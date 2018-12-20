@@ -1,0 +1,130 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Šādi riski nav jauni.
+1-1	0-4	Šādi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpnn	šāds	_	_	_	_	det	basic	1-2	
+1-2	5-10	riski	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	risks	_	_	*[2]	*->2-1	nsubj	basic	1-4	
+1-3	11-14	nav	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30ay	nebūt	_	_	_	_	cop	basic	1-4	
+1-4	15-20	jauni	Masc	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnnp	jauns	_	_	_	_	root	basic	1-4	
+1-5	20-21	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-4	
+
+#Text=Tie ir zināmi.
+2-1	23-26	Tie	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpnn	tas	_	_	*[2]	*->2-2	nsubj	basic	2-3	
+2-2	27-29	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	aux	basic	2-3	
+2-3	30-36	zināmi	Masc	Plur	Nom	Pos	*	Pres	*	Pass	*	Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	*	vmnpdmpnppnp	zināt	_	_	_	_	root	basic	2-3	
+2-4	36-37	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-3	
+
+#Text=Risku novēršanai vai risku iespējamības mazināšanai esam investējuši vairākus miljonus latu katru gadu, izveidojot rezervētas elektrobarošanas pieslēgumus, nepārtrauktas barošanas iekārtas (UPS) un akumulatoru sistēmas visos mezglos jeb centrālēs Latvijā dažādās ģeogrāfiskās vietās.
+3-1	39-44	Risku	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	risks	_	_	*[2]	*->2-3	iobj	basic	3-2	
+3-2	45-55	novēršanai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	novēršana	_	_	_	_	obl	basic	3-8	
+3-3	56-59	vai	_	_	_	_	_	_	_	_	_	_	_	_	cs	vai	_	_	_	_	cc	basic	3-6	
+3-4	60-65	risku	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	risks	_	_	*[2]	*->2-4	nmod	basic	3-6	
+3-5	66-78	iespējamības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	iespējamība	_	_	_	_	nmod	basic	3-6	
+3-6	79-90	mazināšanai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	mazināšana	_	_	_	_	conj	basic	3-2	
+3-7	91-95	esam	*	Plur	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	1	*	vcnipii1pan	būt	_	_	_	_	aux	basic	3-8	
+3-8	96-107	investējuši	Masc	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpnasnp	investēt	_	_	_	_	root	basic	3-8	
+3-9	108-116	vairākus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|PronType=Ind	*	*	pi0mpan	vairāki	_	_	_	_	det	basic	3-10	
+3-10	117-125	miljonus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	miljons	_	_	_	_	obj	basic	3-8	
+3-11	126-130	latu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	lats	_	_	_	_	nmod	basic	3-10	
+3-12	131-136	katru	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msan	katra	_	_	_	_	det	basic	3-13	
+3-13	137-141	gadu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	gads	_	_	_	_	nmod	basic	3-8	
+3-14	141-142	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-15	
+3-15	143-153	izveidojot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000	izveidot	_	_	_	_	advcl	basic	3-8	
+3-16	154-164	rezervētas	Fem	Sing	Gen	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Gen\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsgpsnp	rezervēt	_	_	_	_	amod	basic	3-17	
+3-17	165-181	elektrobarošanas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	elektrobarošana	_	_	_	_	nmod	basic	3-18	
+3-18	182-193	pieslēgumus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	pieslēgums	_	_	_	_	obj	basic	3-15	
+3-19	193-194	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-22	
+3-20	195-208	nepārtrauktas	Fem	Sing	Gen	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Gen\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsgpsnp	nepārtraukt	_	_	_	_	amod	basic	3-21	
+3-21	209-218	barošanas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	barošana	_	_	_	_	nmod	basic	3-22	
+3-22	219-227	iekārtas	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	iekārta	_	_	_	_	conj	basic	3-18	
+3-23	228-229	(	_	_	_	_	_	_	_	_	_	_	_	_	zb	(	_	_	_	_	punct	basic	3-24	
+3-24	229-232	UPS	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	UPS	_	_	_	_	parataxis	basic	3-22	
+3-25	232-233	)	_	_	_	_	_	_	_	_	_	_	_	_	zb	)	_	_	_	_	punct	basic	3-24	
+3-26	234-236	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	3-28	
+3-27	237-248	akumulatoru	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	akumulators	_	_	_	_	nmod	basic	3-28	
+3-28	249-257	sistēmas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	sistēma	_	_	_	_	conj	basic	3-18	
+3-29	258-263	visos	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur\|PronType=Tot	*	*	pg0mpln	viss	_	_	_	_	det	basic	3-30	
+3-30	264-271	mezglos	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	mezgls	_	_	_	_	obl	basic	3-15	
+3-31	272-275	jeb	_	_	_	_	_	_	_	_	_	_	_	_	cc	jeb	_	_	_	_	cc	basic	3-32	
+3-32	276-285	centrālēs	Fem	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl5	centrāle	_	_	_	_	conj	basic	3-30	
+3-33	286-293	Latvijā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	Latvija	GPE	*	_	_	acl	basic	3-30	
+3-34	294-301	dažādās	Fem	Plur	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	arfplnp	dažāda	_	_	_	_	amod	basic	3-36	
+3-35	302-314	ģeogrāfiskās	Fem	Plur	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	arfplyp	ģeogrāfiska	_	_	_	_	amod	basic	3-36	
+3-36	315-321	vietās	Fem	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	vieta	_	_	_	_	obl	basic	3-15	
+3-37	321-322	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-8	
+
+#Text=Protams, 100% drošība nav iespējama, nejaušību virknes veidojas arvien sarežģītākas.
+4-1	324-331	Protams	_	_	_	_	_	_	_	_	_	_	_	_	q	protams	_	_	_	_	parataxis	basic	4-7	
+4-2	331-332	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	4-1	
+4-3	333-336	100	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	100	_	_	_	_	nummod	basic	4-4	
+4-4	336-337	%	_	_	_	_	_	_	_	_	_	_	_	_	xx	%	_	_	_	_	nmod	basic	4-5	
+4-5	338-345	drošība	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	drošība	_	_	_	_	nsubj	basic	4-7	
+4-6	346-349	nav	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30ay	nebūt	_	_	_	_	cop	basic	4-7	
+4-7	350-359	iespējama	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsnnp	iespējama	_	_	_	_	root	basic	4-7	
+4-8	359-360	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	4-11	
+4-9	361-370	nejaušību	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	nejaušība	_	_	_	_	nmod	basic	4-10	
+4-10	371-378	virknes	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn5	virkne	_	_	_	_	nsubj	basic	4-11	
+4-11	379-387	veidojas	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipi230an	veidoties	_	_	_	_	conj	basic	4-7	
+4-12	388-394	arvien	_	_	_	_	_	_	_	_	_	_	_	_	r0t	arvien	_	_	_	_	advmod	basic	4-13	
+4-13	395-407	sarežģītākas	Fem	Plur	Nom	Cmp	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Fem\|Number=Plur	*	*	affpnnc	sarežģīta	_	_	_	_	xcomp	basic	4-11	
+4-14	407-408	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	4-7	
+
+#Text=Patlaban jūtamies komfortabli.
+5-1	410-418	Patlaban	_	_	_	_	_	_	_	_	_	_	_	_	r0t	patlaban	_	_	_	_	advmod	basic	5-2	
+5-2	419-427	jūtamies	*	Plur	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	1	*	vmyipt11pan	justies	_	_	_	_	root	basic	5-2	
+5-3	428-439	komfortabli	_	_	_	_	_	_	_	_	_	_	_	_	r0m	komfortabli	_	_	_	_	advmod	basic	5-2	
+5-4	439-440	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	5-2	
+
+#Text=Ar diviem IMS maršrutētājiem, kas darbojas kā centrāles visai valstij, ir vienkāršāk un ekonomiski izdevīgāk izmantot rezervēšanas sistēmas visos līmeņos.
+6-1	442-444	Ar	_	_	_	_	_	_	_	_	_	_	_	_	sppd	ar	_	_	_	_	case	basic	6-4	
+6-2	445-451	diviem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpd	divi	_	_	_	_	nummod	basic	6-4	
+6-3	452-455	IMS	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	IMS	_	_	*[1]	*->1-1	nmod	basic	6-4	
+6-4	456-470	maršrutētājiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	maršrutētājiem	_	_	*[1]	*->1-1	obl	basic	6-14	
+6-5	470-471	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	6-7	
+6-6	472-475	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	*[1]	*->1-2	nsubj	basic	6-7	
+6-7	476-484	darbojas	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipi230an	darboties	_	_	_	_	acl	basic	6-4	
+6-8	485-487	kā	_	_	_	_	_	_	_	_	_	_	_	_	cs	kā	_	_	_	_	mark	basic	6-9	
+6-9	488-497	centrāles	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	centrāle	_	_	_	_	obl	basic	6-7	
+6-10	498-503	visai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing\|PronType=Tot	*	*	pg0fsdn	visa	_	_	_	_	det	basic	6-11	
+6-11	504-511	valstij	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd6	valsts	_	_	_	_	iobj	basic	6-9	
+6-12	511-512	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	6-7	
+6-13	513-515	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	aux	basic	6-14	
+6-14	516-526	vienkāršāk	*	*	*	Cmp	*	*	*	*	*	Degree=Cmp	*	*	rcm	vienkārši	_	_	_	_	root	basic	6-14	
+6-15	527-529	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	6-17	
+6-16	530-540	ekonomiski	_	_	_	_	_	_	_	_	_	_	_	_	r0m	ekonomiski	_	_	_	_	advmod	basic	6-17	
+6-17	541-550	izdevīgāk	*	*	*	Cmp	*	*	*	*	*	Degree=Cmp	*	*	rcm	izdevīgi	_	_	_	_	conj	basic	6-14	
+6-18	551-559	izmantot	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	izmantot	_	_	_	_	ccomp	basic	6-14	
+6-19	560-572	rezervēšanas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	rezervēšana	_	_	_	_	nmod	basic	6-20	
+6-20	573-581	sistēmas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	sistēma	_	_	_	_	iobj	basic	6-18	
+6-21	582-587	visos	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur\|PronType=Tot	*	*	pg0mpln	viss	_	_	_	_	det	basic	6-22	
+6-22	588-595	līmeņos	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl2	līmenis	_	_	_	_	obl	basic	6-18	
+6-23	595-596	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	6-14	
+
+#Text=To veidot ar 196 centrālēm ir nesalīdzināmi dārgāk.
+7-1	598-600	To	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	tas	_	_	_	_	obj	basic	7-2	
+7-2	601-607	veidot	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	veidot	_	_	_	_	ccomp	basic	7-8	
+7-3	608-610	ar	_	_	_	_	_	_	_	_	_	_	_	_	sppd	ar	_	_	_	_	case	basic	7-5	
+7-4	611-614	196	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	196	_	_	_	_	nummod	basic	7-5	
+7-5	615-624	centrālēm	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd5	centrāle	_	_	_	_	iobj	basic	7-2	
+7-6	625-627	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	aux	basic	7-8	
+7-7	628-641	nesalīdzināmi	*	*	*	*	*	*	*	*	*	PronType=Neg	*	*	r0m	nesalīdzināmi	_	_	_	_	advmod	basic	7-8	
+7-8	642-648	dārgāk	*	*	*	Cmp	*	*	*	*	*	Degree=Cmp	*	*	rcm	dārgi	_	_	_	_	root	basic	7-8	
+7-9	648-649	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	7-8	
+
+#Text=Ir jāskatās, lai pakalpojumi būtu konkurētspējīgi cenas ziņā.
+8-1	651-653	Ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	aux	basic	8-2	
+8-2	654-662	jāskatās	*	*	*	*	*	*	Nec	Act	*	Mood=Nec\|Polarity=Pos\|Reflex=Yes\|VerbForm=Fin\|Voice=Act	*	*	vmyd0i300an	skatīties	_	_	_	_	root	basic	8-2	
+8-3	662-663	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	8-7	
+8-4	664-667	lai	_	_	_	_	_	_	_	_	_	_	_	_	cs	lai	_	_	_	_	mark	basic	8-7	
+8-5	668-679	pakalpojumi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	pakalpojums	_	_	_	_	nsubj	basic	8-7	
+8-6	680-684	būtu	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vcnc0ii00an	būt	_	_	_	_	cop	basic	8-7	
+8-7	685-700	konkurētspējīgi	Masc	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnnp	konkurētspējīgs	_	_	_	_	advcl	basic	8-2	
+8-8	701-706	cenas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	cena	_	_	_	_	nmod	basic	8-9	
+8-9	707-711	ziņā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	ziņa	_	_	_	_	obl	basic	8-7	
+8-10	711-712	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	8-2	

@@ -1,0 +1,86 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Šo kursu Tu saņem pilnīgi par brīvu.
+1-1	0-2	Šo	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	šis	_	_	det	basic	1-2	
+1-2	3-8	kursu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	kurss	_	_	obj	basic	1-4	
+1-3	9-11	Tu	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=2\|PronType=Prs	2	*	pp20snn	tu	*[1]	*->1-1	nsubj	basic	1-4	
+1-4	12-17	saņem	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt130an	saņemt	_	_	root	basic	1-4	
+1-5	18-25	pilnīgi	_	_	_	_	_	_	_	_	_	_	_	_	r0q	pilnīgi	_	_	advmod	basic	1-7	
+1-6	26-29	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	case	basic	1-7	
+1-7	30-35	brīvu	Masc	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsanp	brīvs	_	_	obl	basic	1-4	
+1-8	35-36	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	1-4	
+
+#Text=Tāpēc Tu arī nesaņemsi atpakaļ nekādu naudu, ja šis kurss nesasniegs cerēto.
+2-1	38-43	Tāpēc	_	_	_	_	_	_	_	_	_	_	_	_	r0c	tāpēc	_	_	advmod	basic	2-4	
+2-2	44-46	Tu	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=2\|PronType=Prs	2	*	pp20snn	tu	*[1]	*->1-2	nsubj	basic	2-4	
+2-3	47-50	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	discourse	basic	2-4	
+2-4	51-60	nesaņemsi	*	Sing	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=2\|Polarity=Neg\|Tense=Fut\|VerbForm=Fin\|Voice=Act	2	*	vmnift12say	nesaņemt	_	_	root	basic	2-4	
+2-5	61-68	atpakaļ	_	_	_	_	_	_	_	_	_	_	_	_	r0p	atpakaļ	_	_	advmod	basic	2-4	
+2-6	69-75	nekādu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Ind,Neg	*	*	pi0msay	nekāds	_	_	det	basic	2-7	
+2-7	76-81	naudu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	nauda	_	_	obj	basic	2-4	
+2-8	81-82	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	2-12	
+2-9	83-85	ja	_	_	_	_	_	_	_	_	_	_	_	_	cs	ja	_	_	mark	basic	2-12	
+2-10	86-89	šis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	šis	_	_	det	basic	2-11	
+2-11	90-95	kurss	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	kurss	_	_	nsubj	basic	2-12	
+2-12	96-106	nesasniegs	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vmnift130ay	nesasniegt	_	_	advcl	basic	2-4	
+2-13	107-113	cerēto	Masc	Sing	Acc	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsapsypn	cerēt	_	_	obj	basic	2-12	
+2-14	113-114	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	2-4	
+
+#Text=Ja Tu vēlētos pārtraukt šo kursu, Tev ir pilnīga iespēja to izdarīt.
+3-1	116-118	Ja	_	_	_	_	_	_	_	_	_	_	_	_	cs	ja	_	_	mark	basic	3-3	
+3-2	119-121	Tu	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=2\|PronType=Prs	2	*	pp20snn	tu	*[1]	*->1-3	nsubj	basic	3-3	
+3-3	122-129	vēlētos	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Pos\|Reflex=Yes\|VerbForm=Fin\|Voice=Act	*	*	voyc0t300an	vēlēties	_	_	advcl	basic	3-9	
+3-4	130-139	pārtraukt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	pārtraukt	_	_	xcomp	basic	3-3	
+3-5	140-142	šo	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	šis	_	_	det	basic	3-6	
+3-6	143-148	kursu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	kurss	_	_	obj	basic	3-4	
+3-7	148-149	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	3-3	
+3-8	150-153	Tev	*	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Number=Sing\|Person=2\|PronType=Prs	2	*	pp20sdn	tu	*[1]	*->1-4	obl	basic	3-9	
+3-9	154-156	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipii30an	būt	_	_	root	basic	3-9	
+3-10	157-164	pilnīga	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	pilnīga	_	_	amod	basic	3-11	
+3-11	165-172	iespēja	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	iespēja	_	_	nsubj	basic	3-9	
+3-12	173-175	to	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	tas	_	_	obj	basic	3-13	
+3-13	176-183	izdarīt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	izdarīt	_	_	acl	basic	3-11	
+3-14	183-184	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	3-9	
+
+#Text=Tev tikai jāatstāj zīme man vēstuļu kastē.
+4-1	186-189	Tev	*	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Number=Sing\|Person=2\|PronType=Prs	2	*	pp20sdn	tu	*[1]	*->1-5	nsubj	basic	4-3	
+4-2	190-195	tikai	_	_	_	_	_	_	_	_	_	_	_	_	q	tikai	_	_	discourse	basic	4-3	
+4-3	196-204	jāatstāj	*	*	*	*	*	*	Nec	Act	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vmnd0t100an	atstāt	_	_	root	basic	4-3	
+4-4	205-209	zīme	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	zīme	_	_	obj	basic	4-3	
+4-5	210-213	man	*	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10sdn	es	_	_	iobj	basic	4-3	
+4-6	214-221	vēstuļu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg5	vēstule	_	_	nmod	basic	4-7	
+4-7	222-227	kastē	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	kaste	_	_	obl	basic	4-3	
+4-8	227-228	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	4-3	
+
+#Text=Dzīva varde varētu būt pavisam piemērota.
+5-1	230-235	Dzīva	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	dzīva	_	_	amod	basic	5-2	
+5-2	236-241	varde	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	varde	_	_	nsubj	basic	5-3	
+5-3	242-248	varētu	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vonc0t300an	varēt	_	_	root	basic	5-3	
+5-4	249-252	būt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vcnn0ii000n	būt	_	_	cop	basic	5-6	
+5-5	253-260	pavisam	_	_	_	_	_	_	_	_	_	_	_	_	r0q	pavisam	_	_	advmod	basic	5-6	
+5-6	261-270	piemērota	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnpsnpn	piemērot	_	_	xcomp	basic	5-3	
+5-7	270-271	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	5-3	
+
+#Text=Visādā ziņā tam ir jābūt kaut kam zaļam, jo mēs taču negribētu pārbiedēt pastnieku.
+6-1	273-279	Visādā	Fem	Sing	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfslnp	visāda	_	_	amod	basic	6-2	
+6-2	280-284	ziņā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	ziņa	_	_	obl	basic	6-8	
+6-3	285-288	tam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msdn	tas	_	_	nsubj	basic	6-8	
+6-4	289-291	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	aux	basic	6-8	
+6-5	292-297	jābūt	*	*	*	*	*	*	Nec	Act	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vcnd0ii00an	būt	_	_	aux	basic	6-8	
+6-6	298-302	kaut	_	_	_	_	_	_	_	_	_	_	_	_	q	kaut	_	_	discourse	basic	6-7	
+6-7	303-306	kam	*	*	Dat	*	*	*	*	*	*	Case=Dat\|PronType=Ind	*	*	pi000dn	kas	_	_	det	basic	6-8	
+6-8	307-312	zaļam	Masc	Sing	Dat	Pos	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsdnp	zaļš	_	_	root	basic	6-8	
+6-9	312-313	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	6-13	
+6-10	314-316	jo	_	_	_	_	_	_	_	_	_	_	_	_	cs	jo	_	_	mark	basic	6-13	
+6-11	317-320	mēs	*	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Number=Plur\|Person=1\|PronType=Prs	1	*	pp10pnn	mēs	_	_	nsubj	basic	6-13	
+6-12	321-325	taču	_	_	_	_	_	_	_	_	_	_	_	_	q	taču	_	_	discourse	basic	6-13	
+6-13	326-335	negribētu	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Neg\|VerbForm=Fin\|Voice=Act	*	*	vonc0t300ay	negribēt	_	_	advcl	basic	6-8	
+6-14	336-345	pārbiedēt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	pārbiedēt	_	_	xcomp	basic	6-13	
+6-15	346-355	pastnieku	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	pastnieks	_	_	obj	basic	6-14	
+6-16	355-356	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	6-8	

@@ -1,0 +1,51 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Viņi skrēja stundu.
+1-1	0-4	Viņi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Prs	3	*	pp3mpnn	viņš	_	_	*[1]	*->1-1	nsubj	basic	1-2	
+1-2	5-11	skrēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	skriet	_	_	_	_	root	basic	1-2	
+1-3	12-18	stundu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	stunda	_	_	_	_	obl	basic	1-2	
+1-4	18-19	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-2	
+
+#Text=Gastons gribēja skriet vēl tikpat, bet Ignate piekusa.
+2-1	21-28	Gastons	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Gastons	person	*	_	_	nsubj	basic	2-2	
+2-2	29-36	gribēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vonist330an	gribēt	_	_	_	_	root	basic	2-2	
+2-3	37-43	skriet	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	skriet	_	_	_	_	xcomp	basic	2-2	
+2-4	44-47	vēl	_	_	_	_	_	_	_	_	_	_	_	_	r0t	vēl	_	_	_	_	advmod	basic	2-5	
+2-5	48-54	tikpat	_	_	_	_	_	_	_	_	_	_	_	_	r0q	tikpat	_	_	_	_	advmod	basic	2-3	
+2-6	54-55	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-9	
+2-7	56-59	bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	_	_	cc	basic	2-9	
+2-8	60-66	Ignate	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	Ignate	person	*	_	_	nsubj	basic	2-9	
+2-9	67-74	piekusa	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi130an	piekust	_	_	_	_	conj	basic	2-2	
+2-10	74-75	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-2	
+
+#Text=Viņi izdzēra pēdējo ūdeni, un Gastons aizgāja salasīt mellenes.
+3-1	77-81	Viņi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Prs	3	*	pp3mpnn	viņš	_	_	*[1]	*->1-2	nsubj	basic	3-2	
+3-2	82-89	izdzēra	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	izdzert	_	_	_	_	root	basic	3-2	
+3-3	90-96	pēdējo	Masc	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsayp	pēdējs	_	_	_	_	amod	basic	3-4	
+3-4	97-102	ūdeni	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	ūdens	_	_	_	_	obj	basic	3-2	
+3-5	102-103	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-8	
+3-6	104-106	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	3-8	
+3-7	107-114	Gastons	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Gastons	person	*	_	_	nsubj	basic	3-8	
+3-8	115-122	aizgāja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisii30an	aiziet	_	_	_	_	conj	basic	3-2	
+3-9	123-130	salasīt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	salasīt	_	_	_	_	ccomp	basic	3-8	
+3-10	131-139	mellenes	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa5	mellene	_	_	_	_	obj	basic	3-9	
+3-11	139-140	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-2	
+
+#Text=Ar zombīgām melleņu mutēm un rokām abi atkrita zālē.
+4-1	142-144	Ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case	basic	4-4	
+4-2	145-153	zombīgām	Fem	Plur	Dat	Pos	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpdnp	zombīga	_	_	_	_	amod	basic	4-4	
+4-3	154-161	melleņu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg5	mellene	_	_	_	_	nmod	basic	4-4	
+4-4	162-167	mutēm	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd5	mute	_	_	_	_	acl	basic	4-8	
+4-5	168-170	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	4-6	
+4-6	171-176	rokām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	roka	_	_	_	_	conj	basic	4-4	
+4-7	177-180	abi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Tot	*	*	pg0mpnn	abi	_	_	*[1]	*->1-3	nsubj	basic	4-8	
+4-8	181-188	atkrita	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi130an	atkrist	_	_	_	_	root	basic	4-8	
+4-9	189-193	zālē	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	zāle	_	_	_	_	obl	basic	4-8	
+4-10	193-194	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	4-8	

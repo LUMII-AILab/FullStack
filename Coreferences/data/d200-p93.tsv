@@ -1,0 +1,61 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Tas saistīts ar pieradumu.
+1-1	0-3	Tas	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	tas	_	_	_	_	nsubj:pass	basic	1-2	
+1-2	4-12	saistīts	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnpn	saistīt	_	_	_	_	root	basic	1-2	
+1-3	13-15	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case	basic	1-4	
+1-4	16-25	pieradumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	pieradums	_	_	_	_	iobj	basic	1-2	
+1-5	25-26	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-2	
+
+#Text=(Ievēro to labi!)
+2-1	28-29	(	_	_	_	_	_	_	_	_	_	_	_	_	zb	(	_	_	_	_	punct	basic	2-2	
+2-2	29-35	Ievēro	*	Sing	*	*	*	*	Imp	Act	*	Mood=Imp\|Number=Sing\|Person=2\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	2	*	vmnm0t22san	ievērot	_	_	_	_	root	basic	2-2	
+2-3	36-38	to	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	tas	_	_	_	_	obj	basic	2-2	
+2-4	39-43	labi	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	labi	_	_	_	_	advmod	basic	2-2	
+2-5	43-44	!	_	_	_	_	_	_	_	_	_	_	_	_	zs	!	_	_	_	_	punct	basic	2-2	
+2-6	44-45	)	_	_	_	_	_	_	_	_	_	_	_	_	zb	)	_	_	_	_	punct	basic	2-2	
+
+#Text=Māmiņa ir apguvusi to, ka cilvēki nelido.
+3-1	47-53	Māmiņa	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	māmiņa	_	_	_	_	nsubj	basic	3-3	
+3-2	54-56	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	aux	basic	3-3	
+3-3	57-65	apguvusi	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnasnpn	apgūt	_	_	_	_	root	basic	3-3	
+3-4	66-68	to	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	tas	_	_	_	_	obj	basic	3-3	
+3-5	68-69	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-8	
+3-6	70-72	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark	basic	3-8	
+3-7	73-80	cilvēki	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	cilvēks	_	_	_	_	nsubj	basic	3-8	
+3-8	81-87	nelido	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt230ay	nelidot	_	_	_	_	ccomp	basic	3-3	
+3-9	87-88	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-3	
+
+#Text=Tomass to nav apguvis.
+4-1	90-96	Tomass	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Tomass	person	*	*[1]	*->1-1	nsubj	basic	4-4	
+4-2	97-99	to	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	tas	_	_	_	_	obj	basic	4-4	
+4-3	100-103	nav	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30ay	nebūt	_	_	_	_	aux	basic	4-4	
+4-4	104-111	apguvis	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnasnpn	apgūt	_	_	_	_	root	basic	4-4	
+4-5	111-112	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	4-4	
+
+#Text=Viņam vēl joprojām nav pilnīgas skaidrības par to, kas šai pasaulē mēdz notikt un kas nemēdz.
+5-1	114-119	Viņam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msdn	viņš	_	_	*[1]	*->1-2	obl	basic	5-4	
+5-2	120-123	vēl	_	_	_	_	_	_	_	_	_	_	_	_	r0t	vēl	_	_	_	_	advmod	basic	5-4	
+5-3	124-132	joprojām	_	_	_	_	_	_	_	_	_	_	_	_	r0t	joprojām	_	_	_	_	advmod	basic	5-4	
+5-4	133-136	nav	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vgnipii30ay	nebūt	_	_	_	_	root	basic	5-4	
+5-5	137-145	pilnīgas	Fem	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsgnp	pilnīga	_	_	_	_	amod	basic	5-6	
+5-6	146-156	skaidrības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	skaidrība	_	_	_	_	nsubj	basic	5-4	
+5-7	157-160	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	*[2]	*->2-1	case	basic	5-8	
+5-8	161-163	to	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	tas	_	_	*[2]	*->2-1	det	basic	5-6	
+5-9	163-164	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	5-13	
+5-10	165-168	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	*[2]	*->2-2	nsubj	basic	5-13	
+5-11	169-172	šai	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsln	šī	_	_	_	_	det	basic	5-12	
+5-12	173-180	pasaulē	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	pasaule	_	_	_	_	obl	basic	5-13	
+5-13	181-185	mēdz	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vonipt130an	mēgt	_	_	_	_	acl	basic	5-6	
+5-14	186-192	notikt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0i1000n	notikt	_	_	_	_	xcomp	basic	5-13	
+5-15	193-195	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	5-17	
+5-16	196-199	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	*[2]	*->2-3	nsubj	basic	5-17	
+5-17	200-206	nemēdz	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vonipt130ay	nemēgt	_	_	_	_	conj	basic	5-13	
+5-18	206-207	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	5-4	

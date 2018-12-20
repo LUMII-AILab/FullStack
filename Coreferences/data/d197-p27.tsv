@@ -1,0 +1,38 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Tagad būda uz viņu vairs neskatījās - tikai pāri, tikai garām, visulaik kaut kur sienā vai griestos aiz viņas, vai varbūt uz sevi pašu iekšpus.
+1-1	0-5	Tagad	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	tagad	_	_	advmod	basic	1-6	
+1-2	6-10	būda	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	būda	*[1]	*->1-1	nsubj	basic	1-6	
+1-3	11-13	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsa	uz	_	_	case	basic	1-4	
+1-4	14-18	viņu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsan	viņa	*[2]	*->2-1	obl	basic	1-6	
+1-5	19-24	vairs	_	_	_	_	_	_	_	_	_	_	_	_	r0t	vairs	_	_	advmod	basic	1-6	
+1-6	25-35	neskatījās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi330ay	neskatīties	_	_	root	basic	1-6	
+1-7	36-37	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	punct	basic	1-9	
+1-8	38-43	tikai	_	_	_	_	_	_	_	_	_	_	_	_	q	tikai	_	_	discourse	basic	1-9	
+1-9	44-48	pāri	_	_	_	_	_	_	_	_	_	_	_	_	rrp	pāri	_	_	conj	basic	1-6	
+1-10	48-49	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-12	
+1-11	50-55	tikai	_	_	_	_	_	_	_	_	_	_	_	_	q	tikai	_	_	discourse	basic	1-12	
+1-12	56-61	garām	_	_	_	_	_	_	_	_	_	_	_	_	rrp	garām	_	_	conj	basic	1-9	
+1-13	61-62	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-17	
+1-14	63-71	visulaik	_	_	_	_	_	_	_	_	_	_	_	_	r0t	visulaik	_	_	advmod	basic	1-9	
+1-15	72-76	kaut	_	_	_	_	_	_	_	_	_	_	_	_	q	kaut	_	_	discourse	basic	1-16	
+1-16	77-80	kur	*	*	*	*	*	*	*	*	*	PronType=Ind	*	*	r0p	kur	_	_	advmod	basic	1-17	
+1-17	81-86	sienā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	siena	_	_	conj	basic	1-9	
+1-18	87-90	vai	_	_	_	_	_	_	_	_	_	_	_	_	cc	vai	_	_	cc	basic	1-19	
+1-19	91-99	griestos	Masc	Ptan	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Ptan	*	*	ncmdl1	griesti	_	_	conj	basic	1-17	
+1-20	100-103	aiz	_	_	_	_	_	_	_	_	_	_	_	_	spsg	aiz	_	_	case	basic	1-21	
+1-21	104-109	viņas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsgn	viņa	*[2]	*->2-2	obl	basic	1-17	
+1-22	109-110	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-26	
+1-23	111-114	vai	_	_	_	_	_	_	_	_	_	_	_	_	cc	vai	_	_	cc	basic	1-26	
+1-24	115-121	varbūt	_	_	_	_	_	_	_	_	_	_	_	_	q	varbūt	_	_	discourse	basic	1-26	
+1-25	122-124	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsa	uz	_	_	case	basic	1-26	
+1-26	125-129	sevi	*	*	Acc	*	*	*	*	*	*	Case=Acc\|PronType=Rcp\|Reflex=Yes	*	*	px000an	sevis	*[1]	*->1-2	conj	basic	1-9	
+1-27	130-134	pašu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msan	pats	*[1]	*->1-2	compound	basic	1-26	
+1-28	135-142	iekšpus	_	_	_	_	_	_	_	_	_	_	_	_	r0p	iekšpus	_	_	advmod	basic	1-26	
+1-29	142-143	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	1-6	

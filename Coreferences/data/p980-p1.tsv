@@ -1,0 +1,63 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text="Uzskatīju par lielu godu atnākt un piedalīties.
+1-1	0-1	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	_	_	_	_	punct	basic	1-2	
+1-2	1-10	Uzskatīju	*	Sing	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	1	*	vmnist31san	uzskatīt	_	_	_	_	root	basic	1-2	
+1-3	11-14	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	_	_	case	basic	1-5	
+1-4	15-20	lielu	Masc	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsanp	liels	_	_	_	_	amod	basic	1-5	
+1-5	21-25	godu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	gods	_	_	_	_	xcomp	basic	1-2	
+1-6	26-32	atnākt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0i1000n	atnākt	_	_	_	_	acl	basic	1-5	
+1-7	33-35	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-8	
+1-8	36-47	piedalīties	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i3000n	piedalīties	_	_	_	_	conj	basic	1-6	
+1-9	47-48	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-2	
+
+#Text=Tas ir vēsturisks notikums, par kuru cilvēki varēs stāstīt saviem mazbērniem," Valsts prezidenta Valda Zatlera vizīti Strenčos vērtē pensionāre Dzidra Ploce.
+2-1	50-53	Tas	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	tas	_	_	_	_	nsubj	basic	2-4	
+2-2	54-56	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	cop	basic	2-4	
+2-3	57-67	vēsturisks	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsnnp	vēsturisks	_	_	*[1]	*->1-1	amod	basic	2-4	
+2-4	68-76	notikums	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	notikums	_	_	*[1]	*->1-1	parataxis	basic	2-21	
+2-5	76-77	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-9	
+2-6	78-81	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	*[1]	*->1-2	case	basic	2-7	
+2-7	82-86	kuru	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msan	kurš	_	_	*[1]	*->1-2	iobj	basic	2-10	
+2-8	87-94	cilvēki	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	cilvēks	_	_	_	_	nsubj	basic	2-9	
+2-9	95-100	varēs	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vonift330an	varēt	_	_	_	_	acl	basic	2-4	
+2-10	101-108	stāstīt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	stāstīt	_	_	_	_	xcomp	basic	2-9	
+2-11	109-115	saviem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|Poss=Yes\|PronType=Prs	*	*	ps0mpdn	savs	_	_	_	_	det	basic	2-12	
+2-12	116-126	mazbērniem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	mazbērns	_	_	_	_	iobj	basic	2-10	
+2-13	126-127	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-9	
+2-14	127-128	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	_	_	_	_	punct	basic	2-4	
+2-15	129-135	Valsts	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	valsts	_	_	*[3]	*->3-1	nmod	basic	2-16	
+2-16	136-146	prezidenta	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	prezidents	_	_	*[3]	*->3-1	nmod	basic	2-17	
+2-17	147-152	Valda	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg2	Valdis	person[1]	*[1]	*[3]	*->3-2	nmod	basic	2-19	
+2-18	153-160	Zatlera	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Zatlers	person[1]	*[1]	*[3]	*->3-2	flat:name	basic	2-17	
+2-19	161-167	vizīti	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	vizīte	_	_	_	_	obj	basic	2-21	
+2-20	168-176	Strenčos	Masc	Ptan	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Ptan	*	*	npmdl2	Strenči	GPE	*	_	_	iobj	basic	2-19	
+2-21	177-182	vērtē	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt230an	vērtēt	_	_	_	_	root	basic	2-21	
+2-22	183-193	pensionāre	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	pensionāre	_	_	*[2]	*->2-1	nmod	basic	2-23	
+2-23	194-200	Dzidra	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Dzidra	person[2]	*[2]	*[2]	*->2-2	nsubj	basic	2-21	
+2-24	201-206	Ploce	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	Ploce	person[2]	*[2]	*[2]	*->2-2	flat:name	basic	2-23	
+2-25	206-207	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-21	
+
+#Text=Valsts prezidents šodien tikās ar strencēniešiem un apkārtējo pagastu iedzīvotājiem pilsētas kultūras nama zālē.
+3-1	209-215	Valsts	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	valsts	_	_	*[3]	*->3-3	nmod	basic	3-2	
+3-2	216-226	prezidents	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	prezidents	_	_	*[3]	*->3-3	nsubj	basic	3-4	
+3-3	227-233	šodien	_	_	_	_	_	_	_	_	_	_	_	_	r0t	šodien	time	*	_	_	advmod	basic	3-4	
+3-4	234-239	tikās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi130an	tikties	_	_	_	_	root	basic	3-4	
+3-5	240-242	ar	_	_	_	_	_	_	_	_	_	_	_	_	sppd	ar	_	_	_	_	case	basic	3-6	
+3-6	243-257	strencēniešiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd2	strencēnietis	_	_	_	_	iobj	basic	3-4	
+3-7	258-260	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	3-10	
+3-8	261-270	apkārtējo	Masc	Plur	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpgyp	apkārtējs	_	_	_	_	amod	basic	3-9	
+3-9	271-278	pagastu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	pagasts	_	_	_	_	nmod	basic	3-10	
+3-10	279-292	iedzīvotājiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	iedzīvotājs	_	_	_	_	conj	basic	3-6	
+3-11	293-301	pilsētas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	pilsēta	_	_	_	_	nmod	basic	3-13	
+3-12	302-310	kultūras	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	kultūra	_	_	_	_	nmod	basic	3-13	
+3-13	311-315	nama	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	nams	_	_	_	_	nmod	basic	3-14	
+3-14	316-320	zālē	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	zāle	_	_	_	_	obl	basic	3-4	
+3-15	320-321	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-4	

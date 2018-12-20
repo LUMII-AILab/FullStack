@@ -1,0 +1,50 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Pēc Valsts ieņēmuma dienesta datiem, pērn pieci lielākie komersanti pēc mazumtirdzniecībā realizētā degvielas apjoma (dati par deviņiem mēnešiem) bija "Statoil", Neste, "Lukoil", "Virši-A " un "Latvijas nafta".
+1-1	0-3	Pēc	_	_	_	_	_	_	_	_	_	_	_	_	sppd	pēc	_	_	case	basic	1-5	
+1-2	4-10	Valsts	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	valsts	organization[1]	*[1]	nmod	basic	1-4	
+1-3	11-19	ieņēmuma	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	ieņēmums	organization[1]	*[1]	nmod	basic	1-4	
+1-4	20-28	dienesta	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	dienests	organization[1]	*[1]	nmod	basic	1-5	
+1-5	29-35	datiem	Masc	Ptan	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Ptan	*	*	ncmdd1	dati	_	_	parataxis	basic	1-24	
+1-6	35-36	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-5	
+1-7	37-41	pērn	_	_	_	_	_	_	_	_	_	_	_	_	r0t	pērn	_	_	advmod	basic	1-24	
+1-8	42-47	pieci	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpn	pieci	_	_	nummod	basic	1-10	
+1-9	48-56	lielākie	Masc	Plur	Nom	Cmp	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Masc\|Number=Plur	*	*	afmpnyc	liels	_	_	amod	basic	1-10	
+1-10	57-67	komersanti	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	komersants	_	_	nsubj	basic	1-24	
+1-11	68-71	pēc	_	_	_	_	_	_	_	_	_	_	_	_	spsg	pēc	_	_	case	basic	1-15	
+1-12	72-89	mazumtirdzniecībā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	mazumtirdzniecība	_	_	obl	basic	1-13	
+1-13	90-99	realizētā	Fem	Sing	Gen	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsgpsypn	realizēt	_	_	amod	basic	1-15	
+1-14	100-109	degvielas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	degviela	_	_	nmod	basic	1-15	
+1-15	110-116	apjoma	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	apjoms	_	_	obl	basic	1-9	
+1-16	117-118	(	_	_	_	_	_	_	_	_	_	_	_	_	zb	(	_	_	punct	basic	1-17	
+1-17	118-122	dati	Masc	Ptan	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Ptan	*	*	ncmdn1	dati	_	_	parataxis	basic	1-10	
+1-18	123-126	par	_	_	_	_	_	_	_	_	_	_	_	_	sppd	par	time[2]	*[2]	case	basic	1-20	
+1-19	127-135	deviņiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpd	deviņi	time[2]	*[2]	nummod	basic	1-20	
+1-20	136-144	mēnešiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd2	mēness	time[2]	*[2]	nmod	basic	1-17	
+1-21	144-145	)	_	_	_	_	_	_	_	_	_	_	_	_	zb	)	_	_	punct	basic	1-17	
+1-22	146-150	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vcnisii30an	būt	_	_	cop	basic	1-24	
+1-23	151-152	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[3]	https://en.wikipedia.org/wiki/Statoil[3]	punct	basic	1-24	
+1-24	152-159	Statoil	_	_	_	_	_	_	_	_	_	_	_	_	np0000	Statoil	organization[3]	https://en.wikipedia.org/wiki/Statoil[3]	root	basic	1-24	
+1-25	159-160	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[3]	https://en.wikipedia.org/wiki/Statoil[3]	punct	basic	1-24	
+1-26	160-161	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-27	
+1-27	162-167	Neste	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	Neste	organization	*	conj	basic	1-24	
+1-28	167-168	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-30	
+1-29	169-170	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[4]	*[4]	punct	basic	1-30	
+1-30	170-176	Lukoil	_	_	_	_	_	_	_	_	_	_	_	_	np0000	Lukoil	organization[4]	*[4]	conj	basic	1-24	
+1-31	176-177	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[4]	*[4]	punct	basic	1-30	
+1-32	177-178	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-34	
+1-33	179-180	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[5]	*[5]	punct	basic	1-34	
+1-34	180-187	Virši-A	_	_	_	_	_	_	_	_	_	_	_	_	np0000	Virši-A	organization[5]	*[5]	conj	basic	1-24	
+1-35	188-189	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[5]	*[5]	punct	basic	1-34	
+1-36	190-192	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	cc	basic	1-39	
+1-37	193-194	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[6]	*[6]	punct	basic	1-39	
+1-38	194-202	Latvijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Latvija	organization[6]	*[6]	nmod	basic	1-39	
+1-39	203-208	nafta	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	nafta	organization[6]	*[6]	conj	basic	1-24	
+1-40	208-209	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[6]	*[6]	punct	basic	1-39	
+1-41	209-210	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	1-24	

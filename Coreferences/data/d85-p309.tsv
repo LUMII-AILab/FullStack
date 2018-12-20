@@ -1,0 +1,53 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Pāvils izsauca celtnieku liftu.
+1-1	0-6	Pāvils	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Pāvils	person	*	_	_	nsubj	basic	1-2	
+1-2	7-14	izsauca	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	izsaukt	_	_	_	_	root	basic	1-2	
+1-3	15-24	celtnieku	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	celtnieks	_	_	_	_	nmod	basic	1-4	
+1-4	25-30	liftu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	lifts	_	_	*[1]	*->1-1	obj	basic	1-2	
+1-5	30-31	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-2	
+
+#Text=Ieva lūkojās, kā tas lēnām rāpjas lejā no augstumiem — lien gar pelēki ribaino ārējo sienu kā trombs pa uzblīdušu asinsvadu, kā dzeltena acs, kas, iztraucēta apcerē, viņiem nesteidzīgi pievēršas.
+2-1	33-37	Ieva	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Ieva	person	*	_	_	nsubj	basic	2-2	
+2-2	38-45	lūkojās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi230an	lūkoties	_	_	_	_	root	basic	2-2	
+2-3	45-46	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-7	
+2-4	47-49	kā	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0m	kā	_	_	_	_	advmod	basic	2-7	
+2-5	50-53	tas	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	tas	_	_	*[1]	*->1-2	nsubj	basic	2-7	
+2-6	54-59	lēnām	_	_	_	_	_	_	_	_	_	_	_	_	r0m	lēnām	_	_	_	_	advmod	basic	2-7	
+2-7	60-66	rāpjas	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipi130an	rāpties	_	_	_	_	ccomp	basic	2-2	
+2-8	67-71	lejā	_	_	_	_	_	_	_	_	_	_	_	_	r0p	lejā	_	_	_	_	advmod	basic	2-7	
+2-9	72-74	no	_	_	_	_	_	_	_	_	_	_	_	_	sppd	no	_	_	_	_	case	basic	2-10	
+2-10	75-85	augstumiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	augstums	_	_	_	_	obl	basic	2-7	
+2-11	86-87	—	_	_	_	_	_	_	_	_	_	_	_	_	zd	—	_	_	_	_	punct	basic	2-12	
+2-12	88-92	lien	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipi130an	līst	_	_	_	_	conj	basic	2-7	
+2-13	93-96	gar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	gar	_	_	_	_	case	basic	2-17	
+2-14	97-103	pelēki	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	pelēki	_	_	_	_	advmod	basic	2-15	
+2-15	104-111	ribaino	Masc	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsayp	ribains	_	_	_	_	amod	basic	2-17	
+2-16	112-117	ārējo	Fem	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsayp	ārēja	_	_	_	_	amod	basic	2-17	
+2-17	118-123	sienu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	siena	_	_	_	_	obl	basic	2-12	
+2-18	124-126	kā	_	_	_	_	_	_	_	_	_	_	_	_	cs	kā	_	_	_	_	case	basic	2-19	
+2-19	127-133	trombs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	trombs	_	_	_	_	acl	basic	2-12	
+2-20	134-136	pa	_	_	_	_	_	_	_	_	_	_	_	_	spsa	pa	_	_	_	_	case	basic	2-22	
+2-21	137-146	uzblīdušu	Masc	Sing	Acc	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Acc\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsaasnpn	uzblīst	_	_	_	_	amod	basic	2-22	
+2-22	147-156	asinsvadu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	asinsvads	_	_	_	_	nmod	basic	2-19	
+2-23	156-157	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-26	
+2-24	158-160	kā	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0m	kā	_	_	_	_	case	basic	2-26	
+2-25	161-169	dzeltena	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	dzeltena	_	_	_	_	amod	basic	2-26	
+2-26	170-173	acs	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn6	acs	_	_	*[2]	*->2-1	conj	basic	2-19	
+2-27	173-174	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-35	
+2-28	175-178	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	*[2]	*->2-2	nsubj	basic	2-35	
+2-29	178-179	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-30	
+2-30	180-190	iztraucēta	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnpsnpn	iztraucēt	_	_	_	_	acl	basic	2-35	
+2-31	191-197	apcerē	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	apcere	_	_	_	_	obl	basic	2-30	
+2-32	197-198	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-30	
+2-33	199-205	viņiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Prs	3	*	pp3mpdn	viņš	_	_	_	_	iobj	basic	2-35	
+2-34	206-217	nesteidzīgi	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	nesteidzīgi	_	_	_	_	advmod	basic	2-35	
+2-35	218-227	pievēršas	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipi130an	pievērsties	_	_	_	_	acl	basic	2-26	
+2-36	227-228	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-2	

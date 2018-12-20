@@ -1,0 +1,61 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Atzinības vārdus bija pelnījuši visi skrējiena dalībnieki.
+1-1	0-9	Atzinības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	atzinība	_	_	_	_	nmod	basic	1-2	
+1-2	10-16	vārdus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	vārds	_	_	_	_	obj	basic	1-4	
+1-3	17-21	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vcnisii30an	būt	_	_	_	_	aux	basic	1-4	
+1-4	22-31	pelnījuši	Masc	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpnasnp	pelnīt	_	_	_	_	root	basic	1-4	
+1-5	32-36	visi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Tot	*	*	pg0mpnn	viss	_	_	_	_	det	basic	1-7	
+1-6	37-46	skrējiena	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	skrējiens	_	_	_	_	nmod	basic	1-7	
+1-7	47-57	dalībnieki	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	dalībnieks	_	_	_	_	nsubj	basic	1-4	
+1-8	57-58	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-4	
+
+#Text=Jo īpaši Mežotnes pamatskolas vecuma zēni un meitenes, kuri pirmo reizi mūžā veica šādu izturības skrējienu.
+2-1	60-62	Jo	_	_	_	_	_	_	_	_	_	_	_	_	q	jo	_	_	_	_	discourse	basic	2-2	
+2-2	63-68	īpaši	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	īpaši	_	_	_	_	advmod	basic	2-6	
+2-3	69-77	Mežotnes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	Mežotne	location[1]|GPE[2]	*[1]|en.wikipedia.org/wiki/Mežotne[2]	_	_	nmod	basic	2-6	
+2-4	78-89	pamatskolas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	pamatskola	location[1]	*[1]	*[1]	*->1-1	nmod	basic	2-5	
+2-5	90-96	vecuma	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	vecums	_	_	*[1]	*->1-1	nmod	basic	2-6	
+2-6	97-101	zēni	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	zēns	_	_	*[1]	*->1-1	root	basic	2-6	
+2-7	102-104	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	*[1]	*->1-1	cc	basic	2-8	
+2-8	105-113	meitenes	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn5	meitene	_	_	*[1]	*->1-1	conj	basic	2-6	
+2-9	113-114	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-14	
+2-10	115-119	kuri	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Rel	*	*	pr0mpnn	kurš	_	_	*[1]	*->1-2	nsubj	basic	2-14	
+2-11	120-125	pirmo	Fem	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|NumType=Ord	*	*	mosfsa	pirmā	_	_	_	_	amod	basic	2-12	
+2-12	126-131	reizi	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	reize	_	_	_	_	obl	basic	2-14	
+2-13	132-136	mūžā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	mūžs	_	_	_	_	acl	basic	2-12	
+2-14	137-142	veica	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	veikt	_	_	_	_	acl	basic	2-6	
+2-15	143-147	šādu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	šāds	_	_	_	_	det	basic	2-17	
+2-16	148-157	izturības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	izturība	_	_	_	_	nmod	basic	2-17	
+2-17	158-167	skrējienu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	skrējiens	_	_	_	_	obj	basic	2-14	
+2-18	167-168	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-6	
+
+#Text=Sestklasniece Diāna Dalbe kā uzņēma tempu, tā noturēja līdz pat finišam.
+3-1	170-183	Sestklasniece	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	Sestklasniece	_	_	*[2]	*->2-1	nmod	basic	3-2	
+3-2	184-189	Diāna	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Diāna	person[3]	*[3]	*[2]	*->2-2	nsubj	basic	3-5	
+3-3	190-195	Dalbe	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	Dalbe	person[3]	*[3]	*[2]	*->2-2	flat:name	basic	3-2	
+3-4	196-198	kā	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0m	kā	_	_	_	_	advmod	basic	3-5	
+3-5	199-205	uzņēma	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	uzņemt	_	_	_	_	root	basic	3-5	
+3-6	206-211	tempu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	temps	_	_	_	_	obj	basic	3-5	
+3-7	211-212	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-9	
+3-8	213-215	tā	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0m	tā	_	_	_	_	advmod	basic	3-9	
+3-9	216-224	noturēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	noturēt	_	_	_	_	conj	basic	3-5	
+3-10	225-229	līdz	_	_	_	_	_	_	_	_	_	_	_	_	spsd	līdz	_	_	_	_	case	basic	3-12	
+3-11	230-233	pat	_	_	_	_	_	_	_	_	_	_	_	_	q	pat	_	_	_	_	discourse	basic	3-12	
+3-12	234-241	finišam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	finišs	_	_	_	_	obl	basic	3-9	
+3-13	241-242	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-5	
+
+#Text=Sīkais meitēns parādīja apskaužamu sīkstumu.
+4-1	244-250	Sīkais	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnyp	sīks	_	_	*[2]	*->2-3	amod	basic	4-2	
+4-2	251-258	meitēns	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	meitēns	_	_	*[2]	*->2-3	nsubj	basic	4-3	
+4-3	259-267	parādīja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	parādīt	_	_	_	_	root	basic	4-3	
+4-4	268-278	apskaužamu	Masc	Sing	Acc	Pos	*	Pres	*	Pass	*	Case=Acc\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	*	vmnpdmsappnp	apskaust	_	_	_	_	amod	basic	4-5	
+4-5	279-287	sīkstumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	sīkstums	_	_	_	_	obj	basic	4-3	
+4-6	287-288	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	4-3	

@@ -1,0 +1,152 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Manuprāt, mēs nonākam pie sekojošā: Als Gors vakar runāja par ekoloģiju un revolūciju, ko aizsāka Reičela Kārsone.
+1-1	0-8	Manuprāt	_	_	_	_	_	_	_	_	_	_	_	_	r0m	manuprāt	_	_	_	_	parataxis	basic	1-4	
+1-2	8-9	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-1	
+1-3	10-13	mēs	*	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Number=Plur\|Person=1\|PronType=Prs	1	*	pp10pnn	mēs	_	_	*[3]	*->3-1	nsubj	basic	1-4	
+1-4	14-21	nonākam	*	Plur	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	1	*	vmnipi11pan	nonākt	_	_	_	_	root	basic	1-4	
+1-5	22-25	pie	_	_	_	_	_	_	_	_	_	_	_	_	spsg	pie	_	_	_	_	case	basic	1-6	
+1-6	26-34	sekojošā	Masc	Sing	Gen	Pos	*	Pres	*	Pass	*	Aspect=Imp\|Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Imp	vmnpdmsgapypn	sekot	_	_	_	_	obl	basic	1-4	
+1-7	34-35	:	_	_	_	_	_	_	_	_	_	_	_	_	zo	:	_	_	_	_	punct	basic	1-11	
+1-8	36-39	Als	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Als	person[1]	https://en.wikipedia.org/wiki/Al\_Gore[1]	_	_	nsubj	basic	1-11	
+1-9	40-44	Gors	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Gors	person[1]	https://en.wikipedia.org/wiki/Al\_Gore[1]	_	_	flat:name	basic	1-8	
+1-10	45-50	vakar	_	_	_	_	_	_	_	_	_	_	_	_	r0t	vakar	_	_	_	_	advmod	basic	1-11	
+1-11	51-57	runāja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist230an	runāt	_	_	_	_	acl	basic	1-6	
+1-12	58-61	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	_	_	case	basic	1-13	
+1-13	62-71	ekoloģiju	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	ekoloģija	_	_	_	_	iobj	basic	1-11	
+1-14	72-74	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-15	
+1-15	75-85	revolūciju	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	revolūcija	_	_	_	_	conj	basic	1-13	
+1-16	85-86	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-18	
+1-17	87-89	ko	*	*	Acc	*	*	*	*	*	*	Case=Acc\|PronType=Rel	*	*	pr000an	kas	_	_	_	_	obj	basic	1-18	
+1-18	90-97	aizsāka	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	aizsākt	_	_	_	_	acl	basic	1-13	
+1-19	98-105	Reičela	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Reičela	person[2]	*[2]	_	_	nsubj	basic	1-18	
+1-20	106-113	Kārsone	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	Kārsone	person[2]	*[2]	_	_	flat:name	basic	1-19	
+1-21	113-114	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-4	
+
+#Text=Manuprāt, mūsu vienīgā nākotnes cerība ir pieņemt jaunu cilvēka ekoloģijas konceptu, kurā mēs sāktu pārveidot mūsu izpratni par cilvēka spēju daudzveidību.
+2-1	116-124	Manuprāt	_	_	_	_	_	_	_	_	_	_	_	_	r0m	manuprāt	_	_	_	_	parataxis	basic	2-6	
+2-2	124-125	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-1	
+2-3	126-130	mūsu	*	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Number=Plur\|Person=1\|PronType=Prs	1	*	pp10pgn	mēs	_	_	*[3]	*->3-2	det	basic	2-4	
+2-4	131-138	vienīgā	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsnyp	vienīga	_	_	_	_	amod	basic	2-5	
+2-5	139-147	nākotnes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	Nākotne	_	_	_	_	nmod	basic	2-6	
+2-6	148-154	cerība	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Cerība	_	_	_	_	root	basic	2-6	
+2-7	155-157	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	cop	basic	2-6	
+2-8	158-165	pieņemt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	pieņemt	_	_	_	_	ccomp	basic	2-6	
+2-9	166-171	jaunu	Fem	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsanp	jauna	_	_	*[1]	*->1-1	amod	basic	2-12	
+2-10	172-179	cilvēka	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	cilvēks	_	_	*[1]	*->1-1	nmod	basic	2-11	
+2-11	180-190	ekoloģijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	ekoloģija	_	_	*[1]	*->1-1	nmod	basic	2-12	
+2-12	191-199	konceptu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	koncepts	_	_	*[1]	*->1-1	obj	basic	2-8	
+2-13	199-200	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-16	
+2-14	201-205	kurā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsln	kura	_	_	*[1]	*->1-2	obl	basic	2-17	
+2-15	206-209	mēs	*	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Number=Plur\|Person=1\|PronType=Prs	1	*	pp10pnn	mēs	_	_	*[3]	*->3-3	nsubj	basic	2-16	
+2-16	210-215	sāktu	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vmnc0t100an	sākt	_	_	_	_	acl	basic	2-12	
+2-17	216-225	pārveidot	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	pārveidot	_	_	_	_	xcomp	basic	2-16	
+2-18	226-230	mūsu	*	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Number=Plur\|Person=1\|PronType=Prs	1	*	pp10pgn	mēs	_	_	*[3]	*->3-4	det	basic	2-19	
+2-19	231-239	izpratni	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	izpratne	_	_	_	_	obj	basic	2-17	
+2-20	240-243	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	_	_	case	basic	2-23	
+2-21	244-251	cilvēka	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	cilvēks	_	_	_	_	nmod	basic	2-22	
+2-22	252-257	spēju	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	spēja	_	_	_	_	nmod	basic	2-23	
+2-23	258-270	daudzveidību	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	daudzveidība	_	_	_	_	nmod	basic	2-19	
+2-24	270-271	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-6	
+
+#Text=Mūsu izglītības sistēma ir izrakņājusi mūsu prātus tāpat kā mēs līdz izsīkumam uzrokam zemi: meklējot kādu izrakteni.
+3-1	273-277	Mūsu	*	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Number=Plur\|Person=1\|PronType=Prs	1	*	pp10pgn	mēs	_	_	*[3]	*->3-5	det	basic	3-3	
+3-2	278-288	izglītības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	izglītība	_	_	_	_	nmod	basic	3-3	
+3-3	289-296	sistēma	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	sistēma	_	_	_	_	nsubj	basic	3-5	
+3-4	297-299	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	aux	basic	3-5	
+3-5	300-311	izrakņājusi	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnasnpn	izrakņāt	_	_	_	_	root	basic	3-5	
+3-6	312-316	mūsu	*	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Number=Plur\|Person=1\|PronType=Prs	1	*	pp10pgn	mēs	_	_	*[3]	*->3-6	det	basic	3-7	
+3-7	317-323	prātus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	prāts	_	_	_	_	obj	basic	3-5	
+3-8	324-329	tāpat	_	_	_	_	_	_	_	_	_	_	_	_	q	tāpat	_	_	_	_	discourse	basic	3-9	
+3-9	330-332	kā	_	_	_	_	_	_	_	_	_	_	_	_	cc	kā	_	_	_	_	cc	basic	3-13	
+3-10	333-336	mēs	*	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Number=Plur\|Person=1\|PronType=Prs	1	*	pp10pnn	mēs	_	_	*[3]	*->3-7	nsubj	basic	3-13	
+3-11	337-341	līdz	_	_	_	_	_	_	_	_	_	_	_	_	spsd	līdz	_	_	_	_	case	basic	3-12	
+3-12	342-351	izsīkumam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	izsīkums	_	_	_	_	obl	basic	3-13	
+3-13	352-359	uzrokam	*	Plur	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	1	*	vmnipt11pan	uzrakt	_	_	_	_	conj	basic	3-5	
+3-14	360-364	zemi	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	zeme	_	_	_	_	obj	basic	3-13	
+3-15	364-365	:	_	_	_	_	_	_	_	_	_	_	_	_	zo	:	_	_	_	_	punct	basic	3-16	
+3-16	366-374	meklējot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000n	meklēt	_	_	_	_	advcl	basic	3-13	
+3-17	375-379	kādu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Ind	*	*	pi0msan	kāds	_	_	_	_	det	basic	3-18	
+3-18	380-389	izrakteni	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	izraktenis	_	_	_	_	obj	basic	3-16	
+3-19	389-390	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-5	
+
+#Text=Nākotnē mums tas nederēs.
+4-1	392-399	Nākotnē	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl5	Nākotne	_	_	_	_	obl	basic	4-4	
+4-2	400-404	mums	*	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Number=Plur\|Person=1\|PronType=Prs	1	*	pp10pdn	mēs	_	_	*[3]	*->3-8	obl	basic	4-4	
+4-3	405-408	tas	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	tas	_	_	_	_	nsubj	basic	4-4	
+4-4	409-416	nederēs	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vmnifi330ay	nederēt	_	_	_	_	root	basic	4-4	
+4-5	416-417	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	4-4	
+
+#Text=Mums jāpārdomā pamatprincipi par to, kā izglītojam savus bērnus.
+5-1	419-423	Mums	*	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Number=Plur\|Person=1\|PronType=Prs	1	*	pp10pdn	mēs	_	_	*[3]	*->3-9	nsubj	basic	5-2	
+5-2	424-433	jāpārdomā	*	*	*	*	*	*	Nec	Act	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vmnd0t200an	pārdomāt	_	_	_	_	root	basic	5-2	
+5-3	434-447	pamatprincipi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	pamatprincips	_	_	_	_	obj	basic	5-2	
+5-4	448-451	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	_	_	case	basic	5-5	
+5-5	452-454	to	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	tas	_	_	_	_	det	basic	5-3	
+5-6	454-455	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	5-8	
+5-7	456-458	kā	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0m	kā	_	_	_	_	advmod	basic	5-8	
+5-8	459-469	izglītojam	*	Plur	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	1	*	vmnipt21pan	izglītot	_	_	_	_	acl	basic	5-5	
+5-9	470-475	savus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|Poss=Yes\|PronType=Prs	*	*	ps0mpan	savs	_	_	*[3]	*->3-10	det	basic	5-10	
+5-10	476-482	bērnus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	bērns	_	_	_	_	obj	basic	5-8	
+5-11	482-483	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	5-2	
+
+#Text=Ir burvīgs Džonasa Solka citāts, kurš teica: „Ja visi kukaiņi pazustu no zemes virsas, 50 gadu laikā dzīvība uz Zemes beigtos.
+6-1	485-487	Ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipii30an	būt	_	_	_	_	root	basic	6-1	
+6-2	488-495	burvīgs	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	burvīgs	_	_	_	_	amod	basic	6-5	
+6-3	496-503	Džonasa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Džonass	person[3]	*[3]	*[2]	*->2-1	nmod	basic	6-5	
+6-4	504-509	Solka	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Solks	person[3]	*[3]	*[2]	*->2-1	flat:name	basic	6-3	
+6-5	510-516	citāts	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	citāts	_	_	_	_	nsubj	basic	6-1	
+6-6	516-517	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	6-8	
+6-7	518-522	kurš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msnn	kurš	_	_	*[2]	*->2-2	nsubj	basic	6-8	
+6-8	523-528	teica	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	teikt	_	_	_	_	acl	basic	6-5	
+6-9	528-529	:	_	_	_	_	_	_	_	_	_	_	_	_	zo	:	_	_	_	_	punct	basic	6-25	
+6-10	530-531	„	_	_	_	_	_	_	_	_	_	_	_	_	zq	„	_	_	_	_	punct	basic	6-25	
+6-11	531-533	Ja	_	_	_	_	_	_	_	_	_	_	_	_	cs	ja	_	_	_	_	mark	basic	6-14	
+6-12	534-538	visi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Tot	*	*	pg0mpnn	viss	_	_	_	_	det	basic	6-13	
+6-13	539-546	kukaiņi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn2	kukainis	_	_	_	_	nsubj	basic	6-14	
+6-14	547-554	pazustu	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vmnc0i100an	pazust	_	_	_	_	advcl	basic	6-25	
+6-15	555-557	no	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	_	_	_	_	case	basic	6-17	
+6-16	558-563	zemes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	zeme	_	_	_	_	nmod	basic	6-17	
+6-17	564-570	virsas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	virsa	_	_	_	_	obl	basic	6-14	
+6-18	570-571	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	6-14	
+6-19	572-574	50	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	50	time[4]	*[4]	_	_	nummod	basic	6-20	
+6-20	575-579	gadu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	gads	time[4]	*[4]	_	_	nmod	basic	6-21	
+6-21	580-585	laikā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	laiks	time[4]	*[4]	_	_	acl	basic	6-14	
+6-22	586-593	dzīvība	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	dzīvība	_	_	_	_	nsubj:pass	basic	6-25	
+6-23	594-596	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsg	uz	_	_	_	_	case	basic	6-24	
+6-24	597-602	Zemes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	Zeme	location	*	_	_	nmod	basic	6-22	
+6-25	603-610	beigtos	Masc	Plur	Acc	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpapsypn	beigt	_	_	_	_	parataxis	basic	6-8	
+6-26	610-611	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	6-1	
+
+#Text=Ja no Zemes virsas pazustu visi cilvēki, 50 gadu laikā visas dzīvības formas uzplauktu.”
+7-1	613-615	Ja	_	_	_	_	_	_	_	_	_	_	_	_	cs	ja	_	_	_	_	mark	basic	7-5	
+7-2	616-618	no	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	_	_	_	_	case	basic	7-4	
+7-3	619-624	Zemes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	Zeme	location	*	_	_	nmod	basic	7-4	
+7-4	625-631	virsas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	virsa	_	_	_	_	obl	basic	7-5	
+7-5	632-639	pazustu	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vmnc0i100an	pazust	_	_	_	_	advcl	basic	7-15	
+7-6	640-644	visi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Tot	*	*	pg0mpnn	viss	_	_	_	_	det	basic	7-7	
+7-7	645-652	cilvēki	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	cilvēks	_	_	_	_	nsubj	basic	7-5	
+7-8	652-653	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	7-5	
+7-9	654-656	50	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	50	time[5]	*[5]	_	_	nummod	basic	7-10	
+7-10	657-661	gadu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	gads	time[5]	*[5]	_	_	nmod	basic	7-11	
+7-11	662-667	laikā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	laiks	time[5]	*[5]	_	_	obl	basic	7-15	
+7-12	668-673	visas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|PronType=Tot	*	*	pg0fpnn	visa	_	_	_	_	det	basic	7-14	
+7-13	674-682	dzīvības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	dzīvība	_	_	_	_	nmod	basic	7-14	
+7-14	683-689	formas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	forma	_	_	_	_	nsubj	basic	7-15	
+7-15	690-699	uzplauktu	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vmnc0i100an	uzplaukt	_	_	_	_	root	basic	7-15	
+7-16	699-700	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	7-15	
+7-17	700-701	”	_	_	_	_	_	_	_	_	_	_	_	_	zq	”	_	_	_	_	punct	basic	7-15	
+
+#Text=Un viņam ir taisnība.
+8-1	703-705	Un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	8-3	
+8-2	706-711	viņam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msdn	viņš	_	_	*[2]	*->2-3	obl	basic	8-3	
+8-3	712-714	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipii30an	būt	_	_	_	_	root	basic	8-3	
+8-4	715-723	taisnība	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	taisnība	_	_	_	_	nsubj	basic	8-3	
+8-5	723-724	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	8-3	

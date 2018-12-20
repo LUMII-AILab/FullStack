@@ -1,0 +1,54 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Policija darbinieki pastiprinātu uzmanību pievērsīs arī iereibušiem gājējiem, velosipēdistiem un mopēdistiem, kuri ir vieni no neaizsargātākajiem satiksmes dalībniekiem.
+1-1	0-8	Policija	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	policija	_	_	nmod	basic	1-2	
+1-2	9-19	darbinieki	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	darbinieks	_	_	nsubj	basic	1-5	
+1-3	20-32	pastiprinātu	Fem	Sing	Acc	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Acc\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsapsnpn	pastiprināt	_	_	amod	basic	1-4	
+1-4	33-41	uzmanību	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	uzmanība	_	_	obj	basic	1-5	
+1-5	42-51	pievērsīs	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vmnift130an	pievērst	_	_	root	basic	1-5	
+1-6	52-55	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	discourse	basic	1-8	
+1-7	56-67	iereibušiem	Masc	Plur	Dat	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Dat\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpdasnpn	iereibt	*[1]	*->1-1	amod	basic	1-8	
+1-8	68-76	gājējiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	gājējs	*[1]	*->1-1	iobj	basic	1-5	
+1-9	76-77	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	*[1]	*->1-1	punct	basic	1-10	
+1-10	78-93	velosipēdistiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	velosipēdists	*[1]	*->1-1	conj	basic	1-8	
+1-11	94-96	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	*[1]	*->1-1	cc	basic	1-12	
+1-12	97-108	mopēdistiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	mopēdists	*[1]	*->1-1	conj	basic	1-8	
+1-13	108-109	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-16	
+1-14	110-114	kuri	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Rel	*	*	pr0mpnn	kurš	*[1]	*->1-2	nsubj	basic	1-16	
+1-15	115-117	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	cop	basic	1-16	
+1-16	118-123	vieni	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Ind	*	*	pi0mpnn	vieni	_	_	acl	basic	1-8	
+1-17	124-126	no	_	_	_	_	_	_	_	_	_	_	_	_	sppd	no	_	_	case	basic	1-20	
+1-18	127-145	neaizsargātākajiem	Masc	Plur	Dat	Sup	*	*	*	*	*	Case=Dat\|Degree=Sup\|Gender=Masc\|Number=Plur	*	*	afmpdys	neaizsargātākajiem	_	_	amod	basic	1-20	
+1-19	146-155	satiksmes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	satiksme	_	_	nmod	basic	1-20	
+1-20	156-168	dalībniekiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	dalībnieks	_	_	nmod	basic	1-16	
+1-21	168-169	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	1-5	
+
+#Text=Iereibis gājējs vai velosipēdists, kurš diennakts tumšajā laikā pārvietojas pa ceļa braucamo daļu nopietni apdraud savu veselību vai pat dzīvību.
+2-1	171-179	Iereibis	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnasnpn	iereibt	*[2]	*->2-1	amod	basic	2-2	
+2-2	180-186	gājējs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	gājējs	*[2]	*->2-1	nsubj	basic	2-16	
+2-3	187-190	vai	_	_	_	_	_	_	_	_	_	_	_	_	cc	vai	*[2]	*->2-1	cc	basic	2-4	
+2-4	191-204	velosipēdists	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	velosipēdists	*[2]	*->2-1	conj	basic	2-2	
+2-5	204-205	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	2-10	
+2-6	206-210	kurš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msnn	kurš	*[2]	*->2-2	nsubj	basic	2-10	
+2-7	211-220	diennakts	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	diennakts	_	_	nmod	basic	2-9	
+2-8	221-228	tumšajā	Masc	Sing	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmslyp	tumšs	_	_	amod	basic	2-9	
+2-9	229-234	laikā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	laiks	_	_	obl	basic	2-10	
+2-10	235-246	pārvietojas	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipi230an	pārvietoties	_	_	acl	basic	2-2	
+2-11	247-249	pa	_	_	_	_	_	_	_	_	_	_	_	_	spsa	pa	_	_	case	basic	2-14	
+2-12	250-254	ceļa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	ceļš	_	_	nmod	basic	2-14	
+2-13	255-263	braucamo	Fem	Sing	Acc	Pos	*	Pres	*	Pass	*	Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	*	vmnpdfsappypn	braukt	_	_	amod	basic	2-14	
+2-14	264-268	daļu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	daļa	_	_	obl	basic	2-10	
+2-15	269-277	nopietni	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	nopietni	_	_	advmod	basic	2-16	
+2-16	278-285	apdraud	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	apdraudēt	_	_	root	basic	2-16	
+2-17	286-290	savu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0fsan	sava	*[2]	*->2-3	det	basic	2-18	
+2-18	291-299	veselību	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	veselība	_	_	obj	basic	2-16	
+2-19	300-303	vai	_	_	_	_	_	_	_	_	_	_	_	_	cc	vai	_	_	cc	basic	2-21	
+2-20	304-307	pat	_	_	_	_	_	_	_	_	_	_	_	_	q	pat	_	_	discourse	basic	2-21	
+2-21	308-315	dzīvību	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	dzīvība	_	_	conj	basic	2-18	
+2-22	315-316	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	2-16	

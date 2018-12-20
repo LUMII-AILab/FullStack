@@ -1,0 +1,36 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=–– Līdz kādām kāzām?
+1-1	0-1	–	_	_	_	_	_	_	_	_	_	_	_	_	zd	–	_	_	punct	basic	1-5	
+1-2	1-2	–	_	_	_	_	_	_	_	_	_	_	_	_	zd	–	_	_	punct	basic	1-5	
+1-3	3-7	Līdz	_	_	_	_	_	_	_	_	_	_	_	_	sppd	līdz	_	_	case	basic	1-5	
+1-4	8-13	kādām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur\|PronType=Ind	*	*	pi0fpdn	kāda	_	_	iobj	basic	1-5	
+1-5	14-19	kāzām	Fem	Ptan	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Ptan	*	*	ncfdd4	kāzas	_	_	root	basic	1-5	
+1-6	19-20	?	_	_	_	_	_	_	_	_	_	_	_	_	zs	?	_	_	punct	basic	1-5	
+
+#Text=Tu grasies precēties?
+2-1	22-24	Tu	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=2\|PronType=Prs	2	*	pp20snn	tu	*[1]	*->1-1	nsubj	basic	2-2	
+2-2	25-32	grasies	*	Sing	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=2\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	2	*	vpyipt32san	grasīties	_	_	root	basic	2-2	
+2-3	33-42	precēties	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i2000n	precēties	_	_	xcomp	basic	2-2	
+2-4	42-43	?	_	_	_	_	_	_	_	_	_	_	_	_	zs	?	_	_	punct	basic	2-2	
+
+#Text=Tev ir kāds cits?
+3-1	45-48	Tev	*	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Number=Sing\|Person=2\|PronType=Prs	2	*	pp20sdn	tu	*[1]	*->1-2	iobj	basic	3-2	
+3-2	49-51	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipii30an	būt	_	_	root	basic	3-2	
+3-3	52-56	kāds	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Ind	*	*	pi0msnn	kāds	_	_	det	basic	3-4	
+3-4	57-61	cits	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Ind	*	*	pi0msnn	cits	_	_	nsubj	basic	3-2	
+3-5	61-62	?	_	_	_	_	_	_	_	_	_	_	_	_	zs	?	_	_	punct	basic	3-2	
+
+#Text=Ko tad tu uzreiz neteici?
+4-1	64-66	Ko	*	*	Acc	*	*	*	*	*	*	Case=Acc\|PronType=Int	*	*	pq000an	kas	_	_	obj	basic	4-5	
+4-2	67-70	tad	_	_	_	_	_	_	_	_	_	_	_	_	q	tad	_	_	discourse	basic	4-5	
+4-3	71-73	tu	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=2\|PronType=Prs	2	*	pp20snn	tu	*[1]	*->1-3	nsubj	basic	4-5	
+4-4	74-80	uzreiz	_	_	_	_	_	_	_	_	_	_	_	_	r0t	uzreiz	_	_	advmod	basic	4-5	
+4-5	81-88	neteici	*	Sing	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=2\|Polarity=Neg\|Tense=Past\|VerbForm=Fin\|Voice=Act	2	*	vmnist12say	neteikt	_	_	root	basic	4-5	
+4-6	88-89	?	_	_	_	_	_	_	_	_	_	_	_	_	zs	?	_	_	punct	basic	4-5	

@@ -1,0 +1,21 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Kādas būs vecākās grāmatas Latvijas Nacionālajā bibliotēkā (LNB)?
+1-1	0-5	Kādas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|PronType=Int	*	*	pq0fpnn	kāda	_	_	_	_	root	basic	1-1	
+1-2	6-9	būs	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vcnifii30an	būt	_	_	_	_	cop	basic	1-1	
+1-3	10-17	vecākās	Fem	Plur	Nom	Cmp	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Fem\|Number=Plur	*	*	affpnyc	veca	_	_	_	_	amod	basic	1-4	
+1-4	18-26	grāmatas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	grāmata	_	_	_	_	nsubj	basic	1-1	
+1-5	27-35	Latvijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Latvija	organization[1]|GPE[2]	*[1]|*[2]	*[1]	*->1-1	nmod	basic	1-7	
+1-6	36-47	Nacionālajā	Fem	Sing	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfslyp	nacionāla	organization[1]	*[1]	*[1]	*->1-1	amod	basic	1-7	
+1-7	48-58	bibliotēkā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	bibliotēka	organization[1]	*[1]	*[1]	*->1-1	obl	basic	1-1	
+1-8	59-60	(	_	_	_	_	_	_	_	_	_	_	_	_	zb	(	_	_	_	_	punct	basic	1-9	
+1-9	60-63	LNB	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	LNB	organization	*	*[1]	*->1-2	parataxis	basic	1-7	
+1-10	63-64	)	_	_	_	_	_	_	_	_	_	_	_	_	zb	)	_	_	_	_	punct	basic	1-9	
+1-11	64-65	?	_	_	_	_	_	_	_	_	_	_	_	_	zs	?	_	_	_	_	punct	basic	1-1	

@@ -1,0 +1,204 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Valsts tiesības kontrolēt privāto uzņēmumu Liepājas metalurgs ir radījis 2008. gada beigās publiski apsolītais, bet veselu gadu vēlāk izsniegtais valsts galvojums, kura saņemšana prasīja no uzņēmuma apņemšanos informēt Finanšu ministriju par savu saimniecisko stāvokli.
+1-1	0-6	Valsts	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	valsts	_	_	_	_	nmod	basic	1-2	
+1-2	7-15	tiesības	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	npfpa4	Tiesība	_	_	_	_	obj	basic	1-9	
+1-3	16-25	kontrolēt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	kontrolēt	_	_	_	_	acl	basic	1-2	
+1-4	26-33	privāto	Masc	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsayp	privāts	_	_	*[5]	*->5-1	amod	basic	1-5	
+1-5	34-42	uzņēmumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	uzņēmums	_	_	*[5]	*->5-1	nmod	basic	1-7	
+1-6	43-51	Liepājas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	liepāja	organization[1]|GPE[2]	*[1]|*[2]	*[5]	*->5-2	nmod	basic	1-7	
+1-7	52-61	metalurgs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	metalurgs	organization[1]	*[1]	*[5]	*->5-2	obj	basic	1-3	
+1-8	62-64	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	aux	basic	1-9	
+1-9	65-72	radījis	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnasnp	radīt	_	_	_	_	root	basic	1-9	
+1-10	73-78	2008.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	2008.	time[3]	*[3]	_	_	amod	basic	1-11	
+1-11	79-83	gada	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	gads	time[3]	*[3]	_	_	nmod	basic	1-12	
+1-12	84-90	beigās	Fem	Ptan	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Ptan	*	*	ncfdl4	beigas	time[3]	*[3]	_	_	obl	basic	1-14	
+1-13	91-99	publiski	_	_	_	_	_	_	_	_	_	_	_	_	r0c	publiski	_	_	_	_	advmod	basic	1-14	
+1-14	100-110	apsolītais	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsyp	apsolīt	_	_	_	_	amod	basic	1-22	
+1-15	110-111	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-20	
+1-16	112-115	bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	_	_	cc	basic	1-20	
+1-17	116-122	veselu	Masc	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsanp	vesels	_	_	_	_	amod	basic	1-18	
+1-18	123-127	gadu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	gads	_	_	_	_	obl	basic	1-19	
+1-19	128-133	vēlāk	*	*	*	Cmp	*	*	*	*	*	Degree=Cmp	*	*	rct	vēlu	_	_	_	_	advmod	basic	1-20	
+1-20	134-145	izsniegtais	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsyp	izsniegt	_	_	_	_	conj	basic	1-14	
+1-21	146-152	valsts	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	valsts	_	_	*[1]	*->1-1	nmod	basic	1-22	
+1-22	153-162	galvojums	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	galvojums	_	_	*[1]	*->1-1	nsubj	basic	1-9	
+1-23	162-163	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-26	
+1-24	164-168	kura	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msgn	kurš	_	_	*[1]	*->1-2	det	basic	1-25	
+1-25	169-178	saņemšana	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	saņemšana	_	_	_	_	nsubj	basic	1-26	
+1-26	179-186	prasīja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	prasīt	_	_	_	_	acl	basic	1-22	
+1-27	187-189	no	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	_	_	_	_	case	basic	1-28	
+1-28	190-198	uzņēmuma	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	uzņēmums	_	_	*[5]	*->5-3	obl	basic	1-26	
+1-29	199-209	apņemšanos	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsar	apņemšanās	_	_	_	_	obj	basic	1-26	
+1-30	210-218	informēt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	informēt	_	_	_	_	acl	basic	1-29	
+1-31	219-226	Finanšu	Fem	Ptan	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Ptan	*	*	ncfdg5	finanses	organization[4]	*[4]	_	_	nmod	basic	1-32	
+1-32	227-237	ministriju	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	ministrija	organization[4]	*[4]	_	_	obj	basic	1-30	
+1-33	238-241	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	_	_	case	basic	1-36	
+1-34	242-246	savu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0msan	savs	_	_	*[5]	*->5-4	det	basic	1-36	
+1-35	247-259	saimniecisko	Masc	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsayp	saimniecisks	_	_	_	_	amod	basic	1-36	
+1-36	260-268	stāvokli	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	stāvoklis	_	_	_	_	iobj	basic	1-30	
+1-37	268-269	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-9	
+
+#Text=Līdz pat pēdējām dienām Finanšu ministrija uzskatīja, ka stāvoklis patiešām ir tik labs, cik to apliecināja auditori.
+2-1	271-275	Līdz	_	_	_	_	_	_	_	_	_	_	_	_	spsd	līdz	_	_	_	_	case	basic	2-4	
+2-2	276-279	pat	_	_	_	_	_	_	_	_	_	_	_	_	q	pat	_	_	_	_	discourse	basic	2-3	
+2-3	280-287	pēdējām	Fem	Plur	Dat	Pos	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	arfpdnp	pēdējā	_	_	_	_	amod	basic	2-4	
+2-4	288-294	dienām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	diena	_	_	_	_	obl	basic	2-7	
+2-5	295-302	Finanšu	Fem	Ptan	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Ptan	*	*	ncfdg5	finanses	organization[5]	*[5]	_	_	nmod	basic	2-6	
+2-6	303-313	ministrija	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	ministrija	organization[5]	*[5]	_	_	nsubj	basic	2-7	
+2-7	314-323	uzskatīja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	uzskatīt	_	_	_	_	root	basic	2-7	
+2-8	323-324	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-14	
+2-9	325-327	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark	basic	2-14	
+2-10	328-337	stāvoklis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	stāvoklis	_	_	_	_	nsubj	basic	2-14	
+2-11	338-346	patiešām	_	_	_	_	_	_	_	_	_	_	_	_	q	patiešām	_	_	_	_	discourse	basic	2-14	
+2-12	347-349	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	cop	basic	2-14	
+2-13	350-353	tik	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0q	tik	_	_	_	_	advmod	basic	2-14	
+2-14	354-358	labs	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	labs	_	_	_	_	ccomp	basic	2-7	
+2-15	358-359	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-18	
+2-16	360-363	cik	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0q	cik	_	_	_	_	advmod	basic	2-18	
+2-17	364-366	to	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	tas	_	_	_	_	obj	basic	2-18	
+2-18	367-378	apliecināja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	apliecināt	_	_	_	_	advcl	basic	2-13	
+2-19	379-387	auditori	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	auditors	_	_	_	_	nsubj	basic	2-18	
+2-20	387-388	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-7	
+
+#Text=Finanšu ministrija neinteresējās, ir vai nav uzņēmuma padomes loceklis Andris Deniņš tas pats Andris Deniņš, kam pieder auditorfirma, kas apliecināja, ka uzņēmuma finanses ir vismaz ciešamā stāvoklī.
+3-1	390-397	Finanšu	Fem	Ptan	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Ptan	*	*	ncfdg5	finanses	organization[6]	*[6]	_	_	nmod	basic	3-2	
+3-2	398-408	ministrija	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	ministrija	organization[6]	*[6]	_	_	nsubj	basic	3-3	
+3-3	409-422	neinteresējās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi230ay	neinteresēties	_	_	_	_	root	basic	3-3	
+3-4	422-423	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-5	
+3-5	424-426	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	ccomp	basic	3-3	
+3-6	427-430	vai	_	_	_	_	_	_	_	_	_	_	_	_	cc	vai	_	_	_	_	cc	basic	3-7	
+3-7	431-434	nav	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30ay	nebūt	_	_	_	_	conj	basic	3-5	
+3-8	435-443	uzņēmuma	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	uzņēmums	_	_	*[2]	*->2-1	nmod	basic	3-9	
+3-9	444-451	padomes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	padome	_	_	*[2]	*->2-1	nmod	basic	3-10	
+3-10	452-460	loceklis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	loceklis	_	_	*[2]	*->2-1	nmod	basic	3-11	
+3-11	461-467	Andris	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	Andris	person[7]	*[7]	*[2]	*->2-2	nsubj	basic	3-5	
+3-12	468-474	Deniņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Deniņš	person[7]	*[7]	*[2]	*->2-2	flat:name	basic	3-11	
+3-13	475-478	tas	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	tas	_	_	*[2]	*->2-3	det	basic	3-15	
+3-14	479-483	pats	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msnn	pats	_	_	*[2]	*->2-3	det	basic	3-15	
+3-15	484-490	Andris	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	Andris	person[8]	*[8]	*[2]	*->2-4	xcomp	basic	3-5	
+3-16	491-497	Deniņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Deniņš	person[8]	*[8]	*[2]	*->2-4	flat:name	basic	3-15	
+3-17	497-498	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-19	
+3-18	499-502	kam	*	*	Dat	*	*	*	*	*	*	Case=Dat\|PronType=Rel	*	*	pr000dn	kas	_	_	*[2]	*->2-5	iobj	basic	3-19	
+3-19	503-509	pieder	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipi330an	piederēt	_	_	_	_	acl	basic	3-15	
+3-20	510-522	auditorfirma	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	auditorfirma	_	_	*[3]	*->3-1	nsubj	basic	3-19	
+3-21	522-523	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-23	
+3-22	524-527	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	*[3]	*->3-2	nsubj	basic	3-23	
+3-23	528-539	apliecināja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	apliecināt	_	_	_	_	acl	basic	3-20	
+3-24	539-540	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-28	
+3-25	541-543	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark	basic	3-28	
+3-26	544-552	uzņēmuma	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	uzņēmums	_	_	*[5]	*->5-5	nmod	basic	3-27	
+3-27	553-561	finanses	Fem	Ptan	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Ptan	*	*	ncfdn5	finanses	_	_	_	_	nsubj	basic	3-28	
+3-28	562-564	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipii30an	būt	_	_	_	_	ccomp	basic	3-23	
+3-29	565-571	vismaz	_	_	_	_	_	_	_	_	_	_	_	_	r0q	vismaz	_	_	_	_	advmod	basic	3-30	
+3-30	572-579	ciešamā	Masc	Sing	Loc	Pos	*	Pres	*	Pass	*	Case=Loc\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	*	vmnpdmslppnp	ciest	_	_	_	_	amod	basic	3-31	
+3-31	580-588	stāvoklī	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	stāvoklis	_	_	_	_	obl	basic	3-28	
+3-32	588-589	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-3	
+
+#Text=Tieši tāpat Finanšu ministrija neinteresējās, ko īsti nozīmē uzņēmuma līdzīpašnieka Kirova Lipmana publiskie apgalvojumi, ka tagadējā uzņēmuma vadība izsaimnieko tā mantu.
+4-1	591-596	Tieši	_	_	_	_	_	_	_	_	_	_	_	_	q	tieši	_	_	_	_	discourse	basic	4-2	
+4-2	597-602	tāpat	_	_	_	_	_	_	_	_	_	_	_	_	r0m	tāpat	_	_	_	_	advmod	basic	4-5	
+4-3	603-610	Finanšu	Fem	Ptan	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Ptan	*	*	ncfdg5	finanses	organization[9]	*[9]	_	_	nmod	basic	4-4	
+4-4	611-621	ministrija	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	ministrija	organization[9]	*[9]	_	_	nsubj	basic	4-5	
+4-5	622-635	neinteresējās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi230ay	neinteresēties	_	_	_	_	root	basic	4-5	
+4-6	635-636	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	4-9	
+4-7	637-639	ko	*	*	Acc	*	*	*	*	*	*	Case=Acc\|PronType=Ind	*	*	pi000an	kas	_	_	_	_	obj	basic	4-9	
+4-8	640-644	īsti	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	īsti	_	_	_	_	advmod	basic	4-9	
+4-9	645-651	nozīmē	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt230an	nozīmēt	_	_	_	_	ccomp	basic	4-5	
+4-10	652-660	uzņēmuma	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	uzņēmums	_	_	*[4]	*->4-1	nmod	basic	4-11	
+4-11	661-674	līdzīpašnieka	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	līdzīpašnieks	_	_	*[4]	*->4-1	nmod	basic	4-12	
+4-12	675-681	Kirova	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Kirovs	person[10]	*[10]	*[4]	*->4-2	nmod	basic	4-15	
+4-13	682-689	Lipmana	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Lipmans	person[10]	*[10]	*[4]	*->4-2	flat:name	basic	4-12	
+4-14	690-699	publiskie	Masc	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnyp	publisks	_	_	_	_	amod	basic	4-15	
+4-15	700-711	apgalvojumi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	apgalvojums	_	_	_	_	nsubj	basic	4-9	
+4-16	711-712	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	4-21	
+4-17	713-715	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark	basic	4-21	
+4-18	716-724	tagadējā	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsnyp	tagadēja	_	_	_	_	amod	basic	4-20	
+4-19	725-733	uzņēmuma	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	uzņēmums	_	_	*[5]	*->5-6	nmod	basic	4-20	
+4-20	734-740	vadība	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	vadība	_	_	_	_	nsubj	basic	4-21	
+4-21	741-752	izsaimnieko	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt230an	izsaimniekot	_	_	_	_	acl	basic	4-15	
+4-22	753-755	tā	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msgn	tas	_	_	*[5]	*->5-7	det	basic	4-23	
+4-23	756-761	mantu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	manta	_	_	_	_	obj	basic	4-21	
+4-24	761-762	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	4-5	
+
+#Text=Šie apgalvojumi tika noformēti tādās liecībās par Liepājas metalurga darījumiem, ka Valsts policija jau pagājušā gada augustā bija spiesta sākt kriminālprocesu, bet tā vienīgais rezultāts, ko Neatkarīgajai apliecināja iekšlietu ministra Riharda Kozlovska preses pārstāve Daiga Holma, esot tāds, ka «šobrīd kriminālprocesā neviena persona nav atzīta par aizdomās turēto».
+5-1	764-767	Šie	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpnn	šis	_	_	_	_	det	basic	5-2	
+5-2	768-779	apgalvojumi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	apgalvojums	_	_	_	_	nsubj:pass	basic	5-4	
+5-3	780-784	tika	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vtnisi130an	tikt	_	_	_	_	aux	basic	5-4	
+5-4	785-794	noformēti	Masc	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpnpsnp	noformēt	_	_	_	_	root	basic	5-4	
+5-5	795-800	tādās	Fem	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur\|PronType=Dem	*	*	pd0fpln	tāda	_	_	_	_	obl	basic	5-6	
+5-6	801-809	liecībās	Fem	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	liecība	_	_	_	_	obl	basic	5-4	
+5-7	810-813	par	_	_	_	_	_	_	_	_	_	_	_	_	sppd	par	_	_	_	_	case	basic	5-10	
+5-8	814-822	Liepājas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	liepāja	organization[11]|GPE[12]	*[11]|*[12]	_	_	nmod	basic	5-10	
+5-9	823-832	metalurga	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	metalurgs	organization[11]	*[11]	_	_	nmod	basic	5-10	
+5-10	833-843	darījumiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	darījums	_	_	_	_	nmod	basic	5-6	
+5-11	843-844	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	5-20	
+5-12	845-847	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark	basic	5-20	
+5-13	848-854	Valsts	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	valsts	organization[13]	*[13]	_	_	nmod	basic	5-14	
+5-14	855-863	policija	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	policija	organization[13]	*[13]	_	_	nsubj:pass	basic	5-20	
+5-15	864-867	jau	_	_	_	_	_	_	_	_	_	_	_	_	r0t	jau	_	_	_	_	advmod	basic	5-18	
+5-16	868-876	pagājušā	Masc	Sing	Gen	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsgasyp	paiet	time[14]	*[14]	_	_	amod	basic	5-17	
+5-17	877-881	gada	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	gads	time[14]	*[14]	_	_	nmod	basic	5-18	
+5-18	882-889	augustā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	augusts	time[14]	*[14]	_	_	obl	basic	5-20	
+5-19	890-894	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vcnisii30an	būt	_	_	_	_	aux	basic	5-20	
+5-20	895-902	spiesta	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnpsnp	spiest	_	_	_	_	advcl	basic	5-4	
+5-21	903-907	sākt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	sākt	_	_	_	_	xcomp	basic	5-20	
+5-22	908-923	kriminālprocesu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	kriminālprocess	_	_	*[6]	*->6-1	obj	basic	5-21	
+5-23	923-924	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	5-42	
+5-24	925-928	bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	_	_	cc	basic	5-42	
+5-25	929-931	tā	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msgn	tas	_	_	*[6]	*->6-2	det	basic	5-27	
+5-26	932-941	vienīgais	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsnyp	vienīgs	_	_	_	_	amod	basic	5-27	
+5-27	942-951	rezultāts	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	rezultāts	_	_	_	_	nsubj	basic	5-42	
+5-28	951-952	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	5-31	
+5-29	953-955	ko	*	*	Acc	*	*	*	*	*	*	Case=Acc\|PronType=Rel	*	*	pr000an	kas	_	_	_	_	obj	basic	5-31	
+5-30	956-969	Neatkarīgajai	Fem	Sing	Dat	Pos	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsdyp	neatkarīga	organization	*	_	_	iobj	basic	5-31	
+5-31	970-981	apliecināja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	apliecināt	_	_	_	_	acl	basic	5-27	
+5-32	982-991	iekšlietu	Fem	Ptan	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Ptan	*	*	ncfdg4	iekšlietas	_	_	*[7]	*->7-1	nmod	basic	5-33	
+5-33	992-1000	ministra	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	ministrs	_	_	*[7]	*->7-1	nmod	basic	5-34	
+5-34	1001-1008	Riharda	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Rihards	person[15]	*[15]	*[7]	*->7-2	nmod	basic	5-37	
+5-35	1009-1018	Kozlovska	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg2	Kozlovskis	person[15]	*[15]	*[7]	*->7-2	flat:name	basic	5-34	
+5-36	1019-1025	preses	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	prese	_	_	*[8]	*->8-1	nmod	basic	5-37	
+5-37	1026-1034	pārstāve	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	pārstāve	_	_	*[8]	*->8-1	nmod	basic	5-38	
+5-38	1035-1040	Daiga	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Daiga	person[16]	*[16]	*[8]	*->8-2	nsubj	basic	5-31	
+5-39	1041-1046	Holma	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Holma	person[16]	*[16]	*[8]	*->8-2	flat:name	basic	5-38	
+5-40	1046-1047	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	5-31	
+5-41	1048-1052	esot	*	*	*	*	*	Pres	Qot	Act	*	Evident=Nfh\|Mood=Qot\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	*	vcnrpii00an	būt	_	_	_	_	cop	basic	5-42	
+5-42	1053-1057	tāds	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	tāds	_	_	_	_	conj	basic	5-4	
+5-43	1057-1058	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	5-51	
+5-44	1059-1061	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark	basic	5-51	
+5-45	1062-1063	«	_	_	_	_	_	_	_	_	_	_	_	_	zq	«	_	_	_	_	punct	basic	5-51	
+5-46	1063-1069	šobrīd	_	_	_	_	_	_	_	_	_	_	_	_	r0t	šobrīd	_	_	_	_	advmod	basic	5-51	
+5-47	1070-1085	kriminālprocesā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	kriminālprocess	_	_	_	_	obl	basic	5-51	
+5-48	1086-1093	neviena	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Ind,Neg	*	*	pi0fsny	neviena	_	_	_	_	det	basic	5-49	
+5-49	1094-1101	persona	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	persona	_	_	_	_	nsubj:pass	basic	5-51	
+5-50	1102-1105	nav	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30ay	nebūt	_	_	_	_	aux	basic	5-51	
+5-51	1106-1112	atzīta	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnpsnp	atzīt	_	_	_	_	advcl	basic	5-42	
+5-52	1113-1116	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	_	_	case	basic	5-54	
+5-53	1117-1125	aizdomās	Fem	Ptan	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Ptan	*	*	ncfdl4	aizdomas	_	_	_	_	obl	basic	5-54	
+5-54	1126-1132	turēto	Masc	Sing	Acc	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsapsyp	turēt	_	_	_	_	iobj	basic	5-51	
+5-55	1132-1133	»	_	_	_	_	_	_	_	_	_	_	_	_	zq	»	_	_	_	_	punct	basic	5-51	
+5-56	1133-1134	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	5-4	
+
+#Text=Policija nevar pateikt arī to, ka apgalvojumiem par uzņēmuma mantas izsaimniekošanu nav pamata.
+6-1	1136-1144	Policija	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	policija	_	_	_	_	nsubj	basic	6-2	
+6-2	1145-1150	nevar	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vonipt330ay	nevarēt	_	_	_	_	root	basic	6-2	
+6-3	1151-1158	pateikt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	pateikt	_	_	_	_	xcomp	basic	6-2	
+6-4	1159-1162	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse	basic	6-5	
+6-5	1163-1165	to	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	tas	_	_	_	_	obj	basic	6-3	
+6-6	1165-1166	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	6-13	
+6-7	1167-1169	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark	basic	6-13	
+6-8	1170-1183	apgalvojumiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	apgalvojums	_	_	_	_	obl	basic	6-13	
+6-9	1184-1187	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	_	_	case	basic	6-12	
+6-10	1188-1196	uzņēmuma	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	uzņēmums	_	_	_	_	nmod	basic	6-11	
+6-11	1197-1203	mantas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	manta	_	_	_	_	nmod	basic	6-12	
+6-12	1204-1219	izsaimniekošanu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	izsaimniekošana	_	_	_	_	nmod	basic	6-8	
+6-13	1220-1223	nav	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vgnipii30ay	nebūt	_	_	_	_	ccomp	basic	6-3	
+6-14	1224-1230	pamata	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	pamats	_	_	_	_	nsubj	basic	6-13	
+6-15	1230-1231	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	6-2	

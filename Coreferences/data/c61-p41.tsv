@@ -1,0 +1,72 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Pēdējais apledojums ir noteicis kvartāra nogulumu segas sadalījumu Latvijā.
+1-1	0-8	Pēdējais	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsnyp	pēdējs	_	_	_	_	amod	basic	1-2	
+1-2	9-19	apledojums	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	apledojums	_	_	_	_	nsubj	basic	1-4	
+1-3	20-22	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	aux	basic	1-4	
+1-4	23-31	noteicis	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnasnpn	noteikt	_	_	_	_	root	basic	1-4	
+1-5	32-40	kvartāra	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	kvartārs	_	_	_	_	nmod	basic	1-6	
+1-6	41-49	nogulumu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	nogulums	_	_	_	_	nmod	basic	1-7	
+1-7	50-55	segas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	sega	_	_	_	_	nmod	basic	1-8	
+1-8	56-66	sadalījumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	sadalījums	_	_	_	_	obj	basic	1-4	
+1-9	67-74	Latvijā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	Latvija	GPE	*	_	_	acl	basic	1-8	
+1-10	74-75	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-4	
+
+#Text=Ledājam uzvirzoties tas ierāva sevī iežus un minerālus no teritorijas, kam virzījās pāri.
+2-1	77-84	Ledājam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	ledājs	_	_	*[2]	*->2-1	obl	basic	2-2	
+2-2	85-96	uzvirzoties	*	*	*	*	*	*	*	*	*	Reflex=Yes\|VerbForm=Conv	*	*	vmypu0000000n	uzvirzīties	_	_	_	_	advcl	basic	2-4	
+2-3	97-100	tas	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	tas	_	_	*[2]	*->2-2	nsubj	basic	2-4	
+2-4	101-107	ierāva	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	ieraut	_	_	_	_	root	basic	2-4	
+2-5	108-112	sevī	*	*	Loc	*	*	*	*	*	*	Case=Loc\|PronType=Rcp\|Reflex=Yes	*	*	px000ln	sevis	_	_	*[2]	*->2-3	obl	basic	2-4	
+2-6	113-118	iežus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa2	iezis	_	_	_	_	obj	basic	2-4	
+2-7	119-121	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	2-8	
+2-8	122-131	minerālus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	minerāls	_	_	_	_	conj	basic	2-6	
+2-9	132-134	no	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	_	_	_	_	case	basic	2-10	
+2-10	135-146	teritorijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	teritorija	_	_	*[1]	*->1-1	obl	basic	2-4	
+2-11	146-147	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-13	
+2-12	148-151	kam	*	*	Dat	*	*	*	*	*	*	Case=Dat\|PronType=Rel	*	*	pr000dn	kas	_	_	*[1]	*->1-2	obl	basic	2-13	
+2-13	152-160	virzījās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi330an	virzīties	_	_	_	_	acl	basic	2-6	
+2-14	161-165	pāri	_	_	_	_	_	_	_	_	_	_	_	_	rrp	pāri	_	_	_	_	case	basic	2-12	
+2-15	165-166	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-4	
+
+#Text=Ledāja plūsmai aprimstot vai ledum izkūstot, tā nestais iežu materiāls nogula uz zemes virsas.
+3-1	168-174	Ledāja	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	ledājs	_	_	*[2]	*->2-4	nmod	basic	3-2	
+3-2	175-182	plūsmai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	plūsma	_	_	_	_	obl	basic	3-3	
+3-3	183-192	aprimstot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000n	aprimt	_	_	_	_	advcl	basic	3-12	
+3-4	193-196	vai	_	_	_	_	_	_	_	_	_	_	_	_	cc	vai	_	_	_	_	cc	basic	3-6	
+3-5	197-202	ledum	Masc	Coll	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Coll	*	*	ncmvl3	ledus	_	_	_	_	obl	basic	3-6	
+3-6	203-211	izkūstot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000n	izkust	_	_	_	_	conj	basic	3-3	
+3-7	211-212	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-3	
+3-8	213-215	tā	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	3	*	pd3msgn	tas	_	_	*[2]	*->2-5	det	basic	3-9	
+3-9	216-223	nestais	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsypy	nest	_	_	_	_	amod	basic	3-11	
+3-10	224-228	iežu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	iezis	_	_	_	_	nmod	basic	3-11	
+3-11	229-238	materiāls	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	materiāls	_	_	_	_	nmod	basic	3-12	
+3-12	239-245	nogula	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi130an	nogult	_	_	_	_	root	basic	3-12	
+3-13	246-248	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsg	uz	_	_	_	_	case	basic	3-15	
+3-14	249-254	zemes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	zeme	_	_	_	_	nmod	basic	3-15	
+3-15	255-261	virsas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	virsa	_	_	_	_	obl	basic	3-12	
+3-16	261-262	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-12	
+
+#Text=Tā radās morēnas jeb ledāja nogulumi, kas patreiz klāj ļoti plašu Latvijas teritoriju.
+4-1	264-266	Tā	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0m	tā	_	_	_	_	advmod	basic	4-2	
+4-2	267-272	radās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi130an	rasties	_	_	_	_	root	basic	4-2	
+4-3	273-280	morēnas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	morēna	_	_	_	_	nmod	basic	4-6	
+4-4	281-284	jeb	_	_	_	_	_	_	_	_	_	_	_	_	cc	jeb	_	_	_	_	cc	basic	4-5	
+4-5	285-291	ledāja	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	ledājs	_	_	_	_	conj	basic	4-3	
+4-6	292-300	nogulumi	Masc	Ptan	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Ptan	*	*	ncmdn1	nogulums	_	_	*[3]	*->3-1	nsubj	basic	4-2	
+4-7	300-301	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	4-10	
+4-8	302-305	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	*[3]	*->3-2	nsubj	basic	4-10	
+4-9	306-313	patreiz	_	_	_	_	_	_	_	_	_	_	_	_	r0t	patreiz	_	_	_	_	advmod	basic	4-10	
+4-10	314-318	klāj	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt130an	klāt	_	_	_	_	acl	basic	4-6	
+4-11	319-323	ļoti	_	_	_	_	_	_	_	_	_	_	_	_	r0q	ļoti	_	_	_	_	advmod	basic	4-12	
+4-12	324-329	plašu	Masc	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsanp	plašs	_	_	_	_	amod	basic	4-14	
+4-13	330-338	Latvijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Latvija	GPE	*	_	_	nmod	basic	4-14	
+4-14	339-349	teritoriju	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	teritorija	_	_	_	_	obj	basic	4-10	
+4-15	349-350	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	4-2	

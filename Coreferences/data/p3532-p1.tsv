@@ -1,0 +1,33 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Lasīt brūklenes ir patīkami.
+1-1	0-5	Lasīt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	lasīt	_	_	ccomp	basic	1-4	
+1-2	6-15	brūklenes	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa5	brūklene	*[1]	*->1-1	obj	basic	1-1	
+1-3	16-18	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	cop	basic	1-4	
+1-4	19-27	patīkami	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	patīkami	_	_	root	basic	1-4	
+1-5	27-28	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	1-4	
+
+#Text=Pēc tām nav jābrien purvā kā pēc dzērvenēm vai jālaužas cauri dzelkšņiem, kā lasot kazenes.
+2-1	30-33	Pēc	_	_	_	_	_	_	_	_	_	_	_	_	sppd	pēc	_	_	case	basic	2-2	
+2-2	34-37	tām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur\|PronType=Dem	*	*	pd0fpdn	tā	*[1]	*->1-2	obl	basic	2-4	
+2-3	38-41	nav	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30ay	nebūt	_	_	aux	basic	2-4	
+2-4	42-49	jābrien	*	*	*	*	*	*	Nec	Act	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vmnd0i100an	brist	_	_	root	basic	2-4	
+2-5	50-55	purvā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	purvs	_	_	obl	basic	2-4	
+2-6	56-58	kā	_	_	_	_	_	_	_	_	_	_	_	_	cs	kā	_	_	case	basic	2-8	
+2-7	59-62	pēc	_	_	_	_	_	_	_	_	_	_	_	_	sppd	pēc	_	_	case	basic	2-8	
+2-8	63-72	dzērvenēm	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd5	dzērvene	_	_	obl	basic	2-4	
+2-9	73-76	vai	_	_	_	_	_	_	_	_	_	_	_	_	cc	vai	_	_	cc	basic	2-10	
+2-10	77-85	jālaužas	*	*	*	*	*	*	Nec	Act	*	Mood=Nec\|Polarity=Pos\|Reflex=Yes\|VerbForm=Fin\|Voice=Act	*	*	vmyd0i100an	lauzties	_	_	conj	basic	2-4	
+2-11	86-91	cauri	_	_	_	_	_	_	_	_	_	_	_	_	rrp	cauri	_	_	case	basic	2-12	
+2-12	92-102	dzelkšņiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd2	dzelksnis	_	_	obl	basic	2-10	
+2-13	102-103	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	2-14	
+2-14	104-106	kā	_	_	_	_	_	_	_	_	_	_	_	_	cs	kā	_	_	advcl	basic	2-10	
+2-15	107-112	lasot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000n	lasīt	_	_	dep	basic	2-14	
+2-16	113-120	kazenes	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa5	kazene	_	_	obj	basic	2-15	
+2-17	120-121	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	2-4	

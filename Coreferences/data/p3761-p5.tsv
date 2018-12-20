@@ -1,0 +1,267 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Harijs Spanovskis un Andris Bērziņš meklē atbildes pie Latvijas tautas medicīnas dziedniekiem un cilvēkiem ar savdabīgu, alternatīvu skatu uz problēmu risināšanu.
+1-1	0-6	Harijs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Harijs	person[1]	*[1]	*[3]	*->3-1	nsubj	basic	1-6	
+1-2	7-17	Spanovskis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	Spanovskis	person[1]	*[1]	*[3]	*->3-1	flat:name	basic	1-1	
+1-3	18-20	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	*[3]	*->3-1	cc	basic	1-4	
+1-4	21-27	Andris	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	Andris	person[2]	https://lv.wikipedia.org/wiki/Andris\_Bērziņš\_(aktieris)[2]	*[3]	*->3-1	conj	basic	1-1	
+1-5	28-35	Bērziņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Bērziņš	person[2]	https://lv.wikipedia.org/wiki/Andris\_Bērziņš\_(aktieris)[2]	*[3]	*->3-1	flat:name	basic	1-4	
+1-6	36-41	meklē	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt230an	meklēt	_	_	_	_	root	basic	1-6	
+1-7	42-50	atbildes	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa5	atbilde	_	_	_	_	obj	basic	1-6	
+1-8	51-54	pie	_	_	_	_	_	_	_	_	_	_	_	_	sppd	pie	_	_	_	_	case	basic	1-12	
+1-9	55-63	Latvijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Latvija	GPE	*	_	_	nmod	basic	1-12	
+1-10	64-70	tautas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	tauta	_	_	_	_	nmod	basic	1-11	
+1-11	71-80	medicīnas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	medicīna	_	_	_	_	nmod	basic	1-12	
+1-12	81-93	dziedniekiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	dziednieks	_	_	_	_	obl	basic	1-6	
+1-13	94-96	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-14	
+1-14	97-106	cilvēkiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	cilvēks	_	_	_	_	conj	basic	1-12	
+1-15	107-109	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case	basic	1-19	
+1-16	110-119	savdabīgu	Masc	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsanp	savdabīgs	_	_	_	_	amod	basic	1-19	
+1-17	119-120	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-18	
+1-18	121-132	alternatīvu	Masc	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsanp	alternatīvs	_	_	_	_	conj	basic	1-16	
+1-19	133-138	skatu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	skats	_	_	_	_	nmod	basic	1-14	
+1-20	139-141	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsa	uz	_	_	_	_	case	basic	1-22	
+1-21	142-150	problēmu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	problēma	_	_	_	_	nmod	basic	1-22	
+1-22	151-161	risināšanu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	risināšana	_	_	_	_	nmod	basic	1-19	
+1-23	161-162	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-6	
+
+#Text=Citiem vārdiem sakot, viņi abi kopā dodas pie raganām – veselu vasaras mēnesi apbraukā dziedniekus dažādas Latvijas malās.
+2-1	164-170	Citiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|PronType=Ind	*	*	pi0mpdn	cits	_	_	_	_	det	basic	2-2	
+2-2	171-178	vārdiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	vārds	_	_	_	_	iobj	basic	2-3	
+2-3	179-184	sakot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000	sacīt	_	_	_	_	advcl	basic	2-8	
+2-4	184-185	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-3	
+2-5	186-190	viņi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Prs	3	*	pp3mpnn	viņš	_	_	*[3]	*->3-2	nsubj	basic	2-8	
+2-6	191-194	abi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Tot	*	*	pg0mpnn	abi	_	_	*[3]	*->3-2	compound	basic	2-5	
+2-7	195-199	kopā	_	_	_	_	_	_	_	_	_	_	_	_	r0m	kopā	_	_	_	_	advmod	basic	2-8	
+2-8	200-205	dodas	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipti30an	doties	_	_	_	_	root	basic	2-8	
+2-9	206-209	pie	_	_	_	_	_	_	_	_	_	_	_	_	sppd	pie	_	_	_	_	case	basic	2-10	
+2-10	210-217	raganām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	ragana	_	_	_	_	obl	basic	2-8	
+2-11	218-219	–	_	_	_	_	_	_	_	_	_	_	_	_	zd	–	_	_	_	_	punct	basic	2-15	
+2-12	220-226	veselu	Masc	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsanp	vesels	_	_	_	_	amod	basic	2-14	
+2-13	227-234	vasaras	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	vasara	_	_	_	_	nmod	basic	2-14	
+2-14	235-241	mēnesi	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	mēnesis	_	_	_	_	obl	basic	2-15	
+2-15	242-250	apbraukā	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt230an	apbraukāt	_	_	_	_	conj	basic	2-8	
+2-16	251-262	dziedniekus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	dziednieks	_	_	_	_	obj	basic	2-15	
+2-17	263-270	dažādas	Fem	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	arfpnnp	dažāda	_	_	_	_	amod	basic	2-19	
+2-18	271-279	Latvijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Latvija	GPE	*	_	_	nmod	basic	2-19	
+2-19	280-285	malās	Fem	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	mala	_	_	_	_	obl	basic	2-15	
+2-20	285-286	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-8	
+
+#Text=Viņiem līdzi dodas režisore Una Celma ar kino uzņemšanas grupu, un tā ir tapusi filma Raganu mēnesis.
+3-1	288-294	Viņiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Prs	3	*	pp3mpdn	viņš	_	_	*[3]	*->3-3	obl	basic	3-3	
+3-2	295-300	līdzi	_	_	_	_	_	_	_	_	_	_	_	_	rrp	līdzi	_	_	_	_	case	basic	3-1	
+3-3	301-306	dodas	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipti30an	doties	_	_	_	_	root	basic	3-3	
+3-4	307-315	režisore	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	režisore	_	_	*[1]	*->1-1	nmod	basic	3-5	
+3-5	316-319	Una	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Una	person[3]	*[3]	*[1]	*->1-2	nsubj	basic	3-3	
+3-6	320-325	Celma	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Celma	person[3]	*[3]	*[1]	*->1-2	flat:name	basic	3-5	
+3-7	326-328	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case	basic	3-10	
+3-8	329-333	kino	_	_	_	_	_	_	_	_	_	_	_	_	nc0000	kino	_	_	_	_	nmod	basic	3-10	
+3-9	334-344	uzņemšanas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	uzņemšana	_	_	_	_	nmod	basic	3-10	
+3-10	345-350	grupu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	grupa	_	_	_	_	obl	basic	3-3	
+3-11	350-351	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-15	
+3-12	352-354	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	3-15	
+3-13	355-357	tā	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0m	tā	_	_	_	_	advmod	basic	3-15	
+3-14	358-360	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	aux	basic	3-15	
+3-15	361-367	tapusi	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnasnp	tapt	_	_	_	_	conj	basic	3-3	
+3-16	368-373	filma	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	filma	_	_	*[2]	*->2-1	nmod	basic	3-18	
+3-17	374-380	Raganu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	ragana	product[4]	*[4]	*[2]	*->2-2	nmod	basic	3-18	
+3-18	381-388	mēnesis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	mēnesis	product[4]	*[4]	*[2]	*->2-2	nsubj	basic	3-15	
+3-19	388-389	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-3	
+
+#Text=Tā ir filma ar apzinātiem un neapzinātiem komiskiem elementiem – īsts «ceļabiedru dēku stāsts» jeb, kā Holivudā šādu žanru sauc, – road movie.
+4-1	391-393	Tā	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsnn	tā	_	_	*[2]	*->2-3	nsubj	basic	4-3	
+4-2	394-396	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	cop	basic	4-3	
+4-3	397-402	filma	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	filma	_	_	_	_	root	basic	4-3	
+4-4	403-405	ar	_	_	_	_	_	_	_	_	_	_	_	_	sppd	ar	_	_	_	_	case	basic	4-9	
+4-5	406-416	apzinātiem	Masc	Plur	Dat	Pos	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpdnp	apzināts	_	_	_	_	amod	basic	4-9	
+4-6	417-419	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	4-7	
+4-7	420-432	neapzinātiem	Masc	Plur	Dat	Pos	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpdnp	neapzināts	_	_	_	_	conj	basic	4-5	
+4-8	433-442	komiskiem	Masc	Plur	Dat	Pos	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpdnp	komisks	_	_	_	_	amod	basic	4-9	
+4-9	443-453	elementiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	elements	_	_	_	_	nmod	basic	4-3	
+4-10	454-455	–	_	_	_	_	_	_	_	_	_	_	_	_	zd	–	_	_	_	_	punct	basic	4-15	
+4-11	456-460	īsts	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsnnp	īsts	_	_	_	_	amod	basic	4-15	
+4-12	461-462	«	_	_	_	_	_	_	_	_	_	_	_	_	zq	«	_	_	_	_	punct	basic	4-15	
+4-13	462-472	ceļabiedru	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	ceļabiedrs	_	_	_	_	nmod	basic	4-15	
+4-14	473-477	dēku	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	dēka	_	_	_	_	nmod	basic	4-15	
+4-15	478-484	stāsts	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	stāsts	_	_	_	_	acl	basic	4-3	
+4-16	484-485	»	_	_	_	_	_	_	_	_	_	_	_	_	zq	»	_	_	_	_	punct	basic	4-15	
+4-17	486-489	jeb	_	_	_	_	_	_	_	_	_	_	_	_	cc	jeb	_	_	_	_	cc	basic	4-26	
+4-18	489-490	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	4-23	
+4-19	491-493	kā	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0m	kā	_	_	_	_	advmod	basic	4-23	
+4-20	494-502	Holivudā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	Holivuda	location	*	_	_	obl	basic	4-23	
+4-21	503-507	šādu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	šāds	_	_	_	_	det	basic	4-22	
+4-22	508-513	žanru	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	žanrs	_	_	_	_	obj	basic	4-23	
+4-23	514-518	sauc	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt130an	saukt	_	_	_	_	parataxis	basic	4-26	
+4-24	518-519	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	4-23	
+4-25	520-521	–	_	_	_	_	_	_	_	_	_	_	_	_	zd	–	_	_	_	_	punct	basic	4-26	
+4-26	522-526	road	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	road	_	_	_	_	conj	basic	4-15	
+4-27	527-532	movie	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	movie	_	_	_	_	flat:name	basic	4-26	
+4-28	532-533	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	4-3	
+
+#Text=Pa ceļam abi ceļa biedri sastopas ne tikai ar raganām, bet ar parastiem cilvēkiem, ar savu publiku, ar Raimondu Paulu un īpašām būtnēm frakās tālajā Čīlē, pašā pasaules galā.
+5-1	535-537	Pa	_	_	_	_	_	_	_	_	_	_	_	_	spsd	pa	_	_	_	_	case	basic	5-2	
+5-2	538-543	ceļam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	ceļš	_	_	_	_	obl	basic	5-6	
+5-3	544-547	abi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Tot	*	*	pg0mpnn	abi	_	_	_	_	det	basic	5-5	
+5-4	548-552	ceļa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	ceļš	_	_	*[3]	*->3-4	nmod	basic	5-5	
+5-5	553-559	biedri	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	biedrs	_	_	*[3]	*->3-4	nsubj	basic	5-6	
+5-6	560-568	sastopas	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipi130an	sastapties	_	_	_	_	root	basic	5-6	
+5-7	569-571	ne	_	_	_	_	_	_	_	_	_	_	_	_	cc	ne	_	_	_	_	cc	basic	5-10	
+5-8	572-577	tikai	_	_	_	_	_	_	_	_	_	_	_	_	q	tikai	_	_	_	_	discourse	basic	5-7	
+5-9	578-580	ar	_	_	_	_	_	_	_	_	_	_	_	_	sppd	ar	_	_	_	_	case	basic	5-10	
+5-10	581-588	raganām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	ragana	_	_	_	_	iobj	basic	5-6	
+5-11	588-589	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	5-15	
+5-12	590-593	bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	_	_	cc	basic	5-15	
+5-13	594-596	ar	_	_	_	_	_	_	_	_	_	_	_	_	sppd	ar	_	_	_	_	case	basic	5-15	
+5-14	597-606	parastiem	Masc	Plur	Dat	Pos	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpdnp	parasts	_	_	_	_	amod	basic	5-15	
+5-15	607-616	cilvēkiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	cilvēks	_	_	_	_	conj	basic	5-10	
+5-16	616-617	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	5-19	
+5-17	618-620	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case	basic	5-19	
+5-18	621-625	savu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0fsan	sava	_	_	*[3]	*->3-5	det	basic	5-19	
+5-19	626-633	publiku	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	publika	_	_	_	_	conj	basic	5-10	
+5-20	633-634	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	5-22	
+5-21	635-637	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case	basic	5-22	
+5-22	638-646	Raimondu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	Raimonds	person[5]	*[5]	_	_	conj	basic	5-10	
+5-23	647-652	Paulu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	Pauls	person[5]	*[5]	_	_	flat:name	basic	5-22	
+5-24	653-655	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	5-26	
+5-25	656-662	īpašām	Fem	Plur	Dat	Pos	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpdnp	īpaša	_	_	_	_	amod	basic	5-26	
+5-26	663-669	būtnēm	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd5	būtne	_	_	_	_	conj	basic	5-22	
+5-27	670-676	frakās	Fem	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	fraka	_	_	_	_	acl	basic	5-26	
+5-28	677-683	tālajā	Fem	Sing	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affslyp	tāla	_	_	_	_	amod	basic	5-29	
+5-29	684-688	Čīlē	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl5	čīle	GPE	*	_	_	acl	basic	5-26	
+5-30	688-689	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	5-33	
+5-31	690-694	pašā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|PronType=Tot	*	*	pg0fsln	pati	_	_	_	_	det	basic	5-33	
+5-32	695-703	pasaules	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	pasaule	_	_	_	_	nmod	basic	5-33	
+5-33	704-708	galā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	gals	_	_	_	_	acl	basic	5-29	
+5-34	708-709	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	5-6	
+
+#Text=Kā jau ar aktieriem – nekad nav skaidrības, kur beidzās īstā dzīve un kur sākas skatuve.
+6-1	711-713	Kā	_	_	_	_	_	_	_	_	_	_	_	_	cs	kā	_	_	_	_	mark	basic	6-4	
+6-2	714-717	jau	_	_	_	_	_	_	_	_	_	_	_	_	q	jau	_	_	_	_	discourse	basic	6-4	
+6-3	718-720	ar	_	_	_	_	_	_	_	_	_	_	_	_	sppd	ar	_	_	_	_	case	basic	6-4	
+6-4	721-730	aktieriem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd2	aktieris	_	_	*[3]	*->3-6	parataxis	basic	6-7	
+6-5	731-732	–	_	_	_	_	_	_	_	_	_	_	_	_	zd	–	_	_	_	_	punct	basic	6-4	
+6-6	733-738	nekad	*	*	*	*	*	*	*	*	*	PronType=Int,Neg	*	*	r0t	nekad	_	_	_	_	advmod	basic	6-7	
+6-7	739-742	nav	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vgnipii30ay	nebūt	_	_	_	_	root	basic	6-7	
+6-8	743-753	skaidrības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	skaidrība	_	_	_	_	nsubj	basic	6-7	
+6-9	753-754	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	6-11	
+6-10	755-758	kur	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0p	kur	_	_	_	_	advmod	basic	6-11	
+6-11	759-766	beidzās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi130an	beigties	_	_	_	_	ccomp	basic	6-7	
+6-12	767-771	īstā	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsnyp	īsta	_	_	_	_	amod	basic	6-13	
+6-13	772-777	dzīve	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	dzīve	_	_	_	_	nsubj	basic	6-11	
+6-14	778-780	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	6-16	
+6-15	781-784	kur	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0p	kur	_	_	_	_	advmod	basic	6-16	
+6-16	785-790	sākas	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipi130an	sākties	_	_	_	_	conj	basic	6-11	
+6-17	791-798	skatuve	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	skatuve	_	_	_	_	nsubj	basic	6-16	
+6-18	798-799	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	6-7	
+
+#Text=Un kā jau filmā, kas uzņemta pie raganām, nekad nevar zināt, kur ir robeža starp mūsu ikdienu un kādu citu realitāti.
+7-1	801-803	Un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	7-12	
+7-2	804-806	kā	_	_	_	_	_	_	_	_	_	_	_	_	cs	kā	_	_	_	_	mark	basic	7-4	
+7-3	807-810	jau	_	_	_	_	_	_	_	_	_	_	_	_	q	jau	_	_	_	_	discourse	basic	7-4	
+7-4	811-816	filmā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	filma	_	_	_	_	parataxis	basic	7-12	
+7-5	816-817	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	7-7	
+7-6	818-821	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	_	_	iobj	basic	7-7	
+7-7	822-829	uzņemta	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnpsnp	uzņemt	_	_	_	_	acl	basic	7-4	
+7-8	830-833	pie	_	_	_	_	_	_	_	_	_	_	_	_	sppd	pie	_	_	_	_	case	basic	7-9	
+7-9	834-841	raganām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	ragana	_	_	_	_	obl	basic	7-7	
+7-10	841-842	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	7-4	
+7-11	843-848	nekad	*	*	*	*	*	*	*	*	*	PronType=Int,Neg	*	*	r0t	nekad	_	_	_	_	advmod	basic	7-12	
+7-12	849-854	nevar	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vonipt330ay	nevarēt	_	_	_	_	root	basic	7-12	
+7-13	855-860	zināt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	zināt	_	_	_	_	xcomp	basic	7-12	
+7-14	860-861	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	7-16	
+7-15	862-865	kur	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0p	kur	_	_	_	_	advmod	basic	7-16	
+7-16	866-868	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipii30an	būt	_	_	_	_	ccomp	basic	7-12	
+7-17	869-875	robeža	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	robeža	_	_	_	_	nsubj	basic	7-16	
+7-18	876-881	starp	_	_	_	_	_	_	_	_	_	_	_	_	spsa	starp	_	_	_	_	case	basic	7-20	
+7-19	882-886	mūsu	*	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Number=Plur\|Person=1\|PronType=Prs	1	*	pp10pgn	mēs	_	_	_	_	det	basic	7-20	
+7-20	887-894	ikdienu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	ikdiena	_	_	_	_	nmod	basic	7-17	
+7-21	895-897	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	7-24	
+7-22	898-902	kādu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Ind	*	*	pi0msan	kāds	_	_	_	_	det	basic	7-24	
+7-23	903-907	citu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Ind	*	*	pi0fsan	cita	_	_	_	_	det	basic	7-24	
+7-24	908-917	realitāti	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	realitāte	_	_	_	_	conj	basic	7-20	
+7-25	917-918	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	7-12	
+
+#Text=Šo ceturtdien, 4. oktobrī, Rīgas kinoteātrī Splendid Palace notiks režisores Unas Celmas dokumentālā mākslas filmas Raganu mēnesis.
+8-1	920-922	Šo	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsan	šī	time[6]	*[6]	*[9]	*->9-1	det	basic	8-2	
+8-2	923-933	ceturtdien	_	_	_	_	_	_	_	_	_	_	_	_	r0t	ceturtdien	time[6]	*[6]	*[9]	*->9-1	advmod	basic	8-11	
+8-3	933-934	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	time[6]	*[6]	_	_	punct	basic	8-5	
+8-4	935-937	4.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	4.	time[6]	*[6]	*[9]	*->9-2	amod	basic	8-5	
+8-5	938-945	oktobrī	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	oktobris	time[6]	*[6]	*[9]	*->9-2	acl	basic	8-2	
+8-6	945-946	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	8-5	
+8-7	947-952	Rīgas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Rīga	GPE	*	*[4]	*->4-1	nmod	basic	8-8	
+8-8	953-963	kinoteātrī	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	kinoteātris	_	_	*[4]	*->4-1	nmod	basic	8-9	
+8-9	964-972	Splendid	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Splendid	location[7]	*[7]	*[4]	*->4-2	obl	basic	8-11	
+8-10	973-979	Palace	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Palace	location[7]	*[7]	*[4]	*->4-2	flat:name	basic	8-9	
+8-11	980-986	notiks	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vmnifi130an	notikt	_	_	_	_	root	basic	8-11	
+8-12	987-996	režisores	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	režisore	_	_	*[5]	*->5-1	nmod	basic	8-13	
+8-13	997-1001	Unas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Una	person[8]	*[8]	*[5]	*->5-2	nmod	basic	8-17	
+8-14	1002-1008	Celmas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Celma	person[8]	*[8]	*[5]	*->5-2	flat:name	basic	8-13	
+8-15	1009-1020	dokumentālā	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsnyp	dokumentāla	_	_	*[6]	*->6-1	amod	basic	8-17	
+8-16	1021-1028	mākslas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	māksla	_	_	*[6]	*->6-1	nmod	basic	8-17	
+8-17	1029-1035	filmas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	filma	_	_	*[6]	*->6-1	nmod	basic	8-19	
+8-18	1036-1042	Raganu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	ragana	product[9]	*[9]	*[6]	*->6-2	nmod	basic	8-19	
+8-19	1043-1050	mēnesis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	mēnesis	product[9]	*[9]	*[6]	*->6-2	nsubj	basic	8-11	
+8-20	1050-1051	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	8-11	
+
+#Text=Kopā ar filmas galvenajiem varoņiem Dailes teātra aktieriem Andri Bērziņu un Hariju Spanovski tur varēs baudīt īpašo raganu putru un burvju dzērienu.
+9-1	1053-1057	Kopā	_	_	_	_	_	_	_	_	_	_	_	_	r0m	kopā	_	_	_	_	advmod	basic	9-15	
+9-2	1058-1060	ar	_	_	_	_	_	_	_	_	_	_	_	_	sppd	ar	_	_	_	_	case	basic	9-9	
+9-3	1061-1067	filmas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	filma	_	_	*[7]	*->7-1	nmod	basic	9-5	
+9-4	1068-1079	galvenajiem	Masc	Plur	Dat	Pos	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpdyp	galvenais	_	_	*[7]	*->7-1	amod	basic	9-5	
+9-5	1080-1088	varoņiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd2	varonis	_	_	*[7]	*->7-1	nmod	basic	9-9	
+9-6	1089-1095	Dailes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	daile	organization[10]	*[10]	*[7]	*->7-2	nmod	basic	9-7	
+9-7	1096-1102	teātra	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	teātris	organization[10]	*[10]	*[7]	*->7-2	nmod	basic	9-8	
+9-8	1103-1112	aktieriem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd2	aktieris	_	_	*[7]	*->7-2	nmod	basic	9-9	
+9-9	1113-1118	Andri	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa2	Andris	person[11]	https://lv.wikipedia.org/wiki/Andris\_Bērziņš\_(aktieris)[11]	*[7]	*->7-3	iobj	basic	9-1	
+9-10	1119-1126	Bērziņu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	Bērziņs	person[11]	https://lv.wikipedia.org/wiki/Andris\_Bērziņš\_(aktieris)[11]	*[7]	*->7-3	flat:name	basic	9-9	
+9-11	1127-1129	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	*[7]	*->7-3	cc	basic	9-12	
+9-12	1130-1136	Hariju	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	Harijs	person[12]	*[12]	*[7]	*->7-3	conj	basic	9-9	
+9-13	1137-1146	Spanovski	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa2	Spanovskis	person[12]	*[12]	*[7]	*->7-3	flat:name	basic	9-12	
+9-14	1147-1150	tur	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0p	tur	_	_	_	_	advmod	basic	9-15	
+9-15	1151-1156	varēs	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vonift330an	varēt	_	_	_	_	root	basic	9-15	
+9-16	1157-1163	baudīt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	baudīt	_	_	_	_	xcomp	basic	9-15	
+9-17	1164-1169	īpašo	Fem	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsayp	īpaša	_	_	_	_	amod	basic	9-19	
+9-18	1170-1176	raganu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	ragana	_	_	_	_	nmod	basic	9-19	
+9-19	1177-1182	putru	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	putra	_	_	_	_	obj	basic	9-16	
+9-20	1183-1185	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	9-22	
+9-21	1186-1192	burvju	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	burvis	_	_	_	_	nmod	basic	9-22	
+9-22	1193-1201	dzērienu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	dzēriens	_	_	_	_	conj	basic	9-19	
+9-23	1201-1202	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	9-15	
+
+#Text=Skatītājiem būs arī iespēja uzdot sev interesējošos jautājumus astrologiem, numerologiem, rūnu licējiem un tarologiem.
+10-1	1204-1215	Skatītājiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	skatītājs	_	_	*[8]	*->8-1	obl	basic	10-2	
+10-2	1216-1219	būs	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vmnifii30an	būt	_	_	_	_	root	basic	10-2	
+10-3	1220-1223	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse	basic	10-4	
+10-4	1224-1231	iespēja	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	iespēja	_	_	_	_	nsubj	basic	10-2	
+10-5	1232-1237	uzdot	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	uzdot	_	_	_	_	acl	basic	10-4	
+10-6	1238-1241	sev	*	*	Dat	*	*	*	*	*	*	Case=Dat\|PronType=Rcp\|Reflex=Yes	*	*	px000dn	sevis	_	_	*[8]	*->8-2	iobj	basic	10-7	
+10-7	1242-1255	interesējošos	Masc	Plur	Acc	Pos	*	Pres	*	Pass	*	Aspect=Imp\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Imp	vmnpdmpaapyp	interesēt	_	_	_	_	amod	basic	10-8	
+10-8	1256-1266	jautājumus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	jautājums	_	_	_	_	obj	basic	10-5	
+10-9	1267-1278	astrologiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	astrologs	_	_	_	_	iobj	basic	10-5	
+10-10	1278-1279	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	10-11	
+10-11	1280-1292	numerologiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	numerologs	_	_	_	_	conj	basic	10-9	
+10-12	1292-1293	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	10-14	
+10-13	1294-1298	rūnu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	rūna	_	_	_	_	nmod	basic	10-14	
+10-14	1299-1307	licējiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	licējs	_	_	_	_	conj	basic	10-9	
+10-15	1308-1310	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	10-16	
+10-16	1311-1321	tarologiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	tarologs	_	_	_	_	conj	basic	10-9	
+10-17	1321-1322	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	10-2	
+
+#Text=Redzēsiet, ko cilvēki var izdarīt ar domas spēku.
+11-1	1324-1333	Redzēsiet	*	Plur	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=2\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	2	*	vmnift32pan	redzēt	_	_	_	_	root	basic	11-1	
+11-2	1333-1334	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	11-5	
+11-3	1335-1337	ko	*	*	Acc	*	*	*	*	*	*	Case=Acc\|PronType=Rel	*	*	pr000an	kas	_	_	_	_	obj	basic	11-6	
+11-4	1338-1345	cilvēki	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	cilvēks	_	_	_	_	nsubj	basic	11-5	
+11-5	1346-1349	var	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vonipt330an	varēt	_	_	_	_	ccomp	basic	11-1	
+11-6	1350-1357	izdarīt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	izdarīt	_	_	_	_	xcomp	basic	11-5	
+11-7	1358-1360	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case	basic	11-9	
+11-8	1361-1366	domas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	doma	_	_	_	_	nmod	basic	11-9	
+11-9	1367-1372	spēku	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	spēks	_	_	_	_	iobj	basic	11-6	
+11-10	1372-1373	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	11-1	

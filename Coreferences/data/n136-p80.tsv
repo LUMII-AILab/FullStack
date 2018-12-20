@@ -1,0 +1,42 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Kad dalībvalstis pieņem minētos noteikumus, tajos ietver atsauci uz šo direktīvu, vai arī šādu atsauci pievieno to oficiālai publikācijai.
+1-1	0-3	Kad	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0t	kad	_	_	advmod	basic	1-3	
+1-2	4-16	dalībvalstis	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn6	dalībvalsts	_	_	nsubj	basic	1-3	
+1-3	17-23	pieņem	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt130an	pieņemt	_	_	advcl	basic	1-8	
+1-4	24-31	minētos	Masc	Plur	Acc	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpapsypn	minēt	_	_	amod	basic	1-5	
+1-5	32-42	noteikumus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	noteikums	*[1]	*->1-1	obj	basic	1-3	
+1-6	42-43	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-3	
+1-7	44-49	tajos	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpln	tas	*[1]	*->1-2	obl	basic	1-8	
+1-8	50-56	ietver	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt130an	ietvert	_	_	root	basic	1-8	
+1-9	57-64	atsauci	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	atsauce	_	_	obj	basic	1-8	
+1-10	65-67	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsa	uz	_	_	case	basic	1-12	
+1-11	68-70	šo	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsan	šī	_	_	det	basic	1-12	
+1-12	71-80	direktīvu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	direktīva	_	_	nmod	basic	1-9	
+1-13	80-81	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-18	
+1-14	82-85	vai	_	_	_	_	_	_	_	_	_	_	_	_	cc	vai	_	_	cc	basic	1-18	
+1-15	86-89	arī	_	_	_	_	_	_	_	_	_	_	_	_	cc	arī	_	_	dep	basic	1-14	
+1-16	90-94	šādu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsan	šāda	_	_	det	basic	1-17	
+1-17	95-102	atsauci	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	atsauce	_	_	obj	basic	1-18	
+1-18	103-111	pievieno	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt230an	pievienot	_	_	conj	basic	1-8	
+1-19	112-114	to	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	tas	*[1]	*->1-3	det	basic	1-21	
+1-20	115-124	oficiālai	Fem	Sing	Dat	Pos	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsdnp	oficiāla	_	_	amod	basic	1-21	
+1-21	125-137	publikācijai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	publikācija	_	_	iobj	basic	1-18	
+1-22	137-138	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	1-8	
+
+#Text=Dalībvalstis nosaka paņēmienus, kā izdarīt šādas atsauces.
+2-1	140-152	Dalībvalstis	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn6	dalībvalsts	_	_	nsubj	basic	2-2	
+2-2	153-159	nosaka	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	nosacīt	_	_	root	basic	2-2	
+2-3	160-170	paņēmienus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	paņēmiens	_	_	obj	basic	2-2	
+2-4	170-171	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	2-6	
+2-5	172-174	kā	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0m	kā	_	_	advmod	basic	2-6	
+2-6	175-182	izdarīt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	izdarīt	_	_	acl	basic	2-3	
+2-7	183-188	šādas	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur\|PronType=Dem	*	*	pd0fpan	šāda	_	_	det	basic	2-8	
+2-8	189-197	atsauces	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa5	atsauce	_	_	obj	basic	2-6	
+2-9	197-198	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	2-2	

@@ -1,0 +1,31 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text="Re, mans bēris!
+1-1	0-1	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	_	_	punct	basic	1-5	
+1-2	1-3	Re	_	_	_	_	_	_	_	_	_	_	_	_	i	re	_	_	discourse	basic	1-5	
+1-3	3-4	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-2	
+1-4	5-9	mans	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0msnn	mans	*[1]	*->1-1	det	basic	1-5	
+1-5	10-15	bēris	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	bēris	*[1]	*->1-1	root	basic	1-5	
+1-6	15-16	!	_	_	_	_	_	_	_	_	_	_	_	_	zs	!	_	_	punct	basic	1-5	
+
+#Text=Tam pilnas ausis dainu un zobi cauri teikām!
+2-1	18-21	Tam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msdn	tas	*[1]	*->1-2	obl	basic	2-3	
+2-2	22-28	pilnas	Fem	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpnnp	pilna	_	_	amod	basic	2-3	
+2-3	29-34	ausis	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn6	auss	_	_	root	basic	2-3	
+2-4	35-40	dainu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	daina	_	_	orphan	basic	2-3	
+2-5	41-43	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	cc	basic	2-7	
+2-6	44-48	zobi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	zobs	_	_	nsubj	basic	2-7	
+2-7	49-54	cauri	Masc	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnnp	cauri	_	_	conj	basic	2-3	
+2-8	55-61	teikām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	teika	_	_	iobj	basic	2-7	
+2-9	61-62	!	_	_	_	_	_	_	_	_	_	_	_	_	zs	!	_	_	punct	basic	2-3	
+
+#Text=Ha-ha-ha!"
+3-1	64-72	Ha-ha-ha	_	_	_	_	_	_	_	_	_	_	_	_	i	ha-ha-ha	_	_	root	basic	3-1	
+3-2	72-73	!	_	_	_	_	_	_	_	_	_	_	_	_	zs	!	_	_	punct	basic	3-1	
+3-3	73-74	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	_	_	punct	basic	3-1	

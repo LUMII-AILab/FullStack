@@ -1,0 +1,61 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Būda skatījās... uz mani?
+1-1	0-4	Būda	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	būda	_	_	nsubj	basic	1-2	
+1-2	5-13	skatījās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi330an	skatīties	_	_	root	basic	1-2	
+1-3	13-16	...	_	_	_	_	_	_	_	_	_	_	_	_	zs	...	_	_	punct	basic	1-2	
+1-4	17-19	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsa	uz	_	_	case	basic	1-5	
+1-5	20-24	mani	*	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10san	es	*[1]	*->1-1	iobj	basic	1-2	
+1-6	24-25	?	_	_	_	_	_	_	_	_	_	_	_	_	zs	?	_	_	punct	basic	1-2	
+
+#Text=Nē, uz meiteni pie blakus galdiņa, un es acumirklī sajutu spriedzi starp abiem - tādu kā stīgu uz satrūkšanas robežas, kā magnētisku lauku, kas divus ķermeņus ar noteiktu masu notur uz vietas, neļaujot ne attālināties, ne tuvoties.
+2-1	27-29	Nē	_	_	_	_	_	_	_	_	_	_	_	_	q	nē	_	_	discourse	basic	2-4	
+2-2	29-30	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	2-1	
+2-3	31-33	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsa	uz	_	_	case	basic	2-4	
+2-4	34-41	meiteni	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	meitene	_	_	root	basic	2-4	
+2-5	42-45	pie	_	_	_	_	_	_	_	_	_	_	_	_	spsg	pie	_	_	case	basic	2-7	
+2-6	46-52	blakus	_	_	_	_	_	_	_	_	_	_	_	_	r0p	blakus	_	_	advmod	basic	2-7	
+2-7	53-60	galdiņa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	galdiņš	_	_	nmod	basic	2-4	
+2-8	60-61	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	2-12	
+2-9	62-64	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	cc	basic	2-12	
+2-10	65-67	es	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10snn	es	*[1]	*->1-2	nsubj	basic	2-12	
+2-11	68-77	acumirklī	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	acumirklis	_	_	obl	basic	2-12	
+2-12	78-84	sajutu	*	Sing	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	1	*	vmnist11san	sajust	_	_	conj	basic	2-4	
+2-13	85-93	spriedzi	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	spriedze	_	_	obj	basic	2-12	
+2-14	94-99	starp	_	_	_	_	_	_	_	_	_	_	_	_	sppd	starp	_	_	case	basic	2-15	
+2-15	100-105	abiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|PronType=Tot	*	*	pg0mpdn	abi	_	_	obl	basic	2-12	
+2-16	106-107	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	punct	basic	2-19	
+2-17	108-112	tādu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsan	tāda	_	_	det	basic	2-19	
+2-18	113-115	kā	_	_	_	_	_	_	_	_	_	_	_	_	cs	kā	_	_	fixed	basic	2-17	
+2-19	116-121	stīgu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	stīga	_	_	acl	basic	2-13	
+2-20	122-124	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsg	uz	_	_	case	basic	2-22	
+2-21	125-136	satrūkšanas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	satrūkšana	_	_	nmod	basic	2-22	
+2-22	137-144	robežas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	robeža	_	_	nmod	basic	2-19	
+2-23	144-145	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	2-26	
+2-24	146-148	kā	_	_	_	_	_	_	_	_	_	_	_	_	cs	kā	_	_	mark	basic	2-26	
+2-25	149-159	magnētisku	Masc	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsanp	magnētisks	_	_	amod	basic	2-26	
+2-26	160-165	lauku	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	lauks	*[2]	*->2-1	conj	basic	2-19	
+2-27	165-166	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	2-34	
+2-28	167-170	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	*[2]	*->2-2	nsubj	basic	2-34	
+2-29	171-176	divus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpa	divi	_	_	nummod	basic	2-30	
+2-30	177-185	ķermeņus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa2	ķermenis	_	_	obj	basic	2-34	
+2-31	186-188	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	case	basic	2-33	
+2-32	189-197	noteiktu	Fem	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsanp	noteikta	_	_	amod	basic	2-33	
+2-33	198-202	masu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	masa	_	_	nmod	basic	2-30	
+2-34	203-208	notur	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipi330an	noturēt	_	_	acl	basic	2-26	
+2-35	209-211	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsg	uz	_	_	case	basic	2-36	
+2-36	212-218	vietas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	vieta	_	_	obl	basic	2-34	
+2-37	218-219	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	2-38	
+2-38	220-228	neļaujot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000y	neļaut	_	_	advcl	basic	2-34	
+2-39	229-231	ne	_	_	_	_	_	_	_	_	_	_	_	_	cc	ne	_	_	cc	basic	2-40	
+2-40	232-244	attālināties	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i3000n	attālināties	_	_	ccomp	basic	2-38	
+2-41	244-245	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	2-43	
+2-42	246-248	ne	_	_	_	_	_	_	_	_	_	_	_	_	cc	ne	_	_	cc	basic	2-43	
+2-43	249-257	tuvoties	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i2000n	tuvoties	_	_	conj	basic	2-40	
+2-44	257-258	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	2-4	

@@ -1,0 +1,50 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=EMĪLS.
+1-1	0-5	EMĪLS	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Emīls	person	*	root	basic	1-1	
+1-2	5-6	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	1-1	
+
+#Text=Tas nav forši, Armand!
+2-1	8-11	Tas	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	tas	_	_	nsubj	basic	2-3	
+2-2	12-15	nav	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30ay	nebūt	_	_	cop	basic	2-3	
+2-3	16-21	forši	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	forši	_	_	root	basic	2-3	
+2-4	21-22	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	2-5	
+2-5	23-29	Armand	Masc	Sing	Voc	*	*	*	*	*	*	Case=Voc\|Gender=Masc\|Number=Sing	*	*	npmsv1	Armand	person	*	vocative	basic	2-3	
+2-6	29-30	!	_	_	_	_	_	_	_	_	_	_	_	_	zs	!	_	_	punct	basic	2-3	
+
+#Text=Ne par mata tiesu labāk, kā kokā kāpjošs Balvis.
+3-1	32-34	Ne	_	_	_	_	_	_	_	_	_	_	_	_	q	ne	_	_	discourse	basic	3-5	
+3-2	35-38	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	case	basic	3-4	
+3-3	39-43	mata	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	mats	_	_	nmod	basic	3-4	
+3-4	44-49	tiesu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	tiesa	_	_	obl	basic	3-5	
+3-5	50-55	labāk	*	*	*	Cmp	*	*	*	*	*	Degree=Cmp	*	*	rcq	labi	_	_	root	basic	3-5	
+3-6	55-56	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	3-10	
+3-7	57-59	kā	_	_	_	_	_	_	_	_	_	_	_	_	cs	kā	_	_	mark	basic	3-10	
+3-8	60-64	kokā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	koks	_	_	acl	basic	3-9	
+3-9	65-72	kāpjošs	Masc	Sing	Nom	Pos	*	Pres	*	Pass	*	Aspect=Imp\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Imp	vmnpdmsnapnpn	kāpt	_	_	amod	basic	3-10	
+3-10	73-79	Balvis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	Balvis	person	*	acl	basic	3-5	
+3-11	79-80	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	3-5	
+
+#Text=Viens kāpj kokā, otrs muld, kas ienāk prātā.
+4-1	82-87	Viens	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|NumType=Card	*	*	mcsmsn	viens	_	_	nsubj	basic	4-2	
+4-2	88-92	kāpj	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt130an	kāpt	_	_	root	basic	4-2	
+4-3	93-97	kokā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	koks	_	_	obl	basic	4-2	
+4-4	97-98	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	4-6	
+4-5	99-103	otrs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|NumType=Card	*	*	mcsmsn	otrs	_	_	nsubj	basic	4-6	
+4-6	104-108	muld	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	muldēt	_	_	conj	basic	4-2	
+4-7	108-109	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	4-9	
+4-8	110-113	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	nsubj	basic	4-9	
+4-9	114-119	ienāk	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipi130an	ienākt	_	_	ccomp	basic	4-6	
+4-10	120-125	prātā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	prāts	_	_	obl	basic	4-9	
+4-11	125-126	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	4-2	
+
+#Text=Nu un?
+5-1	128-130	Nu	_	_	_	_	_	_	_	_	_	_	_	_	q	nu	_	_	discourse	basic	5-2	
+5-2	131-133	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	root	basic	5-2	
+5-3	133-134	?	_	_	_	_	_	_	_	_	_	_	_	_	zs	?	_	_	punct	basic	5-2	

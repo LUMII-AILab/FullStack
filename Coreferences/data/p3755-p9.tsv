@@ -1,0 +1,60 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Divus gadus darbojos vienā no Vidzemes lielākajiem satiksmes nozares uzņēmumiem -SIA "VTU Valmiera"pildot valdes locekļa pienākumus.
+1-1	0-5	Divus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpa	divi	time[1]	*[1]	nummod	basic	1-2	
+1-2	6-11	gadus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	gads	time[1]	*[1]	obl	basic	1-3	
+1-3	12-20	darbojos	*	Sing	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	1	*	vmyisi21san	darboties	_	_	root	basic	1-3	
+1-4	21-26	vienā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing\|NumType=Card	*	*	mcsmsl	viena	_	_	nummod	basic	1-3	
+1-5	27-29	no	_	_	_	_	_	_	_	_	_	_	_	_	sppd	no	_	_	case	basic	1-10	
+1-6	30-38	Vidzemes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	Vidzeme	location	*	nmod	basic	1-10	
+1-7	39-50	lielākajiem	Masc	Plur	Dat	Cmp	*	*	*	*	*	Case=Dat\|Degree=Cmp\|Gender=Masc\|Number=Plur	*	*	afmpdyc	liels	_	_	amod	basic	1-10	
+1-8	51-60	satiksmes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	satiksme	_	_	nmod	basic	1-9	
+1-9	61-68	nozares	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	nozare	_	_	nmod	basic	1-10	
+1-10	69-79	uzņēmumiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	uzņēmums	_	_	compound	basic	1-4	
+1-11	80-81	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	punct	basic	1-17	
+1-12	81-84	SIA	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	SIA	organization[2]	*[2]	nmod	basic	1-14	
+1-13	85-86	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[2]	*[2]	punct	basic	1-14	
+1-14	86-89	VTU	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	VTU	organization[2]	*[2]	obl	basic	1-17	
+1-15	90-98	Valmiera	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Valmiera	organization[2]	*[2]	flat:name	basic	1-14	
+1-16	98-99	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[2]	*[2]	punct	basic	1-14	
+1-17	99-105	pildot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000	pildīt	_	_	advcl	basic	1-3	
+1-18	106-112	valdes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	valde	_	_	nmod	basic	1-19	
+1-19	113-120	locekļa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	loceklis	_	_	nmod	basic	1-20	
+1-20	121-131	pienākumus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	pienākums	_	_	obj	basic	1-17	
+1-21	131-132	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	1-3	
+
+#Text=Šajā laika posmā uzņēmums veiksmīgi attīstījās - 2010. gads tika noslēgts ar ļoti labiem peļņas rādītājiem, kādi iepriekš uzņēmumam laika periodā līdz 2010. gadam nebija konstatēti.
+2-1	134-138	Šajā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msln	šis	time[3]	*[3]	det	basic	2-3	
+2-2	139-144	laika	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	laiks	time[3]	*[3]	nmod	basic	2-3	
+2-3	145-150	posmā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	posms	time[3]	*[3]	obl	basic	2-6	
+2-4	151-159	uzņēmums	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	uzņēmums	_	_	nsubj	basic	2-6	
+2-5	160-169	veiksmīgi	_	_	_	_	_	_	_	_	_	_	_	_	r0c	veiksmīgi	_	_	advmod	basic	2-6	
+2-6	170-180	attīstījās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi330an	attīstīties	_	_	root	basic	2-6	
+2-7	181-182	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	punct	basic	2-11	
+2-8	183-188	2010.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	2010.	time[4]	*[4]	amod	basic	2-9	
+2-9	189-193	gads	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	gads	time[4]	*[4]	nsubj:pass	basic	2-11	
+2-10	194-198	tika	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vtnisi130an	tikt	_	_	aux	basic	2-11	
+2-11	199-207	noslēgts	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnp	noslēgt	_	_	conj	basic	2-6	
+2-12	208-210	ar	_	_	_	_	_	_	_	_	_	_	_	_	sppd	ar	_	_	case	basic	2-16	
+2-13	211-215	ļoti	_	_	_	_	_	_	_	_	_	_	_	_	r0q	ļoti	_	_	advmod	basic	2-14	
+2-14	216-222	labiem	Masc	Plur	Dat	Pos	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpdnp	labs	_	_	amod	basic	2-16	
+2-15	223-229	peļņas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	peļņa	_	_	nmod	basic	2-16	
+2-16	230-240	rādītājiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	rādītājs	_	_	iobj	basic	2-11	
+2-17	240-241	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	2-27	
+2-18	242-246	kādi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Rel	*	*	pr0mpnn	kāds	_	_	nsubj:pass	basic	2-27	
+2-19	247-255	iepriekš	_	_	_	_	_	_	_	_	_	_	_	_	r0t	iepriekš	_	_	advmod	basic	2-27	
+2-20	256-265	uzņēmumam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	uzņēmums	_	_	iobj	basic	2-27	
+2-21	266-271	laika	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	laiks	_	_	nmod	basic	2-22	
+2-22	272-279	periodā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	periods	_	_	obl	basic	2-27	
+2-23	280-284	līdz	_	_	_	_	_	_	_	_	_	_	_	_	spsd	līdz	time[5]	*[5]	case	basic	2-25	
+2-24	285-290	2010.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	2010.	time[5]	*[5]	amod	basic	2-25	
+2-25	291-296	gadam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	gads	time[5]	*[5]	nmod	basic	2-22	
+2-26	297-303	nebija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vcnisii30ay	nebūt	_	_	aux	basic	2-27	
+2-27	304-314	konstatēti	Masc	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpnpsnp	konstatēt	_	_	acl	basic	2-16	
+2-28	314-315	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	2-6	

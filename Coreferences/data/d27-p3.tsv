@@ -1,0 +1,76 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Zeltaina gaisma krīt caur loga vitrāžām.
+1-1	0-8	Zeltaina	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsnnp	zeltaina	_	_	_	_	amod	basic	1-2	
+1-2	9-15	gaisma	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	gaisma	_	_	_	_	nsubj	basic	1-3	
+1-3	16-20	krīt	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipi130an	krist	_	_	_	_	root	basic	1-3	
+1-4	21-25	caur	_	_	_	_	_	_	_	_	_	_	_	_	sppd	caur	_	_	_	_	case	basic	1-6	
+1-5	26-30	loga	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	logs	_	_	_	_	nmod	basic	1-6	
+1-6	31-39	vitrāžām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	vitrāža	_	_	_	_	obl	basic	1-3	
+1-7	39-40	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-3	
+
+#Text=Sapnī es turēju bērnu, piespiestu sev pie krūtīm.
+2-1	42-47	Sapnī	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	sapnis	_	_	_	_	obl	basic	2-3	
+2-2	48-50	es	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10snn	es	_	_	*[1]	*->1-1	nsubj	basic	2-3	
+2-3	51-57	turēju	*	Sing	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	1	*	vmnist31san	turēt	_	_	_	_	root	basic	2-3	
+2-4	58-63	bērnu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	bērns	_	_	_	_	obj	basic	2-3	
+2-5	63-64	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-6	
+2-6	65-75	piespiestu	Masc	Sing	Acc	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Acc\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsapsnpn	piespiest	_	_	_	_	acl	basic	2-4	
+2-7	76-79	sev	*	*	Dat	*	*	*	*	*	*	Case=Dat\|PronType=Rcp\|Reflex=Yes	*	*	px000dn	sevis	_	_	*[1]	*->1-2	iobj	basic	2-6	
+2-8	80-83	pie	_	_	_	_	_	_	_	_	_	_	_	_	sppd	pie	_	_	_	_	case	basic	2-9	
+2-9	84-90	krūtīm	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd6	krūts	_	_	_	_	obl	basic	2-6	
+2-10	90-91	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-3	
+
+#Text=Pamodusies redzu: siltā injekciju čūska nesāpīgi ievada manī šīsdienas zāļu un vitamīnu devu.
+3-1	93-103	Pamodusies	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	Perf	vmypdfsnasnpn	pamosties	_	_	_	_	acl	basic	3-2	
+3-2	104-109	redzu	*	Sing	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	1	*	vmnipt31san	redzēt	_	_	_	_	root	basic	3-2	
+3-3	109-110	:	_	_	_	_	_	_	_	_	_	_	_	_	zo	:	_	_	_	_	punct	basic	3-8	
+3-4	111-116	siltā	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnyp	silta	_	_	_	_	amod	basic	3-6	
+3-5	117-126	injekciju	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	injekcija	_	_	_	_	nmod	basic	3-6	
+3-6	127-132	čūska	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	čūska	_	_	_	_	nsubj	basic	3-8	
+3-7	133-141	nesāpīgi	*	*	*	*	*	*	*	*	*	PronType=Neg	*	*	r0m	nesāpīgi	_	_	_	_	advmod	basic	3-8	
+3-8	142-148	ievada	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	ievadīt	_	_	_	_	ccomp	basic	3-2	
+3-9	149-153	manī	*	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10sln	es	_	_	*[1]	*->1-3	obl	basic	3-8	
+3-10	154-163	šīsdienas	*	*	Gen	*	*	*	*	*	*	Case=Gen	*	*	nc00gg	šīsdienas	_	_	_	_	nmod	basic	3-14	
+3-11	164-168	zāļu	Fem	Ptan	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Ptan	*	*	ncfdg5	zāles	_	_	_	_	nmod	basic	3-14	
+3-12	169-171	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	3-13	
+3-13	172-180	vitamīnu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	vitamīns	_	_	_	_	conj	basic	3-11	
+3-14	181-185	devu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	deva	_	_	_	_	obj	basic	3-8	
+3-15	185-186	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-2	
+
+#Text=Mani pamodinājis Patrīcijas zvans.
+4-1	188-192	Mani	*	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10san	es	_	_	*[1]	*->1-4	obj	basic	4-2	
+4-2	193-204	pamodinājis	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnasnpn	pamodināt	_	_	_	_	root	basic	4-2	
+4-3	205-215	Patrīcijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Patrīcija	person	*	_	_	nmod	basic	4-4	
+4-4	216-221	zvans	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	zvans	_	_	_	_	nsubj	basic	4-2	
+4-5	221-222	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	4-2	
+
+#Text=Paskatos spogulī pie istabas griestiem man ir mierīga vecas sievietes seja.
+5-1	224-232	Paskatos	*	Sing	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	1	*	vmyipi31san	paskatīties	_	_	_	_	root	basic	5-1	
+5-2	233-240	spogulī	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	spogulis	_	_	_	_	obl	basic	5-1	
+5-3	241-244	pie	_	_	_	_	_	_	_	_	_	_	_	_	sppd	pie	_	_	_	_	case	basic	5-5	
+5-4	245-252	istabas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	istaba	_	_	_	_	nmod	basic	5-5	
+5-5	253-262	griestiem	Masc	Ptan	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Ptan	*	*	ncmdd1	griesti	_	_	_	_	nmod	basic	5-2	
+5-6	263-266	man	*	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10sdn	es	_	_	*[1]	*->1-5	obl	basic	5-7	
+5-7	267-269	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipii30an	būt	_	_	_	_	conj	basic	5-1	
+5-8	270-277	mierīga	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	mierīga	_	_	_	_	amod	basic	5-11	
+5-9	278-283	vecas	Fem	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsgnp	veca	_	_	_	_	amod	basic	5-10	
+5-10	284-293	sievietes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	sieviete	_	_	_	_	nmod	basic	5-11	
+5-11	294-298	seja	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	seja	_	_	_	_	nsubj	basic	5-7	
+5-12	298-299	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	5-1	
+
+#Text=Sirmie mati izjukuši uz tumšzilā spilvena.
+6-1	301-307	Sirmie	Masc	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnyp	sirms	_	_	_	_	amod	basic	6-2	
+6-2	308-312	mati	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	mats	_	_	_	_	nsubj	basic	6-3	
+6-3	313-321	izjukuši	Masc	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpnasnpn	izjukt	_	_	_	_	root	basic	6-3	
+6-4	322-324	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsg	uz	_	_	_	_	case	basic	6-6	
+6-5	325-333	tumšzilā	Masc	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsgyp	tumšzils	_	_	_	_	amod	basic	6-6	
+6-6	334-342	spilvena	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	spilvens	_	_	_	_	obl	basic	6-3	
+6-7	342-343	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	6-3	

@@ -1,0 +1,38 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Rīga, 27.febr., LETA.
+1-1	0-4	Rīga	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Rīga	GPE	*	_	_	root	basic	1-1	
+1-2	4-5	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-4	
+1-3	6-9	27.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	27.	time[1]	*[1]	_	_	amod	basic	1-4	
+1-4	9-14	febr.	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	febr.	time[1]	*[1]	_	_	parataxis	basic	1-1	
+1-5	14-15	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-6	
+1-6	16-20	LETA	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	LETA	organization	*	*[2]	*->2-1	parataxis	basic	1-1	
+1-7	20-21	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-1	
+
+#Text=Trešdienas vakarā 79 gadu vecumā mūžībā aizgājis tautā mīlētais dzejnieks Imants Ziedonis, aģentūrai LETA apstiprināja Kultūras ministrijā.
+2-1	23-33	Trešdienas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	trešdiena	time[2]	*[2]	_	_	nmod	basic	2-2	
+2-2	34-40	vakarā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	vakars	time[2]	*[2]	_	_	obl	basic	2-7	
+2-3	41-43	79	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	79	_	_	_	_	nummod	basic	2-4	
+2-4	44-48	gadu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	gads	_	_	_	_	nmod	basic	2-5	
+2-5	49-55	vecumā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	vecums	_	_	_	_	obl	basic	2-7	
+2-6	56-62	mūžībā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	mūžība	_	_	_	_	obl	basic	2-7	
+2-7	63-71	aizgājis	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnasnp	aiziet	_	_	_	_	ccomp	basic	2-16	
+2-8	72-77	tautā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	tauta	_	_	_	_	obl	basic	2-9	
+2-9	78-86	mīlētais	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsyp	mīlēt	_	_	_	_	amod	basic	2-10	
+2-10	87-96	dzejnieks	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	dzejnieks	_	_	*[1]	*->1-1	nmod	basic	2-11	
+2-11	97-103	Imants	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Imants	person[3]	*[3]	*[1]	*->1-2	nsubj	basic	2-7	
+2-12	104-112	Ziedonis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	Ziedonis	person[3]	*[3]	*[1]	*->1-2	flat:name	basic	2-11	
+2-13	112-113	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-7	
+2-14	114-123	aģentūrai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	aģentūra	_	_	*[2]	*->2-2	nmod	basic	2-15	
+2-15	124-128	LETA	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Leta	organization	*	*[2]	*->2-3	obj	basic	2-16	
+2-16	129-141	apstiprināja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	apstiprināt	_	_	_	_	root	basic	2-16	
+2-17	142-150	Kultūras	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	kultūra	organization[4]	*[4]	_	_	nmod	basic	2-18	
+2-18	151-161	ministrijā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	ministrija	organization[4]	*[4]	_	_	obl	basic	2-16	
+2-19	161-162	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-16	

@@ -1,0 +1,64 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Izrāde ir galā, drīz kritīs priekškars.
+1-1	0-6	Izrāde	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	izrāde	_	_	_	_	nsubj	basic	1-3	
+1-2	7-9	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	cop	basic	1-3	
+1-3	10-14	galā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	gals	_	_	_	_	root	basic	1-3	
+1-4	14-15	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-6	
+1-5	16-20	drīz	_	_	_	_	_	_	_	_	_	_	_	_	r0t	drīz	_	_	_	_	advmod	basic	1-6	
+1-6	21-27	kritīs	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vmnifi130an	krist	_	_	_	_	conj	basic	1-3	
+1-7	28-38	priekškars	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	priekškars	_	_	_	_	nsubj	basic	1-6	
+1-8	38-39	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-3	
+
+#Text=Viņa nemana nedz Nelliju, kas klusi šņukst, sagumusi uz krēsla līdzās karalienes gultai, nedz Fredi, kas, taisns kā olekti norijis, pavisam baltu kabatlakatu rokās murcīdams, stāv turpat līdzās, pa brīdim pieglauzdams kā nolakotus gludos matus.
+2-1	41-45	Viņa	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsnn	viņa	_	_	_	_	nsubj	basic	2-2	
+2-2	46-52	nemana	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330ay	nemanīt	_	_	_	_	root	basic	2-2	
+2-3	53-57	nedz	_	_	_	_	_	_	_	_	_	_	_	_	cc	nedz	_	_	_	_	cc	basic	2-4	
+2-4	58-65	Nelliju	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	Nellija	person	*	*[1]	*->1-1	obj	basic	2-2	
+2-5	65-66	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-8	
+2-6	67-70	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	*[1]	*->1-2	nsubj	basic	2-8	
+2-7	71-76	klusi	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	klusi	_	_	_	_	advmod	basic	2-8	
+2-8	77-83	šņukst	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	šņukstēt	_	_	_	_	acl	basic	2-4	
+2-9	83-84	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-10	
+2-10	85-93	sagumusi	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnasnpn	sagumt	_	_	_	_	acl	basic	2-8	
+2-11	94-96	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsg	uz	_	_	_	_	case	basic	2-12	
+2-12	97-103	krēsla	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	krēsls	_	_	_	_	obl	basic	2-10	
+2-13	104-110	līdzās	_	_	_	_	_	_	_	_	_	_	_	_	rrp	līdzās	_	_	_	_	case	basic	2-15	
+2-14	111-121	karalienes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	karaliene	_	_	_	_	nmod	basic	2-15	
+2-15	122-128	gultai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	gulta	_	_	_	_	obl	basic	2-12	
+2-16	128-129	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-18	
+2-17	130-134	nedz	_	_	_	_	_	_	_	_	_	_	_	_	cc	nedz	_	_	_	_	cc	basic	2-18	
+2-18	135-140	Fredi	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa2	Fredis	person	*	*[2]	*->2-1	conj	basic	2-4	
+2-19	140-141	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-33	
+2-20	142-145	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	*[2]	*->2-2	nsubj	basic	2-33	
+2-21	145-146	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-22	
+2-22	147-153	taisns	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	taisns	_	_	_	_	acl	basic	2-20	
+2-23	154-156	kā	_	_	_	_	_	_	_	_	_	_	_	_	cs	kā	_	_	_	_	case	basic	2-25	
+2-24	157-163	olekti	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa6	olekts	_	_	_	_	obj	basic	2-25	
+2-25	164-171	norijis	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnasnpn	norīt	_	_	_	_	obl	basic	2-22	
+2-26	171-172	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-31	
+2-27	173-180	pavisam	_	_	_	_	_	_	_	_	_	_	_	_	r0q	pavisam	_	_	_	_	advmod	basic	2-28	
+2-28	181-186	baltu	Masc	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsanp	balts	_	_	_	_	amod	basic	2-29	
+2-29	187-198	kabatlakatu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	kabatlakats	_	_	_	_	iobj	basic	2-31	
+2-30	199-204	rokās	Fem	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	roka	_	_	_	_	obl	basic	2-31	
+2-31	205-214	murcīdams	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|VerbForm=Conv	*	*	vmnppmsn0000n	murcīt	_	_	_	_	acl	basic	2-33	
+2-32	214-215	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-31	
+2-33	216-220	stāv	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	stāvēt	_	_	_	_	acl	basic	2-18	
+2-34	221-227	turpat	_	_	_	_	_	_	_	_	_	_	_	_	r0p	turpat	_	_	_	_	advmod	basic	2-33	
+2-35	228-234	līdzās	_	_	_	_	_	_	_	_	_	_	_	_	rrp	līdzās	_	_	_	_	advmod	basic	2-33	
+2-36	234-235	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-39	
+2-37	236-238	pa	_	_	_	_	_	_	_	_	_	_	_	_	spsd	pa	_	_	_	_	case	basic	2-38	
+2-38	239-245	brīdim	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd2	brīdis	_	_	_	_	obl	basic	2-39	
+2-39	246-258	pieglauzdams	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|VerbForm=Conv	*	*	vmnppmsn0000n	pieglaust	_	_	_	_	acl	basic	2-33	
+2-40	259-261	kā	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0m	kā	_	_	_	_	case	basic	2-41	
+2-41	262-271	nolakotus	Masc	Plur	Acc	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Acc\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpapsnpn	nolakot	_	_	_	_	obl	basic	2-42	
+2-42	272-278	gludos	Masc	Plur	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpayp	gluds	_	_	_	_	amod	basic	2-43	
+2-43	279-284	matus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	mats	_	_	_	_	obj	basic	2-39	
+2-44	284-285	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-2	

@@ -1,0 +1,29 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=- Vai varu apsēsties pie tava galdiņa? - es jautāju.
+1-1	0-1	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	punct	basic	1-3	
+1-2	2-5	Vai	_	_	_	_	_	_	_	_	_	_	_	_	q	vai	_	_	discourse	basic	1-3	
+1-3	6-10	varu	*	Sing	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	1	*	vonipt31san	varēt	_	_	parataxis	basic	1-11	
+1-4	11-20	apsēsties	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0t1000n	apsēsties	_	_	xcomp	basic	1-3	
+1-5	21-24	pie	_	_	_	_	_	_	_	_	_	_	_	_	spsg	pie	_	_	case	basic	1-7	
+1-6	25-29	tava	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0msgn	tavs	*[1]	*->1-1	det	basic	1-7	
+1-7	30-37	galdiņa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	galdiņš	_	_	obl	basic	1-3	
+1-8	37-38	?	_	_	_	_	_	_	_	_	_	_	_	_	zs	?	_	_	punct	basic	1-3	
+1-9	39-40	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	punct	basic	1-3	
+1-10	41-43	es	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10snn	es	*[2]	*->2-1	nsubj	basic	1-11	
+1-11	44-51	jautāju	*	Sing	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	1	*	vmnist21san	jautāt	_	_	root	basic	1-11	
+1-12	51-52	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	1-11	
+
+#Text=Meitene palūrēja uz mani neuzticīgi.
+2-1	54-61	Meitene	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	meitene	*[1]	*->1-2	nsubj	basic	2-2	
+2-2	62-70	palūrēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi330an	palūrēt	_	_	root	basic	2-2	
+2-3	71-73	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsa	uz	_	_	case	basic	2-4	
+2-4	74-78	mani	*	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10san	es	*[2]	*->2-2	obl	basic	2-2	
+2-5	79-89	neuzticīgi	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	neuzticīgi	_	_	advmod	basic	2-2	
+2-6	89-90	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	2-2	

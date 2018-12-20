@@ -1,0 +1,58 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Skolēnu sniegumu vērtēja kompetenta žūrija: Saeimas un Valsts prezidenta drošības dienesta majors Gunārs Rusiņš, NBS apvienotā štāba priekšnieka padomnieks rezerves leitnants Ēriks Priedītis, Nacionālās Aizsardzības akadēmijas sporta katedras pasniedzējs majors Juris Baldiņš, Skrīveru pagasta padomes priekšsēdētāja Gunta Lisenko un sporta skolotājs Andris Eģītis.
+1-1	0-7	Skolēnu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	skolēns	_	_	_	_	nmod	basic	1-2	
+1-2	8-16	sniegumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	sniegums	_	_	_	_	obj	basic	1-3	
+1-3	17-24	vērtēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist230an	vērtēt	_	_	_	_	root	basic	1-3	
+1-4	25-35	kompetenta	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	kompetenta	_	_	_	_	amod	basic	1-5	
+1-5	36-42	žūrija	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	žūrija	_	_	_	_	nsubj	basic	1-3	
+1-6	42-43	:	_	_	_	_	_	_	_	_	_	_	_	_	zo	:	_	_	_	_	punct	basic	1-14	
+1-7	44-51	Saeimas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Saeima	organization	*	*[1]	*->1-1	nmod	basic	1-12	
+1-8	52-54	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	*[1]	*->1-1	cc	basic	1-10	
+1-9	55-61	Valsts	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	valsts	organization[1]	*[1]	*[1]	*->1-1	nmod	basic	1-10	
+1-10	62-72	prezidenta	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	prezidents	organization[1]	*[1]	*[1]	*->1-1	conj	basic	1-7	
+1-11	73-81	drošības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	drošība	organization[1]	*[1]	*[1]	*->1-1	nmod	basic	1-12	
+1-12	82-90	dienesta	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	dienests	organization[1]	*[1]	*[1]	*->1-1	nmod	basic	1-13	
+1-13	91-97	majors	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	majors	_	_	*[1]	*->1-1	nmod	basic	1-14	
+1-14	98-104	Gunārs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Gunārs	person[2]	*[2]	*[1]	*->1-2	acl	basic	1-5	
+1-15	105-111	Rusiņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Rusiņš	person[2]	*[2]	*[1]	*->1-2	flat:name	basic	1-14	
+1-16	111-112	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-14	
+1-17	113-116	NBS	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	NBS	organization[3]|organization[4]	*[3]|*[4]	*[2]	*->2-1	nmod	basic	1-19	
+1-18	117-126	apvienotā	Masc	Sing	Gen	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsgpsypn	apvienot	organization[3]	*[3]	*[2]	*->2-1	amod	basic	1-19	
+1-19	127-132	štāba	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	štābs	organization[3]	*[3]	*[2]	*->2-1	nmod	basic	1-20	
+1-20	133-144	priekšnieka	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	priekšnieks	_	_	*[2]	*->2-1	nmod	basic	1-21	
+1-21	145-155	padomnieks	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	padomnieks	_	_	*[2]	*->2-1	nmod	basic	1-24	
+1-22	156-164	rezerves	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	rezerve	_	_	*[2]	*->2-1	nmod	basic	1-23	
+1-23	165-174	leitnants	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	leitnants	_	_	*[2]	*->2-1	compound	basic	1-21	
+1-24	175-180	Ēriks	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Ēriks	person[5]	*[5]	*[2]	*->2-2	conj	basic	1-14	
+1-25	181-190	Priedītis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	Priedītis	person[5]	*[5]	*[2]	*->2-2	flat:name	basic	1-24	
+1-26	190-191	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-34	
+1-27	192-202	Nacionālās	Fem	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsgyp	nacionāla	organization[6]|organization[7]	*[6]|*[7]	*[3]	*->3-1	amod	basic	1-29	
+1-28	203-215	Aizsardzības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	aizsardzība	organization[6]|organization[7]	*[6]|*[7]	*[3]	*->3-1	nmod	basic	1-29	
+1-29	216-226	akadēmijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	akadēmija	organization[6]|organization[7]	*[6]|*[7]	*[3]	*->3-1	nmod	basic	1-31	
+1-30	227-233	sporta	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	sports	organization[6]	*[6]	*[3]	*->3-1	nmod	basic	1-31	
+1-31	234-242	katedras	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	katedra	organization[6]	*[6]	*[3]	*->3-1	nmod	basic	1-32	
+1-32	243-254	pasniedzējs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	pasniedzējs	_	_	*[3]	*->3-1	nmod	basic	1-34	
+1-33	255-261	majors	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	majors	_	_	*[3]	*->3-1	compound	basic	1-32	
+1-34	262-267	Juris	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	Juris	person[8]	*[8]	*[3]	*->3-2	conj	basic	1-14	
+1-35	268-275	Baldiņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Baldiņš	person[8]	*[8]	*[3]	*->3-2	flat:name	basic	1-34	
+1-36	275-276	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-41	
+1-37	277-285	Skrīveru	Masc	Ptan	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	npmdg2	Skrīveri	organization[9]|GPE[10]|GPE[11]	*[9]|*[10]|*[11]	*[4]	*->4-1	nmod	basic	1-38	
+1-38	286-293	pagasta	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	pagasts	organization[9]|GPE[10]	*[9]|*[10]	*[4]	*->4-1	nmod	basic	1-39	
+1-39	294-301	padomes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	padome	organization[9]	*[9]	*[4]	*->4-1	nmod	basic	1-40	
+1-40	302-316	priekšsēdētāja	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	priekšsēdētāja	_	_	*[4]	*->4-1	nmod	basic	1-41	
+1-41	317-322	Gunta	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Gunta	person[12]	*[12]	*[4]	*->4-2	conj	basic	1-14	
+1-42	323-330	Lisenko	_	_	_	_	_	_	_	_	_	_	_	_	np0000	Lisenko	person[12]	*[12]	*[4]	*->4-2	flat:name	basic	1-41	
+1-43	331-333	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-46	
+1-44	334-340	sporta	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	sports	_	_	*[5]	*->5-1	nmod	basic	1-45	
+1-45	341-350	skolotājs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	skolotājs	_	_	*[5]	*->5-1	nmod	basic	1-46	
+1-46	351-357	Andris	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	Andris	person[13]	*[13]	*[5]	*->5-2	conj	basic	1-14	
+1-47	358-364	Eģītis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	Eģītis	person[13]	*[13]	*[5]	*->5-2	flat:name	basic	1-46	
+1-48	364-365	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-3	

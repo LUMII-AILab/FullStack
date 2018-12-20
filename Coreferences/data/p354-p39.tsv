@@ -1,0 +1,202 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=– Nevar teikt, ka krīzi Latvijā radījusi valdība vai Latvijas Banka.
+1-1	0-1	–	_	_	_	_	_	_	_	_	_	_	_	_	zd	–	_	_	_	_	punct	basic	1-2	
+1-2	2-7	Nevar	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vonipt330ay	nevarēt	_	_	_	_	root	basic	1-2	
+1-3	8-13	teikt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	teikt	_	_	_	_	xcomp	basic	1-2	
+1-4	13-14	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-8	
+1-5	15-17	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark	basic	1-8	
+1-6	18-23	krīzi	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	krīze	_	_	*[2]	*->2-1	obj	basic	1-8	
+1-7	24-31	Latvijā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	Latvija	GPE	*	_	_	acl	basic	1-6	
+1-8	32-40	radījusi	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnasnpn	radīt	_	_	_	_	ccomp	basic	1-3	
+1-9	41-48	valdība	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	valdība	_	_	_	_	nsubj	basic	1-8	
+1-10	49-52	vai	_	_	_	_	_	_	_	_	_	_	_	_	cc	vai	_	_	_	_	cc	basic	1-12	
+1-11	53-61	Latvijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Latvija	organization[1]|GPE[2]	*[1]|*[2]	_	_	nmod	basic	1-12	
+1-12	62-67	Banka	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	banka	organization[1]	*[1]	_	_	conj	basic	1-9	
+1-13	67-68	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-2	
+
+#Text=Latvijas Banka to paredzēja un laikus brīdināja valdību, bet tā kārtējo reizi nerīkojās saimnieciski, pretinflācijas plānu ieviesa par vēlu, stipri par vēlu.
+2-1	70-78	Latvijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Latvija	organization[3]|GPE[4]	*[3]|*[4]	_	_	nmod	basic	2-2	
+2-2	79-84	Banka	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	banka	organization[3]	*[3]	_	_	nsubj	basic	2-4	
+2-3	85-87	to	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	tas	_	_	*[2]	*->2-2	obj	basic	2-4	
+2-4	88-97	paredzēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	paredzēt	_	_	_	_	root	basic	2-4	
+2-5	98-100	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	2-7	
+2-6	101-107	laikus	_	_	_	_	_	_	_	_	_	_	_	_	r0t	laikus	_	_	_	_	advmod	basic	2-7	
+2-7	108-117	brīdināja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	brīdināt	_	_	_	_	conj	basic	2-4	
+2-8	118-125	valdību	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	valdība	_	_	*[1]	*->1-1	obj	basic	2-7	
+2-9	125-126	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-14	
+2-10	127-130	bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	_	_	cc	basic	2-14	
+2-11	131-133	tā	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsnn	tā	_	_	*[1]	*->1-2	nsubj	basic	2-14	
+2-12	134-141	kārtējo	Fem	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsayp	kārtēja	_	_	_	_	amod	basic	2-13	
+2-13	142-147	reizi	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	reize	_	_	_	_	obl	basic	2-14	
+2-14	148-157	nerīkojās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi230ay	nerīkoties	_	_	_	_	conj	basic	2-4	
+2-15	158-170	saimnieciski	_	_	_	_	_	_	_	_	_	_	_	_	r0m	saimnieciski	_	_	_	_	advmod	basic	2-14	
+2-16	170-171	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-19	
+2-17	172-186	pretinflācijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsgg	pretinflācijas	_	_	_	_	nmod	basic	2-18	
+2-18	187-192	plānu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	plāns	_	_	_	_	obj	basic	2-19	
+2-19	193-200	ieviesa	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	ieviest	_	_	_	_	conj	basic	2-14	
+2-20	201-204	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	_	_	case	basic	2-21	
+2-21	205-209	vēlu	_	_	_	_	_	_	_	_	_	_	_	_	r0t	vēlu	_	_	_	_	advmod	basic	2-19	
+2-22	209-210	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-25	
+2-23	211-217	stipri	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpq	stipri	_	_	_	_	advmod	basic	2-25	
+2-24	218-221	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	_	_	case	basic	2-25	
+2-25	222-226	vēlu	_	_	_	_	_	_	_	_	_	_	_	_	r0t	vēlu	_	_	_	_	conj	basic	2-21	
+2-26	226-227	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-4	
+
+#Text=Tādējādi var teikt, ka tā ir veicinājusi krīzi.
+3-1	229-237	Tādējādi	_	_	_	_	_	_	_	_	_	_	_	_	r0m	tādējādi	_	_	_	_	advmod	basic	3-2	
+3-2	238-241	var	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vonipt330an	varēt	_	_	_	_	root	basic	3-2	
+3-3	242-247	teikt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	teikt	_	_	_	_	xcomp	basic	3-2	
+3-4	247-248	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-8	
+3-5	249-251	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark	basic	3-8	
+3-6	252-254	tā	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsnn	tā	_	_	*[1]	*->1-3	nsubj	basic	3-8	
+3-7	255-257	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	aux	basic	3-8	
+3-8	258-269	veicinājusi	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnasnpn	veicināt	_	_	_	_	ccomp	basic	3-3	
+3-9	270-275	krīzi	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	krīze	_	_	*[2]	*->2-3	obj	basic	3-8	
+3-10	275-276	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-2	
+
+#Text=Ietekmēt to var tikai lieli spēlētāji pasaules tirgū.
+4-1	278-286	Ietekmēt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	ietekmēt	_	_	_	_	xcomp	basic	4-3	
+4-2	287-289	to	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	tas	_	_	*[2]	*->2-4	obj	basic	4-1	
+4-3	290-293	var	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vonipt330an	varēt	_	_	_	_	root	basic	4-3	
+4-4	294-299	tikai	_	_	_	_	_	_	_	_	_	_	_	_	q	tikai	_	_	_	_	discourse	basic	4-5	
+4-5	300-305	lieli	Masc	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnnp	liels	_	_	_	_	amod	basic	4-6	
+4-6	306-315	spēlētāji	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	spēlētājs	_	_	_	_	nsubj	basic	4-3	
+4-7	316-324	pasaules	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	pasaule	_	_	_	_	nmod	basic	4-8	
+4-8	325-330	tirgū	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl3	tirgus	_	_	_	_	acl	basic	4-6	
+4-9	330-331	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	4-3	
+
+#Text=Vispirms bija daudz lētas naudas, ko komercbankas izdalīja tautai – mājokļa iegādei un spekulantiem.
+5-1	333-341	Vispirms	_	_	_	_	_	_	_	_	_	_	_	_	r0t	vispirms	_	_	_	_	advmod	basic	5-2	
+5-2	342-346	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisii30an	būt	_	_	_	_	root	basic	5-2	
+5-3	347-352	daudz	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpq	daudz	_	_	_	_	advmod	basic	5-5	
+5-4	353-358	lētas	Fem	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsgnp	lēta	_	_	*[3]	*->3-1	amod	basic	5-5	
+5-5	359-365	naudas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	nauda	_	_	*[3]	*->3-1	nsubj	basic	5-2	
+5-6	365-366	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	5-9	
+5-7	367-369	ko	*	*	Acc	*	*	*	*	*	*	Case=Acc\|PronType=Rel	*	*	pr000an	kas	_	_	*[3]	*->3-2	obj	basic	5-9	
+5-8	370-382	komercbankas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	komercbanka	_	_	_	_	nsubj	basic	5-9	
+5-9	383-391	izdalīja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi330an	izdalīt	_	_	_	_	acl	basic	5-5	
+5-10	392-398	tautai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	tauta	_	_	_	_	iobj	basic	5-9	
+5-11	399-400	–	_	_	_	_	_	_	_	_	_	_	_	_	zd	–	_	_	_	_	punct	basic	5-13	
+5-12	401-408	mājokļa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	mājoklis	_	_	_	_	nmod	basic	5-13	
+5-13	409-416	iegādei	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd5	iegāde	_	_	_	_	acl	basic	5-9	
+5-14	417-419	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	5-15	
+5-15	420-432	spekulantiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	spekulants	_	_	_	_	conj	basic	5-13	
+5-16	432-433	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	5-2	
+
+#Text=Tas stiprināja krīzes pamatakmeni.
+6-1	435-438	Tas	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	tas	_	_	_	_	nsubj	basic	6-2	
+6-2	439-449	stiprināja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	stiprināt	_	_	_	_	root	basic	6-2	
+6-3	450-456	krīzes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	krīze	_	_	*[2]	*->2-5	nmod	basic	6-4	
+6-4	457-468	pamatakmeni	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	pamatakmens	_	_	_	_	obj	basic	6-2	
+6-5	468-469	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	6-2	
+
+#Text=Pēc tam pienāca laiks to atdot.
+7-1	471-474	Pēc	_	_	_	_	_	_	_	_	_	_	_	_	sppd	pēc	_	_	_	_	case	basic	7-2	
+7-2	475-478	tam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msdn	tas	_	_	_	_	obl	basic	7-3	
+7-3	479-486	pienāca	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi130an	pienākt	_	_	_	_	root	basic	7-3	
+7-4	487-492	laiks	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	laiks	_	_	_	_	nsubj	basic	7-3	
+7-5	493-495	to	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	tas	_	_	*[3]	*->3-3	obj	basic	7-6	
+7-6	496-501	atdot	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0ti000n	atdot	_	_	_	_	acl	basic	7-4	
+7-7	501-502	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	7-3	
+
+#Text=Pieaugot eirobora likmei, nauda ir kļuvusi dārgāka.
+8-1	504-512	Pieaugot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000n	pieaugt	_	_	_	_	advcl	basic	8-8	
+8-2	513-521	eirobora	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	eirobors	_	_	_	_	nmod	basic	8-3	
+8-3	522-528	likmei	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd5	likme	_	_	_	_	obl	basic	8-1	
+8-4	528-529	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	8-8	
+8-5	530-535	nauda	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	nauda	_	_	*[3]	*->3-4	nsubj	basic	8-8	
+8-6	536-538	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	aux	basic	8-8	
+8-7	539-546	kļuvusi	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vtnpdfsnasnpn	kļūt	_	_	_	_	cop	basic	8-8	
+8-8	547-554	dārgāka	Fem	Sing	Nom	Cmp	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Fem\|Number=Sing	*	*	affsnnc	dārga	_	_	_	_	root	basic	8-8	
+8-9	554-555	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	8-8	
+
+#Text=Savukārt cilvēkiem līdz ar to par kredītu iznāk norēķināties vairāk.
+9-1	557-565	Savukārt	_	_	_	_	_	_	_	_	_	_	_	_	r0m	savukārt	_	_	_	_	advmod	basic	9-8	
+9-2	566-575	cilvēkiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	cilvēks	_	_	_	_	nsubj	basic	9-8	
+9-3	576-580	līdz	_	_	_	_	_	_	_	_	_	_	_	_	cs	līdz	_	_	_	_	dep	basic	9-8	
+9-4	581-583	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case	basic	9-5	
+9-5	584-586	to	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	tas	_	_	_	_	iobj	basic	9-3	
+9-6	587-590	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	_	_	case	basic	9-7	
+9-7	591-598	kredītu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	kredīts	_	_	_	_	iobj	basic	9-8	
+9-8	599-604	iznāk	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	venipi130an	iznākt	_	_	_	_	root	basic	9-8	
+9-9	605-617	norēķināties	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i3000n	norēķināties	_	_	_	_	xcomp	basic	9-8	
+9-10	618-624	vairāk	*	*	*	Cmp	*	*	*	*	*	Degree=Cmp	*	*	rcq	daudz	_	_	_	_	advmod	basic	9-9	
+9-11	624-625	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	9-8	
+
+#Text=Protams, arī tas veicināja tirgus piebremzēšanos.
+10-1	627-634	Protams	_	_	_	_	_	_	_	_	_	_	_	_	q	protams	_	_	_	_	parataxis	basic	10-5	
+10-2	634-635	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	10-1	
+10-3	636-639	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse	basic	10-4	
+10-4	640-643	tas	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	tas	_	_	_	_	nsubj	basic	10-5	
+10-5	644-653	veicināja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	veicināt	_	_	_	_	root	basic	10-5	
+10-6	654-660	tirgus	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg3	tirgus	_	_	_	_	nmod	basic	10-7	
+10-7	661-675	piebremzēšanos	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsar	piebremzēšanās	_	_	_	_	obj	basic	10-5	
+10-8	675-676	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	10-5	
+
+#Text=Grūti spriest, vai tas ir radīts mākslīgi.
+11-1	678-683	Grūti	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	grūti	_	_	_	_	root	basic	11-1	
+11-2	684-691	spriest	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	spriest	_	_	_	_	ccomp	basic	11-1	
+11-3	691-692	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	11-7	
+11-4	693-696	vai	_	_	_	_	_	_	_	_	_	_	_	_	cc	vai	_	_	_	_	mark	basic	11-7	
+11-5	697-700	tas	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	tas	_	_	_	_	nsubj:pass	basic	11-7	
+11-6	701-703	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	aux:pass	basic	11-7	
+11-7	704-710	radīts	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnpn	radīt	_	_	_	_	ccomp	basic	11-2	
+11-8	711-719	mākslīgi	_	_	_	_	_	_	_	_	_	_	_	_	r0m	mākslīgi	_	_	_	_	advmod	basic	11-7	
+11-9	719-720	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	11-1	
+
+#Text=Ir jau dzirdētas baumas, ka pie robežas stāv onkulis no Skandināvijas ar lielu naudas čemodānu un tūlīt visu sāks uzpirkt.
+12-1	722-724	Ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	aux:pass	basic	12-3	
+12-2	725-728	jau	_	_	_	_	_	_	_	_	_	_	_	_	q	jau	_	_	_	_	discourse	basic	12-3	
+12-3	729-738	dzirdētas	Fem	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfpnpsnpn	dzirdēt	_	_	_	_	root	basic	12-3	
+12-4	739-745	baumas	Fem	Ptan	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Ptan	*	*	ncfdn4	baumas	_	_	_	_	nsubj:pass	basic	12-3	
+12-5	745-746	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	12-9	
+12-6	747-749	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark	basic	12-9	
+12-7	750-753	pie	_	_	_	_	_	_	_	_	_	_	_	_	spsg	pie	_	_	_	_	case	basic	12-8	
+12-8	754-761	robežas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	robeža	_	_	_	_	obl	basic	12-9	
+12-9	762-766	stāv	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	stāvēt	_	_	_	_	acl	basic	12-4	
+12-10	767-774	onkulis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	onkulis	_	_	*[4]	*->4-1	nsubj	basic	12-9	
+12-11	775-777	no	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	_	_	_	_	case	basic	12-12	
+12-12	778-791	Skandināvijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Skandināvija	location	*	_	_	nmod	basic	12-10	
+12-13	792-794	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case	basic	12-16	
+12-14	795-800	lielu	Masc	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsanp	liels	_	_	_	_	amod	basic	12-16	
+12-15	801-807	naudas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	nauda	_	_	_	_	nmod	basic	12-16	
+12-16	808-816	čemodānu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	čemodāns	_	_	_	_	nmod	basic	12-10	
+12-17	817-819	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	12-20	
+12-18	820-825	tūlīt	_	_	_	_	_	_	_	_	_	_	_	_	r0t	tūlīt	_	_	_	_	advmod	basic	12-20	
+12-19	826-830	visu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msan	viss	_	_	_	_	obl	basic	12-21	
+12-20	831-835	sāks	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vpnift130an	sākt	_	_	_	_	conj	basic	12-9	
+12-21	836-843	uzpirkt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	uzpirkt	_	_	_	_	xcomp	basic	12-20	
+12-22	843-844	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	12-3	
+
+#Text=Tās ir muļķības.
+13-1	846-849	Tās	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|PronType=Dem	*	*	pd0fpnn	tā	_	_	_	_	nsubj	basic	13-3	
+13-2	850-852	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	cop	basic	13-3	
+13-3	853-861	muļķības	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	muļķība	_	_	_	_	root	basic	13-3	
+13-4	861-862	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	13-3	
+
+#Text=Viņam interesē lieli apjomi, lieli objekti – neviens netaisās vairumā uzpirkt dzīvokļus vecajās sērijveida mājās.
+14-1	864-869	Viņam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msdn	viņš	_	_	*[4]	*->4-2	obl	basic	14-2	
+14-2	870-878	interesē	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt230an	interesēt	_	_	_	_	root	basic	14-2	
+14-3	879-884	lieli	Masc	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnnp	liels	_	_	_	_	amod	basic	14-4	
+14-4	885-891	apjomi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	apjoms	_	_	_	_	nsubj	basic	14-2	
+14-5	891-892	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	14-7	
+14-6	893-898	lieli	Masc	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnnp	liels	_	_	_	_	amod	basic	14-7	
+14-7	899-906	objekti	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	objekts	_	_	_	_	conj	basic	14-4	
+14-8	907-908	–	_	_	_	_	_	_	_	_	_	_	_	_	zd	–	_	_	_	_	punct	basic	14-10	
+14-9	909-916	neviens	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Ind,Neg	*	*	pi0msny	neviens	_	_	_	_	nsubj	basic	14-10	
+14-10	917-925	netaisās	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	voyipt330ay	netaisīties	_	_	_	_	conj	basic	14-2	
+14-11	926-933	vairumā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	vairums	_	_	_	_	obl	basic	14-12	
+14-12	934-941	uzpirkt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	uzpirkt	_	_	_	_	xcomp	basic	14-10	
+14-13	942-951	dzīvokļus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa2	dzīvoklis	_	_	_	_	obj	basic	14-12	
+14-14	952-959	vecajās	Fem	Plur	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affplyp	veca	_	_	_	_	amod	basic	14-16	
+14-15	960-970	sērijveida	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsgg	sērijveida	_	_	_	_	nmod	basic	14-16	
+14-16	971-976	mājās	Fem	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	māja	_	_	_	_	acl	basic	14-13	
+14-17	976-977	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	14-2	

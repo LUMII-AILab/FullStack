@@ -1,0 +1,28 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Viņa drāzās uz mežmalu un vērīgi pārlūkoja šauro taciņu.
+1-1	0-4	Viņa	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsnn	viņa	_	_	nsubj	basic	1-2	
+1-2	5-11	drāzās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi130an	drāzties	_	_	root	basic	1-2	
+1-3	12-14	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsa	uz	_	_	case	basic	1-4	
+1-4	15-22	mežmalu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	mežmala	_	_	obl	basic	1-2	
+1-5	23-25	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	cc	basic	1-7	
+1-6	26-32	vērīgi	_	_	_	_	_	_	_	_	_	_	_	_	r0m	vērīgi	_	_	advmod	basic	1-7	
+1-7	33-42	pārlūkoja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist230an	pārlūkot	_	_	conj	basic	1-2	
+1-8	43-48	šauro	Masc	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsayp	šaurs	_	_	amod	basic	1-9	
+1-9	49-55	taciņu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	taks	*[1]	*->1-1	obj	basic	1-7	
+1-10	55-56	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	1-2	
+
+#Text=Nevienas dzīvas dvēseles nebija arī šeit.
+2-1	58-66	Nevienas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|PronType=Ind,Neg	*	*	pi0fsgy	nevienas	_	_	det	basic	2-3	
+2-2	67-73	dzīvas	Fem	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsgnp	dzīva	_	_	amod	basic	2-3	
+2-3	74-82	dvēseles	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	dvēsele	_	_	nsubj	basic	2-4	
+2-4	83-89	nebija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vgnisii30ay	nebūt	_	_	root	basic	2-4	
+2-5	90-93	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	discourse	basic	2-6	
+2-6	94-98	šeit	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0p	šeit	*[1]	*->1-2	advmod	basic	2-4	
+2-7	98-99	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	2-4	

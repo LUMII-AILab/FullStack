@@ -1,0 +1,43 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text="Mūs nelaidīs tur iekšā, mums nav tik smalkas atslēdziņas!"
+1-1	0-1	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	_	_	punct	basic	1-3	
+1-2	1-4	Mūs	*	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Number=Plur\|Person=1\|PronType=Prs	1	*	pp10pan	mēs	*[1]	*->1-1	obj	basic	1-3	
+1-3	5-13	nelaidīs	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vmnift130ay	nelaist	_	_	root	basic	1-3	
+1-4	14-17	tur	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0p	tur	_	_	advmod	basic	1-3	
+1-5	18-23	iekšā	_	_	_	_	_	_	_	_	_	_	_	_	r0p	iekšā	_	_	advmod	basic	1-3	
+1-6	23-24	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-8	
+1-7	25-29	mums	*	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Number=Plur\|Person=1\|PronType=Prs	1	*	pp10pdn	mēs	*[1]	*->1-2	obl	basic	1-8	
+1-8	30-33	nav	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vgnipii30ay	nebūt	_	_	conj	basic	1-3	
+1-9	34-37	tik	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0q	tik	_	_	advmod	basic	1-10	
+1-10	38-45	smalkas	Fem	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsgnp	smalka	_	_	amod	basic	1-11	
+1-11	46-57	atslēdziņas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	atslēdziņa	_	_	nsubj	basic	1-8	
+1-12	57-58	!	_	_	_	_	_	_	_	_	_	_	_	_	zs	!	_	_	punct	basic	1-3	
+1-13	58-59	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	_	_	punct	basic	1-3	
+
+#Text="Paldies par ceļu.
+2-1	61-62	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	_	_	punct	basic	2-2	
+2-2	62-69	Paldies	_	_	_	_	_	_	_	_	_	_	_	_	q	paldies	_	_	root	basic	2-2	
+2-3	70-73	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	case	basic	2-4	
+2-4	74-78	ceļu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	ceļš	_	_	iobj	basic	2-2	
+2-5	78-79	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	2-2	
+
+#Text=Joku tev nav, tavas mutes izbārstītie vārdi mani skumdina."
+3-1	81-85	Joku	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	joks	_	_	nsubj	basic	3-3	
+3-2	86-89	tev	*	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Number=Sing\|Person=2\|PronType=Prs	2	*	pp20sdn	tu	*[2]	*->2-1	obl	basic	3-3	
+3-3	90-93	nav	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vgnipii30ay	nebūt	_	_	root	basic	3-3	
+3-4	93-94	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	3-10	
+3-5	95-100	tavas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0fsgn	tava	*[2]	*->2-2	det	basic	3-6	
+3-6	101-106	mutes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	mute	_	_	nmod	basic	3-7	
+3-7	107-118	izbārstītie	Masc	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpnpsypn	izbārstīt	_	_	amod	basic	3-8	
+3-8	119-124	vārdi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	vārds	_	_	nsubj	basic	3-10	
+3-9	125-129	mani	*	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10san	es	_	_	obj	basic	3-10	
+3-10	130-138	skumdina	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	skumdināt	_	_	conj	basic	3-3	
+3-11	138-139	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	3-3	
+3-12	139-140	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	_	_	punct	basic	3-3	

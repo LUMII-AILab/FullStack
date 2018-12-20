@@ -1,0 +1,88 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Latvijā tas jau ir noticis.
+1-1	0-7	Latvijā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	Latvija	GPE	*	_	_	obl	basic	1-5	
+1-2	8-11	tas	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	tas	_	_	_	_	nsubj	basic	1-5	
+1-3	12-15	jau	_	_	_	_	_	_	_	_	_	_	_	_	r0t	jau	_	_	_	_	advmod	basic	1-5	
+1-4	16-18	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	aux	basic	1-5	
+1-5	19-26	noticis	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnasnp	notikt	_	_	_	_	root	basic	1-5	
+1-6	26-27	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-5	
+
+#Text=Tomēr patlaban M2M komunikācijas dinamika nav īpaši izteikta, taču paredzam, ka tā attīstīsies.
+2-1	29-34	Tomēr	_	_	_	_	_	_	_	_	_	_	_	_	cc	tomēr	_	_	_	_	cc	basic	2-8	
+2-2	35-43	patlaban	_	_	_	_	_	_	_	_	_	_	_	_	r0t	patlaban	_	_	_	_	advmod	basic	2-8	
+2-3	44-47	M2M	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yr	M2M	_	_	*[1]	*->1-1	nmod	basic	2-4	
+2-4	48-61	komunikācijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	komunikācija	_	_	*[1]	*->1-1	nmod	basic	2-5	
+2-5	62-70	dinamika	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	dinamika	_	_	*[1]	*->1-1	nsubj:pass	basic	2-8	
+2-6	71-74	nav	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30ay	nebūt	_	_	_	_	aux	basic	2-8	
+2-7	75-80	īpaši	_	_	_	_	_	_	_	_	_	_	_	_	r0c	īpaši	_	_	_	_	advmod	basic	2-8	
+2-8	81-89	izteikta	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnpsnp	izteikt	_	_	_	_	root	basic	2-8	
+2-9	89-90	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-11	
+2-10	91-95	taču	_	_	_	_	_	_	_	_	_	_	_	_	cc	taču	_	_	_	_	cc	basic	2-11	
+2-11	96-104	paredzam	*	Plur	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	1	*	vmnipt31pan	paredzēt	_	_	_	_	conj	basic	2-8	
+2-12	104-105	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-15	
+2-13	106-108	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark	basic	2-15	
+2-14	109-111	tā	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsnn	tā	_	_	*[1]	*->1-2	nsubj	basic	2-15	
+2-15	112-123	attīstīsies	*	Sing	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=2\|Polarity=Pos\|Reflex=Yes\|Tense=Fut\|VerbForm=Fin\|Voice=Act	2	*	vmyifi32san	attīstīties	_	_	_	_	ccomp	basic	2-11	
+2-16	123-124	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-8	
+
+#Text=Grupas uzņēmums "Citrus Solutions" jau ir ieviesis risinājumu "Rīgas siltumam", pieslēdzot skaitītājus.
+3-1	126-132	Grupas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	grupa	_	_	*[2]	*->2-1	nmod	basic	3-2	
+3-2	133-141	uzņēmums	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	uzņēmums	_	_	*[2]	*->2-1	nmod	basic	3-4	
+3-3	142-143	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[1]	*[1]	*[2]	*->2-2	punct	basic	3-4	
+3-4	143-149	Citrus	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Citrus	organization[1]	*[1]	*[2]	*->2-2	nsubj	basic	3-9	
+3-5	150-159	Solutions	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Solutions	organization[1]	*[1]	*[2]	*->2-2	flat:name	basic	3-4	
+3-6	159-160	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[1]	*[1]	*[2]	*->2-2	punct	basic	3-4	
+3-7	161-164	jau	_	_	_	_	_	_	_	_	_	_	_	_	r0t	jau	_	_	_	_	advmod	basic	3-9	
+3-8	165-167	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	aux	basic	3-9	
+3-9	168-176	ieviesis	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnasnp	ieviest	_	_	_	_	root	basic	3-9	
+3-10	177-187	risinājumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	risinājums	_	_	_	_	obj	basic	3-9	
+3-11	188-189	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[2]	*[2]	_	_	punct	basic	3-13	
+3-12	189-194	Rīgas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Rīga	organization[2]	*[2]	_	_	nmod	basic	3-13	
+3-13	195-203	siltumam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	siltums	organization[2]	*[2]	_	_	nmod	basic	3-10	
+3-14	203-204	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[2]	*[2]	_	_	punct	basic	3-13	
+3-15	204-205	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-16	
+3-16	206-216	pieslēdzot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000	pieslēgt	_	_	_	_	advcl	basic	3-9	
+3-17	217-228	skaitītājus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	skaitītājs	_	_	_	_	obj	basic	3-16	
+3-18	228-229	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-9	
+
+#Text=Tas rada iespēju naktī savākt datus, no rīta tos analizēt, tāpat automātiski izrakstīt rēķinus.
+4-1	231-234	Tas	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	tas	_	_	_	_	nsubj	basic	4-2	
+4-2	235-239	rada	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	rast	_	_	_	_	root	basic	4-2	
+4-3	240-247	iespēju	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	iespēja	_	_	_	_	obj	basic	4-2	
+4-4	248-253	naktī	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl6	nakts	_	_	_	_	obl	basic	4-5	
+4-5	254-260	savākt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	savākt	_	_	_	_	acl	basic	4-3	
+4-6	261-266	datus	Masc	Ptan	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Ptan	*	*	ncmda1	dati	_	_	*[3]	*->3-1	obj	basic	4-5	
+4-7	266-267	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	4-11	
+4-8	268-270	no	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	_	_	_	_	case	basic	4-9	
+4-9	271-275	rīta	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	rīts	_	_	_	_	obl	basic	4-11	
+4-10	276-279	tos	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpan	tas	_	_	*[3]	*->3-2	obj	basic	4-11	
+4-11	280-288	analizēt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	analizēt	_	_	_	_	conj	basic	4-5	
+4-12	288-289	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	4-15	
+4-13	290-295	tāpat	_	_	_	_	_	_	_	_	_	_	_	_	r0m	tāpat	_	_	_	_	advmod	basic	4-15	
+4-14	296-307	automātiski	_	_	_	_	_	_	_	_	_	_	_	_	r0m	automātiski	_	_	_	_	advmod	basic	4-15	
+4-15	308-317	izrakstīt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	izrakstīt	_	_	_	_	conj	basic	4-5	
+4-16	318-325	rēķinus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	rēķins	_	_	_	_	obj	basic	4-15	
+4-17	325-326	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	4-2	
+
+#Text=Nav jāsūta cilvēki nolasīt skaitītājus kaut kur pagrabos vai pie klienta dzīvoklī.
+5-1	328-331	Nav	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30ay	nebūt	_	_	_	_	aux	basic	5-2	
+5-2	332-338	jāsūta	*	*	*	*	*	*	Nec	Act	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vmnd0t300an	sūtīt	_	_	_	_	root	basic	5-2	
+5-3	339-346	cilvēki	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	cilvēks	_	_	_	_	obj	basic	5-2	
+5-4	347-354	nolasīt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	nolasīt	_	_	_	_	ccomp	basic	5-2	
+5-5	355-366	skaitītājus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	skaitītājs	_	_	_	_	obj	basic	5-4	
+5-6	367-371	kaut	_	_	_	_	_	_	_	_	_	_	_	_	q	kaut	_	_	_	_	discourse	basic	5-7	
+5-7	372-375	kur	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0p	kur	_	_	_	_	advmod	basic	5-8	
+5-8	376-384	pagrabos	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	pagrabs	_	_	_	_	obl	basic	5-4	
+5-9	385-388	vai	_	_	_	_	_	_	_	_	_	_	_	_	cs	vai	_	_	_	_	cc	basic	5-11	
+5-10	389-392	pie	_	_	_	_	_	_	_	_	_	_	_	_	sppd	pie	_	_	_	_	case	basic	5-11	
+5-11	393-400	klienta	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	klients	_	_	_	_	conj	basic	5-8	
+5-12	401-409	dzīvoklī	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	dzīvoklis	_	_	_	_	obl	basic	5-11	
+5-13	409-410	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	5-2	

@@ -1,0 +1,44 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=KNAB pērn rudenī kopumā lūdza saukt pie kriminālatbildības kopumā 17 personas saistībā ar amatpersonu kukuļošanu "Latvenergo" realizētajos Pļaviņu hidroelektrostacijas (HES) un Rīgas otrās termoelektrocentrāles (TEC-2) rekonstrukcijas projektos.
+1-1	0-4	KNAB	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	KNAB	organization	*	_	_	nsubj	basic	1-5	
+1-2	5-9	pērn	_	_	_	_	_	_	_	_	_	_	_	_	r0t	pērn	time[1]	*[1]	_	_	advmod	basic	1-5	
+1-3	10-16	rudenī	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	rudens	time[1]	*[1]	_	_	obl	basic	1-5	
+1-4	17-23	kopumā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	kopums	_	_	_	_	obl	basic	1-5	
+1-5	24-29	lūdza	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	lūgt	_	_	_	_	root	basic	1-5	
+1-6	30-35	saukt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	saukt	_	_	_	_	ccomp	basic	1-5	
+1-7	36-39	pie	_	_	_	_	_	_	_	_	_	_	_	_	spsg	pie	_	_	_	_	case	basic	1-8	
+1-8	40-58	kriminālatbildības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	kriminālatbildība	_	_	_	_	obl	basic	1-6	
+1-9	59-65	kopumā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	kopums	_	_	_	_	obl	basic	1-6	
+1-10	66-68	17	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	17	_	_	_	_	nummod	basic	1-11	
+1-11	69-77	personas	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	persona	_	_	_	_	nmod	basic	1-6	
+1-12	78-86	saistībā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	saistība	_	_	_	_	obl	basic	1-6	
+1-13	87-89	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case	basic	1-15	
+1-14	90-101	amatpersonu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	amatpersona	_	_	_	_	nmod	basic	1-15	
+1-15	102-112	kukuļošanu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	kukuļošana	_	_	_	_	nmod	basic	1-12	
+1-16	113-114	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[2]	*[2]	_	_	punct	basic	1-17	
+1-17	114-124	Latvenergo	_	_	_	_	_	_	_	_	_	_	_	_	np0000	Latvenergo	organization[2]	*[2]	_	_	nmod	basic	1-19	
+1-18	124-125	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[2]	*[2]	_	_	punct	basic	1-17	
+1-19	126-138	realizētajos	Masc	Plur	Loc	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Loc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmplpsyp	realizēt	_	_	_	_	amod	basic	1-33	
+1-20	139-146	Pļaviņu	Fem	Ptan	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Ptan	*	*	npfdg4	Pļaviņas	organization[3]|GPE[4]	*[3]|*[4]	*[1]	*->1-1	nmod	basic	1-21	
+1-21	147-167	hidroelektrostacijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	hidroelektrostacija	organization[3]	*[3]	*[1]	*->1-1	nmod	basic	1-32	
+1-22	168-169	(	_	_	_	_	_	_	_	_	_	_	_	_	zb	(	_	_	_	_	punct	basic	1-23	
+1-23	169-172	HES	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	HES	organization	*	*[1]	*->1-2	parataxis	basic	1-21	
+1-24	172-173	)	_	_	_	_	_	_	_	_	_	_	_	_	zb	)	_	_	_	_	punct	basic	1-23	
+1-25	174-176	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-28	
+1-26	177-182	Rīgas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Rīga	organization[5]|GPE[6]	*[5]|*[6]	*[2]	*->2-1	nmod	basic	1-28	
+1-27	183-188	otrās	Fem	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|NumType=Ord	*	*	mosfsg	otrā	organization[5]	*[5]	*[2]	*->2-1	amod	basic	1-28	
+1-28	189-210	termoelektrocentrāles	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	termoelektrocentrāle	organization[5]	*[5]	*[2]	*->2-1	conj	basic	1-21	
+1-29	211-212	(	_	_	_	_	_	_	_	_	_	_	_	_	zb	(	_	_	_	_	punct	basic	1-30	
+1-30	212-217	TEC-2	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	TEC-2	organization	*	*[2]	*->2-2	parataxis	basic	1-28	
+1-31	217-218	)	_	_	_	_	_	_	_	_	_	_	_	_	zb	)	_	_	_	_	punct	basic	1-30	
+1-32	219-234	rekonstrukcijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	rekonstrukcija	_	_	_	_	nmod	basic	1-33	
+1-33	235-244	projektos	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	projekts	_	_	_	_	acl	basic	1-15	
+1-34	244-245	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-5	

@@ -1,0 +1,129 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=No jaunu būvju viedokļa runājot, noteikti Frankfurtē Vācijas Nacionālā bibliotēka.
+1-1	0-2	No	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	_	_	_	_	case	basic	1-4	
+1-2	3-8	jaunu	Fem	Plur	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpgnp	jauna	_	_	_	_	amod	basic	1-3	
+1-3	9-14	būvju	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg5	būve	_	_	_	_	nmod	basic	1-4	
+1-4	15-23	viedokļa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	viedoklis	_	_	_	_	obl	basic	1-5	
+1-5	24-31	runājot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000	runāt	_	_	_	_	advcl	basic	1-11	
+1-6	31-32	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-5	
+1-7	33-41	noteikti	_	_	_	_	_	_	_	_	_	_	_	_	r0c	noteikti	_	_	_	_	advmod	basic	1-11	
+1-8	42-52	Frankfurtē	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl5	Frankfurte	GPE	https://en.wikipedia.org/wiki/Frankfurt	_	_	acl	basic	1-11	
+1-9	53-60	Vācijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Vācija	organization[1]|GPE[2]	*[1]|*[2]	_	_	nmod	basic	1-11	
+1-10	61-70	Nacionālā	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsnyp	nacionāla	organization[1]	*[1]	_	_	amod	basic	1-11	
+1-11	71-81	bibliotēka	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	bibliotēka	organization[1]	*[1]	_	_	root	basic	1-11	
+1-12	81-82	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-11	
+
+#Text=Lielu pieredzi ieguvām no Igaunijas Nacionālās un Dānijas Karaliskās bibliotēkas; kā tīrās krātuves - Zviedrijas Karaliskās bibliotēkas.
+2-1	84-89	Lielu	Fem	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsanp	liela	_	_	_	_	amod	basic	2-2	
+2-2	90-98	pieredzi	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	pieredze	_	_	_	_	obj	basic	2-3	
+2-3	99-106	ieguvām	*	Plur	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	1	*	vmnist11pan	iegūt	_	_	_	_	root	basic	2-3	
+2-4	107-109	no	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	_	_	_	_	case	basic	2-6	
+2-5	110-119	Igaunijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Igaunija	organization[3]|GPE[4]	*[3]|*[4]	_	_	nmod	basic	2-6	
+2-6	120-130	Nacionālās	Fem	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsgyp	nacionāla	organization[3]	*[3]	_	_	obl	basic	2-3	
+2-7	131-133	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	2-10	
+2-8	134-141	Dānijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Dānija	organization[5]|GPE[6]	*[5]|*[6]	_	_	nmod	basic	2-10	
+2-9	142-152	Karaliskās	Fem	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsgyp	karaliska	organization[5]	*[5]	_	_	amod	basic	2-10	
+2-10	153-164	bibliotēkas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	bibliotēka	organization[5]	*[5]	_	_	conj	basic	2-6	
+2-11	164-165	;	_	_	_	_	_	_	_	_	_	_	_	_	zc	\;	_	_	_	_	punct	basic	2-15	
+2-12	166-168	kā	_	_	_	_	_	_	_	_	_	_	_	_	cs	kā	_	_	_	_	mark	basic	2-14	
+2-13	169-174	tīrās	Fem	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpnyp	tīra	_	_	_	_	amod	basic	2-14	
+2-14	175-183	krātuves	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn5	krātuve	_	_	_	_	acl	basic	2-15	
+2-15	184-185	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	_	_	parataxis	basic	2-3	
+2-16	186-196	Zviedrijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Zviedrija	organization[7]|GPE[8]	*[7]|*[8]	_	_	nmod	basic	2-18	
+2-17	197-207	Karaliskās	Fem	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsgyp	karaliska	organization[7]	*[7]	_	_	amod	basic	2-18	
+2-18	208-219	bibliotēkas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	bibliotēka	organization[7]	*[7]	_	_	nsubj	basic	2-15	
+2-19	219-220	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-3	
+
+#Text=Slikts piemērs ir Francijas Nacionālā bibliotēka.
+3-1	222-228	Slikts	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	slikts	_	_	_	_	amod	basic	3-2	
+3-2	229-236	piemērs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	piemērs	_	_	_	_	nsubj	basic	3-6	
+3-3	237-239	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	cop	basic	3-6	
+3-4	240-249	Francijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Francija	organization[9]|GPE[10]	*[9]|*[10]	_	_	nmod	basic	3-6	
+3-5	250-259	Nacionālā	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsnyp	nacionāla	organization[9]	*[9]	_	_	amod	basic	3-6	
+3-6	260-270	bibliotēka	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	bibliotēka	organization[9]	*[9]	_	_	root	basic	3-6	
+3-7	270-271	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-6	
+
+#Text=Tur viss bija ačgārni.
+4-1	273-276	Tur	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0p	tur	_	_	_	_	advmod	basic	4-4	
+4-2	277-281	viss	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msnn	viss	_	_	_	_	nsubj	basic	4-4	
+4-3	282-286	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vcnisii30an	būt	_	_	_	_	aux	basic	4-4	
+4-4	287-294	ačgārni	_	_	_	_	_	_	_	_	_	_	_	_	r0c	ačgārni	_	_	_	_	root	basic	4-4	
+4-5	294-295	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	4-4	
+
+#Text=Francijas bijušais prezidents Miterāns ieraudzīja tos četrus torņus un pateica: Es šito gribu!
+5-1	297-306	Francijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Francija	GPE	*	*[1]	*->1-1	nmod	basic	5-3	
+5-2	307-315	bijušais	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsnyp	bijušais	_	_	*[1]	*->1-1	amod	basic	5-3	
+5-3	316-326	prezidents	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	prezidents	_	_	*[1]	*->1-1	nmod	basic	5-4	
+5-4	327-335	Miterāns	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Miterāns	person	*	*[1]	*->1-2	nsubj	basic	5-5	
+5-5	336-346	ieraudzīja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	ieraudzīt	_	_	_	_	root	basic	5-5	
+5-6	347-350	tos	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpan	tas	_	_	_	_	det	basic	5-8	
+5-7	351-357	četrus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpa	četri	_	_	_	_	nummod	basic	5-8	
+5-8	358-364	torņus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa2	tornis	_	_	_	_	obj	basic	5-5	
+5-9	365-367	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	5-10	
+5-10	368-375	pateica	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	pateikt	_	_	_	_	conj	basic	5-5	
+5-11	375-376	:	_	_	_	_	_	_	_	_	_	_	_	_	zo	:	_	_	_	_	punct	basic	5-14	
+5-12	377-379	Es	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10snn	es	_	_	_	_	nsubj	basic	5-14	
+5-13	380-384	šito	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpan	šitais	_	_	_	_	obj	basic	5-14	
+5-14	385-390	gribu	*	Sing	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	1	*	vmnipt31san	gribēt	_	_	_	_	ccomp	basic	5-10	
+5-15	390-391	!	_	_	_	_	_	_	_	_	_	_	_	_	zs	!	_	_	_	_	punct	basic	5-5	
+
+#Text=ielika iekšā programmas, grāmatas, bet viss izrādījās tik nepiemērots un neērts funkcionēšanai.
+6-1	393-399	ielika	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt130an	ielikt	_	_	_	_	root	basic	6-1	
+6-2	400-405	iekšā	_	_	_	_	_	_	_	_	_	_	_	_	r0p	iekšā	_	_	_	_	advmod	basic	6-1	
+6-3	406-416	programmas	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	programma	_	_	_	_	obj	basic	6-1	
+6-4	416-417	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	6-5	
+6-5	418-426	grāmatas	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	grāmata	_	_	_	_	conj	basic	6-3	
+6-6	426-427	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	6-9	
+6-7	428-431	bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	_	_	cc	basic	6-9	
+6-8	432-436	viss	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msnn	viss	_	_	_	_	nsubj	basic	6-9	
+6-9	437-446	izrādījās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyist230an	izrādīties	_	_	_	_	conj	basic	6-1	
+6-10	447-450	tik	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0q	tik	_	_	_	_	advmod	basic	6-11	
+6-11	451-462	nepiemērots	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnp	nepiemērot	_	_	_	_	acl	basic	6-9	
+6-12	463-465	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	6-13	
+6-13	466-472	neērts	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	neērts	_	_	_	_	conj	basic	6-11	
+6-14	473-487	funkcionēšanai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	funkcionēšana	_	_	_	_	iobj	basic	6-11	
+6-15	487-488	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	6-1	
+
+#Text=Bet paradokss ir tas, ka bibliotēku katru dienu apmeklē 4000 cilvēku, bet lasītavā vietas jāpiesaka caur internetu.
+7-1	490-493	Bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	_	_	cc	basic	7-4	
+7-2	494-503	paradokss	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	paradokss	_	_	_	_	nsubj	basic	7-4	
+7-3	504-506	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	cop	basic	7-4	
+7-4	507-510	tas	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	tas	_	_	_	_	root	basic	7-4	
+7-5	510-511	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	7-10	
+7-6	512-514	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark	basic	7-10	
+7-7	515-525	bibliotēku	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	bibliotēka	_	_	_	_	obj	basic	7-10	
+7-8	526-531	katru	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Tot	*	*	pg0fsan	katra	_	_	_	_	det	basic	7-9	
+7-9	532-537	dienu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	diena	_	_	_	_	obj	basic	7-10	
+7-10	538-545	apmeklē	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt230an	apmeklēt	_	_	_	_	acl	basic	7-4	
+7-11	546-550	4000	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	4000	_	_	_	_	nummod	basic	7-12	
+7-12	551-558	cilvēku	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	cilvēks	_	_	_	_	nsubj	basic	7-10	
+7-13	558-559	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	7-17	
+7-14	560-563	bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	_	_	cc	basic	7-17	
+7-15	564-572	lasītavā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	lasītava	_	_	_	_	obl	basic	7-17	
+7-16	573-579	vietas	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	vieta	_	_	_	_	obj	basic	7-17	
+7-17	580-589	jāpiesaka	*	*	*	*	*	*	Nec	Act	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vmnd0t300an	piesacīt	_	_	_	_	conj	basic	7-10	
+7-18	590-594	caur	_	_	_	_	_	_	_	_	_	_	_	_	spsa	caur	_	_	_	_	case	basic	7-19	
+7-19	595-604	internetu	Masc	Coll	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Coll	*	*	ncmva1	internets	_	_	_	_	obl	basic	7-17	
+7-20	604-605	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	7-4	
+
+#Text=Tur nevar tā aiziet un cerēt, ka būs kur sēdēt.
+8-1	607-610	Tur	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0p	tur	_	_	_	_	advmod	basic	8-2	
+8-2	611-616	nevar	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vonipt330ay	nevarēt	_	_	_	_	root	basic	8-2	
+8-3	617-619	tā	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0m	tā	_	_	_	_	advmod	basic	8-4	
+8-4	620-626	aiziet	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0i1000n	aiziet	_	_	_	_	xcomp	basic	8-2	
+8-5	627-629	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	8-6	
+8-6	630-635	cerēt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	cerēt	_	_	_	_	conj	basic	8-4	
+8-7	635-636	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	8-9	
+8-8	637-639	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark	basic	8-9	
+8-9	640-643	būs	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vmnifii30an	būt	_	_	_	_	ccomp	basic	8-6	
+8-10	644-647	kur	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0p	kur	_	_	_	_	advmod	basic	8-11	
+8-11	648-653	sēdēt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0i1000n	sēdēt	_	_	_	_	ccomp	basic	8-9	
+8-12	653-654	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	8-2	

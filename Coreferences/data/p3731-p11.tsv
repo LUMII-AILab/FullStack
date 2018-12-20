@@ -1,0 +1,59 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Par revīzijā konstatēto VK ir informējusi tiesībaizsardzības iestādes.
+1-1	0-3	Par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	_	_	case	basic	1-3	
+1-2	4-12	revīzijā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	revīzija	_	_	_	_	obl	basic	1-3	
+1-3	13-23	konstatēto	Masc	Sing	Acc	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsapsyp	konstatēt	_	_	_	_	iobj	basic	1-6	
+1-4	24-26	VK	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	VK	organization	*	_	_	nsubj	basic	1-6	
+1-5	27-29	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	aux	basic	1-6	
+1-6	30-41	informējusi	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnasnp	informēt	_	_	_	_	root	basic	1-6	
+1-7	42-60	tiesībaizsardzības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	tiesībaizsardzība	_	_	_	_	nmod	basic	1-8	
+1-8	61-69	iestādes	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa5	iestāde	_	_	_	_	obj	basic	1-6	
+1-9	69-70	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-6	
+
+#Text=Tāpat VK ir iesniegusi Jelgavas domei ieteikumus, ar kuru palīdzību tiks nodrošināts pašvaldības institucionālās sistēmas un aģentūru darbības efektivitātes izvērtējums un tiks noteiktas aģentūru darbības pārraudzības un kontroles procedūras, lai turpmāk nepieļautu līdzekļu nepamatotu izlietojumu.
+2-1	72-77	Tāpat	_	_	_	_	_	_	_	_	_	_	_	_	q	tāpat	_	_	_	_	discourse	basic	2-4	
+2-2	78-80	VK	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	VK	organization	*	_	_	nsubj	basic	2-4	
+2-3	81-83	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	aux	basic	2-4	
+2-4	84-94	iesniegusi	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnasnp	iesniegt	_	_	_	_	root	basic	2-4	
+2-5	95-103	Jelgavas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Jelgava	organization[1]|GPE[2]	*[1]|*[2]	_	_	nmod	basic	2-6	
+2-6	104-109	domei	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd5	dome	organization[1]	*[1]	_	_	nmod	basic	2-4	
+2-7	110-120	ieteikumus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	ieteikums	_	_	*[1]	*->1-1	obj	basic	2-4	
+2-8	120-121	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-13	
+2-9	122-124	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	*[1]	*->1-2	case	basic	2-11	
+2-10	125-129	kuru	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur\|PronType=Rel	*	*	pr0mpgn	kurš	_	_	*[1]	*->1-2	det	basic	2-11	
+2-11	130-139	palīdzību	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	palīdzība	_	_	_	_	obl	basic	2-13	
+2-12	140-144	tiks	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vtnifi130an	tikt	_	_	_	_	aux	basic	2-13	
+2-13	145-156	nodrošināts	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnp	nodrošināt	_	_	_	_	acl	basic	2-7	
+2-14	157-168	pašvaldības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	pašvaldība	_	_	_	_	nmod	basic	2-16	
+2-15	169-184	institucionālās	Fem	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsgyp	institucionāla	_	_	_	_	amod	basic	2-16	
+2-16	185-193	sistēmas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	sistēma	_	_	_	_	nmod	basic	2-21	
+2-17	194-196	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	2-20	
+2-18	197-205	aģentūru	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	aģentūra	_	_	_	_	nmod	basic	2-20	
+2-19	206-214	darbības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	darbība	_	_	_	_	nmod	basic	2-20	
+2-20	215-228	efektivitātes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	efektivitāte	_	_	_	_	conj	basic	2-16	
+2-21	229-240	izvērtējums	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	izvērtējums	_	_	_	_	nsubj:pass	basic	2-13	
+2-22	241-243	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	2-24	
+2-23	244-248	tiks	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vtnifi130an	tikt	_	_	_	_	aux	basic	2-24	
+2-24	249-258	noteiktas	Fem	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfpnpsnp	noteikt	_	_	_	_	conj	basic	2-13	
+2-25	259-267	aģentūru	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	aģentūra	_	_	_	_	nmod	basic	2-27	
+2-26	268-276	darbības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	darbība	_	_	_	_	nmod	basic	2-27	
+2-27	277-289	pārraudzības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	pārraudzība	_	_	_	_	iobj	basic	2-30	
+2-28	290-292	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	2-29	
+2-29	293-302	kontroles	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	kontrole	_	_	_	_	conj	basic	2-27	
+2-30	303-313	procedūras	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	procedūra	_	_	_	_	nsubj:pass	basic	2-24	
+2-31	313-314	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-34	
+2-32	315-318	lai	_	_	_	_	_	_	_	_	_	_	_	_	cs	lai	_	_	_	_	mark	basic	2-34	
+2-33	319-326	turpmāk	_	_	_	_	_	_	_	_	_	_	_	_	r0t	turpmāk	_	_	_	_	advmod	basic	2-34	
+2-34	327-337	nepieļautu	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Neg\|VerbForm=Fin\|Voice=Act	*	*	vmnc0t300ay	nepieļaut	_	_	_	_	advcl	basic	2-4	
+2-35	338-346	līdzekļu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	līdzeklis	_	_	_	_	nmod	basic	2-37	
+2-36	347-357	nepamatotu	Masc	Sing	Acc	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Acc\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsapsnp	nepamatot	_	_	_	_	amod	basic	2-37	
+2-37	358-369	izlietojumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	izlietojums	_	_	_	_	obj	basic	2-34	
+2-38	369-370	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-4	

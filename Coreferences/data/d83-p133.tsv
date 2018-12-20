@@ -1,0 +1,59 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Tēvs piecēlās, un šķita, ka viņš grib paziņot ko svarīgu.
+1-1	0-4	Tēvs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	tēvs	*[1]	*->1-1	nsubj	basic	1-2	
+1-2	5-13	piecēlās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyist130an	piecelties	_	_	root	basic	1-2	
+1-3	13-14	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-5	
+1-4	15-17	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	cc	basic	1-5	
+1-5	18-23	šķita	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi130an	šķist	_	_	conj	basic	1-2	
+1-6	23-24	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-9	
+1-7	25-27	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	mark	basic	1-9	
+1-8	28-32	viņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msnn	viņš	*[1]	*->1-2	nsubj	basic	1-9	
+1-9	33-37	grib	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vonipt330an	gribēt	_	_	csubj	basic	1-5	
+1-10	38-45	paziņot	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	paziņot	_	_	xcomp	basic	1-9	
+1-11	46-48	ko	*	*	Acc	*	*	*	*	*	*	Case=Acc\|PronType=Ind	*	*	pi000an	kas	_	_	det	basic	1-12	
+1-12	49-56	svarīgu	Masc	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsanp	svarīgs	_	_	obj	basic	1-10	
+1-13	56-57	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	1-2	
+
+#Text=Apkārtējo acis pievērsās viņam.
+2-1	59-68	Apkārtējo	Masc	Plur	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpgyp	apkārtējs	_	_	amod	basic	2-2	
+2-2	69-73	acis	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn6	acs	_	_	nsubj	basic	2-3	
+2-3	74-83	pievērsās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi130an	pievērsties	_	_	root	basic	2-3	
+2-4	84-89	viņam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msdn	viņš	*[1]	*->1-3	iobj	basic	2-3	
+2-5	89-90	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	2-3	
+
+#Text=Pie blakus galdiņiem zilgajā jūras gaismā tērgavoja krievu vasarnieki.
+3-1	92-95	Pie	_	_	_	_	_	_	_	_	_	_	_	_	spsg	pie	_	_	case	basic	3-3	
+3-2	96-102	blakus	_	_	_	_	_	_	_	_	_	_	_	_	r0p	blakus	_	_	advmod	basic	3-3	
+3-3	103-112	galdiņiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	galdiņš	_	_	obl	basic	3-7	
+3-4	113-120	zilgajā	Fem	Sing	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfslyp	zilga	_	_	amod	basic	3-6	
+3-5	121-126	jūras	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	jūra	_	_	nmod	basic	3-6	
+3-6	127-133	gaismā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	gaisma	_	_	obl	basic	3-7	
+3-7	134-143	tērgavoja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist230an	tērgavot	_	_	root	basic	3-7	
+3-8	144-150	krievu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	krievs	_	_	nmod	basic	3-9	
+3-9	151-161	vasarnieki	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	vasarnieks	_	_	nsubj	basic	3-7	
+3-10	161-162	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	3-7	
+
+#Text=Kāds bērns krita histērijā, jo zem galda viņa ceļgaliem pēkšņi bija pieskāries izsalcis kaķis.
+4-1	164-168	Kāds	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Ind	*	*	pi0msnn	kāds	_	_	det	basic	4-2	
+4-2	169-174	bērns	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	bērns	*[2]	*->2-1	nsubj	basic	4-3	
+4-3	175-180	krita	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi130an	krist	_	_	root	basic	4-3	
+4-4	181-190	histērijā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	histērija	_	_	obl	basic	4-3	
+4-5	190-191	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	4-13	
+4-6	192-194	jo	_	_	_	_	_	_	_	_	_	_	_	_	cs	jo	_	_	mark	basic	4-13	
+4-7	195-198	zem	_	_	_	_	_	_	_	_	_	_	_	_	spsg	zem	_	_	case	basic	4-8	
+4-8	199-204	galda	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	galds	_	_	obl	basic	4-13	
+4-9	205-209	viņa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msgn	viņš	*[2]	*->2-2	det	basic	4-10	
+4-10	210-219	ceļgaliem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	ceļgals	_	_	iobj	basic	4-13	
+4-11	220-226	pēkšņi	_	_	_	_	_	_	_	_	_	_	_	_	r0m	pēkšņi	_	_	advmod	basic	4-13	
+4-12	227-231	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vcnisii30an	būt	_	_	aux	basic	4-13	
+4-13	232-242	pieskāries	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	Perf	vmypdmsnasnpn	pieskarties	_	_	advcl	basic	4-3	
+4-14	243-251	izsalcis	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnasnpn	izsalkt	_	_	amod	basic	4-15	
+4-15	252-257	kaķis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	kaķis	_	_	nsubj	basic	4-13	
+4-16	257-258	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	4-3	

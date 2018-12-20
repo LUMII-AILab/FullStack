@@ -1,0 +1,48 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Brige piezvanīja Rūdolfam, lai viņš nāk pakaļ.
+1-1	0-5	Brige	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	Brige	person	*	_	_	nsubj	basic	1-2	
+1-2	6-16	piezvanīja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi330an	piezvanīt	_	_	_	_	root	basic	1-2	
+1-3	17-25	Rūdolfam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	npmsd1	Rūdolfs	person	*	*[1]	*->1-1	iobj	basic	1-2	
+1-4	25-26	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-7	
+1-5	27-30	lai	_	_	_	_	_	_	_	_	_	_	_	_	cs	lai	_	_	_	_	mark	basic	1-7	
+1-6	31-35	viņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msnn	viņš	_	_	*[1]	*->1-2	nsubj	basic	1-7	
+1-7	36-39	nāk	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipi130an	nākt	_	_	_	_	advcl	basic	1-2	
+1-8	40-45	pakaļ	_	_	_	_	_	_	_	_	_	_	_	_	r0p	pakaļ	_	_	_	_	advmod	basic	1-7	
+1-9	45-46	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-2	
+
+#Text=Bija divi naktī, un viņš nāca.
+2-1	48-52	Bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisii30an	būt	_	_	_	_	root	basic	2-1	
+2-2	53-57	divi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpn	divi	time[1]	*[1]	_	_	nsubj	basic	2-1	
+2-3	58-63	naktī	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl6	nakts	time[1]	*[1]	_	_	acl	basic	2-2	
+2-4	63-64	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-7	
+2-5	65-67	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	2-7	
+2-6	68-72	viņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msnn	viņš	_	_	*[1]	*->1-3	nsubj	basic	2-7	
+2-7	73-77	nāca	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi130an	nākt	_	_	_	_	conj	basic	2-1	
+2-8	77-78	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-1	
+
+#Text=Brige ģērbās promiešanai.
+3-1	80-85	Brige	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	Brige	person	*	_	_	nsubj	basic	3-2	
+3-2	86-92	ģērbās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi130an	ģērbties	_	_	_	_	root	basic	3-2	
+3-3	93-104	promiešanai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	promiešana	_	_	_	_	obl	basic	3-2	
+3-4	104-105	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-2	
+
+#Text=Šternkopfs, no Romualda dabūjis samta fraku, uzmeklēja Brigi.
+4-1	107-117	Šternkopfs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Šternkopfs	person	*	_	_	nsubj	basic	4-9	
+4-2	117-118	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	4-5	
+4-3	119-121	no	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	_	_	_	_	case	basic	4-4	
+4-4	122-130	Romualda	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Romualds	person	*	_	_	obl	basic	4-5	
+4-5	131-138	dabūjis	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnasnpn	dabūt	_	_	_	_	acl	basic	4-9	
+4-6	139-144	samta	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	samts	_	_	_	_	nmod	basic	4-7	
+4-7	145-150	fraku	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	fraka	_	_	_	_	obj	basic	4-5	
+4-8	150-151	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	4-5	
+4-9	152-161	uzmeklēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist230an	uzmeklēt	_	_	_	_	root	basic	4-9	
+4-10	162-167	Brigi	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa5	Brige	person	*	_	_	obj	basic	4-9	
+4-11	167-168	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	4-9	

@@ -1,0 +1,51 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=– Man vispār būtu jākāpj ārā Lizumā.
+1-1	0-1	–	_	_	_	_	_	_	_	_	_	_	_	_	zd	–	_	_	_	_	punct	basic	1-5	
+1-2	2-5	Man	*	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10sdn	es	_	_	*[2]	*->2-1	nsubj	basic	1-5	
+1-3	6-12	vispār	_	_	_	_	_	_	_	_	_	_	_	_	r0m	vispār	_	_	_	_	advmod	basic	1-5	
+1-4	13-17	būtu	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vcnc0ii00an	būt	_	_	_	_	aux	basic	1-5	
+1-5	18-24	jākāpj	*	*	*	*	*	*	Nec	Act	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vmnd0t100an	kāpt	_	_	_	_	root	basic	1-5	
+1-6	25-28	ārā	_	_	_	_	_	_	_	_	_	_	_	_	r0p	ārā	_	_	_	_	advmod	basic	1-5	
+1-7	29-35	Lizumā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	npmsl1	Lizums	location	*	_	_	obl	basic	1-5	
+1-8	35-36	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-5	
+
+#Text=Tad deviņi kilometri kājām, jo autobuss nekursē jau sen, – viņš paskatījās pulkstenī, pakratīja to.
+2-1	38-41	Tad	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	tad	_	_	_	_	advmod	basic	2-3	
+2-2	42-48	deviņi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpn	deviņi	_	_	_	_	nummod	basic	2-3	
+2-3	49-58	kilometri	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	kilometrs	_	_	_	_	parataxis	basic	2-14	
+2-4	59-64	kājām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	kāja	_	_	_	_	obl	basic	2-3	
+2-5	64-65	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-8	
+2-6	66-68	jo	_	_	_	_	_	_	_	_	_	_	_	_	cs	jo	_	_	_	_	mark	basic	2-8	
+2-7	69-77	autobuss	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	autobuss	_	_	_	_	nsubj	basic	2-8	
+2-8	78-85	nekursē	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipi230ay	nekursēt	_	_	_	_	advcl	basic	2-3	
+2-9	86-89	jau	_	_	_	_	_	_	_	_	_	_	_	_	r0t	jau	_	_	_	_	advmod	basic	2-8	
+2-10	90-93	sen	_	_	_	_	_	_	_	_	_	_	_	_	r0t	sen	_	_	_	_	advmod	basic	2-8	
+2-11	93-94	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-3	
+2-12	95-96	–	_	_	_	_	_	_	_	_	_	_	_	_	zd	–	_	_	_	_	punct	basic	2-3	
+2-13	97-101	viņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msnn	viņš	_	_	*[2]	*->2-2	nsubj	basic	2-14	
+2-14	102-112	paskatījās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyist330an	paskatīties	_	_	_	_	root	basic	2-14	
+2-15	113-122	pulkstenī	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	pulkstenis	_	_	*[1]	*->1-1	obl	basic	2-14	
+2-16	122-123	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-17	
+2-17	124-133	pakratīja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	pakratīt	_	_	_	_	conj	basic	2-14	
+2-18	134-136	to	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	tas	_	_	*[1]	*->1-2	obj	basic	2-17	
+2-19	136-137	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-14	
+
+#Text=– Kaut kas neriktīgs ar to laiku, apstājies...
+3-1	139-140	–	_	_	_	_	_	_	_	_	_	_	_	_	zd	–	_	_	_	_	punct	basic	3-4	
+3-2	141-145	Kaut	_	_	_	_	_	_	_	_	_	_	_	_	q	kaut	_	_	_	_	discourse	basic	3-3	
+3-3	146-149	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Ind	*	*	pi000nn	kas	_	_	_	_	nsubj	basic	3-4	
+3-4	150-159	neriktīgs	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	neriktīgs	_	_	_	_	root	basic	3-4	
+3-5	160-162	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case	basic	3-7	
+3-6	163-165	to	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	tas	_	_	_	_	det	basic	3-7	
+3-7	166-171	laiku	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	laiks	_	_	_	_	acl	basic	3-4	
+3-8	171-172	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-9	
+3-9	173-182	apstājies	*	Sing	*	*	*	*	Imp	Act	*	Mood=Imp\|Number=Sing\|Person=2\|Polarity=Pos\|Reflex=Yes\|VerbForm=Fin\|Voice=Act	2	*	vmym0i12san	apstāties	_	_	_	_	conj	basic	3-4	
+3-10	182-185	...	_	_	_	_	_	_	_	_	_	_	_	_	zs	...	_	_	_	_	punct	basic	3-9	

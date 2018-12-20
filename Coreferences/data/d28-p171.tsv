@@ -1,0 +1,45 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Nelielā bēru procesija pamazām virzījās uz kapu pusi.
+1-1	0-7	Nelielā	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsnyp	neliela	_	_	_	_	amod	basic	1-3	
+1-2	8-12	bēru	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg2	bēres	_	_	_	_	nmod	basic	1-3	
+1-3	13-22	procesija	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	procesija	_	_	_	_	nsubj	basic	1-5	
+1-4	23-30	pamazām	_	_	_	_	_	_	_	_	_	_	_	_	r0m	pamazām	_	_	_	_	advmod	basic	1-5	
+1-5	31-39	virzījās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi330an	virzīties	_	_	_	_	root	basic	1-5	
+1-6	40-42	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsa	uz	_	_	_	_	case	basic	1-8	
+1-7	43-47	kapu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	kaps	_	_	_	_	nmod	basic	1-8	
+1-8	48-52	pusi	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	puse	_	_	_	_	obl	basic	1-5	
+1-9	52-53	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-5	
+
+#Text=Pēteris, kaimiņu vientuļnieks, kušinot lēni veda zirgu, aiz ratiem cienīgi soļoja Adalberts, tad Helēna un tad visi septiņi vāķētāji.
+2-1	55-62	Pēteris	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	Pēteris	person	*	*[1]	*->1-1	nsubj	basic	2-8	
+2-2	62-63	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-4	
+2-3	64-71	kaimiņu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	kaimiņš	_	_	*[1]	*->1-2	nmod	basic	2-4	
+2-4	72-84	vientuļnieks	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	vientuļnieks	_	_	*[1]	*->1-2	acl	basic	2-1	
+2-5	84-85	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-4	
+2-6	86-93	kušinot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000n	kušināt	_	_	_	_	dep	basic	2-8	
+2-7	94-98	lēni	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	lēni	_	_	_	_	advmod	basic	2-8	
+2-8	99-103	veda	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	vest	_	_	_	_	root	basic	2-8	
+2-9	104-109	zirgu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	zirgs	_	_	_	_	obj	basic	2-8	
+2-10	109-110	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-8	
+2-11	111-114	aiz	_	_	_	_	_	_	_	_	_	_	_	_	sppd	aiz	_	_	_	_	case	basic	2-12	
+2-12	115-121	ratiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	rats	_	_	_	_	obl	basic	2-14	
+2-13	122-129	cienīgi	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	cienīgi	_	_	_	_	advmod	basic	2-14	
+2-14	130-136	soļoja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi230an	soļot	_	_	_	_	conj	basic	2-8	
+2-15	137-146	Adalberts	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	adalberts	person	*	_	_	dep	basic	2-14	
+2-16	146-147	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-17	
+2-17	148-151	tad	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	tad	_	_	_	_	conj	basic	2-14	
+2-18	152-158	Helēna	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Helēna	person	*	_	_	dep	basic	2-17	
+2-19	159-161	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	2-20	
+2-20	162-165	tad	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	tad	_	_	_	_	conj	basic	2-14	
+2-21	166-170	visi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Tot	*	*	pg0mpnn	viss	_	_	_	_	det	basic	2-23	
+2-22	171-178	septiņi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpn	septiņi	_	_	_	_	nummod	basic	2-23	
+2-23	179-187	vāķētāji	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	vāķētājs	_	_	_	_	dep	basic	2-20	
+2-24	187-188	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-8	

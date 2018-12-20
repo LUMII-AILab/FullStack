@@ -1,0 +1,56 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Un tagad jebkurš cilvēks - sieviete vai vīrietis var izlabot jebkuru savu nagu trūkumu, noslēpt pēc traumatiskas sekas, vai tāda paraduma rezultātus, kā nagu graušana.
+1-1	0-2	Un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	cc	basic	1-9	
+1-2	3-8	tagad	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	tagad	_	_	advmod	basic	1-9	
+1-3	9-16	jebkurš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Ind	*	*	pi0msnn	jebkurš	_	_	det	basic	1-4	
+1-4	17-24	cilvēks	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	cilvēks	*[2]	*->2-1	nsubj	basic	1-9	
+1-5	25-26	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	punct	basic	1-6	
+1-6	27-35	sieviete	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	sieviete	_	_	acl	basic	1-4	
+1-7	36-39	vai	_	_	_	_	_	_	_	_	_	_	_	_	cc	vai	_	_	cc	basic	1-8	
+1-8	40-48	vīrietis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	vīrietis	_	_	conj	basic	1-6	
+1-9	49-52	var	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vonipt330an	varēt	_	_	root	basic	1-9	
+1-10	53-60	izlabot	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	izlabot	_	_	xcomp	basic	1-9	
+1-11	61-68	jebkuru	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Ind	*	*	pi0msan	jebkurš	_	_	det	basic	1-14	
+1-12	69-73	savu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0msan	savs	*[2]	*->2-2	det	basic	1-13	
+1-13	74-78	nagu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	nags	_	_	nmod	basic	1-14	
+1-14	79-86	trūkumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	trūkums	_	_	obj	basic	1-10	
+1-15	86-87	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-16	
+1-16	88-95	noslēpt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	noslēpt	_	_	conj	basic	1-10	
+1-17	96-99	pēc	Fem	Plur	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	arfpanp	pēctraumatiska	_	_	amod	basic	1-19	
+1-18	100-112	traumatiskas	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	goeswith	basic	1-17	
+1-19	113-118	sekas	Fem	Ptan	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Ptan	*	*	ncfda4	sekas	_	_	obj	basic	1-16	
+1-20	118-119	,	_	_	_	_	_	_	_	_	_	_	_	_	z\_	_	_	_	punct	basic	1-19	
+1-21	120-123	vai	_	_	_	_	_	_	_	_	_	_	_	_	cc	vai	_	_	cc	basic	1-24	
+1-22	124-128	tāda	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msgn	tāds	_	_	det	basic	1-23	
+1-23	129-137	paraduma	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	paradums	_	_	nmod	basic	1-24	
+1-24	138-148	rezultātus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	rezultāts	_	_	conj	basic	1-19	
+1-25	148-149	,	_	_	_	_	_	_	_	_	_	_	_	_	z\_	_	_	_	punct	basic	1-24	
+1-26	150-152	kā	_	_	_	_	_	_	_	_	_	_	_	_	cs	kā	_	_	case	basic	1-28	
+1-27	153-157	nagu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	nags	_	_	nmod	basic	1-28	
+1-28	158-166	graušana	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	graušana	_	_	nmod	basic	1-23	
+1-29	166-167	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	1-9	
+
+#Text=Var ne tikai palielināt nagu garumu, bet arī izmainīt to formu un veikt korekciju.
+2-1	169-172	Var	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vonipt330an	varēt	_	_	root	basic	2-1	
+2-2	173-175	ne	_	_	_	_	_	_	_	_	_	_	_	_	cc	ne	_	_	cc	basic	2-4	
+2-3	176-181	tikai	_	_	_	_	_	_	_	_	_	_	_	_	q	tikai	_	_	discourse	basic	2-2	
+2-4	182-192	palielināt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	palielināt	_	_	xcomp	basic	2-1	
+2-5	193-197	nagu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	nags	*[1]	*->1-1	nmod	basic	2-6	
+2-6	198-204	garumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	garums	_	_	obj	basic	2-4	
+2-7	204-205	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	2-10	
+2-8	206-209	bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	cc	basic	2-10	
+2-9	210-213	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	discourse	basic	2-8	
+2-10	214-222	izmainīt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	izmainīt	_	_	conj	basic	2-4	
+2-11	223-225	to	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpgn	tas	*[1]	*->1-2	det	basic	2-12	
+2-12	226-231	formu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	forma	_	_	obj	basic	2-10	
+2-13	232-234	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	cc	basic	2-14	
+2-14	235-240	veikt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	veikt	_	_	conj	basic	2-10	
+2-15	241-250	korekciju	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	korekcija	_	_	obj	basic	2-14	
+2-16	250-251	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	2-1	

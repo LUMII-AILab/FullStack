@@ -1,0 +1,27 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Rīga, 13.sept., LETA.
+1-1	0-4	Rīga	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Rīga	GPE	*	root	basic	1-1	
+1-2	4-5	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-4	
+1-3	6-9	13.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	13.	time[1]	*[1]	amod	basic	1-4	
+1-4	9-14	sept.	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	sept.	time[1]	*[1]	parataxis	basic	1-1	
+1-5	14-15	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-6	
+1-6	16-20	LETA	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	LETA	organization	*	parataxis	basic	1-1	
+1-7	20-21	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	1-1	
+
+#Text=Rīgas dome šodien iecēla jaunu pilsētas Īres valdi.
+2-1	23-28	Rīgas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Rīga	organization[2]|GPE[3]	*[2]|*[3]	nmod	basic	2-2	
+2-2	29-33	dome	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	dome	organization[2]	*[2]	nsubj	basic	2-4	
+2-3	34-40	šodien	_	_	_	_	_	_	_	_	_	_	_	_	r0t	šodien	_	_	advmod	basic	2-4	
+2-4	41-47	iecēla	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	iecelt	_	_	root	basic	2-4	
+2-5	48-53	jaunu	Fem	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsanp	jauna	_	_	amod	basic	2-8	
+2-6	54-62	pilsētas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	pilsēta	_	_	nmod	basic	2-8	
+2-7	63-67	Īres	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	īre	organization[4]	*[4]	nmod	basic	2-8	
+2-8	68-73	valdi	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	valde	organization[4]	*[4]	obj	basic	2-4	
+2-9	73-74	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	2-4	

@@ -1,0 +1,34 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Pa galvaspilsētas ielām, organizējot ceļu blokādi, uz motocikliem pārvietojas melnās maskās tērpti "Hizbollah" aktīvisti, kuru rīcībā ir rācijas.
+1-1	0-2	Pa	_	_	_	_	_	_	_	_	_	_	_	_	spsa	pa	_	_	_	_	case	basic	1-3	
+1-2	3-17	galvaspilsētas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	galvaspilsēta	_	_	_	_	nmod	basic	1-3	
+1-3	18-23	ielām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	iela	_	_	_	_	obl	basic	1-11	
+1-4	23-24	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-5	
+1-5	25-36	organizējot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000n	organizēt	_	_	_	_	advcl	basic	1-11	
+1-6	37-41	ceļu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	ceļš	_	_	_	_	nmod	basic	1-7	
+1-7	42-49	blokādi	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	blokāde	_	_	_	_	obj	basic	1-5	
+1-8	49-50	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-5	
+1-9	51-53	uz	_	_	_	_	_	_	_	_	_	_	_	_	sppd	uz	_	_	_	_	case	basic	1-10	
+1-10	54-65	motocikliem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	motocikls	_	_	_	_	obl	basic	1-11	
+1-11	66-77	pārvietojas	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipi230an	pārvietoties	_	_	_	_	root	basic	1-11	
+1-12	78-84	melnās	Fem	Plur	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affplnp	melna	_	_	_	_	amod	basic	1-13	
+1-13	85-91	maskās	Fem	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	maska	_	_	_	_	obl	basic	1-14	
+1-14	92-98	tērpti	Masc	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpnpsnpn	tērpt	_	_	_	_	amod	basic	1-18	
+1-15	99-100	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[1]	*[1]	*[1]	*->1-1	punct	basic	1-16	
+1-16	100-109	Hizbollah	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Hizbollah	organization[1]	*[1]	*[1]	*->1-1	nmod	basic	1-18	
+1-17	109-110	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[1]	*[1]	*[1]	*->1-1	punct	basic	1-16	
+1-18	111-120	aktīvisti	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	aktīvists	_	_	*[1]	*->1-1	nsubj	basic	1-11	
+1-19	120-121	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-22	
+1-20	122-126	kuru	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur\|PronType=Rel	*	*	pr0mpgn	kurš	_	_	*[1]	*->1-2	det	basic	1-21	
+1-21	127-133	rīcībā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	rīcība	_	_	_	_	obl	basic	1-22	
+1-22	134-136	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipii30an	būt	_	_	_	_	acl	basic	1-18	
+1-23	137-144	rācijas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	rācija	_	_	_	_	nsubj	basic	1-22	
+1-24	144-145	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-11	

@@ -1,0 +1,93 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Viņa guvusi izcilas atzīmes.
+1-1	0-4	Viņa	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsnn	viņa	_	_	_	_	nsubj	basic	1-2	
+1-2	5-11	guvusi	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnasnp	gūt	_	_	_	_	root	basic	1-2	
+1-3	12-19	izcilas	Fem	Plur	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpanp	izcila	_	_	_	_	amod	basic	1-4	
+1-4	20-27	atzīmes	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa5	atzīme	_	_	_	_	obj	basic	1-2	
+1-5	27-28	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-2	
+
+#Text=Nu un tad?
+2-1	30-32	Nu	_	_	_	_	_	_	_	_	_	_	_	_	q	nu	_	_	_	_	root	basic	2-1	
+2-2	33-35	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	dep	basic	2-1	
+2-3	36-39	tad	_	_	_	_	_	_	_	_	_	_	_	_	q	tad	_	_	_	_	dep	basic	2-1	
+2-4	39-40	?	_	_	_	_	_	_	_	_	_	_	_	_	zs	?	_	_	_	_	punct	basic	2-1	
+
+#Text=Ar labu atmiņu varēja bez īpašām pūlēm kārtot eksāmenus šajos priekšmetos.
+3-1	42-44	Ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case	basic	3-3	
+3-2	45-49	labu	Fem	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsanp	laba	_	_	_	_	amod	basic	3-3	
+3-3	50-56	atmiņu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	Atmiņa	_	_	_	_	obl	basic	3-4	
+3-4	57-63	varēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vonist330an	varēt	_	_	_	_	root	basic	3-4	
+3-5	64-67	bez	_	_	_	_	_	_	_	_	_	_	_	_	sppd	bez	_	_	_	_	case	basic	3-7	
+3-6	68-74	īpašām	Fem	Plur	Dat	Pos	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpdnp	īpaša	_	_	_	_	amod	basic	3-7	
+3-7	75-80	pūlēm	Fem	Ptan	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Ptan	*	*	ncfdd5	pūles	_	_	_	_	obl	basic	3-8	
+3-8	81-87	kārtot	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	kārtot	_	_	_	_	xcomp	basic	3-4	
+3-9	88-97	eksāmenus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	eksāmens	_	_	_	_	obj	basic	3-8	
+3-10	98-103	šajos	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpln	šis	_	_	_	_	det	basic	3-11	
+3-11	104-115	priekšmetos	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	priekšmets	_	_	_	_	obl	basic	3-8	
+3-12	115-116	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-4	
+
+#Text=Vairākums studentu to vispār neņēma nopietni.
+4-1	118-127	Vairākums	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	vairākums	_	_	_	_	nsubj	basic	4-5	
+4-2	128-136	studentu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	students	_	_	_	_	nmod	basic	4-1	
+4-3	137-139	to	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	tas	_	_	_	_	obj	basic	4-5	
+4-4	140-146	vispār	_	_	_	_	_	_	_	_	_	_	_	_	r0m	vispār	_	_	_	_	advmod	basic	4-5	
+4-5	147-153	neņēma	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130ay	neņemt	_	_	_	_	root	basic	4-5	
+4-6	154-162	nopietni	_	_	_	_	_	_	_	_	_	_	_	_	r0c	nopietni	_	_	_	_	advmod	basic	4-5	
+4-7	162-163	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	4-5	
+
+#Text=Tostarp arī mana necilā persona.
+5-1	165-172	Tostarp	_	_	_	_	_	_	_	_	_	_	_	_	r0p	tostarp	_	_	_	_	advmod	basic	5-5	
+5-2	173-176	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse	basic	5-5	
+5-3	177-181	mana	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0fsnn	mana	_	_	*[2]	*->2-1	det	basic	5-5	
+5-4	182-188	necilā	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnyp	necila	_	_	_	_	amod	basic	5-5	
+5-5	189-196	persona	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	persona	_	_	_	_	root	basic	5-5	
+5-6	196-197	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	5-5	
+
+#Text=Nebūdams PSKP biedrs, es no 1952. līdz 1959. gadam studēju ne mazāk slavenās Maskavas Lomonosova universitātes (MGU) Žurnālistikas fakultātes neklātienes nodaļā.
+6-1	199-207	Nebūdams	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|VerbForm=Conv	*	*	vcnppmsn0000	nebūt	_	_	_	_	cop	basic	6-3	
+6-2	208-212	PSKP	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	PSKP	organization	*	_	_	nmod	basic	6-3	
+6-3	213-219	biedrs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	biedrs	_	_	_	_	acl	basic	6-11	
+6-4	219-220	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	6-3	
+6-5	221-223	es	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10snn	es	_	_	*[2]	*->2-2	nsubj	basic	6-11	
+6-6	224-226	no	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	time[1]	*[1]	_	_	case	basic	6-7	
+6-7	227-232	1952.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	1952.	time[1]	*[1]	_	_	obl	basic	6-11	
+6-8	233-237	līdz	_	_	_	_	_	_	_	_	_	_	_	_	spsd	līdz	time[1]	*[1]	_	_	case	basic	6-10	
+6-9	238-243	1959.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	1959.	time[1]	*[1]	_	_	amod	basic	6-10	
+6-10	244-249	gadam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	gads	time[1]	*[1]	_	_	obl	basic	6-11	
+6-11	250-257	studēju	*	Sing	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	1	*	vmnipt21san	studēt	_	_	_	_	root	basic	6-11	
+6-12	258-260	ne	_	_	_	_	_	_	_	_	_	_	_	_	q	ne	_	_	_	_	discourse	basic	6-13	
+6-13	261-266	mazāk	*	*	*	Cmp	*	*	*	*	*	Degree=Cmp	*	*	rcq	maz	_	_	_	_	advmod	basic	6-14	
+6-14	267-275	slavenās	Fem	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsgyp	slavena	_	_	_	_	amod	basic	6-17	
+6-15	276-284	Maskavas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Maskava	organization[2]|organization[3]	*[2]|*[3]	*[1]	*->1-1	nmod	basic	6-17	
+6-16	285-295	Lomonosova	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Lomonosovs	organization[2]|organization[3]	*[2]|*[3]	*[1]	*->1-1	nmod	basic	6-17	
+6-17	296-309	universitātes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	universitāte	organization[2]|organization[3]	*[2]|*[3]	*[1]	*->1-1	nmod	basic	6-22	
+6-18	310-311	(	_	_	_	_	_	_	_	_	_	_	_	_	zb	(	organization[2]	*[2]	_	_	punct	basic	6-19	
+6-19	311-314	MGU	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	MGU	organization[2]|organization[4]	*[2]|*[4]	*[1]	*->1-2	parataxis	basic	6-17	
+6-20	314-315	)	_	_	_	_	_	_	_	_	_	_	_	_	zb	)	organization[2]	*[2]	_	_	punct	basic	6-19	
+6-21	316-329	Žurnālistikas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	žurnālistika	organization[2]	*[2]	_	_	nmod	basic	6-22	
+6-22	330-340	fakultātes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	fakultāte	organization[2]	*[2]	_	_	nmod	basic	6-24	
+6-23	341-352	neklātienes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	neklātiene	_	_	_	_	nmod	basic	6-24	
+6-24	353-359	nodaļā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	nodaļa	_	_	_	_	obl	basic	6-11	
+6-25	359-360	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	6-11	
+
+#Text=Un man bija jākārto tie paši murgainie "ideoloģiskie" eksāmeni.
+7-1	362-364	Un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	7-4	
+7-2	365-368	man	*	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10sdn	es	_	_	*[2]	*->2-3	nsubj	basic	7-4	
+7-3	369-373	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vcnisii30an	būt	_	_	_	_	aux	basic	7-4	
+7-4	374-381	jākārto	*	*	*	*	*	*	Nec	Act	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vmnd0t200an	kārtot	_	_	_	_	root	basic	7-4	
+7-5	382-385	tie	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpnn	tas	_	_	_	_	det	basic	7-11	
+7-6	386-390	paši	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Tot	*	*	pg0mpnn	pats	_	_	_	_	det	basic	7-11	
+7-7	391-400	murgainie	Masc	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnyp	murgains	_	_	_	_	amod	basic	7-11	
+7-8	401-402	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	_	_	_	_	punct	basic	7-9	
+7-9	402-414	ideoloģiskie	Masc	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpnyp	ideoloģisks	_	_	_	_	amod	basic	7-11	
+7-10	414-415	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	_	_	_	_	punct	basic	7-9	
+7-11	416-424	eksāmeni	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	eksāmens	_	_	_	_	obj	basic	7-4	
+7-12	424-425	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	7-4	

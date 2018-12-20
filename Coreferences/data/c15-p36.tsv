@@ -1,0 +1,83 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Pēc sižeta ‘’Antigone’’ ir Eshila traģēdijas ‘’Septiņi pret Tēbām’’ turpinājums.
+1-1	0-3	Pēc	_	_	_	_	_	_	_	_	_	_	_	_	spsg	pēc	_	_	_	_	case	basic	1-2	
+1-2	4-10	sižeta	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	sižets	_	_	_	_	obl	basic	1-14	
+1-3	11-13	‘’	_	_	_	_	_	_	_	_	_	_	_	_	zq	“	product[1]	*[1]	_	_	punct	basic	1-4	
+1-4	13-21	Antigone	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	Antigone	product[1]	*[1]	_	_	nsubj	basic	1-14	
+1-5	21-23	’’	_	_	_	_	_	_	_	_	_	_	_	_	zq	”	product[1]	*[1]	_	_	punct	basic	1-4	
+1-6	24-26	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	cop	basic	1-14	
+1-7	27-33	Eshila	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Eshils	person	https://en.wikipedia.org/wiki/Aeschylus	_	_	nmod	basic	1-8	
+1-8	34-44	traģēdijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	traģēdija	_	_	*[2]	*->2-1	nmod	basic	1-10	
+1-9	45-47	‘’	_	_	_	_	_	_	_	_	_	_	_	_	zq	“	product[2]	*[2]	*[2]	*->2-2	punct	basic	1-10	
+1-10	47-54	Septiņi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpn	septiņi	product[2]	*[2]	*[2]	*->2-2	nmod	basic	1-14	
+1-11	55-59	pret	_	_	_	_	_	_	_	_	_	_	_	_	spsa	pret	product[2]	*[2]	*[2]	*->2-2	case	basic	1-12	
+1-12	60-65	Tēbām	Fem	Ptan	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Ptan	*	*	npfdd4	Tēbas	product[2]|location[3]	*[2]|https://en.wikipedia.org/wiki/Thebes,\_Greece[3]	*[2]	*->2-2	iobj	basic	1-10	
+1-13	65-67	’’	_	_	_	_	_	_	_	_	_	_	_	_	zq	”	product[2]	*[2]	*[2]	*->2-2	punct	basic	1-10	
+1-14	68-79	turpinājums	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	turpinājums	_	_	_	_	root	basic	1-14	
+1-15	79-80	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-14	
+
+#Text=Eshila traģēdijā stāstīts par Tēbu valdnieka Edipa dēlu Eteokla un Polineika cīņu par varu.
+2-1	82-88	Eshila	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Eshils	person	https://en.wikipedia.org/wiki/Aeschylus	_	_	nmod	basic	2-2	
+2-2	89-98	traģēdijā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	traģēdija	_	_	*[2]	*->2-3	obl	basic	2-3	
+2-3	99-107	stāstīts	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnpn	stāstīt	_	_	_	_	root	basic	2-3	
+2-4	108-111	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	_	_	case	basic	2-12	
+2-5	112-116	Tēbu	Fem	Ptan	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Ptan	*	*	npfdg4	Tēbas	location	https://en.wikipedia.org/wiki/Thebes,\_Greece	*[3]	*->3-1	nmod	basic	2-6	
+2-6	117-126	valdnieka	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	valdnieks	_	_	*[3]	*->3-1	nmod	basic	2-7	
+2-7	127-132	Edipa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Edips	person	*	*[3]	*->3-2	nmod	basic	2-8	
+2-8	133-137	dēlu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	dēls	_	_	*[4]	*->4-1	nmod	basic	2-9	
+2-9	138-145	Eteokla	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Eteokls	person	*	*[4]	*->4-2	nmod	basic	2-12	
+2-10	146-148	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	*[4]	*->4-2	cc	basic	2-11	
+2-11	149-158	Polineika	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Polineiks	person	*	*[4]|*[1]	*->4-2|*->1-1	conj	basic	2-9	
+2-12	159-163	cīņu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	cīņa	_	_	_	_	iobj	basic	2-3	
+2-13	164-167	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	_	_	case	basic	2-14	
+2-14	168-172	varu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	vara	_	_	_	_	nmod	basic	2-12	
+2-15	172-173	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-3	
+
+#Text=Polineiks ved pret dzimto pilsētu svešzemnieku karapulkus.
+3-1	175-184	Polineiks	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Polineiks	person	*	*[1]	*->1-2	nsubj	basic	3-2	
+3-2	185-188	ved	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt130an	vest	_	_	_	_	root	basic	3-2	
+3-3	189-193	pret	_	_	_	_	_	_	_	_	_	_	_	_	spsa	pret	_	_	_	_	case	basic	3-5	
+3-4	194-200	dzimto	Fem	Sing	Acc	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsapsypn	dzimt	_	_	_	_	amod	basic	3-5	
+3-5	201-208	pilsētu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	pilsēta	_	_	_	_	iobj	basic	3-2	
+3-6	209-221	svešzemnieku	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	svešzemnieks	_	_	_	_	nmod	basic	3-7	
+3-7	222-232	karapulkus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	karapulks	_	_	_	_	obj	basic	3-2	
+3-8	232-233	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-2	
+
+#Text=Eteokls dodas brālim pretim, lai divkaujā izšķirtu jautājumu, kam būt valdniekam, un ar to glābtu pilsētu no izpostīšanas.
+4-1	235-242	Eteokls	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Eteokls	person	*	_	_	nsubj	basic	4-2	
+4-2	243-248	dodas	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipti30an	doties	_	_	_	_	root	basic	4-2	
+4-3	249-255	brālim	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd2	brālis	_	_	*[1]	*->1-3	iobj	basic	4-2	
+4-4	256-262	pretim	_	_	_	_	_	_	_	_	_	_	_	_	r0p	pretim	_	_	_	_	case	basic	4-3	
+4-5	262-263	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	4-8	
+4-6	264-267	lai	_	_	_	_	_	_	_	_	_	_	_	_	cs	lai	_	_	_	_	mark	basic	4-8	
+4-7	268-276	divkaujā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	divkauja	_	_	_	_	obl	basic	4-8	
+4-8	277-285	izšķirtu	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vmnc0t100an	izšķirt	_	_	_	_	advcl	basic	4-2	
+4-9	286-295	jautājumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	jautājums	_	_	_	_	obj	basic	4-8	
+4-10	295-296	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	4-13	
+4-11	297-300	kam	*	*	Dat	*	*	*	*	*	*	Case=Dat\|PronType=Rel	*	*	pr000dn	kas	_	_	_	_	nsubj	basic	4-13	
+4-12	301-304	būt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vcnn0ii000n	būt	_	_	_	_	cop	basic	4-13	
+4-13	305-315	valdniekam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	valdnieks	_	_	_	_	acl	basic	4-9	
+4-14	315-316	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	4-8	
+4-15	317-319	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	4-18	
+4-16	320-322	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case	basic	4-17	
+4-17	323-325	to	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	tas	_	_	_	_	obl	basic	4-18	
+4-18	326-332	glābtu	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vmnc0t100an	glābt	_	_	_	_	conj	basic	4-8	
+4-19	333-340	pilsētu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	pilsēta	_	_	_	_	obj	basic	4-18	
+4-20	341-343	no	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	_	_	_	_	case	basic	4-21	
+4-21	344-356	izpostīšanas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	izpostīšana	_	_	_	_	iobj	basic	4-18	
+4-22	356-357	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	4-2	
+
+#Text=Divkaujā krīt abi brāļi.
+5-1	359-367	Divkaujā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	divkauja	_	_	_	_	obl	basic	5-2	
+5-2	368-372	krīt	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipi130an	krist	_	_	_	_	root	basic	5-2	
+5-3	373-376	abi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Tot	*	*	pg0mpnn	abi	_	_	*[4]	*->4-3	det	basic	5-4	
+5-4	377-382	brāļi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn2	brālis	_	_	*[4]	*->4-3	nsubj	basic	5-2	
+5-5	382-383	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	5-2	

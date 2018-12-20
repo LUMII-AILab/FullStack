@@ -1,0 +1,49 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=O, jā, es biju.
+1-1	0-1	O	_	_	_	_	_	_	_	_	_	_	_	_	i	o	_	_	discourse	basic	1-6	
+1-2	1-2	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-1	
+1-3	3-5	jā	_	_	_	_	_	_	_	_	_	_	_	_	q	jā	_	_	discourse	basic	1-6	
+1-4	5-6	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-3	
+1-5	7-9	es	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10snn	es	*[1]	*->1-1	nsubj	basic	1-6	
+1-6	10-14	biju	*	Sing	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	1	*	vmnisii1san	būt	_	_	root	basic	1-6	
+1-7	14-15	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	1-6	
+
+#Text=Es biju.
+2-1	17-19	Es	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10snn	es	*[1]	*->1-2	nsubj	basic	2-2	
+2-2	20-24	biju	*	Sing	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	1	*	vmnisii1san	būt	_	_	root	basic	2-2	
+2-3	24-25	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	2-2	
+
+#Text=Es reibu ātri, man nevajadzēja daudz, 1 00 gramu konjaka un drusku iztēles man arvien lika iegrimt banālās un neproduktīvās pārdomās par esības noslēpumiem.
+3-1	27-29	Es	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10snn	es	*[1]	*->1-3	nsubj	basic	3-2	
+3-2	30-35	reibu	*	Sing	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	1	*	vmnisi11san	reibt	_	_	root	basic	3-2	
+3-3	36-40	ātri	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	ātri	_	_	advmod	basic	3-2	
+3-4	40-41	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	3-6	
+3-5	42-45	man	*	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10sdn	es	_	_	obl	basic	3-6	
+3-6	46-57	nevajadzēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330ay	nevajadzēt	_	_	conj	basic	3-2	
+3-7	58-63	daudz	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpq	daudz	_	_	advmod	basic	3-6	
+3-8	63-64	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	3-17	
+3-9	65-69	1 00	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	100	_	_	nummod	basic	3-10	
+3-10	70-75	gramu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	grams	_	_	nmod	basic	3-11	
+3-11	76-83	konjaka	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	konjaks	_	_	nsubj	basic	3-17	
+3-12	84-86	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	cc	basic	3-14	
+3-13	87-93	drusku	_	_	_	_	_	_	_	_	_	_	_	_	r0q	drusku	_	_	advmod	basic	3-14	
+3-14	94-101	iztēles	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	iztēle	_	_	conj	basic	3-11	
+3-15	102-105	man	*	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10sdn	es	*[1]	*->1-4	iobj	basic	3-17	
+3-16	106-112	arvien	_	_	_	_	_	_	_	_	_	_	_	_	r0t	arvien	_	_	advmod	basic	3-17	
+3-17	113-117	lika	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	likt	_	_	conj	basic	3-2	
+3-18	118-125	iegrimt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0i1000n	iegrimt	_	_	ccomp	basic	3-17	
+3-19	126-133	banālās	Fem	Plur	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affplnp	banāla	_	_	amod	basic	3-22	
+3-20	134-136	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	cc	basic	3-21	
+3-21	137-150	neproduktīvās	Fem	Plur	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affplnp	neproduktīva	_	_	conj	basic	3-19	
+3-22	151-159	pārdomās	Fem	Ptan	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Ptan	*	*	ncfdl4	pārdomas	_	_	obl	basic	3-18	
+3-23	160-163	par	_	_	_	_	_	_	_	_	_	_	_	_	sppd	par	_	_	case	basic	3-25	
+3-24	164-170	esības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	esība	_	_	nmod	basic	3-25	
+3-25	171-182	noslēpumiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	noslēpums	_	_	nmod	basic	3-22	
+3-26	182-183	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	3-2	

@@ -1,0 +1,59 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Tatarčuks ir ieguvis bakalaura grādu sporta pedagoģijā Latvijas Sporta pedagoģijas akadēmijā, studējis Latvijas Universitātes Juridiskajā fakultātē.
+1-1	0-9	Tatarčuks	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Tatarčuks	person	*	*[1]	*->1-1	nsubj	basic	1-3	
+1-2	10-12	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	aux	basic	1-3	
+1-3	13-20	ieguvis	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnasnp	iegūt	_	_	_	_	root	basic	1-3	
+1-4	21-30	bakalaura	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	bakalaurs	_	_	_	_	nmod	basic	1-5	
+1-5	31-36	grādu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	grāds	_	_	_	_	obj	basic	1-3	
+1-6	37-43	sporta	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	sports	_	_	_	_	nmod	basic	1-7	
+1-7	44-54	pedagoģijā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	pedagoģija	_	_	_	_	acl	basic	1-5	
+1-8	55-63	Latvijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Latvija	organization[1]|GPE[2]	*[1]|*[2]	_	_	iobj	basic	1-11	
+1-9	64-70	Sporta	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	sports	organization[1]	*[1]	_	_	nmod	basic	1-10	
+1-10	71-82	pedagoģijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	pedagoģija	organization[1]	*[1]	_	_	nmod	basic	1-11	
+1-11	83-92	akadēmijā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	akadēmija	organization[1]	*[1]	_	_	obl	basic	1-3	
+1-12	92-93	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-13	
+1-13	94-102	studējis	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnasnp	studēt	_	_	_	_	conj	basic	1-3	
+1-14	103-111	Latvijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Latvija	organization[3]|organization[4]|GPE[5]	*[3]|*[4]|*[5]	_	_	nmod	basic	1-15	
+1-15	112-125	Universitātes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	Universitāte	organization[3]|organization[4]	*[3]|*[4]	_	_	nmod	basic	1-17	
+1-16	126-137	Juridiskajā	Fem	Sing	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfslyp	juridiska	organization[3]	*[3]	_	_	amod	basic	1-17	
+1-17	138-147	fakultātē	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	fakultāte	organization[3]	*[3]	_	_	obl	basic	1-13	
+1-18	147-148	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-3	
+
+#Text=Kā rakstīts viņa profesionālā sociālā tīkla "Linkedin"profilā, Tatarčuks arī mācījies Rīgas Biznesa skolas biznesa maģistra (Master of Business Administratiom/MBA) programmā.
+2-1	150-152	Kā	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0m	kā	_	_	_	_	advmod	basic	2-2	
+2-2	153-161	rakstīts	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnp	rakstīt	_	_	_	_	parataxis	basic	2-14	
+2-3	162-166	viņa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msgn	viņš	_	_	*[1]	*->1-2	det	basic	2-10	
+2-4	167-179	profesionālā	Masc	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsgyp	profesionāls	_	_	_	_	amod	basic	2-6	
+2-5	180-187	sociālā	Masc	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsgyp	sociāls	_	_	_	_	amod	basic	2-6	
+2-6	188-193	tīkla	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	tīkls	_	_	_	_	nmod	basic	2-8	
+2-7	194-195	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[6]	*[6]	_	_	punct	basic	2-8	
+2-8	195-203	Linkedin	_	_	_	_	_	_	_	_	_	_	_	_	np0000	Linkedin	organization[6]	*[6]	_	_	nmod	basic	2-10	
+2-9	203-204	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[6]	*[6]	_	_	punct	basic	2-8	
+2-10	204-211	profilā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	profils	_	_	_	_	obl	basic	2-2	
+2-11	211-212	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-2	
+2-12	213-222	Tatarčuks	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Tatarčuks	person	*	*[1]	*->1-3	nsubj	basic	2-14	
+2-13	223-226	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse	basic	2-14	
+2-14	227-235	mācījies	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	Perf	vmypdmsnasnp	mācīties	_	_	_	_	root	basic	2-14	
+2-15	236-241	Rīgas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Rīga	organization[7]|GPE[8]	*[7]|*[8]	_	_	nmod	basic	2-17	
+2-16	242-249	Biznesa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	bizness	organization[7]	*[7]	_	_	nmod	basic	2-17	
+2-17	250-256	skolas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	skola	organization[7]	*[7]	_	_	iobj	basic	2-28	
+2-18	257-264	biznesa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	bizness	_	_	*[2]	*->2-1	nmod	basic	2-19	
+2-19	265-273	maģistra	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	maģistrs	_	_	*[2]	*->2-1	nmod	basic	2-28	
+2-20	274-275	(	_	_	_	_	_	_	_	_	_	_	_	_	zb	(	_	_	_	_	punct	basic	2-21	
+2-21	275-281	Master	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Master	_	_	*[2]	*->2-2	parataxis	basic	2-19	
+2-22	282-284	of	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	of	_	_	*[2]	*->2-2	flat:foreign	basic	2-21	
+2-23	285-293	Business	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Business	_	_	*[2]	*->2-2	flat:foreign	basic	2-21	
+2-24	294-308	Administratiom	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Administratiom	_	_	*[2]	*->2-2	flat:foreign	basic	2-21	
+2-25	308-309	/	_	_	_	_	_	_	_	_	_	_	_	_	zx	/	_	_	*[2]	*->2-2	punct	basic	2-26	
+2-26	309-312	MBA	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	MBA	_	_	*[2]	*->2-2	conj	basic	2-21	
+2-27	312-313	)	_	_	_	_	_	_	_	_	_	_	_	_	zb	)	_	_	_	_	punct	basic	2-21	
+2-28	314-323	programmā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	programma	_	_	_	_	obl	basic	2-14	
+2-29	323-324	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-14	

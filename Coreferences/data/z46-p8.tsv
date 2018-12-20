@@ -1,0 +1,120 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Tomēr skolēnu un skolotāju skaita attiecība pati par sevi ir atkarīga no dažādiem faktoriem.
+1-1	0-5	Tomēr	_	_	_	_	_	_	_	_	_	_	_	_	cc	tomēr	_	_	_	_	cc	basic	1-11	
+1-2	6-13	skolēnu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	skolēns	_	_	_	_	nmod	basic	1-5	
+1-3	14-16	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-4	
+1-4	17-26	skolotāju	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	skolotājs	_	_	_	_	conj	basic	1-2	
+1-5	27-33	skaita	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	skaits	_	_	_	_	nmod	basic	1-6	
+1-6	34-43	attiecība	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	attiecība	_	_	*[2]	*->2-1	nsubj	basic	1-11	
+1-7	44-48	pati	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Tot	*	*	pg0fsnn	pati	_	_	_	_	dep	basic	1-6	
+1-8	49-52	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	_	_	case	basic	1-9	
+1-9	53-57	sevi	*	*	Acc	*	*	*	*	*	*	Case=Acc\|PronType=Rcp\|Reflex=Yes	*	*	px000an	sevis	_	_	*[2]	*->2-2	compound	basic	1-7	
+1-10	58-60	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	cop	basic	1-11	
+1-11	61-69	atkarīga	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	atkarīga	_	_	_	_	root	basic	1-11	
+1-12	70-72	no	_	_	_	_	_	_	_	_	_	_	_	_	sppd	no	_	_	_	_	case	basic	1-14	
+1-13	73-81	dažādiem	Masc	Plur	Dat	Pos	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpdnp	dažāds	_	_	_	_	amod	basic	1-14	
+1-14	82-91	faktoriem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	faktors	_	_	_	_	obl	basic	1-11	
+1-15	91-92	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-11	
+
+#Text=Tādējādi skolotāju skaits nemainīsies atkarībā tikai atbilstošā vecuma skolēnu skaita valstī.
+2-1	94-102	Tādējādi	_	_	_	_	_	_	_	_	_	_	_	_	r0m	tādējādi	_	_	_	_	advmod	basic	2-4	
+2-2	103-112	skolotāju	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	skolotājs	_	_	_	_	nmod	basic	2-3	
+2-3	113-119	skaits	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	skaits	_	_	_	_	nsubj	basic	2-4	
+2-4	120-131	nemainīsies	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Reflex=Yes\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vmyifi330ay	nemainīties	_	_	_	_	root	basic	2-4	
+2-5	132-140	atkarībā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	atkarība	_	_	_	_	obl	basic	2-4	
+2-6	141-146	tikai	_	_	_	_	_	_	_	_	_	_	_	_	q	tikai	_	_	_	_	iobj	basic	2-4	
+2-7	147-157	atbilstošā	Fem	Sing	Loc	Pos	*	Pres	*	Pass	*	Aspect=Imp\|Case=Loc\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Imp	vmnpdfslapnpn	atbilst	_	_	_	_	amod	basic	2-8	
+2-8	158-164	vecuma	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	vecums	_	_	_	_	nmod	basic	2-9	
+2-9	165-172	skolēnu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	skolēns	_	_	_	_	nmod	basic	2-10	
+2-10	173-179	skaita	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	skaits	_	_	_	_	nmod	basic	2-11	
+2-11	180-186	valstī	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl6	valsts	_	_	_	_	obl	basic	2-4	
+2-12	186-187	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-4	
+
+#Text=Būtisku lomu šeit spēlē dažādi lēmumi izglītības politikā, kas tiek pieņemti konkrētā valstī.
+3-1	189-196	Būtisku	Fem	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsanp	būtiska	_	_	_	_	amod	basic	3-2	
+3-2	197-201	lomu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	loms	_	_	_	_	obj	basic	3-4	
+3-3	202-206	šeit	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0p	šeit	_	_	_	_	advmod	basic	3-4	
+3-4	207-212	spēlē	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt230an	spēlēt	_	_	_	_	root	basic	3-4	
+3-5	213-219	dažādi	Masc	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpnnp	dažāds	_	_	_	_	amod	basic	3-6	
+3-6	220-226	lēmumi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	lēmums	_	_	*[1]	*->1-1	nsubj	basic	3-4	
+3-7	227-237	izglītības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	izglītība	_	_	_	_	nmod	basic	3-8	
+3-8	238-246	politikā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	politika	_	_	_	_	acl	basic	3-6	
+3-9	246-247	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-12	
+3-10	248-251	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	*[1]	*->1-2	nsubj:pass	basic	3-12	
+3-11	252-256	tiek	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vtnipi130an	tikt	_	_	_	_	aux:pass	basic	3-12	
+3-12	257-265	pieņemti	Masc	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpnpsnpn	pieņemt	_	_	_	_	acl	basic	3-6	
+3-13	266-274	konkrētā	Fem	Sing	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affslnp	konkrēta	_	_	_	_	amod	basic	3-14	
+3-14	275-281	valstī	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl6	valsts	_	_	_	_	obl	basic	3-12	
+3-15	281-282	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-4	
+
+#Text=Piemēram, plānojot nepieciešamo skolotāju skaitu Floridā laika periodam līdz 2016.gadam, izglītības departaments ņem vērā 2006. gada decembrī notikušās konferences par skolēnu skaita noteikšanu lēmumos paredzēto vidējā klases lieluma samazināšanos.
+4-1	284-292	Piemēram	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	piemērs	_	_	_	_	parataxis	basic	4-16	
+4-2	292-293	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	4-1	
+4-3	294-302	plānojot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000n	plānot	_	_	_	_	advcl	basic	4-16	
+4-4	303-315	nepieciešamo	Masc	Plur	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpgyp	nepieciešams	_	_	_	_	amod	basic	4-6	
+4-5	316-325	skolotāju	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	skolotājs	_	_	_	_	nmod	basic	4-6	
+4-6	326-332	skaitu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	skaits	_	_	_	_	obj	basic	4-3	
+4-7	333-340	Floridā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	Florida	GPE	*	_	_	acl	basic	4-6	
+4-8	341-346	laika	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	laiks	_	_	_	_	nmod	basic	4-9	
+4-9	347-355	periodam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	periods	_	_	_	_	iobj	basic	4-3	
+4-10	356-360	līdz	_	_	_	_	_	_	_	_	_	_	_	_	sppd	līdz	time[1]	*[1]	_	_	case	basic	4-12	
+4-11	361-366	2016.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	2016.	time[1]	*[1]	_	_	amod	basic	4-12	
+4-12	366-371	gadam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	gads	time[1]	*[1]	_	_	nmod	basic	4-9	
+4-13	371-372	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	4-3	
+4-14	373-383	izglītības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	izglītība	_	_	_	_	nmod	basic	4-15	
+4-15	384-396	departaments	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	departaments	_	_	_	_	nsubj	basic	4-16	
+4-16	397-400	ņem	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt130an	ņemt	_	_	_	_	root	basic	4-16	
+4-17	401-405	vērā	_	_	_	_	_	_	_	_	_	_	_	_	r0p	vērā	_	_	_	_	advmod	basic	4-16	
+4-18	406-411	2006.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	2006.	time[2]	*[2]	_	_	amod	basic	4-19	
+4-19	412-416	gada	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	gads	time[2]	*[2]	_	_	nmod	basic	4-20	
+4-20	417-425	decembrī	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	decembris	time[2]	*[2]	_	_	obl	basic	4-21	
+4-21	426-435	notikušās	Fem	Plur	Acc	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfpaasypn	notikt	_	_	_	_	amod	basic	4-22	
+4-22	436-447	konferences	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	konference	_	_	_	_	nmod	basic	4-27	
+4-23	448-451	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	_	_	case	basic	4-26	
+4-24	452-459	skolēnu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	skolēns	_	_	_	_	nmod	basic	4-25	
+4-25	460-466	skaita	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	skaits	_	_	_	_	nmod	basic	4-26	
+4-26	467-477	noteikšanu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	noteikšana	_	_	_	_	obl	basic	4-22	
+4-27	478-485	lēmumos	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	lēmums	_	_	_	_	obl	basic	4-28	
+4-28	486-495	paredzēto	Fem	Sing	Acc	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsapsypn	paredzēt	_	_	_	_	amod	basic	4-32	
+4-29	496-502	vidējā	Masc	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsgyp	vidējs	_	_	_	_	amod	basic	4-31	
+4-30	503-509	klases	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	klase	_	_	_	_	nmod	basic	4-31	
+4-31	510-517	lieluma	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	lielums	_	_	_	_	nmod	basic	4-32	
+4-32	518-531	samazināšanos	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsar	samazināšanās	_	_	_	_	obj	basic	4-16	
+4-33	531-532	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	4-16	
+
+#Text=Tā novedīs pie 5% skolotāju skaita pieauguma pirmajos piecos gados un 19% pieauguma nākamajos piecos gados (Florida Department of Education, 2007).
+5-1	534-536	Tā	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsnn	tā	_	_	_	_	nsubj	basic	5-2	
+5-2	537-544	novedīs	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vmnift130an	novest	_	_	_	_	root	basic	5-2	
+5-3	545-548	pie	_	_	_	_	_	_	_	_	_	_	_	_	spsg	pie	_	_	_	_	case	basic	5-8	
+5-4	549-550	5	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	5	_	_	_	_	nummod	basic	5-5	
+5-5	550-551	%	_	_	_	_	_	_	_	_	_	_	_	_	xx	%	_	_	_	_	nmod	basic	5-8	
+5-6	552-561	skolotāju	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	skolotāja	_	_	_	_	nmod	basic	5-7	
+5-7	562-568	skaita	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	skaits	_	_	_	_	nmod	basic	5-8	
+5-8	569-578	pieauguma	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	pieaugums	_	_	_	_	obl	basic	5-2	
+5-9	579-587	pirmajos	Masc	Plur	Loc	Pos	*	*	*	*	*	Case=Loc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|NumType=Ord	*	*	mosmpl	pirmais	time[3]	*[3]	_	_	amod	basic	5-11	
+5-10	588-594	piecos	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpl	pieci	time[3]	*[3]	_	_	nummod	basic	5-11	
+5-11	595-600	gados	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	gads	time[3]	*[3]	_	_	acl	basic	5-8	
+5-12	601-603	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	5-15	
+5-13	604-606	19	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	19	_	_	_	_	nummod	basic	5-14	
+5-14	606-607	%	_	_	_	_	_	_	_	_	_	_	_	_	xx	%	_	_	_	_	nmod	basic	5-15	
+5-15	608-617	pieauguma	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	pieaugums	_	_	_	_	conj	basic	5-8	
+5-16	618-627	nākamajos	Masc	Plur	Loc	Pos	*	Pres	*	Pass	*	Case=Loc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	*	vmnpdmplppypn	nākt	time[4]	*[4]	_	_	amod	basic	5-18	
+5-17	628-634	piecos	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpl	pieci	time[4]	*[4]	_	_	nummod	basic	5-18	
+5-18	635-640	gados	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	gads	time[4]	*[4]	_	_	acl	basic	5-15	
+5-19	641-642	(	_	_	_	_	_	_	_	_	_	_	_	_	zb	(	_	_	_	_	punct	basic	5-20	
+5-20	642-649	Florida	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Florida	organization[5]|GPE[6]	*[5]|*[6]	_	_	parataxis	basic	5-2	
+5-21	650-660	Department	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Department	organization[5]	*[5]	_	_	flat:foreign	basic	5-20	
+5-22	661-663	of	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	of	organization[5]	*[5]	_	_	flat:foreign	basic	5-20	
+5-23	664-673	Education	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Education	organization[5]	*[5]	_	_	flat:foreign	basic	5-20	
+5-24	673-674	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	5-25	
+5-25	675-679	2007	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	2007	time	*	_	_	acl	basic	5-20	
+5-26	679-680	)	_	_	_	_	_	_	_	_	_	_	_	_	zb	)	_	_	_	_	punct	basic	5-20	
+5-27	680-681	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	5-2	

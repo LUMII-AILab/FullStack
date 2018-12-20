@@ -1,0 +1,150 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Hēra valda augstajā Olimpā.
+1-1	0-4	Hēra	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Hēra	person	https://en.wikipedia.org/wiki/Hera	*[4]	*->4-1	nsubj	basic	1-2	
+1-2	5-10	valda	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	valdīt	_	_	_	_	root	basic	1-2	
+1-3	11-19	augstajā	Fem	Sing	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affslyp	augsta	_	_	_	_	amod	basic	1-4	
+1-4	20-26	Olimpā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	npmsl1	Olimps	location	*	_	_	obl	basic	1-2	
+1-5	26-27	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-2	
+
+#Text=Viņa, tāpat kā viņas vīrs Zevs, ir pavēlniece pār pērkoniem un zibeņiem; paklausot viņas vārdam, tumšo lietu mākoņi klāj debesis, un viņas rokas mājiens rada drausmīgas vētras.
+2-1	29-33	Viņa	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsnn	viņa	_	_	*[4]	*->4-2	nsubj	basic	2-10	
+2-2	33-34	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-7	
+2-3	35-40	tāpat	_	_	_	_	_	_	_	_	_	_	_	_	q	tāpat	_	_	_	_	discourse	basic	2-4	
+2-4	41-43	kā	_	_	_	_	_	_	_	_	_	_	_	_	cc	kā	_	_	_	_	mark	basic	2-7	
+2-5	44-49	viņas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsgn	viņa	_	_	*[4]	*->4-3	det	basic	2-6	
+2-6	50-54	vīrs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	vīrs	_	_	*[1]	*->1-1	nmod	basic	2-7	
+2-7	55-59	Zevs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Zevs	person	https://en.wikipedia.org/wiki/Zeus	*[1]	*->1-2	parataxis	basic	2-10	
+2-8	59-60	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-7	
+2-9	61-63	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	cop	basic	2-10	
+2-10	64-74	pavēlniece	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	pavēlniece	_	_	_	_	root	basic	2-10	
+2-11	75-78	pār	_	_	_	_	_	_	_	_	_	_	_	_	sppd	pār	_	_	_	_	case	basic	2-12	
+2-12	79-88	pērkoniem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	pērkons	_	_	_	_	nmod	basic	2-10	
+2-13	89-91	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	2-14	
+2-14	92-100	zibeņiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd2	zibens	_	_	_	_	conj	basic	2-12	
+2-15	100-101	;	_	_	_	_	_	_	_	_	_	_	_	_	zc	\;	_	_	_	_	punct	basic	2-23	
+2-16	102-111	paklausot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000n	paklausīt	_	_	_	_	advcl	basic	2-23	
+2-17	112-117	viņas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsgn	viņa	_	_	*[4]	*->4-4	det	basic	2-18	
+2-18	118-124	vārdam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	vārds	_	_	_	_	iobj	basic	2-16	
+2-19	124-125	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-16	
+2-20	126-131	tumšo	Masc	Plur	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpgyp	tumšs	_	_	_	_	amod	basic	2-21	
+2-21	132-137	lietu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg3	lietus	_	_	_	_	nmod	basic	2-22	
+2-22	138-144	mākoņi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn2	mākonis	_	_	_	_	nsubj	basic	2-23	
+2-23	145-149	klāj	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt130an	klāt	_	_	_	_	parataxis	basic	2-10	
+2-24	150-157	debesis	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa6	debess	_	_	_	_	obj	basic	2-23	
+2-25	157-158	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-30	
+2-26	159-161	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	2-30	
+2-27	162-167	viņas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsgn	viņa	_	_	*[4]	*->4-5	det	basic	2-28	
+2-28	168-173	rokas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	roka	_	_	_	_	nmod	basic	2-29	
+2-29	174-181	mājiens	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	mājiens	_	_	_	_	nsubj	basic	2-30	
+2-30	182-186	rada	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	radīt	_	_	_	_	conj	basic	2-23	
+2-31	187-197	drausmīgas	Fem	Plur	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpanp	drausmīga	_	_	_	_	amod	basic	2-32	
+2-32	198-204	vētras	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	vētra	_	_	_	_	obj	basic	2-30	
+2-33	204-205	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-10	
+
+#Text=Daiļa ir diženā Hēra- lielām acīm, lillijbaltām rokām, ar vainagu uz brīnišķīgajām, viļņainajām cirtām; valdonīgi, mierīgi un majestātiski mirdz viņas acis.
+3-1	207-212	Daiļa	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	daiļa	_	_	_	_	root	basic	3-1	
+3-2	213-215	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	cop	basic	3-1	
+3-3	216-222	diženā	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnyp	dižena	_	_	*[4]	*->4-6	amod	basic	3-4	
+3-4	223-227	Hēra	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Hēra	person	*	*[4]	*->4-6	nsubj	basic	3-1	
+3-5	227-228	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	_	_	punct	basic	3-6	
+3-6	229-235	lielām	Fem	Plur	Dat	Pos	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpdnp	liela	_	_	_	_	acl	basic	3-4	
+3-7	236-240	acīm	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd6	acs	_	_	_	_	nmod	basic	3-6	
+3-8	240-241	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-10	
+3-9	242-254	lillijbaltām	Fem	Plur	Dat	Pos	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	arfpdnp	lillijbalta	_	_	_	_	amod	basic	3-10	
+3-10	255-260	rokām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	roka	_	_	_	_	conj	basic	3-6	
+3-11	260-261	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-13	
+3-12	262-264	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case	basic	3-13	
+3-13	265-272	vainagu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	vainags	_	_	_	_	conj	basic	3-6	
+3-14	273-275	uz	_	_	_	_	_	_	_	_	_	_	_	_	sppd	uz	_	_	_	_	case	basic	3-18	
+3-15	276-289	brīnišķīgajām	Fem	Plur	Dat	Pos	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpdyp	brīnišķīga	_	_	_	_	amod	basic	3-18	
+3-16	289-290	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-17	
+3-17	291-302	viļņainajām	Fem	Plur	Dat	Pos	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpdyp	viļņaina	_	_	_	_	conj	basic	3-15	
+3-18	303-309	cirtām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	cirta	_	_	_	_	nmod	basic	3-13	
+3-19	309-310	;	_	_	_	_	_	_	_	_	_	_	_	_	zc	\;	_	_	_	_	punct	basic	3-25	
+3-20	311-320	valdonīgi	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	valdonīgi	_	_	_	_	advmod	basic	3-25	
+3-21	320-321	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-22	
+3-22	322-329	mierīgi	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	mierīgi	_	_	_	_	conj	basic	3-20	
+3-23	330-332	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	3-24	
+3-24	333-345	majestātiski	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	majestātiski	_	_	_	_	conj	basic	3-20	
+3-25	346-351	mirdz	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipi330an	mirdzēt	_	_	_	_	parataxis	basic	3-1	
+3-26	352-357	viņas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsgn	viņa	_	_	*[4]	*->4-7	det	basic	3-27	
+3-27	358-362	acis	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn6	acs	_	_	_	_	nsubj	basic	3-25	
+3-28	362-363	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-1	
+
+#Text=Majestātiska savā garajā, krāšņajā pašas Atēnas austajā tērpā, viņa brauc lejup no Olimpa ratos, kuros ir iejūgti 2 nemirstīgi zirgi.
+4-1	365-377	Majestātiska	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	majestātiska	_	_	_	_	acl	basic	4-12	
+4-2	378-382	savā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0msln	savs	_	_	*[4]	*->4-8	det	basic	4-9	
+4-3	383-389	garajā	Fem	Sing	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affslyp	gara	_	_	_	_	amod	basic	4-9	
+4-4	389-390	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	4-5	
+4-5	391-399	krāšņajā	Fem	Sing	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affslyp	krāšņa	_	_	_	_	conj	basic	4-3	
+4-6	400-405	pašas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|PronType=Tot	*	*	pg0fsgn	pati	_	_	_	_	det	basic	4-7	
+4-7	406-412	Atēnas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	atēna	person	https://en.wikipedia.org/wiki/Athena	_	_	dep	basic	4-8	
+4-8	413-420	austajā	Masc	Sing	Loc	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Loc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmslpsypn	aust	_	_	_	_	amod	basic	4-9	
+4-9	421-426	tērpā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	tērps	_	_	_	_	acl	basic	4-1	
+4-10	426-427	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	4-1	
+4-11	428-432	viņa	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsnn	viņa	_	_	*[4]	*->4-9	nsubj	basic	4-12	
+4-12	433-438	brauc	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt130an	braukt	_	_	_	_	root	basic	4-12	
+4-13	439-444	lejup	_	_	_	_	_	_	_	_	_	_	_	_	r0p	lejup	_	_	_	_	advmod	basic	4-12	
+4-14	445-447	no	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	_	_	_	_	case	basic	4-15	
+4-15	448-454	Olimpa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Olimps	location	https://en.wikipedia.org/wiki/Mount\_Olympus	*[2]	*->2-1	obl	basic	4-12	
+4-16	455-460	ratos	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	rats	_	_	*[2]	*->2-1	obl	basic	4-12	
+4-17	460-461	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	4-20	
+4-18	462-467	kuros	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur\|PronType=Rel	*	*	pr0mpln	kurš	_	_	*[2]	*->2-2	obl	basic	4-20	
+4-19	468-470	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	aux:pass	basic	4-20	
+4-20	471-478	iejūgti	Masc	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpnpsnpn	iejūgt	_	_	_	_	acl	basic	4-16	
+4-21	479-480	2	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	2	_	_	_	_	nummod	basic	4-23	
+4-22	481-491	nemirstīgi	Masc	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpnnp	nemirstīgs	_	_	_	_	amod	basic	4-23	
+4-23	492-497	zirgi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	zirgs	_	_	_	_	nsubj:pass	basic	4-20	
+4-24	497-498	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	4-12	
+
+#Text=No tīra sudraba ir rati, no tīra zelta ir riteņi, bet riteņu spieķi mirdz varā kalti.
+5-1	500-502	No	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	_	_	_	_	case	basic	5-3	
+5-2	503-507	tīra	Masc	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsgnp	tīrs	_	_	_	_	amod	basic	5-3	
+5-3	508-515	sudraba	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Sudraba	_	_	_	_	root	basic	5-3	
+5-4	516-518	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	cop	basic	5-3	
+5-5	519-523	rati	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	rats	_	_	_	_	nsubj	basic	5-3	
+5-6	523-524	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	5-9	
+5-7	525-527	no	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	_	_	_	_	case	basic	5-9	
+5-8	528-532	tīra	Fem	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsgnp	tīrs	_	_	_	_	amod	basic	5-9	
+5-9	533-538	zelta	Masc	Coll	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Coll	*	*	ncmvg1	zelts	_	_	_	_	conj	basic	5-3	
+5-10	539-541	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	cop	basic	5-9	
+5-11	542-548	riteņi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn2	ritenis	_	_	_	_	nsubj	basic	5-9	
+5-12	548-549	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	5-16	
+5-13	550-553	bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	_	_	cc	basic	5-16	
+5-14	554-560	riteņu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	ritenis	_	_	_	_	nmod	basic	5-15	
+5-15	561-567	spieķi	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	spieķis	_	_	_	_	nsubj	basic	5-16	
+5-16	568-573	mirdz	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipi330an	mirdzēt	_	_	_	_	conj	basic	5-3	
+5-17	574-578	varā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	vara	_	_	_	_	obl	basic	5-18	
+5-18	579-584	kalti	Masc	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpnpsnpn	kalt	_	_	_	_	acl	basic	5-16	
+5-19	584-585	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	5-3	
+
+#Text=Jauka smarža plūst pār zemi tur, kur brauc Hēra.
+6-1	587-592	Jauka	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	jauka	_	_	_	_	amod	basic	6-2	
+6-2	593-599	smarža	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	smarža	_	_	_	_	nsubj	basic	6-3	
+6-3	600-605	plūst	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0i1000n	plūst	_	_	_	_	root	basic	6-3	
+6-4	606-609	pār	_	_	_	_	_	_	_	_	_	_	_	_	spsa	pār	_	_	_	_	case	basic	6-5	
+6-5	610-614	zemi	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	zeme	_	_	_	_	obl	basic	6-3	
+6-6	615-618	tur	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0p	tur	_	_	*[3]	*->3-1	advmod	basic	6-3	
+6-7	618-619	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	6-9	
+6-8	620-623	kur	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0p	kur	_	_	*[3]	*->3-2	advmod	basic	6-9	
+6-9	624-629	brauc	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt130an	braukt	_	_	_	_	advcl	basic	6-6	
+6-10	630-634	Hēra	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Hēra	person	*	*[4]	*->4-10	nsubj	basic	6-9	
+6-11	634-635	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	6-3	
+
+#Text=Visa dzīvā radība noliecas Olimpa valdnieces priekšā.
+7-1	637-641	Visa	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Tot	*	*	pg0fsnn	visa	_	_	_	_	det	basic	7-3	
+7-2	642-647	dzīvā	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnyp	dzīva	_	_	_	_	amod	basic	7-3	
+7-3	648-654	radība	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	radība	_	_	_	_	nsubj	basic	7-4	
+7-4	655-663	noliecas	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipi130an	noliekties	_	_	_	_	root	basic	7-4	
+7-5	664-670	Olimpa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Olimps	location	*	*[4]	*->4-11	nmod	basic	7-6	
+7-6	671-681	valdnieces	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	valdniece	_	_	*[4]	*->4-11	nmod	basic	7-7	
+7-7	682-689	priekšā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	priekša	_	_	_	_	obl	basic	7-4	
+7-8	689-690	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	7-4	

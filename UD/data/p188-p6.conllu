@@ -6,7 +6,7 @@
 2	kļūtu	kļūt	AUX	vtnc0i100an	Mood=Cnd|Polarity=Pos|VerbForm=Fin|Voice=Act	5	cop	5:cop	LvtbNodeId=a-p188-p6s1w2
 3	par	par	ADP	spsa	_	5	case	5:case	LvtbNodeId=a-p188-p6s1w3
 4	transportlīdzekļu	transportlīdzeklis	NOUN	ncmpg2	Case=Gen|Gender=Masc|Number=Plur	5	nmod	5:nmod:gen	LvtbNodeId=a-p188-p6s1w4
-5	vadītāju	vadītājs	NOUN	ncmsa1	Case=Acc|Gender=Masc|Number=Sing	10	advcl	10:advcl	LvtbNodeId=a-p188-p6s1w5|SpaceAfter=No
+5	vadītāju	vadītājs	NOUN	ncmsa1	Case=Acc|Gender=Masc|Number=Sing	10	advcl	10:advcl|20:advcl	LvtbNodeId=a-p188-p6s1w5|SpaceAfter=No
 6	,	,	PUNCT	zc	_	5	punct	5:punct	LvtbNodeId=a-p188-p6s1w6
 7	ikvienai	ikviena	DET	pg0fsdn	Case=Dat|Gender=Fem|Number=Sing|PronType=Tot	8	det	8:det	LvtbNodeId=a-p188-p6s1w7
 8	personai	persona	NOUN	ncfsd4	Case=Dat|Gender=Fem|Number=Sing	10	nsubj	10:nsubj|20:nsubj	LvtbNodeId=a-p188-p6s1w8
@@ -18,7 +18,7 @@
 14	autoskolā	autoskola	NOUN	ncfsl4	Case=Loc|Gender=Fem|Number=Sing	13	acl	13:acl:loc	LvtbNodeId=a-p188-p6s1w14|SpaceAfter=No
 15	,	,	PUNCT	zc	_	20	punct	20:punct	LvtbNodeId=a-p188-p6s1w15
 16	kā	kā	CCONJ	cc	_	20	cc	20:cc	LvtbNodeId=a-p188-p6s1w16
-17	arī	arī	PART	q	_	16	discourse	16:discourse	LvtbNodeId=a-p188-p6s1w17
+17	arī	arī	CCONJ	cc	_	16	fixed	16:fixed	LvtbNodeId=a-p188-p6s1w17
 18	instruktora	instruktors	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	19	nmod	19:nmod:gen	LvtbNodeId=a-p188-p6s1w18
 19	pavadībā	pavadība	NOUN	ncfsl4	Case=Loc|Gender=Fem|Number=Sing	20	obl	20:obl:loc	LvtbNodeId=a-p188-p6s1w19
 20	jāapgūst	apgūt	VERB	vmnd0t100an	Mood=Nec|Polarity=Pos|VerbForm=Fin|Voice=Act	10	conj	10:conj	LvtbNodeId=a-p188-p6s1w20
@@ -26,7 +26,7 @@
 22	vadīšanas	vadīšana	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	23	nmod	23:nmod:gen|25:nmod:gen	LvtbNodeId=a-p188-p6s1w22
 23	prasme	prasme	NOUN	ncfsn5	Case=Nom|Gender=Fem|Number=Sing	20	obj	20:obj	LvtbNodeId=a-p188-p6s1w23
 24	un	un	CCONJ	cc	_	25	cc	25:cc	LvtbNodeId=a-p188-p6s1w24
-25	iemaņas	iemaņa	NOUN	ncfpn4	Case=Nom|Gender=Fem|Number=Plur	23	conj	23:conj	LvtbNodeId=a-p188-p6s1w25|SpaceAfter=No
+25	iemaņas	iemaņa	NOUN	ncfpn4	Case=Nom|Gender=Fem|Number=Plur	23	conj	20:obj|23:conj	LvtbNodeId=a-p188-p6s1w25|SpaceAfter=No
 26	.	.	PUNCT	zs	_	10	punct	10:punct	LvtbNodeId=a-p188-p6s1w26
 
 # sent_id = a-p188-p6s2
@@ -43,8 +43,8 @@
 10	beigšanas	beigšana	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	15	nmod	15:nmod:gen	LvtbNodeId=a-p188-p6s2w10
 11	teorijas	teorija	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	15	nmod	15:nmod:gen	LvtbNodeId=a-p188-p6s2w11
 12	un	un	CCONJ	cc	_	14	cc	14:cc	LvtbNodeId=a-p188-p6s2w12
-13	arī	arī	PART	q	_	12	discourse	12:discourse	LvtbNodeId=a-p188-p6s2w13
-14	braukšanas	braukšana	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	11	conj	11:conj	LvtbNodeId=a-p188-p6s2w14
+13	arī	arī	PART	q	_	15	discourse	15:discourse	LvtbNodeId=a-p188-p6s2w13
+14	braukšanas	braukšana	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	11	conj	11:conj|15:nmod:gen	LvtbNodeId=a-p188-p6s2w14
 15	eksāmenu	eksāmens	NOUN	ncmsa1	Case=Acc|Gender=Masc|Number=Sing	7	iobj	7:iobj	LvtbNodeId=a-p188-p6s2w15|SpaceAfter=No
 16	.	.	PUNCT	zs	_	4	punct	4:punct	LvtbNodeId=a-p188-p6s2w16
 
@@ -52,7 +52,7 @@
 # text = Ja tie nokārtoti sekmīgi, pretendents dodas uz Ceļu satiksmes drošības direkciju (CSDD) kārtot abus valsts eksāmenus.
 1	Ja	ja	SCONJ	cs	_	3	mark	3:mark	LvtbNodeId=a-p188-p6s3w1
 2	tie	tas	PRON	pd3mpnn	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Dem	3	nsubj:pass	3:nsubj:pass	LvtbNodeId=a-p188-p6s3w2
-3	nokārtoti	nokārtot	VERB	vmnpdmpnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part	7	advcl	7:advcl	LvtbNodeId=a-p188-p6s3w3
+3	nokārtoti	nokārtot	VERB	vmnpdmpnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	7	advcl	7:advcl	LvtbNodeId=a-p188-p6s3w3
 4	sekmīgi	sekmīgi	ADV	r0m	_	3	advmod	3:advmod	LvtbNodeId=a-p188-p6s3w4|SpaceAfter=No
 5	,	,	PUNCT	zc	_	3	punct	3:punct	LvtbNodeId=a-p188-p6s3w5
 6	pretendents	pretendents	NOUN	ncmsn1	Case=Nom|Gender=Masc|Number=Sing	7	nsubj	7:nsubj	LvtbNodeId=a-p188-p6s3w6
@@ -77,13 +77,13 @@
 2	tad	tad	ADV	r0t	PronType=Dem	10	advmod	10:advmod	LvtbNodeId=a-p188-p6s4w2|SpaceAfter=No
 3	,	,	PUNCT	zc	_	5	punct	5:punct	LvtbNodeId=a-p188-p6s4w3
 4	kad	kad	ADV	r0t	PronType=Int	5	advmod	5:advmod	LvtbNodeId=a-p188-p6s4w4
-5	izturēti	izturēt	VERB	vmnpdmpnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part	2	advcl	2:advcl	LvtbNodeId=a-p188-p6s4w5
+5	izturēti	izturēt	VERB	vmnpdmpnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	2	advcl	2:advcl	LvtbNodeId=a-p188-p6s4w5
 6	arī	arī	PART	q	_	7	discourse	7:discourse	LvtbNodeId=a-p188-p6s4w6
 7	šie	šis	DET	pd3mpnn	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Dem	8	det	8:det	LvtbNodeId=a-p188-p6s4w7
 8	pārbaudījumi	pārbaudījums	NOUN	ncmpn1	Case=Nom|Gender=Masc|Number=Plur	5	nsubj:pass	5:nsubj:pass	LvtbNodeId=a-p188-p6s4w8|SpaceAfter=No
 9	,	,	PUNCT	zc	_	5	punct	5:punct	LvtbNodeId=a-p188-p6s4w9
 10	var	varēt	VERB	vonipi330an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	0:root	LvtbNodeId=a-p188-p6s4w10
-11	saņemt	saņemt	VERB	vmnn0t1000n	Polarity=Pos|VerbForm=Inf	10	xcomp	10:xcomp|16:xcomp	LvtbNodeId=a-p188-p6s4w11
+11	saņemt	saņemt	VERB	vmnn0t1000n	Polarity=Pos|VerbForm=Inf	10	xcomp	10:xcomp	LvtbNodeId=a-p188-p6s4w11
 12	transportlīdzekļa	transportlīdzeklis	NOUN	ncmsg2	Case=Gen|Gender=Masc|Number=Sing	13	nmod	13:nmod:gen	LvtbNodeId=a-p188-p6s4w12
 13	vadītāja	vadītājs	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	14	nmod	14:nmod:gen	LvtbNodeId=a-p188-p6s4w13
 14	apliecību	apliecība	NOUN	ncfsa4	Case=Acc|Gender=Fem|Number=Sing	11	obj	11:obj	LvtbNodeId=a-p188-p6s4w14

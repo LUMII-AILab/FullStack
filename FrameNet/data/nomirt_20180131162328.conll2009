@@ -42,7 +42,7 @@
 8	baiļu	bailes	NOUN	ncfdg5	Case=Gen|Gender=Fem|Number=Ptan	7	nsubj	7:nsubj	_	_	_
 9	mirt	mirt	VERB	vmnn0i1000n	Polarity=Pos|VerbForm=Inf	8	acl	8:acl	_	_	_
 10	,	,	PUNCT	zc	_	11	punct	11:punct	_	_	_
-11	ir	būt	VERB	vmnipii30an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	7	conj	7:conj	_	_	_
+11	ir	būt	VERB	vmnipii30an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	7	conj	5:ccomp|7:conj	_	_	_
 12	bailes	bailes	NOUN	ncfdn5	Case=Nom|Gender=Fem|Number=Ptan	11	nsubj	11:nsubj	_	_	_
 13	nomirt	nomirt	VERB	vmnn0i1000n	Polarity=Pos|VerbForm=Inf	12	acl	12:acl	Y	Death	_
 14	neatvadījušamies	atvadīties	VERB	vmypu00000n0y	Definite=Ind|Polarity=Neg|Reflex=Yes|VerbForm=Conv	13	advcl	13:advcl	_	_	_
@@ -50,10 +50,10 @@
 
 # sent_id = a-d197-p140s2
 # text = Nomirt, sevi neizstāstījušam, laikam arī to nozīmē - nomirt neatvadījušamies.
-1	Nomirt	nomirt	VERB	vmnn0i1000n	Polarity=Pos|VerbForm=Inf	9	ccomp	9:ccomp	Y	Death	_
+1	Nomirt	nomirt	VERB	vmnn0i1000n	Polarity=Pos|VerbForm=Inf	9	csubj	9:csubj	Y	Death	_
 2	,	,	PUNCT	zc	_	4	punct	4:punct	_	_	_
 3	sevi	sevis	PRON	px000an	Case=Acc|PronType=Rcp|Reflex=Yes	4	obj	4:obj	_	_	_
-4	neizstāstījušam	izstāstīt	VERB	vmnpdmsdasnpy	Aspect=Perf|Case=Dat|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Neg|Tense=Past|VerbForm=Part	1	acl	1:acl:dat	_	_	_
+4	neizstāstījušam	izstāstīt	VERB	vmnpdmsdasnpy	Aspect=Perf|Case=Dat|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Neg|Tense=Past|VerbForm=Part|Voice=Act	1	acl	1:acl:dat	_	_	_
 5	,	,	PUNCT	zc	_	4	punct	4:punct	_	_	_
 6	laikam	laikam	PART	q	_	9	discourse	9:discourse	_	_	_
 7	arī	arī	PART	q	_	9	discourse	9:discourse	_	_	_
@@ -71,7 +71,7 @@
 3	sen	sen	ADV	r0t	_	6	advmod	6:advmod	_	_	Time
 4	Sofijai	Sofija	PROPN	npfsd4	Case=Dat|Gender=Fem|Number=Sing	6	obl	6:obl:dat	_	_	_
 5	bija	būt	AUX	vcnisii30an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	6	aux	6:aux	_	_	_
-6	nomirusi	nomirt	VERB	vmnpdfsnasnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	0	root	0:root	Y	Death	_
+6	nomirusi	nomirt	VERB	vmnpdfsnasnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	0	root	0:root	Y	Death	_
 7	vecmāmiņa	vecmāmiņa	NOUN	ncfsn4	Case=Nom|Gender=Fem|Number=Sing	6	nsubj	6:nsubj	_	_	Protagonist
 8	.	.	PUNCT	zs	_	6	punct	6:punct	_	_	_
 
@@ -82,20 +82,20 @@
 3	jauns	jauns	ADJ	afmsnnp	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	0	root	0:root	_	_	_
 4	,	,	PUNCT	zc	_	6	punct	6:punct	_	_	_
 5	kas	kas	PRON	pr000nn	Case=Nom|PronType=Rel	6	nsubj	6:nsubj	_	_	Protagonist
-6	nomiris	nomirt	VERB	vmnpdmsnasnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	3	conj	3:conj	Y	Death	_
+6	nomiris	nomirt	VERB	vmnpdmsnasnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	3	conj	3:conj	Y	Death	_
 7	.	.	PUNCT	zs	_	3	punct	3:punct	_	_	_
 
 # sent_id = a-p1297-p4s11
 # text = Vairāki biedri nomiruši pēc kārtīgas maltītes, ko baudījuši pēc vairākām badošanās dienām.
 1	Vairāki	vairāki	DET	pi0mpnn	Case=Nom|Gender=Masc|Number=Plur|PronType=Ind	2	det	2:det	_	_	_
 2	biedri	biedrs	NOUN	ncmpn1	Case=Nom|Gender=Masc|Number=Plur	3	nsubj	3:nsubj	_	_	Protagonist
-3	nomiruši	nomirt	VERB	vmnpdmpnasnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part	0	root	0:root	Y	Death	_
+3	nomiruši	nomirt	VERB	vmnpdmpnasnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	0	root	0:root	Y	Death	_
 4	pēc	pēc	ADP	spsg	_	6	case	6:case	_	_	_
 5	kārtīgas	kārtīgs	ADJ	affsgnp	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	6	amod	6:amod	_	_	_
 6	maltītes	maltīte	NOUN	ncfsg5	Case=Gen|Gender=Fem|Number=Sing	3	obl	3:obl:pēc	_	_	Time
 7	,	,	PUNCT	zc	_	9	punct	9:punct	_	_	_
 8	ko	kas	PRON	pr000an	Case=Acc|PronType=Rel	9	obj	9:obj	_	_	_
-9	baudījuši	baudīt	VERB	vmnpdmpnasnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part	6	acl	6:acl	_	_	_
+9	baudījuši	baudīt	VERB	vmnpdmpnasnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	6	acl	6:acl	_	_	_
 10	pēc	pēc	ADP	sppd	_	13	case	13:case	_	_	_
 11	vairākām	vairākas	DET	pi0fpdn	Case=Dat|Gender=Fem|Number=Plur|PronType=Ind	13	det	13:det	_	_	_
 12	badošanās	badošanās	NOUN	ncfsgr	Case=Gen|Gender=Fem|Number=Sing	13	nmod	13:nmod:gen	_	_	_

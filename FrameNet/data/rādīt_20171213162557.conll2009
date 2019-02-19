@@ -84,7 +84,7 @@
 
 # sent_id = a-p1393-p4s5
 # text = Pieprasīti agrie kartupeļi — saimnieks rāda uz nogabalu, kas apklāts ar agroplēvi.
-1	Pieprasīti	pieprasīt	VERB	vmnpdmpnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part	0	root	0:root	_	_	_
+1	Pieprasīti	pieprasīt	VERB	vmnpdmpnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	0	root	0:root	_	_	_
 2	agrie	agrs	ADJ	afmpnyp	Case=Nom|Degree=Pos|Gender=Masc|Number=Plur	3	amod	3:amod	_	_	_
 3	kartupeļi	kartupelis	NOUN	ncmpn2	Case=Nom|Gender=Masc|Number=Plur	1	nsubj	1:nsubj	_	_	_
 4	—	—	PUNCT	zd	_	6	punct	6:punct	_	_	_
@@ -94,14 +94,14 @@
 8	nogabalu	nogabals	NOUN	ncmsa1	Case=Acc|Gender=Masc|Number=Sing	6	obl	6:obl:uz	_	_	Phenomenon
 9	,	,	PUNCT	zc	_	11	punct	11:punct	_	_	_
 10	kas	kas	PRON	pr000nn	Case=Nom|PronType=Rel	11	nsubj	11:nsubj	_	_	_
-11	apklāts	apklāt	VERB	vmnpdmsnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	8	acl	8:acl	_	_	_
+11	apklāts	apklāt	VERB	vmnpdmsnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	8	acl	8:acl	_	_	_
 12	ar	ar	ADP	spsa	_	13	case	13:case	_	_	_
 13	agroplēvi	agroplēve	NOUN	ncfsa5	Case=Acc|Gender=Fem|Number=Sing	11	iobj	11:iobj	_	_	_
 14	.	.	PUNCT	zs	_	1	punct	1:punct	_	_	_
 
 # sent_id = a-p3024-p2s1
 # text = Inficēto sifilisa slimnieku skaita straujš pieaugums var liecināt par kārtējo sifilisa epidēmiskā pacēluma sākumu, turklāt pieredze rāda, ka sifilisa epidēmijas parasti uzliesmo, būtiski pasliktinoties ekonomiskajai situācijai un dzīves līmenim.
-1	Inficēto	inficēt	VERB	vmnpdmpgpsypn	Aspect=Perf|Case=Gen|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part	3	amod	3:amod	_	_	_
+1	Inficēto	inficēt	VERB	vmnpdmpgpsypn	Aspect=Perf|Case=Gen|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	3	amod	3:amod	_	_	_
 2	sifilisa	sifiliss	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	3	nmod	3:nmod:gen	_	_	_
 3	slimnieku	slimnieks	NOUN	ncmpg1	Case=Gen|Gender=Masc|Number=Plur	4	nmod	4:nmod:gen	_	_	_
 4	skaita	skaits	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	6	nmod	6:nmod:gen	_	_	_
@@ -129,10 +129,10 @@
 26	būtiski	būtiski	ADV	r0q	_	27	advmod	27:advmod	_	_	_
 27	pasliktinoties	pasliktināties	VERB	vmypu0000000n	Polarity=Pos|Reflex=Yes|VerbForm=Conv	24	advcl	24:advcl	_	_	_
 28	ekonomiskajai	ekonomisks	ADJ	affsdyp	Case=Dat|Degree=Pos|Gender=Fem|Number=Sing	29	amod	29:amod	_	_	_
-29	situācijai	situācija	NOUN	ncfsd4	Case=Dat|Gender=Fem|Number=Sing	27	obl	27:obl:dat	_	_	_
+29	situācijai	situācija	NOUN	ncfsd4	Case=Dat|Gender=Fem|Number=Sing	27	nsubj	27:nsubj	_	_	_
 30	un	un	CCONJ	cc	_	32	cc	32:cc	_	_	_
 31	dzīves	dzīve	NOUN	ncfsg5	Case=Gen|Gender=Fem|Number=Sing	32	nmod	32:nmod:gen	_	_	_
-32	līmenim	līmenis	NOUN	ncmsd2	Case=Dat|Gender=Masc|Number=Sing	29	conj	29:conj	_	_	_
+32	līmenim	līmenis	NOUN	ncmsd2	Case=Dat|Gender=Masc|Number=Sing	29	conj	27:nsubj|29:conj	_	_	_
 33	.	.	PUNCT	zs	_	7	punct	7:punct	_	_	_
 
 # sent_id = a-p3248-p3s2
@@ -171,7 +171,7 @@
 17	,	,	PUNCT	zc	_	20	punct	20:punct	_	_	_
 18	kurā	kura	PRON	pr0fsln	Case=Loc|Gender=Fem|Number=Sing|PronType=Rel	20	obl	20:obl:loc|35:obl:loc	_	_	Place
 19	tiek	tikt	AUX	vtnipi130an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	20	aux:pass	20:aux:pass	_	_	_
-20	prezentētas	prezentēt	VERB	vmnpdfpnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part	11	acl	11:acl	_	_	_
+20	prezentētas	prezentēt	VERB	vmnpdfpnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	11	acl	11:acl	_	_	_
 21	gan	gan	CCONJ	cc	_	35	cc	35:cc	_	_	_
 22	jaunas	jauns	ADJ	affpnnp	Case=Nom|Degree=Pos|Gender=Fem|Number=Plur	24	amod	24:amod	_	_	_
 23	programmatūras	programmatūra	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	24	nmod	24:nmod:gen	_	_	_
@@ -181,12 +181,12 @@
 27	kurām	kura	PRON	pr0fpdn	Case=Dat|Gender=Fem|Number=Plur|PronType=Rel	28	iobj	28:iobj	_	_	_
 28	varam	varēt	VERB	vonipi31pan	Evident=Fh|Mood=Ind|Number=Plur|Person=1|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	24	acl	24:acl	_	_	_
 29	jaunināt	jaunināt	VERB	vmnn0t3000n	Polarity=Pos|VerbForm=Inf	28	xcomp	28:xcomp	_	_	_
-30	esošo	būt	VERB	vmnpdfsaapypn	Aspect=Imp|Case=Acc|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Pres|VerbForm=Part|Voice=Pass	31	amod	31:amod	_	_	_
+30	esošo	būt	VERB	vmnpdfsaapypn	Aspect=Imp|Case=Acc|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Pres|VerbForm=Part|Voice=Act	31	amod	31:amod	_	_	_
 31	sistēmu	sistēma	NOUN	ncfsa4	Case=Acc|Gender=Fem|Number=Sing	29	obj	29:obj	_	_	_
 32	,	,	PUNCT	zc	_	35	punct	35:punct	_	_	_
 33	gan	gan	CCONJ	cc	_	35	cc	35:cc	_	_	_
 34	arī	arī	PART	q	_	35	discourse	35:discourse	_	_	_
-35	rādīti	rādīt	VERB	vmnpdmpnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part	20	conj	20:conj	Y	Cause_to_perceive	_
+35	rādīti	rādīt	VERB	vmnpdmpnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	20	conj	11:acl|20:conj	Y	Cause_to_perceive	_
 36	gala	gals	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	38	nmod	38:nmod:gen	_	_	_
 37	iekārtu	iekārta	NOUN	ncfpg4	Case=Gen|Gender=Fem|Number=Plur	38	nmod	38:nmod:gen	_	_	_
 38	risinājumi	risinājums	NOUN	ncmpn1	Case=Nom|Gender=Masc|Number=Plur	35	nsubj:pass	35:nsubj:pass	_	_	Phenomenon
@@ -195,7 +195,7 @@
 # sent_id = a-p3757-p3s3
 # text = Pēc tam pāris mēnešus iestādes rādīja viena uz otru un tielējās, kas kurai jādara vai nav jādara.
 1	Pēc	pēc	ADP	spsd	_	2	case	2:case	_	_	_
-2	tam	tas	PRON	pd3msdn	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Dem	6	obl	6:obl:pēc	_	_	Time
+2	tam	tas	PRON	pd3msdn	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Dem	6	obl	6:obl:pēc|11:obl:pēc	_	_	Time
 3	pāris	pāris	ADJ	armpanp	Case=Acc|Degree=Pos|Gender=Masc|Number=Plur	4	amod	4:amod	_	_	_
 4	mēnešus	mēness	NOUN	ncmpa2	Case=Acc|Gender=Masc|Number=Plur	6	obl	6:obl:acc|11:obl:acc	_	_	_
 5	iestādes	iestāde	NOUN	ncfpn5	Case=Nom|Gender=Fem|Number=Plur	6	nsubj	6:nsubj|11:nsubj	_	_	Agent
@@ -220,33 +220,33 @@
 2	direktors	direktors	NOUN	ncmsn1	Case=Nom|Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_	_	_
 3	vēstniekam	vēstnieks	NOUN	ncmsd1	Case=Dat|Gender=Masc|Number=Sing	5	iobj	5:iobj	_	_	_
 4	bija	būt	AUX	vcnisii30an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	5	aux	5:aux	_	_	_
-5	sarūpējis	sarūpēt	VERB	vmnpdmsnasnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	0	root	0:root	_	_	_
+5	sarūpējis	sarūpēt	VERB	vmnpdmsnasnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	0	root	0:root	_	_	_
 6	pārsteigumu	pārsteigums	NOUN	ncmsa1	Case=Acc|Gender=Masc|Number=Sing	5	obj	5:obj	_	_	_
 7	:	:	PUNCT	zo	_	46	punct	46:punct	_	_	_
 8	rādot	rādīt	VERB	vmnpu0000000n	Polarity=Pos|VerbForm=Conv	46	advcl	46:advcl	Y	Cause_to_perceive	_
 9	1809.	1809.	ADJ	xo	NumType=Ord	10	amod	10:amod	_	_	_
 10	gadā	gads	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	11	obl	11:obl:loc	_	_	_
-11	izdoto	izdot	VERB	vmnpdfsapsypn	Aspect=Perf|Case=Acc|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	14	amod	14:amod	_	_	_
+11	izdoto	izdot	VERB	vmnpdfsapsypn	Aspect=Perf|Case=Acc|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	14	amod	14:amod	_	_	_
 12	Luidži	Luidži	PROPN	np0000	_	14	nmod	14:nmod	_	_	_
 13	Lanzi	Lanzi	PROPN	np0000	_	12	flat:name	12:flat:name	_	_	_
 14	darbu	darbs	NOUN	ncmsa1	Case=Acc|Gender=Masc|Number=Sing	16	nmod	16:nmod	_	_	_
 15	“	“	PUNCT	zq	_	16	punct	16:punct	_	_	_
 16	Storia	Storia	X	xf	Foreign=Yes	8	obj	8:obj	_	_	Phenomenon
-17	pittorica	pittorica	X	xf	Foreign=Yes	16	flat	16:flat	_	_	_
-18	della	della	X	xf	Foreign=Yes	16	flat	16:flat	_	_	_
-19	Italia	Italia	X	xf	Foreign=Yes	16	flat	16:flat	_	_	_
-20	dal	dal	X	xf	Foreign=Yes	16	flat	16:flat	_	_	_
-21	risorgimento	risorgimento	X	xf	Foreign=Yes	16	flat	16:flat	_	_	_
-22	delle	delle	X	xf	Foreign=Yes	16	flat	16:flat	_	_	_
-23	Belle	Belle	X	xf	Foreign=Yes	16	flat	16:flat	_	_	_
-24	Arti	Arti	X	xf	Foreign=Yes	16	flat	16:flat	_	_	_
-25	fin	fin	X	xf	Foreign=Yes	16	flat	16:flat	_	_	_
-26	presso	presso	X	xf	Foreign=Yes	16	flat	16:flat	_	_	_
-27	al	al	X	xf	Foreign=Yes	16	flat	16:flat	_	_	_
-28	fine	fine	X	xf	Foreign=Yes	16	flat	16:flat	_	_	_
-29	del	del	X	xf	Foreign=Yes	16	flat	16:flat	_	_	_
-30	XVIII	XVIII	ADJ	xo	NumType=Ord	16	flat	16:flat	_	_	_
-31	secolo	secolo	X	xf	Foreign=Yes	16	flat	16:flat	_	_	_
+17	pittorica	pittorica	X	xf	Foreign=Yes	16	flat:foreign	16:flat:foreign	_	_	_
+18	della	della	X	xf	Foreign=Yes	16	flat:foreign	16:flat:foreign	_	_	_
+19	Italia	Italia	X	xf	Foreign=Yes	16	flat:foreign	16:flat:foreign	_	_	_
+20	dal	dal	X	xf	Foreign=Yes	16	flat:foreign	16:flat:foreign	_	_	_
+21	risorgimento	risorgimento	X	xf	Foreign=Yes	16	flat:foreign	16:flat:foreign	_	_	_
+22	delle	delle	X	xf	Foreign=Yes	16	flat:foreign	16:flat:foreign	_	_	_
+23	Belle	Belle	X	xf	Foreign=Yes	16	flat:foreign	16:flat:foreign	_	_	_
+24	Arti	Arti	X	xf	Foreign=Yes	16	flat:foreign	16:flat:foreign	_	_	_
+25	fin	fin	X	xf	Foreign=Yes	16	flat:foreign	16:flat:foreign	_	_	_
+26	presso	presso	X	xf	Foreign=Yes	16	flat:foreign	16:flat:foreign	_	_	_
+27	al	al	X	xf	Foreign=Yes	16	flat:foreign	16:flat:foreign	_	_	_
+28	fine	fine	X	xf	Foreign=Yes	16	flat:foreign	16:flat:foreign	_	_	_
+29	del	del	X	xf	Foreign=Yes	16	flat:foreign	16:flat:foreign	_	_	_
+30	XVIII	XVIII	ADJ	xo	NumType=Ord	16	flat:foreign	16:flat:foreign	_	_	_
+31	secolo	secolo	X	xf	Foreign=Yes	16	flat:foreign	16:flat:foreign	_	_	_
 32	"	"	PUNCT	zq	_	16	punct	16:punct	_	_	_
 33	un	un	CCONJ	cc	_	34	cc	34:cc	_	_	_
 34	stāstot	stāstīt	VERB	vmnpu0000000n	Polarity=Pos|VerbForm=Conv	8	conj	8:conj|46:advcl	_	_	_
@@ -254,7 +254,7 @@
 36	kā	kā	ADV	r0m	PronType=Int	39	advmod	39:advmod	_	_	_
 37	šis	šis	DET	pd3msnn	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Dem	38	det	38:det	_	_	_
 38	izdevums	izdevums	NOUN	ncmsn1	Case=Nom|Gender=Masc|Number=Sing	39	nsubj	39:nsubj	_	_	_
-39	nokļuvis	nokļūt	VERB	vmnpdmsnasnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	34	ccomp	34:ccomp	_	_	_
+39	nokļuvis	nokļūt	VERB	vmnpdmsnasnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	34	ccomp	34:ccomp	_	_	_
 40	Nacionālajā	nacionāls	ADJ	arfslyp	Case=Loc|Degree=Pos|Gender=Fem|Number=Sing	41	amod	41:amod	_	_	_
 41	bibliotēkā	bibliotēka	NOUN	ncfsl4	Case=Loc|Gender=Fem|Number=Sing	39	obl	39:obl:loc	_	_	_
 42	,	,	PUNCT	zc	_	39	punct	39:punct	_	_	_

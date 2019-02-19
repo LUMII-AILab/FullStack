@@ -7,7 +7,7 @@
 5	paliek	palikt	VERB	vmnipi130an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	2:conj	Y	State_continue	_
 6	krūšturī	krūšturis	NOUN	ncmsl2	Case=Loc|Gender=Masc|Number=Sing	5	obl	5:obl:loc	_	_	State
 7	un	un	CCONJ	cc	_	8	cc	8:cc	_	_	_
-8	biksītēs	biksītes	NOUN	ncfdl5	Case=Loc|Gender=Fem|Number=Ptan	6	conj	6:conj	_	_	_
+8	biksītēs	biksītes	NOUN	ncfdl5	Case=Loc|Gender=Fem|Number=Ptan	6	conj	5:obl:loc|6:conj	_	_	_
 9	.	.	PUNCT	zs	_	2	punct	2:punct	_	_	_
 
 # sent_id = a-d137-p723s2
@@ -16,7 +16,7 @@
 2	Mihaels	Mihaels	PROPN	npmsn1	Case=Nom|Gender=Masc|Number=Sing	1	nsubj	1:nsubj	_	_	Entity
 3	un	un	CCONJ	cc	_	5	cc	5:cc	_	_	_
 4	divi	divi	NUM	mcsmpn	Case=Nom|Gender=Masc|Number=Plur|NumType=Card	5	nummod	5:nummod	_	_	_
-5	pērtiķi	pērtiķis	NOUN	ncmpn2	Case=Nom|Gender=Masc|Number=Plur	2	conj	2:conj	_	_	_
+5	pērtiķi	pērtiķis	NOUN	ncmpn2	Case=Nom|Gender=Masc|Number=Plur	2	conj	1:nsubj|2:conj	_	_	_
 6	.	.	PUNCT	zs	_	1	punct	1:punct	_	_	_
 
 # sent_id = a-d16-p41s6
@@ -49,7 +49,7 @@
 # text = Irmgardes maciņā palicis pavisam maz naudas.
 1	Irmgardes	Irmgarde	PROPN	npfsg5	Case=Gen|Gender=Fem|Number=Sing	2	nmod	2:nmod:gen	_	_	_
 2	maciņā	maciņš	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	3	obl	3:obl:loc	_	_	Location
-3	palicis	palikt	VERB	vmnpdmsnasnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	0	root	0:root	Y	Remainder	_
+3	palicis	palikt	VERB	vmnpdmsnasnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	0	root	0:root	Y	Remainder	_
 4	pavisam	pavisam	ADV	r0q	_	5	advmod	5:advmod	_	_	_
 5	maz	maz	ADV	r0q	_	6	advmod	6:advmod	_	_	_
 6	naudas	nauda	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	3	nsubj	3:nsubj	_	_	Resource
@@ -74,7 +74,7 @@
 # sent_id = a-p3005-p24s4
 # text = Pāri palikušo ēdienu var izmantot arī nākamās dienas brokastīm vai pusdienām.
 1	Pāri	pāri	ADV	rrp	_	2	advmod	2:advmod	_	_	_
-2	palikušo	palikt	VERB	vmnpdmsaasypn	Aspect=Perf|Case=Acc|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	3	amod	3:amod	_	_	_
+2	palikušo	palikt	VERB	vmnpdmsaasypn	Aspect=Perf|Case=Acc|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	3	amod	3:amod	_	_	_
 3	ēdienu	ēdiens	NOUN	ncmsa1	Case=Acc|Gender=Masc|Number=Sing	5	obj	5:obj	_	_	_
 4	var	varēt	VERB	vonipi330an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	0:root	_	_	_
 5	izmantot	izmantot	VERB	vmnn0t2000n	Polarity=Pos|VerbForm=Inf	4	xcomp	4:xcomp	_	_	_
@@ -83,7 +83,7 @@
 8	dienas	diena	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	9	nmod	9:nmod:gen|11:nmod:gen	_	_	_
 9	brokastīm	brokastis	NOUN	ncfdd6	Case=Dat|Gender=Fem|Number=Ptan	5	iobj	5:iobj	_	_	_
 10	vai	vai	CCONJ	cc	_	11	cc	11:cc	_	_	_
-11	pusdienām	pusdienas	NOUN	ncfdd4	Case=Dat|Gender=Fem|Number=Ptan	9	conj	9:conj	_	_	_
+11	pusdienām	pusdienas	NOUN	ncfdd4	Case=Dat|Gender=Fem|Number=Ptan	9	conj	5:iobj|9:conj	_	_	_
 12	.	.	PUNCT	zs	_	4	punct	4:punct	_	_	_
 
 # sent_id = a-p3332-p10s14
@@ -128,10 +128,10 @@
 13	vecumā	vecums	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	11	obl	11:obl:loc	_	_	_
 14	,	,	PUNCT	zc	_	18	punct	18:punct	_	_	_
 15	kad	kad	ADV	r0t	PronType=Int	18	advmod	18:advmod	_	_	_
-16	viņa	viņa	PRON	pp3fsnn	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	18	nsubj	18:nsubj	_	_	_
+16	viņa	viņa	PRON	pp3fsnn	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	18	nsubj	18:nsubj|19:dep|22:dep	_	_	_
 17	vēl	vēl	ADV	r0t	_	18	advmod	18:advmod	_	_	_
 18	jūtas	justies	VERB	vtyipt130an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Reflex=Yes|Tense=Pres|VerbForm=Fin|Voice=Act	13	acl	13:acl	_	_	_
-19	jauna	jauns	ADJ	affsnnp	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	18	xcomp	18:xcomp|22:xcomp	_	_	_
+19	jauna	jauns	ADJ	affsnnp	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	18	xcomp	18:xcomp	_	_	_
 20	un	un	CCONJ	cc	_	22	cc	22:cc	_	_	_
 21	spēka	spēks	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	22	nmod	22:nmod:gen	_	_	_
 22	pilna	pilns	ADJ	affsnnp	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	19	conj	18:xcomp|19:conj	_	_	_
@@ -139,22 +139,22 @@
 24	taču	taču	CCONJ	cc	_	26	cc	26:cc	_	_	_
 25	nebūtu	būt	AUX	vcnc0ii00ay	Mood=Cnd|Polarity=Neg|VerbForm=Fin|Voice=Act	26	cop	26:cop	_	_	_
 26	pareizi	pareizi	ADV	rrm	_	3	conj	3:conj	_	_	_
-27	rīkoties	rīkoties	VERB	vmyn0i2000n	Polarity=Pos|Reflex=Yes|VerbForm=Inf	26	ccomp	26:ccomp	_	_	_
+27	rīkoties	rīkoties	VERB	vmyn0i2000n	Polarity=Pos|Reflex=Yes|VerbForm=Inf	26	csubj	26:csubj	_	_	_
 28	pēc	pēc	ADP	spsg	_	31	case	31:case	_	_	_
 29	nosacītā	nosacīts	ADJ	armsgyp	Case=Gen|Degree=Pos|Gender=Masc|Number=Sing	31	amod	31:amod	_	_	_
 30	B	B	SYM	xx	_	31	amod	31:amod	_	_	_
 31	plāna	plāns	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	27	obl	27:obl:pēc	_	_	_
 32	un	un	CCONJ	cc	_	33	cc	33:cc	_	_	_
-33	palikt	palikt	VERB	vmnn0i1000n	Polarity=Pos|VerbForm=Inf	27	conj	26:ccomp|27:conj	Y	Becoming	_
+33	palikt	palikt	VERB	vmnn0i1000n	Polarity=Pos|VerbForm=Inf	27	conj	26:csubj|27:conj	Y	Becoming	_
 34	stāvoklī	stāvoklis	NOUN	ncmsl2	Case=Loc|Gender=Masc|Number=Sing	33	obl	33:obl:loc	_	_	Final_quality
 35	ar	ar	ADP	spsa	_	36	case	36:case	_	_	_
 36	viltu	viltus	NOUN	ncmsa3	Case=Acc|Gender=Masc|Number=Sing	33	obl	33:obl:ar	_	_	_
 37	,	,	PUNCT	zc	_	38	punct	38:punct	_	_	_
-38	pārtraukt	pārtraukt	VERB	vmnn0t1000n	Polarity=Pos|VerbForm=Inf	27	conj	26:ccomp|27:conj	_	_	_
+38	pārtraukt	pārtraukt	VERB	vmnn0t1000n	Polarity=Pos|VerbForm=Inf	27	conj	26:csubj|27:conj	_	_	_
 39	lietot	lietot	VERB	vmnn0t2000n	Polarity=Pos|VerbForm=Inf	38	ccomp	38:ccomp	_	_	_
 40	kontracepciju	kontracepcija	NOUN	ncfsa4	Case=Acc|Gender=Fem|Number=Sing	39	obj	39:obj	_	_	_
 41	un	un	CCONJ	cc	_	42	cc	42:cc	_	_	_
-42	melot	melot	VERB	vmnn0t2000n	Polarity=Pos|VerbForm=Inf	27	conj	26:ccomp|27:conj	_	_	_
+42	melot	melot	VERB	vmnn0t2000n	Polarity=Pos|VerbForm=Inf	27	conj	26:csubj|27:conj	_	_	_
 43	,	,	PUNCT	zc	_	46	punct	46:punct	_	_	_
 44	ka	ka	SCONJ	cs	_	46	mark	46:mark	_	_	_
 45	joprojām	joprojām	ADV	r0t	_	46	advmod	46:advmod	_	_	_
@@ -169,7 +169,7 @@
 4	-	-	PUNCT	zd	_	6	punct	6:punct	_	_	_
 5	smeldzīgas	smeldzīgs	ADJ	affpnnp	Case=Nom|Degree=Pos|Gender=Fem|Number=Plur	6	amod	6:amod	_	_	_
 6	ilgas	ilgas	NOUN	ncfdn4	Case=Nom|Gender=Fem|Number=Ptan	3	acl	3:acl:nom	_	_	_
-7	pēc	pēc	ADP	spsg	_	10	case	10:case	_	_	_
+7	pēc	pēc	ADP	spsg	_	10	case	10:case|12:case	_	_	_
 8	kaut	kaut	PART	q	_	9	discourse	9:discourse	_	_	_
 9	kā	kas	DET	pi000gn	Case=Gen|PronType=Ind	10	det	10:det|12:det	_	_	_
 10	īsta	īsts	ADJ	arfsnnp	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	6	amod	6:amod	_	_	_
@@ -177,7 +177,7 @@
 12	pirmatnēja	pirmatnējs	ADJ	arfsnnp	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	10	conj	6:amod|10:conj	_	_	_
 13	,	,	PUNCT	zc	_	15	punct	15:punct	_	_	_
 14	ko	kas	PRON	pr000an	Case=Acc|PronType=Rel	16	obj	16:obj	_	_	_
-15	nevar	varēt	VERB	vonipi330ay	Evident=Fh|Mood=Ind|Person=3|Polarity=Neg|Tense=Pres|VerbForm=Fin|Voice=Act	10	acl	10:acl	_	_	_
+15	nevar	varēt	VERB	vonipi330ay	Evident=Fh|Mood=Ind|Person=3|Polarity=Neg|Tense=Pres|VerbForm=Fin|Voice=Act	10	acl	10:acl|12:acl	_	_	_
 16	nopirkt	nopirkt	VERB	vmnn0t1000n	Polarity=Pos|VerbForm=Inf	15	xcomp	15:xcomp	_	_	_
 17	ne	ne	PART	q	Polarity=Neg	20	discourse	20:discourse	_	_	_
 18	par	par	ADP	spsa	_	20	case	20:case	_	_	_
@@ -209,35 +209,6 @@
 20	iestādei	iestāde	NOUN	ncfsd5	Case=Dat|Gender=Fem|Number=Sing	17	iobj	17:iobj	_	_	Recipient
 21	.	.	PUNCT	zs	_	3	punct	3:punct	_	_	_
 
-# sent_id = a-p532-p8s8
-# text = Eva ir saskārusies ar gadījumu, ka kāds paziņa nevēlējies pavadīt laiku ar viņu, tā vietā izvēloties palikt pie datora un turpināt spēlēt datorspēles.
-1	Eva	Eva	PROPN	npfsn4	Case=Nom|Gender=Fem|Number=Sing	3	nsubj	3:nsubj	_	_	_
-2	ir	būt	AUX	vcnipii30an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	3:aux	_	_	_
-3	saskārusies	saskarties	VERB	vmypdfsnasnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Reflex=Yes|Tense=Past|VerbForm=Part	0	root	0:root	_	_	_
-4	ar	ar	ADP	spsa	_	5	case	5:case	_	_	_
-5	gadījumu	gadījums	NOUN	ncmsa1	Case=Acc|Gender=Masc|Number=Sing	3	iobj	3:iobj	_	_	_
-6	,	,	PUNCT	zc	_	10	punct	10:punct	_	_	_
-7	ka	ka	SCONJ	cs	_	10	mark	10:mark	_	_	_
-8	kāds	kāds	DET	pi0msnn	Case=Nom|Gender=Masc|Number=Sing|PronType=Ind	9	det	9:det	_	_	_
-9	paziņa	paziņa	NOUN	ncmsn4	Case=Nom|Gender=Masc|Number=Sing	10	nsubj	10:nsubj|11:nsubj	_	_	Entity
-10	nevēlējies	vēlēties	VERB	voypdmsnasnpy	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Neg|Reflex=Yes|Tense=Past|VerbForm=Part	5	acl	5:acl	_	_	_
-11	pavadīt	pavadīt	VERB	vmnn0t3000n	Polarity=Pos|VerbForm=Inf	10	xcomp	10:xcomp	_	_	_
-12	laiku	laiks	NOUN	ncmsa1	Case=Acc|Gender=Masc|Number=Sing	11	obj	11:obj	_	_	_
-13	ar	ar	ADP	spsa	_	14	case	14:case	_	_	_
-14	viņu	viņš	PRON	pp3msan	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	iobj	11:iobj	_	_	_
-15	,	,	PUNCT	zc	_	18	punct	18:punct	_	_	_
-16	tā	tas	DET	pd3msgn	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Dem	17	det	17:det	_	_	_
-17	vietā	vieta	NOUN	ncfsl4	Case=Loc|Gender=Fem|Number=Sing	18	obl	18:obl:loc	_	_	_
-18	izvēloties	izvēlēties	VERB	vmypu0000000n	Polarity=Pos|Reflex=Yes|VerbForm=Conv	10	advcl	10:advcl	_	_	_
-19	palikt	palikt	VERB	vmnn0i1000n	Polarity=Pos|VerbForm=Inf	18	ccomp	18:ccomp	Y	State_continue	_
-20	pie	pie	ADP	spsg	_	21	case	21:case	_	_	_
-21	datora	dators	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	19	obl	19:obl:pie	_	_	State
-22	un	un	CCONJ	cc	_	23	cc	23:cc	_	_	_
-23	turpināt	turpināt	VERB	vpnn0i3000n	Polarity=Pos|VerbForm=Inf	19	conj	19:conj	_	_	_
-24	spēlēt	spēlēt	VERB	vmnn0t2000n	Polarity=Pos|VerbForm=Inf	23	xcomp	23:xcomp	_	_	_
-25	datorspēles	datorspēle	NOUN	ncfpa5	Case=Acc|Gender=Fem|Number=Plur	24	obj	24:obj	_	_	_
-26	.	.	PUNCT	zs	_	3	punct	3:punct	_	_	_
-
 # sent_id = a-s3-p44s8
 # text = Es domāju, ka varēja atrast vārdus un veidu, kā palikt NATO, bet nepiedalīties šajā šaubīgajā pasākumā.
 1	Es	es	PRON	pp10snn	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	2:nsubj	_	_	_
@@ -248,7 +219,7 @@
 6	atrast	atrast	VERB	vmnn0t1000n	Polarity=Pos|VerbForm=Inf	5	xcomp	5:xcomp	_	_	_
 7	vārdus	vārds	NOUN	ncmpa1	Case=Acc|Gender=Masc|Number=Plur	6	obj	6:obj	_	_	_
 8	un	un	CCONJ	cc	_	9	cc	9:cc	_	_	_
-9	veidu	veids	NOUN	ncmsa1	Case=Acc|Gender=Masc|Number=Sing	7	conj	7:conj	_	_	_
+9	veidu	veids	NOUN	ncmsa1	Case=Acc|Gender=Masc|Number=Sing	7	conj	6:obj|7:conj	_	_	_
 10	,	,	PUNCT	zc	_	12	punct	12:punct	_	_	_
 11	kā	kā	ADV	r0m	PronType=Int	12	advmod	12:advmod	_	_	_
 12	palikt	palikt	VERB	vmnn0i1000n	Polarity=Pos|VerbForm=Inf	9	acl	9:acl	Y	State_continue	_

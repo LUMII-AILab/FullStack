@@ -10,7 +10,7 @@
 
 ## Current statistics
 
-* 7,581 annotation sets (frame instances)
-* 454 semantic frames
-* 1,580 lexical units
-* 834 target words (lexemes)
+* 7,572 annotation sets (frame instances)
+* 453 semantic frames
+* 1,570 lexical units
+* 828 target words (lexemes)

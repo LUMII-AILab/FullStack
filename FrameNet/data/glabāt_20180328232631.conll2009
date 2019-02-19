@@ -6,14 +6,14 @@
 4	uz	uz	ADP	spsa	_	9	case	9:case	_	_	_
 5	pamestā	pamests	ADJ	afmsgyp	Case=Gen|Degree=Pos|Gender=Masc|Number=Sing	8	amod	8:amod	_	_	_
 6	,	,	PUNCT	zc	_	7	punct	7:punct	_	_	_
-7	tukšā	tukšs	ADJ	afmsgyp	Case=Gen|Degree=Pos|Gender=Masc|Number=Sing	5	conj	5:conj	_	_	_
+7	tukšā	tukšs	ADJ	afmsgyp	Case=Gen|Degree=Pos|Gender=Masc|Number=Sing	5	conj	5:conj|8:amod	_	_	_
 8	pagraba	pagrabs	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	9	nmod	9:nmod:gen	_	_	_
 9	pusi	puse	NOUN	ncfsa5	Case=Acc|Gender=Fem|Number=Sing	2	obl	2:obl:uz	_	_	_
 10	,	,	PUNCT	zc	_	14	punct	14:punct	_	_	_
 11	kur	kur	ADV	r0p	PronType=Int	14	advmod	14:advmod	_	_	Location
 12	kādreiz	kādreiz	ADV	r0t	_	14	advmod	14:advmod	_	_	Time
 13	esot	būt	AUX	vcnrpii00an	Evident=Nfh|Mood=Qot|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	14	aux:pass	14:aux:pass	_	_	_
-14	glabāti	glabāt	VERB	vmnpdmpnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part	8	acl	8:acl	Y	Storing	_
+14	glabāti	glabāt	VERB	vmnpdmpnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	8	acl	8:acl	Y	Storing	_
 15	dažādi	dažāds	ADJ	armpnnp	Case=Nom|Degree=Pos|Gender=Masc|Number=Plur	16	amod	16:amod	_	_	_
 16	kārumi	kārums	NOUN	ncmpn1	Case=Nom|Gender=Masc|Number=Plur	14	nsubj:pass	14:nsubj:pass	_	_	Theme
 17	,	,	PUNCT	zc	_	22	punct	22:punct	_	_	_
@@ -21,7 +21,7 @@
 19	kurus	kurš	PRON	pr0mpan	Case=Acc|Gender=Masc|Number=Plur|PronType=Rel	23	obj	23:obj	_	_	_
 20	vairs	vairs	ADV	r0t	_	22	advmod	22:advmod	_	_	_
 21	neviens	neviens	PRON	pi0msny	Case=Nom|Gender=Masc|Number=Sing|PronType=Ind,Neg	22	nsubj	22:nsubj|23:nsubj	_	_	_
-22	neprata	prast	VERB	vonisi130ay	Evident=Fh|Mood=Ind|Person=3|Polarity=Neg|Tense=Past|VerbForm=Fin|Voice=Act	14	conj	14:conj	_	_	_
+22	neprata	prast	VERB	vonisi130ay	Evident=Fh|Mood=Ind|Person=3|Polarity=Neg|Tense=Past|VerbForm=Fin|Voice=Act	14	conj	8:acl|14:conj	_	_	_
 23	pagatavot	pagatavot	VERB	vmnn0t2000n	Polarity=Pos|VerbForm=Inf	22	xcomp	22:xcomp	_	_	_
 24	.	.	PUNCT	zs	_	2	punct	2:punct	_	_	_
 
@@ -44,8 +44,8 @@
 
 # sent_id = a-p3762-p14s3
 # text = Tā ka kādam tās ir jāglabā.
-1	Tā	tā	PART	q	_	2	discourse	2:discourse	_	_	_
-2	ka	ka	SCONJ	cs	_	6	mark	6:mark	_	_	_
+1	Tā	tā	SCONJ	cs	_	6	mark	6:mark	_	_	_
+2	ka	ka	SCONJ	cs	_	1	fixed	1:fixed	_	_	_
 3	kādam	kāds	PRON	pi0msdn	Case=Dat|Gender=Masc|Number=Sing|PronType=Ind	6	nsubj	6:nsubj	_	_	Agent
 4	tās	tā	PRON	pd3fpnn	Case=Nom|Gender=Fem|Number=Plur|Person=3|PronType=Dem	6	obj	6:obj	_	_	Theme
 5	ir	būt	AUX	vcnipii30an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	6:aux	_	_	_
@@ -67,7 +67,7 @@
 # sent_id = a-p3772-p7s2
 # text = Gadadienas ietvaros UNESCO LNK pasniedz un atklāj UNESCO programmas "Pasaules atmiņa" atpazīstamības zīmes muzejiem, kas jau glabā kādu no programmas starptautiskajā vai Latvijas nacionālajā reģistrā iekļautu nomināciju, tādā veidā apliecinot muzeja sasniegumus un piederību šai programmai, kā arī izceļ to kā būtisku Latvijas vēstures liecību glabātāju un nozīmīgu UNESCO LNK sadarbības partneri.
 1	Gadadienas	gadadiena	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	2	nmod	2:nmod:gen	_	_	_
-2	ietvaros	ietvars	NOUN	ncmpl1	Case=Loc|Gender=Masc|Number=Plur	5	obl	5:obl:loc	_	_	_
+2	ietvaros	ietvars	NOUN	ncmpl1	Case=Loc|Gender=Masc|Number=Plur	5	obl	5:obl:loc|7:obl:loc|44:obl:loc	_	_	_
 3	UNESCO	UNESCO	PROPN	yp	Abbr=Yes	4	nmod	4:nmod	_	_	_
 4	LNK	LNK	PROPN	yp	Abbr=Yes	5	nsubj	5:nsubj|7:nsubj|44:nsubj	_	_	_
 5	pasniedz	pasniegt	VERB	vmnipt130an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	0:root	_	_	_
@@ -92,9 +92,9 @@
 24	starptautiskajā	starptautisks	ADJ	armslyp	Case=Loc|Degree=Pos|Gender=Masc|Number=Sing	28	amod	28:amod	_	_	_
 25	vai	vai	SCONJ	cs	_	27	cc	27:cc	_	_	_
 26	Latvijas	Latvija	PROPN	npfsg4	Case=Gen|Gender=Fem|Number=Sing	27	nmod	27:nmod:gen	_	_	_
-27	nacionālajā	nacionāls	ADJ	armslyp	Case=Loc|Degree=Pos|Gender=Masc|Number=Sing	24	conj	24:conj	_	_	_
+27	nacionālajā	nacionāls	ADJ	armslyp	Case=Loc|Degree=Pos|Gender=Masc|Number=Sing	24	conj	24:conj|28:amod	_	_	_
 28	reģistrā	reģistrs	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	29	obl	29:obl:loc	_	_	_
-29	iekļautu	iekļaut	VERB	vmnpdfsapsnpn	Aspect=Perf|Case=Acc|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	30	amod	30:amod	_	_	_
+29	iekļautu	iekļaut	VERB	vmnpdfsapsnpn	Aspect=Perf|Case=Acc|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	30	amod	30:amod	_	_	_
 30	nomināciju	nominācija	NOUN	ncfsa4	Case=Acc|Gender=Fem|Number=Sing	20	obj	20:obj	_	_	Theme
 31	,	,	PUNCT	zc	_	34	punct	34:punct	_	_	_
 32	tādā	tāds	DET	pd0msln	Case=Loc|Gender=Masc|Number=Sing|PronType=Dem	33	det	33:det	_	_	_
@@ -103,12 +103,12 @@
 35	muzeja	muzejs	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	36	nmod	36:nmod:gen	_	_	_
 36	sasniegumus	sasniegums	NOUN	ncmpa1	Case=Acc|Gender=Masc|Number=Plur	34	obj	34:obj	_	_	_
 37	un	un	CCONJ	cc	_	38	cc	38:cc	_	_	_
-38	piederību	piederība	NOUN	ncfsa4	Case=Acc|Gender=Fem|Number=Sing	36	conj	36:conj	_	_	_
+38	piederību	piederība	NOUN	ncfsa4	Case=Acc|Gender=Fem|Number=Sing	36	conj	34:obj|36:conj	_	_	_
 39	šai	šī	DET	pd3fsdn	Case=Dat|Gender=Fem|Number=Sing|Person=3|PronType=Dem	40	det	40:det	_	_	_
 40	programmai	programma	NOUN	ncfsd4	Case=Dat|Gender=Fem|Number=Sing	38	nmod	38:nmod:dat	_	_	_
 41	,	,	PUNCT	zc	_	34	punct	34:punct	_	_	_
 42	kā	kā	CCONJ	cc	_	44	cc	44:cc	_	_	_
-43	arī	arī	PART	q	_	42	discourse	42:discourse	_	_	_
+43	arī	arī	CCONJ	cc	_	42	fixed	42:fixed	_	_	_
 44	izceļ	izcelt	VERB	vmnipt130an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	5	conj	5:conj	_	_	_
 45	to	tā	PRON	pd3fsan	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Dem	44	obj	44:obj	_	_	_
 46	kā	kā	SCONJ	cs	_	51	case	51:case|57:case	_	_	_

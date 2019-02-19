@@ -6,7 +6,7 @@
 4	kas	kas	PRON	pr000nn	Case=Nom|PronType=Rel	5	nsubj	5:nsubj	_	_	Communicator
 5	spējīgi	spējīgs	ADJ	afmpnnp	Case=Nom|Degree=Pos|Gender=Masc|Number=Plur	2	acl	2:acl	_	_	_
 6	sazināties	sazināties	VERB	vmyn0i3000n	Polarity=Pos|Reflex=Yes|VerbForm=Inf	5	ccomp	5:ccomp	Y	Communication	_
-7	iekaltām	iekalt	VERB	vmnpdfpdpsnpn	Aspect=Perf|Case=Dat|Definite=Ind|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part	8	amod	8:amod	_	_	_
+7	iekaltām	iekalt	VERB	vmnpdfpdpsnpn	Aspect=Perf|Case=Dat|Definite=Ind|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	8	amod	8:amod	_	_	_
 8	frāzēm	frāze	NOUN	ncfpd5	Case=Dat|Gender=Fem|Number=Plur	6	iobj	6:iobj	_	_	Means
 9	,	,	PUNCT	zc	_	13	punct	13:punct	_	_	_
 10	bet	bet	CCONJ	cc	_	13	cc	13:cc	_	_	_
@@ -14,7 +14,7 @@
 12	vairs	vairs	ADV	r0t	_	13	advmod	13:advmod	_	_	_
 13	nesaucam	saukt	VERB	vmnipt11pay	Evident=Fh|Mood=Ind|Number=Plur|Person=1|Polarity=Neg|Tense=Pres|VerbForm=Fin|Voice=Act	1	conj	1:conj	_	_	_
 14	par	par	ADP	spsa	_	16	case	16:case	_	_	_
-15	dzimto	dzimt	VERB	vmnpdfsapsypn	Aspect=Perf|Case=Acc|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	16	amod	16:amod	_	_	_
+15	dzimto	dzimt	VERB	vmnpdfsapsypn	Aspect=Perf|Case=Acc|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	16	amod	16:amod	_	_	_
 16	valodu	valoda	NOUN	ncfsa4	Case=Acc|Gender=Fem|Number=Sing	13	xcomp	13:xcomp	_	_	_
 17	.	.	PUNCT	zs	_	1	punct	1:punct	_	_	_
 
@@ -58,7 +58,7 @@
 17	atrodas	atrasties	VERB	vmyipi130an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Reflex=Yes|Tense=Pres|VerbForm=Fin|Voice=Act	7	advcl	7:advcl	_	_	_
 18	2	2	NUM	xn	NumType=Card	21	nummod	21:nummod	_	_	_
 19	-	-	PUNCT	zd	_	20	punct	20:punct	_	_	_
-20	3	3	NUM	xn	NumType=Card	18	conj	18:conj	_	_	_
+20	3	3	NUM	xn	NumType=Card	18	conj	18:conj|21:nummod	_	_	_
 21	metru	metrs	NOUN	ncmpg1	Case=Gen|Gender=Masc|Number=Plur	22	nmod	22:nmod:gen	_	_	_
 22	attālumā	attālums	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	17	obl	17:obl:loc	_	_	_
 23	.	.	PUNCT	zs	_	7	punct	7:punct	_	_	_
@@ -80,7 +80,7 @@
 13	sazinās	sazināties	VERB	vmyipi330an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Reflex=Yes|Tense=Pres|VerbForm=Fin|Voice=Act	7	acl	7:acl	Y	Communication	_
 14	mutiski	mutiski	ADV	rpm	Degree=Pos	13	advmod	13:advmod	_	_	Means
 15	,	,	PUNCT	zc	_	16	punct	16:punct	_	_	_
-16	līdzīgi	līdzīgi	ADV	rpm	Degree=Pos	14	conj	14:conj	_	_	_
+16	līdzīgi	līdzīgi	ADV	rpm	Degree=Pos	14	conj	13:advmod|14:conj	_	_	_
 17	kā	kā	ADV	r0m	PronType=Int	19	mark	19:mark	_	_	_
 18	mēs	mēs	PRON	pp10pnn	Case=Nom|Number=Plur|Person=1|PronType=Prs	19	nsubj	19:nsubj	_	_	_
 19	sarunājamies	sarunāties	VERB	vmyipi21pan	Evident=Fh|Mood=Ind|Number=Plur|Person=1|Polarity=Pos|Reflex=Yes|Tense=Pres|VerbForm=Fin|Voice=Act	14	advcl	14:advcl|16:advcl	_	_	_
@@ -88,8 +88,8 @@
 21	starpā	starpa	NOUN	ncfsl4	Case=Loc|Gender=Fem|Number=Sing	19	obl	19:obl:loc	_	_	_
 22	,	,	PUNCT	zc	_	25	punct	25:punct	_	_	_
 23	kā	kā	SCONJ	cs	_	25	cc	25:cc	_	_	_
-24	arī	arī	PART	q	_	23	discourse	23:discourse	_	_	_
-25	veidot	veidot	VERB	vmnn0t2000n	Polarity=Pos|VerbForm=Inf	5	conj	5:conj	_	_	_
+24	arī	arī	CCONJ	cc	_	23	fixed	23:fixed	_	_	_
+25	veidot	veidot	VERB	vmnn0t2000n	Polarity=Pos|VerbForm=Inf	5	conj	4:ccomp|5:conj	_	_	_
 26	“	“	PUNCT	zq	_	28	punct	28:punct	_	_	_
 27	latviskus	latvisks	ADJ	afmpanp	Case=Acc|Degree=Pos|Gender=Masc|Number=Plur	28	amod	28:amod	_	_	_
 28	robotus	robots	NOUN	ncmpa1	Case=Acc|Gender=Masc|Number=Plur	25	obj	25:obj	_	_	_

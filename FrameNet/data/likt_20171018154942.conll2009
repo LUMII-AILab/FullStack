@@ -11,7 +11,7 @@
 9	,	,	PUNCT	zc	_	12	punct	12:punct	_	_	_
 10	kurā	kurš	PRON	pr0msln	Case=Loc|Gender=Masc|Number=Sing|PronType=Rel	12	obl	12:obl:loc	_	_	_
 11	tika	tikt	AUX	vtnisi130an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	12	aux:pass	12:aux:pass	_	_	_
-12	ierobežotas	ierobežot	VERB	vmnpdfpnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part	8	acl	8:acl	_	_	_
+12	ierobežotas	ierobežot	VERB	vmnpdfpnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	8	acl	8:acl	_	_	_
 13	Anglijas	Anglija	PROPN	npfsg4	Case=Gen|Gender=Fem|Number=Sing	14	nmod	14:nmod:gen	_	_	_
 14	karaļa	karalis	NOUN	ncmsg2	Case=Gen|Gender=Masc|Number=Sing	15	nmod	15:nmod:gen	_	_	_
 15	tiesības	tiesības	NOUN	ncfdn4	Case=Nom|Gender=Fem|Number=Ptan	12	iobj	12:iobj	_	_	_
@@ -31,9 +31,9 @@
 3	ir	būt	VERB	vmnipii30an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	0:root	_	_	_
 4	fiziska	fizisks	ADJ	arfsnnp	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	9	amod	9:amod	_	_	_
 5	,	,	PUNCT	zc	_	6	punct	6:punct	_	_	_
-6	emocionāla	emocionāls	ADJ	affsnnp	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	4	conj	4:conj	_	_	_
+6	emocionāla	emocionāls	ADJ	affsnnp	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	4	conj	4:conj|9:amod	_	_	_
 7	,	,	PUNCT	zc	_	8	punct	8:punct	_	_	_
-8	seksuāla	seksuāls	ADJ	affsnnp	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	4	conj	4:conj	_	_	_
+8	seksuāla	seksuāls	ADJ	affsnnp	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	4	conj	4:conj|9:amod	_	_	_
 9	vardarbība	vardarbība	NOUN	ncfsn4	Case=Nom|Gender=Fem|Number=Sing	3	nsubj	3:nsubj	_	_	_
 10	,	,	PUNCT	zc	_	12	punct	12:punct	_	_	_
 11	ja	ja	SCONJ	cs	_	12	mark	12:mark	_	_	_
@@ -90,19 +90,19 @@
 8	,	,	PUNCT	zc	_	11	punct	11:punct	_	_	_
 9	kas	kas	PRON	pr000nn	Case=Nom|PronType=Rel	11	nsubj:pass	11:nsubj:pass	_	_	_
 10	iepriekš	iepriekš	ADV	r0t	_	11	advmod	11:advmod	_	_	_
-11	sakarsēta	sakarsēt	VERB	vmnpdfsnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	7	acl	7:acl	_	_	_
+11	sakarsēta	sakarsēt	VERB	vmnpdfsnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	7	acl	7:acl	_	_	_
 12	.	.	PUNCT	zs	_	1	punct	1:punct	_	_	_
 
 # sent_id = a-c59-p15s1
 # text = Pasniegšana: Traukā liekam ogu mērci, tad drusmatlas un nobeidzam ar pienu, šādi atkārtojam divas reizes.
-1	Pasniegšana	pasniegšana	NOUN	ncfsn4	Case=Nom|Gender=Fem|Number=Sing	4	discourse	4:discourse	_	_	_
+1	Pasniegšana	pasniegšana	NOUN	ncfsn4	Case=Nom|Gender=Fem|Number=Sing	4	discourse	4:discourse|9.1:discourse|11:discourse|16:discourse	_	_	_
 2	:	:	PUNCT	zo	_	1	punct	1:punct	_	_	_
 3	Traukā	trauks	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	4	obl	4:obl:loc	_	_	Goal
 4	liekam	likt	VERB	vmnipt11pan	Evident=Fh|Mood=Ind|Number=Plur|Person=1|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	0:root	Y	Placing	_
 5	ogu	oga	NOUN	ncfpg4	Case=Gen|Gender=Fem|Number=Plur	6	nmod	6:nmod:gen	_	_	_
 6	mērci	mērce	NOUN	ncfsa5	Case=Acc|Gender=Fem|Number=Sing	4	obj	4:obj	_	_	Theme
 7	,	,	PUNCT	zc	_	9	punct	9.1:punct	_	_	_
-8	tad	tad	ADV	r0t	PronType=Dem	9	advmod	9.1:advmod	_	_	_
+8	tad	tad	ADV	r0t	PronType=Dem	9	orphan	9.1:advmod	_	_	_
 9	drusmatlas	drusmatla	NOUN	ncfsa4	Case=Acc|Gender=Fem|Number=Sing	4	conj	9.1:obj	_	_	_
 10	un	un	CCONJ	cc	_	11	cc	11:cc	_	_	_
 11	nobeidzam	nobeigt	VERB	vmnipt11pan	Evident=Fh|Mood=Ind|Number=Plur|Person=1|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	4	conj	4:conj	_	_	_
@@ -127,7 +127,7 @@
 8	viņu	viņš	PRON	pp3msan	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	obj	7:obj	_	_	Affected
 9	kaktā	kakts	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	7	obl	7:obl:loc	_	_	_
 10	un	un	CCONJ	cc	_	11	cc	11:cc	_	_	_
-11	lika	likt	VERB	vmnist130an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	7	conj	2:conj|7:conj	Y	Causation	_
+11	lika	likt	VERB	vmnist130an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	7	conj	7:conj	Y	Causation	_
 12	strādāt	strādāt	VERB	vmnn0t2000n	Polarity=Pos|VerbForm=Inf	11	ccomp	11:ccomp	_	_	Effect
 13	līdz	līdz	ADP	spsd	_	14	case	14:case	_	_	_
 14	pusnaktij	pusnakts	NOUN	ncfsd6	Case=Dat|Gender=Fem|Number=Sing	12	obl	12:obl:līdz	_	_	_
@@ -136,9 +136,9 @@
 17	lielākā	liels	ADJ	affsnyc	Case=Nom|Degree=Cmp|Gender=Fem|Number=Sing	18	amod	18:amod	_	_	_
 18	daļa	daļa	NOUN	ncfsn4	Case=Nom|Gender=Fem|Number=Sing	22	nsubj	22:nsubj	_	_	_
 19	grūti	grūti	ADV	rpm	Degree=Pos	20	advmod	20:advmod	_	_	_
-20	sapelnīto	sapelnīt	VERB	vmnpdmpgpsypn	Aspect=Perf|Case=Gen|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part	21	amod	21:amod	_	_	_
+20	sapelnīto	sapelnīt	VERB	vmnpdmpgpsypn	Aspect=Perf|Case=Gen|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	21	amod	21:amod	_	_	_
 21	līdzekļu	līdzeklis	NOUN	ncmpg2	Case=Gen|Gender=Masc|Number=Plur	18	nmod	18:nmod:gen	_	_	_
-22	izgāja	iziet	VERB	vmnisii30an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	7	advcl	7:advcl	_	_	_
+22	izgāja	iziet	VERB	vmnisii30an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	7	advcl	7:advcl|11:advcl	_	_	_
 23	par	par	ADP	spsa	_	24	case	24:case	_	_	_
 24	to	tas	PRON	pd3msan	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Dem	22	iobj	22:iobj	_	_	_
 25	,	,	PUNCT	zc	_	31	punct	31:punct	_	_	_
@@ -146,12 +146,12 @@
 27	slepus	slepus	ADV	r0m	_	31	advmod	31:advmod	_	_	_
 28	,	,	PUNCT	zc	_	30	punct	30:punct	_	_	_
 29	bet	bet	CCONJ	cc	_	30	cc	30:cc	_	_	_
-30	neatlaidīgi	neatlaidīgi	ADV	rpm	Degree=Pos	27	conj	27:conj	_	_	_
+30	neatlaidīgi	neatlaidīgi	ADV	rpm	Degree=Pos	27	conj	27:conj|31:advmod	_	_	_
 31	veidotu	veidot	VERB	vmnc0t200an	Mood=Cnd|Polarity=Pos|VerbForm=Fin|Voice=Act	24	advcl	24:advcl	_	_	_
 32	savu	sava	DET	ps0fsan	Case=Acc|Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	36	det	36:det	_	_	_
 33	,	,	PUNCT	zc	_	35	punct	35:punct	_	_	_
 34	neviena	neviens	DET	pi0msgy	Case=Gen|Gender=Masc|Number=Sing|PronType=Ind,Neg	35	det	35:det	_	_	_
-35	neapdraudētu	apdraudēt	VERB	vmnpdmsapsnpy	Aspect=Perf|Case=Acc|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Neg|Tense=Past|VerbForm=Part	32	conj	32:conj	_	_	_
+35	neapdraudētu	apdraudēt	VERB	vmnpdmsapsnpy	Aspect=Perf|Case=Acc|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Neg|Tense=Past|VerbForm=Part|Voice=Pass	32	conj	32:conj|36:amod	_	_	_
 36	terra	terra	X	xf	Foreign=Yes	31	iobj	31:iobj	_	_	_
 37	incognita	incognita	X	xf	Foreign=Yes	36	flat:foreign	36:flat:foreign	_	_	_
 38	.	.	PUNCT	zs	_	2	punct	2:punct	_	_	_
@@ -159,7 +159,7 @@
 # sent_id = a-d137-p2024s9
 # text = Viņa drebošām rokām velk no matiem pa vienai sprādzei un liek uz spoguļgalda.
 1	Viņa	viņa	PRON	pp3fsnn	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	4	nsubj	4:nsubj|11:nsubj	_	_	Agent
-2	drebošām	drebēt	VERB	vmnpdfpdapnpn	Aspect=Imp|Case=Dat|Definite=Ind|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos|Tense=Pres|VerbForm=Part|Voice=Pass	3	amod	3:amod	_	_	_
+2	drebošām	drebēt	VERB	vmnpdfpdapnpn	Aspect=Imp|Case=Dat|Definite=Ind|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos|Tense=Pres|VerbForm=Part|Voice=Act	3	amod	3:amod	_	_	_
 3	rokām	roka	NOUN	ncfpd4	Case=Dat|Gender=Fem|Number=Plur	4	obl	4:obl:dat	_	_	_
 4	velk	vilkt	VERB	vmnipt130an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	0:root	_	_	_
 5	no	no	ADP	sppd	_	6	case	6:case	_	_	_
@@ -175,10 +175,10 @@
 
 # sent_id = a-p1450-p13s2
 # text = Iegūtās fotogrāfijas tiek liktas kaudzītē.
-1	Iegūtās	iegūt	VERB	vmnpdfpnpsypn	Aspect=Perf|Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part	2	amod	2:amod	_	_	_
+1	Iegūtās	iegūt	VERB	vmnpdfpnpsypn	Aspect=Perf|Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	2	amod	2:amod	_	_	_
 2	fotogrāfijas	fotogrāfija	NOUN	ncfpn4	Case=Nom|Gender=Fem|Number=Plur	4	nsubj:pass	4:nsubj:pass	_	_	Theme
 3	tiek	tikt	AUX	vtnipi130an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux:pass	4:aux:pass	_	_	_
-4	liktas	likt	VERB	vmnpdfpnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part	0	root	0:root	Y	Placing	_
+4	liktas	likt	VERB	vmnpdfpnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	0	root	0:root	Y	Placing	_
 5	kaudzītē	kaudzīte	NOUN	ncfsl5	Case=Loc|Gender=Fem|Number=Sing	4	obl	4:obl:loc	_	_	Goal
 6	.	.	PUNCT	zs	_	4	punct	4:punct	_	_	_
 
@@ -225,7 +225,7 @@
 7	tos	tas	PRON	pd3mpan	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Dem	10	obj	10:obj	_	_	Theme
 8	ir	būt	AUX	vcnipii30an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	9	cop	9:cop	_	_	_
 9	ērti	ērti	ADV	r0m	_	5	conj	5:conj	_	_	_
-10	mazgāt	mazgāt	VERB	vmnn0t2000n	Polarity=Pos|VerbForm=Inf	9	ccomp	9:ccomp	_	_	_
+10	mazgāt	mazgāt	VERB	vmnn0t2000n	Polarity=Pos|VerbForm=Inf	9	csubj	9:csubj	_	_	_
 11	–	–	PUNCT	zd	_	12	punct	12:punct	_	_	_
 12	drīkstot	drīkstēt	VERB	vonrpi300an	Evident=Nfh|Mood=Qot|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	5	conj	5:conj	_	_	_
 13	likt	likt	VERB	vmnn0t1000n	Polarity=Pos|VerbForm=Inf	12	xcomp	12:xcomp	Y	Placing	_
@@ -252,7 +252,7 @@
 9	likt	likt	VERB	vmnn0t1000n	Polarity=Pos|VerbForm=Inf	8	xcomp	8:xcomp	Y	Using	_
 10	lietā	lieta	NOUN	ncfsl4	Case=Loc|Gender=Fem|Number=Sing	9	obl	9:obl:loc	_	_	_
 11	Čehijā	Čehija	PROPN	npfsl4	Case=Loc|Gender=Fem|Number=Sing	12	obl	12:obl:loc	_	_	_
-12	redzētu	redzēt	VERB	vmnpdfsapsnpn	Aspect=Perf|Case=Acc|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	13	amod	13:amod	_	_	_
+12	redzētu	redzēt	VERB	vmnpdfsapsnpn	Aspect=Perf|Case=Acc|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	13	amod	13:amod	_	_	_
 13	uzrikti	uzrikti	NOUN	ncfsa5	Case=Acc|Gender=Fem|Number=Sing	9	obj	9:obj	_	_	Instrument
 14	.	.	PUNCT	zs	_	8	punct	8:punct	_	_	_
 

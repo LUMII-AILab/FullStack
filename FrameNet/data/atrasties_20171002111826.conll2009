@@ -6,7 +6,7 @@
 4	rūpnīcā	rūpnīca	NOUN	ncfsl4	Case=Loc|Gender=Fem|Number=Sing	2	obl	2:obl:loc	_	_	Location
 5	,	,	PUNCT	zc	_	7	punct	7:punct	_	_	_
 6	kurā	kura	PRON	pr0fsln	Case=Loc|Gender=Fem|Number=Sing|PronType=Rel	7	obl	7:obl:loc	_	_	_
-7	izvietots	izvietot	VERB	vmnpdmsnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	4	acl	4:acl	_	_	_
+7	izvietots	izvietot	VERB	vmnpdmsnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	4	acl	4:acl	_	_	_
 8	arī	arī	PART	q	_	13	discourse	13:discourse	_	_	_
 9	«	«	PUNCT	zq	_	10	punct	10:punct	_	_	_
 10	second	second	X	xf	Foreign=Yes	13	nmod	13:nmod	_	_	_
@@ -31,18 +31,18 @@
 
 # sent_id = a-d12-p14s22
 # text = Frukts atradies!
-1	Frukts	frukts	NOUN	ncmsn1	Case=Nom|Gender=Masc|Number=Sing	2	obl	2:obl:nom	_	_	_
-2	atradies	atrasties	VERB	vmypdmsnasn0n	Aspect=Perf|Case=Nom|Definite=Ind|Gender=Masc|Number=Sing|Polarity=Pos|Reflex=Yes|Tense=Past|VerbForm=Part	0	root	0:root	_	_	_
+1	Frukts	frukts	NOUN	ncmsn1	Case=Nom|Gender=Masc|Number=Sing	2	nsubj	2:nsubj	_	_	_
+2	atradies	atrasties	VERB	vmypdmsnasn0n	Aspect=Perf|Case=Nom|Definite=Ind|Gender=Masc|Number=Sing|Polarity=Pos|Reflex=Yes|Tense=Past|VerbForm=Part|Voice=Act	0	root	0:root	_	_	_
 3	!	!	PUNCT	zs	_	2	punct	2:punct	_	_	_
 
 # sent_id = a-d52-p13s16
 # text = «Izdrāzt» un «piedrāzt» pievienojās verba «piemānīt» sinonīmu rindai, kur jau tā atradās daudzi argo un par tiem maigākie vārdi «piečakarēt» un «piedirst», un vai reizes simt skanēja ik dienu, ik nākamās filmas tulkojumā.
 1	«	«	PUNCT	zq	_	2	punct	2:punct	_	_	_
-2	Izdrāzt	izdrāzt	VERB	vmnn0t1000n	Polarity=Pos|VerbForm=Inf	8	ccomp	8:ccomp	_	_	_
+2	Izdrāzt	izdrāzt	VERB	vmnn0t1000n	Polarity=Pos|VerbForm=Inf	8	csubj	8:csubj	_	_	_
 3	»	»	PUNCT	zq	_	2	punct	2:punct	_	_	_
 4	un	un	CCONJ	cc	_	6	punct	6:punct	_	_	_
 5	«	«	PUNCT	zq	_	6	punct	6:punct	_	_	_
-6	piedrāzt	piedrāzt	VERB	vmnn0t1000n	Polarity=Pos|VerbForm=Inf	2	conj	2:conj	_	_	_
+6	piedrāzt	piedrāzt	VERB	vmnn0t1000n	Polarity=Pos|VerbForm=Inf	2	conj	2:conj|8:csubj	_	_	_
 7	»	»	PUNCT	zq	_	6	punct	6:punct	_	_	_
 8	pievienojās	pievienoties	VERB	vmyisi230an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Reflex=Yes|Tense=Past|VerbForm=Fin|Voice=Act	0	root	0:root	_	_	_
 9	verba	verbs	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	11	nmod	11:nmod	_	_	_
@@ -64,11 +64,11 @@
 25	maigākie	maigs	ADJ	afmpnyc	Case=Nom|Degree=Cmp|Gender=Masc|Number=Plur	26	amod	26:amod	_	_	_
 26	vārdi	vārds	NOUN	ncmpn1	Case=Nom|Gender=Masc|Number=Plur	28	nmod	28:nmod|32:nmod	_	_	_
 27	«	«	PUNCT	zq	_	28	punct	28:punct	_	_	_
-28	piečakarēt	piečakarēt	VERB	vmnn0t2000n	Polarity=Pos|VerbForm=Inf	21	conj	21:conj	_	_	_
+28	piečakarēt	piečakarēt	VERB	vmnn0t2000n	Polarity=Pos|VerbForm=Inf	21	conj	19:nsubj|21:conj	_	_	_
 29	»	»	PUNCT	zq	_	28	punct	28:punct	_	_	_
 30	un	un	CCONJ	cc	_	32	punct	32:punct	_	_	_
 31	«	«	PUNCT	zq	_	32	punct	32:punct	_	_	_
-32	piedirst	piedirst	VERB	vmnn0t1000n	Polarity=Pos|VerbForm=Inf	28	conj	21:conj|28:conj	_	_	_
+32	piedirst	piedirst	VERB	vmnn0t1000n	Polarity=Pos|VerbForm=Inf	28	conj	19:nsubj|28:conj	_	_	_
 33	»	»	PUNCT	zq	_	32	punct	32:punct	_	_	_
 34	,	,	PUNCT	zc	_	39	punct	39:punct	_	_	_
 35	un	un	CCONJ	cc	_	39	cc	39:cc	_	_	_
@@ -82,7 +82,7 @@
 43	ik	ik	PART	q	_	46	discourse	46:discourse	_	_	_
 44	nākamās	nākamais	ADJ	arfsgyp	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	45	amod	45:amod	_	_	_
 45	filmas	filma	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	46	nmod	46:nmod:gen	_	_	_
-46	tulkojumā	tulkojums	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	41	conj	41:conj	_	_	_
+46	tulkojumā	tulkojums	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	41	conj	39:obl:loc|41:conj	_	_	_
 47	.	.	PUNCT	zs	_	8	punct	8:punct	_	_	_
 
 # sent_id = a-d91-p11s4
@@ -107,9 +107,9 @@
 9	—	—	PUNCT	zd	_	15	punct	15:punct	_	_	_
 10	kāda	kāda	PRON	pi0fsnn	Case=Nom|Gender=Fem|Number=Sing|PronType=Ind	15	xcomp	15:xcomp	_	_	_
 11	sava	sava	DET	ps0fsnn	Case=Nom|Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	12	det	12:det	_	_	_
-12	saimniecība	saimniecība	NOUN	ncfsn4	Case=Nom|Gender=Fem|Number=Sing	15	nsubj	15:nsubj	_	_	_
+12	saimniecība	saimniecība	NOUN	ncfsn4	Case=Nom|Gender=Fem|Number=Sing	15	nsubj	10:dep|15:nsubj	_	_	_
 13	un	un	CCONJ	cc	_	14	cc	14:cc	_	_	_
-14	ēkas	ēka	NOUN	ncfpn4	Case=Nom|Gender=Fem|Number=Plur	12	conj	12:conj|15:nsubj	_	_	_
+14	ēkas	ēka	NOUN	ncfpn4	Case=Nom|Gender=Fem|Number=Plur	12	conj	10:dep|12:conj|15:nsubj	_	_	_
 15	izskatās	izskatīties	VERB	vcyipt330an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Reflex=Yes|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	2:conj	_	_	_
 16	no	no	ADP	spsg	_	18	case	18:case	_	_	_
 17	putna	putns	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	18	nmod	18:nmod:gen	_	_	_
@@ -122,11 +122,11 @@
 2	viņa	viņa	PRON	pp3fsnn	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	5	nsubj	5:nsubj	_	_	_
 3	mums	mēs	PRON	pp10pdn	Case=Dat|Number=Plur|Person=1|PronType=Prs	5	iobj	5:iobj	_	_	_
 4	jau	jau	ADV	r0t	_	5	advmod	5:advmod	_	_	_
-5	izrādījusi	izrādīt	VERB	vmnpdfsnasnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	0	root	0:root	_	_	_
+5	izrādījusi	izrādīt	VERB	vmnpdfsnasnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	0	root	0:root	_	_	_
 6	nesen	nesen	ADV	r0t	PronType=Neg	7	advmod	7:advmod	_	_	_
-7	iegādātos	iegādāt	VERB	vmnpdmpapsypn	Aspect=Perf|Case=Acc|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part	10	amod	10:amod	_	_	_
+7	iegādātos	iegādāt	VERB	vmnpdmpapsypn	Aspect=Perf|Case=Acc|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	10	amod	10:amod	_	_	_
 8	donoriem	donors	NOUN	ncmpd1	Case=Dat|Gender=Masc|Number=Plur	9	iobj	9:iobj	_	_	_
-9	paredzētos	paredzēt	VERB	vmnpdmpapsypn	Aspect=Perf|Case=Acc|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part	10	amod	10:amod	_	_	_
+9	paredzētos	paredzēt	VERB	vmnpdmpapsypn	Aspect=Perf|Case=Acc|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	10	amod	10:amod	_	_	_
 10	dīvānkrēslus	dīvānkrēsls	NOUN	ncmpa1	Case=Acc|Gender=Masc|Number=Plur	5	obj	5:obj	_	_	_
 11	,	,	PUNCT	zc	_	15	punct	15:punct	_	_	_
 12	lai	lai	SCONJ	cs	_	15	mark	15:mark	_	_	_
@@ -140,9 +140,9 @@
 20	stāvoklī	stāvoklis	NOUN	ncmsl2	Case=Loc|Gender=Masc|Number=Sing	18	obl	18:obl:loc	_	_	Location
 21	,	,	PUNCT	zc	_	25	punct	25:punct	_	_	_
 22	kā	kā	SCONJ	cs	_	25	cc	25:cc	_	_	_
-23	arī	arī	PART	q	_	22	discourse	22:discourse	_	_	_
+23	arī	arī	CCONJ	cc	_	22	fixed	22:fixed	_	_	_
 24	citu	cits	DET	pi0msan	Case=Acc|Gender=Masc|Number=Sing|PronType=Ind	25	det	25:det	_	_	_
-25	aprīkojumu	aprīkojums	NOUN	ncmsa1	Case=Acc|Gender=Masc|Number=Sing	10	conj	10:conj	_	_	_
+25	aprīkojumu	aprīkojums	NOUN	ncmsa1	Case=Acc|Gender=Masc|Number=Sing	10	conj	5:obj|10:conj	_	_	_
 26	,	,	PUNCT	zc	_	30	punct	30:punct	_	_	_
 27	tai	tas	DET	pd3msln	Case=Loc|Gender=Masc|Number=Sing|Person=3|PronType=Dem	28	det	28:det	_	_	_
 28	skaitā	skaits	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	30	discourse	30:discourse	_	_	_
@@ -151,7 +151,7 @@
 31	,	,	PUNCT	zc	_	36	punct	36:punct	_	_	_
 32	kurā	kura	PRON	pr0fsln	Case=Loc|Gender=Fem|Number=Sing|PronType=Rel	36	obl	36:obl:loc	_	_	_
 33	asinis	asins	NOUN	ncfpn6	Case=Nom|Gender=Fem|Number=Plur	36	nsubj	36:nsubj|37:nsubj	_	_	_
-34	atbilstošā	atbilst	VERB	vmnpdfslapnpn	Aspect=Imp|Case=Loc|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Pres|VerbForm=Part|Voice=Pass	35	amod	35:amod	_	_	_
+34	atbilstošā	atbilst	VERB	vmnpdfslapnpn	Aspect=Imp|Case=Loc|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Pres|VerbForm=Part|Voice=Act	35	amod	35:amod	_	_	_
 35	temperatūrā	temperatūra	NOUN	ncfsl4	Case=Loc|Gender=Fem|Number=Sing	36	obl	36:obl:loc	_	_	_
 36	var	varēt	VERB	vonipi330an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	30	acl	30:acl	_	_	_
 37	glabāties	glabāties	VERB	vmyn0i2000n	Polarity=Pos|Reflex=Yes|VerbForm=Inf	36	xcomp	36:xcomp	_	_	_
@@ -233,7 +233,7 @@
 11	elektrohromos	elektrohromos	ADJ	armpayp	Case=Acc|Degree=Pos|Gender=Masc|Number=Plur	12	amod	12:amod	_	_	_
 12	paneļus	panelis	NOUN	ncmpa2	Case=Acc|Gender=Masc|Number=Plur	9	obj	9:obj	_	_	_
 13	pilnībā	pilnība	NOUN	ncfsl4	Case=Loc|Gender=Fem|Number=Sing	14	obl	14:obl:loc	_	_	_
-14	iestiklotās	iestiklot	VERB	vmnpdfplpsnpn	Aspect=Perf|Case=Loc|Definite=Ind|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part	15	amod	15:amod	_	_	_
+14	iestiklotās	iestiklot	VERB	vmnpdfplpsnpn	Aspect=Perf|Case=Loc|Definite=Ind|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	15	amod	15:amod	_	_	_
 15	fasādēs	fasāde	NOUN	ncfpl5	Case=Loc|Gender=Fem|Number=Plur	9	obl	9:obl:loc	_	_	_
 16	.	.	PUNCT	zs	_	9	punct	9:punct	_	_	_
 
@@ -266,7 +266,7 @@
 6	cik	cik	ADV	r0q	PronType=Int	7	advmod	7:advmod	_	_	_
 7	ilgi	ilgi	ADV	rpt	Degree=Pos	9	advmod	9:advmod	_	_	_
 8	produkts	produkts	NOUN	ncmsn1	Case=Nom|Gender=Masc|Number=Sing	9	nsubj	9:nsubj	_	_	Theme
-9	atradies	atrasties	VERB	vmypdmsnasnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Reflex=Yes|Tense=Past|VerbForm=Part	4	acl	4:acl	Y	Being_located	_
+9	atradies	atrasties	VERB	vmypdmsnasnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Reflex=Yes|Tense=Past|VerbForm=Part|Voice=Act	4	acl	4:acl	Y	Being_located	_
 10	siltuma	siltums	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	11	nmod	11:nmod:gen	_	_	_
 11	vitrīnā	vitrīna	NOUN	ncfsl4	Case=Loc|Gender=Fem|Number=Sing	9	obl	9:obl:loc	_	_	Location
 12	.	.	PUNCT	zs	_	3	punct	3:punct	_	_	_

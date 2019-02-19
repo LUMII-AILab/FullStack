@@ -23,14 +23,14 @@
 # sent_id = a-d21-p16s2
 # text = It kā viss bija labākajā kārtībā, veikals atvērts, cilvēki iepērkas.
 1	It	it	PART	q	_	4	discourse	4:discourse	_	_	_
-2	kā	kā	PART	q	_	1	flat	1:flat	_	_	_
+2	kā	kā	PART	q	_	1	fixed	1:fixed	_	_	_
 3	viss	viss	PRON	pg0msnn	Case=Nom|Gender=Masc|Number=Sing|PronType=Tot	4	nsubj	4:nsubj	_	_	_
 4	bija	būt	VERB	vmnisii30an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	0	root	0:root	_	_	_
 5	labākajā	labs	ADJ	affslyc	Case=Loc|Degree=Cmp|Gender=Fem|Number=Sing	6	amod	6:amod	_	_	_
 6	kārtībā	kārtība	NOUN	ncfsl4	Case=Loc|Gender=Fem|Number=Sing	4	obl	4:obl:loc	_	_	_
 7	,	,	PUNCT	zc	_	9	punct	9:punct	_	_	_
 8	veikals	veikals	NOUN	ncmsn1	Case=Nom|Gender=Masc|Number=Sing	9	nsubj:pass	9:nsubj:pass	_	_	_
-9	atvērts	atvērt	VERB	vmnpdmsnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	4	conj	4:conj	_	_	_
+9	atvērts	atvērt	VERB	vmnpdmsnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	4	conj	4:conj	_	_	_
 10	,	,	PUNCT	zc	_	12	punct	12:punct	_	_	_
 11	cilvēki	cilvēks	NOUN	ncmpn1	Case=Nom|Gender=Masc|Number=Plur	12	nsubj	12:nsubj	_	_	Shopper
 12	iepērkas	iepirkties	VERB	vmyipi130an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Reflex=Yes|Tense=Pres|VerbForm=Fin|Voice=Act	4	conj	4:conj	Y	Shopping	_
@@ -49,7 +49,7 @@
 9	efektīvi	efektīvi	ADV	rpm	Degree=Pos	10	advmod	10:advmod	_	_	_
 10	iepirkties	iepirkties	VERB	vmyn0i1000n	Polarity=Pos|Reflex=Yes|VerbForm=Inf	11	xcomp	11:xcomp	Y	Shopping	_
 11	nozīmē	nozīmēt	VERB	vtnipt230an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	4	ccomp	4:ccomp	_	_	_
-12	iepirkties	iepirkties	VERB	vmyn0i1000n	Polarity=Pos|Reflex=Yes|VerbForm=Inf	11	ccomp	10:ccomp|11:ccomp	Y	Shopping	_
+12	iepirkties	iepirkties	VERB	vmyn0i1000n	Polarity=Pos|Reflex=Yes|VerbForm=Inf	11	csubj	10:dep|11:csubj	Y	Shopping	_
 13	ātri	ātri	ADV	rpm	Degree=Pos	12	advmod	12:advmod	_	_	_
 14	.	.	PUNCT	zs	_	4	punct	4:punct	_	_	_
 
@@ -113,7 +113,7 @@
 3	iznesot	iznest	VERB	vmnpu0000000n	Polarity=Pos|VerbForm=Conv	15	advcl	15:advcl|19:advcl	_	_	_
 4	atkritumkasti	atkritumkasti	NOUN	ncfsa5	Case=Acc|Gender=Fem|Number=Sing	3	obj	3:obj	_	_	_
 5	vai	vai	CCONJ	cc	_	6	cc	6:cc	_	_	_
-6	pavadot	pavadīt	VERB	vmnpu0000000n	Polarity=Pos|VerbForm=Conv	3	conj	3:conj|15:advcl	_	_	_
+6	pavadot	pavadīt	VERB	vmnpu0000000n	Polarity=Pos|VerbForm=Conv	3	conj	3:conj|15:advcl|19:advcl	_	_	_
 7	pēcpusdienu	pēcpusdiena	NOUN	ncfsa4	Case=Acc|Gender=Fem|Number=Sing	6	obj	6:obj	_	_	_
 8	ar	ar	ADP	spsa	_	9	case	9:case	_	_	_
 9	sievu	sieva	NOUN	ncfsa4	Case=Acc|Gender=Fem|Number=Sing	10	iobj	10:iobj	_	_	_
@@ -131,11 +131,11 @@
 21	nepieciešamās	nepieciešams	ADJ	affpayp	Case=Acc|Degree=Pos|Gender=Fem|Number=Plur	22	amod	22:amod	_	_	_
 22	emocijas	emocija	NOUN	ncfpa4	Case=Acc|Gender=Fem|Number=Plur	19	obj	19:obj	_	_	_
 23	,	,	PUNCT	zc	_	24	punct	24:punct	_	_	_
-24	prieku	prieks	NOUN	ncmsa1	Case=Acc|Gender=Masc|Number=Sing	22	conj	22:conj	_	_	_
+24	prieku	prieks	NOUN	ncmsa1	Case=Acc|Gender=Masc|Number=Sing	22	conj	19:obj|22:conj	_	_	_
 25	par	par	ADP	spsa	_	26	case	26:case	_	_	_
-26	sasniegto	sasniegt	VERB	vmnpdmsapsypn	Aspect=Perf|Case=Acc|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	24	amod	24:amod	_	_	_
+26	sasniegto	sasniegt	VERB	vmnpdmsapsypn	Aspect=Perf|Case=Acc|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	24	amod	24:amod	_	_	_
 27	,	,	PUNCT	zc	_	28	punct	28:punct	_	_	_
-28	gandarījumu	gandarījums	NOUN	ncmsa1	Case=Acc|Gender=Masc|Number=Sing	22	conj	22:conj	_	_	_
+28	gandarījumu	gandarījums	NOUN	ncmsa1	Case=Acc|Gender=Masc|Number=Sing	22	conj	19:obj|22:conj	_	_	_
 29	.	.	PUNCT	zs	_	15	punct	15:punct	_	_	_
 
 # sent_id = a-p3428-p7s9
@@ -154,7 +154,7 @@
 12	,	,	PUNCT	zc	_	14	punct	14:punct	_	_	_
 13	kopīgi	kopīgi	ADV	rpm	Degree=Pos	14	advmod	14:advmod	_	_	_
 14	apmeklēja	apmeklēt	VERB	vmnist230an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	6	conj	6:conj	_	_	_
-15	SPA	SPA	NOUN	yn	Abbr=Yes	16	nmod	16:nmod	_	_	_
+15	SPA	spa	NOUN	nc0000	_	16	nmod	16:nmod	_	_	_
 16	centrus	centrs	NOUN	ncmpa1	Case=Acc|Gender=Masc|Number=Plur	14	obj	14:obj	_	_	_
 17	.	.	PUNCT	zs	_	6	punct	6:punct	_	_	_
 

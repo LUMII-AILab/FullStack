@@ -8,7 +8,7 @@
 6	vai	vai	CCONJ	cc	_	9	mark	9:mark	_	_	_
 7	Fanija	Fanija	PROPN	npfsn4	Case=Nom|Gender=Fem|Number=Sing	9	nsubj	9:nsubj	_	_	_
 8	esot	būt	AUX	vcnrpii00an	Evident=Nfh|Mood=Qot|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	9	aux	9:aux	_	_	_
-9	satikusi	satikt	VERB	vmnpdfsnasnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	4	ccomp	4:ccomp	_	_	_
+9	satikusi	satikt	VERB	vmnpdfsnasnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	4	ccomp	4:ccomp	_	_	_
 10	bērnus	bērns	NOUN	ncmpa1	Case=Acc|Gender=Masc|Number=Plur	9	obj	9:obj	_	_	_
 11	,	,	PUNCT	zc	_	13	punct	13:punct	_	_	_
 12	kam	kas	PRON	pr000dn	Case=Dat|PronType=Rel	13	obl	13:obl:dat	_	_	_
@@ -17,11 +17,11 @@
 15	tādu	tāds	DET	pd0mpgn	Case=Gen|Gender=Masc|Number=Plur|PronType=Dem	19	det	19:det	_	_	_
 16	,	,	PUNCT	zc	_	18	punct	18:punct	_	_	_
 17	ne	ne	CCONJ	cc	Polarity=Neg	18	cc	18:cc	_	_	_
-18	citādu	citāds	ADJ	armpgnp	Case=Gen|Degree=Pos|Gender=Masc|Number=Plur	15	conj	15:conj	_	_	_
+18	citādu	citāds	ADJ	armpgnp	Case=Gen|Degree=Pos|Gender=Masc|Number=Plur	15	conj	15:conj|19:amod	_	_	_
 19	vecāku	vecāks	NOUN	ncmpg1	Case=Gen|Gender=Masc|Number=Plur	13	nsubj	13:nsubj	_	_	_
 20	un	un	CCONJ	cc	_	22	cc	22:cc	_	_	_
 21	kuriem	kurš	PRON	pr0mpdn	Case=Dat|Gender=Masc|Number=Plur|PronType=Rel	22	iobj	22:iobj	_	_	Owner
-22	pietrūkst	pietrūkt	VERB	vmnipi130an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	13	conj	13:conj	Y	Possession	_
+22	pietrūkst	pietrūkt	VERB	vmnipi130an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	13	conj	10:acl|13:conj	Y	Possession	_
 23	mīlestības	mīlestība	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	22	nsubj	22:nsubj	_	_	Possession
 24	.	.	PUNCT	zs	_	4	punct	4:punct	_	_	_
 
@@ -44,7 +44,7 @@
 15	darbiem	darbs	NOUN	ncmpd1	Case=Dat|Gender=Masc|Number=Plur	12	iobj	12:iobj	_	_	_
 16	,	,	PUNCT	zc	_	18	punct	18:punct	_	_	_
 17	bet	bet	CCONJ	cc	_	18	cc	18:cc	_	_	_
-18	tādēļ	tādēļ	ADV	r0c	_	9	conj	9:conj	_	_	_
+18	tādēļ	tādēļ	ADV	r0c	_	9	conj	5:advmod|9:conj	_	_	_
 19	,	,	PUNCT	zc	_	21	punct	21:punct	_	_	_
 20	ka	ka	SCONJ	cs	_	21	mark	21:mark	_	_	_
 21	baidās	baidīties	VERB	vmyipi330an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Reflex=Yes|Tense=Pres|VerbForm=Fin|Voice=Act	18	advcl	18:advcl	_	_	_
@@ -66,7 +66,7 @@
 10	orientieru	orientieris	NOUN	ncmpg2	Case=Gen|Gender=Masc|Number=Plur	9	iobj	9:iobj	_	_	Possession
 11	dzīvē	dzīve	NOUN	ncfsl5	Case=Loc|Gender=Fem|Number=Sing	10	acl	10:acl:loc	_	_	_
 12	,	,	PUNCT	zc	_	13	punct	13:punct	_	_	_
-13	stabilitātes	stabilitāte	NOUN	ncfsg5	Case=Gen|Gender=Fem|Number=Sing	10	conj	10:conj	_	_	_
+13	stabilitātes	stabilitāte	NOUN	ncfsg5	Case=Gen|Gender=Fem|Number=Sing	10	conj	9:iobj|10:conj	_	_	_
 14	,	,	PUNCT	zc	_	17	punct	17:punct	_	_	_
 15	kas	kas	PRON	pr000nn	Case=Nom|PronType=Rel	17	nsubj	17:nsubj|21:nsubj	_	_	_
 16	bērnā	bērns	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	17	obl	17:obl:loc	_	_	_
@@ -82,17 +82,17 @@
 # text = Izglītības un zinātnes ministrijā atzīst, ka līdz šim pietrūcis konkrēta tiesiskā regulējuma, kas noteiktu, kā dalāma skolotāju algām domātā nauda.
 1	Izglītības	izglītība	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	4	nmod	4:nmod:gen	_	_	_
 2	un	un	CCONJ	cc	_	3	cc	3:cc	_	_	_
-3	zinātnes	zinātne	NOUN	ncfsg5	Case=Gen|Gender=Fem|Number=Sing	1	conj	1:conj	_	_	_
+3	zinātnes	zinātne	NOUN	ncfsg5	Case=Gen|Gender=Fem|Number=Sing	1	conj	1:conj|4:nmod:gen	_	_	_
 4	ministrijā	ministrija	NOUN	ncfsl4	Case=Loc|Gender=Fem|Number=Sing	5	obl	5:obl:loc	_	_	_
 5	atzīst	atzīt	VERB	vmnipt130an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	0:root	_	_	_
 6	,	,	PUNCT	zc	_	10	punct	10:punct	_	_	_
 7	ka	ka	SCONJ	cs	_	10	mark	10:mark	_	_	_
 8	līdz	līdz	ADP	spsd	_	9	case	9:case	_	_	_
 9	šim	šis	PRON	pd3msdn	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Dem	10	obl	10:obl:līdz	_	_	_
-10	pietrūcis	pietrūkt	VERB	vmnpdmsnasnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	5	ccomp	5:ccomp	Y	Possession	_
+10	pietrūcis	pietrūkt	VERB	vmnpdmsnasnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	5	ccomp	5:ccomp	Y	Possession	_
 11	konkrēta	konkrēts	ADJ	afmsgnp	Case=Gen|Degree=Pos|Gender=Masc|Number=Sing	13	amod	13:amod	_	_	_
 12	tiesiskā	tiesisks	ADJ	armsgyp	Case=Gen|Degree=Pos|Gender=Masc|Number=Sing	13	amod	13:amod	_	_	_
-13	regulējuma	regulējums	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	10	obl	10:obl:gen	_	_	Possession
+13	regulējuma	regulējums	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	10	nsubj	10:nsubj	_	_	Possession
 14	,	,	PUNCT	zc	_	16	punct	16:punct	_	_	_
 15	kas	kas	PRON	pr000nn	Case=Nom|PronType=Rel	16	nsubj	16:nsubj	_	_	_
 16	noteiktu	noteikt	VERB	vmnc0t100an	Mood=Cnd|Polarity=Pos|VerbForm=Fin|Voice=Act	13	acl	13:acl	_	_	_
@@ -101,7 +101,7 @@
 19	dalāma	dalīt	VERB	vmnpdfsnppnpn	Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Pres|VerbForm=Part|Voice=Pass	16	ccomp	16:ccomp	_	_	_
 20	skolotāju	skolotājs	NOUN	ncmpg1	Case=Gen|Gender=Masc|Number=Plur	21	nmod	21:nmod:gen	_	_	_
 21	algām	alga	NOUN	ncfpd4	Case=Dat|Gender=Fem|Number=Plur	22	iobj	22:iobj	_	_	_
-22	domātā	domāt	VERB	vmnpdfsnpsypn	Aspect=Perf|Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	23	amod	23:amod	_	_	_
+22	domātā	domāt	VERB	vmnpdfsnpsypn	Aspect=Perf|Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	23	amod	23:amod	_	_	_
 23	nauda	nauda	NOUN	ncfsn4	Case=Nom|Gender=Fem|Number=Sing	19	nsubj	19:nsubj	_	_	_
 24	.	.	PUNCT	zs	_	5	punct	5:punct	_	_	_
 

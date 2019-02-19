@@ -5,9 +5,9 @@
 3	ir	būt	VERB	vmnipii30an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	0:root	_	_	_
 4	fiziska	fizisks	ADJ	arfsnnp	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	9	amod	9:amod	_	_	_
 5	,	,	PUNCT	zc	_	6	punct	6:punct	_	_	_
-6	emocionāla	emocionāls	ADJ	affsnnp	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	4	conj	4:conj	_	_	_
+6	emocionāla	emocionāls	ADJ	affsnnp	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	4	conj	4:conj|9:amod	_	_	_
 7	,	,	PUNCT	zc	_	8	punct	8:punct	_	_	_
-8	seksuāla	seksuāls	ADJ	affsnnp	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	4	conj	4:conj	_	_	_
+8	seksuāla	seksuāls	ADJ	affsnnp	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	4	conj	4:conj|9:amod	_	_	_
 9	vardarbība	vardarbība	NOUN	ncfsn4	Case=Nom|Gender=Fem|Number=Sing	3	nsubj	3:nsubj	_	_	_
 10	,	,	PUNCT	zc	_	12	punct	12:punct	_	_	_
 11	ja	ja	SCONJ	cs	_	12	mark	12:mark	_	_	_
@@ -60,9 +60,9 @@
 17	apstākļi	apstāklis	NOUN	ncmpn2	Case=Nom|Gender=Masc|Number=Plur	14	nsubj	14:nsubj	_	_	_
 18	,	,	PUNCT	zc	_	20	punct	20:punct	_	_	_
 19	temperatūras	temperatūra	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	20	nmod	20:nmod:gen	_	_	_
-20	svārstības	svārstība	NOUN	ncfpn4	Case=Nom|Gender=Fem|Number=Plur	17	conj	17:conj	_	_	_
+20	svārstības	svārstība	NOUN	ncfpn4	Case=Nom|Gender=Fem|Number=Plur	17	conj	14:nsubj|17:conj	_	_	_
 21	un	un	CCONJ	cc	_	22	cc	22:cc	_	_	_
-22	lietus	lietus	NOUN	ncmpn3	Case=Nom|Gender=Masc|Number=Plur	17	conj	17:conj	_	_	_
+22	lietus	lietus	NOUN	ncmpn3	Case=Nom|Gender=Masc|Number=Plur	17	conj	14:nsubj|17:conj	_	_	_
 23	.	.	PUNCT	zs	_	3	punct	3:punct	_	_	_
 
 # sent_id = a-d200-p85s1
@@ -71,13 +71,13 @@
 2	Tu	tu	PRON	pp20snn	Case=Nom|Number=Sing|Person=2|PronType=Prs	5	nsubj	5:nsubj	_	_	Perceiver_passive
 3	esi	būt	AUX	vcnipii2san	Evident=Fh|Mood=Ind|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	5:aux	_	_	_
 4	sevi	sevis	PRON	px000an	Case=Acc|PronType=Rcp|Reflex=Yes	5	obj	5:obj	_	_	Phenomenon
-5	izjutusi	izjust	VERB	vmnpdfsnasnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	11	advcl	11:advcl	Y	Perception_experience	_
+5	izjutusi	izjust	VERB	vmnpdfsnasnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	11	advcl	11:advcl	Y	Perception_experience	_
 6	šāda	šāda	DET	pd0msln	Case=Loc|Gender=Masc|Number=Sing|PronType=Dem	7	det	7:det	_	_	_
 7	veidā	veids	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	5	obl	5:obl:loc	_	_	_
 8	,	,	PUNCT	zc	_	5	punct	5:punct	_	_	_
 9	Tu	tu	PRON	pp20snn	Case=Nom|Number=Sing|Person=2|PronType=Prs	11	nsubj	11:nsubj	_	_	_
 10	esi	būt	AUX	vcnipii2san	Evident=Fh|Mood=Ind|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	11	aux	11:aux	_	_	_
-11	atklājusi	atklāt	VERB	vmnpdfsnasnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	0	root	0:root	_	_	_
+11	atklājusi	atklāt	VERB	vmnpdfsnasnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	0	root	0:root	_	_	_
 12	kaut	kaut	PART	q	_	13	discourse	13:discourse	_	_	_
 13	ko	kas	PRON	pr000an	Case=Acc|PronType=Rel	11	obj	11:obj	_	_	_
 14	tādu	tāds	PRON	pd0msan	Case=Acc|Gender=Masc|Number=Sing|PronType=Dem	13	compound	13:compound	_	_	_
@@ -98,7 +98,7 @@
 # text = Tu esi izjutusi sevī, ka Tu pati esi šāds apbrīnojams radījums.
 1	Tu	tu	PRON	pp20snn	Case=Nom|Number=Sing|Person=2|PronType=Prs	3	nsubj	3:nsubj	_	_	Perceiver_passive
 2	esi	būt	AUX	vcnipii2san	Evident=Fh|Mood=Ind|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	3:aux	_	_	_
-3	izjutusi	izjust	VERB	vmnpdfsnasnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	0	root	0:root	Y	Perception_experience	_
+3	izjutusi	izjust	VERB	vmnpdfsnasnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	0	root	0:root	Y	Perception_experience	_
 4	sevī	sevis	PRON	px000ln	Case=Loc|PronType=Rcp|Reflex=Yes	3	obl	3:obl:loc	_	_	_
 5	,	,	PUNCT	zc	_	12	punct	12:punct	_	_	_
 6	ka	ka	SCONJ	cs	_	12	mark	12:mark	_	_	_
@@ -134,7 +134,7 @@
 6	ilgi	ilgi	ADV	rpt	Degree=Pos	7	advmod	7:advmod	_	_	_
 7	pirms	pirms	ADV	r0t	_	9	advmod	9:advmod	_	_	_
 8	bijām	būt	AUX	vcnisii1pan	Evident=Fh|Mood=Ind|Number=Plur|Person=1|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	9	aux	9:aux	_	_	_
-9	iemācījušies	iemācīties	VERB	vmypdmpnasnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos|Reflex=Yes|Tense=Past|VerbForm=Part	4	advcl	4:advcl	_	_	_
+9	iemācījušies	iemācīties	VERB	vmypdmpnasnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos|Reflex=Yes|Tense=Past|VerbForm=Part|Voice=Act	4	advcl	4:advcl	_	_	_
 10	to	tas	PRON	pd3msan	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Dem	11	obj	11:obj	_	_	_
 11	izprast	izprast	VERB	vmnn0t1000n	Polarity=Pos|VerbForm=Inf	9	xcomp	9:xcomp	_	_	_
 12	.	.	PUNCT	zs	_	4	punct	4:punct	_	_	_
@@ -148,17 +148,17 @@
 5	var	varēt	VERB	vonipi330an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	0:root	_	_	_
 6	izjust	izjust	VERB	vmnn0t1000n	Polarity=Pos|VerbForm=Inf	5	xcomp	5:xcomp	Y	Feeling	_
 7	ne	ne	CCONJ	cc	Polarity=Neg	12	cc	12:cc	_	_	_
-8	tikai	tikai	PART	q	_	7	discourse	7:discourse	_	_	_
+8	tikai	tikai	CCONJ	cc	_	7	fixed	7:fixed	_	_	_
 9	pret	pret	ADP	spsa	_	12	case	12:case	_	_	_
 10	savu	savs	DET	ps0msan	Case=Acc|Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	12	det	12:det	_	_	_
-11	esošo	būt	VERB	vmnpdfsaapypn	Aspect=Imp|Case=Acc|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Pres|VerbForm=Part|Voice=Pass	12	amod	12:amod	_	_	_
+11	esošo	būt	VERB	vmnpdfsaapypn	Aspect=Imp|Case=Acc|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Pres|VerbForm=Part|Voice=Act	12	amod	12:amod	_	_	_
 12	sievu	sieva	NOUN	ncfsa4	Case=Acc|Gender=Fem|Number=Sing	6	iobj	6:iobj	_	_	_
 13	,	,	PUNCT	zc	_	18	punct	18:punct	_	_	_
 14	bet	bet	CCONJ	cc	_	18	cc	18:cc	_	_	_
-15	arī	arī	PART	q	_	14	discourse	14:discourse	_	_	_
-16	bijušo	būt	AUX	vcnpdfsaasypn	Aspect=Perf|Case=Acc|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	18	amod	18:amod	_	_	_
+15	arī	arī	CCONJ	cc	_	14	fixed	14:fixed	_	_	_
+16	bijušo	būt	AUX	vcnpdfsaasypn	Aspect=Perf|Case=Acc|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	18	amod	18:amod	_	_	_
 17	attiecību	attiecība	NOUN	ncfpg4	Case=Gen|Gender=Fem|Number=Plur	18	nmod	18:nmod:gen	_	_	_
-18	partneri	partnere	NOUN	ncfsa2	Case=Acc|Gender=Fem|Number=Sing	12	conj	12:conj	_	_	_
+18	partneri	partnere	NOUN	ncfsa5	Case=Acc|Gender=Fem|Number=Sing	12	conj	6:iobj|12:conj	_	_	_
 19	.	.	PUNCT	zs	_	5	punct	5:punct	_	_	_
 
 # sent_id = a-p595-p8s1
@@ -167,7 +167,7 @@
 2	viesi	viesis	NOUN	ncmpn2	Case=Nom|Gender=Masc|Number=Plur	5	nsubj	5:nsubj	_	_	Experiencer
 3	pa	pa	ADP	spsd	_	4	case	4:case	_	_	_
 4	īstam	īsts	ADJ	armsdnp	Case=Dat|Degree=Pos|Gender=Masc|Number=Sing	5	obl	5:obl:pa	_	_	_
-5	izjustu	izjust	VERB	vmnc0t100an	Mood=Cnd|Polarity=Pos|VerbForm=Fin|Voice=Act	11	advcl	11:advcl	Y	Feeling	_
+5	izjustu	izjust	VERB	vmnc0t100an	Mood=Cnd|Polarity=Pos|VerbForm=Fin|Voice=Act	11	advcl	11:advcl|22:advcl	Y	Feeling	_
 6	maizes	maize	NOUN	ncfsg5	Case=Gen|Gender=Fem|Number=Sing	7	nmod	7:nmod:gen	_	_	_
 7	burvību	burvība	NOUN	ncfsa4	Case=Acc|Gender=Fem|Number=Sing	5	obj	5:obj	_	_	Emotion
 8	,	,	PUNCT	zc	_	5	punct	5:punct	_	_	_
@@ -176,7 +176,7 @@
 11	ļauj	ļaut	VERB	vmnipt130an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	0:root	_	_	_
 12	pataustīt	pataustīt	VERB	vmnn0t3000n	Polarity=Pos|VerbForm=Inf	11	ccomp	11:ccomp	_	_	_
 13	un	un	CCONJ	cc	_	14	cc	14:cc	_	_	_
-14	izmēģināt	izmēģināt	VERB	vmnn0t3000n	Polarity=Pos|VerbForm=Inf	12	conj	12:conj	_	_	_
+14	izmēģināt	izmēģināt	VERB	vmnn0t3000n	Polarity=Pos|VerbForm=Inf	12	conj	11:ccomp|12:conj	_	_	_
 15	uz	uz	ADP	spsg	_	16	case	16:case	_	_	_
 16	zoba	zobs	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	14	obl	14:obl:uz	_	_	_
 17	rudzu	rudzi	NOUN	ncmdg1	Case=Gen|Gender=Masc|Number=Ptan	18	nmod	18:nmod:gen	_	_	_

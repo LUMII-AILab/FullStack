@@ -4,12 +4,12 @@
 2	Milna	Milns	PROPN	npmsg1	Case=Gen|Gender=Masc|Number=Sing	3	nmod	3:nmod:gen	_	_	_
 3	varoņos	varonis	NOUN	ncmpl2	Case=Loc|Gender=Masc|Number=Plur	5	obl	5:obl:loc	_	_	_
 4	tiek	tikt	AUX	vtnipi130an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux:pass	5:aux:pass	_	_	_
-5	atrastas	atrast	VERB	vmnpdfpnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part	16	advcl	16:advcl	_	_	_
+5	atrastas	atrast	VERB	vmnpdfpnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	16	advcl	16:advcl	_	_	_
 6	populārākās	populārs	ADJ	affpnyc	Case=Nom|Degree=Cmp|Gender=Fem|Number=Plur	11	amod	11:amod	_	_	_
 7	cilvēku	cilvēks	NOUN	ncmpg1	Case=Gen|Gender=Masc|Number=Plur	8	nmod	8:nmod:gen|10:nmod:gen	_	_	_
 8	tipu	tips	NOUN	ncmpg1	Case=Gen|Gender=Masc|Number=Plur	11	nmod	11:nmod:gen	_	_	_
 9	un	un	CCONJ	cc	_	10	cc	10:cc	_	_	_
-10	raksturu	raksturs	NOUN	ncmpg1	Case=Gen|Gender=Masc|Number=Plur	8	conj	8:conj	_	_	_
+10	raksturu	raksturs	NOUN	ncmpg1	Case=Gen|Gender=Masc|Number=Plur	8	conj	8:conj|11:nmod:gen	_	_	_
 11	iezīmes	iezīme	NOUN	ncfpn5	Case=Nom|Gender=Fem|Number=Plur	5	nsubj:pass	5:nsubj:pass	_	_	_
 12	,	,	PUNCT	zc	_	5	punct	5:punct	_	_	_
 13	tad	tad	ADV	r0t	PronType=Dem	16	advmod	16:advmod	_	_	_
@@ -47,7 +47,7 @@
 # sent_id = a-c61-p64s6
 # text = Vēja veidotās kāpas sastopamas gan Piejūras zemienē, gan Latvijas iekšzemes līdzenumos (piemēram, Trapenes līdzenumā Gulbenes rajonā, Sedas līdzenumā Sedas – Strenču apkārtnē un citur).
 1	Vēja	vējš	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	2	obl	2:obl:gen	_	_	_
-2	veidotās	veidot	VERB	vmnpdfpnpsypn	Aspect=Perf|Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part	3	amod	3:amod	_	_	_
+2	veidotās	veidot	VERB	vmnpdfpnpsypn	Aspect=Perf|Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	3	amod	3:amod	_	_	_
 3	kāpas	kāpa	NOUN	ncfpn4	Case=Nom|Gender=Fem|Number=Plur	4	nsubj	4:nsubj	_	_	Entity
 4	sastopamas	sastapt	VERB	vmnpdfpnppnpn	Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos|Tense=Pres|VerbForm=Part|Voice=Pass	0	root	0:root	Y	Circumscribed_existence	_
 5	gan	gan	CCONJ	cc	_	7	cc	7:cc	_	_	_
@@ -57,9 +57,9 @@
 9	gan	gan	CCONJ	cc	_	12	cc	12:cc	_	_	_
 10	Latvijas	Latvija	PROPN	npfsg4	Case=Gen|Gender=Fem|Number=Sing	12	nmod	12:nmod:gen	_	_	_
 11	iekšzemes	iekšzeme	NOUN	ncfsg5	Case=Gen|Gender=Fem|Number=Sing	12	nmod	12:nmod:gen	_	_	_
-12	līdzenumos	līdzenums	NOUN	ncmpl1	Case=Loc|Gender=Masc|Number=Plur	7	conj	7:conj	_	_	_
+12	līdzenumos	līdzenums	NOUN	ncmpl1	Case=Loc|Gender=Masc|Number=Plur	7	conj	4:obl:loc|7:conj	_	_	_
 13	(	(	PUNCT	zb	_	17	punct	17:punct	_	_	_
-14	piemēram	piemērs	NOUN	ncmsd1	Case=Dat|Gender=Masc|Number=Sing	17	discourse	17:discourse	_	_	_
+14	piemēram	piemērs	NOUN	ncmsd1	Case=Dat|Gender=Masc|Number=Sing	17	discourse	17:discourse|22:discourse|28:discourse	_	_	_
 15	,	,	PUNCT	zc	_	14	punct	14:punct	_	_	_
 16	Trapenes	Trapene	PROPN	npfsg5	Case=Gen|Gender=Fem|Number=Sing	17	nmod	17:nmod:gen	_	_	_
 17	līdzenumā	līdzenums	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	12	discourse	12:discourse	_	_	_
@@ -70,7 +70,7 @@
 22	līdzenumā	līdzenums	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	17	conj	12:discourse|17:conj	_	_	_
 23	Sedas	Seda	PROPN	npfsg4	Case=Gen|Gender=Fem|Number=Sing	26	nmod	26:nmod:gen	_	_	_
 24	–	–	PUNCT	zd	_	25	punct	25:punct	_	_	_
-25	Strenču	Strenči	PROPN	npmdg2	Case=Gen|Gender=Masc|Number=Ptan	23	conj	23:conj	_	_	_
+25	Strenču	Strenči	PROPN	npmdg2	Case=Gen|Gender=Masc|Number=Ptan	23	conj	23:conj|26:nmod:gen	_	_	_
 26	apkārtnē	apkārtne	NOUN	ncfsl5	Case=Loc|Gender=Fem|Number=Sing	22	acl	22:acl:loc	_	_	_
 27	un	un	CCONJ	cc	_	28	cc	28:cc	_	_	_
 28	citur	citur	ADV	r0p	_	17	conj	12:discourse|17:conj	_	_	_
@@ -108,12 +108,12 @@
 12	dienvidos	dienvidi	NOUN	ncmdl1	Case=Loc|Gender=Masc|Number=Ptan	10	conj	6:obl:loc|10:conj	_	_	_
 13	,	,	PUNCT	zc	_	15	punct	15:punct	_	_	_
 14	arī	arī	PART	q	_	15	discourse	15:discourse	_	_	_
-15	Āfrikā	Āfrika	PROPN	npfsl4	Case=Loc|Gender=Fem|Number=Sing	10	conj	10:conj	_	_	_
+15	Āfrikā	Āfrika	PROPN	npfsl4	Case=Loc|Gender=Fem|Number=Sing	10	conj	6:obl:loc|10:conj	_	_	_
 16	,	,	PUNCT	zc	_	17	punct	17:punct	_	_	_
-17	Tuvajos	tuvs	ADJ	armplyp	Case=Loc|Degree=Pos|Gender=Masc|Number=Plur	10	conj	10:conj	_	_	_
+17	Tuvajos	tuvs	ADJ	armplyp	Case=Loc|Degree=Pos|Gender=Masc|Number=Plur	10	conj	6:obl:loc|10:conj	_	_	_
 18	Austrumos	Austrumi	PROPN	npmdl1	Case=Loc|Gender=Masc|Number=Ptan	17	flat:name	17:flat:name	_	_	_
 19	un	un	CCONJ	cc	_	20	cc	20:cc	_	_	_
-20	Āzijā	Āzija	PROPN	npfsl4	Case=Loc|Gender=Fem|Number=Sing	10	conj	10:conj	_	_	_
+20	Āzijā	Āzija	PROPN	npfsl4	Case=Loc|Gender=Fem|Number=Sing	10	conj	6:obl:loc|10:conj	_	_	_
 21	līdz	līdz	ADP	spsd	_	23	case	23:case	_	_	_
 22	pat	pat	PART	q	_	23	discourse	23:discourse	_	_	_
 23	Indijai	Indija	PROPN	npfsd4	Case=Dat|Gender=Fem|Number=Sing	20	obl	20:obl:līdz	_	_	_
@@ -151,7 +151,7 @@
 11	,	,	PUNCT	zc	_	12	punct	12:punct	_	_	_
 12	tirgotāji	tirgotājs	NOUN	ncmpn1	Case=Nom|Gender=Masc|Number=Plur	10	conj	9:nsubj|10:conj	_	_	_
 13	un	un	CCONJ	cc	_	15	cc	15:cc	_	_	_
-14	klejojoši	klejot	VERB	vmnpdmpnapnpn	Aspect=Imp|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos|Tense=Pres|VerbForm=Part|Voice=Pass	15	amod	15:amod	_	_	_
+14	klejojoši	klejot	VERB	vmnpdmpnapnpn	Aspect=Imp|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos|Tense=Pres|VerbForm=Part|Voice=Act	15	amod	15:amod	_	_	_
 15	komedianti	komediants	NOUN	ncmpn1	Case=Nom|Gender=Masc|Number=Plur	10	conj	9:nsubj|10:conj	_	_	_
 16	krāsainos	krāsains	ADJ	afmplnp	Case=Loc|Degree=Pos|Gender=Masc|Number=Plur	17	amod	17:amod	_	_	_
 17	tērpos	tērps	NOUN	ncmpl1	Case=Loc|Gender=Masc|Number=Plur	15	acl	15:acl:loc	_	_	_
@@ -174,12 +174,12 @@
 10	šajā	šis	DET	pd3msln	Case=Loc|Gender=Masc|Number=Sing|Person=3|PronType=Dem	11	det	11:det	_	_	_
 11	pētījumā	pētījums	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	13	obl	13:obl:loc	_	_	_
 12	tiek	tikt	AUX	vtnipi130an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	13	aux:pass	13:aux:pass	_	_	_
-13	saprasta	saprast	VERB	vmnpdfsnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	6	acl	6:acl	_	_	_
+13	saprasta	saprast	VERB	vmnpdfsnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	6	acl	6:acl	_	_	_
 14	aktuāli	aktuāli	ADV	rpm	Degree=Pos	15	advmod	15:advmod	_	_	_
-15	uzceltā	uzcelt	VERB	vmnpdfsnpsypn	Aspect=Perf|Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	19	amod	19:amod	_	_	_
+15	uzceltā	uzcelt	VERB	vmnpdfsnpsypn	Aspect=Perf|Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	19	amod	19:amod	_	_	_
 16	,	,	PUNCT	zc	_	18	punct	18:punct	_	_	_
 17	pilsētvidē	pilsētvide	NOUN	ncfsl5	Case=Loc|Gender=Fem|Number=Sing	18	obl	18:obl:loc	_	_	_
-18	sastopamā	sastapt	VERB	vmnpdfsnppypn	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Pres|VerbForm=Part|Voice=Pass	15	conj	15:conj	_	_	_
+18	sastopamā	sastapt	VERB	vmnpdfsnppypn	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Pres|VerbForm=Part|Voice=Pass	15	conj	15:conj|19:amod	_	_	_
 19	arhitektūra	arhitektūra	NOUN	ncfsn4	Case=Nom|Gender=Fem|Number=Sing	13	nsubj:pass	13:nsubj:pass	_	_	_
 20	,	,	PUNCT	zc	_	13	punct	13:punct	_	_	_
 21	izriet	izrietēt	VERB	vmnipi330an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	0:root	_	_	_

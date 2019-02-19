@@ -1,6 +1,6 @@
 # sent_id = a-d119-p268s7
 # text = Nudien, augļu dārzā kaut kas kustējās – šķiet, ka tas bija cilvēks, bet tā aprises neatgādināja ne Raitu, ne Ze.
-1	Nudien	nudien	INTJ	i	_	7	discourse	7:discourse	_	_	_
+1	Nudien	nudien	INTJ	i	_	7	discourse	7:discourse|9:discourse|19:discourse	_	_	_
 2	,	,	PUNCT	zc	_	1	punct	1:punct	_	_	_
 3	augļu	auglis	NOUN	ncmpg2	Case=Gen|Gender=Masc|Number=Plur	4	nmod	4:nmod:gen	_	_	_
 4	dārzā	dārzs	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	7	obl	7:obl:loc	_	_	Place
@@ -23,7 +23,7 @@
 21	Raitu	Raits	PROPN	npmsa1	Case=Acc|Gender=Masc|Number=Sing	19	obj	19:obj	_	_	_
 22	,	,	PUNCT	zc	_	24	punct	24:punct	_	_	_
 23	ne	ne	CCONJ	cc	Polarity=Neg	24	cc	24:cc	_	_	_
-24	Ze	Ze	PROPN	np0000	_	21	conj	21:conj	_	_	_
+24	Ze	Ze	PROPN	np0000	_	21	conj	19:iobj|21:conj	_	_	_
 25	.	.	PUNCT	zs	_	7	punct	7:punct	_	_	_
 
 # sent_id = a-d197-p23s1
@@ -43,7 +43,7 @@
 3	kaula	kauls	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	4	nmod	4:nmod:gen	_	_	_
 4	adatas	adata	NOUN	ncfpn4	Case=Nom|Gender=Fem|Number=Plur	16	nsubj	16:nsubj	_	_	Theme
 5	,	,	PUNCT	zc	_	7	punct	7:punct	_	_	_
-6	Vidai	Vida	PROPN	npfsd4	Case=Dat|Gender=Fem|Number=Sing	7	obl	7:obl:dat	_	_	_
+6	Vidai	Vida	PROPN	npfsd4	Case=Dat|Gender=Fem|Number=Sing	7	nsubj	7:nsubj	_	_	_
 7	bļaujot	bļaut	VERB	vmnpu0000000n	Polarity=Pos|VerbForm=Conv	16	advcl	16:advcl	_	_	_
 8	,	,	PUNCT	zc	_	7	punct	7:punct	_	_	_
 9	ašās	ašs	ADJ	affplnp	Case=Loc|Degree=Pos|Gender=Fem|Number=Plur	10	amod	10:amod	_	_	_
@@ -68,7 +68,7 @@
 6	brālis	brālis	NOUN	ncmsn2	Case=Nom|Gender=Masc|Number=Sing	9	nsubj	9:nsubj	_	_	Theme
 7	vēl	vēl	ADV	r0t	_	9	advmod	9:advmod	_	_	_
 8	aizvien	aizvien	ADV	r0t	_	9	advmod	9:advmod	_	_	_
-9	nekustas	kustēties	VERB	vmyipi130ay	Evident=Fh|Mood=Ind|Person=3|Polarity=Neg|Reflex=Yes|Tense=Pres|VerbForm=Fin|Voice=Act	3	advcl	3.1:advcl	Y	Motion	_
+9	nekustas	kustēties	VERB	vmyipi130ay	Evident=Fh|Mood=Ind|Person=3|Polarity=Neg|Reflex=Yes|Tense=Pres|VerbForm=Fin|Voice=Act	3	orphan	3.1:advcl	Y	Motion	_
 10	:	:	PUNCT	zo	_	13	punct	13:punct	_	_	_
 11	es	es	PRON	pp10snn	Case=Nom|Number=Sing|Person=1|PronType=Prs	13	nsubj	13:nsubj|14:nsubj	_	_	_
 12	tev	tu	PRON	pp20sdn	Case=Dat|Number=Sing|Person=2|PronType=Prs	14	iobj	14:iobj	_	_	_
@@ -107,7 +107,7 @@
 # sent_id = a-p3379-p15s2
 # text = Lai arī viņš kļuva akls otrajā dzīves gadā, drīz vien sāka kustēties kā jebkurš cits bērns.
 1	Lai	lai	SCONJ	cs	_	5	mark	5:mark	_	_	_
-2	arī	arī	PART	q	_	1	discourse	1:discourse	_	_	_
+2	arī	arī	SCONJ	cs	_	1	fixed	1:fixed	_	_	_
 3	viņš	viņš	PRON	pp3msnn	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	nsubj	5:nsubj	_	_	Theme
 4	kļuva	kļūt	AUX	vtnisi130an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	5	cop	5:cop	_	_	_
 5	akls	akls	ADJ	afmsnnp	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	12	advcl	12:advcl	_	_	_
@@ -176,7 +176,7 @@
 6	leju	leja	NOUN	ncfsa4	Case=Acc|Gender=Fem|Number=Sing	4	nmod	4:nmod:acc	_	_	_
 7	,	,	PUNCT	zc	_	3	punct	3:punct	_	_	_
 8	var	varēt	VERB	vonipi330an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	0:root	_	_	_
-9	iesprūst	iesprūst	VERB	vmnn0i1000n	Polarity=Pos|VerbForm=Inf	8	xcomp	8:xcomp|15:xcomp	_	_	_
+9	iesprūst	iesprūst	VERB	vmnn0i1000n	Polarity=Pos|VerbForm=Inf	8	xcomp	8:xcomp	_	_	_
 10	kādā	kāds	DET	pi0msln	Case=Loc|Gender=Masc|Number=Sing|PronType=Ind	12	det	12:det	_	_	_
 11	šaurākā	šaurs	ADJ	affslnc	Case=Loc|Degree=Cmp|Gender=Fem|Number=Sing	12	amod	12:amod	_	_	_
 12	vietā	vieta	NOUN	ncfsl4	Case=Loc|Gender=Fem|Number=Sing	9	obl	9:obl:loc	_	_	_

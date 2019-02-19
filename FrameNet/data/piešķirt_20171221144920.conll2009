@@ -57,7 +57,7 @@
 # sent_id = a-n34-p175s1
 # text = (3) Darba devējs nodrošina uzticības personas ar nepieciešamajiem līdzekļiem, kā arī darba laika ietvaros piešķir tām laiku, kas uzticības personu pienākumu veikšanai noteikts koplīgumā vai citā rakstveida līgumā starp darba devēju un nodarbinātajiem, lai uzticības persona varētu īstenot savas tiesības un pienākumus darba aizsardzības jomā.
 1	(	(	PUNCT	zb	_	2	punct	2:punct	_	_	_
-2	3	3	NUM	xn	NumType=Card	6	discourse	6:discourse	_	_	_
+2	3	3	NUM	xn	NumType=Card	6	discourse	6:discourse|18:discourse	_	_	_
 3	)	)	PUNCT	zb	_	2	punct	2:punct	_	_	_
 4	Darba	darbs	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	5	nmod	5:nmod:gen	_	_	_
 5	devējs	devējs	NOUN	ncmsn1	Case=Nom|Gender=Masc|Number=Sing	6	nsubj	6:nsubj|18:nsubj	_	_	Donor
@@ -69,7 +69,7 @@
 11	līdzekļiem	līdzeklis	NOUN	ncmpd2	Case=Dat|Gender=Masc|Number=Plur	6	nmod	6:nmod:dat	_	_	_
 12	,	,	PUNCT	zc	_	18	punct	18:punct	_	_	_
 13	kā	kā	SCONJ	cs	_	18	cc	18:cc	_	_	_
-14	arī	arī	PART	q	_	13	discourse	13:discourse	_	_	_
+14	arī	arī	CCONJ	cc	_	13	fixed	13:fixed	_	_	_
 15	darba	darbs	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	16	nmod	16:nmod:gen	_	_	_
 16	laika	laiks	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	17	nmod	17:nmod:gen	_	_	_
 17	ietvaros	ietvars	NOUN	ncmpl1	Case=Loc|Gender=Masc|Number=Plur	18	obl	18:obl:loc	_	_	_
@@ -82,27 +82,27 @@
 24	personu	persona	NOUN	ncfpg4	Case=Gen|Gender=Fem|Number=Plur	25	nmod	25:nmod:gen	_	_	_
 25	pienākumu	pienākums	NOUN	ncmpg1	Case=Gen|Gender=Masc|Number=Plur	26	nmod	26:nmod:gen	_	_	_
 26	veikšanai	veikšana	NOUN	ncfsd4	Case=Dat|Gender=Fem|Number=Sing	27	iobj	27:iobj	_	_	_
-27	noteikts	noteikt	VERB	vmnpdmsnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	20	acl	20:acl	_	_	_
+27	noteikts	noteikt	VERB	vmnpdmsnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	20	acl	20:acl	_	_	_
 28	koplīgumā	koplīgums	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	27	obl	27:obl:loc	_	_	_
 29	vai	vai	CCONJ	cc	_	32	cc	32:cc	_	_	_
 30	citā	cita	DET	pi0fsln	Case=Loc|Gender=Fem|Number=Sing|PronType=Ind	32	det	32:det	_	_	_
 31	rakstveida	rakstveida	NOUN	nc00gg	Case=Gen	32	nmod	32:nmod:gen	_	_	_
-32	līgumā	līgums	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	28	conj	28:conj	_	_	_
+32	līgumā	līgums	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	28	conj	27:obl:loc|28:conj	_	_	_
 33	starp	starp	ADP	spsa	_	35	case	35:case|37:case	_	_	_
 34	darba	darbs	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	35	nmod	35:nmod:gen	_	_	_
 35	devēju	devējs	NOUN	ncmsa1	Case=Acc|Gender=Masc|Number=Sing	32	nmod	32:nmod:gen	_	_	_
 36	un	un	CCONJ	cc	_	37	cc	37:cc	_	_	_
-37	nodarbinātajiem	nodarbināt	VERB	vmnpdmpdpsypn	Aspect=Perf|Case=Dat|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part	35	conj	32:nmod:gen|35:conj	_	_	_
+37	nodarbinātajiem	nodarbināt	VERB	vmnpdmpdpsypn	Aspect=Perf|Case=Dat|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	35	conj	32:nmod:gen|35:conj	_	_	_
 38	,	,	PUNCT	zc	_	42	punct	42:punct	_	_	_
 39	lai	lai	SCONJ	cs	_	42	mark	42:mark	_	_	_
 40	uzticības	uzticība	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	41	nmod	41:nmod:gen	_	_	_
 41	persona	persona	NOUN	ncfsn4	Case=Nom|Gender=Fem|Number=Sing	42	nsubj	42:nsubj|43:nsubj	_	_	_
-42	varētu	varēt	VERB	vonc0i300an	Mood=Cnd|Polarity=Pos|VerbForm=Fin|Voice=Act	6	advcl	6:advcl	_	_	_
+42	varētu	varēt	VERB	vonc0i300an	Mood=Cnd|Polarity=Pos|VerbForm=Fin|Voice=Act	6	advcl	6:advcl|18:advcl	_	_	_
 43	īstenot	īstenot	VERB	vmnn0t2000n	Polarity=Pos|VerbForm=Inf	42	xcomp	42:xcomp	_	_	_
 44	savas	sava	DET	ps0fpan	Case=Acc|Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	45	det	45:det	_	_	_
 45	tiesības	tiesības	NOUN	ncfda4	Case=Acc|Gender=Fem|Number=Ptan	43	obj	43:obj	_	_	_
 46	un	un	CCONJ	cc	_	47	cc	47:cc	_	_	_
-47	pienākumus	pienākums	NOUN	ncmpa1	Case=Acc|Gender=Masc|Number=Plur	45	conj	45:conj	_	_	_
+47	pienākumus	pienākums	NOUN	ncmpa1	Case=Acc|Gender=Masc|Number=Plur	45	conj	43:obj|45:conj	_	_	_
 48	darba	darbs	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	49	nmod	49:nmod:gen	_	_	_
 49	aizsardzības	aizsardzība	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	50	nmod	50:nmod:gen	_	_	_
 50	jomā	joma	NOUN	ncfsl4	Case=Loc|Gender=Fem|Number=Sing	43	obl	43:obl:loc	_	_	_
@@ -137,7 +137,7 @@
 
 # sent_id = a-p3080-p5s1
 # text = Atsvaidzinošās maskas mazina nogurumu, uzlabo asinsriti un piešķir sejai veselīgu izskatu.
-1	Atsvaidzinošās	atsvaidzināt	VERB	vmnpdfpnapypn	Aspect=Imp|Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos|Tense=Pres|VerbForm=Part|Voice=Pass	2	amod	2:amod	_	_	_
+1	Atsvaidzinošās	atsvaidzināt	VERB	vmnpdfpnapypn	Aspect=Imp|Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos|Tense=Pres|VerbForm=Part|Voice=Act	2	amod	2:amod	_	_	_
 2	maskas	maska	NOUN	ncfpn4	Case=Nom|Gender=Fem|Number=Plur	3	nsubj	3:nsubj|6:nsubj|9:nsubj	_	_	Donor
 3	mazina	mazināt	VERB	vmnipt330an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	0:root	_	_	_
 4	nogurumu	nogurums	NOUN	ncmsa1	Case=Acc|Gender=Masc|Number=Sing	3	obj	3:obj	_	_	_
@@ -156,7 +156,7 @@
 1	1972.	1972.	ADJ	xo	NumType=Ord	2	amod	2:amod	_	_	_
 2	gadā	gads	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	4	obl	4:obl:loc	_	_	_
 3	Ziedonim	Ziedonis	PROPN	npmsd2	Case=Dat|Gender=Masc|Number=Sing	4	iobj	4:iobj	_	_	Recipient
-4	piešķirts	piešķirt	VERB	vmnpdmsnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	0	root	0:root	Y	Giving	_
+4	piešķirts	piešķirt	VERB	vmnpdmsnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	0	root	0:root	Y	Giving	_
 5	nopelniem	nopelns	NOUN	ncmpd1	Case=Dat|Gender=Masc|Number=Plur	6	obl	6:obl:dat	_	_	_
 6	bagātā	bagāts	ADJ	afmsgyp	Case=Gen|Degree=Pos|Gender=Masc|Number=Sing	8	amod	8:amod	_	_	_
 7	kultūras	kultūra	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	8	nmod	8:nmod:gen	_	_	_
@@ -165,7 +165,7 @@
 10	,	,	PUNCT	zc	_	13	punct	13:punct	_	_	_
 11	1977.	1977.	ADJ	xo	NumType=Ord	12	amod	12:amod	_	_	_
 12	gadā	gads	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	13	obl	13:obl:loc	_	_	Time
-13	piešķirts	piešķirt	VERB	vmnpdmsnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	4	conj	4:conj	Y	Giving	_
+13	piešķirts	piešķirt	VERB	vmnpdmsnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	4	conj	4:conj	Y	Giving	_
 14	Tautas	tauta	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	15	nmod	15:nmod:gen	_	_	_
 15	dzejnieka	dzejnieks	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	17	nmod	17:nmod:gen	_	_	_
 16	goda	gods	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	17	nmod	17:nmod:gen	_	_	_
@@ -174,7 +174,7 @@
 19	1983.	1983.	ADJ	xo	NumType=Ord	20	amod	20:amod	_	_	_
 20	gadā	gads	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	22	obl	22:obl:loc	_	_	_
 21	viņš	viņš	PRON	pp3msnn	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	22	nsubj:pass	22:nsubj:pass	_	_	_
-22	apbalvots	apbalvot	VERB	vmnpdmsnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	4	conj	4:conj	_	_	_
+22	apbalvots	apbalvot	VERB	vmnpdmsnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	4	conj	4:conj	_	_	_
 23	ar	ar	ADP	spsa	_	28	case	28:case	_	_	_
 24	"	"	PUNCT	zq	_	26	punct	26:punct	_	_	_
 25	Tautu	tauta	NOUN	ncfpg4	Case=Gen|Gender=Fem|Number=Plur	26	nmod	26:nmod:gen	_	_	_
@@ -188,7 +188,7 @@
 1	2002.	2002.	ADJ	xo	NumType=Ord	2	amod	2:amod	_	_	_
 2	gadā	gads	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	4	obl	4:obl:loc	_	_	Time
 3	Ziedonim	Ziedonis	PROPN	npmsd2	Case=Dat|Gender=Masc|Number=Sing	4	nmod	4:nmod:dat	_	_	Recipient
-4	piešķirta	piešķirt	VERB	vmnpdfsnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	0	root	0:root	Y	Giving	_
+4	piešķirta	piešķirt	VERB	vmnpdfsnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	0	root	0:root	Y	Giving	_
 5	Ministru	ministrs	NOUN	ncmpg1	Case=Gen|Gender=Masc|Number=Plur	6	nmod	6:nmod:gen	_	_	_
 6	kabineta	kabinets	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	7	nmod	7:nmod:gen	_	_	_
 7	balva	balva	NOUN	ncfsn4	Case=Nom|Gender=Fem|Number=Sing	4	nsubj:pass	4:nsubj:pass	_	_	Theme
@@ -209,9 +209,9 @@
 1	Tāpēc	tāpēc	ADV	r0c	_	4	advmod	4:advmod	_	_	_
 2	jaunajos	jauns	ADJ	afmplyp	Case=Loc|Degree=Pos|Gender=Masc|Number=Plur	3	amod	3:amod	_	_	_
 3	produktos	produkts	NOUN	ncmpl1	Case=Loc|Gender=Masc|Number=Plur	4	obl	4:obl:loc	_	_	_
-4	iekļautas	iekļaut	VERB	vmnpdfpnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part	0	root	0:root	_	_	_
+4	iekļautas	iekļaut	VERB	vmnpdfpnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	0	root	0:root	_	_	_
 5	pircēju	pircējs	NOUN	ncmpg1	Case=Gen|Gender=Masc|Number=Plur	6	nmod	6:nmod:gen	_	_	_
-6	iecienītās	iecienīt	VERB	vmnpdfpnpsypn	Aspect=Perf|Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part	7	amod	7:amod|9:amod|11:amod	_	_	_
+6	iecienītās	iecienīt	VERB	vmnpdfpnpsypn	Aspect=Perf|Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	7	amod	7:amod|9:amod|11:amod	_	_	_
 7	sēklas	sēkla	NOUN	ncfpn4	Case=Nom|Gender=Fem|Number=Plur	4	nsubj:pass	4:nsubj:pass	_	_	_
 8	,	,	PUNCT	zc	_	9	punct	9:punct	_	_	_
 9	klijas	klijas	NOUN	ncfdn4	Case=Nom|Gender=Fem|Number=Ptan	7	conj	4:nsubj:pass|7:conj	_	_	_
@@ -229,7 +229,7 @@
 21	laikā	laiks	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	24	obl	24:obl:loc	_	_	_
 22	ir	būt	AUX	vcnipii30an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	24	cop	24:cop	_	_	_
 23	arī	arī	PART	q	_	24	discourse	24:discourse	_	_	_
-24	veselīgas	veselīgs	ADJ	affpnnp	Case=Nom|Degree=Pos|Gender=Fem|Number=Plur	14	conj	7:acl|14:conj	_	_	_
+24	veselīgas	veselīgs	ADJ	affpnnp	Case=Nom|Degree=Pos|Gender=Fem|Number=Plur	14	conj	7:acl|9:acl|11:acl|14:conj	_	_	_
 25	.	.	PUNCT	zs	_	4	punct	4:punct	_	_	_
 
 # sent_id = a-p3755-p8s1
@@ -237,21 +237,21 @@
 1	SIA	SIA	NOUN	yn	Abbr=Yes	4	nmod	4:nmod	_	_	_
 2	"	"	PUNCT	zq	_	4	punct	4:punct	_	_	_
 3	Valmieras	Valmiera	PROPN	npfsg4	Case=Gen|Gender=Fem|Number=Sing	4	nmod	4:nmod:gen	_	_	_
-4	Siltums	siltums	NOUN	ncmsn1	Case=Nom|Gender=Masc|Number=Sing	14	obl	14:obl	_	_	_
+4	Siltums	siltums	NOUN	ncmsn1	Case=Nom|Gender=Masc|Number=Sing	14	obl	14:obl|17:obl	_	_	_
 5	"	"	PUNCT	zq	_	4	punct	4:punct	_	_	_
 6	,	,	PUNCT	zc	_	7	punct	7:punct	_	_	_
-7	ieņemot	ieņemt	VERB	vmnpu0000000n	Polarity=Pos|VerbForm=Conv	14	advcl	14:advcl	_	_	_
+7	ieņemot	ieņemt	VERB	vmnpu0000000n	Polarity=Pos|VerbForm=Conv	14	advcl	14:advcl|17:advcl	_	_	_
 8	valdes	valde	NOUN	ncfsg5	Case=Gen|Gender=Fem|Number=Sing	9	nmod	9:nmod:gen	_	_	_
 9	locekļa	loceklis	NOUN	ncmsg2	Case=Gen|Gender=Masc|Number=Sing	10	nmod	10:nmod:gen	_	_	_
 10	amatu	amats	NOUN	ncmsa1	Case=Acc|Gender=Masc|Number=Sing	7	obj	7:obj	_	_	_
 11	,	,	PUNCT	zc	_	7	punct	7:punct	_	_	_
 12	veiksmīgi	veiksmīgi	ADV	r0q	_	14	advmod	14:advmod|17:advmod	_	_	_
 13	tika	tikt	AUX	vtnisi130an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	14	aux:pass	14:aux:pass	_	_	_
-14	realizēts	realizēt	VERB	vmnpdmsnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	0	root	0:root	_	_	_
+14	realizēts	realizēt	VERB	vmnpdmsnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	0	root	0:root	_	_	_
 15	projekts	projekts	NOUN	ncmsn1	Case=Nom|Gender=Masc|Number=Sing	14	nsubj:pass	14:nsubj:pass	_	_	_
 16	un	un	CCONJ	cc	_	17	cc	17:cc	_	_	_
-17	apgūts	apgūt	VERB	vmnpdmsnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	14	conj	14:conj	_	_	_
-18	piešķirtais	piešķirt	VERB	vmnpdmsnpsypn	Aspect=Perf|Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	20	amod	20:amod	_	_	_
+17	apgūts	apgūt	VERB	vmnpdmsnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	14	conj	14:conj	_	_	_
+18	piešķirtais	piešķirt	VERB	vmnpdmsnpsypn	Aspect=Perf|Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	20	amod	20:amod	_	_	_
 19	ES	ES	PROPN	yp	Abbr=Yes	20	nmod	20:nmod	_	_	_
 20	finansējums	finansējums	NOUN	ncmsn1	Case=Nom|Gender=Masc|Number=Sing	17	nsubj:pass	17:nsubj:pass	_	_	_
 21	,	,	PUNCT	zc	_	26	punct	26:punct	_	_	_
@@ -259,7 +259,7 @@
 23	rezultātā	rezultāts	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	26	obl	26:obl:loc	_	_	_
 24	Valmierā	Valmiera	PROPN	npfsl4	Case=Loc|Gender=Fem|Number=Sing	26	obl	26:obl:loc	_	_	_
 25	tika	tikt	AUX	vtnisi130an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	26	aux:pass	26:aux:pass	_	_	_
-26	atjaunota	atjaunot	VERB	vmnpdfsnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	14	conj	14:conj	_	_	_
+26	atjaunota	atjaunot	VERB	vmnpdfsnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	14	conj	14:conj	_	_	_
 27	siltumenerģijas	siltumenerģija	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	28	nmod	28:nmod:gen	_	_	_
 28	pārvades	pārvade	NOUN	ncfsg5	Case=Gen|Gender=Fem|Number=Sing	29	nmod	29:nmod:gen	_	_	_
 29	sistēma	sistēma	NOUN	ncfsn4	Case=Nom|Gender=Fem|Number=Sing	26	nsubj:pass	26:nsubj:pass	_	_	_
@@ -274,7 +274,7 @@
 38	jau	jau	ADV	r0t	_	41	advmod	41:advmod	_	_	_
 39	ilgstoši	ilgstoši	ADV	r0p	_	41	advmod	41:advmod	_	_	_
 40	ir	būt	AUX	vcnipii30an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	41	aux:pass	41:aux:pass	_	_	_
-41	nodrošināts	nodrošināt	VERB	vmnpdmsnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	14	conj	14:conj	_	_	_
+41	nodrošināts	nodrošināt	VERB	vmnpdmsnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	14	conj	14:conj	_	_	_
 42	,	,	PUNCT	zc	_	47	punct	47:punct	_	_	_
 43	ka	ka	SCONJ	cs	_	47	mark	47:mark	_	_	_
 44	Valmieras	Valmiera	PROPN	npfsg4	Case=Gen|Gender=Fem|Number=Sing	45	nmod	45:nmod:gen	_	_	_
@@ -291,7 +291,7 @@
 55	,	,	PUNCT	zc	_	58	punct	58:punct	_	_	_
 56	kur	kur	ADV	r0p	PronType=Int	58	advmod	58:advmod	_	_	_
 57	tiek	tikt	AUX	vtnipi130an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	58	aux:pass	58:aux:pass	_	_	_
-58	veikta	veikt	VERB	vmnpdfsnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	54	acl	54:acl	_	_	_
+58	veikta	veikt	VERB	vmnpdfsnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	54	acl	54:acl	_	_	_
 59	apkure	apkure	NOUN	ncfsn5	Case=Nom|Gender=Fem|Number=Sing	58	nsubj:pass	58:nsubj:pass	_	_	_
 60	izmantojot	izmantot	VERB	vmnpu0000000n	Polarity=Pos|VerbForm=Conv	58	advcl	58:advcl	_	_	_
 61	kurināmo	kurināt	VERB	vmnpdmsappypn	Case=Acc|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Pres|VerbForm=Part|Voice=Pass	60	obj	60:obj	_	_	_
@@ -309,8 +309,8 @@
 6	novada	novads	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	7	nmod	7:nmod:gen	_	_	_
 7	pašvaldībā	pašvaldība	NOUN	ncfsl4	Case=Loc|Gender=Fem|Number=Sing	10	obl	10:obl:loc	_	_	_
 8	un	un	CCONJ	cc	_	9	cc	9:cc	_	_	_
-9	privātuzņēmumos	privātuzņēmums	NOUN	ncmpl1	Case=Loc|Gender=Masc|Number=Plur	7	conj	7:conj	_	_	_
-10	īstenotajiem	īstenot	VERB	vmnpdmpdpsypn	Aspect=Perf|Case=Dat|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part	13	amod	13:amod	_	_	_
+9	privātuzņēmumos	privātuzņēmums	NOUN	ncmpl1	Case=Loc|Gender=Masc|Number=Plur	7	conj	7:conj|10:obl:loc	_	_	_
+10	īstenotajiem	īstenot	VERB	vmnpdmpdpsypn	Aspect=Perf|Case=Dat|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	13	amod	13:amod	_	_	_
 11	ES	ES	PROPN	yp	Abbr=Yes	12	nmod	12:nmod	_	_	_
 12	fondu	fonds	NOUN	ncmpg1	Case=Gen|Gender=Masc|Number=Plur	13	nmod	13:nmod:gen	_	_	_
 13	projektiem	projekts	NOUN	ncmpd1	Case=Dat|Gender=Masc|Number=Plur	3	iobj	3:iobj	_	_	_
@@ -325,7 +325,7 @@
 22	,	,	PUNCT	zc	_	25	punct	25:punct	_	_	_
 23	kuram	kurš	PRON	pq0msdn	Case=Dat|Gender=Masc|Number=Sing|PronType=Int	25	iobj	25:iobj	_	_	Recipient
 24	ir	būt	AUX	vcnipii30an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	25	aux:pass	25:aux:pass	_	_	_
-25	piešķirts	piešķirt	VERB	vmnpdmsnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	20	acl	20:acl	Y	Giving	_
+25	piešķirts	piešķirt	VERB	vmnpdmsnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	20	acl	20:acl	Y	Giving	_
 26	stabilizācijas	stabilizācija	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	27	nmod	27:nmod:gen	_	_	_
 27	aizdevums	aizdevums	NOUN	ncmsn1	Case=Nom|Gender=Masc|Number=Sing	25	nsubj:pass	25:nsubj:pass	_	_	Theme
 28	no	no	ADP	spsg	_	30	case	30:case	_	_	_
@@ -355,13 +355,13 @@
 18	eksāmena	eksāmens	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	19	nmod	19:nmod:gen	_	_	_
 19	iegādei	iegāde	NOUN	ncfsd5	Case=Dat|Gender=Fem|Number=Sing	15	iobj	15:iobj	_	_	_
 20	,	,	PUNCT	zc	_	23	punct	23:punct	_	_	_
-21	kā	kā	SCONJ	cs	_	23	cc	23:cc	_	_	_
-22	arī	arī	PART	q	_	21	discourse	21:discourse	_	_	_
+21	kā	kā	CCONJ	cc	_	23	cc	23:cc	_	_	_
+22	arī	arī	CCONJ	cc	_	21	fixed	21:fixed	_	_	_
 23	apņēmās	apņemties	VERB	vmyisi130an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Reflex=Yes|Tense=Past|VerbForm=Fin|Voice=Act	11	conj	8:acl|11:conj	_	_	_
 24	nodrošināt	nodrošināt	VERB	vmnn0t3000n	Polarity=Pos|VerbForm=Inf	23	ccomp	23:ccomp	_	_	_
 25	apsardzi	apsardze	NOUN	ncfsa5	Case=Acc|Gender=Fem|Number=Sing	24	obj	24:obj	_	_	_
 26	un	un	CCONJ	cc	_	28	cc	28:cc	_	_	_
 27	krāpnieku	krāpnieks	NOUN	ncmsa1	Case=Acc|Gender=Masc|Number=Sing	28	obj	28:obj	_	_	_
-28	aizturēt	aizturēt	VERB	vmnn0t3000n	Polarity=Pos|VerbForm=Inf	24	conj	24:conj	_	_	_
+28	aizturēt	aizturēt	VERB	vmnn0t3000n	Polarity=Pos|VerbForm=Inf	24	conj	23:ccomp|24:conj	_	_	_
 29	.	.	PUNCT	zs	_	4	punct	4:punct	_	_	_
 

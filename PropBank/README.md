@@ -18,8 +18,8 @@ An automatically derived Latvian PropBank annotation layer of the FullStack corp
 
 Coverage:
 
-* Target verbs: 330 out of 835 (40%)
-* FrameNet frames: 125 out of 452 (28%)
-* FrameNet lexical units (verb-frame pairs): 386 out of 1,575 (25%)
-* PropBank frames (predicates): 246
-* Annotation sets (corpus examples): 1,953 out of 7,371 (26%)
+* Target verbs: 459 out of 835 (55%)
+* FrameNet frames: 182 out of 452 (40%)
+* FrameNet lexical units (verb-frame pairs): 575 out of 1,575 (37%)
+* PropBank frames (predicates): 353
+* Annotation sets (corpus examples): 2,861 out of 7,371 (39%)

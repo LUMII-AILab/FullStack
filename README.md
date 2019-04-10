@@ -34,7 +34,7 @@ N. Gruzitis, D. Gosko, G. Barzdins. [RIGOTRIO at SemEval-2017 Task 9: Combining 
 
 ## Related work
 
-- [NLP-PIPE: Latvian NLP Tool Pipeline](http://nlp.ailab.lv/)
+- [NLP-PIPE: Latvian NLP Tool Pipeline](https://github.com/LUMII-AILab/nlp-pipe)
 - [Tēzaurs - The largest open lexical database for Latvian](https://github.com/LUMII-AILab/Tezaurs)
 
 ## Acknowledgements
@@ -47,6 +47,6 @@ This data set by [AiLab](http://ailab.lv) is licensed under a [Creative Commons 
 
 ## Contacts
 
-Coordinator of the project: [Normunds Grūzītis](https://www.linkedin.com/in/normundsg), `normunds.gruzitis@ailab.lv`
+Project coordinator: [Normunds Grūzītis](https://www.linkedin.com/in/normundsg), `normunds.gruzitis@ailab.lv`
 
 Team members: Ilze Auziņa, Guntis Bārzdiņš, Roberts Darģis, Mikus Grasmanis, Kristīne Levāne-Petrova, Gunta Nešpore-Bērzkalne, Pēteris Paikens, Lauma Pretkalniņa, Laura Rituma, Inguna Skadiņa, Baiba Valkovska (Saulīte), Artūrs Znotiņš

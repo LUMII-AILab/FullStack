@@ -2,15 +2,20 @@
 
 ## Data
 
-* Format: a version of [CoNLL-2009](http://ufal.mff.cuni.cz/conll2009-st/task-description.html) on top of [CoNLL-U](http://universaldependencies.org/format.html)
+A manually annotated Latvian FrameNet annotation layer of the [FullStack](https://github.com/LUMII-AILab/FullStack) corpus.
 
-* Fields: [ID, FORM, LEMMA, UPOS, XPOS, FEATS, HEAD, DEPREL, DEPS] + [FILLPRED, PRED, APRED<sub>1</sub>, ..., APRED<sub>n</sub>]
-  - PRED: semantic frames
+* __Format__: a version of [CoNLL-2009](http://ufal.mff.cuni.cz/conll2009-st/task-description.html) on top of [CoNLL-U](http://universaldependencies.org/format.html)
+
+* __Fields__: [ID, FORM, LEMMA, UPOS, XPOS, FEATS, HEAD, DEPREL, DEPS] + [FILLPRED, PRED, APRED]
+  - FILLPRED: indicates the target word
+  - PRED: semantic frame
   - APRED: frame elements
+
+__Note__ that each corpus example contains one FrameNet annotation set (frame instance). If there are several annotation sets for the same sentence, they are included as separate corpus examples.
 
 ## Current statistics
 
-* 7,572 annotation sets (frame instances)
-* 453 semantic frames
-* 1,570 lexical units
-* 828 target words (lexemes)
+* Annotation sets: __10,137__
+* Semantic frames: __457__
+* Lexical units: __1,604__
+* Target words (lexemes): __828__

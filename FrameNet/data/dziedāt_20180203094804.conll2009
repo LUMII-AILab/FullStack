@@ -17,9 +17,9 @@
 
 # sent_id = a-d132-p85s1
 # text = Helēna un Iliziāna stundām un kilometriem ar riteņiem braukāja pa mežiem, caur pamestiem senlaiku ciemiem un dziedāja — viena sāka, otra turpināja un tad abas kopā.
-1	Helēna	Helēna	PROPN	npfsn4	Case=Nom|Gender=Fem|Number=Sing	9	acl	9:acl	_	_	Speaker
+1	Helēna	Helēna	PROPN	npfsn4	Case=Nom|Gender=Fem|Number=Sing	9	nsubj	9:nsubj	_	_	Speaker
 2	un	un	CCONJ	cc	_	3	cc	3:cc	_	_	_
-3	Iliziāna	Iliziāna	PROPN	npfdn4	Case=Nom|Gender=Fem|Number=Ptan	1	conj	1:conj|9:acl	_	_	_
+3	Iliziāna	Iliziāna	PROPN	npfsn4	Case=Nom|Gender=Fem|Number=Sing	1	conj	1:conj|9:nsubj	_	_	_
 4	stundām	stunda	NOUN	ncfpd4	Case=Dat|Gender=Fem|Number=Plur	9	obl	9:obl:dat	_	_	_
 5	un	un	CCONJ	cc	_	6	cc	6:cc	_	_	_
 6	kilometriem	kilometrs	NOUN	ncmpd1	Case=Dat|Gender=Masc|Number=Plur	4	conj	4:conj|9:obl:dat	_	_	_
@@ -27,12 +27,12 @@
 8	riteņiem	ritenis	NOUN	ncmpd2	Case=Dat|Gender=Masc|Number=Plur	9	iobj	9:iobj	_	_	_
 9	braukāja	braukāt	VERB	vmnist230an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	0	root	0:root	_	_	_
 10	pa	pa	ADP	sppd	_	11	case	11:case	_	_	_
-11	mežiem	mežs	NOUN	ncmpd1	Case=Dat|Gender=Masc|Number=Plur	9	obl	9:obl:pa	_	_	_
+11	mežiem	mežs	NOUN	ncmpd1	Case=Dat|Gender=Masc|Number=Plur	9	obl	9:obl	_	_	_
 12	,	,	PUNCT	zc	_	16	punct	16:punct	_	_	_
 13	caur	caur	ADP	sppd	_	16	case	16:case	_	_	_
 14	pamestiem	pamests	ADJ	afmpdnp	Case=Dat|Degree=Pos|Gender=Masc|Number=Plur	16	amod	16:amod	_	_	_
 15	senlaiku	senlaiki	NOUN	ncmdg1	Case=Gen|Gender=Masc|Number=Ptan	16	nmod	16:nmod:gen	_	_	_
-16	ciemiem	ciems	NOUN	ncmpd1	Case=Dat|Gender=Masc|Number=Plur	11	conj	9:obl:caur|11:conj	_	_	_
+16	ciemiem	ciems	NOUN	ncmpd1	Case=Dat|Gender=Masc|Number=Plur	11	conj	9:obl|11:conj	_	_	_
 17	un	un	CCONJ	cc	_	18	cc	18:cc	_	_	_
 18	dziedāja	dziedāt	VERB	vmnist330an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	9	conj	9:conj	Y	Communication_manner	_
 19	—	—	PUNCT	zd	_	21	punct	21:punct	_	_	_
@@ -97,7 +97,7 @@
 # text = Viņi dziedāja mums līdzi.
 1	Viņi	viņš	PRON	pp3mpnn	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	2	nsubj	2:nsubj	_	_	Speaker
 2	dziedāja	dziedāt	VERB	vmnist330an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	0	root	0:root	Y	Communication_manner	_
-3	mums	mēs	PRON	pp10pdn	Case=Dat|Number=Plur|Person=1|PronType=Prs	2	obl	2:obl:līdzi	_	_	_
+3	mums	mēs	PRON	pp10pdn	Case=Dat|Number=Plur|Person=1|PronType=Prs	2	obl	2:obl	_	_	_
 4	līdzi	līdzi	ADV	rrp	_	3	case	3:case	_	_	_
 5	.	.	PUNCT	zs	_	2	punct	2:punct	_	_	_
 
@@ -268,8 +268,8 @@
 # sent_id = a-p765-p7s4
 # text = Likteņa ironija - vairs ne tik jauna dziedātāja no trešās pasaules valsts, kura dzied savas zemes tradicionālās dziesmas, kļūst par bagātnieku, bet vēlāk arī visas tautas varoni.
 1	Likteņa	liktenis	NOUN	ncmsg2	Case=Gen|Gender=Masc|Number=Sing	2	nmod	2:nmod:gen	_	_	_
-2	ironija	ironija	NOUN	ncfsn4	Case=Nom|Gender=Fem|Number=Sing	3	nsubj	3:nsubj	_	_	_
-3	-	-	PUNCT	zd	_	0	root	0:root	_	_	_
+2	ironija	ironija	NOUN	ncfsn4	Case=Nom|Gender=Fem|Number=Sing	0	root	3.1:nsubj	_	_	_
+3	-	-	PUNCT	zd	_	2	punct	3.1:punct	_	_	_
 4	vairs	vairs	ADV	r0t	_	6	advmod	6:advmod	_	_	_
 5	ne	ne	PART	q	Polarity=Neg	6	discourse	6:discourse	_	_	_
 6	tik	tik	ADV	r0q	PronType=Dem	7	advmod	7:advmod	_	_	_
@@ -289,15 +289,15 @@
 20	,	,	PUNCT	zc	_	15	punct	15:punct	_	_	_
 21	kļūst	kļūt	AUX	vtnipi130an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	23	cop	23:cop	_	_	_
 22	par	par	ADP	spsa	_	23	case	23:case	_	_	_
-23	bagātnieku	bagātnieks	NOUN	ncmpg1	Case=Gen|Gender=Masc|Number=Plur	3	ccomp	3:ccomp	_	_	_
+23	bagātnieku	bagātnieks	NOUN	ncmpg1	Case=Gen|Gender=Masc|Number=Plur	2	orphan	3.1:ccomp	_	_	_
 24	,	,	PUNCT	zc	_	30	punct	30:punct	_	_	_
 25	bet	bet	CCONJ	cc	_	30	cc	30:cc	_	_	_
 26	vēlāk	vēlu	ADV	rct	Degree=Cmp	30	advmod	30:advmod	_	_	_
 27	arī	arī	PART	q	_	30	discourse	30:discourse	_	_	_
 28	visas	visa	DET	pg0fsgn	Case=Gen|Gender=Fem|Number=Sing|PronType=Tot	29	det	29:det	_	_	_
 29	tautas	tauta	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	30	nmod	30:nmod:gen	_	_	_
-30	varoni	varonis	NOUN	ncmsa2	Case=Acc|Gender=Masc|Number=Sing	23	conj	3:ccomp|23:conj	_	_	_
-31	.	.	PUNCT	zs	_	3	punct	3:punct	_	_	_
+30	varoni	varonis	NOUN	ncmsa2	Case=Acc|Gender=Masc|Number=Sing	23	conj	3.1:ccomp|23:conj	_	_	_
+31	.	.	PUNCT	zs	_	2	punct	3.1:punct	_	_	_
 
 # sent_id = a-p82-p9s6
 # text = Nezinu gan, vai to būtu gatavs dziedāt.

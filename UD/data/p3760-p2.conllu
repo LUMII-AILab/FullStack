@@ -29,18 +29,19 @@
 
 # sent_id = a-p3760-p2s2
 # text = 22.00 - balle, spēlēs „Sandra" un DJ Andža.
-1	22.00	22.00	NUM	xn	NumType=Card	2	nummod	2:nummod	LvtbNodeId=a-p3760-p2s2w1
-2	-	-	PUNCT	zd	_	0	root	0:root	LvtbNodeId=a-p3760-p2s2w2
-3	balle	balle	NOUN	ncfsn5	Case=Nom|Gender=Fem|Number=Sing	2	nsubj	2:nsubj	LvtbNodeId=a-p3760-p2s2w3|SpaceAfter=No
+1	22.00	22.00	NUM	xn	NumType=Card	3	orphan	2.1:nummod	LvtbNodeId=a-p3760-p2s2w1
+2	-	-	PUNCT	zd	_	3	punct	2.1:punct	LvtbNodeId=a-p3760-p2s2w2
+2.1	_	_	VERB	vmnifi030an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Fut|VerbForm=Fin|Voice=Act	_	_	0:root	LvtbNodeId=a-p3760-p2s2w2
+3	balle	balle	NOUN	ncfsn5	Case=Nom|Gender=Fem|Number=Sing	0	root	2.1:nsubj	LvtbNodeId=a-p3760-p2s2w3|SpaceAfter=No
 4	,	,	PUNCT	zc	_	5	punct	5:punct	LvtbNodeId=a-p3760-p2s2w4
-5	spēlēs	spēlēt	VERB	vmnift230an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Fut|VerbForm=Fin|Voice=Act	2	conj	2:conj	LvtbNodeId=a-p3760-p2s2w5
+5	spēlēs	spēlēt	VERB	vmnift230an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Fut|VerbForm=Fin|Voice=Act	3	conj	2.1:conj	LvtbNodeId=a-p3760-p2s2w5
 6	„	„	PUNCT	zq	_	7	punct	7:punct	LvtbNodeId=a-p3760-p2s2w6|SpaceAfter=No
 7	Sandra	Sandra	PROPN	npfsn4	Case=Nom|Gender=Fem|Number=Sing	5	nsubj	5:nsubj	LvtbNodeId=a-p3760-p2s2w7|SpaceAfter=No
 8	"	"	PUNCT	zq	_	7	punct	7:punct	LvtbNodeId=a-p3760-p2s2w8
 9	un	un	CCONJ	cc	_	11	cc	11:cc	LvtbNodeId=a-p3760-p2s2w9
 10	DJ	DJ	NOUN	yn	Abbr=Yes	11	nmod	11:nmod	LvtbNodeId=a-p3760-p2s2w10
 11	Andža	Andža	PROPN	npmsn4	Case=Nom|Gender=Masc|Number=Sing	7	conj	5:nsubj|7:conj	LvtbNodeId=a-p3760-p2s2w11|SpaceAfter=No
-12	.	.	PUNCT	zs	_	2	punct	2:punct	LvtbNodeId=a-p3760-p2s2w12
+12	.	.	PUNCT	zs	_	3	punct	2.1:punct	LvtbNodeId=a-p3760-p2s2w12
 
 # sent_id = a-p3760-p2s3
 # text = 6.jūlijā 22.00 Pededzes estrādē (lietus gadījumā - tautas namā) diskotēka.
@@ -49,13 +50,14 @@
 3	22.00	22.00	NUM	xn	NumType=Card	13	orphan	13.1:nummod	LvtbNodeId=a-p3760-p2s3w3
 4	Pededzes	Pededze	PROPN	npfsg5	Case=Gen|Gender=Fem|Number=Sing	5	nmod	5:nmod:gen	LvtbNodeId=a-p3760-p2s3w4
 5	estrādē	estrāde	NOUN	ncfsl5	Case=Loc|Gender=Fem|Number=Sing	13	orphan	13.1:obl:loc	LvtbNodeId=a-p3760-p2s3w5
-6	(	(	PUNCT	zb	_	9	punct	9:punct	LvtbNodeId=a-p3760-p2s3w6|SpaceAfter=No
+6	(	(	PUNCT	zb	_	8	punct	9.1:punct	LvtbNodeId=a-p3760-p2s3w6|SpaceAfter=No
 7	lietus	lietus	NOUN	ncmsg3	Case=Gen|Gender=Masc|Number=Sing	8	nmod	8:nmod:gen	LvtbNodeId=a-p3760-p2s3w7
-8	gadījumā	gadījums	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	9	obl	9:obl:loc	LvtbNodeId=a-p3760-p2s3w8
-9	-	-	PUNCT	zd	_	13	parataxis	13.1:parataxis	LvtbNodeId=a-p3760-p2s3w9
+8	gadījumā	gadījums	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	13	parataxis	9.1:obl:loc	LvtbNodeId=a-p3760-p2s3w8
+9	-	-	PUNCT	zd	_	8	punct	9.1:punct	LvtbNodeId=a-p3760-p2s3w9
+9.1	būs	būt	VERB	vmnifii30an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Fut|VerbForm=Fin|Voice=Act	_	_	13.1:parataxis	LvtbNodeId=a-p3760-p2s3w9
 10	tautas	tauta	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	11	nmod	11:nmod:gen	LvtbNodeId=a-p3760-p2s3w10
-11	namā	nams	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	9	obl	9:obl:loc	LvtbNodeId=a-p3760-p2s3w11|SpaceAfter=No
-12	)	)	PUNCT	zb	_	9	punct	9:punct	LvtbNodeId=a-p3760-p2s3w12
+11	namā	nams	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	8	orphan	9.1:obl:loc	LvtbNodeId=a-p3760-p2s3w11|SpaceAfter=No
+12	)	)	PUNCT	zb	_	8	punct	9.1:punct	LvtbNodeId=a-p3760-p2s3w12
 13	diskotēka	diskotēka	NOUN	ncfsn4	Case=Nom|Gender=Fem|Number=Sing	0	root	13.1:nsubj	LvtbNodeId=a-p3760-p2s3w13|SpaceAfter=No
 13.1	_	_	VERB	vmnifi030an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Fut|VerbForm=Fin|Voice=Act	_	_	0:root	LvtbNodeId=a-p3760-p2s3x1
 14	.	.	PUNCT	zs	_	13	punct	13.1:punct	LvtbNodeId=a-p3760-p2s3w14
@@ -76,22 +78,23 @@
 
 # sent_id = a-p3760-p2s5
 # text = 12.00 - sacensību atklāšana un starts (Pilssalā).
-1	12.00	12.00	NUM	xn	NumType=Card	2	nummod	2:nummod	LvtbNodeId=a-p3760-p2s5w1
-2	-	-	PUNCT	zd	_	0	root	0:root	LvtbNodeId=a-p3760-p2s5w2
+1	12.00	12.00	NUM	xn	NumType=Card	4	orphan	2.1:nummod	LvtbNodeId=a-p3760-p2s5w1
+2	-	-	PUNCT	zd	_	4	punct	2.1:punct	LvtbNodeId=a-p3760-p2s5w2
+2.1	_	_	VERB	vmnifi030an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Fut|VerbForm=Fin|Voice=Act	_	_	0:root	LvtbNodeId=a-p3760-p2s5w2
 3	sacensību	sacensība	NOUN	ncfpg4	Case=Gen|Gender=Fem|Number=Plur	4	nmod	4:nmod:gen	LvtbNodeId=a-p3760-p2s5w3
-4	atklāšana	atklāšana	NOUN	ncfsn4	Case=Nom|Gender=Fem|Number=Sing	2	nsubj	2:nsubj	LvtbNodeId=a-p3760-p2s5w4
+4	atklāšana	atklāšana	NOUN	ncfsn4	Case=Nom|Gender=Fem|Number=Sing	0	root	2.1:nsubj	LvtbNodeId=a-p3760-p2s5w4
 5	un	un	CCONJ	cc	_	6	cc	6:cc	LvtbNodeId=a-p3760-p2s5w5
-6	starts	starts	NOUN	ncmsn1	Case=Nom|Gender=Masc|Number=Sing	4	conj	2:nsubj|4:conj	LvtbNodeId=a-p3760-p2s5w6
+6	starts	starts	NOUN	ncmsn1	Case=Nom|Gender=Masc|Number=Sing	4	conj	2.1:nsubj|4:conj	LvtbNodeId=a-p3760-p2s5w6
 7	(	(	PUNCT	zb	_	8	punct	8:punct	LvtbNodeId=a-p3760-p2s5w7|SpaceAfter=No
 8	Pilssalā	Pilssala	PROPN	npfsl4	Case=Loc|Gender=Fem|Number=Sing	6	discourse	6:discourse	LvtbNodeId=a-p3760-p2s5w8|SpaceAfter=No
 9	)	)	PUNCT	zb	_	8	punct	8:punct	LvtbNodeId=a-p3760-p2s5w9|SpaceAfter=No
-10	.	.	PUNCT	zs	_	2	punct	2:punct	LvtbNodeId=a-p3760-p2s5w10
+10	.	.	PUNCT	zs	_	4	punct	2.1:punct	LvtbNodeId=a-p3760-p2s5w10
 
 # sent_id = a-p3760-p2s6
 # text = Pusstundu pirms atklāšanas pasākumā muzicēs Ernsta Glika Alūksnes Valsts ģimnāzijas pūtēju orķestris.
 1	Pusstundu	pusstunda	NOUN	ncfsa4	Case=Acc|Gender=Fem|Number=Sing	5	obl	5:obl:acc	LvtbNodeId=a-p3760-p2s6w1
 2	pirms	pirms	ADP	spsg	_	3	case	3:case	LvtbNodeId=a-p3760-p2s6w2
-3	atklāšanas	atklāšana	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	5	obl	5:obl:pirms	LvtbNodeId=a-p3760-p2s6w3
+3	atklāšanas	atklāšana	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	5	obl	5:obl	LvtbNodeId=a-p3760-p2s6w3
 4	pasākumā	pasākums	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	5	obl	5:obl:loc	LvtbNodeId=a-p3760-p2s6w4
 5	muzicēs	muzicēt	VERB	vmnift230an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Fut|VerbForm=Fin|Voice=Act	0	root	0:root	LvtbNodeId=a-p3760-p2s6w5
 6	Ernsta	Ernsts	PROPN	npmsg1	Case=Gen|Gender=Masc|Number=Sing	10	nmod	10:nmod:gen	LvtbNodeId=a-p3760-p2s6w6
@@ -105,64 +108,68 @@
 
 # sent_id = a-p3760-p2s7
 # text = 19.00 - apbalvošanas ceremonija.
-1	19.00	19.00	NUM	xn	NumType=Card	2	nummod	2:nummod	LvtbNodeId=a-p3760-p2s7w1
-2	-	-	PUNCT	zd	_	0	root	0:root	LvtbNodeId=a-p3760-p2s7w2
+1	19.00	19.00	NUM	xn	NumType=Card	4	orphan	2.1:nummod	LvtbNodeId=a-p3760-p2s7w1
+2	-	-	PUNCT	zd	_	4	punct	2.1:punct	LvtbNodeId=a-p3760-p2s7w2
+2.1	_	_	VERB	vmnifi030an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Fut|VerbForm=Fin|Voice=Act	_	_	0:root	LvtbNodeId=a-p3760-p2s7w2
 3	apbalvošanas	apbalvošana	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	4	nmod	4:nmod:gen	LvtbNodeId=a-p3760-p2s7w3
-4	ceremonija	ceremonija	NOUN	ncfsn4	Case=Nom|Gender=Fem|Number=Sing	2	nsubj	2:nsubj	LvtbNodeId=a-p3760-p2s7w4|SpaceAfter=No
-5	.	.	PUNCT	zs	_	2	punct	2:punct	LvtbNodeId=a-p3760-p2s7w5
+4	ceremonija	ceremonija	NOUN	ncfsn4	Case=Nom|Gender=Fem|Number=Sing	0	root	2.1:nsubj	LvtbNodeId=a-p3760-p2s7w4|SpaceAfter=No
+5	.	.	PUNCT	zs	_	4	punct	2.1:punct	LvtbNodeId=a-p3760-p2s7w5
 
 # sent_id = a-p3760-p2s8
 # text = 7. un 8.jūlijā 12.00 Alūksnes Muižas parkā - Livonijas kausa izcīņa apvidus loka šaušanā.
 1	7.	7.	ADJ	xo	NumType=Ord	4	amod	4:amod	LvtbNodeId=a-p3760-p2s8w1
 2	un	un	CCONJ	cc	_	3	cc	3:cc	LvtbNodeId=a-p3760-p2s8w2
 3	8.	8.	ADJ	xo	NumType=Ord	1	conj	1:conj|4:amod	LvtbNodeId=a-p3760-p2s8w3|SpaceAfter=No
-4	jūlijā	jūlijs	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	9	obl	9:obl:loc	LvtbNodeId=a-p3760-p2s8w4
-5	12.00	12.00	NUM	xn	NumType=Card	9	nummod	9:nummod	LvtbNodeId=a-p3760-p2s8w5
+4	jūlijā	jūlijs	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	12	orphan	9.1:obl:loc	LvtbNodeId=a-p3760-p2s8w4
+5	12.00	12.00	NUM	xn	NumType=Card	12	orphan	9.1:nummod	LvtbNodeId=a-p3760-p2s8w5
 6	Alūksnes	Alūksne	PROPN	npfsg5	Case=Gen|Gender=Fem|Number=Sing	8	nmod	8:nmod:gen	LvtbNodeId=a-p3760-p2s8w6
 7	Muižas	muiža	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	8	nmod	8:nmod:gen	LvtbNodeId=a-p3760-p2s8w7
-8	parkā	parks	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	9	obl	9:obl:loc	LvtbNodeId=a-p3760-p2s8w8
-9	-	-	PUNCT	zd	_	0	root	0:root	LvtbNodeId=a-p3760-p2s8w9
+8	parkā	parks	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	12	orphan	9.1:obl:loc	LvtbNodeId=a-p3760-p2s8w8
+9	-	-	PUNCT	zd	_	12	punct	9.1:punct	LvtbNodeId=a-p3760-p2s8w9
+9.1	_	_	VERB	vmnifi030an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Fut|VerbForm=Fin|Voice=Act	_	_	0:root	LvtbNodeId=a-p3760-p2s8w9
 10	Livonijas	Livonija	PROPN	npfsg4	Case=Gen|Gender=Fem|Number=Sing	11	nmod	11:nmod:gen	LvtbNodeId=a-p3760-p2s8w10
 11	kausa	kauss	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	12	nmod	12:nmod:gen	LvtbNodeId=a-p3760-p2s8w11
-12	izcīņa	izcīņa	NOUN	ncfsn4	Case=Nom|Gender=Fem|Number=Sing	9	nsubj	9:nsubj	LvtbNodeId=a-p3760-p2s8w12
+12	izcīņa	izcīņa	NOUN	ncfsn4	Case=Nom|Gender=Fem|Number=Sing	0	root	9.1:nsubj	LvtbNodeId=a-p3760-p2s8w12
 13	apvidus	apvidus	NOUN	ncmsg3	Case=Gen|Gender=Masc|Number=Sing	15	nmod	15:nmod:gen	LvtbNodeId=a-p3760-p2s8w13
 14	loka	loks	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	15	nmod	15:nmod:gen	LvtbNodeId=a-p3760-p2s8w14
 15	šaušanā	šaušana	NOUN	ncfsl4	Case=Loc|Gender=Fem|Number=Sing	12	acl	12:acl:loc	LvtbNodeId=a-p3760-p2s8w15|SpaceAfter=No
-16	.	.	PUNCT	zs	_	9	punct	9:punct	LvtbNodeId=a-p3760-p2s8w16
+16	.	.	PUNCT	zs	_	12	punct	9.1:punct	LvtbNodeId=a-p3760-p2s8w16
 
 # sent_id = a-p3760-p2s9
 # text = 7.jūlijā 19.00 Prinduļu kaujas vietā Ziemera pagasta „Prinduļos" - piemiņas brīdis.
 1	7.	7.	ADJ	xo	NumType=Ord	2	amod	2:amod	LvtbNodeId=a-p3760-p2s9w1|SpaceAfter=No
-2	jūlijā	jūlijs	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	12	obl	12:obl:loc	LvtbNodeId=a-p3760-p2s9w2
-3	19.00	19.00	NUM	xn	NumType=Card	12	nummod	12:nummod	LvtbNodeId=a-p3760-p2s9w3
+2	jūlijā	jūlijs	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	14	orphan	12.1:obl:loc	LvtbNodeId=a-p3760-p2s9w2
+3	19.00	19.00	NUM	xn	NumType=Card	14	orphan	12.1:nummod	LvtbNodeId=a-p3760-p2s9w3
 4	Prinduļu	Prinduļi	PROPN	npmdg1	Case=Gen|Gender=Masc|Number=Ptan	6	nmod	6:nmod:gen	LvtbNodeId=a-p3760-p2s9w4
 5	kaujas	kauja	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	6	nmod	6:nmod:gen	LvtbNodeId=a-p3760-p2s9w5
 6	vietā	vieta	NOUN	ncfsl4	Case=Loc|Gender=Fem|Number=Sing	10	nmod	10:nmod	LvtbNodeId=a-p3760-p2s9w6
 7	Ziemera	Ziemers	PROPN	npmsg1	Case=Gen|Gender=Masc|Number=Sing	8	nmod	8:nmod:gen	LvtbNodeId=a-p3760-p2s9w7
 8	pagasta	pagasts	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	10	nmod	10:nmod:gen	LvtbNodeId=a-p3760-p2s9w8
 9	„	„	PUNCT	zq	_	10	punct	10:punct	LvtbNodeId=a-p3760-p2s9w9|SpaceAfter=No
-10	Prinduļos	Prinduļi	PROPN	npmdl1	Case=Loc|Gender=Masc|Number=Ptan	12	obl	12:obl:loc	LvtbNodeId=a-p3760-p2s9w10|SpaceAfter=No
+10	Prinduļos	Prinduļi	PROPN	npmdl1	Case=Loc|Gender=Masc|Number=Ptan	14	orphan	12.1:obl:loc	LvtbNodeId=a-p3760-p2s9w10|SpaceAfter=No
 11	"	"	PUNCT	zq	_	10	punct	10:punct	LvtbNodeId=a-p3760-p2s9w11
-12	-	-	PUNCT	zd	_	0	root	0:root	LvtbNodeId=a-p3760-p2s9w12
+12	-	-	PUNCT	zd	_	14	punct	12.1:punct	LvtbNodeId=a-p3760-p2s9w12
+12.1	_	_	VERB	vm0if0030an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Fut|VerbForm=Fin|Voice=Act	_	_	0:root	LvtbNodeId=a-p3760-p2s9w12
 13	piemiņas	piemiņa	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	14	nmod	14:nmod:gen	LvtbNodeId=a-p3760-p2s9w13
-14	brīdis	brīdis	NOUN	ncmsn2	Case=Nom|Gender=Masc|Number=Sing	12	nsubj	12:nsubj	LvtbNodeId=a-p3760-p2s9w14|SpaceAfter=No
-15	.	.	PUNCT	zs	_	12	punct	12:punct	LvtbNodeId=a-p3760-p2s9w15
+14	brīdis	brīdis	NOUN	ncmsn2	Case=Nom|Gender=Masc|Number=Sing	0	root	12.1:nsubj	LvtbNodeId=a-p3760-p2s9w14|SpaceAfter=No
+15	.	.	PUNCT	zs	_	14	punct	12.1:punct	LvtbNodeId=a-p3760-p2s9w15
 
 # sent_id = a-p3760-p2s10
 # text = 7.jūlijā 22.00 Alūksnes Pilssalas estrādē - „Samantas Dance Party".
 1	7.	7.	ADJ	xo	NumType=Ord	2	amod	2:amod	LvtbNodeId=a-p3760-p2s10w1|SpaceAfter=No
-2	jūlijā	jūlijs	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	7	obl	7:obl:loc	LvtbNodeId=a-p3760-p2s10w2
-3	22.00	22.00	NUM	xn	NumType=Card	7	nummod	7:nummod	LvtbNodeId=a-p3760-p2s10w3
+2	jūlijā	jūlijs	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	10	orphan	7.1:obl:loc	LvtbNodeId=a-p3760-p2s10w2
+3	22.00	22.00	NUM	xn	NumType=Card	10	orphan	7.1:nummod	LvtbNodeId=a-p3760-p2s10w3
 4	Alūksnes	Alūksne	PROPN	npfsg5	Case=Gen|Gender=Fem|Number=Sing	6	nmod	6:nmod:gen	LvtbNodeId=a-p3760-p2s10w4
 5	Pilssalas	Pilssala	PROPN	npfsg4	Case=Gen|Gender=Fem|Number=Sing	6	nmod	6:nmod:gen	LvtbNodeId=a-p3760-p2s10w5
-6	estrādē	estrāde	NOUN	ncfsl5	Case=Loc|Gender=Fem|Number=Sing	7	obl	7:obl:loc	LvtbNodeId=a-p3760-p2s10w6
-7	-	-	PUNCT	zd	_	0	root	0:root	LvtbNodeId=a-p3760-p2s10w7
+6	estrādē	estrāde	NOUN	ncfsl5	Case=Loc|Gender=Fem|Number=Sing	10	orphan	7.1:obl:loc	LvtbNodeId=a-p3760-p2s10w6
+7	-	-	PUNCT	zd	_	10	punct	7.1:punct	LvtbNodeId=a-p3760-p2s10w7
+7.1	_	_	VERB	vmnifi030an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Fut|VerbForm=Fin|Voice=Act	_	_	0:root	LvtbNodeId=a-p3760-p2s10w7
 8	„	„	PUNCT	zq	_	10	punct	10:punct	LvtbNodeId=a-p3760-p2s10w8|SpaceAfter=No
 9	Samantas	Samanta	PROPN	npfsg4	Case=Gen|Gender=Fem|Number=Sing	10	nmod	10:nmod:gen	LvtbNodeId=a-p3760-p2s10w9
-10	Dance	Dance	X	xf	Foreign=Yes	7	nsubj	7:nsubj	LvtbNodeId=a-p3760-p2s10w10
+10	Dance	Dance	X	xf	Foreign=Yes	0	root	7.1:nsubj	LvtbNodeId=a-p3760-p2s10w10
 11	Party	Party	X	xf	Foreign=Yes	10	flat:name	10:flat:name	LvtbNodeId=a-p3760-p2s10w11|SpaceAfter=No
 12	"	"	PUNCT	zq	_	10	punct	10:punct	LvtbNodeId=a-p3760-p2s10w12|SpaceAfter=No
-13	.	.	PUNCT	zs	_	7	punct	7:punct	LvtbNodeId=a-p3760-p2s10w13
+13	.	.	PUNCT	zs	_	10	punct	7.1:punct	LvtbNodeId=a-p3760-p2s10w13
 
 # sent_id = a-p3760-p2s11
 # text = Piedalīsies Samanta Tīna, DJ Japānis, grupa „Mono".
@@ -182,69 +189,73 @@
 # sent_id = a-p3760-p2s12
 # text = 9.jūlijā 17.00 Alūksnes Pilssalas stadionā - ielu basketbola sacensības „Ghetto basket".
 1	9.	9.	ADJ	xo	NumType=Ord	2	amod	2:amod	LvtbNodeId=a-p3760-p2s12w1|SpaceAfter=No
-2	jūlijā	jūlijs	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	7	obl	7:obl:loc	LvtbNodeId=a-p3760-p2s12w2
-3	17.00	17.00	NUM	xn	NumType=Card	7	nummod	7:nummod	LvtbNodeId=a-p3760-p2s12w3
+2	jūlijā	jūlijs	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	12	orphan	7.1:obl:loc	LvtbNodeId=a-p3760-p2s12w2
+3	17.00	17.00	NUM	xn	NumType=Card	12	orphan	7.1:nummod	LvtbNodeId=a-p3760-p2s12w3
 4	Alūksnes	Alūksne	PROPN	npfsg5	Case=Gen|Gender=Fem|Number=Sing	6	nmod	6:nmod:gen	LvtbNodeId=a-p3760-p2s12w4
 5	Pilssalas	Pilssala	PROPN	npfsg4	Case=Gen|Gender=Fem|Number=Sing	6	nmod	6:nmod:gen	LvtbNodeId=a-p3760-p2s12w5
-6	stadionā	stadions	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	7	obl	7:obl:loc	LvtbNodeId=a-p3760-p2s12w6
-7	-	-	PUNCT	zd	_	0	root	0:root	LvtbNodeId=a-p3760-p2s12w7
+6	stadionā	stadions	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	12	orphan	7.1:obl:loc	LvtbNodeId=a-p3760-p2s12w6
+7	-	-	PUNCT	zd	_	12	punct	7.1:punct	LvtbNodeId=a-p3760-p2s12w7
+7.1	_	_	VERB	vmnifi030an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Fut|VerbForm=Fin|Voice=Act	_	_	0:root	LvtbNodeId=a-p3760-p2s12w7
 8	ielu	iela	NOUN	ncfpg4	Case=Gen|Gender=Fem|Number=Plur	10	nmod	10:nmod:gen	LvtbNodeId=a-p3760-p2s12w8
 9	basketbola	basketbols	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	10	nmod	10:nmod:gen	LvtbNodeId=a-p3760-p2s12w9
 10	sacensības	sacensība	NOUN	ncfpn4	Case=Nom|Gender=Fem|Number=Plur	12	nmod	12:nmod	LvtbNodeId=a-p3760-p2s12w10
 11	„	„	PUNCT	zq	_	12	punct	12:punct	LvtbNodeId=a-p3760-p2s12w11|SpaceAfter=No
-12	Ghetto	Ghetto	X	xf	Foreign=Yes	7	nsubj	7:nsubj	LvtbNodeId=a-p3760-p2s12w12
+12	Ghetto	Ghetto	X	xf	Foreign=Yes	0	root	7.1:nsubj	LvtbNodeId=a-p3760-p2s12w12
 13	basket	basket	X	xf	Foreign=Yes	12	flat:name	12:flat:name	LvtbNodeId=a-p3760-p2s12w13|SpaceAfter=No
 14	"	"	PUNCT	zq	_	12	punct	12:punct	LvtbNodeId=a-p3760-p2s12w14|SpaceAfter=No
-15	.	.	PUNCT	zs	_	7	punct	7:punct	LvtbNodeId=a-p3760-p2s12w15
+15	.	.	PUNCT	zs	_	12	punct	7.1:punct	LvtbNodeId=a-p3760-p2s12w15
 
 # sent_id = a-p3760-p2s13
 # text = 9. - 11.jūlijā Alūksnē - pūtēju orķestru sadraudzības svētki „Mūzika veido Eiropu".
 1	9.	9.	ADJ	xo	NumType=Ord	4	amod	4:amod	LvtbNodeId=a-p3760-p2s13w1
 2	-	-	PUNCT	zd	_	3	punct	3:punct	LvtbNodeId=a-p3760-p2s13w2
 3	11.	11.	ADJ	xo	NumType=Ord	1	conj	1:conj|4:amod	LvtbNodeId=a-p3760-p2s13w3|SpaceAfter=No
-4	jūlijā	jūlijs	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	6	obl	6:obl:loc	LvtbNodeId=a-p3760-p2s13w4
-5	Alūksnē	Alūksne	PROPN	npfsl5	Case=Loc|Gender=Fem|Number=Sing	6	obl	6:obl:loc	LvtbNodeId=a-p3760-p2s13w5
-6	-	-	PUNCT	zd	_	0	root	0:root	LvtbNodeId=a-p3760-p2s13w6
+4	jūlijā	jūlijs	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	13	orphan	6.1:obl:loc	LvtbNodeId=a-p3760-p2s13w4
+5	Alūksnē	Alūksne	PROPN	npfsl5	Case=Loc|Gender=Fem|Number=Sing	13	orphan	6.1:obl:loc	LvtbNodeId=a-p3760-p2s13w5
+6	-	-	PUNCT	zd	_	13	punct	6.1:punct	LvtbNodeId=a-p3760-p2s13w6
+6.1	_	_	VERB	vmnif0030an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Fut|VerbForm=Fin|Voice=Act	_	_	0:root	LvtbNodeId=a-p3760-p2s13w6
 7	pūtēju	pūtējs	NOUN	ncmpg1	Case=Gen|Gender=Masc|Number=Plur	8	nmod	8:nmod:gen	LvtbNodeId=a-p3760-p2s13w7
 8	orķestru	orķestris	NOUN	ncmpg2	Case=Gen|Gender=Masc|Number=Plur	10	nmod	10:nmod:gen	LvtbNodeId=a-p3760-p2s13w8
 9	sadraudzības	sadraudzība	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	10	nmod	10:nmod:gen	LvtbNodeId=a-p3760-p2s13w9
 10	svētki	svētki	NOUN	ncmdn1	Case=Nom|Gender=Masc|Number=Ptan	13	nmod	13:nmod	LvtbNodeId=a-p3760-p2s13w10
 11	„	„	PUNCT	zq	_	13	punct	13:punct	LvtbNodeId=a-p3760-p2s13w11|SpaceAfter=No
 12	Mūzika	mūzika	NOUN	ncfsn4	Case=Nom|Gender=Fem|Number=Sing	13	nsubj	13:nsubj	LvtbNodeId=a-p3760-p2s13w12
-13	veido	veidot	VERB	vmnipt22san	Evident=Fh|Mood=Ind|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	6	nsubj	6:nsubj	LvtbNodeId=a-p3760-p2s13w13
+13	veido	veidot	VERB	vmnipt22san	Evident=Fh|Mood=Ind|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	6.1:nsubj	LvtbNodeId=a-p3760-p2s13w13
 14	Eiropu	Eiropa	PROPN	npfsa4	Case=Acc|Gender=Fem|Number=Sing	13	obj	13:obj	LvtbNodeId=a-p3760-p2s13w14|SpaceAfter=No
 15	"	"	PUNCT	zq	_	13	punct	13:punct	LvtbNodeId=a-p3760-p2s13w15|SpaceAfter=No
-16	.	.	PUNCT	zs	_	6	punct	6:punct	LvtbNodeId=a-p3760-p2s13w16
+16	.	.	PUNCT	zs	_	13	punct	6.1:punct	LvtbNodeId=a-p3760-p2s13w16
 
 # sent_id = a-p3760-p2s14
 # text = 9.jūlijā 16.00 administratīvās ēkas laukumā - sadraudzības dienu oficiāla atklāšanas ceremonija un koncerts.
 1	9.	9.	ADJ	xo	NumType=Ord	2	amod	2:amod	LvtbNodeId=a-p3760-p2s14w1|SpaceAfter=No
-2	jūlijā	jūlijs	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	7	obl	7:obl:loc	LvtbNodeId=a-p3760-p2s14w2
-3	16.00	16.00	NUM	xn	NumType=Card	7	nummod	7:nummod	LvtbNodeId=a-p3760-p2s14w3
+2	jūlijā	jūlijs	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	12	orphan	7.1:obl:loc	LvtbNodeId=a-p3760-p2s14w2
+3	16.00	16.00	NUM	xn	NumType=Card	12	orphan	7.1:nummod	LvtbNodeId=a-p3760-p2s14w3
 4	administratīvās	administratīvs	ADJ	arfsgyp	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	5	amod	5:amod	LvtbNodeId=a-p3760-p2s14w4
 5	ēkas	ēka	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	6	nmod	6:nmod:gen	LvtbNodeId=a-p3760-p2s14w5
-6	laukumā	laukums	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	7	obl	7:obl:loc	LvtbNodeId=a-p3760-p2s14w6
-7	-	-	PUNCT	zd	_	0	root	0:root	LvtbNodeId=a-p3760-p2s14w7
+6	laukumā	laukums	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	12	orphan	7.1:obl:loc	LvtbNodeId=a-p3760-p2s14w6
+7	-	-	PUNCT	zd	_	12	punct	7.1:punct	LvtbNodeId=a-p3760-p2s14w7
+7.1	_	_	VERB	vmnifi030an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Fut|VerbForm=Fin|Voice=Act	_	_	0:root	LvtbNodeId=a-p3760-p2s14w7
 8	sadraudzības	sadraudzība	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	9	nmod	9:nmod:gen	LvtbNodeId=a-p3760-p2s14w8
 9	dienu	diena	NOUN	ncfpg4	Case=Gen|Gender=Fem|Number=Plur	12	nmod	12:nmod:gen	LvtbNodeId=a-p3760-p2s14w9
 10	oficiāla	oficiāls	ADJ	arfsnnp	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	12	amod	12:amod	LvtbNodeId=a-p3760-p2s14w10
 11	atklāšanas	atklāšana	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	12	nmod	12:nmod:gen	LvtbNodeId=a-p3760-p2s14w11
-12	ceremonija	ceremonija	NOUN	ncfsn4	Case=Nom|Gender=Fem|Number=Sing	7	nsubj	7:nsubj	LvtbNodeId=a-p3760-p2s14w12
+12	ceremonija	ceremonija	NOUN	ncfsn4	Case=Nom|Gender=Fem|Number=Sing	0	root	7.1:nsubj	LvtbNodeId=a-p3760-p2s14w12
 13	un	un	CCONJ	cc	_	14	cc	14:cc	LvtbNodeId=a-p3760-p2s14w13
-14	koncerts	koncerts	NOUN	ncmsn1	Case=Nom|Gender=Masc|Number=Sing	12	conj	7:nsubj|12:conj	LvtbNodeId=a-p3760-p2s14w14|SpaceAfter=No
-15	.	.	PUNCT	zs	_	7	punct	7:punct	LvtbNodeId=a-p3760-p2s14w15
+14	koncerts	koncerts	NOUN	ncmsn1	Case=Nom|Gender=Masc|Number=Sing	12	conj	7.1:nsubj|12:conj	LvtbNodeId=a-p3760-p2s14w14|SpaceAfter=No
+15	.	.	PUNCT	zs	_	12	punct	7.1:punct	LvtbNodeId=a-p3760-p2s14w15
 
 # sent_id = a-p3760-p2s15
 # text = 10.jūlijā Alūksnes muzejā - Marsannay -la- Cote (Francija) pilsētas jubilejai veltīta izstāde, 11.jūlijā 20.00 Pilssalas estrādē sadraudzības dienu lielkoncerts „Mūzika veido Eiropu".
 1	10.	10.	ADJ	xo	NumType=Ord	2	amod	2:amod	LvtbNodeId=a-p3760-p2s15w1|SpaceAfter=No
-2	jūlijā	jūlijs	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	5	obl	5:obl:loc	LvtbNodeId=a-p3760-p2s15w2
+2	jūlijā	jūlijs	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	17	orphan	5.1:obl:loc	LvtbNodeId=a-p3760-p2s15w2
 3	Alūksnes	Alūksne	PROPN	npfsg5	Case=Gen|Gender=Fem|Number=Sing	4	nmod	4:nmod:gen	LvtbNodeId=a-p3760-p2s15w3
-4	muzejā	muzejs	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	5	obl	5:obl:loc	LvtbNodeId=a-p3760-p2s15w4
-5	-	-	PUNCT	zd	_	0	root	0:root	LvtbNodeId=a-p3760-p2s15w5
+4	muzejā	muzejs	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	17	orphan	5.1:obl:loc	LvtbNodeId=a-p3760-p2s15w4
+5	-	-	PUNCT	zd	_	17	punct	5.1:punct	LvtbNodeId=a-p3760-p2s15w5
+5.1	_	_	VERB	vmnifi030an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Fut|VerbForm=Fin|Voice=Act	_	_	0:root	LvtbNodeId=a-p3760-p2s15w5
 6	Marsannay	Marsannay	X	xf	Foreign=Yes	17	nmod	17:nmod	LvtbNodeId=a-p3760-p2s15w6
-7	-	-	PUNCT	zd	_	6	flat:name	6:flat:name	LvtbNodeId=a-p3760-p2s15w7|SpaceAfter=No
+7	-	-	PUNCT	zd	_	6	punct	6:punct	LvtbNodeId=a-p3760-p2s15w7|SpaceAfter=No
 8	la	la	X	xf	Foreign=Yes	6	flat:name	6:flat:name	LvtbNodeId=a-p3760-p2s15w8|SpaceAfter=No
-9	-	-	PUNCT	zd	_	6	flat:name	6:flat:name	LvtbNodeId=a-p3760-p2s15w9
+9	-	-	PUNCT	zd	_	6	punct	6:punct	LvtbNodeId=a-p3760-p2s15w9
 10	Cote	Cote	X	xf	Foreign=Yes	6	flat:name	6:flat:name	LvtbNodeId=a-p3760-p2s15w10
 11	(	(	PUNCT	zb	_	12	punct	12:punct	LvtbNodeId=a-p3760-p2s15w11|SpaceAfter=No
 12	Francija	Francija	PROPN	npfsn4	Case=Nom|Gender=Fem|Number=Sing	6	discourse	6:discourse	LvtbNodeId=a-p3760-p2s15w12|SpaceAfter=No
@@ -252,7 +263,7 @@
 14	pilsētas	pilsēta	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	15	nmod	15:nmod:gen	LvtbNodeId=a-p3760-p2s15w14
 15	jubilejai	jubileja	NOUN	ncfsd4	Case=Dat|Gender=Fem|Number=Sing	16	iobj	16:iobj	LvtbNodeId=a-p3760-p2s15w15
 16	veltīta	veltīt	VERB	vmnpdfsnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	17	amod	17:amod	LvtbNodeId=a-p3760-p2s15w16
-17	izstāde	izstāde	NOUN	ncfsn5	Case=Nom|Gender=Fem|Number=Sing	5	nsubj	5:nsubj	LvtbNodeId=a-p3760-p2s15w17|SpaceAfter=No
+17	izstāde	izstāde	NOUN	ncfsn5	Case=Nom|Gender=Fem|Number=Sing	0	root	5.1:nsubj	LvtbNodeId=a-p3760-p2s15w17|SpaceAfter=No
 18	,	,	PUNCT	zc	_	29	punct	29.1:punct	LvtbNodeId=a-p3760-p2s15w18
 19	11.	11.	ADJ	xo	NumType=Ord	20	amod	20:amod	LvtbNodeId=a-p3760-p2s15w19|SpaceAfter=No
 20	jūlijā	jūlijs	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	29	orphan	29.1:obl:loc	LvtbNodeId=a-p3760-p2s15w20
@@ -264,26 +275,27 @@
 26	lielkoncerts	lielkoncerts	NOUN	ncmsn1	Case=Nom|Gender=Masc|Number=Sing	29	nmod	29:nmod	LvtbNodeId=a-p3760-p2s15w26
 27	„	„	PUNCT	zq	_	29	punct	29:punct	LvtbNodeId=a-p3760-p2s15w27|SpaceAfter=No
 28	Mūzika	mūzika	NOUN	ncfsn4	Case=Nom|Gender=Fem|Number=Sing	29	nsubj	29:nsubj	LvtbNodeId=a-p3760-p2s15w28
-29	veido	veidot	VERB	vmnipt22san	Evident=Fh|Mood=Ind|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	5	conj	29.1:nsubj	LvtbNodeId=a-p3760-p2s15w29
-29.1	būs	būt	VERB	vmnifii30an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Fut|VerbForm=Fin|Voice=Act	_	_	5:conj	LvtbNodeId=a-p3760-p2s15x4
+29	veido	veidot	VERB	vmnipt22san	Evident=Fh|Mood=Ind|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	17	conj	29.1:nsubj	LvtbNodeId=a-p3760-p2s15w29
+29.1	būs	būt	VERB	vmnifii30an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Fut|VerbForm=Fin|Voice=Act	_	_	5.1:conj	LvtbNodeId=a-p3760-p2s15x4
 30	Eiropu	Eiropa	PROPN	npfsa4	Case=Acc|Gender=Fem|Number=Sing	29	obj	29:obj	LvtbNodeId=a-p3760-p2s15w30|SpaceAfter=No
 31	"	"	PUNCT	zq	_	29	punct	29:punct	LvtbNodeId=a-p3760-p2s15w31|SpaceAfter=No
-32	.	.	PUNCT	zs	_	5	punct	5:punct	LvtbNodeId=a-p3760-p2s15w32
+32	.	.	PUNCT	zs	_	17	punct	5.1:punct	LvtbNodeId=a-p3760-p2s15w32
 
 # sent_id = a-p3760-p2s16
 # text = 12.jūlijā 14.00 Malienas tautas namā - disenīte bērniem un pusaudžiem.
 1	12.	12.	ADJ	xo	NumType=Ord	2	amod	2:amod	LvtbNodeId=a-p3760-p2s16w1|SpaceAfter=No
-2	jūlijā	jūlijs	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	7	obl	7:obl:loc	LvtbNodeId=a-p3760-p2s16w2
-3	14.00	14.00	NUM	xn	NumType=Card	7	nummod	7:nummod	LvtbNodeId=a-p3760-p2s16w3
+2	jūlijā	jūlijs	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	8	orphan	7.1:obl:loc	LvtbNodeId=a-p3760-p2s16w2
+3	14.00	14.00	NUM	xn	NumType=Card	8	orphan	7.1:nummod	LvtbNodeId=a-p3760-p2s16w3
 4	Malienas	Maliena	PROPN	npfsg4	Case=Gen|Gender=Fem|Number=Sing	6	nmod	6:nmod:gen	LvtbNodeId=a-p3760-p2s16w4
 5	tautas	tauta	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	6	nmod	6:nmod:gen	LvtbNodeId=a-p3760-p2s16w5
-6	namā	nams	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	7	obl	7:obl:loc	LvtbNodeId=a-p3760-p2s16w6
-7	-	-	PUNCT	zd	_	0	root	0:root	LvtbNodeId=a-p3760-p2s16w7
-8	disenīte	disenīte	NOUN	ncfsn5	Case=Nom|Gender=Fem|Number=Sing	7	nsubj	7:nsubj	LvtbNodeId=a-p3760-p2s16w8
+6	namā	nams	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	8	orphan	7.1:obl:loc	LvtbNodeId=a-p3760-p2s16w6
+7	-	-	PUNCT	zd	_	8	punct	7.1:punct	LvtbNodeId=a-p3760-p2s16w7
+7.1	_	_	VERB	vmnifi030an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Fut|VerbForm=Fin|Voice=Act	_	_	0:root	LvtbNodeId=a-p3760-p2s16w7
+8	disenīte	disenīte	NOUN	ncfsn5	Case=Nom|Gender=Fem|Number=Sing	0	root	7.1:nsubj	LvtbNodeId=a-p3760-p2s16w8
 9	bērniem	bērns	NOUN	ncmpd1	Case=Dat|Gender=Masc|Number=Plur	8	nmod	8:nmod:dat	LvtbNodeId=a-p3760-p2s16w9
 10	un	un	CCONJ	cc	_	11	cc	11:cc	LvtbNodeId=a-p3760-p2s16w10
 11	pusaudžiem	pusaudzis	NOUN	ncmpd2	Case=Dat|Gender=Masc|Number=Plur	9	conj	8:nmod:dat|9:conj	LvtbNodeId=a-p3760-p2s16w11|SpaceAfter=No
-12	.	.	PUNCT	zs	_	7	punct	7:punct	LvtbNodeId=a-p3760-p2s16w12
+12	.	.	PUNCT	zs	_	8	punct	7.1:punct	LvtbNodeId=a-p3760-p2s16w12
 
 # sent_id = a-p3760-p2s17
 # text = Spēlēs DJ, disenītes ietvaros nometnes „Paralēle" jauno dīdžeju konkurss.
@@ -305,18 +317,19 @@
 # sent_id = a-p3760-p2s18
 # text = 13.jūlijā 19.00 Alūksnes Pilssalas estrādē - „Miers un Bērziņš".
 1	13.	13.	ADJ	xo	NumType=Ord	2	amod	2:amod	LvtbNodeId=a-p3760-p2s18w1|SpaceAfter=No
-2	jūlijā	jūlijs	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	7	obl	7:obl:loc	LvtbNodeId=a-p3760-p2s18w2
-3	19.00	19.00	NUM	xn	NumType=Card	7	nummod	7:nummod	LvtbNodeId=a-p3760-p2s18w3
+2	jūlijā	jūlijs	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	9	orphan	7.1:obl:loc	LvtbNodeId=a-p3760-p2s18w2
+3	19.00	19.00	NUM	xn	NumType=Card	9	orphan	7.1:nummod	LvtbNodeId=a-p3760-p2s18w3
 4	Alūksnes	Alūksne	PROPN	npfsg5	Case=Gen|Gender=Fem|Number=Sing	6	nmod	6:nmod:gen	LvtbNodeId=a-p3760-p2s18w4
 5	Pilssalas	Pilssala	PROPN	npfsg4	Case=Gen|Gender=Fem|Number=Sing	6	nmod	6:nmod:gen	LvtbNodeId=a-p3760-p2s18w5
-6	estrādē	estrāde	NOUN	ncfsl5	Case=Loc|Gender=Fem|Number=Sing	7	obl	7:obl:loc	LvtbNodeId=a-p3760-p2s18w6
-7	-	-	PUNCT	zd	_	0	root	0:root	LvtbNodeId=a-p3760-p2s18w7
+6	estrādē	estrāde	NOUN	ncfsl5	Case=Loc|Gender=Fem|Number=Sing	9	orphan	7.1:obl:loc	LvtbNodeId=a-p3760-p2s18w6
+7	-	-	PUNCT	zd	_	9	punct	7.1:punct	LvtbNodeId=a-p3760-p2s18w7
+7.1	_	_	VERB	vmnifi030an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Fut|VerbForm=Fin|Voice=Act	_	_	0:root	LvtbNodeId=a-p3760-p2s18w7
 8	„	„	PUNCT	zq	_	9	punct	9:punct	LvtbNodeId=a-p3760-p2s18w8|SpaceAfter=No
-9	Miers	miers	NOUN	ncmvn1	Case=Nom|Gender=Masc|Number=Coll	7	nsubj	7:nsubj	LvtbNodeId=a-p3760-p2s18w9
+9	Miers	miers	NOUN	ncmvn1	Case=Nom|Gender=Masc|Number=Coll	0	root	7.1:nsubj	LvtbNodeId=a-p3760-p2s18w9
 10	un	un	CCONJ	cc	_	11	cc	11:cc	LvtbNodeId=a-p3760-p2s18w10
-11	Bērziņš	Bērziņš	PROPN	npmsn1	Case=Nom|Gender=Masc|Number=Sing	9	conj	7:nsubj|9:conj	LvtbNodeId=a-p3760-p2s18w11|SpaceAfter=No
+11	Bērziņš	Bērziņš	PROPN	npmsn1	Case=Nom|Gender=Masc|Number=Sing	9	conj	7.1:nsubj|9:conj	LvtbNodeId=a-p3760-p2s18w11|SpaceAfter=No
 12	"	"	PUNCT	zq	_	9	punct	9:punct	LvtbNodeId=a-p3760-p2s18w12|SpaceAfter=No
-13	.	.	PUNCT	zs	_	7	punct	7:punct	LvtbNodeId=a-p3760-p2s18w13
+13	.	.	PUNCT	zs	_	9	punct	7.1:punct	LvtbNodeId=a-p3760-p2s18w13
 
 # sent_id = a-p3760-p2s19
 # text = Piedalās: Raimonda Paula ceremonijorķestris un pats maestro Raimonds Pauls, Jānis Paukštello, Harijs Spanovskis, Andris Bērziņš.

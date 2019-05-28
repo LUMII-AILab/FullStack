@@ -15,7 +15,7 @@ __Note__ that each corpus example contains one FrameNet annotation set (frame in
 
 ## Current statistics
 
-* Annotation sets: __10,137__
-* Semantic frames: __457__
-* Lexical units: __1,604__
-* Target words (lexemes): __828__
+* Annotation sets: __10,952__
+* Semantic frames: __458__
+* Lexical units: __1,658__
+* Target words (lexemes): __863__

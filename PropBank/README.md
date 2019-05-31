@@ -19,8 +19,8 @@ __Note__ that each corpus example contains one PropBank annotation set. If there
 
 ## Current statistics
 
-* [_Mapping_] Target verbs: __554__ out of 835 (66%)
-* [_Mapping_] FrameNet frames: __239__ out of 452 (53%)
-* [_Mapping_] FrameNet lexical units (verb-frame pairs): __746__ out of 1,575 (47%)
-* [_Mapping_] PropBank frames (predicates): __438__ out of 7,311 (6%)
-* [_Data_] Annotation sets: __3,613__ out of 7,371 (49%)
+* [_Mapping_] Target verbs: __576__ out of 865 (67%)
+* [_Mapping_] FrameNet frames: __255__ out of 458 (56%)
+* [_Mapping_] FrameNet lexical units (verb-frame pairs): __788__ out of 1,660 (48%)
+* [_Mapping_] PropBank frames (predicates): __459__ out of 7,311 (6%)
+* [_Data_] Annotation sets: __5,473__ out of 10,951 (50%)

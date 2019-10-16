@@ -28,6 +28,8 @@ N. Gruzitis, G. Nespore-Berzkalne, B. Saulite. [Creation of Latvian FrameNet bas
 
 G. Nespore-Berzkalne, B. Saulite, N. Gruzitis. [Latvian FrameNet: Cross-Lingual Issues](http://ebooks.iospress.nl/volumearticle/50309). Human Language Technologies - The Baltic Perspective. Frontiers in Artificial Intelligence and Applications, vol. 307, IOS Press, 2018
 
+Paikens, P., Grūzītis, N., Rituma, L., Nešpore, G., Lipskis, V., Pretkalniņa, L., Spektors, A. [Enriching an Explanatory Dictionary with FrameNet and PropBank Corpus Examples](https://elex.link/elex2019/wp-content/uploads/2019/09/eLex_2019_52.pdf). Proceedings of the 6th Biennial Conference on Electronic Lexicography (eLex), 2019
+
 L. Pretkalnina, L. Rituma, B. Saulite. [Deriving Enhanced Universal Dependencies from a Hybrid Dependency-Constituency Treebank](https://link.springer.com/chapter/10.1007/978-3-030-00794-2_10). Text, Speech, and Dialogue. Lecture Notes in Computer Science, vol. 11107, Springer, 2018
 
 N. Gruzitis, D. Gosko, G. Barzdins. [RIGOTRIO at SemEval-2017 Task 9: Combining machine learning and grammar engineering for AMR parsing and generation](http://www.aclweb.org/anthology/S17-2159). Proceedings of the 11th International Workshop on Semantic Evaluation (SemEval), 2017
@@ -40,6 +42,8 @@ N. Gruzitis, D. Gosko, G. Barzdins. [RIGOTRIO at SemEval-2017 Task 9: Combining 
 ## Acknowledgements
 
 This work is supported by the European Regional Development Fund under the grant agreements No. 1.1.1.1/16/A/219 (*Full Stack of Language Resources for Natural Language Understanding and Generation in Latvian*) and No. 1.1.1.2/VIAA/1/16/188 (*From Abstract Meaning Representation to Natural Language Sentence and Coherent Text Generation*).
+
+The treebank layer from which the UD reresentation is derived has been annotated using an extended version of [TrEd](https://ufal.mff.cuni.cz/tred/). The FrameNet layer as well as the named entity and coreference layers have been annotated using a customised instance of [WebAnno](https://webanno.github.io/webanno/). Draft AMR graphs have been acquired using the [Hugo.lv](https://hugo.lv/en) LV-EN neural MT system and the [AMREager](http://cohort.inf.ed.ac.uk/amreager.html) parser.
 
 ## Licence
 

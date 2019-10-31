@@ -47,7 +47,9 @@ The treebank layer from which the UD reresentation is derived has been annotated
 
 ## Licence
 
-This data set by [AiLab](http://ailab.lv) is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/). Please contact us if you are interested in acquiring a commercial licence.
+This data set by [AiLab](http://ailab.lv) is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
+
+By using this data set, you agree to comply with the European Intellectual Property Rights and the European General Data Protection Regulation.
 
 ## Contacts
 

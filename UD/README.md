@@ -2,7 +2,9 @@
 
 ## Data
 
-An balanced subset of [Latvian UD Treebank](https://github.com/UniversalDependencies/UD_Latvian-LVTB) (v2.5) in the [CoNLL-U](http://universaldependencies.org/format.html) data format. This is the fundamental annotation annotation layer of the [FullStack](https://github.com/LUMII-AILab/FullStack) multi-layer text corpus.
+An balanced subset of [Latvian UD Treebank](https://github.com/UniversalDependencies/UD_Latvian-LVTB) (v2.5) in the [CoNLL-U](http://universaldependencies.org/format.html) data format.
+
+This is the fundamental annotation layer of the [FullStack](https://github.com/LUMII-AILab/FullStack) multi-layer text corpus.
 
 ## Current statistics
 

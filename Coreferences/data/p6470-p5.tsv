@@ -1,0 +1,33 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Šķiet, latvietis ir gatavs noskaust pēdējo centu, ko kāds cits varētu saņemt vairāk nekā viņš pats,» prāto Ansis.
+1-1	0-5	Šķiet	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipi130an	*	šķist	_	_	_	_	discourse	basic	1-5	
+1-2	5-6	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-1	
+1-3	7-16	latvietis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	latvietis	_	_	*->1-1	*[1]	nsubj	basic	1-5	
+1-4	17-19	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	1-5	
+1-5	20-26	gatavs	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	gatavs	_	_	_	_	parataxis	basic	1-21	
+1-6	27-35	noskaust	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t1000n	*	noskaust	_	_	_	_	ccomp	basic	1-5	
+1-7	36-42	pēdējo	*	*	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsayp	*	pēdējais	_	_	_	_	amod	basic	1-8	
+1-8	43-48	centu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	cents	_	_	*->2-1	*[2]	obj	basic	1-6	
+1-9	48-49	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-13	
+1-10	50-52	ko	*	*	Acc	*	*	*	*	*	*	*	*	*	Rel	*	*	*	Case=Acc\|PronType=Rel	*	*	pr000an	*	kas	_	_	*->2-2	*[2]	obj	basic	1-13	
+1-11	53-57	kāds	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	Ind	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Ind	*	*	pi0msnn	*	kāds	_	_	_	_	nsubj	basic	1-13	
+1-12	58-62	cits	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	Ind	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Ind	*	*	pi0msnn	*	cits	_	_	_	_	compound	basic	1-11	
+1-13	63-69	varētu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnc0t300an	*	varēt	_	_	_	_	acl	basic	1-8	
+1-14	70-76	saņemt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t1000n	*	saņemt	_	_	_	_	xcomp	basic	1-13	
+1-15	77-83	vairāk	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	vairāk	_	_	_	_	obl	basic	1-17	
+1-16	84-88	nekā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	nekā	_	_	_	_	fixed	basic	1-15	
+1-17	89-93	viņš	*	*	Nom	*	*	Masc	*	*	*	Sing	3	*	Prs	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msnn	*	viņš	_	_	*->1-2	*[1]	acl	basic	1-13	
+1-18	94-98	pats	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	Tot	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msnn	*	pats	_	_	*->1-2	*[1]	compound	basic	1-17	
+1-19	98-99	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-5	
+1-20	99-100	»	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	»	_	_	_	_	punct	basic	1-5	
+1-21	101-106	prāto	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt230an	*	prātot	_	_	_	_	root	basic	1-21	
+1-22	107-112	Ansis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	*	Ansis	person	*	_	_	nsubj	basic	1-21	
+1-23	112-113	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-21	

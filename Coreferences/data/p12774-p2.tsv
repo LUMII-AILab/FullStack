@@ -1,0 +1,23 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Jāpiebilst, ka S. Šķesters kandidē 12. Saeimas vēlēšanās no Latgales vēlēšanu apgabala.
+1-1	0-10	Jāpiebilst	*	*	*	*	*	*	Nec	*	*	*	*	*	*	*	*	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnd0t100an	*	piebilst	_	_	root	basic	1-1	
+1-2	10-11	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-6	
+1-3	12-14	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	mark	basic	1-6	
+1-4	15-17	S.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	S.	person[1]	https://lv.wikipedia.org/wiki/Staņislavs\_Šķesters[1]	nsubj	basic	1-6	
+1-5	18-26	Šķesters	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Šķesters	person[1]	https://lv.wikipedia.org/wiki/Staņislavs\_Šķesters[1]	flat:name	basic	1-4	
+1-6	27-34	kandidē	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipi230an	*	kandidēt	_	_	ccomp	basic	1-1	
+1-7	35-38	12.	*	*	*	*	*	*	*	*	Ord	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	12.	event[2]|organization[3]	https://en.wikipedia.org/wiki/Latvian\_parliamentary\_election,\_2014[2]|*[3]	amod	basic	1-8	
+1-8	39-46	Saeimas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Saeima	event[2]|organization[3]|organization[4]	https://en.wikipedia.org/wiki/Latvian\_parliamentary\_election,\_2014[2]|*[3]|https://en.wikipedia.org/wiki/Saeima[4]	nmod	basic	1-9	
+1-9	47-56	vēlēšanās	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfslr	*	vēlēšanās	event[2]	https://en.wikipedia.org/wiki/Latvian\_parliamentary\_election,\_2014[2]	obl	basic	1-6	
+1-10	57-59	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	case	basic	1-13	
+1-11	60-68	Latgales	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	*	Latgale	location[5]|location[6]	*[5]|https://en.wikipedia.org/wiki/Latgale[6]	nmod	basic	1-13	
+1-12	69-77	vēlēšanu	*	*	Gen	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Ptan	*	*	ncfdg4	*	vēlēšanas	location[5]	*[5]	nmod	basic	1-13	
+1-13	78-86	apgabala	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	apgabals	location[5]	*[5]	obl	basic	1-6	
+1-14	86-87	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	1-1	

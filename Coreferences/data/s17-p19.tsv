@@ -1,0 +1,90 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Jāteic, ka vienīgā nopietnā tēze par SAB darbu, kuru esam dzirdējuši no Kažociņa kunga, ir tā, ka SAB ir dots pārāk daudz varas.
+1-1	0-6	Jāteic	*	*	*	*	*	*	Nec	*	*	*	*	*	*	*	*	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vmnd0t100an	*	teikt	_	_	_	_	root	basic	1-1	
+1-2	6-7	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-19	
+1-3	8-10	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	1-19	
+1-4	11-18	vienīgā	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsnyp	*	vienīga	_	_	_	_	amod	basic	1-6	
+1-5	19-27	nopietnā	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnyp	*	nopietna	_	_	_	_	amod	basic	1-6	
+1-6	28-32	tēze	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	tēze	_	_	_	_	nsubj	basic	1-19	
+1-7	33-36	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	1-9	
+1-8	37-40	SAB	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	SAB	organization	https://lv.wikipedia.org/wiki/Satversmes\_aizsardzības\_birojs	_	_	nmod	basic	1-9	
+1-9	41-46	darbu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	darbs	_	_	*->1-1	*[1]	nmod	basic	1-6	
+1-10	46-47	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-13	
+1-11	48-52	kuru	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsan	*	kura	_	_	*->1-2	*[1]	obj	basic	1-13	
+1-12	53-57	esam	*	*	*	*	*	*	Ind	*	*	Plur	1	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii1pan	*	būt	_	_	_	_	aux	basic	1-13	
+1-13	58-68	dzirdējuši	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmpnasnpn	*	dzirdēt	_	_	_	_	acl	basic	1-6	
+1-14	69-71	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case	basic	1-16	
+1-15	72-80	Kažociņa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	kažociņš	person[1]	https://en.wikipedia.org/wiki/Janis\_Kazocins[1]	_	_	nmod	basic	1-16	
+1-16	81-86	kunga	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	kungs	person[1]	https://en.wikipedia.org/wiki/Janis\_Kazocins[1]	_	_	iobj	basic	1-13	
+1-17	86-87	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-13	
+1-18	88-90	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	1-19	
+1-19	91-93	tā	*	*	Nom	*	*	Fem	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3fsnn	*	tā	_	_	_	_	ccomp	basic	1-1	
+1-20	93-94	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-24	
+1-21	95-97	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	1-24	
+1-22	98-101	SAB	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	SAB	organization	https://lv.wikipedia.org/wiki/Satversmes\_aizsardzības\_birojs	_	_	iobj	basic	1-24	
+1-23	102-104	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	aux:pass	basic	1-24	
+1-24	105-109	dots	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnpsnpn	*	dot	_	_	_	_	ccomp	basic	1-19	
+1-25	110-115	pārāk	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	pārāk	_	_	_	_	advmod	basic	1-26	
+1-26	116-121	daudz	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpq	*	daudz	_	_	_	_	advmod	basic	1-27	
+1-27	122-127	varas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	vara	_	_	*->2-1	*[2]	iobj	basic	1-24	
+1-28	127-128	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-1	
+
+#Text=Ja jau SAB varas ir par daudz, tad tā kādam ir jāatdod, un nav arī grūti uzminēt - kam tieši.
+2-1	130-132	Ja	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ja	_	_	_	_	mark	basic	2-7	
+2-2	133-136	jau	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	jau	_	_	_	_	advmod	basic	2-7	
+2-3	137-140	SAB	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	SAB	organization	https://lv.wikipedia.org/wiki/Satversmes\_aizsardzības\_birojs	_	_	obl	basic	2-7	
+2-4	141-146	varas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	vara	_	_	*->2-2	*[2]	nsubj	basic	2-7	
+2-5	147-149	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	2-7	
+2-6	150-153	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	2-7	
+2-7	154-159	daudz	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpq	*	daudz	_	_	_	_	advcl	basic	2-13	
+2-8	159-160	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-7	
+2-9	161-164	tad	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	*	tad	_	_	_	_	advmod	basic	2-13	
+2-10	165-167	tā	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0m	*	tā	_	_	*->2-3	*[2]	iobj	basic	2-13	
+2-11	168-173	kādam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|PronType=Ind	*	*	pi0msdn	*	kāds	_	_	_	_	iobj	basic	2-13	
+2-12	174-176	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	aux	basic	2-13	
+2-13	177-184	jāatdod	*	*	*	*	*	*	Nec	*	*	*	*	*	*	*	*	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vmnd0ti00an	*	atdot	_	_	_	_	root	basic	2-13	
+2-14	184-185	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-18	
+2-15	186-188	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-18	
+2-16	189-192	nav	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30ay	*	nebūt	_	_	_	_	cop	basic	2-18	
+2-17	193-196	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	2-18	
+2-18	197-202	grūti	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	grūti	_	_	_	_	conj	basic	2-13	
+2-19	203-210	uzminēt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	*	uzminēt	_	_	_	_	ccomp	basic	2-18	
+2-20	211-212	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	-	_	_	_	_	punct	basic	2-21	
+2-21	213-216	kam	*	*	Dat	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Dat\|PronType=Rel	*	*	pr000dn	*	kas	_	_	_	_	ccomp	basic	2-19	
+2-22	217-222	tieši	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tieši	_	_	_	_	discourse	basic	2-21	
+2-23	222-223	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-13	
+
+#Text=Kurš grib piedzīvot tādus laikus, ka Ministru prezidenta apartamentos pieņem likumus, izdod pavēles, spriež tiesu un izlemj, kuram sēdēt cietumā?
+3-1	225-229	Kurš	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Int	*	*	pq0msnn	*	kurš	_	_	_	_	nsubj	basic	3-2	
+3-2	230-234	grib	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vonipi330an	*	gribēt	_	_	_	_	root	basic	3-2	
+3-3	235-244	piedzīvot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	*	piedzīvot	_	_	_	_	xcomp	basic	3-2	
+3-4	245-250	tādus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpan	*	tāds	_	_	_	_	det	basic	3-5	
+3-5	251-257	laikus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	laiks	_	_	_	_	obj	basic	3-3	
+3-6	257-258	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-11	
+3-7	259-261	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	3-11	
+3-8	262-270	Ministru	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	ministrs	_	_	_	_	nmod	basic	3-9	
+3-9	271-281	prezidenta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	prezidents	_	_	_	_	nmod	basic	3-10	
+3-10	282-294	apartamentos	*	*	Loc	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Ptan	*	*	ncmdl1	*	apartamenti	_	_	_	_	obl	basic	3-11	
+3-11	295-301	pieņem	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt130an	*	pieņemt	_	_	_	_	ccomp	basic	3-3	
+3-12	302-309	likumus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	likums	_	_	_	_	obj	basic	3-11	
+3-13	309-310	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-14	
+3-14	311-316	izdod	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipti30an	*	izdot	_	_	_	_	conj	basic	3-11	
+3-15	317-324	pavēles	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa5	*	pavēle	_	_	_	_	nsubj	basic	3-14	
+3-16	324-325	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-17	
+3-17	326-332	spriež	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt130an	*	spriest	_	_	_	_	conj	basic	3-11	
+3-18	333-338	tiesu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	tiesa	_	_	_	_	iobj	basic	3-17	
+3-19	339-341	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	3-20	
+3-20	342-348	izlemj	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt130an	*	izlemt	_	_	_	_	conj	basic	3-11	
+3-21	348-349	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-23	
+3-22	350-355	kuram	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msdn	*	kurš	_	_	_	_	nsubj	basic	3-23	
+3-23	356-361	sēdēt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0i3000n	*	sēdēt	_	_	_	_	ccomp	basic	3-20	
+3-24	362-369	cietumā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	cietums	_	_	_	_	obl	basic	3-23	
+3-25	369-370	?	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	?	_	_	_	_	punct	basic	3-2	

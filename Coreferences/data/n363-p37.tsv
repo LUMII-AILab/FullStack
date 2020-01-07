@@ -1,0 +1,38 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Personas, kas reģistrētas Iedzīvotāju reģistrā un Uzņēmumu reģistrā, e-adreses kontu lietos, izmantojot portāla www.latvija.lv grafisko saskarni vai ar e-adreses risinājumu integrētu dokumentu vadības sistēmu.
+1-1	0-8	Personas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	persona	_	_	*->1-1	*[1]	nsubj	basic	1-13	
+1-2	8-9	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-4	
+1-3	10-13	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->1-2	*[1]	nsubj:pass	basic	1-4	
+1-4	14-25	reģistrētas	*	Perf	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfpnpsnpn	*	reģistrēt	_	_	_	_	acl	basic	1-1	
+1-5	26-37	Iedzīvotāju	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	iedzīvotājs	organization[1]	*[1]	_	_	nmod	basic	1-6	
+1-6	38-46	reģistrā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	reģistrs	organization[1]	*[1]	_	_	obl	basic	1-4	
+1-7	47-49	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-9	
+1-8	50-58	Uzņēmumu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	uzņēmums	organization[2]	https://lv.wikipedia.org/wiki/Latvijas\_Republikas\_Uzņēmumu\_reģistrs[2]	_	_	nmod	basic	1-9	
+1-9	59-67	reģistrā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	reģistrs	organization[2]	https://lv.wikipedia.org/wiki/Latvijas\_Republikas\_Uzņēmumu\_reģistrs[2]	_	_	conj	basic	1-6	
+1-10	67-68	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-4	
+1-11	69-78	e-adreses	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	e-adrese	_	_	_	_	nmod	basic	1-12	
+1-12	79-84	kontu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	konts	_	_	_	_	obj	basic	1-13	
+1-13	85-91	lietos	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmnift230an	*	lietot	_	_	_	_	root	basic	1-13	
+1-14	91-92	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-15	
+1-15	93-103	izmantojot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	*	*	vmnpu0000000n	*	izmantot	_	_	_	_	advcl	basic	1-13	
+1-16	104-111	portāla	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	portāls	_	_	_	_	nmod	basic	1-17	
+1-17	112-126	www.latvija.lv	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	xu	*	www.latvija.lv	organization	*	_	_	nmod	basic	1-19	
+1-18	127-135	grafisko	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsayp	*	grafiska	_	_	_	_	amod	basic	1-19	
+1-19	136-144	saskarni	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	saskarne	_	_	_	_	obj	basic	1-15	
+1-20	145-148	vai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	vai	_	_	_	_	cc	basic	1-27	
+1-21	149-151	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	1-23	
+1-22	152-161	e-adreses	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	e-adrese	_	_	_	_	nmod	basic	1-23	
+1-23	162-172	risinājumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	risinājums	_	_	_	_	iobj	basic	1-24	
+1-24	173-182	integrētu	*	Perf	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Acc\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsapsnpn	*	integrēt	_	_	_	_	amod	basic	1-27	
+1-25	183-192	dokumentu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	dokuments	_	_	_	_	nmod	basic	1-26	
+1-26	193-200	vadības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	vadība	_	_	_	_	nmod	basic	1-27	
+1-27	201-208	sistēmu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	sistēma	_	_	_	_	conj	basic	1-19	
+1-28	208-209	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-13	

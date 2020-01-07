@@ -1,0 +1,31 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Turcijas dienvidaustrumos ir pastiprinājusies vardarbība kopš pērnā jūlija, kad izjuka trausls miera process starp Turcijas valsti un kurdu kaujiniekiem.
+1-1	0-8	Turcijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Turcija	location[1]|GPE[2]	*[1]|https://en.wikipedia.org/wiki/Turkey[2]	_	_	nmod	basic	1-2	
+1-2	9-25	dienvidaustrumos	*	*	Loc	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Ptan	*	*	ncmdl1	*	dienvidaustrumi	location[1]	*[1]	_	_	obl	basic	1-4	
+1-3	26-28	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	_	_	aux	basic	1-4	
+1-4	29-45	pastiprinājusies	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	Yes	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmypdfsnasnpn	*	pastiprināties	_	_	_	_	root	basic	1-4	
+1-5	46-56	vardarbība	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	vardarbība	_	_	_	_	nsubj	basic	1-4	
+1-6	57-61	kopš	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	kopš	time[3]	*[3]	*->1-1	*[1]	case	basic	1-8	
+1-7	62-67	pērnā	*	*	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsgyp	*	pērns	time[3]	*[3]	*->1-1	*[1]	amod	basic	1-8	
+1-8	68-74	jūlija	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	jūlijs	time[3]	*[3]	*->1-1	*[1]	obl	basic	1-4	
+1-9	74-75	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-11	
+1-10	76-79	kad	*	*	*	*	*	*	*	*	*	*	*	*	Int	*	*	*	PronType=Int	*	*	r0t	*	kad	_	_	*->1-2	*[1]	advmod	basic	1-11	
+1-11	80-86	izjuka	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnisi130an	*	izjukt	_	_	_	_	advcl	basic	1-8	
+1-12	87-94	trausls	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	trausls	_	_	_	_	amod	basic	1-14	
+1-13	95-100	miera	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	miers	_	_	_	_	nmod	basic	1-14	
+1-14	101-108	process	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	process	_	_	_	_	nsubj	basic	1-11	
+1-15	109-114	starp	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	starp	_	_	_	_	case	basic	1-17	
+1-16	115-123	Turcijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Turcija	GPE	https://en.wikipedia.org/wiki/Turkey	_	_	nmod	basic	1-17	
+1-17	124-130	valsti	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa6	*	valsts	_	_	_	_	nmod	basic	1-14	
+1-18	131-133	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-20	
+1-19	134-139	kurdu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	kurds	_	_	_	_	nmod	basic	1-20	
+1-20	140-152	kaujiniekiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	kaujinieks	_	_	_	_	conj	basic	1-17	
+1-21	152-153	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-4	

@@ -1,0 +1,102 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Izstādē "Bezgalīgais brauciens" skatāmi mākslinieka jaunākie darbi, kas tapuši pēdējā gada laikā.
+1-1	0-7	Izstādē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	*	izstāde	_	_	*->1-1	*[1]	nmod	basic	1-4	
+1-2	8-9	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	event[1]	*[1]	*->1-2	*[1]	punct	basic	1-4	
+1-3	9-20	Bezgalīgais	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnyp	*	bezgalīgs	event[1]	*[1]	*->1-2	*[1]	amod	basic	1-4	
+1-4	21-30	brauciens	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	brauciens	event[1]	*[1]	*->1-2	*[1]	obl	basic	1-6	
+1-5	30-31	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	event[1]	*[1]	*->1-2	*[1]	punct	basic	1-4	
+1-6	32-39	skatāmi	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Pres	*	Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmpnppnpn	*	skatīt	_	_	_	_	root	basic	1-6	
+1-7	40-51	mākslinieka	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	mākslinieks	_	_	*->4-1	*[4]	nmod	basic	1-9	
+1-8	52-60	jaunākie	*	*	Nom	*	Cmp	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Masc\|Number=Plur	*	*	afmpnyc	*	jauns	_	_	_	_	amod	basic	1-9	
+1-9	61-66	darbi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	darbs	_	_	*->3-1	*[3]	nsubj	basic	1-6	
+1-10	66-67	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-12	
+1-11	68-71	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	Rel	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->3-2	*[3]	nsubj	basic	1-12	
+1-12	72-78	tapuši	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdmpnasnpn	*	tapt	_	_	_	_	acl	basic	1-9	
+1-13	79-85	pēdējā	*	*	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsgyp	*	pēdējais	time[2]	*[2]	_	_	amod	basic	1-14	
+1-14	86-90	gada	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	gads	time[2]	*[2]	_	_	nmod	basic	1-15	
+1-15	91-96	laikā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	laiks	time[2]	*[2]	_	_	obl	basic	1-12	
+1-16	96-97	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-6	
+
+#Text=Tās ir akrila tehnikā darinātas lielformāta kompozīcijas - ainavas, kur līdztekus niansētiem krāsas slāņiem iepludināti plānu metālisku plāksnīšu klājumi.
+2-1	98-101	Tās	*	*	Nom	*	*	Fem	*	*	*	Plur	3	*	Dem	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|Person=3\|PronType=Dem	*	*	pd3fpnn	*	tā	_	_	*->5-1	*[5]	nsubj	basic	2-7	
+2-2	102-104	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	_	_	aux	basic	2-7	
+2-3	105-111	akrila	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	akrils	_	_	_	_	nmod	basic	2-4	
+2-4	112-119	tehnikā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	tehnika	_	_	_	_	obl	basic	2-5	
+2-5	120-129	darinātas	*	Perf	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdfpnpsnpn	*	darināt	_	_	_	_	amod	basic	2-7	
+2-6	130-141	lielformāta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsgg	*	lielformāta	_	_	_	_	nmod	basic	2-7	
+2-7	142-154	kompozīcijas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	kompozīcija	_	_	*->5-2	*[5]	root	basic	2-7	
+2-8	155-156	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	-	_	_	_	_	punct	basic	2-9	
+2-9	157-164	ainavas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	ainava	_	_	*->5-3	*[5]	acl	basic	2-7	
+2-10	164-165	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-16	
+2-11	166-169	kur	*	*	*	*	*	*	*	*	*	*	*	*	Int	*	*	*	PronType=Int	*	*	r0p	*	kur	_	_	*->5-4	*[5]	advmod	basic	2-16	
+2-12	170-179	līdztekus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	līdzteks	_	_	_	_	obl	basic	2-16	
+2-13	180-190	niansētiem	*	*	Dat	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpdnp	*	niansēts	_	_	_	_	amod	basic	2-15	
+2-14	191-197	krāsas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	krāsa	_	_	_	_	nmod	basic	2-15	
+2-15	198-205	slāņiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd2	*	slānis	_	_	_	_	iobj	basic	2-12	
+2-16	206-217	iepludināti	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmpnpsnpn	*	iepludināt	_	_	_	_	acl	basic	2-9	
+2-17	218-223	plānu	*	*	Gen	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpgnp	*	plāns	_	_	_	_	amod	basic	2-19	
+2-18	224-233	metālisku	*	*	Gen	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpgnp	*	metālisks	_	_	_	_	amod	basic	2-19	
+2-19	234-243	plāksnīšu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg5	*	plāksnīte	_	_	_	_	nmod	basic	2-20	
+2-20	244-251	klājumi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	klājums	_	_	_	_	nsubj:pass	basic	2-16	
+2-21	251-252	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-7	
+
+#Text=Lai gan Bernāta darinātajās gleznās atpazīstami konkrēti ainavas elementi, tās nav reālistiskas dabas gleznas.
+3-1	253-256	Lai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	lai	_	_	_	_	mark	basic	3-6	
+3-2	257-260	gan	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	gan	_	_	_	_	fixed	basic	3-1	
+3-3	261-268	Bernāta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Bernāts	person	*	*->4-2	*[4]	obl	basic	3-4	
+3-4	269-280	darinātajās	*	Perf	Loc	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Loc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdfplpsypn	*	darināt	_	_	_	_	amod	basic	3-5	
+3-5	281-288	gleznās	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	*	glezna	_	_	*->5-5	*[5]	obl	basic	3-6	
+3-6	289-300	atpazīstami	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Pres	*	Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmpnppnpn	*	atpazīt	_	_	_	_	advcl	basic	3-15	
+3-7	301-309	konkrēti	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnnp	*	konkrēts	_	_	_	_	amod	basic	3-9	
+3-8	310-317	ainavas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	ainava	_	_	_	_	nmod	basic	3-9	
+3-9	318-326	elementi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	elements	_	_	_	_	nsubj	basic	3-6	
+3-10	326-327	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-6	
+3-11	328-331	tās	*	*	Nom	*	*	Fem	*	*	*	Plur	3	*	Dem	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|Person=3\|PronType=Dem	*	*	pd3fpnn	*	tā	_	_	*->5-6	*[5]	nsubj	basic	3-15	
+3-12	332-335	nav	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30ay	*	būt	_	_	_	_	cop	basic	3-15	
+3-13	336-348	reālistiskas	*	*	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpnnp	*	reālistisks	_	_	_	_	amod	basic	3-15	
+3-14	349-354	dabas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	daba	_	_	_	_	nmod	basic	3-15	
+3-15	355-362	gleznas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	glezna	_	_	_	_	root	basic	3-15	
+3-16	362-363	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-15	
+
+#Text=Tā vietā autoru interesē noskaņa, sajūtas, tas pārlaicīgais, kas mājo dabas varenībā.
+4-1	364-366	Tā	*	*	Gen	*	*	Masc	*	*	*	Sing	3	*	Dem	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msgn	*	tas	_	_	_	_	det	basic	4-2	
+4-2	367-372	vietā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	vieta	_	_	_	_	obl	basic	4-4	
+4-3	373-379	autoru	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	autors	_	_	*->4-3	*[4]	obj	basic	4-4	
+4-4	380-388	interesē	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt230an	*	interesēt	_	_	_	_	root	basic	4-4	
+4-5	389-396	noskaņa	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	noskaņa	_	_	_	_	nsubj	basic	4-4	
+4-6	396-397	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-7	
+4-7	398-405	sajūtas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	sajūta	_	_	_	_	conj	basic	4-5	
+4-8	405-406	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-10	
+4-9	407-410	tas	*	*	Nom	*	*	Masc	*	*	*	Sing	3	*	Dem	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msnn	*	tas	_	_	*->2-1	*[2]	det	basic	4-10	
+4-10	411-423	pārlaicīgais	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnyp	*	pārlaicīgs	_	_	*->2-1	*[2]	conj	basic	4-5	
+4-11	423-424	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-13	
+4-12	425-428	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	Rel	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->2-2	*[2]	nsubj	basic	4-13	
+4-13	429-433	mājo	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipi230an	*	mājot	_	_	_	_	acl	basic	4-10	
+4-14	434-439	dabas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	daba	_	_	_	_	nmod	basic	4-15	
+4-15	440-448	varenībā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	varenība	_	_	_	_	obl	basic	4-13	
+4-16	448-449	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	4-4	
+
+#Text=Tās ir ainavas sajūtu līmenī, ko autors uztvēris un vēlējies atklāt izstādes apmeklētājiem.
+5-1	450-453	Tās	*	*	Nom	*	*	Fem	*	*	*	Plur	3	*	Dem	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|Person=3\|PronType=Dem	*	*	pd3fpnn	*	tā	_	_	_	_	nsubj	basic	5-3	
+5-2	454-456	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	5-3	
+5-3	457-464	ainavas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	ainava	_	_	*->6-1	*[6]	root	basic	5-3	
+5-4	465-471	sajūtu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	sajūta	_	_	_	_	nmod	basic	5-5	
+5-5	472-478	līmenī	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	*	līmenis	_	_	_	_	acl	basic	5-3	
+5-6	478-479	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	5-9	
+5-7	480-482	ko	*	*	Acc	*	*	*	*	*	*	*	*	*	Rel	*	*	*	Case=Acc\|PronType=Rel	*	*	pr000an	*	kas	_	_	*->6-2	*[6]	obj	basic	5-9	
+5-8	483-489	autors	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	autors	_	_	*->4-4	*[4]	nsubj	basic	5-9	
+5-9	490-498	uztvēris	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdmsnasnpn	*	uztvert	_	_	_	_	acl	basic	5-3	
+5-10	499-501	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	5-11	
+5-11	502-510	vēlējies	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	Yes	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmypdmsnasnpn	*	vēlēties	_	_	_	_	conj	basic	5-9	
+5-12	511-517	atklāt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t1000n	*	atklāt	_	_	_	_	xcomp	basic	5-11	
+5-13	518-526	izstādes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	izstāde	_	_	_	_	nmod	basic	5-14	
+5-14	527-540	apmeklētājiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	apmeklētājs	_	_	_	_	iobj	basic	5-12	
+5-15	540-541	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	5-3	

@@ -1,0 +1,69 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Mazajā Mežotnes pilī darbosies arī improvizēta Mākslinieka darbnīca, kurā Rozentāla tēlā iejutīsies gleznotājs un profesors Roberts Muzis, kurš gleznos Martinsones jeb savas kundzes Forseli portretu.
+1-1	0-6	Mazajā	*	*	Loc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affslyp	*	mazs	location[1]	*[1]	_	_	amod	basic	1-3	
+1-2	7-15	Mežotnes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	*	Mežotne	location[1]|GPE[2]	*[1]|https://en.wikipedia.org/wiki/Mežotne[2]	_	_	nmod	basic	1-3	
+1-3	16-20	pilī	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl6	*	pils	location[1]	*[1]	_	_	obl	basic	1-4	
+1-4	21-30	darbosies	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Fut\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyifi230an	*	darboties	_	_	_	_	root	basic	1-4	
+1-5	31-34	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	1-8	
+1-6	35-46	improvizēta	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdfsnpsnpn	*	improvizēt	_	_	_	_	amod	basic	1-8	
+1-7	47-58	Mākslinieka	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	mākslinieks	_	_	*->1-1	*[1]	nmod	basic	1-8	
+1-8	59-67	darbnīca	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	darbnīca	_	_	*->1-1	*[1]	nsubj	basic	1-4	
+1-9	67-68	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-13	
+1-10	69-73	kurā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	Rel	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msln	*	kurš	_	_	*->1-2	*[1]	obl	basic	1-13	
+1-11	74-83	Rozentāla	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Rozentāls	person	https://en.wikipedia.org/wiki/Janis\_Rozentāls	_	_	nmod	basic	1-12	
+1-12	84-88	tēlā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	tēls	_	_	_	_	obl	basic	1-13	
+1-13	89-99	iejutīsies	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Fut\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyifi130an	*	iejusties	_	_	_	_	acl	basic	1-8	
+1-14	100-110	gleznotājs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	gleznotājs	_	_	*->6-1	*[6]	nmod	basic	1-17	
+1-15	111-113	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	*->6-1	*[6]	cc	basic	1-16	
+1-16	114-123	profesors	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	profesors	_	_	*->6-1	*[6]	conj	basic	1-14	
+1-17	124-131	Roberts	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Roberts	person[3]	*[3]	*->6-2	*[6]	nsubj	basic	1-13	
+1-18	132-137	Muzis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	*	Muzis	person[3]	*[3]	*->6-2	*[6]	flat:name	basic	1-17	
+1-19	137-138	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-21	
+1-20	139-143	kurš	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	Rel	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msnn	*	kurš	_	_	*->6-3	*[6]	nsubj	basic	1-21	
+1-21	144-151	gleznos	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnift230an	*	gleznot	_	_	_	_	acl	basic	1-17	
+1-22	152-163	Martinsones	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	*	Martinsone	person	https://lv.wikipedia.org/wiki/Evija\_Martinsone	*->2-1	*[2]	nmod	basic	1-27	
+1-23	164-167	jeb	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	jeb	_	_	_	_	cc	basic	1-26	
+1-24	168-173	savas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	Prs	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0fsgn	*	sava	_	_	*->6-4	*[6]	det	basic	1-25	
+1-25	174-181	kundzes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	kundze	_	_	*->2-2	*[2]	nmod	basic	1-26	
+1-26	182-189	Forseli	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	np0000	*	Forseli	person	*	*->2-2	*[2]	conj	basic	1-22	
+1-27	190-198	portretu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	portrets	_	_	_	_	obj	basic	1-21	
+1-28	198-199	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-4	
+
+#Text=Tāpat programmu papildinās sarunas, kā arī režisora un operatora Gunta Lēmaņa veidotās audiovizuālās gleznas, kas tapušas, iedvesmojoties no Rozentāla darbiem, kuros redzama mākslinieka dzīvesbiedre.
+2-1	200-205	Tāpat	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tāpat	_	_	_	_	discourse	basic	2-3	
+2-2	206-215	programmu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	programma	_	_	_	_	obj	basic	2-3	
+2-3	216-226	papildinās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyipi330an	*	papildināties	_	_	_	_	root	basic	2-3	
+2-4	227-234	sarunas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	saruna	_	_	_	_	nsubj	basic	2-3	
+2-5	234-235	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-15	
+2-6	236-238	kā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	kā	_	_	_	_	cc	basic	2-15	
+2-7	239-242	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	arī	_	_	_	_	fixed	basic	2-6	
+2-8	243-251	režisora	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	režisors	_	_	*->3-1	*[3]	nmod	basic	2-11	
+2-9	252-254	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	*->3-1	*[3]	cc	basic	2-10	
+2-10	255-264	operatora	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	operators	_	_	*->3-1	*[3]	conj	basic	2-8	
+2-11	265-270	Gunta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg2	*	Guntis	person[4]	*[4]	*->3-2	*[3]	obl	basic	2-13	
+2-12	271-277	Lēmaņa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg2	*	Lēmanis	person[4]	*[4]	*->3-2	*[3]	flat:name	basic	2-11	
+2-13	278-286	veidotās	*	Perf	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdfpnpsypn	*	veidot	_	_	_	_	amod	basic	2-15	
+2-14	287-300	audiovizuālās	*	*	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpnyp	*	audiovizuāls	_	_	_	_	amod	basic	2-15	
+2-15	301-308	gleznas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	glezna	_	_	*->4-1	*[4]	conj	basic	2-4	
+2-16	308-309	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-18	
+2-17	310-313	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	Rel	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->4-2	*[4]	nsubj	basic	2-18	
+2-18	314-321	tapušas	*	Perf	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdfpnasnpn	*	tapt	_	_	_	_	acl	basic	2-15	
+2-19	321-322	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-20	
+2-20	323-337	iedvesmojoties	*	*	*	*	*	*	*	*	*	*	*	*	*	Yes	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Conv	Conv	*	vmypu0000000n	*	iedvesmoties	_	_	_	_	advcl	basic	2-18	
+2-21	338-340	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case	basic	2-23	
+2-22	341-350	Rozentāla	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Rozentāls	person	https://en.wikipedia.org/wiki/Janis\_Rozentāls	_	_	nmod	basic	2-23	
+2-23	351-358	darbiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	darbs	_	_	*->5-1	*[5]	obl	basic	2-20	
+2-24	358-359	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-26	
+2-25	360-365	kuros	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	Rel	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur\|PronType=Rel	*	*	pr0mpln	*	kurš	_	_	*->5-2	*[5]	obl	basic	2-26	
+2-26	366-373	redzama	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Pres	*	Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdfsnppnpn	*	redzēt	_	_	_	_	acl	basic	2-23	
+2-27	374-385	mākslinieka	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	mākslinieks	_	_	_	_	nmod	basic	2-28	
+2-28	386-398	dzīvesbiedre	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	dzīvesbiedre	_	_	_	_	nsubj	basic	2-26	
+2-29	398-399	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-3	

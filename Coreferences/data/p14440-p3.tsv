@@ -1,0 +1,36 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Kā vēstīts televīzijas sižetā, divi draugi, dodoties makšķerēt, pie kādas Tunošonkas upes pietekas atraduši nūjas, kas vēlreiz atgādinājis par šausminošo katastrofu.
+1-1	0-2	Kā	*	*	*	*	*	*	*	*	*	*	*	*	Int	*	*	*	PronType=Int	*	*	r0m	*	kā	_	_	_	_	advmod	basic	1-2	
+1-2	3-10	vēstīts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsnpsnpn	*	vēstīt	_	_	_	_	parataxis	basic	1-17	
+1-3	11-22	televīzijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	televīzija	_	_	_	_	nmod	basic	1-4	
+1-4	23-29	sižetā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	sižets	_	_	_	_	obl	basic	1-2	
+1-5	29-30	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-2	
+1-6	31-35	divi	*	*	Nom	*	*	Masc	*	*	Card	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpn	*	divi	_	_	_	_	nummod	basic	1-7	
+1-7	36-42	draugi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	draugs	_	_	_	_	nsubj	basic	1-17	
+1-8	42-43	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-9	
+1-9	44-52	dodoties	*	*	*	*	*	*	*	*	*	*	*	*	*	Yes	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Conv	Conv	*	vmypu0000000n	*	doties	_	_	_	_	advcl	basic	1-17	
+1-10	53-62	makšķerēt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t2000n	*	makšķerēt	_	_	_	_	ccomp	basic	1-9	
+1-11	62-63	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-9	
+1-12	64-67	pie	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pie	_	_	_	_	case	basic	1-16	
+1-13	68-73	kādas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	Ind	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|PronType=Ind	*	*	pi0fsgn	*	kāda	_	_	_	_	det	basic	1-16	
+1-14	74-84	Tunošonkas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Tunošonka	location[1]|location[2]	*[1]|*[2]	_	_	nmod	basic	1-15	
+1-15	85-89	upes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	upe	location[1]|location[2]	*[1]|*[2]	_	_	nmod	basic	1-16	
+1-16	90-98	pietekas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	pieteka	location[1]	*[1]	_	_	obl	basic	1-17	
+1-17	99-107	atraduši	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdmpnasnpn	*	atrast	_	_	_	_	root	basic	1-17	
+1-18	108-113	nūjas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	nūja	_	_	*->1-1	*[1]	obj	basic	1-17	
+1-19	113-114	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-22	
+1-20	115-118	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	Rel	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->1-2	*[1]	nsubj	basic	1-22	
+1-21	119-126	vēlreiz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	vēlreiz	_	_	_	_	advmod	basic	1-22	
+1-22	127-138	atgādinājis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdmsnasnpn	*	atgādināt	_	_	_	_	advcl	basic	1-17	
+1-23	139-142	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	1-25	
+1-24	143-153	šausminošo	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing\|VerbForm=Part\|Voice=Act	Part	Act	affsayp	*	šausminošs	_	_	_	_	amod	basic	1-25	
+1-25	154-164	katastrofu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	katastrofa	_	_	_	_	iobj	basic	1-22	
+1-26	164-165	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-17	

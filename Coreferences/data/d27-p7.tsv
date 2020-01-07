@@ -1,80 +1,80 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Patrīcijai ir taisnība, mans jaunais ķermenis ir manis pašas klons, kas izaudzēts laboratorijas apstākļos un patlaban ir pilnīgi gatavs aizstāt manu tagadējo ķermeni.
-1-1	0-10	Patrīcijai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	npfsd4	Patrīcija	person	*	_	_	obl	basic	1-8	
-1-2	11-13	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	cop	basic	1-11	
-1-3	14-22	taisnība	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	taisnība	_	_	_	_	nsubj	basic	1-8	
-1-4	22-23	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-11	
-1-5	24-28	mans	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=1\|Poss=Yes\|PronType=Prs	1	*	ps1msnn	mans	_	_	*[2]	*->2-1	det	basic	1-7	
-1-6	29-36	jaunais	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnyp	jauns	_	_	_	_	amod	basic	1-7	
-1-7	37-45	ķermenis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	ķermenis	_	_	_	_	nsubj	basic	1-11	
-1-8	46-48	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipii30an	būt	_	_	_	_	root	basic	1-8	
-1-9	49-54	manis	*	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10sgn	es	_	_	*[2]	*->2-2	det	basic	1-11	
-1-10	55-60	pašas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|PronType=Tot	*	*	pg0fsgn	pati	_	_	*[2]	*->2-2	compound	basic	1-9	
-1-11	61-66	klons	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	klons	_	_	*[1]	*->1-1	conj	basic	1-8	
-1-12	66-67	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-14	
-1-13	68-71	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	*[1]	*->1-2	nsubj:pass	basic	1-14	
-1-14	72-81	izaudzēts	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnpn	izaudzēt	_	_	_	_	acl	basic	1-11	
-1-15	82-95	laboratorijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	laboratorija	_	_	_	_	nmod	basic	1-16	
-1-16	96-105	apstākļos	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl2	apstāklis	_	_	_	_	obl	basic	1-14	
-1-17	106-108	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-21	
-1-18	109-117	patlaban	_	_	_	_	_	_	_	_	_	_	_	_	r0t	patlaban	_	_	_	_	advmod	basic	1-21	
-1-19	118-120	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	cop	basic	1-21	
-1-20	121-128	pilnīgi	_	_	_	_	_	_	_	_	_	_	_	_	r0q	pilnīgi	_	_	_	_	advmod	basic	1-21	
-1-21	129-135	gatavs	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	gatavs	_	_	_	_	conj	basic	1-14	
-1-22	136-143	aizstāt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0i1000n	aizstāt	_	_	_	_	acl	basic	1-21	
-1-23	144-148	manu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0msan	mans	_	_	*[2]	*->2-3	det	basic	1-25	
-1-24	149-157	tagadējo	Masc	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsayp	tagadējs	_	_	_	_	amod	basic	1-25	
-1-25	158-165	ķermeni	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	ķermenis	_	_	_	_	obj	basic	1-22	
-1-26	165-166	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-8	
+1-1	0-10	Patrīcijai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	npfsd4	*	Patrīcija	person	*	_	_	obl	basic	1-8	
+1-2	11-13	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	1-11	
+1-3	14-22	taisnība	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	taisnība	_	_	_	_	nsubj	basic	1-8	
+1-4	22-23	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-11	
+1-5	24-28	mans	*	*	Nom	*	*	Masc	*	*	*	Sing	1	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=1\|Poss=Yes\|PronType=Prs	*	*	ps1msnn	*	mans	_	_	*->2-1	*[2]	det	basic	1-7	
+1-6	29-36	jaunais	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnyp	*	jauns	_	_	_	_	amod	basic	1-7	
+1-7	37-45	ķermenis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	ķermenis	_	_	_	_	nsubj	basic	1-11	
+1-8	46-48	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipii30an	*	būt	_	_	_	_	root	basic	1-8	
+1-9	49-54	manis	*	*	Gen	*	*	*	*	*	*	Sing	1	*	*	*	*	*	Case=Gen\|Number=Sing\|Person=1\|PronType=Prs	*	*	pp10sgn	*	es	_	_	*->2-2	*[2]	det	basic	1-11	
+1-10	55-60	pašas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|PronType=Tot	*	*	pg0fsgn	*	pati	_	_	*->2-2	*[2]	compound	basic	1-9	
+1-11	61-66	klons	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	klons	_	_	*->1-1	*[1]	conj	basic	1-8	
+1-12	66-67	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-14	
+1-13	68-71	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->1-2	*[1]	nsubj:pass	basic	1-14	
+1-14	72-81	izaudzēts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnpsnpn	*	izaudzēt	_	_	_	_	acl	basic	1-11	
+1-15	82-95	laboratorijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	laboratorija	_	_	_	_	nmod	basic	1-16	
+1-16	96-105	apstākļos	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl2	*	apstāklis	_	_	_	_	obl	basic	1-14	
+1-17	106-108	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-21	
+1-18	109-117	patlaban	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	patlaban	_	_	_	_	advmod	basic	1-21	
+1-19	118-120	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	1-21	
+1-20	121-128	pilnīgi	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	pilnīgi	_	_	_	_	advmod	basic	1-21	
+1-21	129-135	gatavs	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	gatavs	_	_	_	_	conj	basic	1-14	
+1-22	136-143	aizstāt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0i1000n	*	aizstāt	_	_	_	_	acl	basic	1-21	
+1-23	144-148	manu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0msan	*	mans	_	_	*->2-3	*[2]	det	basic	1-25	
+1-24	149-157	tagadējo	*	*	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsayp	*	tagadējs	_	_	_	_	amod	basic	1-25	
+1-25	158-165	ķermeni	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	*	ķermenis	_	_	_	_	obj	basic	1-22	
+1-26	165-166	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-8	
 
 #Text=Manas atmiņas, emocijas, uzskati, viss, ko es varu saukt par "sevi", ar elektronu impulsu palīdzību tiks nogādāts mana klona smadzenēs, un jau pēc dažu dienu ilgas terapijas es būšu gatava sākt jaunu dzīvi.
-2-1	168-173	Manas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|Poss=Yes\|PronType=Prs	*	*	ps0fpnn	mana	_	_	*[2]	*->2-4	det	basic	2-2	
-2-2	174-181	atmiņas	Fem	Ptan	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Ptan	*	*	ncfda4	atmiņas	_	_	_	_	acl	basic	2-8	
-2-3	181-182	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-4	
-2-4	183-191	emocijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	emocija	_	_	_	_	conj	basic	2-2	
-2-5	191-192	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-6	
-2-6	193-200	uzskati	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	uzskats	_	_	_	_	conj	basic	2-2	
-2-7	200-201	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-2	
-2-8	202-206	viss	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msnn	viss	_	_	_	_	nsubj:pass	basic	2-24	
-2-9	206-207	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-12	
-2-10	208-210	ko	*	*	Acc	*	*	*	*	*	*	Case=Acc\|PronType=Rel	*	*	pr000an	kas	_	_	_	_	obj	basic	2-12	
-2-11	211-213	es	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10snn	es	_	_	*[2]	*->2-5	nsubj	basic	2-12	
-2-12	214-218	varu	*	Sing	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	1	*	vonipt31san	varēt	_	_	_	_	acl	basic	2-8	
-2-13	219-224	saukt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	saukt	_	_	_	_	xcomp	basic	2-12	
-2-14	225-228	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	_	_	case	basic	2-16	
-2-15	229-230	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	_	_	_	_	punct	basic	2-16	
-2-16	230-234	sevi	*	*	Acc	*	*	*	*	*	*	Case=Acc\|PronType=Rcp\|Reflex=Yes	*	*	px000an	sevis	_	_	_	_	xcomp	basic	2-13	
-2-17	234-235	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	_	_	_	_	punct	basic	2-16	
-2-18	235-236	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-12	
-2-19	237-239	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case	basic	2-22	
-2-20	240-249	elektronu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	elektrons	_	_	_	_	nmod	basic	2-21	
-2-21	250-257	impulsu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	impulss	_	_	_	_	nmod	basic	2-22	
-2-22	258-267	palīdzību	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	palīdzība	_	_	_	_	obl	basic	2-24	
-2-23	268-272	tiks	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vtnifi130an	tikt	_	_	_	_	aux:pass	basic	2-24	
-2-24	273-281	nogādāts	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnpn	nogādāt	_	_	_	_	root	basic	2-24	
-2-25	282-286	mana	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=1\|Poss=Yes\|PronType=Prs	1	*	ps1msgn	mans	_	_	*[2]	*->2-6	det	basic	2-26	
-2-26	287-292	klona	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	klons	_	_	_	_	nmod	basic	2-27	
-2-27	293-302	smadzenēs	Fem	Ptan	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Ptan	*	*	ncfdl5	smadzenes	_	_	_	_	obl	basic	2-24	
-2-28	302-303	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-38	
-2-29	304-306	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	2-38	
-2-30	307-310	jau	_	_	_	_	_	_	_	_	_	_	_	_	r0t	jau	_	_	_	_	advmod	basic	2-35	
-2-31	311-314	pēc	_	_	_	_	_	_	_	_	_	_	_	_	spsg	pēc	_	_	_	_	case	basic	2-35	
-2-32	315-319	dažu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur\|PronType=Ind	*	*	pi0fpgn	daža	_	_	_	_	det	basic	2-33	
-2-33	320-325	dienu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	diena	_	_	_	_	obl	basic	2-34	
-2-34	326-331	ilgas	Fem	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsgnp	ilga	_	_	_	_	amod	basic	2-35	
-2-35	332-341	terapijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	terapija	_	_	_	_	obl	basic	2-38	
-2-36	342-344	es	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10snn	es	_	_	*[2]	*->2-7	nsubj	basic	2-38	
-2-37	345-349	būšu	*	Sing	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	1	*	vcnifii1san	būt	_	_	_	_	cop	basic	2-38	
-2-38	350-356	gatava	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	gatava	_	_	_	_	conj	basic	2-24	
-2-39	357-361	sākt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	sākt	_	_	_	_	acl	basic	2-38	
-2-40	362-367	jaunu	Fem	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsanp	jauna	_	_	_	_	amod	basic	2-41	
-2-41	368-373	dzīvi	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	dzīve	_	_	_	_	obj	basic	2-39	
-2-42	373-374	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-24	
+2-1	168-173	Manas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|Poss=Yes\|PronType=Prs	*	*	ps0fpnn	*	mana	_	_	*->2-4	*[2]	det	basic	2-2	
+2-2	174-181	atmiņas	*	*	Acc	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Ptan	*	*	ncfda4	*	atmiņas	_	_	_	_	acl	basic	2-8	
+2-3	181-182	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-4	
+2-4	183-191	emocijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	emocija	_	_	_	_	conj	basic	2-2	
+2-5	191-192	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-6	
+2-6	193-200	uzskati	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	uzskats	_	_	_	_	conj	basic	2-2	
+2-7	200-201	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-2	
+2-8	202-206	viss	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msnn	*	viss	_	_	_	_	nsubj:pass	basic	2-24	
+2-9	206-207	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-12	
+2-10	208-210	ko	*	*	Acc	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Acc\|PronType=Rel	*	*	pr000an	*	kas	_	_	_	_	obj	basic	2-12	
+2-11	211-213	es	*	*	Nom	*	*	*	*	*	*	Sing	1	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	*	*	pp10snn	*	es	_	_	*->2-5	*[2]	nsubj	basic	2-12	
+2-12	214-218	varu	*	*	*	*	*	*	Ind	*	*	Sing	1	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vonipt31san	*	varēt	_	_	_	_	acl	basic	2-8	
+2-13	219-224	saukt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	*	saukt	_	_	_	_	xcomp	basic	2-12	
+2-14	225-228	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	2-16	
+2-15	229-230	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	_	_	_	_	punct	basic	2-16	
+2-16	230-234	sevi	*	*	Acc	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Acc\|PronType=Rcp\|Reflex=Yes	*	*	px000an	*	sevis	_	_	_	_	xcomp	basic	2-13	
+2-17	234-235	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	_	_	_	_	punct	basic	2-16	
+2-18	235-236	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-12	
+2-19	237-239	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	2-22	
+2-20	240-249	elektronu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	elektrons	_	_	_	_	nmod	basic	2-21	
+2-21	250-257	impulsu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	impulss	_	_	_	_	nmod	basic	2-22	
+2-22	258-267	palīdzību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	palīdzība	_	_	_	_	obl	basic	2-24	
+2-23	268-272	tiks	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vtnifi130an	*	tikt	_	_	_	_	aux:pass	basic	2-24	
+2-24	273-281	nogādāts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnpsnpn	*	nogādāt	_	_	_	_	root	basic	2-24	
+2-25	282-286	mana	*	*	Gen	*	*	Masc	*	*	*	Sing	1	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=1\|Poss=Yes\|PronType=Prs	*	*	ps1msgn	*	mans	_	_	*->2-6	*[2]	det	basic	2-26	
+2-26	287-292	klona	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	klons	_	_	_	_	nmod	basic	2-27	
+2-27	293-302	smadzenēs	*	*	Loc	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Ptan	*	*	ncfdl5	*	smadzenes	_	_	_	_	obl	basic	2-24	
+2-28	302-303	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-38	
+2-29	304-306	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-38	
+2-30	307-310	jau	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	jau	_	_	_	_	advmod	basic	2-35	
+2-31	311-314	pēc	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pēc	_	_	_	_	case	basic	2-35	
+2-32	315-319	dažu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur\|PronType=Ind	*	*	pi0fpgn	*	daža	_	_	_	_	det	basic	2-33	
+2-33	320-325	dienu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	diena	_	_	_	_	obl	basic	2-34	
+2-34	326-331	ilgas	*	*	Gen	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsgnp	*	ilga	_	_	_	_	amod	basic	2-35	
+2-35	332-341	terapijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	terapija	_	_	_	_	obl	basic	2-38	
+2-36	342-344	es	*	*	Nom	*	*	*	*	*	*	Sing	1	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	*	*	pp10snn	*	es	_	_	*->2-7	*[2]	nsubj	basic	2-38	
+2-37	345-349	būšu	*	*	*	*	*	*	Ind	*	*	Sing	1	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vcnifii1san	*	būt	_	_	_	_	cop	basic	2-38	
+2-38	350-356	gatava	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	*	gatava	_	_	_	_	conj	basic	2-24	
+2-39	357-361	sākt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	*	sākt	_	_	_	_	acl	basic	2-38	
+2-40	362-367	jaunu	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsanp	*	jauna	_	_	_	_	amod	basic	2-41	
+2-41	368-373	dzīvi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	dzīve	_	_	_	_	obj	basic	2-39	
+2-42	373-374	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-24	

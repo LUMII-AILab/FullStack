@@ -1,0 +1,47 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Reperis Tyga zināms ne tikai pateicoties savai mūzikai, bet arī ar ekstravaganto dzīvesveidu, kuram nauda netiek žēlota.
+1-1	0-7	Reperis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	reperis	_	_	*->2-1	*[2]	nmod	basic	1-2	
+1-2	8-12	Tyga	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	np0000	*	Tyga	person	https://en.wikipedia.org/wiki/Tyga	*->2-2	*[2]	nsubj	basic	1-3	
+1-3	13-19	zināms	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Pres	*	Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsnppnpn	*	zināt	_	_	_	_	root	basic	1-3	
+1-4	20-22	ne	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Neg	*	*	cc	*	ne	_	_	_	_	cc	basic	1-6	
+1-5	23-28	tikai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	tikai	_	_	_	_	fixed	basic	1-4	
+1-6	29-40	pateicoties	*	*	*	*	*	*	*	*	*	*	*	*	*	Yes	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Conv	Conv	*	vmypu0000000n	*	pateikties	_	_	_	_	advcl	basic	1-3	
+1-7	41-46	savai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	Prs	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0fsdn	*	sava	_	_	*->2-3	*[2]	det	basic	1-8	
+1-8	47-54	mūzikai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	*	mūzika	_	_	_	_	iobj	basic	1-6	
+1-9	54-55	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-14	
+1-10	56-59	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	_	_	cc	basic	1-14	
+1-11	60-63	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	arī	_	_	_	_	fixed	basic	1-10	
+1-12	64-66	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	1-14	
+1-13	67-80	ekstravaganto	*	*	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsayp	*	ekstravagants	_	_	*->1-1	*[1]	amod	basic	1-14	
+1-14	81-92	dzīvesveidu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	dzīvesveids	_	_	*->1-1	*[1]	conj	basic	1-6	
+1-15	92-93	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-19	
+1-16	94-99	kuram	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	Rel	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msdn	*	kurš	_	_	*->1-2	*[1]	iobj	basic	1-19	
+1-17	100-105	nauda	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	nauda	_	_	_	_	nsubj:pass	basic	1-19	
+1-18	106-112	netiek	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vtnipi130ay	*	tikt	_	_	_	_	aux:pass	basic	1-19	
+1-19	113-119	žēlota	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdfsnpsnpn	*	žēlot	_	_	_	_	acl	basic	1-14	
+1-20	119-120	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-3	
+
+#Text=Izrādās, mākslinieka dzīvesveids varētu būt mākslīgi radīts, jo reperis paziņojis par bankrotu.
+2-1	121-128	Izrādās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyipi330an	*	izrādīties	_	_	_	_	parataxis	basic	2-5	
+2-2	128-129	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-1	
+2-3	130-141	mākslinieka	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	mākslinieks	_	_	*->2-4	*[2]	nmod	basic	2-4	
+2-4	142-153	dzīvesveids	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	dzīvesveids	_	_	_	_	nsubj	basic	2-5	
+2-5	154-160	varētu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	Fin	Act	vonc0i300an	*	varēt	_	_	_	_	root	basic	2-5	
+2-6	161-164	būt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vcnn0ii000n	*	būt	_	_	_	_	aux:pass	basic	2-8	
+2-7	165-173	mākslīgi	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	mākslīgi	_	_	_	_	advmod	basic	2-8	
+2-8	174-180	radīts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsnpsnpn	*	radīt	_	_	_	_	xcomp	basic	2-5	
+2-9	180-181	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-12	
+2-10	182-184	jo	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	jo	_	_	_	_	mark	basic	2-12	
+2-11	185-192	reperis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	reperis	_	_	*->2-5	*[2]	nsubj	basic	2-12	
+2-12	193-202	paziņojis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdmsnasnpn	*	paziņot	_	_	_	_	advcl	basic	2-5	
+2-13	203-206	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	2-14	
+2-14	207-215	bankrotu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	bankrots	_	_	_	_	iobj	basic	2-12	
+2-15	215-216	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-5	

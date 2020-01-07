@@ -1,0 +1,57 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Konflikts noticis 13.decembrī ap plkst.1.30 starp kluba apsardzes darbiniekiem un Kaimiņu.
+1-1	0-9	Konflikts	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	konflikts	_	_	_	_	nsubj	basic	1-2	
+1-2	10-17	noticis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnasnpn	*	notikt	_	_	_	_	root	basic	1-2	
+1-3	18-21	13.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	13.	time[1]|time[2]	*[1]|*[2]	_	_	amod	basic	1-4	
+1-4	21-29	decembrī	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	*	decembris	time[1]|time[2]	*[1]|*[2]	_	_	obl	basic	1-2	
+1-5	30-32	ap	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ap	time[1]	*[1]	_	_	case	basic	1-7	
+1-6	33-39	plkst.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yr	*	plkst.	time[1]	*[1]	_	_	advmod	basic	1-7	
+1-7	39-43	1.30	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	1.30	time[1]	*[1]	_	_	nummod	basic	1-2	
+1-8	44-49	starp	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	starp	_	_	_	_	case	basic	1-11	
+1-9	50-55	kluba	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	klubs	_	_	_	_	nmod	basic	1-11	
+1-10	56-65	apsardzes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	apsardze	_	_	_	_	nmod	basic	1-11	
+1-11	66-78	darbiniekiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	darbinieks	_	_	_	_	obl	basic	1-2	
+1-12	79-81	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-13	
+1-13	82-89	Kaimiņu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	*	Kaimiņš	person	https://en.wikipedia.org/wiki/Artuss\_Kaimiņš	*->1-1	*[1]	conj	basic	1-11	
+1-14	89-90	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-2	
+
+#Text=Pēc Mediņa stāstītā, deputāts bija stipri iereibis, stāvēja pie bāra letes un traucēja apkalpot citus klientus.
+2-1	92-95	Pēc	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pēc	_	_	_	_	case	basic	2-3	
+2-2	96-102	Mediņa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg2	*	Mediņš	person	*	_	_	obl	basic	2-3	
+2-3	103-111	stāstītā	*	Perf	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsgpsypn	*	stāstīt	_	_	_	_	discourse	basic	2-8	
+2-4	111-112	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-3	
+2-5	113-121	deputāts	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	deputāts	_	_	*->1-2	*[1]	nsubj	basic	2-8	
+2-6	122-126	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vcnisii30an	*	būt	_	_	_	_	aux	basic	2-8	
+2-7	127-133	stipri	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	stipri	_	_	_	_	advmod	basic	2-8	
+2-8	134-142	iereibis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnasnpn	*	iereibt	_	_	_	_	root	basic	2-8	
+2-9	142-143	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-10	
+2-10	144-151	stāvēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnisi330an	*	stāvēt	_	_	_	_	conj	basic	2-8	
+2-11	152-155	pie	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pie	_	_	_	_	case	basic	2-13	
+2-12	156-160	bāra	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	bārs	_	_	_	_	nmod	basic	2-13	
+2-13	161-166	letes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	lete	_	_	_	_	obl	basic	2-10	
+2-14	167-169	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-15	
+2-15	170-178	traucēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist230an	*	traucēt	_	_	_	_	conj	basic	2-8	
+2-16	179-187	apkalpot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	*	apkalpot	_	_	_	_	ccomp	basic	2-15	
+2-17	188-193	citus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|PronType=Ind	*	*	pi0mpan	*	cits	_	_	_	_	det	basic	2-18	
+2-18	194-202	klientus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	klients	_	_	_	_	obj	basic	2-16	
+2-19	202-203	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-8	
+
+#Text=Apsardzes darbinieks piegājis pie Kaimiņa un palūdzis paiet malā.
+3-1	205-214	Apsardzes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	apsardze	_	_	_	_	nmod	basic	3-2	
+3-2	215-225	darbinieks	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	darbinieks	_	_	_	_	nsubj	basic	3-3	
+3-3	226-234	piegājis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnasnpn	*	pieiet	_	_	_	_	root	basic	3-3	
+3-4	235-238	pie	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pie	_	_	_	_	case	basic	3-5	
+3-5	239-246	Kaimiņa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Kaimiņš	person	https://en.wikipedia.org/wiki/Artuss\_Kaimiņš	*->1-3	*[1]	nmod	basic	3-3	
+3-6	247-249	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	3-7	
+3-7	250-258	palūdzis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnasnpn	*	palūgt	_	_	_	_	conj	basic	3-3	
+3-8	259-264	paiet	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0i1000n	*	paiet	_	_	_	_	xcomp	basic	3-7	
+3-9	265-269	malā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	mala	_	_	_	_	obl	basic	3-8	
+3-10	269-270	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-3	

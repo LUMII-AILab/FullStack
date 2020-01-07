@@ -1,123 +1,123 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Sena ķīniešu leģenda vēsta, ka pirms pieciem tūkstošiem gadu leģendārais Ķīnas imperators Šennongs nobaudījis pasaulē pirmo tējas malku.
-1-1	0-4	Sena	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	sena	_	_	_	_	amod|amod	basic|enhanced	1-3|1-3	
-1-2	5-12	ķīniešu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	ķīnietis	_	_	_	_	nmod|nmod	basic|enhanced	1-3|1-3	
-1-3	13-20	leģenda	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	leģenda	_	_	_	_	nsubj|nsubj	basic|enhanced	1-4|1-4	
-1-4	21-26	vēsta	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	vēstīt	_	_	_	_	root|root	basic|enhanced	1-4|1-4	
-1-5	26-27	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-15|1-15	
-1-6	28-30	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark|mark	basic|enhanced	1-15|1-15	
-1-7	31-36	pirms	_	_	_	_	_	_	_	_	_	_	_	_	sppd	pirms	time[1]	*[1]	_	_	case|case	basic|enhanced	1-10|1-10	
-1-8	37-44	pieciem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpd	pieci	time[1]	*[1]	_	_	nummod|nummod	basic|enhanced	1-9|1-9	
-1-9	45-55	tūkstošiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpd	tūkstoši	time[1]	*[1]	_	_	nummod|nummod	basic|enhanced	1-10|1-10	
-1-10	56-60	gadu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	gads	time[1]	*[1]	_	_	obl|obl	basic|enhanced	1-15|1-15	
-1-11	61-72	leģendārais	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsnyp	leģendārs	_	_	_	_	amod|amod	basic|enhanced	1-13|1-13	
-1-12	73-78	Ķīnas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Ķīna	GPE	https://en.wikipedia.org/wiki/China	*[1]	*->1-1	nmod|nmod	basic|enhanced	1-13|1-13	
-1-13	79-89	imperators	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	imperators	_	_	*[1]	*->1-1	nmod|nmod	basic|enhanced	1-14|1-14	
-1-14	90-98	Šennongs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Šennongs	person	https://en.wikipedia.org/wiki/Shennong	*[1]	*->1-2	nsubj|nsubj	basic|enhanced	1-15|1-15	
-1-15	99-109	nobaudījis	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnasnp	nobaudīt	_	_	_	_	ccomp|ccomp	basic|enhanced	1-4|1-4	
-1-16	110-117	pasaulē	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	pasaule	_	_	_	_	acl|acl	basic|enhanced	1-17|1-17	
-1-17	118-123	pirmo	Masc	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|NumType=Ord	*	*	mosmsa	pirmais	_	_	_	_	amod|amod	basic|enhanced	1-19|1-19	
-1-18	124-129	tējas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	tēja	_	_	_	_	nmod|nmod	basic|enhanced	1-19|1-19	
-1-19	130-135	malku	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	malka	_	_	_	_	obj|obj	basic|enhanced	1-15|1-15	
-1-20	135-136	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-4|1-4	
+1-1	0-4	Sena	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	*	sena	_	_	_	_	amod|amod	basic|enhanced	1-3|1-3	
+1-2	5-12	ķīniešu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	ķīnietis	_	_	_	_	nmod|nmod	basic|enhanced	1-3|1-3	
+1-3	13-20	leģenda	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	leģenda	_	_	_	_	nsubj|nsubj	basic|enhanced	1-4|1-4	
+1-4	21-26	vēsta	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	vēstīt	_	_	_	_	root|root	basic|enhanced	1-4|1-4	
+1-5	26-27	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	1-15|1-15	
+1-6	28-30	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark|mark	basic|enhanced	1-15|1-15	
+1-7	31-36	pirms	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	pirms	time[1]	*[1]	_	_	case|case	basic|enhanced	1-10|1-10	
+1-8	37-44	pieciem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpd	*	pieci	time[1]	*[1]	_	_	nummod|nummod	basic|enhanced	1-9|1-9	
+1-9	45-55	tūkstošiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpd	*	tūkstoši	time[1]	*[1]	_	_	nummod|nummod	basic|enhanced	1-10|1-10	
+1-10	56-60	gadu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	gads	time[1]	*[1]	_	_	obl|obl	basic|enhanced	1-15|1-15	
+1-11	61-72	leģendārais	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsnyp	*	leģendārs	_	_	_	_	amod|amod	basic|enhanced	1-13|1-13	
+1-12	73-78	Ķīnas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Ķīna	GPE	https://en.wikipedia.org/wiki/China	*->1-1	*[1]	nmod|nmod	basic|enhanced	1-13|1-13	
+1-13	79-89	imperators	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	imperators	_	_	*->1-1	*[1]	nmod|nmod	basic|enhanced	1-14|1-14	
+1-14	90-98	Šennongs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Šennongs	person	https://en.wikipedia.org/wiki/Shennong	*->1-2	*[1]	nsubj|nsubj	basic|enhanced	1-15|1-15	
+1-15	99-109	nobaudījis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnasnp	*	nobaudīt	_	_	_	_	ccomp|ccomp	basic|enhanced	1-4|1-4	
+1-16	110-117	pasaulē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	*	pasaule	_	_	_	_	acl|acl	basic|enhanced	1-17|1-17	
+1-17	118-123	pirmo	*	*	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|NumType=Ord	*	*	mosmsa	*	pirmais	_	_	_	_	amod|amod	basic|enhanced	1-19|1-19	
+1-18	124-129	tējas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	tēja	_	_	_	_	nmod|nmod	basic|enhanced	1-19|1-19	
+1-19	130-135	malku	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	malka	_	_	_	_	obj|obj	basic|enhanced	1-15|1-15	
+1-20	135-136	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	1-4|1-4	
 
 #Text=Kādā atpūtas brīdī, kad imperators sēdējis zem tējas koka un dzēris vārītu ūdeni, sacēlies vējš un imperatora krūzē iepūtis pāris tējas koka lapas.
-2-1	138-142	Kādā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing\|PronType=Int	*	*	pq0msln	kāds	_	_	_	_	det|det	basic|enhanced	2-3|2-3	
-2-2	143-150	atpūtas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	atpūta	_	_	_	_	nmod|nmod	basic|enhanced	2-3|2-3	
-2-3	151-156	brīdī	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	brīdis	_	_	_	_	obl|obl	basic|enhanced	2-16|2-16	
-2-4	156-157	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-7|2-7	
-2-5	158-161	kad	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0t	kad	_	_	_	_	advmod|advmod	basic|enhanced	2-7|2-7	
-2-6	162-172	imperators	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	imperators	_	_	*[1]	*->1-3	nsubj|nsubj	basic|enhanced	2-7|2-7	
-2-7	173-180	sēdējis	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnasnp	sēdēt	_	_	_	_	acl|acl	basic|enhanced	2-3|2-3	
-2-8	181-184	zem	_	_	_	_	_	_	_	_	_	_	_	_	spsg	zem	_	_	_	_	case|case	basic|enhanced	2-10|2-10	
-2-9	185-190	tējas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	tēja	_	_	_	_	nmod|nmod	basic|enhanced	2-10|2-10	
-2-10	191-195	koka	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	koka	_	_	_	_	obl|obl	basic|enhanced	2-7|2-7	
-2-11	196-198	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	2-12|2-12	
-2-12	199-205	dzēris	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnasnp	dzert	_	_	_	_	conj|conj	basic|enhanced	2-7|2-7	
-2-13	206-212	vārītu	Masc	Sing	Acc	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Acc\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsapsnp	vārīt	_	_	_	_	amod|amod	basic|enhanced	2-14|2-14	
-2-14	213-218	ūdeni	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	ūdens	_	_	_	_	obj|obj	basic|enhanced	2-12|2-12	
-2-15	218-219	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-7|2-7	
-2-16	220-228	sacēlies	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	Perf	vmypdmsnasnp	sacelties	_	_	_	_	root|root	basic|enhanced	2-16|2-16	
-2-17	229-233	vējš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	vējš	_	_	_	_	nsubj|nsubj	basic|enhanced	2-16|2-16	
-2-18	234-236	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	2-21|2-21	
-2-19	237-247	imperatora	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	imperators	_	_	*[1]	*->1-4	nmod|nmod	basic|enhanced	2-20|2-20	
-2-20	248-253	krūzē	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	krūze	_	_	_	_	obl|obl	basic|enhanced	2-21|2-21	
-2-21	254-261	iepūtis	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnasnp	iepūst	_	_	_	_	conj|conj	basic|enhanced	2-16|2-16	
-2-22	262-267	pāris	Fem	Plur	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	arfpanp	pāris	_	_	_	_	amod|amod	basic|enhanced	2-25|2-25	
-2-23	268-273	tējas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	tēja	_	_	_	_	nmod|nmod	basic|enhanced	2-24|2-24	
-2-24	274-278	koka	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	koks	_	_	_	_	nmod|nmod	basic|enhanced	2-25|2-25	
-2-25	279-284	lapas	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	lapa	_	_	_	_	obj|obj	basic|enhanced	2-21|2-21	
-2-26	284-285	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	2-16|2-16	
+2-1	138-142	Kādā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing\|PronType=Int	*	*	pq0msln	*	kāds	_	_	_	_	det|det	basic|enhanced	2-3|2-3	
+2-2	143-150	atpūtas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	atpūta	_	_	_	_	nmod|nmod	basic|enhanced	2-3|2-3	
+2-3	151-156	brīdī	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	*	brīdis	_	_	_	_	obl|obl	basic|enhanced	2-16|2-16	
+2-4	156-157	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	2-7|2-7	
+2-5	158-161	kad	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0t	*	kad	_	_	_	_	advmod|advmod	basic|enhanced	2-7|2-7	
+2-6	162-172	imperators	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	imperators	_	_	*->1-3	*[1]	nsubj|nsubj	basic|enhanced	2-7|2-7	
+2-7	173-180	sēdējis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnasnp	*	sēdēt	_	_	_	_	acl|acl	basic|enhanced	2-3|2-3	
+2-8	181-184	zem	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	zem	_	_	_	_	case|case	basic|enhanced	2-10|2-10	
+2-9	185-190	tējas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	tēja	_	_	_	_	nmod|nmod	basic|enhanced	2-10|2-10	
+2-10	191-195	koka	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	koka	_	_	_	_	obl|obl	basic|enhanced	2-7|2-7	
+2-11	196-198	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc|cc	basic|enhanced	2-12|2-12	
+2-12	199-205	dzēris	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnasnp	*	dzert	_	_	_	_	conj|conj	basic|enhanced	2-7|2-7	
+2-13	206-212	vārītu	*	Perf	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Acc\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsapsnp	*	vārīt	_	_	_	_	amod|amod	basic|enhanced	2-14|2-14	
+2-14	213-218	ūdeni	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	*	ūdens	_	_	_	_	obj|obj	basic|enhanced	2-12|2-12	
+2-15	218-219	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	2-7|2-7	
+2-16	220-228	sacēlies	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	*	vmypdmsnasnp	*	sacelties	_	_	_	_	root|root	basic|enhanced	2-16|2-16	
+2-17	229-233	vējš	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	vējš	_	_	_	_	nsubj|nsubj	basic|enhanced	2-16|2-16	
+2-18	234-236	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc|cc	basic|enhanced	2-21|2-21	
+2-19	237-247	imperatora	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	imperators	_	_	*->1-4	*[1]	nmod|nmod	basic|enhanced	2-20|2-20	
+2-20	248-253	krūzē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	*	krūze	_	_	_	_	obl|obl	basic|enhanced	2-21|2-21	
+2-21	254-261	iepūtis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnasnp	*	iepūst	_	_	_	_	conj|conj	basic|enhanced	2-16|2-16	
+2-22	262-267	pāris	*	*	Acc	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	arfpanp	*	pāris	_	_	_	_	amod|amod	basic|enhanced	2-25|2-25	
+2-23	268-273	tējas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	tēja	_	_	_	_	nmod|nmod	basic|enhanced	2-24|2-24	
+2-24	274-278	koka	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	koks	_	_	_	_	nmod|nmod	basic|enhanced	2-25|2-25	
+2-25	279-284	lapas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	lapa	_	_	_	_	obj|obj	basic|enhanced	2-21|2-21	
+2-26	284-285	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	2-16|2-16	
 
 #Text=Ūdens pamazām mainījis krāsu un gaisā uzvirmojis līdz tam vēl nepazīts aromāts.
-3-1	287-292	Ūdens	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	ūdens	_	_	_	_	nsubj|nsubj	basic|enhanced	3-3|3-3	
-3-2	293-300	pamazām	_	_	_	_	_	_	_	_	_	_	_	_	r0m	pamazām	_	_	_	_	advmod|advmod	basic|enhanced	3-3|3-3	
-3-3	301-309	mainījis	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnasnp	mainīt	_	_	_	_	root|root	basic|enhanced	3-3|3-3	
-3-4	310-315	krāsu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	krāsa	_	_	_	_	obj|obj	basic|enhanced	3-3|3-3	
-3-5	316-318	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	3-7|3-7	
-3-6	319-324	gaisā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	gaiss	_	_	_	_	obl|obl	basic|enhanced	3-7|3-7	
-3-7	325-335	uzvirmojis	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnasnp	uzvirmot	_	_	_	_	conj|conj	basic|enhanced	3-3|3-3	
-3-8	336-340	līdz	_	_	_	_	_	_	_	_	_	_	_	_	spsd	līdz	_	_	_	_	case|case	basic|enhanced	3-9|3-9	
-3-9	341-344	tam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msdn	tas	_	_	_	_	obl|obl	basic|enhanced	3-11|3-11	
-3-10	345-348	vēl	_	_	_	_	_	_	_	_	_	_	_	_	r0t	vēl	_	_	_	_	advmod|advmod	basic|enhanced	3-11|3-11	
-3-11	349-357	nepazīts	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnp	nepazīt	_	_	_	_	amod|amod	basic|enhanced	3-12|3-12	
-3-12	358-365	aromāts	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	aromāts	_	_	_	_	nsubj|nsubj	basic|enhanced	3-7|3-7	
-3-13	365-366	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	3-3|3-3	
+3-1	287-292	Ūdens	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	ūdens	_	_	_	_	nsubj|nsubj	basic|enhanced	3-3|3-3	
+3-2	293-300	pamazām	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	pamazām	_	_	_	_	advmod|advmod	basic|enhanced	3-3|3-3	
+3-3	301-309	mainījis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnasnp	*	mainīt	_	_	_	_	root|root	basic|enhanced	3-3|3-3	
+3-4	310-315	krāsu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	krāsa	_	_	_	_	obj|obj	basic|enhanced	3-3|3-3	
+3-5	316-318	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc|cc	basic|enhanced	3-7|3-7	
+3-6	319-324	gaisā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	gaiss	_	_	_	_	obl|obl	basic|enhanced	3-7|3-7	
+3-7	325-335	uzvirmojis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnasnp	*	uzvirmot	_	_	_	_	conj|conj	basic|enhanced	3-3|3-3	
+3-8	336-340	līdz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsd	*	līdz	_	_	_	_	case|case	basic|enhanced	3-9|3-9	
+3-9	341-344	tam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msdn	*	tas	_	_	_	_	obl|obl	basic|enhanced	3-11|3-11	
+3-10	345-348	vēl	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	vēl	_	_	_	_	advmod|advmod	basic|enhanced	3-11|3-11	
+3-11	349-357	nepazīts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnpsnp	*	nepazīt	_	_	_	_	amod|amod	basic|enhanced	3-12|3-12	
+3-12	358-365	aromāts	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	aromāts	_	_	_	_	nsubj|nsubj	basic|enhanced	3-7|3-7	
+3-13	365-366	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	3-3|3-3	
 
 #Text=Ziņkārības mudināts, valdnieks nolēmis nogaršot šo dzērienu un piedzīvojis patīkamu pārsteigumu - dzēriens ne tikai labi garšojis, bet arī acumirklī kliedējis imperatora nogurumu.
-4-1	368-378	Ziņkārības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	ziņkārība	_	_	_	_	nmod|nmod	basic|enhanced	4-2|4-2	
-4-2	379-387	mudināts	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnp	mudināt	_	_	_	_	acl|acl	basic|enhanced	4-4|4-4	
-4-3	387-388	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	4-2|4-2	
-4-4	389-398	valdnieks	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	valdnieks	_	_	*[1]	*->1-5	nsubj|nsubj	basic|enhanced	4-5|4-5	
-4-5	399-406	nolēmis	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnasnp	nolemt	_	_	_	_	root|root	basic|enhanced	4-5|4-5	
-4-6	407-415	nogaršot	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	nogaršot	_	_	_	_	xcomp|xcomp	basic|enhanced	4-5|4-5	
-4-7	416-418	šo	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	šis	_	_	_	_	det|det	basic|enhanced	4-8|4-8	
-4-8	419-427	dzērienu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	dzēriens	_	_	_	_	iobj|iobj	basic|enhanced	4-6|4-6	
-4-9	428-430	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	4-10|4-10	
-4-10	431-442	piedzīvojis	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnasnp	piedzīvot	_	_	_	_	conj|conj	basic|enhanced	4-5|4-5	
-4-11	443-451	patīkamu	Masc	Plur	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpgnp	patīkams	_	_	_	_	amod|amod	basic|enhanced	4-12|4-12	
-4-12	452-463	pārsteigumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	pārsteigums	_	_	_	_	obj|obj	basic|enhanced	4-10|4-10	
-4-13	464-465	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	_	_	punct|punct	basic|enhanced	4-18|4-18	
-4-14	466-474	dzēriens	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	dzēriens	_	_	_	_	nsubj|nsubj	basic|enhanced	4-18|4-18	
-4-15	475-477	ne	_	_	_	_	_	_	_	_	_	_	_	_	cc	ne	_	_	_	_	cc|cc	basic|enhanced	4-18|4-18	
-4-16	478-483	tikai	_	_	_	_	_	_	_	_	_	_	_	_	q	tikai	_	_	_	_	discourse|discourse	basic|enhanced	4-15|4-15	
-4-17	484-488	labi	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	labi	_	_	_	_	advmod|advmod	basic|enhanced	4-18|4-18	
-4-18	489-497	garšojis	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnasnp	garšot	_	_	_	_	conj|conj	basic|enhanced	4-5|4-5	
-4-19	497-498	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	4-23|4-23	
-4-20	499-502	bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	_	_	cc|cc	basic|enhanced	4-23|4-23	
-4-21	503-506	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse|discourse	basic|enhanced	4-20|4-20	
-4-22	507-516	acumirklī	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	acumirklis	_	_	_	_	acl|acl	basic|enhanced	4-23|4-23	
-4-23	517-526	kliedējis	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnasnp	kliedēt	_	_	_	_	conj|conj	basic|enhanced	4-18|4-18	
-4-24	527-537	imperatora	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	imperators	_	_	*[1]	*->1-6	nmod|nmod	basic|enhanced	4-25|4-25	
-4-25	538-546	nogurumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	nogurums	_	_	_	_	obj|obj	basic|enhanced	4-23|4-23	
-4-26	546-547	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	4-5|4-5	
+4-1	368-378	Ziņkārības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	ziņkārība	_	_	_	_	nmod|nmod	basic|enhanced	4-2|4-2	
+4-2	379-387	mudināts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnpsnp	*	mudināt	_	_	_	_	acl|acl	basic|enhanced	4-4|4-4	
+4-3	387-388	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	4-2|4-2	
+4-4	389-398	valdnieks	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	valdnieks	_	_	*->1-5	*[1]	nsubj|nsubj	basic|enhanced	4-5|4-5	
+4-5	399-406	nolēmis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnasnp	*	nolemt	_	_	_	_	root|root	basic|enhanced	4-5|4-5	
+4-6	407-415	nogaršot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	*	nogaršot	_	_	_	_	xcomp|xcomp	basic|enhanced	4-5|4-5	
+4-7	416-418	šo	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	*	šis	_	_	_	_	det|det	basic|enhanced	4-8|4-8	
+4-8	419-427	dzērienu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	dzēriens	_	_	_	_	iobj|iobj	basic|enhanced	4-6|4-6	
+4-9	428-430	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc|cc	basic|enhanced	4-10|4-10	
+4-10	431-442	piedzīvojis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnasnp	*	piedzīvot	_	_	_	_	conj|conj	basic|enhanced	4-5|4-5	
+4-11	443-451	patīkamu	*	*	Gen	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpgnp	*	patīkams	_	_	_	_	amod|amod	basic|enhanced	4-12|4-12	
+4-12	452-463	pārsteigumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	pārsteigums	_	_	_	_	obj|obj	basic|enhanced	4-10|4-10	
+4-13	464-465	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	-	_	_	_	_	punct|punct	basic|enhanced	4-18|4-18	
+4-14	466-474	dzēriens	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	dzēriens	_	_	_	_	nsubj|nsubj	basic|enhanced	4-18|4-18	
+4-15	475-477	ne	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	ne	_	_	_	_	cc|cc	basic|enhanced	4-18|4-18	
+4-16	478-483	tikai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tikai	_	_	_	_	discourse|discourse	basic|enhanced	4-15|4-15	
+4-17	484-488	labi	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	labi	_	_	_	_	advmod|advmod	basic|enhanced	4-18|4-18	
+4-18	489-497	garšojis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnasnp	*	garšot	_	_	_	_	conj|conj	basic|enhanced	4-5|4-5	
+4-19	497-498	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	4-23|4-23	
+4-20	499-502	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	_	_	cc|cc	basic|enhanced	4-23|4-23	
+4-21	503-506	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse|discourse	basic|enhanced	4-20|4-20	
+4-22	507-516	acumirklī	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	*	acumirklis	_	_	_	_	acl|acl	basic|enhanced	4-23|4-23	
+4-23	517-526	kliedējis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnasnp	*	kliedēt	_	_	_	_	conj|conj	basic|enhanced	4-18|4-18	
+4-24	527-537	imperatora	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	imperators	_	_	*->1-6	*[1]	nmod|nmod	basic|enhanced	4-25|4-25	
+4-25	538-546	nogurumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	nogurums	_	_	_	_	obj|obj	basic|enhanced	4-23|4-23	
+4-26	546-547	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	4-5|4-5	
 
 #Text=Kopš tiem laikiem tēja cilvēcei kalpo ne tikai kā lielisks atspirdzinošs dzēriens, bet arī kā nozīmīgs ārstniecības līdzeklis.
-5-1	549-553	Kopš	_	_	_	_	_	_	_	_	_	_	_	_	sppd	kopš	_	_	_	_	case|case	basic|enhanced	5-3|5-3	
-5-2	554-558	tiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpdn	tas	_	_	_	_	det|det	basic|enhanced	5-3|5-3	
-5-3	559-566	laikiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	laiks	_	_	_	_	obl|obl	basic|enhanced	5-6|5-6	
-5-4	567-571	tēja	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	tēja	_	_	_	_	nsubj|nsubj	basic|enhanced	5-6|5-6	
-5-5	572-580	cilvēcei	Fem	Coll	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Coll	*	*	ncfvd5	cilvēce	_	_	_	_	iobj|iobj	basic|enhanced	5-6|5-6	
-5-6	581-586	kalpo	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipi230an	kalpot	_	_	_	_	root|root	basic|enhanced	5-6|5-6	
-5-7	587-589	ne	_	_	_	_	_	_	_	_	_	_	_	_	cc	ne	_	_	_	_	cc|cc	basic|enhanced	5-12|5-12	
-5-8	590-595	tikai	_	_	_	_	_	_	_	_	_	_	_	_	q	tikai	_	_	_	_	discourse|discourse	basic|enhanced	5-7|5-7	
-5-9	596-598	kā	_	_	_	_	_	_	_	_	_	_	_	_	cs	kā	_	_	_	_	mark|mark	basic|enhanced	5-12|5-12	
-5-10	599-607	lielisks	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	lielisks	_	_	_	_	amod|amod	basic|enhanced	5-12|5-12	
-5-11	608-621	atspirdzinošs	Masc	Sing	Nom	Pos	*	Pres	*	Pass	*	Aspect=Imp\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Imp	vmnpdmsnapnp	atspirdzināt	_	_	_	_	amod|amod	basic|enhanced	5-12|5-12	
-5-12	622-630	dzēriens	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	dzēriens	_	_	_	_	acl|acl	basic|enhanced	5-6|5-6	
-5-13	630-631	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	5-19|5-19	
-5-14	632-635	bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	_	_	cc|cc	basic|enhanced	5-19|5-19	
-5-15	636-639	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse|discourse	basic|enhanced	5-14|5-14	
-5-16	640-642	kā	_	_	_	_	_	_	_	_	_	_	_	_	cs	kā	_	_	_	_	mark|mark	basic|enhanced	5-19|5-19	
-5-17	643-651	nozīmīgs	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	nozīmīgs	_	_	_	_	amod|amod	basic|enhanced	5-19|5-19	
-5-18	652-664	ārstniecības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	ārstniecība	_	_	_	_	nmod|nmod	basic|enhanced	5-19|5-19	
-5-19	665-674	līdzeklis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	līdzeklis	_	_	_	_	conj|conj	basic|enhanced	5-12|5-12	
-5-20	674-675	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	5-6|5-6	
+5-1	549-553	Kopš	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	kopš	_	_	_	_	case|case	basic|enhanced	5-3|5-3	
+5-2	554-558	tiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpdn	*	tas	_	_	_	_	det|det	basic|enhanced	5-3|5-3	
+5-3	559-566	laikiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	laiks	_	_	_	_	obl|obl	basic|enhanced	5-6|5-6	
+5-4	567-571	tēja	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	tēja	_	_	_	_	nsubj|nsubj	basic|enhanced	5-6|5-6	
+5-5	572-580	cilvēcei	*	*	Dat	*	*	Fem	*	*	*	Coll	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Coll	*	*	ncfvd5	*	cilvēce	_	_	_	_	iobj|iobj	basic|enhanced	5-6|5-6	
+5-6	581-586	kalpo	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipi230an	*	kalpot	_	_	_	_	root|root	basic|enhanced	5-6|5-6	
+5-7	587-589	ne	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	ne	_	_	_	_	cc|cc	basic|enhanced	5-12|5-12	
+5-8	590-595	tikai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tikai	_	_	_	_	discourse|discourse	basic|enhanced	5-7|5-7	
+5-9	596-598	kā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	kā	_	_	_	_	mark|mark	basic|enhanced	5-12|5-12	
+5-10	599-607	lielisks	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	lielisks	_	_	_	_	amod|amod	basic|enhanced	5-12|5-12	
+5-11	608-621	atspirdzinošs	*	Imp	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Pres	*	Aspect=Imp\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdmsnapnp	*	atspirdzināt	_	_	_	_	amod|amod	basic|enhanced	5-12|5-12	
+5-12	622-630	dzēriens	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	dzēriens	_	_	_	_	acl|acl	basic|enhanced	5-6|5-6	
+5-13	630-631	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	5-19|5-19	
+5-14	632-635	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	_	_	cc|cc	basic|enhanced	5-19|5-19	
+5-15	636-639	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse|discourse	basic|enhanced	5-14|5-14	
+5-16	640-642	kā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	kā	_	_	_	_	mark|mark	basic|enhanced	5-19|5-19	
+5-17	643-651	nozīmīgs	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	nozīmīgs	_	_	_	_	amod|amod	basic|enhanced	5-19|5-19	
+5-18	652-664	ārstniecības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	ārstniecība	_	_	_	_	nmod|nmod	basic|enhanced	5-19|5-19	
+5-19	665-674	līdzeklis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	līdzeklis	_	_	_	_	conj|conj	basic|enhanced	5-12|5-12	
+5-20	674-675	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	5-6|5-6	

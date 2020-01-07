@@ -1,0 +1,58 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Rīga, 15.jūn., LETA.
+1-1	0-4	Rīga	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Rīga	GPE	https://en.wikipedia.org/wiki/Riga	_	_	root	basic	1-1	
+1-2	4-5	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-4	
+1-3	6-9	15.	*	*	*	*	*	*	*	*	Ord	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	15.	time[1]	*[1]	*->3-1	*[3]	amod	basic	1-4	
+1-4	9-13	jūn.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	*	jūn.	time[1]	*[1]	*->3-1	*[3]	parataxis	basic	1-1	
+1-5	13-14	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-6	
+1-6	15-19	LETA	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	LETA	organization	https://en.wikipedia.org/wiki/LETA	_	_	parataxis	basic	1-1	
+1-7	19-20	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-1	
+
+#Text=Latvijas lidsabiedrība "airBaltic", sekmīgi īstenojot biznesa plānu "Horizon 2021", 2021.gadā cer apgrozīt 471 miljonu eiro, šodien forumā par aviācijas nozares aktualitātēm Latvijā sacīja "airBaltic" valdes loceklis Vitolds Jakovļevs.
+2-1	21-29	Latvijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	*->1-1	*[1]	nmod	basic	2-2	
+2-2	30-43	lidsabiedrība	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	lidsabiedrība	_	_	*->1-1	*[1]	nmod	basic	2-4	
+2-3	44-45	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[2]	https://en.wikipedia.org/wiki/AirBaltic[2]	*->1-2	*[1]	punct	basic	2-4	
+2-4	45-54	airBaltic	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	xx	*	airbaltic	organization[2]	https://en.wikipedia.org/wiki/AirBaltic[2]	*->1-2	*[1]	nsubj	basic	2-18	
+2-5	54-55	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[2]	https://en.wikipedia.org/wiki/AirBaltic[2]	*->1-2	*[1]	punct	basic	2-4	
+2-6	55-56	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-8	
+2-7	57-64	sekmīgi	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	sekmīgi	_	_	_	_	advmod	basic	2-8	
+2-8	65-74	īstenojot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	Conv	*	vmnpu0000000n	*	īstenot	_	_	_	_	advcl	basic	2-18	
+2-9	75-82	biznesa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	bizness	_	_	*->2-1	*[2]	nmod	basic	2-10	
+2-10	83-88	plānu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	plāns	_	_	*->2-1	*[2]	nmod	basic	2-12	
+2-11	89-90	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	entity[3]	*[3]	*->2-2	*[2]	punct	basic	2-12	
+2-12	90-97	Horizon	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Horizon	entity[3]	*[3]	*->2-2	*[2]	obj	basic	2-8	
+2-13	98-102	2021	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	2021	entity[3]	*[3]	*->2-2	*[2]	flat:name	basic	2-12	
+2-14	102-103	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	entity[3]	*[3]	*->2-2	*[2]	punct	basic	2-12	
+2-15	103-104	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-8	
+2-16	105-110	2021.	*	*	*	*	*	*	*	*	Ord	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	2021.	time[4]	*[4]	_	_	amod	basic	2-17	
+2-17	110-114	gadā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	gads	time[4]	*[4]	_	_	obl	basic	2-18	
+2-18	115-118	cer	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipi330an	*	cerēt	_	_	_	_	iobj	basic	2-31	
+2-19	119-127	apgrozīt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t3000n	*	apgrozīt	_	_	_	_	ccomp	basic	2-18	
+2-20	128-131	471	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	471	money[5]	*[5]	_	_	nummod	basic	2-21	
+2-21	132-139	miljonu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	miljons	money[5]	*[5]	_	_	obj	basic	2-19	
+2-22	140-144	eiro	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	nc0000	*	eiro	money[5]	*[5]	_	_	nmod	basic	2-21	
+2-23	144-145	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-18	
+2-24	146-152	šodien	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	šodien	time	*	*->3-2	*[3]	advmod	basic	2-31	
+2-25	153-159	forumā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	forums	_	_	_	_	obl	basic	2-31	
+2-26	160-163	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	2-29	
+2-27	164-173	aviācijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	aviācija	_	_	_	_	nmod	basic	2-28	
+2-28	174-181	nozares	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	nozare	_	_	_	_	nmod	basic	2-29	
+2-29	182-194	aktualitātēm	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd5	*	aktualitāte	_	_	_	_	nmod	basic	2-25	
+2-30	195-202	Latvijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	_	_	acl	basic	2-29	
+2-31	203-209	sacīja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist330an	*	sacīt	_	_	_	_	root	basic	2-31	
+2-32	210-211	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[6]	https://en.wikipedia.org/wiki/AirBaltic[6]	*->4-1|*->1-3	*[4]|*[1]	punct	basic	2-33	
+2-33	211-220	airBaltic	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	xx	*	airbaltic	organization[6]	https://en.wikipedia.org/wiki/AirBaltic[6]	*->4-1|*->1-3	*[4]|*[1]	amod	basic	2-35	
+2-34	220-221	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[6]	https://en.wikipedia.org/wiki/AirBaltic[6]	*->4-1|*->1-3	*[4]|*[1]	punct	basic	2-33	
+2-35	222-228	valdes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	valde	_	_	*->4-1	*[4]	nmod	basic	2-36	
+2-36	229-237	loceklis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	loceklis	_	_	*->4-1	*[4]	nmod	basic	2-37	
+2-37	238-245	Vitolds	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Vitolds	person[7]	*[7]	*->4-2	*[4]	nsubj	basic	2-31	
+2-38	246-255	Jakovļevs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Jakovļevs	person[7]	*[7]	*->4-2	*[4]	flat:name	basic	2-37	
+2-39	255-256	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-31	

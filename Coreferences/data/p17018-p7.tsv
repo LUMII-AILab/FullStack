@@ -1,0 +1,88 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=25.decembrī katoļu baznīcā tiek noturētas trīs Svētās Mises.
+1-1	0-3	25.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	25.	time[1]	*[1]	_	_	amod	basic	1-2	
+1-2	3-11	decembrī	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	*	decembris	time[1]	*[1]	_	_	obl	basic	1-6	
+1-3	12-18	katoļu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	katolis	_	_	_	_	nmod	basic	1-4	
+1-4	19-26	baznīcā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	baznīca	_	_	_	_	obl	basic	1-6	
+1-5	27-31	tiek	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vtnipi130an	*	tikt	_	_	_	_	aux:pass	basic	1-6	
+1-6	32-41	noturētas	*	Perf	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfpnpsnpn	*	noturēt	_	_	_	_	root	basic	1-6	
+1-7	42-46	trīs	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|NumType=Card	*	*	mcsfpn	*	trīs	_	_	_	_	nummod	basic	1-9	
+1-8	47-53	Svētās	*	*	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpnyp	*	svēta	event[2]	*[2]	_	_	amod	basic	1-9	
+1-9	54-59	Mises	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn5	*	mise	event[2]	*[2]	_	_	nsubj:pass	basic	1-6	
+1-10	59-60	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-6	
+
+#Text=Pirmā Mise ir veltīta naktij.
+2-1	62-67	Pirmā	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|NumType=Ord	*	*	mosfsn	*	pirmā	event[3]	*[3]	*->2-1	*[2]	amod	basic	2-2	
+2-2	68-72	Mise	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	mise	event[3]	*[3]	*->2-1	*[2]	nsubj:pass	basic	2-4	
+2-3	73-75	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	aux:pass	basic	2-4	
+2-4	76-83	veltīta	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsnpsnpn	*	veltīt	_	_	_	_	root	basic	2-4	
+2-5	84-90	naktij	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd6	*	nakts	_	_	_	_	iobj	basic	2-4	
+2-6	90-91	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-4	
+
+#Text=Tautā to sauc par Eņģeļu Misi, jo eņģeļi pirmie sludināja prieka vēsti virs Betlēmes.
+3-1	93-98	Tautā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	tauta	_	_	_	_	obl	basic	3-3	
+3-2	99-101	to	*	*	Acc	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msan	*	tas	_	_	*->2-2	*[2]	obj	basic	3-3	
+3-3	102-106	sauc	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt130an	*	saukt	_	_	_	_	root	basic	3-3	
+3-4	107-110	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	3-6	
+3-5	111-117	Eņģeļu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	eņģelis	event[4]	*[4]	*->2-3	*[2]	nmod	basic	3-6	
+3-6	118-122	Misi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	mise	event[4]	*[4]	*->2-3	*[2]	xcomp	basic	3-3	
+3-7	122-123	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-11	
+3-8	124-126	jo	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	jo	_	_	_	_	mark	basic	3-11	
+3-9	127-133	eņģeļi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn2	*	eņģelis	_	_	_	_	nsubj	basic	3-11	
+3-10	134-140	pirmie	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|NumType=Ord	*	*	mosmpn	*	pirmais	_	_	_	_	acl	basic	3-11	
+3-11	141-150	sludināja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist330an	*	sludināt	_	_	_	_	advcl	basic	3-3	
+3-12	151-157	prieka	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	prieks	_	_	_	_	nmod	basic	3-13	
+3-13	158-163	vēsti	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa6	*	vēsts	_	_	_	_	obj	basic	3-11	
+3-14	164-168	virs	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	virs	_	_	_	_	case	basic	3-15	
+3-15	169-177	Betlēmes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	*	Betlēme	GPE	https://en.wikipedia.org/wiki/Bethlehem	_	_	nmod	basic	3-13	
+3-16	177-178	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-3	
+
+#Text=Otrā Mise notiek rīta stundā, to mēdz saukt par Ganu Misi, atceroties Betlēmes ganus, kas pirmie aizsteidzās pie Jēzus silītes.
+4-1	180-184	Otrā	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|NumType=Ord	*	*	mosfsn	*	otrā	event[5]	*[5]	*->3-1	*[3]	amod	basic	4-2	
+4-2	185-189	Mise	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	mise	event[5]	*[5]	*->3-1	*[3]	nsubj	basic	4-3	
+4-3	190-196	notiek	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipi130an	*	notikt	_	_	_	_	root	basic	4-3	
+4-4	197-201	rīta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	rīts	_	_	_	_	nmod	basic	4-5	
+4-5	202-208	stundā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	stunda	_	_	_	_	obl	basic	4-3	
+4-6	208-209	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-8	
+4-7	210-212	to	*	*	Acc	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msan	*	tas	_	_	*->3-2	*[3]	obj	basic	4-9	
+4-8	213-217	mēdz	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vonipi130an	*	mēgt	_	_	_	_	conj	basic	4-3	
+4-9	218-223	saukt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	*	saukt	_	_	_	_	xcomp	basic	4-8	
+4-10	224-227	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	4-12	
+4-11	228-232	Ganu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	gans	event[6]	*[6]	*->3-3	*[3]	nmod	basic	4-12	
+4-12	233-237	Misi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	mise	event[6]	*[6]	*->3-3	*[3]	xcomp	basic	4-9	
+4-13	237-238	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-14	
+4-14	239-249	atceroties	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Conv	*	*	vmypu0000000n	*	atcerēties	_	_	_	_	advcl	basic	4-8	
+4-15	250-258	Betlēmes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	*	Betlēme	GPE	https://en.wikipedia.org/wiki/Bethlehem	*->1-1	*[1]	nmod	basic	4-16	
+4-16	259-264	ganus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	gans	_	_	*->1-1	*[1]	obj	basic	4-14	
+4-17	264-265	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-20	
+4-18	266-269	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->1-2	*[1]	nsubj	basic	4-20	
+4-19	270-276	pirmie	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|NumType=Ord	*	*	mosmpn	*	pirmais	_	_	_	_	acl	basic	4-20	
+4-20	277-288	aizsteidzās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmyisi130an	*	aizsteigties	_	_	_	_	acl	basic	4-16	
+4-21	289-292	pie	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pie	_	_	_	_	case	basic	4-23	
+4-22	293-298	Jēzus	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg3	*	Jēzus	person	https://en.wikipedia.org/wiki/Jesus	_	_	nmod	basic	4-23	
+4-23	299-306	silītes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	silīte	_	_	_	_	obl	basic	4-20	
+4-24	306-307	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	4-3	
+
+#Text=Savukārt trešā Svētā Mise notiek dienā.
+5-1	309-317	Savukārt	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	savukārt	_	_	_	_	advmod	basic	5-5	
+5-2	318-323	trešā	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|NumType=Ord	*	*	mosfsn	*	trešā	_	_	_	_	amod	basic	5-4	
+5-3	324-329	Svētā	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnyp	*	svēta	event[7]	*[7]	*->4-1	*[4]	amod	basic	5-4	
+5-4	330-334	Mise	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	mise	event[7]	*[7]	*->4-1	*[4]	nsubj	basic	5-5	
+5-5	335-341	notiek	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipi130an	*	notikt	_	_	_	_	root	basic	5-5	
+5-6	342-347	dienā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	diena	_	_	_	_	obl	basic	5-5	
+5-7	347-348	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	5-5	
+
+#Text=Tā ir Augstā Mise.
+6-1	350-352	Tā	*	*	Nom	*	*	Fem	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3fsnn	*	tā	_	_	*->4-2	*[4]	nsubj	basic	6-4	
+6-2	353-355	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	6-4	
+6-3	356-362	Augstā	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnyp	*	augsta	event[8]	*[8]	*->4-3	*[4]	amod	basic	6-4	
+6-4	363-367	Mise	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	mise	event[8]	*[8]	*->4-3	*[4]	root	basic	6-4	
+6-5	367-368	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	6-4	

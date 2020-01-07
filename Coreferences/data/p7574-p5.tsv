@@ -1,0 +1,45 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Regnārs nespēja Uldi likt mierā un dzirdot, ka dziedātājs plāno izsaukt policiju sācis vicināt cirvi un nācis tam virsū draudot izrēķināties.
+1-1	0-7	Regnārs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Regnārs	person	https://lv.wikipedia.org/wiki/Regnārs\_Vaivars	_	_	nsubj	basic	1-2	
+1-2	8-15	nespēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vonisi130ay	*	spēt	_	_	_	_	root	basic	1-2	
+1-3	16-20	Uldi	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa2	*	Uldis	person	*	*->1-1	*[1]	obj	basic	1-4	
+1-4	21-25	likt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t1000n	*	likt	_	_	_	_	xcomp	basic	1-2	
+1-5	26-31	mierā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	miers	_	_	_	_	obl	basic	1-4	
+1-6	32-34	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-14	
+1-7	35-42	dzirdot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	Conv	*	vmnpu0000000n	*	dzirdēt	_	_	_	_	advcl	basic	1-14	
+1-8	42-43	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-11	
+1-9	44-46	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	1-11	
+1-10	47-57	dziedātājs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	dziedātājs	_	_	*->1-2	*[1]	nsubj	basic	1-11	
+1-11	58-63	plāno	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt230an	*	plānot	_	_	_	_	ccomp	basic	1-7	
+1-12	64-71	izsaukt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t1000n	*	izsaukt	_	_	_	_	ccomp	basic	1-11	
+1-13	72-80	policiju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	policija	_	_	_	_	obj	basic	1-12	
+1-14	81-86	sācis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vpnpdmsnasnpn	*	sākt	_	_	_	_	conj	basic	1-2	
+1-15	87-94	vicināt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t3000n	*	vicināt	_	_	_	_	xcomp	basic	1-14	
+1-16	95-100	cirvi	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	*	cirvis	_	_	_	_	obj	basic	1-15	
+1-17	101-103	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-18	
+1-18	104-109	nācis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdmsnasnpn	*	nākt	_	_	_	_	conj	basic	1-14	
+1-19	110-113	tam	*	*	Dat	*	*	Masc	*	*	*	Sing	3	*	Dem	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msdn	*	tas	_	_	*->1-3	*[1]	obl	basic	1-18	
+1-20	114-119	virsū	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	rrp	*	virsū	_	_	_	_	case	basic	1-19	
+1-21	120-127	draudot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	Conv	*	vmnpu0000000n	*	draudēt	_	_	_	_	advcl	basic	1-18	
+1-22	128-140	izrēķināties	*	*	*	*	*	*	*	*	*	*	*	*	*	Yes	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	Inf	*	vmyn0i3000n	*	izrēķināties	_	_	_	_	ccomp	basic	1-21	
+1-23	140-141	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-2	
+
+#Text=Pēc šāda notikuma pavērsiena ielu muzikantam nācās dzert sirdszāles.
+2-1	142-145	Pēc	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	pēc	_	_	_	_	case	basic	2-4	
+2-2	146-150	šāda	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	Dem	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msgn	*	šāds	_	_	_	_	det	basic	2-4	
+2-3	151-159	notikuma	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	notikums	_	_	_	_	nmod	basic	2-4	
+2-4	160-170	pavērsiena	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	pavērsiens	_	_	_	_	obl	basic	2-7	
+2-5	171-175	ielu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	iela	_	_	*->1-4	*[1]	nmod	basic	2-6	
+2-6	176-186	muzikantam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	muzikants	_	_	*->1-4	*[1]	nsubj	basic	2-7	
+2-7	187-192	nācās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	voyisi130an	*	nākties	_	_	_	_	root	basic	2-7	
+2-8	193-198	dzert	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t1000n	*	dzert	_	_	_	_	xcomp	basic	2-7	
+2-9	199-209	sirdszāles	*	*	Acc	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Ptan	*	*	ncfda5	*	sirdszāles	_	_	_	_	obj	basic	2-8	
+2-10	209-210	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-7	

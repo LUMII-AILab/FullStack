@@ -1,0 +1,149 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Līdzīga negatīva ietekme ir sagaidāma uz publiskajiem izdevumiem.
+1-1	0-7	Līdzīga	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	*	līdzīga	_	_	_	_	amod	basic	1-3	
+1-2	8-16	negatīva	*	*	Gen	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsgnp	*	negatīvs	_	_	_	_	amod	basic	1-3	
+1-3	17-24	ietekme	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	ietekme	_	_	_	_	nsubj	basic	1-5	
+1-4	25-27	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	1-5	
+1-5	28-37	sagaidāma	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Pres	*	Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdfsnppnpn	*	sagaidīt	_	_	_	_	root	basic	1-5	
+1-6	38-40	uz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	uz	_	_	_	_	case	basic	1-8	
+1-7	41-53	publiskajiem	*	*	Dat	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpdyp	*	publisks	_	_	_	_	amod	basic	1-8	
+1-8	54-64	izdevumiem	*	*	Dat	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Ptan	*	*	ncmdd1	*	izdevumi	_	_	_	_	acl	basic	1-5	
+1-9	64-65	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-5	
+
+#Text=ES laika posmā līdz 2050. gadam paredzama publisko izdevumu, kas saistīti ar vecumu, palielināšanās par 3–4 IKP procentpunktiem, kas nozīmē publisko izdevumu pieaugumu par 10%.
+2-1	67-69	ES	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	ES	GPE	https://en.wikipedia.org/wiki/European\_Union	_	_	obl	basic	2-7	
+2-2	70-75	laika	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	laiks	_	_	_	_	nmod	basic	2-3	
+2-3	76-81	posmā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	posms	_	_	_	_	obl	basic	2-7	
+2-4	82-86	līdz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsd	*	līdz	time[1]	*[1]	_	_	case	basic	2-6	
+2-5	87-92	2050.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	2050.	time[1]	*[1]	_	_	amod	basic	2-6	
+2-6	93-98	gadam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	gads	time[1]	*[1]	_	_	nmod	basic	2-3	
+2-7	99-108	paredzama	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Pres	*	Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdfsnppnpn	*	paredzēt	_	_	_	_	root	basic	2-7	
+2-8	109-117	publisko	*	*	Gen	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpgyp	*	publisks	_	_	_	_	amod	basic	2-9	
+2-9	118-126	izdevumu	*	*	Gen	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	ncmdg1	*	izdevumi	_	_	*->1-1	*[1]	nmod	basic	2-16	
+2-10	126-127	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-12	
+2-11	128-131	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->1-2	*[1]	nsubj:pass	basic	2-12	
+2-12	132-140	saistīti	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmpnpsnpn	*	saistīt	_	_	_	_	acl	basic	2-9	
+2-13	141-143	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	2-14	
+2-14	144-150	vecumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	vecums	_	_	_	_	iobj	basic	2-12	
+2-15	150-151	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-12	
+2-16	152-166	palielināšanās	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsnr	*	palielināšanās	_	_	_	_	nsubj	basic	2-7	
+2-17	167-170	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	par	_	_	_	_	case	basic	2-22	
+2-18	171-172	3	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	3	_	_	_	_	nummod	basic	2-22	
+2-19	172-173	–	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	–	_	_	_	_	punct	basic	2-20	
+2-20	173-174	4	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	4	_	_	_	_	conj	basic	2-18	
+2-21	175-178	IKP	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	*	IKP	_	_	_	_	nmod	basic	2-22	
+2-22	179-194	procentpunktiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	procentpunkts	_	_	_	_	nmod	basic	2-16	
+2-23	194-195	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-25	
+2-24	196-199	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	_	_	nsubj	basic	2-25	
+2-25	200-206	nozīmē	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt230an	*	nozīmēt	_	_	_	_	advcl	basic	2-7	
+2-26	207-215	publisko	*	*	Gen	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpgyp	*	publisks	_	_	_	_	amod	basic	2-27	
+2-27	216-224	izdevumu	*	*	Gen	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	ncmdg1	*	izdevumi	_	_	_	_	nmod	basic	2-28	
+2-28	225-234	pieaugumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	pieaugums	_	_	_	_	obj	basic	2-25	
+2-29	235-238	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	par	_	_	_	_	case	basic	2-31	
+2-30	239-241	10	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	10	_	_	_	_	nummod	basic	2-31	
+2-31	241-242	%	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	xx	*	%	_	_	_	_	nmod	basic	2-28	
+2-32	242-243	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-7	
+
+#Text=Šī problēma būs jūtama no 2013. gada un kļūs īpaši spiedīga laikā no 2020. līdz 2040. gadam.
+3-1	245-247	Šī	*	*	Nom	*	*	Fem	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3fsnn	*	šī	_	_	_	_	det	basic	3-2	
+3-2	248-256	problēma	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	problēma	_	_	_	_	nsubj	basic	3-4	
+3-3	257-260	būs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vcnifii30an	*	būt	_	_	_	_	cop	basic	3-4	
+3-4	261-267	jūtama	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Pres	*	Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdfsnppnpn	*	just	_	_	_	_	root	basic	3-4	
+3-5	268-270	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	time[2]	*[2]	_	_	case	basic	3-7	
+3-6	271-276	2013.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	2013.	time[2]	*[2]	_	_	amod	basic	3-7	
+3-7	277-281	gada	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	gads	time[2]	*[2]	_	_	obl	basic	3-4	
+3-8	282-284	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	3-11	
+3-9	285-289	kļūs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vtnifi130an	*	kļūt	_	_	_	_	cop	basic	3-11	
+3-10	290-295	īpaši	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	īpaši	_	_	_	_	advmod	basic	3-11	
+3-11	296-304	spiedīga	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	*	spiedīga	_	_	_	_	conj	basic	3-4	
+3-12	305-310	laikā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	laiks	_	_	_	_	obl	basic	3-11	
+3-13	311-313	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	time[3]	*[3]	_	_	case	basic	3-14	
+3-14	314-319	2020.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	2020.	time[3]	*[3]	_	_	nmod	basic	3-12	
+3-15	320-324	līdz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsd	*	līdz	time[3]	*[3]	_	_	case	basic	3-17	
+3-16	325-330	2040.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	2040.	time[3]	*[3]	_	_	amod	basic	3-17	
+3-17	331-336	gadam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	gads	time[3]	*[3]	_	_	nmod	basic	3-12	
+3-18	336-337	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-4	
+
+#Text=Sabiedrības novecošanās pastiprināti varētu skart tās valstis, kurām ir liela valsts un pašvaldību parādu nasta.
+4-1	339-350	Sabiedrības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	sabiedrība	_	_	_	_	nmod	basic	4-2	
+4-2	351-362	novecošanās	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsnr	*	novecošanās	_	_	_	_	nsubj	basic	4-4	
+4-3	363-375	pastiprināti	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	pastiprināti	_	_	_	_	advmod	basic	4-4	
+4-4	376-382	varētu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vonc0i300an	*	varēt	_	_	_	_	root	basic	4-4	
+4-5	383-388	skart	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	*	skart	_	_	_	_	xcomp	basic	4-4	
+4-6	389-392	tās	*	*	Acc	*	*	Fem	*	*	*	Plur	3	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur\|Person=3\|PronType=Dem	*	*	pd3fpan	*	tā	_	_	_	_	det	basic	4-7	
+4-7	393-400	valstis	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa6	*	valsts	_	_	*->2-1	*[2]	obj	basic	4-5	
+4-8	400-401	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-10	
+4-9	402-407	kurām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur\|PronType=Rel	*	*	pr0fpdn	*	kura	_	_	*->2-2	*[2]	obl	basic	4-10	
+4-10	408-410	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipii30an	*	būt	_	_	_	_	acl	basic	4-7	
+4-11	411-416	liela	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	*	liela	_	_	_	_	amod	basic	4-16	
+4-12	417-423	valsts	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	*	valsts	_	_	_	_	nmod	basic	4-15	
+4-13	424-426	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	4-14	
+4-14	427-437	pašvaldību	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	pašvaldība	_	_	_	_	conj	basic	4-12	
+4-15	438-444	parādu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	parāds	_	_	_	_	nmod	basic	4-16	
+4-16	445-450	nasta	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	nasta	_	_	_	_	nsubj	basic	4-10	
+4-17	450-451	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	4-4	
+
+#Text=Kā norāda EK, ļaut publiskajiem izdevumiem saistībā ar novecošanos palielināt budžeta deficītu, nozīmētu izveidot nepanesamu parāda slogu, kas attīstās spirālveidīgi.
+5-1	453-455	Kā	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0m	*	kā	_	_	_	_	advmod	basic	5-2	
+5-2	456-462	norāda	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	norādīt	_	_	_	_	parataxis	basic	5-15	
+5-3	463-465	EK	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	EK	organization	https://en.wikipedia.org/wiki/European\_Commission	_	_	nsubj	basic	5-2	
+5-4	465-466	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	5-2	
+5-5	467-471	ļaut	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	*	ļaut	_	_	_	_	ccomp	basic	5-15	
+5-6	472-484	publiskajiem	*	*	Dat	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpdyp	*	publisks	_	_	_	_	amod	basic	5-7	
+5-7	485-495	izdevumiem	*	*	Dat	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Ptan	*	*	ncmdd1	*	izdevumi	_	_	_	_	iobj	basic	5-5	
+5-8	496-504	saistībā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	saistība	_	_	_	_	obl	basic	5-5	
+5-9	505-507	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	5-10	
+5-10	508-519	novecošanos	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsar	*	novecošanās	_	_	_	_	nmod	basic	5-8	
+5-11	520-530	palielināt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	*	palielināt	_	_	_	_	ccomp	basic	5-5	
+5-12	531-538	budžeta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	budžets	_	_	_	_	nmod	basic	5-13	
+5-13	539-547	deficītu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	deficīts	_	_	_	_	obj	basic	5-11	
+5-14	547-548	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	5-15	
+5-15	549-557	nozīmētu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vtnc0t200an	*	nozīmēt	_	_	_	_	root	basic	5-15	
+5-16	558-566	izveidot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	*	izveidot	_	_	_	_	xcomp	basic	5-15	
+5-17	567-577	nepanesamu	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsanp	*	nepanesama	_	_	*->4-1	*[4]	amod	basic	5-19	
+5-18	578-584	parāda	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	parāds	_	_	*->4-1	*[4]	nmod	basic	5-19	
+5-19	585-590	slogu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	slogs	_	_	*->4-1	*[4]	obj	basic	5-16	
+5-20	590-591	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	5-22	
+5-21	592-595	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->4-2	*[4]	nsubj	basic	5-22	
+5-22	596-604	attīstās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmyipi330an	*	attīstīties	_	_	_	_	acl	basic	5-19	
+5-23	605-618	spirālveidīgi	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	spirālveidīgi	_	_	_	_	advmod	basic	5-22	
+5-24	618-619	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	5-15	
+
+#Text=Tas apdraudētu ekonomikas izaugsmes potenciālu, vienotās valūtas darbību un liktu ievērojami pārskatīt pensiju un veselības pakalpojumus, kas ievērojami negatīvi ietekmētu pensionāru un nodokļu maksātāju labklājību nākotnē.
+6-1	621-624	Tas	*	*	Nom	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msnn	*	tas	_	_	*->4-3	*[4]	nsubj	basic	6-2	
+6-2	625-635	apdraudētu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vmnc0t300an	*	apdraudēt	_	_	_	_	root	basic	6-2	
+6-3	636-646	ekonomikas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	ekonomika	_	_	_	_	nmod	basic	6-4	
+6-4	647-656	izaugsmes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	izaugsme	_	_	_	_	nmod	basic	6-5	
+6-5	657-667	potenciālu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	potenciāls	_	_	_	_	obj	basic	6-2	
+6-6	667-668	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	6-9	
+6-7	669-677	vienotās	*	*	Gen	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsgyp	*	vienota	_	_	_	_	amod	basic	6-8	
+6-8	678-685	valūtas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	valūta	_	_	_	_	nmod	basic	6-9	
+6-9	686-693	darbību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	darbība	_	_	_	_	conj	basic	6-5	
+6-10	694-696	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	6-11	
+6-11	697-702	liktu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vmnc0t100an	*	likt	_	_	_	_	conj	basic	6-2	
+6-12	703-713	ievērojami	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	ievērojami	_	_	_	_	advmod	basic	6-13	
+6-13	714-723	pārskatīt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	*	pārskatīt	_	_	_	_	ccomp	basic	6-11	
+6-14	724-731	pensiju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	pensija	_	_	_	_	obj	basic	6-13	
+6-15	732-734	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	6-17	
+6-16	735-744	veselības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	veselība	_	_	_	_	nmod	basic	6-17	
+6-17	745-757	pakalpojumus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	pakalpojums	_	_	*->3-1	*[3]	conj	basic	6-14	
+6-18	757-758	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	6-22	
+6-19	759-762	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->3-2	*[3]	nsubj	basic	6-22	
+6-20	763-773	ievērojami	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	ievērot	_	_	_	_	advmod	basic	6-22	
+6-21	774-782	negatīvi	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Neg	*	*	r0m	*	negatīvi	_	_	_	_	advmod	basic	6-22	
+6-22	783-792	ietekmētu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vmnc0t200an	*	ietekmēt	_	_	_	_	advcl	basic	6-2	
+6-23	793-803	pensionāru	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	pensionārs	_	_	_	_	nmod	basic	6-27	
+6-24	804-806	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	6-26	
+6-25	807-814	nodokļu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	nodoklis	_	_	_	_	nmod	basic	6-26	
+6-26	815-824	maksātāju	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	maksātājs	_	_	_	_	conj	basic	6-23	
+6-27	825-835	labklājību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	labklājība	_	_	_	_	obj	basic	6-22	
+6-28	836-843	nākotnē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	*	nākotne	_	_	_	_	acl	basic	6-27	
+6-29	843-844	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	6-2	

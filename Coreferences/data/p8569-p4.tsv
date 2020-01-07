@@ -1,0 +1,53 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Jāpiezīmē, ka pēdējie mēneši aktierim nav bijuši viegli.
+1-1	0-9	Jāpiezīmē	*	*	*	*	*	*	Nec	*	*	*	*	*	*	*	*	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnd0t200an	*	piezīmēt	_	_	_	_	root	basic	1-1	
+1-2	9-10	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-9	
+1-3	11-13	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	1-9	
+1-4	14-21	pēdējie	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnyp	*	pēdējais	time[1]	*[1]	_	_	amod	basic	1-5	
+1-5	22-28	mēneši	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn2	*	mēnesis	time[1]	*[1]	_	_	nsubj	basic	1-9	
+1-6	29-37	aktierim	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd2	*	aktieris	_	_	*->2-1	*[2]	obl	basic	1-9	
+1-7	38-41	nav	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30ay	*	būt	_	_	_	_	aux	basic	1-9	
+1-8	42-48	bijuši	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vcnpdmpnasnpn	*	būt	_	_	_	_	aux	basic	1-9	
+1-9	49-55	viegli	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnnp	*	viegli	_	_	_	_	ccomp	basic	1-1	
+1-10	55-56	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-1	
+
+#Text=Kā ziņojis žurnāls “Vakara Ziņas”, 20. oktobra vakarā Liepājas teātrī Edgara Pujāta dēļ tika atcelta Dž. Dž. Džilindžera iestudētā Vadima Korsa komiskās parodijas «Atsaldētais» izrāde.
+2-1	57-59	Kā	*	*	*	*	*	*	*	*	*	*	*	*	Int	*	*	*	PronType=Int	*	*	r0m	*	kā	_	_	_	_	advmod	basic	2-2	
+2-2	60-67	ziņojis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdmsnasnpn	*	ziņot	_	_	_	_	parataxis	basic	2-18	
+2-3	68-75	žurnāls	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	žurnāls	_	_	*->1-1	*[1]	nmod	basic	2-6	
+2-4	76-77	“	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	“	product[2]	*[2]	*->1-2	*[1]	punct	basic	2-6	
+2-5	77-83	Vakara	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	vakars	product[2]	*[2]	*->1-2	*[1]	nmod	basic	2-6	
+2-6	84-89	Ziņas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	ziņa	product[2]	*[2]	*->1-2	*[1]	nsubj	basic	2-2	
+2-7	89-90	”	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	”	product[2]	*[2]	*->1-2	*[1]	punct	basic	2-6	
+2-8	90-91	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-2	
+2-9	92-95	20.	*	*	*	*	*	*	*	*	Ord	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	20.	time[3]	*[3]	_	_	amod	basic	2-10	
+2-10	96-103	oktobra	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	*	oktobris	time[3]	*[3]	_	_	nmod	basic	2-11	
+2-11	104-110	vakarā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	vakars	time[3]	*[3]	_	_	obl	basic	2-18	
+2-12	111-119	Liepājas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Liepāja	organization[4]	*[4]	_	_	nmod	basic	2-13	
+2-13	120-126	teātrī	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	*	teātris	organization[4]	*[4]	_	_	obl	basic	2-18	
+2-14	127-133	Edgara	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Edgars	person[5]	https://lv.wikipedia.org/wiki/Edgars\_Pujāts[5]	*->2-2	*[2]	obl	basic	2-18	
+2-15	134-140	Pujāta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Pujāts	person[5]	https://lv.wikipedia.org/wiki/Edgars\_Pujāts[5]	*->2-2	*[2]	flat:name	basic	2-14	
+2-16	141-144	dēļ	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	stsg	*	dēļ	_	_	_	_	case	basic	2-14	
+2-17	145-149	tika	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vtnisi130an	*	tikt	_	_	_	_	aux:pass	basic	2-18	
+2-18	150-157	atcelta	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdfsnpsnpn	*	atcelt	_	_	_	_	root	basic	2-18	
+2-19	158-161	Dž.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	Dž.	person[6]	https://lv.wikipedia.org/wiki/Dž.\_Dž.\_Džilindžers[6]	_	_	obl	basic	2-22	
+2-20	162-165	Dž.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	Dž.	person[6]	https://lv.wikipedia.org/wiki/Dž.\_Dž.\_Džilindžers[6]	_	_	flat:name	basic	2-19	
+2-21	166-177	Džilindžera	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Džilindžers	person[6]	https://lv.wikipedia.org/wiki/Dž.\_Dž.\_Džilindžers[6]	_	_	flat:name	basic	2-19	
+2-22	178-187	iestudētā	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdfsnpsypn	*	iestudēt	_	_	_	_	amod	basic	2-30	
+2-23	188-194	Vadima	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Vadims	person[7]	*[7]	*->3-1	*[3]	nmod	basic	2-26	
+2-24	195-200	Korsa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Korss	person[7]	*[7]	*->3-1	*[3]	flat:name	basic	2-23	
+2-25	201-209	komiskās	*	*	Gen	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsgyp	*	komisks	_	_	*->3-1	*[3]	amod	basic	2-26	
+2-26	210-219	parodijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	parodija	_	_	*->3-1	*[3]	nmod	basic	2-28	
+2-27	220-221	«	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	«	product[8]	*[8]	*->3-2	*[3]	punct	basic	2-28	
+2-28	221-232	Atsaldētais	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsnpsypn	*	atsaldēt	product[8]	*[8]	*->3-2	*[3]	nmod	basic	2-30	
+2-29	232-233	»	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	»	product[8]	*[8]	*->3-2	*[3]	punct	basic	2-28	
+2-30	234-240	izrāde	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	izrāde	_	_	_	_	nsubj:pass	basic	2-18	
+2-31	240-241	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-18	

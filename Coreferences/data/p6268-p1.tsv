@@ -1,0 +1,45 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=2014.gada aprīlī Niks Kārters apprecēja fitnesa treneri Lorenu Kitu, un nu pāris gaida savu pirmdzimto.
+1-1	0-5	2014.	*	*	*	*	*	*	*	*	Ord	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	2014.	time[1]	*[1]	_	_	amod	basic	1-2	
+1-2	5-9	gada	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	gads	time[1]	*[1]	_	_	nmod	basic	1-3	
+1-3	10-16	aprīlī	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	*	aprīlis	time[1]	*[1]	_	_	obl	basic	1-6	
+1-4	17-21	Niks	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Niks	person[2]	https://en.wikipedia.org/wiki/Nik\_Carter[2]	_	_	nsubj	basic	1-6	
+1-5	22-29	Kārters	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Kārters	person[2]	https://en.wikipedia.org/wiki/Nik\_Carter[2]	_	_	flat:name	basic	1-4	
+1-6	30-39	apprecēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist330an	*	apprecēt	_	_	_	_	root	basic	1-6	
+1-7	40-47	fitnesa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	fitness	_	_	*->2-1	*[2]	nmod	basic	1-8	
+1-8	48-55	treneri	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	trenere	_	_	*->2-1	*[2]	nmod	basic	1-9	
+1-9	56-62	Lorenu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	*	Lorena	person[3]	*[3]	*->2-2	*[2]	obj	basic	1-6	
+1-10	63-67	Kitu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	*	Kita	person[3]	*[3]	*->2-2	*[2]	flat:name	basic	1-9	
+1-11	67-68	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-15	
+1-12	69-71	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-15	
+1-13	72-74	nu	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	nu	_	_	_	_	advmod	basic	1-15	
+1-14	75-80	pāris	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	pāris	_	_	*->1-1	*[1]	nsubj	basic	1-15	
+1-15	81-86	gaida	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt330an	*	gaidīt	_	_	_	_	conj	basic	1-6	
+1-16	87-91	savu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	Prs	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0msan	*	savs	_	_	*->1-2	*[1]	det	basic	1-17	
+1-17	92-102	pirmdzimto	*	*	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsayp	*	pirmdzimtais	_	_	_	_	obj	basic	1-15	
+1-18	102-103	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-6	
+
+#Text=Lorena ir jau ceturtajā grūtniecības mēnesī, un mīlnieki nespēj vien sagaidīt bērna dzimšanu.
+2-1	104-110	Lorena	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Lorena	person	*	*->2-3	*[2]	nsubj	basic	2-6	
+2-2	111-113	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	2-6	
+2-3	114-117	jau	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	jau	_	_	_	_	advmod	basic	2-4	
+2-4	118-127	ceturtajā	*	*	Loc	*	Pos	Fem	*	*	Ord	Sing	*	*	*	*	*	*	Case=Loc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|NumType=Ord	*	*	mosfsl	*	ceturtā	_	_	_	_	amod	basic	2-6	
+2-5	128-140	grūtniecības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	grūtniecība	_	_	_	_	nmod	basic	2-6	
+2-6	141-147	mēnesī	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	*	mēnesis	_	_	_	_	root	basic	2-6	
+2-7	147-148	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-10	
+2-8	149-151	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-10	
+2-9	152-160	mīlnieki	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	mīlnieks	_	_	_	_	nsubj	basic	2-10	
+2-10	161-167	nespēj	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vonipi130ay	*	spēt	_	_	_	_	conj	basic	2-6	
+2-11	168-172	vien	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	vien	_	_	_	_	discourse	basic	2-10	
+2-12	173-181	sagaidīt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t3000n	*	sagaidīt	_	_	_	_	xcomp	basic	2-10	
+2-13	182-187	bērna	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	bērns	_	_	_	_	nmod	basic	2-14	
+2-14	188-196	dzimšanu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	dzimšana	_	_	_	_	obj	basic	2-12	
+2-15	196-197	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-6	

@@ -1,0 +1,24 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Šajā teroraktā aizdomās turētais tunisietis Aniss Amri piektdienas rītā tika nošauts Milānas apkārtnē.
+1-1	0-4	Šajā	*	*	Loc	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msln	*	šis	_	_	_	_	det	basic	1-2	
+1-2	5-14	teroraktā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	terorakts	_	_	_	_	obl	basic	1-4	
+1-3	15-23	aizdomās	*	*	Loc	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Ptan	*	*	ncfdl4	*	aizdomas	_	_	_	_	obl	basic	1-4	
+1-4	24-32	turētais	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnpsypn	*	turēt	_	_	_	_	amod	basic	1-5	
+1-5	33-43	tunisietis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	tunisietis	_	_	*->1-1	*[1]	nmod	basic	1-6	
+1-6	44-49	Aniss	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Aniss	person[1]	*[1]	*->1-2	*[1]	nsubj:pass	basic	1-11	
+1-7	50-54	Amri	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	np0000	*	Amri	person[1]	*[1]	*->1-2	*[1]	flat:name	basic	1-6	
+1-8	55-66	piektdienas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	piektdiena	_	_	_	_	nmod	basic	1-9	
+1-9	67-71	rītā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	rīts	_	_	_	_	obl	basic	1-11	
+1-10	72-76	tika	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vtnisi130an	*	tikt	_	_	_	_	aux:pass	basic	1-11	
+1-11	77-84	nošauts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnpsnpn	*	nošaut	_	_	_	_	root	basic	1-11	
+1-12	85-92	Milānas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Milāna	GPE	https://en.wikipedia.org/wiki/Milan	_	_	nmod	basic	1-13	
+1-13	93-101	apkārtnē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	*	apkārtne	_	_	_	_	obl	basic	1-11	
+1-14	101-102	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-11	

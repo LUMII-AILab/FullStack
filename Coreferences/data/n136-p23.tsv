@@ -1,38 +1,38 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=(12) Komisijai jāiesniedz Eiropas Parlamentam un Padomei ziņojums par šīs direktīvas ieviešanu un piemērošanu jo īpaši attiecībā uz jauniem nodarbinātības veidiem, kas rodas dalībvalstīs,
-1-1	0-1	(	_	_	_	_	_	_	_	_	_	_	_	_	zb	(	_	_	_	_	punct	basic	1-2	
-1-2	1-3	12	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	12	_	_	_	_	parataxis	basic	1-5	
-1-3	3-4	)	_	_	_	_	_	_	_	_	_	_	_	_	zb	)	_	_	_	_	punct	basic	1-2	
-1-4	5-14	Komisijai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	komisija	organization	*	_	_	nsubj	basic	1-5	
-1-5	15-25	jāiesniedz	*	*	*	*	*	*	Nec	Act	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vmnd0t300an	iesniegt	_	_	_	_	root	basic	1-5	
-1-6	26-33	Eiropas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Eiropa	organization[1]|location[2]	*[1]|*[2]	_	_	nmod	basic	1-7	
-1-7	34-45	Parlamentam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	parlaments	organization[1]	*[1]	_	_	iobj	basic	1-5	
-1-8	46-48	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-9	
-1-9	49-56	Padomei	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd5	padome	organization	*	_	_	conj	basic	1-7	
-1-10	57-65	ziņojums	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	ziņojums	_	_	_	_	obj	basic	1-5	
-1-11	66-69	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	_	_	case	basic	1-14	
-1-12	70-73	šīs	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsgn	šī	_	_	_	_	det	basic	1-13	
-1-13	74-84	direktīvas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	direktīva	_	_	_	_	nmod	basic	1-14	
-1-14	85-94	ieviešanu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	ieviešana	_	_	_	_	nmod	basic	1-10	
-1-15	95-97	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-16	
-1-16	98-109	piemērošanu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	piemērošana	_	_	_	_	conj	basic	1-14	
-1-17	110-112	jo	_	_	_	_	_	_	_	_	_	_	_	_	q	jo	_	_	_	_	discourse	basic	1-18	
-1-18	113-118	īpaši	_	_	_	_	_	_	_	_	_	_	_	_	r0m	īpaši	_	_	_	_	advmod	basic	1-19	
-1-19	119-128	attiecībā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	attiecība	_	_	_	_	acl	basic	1-16	
-1-20	129-131	uz	_	_	_	_	_	_	_	_	_	_	_	_	sppd	uz	_	_	_	_	case	basic	1-23	
-1-21	132-139	jauniem	Masc	Plur	Dat	Pos	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpdnp	jauns	_	_	_	_	amod	basic	1-23	
-1-22	140-154	nodarbinātības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	nodarbinātība	_	_	_	_	nmod	basic	1-23	
-1-23	155-162	veidiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	veids	_	_	*[1]	*->1-1	iobj	basic	1-19	
-1-24	162-163	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-26	
-1-25	164-167	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	*[1]	*->1-2	nsubj	basic	1-26	
-1-26	168-173	rodas	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipi130an	rasties	_	_	_	_	acl	basic	1-23	
-1-27	174-186	dalībvalstīs	Fem	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl6	dalībvalsts	_	_	_	_	obl	basic	1-26	
-1-28	186-187	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-5	
+1-1	0-1	(	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	(	_	_	_	_	punct	basic	1-2	
+1-2	1-3	12	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	12	_	_	_	_	parataxis	basic	1-5	
+1-3	3-4	)	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	)	_	_	_	_	punct	basic	1-2	
+1-4	5-14	Komisijai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	*	komisija	organization	*	_	_	nsubj	basic	1-5	
+1-5	15-25	jāiesniedz	*	*	*	*	*	*	Nec	*	*	*	*	*	*	*	*	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vmnd0t300an	*	iesniegt	_	_	_	_	root	basic	1-5	
+1-6	26-33	Eiropas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Eiropa	organization[1]|location[2]	*[1]|*[2]	_	_	nmod	basic	1-7	
+1-7	34-45	Parlamentam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	parlaments	organization[1]	*[1]	_	_	iobj	basic	1-5	
+1-8	46-48	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-9	
+1-9	49-56	Padomei	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd5	*	padome	organization	*	_	_	conj	basic	1-7	
+1-10	57-65	ziņojums	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	ziņojums	_	_	_	_	obj	basic	1-5	
+1-11	66-69	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	1-14	
+1-12	70-73	šīs	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsgn	*	šī	_	_	_	_	det	basic	1-13	
+1-13	74-84	direktīvas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	direktīva	_	_	_	_	nmod	basic	1-14	
+1-14	85-94	ieviešanu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	ieviešana	_	_	_	_	nmod	basic	1-10	
+1-15	95-97	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-16	
+1-16	98-109	piemērošanu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	piemērošana	_	_	_	_	conj	basic	1-14	
+1-17	110-112	jo	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	jo	_	_	_	_	discourse	basic	1-18	
+1-18	113-118	īpaši	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	īpaši	_	_	_	_	advmod	basic	1-19	
+1-19	119-128	attiecībā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	attiecība	_	_	_	_	acl	basic	1-16	
+1-20	129-131	uz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	uz	_	_	_	_	case	basic	1-23	
+1-21	132-139	jauniem	*	*	Dat	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpdnp	*	jauns	_	_	_	_	amod	basic	1-23	
+1-22	140-154	nodarbinātības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	nodarbinātība	_	_	_	_	nmod	basic	1-23	
+1-23	155-162	veidiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	veids	_	_	*->1-1	*[1]	iobj	basic	1-19	
+1-24	162-163	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-26	
+1-25	164-167	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->1-2	*[1]	nsubj	basic	1-26	
+1-26	168-173	rodas	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmyipi130an	*	rasties	_	_	_	_	acl	basic	1-23	
+1-27	174-186	dalībvalstīs	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl6	*	dalībvalsts	_	_	_	_	obl	basic	1-26	
+1-28	186-187	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-5	

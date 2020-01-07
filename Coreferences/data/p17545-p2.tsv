@@ -1,0 +1,29 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text="Kolibris" turnīrs notika pēc trīsmīnusu sistēmas, kas nozīmē, ka pēc trešā zaudējuma komanda izstājas.
+1-1	0-1	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	event[1]	*[1]	_	_	punct	basic	1-2	
+1-2	1-9	Kolibris	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	*	Kolibris	event[1]	*[1]	_	_	nmod	basic	1-4	
+1-3	9-10	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	event[1]	*[1]	_	_	punct	basic	1-2	
+1-4	11-18	turnīrs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	turnīrs	event[1]	*[1]	_	_	nsubj	basic	1-5	
+1-5	19-25	notika	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnisi130an	*	notikt	_	_	_	_	root	basic	1-5	
+1-6	26-29	pēc	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	pēc	_	_	_	_	case	basic	1-8	
+1-7	30-40	trīsmīnusu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpgg	*	trīsmīnusu	_	_	*->1-1	*[1]	nmod	basic	1-8	
+1-8	41-49	sistēmas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	sistēma	_	_	*->1-1	*[1]	obl	basic	1-5	
+1-9	49-50	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-11	
+1-10	51-54	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->1-2	*[1]	nsubj	basic	1-11	
+1-11	55-61	nozīmē	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt230an	*	nozīmēt	_	_	_	_	advcl	basic	1-5	
+1-12	61-62	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-18	
+1-13	63-65	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	1-18	
+1-14	66-69	pēc	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pēc	_	_	_	_	case	basic	1-16	
+1-15	70-75	trešā	*	*	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|NumType=Ord	*	*	mosmsg	*	trešais	_	_	_	_	amod	basic	1-16	
+1-16	76-85	zaudējuma	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	zaudējums	_	_	_	_	obl	basic	1-18	
+1-17	86-93	komanda	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	komanda	_	_	_	_	nsubj	basic	1-18	
+1-18	94-102	izstājas	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmyipi130an	*	izstāties	_	_	_	_	ccomp	basic	1-11	
+1-19	102-103	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-5	

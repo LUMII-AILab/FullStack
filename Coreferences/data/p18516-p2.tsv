@@ -1,0 +1,65 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Satversmes aizsardzības birojs (SAB) jau ceturto mēnesi pārbauda, vai piešķirt Belēvičam augstākās kategorijas pielaidi valsts noslēpumam.
+1-1	0-10	Satversmes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	*	Satversme	organization[1]	https://lv.wikipedia.org/wiki/Satversmes\_aizsardzības\_birojs[1]	*->1-1	*[1]	nmod	basic	1-2	
+1-2	11-23	aizsardzības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	aizsardzība	organization[1]	https://lv.wikipedia.org/wiki/Satversmes\_aizsardzības\_birojs[1]	*->1-1	*[1]	nmod	basic	1-3	
+1-3	24-30	birojs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	birojs	organization[1]	https://lv.wikipedia.org/wiki/Satversmes\_aizsardzības\_birojs[1]	*->1-1	*[1]	nsubj	basic	1-10	
+1-4	31-32	(	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	(	_	_	_	_	punct	basic	1-5	
+1-5	32-35	SAB	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	SAB	organization	https://lv.wikipedia.org/wiki/Satversmes\_aizsardzības\_birojs	*->1-2	*[1]	discourse	basic	1-3	
+1-6	35-36	)	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	)	_	_	_	_	punct	basic	1-5	
+1-7	37-40	jau	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	jau	_	_	_	_	advmod	basic	1-9	
+1-8	41-48	ceturto	*	*	Acc	*	Pos	Masc	*	*	Ord	Sing	*	*	*	*	*	*	Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|NumType=Ord	*	*	mosmsa	*	ceturtais	time[2]	*[2]	_	_	amod	basic	1-9	
+1-9	49-55	mēnesi	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	*	mēnesis	time[2]	*[2]	_	_	obl	basic	1-10	
+1-10	56-64	pārbauda	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt330an	*	pārbaudīt	_	_	_	_	root	basic	1-10	
+1-11	64-65	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-13	
+1-12	66-69	vai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	vai	_	_	_	_	mark	basic	1-13	
+1-13	70-78	piešķirt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t1000n	*	piešķirt	_	_	_	_	ccomp	basic	1-10	
+1-14	79-88	Belēvičam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	npmsd1	*	Belēvičs	person	https://en.wikipedia.org/wiki/Guntis\_Belēvičs	*->2-1	*[2]	iobj	basic	1-13	
+1-15	89-98	augstākās	*	*	Gen	*	Cmp	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Cmp\|Gender=Fem\|Number=Sing	*	*	affsgyc	*	augsts	_	_	_	_	amod	basic	1-16	
+1-16	99-110	kategorijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	kategorija	_	_	_	_	nmod	basic	1-17	
+1-17	111-119	pielaidi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	pielaide	_	_	_	_	obj	basic	1-13	
+1-18	120-126	valsts	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	*	valsts	_	_	_	_	nmod	basic	1-19	
+1-19	127-137	noslēpumam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	noslēpums	_	_	_	_	nmod	basic	1-17	
+1-20	137-138	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-10	
+
+#Text=Laikraksta rīcībā esošā informācija liecina, ka aizvadītajā nedēļā Belēvičs izsaukts klātienes intervijai uz SAB.
+2-1	139-149	Laikraksta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	laikraksts	_	_	_	_	nmod	basic	2-2	
+2-2	150-156	rīcībā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	rīcība	_	_	_	_	obl	basic	2-3	
+2-3	157-162	esošā	*	Imp	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Pres	*	Aspect=Imp\|Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdfsnapypn	*	būt	_	_	_	_	amod	basic	2-4	
+2-4	163-174	informācija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	informācija	_	_	_	_	nsubj	basic	2-5	
+2-5	175-182	liecina	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt330an	*	liecināt	_	_	_	_	root	basic	2-5	
+2-6	182-183	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-11	
+2-7	184-186	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	2-11	
+2-8	187-198	aizvadītajā	*	Perf	Loc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Loc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdfslpsypn	*	aizvadīt	time[3]	*[3]	_	_	amod	basic	2-9	
+2-9	199-205	nedēļā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	nedēļa	time[3]	*[3]	_	_	obl	basic	2-11	
+2-10	206-214	Belēvičs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Belēvičs	person	https://en.wikipedia.org/wiki/Guntis\_Belēvičs	*->2-2	*[2]	nsubj:pass	basic	2-11	
+2-11	215-223	izsaukts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsnpsnpn	*	izsaukt	_	_	_	_	ccomp	basic	2-5	
+2-12	224-233	klātienes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	klātiene	_	_	_	_	nmod	basic	2-13	
+2-13	234-244	intervijai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	*	intervija	_	_	_	_	iobj	basic	2-11	
+2-14	245-247	uz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	uz	_	_	_	_	case	basic	2-15	
+2-15	248-251	SAB	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	SAB	organization	https://lv.wikipedia.org/wiki/Satversmes\_aizsardzības\_birojs	*->1-3	*[1]	obl	basic	2-11	
+2-16	251-252	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-5	
+
+#Text=Ministrs esot parakstījies par ziņu neizpaušanu, tādēļ neatklāj, par ko iztaujāts SAB.
+3-1	253-261	Ministrs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	ministrs	_	_	*->2-3	*[2]	nsubj	basic	3-3	
+3-2	262-266	esot	*	*	*	*	*	*	Qot	*	*	*	*	*	*	*	Pres	*	Evident=Nfh\|Mood=Qot\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnrpii00an	*	būt	_	_	_	_	aux	basic	3-3	
+3-3	267-279	parakstījies	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	Yes	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmypdmsnasnpn	*	parakstīties	_	_	_	_	root	basic	3-3	
+3-4	280-283	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	3-6	
+3-5	284-288	ziņu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	ziņa	_	_	_	_	nmod	basic	3-6	
+3-6	289-300	neizpaušanu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	neizpaušana	_	_	_	_	iobj	basic	3-3	
+3-7	300-301	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-9	
+3-8	302-307	tādēļ	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0c	*	tādēļ	_	_	_	_	advmod	basic	3-9	
+3-9	308-316	neatklāj	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt130ay	*	atklāt	_	_	_	_	conj	basic	3-3	
+3-10	316-317	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-13	
+3-11	318-321	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	3-12	
+3-12	322-324	ko	*	*	Acc	*	*	*	*	*	*	*	*	*	Ind	*	*	*	Case=Acc\|PronType=Ind	*	*	pi000an	*	kas	_	_	_	_	iobj	basic	3-13	
+3-13	325-334	iztaujāts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsnpsnpn	*	iztaujāt	_	_	_	_	acl	basic	3-9	
+3-14	335-338	SAB	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	SAB	organization	*	*->1-4	*[1]	obl	basic	3-13	
+3-15	338-339	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-3	

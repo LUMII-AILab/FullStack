@@ -1,0 +1,47 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Rīga, 1.janv., LETA.
+1-1	0-4	Rīga	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Rīga	GPE	https://en.wikipedia.org/wiki/Riga	_	_	root	basic	1-1	
+1-2	4-5	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-4	
+1-3	6-8	1.	*	*	*	*	*	*	*	*	Ord	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	1.	time[1]	*[1]	*->1-1	*[1]	amod	basic	1-4	
+1-4	8-13	janv.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	*	janv.	time[1]	*[1]	*->1-1	*[1]	parataxis	basic	1-1	
+1-5	13-14	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-6	
+1-6	15-19	LETA	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	LETA	organization	https://en.wikipedia.org/wiki/LETA	_	_	parataxis	basic	1-1	
+1-7	19-20	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-1	
+
+#Text=Šodien stājas spēkā grozījumi Civillikumā, kas nosaka līgumsodu ierobežojumus civiltiesiskos darījumos.
+2-1	21-27	Šodien	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	šodien	time	*	*->1-2	*[1]	advmod	basic	2-2	
+2-2	28-34	stājas	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyipi130an	*	stāties	_	_	_	_	root	basic	2-2	
+2-3	35-40	spēkā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	spēks	_	_	_	_	acl	basic	2-2	
+2-4	41-50	grozījumi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	grozījums	_	_	*->2-1	*[2]	nsubj	basic	2-2	
+2-5	51-62	Civillikumā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	civillikums	entity	*	_	_	acl	basic	2-4	
+2-6	62-63	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-8	
+2-7	64-67	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	Rel	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->2-2	*[2]	nsubj	basic	2-8	
+2-8	68-74	nosaka	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt330an	*	nosacīt	_	_	_	_	acl	basic	2-4	
+2-9	75-84	līgumsodu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	līgumsods	_	_	_	_	nmod	basic	2-10	
+2-10	85-98	ierobežojumus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	ierobežojums	_	_	_	_	obj	basic	2-8	
+2-11	99-113	civiltiesiskos	*	*	Loc	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmplnp	*	civiltiesisks	_	_	_	_	amod	basic	2-12	
+2-12	114-123	darījumos	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	*	darījums	_	_	_	_	acl	basic	2-10	
+2-13	123-124	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-2	
+
+#Text=Par laicīgu parāda neatdošanu papildus varēs iekasēt ne vairāk kā 10%.
+3-1	125-128	Par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	3-4	
+3-2	129-136	laicīgu	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsanp	*	laicīgs	_	_	_	_	amod	basic	3-4	
+3-3	137-143	parāda	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	parāds	_	_	_	_	nmod	basic	3-4	
+3-4	144-154	neatdošanu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	neatdošana	_	_	_	_	xcomp	basic	3-6	
+3-5	155-163	papildus	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	papildus	_	_	_	_	advmod	basic	3-6	
+3-6	164-169	varēs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	Fin	Act	vonifi330an	*	varēt	_	_	_	_	root	basic	3-6	
+3-7	170-177	iekasēt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t2000n	*	iekasēt	_	_	_	_	xcomp	basic	3-6	
+3-8	178-180	ne	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Neg	*	*	q	*	ne	_	_	_	_	discourse	basic	3-9	
+3-9	181-187	vairāk	*	*	*	*	Cmp	*	*	*	*	*	*	*	*	*	*	*	Degree=Cmp	*	*	rcq	*	daudz	_	_	_	_	obl	basic	3-11	
+3-10	188-190	kā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	kā	_	_	_	_	fixed	basic	3-9	
+3-11	191-193	10	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	10	_	_	_	_	nummod	basic	3-12	
+3-12	193-194	%	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	xx	*	%	_	_	_	_	iobj	basic	3-7	
+3-13	194-195	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-6	

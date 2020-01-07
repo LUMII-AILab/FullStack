@@ -1,0 +1,37 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=2013.gads pārim bija smagākais visā laulībā, Spelinga pieķēra vīru, to krāpjot, un vēlāk uzzināja, ka visas laulības laikā viņam bijušās mīļākās.
+1-1	0-5	2013.	*	*	*	*	*	*	*	*	Ord	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	2013.	time[1]	*[1]	_	_	amod	basic	1-2	
+1-2	5-9	gads	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	gads	time[1]	*[1]	_	_	nsubj	basic	1-5	
+1-3	10-15	pārim	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd2	*	pāris	_	_	_	_	obl	basic	1-5	
+1-4	16-20	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnisii30an	*	būt	_	_	_	_	cop	basic	1-5	
+1-5	21-30	smagākais	*	*	Nom	*	Cmp	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Masc\|Number=Sing	*	*	afmsnyc	*	smags	_	_	_	_	root	basic	1-5	
+1-6	31-35	visā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	Tot	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|PronType=Tot	*	*	pg0fsln	*	visa	_	_	_	_	det	basic	1-7	
+1-7	36-43	laulībā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	laulība	_	_	_	_	acl	basic	1-5	
+1-8	43-44	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-10	
+1-9	45-53	Spelinga	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Spelinga	person	https://en.wikipedia.org/wiki/Tori\_Spelling	*->1-1	*[1]	nsubj	basic	1-10	
+1-10	54-61	pieķēra	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist130an	*	pieķert	_	_	_	_	conj	basic	1-5	
+1-11	62-66	vīru	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	vīrs	_	_	*->2-1	*[2]	obj	basic	1-10	
+1-12	66-67	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-14	
+1-13	68-70	to	*	*	Acc	*	*	Fem	*	*	*	Sing	3	*	Dem	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3fsan	*	tā	_	_	*->1-2	*[1]	obj	basic	1-14	
+1-14	71-78	krāpjot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	Conv	*	vmnpu0000000n	*	krāpt	_	_	_	_	advcl	basic	1-10	
+1-15	78-79	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-14	
+1-16	80-82	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-18	
+1-17	83-88	vēlāk	*	*	*	*	Cmp	*	*	*	*	*	*	*	*	*	*	*	Degree=Cmp	*	*	rct	*	vēlu	_	_	_	_	advmod	basic	1-18	
+1-18	89-97	uzzināja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist330an	*	uzzināt	_	_	_	_	conj	basic	1-10	
+1-19	97-98	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-25	
+1-20	99-101	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	1-25	
+1-21	102-107	visas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	Tot	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|PronType=Tot	*	*	pg0fsgn	*	visa	_	_	_	_	det	basic	1-22	
+1-22	108-116	laulības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	laulība	_	_	_	_	nmod	basic	1-23	
+1-23	117-122	laikā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	laiks	_	_	_	_	obl	basic	1-25	
+1-24	123-128	viņam	*	*	Dat	*	*	Masc	*	*	*	Sing	3	*	Prs	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msdn	*	viņš	_	_	*->2-2	*[2]	obl	basic	1-25	
+1-25	129-136	bijušās	*	Perf	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	Yes	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmypdfpnasnpn	*	bīties	_	_	_	_	ccomp	basic	1-18	
+1-26	137-144	mīļākās	*	*	Nom	*	Cmp	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Fem\|Number=Plur	*	*	affpnyc	*	mīļš	_	_	_	_	nsubj	basic	1-25	
+1-27	144-145	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-5	

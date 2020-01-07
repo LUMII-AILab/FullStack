@@ -1,0 +1,36 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Ceraukstes pagasta pārvaldes vadītājs Viesturs Janševskis uz laiku pieskatīs darbus, kas veicami Brunavas pagastā, informē Bauskas novada administrācijas sabiedrisko attiecību speciāliste Andra Matuļenko.
+1-1	0-10	Ceraukstes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	*	Ceraukste	GPE[1]|GPE[2]	https://en.wikipedia.org/wiki/Ceraukste\_Parish[1]|*[2]	_	_	nmod	basic	1-2	
+1-2	11-18	pagasta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	pagasts	GPE[1]	https://en.wikipedia.org/wiki/Ceraukste\_Parish[1]	_	_	nmod	basic	1-3	
+1-3	19-28	pārvaldes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	pārvalde	_	_	*->1-1	*[1]	nmod	basic	1-4	
+1-4	29-37	vadītājs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	vadītājs	_	_	*->1-1	*[1]	nmod	basic	1-5	
+1-5	38-46	Viesturs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Viesturs	person[3]	*[3]	*->1-2	*[1]	nsubj	basic	1-9	
+1-6	47-57	Janševskis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	*	Janševskis	person[3]	*[3]	*->1-2	*[1]	flat:name	basic	1-5	
+1-7	58-60	uz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	uz	_	_	_	_	case	basic	1-8	
+1-8	61-66	laiku	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	laiks	_	_	_	_	obl	basic	1-9	
+1-9	67-76	pieskatīs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmnift330an	*	pieskatīt	_	_	_	_	root	basic	1-9	
+1-10	77-83	darbus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	darbs	_	_	*->2-1	*[2]	obj	basic	1-9	
+1-11	83-84	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-13	
+1-12	85-88	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->2-2	*[2]	nsubj	basic	1-13	
+1-13	89-96	veicami	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Pres	*	Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdmpnppnpn	*	veikt	_	_	_	_	acl	basic	1-10	
+1-14	97-105	Brunavas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Brunava	GPE[4]|GPE[5]	https://en.wikipedia.org/wiki/Brunava\_Parish[4]|https://lv.wikipedia.org/wiki/Brunava[5]	_	_	nmod	basic	1-15	
+1-15	106-113	pagastā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	pagasts	GPE[4]	https://en.wikipedia.org/wiki/Brunava\_Parish[4]	_	_	obl	basic	1-13	
+1-16	113-114	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-17	
+1-17	115-122	informē	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt230an	*	informēt	_	_	_	_	conj	basic	1-9	
+1-18	123-130	Bauskas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Bauska	GPE[6]|GPE[7]	https://en.wikipedia.org/wiki/Bauska\_Municipality[6]|*[7]	_	_	nmod	basic	1-19	
+1-19	131-137	novada	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	novads	GPE[6]	https://en.wikipedia.org/wiki/Bauska\_Municipality[6]	_	_	nmod	basic	1-20	
+1-20	138-153	administrācijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	administrācija	_	_	*->3-1	*[3]	nmod	basic	1-23	
+1-21	154-165	sabiedrisko	*	*	Gen	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpgyp	*	sabiedriska	_	_	*->3-1	*[3]	amod	basic	1-22	
+1-22	166-175	attiecību	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	attiecība	_	_	*->3-1	*[3]	nmod	basic	1-23	
+1-23	176-187	speciāliste	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	speciāliste	_	_	*->3-1	*[3]	nmod	basic	1-24	
+1-24	188-193	Andra	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Andra	person[8]	*[8]	*->3-2	*[3]	nsubj	basic	1-17	
+1-25	194-203	Matuļenko	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	np0000	*	Matuļenko	person[8]	*[8]	*->3-2	*[3]	flat:name	basic	1-24	
+1-26	203-204	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-9	

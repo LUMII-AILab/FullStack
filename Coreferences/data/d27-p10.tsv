@@ -1,34 +1,34 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=–– Nu un tad!
-1-1	0-1	–	_	_	_	_	_	_	_	_	_	_	_	_	zd	–	_	_	punct	basic	1-5	
-1-2	1-2	–	_	_	_	_	_	_	_	_	_	_	_	_	zd	–	_	_	punct	basic	1-5	
-1-3	3-5	Nu	_	_	_	_	_	_	_	_	_	_	_	_	q	nu	_	_	discourse	basic	1-5	
-1-4	6-8	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	cc	basic	1-5	
-1-5	9-12	tad	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	tad	_	_	root	basic	1-5	
-1-6	12-13	!	_	_	_	_	_	_	_	_	_	_	_	_	zs	!	_	_	punct	basic	1-5	
+1-1	0-1	–	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	–	_	_	punct	basic	1-5	
+1-2	1-2	–	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	–	_	_	punct	basic	1-5	
+1-3	3-5	Nu	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	nu	_	_	discourse	basic	1-5	
+1-4	6-8	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	cc	basic	1-5	
+1-5	9-12	tad	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	*	tad	_	_	root	basic	1-5	
+1-6	12-13	!	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	!	_	_	punct	basic	1-5	
 
 #Text=Viņa apvainojas.
-2-1	15-19	Viņa	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsnn	viņa	*[2]	*->2-1	nsubj	basic	2-2	
-2-2	20-30	apvainojas	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipi230an	apvainoties	_	_	root	basic	2-2	
-2-3	30-31	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	2-2	
+2-1	15-19	Viņa	*	*	Nom	*	*	Fem	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3fsnn	*	viņa	*->2-1	*[2]	nsubj	basic	2-2	
+2-2	20-30	apvainojas	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmyipi230an	*	apvainoties	_	_	root	basic	2-2	
+2-3	30-31	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	2-2	
 
 #Text=Es pazīstu meiteni, kurai bija bērns jau astoņu gadu vecumā!
-3-1	33-35	Es	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10snn	es	*[2]	*->2-2	nsubj	basic	3-2	
-3-2	36-43	pazīstu	*	Sing	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	1	*	vmnipt11san	pazīt	_	_	root	basic	3-2	
-3-3	44-51	meiteni	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	meitene	*[1]	*->1-1	obj	basic	3-2	
-3-4	51-52	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	3-6	
-3-5	53-58	kurai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsdn	kura	*[1]	*->1-2	obl	basic	3-6	
-3-6	59-63	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisii30an	būt	_	_	acl	basic	3-3	
-3-7	64-69	bērns	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	bērns	_	_	nsubj	basic	3-6	
-3-8	70-73	jau	_	_	_	_	_	_	_	_	_	_	_	_	r0t	jau	_	_	advmod	basic	3-6	
-3-9	74-80	astoņu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpg	astoņi	_	_	nummod	basic	3-10	
-3-10	81-85	gadu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	gads	_	_	nmod	basic	3-11	
-3-11	86-92	vecumā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	vecums	_	_	obl	basic	3-6	
-3-12	92-93	!	_	_	_	_	_	_	_	_	_	_	_	_	zs	!	_	_	punct	basic	3-2	
+3-1	33-35	Es	*	*	Nom	*	*	*	*	*	*	Sing	1	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	*	*	pp10snn	*	es	*->2-2	*[2]	nsubj	basic	3-2	
+3-2	36-43	pazīstu	*	*	*	*	*	*	Ind	*	*	Sing	1	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt11san	*	pazīt	_	_	root	basic	3-2	
+3-3	44-51	meiteni	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	meitene	*->1-1	*[1]	obj	basic	3-2	
+3-4	51-52	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	3-6	
+3-5	53-58	kurai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsdn	*	kura	*->1-2	*[1]	obl	basic	3-6	
+3-6	59-63	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnisii30an	*	būt	_	_	acl	basic	3-3	
+3-7	64-69	bērns	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	bērns	_	_	nsubj	basic	3-6	
+3-8	70-73	jau	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	jau	_	_	advmod	basic	3-6	
+3-9	74-80	astoņu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpg	*	astoņi	_	_	nummod	basic	3-10	
+3-10	81-85	gadu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	gads	_	_	nmod	basic	3-11	
+3-11	86-92	vecumā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	vecums	_	_	obl	basic	3-6	
+3-12	92-93	!	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	!	_	_	punct	basic	3-2	

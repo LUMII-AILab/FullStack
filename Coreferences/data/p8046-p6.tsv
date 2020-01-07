@@ -1,0 +1,98 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Kas notiks, ja vienlaikus, vienā un tajā pat vietā atradīsies cilvēki, kuri, šķietami, nekādos apstākļos nevar atrasties līdzās?
+1-1	0-3	Kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Int	*	*	pq000nn	*	kas	_	_	_	_	nsubj	basic	1-2	
+1-2	4-10	notiks	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmnifi130an	*	notikt	_	_	_	_	root	basic	1-2	
+1-3	10-11	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-12	
+1-4	12-14	ja	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ja	_	_	_	_	mark	basic	1-12	
+1-5	15-25	vienlaikus	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	vienlaikus	_	_	_	_	advmod	basic	1-12	
+1-6	25-26	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-11	
+1-7	27-32	vienā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|NumType=Card	*	*	mcsfsl	*	viens	_	_	_	_	nummod	basic	1-11	
+1-8	33-35	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-9	
+1-9	36-40	tajā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsln	*	tajā	_	_	_	_	conj	basic	1-7	
+1-10	41-44	pat	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	pat	_	_	_	_	discourse	basic	1-11	
+1-11	45-50	vietā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	vieta	_	_	_	_	conj	basic	1-5	
+1-12	51-61	atradīsies	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmyifi130an	*	atrasties	_	_	_	_	advcl	basic	1-2	
+1-13	62-69	cilvēki	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	cilvēks	_	_	*->1-1	*[1]	nsubj	basic	1-12	
+1-14	69-70	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-21	
+1-15	71-75	kuri	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Rel	*	*	pr0mpnn	*	kurš	_	_	*->1-2	*[1]	nsubj	basic	1-21	
+1-16	75-76	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-17	
+1-17	77-85	šķietami	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	šķietami	_	_	_	_	discourse	basic	1-21	
+1-18	85-86	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-17	
+1-19	87-94	nekādos	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur\|PronType=Dem,Neg	*	*	pd0mply	*	nekādos	_	_	_	_	det	basic	1-20	
+1-20	95-104	apstākļos	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl2	*	apstāklis	_	_	_	_	obl	basic	1-21	
+1-21	105-110	nevar	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	nevarēt	_	_	_	_	acl	basic	1-13	
+1-22	111-120	atrasties	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i1000n	*	atrasties	_	_	_	_	xcomp	basic	1-21	
+1-23	121-127	līdzās	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0p	*	līdzās	_	_	_	_	advmod	basic	1-22	
+1-24	127-128	?	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	?	_	_	_	_	punct	basic	1-2	
+
+#Text=Vēl jo vairāk – atrasties pie viena galda...
+2-1	130-133	Vēl	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	vēl	_	_	_	_	advmod	basic	2-3	
+2-2	134-136	jo	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	jo	_	_	_	_	discourse	basic	2-3	
+2-3	137-143	vairāk	*	*	*	*	Cmp	*	*	*	*	*	*	*	*	*	*	*	Degree=Cmp	*	*	rcq	*	daudz	_	_	_	_	discourse	basic	2-5	
+2-4	144-145	–	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	–	_	_	_	_	punct	basic	2-3	
+2-5	146-155	atrasties	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i1000n	*	atrasties	_	_	_	_	root	basic	2-5	
+2-6	156-159	pie	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pie	_	_	_	_	case	basic	2-8	
+2-7	160-165	viena	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|NumType=Card	*	*	mcsmsg	*	viens	_	_	_	_	nummod	basic	2-8	
+2-8	166-171	galda	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	galds	_	_	_	_	obl	basic	2-5	
+2-9	171-174	...	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	...	_	_	_	_	punct	basic	2-5	
+
+#Text=Kas notiks, ja uz vienas un tās pašas skatuves „apvienot” satriecošo skaistuli un izsmalcināto estētu Viktoru Loginovu un pašu „smieklīgāko” aktrisi Oļesju Žeļezņaka?
+3-1	176-179	Kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Int	*	*	pq000nn	*	kas	_	_	_	_	nsubj	basic	3-2	
+3-2	180-186	notiks	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmnifi130an	*	notikt	_	_	_	_	root	basic	3-2	
+3-3	186-187	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-12	
+3-4	188-190	ja	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ja	_	_	_	_	mark	basic	3-12	
+3-5	191-193	uz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	uz	_	_	_	_	case	basic	3-10	
+3-6	194-200	vienas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|NumType=Card	*	*	mcsfsg	*	viens	_	_	_	_	nummod	basic	3-10	
+3-7	201-203	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	3-9	
+3-8	204-207	tās	*	*	Gen	*	*	Fem	*	*	*	Sing	3	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3fsgn	*	tā	_	_	_	_	det	basic	3-9	
+3-9	208-213	pašas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|PronType=Tot	*	*	pg0fsgn	*	pati	_	_	_	_	conj	basic	3-6	
+3-10	214-222	skatuves	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	skatuve	_	_	_	_	obl	basic	3-12	
+3-11	223-224	„	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	„	_	_	_	_	punct	basic	3-12	
+3-12	224-232	apvienot	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmnift230an	*	apvienot	_	_	_	_	dep	basic	3-2	
+3-13	232-233	”	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	”	_	_	_	_	punct	basic	3-12	
+3-14	234-244	satriecošo	*	Imp	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Pres	*	Aspect=Imp\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdmsaapypn	*	satriekt	_	_	*->3-1	*[3]	amod	basic	3-15	
+3-15	245-254	skaistuli	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	*	skaistulis	_	_	*->3-1	*[3]	nmod	basic	3-19	
+3-16	255-257	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	*->3-1	*[3]	cc	basic	3-18	
+3-17	258-270	izsmalcināto	*	*	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsayp	*	izsmalcināts	_	_	*->3-1	*[3]	amod	basic	3-18	
+3-18	271-277	estētu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	estēts	_	_	*->3-1	*[3]	conj	basic	3-15	
+3-19	278-285	Viktoru	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	*	Viktors	person[1]	*[1]	*->3-2	*[3]	obj	basic	3-12	
+3-20	286-294	Loginovu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	*	Loginovs	person[1]	*[1]	*->3-2	*[3]	flat:name	basic	3-19	
+3-21	295-297	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	3-27	
+3-22	298-302	pašu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Tot	*	*	pg0fsan	*	pati	_	_	*->2-1	*[2]	det	basic	3-24	
+3-23	303-304	„	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	„	_	_	*->2-1	*[2]	punct	basic	3-24	
+3-24	304-315	smieklīgāko	*	*	Acc	*	Cmp	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Cmp\|Gender=Fem\|Number=Sing	*	*	affsayc	*	smieklīgs	_	_	*->2-1	*[2]	amod	basic	3-26	
+3-25	315-316	”	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	”	_	_	*->2-1	*[2]	punct	basic	3-24	
+3-26	317-324	aktrisi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	aktrise	_	_	*->2-1	*[2]	nmod	basic	3-27	
+3-27	325-331	Oļesju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	*	Oļesja	person[2]	https://en.wikipedia.org/wiki/Olesya\_Zheleznyak[2]	*->2-2	*[2]	conj	basic	3-19	
+3-28	332-341	Žeļezņaka	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	*	Žeļezņaka	person[2]	https://en.wikipedia.org/wiki/Olesya\_Zheleznyak[2]	*->2-2	*[2]	flat:name	basic	3-27	
+3-29	341-342	?	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	?	_	_	_	_	punct	basic	3-2	
+
+#Text=Kas sagaida skatītāju, ja šai „savādajai” kompānijai pievienot talantīgo bārmeni, atvainojiet, aktieri Sergeju Serovu?
+4-1	344-347	Kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Int	*	*	pq000nn	*	kas	_	_	_	_	nsubj	basic	4-2	
+4-2	348-355	sagaida	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	sagaidīt	_	_	_	_	root	basic	4-2	
+4-3	356-365	skatītāju	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	skatītājs	_	_	_	_	iobj	basic	4-2	
+4-4	365-366	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-11	
+4-5	367-369	ja	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ja	_	_	_	_	mark	basic	4-11	
+4-6	370-373	šai	*	*	Dat	*	*	Fem	*	*	*	Sing	3	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3fsdn	*	šī	_	_	_	_	det	basic	4-10	
+4-7	374-375	„	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	„	_	_	_	_	punct	basic	4-8	
+4-8	375-384	savādajai	*	*	Dat	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsdyp	*	savāds	_	_	_	_	amod	basic	4-10	
+4-9	384-385	”	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	”	_	_	_	_	punct	basic	4-8	
+4-10	386-396	kompānijai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	*	kompānija	_	_	_	_	iobj	basic	4-11	
+4-11	397-406	pievienot	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmnift230an	*	pievienot	_	_	_	_	advcl	basic	4-2	
+4-12	407-416	talantīgo	*	*	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsayp	*	talantīgs	_	_	*->4-1	*[4]	amod	basic	4-13	
+4-13	417-424	bārmeni	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	*	bārmenis	_	_	*->4-1	*[4]	nmod	basic	4-18	
+4-14	424-425	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-15	
+4-15	426-437	atvainojiet	*	*	*	*	*	*	Imp	*	*	Plur	2	*	*	*	*	*	Mood=Imp\|Number=Plur\|Person=2\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vmnm0t22pan	*	atvainot	_	_	_	_	discourse	basic	4-17	
+4-16	437-438	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-15	
+4-17	439-446	aktieri	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn2	*	aktieris	_	_	*->4-2	*[4]	nmod	basic	4-18	
+4-18	447-454	Sergeju	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	*	Sergejs	person[3]	*[3]	*->4-3	*[4]	obj	basic	4-11	
+4-19	455-461	Serovu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	*	Serovs	person[3]	*[3]	*->4-3	*[4]	flat:name	basic	4-18	
+4-20	461-462	?	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	?	_	_	_	_	punct	basic	4-2	

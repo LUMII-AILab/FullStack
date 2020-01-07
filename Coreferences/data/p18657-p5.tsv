@@ -1,0 +1,37 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Pirmdien piekto vietu 50 metru distancē ar pistoli puišiem izcīnīja Vasermanis.
+1-1	0-8	Pirmdien	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	pirmdien	time	*	_	_	advmod	basic	1-10	
+1-2	9-15	piekto	*	*	Acc	*	Pos	Fem	*	*	Ord	Sing	*	*	*	*	*	*	Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|NumType=Ord	*	*	mosfsa	*	piektā	_	_	_	_	amod	basic	1-3	
+1-3	16-21	vietu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	vieta	_	_	_	_	obj	basic	1-10	
+1-4	22-24	50	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	50	_	_	_	_	nummod	basic	1-5	
+1-5	25-30	metru	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	metrs	_	_	_	_	nmod	basic	1-6	
+1-6	31-39	distancē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	*	distance	_	_	_	_	obl	basic	1-10	
+1-7	40-42	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	1-8	
+1-8	43-50	pistoli	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	pistole	_	_	_	_	nmod	basic	1-6	
+1-9	51-58	puišiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd2	*	puisis	_	_	_	_	iobj	basic	1-6	
+1-10	59-67	izcīnīja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist330an	*	izcīnīt	_	_	_	_	root	basic	1-10	
+1-11	68-78	Vasermanis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	*	Vasermanis	person	*	*->1-1	*[1]	nsubj	basic	1-10	
+1-12	78-79	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-10	
+
+#Text=Kvalifikācijā viņš uzrādīja sesto rezultātu, bet finālā spēja par pozīciju pakāpties.
+2-1	80-93	Kvalifikācijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	kvalifikācija	_	_	_	_	obl	basic	2-3	
+2-2	94-98	viņš	*	*	Nom	*	*	Masc	*	*	*	Sing	3	*	Prs	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msnn	*	viņš	_	_	*->1-2	*[1]	nsubj	basic	2-3	
+2-3	99-107	uzrādīja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist330an	*	uzrādīt	_	_	_	_	root	basic	2-3	
+2-4	108-113	sesto	*	*	Acc	*	Pos	Masc	*	*	Ord	Sing	*	*	*	*	*	*	Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|NumType=Ord	*	*	mosmsa	*	sestais	_	_	_	_	amod	basic	2-5	
+2-5	114-123	rezultātu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	rezultāts	_	_	_	_	obj	basic	2-3	
+2-6	123-124	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-9	
+2-7	125-128	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	_	_	cc	basic	2-9	
+2-8	129-135	finālā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	fināls	_	_	_	_	obl	basic	2-9	
+2-9	136-141	spēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vonisi130an	*	spēt	_	_	_	_	conj	basic	2-3	
+2-10	142-145	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	2-11	
+2-11	146-154	pozīciju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	pozīcija	_	_	_	_	obl	basic	2-12	
+2-12	155-164	pakāpties	*	*	*	*	*	*	*	*	*	*	*	*	*	Yes	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	Inf	*	vmyn0i1000n	*	pakāpties	_	_	_	_	xcomp	basic	2-9	
+2-13	164-165	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-3	

@@ -1,0 +1,42 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Piektdien, 25. septembrī, Olimpiskā centra “Ventspils” stadionā notika Olimpiskā diena.
+1-1	0-9	Piektdien	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	piektdien	time	*	*->1-1	*[1]	advmod	basic	1-12	
+1-2	9-10	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-4	
+1-3	11-14	25.	*	*	*	*	*	*	*	*	Ord	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	25.	time[1]	*[1]	*->1-2	*[1]	amod	basic	1-4	
+1-4	15-24	septembrī	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	*	septembris	time[1]	*[1]	*->1-2	*[1]	acl	basic	1-1	
+1-5	24-25	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-4	
+1-6	26-35	Olimpiskā	*	*	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsgyp	*	olimpisks	location[2]	*[2]	*->2-1	*[2]	amod	basic	1-7	
+1-7	36-42	centra	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	centrs	location[2]	*[2]	*->2-1	*[2]	nmod	basic	1-9	
+1-8	43-44	“	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	“	location[2]	*[2]	*->2-2	*[2]	punct	basic	1-9	
+1-9	44-53	Ventspils	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn6	*	Ventspils	location[2]|GPE[3]	*[2]|https://en.wikipedia.org/wiki/Ventspils[3]	*->2-2	*[2]	nmod	basic	1-11	
+1-10	53-54	”	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	”	location[2]	*[2]	*->2-2	*[2]	punct	basic	1-9	
+1-11	55-63	stadionā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	stadions	location[2]	*[2]	_	_	obl	basic	1-12	
+1-12	64-70	notika	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnisi130an	*	notikt	_	_	_	_	root	basic	1-12	
+1-13	71-80	Olimpiskā	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnyp	*	olimpisks	event[4]	*[4]	_	_	amod	basic	1-14	
+1-14	81-86	diena	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	diena	event[4]	*[4]	_	_	nsubj	basic	1-12	
+1-15	86-87	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-12	
+
+#Text=Šāda diena tiek rīkota, lai vairotu jauniešu interesi par sportu un Olimpisko kustību.
+2-1	88-92	Šāda	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	Dem	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsnn	*	šāda	_	_	_	_	det	basic	2-2	
+2-2	93-98	diena	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	diena	_	_	_	_	nsubj:pass	basic	2-4	
+2-3	99-103	tiek	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vtnipi130an	*	tikt	_	_	_	_	aux:pass	basic	2-4	
+2-4	104-110	rīkota	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdfsnpsnpn	*	rīkot	_	_	_	_	root	basic	2-4	
+2-5	110-111	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-7	
+2-6	112-115	lai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	lai	_	_	_	_	mark	basic	2-7	
+2-7	116-123	vairotu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnc0t200an	*	vairot	_	_	_	_	advcl	basic	2-4	
+2-8	124-132	jauniešu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	jaunietis	_	_	_	_	nmod	basic	2-9	
+2-9	133-141	interesi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	interese	_	_	_	_	obj	basic	2-7	
+2-10	142-145	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	2-11	
+2-11	146-152	sportu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	sports	_	_	_	_	nmod	basic	2-9	
+2-12	153-155	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-14	
+2-13	156-165	Olimpisko	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsayp	*	olimpisks	_	_	_	_	amod	basic	2-14	
+2-14	166-173	kustību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	kustība	_	_	_	_	conj	basic	2-11	
+2-15	173-174	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-4	

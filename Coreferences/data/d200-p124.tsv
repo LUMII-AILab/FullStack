@@ -1,47 +1,47 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Mātes sejai pārslīdēja raižu pilna izteiksme.
-1-1	0-5	Mātes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	māte	_	_	*[1]	*->1-1	nmod	basic	1-2	
-1-2	6-11	sejai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	seja	_	_	_	_	iobj	basic	1-3	
-1-3	12-22	pārslīdēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	pārslīdēt	_	_	_	_	root	basic	1-3	
-1-4	23-28	raižu	Fem	Ptan	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Ptan	*	*	ncfdg5	raizes	_	_	_	_	nmod	basic	1-5	
-1-5	29-34	pilna	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	pilna	_	_	_	_	amod	basic	1-6	
-1-6	35-44	izteiksme	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	izteiksme	_	_	_	_	nsubj	basic	1-3	
-1-7	44-45	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-3	
+1-1	0-5	Mātes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	māte	_	_	*->1-1	*[1]	nmod	basic	1-2	
+1-2	6-11	sejai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	*	seja	_	_	_	_	iobj	basic	1-3	
+1-3	12-22	pārslīdēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist330an	*	pārslīdēt	_	_	_	_	root	basic	1-3	
+1-4	23-28	raižu	*	*	Gen	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Ptan	*	*	ncfdg5	*	raizes	_	_	_	_	nmod	basic	1-5	
+1-5	29-34	pilna	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	*	pilna	_	_	_	_	amod	basic	1-6	
+1-6	35-44	izteiksme	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	izteiksme	_	_	_	_	nsubj	basic	1-3	
+1-7	44-45	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-3	
 
 #Text=Viņa patiešām izgāja virtuvē un uzlika vārīties kartupeļus.
-2-1	47-51	Viņa	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsnn	viņa	_	_	*[1]	*->1-2	nsubj	basic	2-3	
-2-2	52-60	patiešām	_	_	_	_	_	_	_	_	_	_	_	_	q	patiešām	_	_	_	_	discourse	basic	2-3	
-2-3	61-67	izgāja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi130an	iziet	_	_	_	_	root	basic	2-3	
-2-4	68-75	virtuvē	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	virtuve	_	_	_	_	obl	basic	2-3	
-2-5	76-78	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	2-6	
-2-6	79-85	uzlika	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	uzlikt	_	_	_	_	conj	basic	2-3	
-2-7	86-94	vārīties	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0t3000n	vārīties	_	_	_	_	ccomp	basic	2-6	
-2-8	95-105	kartupeļus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa2	kartupelis	_	_	_	_	obj	basic	2-6	
-2-9	105-106	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-3	
+2-1	47-51	Viņa	*	*	Nom	*	*	Fem	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3fsnn	*	viņa	_	_	*->1-2	*[1]	nsubj	basic	2-3	
+2-2	52-60	patiešām	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	patiešām	_	_	_	_	discourse	basic	2-3	
+2-3	61-67	izgāja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnisi130an	*	iziet	_	_	_	_	root	basic	2-3	
+2-4	68-75	virtuvē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	*	virtuve	_	_	_	_	obl	basic	2-3	
+2-5	76-78	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-6	
+2-6	79-85	uzlika	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist130an	*	uzlikt	_	_	_	_	conj	basic	2-3	
+2-7	86-94	vārīties	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0t3000n	*	vārīties	_	_	_	_	ccomp	basic	2-6	
+2-8	95-105	kartupeļus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa2	*	kartupelis	_	_	_	_	obj	basic	2-6	
+2-9	105-106	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-3	
 
 #Text=Mazliet vēlāk viņa atgriezās atpakaļ istabā, tagad tā bija viņa, kas nosēdināja Sofiju krēslā.
-3-1	108-115	Mazliet	_	_	_	_	_	_	_	_	_	_	_	_	r0q	mazliet	_	_	_	_	advmod	basic	3-2	
-3-2	116-121	vēlāk	*	*	*	Cmp	*	*	*	*	*	Degree=Cmp	*	*	rct	vēlu	_	_	_	_	advmod	basic	3-4	
-3-3	122-126	viņa	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsnn	viņa	_	_	*[1]	*->1-3	nsubj	basic	3-4	
-3-4	127-136	atgriezās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi130an	atgriezties	_	_	_	_	root	basic	3-4	
-3-5	137-144	atpakaļ	_	_	_	_	_	_	_	_	_	_	_	_	r0p	atpakaļ	_	_	_	_	advmod	basic	3-4	
-3-6	145-151	istabā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	istaba	_	_	_	_	obl	basic	3-4	
-3-7	151-152	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-11	
-3-8	153-158	tagad	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	tagad	_	_	_	_	advmod	basic	3-11	
-3-9	159-161	tā	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsn\_	tā	_	_	_	_	nsubj	basic	3-11	
-3-10	162-166	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vcnisii30an	būt	_	_	_	_	cop	basic	3-11	
-3-11	167-171	viņa	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsn\_	viņa	_	_	*[1]	*->1-4	conj	basic	3-4	
-3-12	171-172	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-14	
-3-13	173-176	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	*[1]	*->1-5	nsubj	basic	3-14	
-3-14	177-187	nosēdināja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	nosēdināt	_	_	_	_	acl	basic	3-9	
-3-15	188-194	Sofiju	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	Sofija	person	*	_	_	obj	basic	3-14	
-3-16	195-201	krēslā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	krēsls	_	_	_	_	obl	basic	3-14	
-3-17	201-202	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-4	
+3-1	108-115	Mazliet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	mazliet	_	_	_	_	advmod	basic	3-2	
+3-2	116-121	vēlāk	*	*	*	*	Cmp	*	*	*	*	*	*	*	*	*	*	*	Degree=Cmp	*	*	rct	*	vēlu	_	_	_	_	advmod	basic	3-4	
+3-3	122-126	viņa	*	*	Nom	*	*	Fem	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3fsnn	*	viņa	_	_	*->1-3	*[1]	nsubj	basic	3-4	
+3-4	127-136	atgriezās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmyisi130an	*	atgriezties	_	_	_	_	root	basic	3-4	
+3-5	137-144	atpakaļ	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0p	*	atpakaļ	_	_	_	_	advmod	basic	3-4	
+3-6	145-151	istabā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	istaba	_	_	_	_	obl	basic	3-4	
+3-7	151-152	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-11	
+3-8	153-158	tagad	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	*	tagad	_	_	_	_	advmod	basic	3-11	
+3-9	159-161	tā	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsn\_	*	tā	_	_	_	_	nsubj	basic	3-11	
+3-10	162-166	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vcnisii30an	*	būt	_	_	_	_	cop	basic	3-11	
+3-11	167-171	viņa	*	*	Nom	*	*	Fem	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3fsn\_	*	viņa	_	_	*->1-4	*[1]	conj	basic	3-4	
+3-12	171-172	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-14	
+3-13	173-176	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->1-5	*[1]	nsubj	basic	3-14	
+3-14	177-187	nosēdināja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist330an	*	nosēdināt	_	_	_	_	acl	basic	3-9	
+3-15	188-194	Sofiju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	*	Sofija	person	*	_	_	obj	basic	3-14	
+3-16	195-201	krēslā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	krēsls	_	_	_	_	obl	basic	3-14	
+3-17	201-202	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-4	

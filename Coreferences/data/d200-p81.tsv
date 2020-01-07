@@ -1,44 +1,44 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Ko Tu domātu šādā gadījumā?
-1-1	0-2	Ko	*	*	Acc	*	*	*	*	*	*	Case=Acc\|PronType=Int	*	*	pq000an	kas	_	_	obj	basic	1-3	
-1-2	3-5	Tu	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=2\|PronType=Prs	2	*	pp20snn	tu	*[1]	*->1-1	nsubj	basic	1-3	
-1-3	6-12	domātu	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vmnc0t200an	domāt	_	_	root	basic	1-3	
-1-4	13-17	šādā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msln	šāds	_	_	det	basic	1-5	
-1-5	18-26	gadījumā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	gadījums	_	_	obl	basic	1-3	
-1-6	26-27	?	_	_	_	_	_	_	_	_	_	_	_	_	zs	?	_	_	punct	basic	1-3	
+1-1	0-2	Ko	*	*	Acc	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Acc\|PronType=Int	*	*	pq000an	*	kas	_	_	obj	basic	1-3	
+1-2	3-5	Tu	*	*	Nom	*	*	*	*	*	*	Sing	2	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=2\|PronType=Prs	*	*	pp20snn	*	tu	*->1-1	*[1]	nsubj	basic	1-3	
+1-3	6-12	domātu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vmnc0t200an	*	domāt	_	_	root	basic	1-3	
+1-4	13-17	šādā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msln	*	šāds	_	_	det	basic	1-5	
+1-5	18-26	gadījumā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	gadījums	_	_	obl	basic	1-3	
+1-6	26-27	?	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	?	_	_	punct	basic	1-3	
 
 #Text=Nu jā, būtībā jau tas nav svarīgi.
-2-1	29-31	Nu	_	_	_	_	_	_	_	_	_	_	_	_	q	nu	_	_	discourse	basic	2-8	
-2-2	32-34	jā	_	_	_	_	_	_	_	_	_	_	_	_	q	jā	_	_	flat	basic	2-1	
-2-3	34-35	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	2-1	
-2-4	36-42	būtībā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	būtība	_	_	obl	basic	2-8	
-2-5	43-46	jau	_	_	_	_	_	_	_	_	_	_	_	_	q	jau	_	_	discourse	basic	2-8	
-2-6	47-50	tas	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	tas	_	_	nsubj	basic	2-8	
-2-7	51-54	nav	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30ay	nebūt	_	_	cop	basic	2-8	
-2-8	55-62	svarīgi	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	svarīgi	_	_	root	basic	2-8	
-2-9	62-63	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	2-8	
+2-1	29-31	Nu	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	nu	_	_	discourse	basic	2-8	
+2-2	32-34	jā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	jā	_	_	flat	basic	2-1	
+2-3	34-35	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	2-1	
+2-4	36-42	būtībā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	būtība	_	_	obl	basic	2-8	
+2-5	43-46	jau	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	jau	_	_	discourse	basic	2-8	
+2-6	47-50	tas	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	*	tas	_	_	nsubj	basic	2-8	
+2-7	51-54	nav	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30ay	*	nebūt	_	_	cop	basic	2-8	
+2-8	55-62	svarīgi	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	svarīgi	_	_	root	basic	2-8	
+2-9	62-63	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	2-8	
 
 #Text=Bet vai Tev nav kādreiz ienācis prātā, ka Tu pati esi tāds mazs marsietis?
-3-1	65-68	Bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	cc	basic	3-6	
-3-2	69-72	vai	_	_	_	_	_	_	_	_	_	_	_	_	q	vai	_	_	discourse	basic	3-6	
-3-3	73-76	Tev	*	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Number=Sing\|Person=2\|PronType=Prs	2	*	pp20sdn	tu	*[1]	*->1-2	nsubj	basic	3-6	
-3-4	77-80	nav	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30ay	nebūt	_	_	aux	basic	3-6	
-3-5	81-88	kādreiz	_	_	_	_	_	_	_	_	_	_	_	_	r0t	kādreiz	_	_	advmod	basic	3-6	
-3-6	89-96	ienācis	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnasnpn	ienākt	_	_	root	basic	3-6	
-3-7	97-102	prātā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	prāts	_	_	obl	basic	3-6	
-3-8	102-103	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	3-15	
-3-9	104-106	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	mark	basic	3-15	
-3-10	107-109	Tu	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=2\|PronType=Prs	2	*	pp20snn	tu	*[1]	*->1-3	nsubj	basic	3-15	
-3-11	110-114	pati	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Tot	*	*	pg0fsnn	pati	_	_	compound	basic	3-10	
-3-12	115-118	esi	*	Sing	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=2\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	2	*	vcnipii2san	būt	_	_	cop	basic	3-15	
-3-13	119-123	tāds	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	tāds	_	_	det	basic	3-15	
-3-14	124-128	mazs	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	mazs	_	_	amod	basic	3-15	
-3-15	129-138	marsietis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	marsietis	_	_	csubj	basic	3-6	
-3-16	138-139	?	_	_	_	_	_	_	_	_	_	_	_	_	zs	?	_	_	punct	basic	3-6	
+3-1	65-68	Bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	cc	basic	3-6	
+3-2	69-72	vai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	vai	_	_	discourse	basic	3-6	
+3-3	73-76	Tev	*	*	Dat	*	*	*	*	*	*	Sing	2	*	*	*	*	*	Case=Dat\|Number=Sing\|Person=2\|PronType=Prs	*	*	pp20sdn	*	tu	*->1-2	*[1]	nsubj	basic	3-6	
+3-4	77-80	nav	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30ay	*	nebūt	_	_	aux	basic	3-6	
+3-5	81-88	kādreiz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	kādreiz	_	_	advmod	basic	3-6	
+3-6	89-96	ienācis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnasnpn	*	ienākt	_	_	root	basic	3-6	
+3-7	97-102	prātā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	prāts	_	_	obl	basic	3-6	
+3-8	102-103	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	3-15	
+3-9	104-106	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	mark	basic	3-15	
+3-10	107-109	Tu	*	*	Nom	*	*	*	*	*	*	Sing	2	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=2\|PronType=Prs	*	*	pp20snn	*	tu	*->1-3	*[1]	nsubj	basic	3-15	
+3-11	110-114	pati	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Tot	*	*	pg0fsnn	*	pati	_	_	compound	basic	3-10	
+3-12	115-118	esi	*	*	*	*	*	*	Ind	*	*	Sing	2	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=2\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii2san	*	būt	_	_	cop	basic	3-15	
+3-13	119-123	tāds	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	*	tāds	_	_	det	basic	3-15	
+3-14	124-128	mazs	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	mazs	_	_	amod	basic	3-15	
+3-15	129-138	marsietis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	marsietis	_	_	csubj	basic	3-6	
+3-16	138-139	?	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	?	_	_	punct	basic	3-6	

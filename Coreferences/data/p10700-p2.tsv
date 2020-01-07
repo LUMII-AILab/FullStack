@@ -1,0 +1,79 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Salidojumu atbalsta Vecumnieku novada dome, tā iniciatore ir biedrības vadītāja Benita Šmite.
+1-1	0-10	Salidojumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	salidojums	_	_	*->2-1	*[2]	obj	basic	1-2	
+1-2	11-19	atbalsta	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt330an	*	atbalstīt	_	_	_	_	root	basic	1-2	
+1-3	20-30	Vecumnieku	*	*	Gen	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	npmdg1	*	Vecumnieki	organization[1]|GPE[2]	*[1]|https://en.wikipedia.org/wiki/Vecumnieki\_Municipality[2]	_	_	nmod	basic	1-4	
+1-4	31-37	novada	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	novads	organization[1]|GPE[2]	*[1]|https://en.wikipedia.org/wiki/Vecumnieki\_Municipality[2]	_	_	nmod	basic	1-5	
+1-5	38-42	dome	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	dome	organization[1]	*[1]	_	_	nsubj	basic	1-2	
+1-6	42-43	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	organization[1]	*[1]	_	_	punct	basic	1-8	
+1-7	44-46	tā	*	*	Gen	*	*	Masc	*	*	*	Sing	3	*	Dem	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msgn	*	tas	_	_	*->2-2	*[2]	det	basic	1-8	
+1-8	47-57	iniciatore	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	iniciatore	_	_	_	_	conj	basic	1-2	
+1-9	58-60	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	1-8	
+1-10	61-70	biedrības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	biedrība	_	_	*->1-1	*[1]	nmod	basic	1-11	
+1-11	71-79	vadītāja	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	vadītāja	_	_	*->1-1	*[1]	nmod	basic	1-12	
+1-12	80-86	Benita	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Benita	person[3]	*[3]	*->1-2	*[1]	nsubj	basic	1-8	
+1-13	87-92	Šmite	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	*	Šmite	person[3]	*[3]	*->1-2	*[1]	flat:name	basic	1-12	
+1-14	92-93	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-2	
+
+#Text=Viņa pastāstīja, ka pagājušajā gadā piedalījusies šādā pasākumā Varakļānos Latgalē.
+2-1	94-98	Viņa	*	*	Nom	*	*	Fem	*	*	*	Sing	3	*	Prs	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3fsnn	*	viņa	_	_	*->1-3	*[1]	nsubj	basic	2-2	
+2-2	99-109	pastāstīja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist330an	*	pastāstīt	_	_	_	_	root	basic	2-2	
+2-3	109-110	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-7	
+2-4	111-113	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	2-7	
+2-5	114-124	pagājušajā	*	Perf	Loc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Loc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdmslasypn	*	paiet	time[4]	*[4]	_	_	amod	basic	2-6	
+2-6	125-129	gadā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	gads	time[4]	*[4]	_	_	obl	basic	2-7	
+2-7	130-143	piedalījusies	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	Yes	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmypdfsnasnpn	*	piedalīties	_	_	_	_	ccomp	basic	2-2	
+2-8	144-148	šādā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	Dem	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msln	*	šāds	_	_	*->2-3	*[2]	det	basic	2-9	
+2-9	149-157	pasākumā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	pasākums	_	_	*->2-3	*[2]	obl	basic	2-7	
+2-10	158-168	Varakļānos	*	*	Loc	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Ptan	*	*	npmdl1	*	Varakļāni	GPE	https://en.wikipedia.org/wiki/Varakļāni	_	_	acl	basic	2-9	
+2-11	169-176	Latgalē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl5	*	Latgale	location	https://en.wikipedia.org/wiki/Latgale	_	_	acl	basic	2-10	
+2-12	176-177	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-2	
+
+#Text=«Iepazināmies ar Varakļānu pili un ar mašīnām izbraukājām Latgali – bijām mūzikas instrumentu muzejā, Lubānas ezera bākā, nakšņojām viesu mājā «Zvejnieki»,» atceras B. Šmite.
+3-1	178-179	«	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	«	_	_	_	_	punct	basic	3-2	
+3-2	179-191	Iepazināmies	*	*	*	*	*	*	Ind	*	*	Plur	1	*	*	Yes	Past	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyisi11pan	*	iepazīties	_	_	_	_	parataxis	basic	3-29	
+3-3	192-194	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	3-5	
+3-4	195-204	Varakļānu	*	*	Gen	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	npmdg1	*	Varakļāni	location[5]|GPE[6]	https://en.wikipedia.org/wiki/Varakļāni\_Palace[5]|https://en.wikipedia.org/wiki/Varakļāni[6]	_	_	nmod	basic	3-5	
+3-5	205-209	pili	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa6	*	pils	location[5]	https://en.wikipedia.org/wiki/Varakļāni\_Palace[5]	_	_	iobj	basic	3-2	
+3-6	210-212	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	3-9	
+3-7	213-215	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	_	_	case	basic	3-8	
+3-8	216-223	mašīnām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	*	mašīna	_	_	_	_	iobj	basic	3-9	
+3-9	224-235	izbraukājām	*	*	*	*	*	*	Ind	*	*	Plur	1	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist21pan	*	izbraukāt	_	_	_	_	conj	basic	3-2	
+3-10	236-243	Latgali	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa5	*	Latgale	location	https://en.wikipedia.org/wiki/Latgale	_	_	obj	basic	3-9	
+3-11	244-245	–	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	–	_	_	_	_	punct	basic	3-12	
+3-12	246-251	bijām	*	*	*	*	*	*	Ind	*	*	Plur	1	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnisii1pan	*	būt	_	_	_	_	conj	basic	3-2	
+3-13	252-259	mūzikas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	mūzika	_	_	_	_	nmod	basic	3-14	
+3-14	260-271	instrumentu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	instruments	_	_	_	_	nmod	basic	3-15	
+3-15	272-278	muzejā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	muzejs	_	_	_	_	obl	basic	3-12	
+3-16	278-279	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-19	
+3-17	280-287	Lubānas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Lubāna	location[7]	https://en.wikipedia.org/wiki/Lake\_Lubāns[7]	_	_	nmod	basic	3-18	
+3-18	288-293	ezera	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	ezers	location[7]	https://en.wikipedia.org/wiki/Lake\_Lubāns[7]	_	_	nmod	basic	3-19	
+3-19	294-298	bākā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	bāka	_	_	_	_	conj	basic	3-15	
+3-20	298-299	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-21	
+3-21	300-309	nakšņojām	*	*	*	*	*	*	Ind	*	*	Plur	1	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnisi21pan	*	nakšņot	_	_	_	_	conj	basic	3-2	
+3-22	310-315	viesu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	viesis	_	_	*->3-1	*[3]	nmod	basic	3-23	
+3-23	316-320	mājā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	māja	_	_	*->3-1	*[3]	nmod	basic	3-25	
+3-24	321-322	«	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	«	location[8]	*[8]	*->3-2	*[3]	punct	basic	3-25	
+3-25	322-331	Zvejnieki	*	*	Nom	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Ptan	*	*	npmdn1	*	Zvejnieki	location[8]	*[8]	*->3-2	*[3]	obl	basic	3-21	
+3-26	331-332	»	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	»	location[8]	*[8]	*->3-2	*[3]	punct	basic	3-25	
+3-27	332-333	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-2	
+3-28	333-334	»	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	»	_	_	_	_	punct	basic	3-2	
+3-29	335-342	atceras	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyipt330an	*	atcerēties	_	_	_	_	root	basic	3-29	
+3-30	343-345	B.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	B.	person[9]	*[9]	*->1-4	*[1]	nsubj	basic	3-29	
+3-31	346-351	Šmite	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	*	Šmite	person[9]	*[9]	*->1-4	*[1]	flat:name	basic	3-30	
+3-32	351-352	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-29	
+
+#Text=Bijis ap 40 dalībnieku.
+4-1	353-358	Bijis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vpnpdmsnasnpn	*	būt	_	_	_	_	root	basic	4-1	
+4-2	359-361	ap	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ap	_	_	_	_	case	basic	4-3	
+4-3	362-364	40	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	40	_	_	_	_	nummod	basic	4-4	
+4-4	365-375	dalībnieku	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	dalībnieks	_	_	_	_	nsubj	basic	4-1	
+4-5	375-376	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	4-1	

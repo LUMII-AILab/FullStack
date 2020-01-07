@@ -1,41 +1,41 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Vai viņa to maz zina?
-1-1	0-3	Vai	_	_	_	_	_	_	_	_	_	_	_	_	q	vai	_	_	_	_	discourse	basic	1-5	
-1-2	4-8	viņa	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsnn	viņa	_	_	*[1]	*->1-1	nsubj	basic	1-5	
-1-3	9-11	to	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	tas	_	_	_	_	obj	basic	1-5	
-1-4	12-15	maz	_	_	_	_	_	_	_	_	_	_	_	_	q	maz	_	_	_	_	discourse	basic	1-5	
-1-5	16-20	zina	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	zināt	_	_	_	_	root	basic	1-5	
-1-6	20-21	?	_	_	_	_	_	_	_	_	_	_	_	_	zs	?	_	_	_	_	punct	basic	1-5	
+1-1	0-3	Vai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	vai	_	_	_	_	discourse	basic	1-5	
+1-2	4-8	viņa	*	*	Nom	*	*	Fem	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3fsnn	*	viņa	_	_	*->1-1	*[1]	nsubj	basic	1-5	
+1-3	9-11	to	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	*	tas	_	_	_	_	obj	basic	1-5	
+1-4	12-15	maz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	maz	_	_	_	_	discourse	basic	1-5	
+1-5	16-20	zina	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	zināt	_	_	_	_	root	basic	1-5	
+1-6	20-21	?	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	?	_	_	_	_	punct	basic	1-5	
 
 #Text=Protams, viņa ir Sofija Amundsena, bet kas tā tāda ir?
-2-1	23-30	Protams	Masc	Sing	Nom	Pos	*	Pres	*	Pass	*	Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	*	vmnpdmsnppnpn	prast	_	_	_	_	parataxis	basic	2-5	
-2-2	30-31	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-1	
-2-3	32-36	viņa	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsnn	viņa	_	_	*[1]	*->1-2	nsubj	basic	2-5	
-2-4	37-39	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	cop	basic	2-5	
-2-5	40-46	Sofija	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Sofija	person[1]	*[1]	*[1]	*->1-3	root	basic	2-5	
-2-6	47-56	Amundsena	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Amundsena	person[1]	*[1]	*[1]	*->1-3	flat:name	basic	2-5	
-2-7	56-57	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-9	
-2-8	58-61	bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	_	_	cc	basic	2-9	
-2-9	62-65	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Int	*	*	pq000nn	kas	_	_	_	_	conj	basic	2-5	
-2-10	66-68	tā	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsnn	tā	_	_	*[1]	*->1-4	nsubj	basic	2-9	
-2-11	69-73	tāda	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsnn	tāda	_	_	_	_	compound	basic	2-10	
-2-12	74-76	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	cop	basic	2-9	
-2-13	76-77	?	_	_	_	_	_	_	_	_	_	_	_	_	zs	?	_	_	_	_	punct	basic	2-5	
+2-1	23-30	Protams	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Pres	*	Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdmsnppnpn	*	prast	_	_	_	_	parataxis	basic	2-5	
+2-2	30-31	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-1	
+2-3	32-36	viņa	*	*	Nom	*	*	Fem	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3fsnn	*	viņa	_	_	*->1-2	*[1]	nsubj	basic	2-5	
+2-4	37-39	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	2-5	
+2-5	40-46	Sofija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Sofija	person[1]	*[1]	*->1-3	*[1]	root	basic	2-5	
+2-6	47-56	Amundsena	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Amundsena	person[1]	*[1]	*->1-3	*[1]	flat:name	basic	2-5	
+2-7	56-57	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-9	
+2-8	58-61	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	_	_	cc	basic	2-9	
+2-9	62-65	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Int	*	*	pq000nn	*	kas	_	_	_	_	conj	basic	2-5	
+2-10	66-68	tā	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsnn	*	tā	_	_	*->1-4	*[1]	nsubj	basic	2-9	
+2-11	69-73	tāda	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsnn	*	tāda	_	_	_	_	compound	basic	2-10	
+2-12	74-76	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	2-9	
+2-13	76-77	?	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	?	_	_	_	_	punct	basic	2-5	
 
 #Text=To viņa līdz šim nebija īsti izdibinājusi.
-3-1	79-81	To	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	tas	_	_	_	_	obj	basic	3-7	
-3-2	82-86	viņa	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsnn	viņa	_	_	*[1]	*->1-5	nsubj	basic	3-7	
-3-3	87-91	līdz	_	_	_	_	_	_	_	_	_	_	_	_	spsd	līdz	_	_	_	_	case	basic	3-4	
-3-4	92-95	šim	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msdn	šis	_	_	_	_	obl	basic	3-7	
-3-5	96-102	nebija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vcnisii30ay	nebūt	_	_	_	_	aux	basic	3-7	
-3-6	103-107	īsti	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	īsti	_	_	_	_	advmod	basic	3-7	
-3-7	108-120	izdibinājusi	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnasnpn	izdibināt	_	_	_	_	root	basic	3-7	
-3-8	120-121	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-7	
+3-1	79-81	To	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	*	tas	_	_	_	_	obj	basic	3-7	
+3-2	82-86	viņa	*	*	Nom	*	*	Fem	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3fsnn	*	viņa	_	_	*->1-5	*[1]	nsubj	basic	3-7	
+3-3	87-91	līdz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsd	*	līdz	_	_	_	_	case	basic	3-4	
+3-4	92-95	šim	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msdn	*	šis	_	_	_	_	obl	basic	3-7	
+3-5	96-102	nebija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vcnisii30ay	*	nebūt	_	_	_	_	aux	basic	3-7	
+3-6	103-107	īsti	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	īsti	_	_	_	_	advmod	basic	3-7	
+3-7	108-120	izdibinājusi	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsnasnpn	*	izdibināt	_	_	_	_	root	basic	3-7	
+3-8	120-121	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-7	

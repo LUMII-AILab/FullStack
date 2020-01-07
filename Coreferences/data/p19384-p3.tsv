@@ -1,0 +1,27 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Millers aizturēts šā gada aprīlī, kad viņš esot saplēsis savu vīzu un pieprasījis patvērumu Ziemeļkorejā.
+1-1	0-7	Millers	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Millers	person	*	*->2-1	*[2]	nsubj:pass	basic	1-2	
+1-2	8-17	aizturēts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsnpsnpn	*	aizturēt	_	_	_	_	root	basic	1-2	
+1-3	18-20	šā	*	*	Gen	*	*	Masc	*	*	*	Sing	3	*	Dem	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msgn	*	šis	time[1]	*[1]	*->1-1	*[1]	det	basic	1-4	
+1-4	21-25	gada	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	gads	time[1]	*[1]	*->1-1	*[1]	nmod	basic	1-5	
+1-5	26-32	aprīlī	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	*	aprīlis	time[1]	*[1]	*->1-1	*[1]	obl	basic	1-2	
+1-6	32-33	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-10	
+1-7	34-37	kad	*	*	*	*	*	*	*	*	*	*	*	*	Int	*	*	*	PronType=Int	*	*	r0t	*	kad	_	_	*->1-2	*[1]	advmod	basic	1-10	
+1-8	38-42	viņš	*	*	Nom	*	*	Masc	*	*	*	Sing	3	*	Prs	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msnn	*	viņš	_	_	*->2-2	*[2]	nsubj	basic	1-10	
+1-9	43-47	esot	*	*	*	*	*	*	Qot	*	*	*	*	*	*	*	Pres	*	Evident=Nfh\|Mood=Qot\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnrpii00an	*	būt	_	_	_	_	aux	basic	1-10	
+1-10	48-56	saplēsis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdmsnasnpn	*	saplēst	_	_	_	_	advcl	basic	1-5	
+1-11	57-61	savu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	Prs	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0fsan	*	sava	_	_	*->2-3	*[2]	det	basic	1-12	
+1-12	62-66	vīzu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	vīza	_	_	_	_	obj	basic	1-10	
+1-13	67-69	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-14	
+1-14	70-81	pieprasījis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdmsnasnpn	*	pieprasīt	_	_	_	_	conj	basic	1-10	
+1-15	82-91	patvērumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	patvērums	_	_	_	_	obj	basic	1-14	
+1-16	92-104	Ziemeļkorejā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Ziemeļkoreja	GPE	https://en.wikipedia.org/wiki/North\_Korea	_	_	acl	basic	1-15	
+1-17	104-105	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-2	

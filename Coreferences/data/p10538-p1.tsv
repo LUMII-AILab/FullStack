@@ -1,0 +1,105 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=1927. gadā dzimusī un līdz 17 gadu vecumam Ūziņu pagasta Rāvājos augusī Ieviņa Picka-Emharde kopš Otrā pasaules kara beigām dzīvo Vācijā.
+1-1	0-5	1927.	*	*	*	*	*	*	*	*	Ord	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	1927.	time[1]	*[1]	_	_	amod	basic	1-2	
+1-2	6-10	gadā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	gads	time[1]	*[1]	_	_	obl	basic	1-3	
+1-3	11-18	dzimusī	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdfsnasypn	*	dzimt	_	_	_	_	amod	basic	1-13	
+1-4	19-21	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-12	
+1-5	22-26	līdz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsd	*	līdz	_	_	_	_	case	basic	1-8	
+1-6	27-29	17	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	17	_	_	_	_	nummod	basic	1-7	
+1-7	30-34	gadu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	gads	_	_	_	_	nmod	basic	1-8	
+1-8	35-42	vecumam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	vecums	_	_	_	_	obl	basic	1-12	
+1-9	43-48	Ūziņu	*	*	Gen	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	npmdg1	*	Ūziņi	location[2]|location[3]	*[2]|https://lv.wikipedia.org/wiki/Ūziņi[3]	*->5-1	*[5]	nmod	basic	1-10	
+1-10	49-56	pagasta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	pagasts	location[2]	*[2]	*->5-1	*[5]	nmod	basic	1-11	
+1-11	57-64	Rāvājos	*	*	Loc	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Ptan	*	*	npmdl1	*	Rāvāji	location	*	_	_	obl	basic	1-12	
+1-12	65-71	augusī	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdfsnasypn	*	augt	_	_	_	_	conj	basic	1-3	
+1-13	72-78	Ieviņa	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Ieviņa	person[4]	*[4]	*->1-1	*[1]	nsubj	basic	1-20	
+1-14	79-92	Picka-Emharde	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	*	Picka-Emharde	person[4]	*[4]	*->1-1	*[1]	flat:name	basic	1-13	
+1-15	93-97	kopš	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsd	*	kopš	_	_	_	_	case	basic	1-19	
+1-16	98-102	Otrā	*	*	Gen	*	Pos	Masc	*	*	Ord	Sing	*	*	*	*	*	*	Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|NumType=Ord	*	*	mosmsg	*	otrais	event[5]	https://en.wikipedia.org/wiki/World\_War\_II[5]	_	_	amod	basic	1-18	
+1-17	103-111	pasaules	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	pasaule	event[5]	https://en.wikipedia.org/wiki/World\_War\_II[5]	_	_	nmod	basic	1-18	
+1-18	112-116	kara	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	kars	event[5]	https://en.wikipedia.org/wiki/World\_War\_II[5]	_	_	nmod	basic	1-19	
+1-19	117-123	beigām	*	*	Dat	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Ptan	*	*	ncfdd4	*	beigas	_	_	_	_	obl	basic	1-20	
+1-20	124-129	dzīvo	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipi230an	*	dzīvot	_	_	_	_	root	basic	1-20	
+1-21	130-136	Vācijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Vācija	GPE	https://en.wikipedia.org/wiki/Germany	_	_	obl	basic	1-20	
+1-22	136-137	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-20	
+
+#Text=Viņa ik gadu viesojas Latvijā, kur ne tikai apciemo radus, bet arī īsteno dažādas ieceres, kas saistītas ar jauniešu izglītību, vācu un latviešu kultūras sakariem.
+2-1	138-142	Viņa	*	*	Nom	*	*	Fem	*	*	*	Sing	3	*	Prs	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3fsnn	*	viņa	_	_	*->1-2	*[1]	nsubj	basic	2-4	
+2-2	143-145	ik	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	ik	_	_	_	_	discourse	basic	2-3	
+2-3	146-150	gadu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	gads	_	_	_	_	obl	basic	2-4	
+2-4	151-159	viesojas	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyipi230an	*	viesoties	_	_	_	_	root	basic	2-4	
+2-5	160-167	Latvijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	*->2-1	*[2]	obl	basic	2-4	
+2-6	167-168	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-10	
+2-7	169-172	kur	*	*	*	*	*	*	*	*	*	*	*	*	Int	*	*	*	PronType=Int	*	*	r0p	*	kur	_	_	*->2-2	*[2]	advmod	basic	2-10	
+2-8	173-175	ne	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Neg	*	*	cc	*	ne	_	_	_	_	cc	basic	2-10	
+2-9	176-181	tikai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	tikai	_	_	_	_	fixed	basic	2-8	
+2-10	182-189	apciemo	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt230an	*	apciemot	_	_	_	_	advcl	basic	2-4	
+2-11	190-195	radus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	rads	_	_	_	_	obj	basic	2-10	
+2-12	195-196	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-15	
+2-13	197-200	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	_	_	cc	basic	2-15	
+2-14	201-204	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	arī	_	_	_	_	fixed	basic	2-13	
+2-15	205-211	īsteno	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt230an	*	īstenot	_	_	_	_	conj	basic	2-10	
+2-16	212-219	dažādas	*	*	Acc	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpanp	*	dažāds	_	_	_	_	amod	basic	2-17	
+2-17	220-227	ieceres	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa5	*	iecere	_	_	*->3-1	*[3]	obj	basic	2-15	
+2-18	227-228	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-20	
+2-19	229-232	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	Rel	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->3-2	*[3]	nsubj:pass	basic	2-20	
+2-20	233-242	saistītas	*	Perf	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdfpnpsnpn	*	saistīt	_	_	_	_	acl	basic	2-17	
+2-21	243-245	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	_	_	case	basic	2-23	
+2-22	246-254	jauniešu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	jaunietis	_	_	_	_	nmod	basic	2-23	
+2-23	255-264	izglītību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	izglītība	_	_	_	_	iobj	basic	2-20	
+2-24	264-265	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-29	
+2-25	266-270	vācu	*	*	Gen	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	ncmdg1	*	vāci	_	_	_	_	nmod	basic	2-28	
+2-26	271-273	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-27	
+2-27	274-282	latviešu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	latvietis	_	_	_	_	conj	basic	2-25	
+2-28	283-291	kultūras	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	kultūra	_	_	_	_	nmod	basic	2-29	
+2-29	292-300	sakariem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	sakars	_	_	_	_	conj	basic	2-23	
+2-30	300-301	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-4	
+
+#Text=Ūziņos Ieviņas kundzei vairs nav neviena radinieka vai laikabiedra, ar kuru būtu kopīgas jaunības atmiņas.
+3-1	302-308	Ūziņos	*	*	Loc	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Ptan	*	*	npmdl1	*	Ūziņi	location	https://lv.wikipedia.org/wiki/Ūziņi	*->5-2	*[5]	obl	basic	3-5	
+3-2	309-316	Ieviņas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Ieviņa	person[6]	*[6]	*->1-3	*[1]	nmod	basic	3-3	
+3-3	317-324	kundzei	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd5	*	kundze	person[6]	*[6]	*->1-3	*[1]	obl	basic	3-5	
+3-4	325-330	vairs	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	vairs	_	_	_	_	advmod	basic	3-5	
+3-5	331-334	nav	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipii30ay	*	būt	_	_	_	_	root	basic	3-5	
+3-6	335-342	neviena	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	Ind,Neg	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Ind,Neg	*	*	pi0msgy	*	neviens	_	_	_	_	det	basic	3-7	
+3-7	343-352	radinieka	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	radinieks	_	_	*->4-1	*[4]	nsubj	basic	3-5	
+3-8	353-356	vai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	vai	_	_	_	_	cc	basic	3-9	
+3-9	357-368	laikabiedra	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	laikabiedrs	_	_	*->4-2	*[4]	conj	basic	3-7	
+3-10	368-369	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-13	
+3-11	370-372	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	*->4-3	*[4]	case	basic	3-12	
+3-12	373-377	kuru	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	Rel	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsan	*	kura	_	_	*->4-3	*[4]	nmod	basic	3-16	
+3-13	378-382	būtu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnc0ii00an	*	būt	_	_	_	_	acl	basic	3-7	
+3-14	383-390	kopīgas	*	*	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpnnp	*	kopīgs	_	_	_	_	amod	basic	3-16	
+3-15	391-399	jaunības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	jaunība	_	_	_	_	nmod	basic	3-16	
+3-16	400-407	atmiņas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	atmiņa	_	_	_	_	nsubj	basic	3-13	
+3-17	407-408	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-5	
+
+#Text=Taču viņas stāsti par Ūziņu veco godību vēl aizvien silda sirdi un liek rosīties, lai vērtīgais neiet zudumā.
+4-1	409-413	Taču	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	taču	_	_	_	_	cc	basic	4-10	
+4-2	414-419	viņas	*	*	Gen	*	*	Fem	*	*	*	Sing	3	*	Prs	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3fsgn	*	viņa	_	_	*->1-4	*[1]	det	basic	4-3	
+4-3	420-426	stāsti	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	stāsts	_	_	_	_	nsubj	basic	4-10	
+4-4	427-430	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	4-7	
+4-5	431-436	Ūziņu	*	*	Gen	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	npmdg1	*	Ūziņi	location	https://lv.wikipedia.org/wiki/Ūziņi	*->5-3	*[5]	nmod	basic	4-7	
+4-6	437-441	veco	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsayp	*	vecs	_	_	_	_	dep	basic	4-7	
+4-7	442-448	godību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	godība	_	_	_	_	nmod	basic	4-3	
+4-8	449-452	vēl	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	vēl	_	_	_	_	advmod	basic	4-9	
+4-9	453-460	aizvien	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	aizvien	_	_	_	_	advmod	basic	4-10	
+4-10	461-466	silda	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt330an	*	sildīt	_	_	_	_	root	basic	4-10	
+4-11	467-472	sirdi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa6	*	sirds	_	_	_	_	obj	basic	4-10	
+4-12	473-475	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	4-13	
+4-13	476-480	liek	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipi130an	*	likt	_	_	_	_	conj	basic	4-10	
+4-14	481-489	rosīties	*	*	*	*	*	*	*	*	*	*	*	*	*	Yes	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	Inf	*	vmyn0i3000n	*	rosīties	_	_	_	_	ccomp	basic	4-13	
+4-15	489-490	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-18	
+4-16	491-494	lai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	lai	_	_	_	_	mark	basic	4-18	
+4-17	495-504	vērtīgais	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnyp	*	vērtīgs	_	_	_	_	nsubj	basic	4-18	
+4-18	505-510	neiet	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipii30ay	*	iet	_	_	_	_	ccomp	basic	4-13	
+4-19	511-517	zudumā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	zudums	_	_	_	_	obl	basic	4-18	
+4-20	517-518	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	4-10	

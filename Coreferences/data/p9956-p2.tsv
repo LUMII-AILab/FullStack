@@ -1,0 +1,97 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Rundālē to atjaunoja restauratore Laura Matilde Ikerte.
+1-1	0-7	Rundālē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl5	*	Rundāle	location	https://en.wikipedia.org/wiki/Rundāle\_Palace	_	_	obl	basic	1-3	
+1-2	8-10	to	*	*	Acc	*	*	Masc	*	*	*	Sing	3	*	Dem	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msan	*	tas	_	_	_	_	obj	basic	1-3	
+1-3	11-20	atjaunoja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist230an	*	atjaunot	_	_	_	_	root	basic	1-3	
+1-4	21-33	restauratore	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	restauratore	_	_	*->1-1	*[1]	nmod	basic	1-5	
+1-5	34-39	Laura	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Laura	person[1]	*[1]	*->1-2	*[1]	nsubj	basic	1-3	
+1-6	40-47	Matilde	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	*	Matilde	person[1]	*[1]	*->1-2	*[1]	flat:name	basic	1-5	
+1-7	48-54	Ikerte	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	*	Ikerte	person[1]	*[1]	*->1-2	*[1]	flat:name	basic	1-5	
+1-8	54-55	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-3	
+
+#Text=„Pirms pusotra gada kādā mūsu pieredzes braucienā piedalījās arī prāvests Andris Vasiļevskis,” atceras L.M.Ikerte.
+2-1	56-57	„	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	„	_	_	_	_	punct	basic	2-9	
+2-2	57-62	Pirms	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pirms	time[2]	*[2]	_	_	case	basic	2-4	
+2-3	63-70	pusotra	*	*	Gen	*	*	Masc	*	*	Card	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|NumType=Card	*	*	mcsmsg	*	pusotrs	time[2]	*[2]	_	_	nummod	basic	2-4	
+2-4	71-75	gada	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	gads	time[2]	*[2]	_	_	obl	basic	2-9	
+2-5	76-80	kādā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	Ind	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|PronType=Ind	*	*	pi0fsln	*	kāda	_	_	_	_	det	basic	2-8	
+2-6	81-85	mūsu	*	*	Gen	*	*	*	*	*	*	Plur	1	*	Prs	*	*	*	Case=Gen\|Number=Plur\|Person=1\|PronType=Prs	*	*	pp10pgn	*	mēs	_	_	_	_	det	basic	2-8	
+2-7	86-95	pieredzes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	pieredze	_	_	_	_	nmod	basic	2-8	
+2-8	96-105	braucienā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	brauciens	_	_	_	_	obl	basic	2-9	
+2-9	106-116	piedalījās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyisi330an	*	piedalīties	_	_	_	_	parataxis	basic	2-16	
+2-10	117-120	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	2-12	
+2-11	121-129	prāvests	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	prāvests	_	_	*->2-1	*[2]	nmod	basic	2-12	
+2-12	130-136	Andris	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	*	Andris	person[3]	*[3]	*->2-2	*[2]	nsubj	basic	2-9	
+2-13	137-148	Vasiļevskis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	*	Vasiļevskis	person[3]	*[3]	*->2-2	*[2]	flat:name	basic	2-12	
+2-14	148-149	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-9	
+2-15	149-150	”	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	”	_	_	_	_	punct	basic	2-9	
+2-16	151-158	atceras	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyipt330an	*	atcerēties	_	_	_	_	root	basic	2-16	
+2-17	159-161	L.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	L.	person[4]	*[4]	*->1-3	*[1]	nsubj	basic	2-16	
+2-18	161-163	M.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	M.	person[4]	*[4]	*->1-3	*[1]	flat:name	basic	2-17	
+2-19	163-169	Ikerte	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	*	Ikerte	person[4]	*[4]	*->1-3	*[1]	flat:name	basic	2-17	
+2-20	169-170	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-16	
+
+#Text=„Pastāstīju, ka restaurēju Rīgas pils lustras, un viņš ieminējās, ka arī Alsungas baznīcā centrālais gaismeklis ir bēdīgā stāvoklī.
+3-1	171-172	„	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	„	_	_	_	_	punct	basic	3-2	
+3-2	172-182	Pastāstīju	*	*	*	*	*	*	Ind	*	*	Sing	1	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist31san	*	pastāstīt	_	_	_	_	root	basic	3-2	
+3-3	182-183	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-5	
+3-4	184-186	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	3-5	
+3-5	187-197	restaurēju	*	*	*	*	*	*	Ind	*	*	Sing	1	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt21san	*	restaurēt	_	_	_	_	ccomp	basic	3-2	
+3-6	198-203	Rīgas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Rīga	location[5]|GPE[6]	https://en.wikipedia.org/wiki/Riga\_Castle[5]|https://en.wikipedia.org/wiki/Riga[6]	_	_	nmod	basic	3-7	
+3-7	204-208	pils	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	*	pils	location[5]	https://en.wikipedia.org/wiki/Riga\_Castle[5]	_	_	nmod	basic	3-8	
+3-8	209-216	lustras	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	lustra	_	_	_	_	nsubj	basic	3-5	
+3-9	216-217	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-12	
+3-10	218-220	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	3-12	
+3-11	221-225	viņš	*	*	Nom	*	*	Masc	*	*	*	Sing	3	*	Prs	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msnn	*	viņš	_	_	*->2-3	*[2]	nsubj	basic	3-12	
+3-12	226-235	ieminējās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyisi330an	*	ieminēties	_	_	_	_	conj	basic	3-2	
+3-13	235-236	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-20	
+3-14	237-239	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	3-20	
+3-15	240-243	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	3-17	
+3-16	244-252	Alsungas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Alsunga	location[7]|GPE[8]	https://lv.wikipedia.org/wiki/Alsungas\_baznīca[7]|https://en.wikipedia.org/wiki/Alsunga[8]	_	_	nmod	basic	3-17	
+3-17	253-260	baznīcā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	baznīca	location[7]	https://lv.wikipedia.org/wiki/Alsungas\_baznīca[7]	_	_	obl	basic	3-20	
+3-18	261-271	centrālais	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnyp	*	centrāls	_	_	_	_	amod	basic	3-19	
+3-19	272-282	gaismeklis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	gaismeklis	_	_	_	_	nsubj	basic	3-20	
+3-20	283-285	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipii30an	*	būt	_	_	_	_	ccomp	basic	3-12	
+3-21	286-292	bēdīgā	*	*	Loc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmslnp	*	bēdīgs	_	_	_	_	amod	basic	3-22	
+3-22	293-301	stāvoklī	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	*	stāvoklis	_	_	_	_	obl	basic	3-20	
+3-23	301-302	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-2	
+
+#Text=Andris uzrakstīja projektu Valsts kultūrkapitāla fondam un daļu summas dabūja.
+4-1	303-309	Andris	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	*	Andris	person	*	*->2-4	*[2]	nsubj	basic	4-2	
+4-2	310-320	uzrakstīja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist330an	*	uzrakstīt	_	_	_	_	root	basic	4-2	
+4-3	321-329	projektu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	projekts	_	_	_	_	obj	basic	4-2	
+4-4	330-336	Valsts	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	*	valsts	organization[9]	*[9]	_	_	nmod	basic	4-6	
+4-5	337-351	kultūrkapitāla	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	kultūrkapitāls	organization[9]	*[9]	_	_	nmod	basic	4-6	
+4-6	352-358	fondam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	fonds	organization[9]	*[9]	_	_	iobj	basic	4-2	
+4-7	359-361	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	4-10	
+4-8	362-366	daļu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	daļa	_	_	_	_	obj	basic	4-10	
+4-9	367-373	summas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	summa	_	_	_	_	nmod	basic	4-8	
+4-10	374-380	dabūja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist230an	*	dabūt	_	_	_	_	conj	basic	4-2	
+4-11	380-381	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	4-2	
+
+#Text=Pārējo viņš savāca ziedojumos, un apmēram pirms gada varējām doties uz Alsungu pēc lustras.”
+5-1	382-388	Pārējo	*	*	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsayp	*	pārējais	_	_	_	_	obj	basic	5-3	
+5-2	389-393	viņš	*	*	Nom	*	*	Masc	*	*	*	Sing	3	*	Prs	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msnn	*	viņš	_	_	*->2-5	*[2]	nsubj	basic	5-3	
+5-3	394-400	savāca	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist130an	*	savākt	_	_	_	_	root	basic	5-3	
+5-4	401-411	ziedojumos	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	*	ziedojums	_	_	_	_	obl	basic	5-3	
+5-5	411-412	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	5-10	
+5-6	413-415	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	5-10	
+5-7	416-423	apmēram	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	apmēram	_	_	_	_	advmod	basic	5-9	
+5-8	424-429	pirms	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pirms	_	_	_	_	case	basic	5-9	
+5-9	430-434	gada	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	gads	_	_	_	_	obl	basic	5-10	
+5-10	435-442	varējām	*	*	*	*	*	*	Ind	*	*	Plur	1	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vonisi31pan	*	varēt	_	_	_	_	conj	basic	5-3	
+5-11	443-449	doties	*	*	*	*	*	*	*	*	*	*	*	*	*	Yes	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	Inf	*	vmyn0i1000n	*	doties	_	_	_	_	xcomp	basic	5-10	
+5-12	450-452	uz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	uz	_	_	_	_	case	basic	5-13	
+5-13	453-460	Alsungu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	*	Alsunga	GPE	https://en.wikipedia.org/wiki/Alsunga	_	_	obl	basic	5-11	
+5-14	461-464	pēc	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pēc	_	_	_	_	case	basic	5-15	
+5-15	465-472	lustras	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	lustra	_	_	_	_	obl	basic	5-11	
+5-16	472-473	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	5-3	
+5-17	473-474	”	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	”	_	_	_	_	punct	basic	5-3	

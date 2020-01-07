@@ -1,0 +1,32 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Ziņu diktors turpina savu spriedelējumu, aizdomājoties par deputātiem, ministriem, kaimiņiem, bagātajiem iedzīvotājiem, kuri ir latvieša lielākie ienaidnieki.
+1-1	0-4	Ziņu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	ziņa	_	_	nmod	basic	1-2	
+1-2	5-12	diktors	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	diktors	_	_	nsubj	basic	1-3	
+1-3	13-20	turpina	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	turpināt	_	_	root	basic	1-3	
+1-4	21-25	savu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0msan	*	savs	_	_	det	basic	1-5	
+1-5	26-39	spriedelējumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	spriedelējums	_	_	obj	basic	1-3	
+1-6	39-40	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-7	
+1-7	41-54	aizdomājoties	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Conv	*	*	vmypu0000000n	*	aizdomāties	_	_	advcl	basic	1-3	
+1-8	55-58	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	par	_	_	case	basic	1-9	
+1-9	59-69	deputātiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	deputāts	*->1-1	*[1]	iobj	basic	1-7	
+1-10	69-70	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	*->1-1	*[1]	punct	basic	1-11	
+1-11	71-81	ministriem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	ministrs	*->1-1	*[1]	conj	basic	1-9	
+1-12	81-82	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	*->1-1	*[1]	punct	basic	1-13	
+1-13	83-92	kaimiņiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	kaimiņš	*->1-1	*[1]	conj	basic	1-9	
+1-14	92-93	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	*->1-1	*[1]	punct	basic	1-16	
+1-15	94-104	bagātajiem	*	*	Dat	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpdyp	*	bagāts	*->1-1	*[1]	amod	basic	1-16	
+1-16	105-118	iedzīvotājiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	iedzīvotājs	*->1-1	*[1]	conj	basic	1-9	
+1-17	118-119	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-22	
+1-18	120-124	kuri	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Rel	*	*	pr0mpnn	*	kurš	*->1-2	*[1]	nsubj	basic	1-22	
+1-19	125-127	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	cop	basic	1-22	
+1-20	128-136	latvieša	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	*	latvietis	_	_	nmod	basic	1-22	
+1-21	137-145	lielākie	*	*	Nom	*	Cmp	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Masc\|Number=Plur	*	*	afmpnyc	*	liels	_	_	amod	basic	1-22	
+1-22	146-157	ienaidnieki	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	ienaidnieks	_	_	acl	basic	1-9	
+1-23	157-158	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	1-3	

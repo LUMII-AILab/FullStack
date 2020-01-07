@@ -1,0 +1,62 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Rīga, 31.jūl., LETA.
+1-1	0-4	Rīga	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Rīga	GPE	*	_	_	root	basic	1-1	
+1-2	4-5	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-4	
+1-3	6-9	31.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	31.	time[1]	*[1]	_	_	amod	basic	1-4	
+1-4	9-13	jūl.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	*	jūl.	time[1]	*[1]	_	_	parataxis	basic	1-1	
+1-5	13-14	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-6	
+1-6	15-19	LETA	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	LETA	organization	*	_	_	parataxis	basic	1-1	
+1-7	19-20	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-1	
+
+#Text=Precēts pāris no Rīgas "Viking Lotto" 29.jūlija izlozē, uzminot piecus skaitļus un papildskaitli ("5+1"), laimēja 20 651 eiro, aģentūru LETA informēja VAS "Latvijas Loto" Mārketinga daļas vadītāja Aiga Roziņa.
+2-1	22-29	Precēts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnpsnpn	*	precēt	_	_	_	_	amod	basic	2-2	
+2-2	30-35	pāris	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	pāris	_	_	_	_	nsubj	basic	2-26	
+2-3	36-38	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case	basic	2-4	
+2-4	39-44	Rīgas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Rīga	GPE	*	_	_	nmod	basic	2-2	
+2-5	45-46	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	entity[2]	*[2]	_	_	punct	basic	2-7	
+2-6	46-52	Viking	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Viking	entity[2]	*[2]	_	_	nmod	basic	2-7	
+2-7	53-58	Lotto	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Lotto	entity[2]	*[2]	_	_	nmod	basic	2-11	
+2-8	58-59	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	entity[2]	*[2]	_	_	punct	basic	2-7	
+2-9	60-63	29.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	29.	time[3]	*[3]	_	_	amod	basic	2-10	
+2-10	63-69	jūlija	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	jūlijs	time[3]	*[3]	_	_	nmod	basic	2-11	
+2-11	70-76	izlozē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	*	izloze	_	_	_	_	obl	basic	2-26	
+2-12	76-77	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-13	
+2-13	78-85	uzminot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	*	*	vmnpu0000000n	*	uzminēt	_	_	_	_	advcl	basic	2-26	
+2-14	86-92	piecus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpa	*	pieci	_	_	_	_	nummod	basic	2-15	
+2-15	93-101	skaitļus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa2	*	skaitlis	_	_	_	_	obj	basic	2-13	
+2-16	102-104	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-17	
+2-17	105-118	papildskaitli	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	*	papildskaitlis	_	_	_	_	conj	basic	2-15	
+2-18	119-120	(	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	(	_	_	_	_	punct	basic	2-20	
+2-19	120-121	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	_	_	_	_	punct	basic	2-20	
+2-20	121-122	5	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	5	_	_	_	_	discourse	basic	2-15	
+2-21	122-123	+	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	xx	*	+	_	_	_	_	flat	basic	2-20	
+2-22	123-124	1	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	1	_	_	_	_	flat	basic	2-20	
+2-23	124-125	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	_	_	_	_	punct	basic	2-20	
+2-24	125-126	)	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	)	_	_	_	_	punct	basic	2-20	
+2-25	126-127	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-13	
+2-26	128-135	laimēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist230an	*	laimēt	_	_	_	_	ccomp	basic	2-32	
+2-27	136-142	20 651	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	20 651	_	_	_	_	nummod	basic	2-28	
+2-28	143-147	eiro	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	nc0000	*	eiro	_	_	_	_	iobj	basic	2-26	
+2-29	147-148	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-26	
+2-30	149-157	aģentūru	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	aģentūra	_	_	*->1-1	*[1]	nmod	basic	2-31	
+2-31	158-162	LETA	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	LETA	organization	*	*->1-2	*[1]	obj	basic	2-32	
+2-32	163-172	informēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist230an	*	informēt	_	_	_	_	root	basic	2-32	
+2-33	173-176	VAS	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	*	VAS	organization[4]	https://lv.wikipedia.org/wiki/Latvijas\_Loto[4]	*->2-1	*[2]	nmod	basic	2-36	
+2-34	177-178	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[4]	https://lv.wikipedia.org/wiki/Latvijas\_Loto[4]	*->2-2	*[2]	punct	basic	2-36	
+2-35	178-186	Latvijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Latvija	organization[4]	https://lv.wikipedia.org/wiki/Latvijas\_Loto[4]	*->2-2	*[2]	nmod	basic	2-36	
+2-36	187-191	Loto	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	nc0000	*	loto	organization[4]	https://lv.wikipedia.org/wiki/Latvijas\_Loto[4]	*->2-2	*[2]	nmod	basic	2-39	
+2-37	191-192	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[4]	https://lv.wikipedia.org/wiki/Latvijas\_Loto[4]	*->2-2	*[2]	punct	basic	2-36	
+2-38	193-203	Mārketinga	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	Mārketings	organization[5]	*[5]	*->3-1	*[3]	nmod	basic	2-39	
+2-39	204-209	daļas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	daļa	organization[5]	*[5]	*->3-1	*[3]	nmod	basic	2-40	
+2-40	210-218	vadītāja	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	vadītāja	_	_	*->3-1	*[3]	nmod	basic	2-41	
+2-41	219-223	Aiga	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Aiga	person[6]	*[6]	*->3-2	*[3]	nsubj	basic	2-32	
+2-42	224-230	Roziņa	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Roziņa	person[6]	*[6]	*->3-2	*[3]	flat:name	basic	2-41	
+2-43	230-231	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-32	

@@ -1,0 +1,154 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Imigrantu pieplūdumu veicina arī atvieglotais bezvīzu režīms starp Krieviju un NVS valstīm, tas nosaka, ka šo NVS valstu pilsoņiem ir tiesības ieceļot Krievijā bez vīzas un uzturēties līdz pat 90 dienām.
+1-1	0-9	Imigrantu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	imigrants	_	_	_	_	nmod	basic	1-2	
+1-2	10-20	pieplūdumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	pieplūdums	_	_	_	_	obj	basic	1-3	
+1-3	21-28	veicina	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	veicināt	_	_	_	_	root	basic	1-3	
+1-4	29-32	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	1-7	
+1-5	33-45	atvieglotais	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnpsypn	*	atvieglot	_	_	*->1-1	*[1]	amod	basic	1-7	
+1-6	46-53	bezvīzu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpgg	*	bezvīzu	_	_	*->1-1	*[1]	nmod	basic	1-7	
+1-7	54-60	režīms	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	režīms	_	_	*->1-1	*[1]	nsubj	basic	1-3	
+1-8	61-66	starp	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	starp	_	_	*->1-1	*[1]	case	basic	1-9	
+1-9	67-75	Krieviju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	*	Krievija	GPE	https://en.wikipedia.org/wiki/Russia	*->1-1	*[1]	nmod	basic	1-7	
+1-10	76-78	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	*->1-1	*[1]	cc	basic	1-12	
+1-11	79-82	NVS	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	NVS	GPE	https://en.wikipedia.org/wiki/Commonwealth\_of\_Independent\_States	*->1-1	*[1]	nmod	basic	1-12	
+1-12	83-90	valstīm	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd6	*	valsts	_	_	*->1-1	*[1]	conj	basic	1-9	
+1-13	90-91	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-15	
+1-14	92-95	tas	*	*	Nom	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msnn	*	tas	_	_	*->1-2	*[1]	nsubj	basic	1-15	
+1-15	96-102	nosaka	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	nosacīt	_	_	_	_	conj	basic	1-3	
+1-16	102-103	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-22	
+1-17	104-106	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	1-22	
+1-18	107-109	šo	*	*	Gen	*	*	Fem	*	*	*	Plur	3	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur\|Person=3\|PronType=Dem	*	*	pd3fpgn	*	šī	_	_	_	_	det	basic	1-20	
+1-19	110-113	NVS	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	NVS	GPE	https://en.wikipedia.org/wiki/Commonwealth\_of\_Independent\_States	_	_	nmod	basic	1-21	
+1-20	114-120	valstu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg6	*	valsts	_	_	_	_	nmod	basic	1-21	
+1-21	121-130	pilsoņiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd2	*	pilsonis	_	_	_	_	obl	basic	1-22	
+1-22	131-133	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipii30an	*	būt	_	_	_	_	ccomp	basic	1-15	
+1-23	134-142	tiesības	*	*	Nom	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Ptan	*	*	ncfdn4	*	tiesības	_	_	_	_	nsubj	basic	1-22	
+1-24	143-150	ieceļot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0i2000n	*	ieceļot	_	_	_	_	acl	basic	1-23	
+1-25	151-159	Krievijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Krievija	GPE	https://en.wikipedia.org/wiki/Russia	_	_	obl	basic	1-24	
+1-26	160-163	bez	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	bez	_	_	_	_	case	basic	1-27	
+1-27	164-169	vīzas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	vīza	_	_	_	_	obl	basic	1-24	
+1-28	170-172	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-29	
+1-29	173-183	uzturēties	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i3000n	*	uzturēties	_	_	_	_	conj	basic	1-24	
+1-30	184-188	līdz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsd	*	līdz	_	_	_	_	case	basic	1-33	
+1-31	189-192	pat	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	pat	_	_	_	_	discourse	basic	1-33	
+1-32	193-195	90	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	90	_	_	_	_	nummod	basic	1-33	
+1-33	196-202	dienām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	*	diena	_	_	_	_	obl	basic	1-29	
+1-34	202-203	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-3	
+
+#Text=Vērtējot imigrantu nodarbinātību, redzams, ka imigranti nereti iekļūst Krievijā nelegālā ceļā, tāpat arī imigranti vairumā tiek nodarbināti nelegāli.
+2-1	205-213	Vērtējot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	*	*	vmnpu0000000n	*	vērtēt	_	_	_	_	advcl	basic	2-5	
+2-2	214-223	imigrantu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	imigrants	_	_	_	_	nmod	basic	2-3	
+2-3	224-237	nodarbinātību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	nodarbinātība	_	_	_	_	obj	basic	2-1	
+2-4	237-238	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-1	
+2-5	239-246	redzams	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Pres	*	Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdmsnppnpn	*	redzēt	_	_	_	_	root	basic	2-5	
+2-6	246-247	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-10	
+2-7	248-250	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	2-10	
+2-8	251-260	imigranti	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	imigrants	_	_	_	_	nsubj	basic	2-10	
+2-9	261-267	nereti	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Neg	*	*	r0t	*	nereti	_	_	_	_	advmod	basic	2-10	
+2-10	268-275	iekļūst	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vtnipi130an	*	iekļūt	_	_	_	_	csubj	basic	2-5	
+2-11	276-284	Krievijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Krievija	GPE	https://en.wikipedia.org/wiki/Russia	_	_	obl	basic	2-10	
+2-12	285-293	nelegālā	*	*	Loc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armslnp	*	nelegāls	_	_	_	_	amod	basic	2-13	
+2-13	294-298	ceļā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	ceļš	_	_	_	_	obl	basic	2-10	
+2-14	298-299	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-10	
+2-15	300-305	tāpat	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tāpat	_	_	_	_	discourse	basic	2-20	
+2-16	306-309	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	2-20	
+2-17	310-319	imigranti	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	imigrants	_	_	_	_	nsubj:pass	basic	2-20	
+2-18	320-327	vairumā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	vairums	_	_	_	_	obl	basic	2-20	
+2-19	328-332	tiek	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vtnipi130an	*	tikt	_	_	_	_	aux:pass	basic	2-20	
+2-20	333-344	nodarbināti	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmpnpsnpn	*	nodarbināt	_	_	_	_	conj	basic	2-10	
+2-21	345-353	nelegāli	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Neg	*	*	r0m	*	nelegāli	_	_	_	_	advmod	basic	2-20	
+2-22	353-354	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-5	
+
+#Text=No Vidusāzijas galvenokārt Krievijā ieplūst tikai zemi kvalificēts, mazizglītots darbaspēks, kas tad arī tiek nodarbināts atbilstoši to kvalifikācijai – primāri kā palīgstrādnieki būvniecībā, rūpniecībā, tirdzniecībā un lauksaimniecībā.
+3-1	356-358	No	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case	basic	3-2	
+3-2	359-370	Vidusāzijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Vidusāzija	location	https://en.wikipedia.org/wiki/Central\_Asia	_	_	obl	basic	3-5	
+3-3	371-382	galvenokārt	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	galvenokārt	_	_	_	_	advmod	basic	3-5	
+3-4	383-391	Krievijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Krievija	GPE	https://en.wikipedia.org/wiki/Russia	_	_	obl	basic	3-5	
+3-5	392-399	ieplūst	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipi130an	*	ieplūst	_	_	_	_	root	basic	3-5	
+3-6	400-405	tikai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tikai	_	_	_	_	discourse	basic	3-11	
+3-7	406-410	zemi	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpq	*	zemi	_	_	_	_	advmod	basic	3-8	
+3-8	411-422	kvalificēts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnpsnpn	*	kvalificēt	_	_	_	_	amod	basic	3-11	
+3-9	422-423	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-10	
+3-10	424-436	mazizglītots	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsnnp	*	mazizglītots	_	_	_	_	conj	basic	3-8	
+3-11	437-447	darbaspēks	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	darbaspēks	_	_	*->3-1	*[3]	nsubj	basic	3-5	
+3-12	447-448	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-17	
+3-13	449-452	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->3-2	*[3]	nsubj:pass	basic	3-17	
+3-14	453-456	tad	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tad	_	_	_	_	discourse	basic	3-17	
+3-15	457-460	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	3-17	
+3-16	461-465	tiek	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vtnipi130an	*	tikt	_	_	_	_	aux:pass	basic	3-17	
+3-17	466-477	nodarbināts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnpsnpn	*	nodarbināt	_	_	_	_	acl	basic	3-11	
+3-18	478-488	atbilstoši	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	atbilstoši	_	_	_	_	advmod	basic	3-17	
+3-19	489-491	to	*	*	Gen	*	*	Masc	*	*	*	Plur	3	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Dem	*	*	pd3mpgn	*	tas	_	_	*->3-3	*[3]	det	basic	3-20	
+3-20	492-506	kvalifikācijai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	*	kvalifikācija	_	_	_	_	iobj	basic	3-18	
+3-21	507-508	–	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	–	_	_	_	_	punct	basic	3-24	
+3-22	509-516	primāri	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	primāri	_	_	_	_	advmod	basic	3-24	
+3-23	517-519	kā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	kā	_	_	_	_	mark	basic	3-24	
+3-24	520-535	palīgstrādnieki	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	palīgstrādnieks	_	_	_	_	acl	basic	3-17	
+3-25	536-546	būvniecībā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	būvniecība	_	_	_	_	acl	basic	3-24	
+3-26	546-547	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-27	
+3-27	548-558	rūpniecībā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	rūpniecība	_	_	_	_	conj	basic	3-25	
+3-28	558-559	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-29	
+3-29	560-572	tirdzniecībā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	tirdzniecība	_	_	_	_	conj	basic	3-25	
+3-30	573-575	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	3-31	
+3-31	576-591	lauksaimniecībā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	lauksaimniecība	_	_	_	_	conj	basic	3-25	
+3-32	591-592	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-5	
+
+#Text=Tomēr nelegālā nodarbinātība ir arī valsts likumdošanas radīts fenomens, pārlieku lielā birokrātija un sarežģīts normatīvisms neļauj vairumam no imigrantiem uzsākt legālu nodarbošanos.
+4-1	594-599	Tomēr	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	tomēr	_	_	_	_	cc	basic	4-9	
+4-2	600-608	nelegālā	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsnyp	*	nelegāla	_	_	_	_	amod	basic	4-3	
+4-3	609-622	nodarbinātība	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	nodarbinātība	_	_	_	_	nsubj	basic	4-9	
+4-4	623-625	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	4-9	
+4-5	626-629	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	4-9	
+4-6	630-636	valsts	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	*	valsts	_	_	_	_	nmod	basic	4-7	
+4-7	637-649	likumdošanas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	likumdošana	_	_	_	_	nmod	basic	4-8	
+4-8	650-656	radīts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnpsnpn	*	radīt	_	_	_	_	amod	basic	4-9	
+4-9	657-665	fenomens	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	fenomens	_	_	_	_	root	basic	4-9	
+4-10	665-666	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-17	
+4-11	667-675	pārlieku	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	pārlieku	_	_	_	_	advmod	basic	4-12	
+4-12	676-681	lielā	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnyp	*	liela	_	_	_	_	amod	basic	4-13	
+4-13	682-693	birokrātija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	birokrātija	_	_	_	_	nsubj	basic	4-17	
+4-14	694-696	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	4-16	
+4-15	697-706	sarežģīts	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	sarežģīts	_	_	_	_	amod	basic	4-16	
+4-16	707-719	normatīvisms	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	normatīvisms	_	_	_	_	conj	basic	4-13	
+4-17	720-726	neļauj	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt130ay	*	neļaut	_	_	_	_	conj	basic	4-9	
+4-18	727-735	vairumam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	vairums	_	_	_	_	nsubj	basic	4-17	
+4-19	736-738	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	no	_	_	_	_	case	basic	4-20	
+4-20	739-750	imigrantiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	imigrants	_	_	_	_	nmod	basic	4-18	
+4-21	751-757	uzsākt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	*	uzsākt	_	_	_	_	ccomp	basic	4-17	
+4-22	758-764	legālu	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsanp	*	legāla	_	_	_	_	amod	basic	4-23	
+4-23	765-777	nodarbošanos	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsar	*	nodarbošanās	_	_	_	_	obj	basic	4-21	
+4-24	777-778	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	4-9	
+
+#Text=Pavisam saskaņā ar Iekšlietu ministrijas aprēķiniem Krievijā pašlaik dzīvo aptuveni 25 miljoni ārvalstu pilsoņu, no kuriem ceturtā daļa izvairās no oficiālas reģistrācijas.
+5-1	780-787	Pavisam	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	pavisam	_	_	_	_	advmod	basic	5-9	
+5-2	788-795	saskaņā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	saskaņa	_	_	_	_	discourse	basic	5-9	
+5-3	796-798	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	5-6	
+5-4	799-808	Iekšlietu	*	*	Gen	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Ptan	*	*	ncfdg4	*	iekšlietas	organization[1]	https://lv.wikipedia.org/wiki/Latvijas\_Republikas\_Iekšlietu\_ministrija[1]	_	_	nmod	basic	5-5	
+5-5	809-820	ministrijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	ministrija	organization[1]	https://lv.wikipedia.org/wiki/Latvijas\_Republikas\_Iekšlietu\_ministrija[1]	_	_	nmod	basic	5-6	
+5-6	821-831	aprēķiniem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	aprēķins	_	_	_	_	iobj	basic	5-2	
+5-7	832-840	Krievijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Krievija	GPE	https://en.wikipedia.org/wiki/Russia	_	_	obl	basic	5-9	
+5-8	841-848	pašlaik	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	pašlaik	_	_	_	_	advmod	basic	5-9	
+5-9	849-854	dzīvo	*	*	*	*	*	*	Ind	*	*	Sing	2	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=2\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt22san	*	dzīvot	_	_	_	_	root	basic	5-9	
+5-10	855-863	aptuveni	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	aptuveni	_	_	_	_	advmod	basic	5-12	
+5-11	864-866	25	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	25	_	_	_	_	nummod	basic	5-12	
+5-12	867-874	miljoni	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	miljons	_	_	_	_	nsubj	basic	5-9	
+5-13	875-883	ārvalstu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg6	*	ārvalsts	_	_	_	_	nmod	basic	5-14	
+5-14	884-891	pilsoņu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	pilsonis	_	_	*->2-1	*[2]	nmod	basic	5-12	
+5-15	891-892	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	5-20	
+5-16	893-895	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	no	_	_	*->2-2	*[2]	case	basic	5-17	
+5-17	896-902	kuriem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|PronType=Rel	*	*	pr0mpdn	*	kurš	_	_	*->2-2	*[2]	nmod	basic	5-19	
+5-18	903-910	ceturtā	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|NumType=Ord	*	*	mosfsn	*	ceturtā	_	_	_	_	amod	basic	5-19	
+5-19	911-915	daļa	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	daļa	_	_	_	_	nsubj	basic	5-20	
+5-20	916-924	izvairās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmyipi330an	*	izvairīties	_	_	_	_	advcl	basic	5-9	
+5-21	925-927	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case	basic	5-23	
+5-22	928-937	oficiālas	*	*	Gen	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsgnp	*	oficiāla	_	_	_	_	amod	basic	5-23	
+5-23	938-951	reģistrācijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	reģistrācija	_	_	_	_	iobj	basic	5-20	
+5-24	951-952	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	5-9	

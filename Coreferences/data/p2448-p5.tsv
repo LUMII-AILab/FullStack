@@ -1,18 +1,18 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Ja likumprojekts tiks apstiprināts, to nodos referendumam.
-1-1	0-2	Ja	_	_	_	_	_	_	_	_	_	_	_	_	cs	ja	_	_	mark|mark	basic|enhanced	1-4|1-4	
-1-2	3-16	likumprojekts	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	likumprojekts	*[1]	*->1-1	nsubj:pass|nsubj	basic|enhanced	1-4|1-4	
-1-3	17-21	tiks	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vtnifi130an	tikt	_	_	aux|aux	basic|enhanced	1-4|1-4	
-1-4	22-34	apstiprināts	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnp	apstiprināt	_	_	advcl|advcl	basic|enhanced	1-7|1-7	
-1-5	34-35	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct|punct	basic|enhanced	1-4|1-4	
-1-6	36-38	to	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	tas	*[1]	*->1-2	obj|obj	basic|enhanced	1-7|1-7	
-1-7	39-44	nodos	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vmnifti30an	nodot	_	_	root|root	basic|enhanced	1-7|1-7	
-1-8	45-57	referendumam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	referendums	_	_	iobj|iobj	basic|enhanced	1-7|1-7	
-1-9	57-58	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct|punct	basic|enhanced	1-7|1-7	
+1-1	0-2	Ja	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ja	_	_	mark|mark	basic|enhanced	1-4|1-4	
+1-2	3-16	likumprojekts	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	likumprojekts	*->1-1	*[1]	nsubj:pass|nsubj	basic|enhanced	1-4|1-4	
+1-3	17-21	tiks	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vtnifi130an	*	tikt	_	_	aux|aux	basic|enhanced	1-4|1-4	
+1-4	22-34	apstiprināts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnpsnp	*	apstiprināt	_	_	advcl|advcl	basic|enhanced	1-7|1-7	
+1-5	34-35	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct|punct	basic|enhanced	1-4|1-4	
+1-6	36-38	to	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	*	tas	*->1-2	*[1]	obj|obj	basic|enhanced	1-7|1-7	
+1-7	39-44	nodos	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmnifti30an	*	nodot	_	_	root|root	basic|enhanced	1-7|1-7	
+1-8	45-57	referendumam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	referendums	_	_	iobj|iobj	basic|enhanced	1-7|1-7	
+1-9	57-58	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct|punct	basic|enhanced	1-7|1-7	

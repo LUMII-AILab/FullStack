@@ -1,0 +1,29 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Pēc brauciena zvaigzne nespēja beigt priecāties par izbraukumu un tikšanos ar ziloni, kuras dēļ sirds situsies mazliet straujāk.
+1-1	0-3	Pēc	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pēc	_	_	case	basic	1-2	
+1-2	4-13	brauciena	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	brauciens	_	_	obl	basic	1-4	
+1-3	14-22	zvaigzne	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	zvaigzne	_	_	nsubj	basic	1-4	
+1-4	23-30	nespēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vonisi130ay	*	spēt	_	_	root	basic	1-4	
+1-5	31-36	beigt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vpnn0i1000n	*	beigt	_	_	xcomp	basic	1-4	
+1-6	37-47	priecāties	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i2000n	*	priecāties	_	_	xcomp	basic	1-5	
+1-7	48-51	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	case	basic	1-8	
+1-8	52-62	izbraukumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	izbraukums	_	_	iobj	basic	1-6	
+1-9	63-65	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	cc	basic	1-10	
+1-10	66-74	tikšanos	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsar	*	tikšanās	*->1-1	*[1]	conj	basic	1-8	
+1-11	75-77	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	*->1-1	*[1]	case	basic	1-12	
+1-12	78-84	ziloni	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	*	zilonis	*->1-1	*[1]	nmod	basic	1-10	
+1-13	84-85	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-17	
+1-14	86-91	kuras	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsgn	*	kura	*->1-2	*[1]	obl	basic	1-17	
+1-15	92-95	dēļ	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	stsg	*	dēļ	_	_	case	basic	1-14	
+1-16	96-101	sirds	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	*	sirds	_	_	nsubj	basic	1-17	
+1-17	102-110	situsies	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	*	vmypdfsnasnpn	*	sisties	_	_	acl	basic	1-10	
+1-18	111-118	mazliet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	mazliet	_	_	advmod	basic	1-19	
+1-19	119-127	straujāk	*	*	*	*	Cmp	*	*	*	*	*	*	*	*	*	*	*	Degree=Cmp	*	*	rcm	*	strauji	_	_	advmod	basic	1-17	
+1-20	127-128	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	1-4	

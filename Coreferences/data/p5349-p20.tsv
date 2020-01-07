@@ -1,0 +1,87 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Ne tikai mietpilsoņi, bet arī daudzi politiķi Latvijā ir vai nu stulbi nekompetenti, naivi (Kremļa mediju nozombēti), vai arī liekuļi, kas barojas no Kremļa siles, esot tajā iekšā ar abām priekškājām.
+1-1	0-2	Ne	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Neg	*	*	cc	*	ne	_	_	_	_	cc	basic	1-3	
+1-2	3-8	tikai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tikai	_	_	_	_	discourse	basic	1-1	
+1-3	9-20	mietpilsoņi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn2	*	mietpilsonis	_	_	_	_	nsubj	basic	1-14	
+1-4	20-21	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-8	
+1-5	22-25	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	_	_	cc	basic	1-8	
+1-6	26-29	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	1-5	
+1-7	30-36	daudzi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Ind	*	*	pi0mpnn	*	daudzi	_	_	_	_	det	basic	1-8	
+1-8	37-45	politiķi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn2	*	politiķis	_	_	_	_	conj	basic	1-3	
+1-9	46-53	Latvijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	*->4-1	*[4]	obl	basic	1-14	
+1-10	54-56	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	1-14	
+1-11	57-60	vai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	vai	_	_	_	_	cc	basic	1-14	
+1-12	61-63	nu	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	nu	_	_	_	_	discourse	basic	1-11	
+1-13	64-70	stulbi	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	stulbi	_	_	_	_	advmod	basic	1-14	
+1-14	71-83	nekompetenti	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnnp	*	nekompetents	_	_	_	_	root	basic	1-14	
+1-15	83-84	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-16	
+1-16	85-90	naivi	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnnp	*	naivs	_	_	_	_	conj	basic	1-14	
+1-17	91-92	(	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	(	_	_	_	_	punct	basic	1-20	
+1-18	92-98	Kremļa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg2	*	Kremlis	organization	*	_	_	nmod	basic	1-19	
+1-19	99-105	mediju	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	medijs	_	_	_	_	iobj	basic	1-20	
+1-20	106-115	nozombēti	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmpnpsnpn	*	nozombēt	_	_	_	_	discourse	basic	1-16	
+1-21	115-116	)	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	)	_	_	_	_	punct	basic	1-20	
+1-22	116-117	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-25	
+1-23	118-121	vai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	vai	_	_	_	_	cc	basic	1-25	
+1-24	122-125	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	1-23	
+1-25	126-133	liekuļi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn2	*	liekulis	_	_	*->1-1	*[1]	conj	basic	1-14	
+1-26	133-134	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-28	
+1-27	135-138	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->1-2	*[1]	nsubj	basic	1-28	
+1-28	139-146	barojas	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmyipi230an	*	baroties	_	_	_	_	acl	basic	1-25	
+1-29	147-149	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case	basic	1-31	
+1-30	150-156	Kremļa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg2	*	Kremlis	organization	*	*->2-1	*[2]	nmod	basic	1-31	
+1-31	157-162	siles	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	sile	_	_	*->2-1	*[2]	obl	basic	1-28	
+1-32	162-163	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-28	
+1-33	164-168	esot	*	*	*	*	*	*	Qot	*	*	*	*	*	*	*	Pres	*	Evident=Nfh\|Mood=Qot\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnrpii00an	*	būt	_	_	_	_	dep	basic	1-28	
+1-34	169-173	tajā	*	*	Loc	*	*	Fem	*	*	*	Sing	3	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3fsln	*	tā	_	_	*->2-2	*[2]	obl	basic	1-33	
+1-35	174-179	iekšā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0p	*	iekšā	_	_	_	_	advmod	basic	1-33	
+1-36	180-182	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	_	_	case	basic	1-38	
+1-37	183-187	abām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur\|PronType=Tot	*	*	pg0fpdn	*	abas	_	_	_	_	det	basic	1-38	
+1-38	188-199	priekškājām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	*	priekškāja	_	_	_	_	obl	basic	1-33	
+1-39	199-200	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-14	
+
+#Text=To atgādināja arī jaunizceptais eiroparlamentārietis un bijušais ministrs A. Pabriks (Vienotība), kurš Putina galma ballītes sakarā izteicās, ka nevajagot ņemties par to Operu un Krutoju, jo valsts neko neesot zaudējusi.
+2-1	202-204	To	*	*	Acc	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msan	*	tas	_	_	_	_	obj	basic	2-2	
+2-2	205-215	atgādināja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist330an	*	atgādināt	_	_	_	_	root	basic	2-2	
+2-3	216-219	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	2-9	
+2-4	220-233	jaunizceptais	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnyp	*	jaunizcepts	_	_	*->3-1	*[3]	amod	basic	2-5	
+2-5	234-254	eiroparlamentārietis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	eiroparlamentārietis	_	_	*->3-1	*[3]	nmod	basic	2-9	
+2-6	255-257	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	*->3-1	*[3]	cc	basic	2-8	
+2-7	258-266	bijušais	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnyp	*	bijušais	_	_	*->3-1	*[3]	amod	basic	2-8	
+2-8	267-275	ministrs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	ministrs	_	_	*->3-1	*[3]	conj	basic	2-5	
+2-9	276-278	A.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	A.	person[1]	*[1]	*->3-2	*[3]	nsubj	basic	2-2	
+2-10	279-286	Pabriks	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Pabriks	person[1]	*[1]	*->3-2	*[3]	flat:name	basic	2-9	
+2-11	287-288	(	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	(	_	_	_	_	punct	basic	2-12	
+2-12	288-297	Vienotība	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	vienotība	organization	https://en.wikipedia.org/wiki/Unity\_(Latvian\_political\_party)	_	_	discourse	basic	2-9	
+2-13	297-298	)	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	)	_	_	_	_	punct	basic	2-12	
+2-14	298-299	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-20	
+2-15	300-304	kurš	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msnn	*	kurš	_	_	*->3-3	*[3]	nsubj	basic	2-20	
+2-16	305-311	Putina	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Putins	person	https://en.wikipedia.org/wiki/Vladimir\_Putin	_	_	nmod	basic	2-18	
+2-17	312-317	galma	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	galms	_	_	_	_	nmod	basic	2-18	
+2-18	318-326	ballītes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	ballīte	_	_	_	_	nmod	basic	2-19	
+2-19	327-333	sakarā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	sakars	_	_	_	_	obl	basic	2-20	
+2-20	334-342	izteicās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmyisi130an	*	izteikties	_	_	_	_	acl	basic	2-9	
+2-21	342-343	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-23	
+2-22	344-346	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	2-23	
+2-23	347-356	nevajagot	*	*	*	*	*	*	Qot	*	*	*	*	*	*	*	Pres	*	Evident=Nfh\|Mood=Qot\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vonrpt300ay	*	vajadzēt	_	_	_	_	ccomp	basic	2-20	
+2-24	357-364	ņemties	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i1000n	*	ņemties	_	_	_	_	xcomp	basic	2-23	
+2-25	365-368	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	2-27	
+2-26	369-371	to	*	*	Acc	*	*	Fem	*	*	*	Sing	3	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3fsan	*	tā	_	_	_	_	det	basic	2-27	
+2-27	372-377	Operu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	opera	organization	https://en.wikipedia.org/wiki/Latvian\_National\_Opera	_	_	iobj	basic	2-24	
+2-28	378-380	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-29	
+2-29	381-388	Krutoju	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	*	Krutojs	person	https://en.wikipedia.org/wiki/Igor\_Krutoy	_	_	conj	basic	2-27	
+2-30	388-389	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-35	
+2-31	390-392	jo	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	jo	_	_	_	_	mark	basic	2-35	
+2-32	393-399	valsts	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn6	*	valsts	_	_	*->4-2	*[4]	nsubj	basic	2-35	
+2-33	400-404	neko	*	*	Acc	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Acc\|PronType=Ind	*	*	pi000an	*	neko	_	_	_	_	obj	basic	2-35	
+2-34	405-411	neesot	*	*	*	*	*	*	Qot	*	*	*	*	*	*	*	Pres	*	Evident=Nfh\|Mood=Qot\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnrpii00ay	*	būt	_	_	_	_	aux	basic	2-35	
+2-35	412-421	zaudējusi	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsnasnpn	*	zaudēt	_	_	_	_	advcl	basic	2-23	
+2-36	421-422	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-2	

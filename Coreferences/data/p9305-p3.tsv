@@ -1,0 +1,125 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Ar aromātiskiem āboliem brūnajā cukurā.
+1-1	0-2	Ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	case	basic	1-3	
+1-2	3-15	aromātiskiem	*	*	Dat	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpdnp	*	aromātisks	_	_	amod	basic	1-3	
+1-3	16-23	āboliem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	ābols	_	_	root	basic	1-3	
+1-4	24-31	brūnajā	*	*	Loc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmslyp	*	brūns	_	_	amod	basic	1-5	
+1-5	32-38	cukurā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	cukurs	_	_	acl	basic	1-3	
+1-6	38-39	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	1-3	
+
+#Text=Āboli, uzglabāti vēsos lauku pagrabos un pareizos apstākļos, ir pieejami arī pēdējos ziemas mēnešos.
+2-1	40-45	Āboli	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	ābols	*->2-1	*[2]	nsubj	basic	2-12	
+2-2	45-46	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	2-3	
+2-3	47-56	uzglabāti	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmpnpsnpn	*	uzglabāt	_	_	acl	basic	2-12	
+2-4	57-62	vēsos	*	*	Loc	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmplnp	*	vēss	_	_	amod	basic	2-6	
+2-5	63-68	lauku	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	lauks	_	_	nmod	basic	2-6	
+2-6	69-77	pagrabos	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	*	pagrabs	_	_	obl	basic	2-3	
+2-7	78-80	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	cc	basic	2-9	
+2-8	81-89	pareizos	*	*	Loc	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmplnp	*	pareizs	_	_	amod	basic	2-9	
+2-9	90-99	apstākļos	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl2	*	apstāklis	_	_	conj	basic	2-6	
+2-10	99-100	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	2-3	
+2-11	101-103	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	cop	basic	2-12	
+2-12	104-112	pieejami	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnnp	*	pieejams	_	_	root	basic	2-12	
+2-13	113-116	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	discourse	basic	2-16	
+2-14	117-124	pēdējos	*	*	Loc	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmplnp	*	pēdējos	_	_	amod	basic	2-16	
+2-15	125-131	ziemas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	ziema	_	_	nmod	basic	2-16	
+2-16	132-139	mēnešos	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl2	*	mēnesis	_	_	obl	basic	2-12	
+2-17	139-140	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	2-12	
+
+#Text=Tajos joprojām ir daudz vitamīnu un vērtīgu uzturvielu, tāpēc izmanto tās!
+3-1	141-146	Tajos	*	*	Loc	*	*	Masc	*	*	*	Plur	3	*	Dem	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Dem	*	*	pd3mpln	*	tas	*->2-2	*[2]	obl	basic	3-3	
+3-2	147-155	joprojām	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	joprojām	_	_	advmod	basic	3-3	
+3-3	156-158	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipii30an	*	būt	_	_	root	basic	3-3	
+3-4	159-164	daudz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	daudz	_	_	advmod	basic	3-5	
+3-5	165-173	vitamīnu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	vitamīns	_	_	nsubj	basic	3-3	
+3-6	174-176	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	cc	basic	3-8	
+3-7	177-184	vērtīgu	*	*	Gen	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpgnp	*	vērtīgs	*->3-1	*[3]	amod	basic	3-8	
+3-8	185-195	uzturvielu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	uzturviela	*->3-1	*[3]	conj	basic	3-5	
+3-9	195-196	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	3-11	
+3-10	197-202	tāpēc	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0c	*	tāpēc	_	_	cc	basic	3-11	
+3-11	203-210	izmanto	*	*	*	*	*	*	Imp	*	*	Sing	2	*	*	*	*	*	Mood=Imp\|Number=Sing\|Person=2\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnm0t22san	*	izmantot	_	_	conj	basic	3-3	
+3-12	211-214	tās	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	Dem	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur\|PronType=Dem	*	*	pd0fpan	*	tās	*->3-2	*[3]	obj	basic	3-11	
+3-13	214-215	!	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	!	_	_	punct	basic	3-3	
+
+#Text=Nomizo dažus saldskābus ābolus, sagriez tos gabaliņos un sautē, pievienojot pāris karotes brūnā cukura un garšvielas pēc savas izvēles – kanēli, kardamonu, krustnagliņas.
+4-1	216-222	Nomizo	*	*	*	*	*	*	Imp	*	*	Sing	2	*	*	*	*	*	Mood=Imp\|Number=Sing\|Person=2\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnm0t22san	*	nomizot	_	_	root	basic	4-1	
+4-2	223-228	dažus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	Ind	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|PronType=Ind	*	*	pi0mpan	*	dažs	_	_	det	basic	4-4	
+4-3	229-239	saldskābus	*	*	Acc	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpanp	*	saldskābs	*->1-1	*[1]	amod	basic	4-4	
+4-4	240-246	ābolus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	ābols	*->1-1	*[1]	obj	basic	4-1	
+4-5	246-247	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	4-6	
+4-6	248-255	sagriez	*	*	*	*	*	*	Imp	*	*	Sing	2	*	*	*	*	*	Mood=Imp\|Number=Sing\|Person=2\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnm0t12san	*	sagriezt	_	_	conj	basic	4-1	
+4-7	256-259	tos	*	*	Acc	*	*	Masc	*	*	*	Plur	3	*	Dem	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Dem	*	*	pd3mpan	*	tas	*->1-2	*[1]	obj	basic	4-6	
+4-8	260-269	gabaliņos	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	*	gabaliņš	_	_	obl	basic	4-6	
+4-9	270-272	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	cc	basic	4-10	
+4-10	273-278	sautē	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt230an	*	sautēt	_	_	conj	basic	4-1	
+4-11	278-279	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	4-12	
+4-12	280-291	pievienojot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	Conv	*	vmnpu0000000n	*	pievienot	_	_	advcl	basic	4-10	
+4-13	292-297	pāris	*	*	Acc	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpanp	*	pāris	_	_	amod	basic	4-14	
+4-14	298-305	karotes	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa5	*	karote	_	_	obj	basic	4-12	
+4-15	306-311	brūnā	*	*	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsgyp	*	brūns	_	_	amod	basic	4-16	
+4-16	312-318	cukura	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	cukurs	_	_	nmod	basic	4-14	
+4-17	319-321	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	cc	basic	4-18	
+4-18	322-332	garšvielas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	garšviela	_	_	conj	basic	4-14	
+4-19	333-336	pēc	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pēc	_	_	case	basic	4-21	
+4-20	337-342	savas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	Prs	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0fsgn	*	sava	_	_	det	basic	4-21	
+4-21	343-350	izvēles	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	izvēle	_	_	nmod	basic	4-18	
+4-22	351-352	–	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	–	_	_	punct	basic	4-23	
+4-23	353-359	kanēli	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	*	kanēlis	_	_	acl	basic	4-18	
+4-24	359-360	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	4-25	
+4-25	361-370	kardamonu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	kardamons	_	_	conj	basic	4-23	
+4-26	370-371	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	4-27	
+4-27	372-385	krustnagliņas	*	*	Acc	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Ptan	*	*	ncfda4	*	krustnagliņas	_	_	conj	basic	4-23	
+4-28	385-386	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	4-1	
+
+#Text=Šo spēcīgo garšu vietā var izmantot arī vaniļas pāksti, jo tās garša ir neitrālāka un patīk teju ikvienam neatkarīgi no vecuma.
+5-1	387-389	Šo	*	*	Gen	*	*	Masc	*	*	*	Plur	3	*	Dem	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Dem	*	*	pd3mpgn	*	šis	_	_	det	basic	5-3	
+5-2	390-397	spēcīgo	*	*	Gen	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpgyp	*	spēcīgs	_	_	amod	basic	5-3	
+5-3	398-403	garšu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	garša	_	_	nmod	basic	5-4	
+5-4	404-409	vietā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	vieta	_	_	obl	basic	5-6	
+5-5	410-413	var	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vonipi330an	*	varēt	_	_	root	basic	5-5	
+5-6	414-422	izmantot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t2000n	*	izmantot	_	_	xcomp	basic	5-5	
+5-7	423-426	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	discourse	basic	5-9	
+5-8	427-434	vaniļas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	vaniļa	*->4-1	*[4]	nmod	basic	5-9	
+5-9	435-441	pāksti	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa6	*	pāksts	*->4-1	*[4]	obj	basic	5-6	
+5-10	441-442	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	5-15	
+5-11	443-445	jo	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	jo	_	_	mark	basic	5-15	
+5-12	446-449	tās	*	*	Gen	*	*	Fem	*	*	*	Sing	3	*	Dem	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3fsgn	*	tā	*->4-2	*[4]	det	basic	5-13	
+5-13	450-455	garša	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	garša	_	_	nsubj	basic	5-15	
+5-14	456-458	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	cop	basic	5-15	
+5-15	459-469	neitrālāka	*	*	Nom	*	Cmp	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Fem\|Number=Sing	*	*	affsnnc	*	neitrāls	_	_	advcl	basic	5-5	
+5-16	470-472	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	cc	basic	5-17	
+5-17	473-478	patīk	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipi130an	*	patikt	_	_	conj	basic	5-15	
+5-18	479-483	teju	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	teju	_	_	advmod	basic	5-19	
+5-19	484-492	ikvienam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	Tot	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msdn	*	ikviens	_	_	obl	basic	5-17	
+5-20	493-503	neatkarīgi	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	neatkarīgi	_	_	advmod	basic	5-17	
+5-21	504-506	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	case	basic	5-22	
+5-22	507-513	vecuma	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	vecums	_	_	iobj	basic	5-20	
+5-23	513-514	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	5-5	
+
+#Text=Sautē, kamēr ābola gabaliņi kļuvuši mīksti un sulīgi.
+6-1	515-520	Sautē	*	*	*	*	*	*	Imp	*	*	Sing	2	*	*	*	*	*	Mood=Imp\|Number=Sing\|Person=2\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnm0t22san	*	sautēt	_	_	root	basic	6-1	
+6-2	520-521	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	6-7	
+6-3	522-527	kamēr	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	kamēr	_	_	mark	basic	6-7	
+6-4	528-533	ābola	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	ābols	*->2-3	*[2]	nmod	basic	6-5	
+6-5	534-542	gabaliņi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	gabaliņš	_	_	nsubj	basic	6-7	
+6-6	543-550	kļuvuši	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vtnpdmpnasnpn	*	kļūt	_	_	aux	basic	6-7	
+6-7	551-557	mīksti	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnnp	*	mīksts	_	_	advcl	basic	6-1	
+6-8	558-560	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	cc	basic	6-9	
+6-9	561-567	sulīgi	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnnp	*	sulīgs	_	_	conj	basic	6-7	
+6-10	567-568	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	6-1	
+
+#Text=Pasniedz kopā ar savām mīļākajām pankūkām.
+7-1	569-577	Pasniedz	*	*	*	*	*	*	Imp	*	*	Sing	2	*	*	*	*	*	Mood=Imp\|Number=Sing\|Person=2\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnm0t12san	*	pasniegt	_	_	root	basic	7-1	
+7-2	578-582	kopā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	kopā	_	_	advmod	basic	7-1	
+7-3	583-585	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	case	basic	7-6	
+7-4	586-591	savām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	Prs	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur\|Poss=Yes\|PronType=Prs	*	*	ps0fpdn	*	sava	_	_	det	basic	7-6	
+7-5	592-601	mīļākajām	*	*	Dat	*	Cmp	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Degree=Cmp\|Gender=Fem\|Number=Plur	*	*	affpdyc	*	mīļš	_	_	amod	basic	7-6	
+7-6	602-610	pankūkām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	*	pankūka	_	_	iobj	basic	7-2	
+7-7	610-611	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	7-1	

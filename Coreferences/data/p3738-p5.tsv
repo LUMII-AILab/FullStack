@@ -1,106 +1,106 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Savukārt runājot par uzņēmuma apgrozījumu šim gadam, Lipmans rudenī prognozēja, ka 2013.gada apgrozījums varētu pieaugt par aptuveni 13,5%.
-1-1	0-8	Savukārt	_	_	_	_	_	_	_	_	_	_	_	_	r0c	savukārt	_	_	_	_	advmod	basic	1-11	
-1-2	9-16	runājot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000	runāt	_	_	_	_	advcl	basic	1-11	
-1-3	17-20	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	_	_	case	basic	1-5	
-1-4	21-29	uzņēmuma	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	uzņēmums	_	_	_	_	nmod	basic	1-5	
-1-5	30-41	apgrozījumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	apgrozījums	_	_	_	_	iobj	basic	1-2	
-1-6	42-45	šim	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msdn	šis	time[1]	*[1]	_	_	det	basic	1-7	
-1-7	46-51	gadam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	gads	time[1]	*[1]	_	_	acl	basic	1-5	
-1-8	51-52	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-2	
-1-9	53-60	Lipmans	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Lipmans	person	*	*[1]	*->1-1	nsubj	basic	1-11	
-1-10	61-67	rudenī	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	rudens	time	*	_	_	obl	basic	1-11	
-1-11	68-78	prognozēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist230an	prognozēt	_	_	_	_	root	basic	1-11	
-1-12	78-79	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-17	
-1-13	80-82	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark	basic	1-17	
-1-14	83-88	2013.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	2013.	time[2]	*[2]	_	_	amod	basic	1-15	
-1-15	88-92	gada	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	gads	time[2]	*[2]	_	_	nmod	basic	1-16	
-1-16	93-104	apgrozījums	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	apgrozījums	_	_	_	_	nsubj	basic	1-17	
-1-17	105-111	varētu	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vonc0t300an	varēt	_	_	_	_	ccomp	basic	1-11	
-1-18	112-119	pieaugt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0i1000n	pieaugt	_	_	_	_	xcomp	basic	1-17	
-1-19	120-123	par	_	_	_	_	_	_	_	_	_	_	_	_	sppd	par	_	_	_	_	case	basic	1-22	
-1-20	124-132	aptuveni	_	_	_	_	_	_	_	_	_	_	_	_	r0q	aptuveni	_	_	_	_	advmod	basic	1-21	
-1-21	133-137	13,5	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	13,5	_	_	_	_	nummod	basic	1-22	
-1-22	137-138	%	_	_	_	_	_	_	_	_	_	_	_	_	xx	%	_	_	_	_	iobj	basic	1-17	
-1-23	138-139	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-11	
+1-1	0-8	Savukārt	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0c	*	savukārt	_	_	_	_	advmod	basic	1-11	
+1-2	9-16	runājot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000	*	runāt	_	_	_	_	advcl	basic	1-11	
+1-3	17-20	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	1-5	
+1-4	21-29	uzņēmuma	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	uzņēmums	_	_	_	_	nmod	basic	1-5	
+1-5	30-41	apgrozījumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	apgrozījums	_	_	_	_	iobj	basic	1-2	
+1-6	42-45	šim	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msdn	*	šis	time[1]	*[1]	_	_	det	basic	1-7	
+1-7	46-51	gadam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	gads	time[1]	*[1]	_	_	acl	basic	1-5	
+1-8	51-52	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-2	
+1-9	53-60	Lipmans	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Lipmans	person	*	*->1-1	*[1]	nsubj	basic	1-11	
+1-10	61-67	rudenī	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	*	rudens	time	*	_	_	obl	basic	1-11	
+1-11	68-78	prognozēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist230an	*	prognozēt	_	_	_	_	root	basic	1-11	
+1-12	78-79	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-17	
+1-13	80-82	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	1-17	
+1-14	83-88	2013.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	2013.	time[2]	*[2]	_	_	amod	basic	1-15	
+1-15	88-92	gada	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	gads	time[2]	*[2]	_	_	nmod	basic	1-16	
+1-16	93-104	apgrozījums	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	apgrozījums	_	_	_	_	nsubj	basic	1-17	
+1-17	105-111	varētu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vonc0t300an	*	varēt	_	_	_	_	ccomp	basic	1-11	
+1-18	112-119	pieaugt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0i1000n	*	pieaugt	_	_	_	_	xcomp	basic	1-17	
+1-19	120-123	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	par	_	_	_	_	case	basic	1-22	
+1-20	124-132	aptuveni	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	aptuveni	_	_	_	_	advmod	basic	1-21	
+1-21	133-137	13,5	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	13,5	_	_	_	_	nummod	basic	1-22	
+1-22	137-138	%	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	xx	*	%	_	_	_	_	iobj	basic	1-17	
+1-23	138-139	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-11	
 
 #Text=Tāpat viņš arī norādīja, ka 2013.gada peļņa varētu būt ne mazāka par 12 miljoniem latu, ko varētu veicināt ar produktu portfeļa papildināšanu un jaunu tirgu apguvi.
-2-1	141-146	Tāpat	_	_	_	_	_	_	_	_	_	_	_	_	q	tāpat	_	_	_	_	discourse	basic	2-4	
-2-2	147-151	viņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msnn	viņš	_	_	*[1]	*->1-2	nsubj	basic	2-4	
-2-3	152-155	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse	basic	2-4	
-2-4	156-164	norādīja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	norādīt	_	_	_	_	root	basic	2-4	
-2-5	164-165	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-10	
-2-6	166-168	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark	basic	2-10	
-2-7	169-174	2013.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	2013.	time[3]	*[3]	_	_	amod	basic	2-8	
-2-8	174-178	gada	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	gads	time[3]	*[3]	_	_	nmod	basic	2-9	
-2-9	179-184	peļņa	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	peļņa	_	_	_	_	nsubj	basic	2-10	
-2-10	185-191	varētu	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vonc0t300an	varēt	_	_	_	_	ccomp	basic	2-4	
-2-11	192-195	būt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vcnn0ii000n	būt	_	_	_	_	cop	basic	2-13	
-2-12	196-198	ne	_	_	_	_	_	_	_	_	_	_	_	_	q	ne	_	_	_	_	discourse	basic	2-13	
-2-13	199-205	mazāka	Fem	Sing	Nom	Cmp	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Fem\|Number=Sing	*	*	affsnnc	maza	_	_	_	_	xcomp	basic	2-10	
-2-14	206-209	par	_	_	_	_	_	_	_	_	_	_	_	_	sppd	par	_	_	_	_	case	basic	2-16	
-2-15	210-212	12	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	12	_	_	_	_	nummod	basic	2-16	
-2-16	213-222	miljoniem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	miljons	_	_	_	_	iobj	basic	2-13	
-2-17	223-227	latu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	lats	_	_	_	_	nmod	basic	2-16	
-2-18	227-228	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-20	
-2-19	229-231	ko	*	*	Acc	*	*	*	*	*	*	Case=Acc\|PronType=Rel	*	*	pr000an	kas	_	_	_	_	obj	basic	2-21	
-2-20	232-238	varētu	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vonc0t300an	varēt	_	_	_	_	advcl	basic	2-10	
-2-21	239-247	veicināt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	veicināt	_	_	_	_	xcomp	basic	2-20	
-2-22	248-250	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case	basic	2-25	
-2-23	251-259	produktu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	produkts	_	_	_	_	nmod	basic	2-24	
-2-24	260-268	portfeļa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	portfelis	_	_	_	_	nmod	basic	2-25	
-2-25	269-282	papildināšanu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	papildināšana	_	_	_	_	iobj	basic	2-20	
-2-26	283-285	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	2-29	
-2-27	286-291	jaunu	Masc	Plur	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpgnp	jauns	_	_	_	_	amod	basic	2-29	
-2-28	292-297	tirgu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg3	tirgus	_	_	_	_	nmod	basic	2-29	
-2-29	298-304	apguvi	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	apguve	_	_	_	_	conj	basic	2-25	
-2-30	304-305	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-4	
+2-1	141-146	Tāpat	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tāpat	_	_	_	_	discourse	basic	2-4	
+2-2	147-151	viņš	*	*	Nom	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msnn	*	viņš	_	_	*->1-2	*[1]	nsubj	basic	2-4	
+2-3	152-155	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	2-4	
+2-4	156-164	norādīja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist330an	*	norādīt	_	_	_	_	root	basic	2-4	
+2-5	164-165	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-10	
+2-6	166-168	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	2-10	
+2-7	169-174	2013.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	2013.	time[3]	*[3]	_	_	amod	basic	2-8	
+2-8	174-178	gada	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	gads	time[3]	*[3]	_	_	nmod	basic	2-9	
+2-9	179-184	peļņa	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	peļņa	_	_	_	_	nsubj	basic	2-10	
+2-10	185-191	varētu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vonc0t300an	*	varēt	_	_	_	_	ccomp	basic	2-4	
+2-11	192-195	būt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vcnn0ii000n	*	būt	_	_	_	_	cop	basic	2-13	
+2-12	196-198	ne	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	ne	_	_	_	_	discourse	basic	2-13	
+2-13	199-205	mazāka	*	*	Nom	*	Cmp	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Fem\|Number=Sing	*	*	affsnnc	*	maza	_	_	_	_	xcomp	basic	2-10	
+2-14	206-209	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	par	_	_	_	_	case	basic	2-16	
+2-15	210-212	12	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	12	_	_	_	_	nummod	basic	2-16	
+2-16	213-222	miljoniem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	miljons	_	_	_	_	iobj	basic	2-13	
+2-17	223-227	latu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	lats	_	_	_	_	nmod	basic	2-16	
+2-18	227-228	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-20	
+2-19	229-231	ko	*	*	Acc	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Acc\|PronType=Rel	*	*	pr000an	*	kas	_	_	_	_	obj	basic	2-21	
+2-20	232-238	varētu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vonc0t300an	*	varēt	_	_	_	_	advcl	basic	2-10	
+2-21	239-247	veicināt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	*	veicināt	_	_	_	_	xcomp	basic	2-20	
+2-22	248-250	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	2-25	
+2-23	251-259	produktu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	produkts	_	_	_	_	nmod	basic	2-24	
+2-24	260-268	portfeļa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	*	portfelis	_	_	_	_	nmod	basic	2-25	
+2-25	269-282	papildināšanu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	papildināšana	_	_	_	_	iobj	basic	2-20	
+2-26	283-285	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-29	
+2-27	286-291	jaunu	*	*	Gen	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpgnp	*	jauns	_	_	_	_	amod	basic	2-29	
+2-28	292-297	tirgu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg3	*	tirgus	_	_	_	_	nmod	basic	2-29	
+2-29	298-304	apguvi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	apguve	_	_	_	_	conj	basic	2-25	
+2-30	304-305	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-4	
 
 #Text=Uzņēmums plāno palielināt eksportu Eiropā un Āzijā.
-3-1	307-315	Uzņēmums	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	uzņēmums	_	_	_	_	nsubj	basic	3-2	
-3-2	316-321	plāno	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt230an	plānot	_	_	_	_	root	basic	3-2	
-3-3	322-332	palielināt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	palielināt	_	_	_	_	ccomp	basic	3-2	
-3-4	333-341	eksportu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	eksports	_	_	_	_	obj	basic	3-3	
-3-5	342-348	Eiropā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	Eiropa	location	*	_	_	acl	basic	3-4	
-3-6	349-351	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	3-7	
-3-7	352-357	Āzijā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	Āzija	location	*	_	_	conj	basic	3-5	
-3-8	357-358	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-2	
+3-1	307-315	Uzņēmums	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	uzņēmums	_	_	_	_	nsubj	basic	3-2	
+3-2	316-321	plāno	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt230an	*	plānot	_	_	_	_	root	basic	3-2	
+3-3	322-332	palielināt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	*	palielināt	_	_	_	_	ccomp	basic	3-2	
+3-4	333-341	eksportu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	eksports	_	_	_	_	obj	basic	3-3	
+3-5	342-348	Eiropā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Eiropa	location	*	_	_	acl	basic	3-4	
+3-6	349-351	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	3-7	
+3-7	352-357	Āzijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Āzija	location	*	_	_	conj	basic	3-5	
+3-8	357-358	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-2	
 
 #Text=Savukārt apgrozījuma pieaugumu varētu veicināt jaunais ziežu un gēlu ražošanas iecirknis, kura izveidē investēti 2,5 miljoni latu.
-4-1	360-368	Savukārt	_	_	_	_	_	_	_	_	_	_	_	_	r0c	savukārt	_	_	_	_	advmod	basic	4-4	
-4-2	369-380	apgrozījuma	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	apgrozījums	_	_	_	_	nmod	basic	4-3	
-4-3	381-390	pieaugumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	pieaugums	_	_	_	_	obj	basic	4-5	
-4-4	391-397	varētu	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vonc0t300an	varēt	_	_	_	_	root	basic	4-4	
-4-5	398-406	veicināt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	veicināt	_	_	_	_	xcomp	basic	4-4	
-4-6	407-414	jaunais	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnyp	jauns	_	_	*[2]	*->2-1	amod	basic	4-11	
-4-7	415-420	ziežu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg5	ziede	_	_	*[2]	*->2-1	nmod	basic	4-10	
-4-8	421-423	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	*[2]	*->2-1	cc	basic	4-9	
-4-9	424-428	gēlu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	gēls	_	_	*[2]	*->2-1	conj	basic	4-7	
-4-10	429-438	ražošanas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	ražošana	_	_	*[2]	*->2-1	nmod	basic	4-11	
-4-11	439-448	iecirknis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	iecirknis	_	_	*[2]	*->2-1	nsubj	basic	4-4	
-4-12	448-449	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	4-15	
-4-13	450-454	kura	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msgn	kurš	_	_	*[2]	*->2-2	det	basic	4-14	
-4-14	455-462	izveidē	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	izveide	_	_	_	_	obl	basic	4-15	
-4-15	463-472	investēti	Masc	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpnpsnp	investēt	_	_	_	_	acl	basic	4-11	
-4-16	473-476	2,5	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	2,5	_	_	_	_	nummod	basic	4-17	
-4-17	477-484	miljoni	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	miljons	_	_	_	_	nsubj:pass	basic	4-15	
-4-18	485-489	latu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	lats	_	_	_	_	nmod	basic	4-17	
-4-19	489-490	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	4-4	
+4-1	360-368	Savukārt	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0c	*	savukārt	_	_	_	_	advmod	basic	4-4	
+4-2	369-380	apgrozījuma	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	apgrozījums	_	_	_	_	nmod	basic	4-3	
+4-3	381-390	pieaugumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	pieaugums	_	_	_	_	obj	basic	4-5	
+4-4	391-397	varētu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vonc0t300an	*	varēt	_	_	_	_	root	basic	4-4	
+4-5	398-406	veicināt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	*	veicināt	_	_	_	_	xcomp	basic	4-4	
+4-6	407-414	jaunais	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnyp	*	jauns	_	_	*->2-1	*[2]	amod	basic	4-11	
+4-7	415-420	ziežu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg5	*	ziede	_	_	*->2-1	*[2]	nmod	basic	4-10	
+4-8	421-423	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	*->2-1	*[2]	cc	basic	4-9	
+4-9	424-428	gēlu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	gēls	_	_	*->2-1	*[2]	conj	basic	4-7	
+4-10	429-438	ražošanas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	ražošana	_	_	*->2-1	*[2]	nmod	basic	4-11	
+4-11	439-448	iecirknis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	iecirknis	_	_	*->2-1	*[2]	nsubj	basic	4-4	
+4-12	448-449	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-15	
+4-13	450-454	kura	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msgn	*	kurš	_	_	*->2-2	*[2]	det	basic	4-14	
+4-14	455-462	izveidē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	*	izveide	_	_	_	_	obl	basic	4-15	
+4-15	463-472	investēti	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	*	vmnpdmpnpsnp	*	investēt	_	_	_	_	acl	basic	4-11	
+4-16	473-476	2,5	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	2,5	_	_	_	_	nummod	basic	4-17	
+4-17	477-484	miljoni	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	miljons	_	_	_	_	nsubj:pass	basic	4-15	
+4-18	485-489	latu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	lats	_	_	_	_	nmod	basic	4-17	
+4-19	489-490	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	4-4	
 
 #Text=Ieguldītās investīcijas plānots atpelnīt divu gadu laikā.
-5-1	492-502	Ieguldītās	Fem	Plur	Acc	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfpapsyp	ieguldīt	_	_	_	_	amod	basic	5-2	
-5-2	503-515	investīcijas	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	investīcija	_	_	_	_	obj	basic	5-4	
-5-3	516-523	plānots	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnp	plānot	_	_	_	_	root	basic	5-3	
-5-4	524-532	atpelnīt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0\_3000n	atpelnīt	_	_	_	_	xcomp	basic	5-3	
-5-5	533-537	divu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpg	divi	time[4]	*[4]	_	_	nummod	basic	5-7	
-5-6	538-542	gadu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	gads	time[4]	*[4]	_	_	nmod	basic	5-7	
-5-7	543-548	laikā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	laiks	time[4]	*[4]	_	_	obl	basic	5-4	
-5-8	548-549	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	5-3	
+5-1	492-502	Ieguldītās	*	Perf	Acc	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Plur\|Tense=Past\|VerbForm=Part	*	*	vmnpdfpapsyp	*	ieguldīt	_	_	_	_	amod	basic	5-2	
+5-2	503-515	investīcijas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	investīcija	_	_	_	_	obj	basic	5-4	
+5-3	516-523	plānots	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnpsnp	*	plānot	_	_	_	_	root	basic	5-3	
+5-4	524-532	atpelnīt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0\_3000n	*	atpelnīt	_	_	_	_	xcomp	basic	5-3	
+5-5	533-537	divu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpg	*	divi	time[4]	*[4]	_	_	nummod	basic	5-7	
+5-6	538-542	gadu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	gads	time[4]	*[4]	_	_	nmod	basic	5-7	
+5-7	543-548	laikā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	laiks	time[4]	*[4]	_	_	obl	basic	5-4	
+5-8	548-549	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	5-3	

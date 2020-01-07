@@ -1,0 +1,62 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text="Man ir paveicies, ka varēju spēlēt trenera Fila Džeksona vadībā kopā ar Maiklu Džordanu, Skotiju Pipenu un Denisu Rodmenu.
+1-1	0-1	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	_	_	_	_	punct	basic	1-4	
+1-2	1-4	Man	*	*	Dat	*	*	*	*	*	*	Sing	1	*	*	*	*	*	Case=Dat\|Number=Sing\|Person=1\|PronType=Prs	*	*	pp10sdn	*	es	_	_	*->2-1	*[2]	obl	basic	1-4	
+1-3	5-7	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	aux	basic	1-4	
+1-4	8-17	paveicies	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	*	vmypdmsnasnpn	*	paveikties	_	_	_	_	root	basic	1-4	
+1-5	17-18	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-7	
+1-6	19-21	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	1-7	
+1-7	22-28	varēju	*	*	*	*	*	*	Ind	*	*	Sing	1	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vonisi31san	*	varēt	_	_	_	_	csubj	basic	1-4	
+1-8	29-35	spēlēt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	*	spēlēt	_	_	_	_	xcomp	basic	1-7	
+1-9	36-43	trenera	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	*	treneris	_	_	*->1-1	*[1]	nmod	basic	1-10	
+1-10	44-48	Fila	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Fils	person[1]	https://en.wikipedia.org/wiki/Phil\_Jackson[1]	*->1-2	*[1]	nmod	basic	1-12	
+1-11	49-57	Džeksona	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Džeksons	person[1]	https://en.wikipedia.org/wiki/Phil\_Jackson[1]	*->1-2	*[1]	flat:name	basic	1-10	
+1-12	58-64	vadībā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	vadība	_	_	_	_	obl	basic	1-8	
+1-13	65-69	kopā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	kopā	_	_	_	_	advmod	basic	1-8	
+1-14	70-72	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	1-15	
+1-15	73-79	Maiklu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	*	Maikls	person[2]	https://en.wikipedia.org/wiki/Michael\_Jordan[2]	_	_	iobj	basic	1-13	
+1-16	80-88	Džordanu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	*	Džordans	person[2]	https://en.wikipedia.org/wiki/Michael\_Jordan[2]	_	_	flat:name	basic	1-15	
+1-17	88-89	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-18	
+1-18	90-97	Skotiju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	*	Skotija	person[3]	https://en.wikipedia.org/wiki/Scottie\_Pippen[3]	_	_	conj	basic	1-15	
+1-19	98-104	Pipenu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	*	Pipens	person[3]	https://en.wikipedia.org/wiki/Scottie\_Pippen[3]	_	_	flat:name	basic	1-18	
+1-20	105-107	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-21	
+1-21	108-114	Denisu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	*	Deniss	person[4]	https://en.wikipedia.org/wiki/Dennis\_Rodman[4]	_	_	conj	basic	1-15	
+1-22	115-122	Rodmenu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	*	Rodmens	person[4]	https://en.wikipedia.org/wiki/Dennis\_Rodman[4]	_	_	flat:name	basic	1-21	
+1-23	122-123	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-4	
+
+#Text=Tagad manā pirmajā trenera darbā komandā ir tādi lieliski spēlētāji kā Stīvens Karijs, Klejs Tompsons, Dreimonds Grīns un Andrē Iguodala," piebilda Kers.
+2-1	125-130	Tagad	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	*	tagad	_	_	_	_	advmod	basic	2-7	
+2-2	131-135	manā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0fsln	*	mana	_	_	*->2-2	*[2]	det	basic	2-5	
+2-3	136-143	pirmajā	*	*	Loc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|NumType=Ord	*	*	mosmsl	*	pirmais	_	_	_	_	amod	basic	2-5	
+2-4	144-151	trenera	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	*	treneris	_	_	_	_	nmod	basic	2-5	
+2-5	152-157	darbā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	darbs	_	_	_	_	obl	basic	2-7	
+2-6	158-165	komandā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	komanda	_	_	_	_	obl	basic	2-7	
+2-7	166-168	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipii30an	*	būt	_	_	_	_	parataxis	basic	2-25	
+2-8	169-173	tādi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpnn	*	tāds	_	_	_	_	det	basic	2-10	
+2-9	174-182	lieliski	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnnp	*	lielisks	_	_	_	_	amod	basic	2-10	
+2-10	183-192	spēlētāji	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	spēlētājs	_	_	*->2-3	*[2]	nsubj	basic	2-7	
+2-11	193-195	kā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	kā	_	_	_	_	case	basic	2-12	
+2-12	196-203	Stīvens	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Stīvens	person[5]	https://en.wikipedia.org/wiki/Stephen\_Curry[5]	*->3-1	*[3]	nmod	basic	2-10	
+2-13	204-210	Karijs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Karijs	person[5]	https://en.wikipedia.org/wiki/Stephen\_Curry[5]	*->3-1	*[3]	flat:name	basic	2-12	
+2-14	210-211	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	*->3-1	*[3]	punct	basic	2-15	
+2-15	212-217	Klejs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Klejs	person[6]	https://en.wikipedia.org/wiki/Klay\_Thompson[6]	*->3-1	*[3]	conj	basic	2-12	
+2-16	218-226	Tompsons	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Tompsons	person[6]	https://en.wikipedia.org/wiki/Klay\_Thompson[6]	*->3-1	*[3]	flat:name	basic	2-15	
+2-17	226-227	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	*->3-1	*[3]	punct	basic	2-18	
+2-18	228-237	Dreimonds	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Dreimonds	person[7]	https://en.wikipedia.org/wiki/Draymond\_Green[7]	*->3-1	*[3]	conj	basic	2-12	
+2-19	238-243	Grīns	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Grīns	person[7]	https://en.wikipedia.org/wiki/Draymond\_Green[7]	*->3-1	*[3]	flat:name	basic	2-18	
+2-20	244-246	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	*->3-1	*[3]	cc	basic	2-21	
+2-21	247-252	Andrē	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	np0000	*	Andrē	person[8]	https://en.wikipedia.org/wiki/Andre\_Iguodala[8]	*->3-1	*[3]	conj	basic	2-12	
+2-22	253-261	Iguodala	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn4	*	Iguodala	person[8]	https://en.wikipedia.org/wiki/Andre\_Iguodala[8]	*->3-1	*[3]	flat:name	basic	2-21	
+2-23	261-262	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-7	
+2-24	262-263	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	_	_	_	_	punct	basic	2-7	
+2-25	264-272	piebilda	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist130an	*	piebilst	_	_	_	_	root	basic	2-25	
+2-26	273-277	Kers	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	Kers	person	https://en.wikipedia.org/wiki/Steve\_Kerr	*->2-4	*[2]	nsubj	basic	2-25	
+2-27	277-278	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-25	

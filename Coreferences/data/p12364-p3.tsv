@@ -1,0 +1,53 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Ceremonija sākās jau kronēšanas dienas priekšvakarā.
+1-1	0-10	Ceremonija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	ceremonija	_	_	_	_	nsubj	basic	1-2	
+1-2	11-16	sākās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmyisi130an	*	sākties	_	_	_	_	root	basic	1-2	
+1-3	17-20	jau	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	jau	_	_	_	_	advmod	basic	1-6	
+1-4	21-31	kronēšanas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	kronēšana	_	_	_	_	nmod	basic	1-5	
+1-5	32-38	dienas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	diena	_	_	_	_	nmod	basic	1-6	
+1-6	39-51	priekšvakarā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	priekšvakars	_	_	_	_	obl	basic	1-2	
+1-7	51-52	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-2	
+
+#Text=Nākamais karalis visu nakti lūdzās Reimsas katedrālē, prasot Dievam spēku un gudrību, lai veiksmīgi pārvaldītu valsti.
+2-1	54-62	Nākamais	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Pres	*	Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdmsnppypn	*	nākt	_	_	*->1-1	*[1]	amod	basic	2-2	
+2-2	63-70	karalis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	karalis	_	_	*->1-1	*[1]	nsubj	basic	2-5	
+2-3	71-75	visu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Tot	*	*	pg0fsan	*	visa	_	_	_	_	det	basic	2-4	
+2-4	76-81	nakti	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa6	*	nakts	_	_	_	_	obl	basic	2-5	
+2-5	82-88	lūdzās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmyisi130an	*	lūgties	_	_	_	_	root	basic	2-5	
+2-6	89-96	Reimsas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Reimsa	location[1]|GPE[2]	https://en.wikipedia.org/wiki/Reims\_Cathedral[1]|https://en.wikipedia.org/wiki/Reims[2]	_	_	nmod	basic	2-7	
+2-7	97-106	katedrālē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	*	katedrāle	location[1]	https://en.wikipedia.org/wiki/Reims\_Cathedral[1]	_	_	obl	basic	2-5	
+2-8	106-107	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-9	
+2-9	108-114	prasot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	*	*	vmnpu0000000n	*	prasīt	_	_	_	_	advcl	basic	2-5	
+2-10	115-121	Dievam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	dievs	person	*	_	_	iobj	basic	2-9	
+2-11	122-127	spēku	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	spēks	_	_	_	_	obj	basic	2-9	
+2-12	128-130	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-13	
+2-13	131-138	gudrību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	gudrība	_	_	_	_	conj	basic	2-11	
+2-14	138-139	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-17	
+2-15	140-143	lai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	lai	_	_	_	_	mark	basic	2-17	
+2-16	144-153	veiksmīgi	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	veiksmīgi	_	_	_	_	advmod	basic	2-17	
+2-17	154-164	pārvaldītu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vmnc0t300an	*	pārvaldīt	_	_	_	_	advcl	basic	2-9	
+2-18	165-171	valsti	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa6	*	valsts	_	_	_	_	obj	basic	2-17	
+2-19	171-172	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-5	
+
+#Text=Tāpat kā agro viduslaiku karaļi nakts pēdējo daļu monarhs pavadīja arhibīskapa pilī.
+3-1	174-179	Tāpat	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	tāpat	_	_	_	_	advmod	basic	3-10	
+3-2	180-182	kā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	kā	_	_	_	_	case	basic	3-5	
+3-3	183-187	agro	*	*	Gen	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpgyp	*	agrs	_	_	_	_	amod	basic	3-4	
+3-4	188-198	viduslaiku	*	*	Gen	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	ncmdg1	*	viduslaiki	_	_	_	_	nmod	basic	3-5	
+3-5	199-205	karaļi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn2	*	karalis	_	_	_	_	obl	basic	3-1	
+3-6	206-211	nakts	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	*	nakts	_	_	_	_	nmod	basic	3-8	
+3-7	212-218	pēdējo	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsayp	*	pēdējā	_	_	_	_	amod	basic	3-8	
+3-8	219-223	daļu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	daļa	_	_	_	_	obj	basic	3-10	
+3-9	224-231	monarhs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	monarhs	_	_	*->1-2	*[1]	nsubj	basic	3-10	
+3-10	232-240	pavadīja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist330an	*	pavadīt	_	_	_	_	root	basic	3-10	
+3-11	241-252	arhibīskapa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	arhibīskaps	_	_	_	_	nmod	basic	3-12	
+3-12	253-257	pilī	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl6	*	pils	_	_	_	_	obl	basic	3-10	
+3-13	257-258	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-10	

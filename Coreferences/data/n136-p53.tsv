@@ -1,38 +1,38 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Prasījumi, ko pārņem garantiju iestāde, ir neapmaksātie prasījumi par laikposmu pirms un/vai, attiecīgā gadījumā, pēc kāda noteikta datuma, ko nosaka dalībvalstis.
-1-1	0-9	Prasījumi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	prasījums	*[1]	*->1-1	nsubj	basic	1-10	
-1-2	9-10	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-4	
-1-3	11-13	ko	*	*	Acc	*	*	*	*	*	*	Case=Acc\|PronType=Rel	*	*	pr000an	kas	*[1]	*->1-2	obj	basic	1-4	
-1-4	14-20	pārņem	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt130an	pārņemt	_	_	acl	basic	1-1	
-1-5	21-30	garantiju	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	garantija	_	_	nmod	basic	1-6	
-1-6	31-38	iestāde	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	iestāde	_	_	nsubj	basic	1-4	
-1-7	38-39	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-4	
-1-8	40-42	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	cop	basic	1-10	
-1-9	43-55	neapmaksātie	Masc	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpnpsyp\_	neapmaksāt	_	_	amod	basic	1-10	
-1-10	56-65	prasījumi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	prasījums	*[1]	*->1-3	root	basic	1-10	
-1-11	66-69	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	case	basic	1-12	
-1-12	70-79	laikposmu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	laikposms	_	_	nmod	basic	1-10	
-1-13	80-85	pirms	_	_	_	_	_	_	_	_	_	_	_	_	spsg	pirms	_	_	case	basic	1-24	
-1-14	86-88	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	cc	basic	1-21	
-1-15	88-89	/	_	_	_	_	_	_	_	_	_	_	_	_	zx	/	_	_	punct	basic	1-16	
-1-16	89-92	vai	_	_	_	_	_	_	_	_	_	_	_	_	cs	vai	_	_	conj	basic	1-14	
-1-17	92-93	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-19	
-1-18	94-103	attiecīgā	Masc	Sing	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armslnp	attiecīgs	_	_	amod	basic	1-19	
-1-19	104-112	gadījumā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	gadījums	_	_	parataxis	basic	1-21	
-1-20	112-113	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-19	
-1-21	114-117	pēc	_	_	_	_	_	_	_	_	_	_	_	_	spsg	pēc	_	_	conj	basic	1-13	
-1-22	118-122	kāda	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msgn	kāds	_	_	det	basic	1-23	
-1-23	123-131	noteikta	Masc	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsgnp	noteikts	_	_	amod	basic	1-24	
-1-24	132-138	datuma	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	datums	*[2]	*->2-1	nmod	basic	1-12	
-1-25	138-139	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-27	
-1-26	140-142	ko	*	*	Acc	*	*	*	*	*	*	Case=Acc\|PronType=Rel	*	*	pr000an	kas	*[2]	*->2-2	obj	basic	1-27	
-1-27	143-149	nosaka	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	nosacīt	_	_	acl	basic	1-24	
-1-28	150-162	dalībvalstis	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn6	dalībvalsts	_	_	iobj	basic	1-27	
-1-29	162-163	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	1-10	
+1-1	0-9	Prasījumi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	prasījums	*->1-1	*[1]	nsubj	basic	1-10	
+1-2	9-10	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-4	
+1-3	11-13	ko	*	*	Acc	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Acc\|PronType=Rel	*	*	pr000an	*	kas	*->1-2	*[1]	obj	basic	1-4	
+1-4	14-20	pārņem	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt130an	*	pārņemt	_	_	acl	basic	1-1	
+1-5	21-30	garantiju	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	garantija	_	_	nmod	basic	1-6	
+1-6	31-38	iestāde	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	iestāde	_	_	nsubj	basic	1-4	
+1-7	38-39	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-4	
+1-8	40-42	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	cop	basic	1-10	
+1-9	43-55	neapmaksātie	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	*	vmnpdmpnpsyp\_	*	neapmaksāt	_	_	amod	basic	1-10	
+1-10	56-65	prasījumi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	prasījums	*->1-3	*[1]	root	basic	1-10	
+1-11	66-69	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	case	basic	1-12	
+1-12	70-79	laikposmu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	laikposms	_	_	nmod	basic	1-10	
+1-13	80-85	pirms	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pirms	_	_	case	basic	1-24	
+1-14	86-88	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	cc	basic	1-21	
+1-15	88-89	/	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zx	*	/	_	_	punct	basic	1-16	
+1-16	89-92	vai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	vai	_	_	conj	basic	1-14	
+1-17	92-93	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-19	
+1-18	94-103	attiecīgā	*	*	Loc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armslnp	*	attiecīgs	_	_	amod	basic	1-19	
+1-19	104-112	gadījumā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	gadījums	_	_	parataxis	basic	1-21	
+1-20	112-113	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-19	
+1-21	114-117	pēc	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pēc	_	_	conj	basic	1-13	
+1-22	118-122	kāda	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msgn	*	kāds	_	_	det	basic	1-23	
+1-23	123-131	noteikta	*	*	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsgnp	*	noteikts	_	_	amod	basic	1-24	
+1-24	132-138	datuma	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	datums	*->2-1	*[2]	nmod	basic	1-12	
+1-25	138-139	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-27	
+1-26	140-142	ko	*	*	Acc	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Acc\|PronType=Rel	*	*	pr000an	*	kas	*->2-2	*[2]	obj	basic	1-27	
+1-27	143-149	nosaka	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	nosacīt	_	_	acl	basic	1-24	
+1-28	150-162	dalībvalstis	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn6	*	dalībvalsts	_	_	iobj	basic	1-27	
+1-29	162-163	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	1-10	

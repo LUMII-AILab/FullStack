@@ -1,0 +1,23 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Savu uzrunu Rimšēvičs noslēdza ar vārdiem "Dievs, svētī Latviju".
+1-1	0-4	Savu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	Prs	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0fsan	*	sava	_	_	*->1-1	*[1]	det	basic	1-2	
+1-2	5-11	uzrunu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	uzruna	_	_	_	_	obj	basic	1-4	
+1-3	12-21	Rimšēvičs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Rimšēvičs	person	https://en.wikipedia.org/wiki/Ilmārs\_Rimšēvičs	*->1-2	*[1]	nsubj	basic	1-4	
+1-4	22-30	noslēdza	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist130an	*	noslēgt	_	_	_	_	root	basic	1-4	
+1-5	31-33	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	_	_	case	basic	1-10	
+1-6	34-41	vārdiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	vārds	_	_	_	_	nmod	basic	1-10	
+1-7	42-43	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	_	_	_	_	punct	basic	1-10	
+1-8	43-48	Dievs	*	*	Voc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Voc\|Gender=Masc\|Number=Sing	*	*	ncmsv1	*	dievs	person	https://en.wikipedia.org/wiki/God	_	_	vocative	basic	1-10	
+1-9	48-49	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-8	
+1-10	50-55	svētī	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt230an	*	svētīt	_	_	_	_	iobj	basic	1-4	
+1-11	56-63	Latviju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	*	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	_	_	obj	basic	1-10	
+1-12	63-64	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	_	_	_	_	punct	basic	1-10	
+1-13	64-65	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-4	

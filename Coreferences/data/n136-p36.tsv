@@ -1,19 +1,19 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=a) uz mājkalpotājiem, ko nodarbina fiziska persona;
-1-1	0-1	a	_	_	_	_	_	_	_	_	_	_	_	_	xx	a	_	_	parataxis	basic	1-4	
-1-2	1-2	)	_	_	_	_	_	_	_	_	_	_	_	_	zb	)	_	_	punct	basic	1-1	
-1-3	3-5	uz	_	_	_	_	_	_	_	_	_	_	_	_	sppd	uz	_	_	case	basic	1-4	
-1-4	6-20	mājkalpotājiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	mājkalpotājs	*[1]	*->1-1	root	basic	1-4	
-1-5	20-21	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-7	
-1-6	22-24	ko	*	*	Acc	*	*	*	*	*	*	Case=Acc\|PronType=Rel	*	*	pr000an	kas	*[1]	*->1-2	obj	basic	1-7	
-1-7	25-34	nodarbina	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	nodarbināt	_	_	acl	basic	1-4	
-1-8	35-42	fiziska	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsnnp	fiziska	_	_	amod	basic	1-9	
-1-9	43-50	persona	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	persona	_	_	nsubj	basic	1-7	
-1-10	50-51	;	_	_	_	_	_	_	_	_	_	_	_	_	zc	\;	_	_	punct	basic	1-4	
+1-1	0-1	a	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	xx	*	a	_	_	parataxis	basic	1-4	
+1-2	1-2	)	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	)	_	_	punct	basic	1-1	
+1-3	3-5	uz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	uz	_	_	case	basic	1-4	
+1-4	6-20	mājkalpotājiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	mājkalpotājs	*->1-1	*[1]	root	basic	1-4	
+1-5	20-21	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-7	
+1-6	22-24	ko	*	*	Acc	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Acc\|PronType=Rel	*	*	pr000an	*	kas	*->1-2	*[1]	obj	basic	1-7	
+1-7	25-34	nodarbina	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	nodarbināt	_	_	acl	basic	1-4	
+1-8	35-42	fiziska	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsnnp	*	fiziska	_	_	amod	basic	1-9	
+1-9	43-50	persona	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	persona	_	_	nsubj	basic	1-7	
+1-10	50-51	;	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	\;	_	_	punct	basic	1-4	

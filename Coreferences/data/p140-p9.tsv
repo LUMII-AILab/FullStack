@@ -1,77 +1,77 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Krimināllikumu jaunrade ir sarežģīts un ilgstošs process, kas sākas ar likumprojekta sagatavošanu, iesniegšanu, izskatīšanu un beidzas ar tā pieņemšanu Saeimā un publicēšanu.
-1-1	0-14	Krimināllikumu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	krimināllikums	_	_	_	_	nmod	basic	1-2	
-1-2	15-23	jaunrade	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	jaunrade	_	_	_	_	nsubj	basic	1-7	
-1-3	24-26	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	cop	basic	1-7	
-1-4	27-36	sarežģīts	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	sarežģīts	_	_	*[1]	*->1-1	amod	basic	1-7	
-1-5	37-39	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	*[1]	*->1-1	cc	basic	1-6	
-1-6	40-48	ilgstošs	Masc	Sing	Nom	Pos	*	Pres	*	Pass	*	Aspect=Imp\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Imp	vmnpdmsnapnpn	ilgt	_	_	*[1]	*->1-1	conj	basic	1-4	
-1-7	49-56	process	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	process	_	_	*[1]	*->1-1	root	basic	1-7	
-1-8	56-57	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-10	
-1-9	58-61	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	*[1]	*->1-2	nsubj	basic	1-10	
-1-10	62-67	sākas	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipi130an	sākties	_	_	_	_	acl	basic	1-7	
-1-11	68-70	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case	basic	1-13	
-1-12	71-84	likumprojekta	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	likumprojekts	_	_	*[2]	*->2-1	nmod	basic	1-13	
-1-13	85-97	sagatavošanu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	sagatavošana	_	_	_	_	iobj	basic	1-10	
-1-14	97-98	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-15	
-1-15	99-110	iesniegšanu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	iesniegšana	_	_	_	_	conj	basic	1-13	
-1-16	110-111	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-17	
-1-17	112-123	izskatīšanu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	izskatīšana	_	_	_	_	conj	basic	1-13	
-1-18	124-126	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-19	
-1-19	127-134	beidzas	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipi130an	beigties	_	_	_	_	conj	basic	1-10	
-1-20	135-137	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case	basic	1-22	
-1-21	138-140	tā	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msgn	tas	_	_	*[2]	*->2-2	det	basic	1-22	
-1-22	141-151	pieņemšanu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	pieņemšana	_	_	_	_	iobj	basic	1-19	
-1-23	152-158	Saeimā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	saeima	organization	*	_	_	acl	basic	1-22	
-1-24	159-161	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-25	
-1-25	162-173	publicēšanu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	publicēšana	_	_	_	_	conj	basic	1-22	
-1-26	173-174	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-7	
+1-1	0-14	Krimināllikumu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	krimināllikums	_	_	_	_	nmod	basic	1-2	
+1-2	15-23	jaunrade	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	jaunrade	_	_	_	_	nsubj	basic	1-7	
+1-3	24-26	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	1-7	
+1-4	27-36	sarežģīts	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	sarežģīts	_	_	*->1-1	*[1]	amod	basic	1-7	
+1-5	37-39	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	*->1-1	*[1]	cc	basic	1-6	
+1-6	40-48	ilgstošs	*	Imp	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Pres	*	Aspect=Imp\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdmsnapnpn	*	ilgt	_	_	*->1-1	*[1]	conj	basic	1-4	
+1-7	49-56	process	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	process	_	_	*->1-1	*[1]	root	basic	1-7	
+1-8	56-57	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-10	
+1-9	58-61	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->1-2	*[1]	nsubj	basic	1-10	
+1-10	62-67	sākas	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmyipi130an	*	sākties	_	_	_	_	acl	basic	1-7	
+1-11	68-70	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	1-13	
+1-12	71-84	likumprojekta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	likumprojekts	_	_	*->2-1	*[2]	nmod	basic	1-13	
+1-13	85-97	sagatavošanu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	sagatavošana	_	_	_	_	iobj	basic	1-10	
+1-14	97-98	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-15	
+1-15	99-110	iesniegšanu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	iesniegšana	_	_	_	_	conj	basic	1-13	
+1-16	110-111	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-17	
+1-17	112-123	izskatīšanu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	izskatīšana	_	_	_	_	conj	basic	1-13	
+1-18	124-126	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-19	
+1-19	127-134	beidzas	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmyipi130an	*	beigties	_	_	_	_	conj	basic	1-10	
+1-20	135-137	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	1-22	
+1-21	138-140	tā	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msgn	*	tas	_	_	*->2-2	*[2]	det	basic	1-22	
+1-22	141-151	pieņemšanu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	pieņemšana	_	_	_	_	iobj	basic	1-19	
+1-23	152-158	Saeimā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	saeima	organization	*	_	_	acl	basic	1-22	
+1-24	159-161	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-25	
+1-25	162-173	publicēšanu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	publicēšana	_	_	_	_	conj	basic	1-22	
+1-26	173-174	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-7	
 
 #Text=Jauna krimināllikuma izstrādāšanas vai esošā grozīšanu iniciatori var būt ļoti dažādi, piemēram: valdības deklarācijas, koncepcijas, tiesībsargājošo un citu institūciju prakses apkopojumi, politisko partiju un atsevišķu politiķu ierosinājumi, zinātniskajās publikācijās izteiktie priekšlikumi utt.
-2-1	176-181	Jauna	Masc	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsgnp	jauns	_	_	_	_	amod	basic	2-2	
-2-2	182-196	krimināllikuma	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	krimināllikums	_	_	_	_	nmod	basic	2-3	
-2-3	197-210	izstrādāšanas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	izstrādāšana	_	_	_	_	nmod	basic	2-7	
-2-4	211-214	vai	_	_	_	_	_	_	_	_	_	_	_	_	cc	vai	_	_	_	_	cc	basic	2-6	
-2-5	215-220	esošā	Masc	Sing	Gen	Pos	*	Pres	*	Pass	*	Aspect=Imp\|Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Imp	vmnpdmsgapypn	būt	_	_	_	_	amod	basic	2-6	
-2-6	221-230	grozīšanu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	grozīšana	_	_	_	_	conj	basic	2-3	
-2-7	231-241	iniciatori	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	iniciators	_	_	_	_	nsubj	basic	2-8	
-2-8	242-245	var	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vonipt330an	varēt	_	_	_	_	root	basic	2-8	
-2-9	246-249	būt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vcnn0ii000n	būt	_	_	_	_	cop	basic	2-11	
-2-10	250-254	ļoti	_	_	_	_	_	_	_	_	_	_	_	_	r0q	ļoti	_	_	_	_	advmod	basic	2-11	
-2-11	255-261	dažādi	Masc	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpnnp	dažādi	_	_	_	_	xcomp	basic	2-8	
-2-12	261-262	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-16	
-2-13	263-271	piemēram	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	piemērs	_	_	_	_	parataxis	basic	2-16	
-2-14	271-272	:	_	_	_	_	_	_	_	_	_	_	_	_	zo	:	_	_	_	_	punct	basic	2-13	
-2-15	273-281	valdības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	valdība	_	_	_	_	nmod	basic	2-16	
-2-16	282-294	deklarācijas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	deklarācija	_	_	_	_	acl	basic	2-8	
-2-17	294-295	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-18	
-2-18	296-307	koncepcijas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	koncepcija	_	_	_	_	conj	basic	2-16	
-2-19	307-308	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-25	
-2-20	309-324	tiesībsargājošo	Fem	Plur	Gen	Pos	*	*	*	Act	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Plur\|VerbForm=Part\|Voice=Act	*	*	affpgyp	tiesībsargājoša	_	_	_	_	amod	basic	2-23	
-2-21	325-327	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	2-22	
-2-22	328-332	citu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur\|PronType=Ind	*	*	pi0fpgn	cita	_	_	_	_	conj	basic	2-20	
-2-23	333-344	institūciju	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	institūcija	_	_	_	_	nmod	basic	2-24	
-2-24	345-352	prakses	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	prakse	_	_	_	_	nmod	basic	2-25	
-2-25	353-363	apkopojumi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	apkopojums	_	_	_	_	conj	basic	2-16	
-2-26	363-364	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-32	
-2-27	365-374	politisko	Fem	Plur	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	arfpgyp	politiska	_	_	_	_	amod	basic	2-28	
-2-28	375-382	partiju	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	partija	_	_	_	_	nmod	basic	2-32	
-2-29	383-385	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	2-31	
-2-30	386-395	atsevišķu	Masc	Plur	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpgnp	atsevišķs	_	_	_	_	amod	basic	2-31	
-2-31	396-404	politiķu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	politiķis	_	_	_	_	conj	basic	2-28	
-2-32	405-417	ierosinājumi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	ierosinājums	_	_	_	_	conj	basic	2-16	
-2-33	417-418	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-37	
-2-34	419-432	zinātniskajās	Fem	Plur	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affplyp	zinātniska	_	_	_	_	amod	basic	2-35	
-2-35	433-445	publikācijās	Fem	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	publikācija	_	_	_	_	obl	basic	2-36	
-2-36	446-455	izteiktie	Masc	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpnpsypn	izteikt	_	_	_	_	amod	basic	2-37	
-2-37	456-468	priekšlikumi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	priekšlikums	_	_	_	_	conj	basic	2-16	
-2-38	469-472	utt	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yd	utt	_	_	_	_	discourse	basic	2-16	
-2-39	472-473	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-8	
+2-1	176-181	Jauna	*	*	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsgnp	*	jauns	_	_	_	_	amod	basic	2-2	
+2-2	182-196	krimināllikuma	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	krimināllikums	_	_	_	_	nmod	basic	2-3	
+2-3	197-210	izstrādāšanas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	izstrādāšana	_	_	_	_	nmod	basic	2-7	
+2-4	211-214	vai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	vai	_	_	_	_	cc	basic	2-6	
+2-5	215-220	esošā	*	Imp	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Pres	*	Aspect=Imp\|Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdmsgapypn	*	būt	_	_	_	_	amod	basic	2-6	
+2-6	221-230	grozīšanu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	grozīšana	_	_	_	_	conj	basic	2-3	
+2-7	231-241	iniciatori	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	iniciators	_	_	_	_	nsubj	basic	2-8	
+2-8	242-245	var	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vonipt330an	*	varēt	_	_	_	_	root	basic	2-8	
+2-9	246-249	būt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vcnn0ii000n	*	būt	_	_	_	_	cop	basic	2-11	
+2-10	250-254	ļoti	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	ļoti	_	_	_	_	advmod	basic	2-11	
+2-11	255-261	dažādi	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpnnp	*	dažādi	_	_	_	_	xcomp	basic	2-8	
+2-12	261-262	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-16	
+2-13	263-271	piemēram	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	piemērs	_	_	_	_	parataxis	basic	2-16	
+2-14	271-272	:	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zo	*	:	_	_	_	_	punct	basic	2-13	
+2-15	273-281	valdības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	valdība	_	_	_	_	nmod	basic	2-16	
+2-16	282-294	deklarācijas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	deklarācija	_	_	_	_	acl	basic	2-8	
+2-17	294-295	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-18	
+2-18	296-307	koncepcijas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	koncepcija	_	_	_	_	conj	basic	2-16	
+2-19	307-308	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-25	
+2-20	309-324	tiesībsargājošo	*	*	Gen	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Plur\|VerbForm=Part\|Voice=Act	*	Act	affpgyp	*	tiesībsargājoša	_	_	_	_	amod	basic	2-23	
+2-21	325-327	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-22	
+2-22	328-332	citu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur\|PronType=Ind	*	*	pi0fpgn	*	cita	_	_	_	_	conj	basic	2-20	
+2-23	333-344	institūciju	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	institūcija	_	_	_	_	nmod	basic	2-24	
+2-24	345-352	prakses	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	prakse	_	_	_	_	nmod	basic	2-25	
+2-25	353-363	apkopojumi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	apkopojums	_	_	_	_	conj	basic	2-16	
+2-26	363-364	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-32	
+2-27	365-374	politisko	*	*	Gen	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	arfpgyp	*	politiska	_	_	_	_	amod	basic	2-28	
+2-28	375-382	partiju	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	partija	_	_	_	_	nmod	basic	2-32	
+2-29	383-385	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-31	
+2-30	386-395	atsevišķu	*	*	Gen	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpgnp	*	atsevišķs	_	_	_	_	amod	basic	2-31	
+2-31	396-404	politiķu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	politiķis	_	_	_	_	conj	basic	2-28	
+2-32	405-417	ierosinājumi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	ierosinājums	_	_	_	_	conj	basic	2-16	
+2-33	417-418	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-37	
+2-34	419-432	zinātniskajās	*	*	Loc	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affplyp	*	zinātniska	_	_	_	_	amod	basic	2-35	
+2-35	433-445	publikācijās	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	*	publikācija	_	_	_	_	obl	basic	2-36	
+2-36	446-455	izteiktie	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	*	vmnpdmpnpsypn	*	izteikt	_	_	_	_	amod	basic	2-37	
+2-37	456-468	priekšlikumi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	priekšlikums	_	_	_	_	conj	basic	2-16	
+2-38	469-472	utt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yd	*	utt	_	_	_	_	discourse	basic	2-16	
+2-39	472-473	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-8	

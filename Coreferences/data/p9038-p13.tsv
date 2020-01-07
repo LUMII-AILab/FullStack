@@ -1,0 +1,107 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Ir jāvēro, vai neattīstās tā saucamā krusteniskā alerģija pret pārtiku.
+1-1	0-2	Ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	aux	basic	1-2	
+1-2	3-9	jāvēro	*	*	*	*	*	*	Nec	*	*	*	*	*	*	*	*	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vmnd0t200an	*	vērot	_	_	root	basic	1-2	
+1-3	9-10	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-5	
+1-4	11-14	vai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	vai	_	_	mark	basic	1-5	
+1-5	15-25	neattīstās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmyipi330ay	*	neattīstīties	_	_	ccomp	basic	1-2	
+1-6	26-28	tā	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0m	*	tā	_	_	advmod	basic	1-7	
+1-7	29-36	saucamā	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Pres	*	Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdfsnppypn	*	saukt	_	_	amod	basic	1-9	
+1-8	37-48	krusteniskā	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnyp	*	krusteniska	_	_	amod	basic	1-9	
+1-9	49-57	alerģija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	alerģija	_	_	nsubj	basic	1-5	
+1-10	58-62	pret	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	pret	_	_	case	basic	1-11	
+1-11	63-70	pārtiku	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	pārtika	_	_	nmod	basic	1-9	
+1-12	70-71	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	1-2	
+
+#Text=Konstatēts, ka vairāk nekā pusei bērnu, kuri cieš no alerģijas pret ziedputekšņiem, izpaužas arī alerģija pret pārtiku, t.i., āboliem, lazdu riekstiem, burkāniem.
+2-1	73-83	Konstatēts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnpsnpn	*	konstatēt	_	_	root	basic	2-1	
+2-2	83-84	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	2-16	
+2-3	85-87	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	mark	basic	2-16	
+2-4	88-94	vairāk	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpq	*	daudz	*->1-1	*[1]	advmod	basic	2-6	
+2-5	95-99	nekā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	nekā	*->1-1	*[1]	fixed	basic	2-4	
+2-6	100-105	pusei	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd5	*	puse	*->1-1	*[1]	acl	basic	2-16	
+2-7	106-111	bērnu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	bērns	*->1-1	*[1]	nmod	basic	2-6	
+2-8	111-112	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	2-10	
+2-9	113-117	kuri	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Rel	*	*	pr0mpnn	*	kurš	*->1-2	*[1]	nsubj	basic	2-10	
+2-10	118-122	cieš	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipi130an	*	ciest	_	_	acl	basic	2-7	
+2-11	123-125	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	case	basic	2-12	
+2-12	126-135	alerģijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	alerģija	_	_	obl	basic	2-10	
+2-13	136-140	pret	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	pret	_	_	case	basic	2-14	
+2-14	141-155	ziedputekšņiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	ziedputekšņs	_	_	nmod	basic	2-12	
+2-15	155-156	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	2-10	
+2-16	157-165	izpaužas	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmyipi130an	*	izpausties	_	_	csubj:pass	basic	2-1	
+2-17	166-169	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	discourse	basic	2-18	
+2-18	170-178	alerģija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	alerģija	_	_	nsubj	basic	2-16	
+2-19	179-183	pret	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	pret	_	_	case	basic	2-20	
+2-20	184-191	pārtiku	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	pārtika	*->2-1	*[2]	nmod	basic	2-18	
+2-21	191-192	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	2-24	
+2-22	193-197	t.i.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yd	*	t.i.	_	_	discourse	basic	2-24	
+2-23	197-198	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	2-22	
+2-24	199-206	āboliem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	ābols	*->2-2	*[2]	acl	basic	2-20	
+2-25	206-207	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	*->2-2	*[2]	punct	basic	2-27	
+2-26	208-213	lazdu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	lazda	*->2-2	*[2]	nmod	basic	2-27	
+2-27	214-223	riekstiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	rieksts	*->2-2	*[2]	conj	basic	2-24	
+2-28	223-224	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	*->2-2	*[2]	punct	basic	2-29	
+2-29	225-234	burkāniem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	burkāns	*->2-2	*[2]	conj	basic	2-24	
+2-30	234-235	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	2-1	
+
+#Text=Tādā gadījumā bērnu var nomocīt ne tikai iesnas, bet arī sapampt lūpas, rīkle, ar izsitumiem pārklāties viss ķermenis.
+3-1	237-241	Tādā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msln	*	tāds	_	_	det	basic	3-2	
+3-2	242-250	gadījumā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	gadījums	_	_	obl	basic	3-4	
+3-3	251-256	bērnu	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	bērns	_	_	iobj	basic	3-5	
+3-4	257-260	var	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vonipi330an	*	varēt	_	_	root	basic	3-4	
+3-5	261-268	nomocīt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	*	nomocīt	_	_	xcomp	basic	3-4	
+3-6	269-271	ne	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Neg	*	*	q	*	ne	_	_	discourse	basic	3-8	
+3-7	272-277	tikai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tikai	_	_	flat	basic	3-6	
+3-8	278-284	iesnas	*	*	Nom	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Ptan	*	*	ncfdn4	*	iesnas	_	_	nsubj	basic	3-4	
+3-9	284-285	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	3-12	
+3-10	286-289	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	cc	basic	3-12	
+3-11	290-293	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	discourse	basic	3-13	
+3-12	294-301	sapampt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0i1000n	*	sapampt	_	_	conj	basic	3-4	
+3-13	302-307	lūpas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	lūpa	_	_	nsubj	basic	3-12	
+3-14	307-308	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	3-15	
+3-15	309-314	rīkle	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	rīkle	_	_	conj	basic	3-13	
+3-16	314-315	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	3-19	
+3-17	316-318	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	case	basic	3-18	
+3-18	319-329	izsitumiem	*	*	Dat	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Ptan	*	*	ncmdd1	*	izsitumi	_	_	acl	basic	3-19	
+3-19	330-340	pārklāties	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i1000n	*	pārklāties	_	_	conj	basic	3-4	
+3-20	341-345	viss	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msnn	*	viss	_	_	det	basic	3-21	
+3-21	346-354	ķermenis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	ķermenis	_	_	obl	basic	3-19	
+3-22	354-355	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	3-4	
+
+#Text=Šīs pazīmes visbiežāk parādās ēšanas laikā: bērnam kairina aukslējas, lūpas, muti.
+4-1	357-360	Šīs	*	*	Gen	*	*	Fem	*	*	*	Sing	3	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3fsgn	*	šī	_	_	det	basic	4-2	
+4-2	361-368	pazīmes	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn5	*	pazīme	_	_	nsubj	basic	4-4	
+4-3	369-378	visbiežāk	*	*	*	*	Sup	*	*	*	*	*	*	*	*	*	*	*	Degree=Sup	*	*	rsm	*	bieži	_	_	advmod	basic	4-4	
+4-4	379-386	parādās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmyipi330an	*	parādīties	_	_	root	basic	4-4	
+4-5	387-393	ēšanas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	ēšana	_	_	nmod	basic	4-6	
+4-6	394-399	laikā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	laiks	_	_	obl	basic	4-4	
+4-7	399-400	:	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zo	*	:	_	_	punct	basic	4-9	
+4-8	401-407	bērnam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	bērns	_	_	obl	basic	4-9	
+4-9	408-415	kairina	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	kairināt	_	_	conj	basic	4-4	
+4-10	416-425	aukslējas	*	*	Acc	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Ptan	*	*	ncfda4	*	aukslējas	_	_	obj	basic	4-9	
+4-11	425-426	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	4-12	
+4-12	427-432	lūpas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	lūpa	_	_	conj	basic	4-10	
+4-13	432-433	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	4-14	
+4-14	434-438	muti	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	mute	_	_	conj	basic	4-10	
+4-15	438-439	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	4-4	
+
+#Text=Ja piesmok balss, tad tas jau ir bīstams stāvoklis.
+5-1	441-443	Ja	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ja	_	_	mark	basic	5-2	
+5-2	444-451	piesmok	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipi130an	*	piesmakt	_	_	advcl	basic	5-10	
+5-3	452-457	balss	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn6	*	balss	_	_	nsubj	basic	5-2	
+5-4	457-458	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	5-2	
+5-5	459-462	tad	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	*	tad	_	_	advmod	basic	5-10	
+5-6	463-466	tas	*	*	Nom	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msnn	*	tas	_	_	nsubj	basic	5-10	
+5-7	467-470	jau	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	jau	_	_	advmod	basic	5-10	
+5-8	471-473	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	cop	basic	5-10	
+5-9	474-481	bīstams	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	bīstams	_	_	amod	basic	5-10	
+5-10	482-491	stāvoklis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	stāvoklis	_	_	root	basic	5-10	
+5-11	491-492	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	5-10	

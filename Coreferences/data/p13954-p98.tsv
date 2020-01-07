@@ -1,0 +1,81 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Maizes apzied ar sviestu no abām pusēm.
+1-1	0-6	Maizes	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa5	*	maize	_	_	*->1-1	*[1]	obj	basic	1-2	
+1-2	7-13	apzied	*	*	*	*	*	*	Imp	*	*	Sing	2	*	*	*	*	*	Mood=Imp\|Number=Sing\|Person=2\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnm0i32san	*	apziedēt	_	_	_	_	root	basic	1-2	
+1-3	14-16	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	1-4	
+1-4	17-24	sviestu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	sviests	_	_	_	_	iobj	basic	1-2	
+1-5	25-27	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case	basic	1-7	
+1-6	28-32	abām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	Tot	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur\|PronType=Tot	*	*	pg0fpdn	*	abas	_	_	_	_	det	basic	1-7	
+1-7	33-38	pusēm	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd5	*	puse	_	_	_	_	obl	basic	1-2	
+1-8	38-39	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-2	
+
+#Text=Tajās liec salocītas Krievijas siera šķēlītes, pāri kārto sacepto šampinjonu masu, tai pāri liec vēl pāris siera šķēlītes un noslēdz ar otru maizīti.
+2-1	40-45	Tajās	*	*	Loc	*	*	Fem	*	*	*	Plur	3	*	Dem	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur\|Person=3\|PronType=Dem	*	*	pd3fpln	*	tā	_	_	*->1-2	*[1]	obl	basic	2-2	
+2-2	46-50	liec	*	*	*	*	*	*	Imp	*	*	Sing	2	*	*	*	*	*	Mood=Imp\|Number=Sing\|Person=2\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnm0t12san	*	likt	_	_	_	_	root	basic	2-2	
+2-3	51-60	salocītas	*	Perf	Acc	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Acc\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdfpapsnpn	*	salocīt	_	_	_	_	amod	basic	2-6	
+2-4	61-70	Krievijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Krievija	product[1]|GPE[2]	*[1]|https://en.wikipedia.org/wiki/Russia[2]	*->3-1	*[3]	nmod	basic	2-5	
+2-5	71-76	siera	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	siers	product[1]	*[1]	*->3-1	*[3]	nmod	basic	2-6	
+2-6	77-85	šķēlītes	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa5	*	šķēlīte	_	_	*->3-1	*[3]	obj	basic	2-2	
+2-7	85-86	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-9	
+2-8	87-91	pāri	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0p	*	pāri	_	_	_	_	advmod	basic	2-9	
+2-9	92-97	kārto	*	*	*	*	*	*	Imp	*	*	Sing	2	*	*	*	*	*	Mood=Imp\|Number=Sing\|Person=2\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnm0t22san	*	kārtot	_	_	_	_	conj	basic	2-2	
+2-10	98-105	sacepto	*	Perf	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdfsapsypn	*	sacept	_	_	_	_	amod	basic	2-12	
+2-11	106-116	šampinjonu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	šampinjons	_	_	_	_	nmod	basic	2-12	
+2-12	117-121	masu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	masa	_	_	*->2-1	*[2]	obj	basic	2-9	
+2-13	121-122	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-16	
+2-14	123-126	tai	*	*	Loc	*	*	Masc	*	*	*	Sing	3	*	Dem	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msln	*	tas	_	_	*->2-2	*[2]	iobj	basic	2-15	
+2-15	127-131	pāri	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0p	*	pāri	_	_	_	_	advmod	basic	2-16	
+2-16	132-136	liec	*	*	*	*	*	*	Ind	*	*	Sing	2	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=2\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt12san	*	likt	_	_	_	_	conj	basic	2-2	
+2-17	137-140	vēl	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	vēl	_	_	_	_	advmod	basic	2-18	
+2-18	141-146	pāris	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	pāris	_	_	_	_	obl	basic	2-20	
+2-19	147-152	siera	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	siers	_	_	*->3-2	*[3]	nmod	basic	2-20	
+2-20	153-161	šķēlītes	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa5	*	šķēlīte	_	_	*->3-2	*[3]	obj	basic	2-16	
+2-21	162-164	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-22	
+2-22	165-172	noslēdz	*	*	*	*	*	*	Imp	*	*	Sing	2	*	*	*	*	*	Mood=Imp\|Number=Sing\|Person=2\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnm0t12san	*	noslēgt	_	_	_	_	conj	basic	2-2	
+2-23	173-175	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	2-25	
+2-24	176-180	otru	*	*	Acc	*	*	Fem	*	*	Card	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|NumType=Card	*	*	mcsfsa	*	otra	_	_	_	_	nummod	basic	2-25	
+2-25	181-188	maizīti	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	maizīte	_	_	_	_	iobj	basic	2-22	
+2-26	188-189	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-2	
+
+#Text=Mazliet saspied, lai tās labi turas kopā, un liec 200 grādu sakarsētā cepeškrāsnī un cep, līdz siers izkusis un maizītes zeltainas.
+3-1	190-197	Mazliet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	mazliet	_	_	_	_	advmod	basic	3-2	
+3-2	198-205	saspied	*	*	*	*	*	*	Imp	*	*	Sing	2	*	*	*	*	*	Mood=Imp\|Number=Sing\|Person=2\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnm0t12san	*	saspiest	_	_	_	_	root	basic	3-2	
+3-3	205-206	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-7	
+3-4	207-210	lai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	lai	_	_	_	_	mark	basic	3-7	
+3-5	211-214	tās	*	*	Nom	*	*	Fem	*	*	*	Plur	3	*	Dem	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|Person=3\|PronType=Dem	*	*	pd3fpnn	*	tā	_	_	*->1-3	*[1]	nsubj	basic	3-7	
+3-6	215-219	labi	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	labi	_	_	_	_	advmod	basic	3-7	
+3-7	220-225	turas	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyipi330an	*	turēties	_	_	_	_	advcl	basic	3-2	
+3-8	226-230	kopā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0p	*	kopā	_	_	_	_	advmod	basic	3-7	
+3-9	230-231	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-7	
+3-10	232-234	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	3-11	
+3-11	235-239	liec	*	*	*	*	*	*	Imp	*	*	Sing	2	*	*	*	*	*	Mood=Imp\|Number=Sing\|Person=2\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnm0t12san	*	likt	_	_	_	_	conj	basic	3-2	
+3-12	240-243	200	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	200	_	_	_	_	nummod	basic	3-13	
+3-13	244-249	grādu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	grāds	_	_	_	_	nmod	basic	3-15	
+3-14	250-259	sakarsētā	*	Perf	Loc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Loc\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdfslpsnpn	*	sakarsēt	_	_	_	_	amod	basic	3-15	
+3-15	260-271	cepeškrāsnī	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl6	*	cepeškrāsns	_	_	_	_	obl	basic	3-11	
+3-16	272-274	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	3-17	
+3-17	275-278	cep	*	*	*	*	*	*	Imp	*	*	Sing	2	*	*	*	*	*	Mood=Imp\|Number=Sing\|Person=2\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnm0t12san	*	cept	_	_	_	_	conj	basic	3-2	
+3-18	278-279	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-21	
+3-19	280-284	līdz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	līdz	_	_	_	_	advmod	basic	3-21	
+3-20	285-290	siers	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	siers	_	_	*->3-3	*[3]	nsubj	basic	3-21	
+3-21	291-298	izkusis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdmsnasnpn	*	izkust	_	_	_	_	advcl	basic	3-17	
+3-22	299-301	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	3-24	
+3-23	302-310	maizītes	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn5	*	maizīte	_	_	*->1-4	*[1]	nsubj	basic	3-24	
+3-24	311-320	zeltainas	*	*	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpnnp	*	zeltains	_	_	_	_	conj	basic	3-21	
+3-25	320-321	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-2	
+
+#Text=Tas prasīs aptuveni 7 minūtes.
+4-1	322-325	Tas	*	*	Nom	*	*	Masc	*	*	*	Sing	3	*	Dem	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msnn	*	tas	_	_	_	_	nsubj	basic	4-2	
+4-2	326-332	prasīs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnift330an	*	prasīt	_	_	_	_	root	basic	4-2	
+4-3	333-341	aptuveni	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpq	*	aptuveni	_	_	_	_	advmod	basic	4-4	
+4-4	342-343	7	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	7	time[3]	*[3]	_	_	nummod	basic	4-5	
+4-5	344-351	minūtes	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa5	*	minūte	time[3]	*[3]	_	_	obj	basic	4-2	
+4-6	351-352	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	time[3]	*[3]	_	_	punct	basic	4-2	

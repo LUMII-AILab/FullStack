@@ -1,58 +1,58 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Šur tur starp kokiem cēlās, vēlās un kāpa balta migla.
-1-1	0-3	Šur	_	_	_	_	_	_	_	_	_	_	_	_	r0p	šur	_	_	_	_	advmod	basic	1-5	
-1-2	4-7	tur	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0p	tur	_	_	_	_	compound	basic	1-1	
-1-3	8-13	starp	_	_	_	_	_	_	_	_	_	_	_	_	sppd	starp	_	_	_	_	case	basic	1-4	
-1-4	14-20	kokiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	koks	_	_	_	_	obl	basic	1-5	
-1-5	21-26	cēlās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyist130an	celties	_	_	_	_	root	basic	1-5	
-1-6	26-27	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-7	
-1-7	28-33	vēlās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi130an	velties	_	_	_	_	conj	basic	1-5	
-1-8	34-36	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-9	
-1-9	37-41	kāpa	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	kāpt	_	_	_	_	conj	basic	1-5	
-1-10	42-47	balta	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	balta	_	_	_	_	amod	basic	1-11	
-1-11	48-53	migla	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	migla	_	_	_	_	nsubj	basic	1-5	
-1-12	53-54	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-5	
+1-1	0-3	Šur	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0p	*	šur	_	_	_	_	advmod	basic	1-5	
+1-2	4-7	tur	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0p	*	tur	_	_	_	_	compound	basic	1-1	
+1-3	8-13	starp	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	starp	_	_	_	_	case	basic	1-4	
+1-4	14-20	kokiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	koks	_	_	_	_	obl	basic	1-5	
+1-5	21-26	cēlās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmyist130an	*	celties	_	_	_	_	root	basic	1-5	
+1-6	26-27	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-7	
+1-7	28-33	vēlās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmyisi130an	*	velties	_	_	_	_	conj	basic	1-5	
+1-8	34-36	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-9	
+1-9	37-41	kāpa	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist130an	*	kāpt	_	_	_	_	conj	basic	1-5	
+1-10	42-47	balta	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	*	balta	_	_	_	_	amod	basic	1-11	
+1-11	48-53	migla	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	migla	_	_	_	_	nsubj	basic	1-5	
+1-12	53-54	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-5	
 
 #Text=Izskatījās, ka tur kāds noslēpies kūpina cigareti.
-2-1	56-66	Izskatījās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyist330an	izskatīties	_	_	_	_	root	basic	2-1	
-2-2	66-67	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-7	
-2-3	68-70	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark	basic	2-7	
-2-4	71-74	tur	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0p	tur	_	_	_	_	advmod	basic	2-7	
-2-5	75-79	kāds	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Ind	*	*	pi0msnn	kāds	_	_	_	_	det	basic	2-7	
-2-6	80-89	noslēpies	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	Perf	vmypdmsnasnpn	noslēpties	_	_	_	_	acl	basic	2-5	
-2-7	90-96	kūpina	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	kūpināt	_	_	_	_	ccomp	basic	2-1	
-2-8	97-105	cigareti	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	cigarete	_	_	_	_	obj	basic	2-7	
-2-9	105-106	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-1	
+2-1	56-66	Izskatījās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmyist330an	*	izskatīties	_	_	_	_	root	basic	2-1	
+2-2	66-67	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-7	
+2-3	68-70	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	2-7	
+2-4	71-74	tur	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0p	*	tur	_	_	_	_	advmod	basic	2-7	
+2-5	75-79	kāds	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Ind	*	*	pi0msnn	*	kāds	_	_	_	_	det	basic	2-7	
+2-6	80-89	noslēpies	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	*	vmypdmsnasnpn	*	noslēpties	_	_	_	_	acl	basic	2-5	
+2-7	90-96	kūpina	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	kūpināt	_	_	_	_	ccomp	basic	2-1	
+2-8	97-105	cigareti	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	cigarete	_	_	_	_	obj	basic	2-7	
+2-9	105-106	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-1	
 
 #Text=Debesis bija noskaidrojušās, tās izskatījās dzidras kā sniegūdens.
-3-1	108-115	Debesis	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn6	debess	_	_	*[1]	*->1-1	nsubj	basic	3-3	
-3-2	116-120	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vcnisii30an	būt	_	_	_	_	cop	basic	3-3	
-3-3	121-135	noskaidrojušās	Fem	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	Perf	vmypdfpnasnpn	noskaidroties	_	_	_	_	root	basic	3-3	
-3-4	135-136	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-6	
-3-5	137-140	tās	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|PronType=Dem	*	*	pd0fpnn	tā	_	_	*[1]	*->1-2	nsubj	basic	3-6	
-3-6	141-151	izskatījās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vtyist330an	izskatīties	_	_	_	_	conj	basic	3-3	
-3-7	152-159	dzidras	Fem	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpnnp	dzidra	_	_	_	_	xcomp	basic	3-6	
-3-8	160-162	kā	_	_	_	_	_	_	_	_	_	_	_	_	cs	kā	_	_	_	_	case	basic	3-9	
-3-9	163-173	sniegūdens	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	sniegūdens	_	_	_	_	obl	basic	3-7	
-3-10	173-174	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-3	
+3-1	108-115	Debesis	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn6	*	debess	_	_	*->1-1	*[1]	nsubj	basic	3-3	
+3-2	116-120	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vcnisii30an	*	būt	_	_	_	_	cop	basic	3-3	
+3-3	121-135	noskaidrojušās	*	Perf	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	*	vmypdfpnasnpn	*	noskaidroties	_	_	_	_	root	basic	3-3	
+3-4	135-136	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-6	
+3-5	137-140	tās	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|PronType=Dem	*	*	pd0fpnn	*	tā	_	_	*->1-2	*[1]	nsubj	basic	3-6	
+3-6	141-151	izskatījās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vtyist330an	*	izskatīties	_	_	_	_	conj	basic	3-3	
+3-7	152-159	dzidras	*	*	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpnnp	*	dzidra	_	_	_	_	xcomp	basic	3-6	
+3-8	160-162	kā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	kā	_	_	_	_	case	basic	3-9	
+3-9	163-173	sniegūdens	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	sniegūdens	_	_	_	_	obl	basic	3-7	
+3-10	173-174	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-3	
 
 #Text=Nelidoja neviens putns.
-4-1	176-184	Nelidoja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist230ay	nelidot	_	_	_	_	root	basic	4-1	
-4-2	185-192	neviens	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Ind,Neg	*	*	pi0msny	neviens	_	_	_	_	det	basic	4-3	
-4-3	193-198	putns	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	putns	_	_	_	_	nsubj	basic	4-1	
-4-4	198-199	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	4-1	
+4-1	176-184	Nelidoja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist230ay	*	nelidot	_	_	_	_	root	basic	4-1	
+4-2	185-192	neviens	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Ind,Neg	*	*	pi0msny	*	neviens	_	_	_	_	det	basic	4-3	
+4-3	193-198	putns	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	putns	_	_	_	_	nsubj	basic	4-1	
+4-4	198-199	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	4-1	
 
 #Text=Telma skrēja uz priekšu.
-5-1	201-206	Telma	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Telma	person	*	_	_	nsubj	basic	5-2	
-5-2	207-213	skrēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	skriet	_	_	_	_	root	basic	5-2	
-5-3	214-216	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsa	uz	_	_	_	_	case	basic	5-4	
-5-4	217-224	priekšu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	priekša	_	_	_	_	obl	basic	5-2	
-5-5	224-225	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	5-2	
+5-1	201-206	Telma	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Telma	person	*	_	_	nsubj	basic	5-2	
+5-2	207-213	skrēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist130an	*	skriet	_	_	_	_	root	basic	5-2	
+5-3	214-216	uz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	uz	_	_	_	_	case	basic	5-4	
+5-4	217-224	priekšu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	priekša	_	_	_	_	obl	basic	5-2	
+5-5	224-225	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	5-2	

@@ -1,0 +1,63 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Svētdien Latvijai no dienvidrietumiem pietuvosies ciklons, kura centrs atradīsies virs Zviedrijas dienvidiem, un ar šo ciklonu saistīta nokrišņu zona šķērsos Latviju.
+1-1	0-8	Svētdien	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	svētdien	time	*	_	_	advmod	basic	1-5	
+1-2	9-17	Latvijai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	npfsd4	*	Latvija	GPE	*	_	_	iobj	basic	1-5	
+1-3	18-20	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	no	_	_	_	_	case	basic	1-4	
+1-4	21-37	dienvidrietumiem	*	*	Dat	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Ptan	*	*	ncmdd1	*	dienvidrietumi	_	_	_	_	obl	basic	1-5	
+1-5	38-49	pietuvosies	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmyifi230an	*	pietuvoties	_	_	_	_	root	basic	1-5	
+1-6	50-57	ciklons	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	ciklons	_	_	*->1-1	*[1]	nsubj	basic	1-5	
+1-7	57-58	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-10	
+1-8	59-63	kura	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msgn	*	kurš	_	_	*->1-2	*[1]	det	basic	1-9	
+1-9	64-70	centrs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	centrs	_	_	_	_	nsubj	basic	1-10	
+1-10	71-81	atradīsies	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmyifi130an	*	atrasties	_	_	_	_	acl	basic	1-6	
+1-11	82-86	virs	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	virs	_	_	_	_	case	basic	1-13	
+1-12	87-97	Zviedrijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Zviedrija	GPE	https://en.wikipedia.org/wiki/Sweden	_	_	nmod	basic	1-13	
+1-13	98-108	dienvidiem	*	*	Dat	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Ptan	*	*	ncmdd1	*	dienvidi	_	_	_	_	obl	basic	1-10	
+1-14	108-109	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-22	
+1-15	110-112	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-22	
+1-16	113-115	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	1-18	
+1-17	116-118	šo	*	*	Acc	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msan	*	šis	_	_	_	_	det	basic	1-18	
+1-18	119-126	ciklonu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	ciklons	_	_	*->1-3	*[1]	iobj	basic	1-19	
+1-19	127-135	saistīta	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsnpsnpn	*	saistīt	_	_	_	_	amod	basic	1-21	
+1-20	136-144	nokrišņu	*	*	Gen	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	ncmdg1	*	nokrišņi	_	_	_	_	nmod	basic	1-21	
+1-21	145-149	zona	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	zona	_	_	_	_	nsubj	basic	1-22	
+1-22	150-157	šķērsos	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmnift230an	*	šķērsot	_	_	_	_	conj	basic	1-5	
+1-23	158-165	Latviju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	*	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	_	_	obj	basic	1-22	
+1-24	165-166	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-5	
+
+#Text=Svētdien vakarā slapju sniegu un lietu tas atnesīs Kurzemē, bet pirmdien naktī jau visā teritorijā.
+2-1	168-176	Svētdien	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	svētdien	time[1]	*[1]	_	_	advmod	basic	2-8	
+2-2	177-183	vakarā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	vakars	time[1]	*[1]	_	_	obl	basic	2-8	
+2-3	184-190	slapju	*	*	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsanp	*	slapjš	_	_	_	_	amod	basic	2-4	
+2-4	191-197	sniegu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	sniegs	_	_	_	_	obj	basic	2-8	
+2-5	198-200	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-6	
+2-6	201-206	lietu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	lieta	_	_	_	_	conj	basic	2-4	
+2-7	207-210	tas	*	*	Nom	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msnn	*	tas	_	_	_	_	nsubj	basic	2-8	
+2-8	211-218	atnesīs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmnift130an	*	atnest	_	_	_	_	root	basic	2-8	
+2-9	219-226	Kurzemē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl5	*	Kurzeme	location	https://en.wikipedia.org/wiki/Courland	_	_	obl	basic	2-8	
+2-10	226-227	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-13	
+2-11	228-231	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	_	_	cc	basic	2-13	
+2-12	232-240	pirmdien	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	pirmdien	_	_	_	_	advmod	basic	2-13	
+2-13	241-246	naktī	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl6	*	nakts	_	_	_	_	conj	basic	2-8	
+2-14	247-250	jau	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	jau	_	_	_	_	advmod	basic	2-16	
+2-15	251-255	visā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|PronType=Tot	*	*	pg0fsln	*	visa	_	_	_	_	det	basic	2-16	
+2-16	256-266	teritorijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	teritorija	_	_	_	_	obl	basic	2-13	
+2-17	266-267	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-8	
+
+#Text=Pirmdien dienas laikā līs vien austrumu rajonos.
+3-1	269-277	Pirmdien	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	pirmdien	time	*	_	_	advmod	basic	3-4	
+3-2	278-284	dienas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	diena	_	_	_	_	nmod	basic	3-3	
+3-3	285-290	laikā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	laiks	_	_	_	_	obl	basic	3-4	
+3-4	291-294	līs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmnifi130an	*	līt	_	_	_	_	root	basic	3-4	
+3-5	295-299	vien	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	vien	_	_	_	_	discourse	basic	3-7	
+3-6	300-308	austrumu	*	*	Gen	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	ncmdg1	*	austrumi	_	_	_	_	nmod	basic	3-7	
+3-7	309-316	rajonos	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	*	rajons	_	_	_	_	obl	basic	3-4	
+3-8	316-317	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-4	

@@ -1,0 +1,128 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Labas virtuves ziepes izpilda daudzas prasības.
+1-1	0-5	Labas	*	*	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpnnp	*	labs	_	_	_	_	amod	basic	1-3	
+1-2	6-14	virtuves	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	virtuve	_	_	_	_	nmod	basic	1-3	
+1-3	15-21	ziepes	*	*	Nom	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Ptan	*	*	ncfdn5	*	ziepes	_	_	_	_	nsubj	basic	1-4	
+1-4	22-29	izpilda	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt330an	*	izpildīt	_	_	_	_	root	basic	1-4	
+1-5	30-37	daudzas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	Ind	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur\|PronType=Ind	*	*	pi0fpan	*	daudzas	_	_	_	_	det	basic	1-6	
+1-6	38-46	prasības	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	prasība	_	_	_	_	obj	basic	1-4	
+1-7	46-47	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-4	
+
+#Text=Somijas kosmētikas zīmola Dermosil, kas uzsāka savu darbību jau 1988. gadā un tirgo savu kosmētiku tikai internetveikalā www.dermosil.lv, sortimentā pieejamas Dermosil Classic sērijas šķidrās ziepes rokām Kitchen un virtuves ziepes ar salviju, kas nodrošina labu roku higiēnu virtuvē.
+2-1	48-55	Somijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Somija	GPE	https://en.wikipedia.org/wiki/Finland	_	_	nmod	basic	2-3	
+2-2	56-66	kosmētikas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	kosmētika	_	_	*->1-1	*[1]	nmod	basic	2-3	
+2-3	67-73	zīmola	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	zīmols	_	_	*->1-1	*[1]	nmod	basic	2-4	
+2-4	74-82	Dermosil	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Dermosil	organization	*	*->1-2	*[1]	nmod	basic	2-21	
+2-5	82-83	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-7	
+2-6	84-87	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	Rel	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->1-3	*[1]	nsubj	basic	2-7	
+2-7	88-94	uzsāka	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vpnist130an	*	uzsākt	_	_	_	_	acl	basic	2-4	
+2-8	95-99	savu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	Prs	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0fsan	*	sava	_	_	_	_	det	basic	2-9	
+2-9	100-107	darbību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	darbība	_	_	_	_	obj	basic	2-7	
+2-10	108-111	jau	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	jau	_	_	_	_	advmod	basic	2-12	
+2-11	112-117	1988.	*	*	*	*	*	*	*	*	Ord	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	1988.	time[1]	*[1]	_	_	amod	basic	2-12	
+2-12	118-122	gadā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	gads	time[1]	*[1]	_	_	obl	basic	2-7	
+2-13	123-125	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-14	
+2-14	126-131	tirgo	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt230an	*	tirgot	_	_	_	_	conj	basic	2-7	
+2-15	132-136	savu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	Prs	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0fsan	*	sava	_	_	*->1-4	*[1]	det	basic	2-16	
+2-16	137-146	kosmētiku	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	kosmētika	_	_	_	_	obj	basic	2-14	
+2-17	147-152	tikai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tikai	_	_	_	_	discourse	basic	2-19	
+2-18	153-168	internetveikalā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	internetveikals	_	_	*->2-1	*[2]	nmod	basic	2-19	
+2-19	169-184	www.dermosil.lv	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	xu	*	www.dermosil.lv	organization	*	*->2-2	*[2]	obl	basic	2-14	
+2-20	184-185	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-7	
+2-21	186-196	sortimentā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	sortiments	_	_	_	_	obl	basic	2-22	
+2-22	197-206	pieejamas	*	*	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Pres	*	Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdfpnppnpn	*	pieiet	_	_	_	_	root	basic	2-22	
+2-23	207-215	Dermosil	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Dermosil	organization[2]	*[2]	*->7-1	*[7]	nmod	basic	2-25	
+2-24	216-223	Classic	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Classic	organization[2]	*[2]	*->7-1	*[7]	flat:name	basic	2-23	
+2-25	224-231	sērijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	sērija	_	_	*->7-2	*[7]	nmod	basic	2-27	
+2-26	232-239	šķidrās	*	*	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpnyp	*	šķidrs	_	_	*->6-1	*[6]	amod	basic	2-27	
+2-27	240-246	ziepes	*	*	Nom	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Ptan	*	*	ncfdn5	*	ziepes	_	_	*->6-1	*[6]	nmod	basic	2-29	
+2-28	247-252	rokām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	*	roka	_	_	*->6-1	*[6]	nmod	basic	2-27	
+2-29	253-260	Kitchen	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Kitchen	product	*	*->6-2	*[6]	nsubj	basic	2-22	
+2-30	261-263	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-32	
+2-31	264-272	virtuves	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	virtuve	_	_	*->4-1	*[4]	nmod	basic	2-32	
+2-32	273-279	ziepes	*	*	Nom	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Ptan	*	*	ncfdn5	*	ziepes	_	_	*->4-1	*[4]	conj	basic	2-29	
+2-33	280-282	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	*->4-1	*[4]	case	basic	2-34	
+2-34	283-290	salviju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	salvija	_	_	*->4-1|*->3-1	*[4]|*[3]	nmod	basic	2-32	
+2-35	290-291	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-37	
+2-36	292-295	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	Rel	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->3-2	*[3]	nsubj	basic	2-37	
+2-37	296-305	nodrošina	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt330an	*	nodrošināt	_	_	_	_	acl	basic	2-29	
+2-38	306-310	labu	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsanp	*	labs	_	_	_	_	amod	basic	2-40	
+2-39	311-315	roku	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	roka	_	_	_	_	nmod	basic	2-40	
+2-40	316-323	higiēnu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	higiēna	_	_	_	_	obj	basic	2-37	
+2-41	324-331	virtuvē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	*	virtuve	_	_	_	_	acl	basic	2-40	
+2-42	331-332	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-22	
+
+#Text=Tās puto pavisam maz un viegli noskalojas no rokām, kas ir praktisku virtuves roku ziepju īpašības.
+3-1	333-336	Tās	*	*	Nom	*	*	Fem	*	*	*	Plur	3	*	Dem	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|Person=3\|PronType=Dem	*	*	pd3fpnn	*	tā	_	_	*->4-2	*[4]	nsubj	basic	3-2	
+3-2	337-341	puto	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipi230an	*	putot	_	_	_	_	root	basic	3-2	
+3-3	342-349	pavisam	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	pavisam	_	_	_	_	advmod	basic	3-4	
+3-4	350-353	maz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	maz	_	_	_	_	advmod	basic	3-2	
+3-5	354-356	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	3-7	
+3-6	357-363	viegli	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	viegli	_	_	_	_	advmod	basic	3-7	
+3-7	364-374	noskalojas	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyipi230an	*	noskaloties	_	_	_	_	conj	basic	3-2	
+3-8	375-377	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	no	_	_	_	_	case	basic	3-9	
+3-9	378-383	rokām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	*	roka	_	_	_	_	obl	basic	3-7	
+3-10	383-384	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-17	
+3-11	385-388	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	Rel	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	_	_	nsubj	basic	3-17	
+3-12	389-391	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	3-17	
+3-13	392-401	praktisku	*	*	Gen	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpgnp	*	praktisks	_	_	_	_	amod	basic	3-16	
+3-14	402-410	virtuves	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	virtuve	_	_	_	_	nmod	basic	3-16	
+3-15	411-415	roku	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	roka	_	_	_	_	nmod	basic	3-16	
+3-16	416-422	ziepju	*	*	Gen	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Ptan	*	*	ncfdg5	*	ziepes	_	_	_	_	nmod	basic	3-17	
+3-17	423-431	īpašības	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	īpašība	_	_	_	_	advcl	basic	3-2	
+3-18	431-432	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-2	
+
+#Text=Šķidrās ziepes rokām Kitchen satur dabīgu citruseļļu, kas piešķir produktam svaigu aromātu.
+4-1	433-440	Šķidrās	*	*	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpnyp	*	šķidrs	_	_	*->6-3	*[6]	amod	basic	4-2	
+4-2	441-447	ziepes	*	*	Nom	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Ptan	*	*	ncfdn5	*	ziepes	_	_	*->6-3	*[6]	nmod	basic	4-4	
+4-3	448-453	rokām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	*	roka	_	_	*->6-3	*[6]	nmod	basic	4-2	
+4-4	454-461	Kitchen	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Kitchen	product	*	*->6-4	*[6]	nsubj	basic	4-5	
+4-5	462-467	satur	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt330an	*	saturēt	_	_	_	_	root	basic	4-5	
+4-6	468-474	dabīgu	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsanp	*	dabīgs	_	_	_	_	amod	basic	4-7	
+4-7	475-485	citruseļļu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	citruseļļa	_	_	*->5-1	*[5]	obj	basic	4-5	
+4-8	485-486	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-10	
+4-9	487-490	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	Rel	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->5-2	*[5]	nsubj	basic	4-10	
+4-10	491-498	piešķir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt130an	*	piešķirt	_	_	_	_	acl	basic	4-7	
+4-11	499-508	produktam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	produkts	_	_	_	_	iobj	basic	4-10	
+4-12	509-515	svaigu	*	*	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsanp	*	svaigs	_	_	_	_	amod	basic	4-13	
+4-13	516-523	aromātu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	aromāts	_	_	_	_	obj	basic	4-10	
+4-14	523-524	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	4-5	
+
+#Text=Savukārt virtuves ziepēm ar salviju piemīt svaiga smarža, kurā jūtams ārstniecības augu aromāts.
+5-1	525-533	Savukārt	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	savukārt	_	_	_	_	advmod	basic	5-6	
+5-2	534-542	virtuves	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	virtuve	_	_	*->3-3	*[3]	nmod	basic	5-3	
+5-3	543-549	ziepēm	*	*	Dat	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Ptan	*	*	ncfdd5	*	ziepes	_	_	*->3-3	*[3]	iobj	basic	5-6	
+5-4	550-552	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	*->3-3	*[3]	case	basic	5-5	
+5-5	553-560	salviju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	salvija	_	_	*->3-3	*[3]	nmod	basic	5-3	
+5-6	561-567	piemīt	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipi130an	*	piemist	_	_	_	_	root	basic	5-6	
+5-7	568-574	svaiga	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	*	svaigs	_	_	_	_	amod	basic	5-8	
+5-8	575-581	smarža	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	smarža	_	_	*->8-1	*[8]	nsubj	basic	5-6	
+5-9	581-582	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	5-11	
+5-10	583-587	kurā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	Rel	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsln	*	kura	_	_	*->8-2	*[8]	obl	basic	5-11	
+5-11	588-594	jūtams	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Pres	*	Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsnppnpn	*	just	_	_	_	_	acl	basic	5-8	
+5-12	595-607	ārstniecības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	ārstniecība	_	_	_	_	nmod	basic	5-13	
+5-13	608-612	augu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	augs	_	_	_	_	nmod	basic	5-14	
+5-14	613-620	aromāts	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	aromāts	_	_	_	_	nsubj	basic	5-11	
+5-15	620-621	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	5-6	
+
+#Text=Šīs abas roku ziepes no rokām likvidē zivju un sīpolu aromātu.
+6-1	622-625	Šīs	*	*	Nom	*	*	Fem	*	*	*	Plur	3	*	Dem	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|Person=3\|PronType=Dem	*	*	pd3fpnn	*	šī	_	_	_	_	det	basic	6-4	
+6-2	626-630	abas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	Tot	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|PronType=Tot	*	*	pg0fpnn	*	abas	_	_	_	_	compound	basic	6-1	
+6-3	631-635	roku	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	roka	_	_	_	_	nmod	basic	6-4	
+6-4	636-642	ziepes	*	*	Nom	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Ptan	*	*	ncfdn5	*	ziepes	_	_	_	_	nsubj	basic	6-7	
+6-5	643-645	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	no	_	_	_	_	case	basic	6-6	
+6-6	646-651	rokām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	*	roka	_	_	_	_	obl	basic	6-7	
+6-7	652-659	likvidē	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt230an	*	likvidēt	_	_	_	_	root	basic	6-7	
+6-8	660-665	zivju	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg6	*	zivs	_	_	_	_	nmod	basic	6-11	
+6-9	666-668	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	6-10	
+6-10	669-675	sīpolu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	sīpols	_	_	_	_	conj	basic	6-8	
+6-11	676-683	aromātu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	aromāts	_	_	_	_	obj	basic	6-7	
+6-12	683-684	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	6-7	

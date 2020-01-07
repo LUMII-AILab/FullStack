@@ -1,0 +1,124 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Karmena zina savu likteni.
+1-1	0-7	Karmena	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Karmena	person	*	*->1-1	*[1]	nsubj	basic	1-2	
+1-2	8-12	zina	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt330an	*	zināt	_	_	_	_	root	basic	1-2	
+1-3	13-17	savu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	Prs	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0msan	*	savs	_	_	*->1-2	*[1]	det	basic	1-4	
+1-4	18-25	likteni	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	*	liktenis	_	_	*->2-1	*[2]	obj	basic	1-2	
+1-5	25-26	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-2	
+
+#Text=Viņa to ir izzīlējusi.
+2-1	27-31	Viņa	*	*	Nom	*	*	Fem	*	*	*	Sing	3	*	Prs	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3fsnn	*	viņa	_	_	*->1-3	*[1]	nsubj	basic	2-4	
+2-2	32-34	to	*	*	Acc	*	*	Masc	*	*	*	Sing	3	*	Dem	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msan	*	tas	_	_	*->2-2	*[2]	obj	basic	2-4	
+2-3	35-37	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	_	_	aux	basic	2-4	
+2-4	38-48	izzīlējusi	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdfsnasnpn	*	izzīlēt	_	_	_	_	root	basic	2-4	
+2-5	48-49	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-4	
+
+#Text=Taču viņa nedomā bēgt: lai!
+3-1	50-54	Taču	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	taču	_	_	_	_	cc	basic	3-3	
+3-2	55-59	viņa	*	*	Nom	*	*	Fem	*	*	*	Sing	3	*	Prs	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3fsnn	*	viņa	_	_	*->1-4	*[1]	nsubj	basic	3-3	
+3-3	60-66	nedomā	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vonipi230ay	*	domāt	_	_	_	_	root	basic	3-3	
+3-4	67-71	bēgt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0i1000n	*	bēgt	_	_	_	_	xcomp	basic	3-3	
+3-5	71-72	:	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zo	*	:	_	_	_	_	punct	basic	3-6	
+3-6	73-76	lai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	lai	_	_	_	_	discourse	basic	3-3	
+3-7	76-77	!	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	!	_	_	_	_	punct	basic	3-3	
+
+#Text=Mīlestība ir nelaime.
+4-1	78-87	Mīlestība	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	mīlestība	_	_	_	_	nsubj	basic	4-3	
+4-2	88-90	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	4-3	
+4-3	91-98	nelaime	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	nelaime	_	_	_	_	root	basic	4-3	
+4-4	98-99	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	4-3	
+
+#Text=Gan Karmenai, gan Hosē, gan varbūt arī Toreadoram, aiz kura maskas, viltīgi smīnot, paslēpies pats Liktenis.
+5-1	100-103	Gan	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	gan	_	_	_	_	cc	basic	5-2	
+5-2	104-112	Karmenai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	npfsd4	*	Karmena	person	*	*->5-1|*->1-5	*[5]|*[1]	root	basic	5-2	
+5-3	112-113	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	*->5-1	*[5]	punct	basic	5-5	
+5-4	114-117	gan	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	gan	_	_	*->5-1	*[5]	cc	basic	5-5	
+5-5	118-122	Hosē	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	np0000	*	Hosē	person	*	*->5-1	*[5]	conj	basic	5-2	
+5-6	122-123	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	5-10	
+5-7	124-127	gan	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	gan	_	_	_	_	cc	basic	5-10	
+5-8	128-134	varbūt	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	varbūt	_	_	_	_	discourse	basic	5-10	
+5-9	135-138	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	5-10	
+5-10	139-149	Toreadoram	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	npmsd1	*	Toreadors	person	*	*->3-1	*[3]	conj	basic	5-2	
+5-11	149-150	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	5-19	
+5-12	151-154	aiz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	aiz	_	_	*->3-2	*[3]	case	basic	5-14	
+5-13	155-159	kura	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	Rel	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msgn	*	kurš	_	_	*->3-2	*[3]	det	basic	5-14	
+5-14	160-166	maskas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	maska	_	_	_	_	obl	basic	5-19	
+5-15	166-167	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	5-17	
+5-16	168-175	viltīgi	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	viltīgi	_	_	_	_	advmod	basic	5-17	
+5-17	176-182	smīnot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	Conv	*	vmnpu0000000n	*	smīnēt	_	_	_	_	advcl	basic	5-19	
+5-18	182-183	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	5-17	
+5-19	184-193	paslēpies	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	Yes	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmypdmsnpsnpn	*	paslēpties	_	_	_	_	acl	basic	5-10	
+5-20	194-198	pats	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	Tot	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msnn	*	pats	_	_	_	_	det	basic	5-21	
+5-21	199-207	Liktenis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	liktenis	person	*	*->6-1	*[6]	nsubj	basic	5-19	
+5-22	207-208	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	5-2	
+
+#Text=Latvijas publikas iemīļotais poļu horeogrāfs Kšištofs Pastors („Bīstamie sakari”, „Tango” u.c. iestudējumi) Prospera Merimē klasisko noveli ietērpis mūsdienīgā un ekspresīvā horeogrāfijā.
+6-1	209-217	Latvijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Latvija	GPE	*	_	_	nmod	basic	6-2	
+6-2	218-226	publikas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	publika	_	_	_	_	obl	basic	6-3	
+6-3	227-237	iemīļotais	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsnpsypn	*	iemīļot	_	_	_	_	amod	basic	6-5	
+6-4	238-242	poļu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	polis	_	_	*->4-1	*[4]	nmod	basic	6-5	
+6-5	243-253	horeogrāfs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	horeogrāfs	_	_	*->4-1	*[4]	nmod	basic	6-6	
+6-6	254-262	Kšištofs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Kšištofs	person[1]	https://en.wikipedia.org/wiki/Krzysztof\_Pastor[1]	*->4-2	*[4]	nsubj	basic	6-24	
+6-7	263-270	Pastors	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Pastors	person[1]	https://en.wikipedia.org/wiki/Krzysztof\_Pastor[1]	*->4-2	*[4]	flat:name	basic	6-6	
+6-8	271-272	(	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	(	_	_	_	_	punct	basic	6-11	
+6-9	272-273	„	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	„	product[2]	https://en.wikipedia.org/wiki/Les\_Liaisons\_dangereuses[2]	_	_	punct	basic	6-11	
+6-10	273-281	Bīstamie	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnyp	*	bīstams	product[2]	https://en.wikipedia.org/wiki/Les\_Liaisons\_dangereuses[2]	_	_	amod	basic	6-11	
+6-11	282-288	sakari	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	sakars	product[2]	https://en.wikipedia.org/wiki/Les\_Liaisons\_dangereuses[2]	_	_	discourse	basic	6-6	
+6-12	288-289	”	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	”	product[2]	https://en.wikipedia.org/wiki/Les\_Liaisons\_dangereuses[2]	_	_	punct	basic	6-11	
+6-13	289-290	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	6-15	
+6-14	291-292	„	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	„	product[3]	*[3]	_	_	punct	basic	6-15	
+6-15	292-297	Tango	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	np0000	*	Tango	product[3]	*[3]	_	_	conj	basic	6-11	
+6-16	297-298	”	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	”	product[3]	*[3]	_	_	punct	basic	6-15	
+6-17	299-303	u.c.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yd	*	u.c.	_	_	_	_	dep	basic	6-18	
+6-18	304-315	iestudējumi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	iestudējums	_	_	_	_	conj	basic	6-11	
+6-19	315-316	)	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	)	_	_	_	_	punct	basic	6-11	
+6-20	317-325	Prospera	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Prospers	person[4]	https://en.wikipedia.org/wiki/Prosper\_Mérimée[4]	_	_	nmod	basic	6-23	
+6-21	326-332	Merimē	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	np0000	*	Merimē	person[4]	https://en.wikipedia.org/wiki/Prosper\_Mérimée[4]	_	_	flat:name	basic	6-20	
+6-22	333-341	klasisko	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsayp	*	klasisks	_	_	_	_	amod	basic	6-23	
+6-23	342-348	noveli	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	novele	_	_	_	_	obj	basic	6-24	
+6-24	349-357	ietērpis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdmsnasnpn	*	ietērpt	_	_	_	_	root	basic	6-24	
+6-25	358-368	mūsdienīgā	*	*	Loc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affslnp	*	mūsdienīgs	_	_	_	_	amod	basic	6-28	
+6-26	369-371	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	6-27	
+6-27	372-382	ekspresīvā	*	*	Loc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affslnp	*	ekspresīvs	_	_	_	_	conj	basic	6-25	
+6-28	383-395	horeogrāfijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	horeogrāfija	_	_	_	_	obl	basic	6-24	
+6-29	395-396	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	6-24	
+
+#Text=Šajā versijā Likteni un Toreadoru atveido viens mākslinieks, jo pēdējais piliens Hosē greizsirdības kausā ir Karmenas kaislība pret Toreadoru, kurš šādā veidā kļūst par viņu abu likteni.
+7-1	397-401	Šajā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	Dem	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsln	*	šī	_	_	_	_	det	basic	7-2	
+7-2	402-409	versijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	versija	_	_	_	_	obl	basic	7-6	
+7-3	410-417	Likteni	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	*	liktenis	person	*	*->6-2	*[6]	obj	basic	7-6	
+7-4	418-420	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	7-5	
+7-5	421-430	Toreadoru	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	toreadors	person	*	*->3-3	*[3]	conj	basic	7-3	
+7-6	431-438	atveido	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt230an	*	atveidot	_	_	_	_	root	basic	7-6	
+7-7	439-444	viens	*	*	Nom	*	*	Masc	*	*	Card	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|NumType=Card	*	*	mcsmsn	*	viens	_	_	_	_	nummod	basic	7-8	
+7-8	445-456	mākslinieks	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	mākslinieks	_	_	_	_	nsubj	basic	7-6	
+7-9	456-457	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	7-12	
+7-10	458-460	jo	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	jo	_	_	_	_	mark	basic	7-12	
+7-11	461-469	pēdējais	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnyp	*	pēdējais	_	_	_	_	amod	basic	7-12	
+7-12	470-477	piliens	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	piliens	_	_	_	_	advcl	basic	7-6	
+7-13	478-482	Hosē	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	np0000	*	Hosē	person	*	_	_	nmod	basic	7-14	
+7-14	483-496	greizsirdības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	greizsirdība	_	_	_	_	nmod	basic	7-15	
+7-15	497-502	kausā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	kauss	_	_	_	_	obl	basic	7-12	
+7-16	503-505	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	7-12	
+7-17	506-514	Karmenas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Karmena	person	*	*->1-6	*[1]	nmod	basic	7-18	
+7-18	515-523	kaislība	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	kaislība	_	_	_	_	nsubj	basic	7-12	
+7-19	524-528	pret	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	pret	_	_	_	_	case	basic	7-20	
+7-20	529-538	Toreadoru	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	toreadors	person	*	*->3-4	*[3]	nmod	basic	7-18	
+7-21	538-539	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	7-29	
+7-22	540-544	kurš	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	Rel	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msnn	*	kurš	_	_	*->3-5	*[3]	nsubj	basic	7-29	
+7-23	545-549	šādā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	Dem	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msln	*	šāds	_	_	_	_	det	basic	7-24	
+7-24	550-555	veidā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	veids	_	_	_	_	obl	basic	7-29	
+7-25	556-561	kļūst	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vtnipi130an	*	kļūt	_	_	_	_	cop	basic	7-29	
+7-26	562-565	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	7-29	
+7-27	566-570	viņu	*	*	Gen	*	*	Masc	*	*	*	Plur	3	*	Prs	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Prs	*	*	pp3mpgn	*	viņš	_	_	*->5-2	*[5]	det	basic	7-29	
+7-28	571-574	abu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	Tot	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur\|PronType=Tot	*	*	pg0mpgn	*	abi	_	_	*->5-2	*[5]	compound	basic	7-27	
+7-29	575-582	likteni	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	*	liktenis	_	_	_	_	acl	basic	7-20	
+7-30	582-583	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	7-6	

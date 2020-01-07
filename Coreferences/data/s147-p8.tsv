@@ -1,0 +1,86 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Cienījamie deputāti!
+1-1	0-10	Cienījamie	*	*	Voc	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Pres	*	Case=Voc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdmpvppypn	*	cienīt	_	_	*->2-1	*[2]	amod	basic	1-2	
+1-2	11-19	deputāti	*	*	Voc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Voc\|Gender=Masc\|Number=Plur	*	*	ncmpv1	*	deputāts	_	_	*->2-1	*[2]	root	basic	1-2	
+1-3	19-20	!	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	!	_	_	_	_	punct	basic	1-2	
+
+#Text=Es vēršu jūsu uzmanību uz to, ka, noraidot šo priekšlikumu, radīsies situācija, ka Latvijā varēs tiesāt cilvēku par to, ka viņš ir karojis Ukrainas armijā, un par to viņam varēs piespriest četrus gadus cietumā.
+2-1	22-24	Es	*	*	Nom	*	*	*	*	*	*	Sing	1	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	*	*	pp10snn	*	es	_	_	*->3-1	*[3]	nsubj	basic	2-2	
+2-2	25-30	vēršu	*	*	*	*	*	*	Ind	*	*	Sing	1	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt11san	*	vērst	_	_	_	_	root	basic	2-2	
+2-3	31-35	jūsu	*	*	Gen	*	*	*	*	*	*	Plur	2	*	*	*	*	*	Case=Gen\|Number=Plur\|Person=2\|PronType=Prs	*	*	pp20pgn	*	jūs	_	_	*->2-2	*[2]	det	basic	2-4	
+2-4	36-44	uzmanību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	uzmanība	_	_	_	_	obj	basic	2-2	
+2-5	45-47	uz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	uz	_	_	_	_	case	basic	2-6	
+2-6	48-50	to	*	*	Acc	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msan	*	tas	_	_	_	_	obl	basic	2-2	
+2-7	50-51	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-14	
+2-8	52-54	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	2-14	
+2-9	54-55	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-10	
+2-10	56-64	noraidot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	*	*	vmnpu0000000n	*	noraidīt	_	_	_	_	advcl	basic	2-14	
+2-11	65-67	šo	*	*	Acc	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msan	*	šis	_	_	_	_	det	basic	2-12	
+2-12	68-80	priekšlikumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	priekšlikums	_	_	_	_	obj	basic	2-10	
+2-13	80-81	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-10	
+2-14	82-90	radīsies	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmyifi130an	*	rasties	_	_	_	_	ccomp	basic	2-6	
+2-15	91-100	situācija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	situācija	_	_	_	_	nsubj	basic	2-14	
+2-16	100-101	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-19	
+2-17	102-104	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	2-19	
+2-18	105-112	Latvijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	_	_	obl	basic	2-19	
+2-19	113-118	varēs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vonifi330an	*	varēt	_	_	_	_	acl	basic	2-15	
+2-20	119-125	tiesāt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	*	tiesāt	_	_	_	_	xcomp	basic	2-19	
+2-21	126-133	cilvēku	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	cilvēks	_	_	*->1-1	*[1]	obj	basic	2-20	
+2-22	134-137	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	2-23	
+2-23	138-140	to	*	*	Acc	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msan	*	tas	_	_	_	_	iobj	basic	2-20	
+2-24	140-141	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-28	
+2-25	142-144	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	2-28	
+2-26	145-149	viņš	*	*	Nom	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msnn	*	viņš	_	_	*->1-2	*[1]	nsubj	basic	2-28	
+2-27	150-152	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	aux	basic	2-28	
+2-28	153-160	karojis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnasnpn	*	karot	_	_	_	_	ccomp	basic	2-23	
+2-29	161-169	Ukrainas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Ukraina	organization[1]|GPE[2]	*[1]|https://en.wikipedia.org/wiki/Ukraine[2]	_	_	nmod	basic	2-30	
+2-30	170-176	armijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	armija	organization[1]	*[1]	_	_	obl	basic	2-28	
+2-31	176-177	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-28	
+2-32	178-180	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-36	
+2-33	181-184	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	2-34	
+2-34	185-187	to	*	*	Acc	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msan	*	tas	_	_	_	_	iobj	basic	2-36	
+2-35	188-193	viņam	*	*	Dat	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msdn	*	viņš	_	_	*->1-3	*[1]	iobj	basic	2-37	
+2-36	194-199	varēs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vonifi330an	*	varēt	_	_	_	_	conj	basic	2-19	
+2-37	200-210	piespriest	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	*	piespriest	_	_	_	_	xcomp	basic	2-36	
+2-38	211-217	četrus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpa	*	četri	time[3]	*[3]	_	_	nummod	basic	2-39	
+2-39	218-223	gadus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	gads	time[3]	*[3]	_	_	obj	basic	2-37	
+2-40	224-231	cietumā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	cietums	_	_	_	_	acl	basic	2-39	
+2-41	231-232	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-2	
+
+#Text=Pagaidām tas tā var notikt tikai Krievijā.
+3-1	234-242	Pagaidām	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	pagaidām	_	_	_	_	advmod	basic	3-4	
+3-2	243-246	tas	*	*	Nom	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msnn	*	tas	_	_	_	_	nsubj	basic	3-4	
+3-3	247-249	tā	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0m	*	tā	_	_	_	_	advmod	basic	3-5	
+3-4	250-253	var	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vonipi330an	*	varēt	_	_	_	_	root	basic	3-4	
+3-5	254-260	notikt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0i1000n	*	notikt	_	_	_	_	xcomp	basic	3-4	
+3-6	261-266	tikai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tikai	_	_	_	_	discourse	basic	3-7	
+3-7	267-275	Krievijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Krievija	GPE	https://en.wikipedia.org/wiki/Russia	_	_	obl	basic	3-4	
+3-8	275-276	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-4	
+
+#Text=Lai nepieļautu šādu situāciju arī Latvijā, es aicinu jūs atbalstīt šo manu un Jāņa Dombravas priekšlikumu.
+4-1	278-281	Lai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	lai	_	_	_	_	mark	basic	4-2	
+4-2	282-292	nepieļautu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Neg\|VerbForm=Fin\|Voice=Act	*	Act	vmnc0t100ay	*	nepieļaut	_	_	_	_	advcl	basic	4-9	
+4-3	293-297	šādu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsan	*	šāda	_	_	_	_	det	basic	4-4	
+4-4	298-307	situāciju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	situācija	_	_	_	_	obj	basic	4-2	
+4-5	308-311	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	4-6	
+4-6	312-319	Latvijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	_	_	acl	basic	4-4	
+4-7	319-320	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-2	
+4-8	321-323	es	*	*	Nom	*	*	*	*	*	*	Sing	1	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	*	*	pp10snn	*	es	_	_	*->3-2	*[3]	nsubj	basic	4-9	
+4-9	324-330	aicinu	*	*	*	*	*	*	Ind	*	*	Sing	1	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt31san	*	aicināt	_	_	_	_	root	basic	4-9	
+4-10	331-334	jūs	*	*	Nom	*	*	*	*	*	*	Plur	2	*	*	*	*	*	Case=Nom\|Number=Plur\|Person=2\|PronType=Prs	*	*	pp20pnn	*	jūs	_	_	*->2-3	*[2]	iobj	basic	4-9	
+4-11	335-344	atbalstīt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	*	atbalstīt	_	_	_	_	ccomp	basic	4-9	
+4-12	345-347	šo	*	*	Acc	*	*	Fem	*	*	*	Sing	3	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3fsan	*	šī	_	_	_	_	det	basic	4-17	
+4-13	348-352	manu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0msan	*	mans	_	_	*->3-3	*[3]	det	basic	4-17	
+4-14	353-355	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	4-15	
+4-15	356-360	Jāņa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg2	*	Jānis	person[4]	https://lv.wikipedia.org/wiki/Jānis\_Dombrava[4]	_	_	conj	basic	4-13	
+4-16	361-370	Dombravas	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg4	*	Dombrava	person[4]	https://lv.wikipedia.org/wiki/Jānis\_Dombrava[4]	_	_	flat:name	basic	4-15	
+4-17	371-383	priekšlikumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	priekšlikums	_	_	_	_	obj	basic	4-11	
+4-18	383-384	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	4-9	

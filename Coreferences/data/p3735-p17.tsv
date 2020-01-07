@@ -1,84 +1,84 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=KNAB šo lietu sāka 2010.gadā, kad vasarā aizturēja bijušo "Latvenergo" prezidentu Kārli Miķelsonu, viņa vietnieku Aigaru Meļko, kā arī AS "Sadales tīkls" valdes priekšsēdētāju Ivaru Liuziniku un viņa vietnieku Andreju Stalažu.
-1-1	0-4	KNAB	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	KNAB	organization	*	_	_	nsubj	basic	1-4	
-1-2	5-7	šo	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsan	šī	_	_	_	_	det	basic	1-3	
-1-3	8-13	lietu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	lieta	_	_	_	_	obj	basic	1-4	
-1-4	14-18	sāka	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	sākt	_	_	_	_	root	basic	1-4	
-1-5	19-24	2010.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	2010.	time[1]	*[1]	*[1]	*->1-1	amod	basic	1-6	
-1-6	24-28	gadā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	gads	time[1]	*[1]	*[1]	*->1-1	obl	basic	1-4	
-1-7	28-29	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-10	
-1-8	30-33	kad	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0t	kad	_	_	*[1]	*->1-2	advmod	basic	1-10	
-1-9	34-40	vasarā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	vasara	time	*	_	_	obl	basic	1-10	
-1-10	41-50	aizturēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	aizturēt	_	_	_	_	advcl	basic	1-6	
-1-11	51-57	bijušo	Masc	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsayp	bijušais	_	_	_	_	acl	basic	1-15	
-1-12	58-59	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[2]	*[2]	_	_	punct	basic	1-13	
-1-13	59-69	Latvenergo	_	_	_	_	_	_	_	_	_	_	_	_	np0000	Latvenergo	organization[2]	*[2]	_	_	nmod	basic	1-15	
-1-14	69-70	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[2]	*[2]	_	_	punct	basic	1-13	
-1-15	71-81	prezidentu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	prezidents	_	_	*[2]	*->2-1	nmod	basic	1-16	
-1-16	82-87	Kārli	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa2	Kārlis	person[3]	*[3]	*[2]	*->2-2	obj	basic	1-10	
-1-17	88-97	Miķelsonu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	Miķelsons	person[3]	*[3]	*[2]	*->2-2	flat:name	basic	1-16	
-1-18	97-98	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-21	
-1-19	99-103	viņa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msgn	viņš	_	_	*[2]	*->2-3	det	basic	1-20	
-1-20	104-113	vietnieku	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	vietnieks	_	_	*[3]	*->3-1	nmod	basic	1-21	
-1-21	114-120	Aigaru	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Aigars	person[4]	*[4]	*[3]	*->3-2	conj	basic	1-16	
-1-22	121-126	Meļko	_	_	_	_	_	_	_	_	_	_	_	_	np0000	Meļko	person[4]	*[4]	*[3]	*->3-2	flat:name	basic	1-21	
-1-23	126-127	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-33	
-1-24	128-130	kā	_	_	_	_	_	_	_	_	_	_	_	_	cc	kā	_	_	_	_	cc	basic	1-33	
-1-25	131-134	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse	basic	1-24	
-1-26	135-137	AS	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	AS	organization[5]	*[5]	*[4]	*->4-1	nmod	basic	1-29	
-1-27	138-139	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[5]	*[5]	*[4]	*->4-1	punct	basic	1-29	
-1-28	139-146	Sadales	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	sadale	organization[5]	*[5]	*[4]	*->4-1	nmod	basic	1-29	
-1-29	147-152	tīkls	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	tīkls	organization[5]	*[5]	*[4]	*->4-1	nmod	basic	1-31	
-1-30	152-153	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[5]	*[5]	*[4]	*->4-1	punct	basic	1-29	
-1-31	154-160	valdes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	valde	_	_	*[4]	*->4-1	nmod	basic	1-32	
-1-32	161-175	priekšsēdētāju	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	priekšsēdētājs	_	_	*[4]	*->4-1	nmod	basic	1-33	
-1-33	176-181	Ivaru	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	Ivars	person[6]	*[6]	*[4]	*->4-2	conj	basic	1-16	
-1-34	182-191	Liuziniku	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	Liuziniks	person[6]	*[6]	*[4]	*->4-2	flat:name	basic	1-33	
-1-35	192-194	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-38	
-1-36	195-199	viņa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msgn	viņš	_	_	*[4]	*->4-3	det	basic	1-37	
-1-37	200-209	vietnieku	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	vietnieks	_	_	*[5]	*->5-1	nmod	basic	1-38	
-1-38	210-217	Andreju	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	Andrejs	person[7]	*[7]	*[5]	*->5-2	conj	basic	1-16	
-1-39	218-225	Stalažu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	Stalažs	person[7]	*[7]	*[5]	*->5-2	flat:name	basic	1-38	
-1-40	225-226	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	*[5]	*->5-2	punct	basic	1-4	
+1-1	0-4	KNAB	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	KNAB	organization	*	_	_	nsubj	basic	1-4	
+1-2	5-7	šo	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsan	*	šī	_	_	_	_	det	basic	1-3	
+1-3	8-13	lietu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	lieta	_	_	_	_	obj	basic	1-4	
+1-4	14-18	sāka	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist130an	*	sākt	_	_	_	_	root	basic	1-4	
+1-5	19-24	2010.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	2010.	time[1]	*[1]	*->1-1	*[1]	amod	basic	1-6	
+1-6	24-28	gadā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	gads	time[1]	*[1]	*->1-1	*[1]	obl	basic	1-4	
+1-7	28-29	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-10	
+1-8	30-33	kad	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0t	*	kad	_	_	*->1-2	*[1]	advmod	basic	1-10	
+1-9	34-40	vasarā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	vasara	time	*	_	_	obl	basic	1-10	
+1-10	41-50	aizturēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist330an	*	aizturēt	_	_	_	_	advcl	basic	1-6	
+1-11	51-57	bijušo	*	*	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsayp	*	bijušais	_	_	_	_	acl	basic	1-15	
+1-12	58-59	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[2]	*[2]	_	_	punct	basic	1-13	
+1-13	59-69	Latvenergo	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	np0000	*	Latvenergo	organization[2]	*[2]	_	_	nmod	basic	1-15	
+1-14	69-70	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[2]	*[2]	_	_	punct	basic	1-13	
+1-15	71-81	prezidentu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	prezidents	_	_	*->2-1	*[2]	nmod	basic	1-16	
+1-16	82-87	Kārli	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa2	*	Kārlis	person[3]	*[3]	*->2-2	*[2]	obj	basic	1-10	
+1-17	88-97	Miķelsonu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	*	Miķelsons	person[3]	*[3]	*->2-2	*[2]	flat:name	basic	1-16	
+1-18	97-98	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-21	
+1-19	99-103	viņa	*	*	Gen	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msgn	*	viņš	_	_	*->2-3	*[2]	det	basic	1-20	
+1-20	104-113	vietnieku	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	vietnieks	_	_	*->3-1	*[3]	nmod	basic	1-21	
+1-21	114-120	Aigaru	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Aigars	person[4]	*[4]	*->3-2	*[3]	conj	basic	1-16	
+1-22	121-126	Meļko	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	np0000	*	Meļko	person[4]	*[4]	*->3-2	*[3]	flat:name	basic	1-21	
+1-23	126-127	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-33	
+1-24	128-130	kā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	kā	_	_	_	_	cc	basic	1-33	
+1-25	131-134	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	1-24	
+1-26	135-137	AS	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	*	AS	organization[5]	*[5]	*->4-1	*[4]	nmod	basic	1-29	
+1-27	138-139	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[5]	*[5]	*->4-1	*[4]	punct	basic	1-29	
+1-28	139-146	Sadales	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	sadale	organization[5]	*[5]	*->4-1	*[4]	nmod	basic	1-29	
+1-29	147-152	tīkls	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	tīkls	organization[5]	*[5]	*->4-1	*[4]	nmod	basic	1-31	
+1-30	152-153	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[5]	*[5]	*->4-1	*[4]	punct	basic	1-29	
+1-31	154-160	valdes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	valde	_	_	*->4-1	*[4]	nmod	basic	1-32	
+1-32	161-175	priekšsēdētāju	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	priekšsēdētājs	_	_	*->4-1	*[4]	nmod	basic	1-33	
+1-33	176-181	Ivaru	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	*	Ivars	person[6]	*[6]	*->4-2	*[4]	conj	basic	1-16	
+1-34	182-191	Liuziniku	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	*	Liuziniks	person[6]	*[6]	*->4-2	*[4]	flat:name	basic	1-33	
+1-35	192-194	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-38	
+1-36	195-199	viņa	*	*	Gen	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msgn	*	viņš	_	_	*->4-3	*[4]	det	basic	1-37	
+1-37	200-209	vietnieku	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	vietnieks	_	_	*->5-1	*[5]	nmod	basic	1-38	
+1-38	210-217	Andreju	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	*	Andrejs	person[7]	*[7]	*->5-2	*[5]	conj	basic	1-16	
+1-39	218-225	Stalažu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	*	Stalažs	person[7]	*[7]	*->5-2	*[5]	flat:name	basic	1-38	
+1-40	225-226	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	*->5-2	*[5]	punct	basic	1-4	
 
 #Text=Tāpat birojs aizturēja Daugavpils uzņēmēju Mihailu Paladiju un uzlika arestu viņam piederošajiem 100% SIA "Būvenergoserviss" kapitāldaļu.
-2-1	228-233	Tāpat	_	_	_	_	_	_	_	_	_	_	_	_	q	tāpat	_	_	_	_	discourse	basic	2-3	
-2-2	234-240	birojs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	birojs	_	_	_	_	nsubj	basic	2-3	
-2-3	241-250	aizturēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	aizturēt	_	_	_	_	root	basic	2-3	
-2-4	251-261	Daugavpils	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg6	Daugavpils	GPE	*	*[6]	*->6-1	nmod	basic	2-5	
-2-5	262-270	uzņēmēju	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	uzņēmējs	_	_	*[6]	*->6-1	nmod	basic	2-6	
-2-6	271-278	Mihailu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	Mihails	person[8]	*[8]	*[6]	*->6-2	obj	basic	2-3	
-2-7	279-287	Paladiju	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	Paladijs	person[8]	*[8]	*[6]	*->6-2	flat:name	basic	2-6	
-2-8	288-290	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	2-9	
-2-9	291-297	uzlika	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	uzlikt	_	_	_	_	conj	basic	2-3	
-2-10	298-304	arestu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	arests	_	_	_	_	obj	basic	2-9	
-2-11	305-310	viņam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msdn	viņš	_	_	*[6]	*->6-3	det	basic	2-12	
-2-12	311-324	piederošajiem	Masc	Plur	Dat	Pos	*	Pres	*	Pass	*	Aspect=Imp\|Case=Dat\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Imp	vmnpdmpdapyp	piederēt	_	_	_	_	amod	basic	2-14	
-2-13	325-328	100	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	100	_	_	_	_	nummod	basic	2-14	
-2-14	328-329	%	_	_	_	_	_	_	_	_	_	_	_	_	xx	%	_	_	_	_	iobj	basic	2-9	
-2-15	330-333	SIA	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	SIA	organization[9]	*[9]	*[7]	*->7-1	nmod	basic	2-17	
-2-16	334-335	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[9]	*[9]	*[7]	*->7-1	punct	basic	2-17	
-2-17	335-351	Būvenergoserviss	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	būvenergoserviss	organization[9]	*[9]	*[7]	*->7-1	nmod	basic	2-19	
-2-18	351-352	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[9]	*[9]	*[7]	*->7-1	punct	basic	2-17	
-2-19	353-364	kapitāldaļu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	kapitāldaļa	_	_	_	_	nmod	basic	2-14	
-2-20	364-365	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-3	
+2-1	228-233	Tāpat	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tāpat	_	_	_	_	discourse	basic	2-3	
+2-2	234-240	birojs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	birojs	_	_	_	_	nsubj	basic	2-3	
+2-3	241-250	aizturēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist330an	*	aizturēt	_	_	_	_	root	basic	2-3	
+2-4	251-261	Daugavpils	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg6	*	Daugavpils	GPE	*	*->6-1	*[6]	nmod	basic	2-5	
+2-5	262-270	uzņēmēju	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	uzņēmējs	_	_	*->6-1	*[6]	nmod	basic	2-6	
+2-6	271-278	Mihailu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	*	Mihails	person[8]	*[8]	*->6-2	*[6]	obj	basic	2-3	
+2-7	279-287	Paladiju	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	*	Paladijs	person[8]	*[8]	*->6-2	*[6]	flat:name	basic	2-6	
+2-8	288-290	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-9	
+2-9	291-297	uzlika	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist130an	*	uzlikt	_	_	_	_	conj	basic	2-3	
+2-10	298-304	arestu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	arests	_	_	_	_	obj	basic	2-9	
+2-11	305-310	viņam	*	*	Dat	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msdn	*	viņš	_	_	*->6-3	*[6]	det	basic	2-12	
+2-12	311-324	piederošajiem	*	Imp	Dat	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Pres	*	Aspect=Imp\|Case=Dat\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdmpdapyp	*	piederēt	_	_	_	_	amod	basic	2-14	
+2-13	325-328	100	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	100	_	_	_	_	nummod	basic	2-14	
+2-14	328-329	%	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	xx	*	%	_	_	_	_	iobj	basic	2-9	
+2-15	330-333	SIA	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	*	SIA	organization[9]	*[9]	*->7-1	*[7]	nmod	basic	2-17	
+2-16	334-335	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[9]	*[9]	*->7-1	*[7]	punct	basic	2-17	
+2-17	335-351	Būvenergoserviss	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	būvenergoserviss	organization[9]	*[9]	*->7-1	*[7]	nmod	basic	2-19	
+2-18	351-352	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[9]	*[9]	*->7-1	*[7]	punct	basic	2-17	
+2-19	353-364	kapitāldaļu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	kapitāldaļa	_	_	_	_	nmod	basic	2-14	
+2-20	364-365	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-3	
 
 #Text=Šis uzņēmums iepriekš saņēmis dažādus "Latvenergo" pasūtījumus.
-3-1	367-370	Šis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	šis	_	_	*[7]	*->7-2	det	basic	3-2	
-3-2	371-379	uzņēmums	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	uzņēmums	_	_	*[7]	*->7-2	nsubj	basic	3-4	
-3-3	380-388	iepriekš	_	_	_	_	_	_	_	_	_	_	_	_	r0t	iepriekš	_	_	_	_	advmod	basic	3-4	
-3-4	389-396	saņēmis	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnasnp	saņemt	_	_	_	_	root	basic	3-4	
-3-5	397-404	dažādus	Masc	Plur	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpanp	dažāds	_	_	_	_	amod	basic	3-9	
-3-6	405-406	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[10]	*[10]	_	_	punct	basic	3-7	
-3-7	406-416	Latvenergo	_	_	_	_	_	_	_	_	_	_	_	_	np0000	Latvenergo	organization[10]	*[10]	_	_	nmod	basic	3-9	
-3-8	416-417	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[10]	*[10]	_	_	punct	basic	3-7	
-3-9	418-429	pasūtījumus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	pasūtījums	_	_	_	_	obj	basic	3-4	
-3-10	429-430	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-4	
+3-1	367-370	Šis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	*	šis	_	_	*->7-2	*[7]	det	basic	3-2	
+3-2	371-379	uzņēmums	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	uzņēmums	_	_	*->7-2	*[7]	nsubj	basic	3-4	
+3-3	380-388	iepriekš	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	iepriekš	_	_	_	_	advmod	basic	3-4	
+3-4	389-396	saņēmis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnasnp	*	saņemt	_	_	_	_	root	basic	3-4	
+3-5	397-404	dažādus	*	*	Acc	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpanp	*	dažāds	_	_	_	_	amod	basic	3-9	
+3-6	405-406	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[10]	*[10]	_	_	punct	basic	3-7	
+3-7	406-416	Latvenergo	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	np0000	*	Latvenergo	organization[10]	*[10]	_	_	nmod	basic	3-9	
+3-8	416-417	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[10]	*[10]	_	_	punct	basic	3-7	
+3-9	418-429	pasūtījumus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	pasūtījums	_	_	_	_	obj	basic	3-4	
+3-10	429-430	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-4	

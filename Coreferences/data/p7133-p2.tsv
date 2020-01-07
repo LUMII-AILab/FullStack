@@ -1,0 +1,38 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=«Pirtī mana dvēselīte ar Dieviņu runājās.
+1-1	0-1	«	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	«	_	_	_	_	punct	basic	1-7	
+1-2	1-6	Pirtī	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl6	*	pirts	_	_	_	_	obl	basic	1-7	
+1-3	7-11	mana	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0fsnn	*	mana	_	_	*->2-1	*[2]	det	basic	1-4	
+1-4	12-21	dvēselīte	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	dvēselīte	_	_	_	_	nsubj	basic	1-7	
+1-5	22-24	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	1-6	
+1-6	25-32	Dieviņu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	*	Dieviņš	person	*	_	_	iobj	basic	1-7	
+1-7	33-40	runājās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmyisi230an	*	runāties	_	_	_	_	root	basic	1-7	
+1-8	40-41	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-7	
+
+#Text=Neaizmirstama pieredze,» Lauris Reiniks ziņo pie attēla, kurā, iespējams, redzams viņš pats.
+2-1	43-56	Neaizmirstama	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	*	neaizmirstams	_	_	_	_	amod	basic	2-2	
+2-2	57-65	pieredze	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	pieredze	_	_	_	_	parataxis	basic	2-7	
+2-3	65-66	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-2	
+2-4	66-67	»	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	»	_	_	_	_	punct	basic	2-2	
+2-5	68-74	Lauris	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	*	Lauris	person[1]	https://en.wikipedia.org/wiki/Lauris\_Reiniks[1]	*->2-2	*[2]	nsubj	basic	2-7	
+2-6	75-82	Reiniks	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Reiniks	person[1]	https://en.wikipedia.org/wiki/Lauris\_Reiniks[1]	*->2-2	*[2]	flat:name	basic	2-5	
+2-7	83-87	ziņo	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt230an	*	ziņot	_	_	_	_	root	basic	2-7	
+2-8	88-91	pie	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pie	_	_	*->1-1	*[1]	case	basic	2-9	
+2-9	92-98	attēla	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	attēls	_	_	*->1-1	*[1]	obl	basic	2-7	
+2-10	98-99	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-15	
+2-11	100-104	kurā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsln	*	kura	_	_	*->1-2	*[1]	obl	basic	2-15	
+2-12	104-105	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-13	
+2-13	106-115	iespējams	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	iespējams	_	_	_	_	discourse	basic	2-15	
+2-14	115-116	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-13	
+2-15	117-124	redzams	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Pres	*	Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdmsnppnpn	*	redzēt	_	_	_	_	acl	basic	2-9	
+2-16	125-129	viņš	*	*	Nom	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msnn	*	viņš	_	_	*->2-3	*[2]	nsubj	basic	2-15	
+2-17	130-134	pats	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msnn	*	pats	_	_	*->2-3	*[2]	compound	basic	2-16	
+2-18	134-135	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-7	

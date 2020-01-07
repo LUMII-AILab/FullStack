@@ -1,0 +1,106 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Visa tā rezultātā, cienītie kolēģi no pozīcijas un no opozīcijas, izanalizēsim visu!
+1-1	0-4	Visa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msgn	*	viss	_	_	_	_	det	basic	1-3	
+1-2	5-7	tā	*	*	Gen	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msgn	*	tas	_	_	_	_	compound	basic	1-1	
+1-3	8-17	rezultātā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	rezultāts	_	_	_	_	obl	basic	1-13	
+1-4	17-18	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-6	
+1-5	19-27	cienītie	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmpnpsypn	*	cienīt	_	_	*->2-1	*[2]	amod	basic	1-6	
+1-6	28-34	kolēģi	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	*	kolēģis	_	_	*->2-1	*[2]	vocative	basic	1-13	
+1-7	35-37	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	*->2-1	*[2]	case	basic	1-8	
+1-8	38-47	pozīcijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	pozīcija	_	_	*->2-1	*[2]	obl	basic	1-6	
+1-9	48-50	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	*->2-1	*[2]	cc	basic	1-11	
+1-10	51-53	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	*->2-1	*[2]	case	basic	1-11	
+1-11	54-64	opozīcijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	opozīcija	_	_	*->2-1	*[2]	conj	basic	1-8	
+1-12	64-65	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-6	
+1-13	66-78	izanalizēsim	*	*	*	*	*	*	Ind	*	*	Plur	1	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmnift21pan	*	izanalizēt	_	_	_	_	root	basic	1-13	
+1-14	79-83	visu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msan	*	viss	_	_	_	_	obj	basic	1-13	
+1-15	83-84	!	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	!	_	_	_	_	punct	basic	1-13	
+
+#Text=Netrakosim!
+2-1	86-96	Netrakosim	*	*	*	*	*	*	Ind	*	*	Plur	1	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Neg\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmnifi21pay	*	netrakot	_	_	_	_	root	basic	2-1	
+2-2	96-97	!	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	!	_	_	_	_	punct	basic	2-1	
+
+#Text=Mums nav nekur jāskrien, nekādi termiņi te nav jānoliek!
+3-1	99-103	Mums	*	*	Dat	*	*	*	*	*	*	Plur	1	*	*	*	*	*	Case=Dat\|Number=Plur\|Person=1\|PronType=Prs	*	*	pp10pdn	*	mēs	_	_	*->2-2	*[2]	nsubj	basic	3-4	
+3-2	104-107	nav	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30ay	*	nebūt	_	_	_	_	aux	basic	3-4	
+3-3	108-113	nekur	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Int,Neg	*	*	r0p	*	nekur	_	_	_	_	advmod	basic	3-4	
+3-4	114-122	jāskrien	*	*	*	*	*	*	Nec	*	*	*	*	*	*	*	*	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vmnd0t100an	*	skriet	_	_	_	_	root	basic	3-4	
+3-5	122-123	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-4	
+3-6	124-130	nekādi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Ind,Neg	*	*	pi0mpny	*	nekāds	_	_	_	_	det	basic	3-7	
+3-7	131-138	termiņi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	termiņš	_	_	_	_	obj	basic	3-10	
+3-8	139-141	te	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0p	*	te	_	_	_	_	advmod	basic	3-10	
+3-9	142-145	nav	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30ay	*	nebūt	_	_	_	_	aux	basic	3-10	
+3-10	146-154	jānoliek	*	*	*	*	*	*	Nec	*	*	*	*	*	*	*	*	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vmnd0t100an	*	nolikt	_	_	_	_	conj	basic	3-4	
+3-11	154-155	!	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	!	_	_	_	_	punct	basic	3-4	
+
+#Text=Tas ir pilnīgi lieki.
+4-1	157-160	Tas	*	*	Nom	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msnn	*	tas	_	_	_	_	nsubj	basic	4-4	
+4-2	161-163	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	4-4	
+4-3	164-171	pilnīgi	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	pilnīgi	_	_	_	_	advmod	basic	4-4	
+4-4	172-177	lieki	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	lieki	_	_	_	_	root	basic	4-4	
+4-5	177-178	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	4-4	
+
+#Text=Saeima ir galvenā valsts iestāde Latvijā, un, ja mums šeit vairāk vai mazāk valdīs miers...
+5-1	180-186	Saeima	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Saeima	_	_	_	_	nsubj	basic	5-5	
+5-2	187-189	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	5-5	
+5-3	190-197	galvenā	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsnyp	*	galvenā	_	_	_	_	amod	basic	5-5	
+5-4	198-204	valsts	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	*	valsts	_	_	_	_	nmod	basic	5-5	
+5-5	205-212	iestāde	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	iestāde	_	_	_	_	root	basic	5-5	
+5-6	213-220	Latvijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	_	_	acl	basic	5-5	
+5-7	220-221	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	5-5	
+5-8	222-224	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	5-5	
+5-9	224-225	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	5-5	
+5-10	226-228	ja	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ja	_	_	_	_	mark	basic	5-16	
+5-11	229-233	mums	*	*	Dat	*	*	*	*	*	*	Plur	1	*	*	*	*	*	Case=Dat\|Number=Plur\|Person=1\|PronType=Prs	*	*	pp10pdn	*	mēs	_	_	*->2-3	*[2]	obl	basic	5-16	
+5-12	234-238	šeit	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0p	*	šeit	_	_	_	_	advmod	basic	5-16	
+5-13	239-245	vairāk	*	*	*	*	Cmp	*	*	*	*	*	*	*	*	*	*	*	Degree=Cmp	*	*	rcq	*	daudz	_	_	_	_	advmod	basic	5-16	
+5-14	246-249	vai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	vai	_	_	_	_	cc	basic	5-15	
+5-15	250-255	mazāk	*	*	*	*	Cmp	*	*	*	*	*	*	*	*	*	*	*	Degree=Cmp	*	*	rcq	*	mazi	_	_	_	_	conj	basic	5-13	
+5-16	256-262	valdīs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmnift330an	*	valdīt	_	_	_	_	advcl	basic	5-5	
+5-17	263-268	miers	*	*	Nom	*	*	Masc	*	*	*	Coll	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Coll	*	*	ncmvn1	*	miers	_	_	_	_	nsubj	basic	5-16	
+5-18	268-271	...	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	...	_	_	_	_	punct	basic	5-5	
+
+#Text=Nu to saticību – to mēs piedomāsim klāt.
+6-1	273-275	Nu	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	nu	_	_	_	_	discourse	basic	6-3	
+6-2	276-278	to	*	*	Acc	*	*	Fem	*	*	*	Sing	3	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3fsan	*	tā	_	_	_	_	det	basic	6-3	
+6-3	279-287	saticību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	saticība	_	_	*->1-1	*[1]	acl	basic	6-5	
+6-4	288-289	–	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	–	_	_	_	_	punct	basic	6-3	
+6-5	290-292	to	*	*	Acc	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msan	*	tas	_	_	_	_	obj	basic	6-7	
+6-6	293-296	mēs	*	*	Nom	*	*	*	*	*	*	Plur	1	*	*	*	*	*	Case=Nom\|Number=Plur\|Person=1\|PronType=Prs	*	*	pp10pnn	*	mēs	_	_	*->2-4	*[2]	nsubj	basic	6-7	
+6-7	297-307	piedomāsim	*	*	*	*	*	*	Ind	*	*	Plur	1	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmnift21pan	*	piedomāt	_	_	_	_	root	basic	6-7	
+6-8	308-312	klāt	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0p	*	klāt	_	_	_	_	advmod	basic	6-7	
+6-9	312-313	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	6-7	
+
+#Text=Ja tas šeit būs, tad arī tauta nomierināsies.
+7-1	315-317	Ja	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ja	_	_	_	_	mark	basic	7-4	
+7-2	318-321	tas	*	*	Nom	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msnn	*	tas	_	_	*->1-2	*[1]	nsubj	basic	7-4	
+7-3	322-326	šeit	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0p	*	šeit	_	_	_	_	advmod	basic	7-4	
+7-4	327-330	būs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vcnifii30an	*	būt	_	_	_	_	advcl	basic	7-9	
+7-5	330-331	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	7-4	
+7-6	332-335	tad	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	*	tad	_	_	_	_	advmod	basic	7-9	
+7-7	336-339	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	7-8	
+7-8	340-345	tauta	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	tauta	_	_	_	_	nsubj	basic	7-9	
+7-9	346-359	nomierināsies	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmyifi330an	*	nomierināties	_	_	_	_	root	basic	7-9	
+7-10	359-360	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	7-9	
+
+#Text=Mēģināsim saliedēt tautu, nevis pretstatīt 600 tūkstošus pret 900 tūkstošiem!
+8-1	362-371	Mēģināsim	*	*	*	*	*	*	Ind	*	*	Plur	1	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vonifi31pan	*	mēģināt	_	_	_	_	root	basic	8-1	
+8-2	372-380	saliedēt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	*	saliedēt	_	_	_	_	xcomp	basic	8-1	
+8-3	381-386	tautu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	tauta	_	_	_	_	obj	basic	8-2	
+8-4	386-387	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	8-6	
+8-5	388-393	nevis	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	nevis	_	_	_	_	cc	basic	8-6	
+8-6	394-404	pretstatīt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	*	pretstatīt	_	_	_	_	conj	basic	8-2	
+8-7	405-408	600	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	600	_	_	_	_	nummod	basic	8-8	
+8-8	409-418	tūkstošus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa2	*	tūkstotis	_	_	_	_	obj	basic	8-6	
+8-9	419-423	pret	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	pret	_	_	_	_	case	basic	8-11	
+8-10	424-427	900	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	900	_	_	_	_	nummod	basic	8-11	
+8-11	428-438	tūkstošiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd2	*	tūkstotis	_	_	_	_	iobj	basic	8-6	
+8-12	438-439	!	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	!	_	_	_	_	punct	basic	8-1	

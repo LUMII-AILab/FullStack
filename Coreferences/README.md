@@ -6,5 +6,5 @@
 
 ## Current statistics
 
-* 2,11 paragraphs (text units)
-* 11,003 coreferences
+* __3,947__ paragraphs (text units)
+* __23,278__ anaphoric references

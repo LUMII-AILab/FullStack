@@ -1,0 +1,42 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Šodien plkst.10 Vidzemes apgabaltiesa Valmierā turpinās skatīt civillietu, kurā kāds uzņēmums vēlas piedzīt 147 330 eiro no pazīstamā autosportista Haralda Šlēgelmilha un viņa tēva Vladislava, aģentūra LETA noskaidroja tiesā.
+1-1	0-6	Šodien	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	šodien	time[1]	*[1]	_	_	advmod	basic	1-7	
+1-2	7-13	plkst.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	*	plkst.	time[1]	*[1]	_	_	obl	basic	1-3	
+1-3	13-15	10	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	10	time[1]	*[1]	_	_	nummod	basic	1-7	
+1-4	16-24	Vidzemes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	*	Vidzeme	organization[2]|location[3]	*[2]|https://en.wikipedia.org/wiki/Vidzeme[3]	_	_	nmod	basic	1-5	
+1-5	25-37	apgabaltiesa	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	apgabaltiesa	organization[2]	*[2]	_	_	nsubj	basic	1-7	
+1-6	38-46	Valmierā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Valmiera	GPE	https://en.wikipedia.org/wiki/Valmiera	_	_	obl	basic	1-7	
+1-7	47-55	turpinās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	Fin	Act	vpnifi330an	*	turpināt	_	_	_	_	ccomp	basic	1-30	
+1-8	56-62	skatīt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t3000n	*	skatīt	_	_	_	_	xcomp	basic	1-7	
+1-9	63-73	civillietu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	civillieta	_	_	*->1-1	*[1]	obj	basic	1-8	
+1-10	73-74	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-14	
+1-11	75-79	kurā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	Rel	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsln	*	kura	_	_	*->1-2	*[1]	obl	basic	1-14	
+1-12	80-84	kāds	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	Ind	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Ind	*	*	pi0msnn	*	kāds	_	_	_	_	det	basic	1-13	
+1-13	85-93	uzņēmums	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	uzņēmums	_	_	_	_	nsubj	basic	1-14	
+1-14	94-99	vēlas	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	voyipi330an	*	vēlēties	_	_	_	_	acl	basic	1-9	
+1-15	100-107	piedzīt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t1000n	*	piedzīt	_	_	_	_	xcomp	basic	1-14	
+1-16	108-115	147 330	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	147 330	money[4]	*[4]	_	_	nummod	basic	1-17	
+1-17	116-120	eiro	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	nc0000	*	eiro	money[4]	*[4]	_	_	iobj	basic	1-15	
+1-18	121-123	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case	basic	1-21	
+1-19	124-133	pazīstamā	*	*	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Pres	*	Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsgppypn	*	pazīt	_	_	_	_	amod	basic	1-20	
+1-20	134-147	autosportista	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	autosportists	_	_	*->3-1	*[3]	nmod	basic	1-21	
+1-21	148-155	Haralda	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Haralds	person[5]	https://en.wikipedia.org/wiki/Harald\_Schlegelmilch[5]	*->3-2	*[3]	obl	basic	1-15	
+1-22	156-167	Šlēgelmilha	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Šlēgelmilhs	person[5]	https://en.wikipedia.org/wiki/Harald\_Schlegelmilch[5]	*->3-2|*->2-1	*[3]|*[2]	flat:name	basic	1-21	
+1-23	168-170	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-26	
+1-24	171-175	viņa	*	*	Gen	*	*	Masc	*	*	*	Sing	3	*	Prs	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msgn	*	viņš	_	_	*->3-3	*[3]	det	basic	1-25	
+1-25	176-180	tēva	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	tēvs	_	_	*->2-2	*[2]	nmod	basic	1-26	
+1-26	181-191	Vladislava	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Vladislavs	person	*	*->2-3	*[2]	conj	basic	1-21	
+1-27	191-192	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-7	
+1-28	193-201	aģentūra	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	aģentūra	_	_	*->4-1	*[4]	nmod	basic	1-29	
+1-29	202-206	LETA	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	LETA	organization	https://en.wikipedia.org/wiki/LETA	*->4-2	*[4]	nsubj	basic	1-30	
+1-30	207-218	noskaidroja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist230an	*	noskaidrot	_	_	_	_	root	basic	1-30	
+1-31	219-224	tiesā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	tiesa	_	_	_	_	obl	basic	1-30	
+1-32	224-225	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-30	

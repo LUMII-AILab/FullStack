@@ -1,0 +1,97 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Savukārt plkst.14 stāvlaukumā pie Rožkalnu kultūras nama notiks deju festivāls "Lai katrs mirklis gaismas piepildīts, mīlestībā ieskauts un sasildīts".
+1-1	0-8	Savukārt	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	savukārt	_	_	_	_	advmod	basic	1-9	
+1-2	9-15	plkst.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yr	*	plkst.	time[1]	*[1]	_	_	advmod	basic	1-3	
+1-3	15-17	14	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	14	time[1]	*[1]	_	_	nummod	basic	1-9	
+1-4	18-29	stāvlaukumā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	stāvlaukums	_	_	_	_	obl	basic	1-9	
+1-5	30-33	pie	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pie	_	_	_	_	case	basic	1-8	
+1-6	34-42	Rožkalnu	*	*	Gen	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	npmdg1	*	Rožkalni	location[2]|location[3]	*[2]|*[3]	_	_	nmod	basic	1-8	
+1-7	43-51	kultūras	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	kultūra	location[2]	*[2]	_	_	nmod	basic	1-8	
+1-8	52-56	nama	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	nams	location[2]	*[2]	_	_	obl	basic	1-4	
+1-9	57-63	notiks	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnifi130an	*	notikt	_	_	_	_	root	basic	1-9	
+1-10	64-68	deju	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	deja	_	_	*->1-1	*[1]	nmod	basic	1-11	
+1-11	69-78	festivāls	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	festivāls	_	_	*->1-1	*[1]	nmod	basic	1-17	
+1-12	79-80	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	event[4]	*[4]	*->1-2	*[1]	punct	basic	1-17	
+1-13	80-83	Lai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	lai	event[4]	*[4]	*->1-2	*[1]	discourse	basic	1-17	
+1-14	84-89	katrs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	Tot	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msnn	*	katrs	event[4]	*[4]	*->1-2	*[1]	det	basic	1-15	
+1-15	90-97	mirklis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	mirklis	event[4]	*[4]	*->1-2	*[1]	nsubj:pass	basic	1-17	
+1-16	98-105	gaismas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	gaisma	event[4]	*[4]	*->1-2	*[1]	obl	basic	1-17	
+1-17	106-116	piepildīts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsnpsnpn	*	piepildīt	event[4]	*[4]	*->1-2	*[1]	nsubj	basic	1-9	
+1-18	116-117	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	event[4]	*[4]	*->1-2	*[1]	punct	basic	1-20	
+1-19	118-127	mīlestībā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	mīlestība	event[4]	*[4]	*->1-2	*[1]	obl	basic	1-20	
+1-20	128-136	ieskauts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsnpsnpn	*	ieskaut	event[4]	*[4]	*->1-2	*[1]	conj	basic	1-17	
+1-21	137-139	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	event[4]	*[4]	*->1-2	*[1]	cc	basic	1-22	
+1-22	140-149	sasildīts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsnpsnpn	*	sasildīt	event[4]	*[4]	*->1-2	*[1]	conj	basic	1-17	
+1-23	149-150	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	event[4]	*[4]	*->1-2	*[1]	punct	basic	1-17	
+1-24	150-151	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-9	
+
+#Text=Pasākumā piedalīsies Vārkavas novada pašdarbnieku kolektīvi: "Pašām patīk", "Vecvārkava", "Odziņas" un "Dzīves virpulī", kā arī viesi - senioru deju kolektīvi "Atvasara" no Balviem, Kubulu pagasta "Rūtas", Andrupenes pagasta "Veldzītes", Višķu pagasta "Magones" un Līvānu "Rūžeņas".
+2-1	152-160	Pasākumā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	pasākums	_	_	_	_	obl	basic	2-2	
+2-2	161-172	piedalīsies	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Fut\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyifi330an	*	piedalīties	_	_	_	_	root	basic	2-2	
+2-3	173-181	Vārkavas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Vārkava	GPE[5]|location[6]	https://en.wikipedia.org/wiki/Vārkava\_Municipality[5]|https://lv.wikipedia.org/wiki/Vārkava[6]	*->3-1	*[3]	nmod	basic	2-4	
+2-4	182-188	novada	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	novads	GPE[5]	https://en.wikipedia.org/wiki/Vārkava\_Municipality[5]	*->3-1	*[3]	nmod	basic	2-5	
+2-5	189-201	pašdarbnieku	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	pašdarbnieks	_	_	*->3-1	*[3]	nmod	basic	2-6	
+2-6	202-211	kolektīvi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	kolektīvs	_	_	*->3-1	*[3]	nsubj	basic	2-2	
+2-7	211-212	:	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zo	*	:	_	_	_	_	punct	basic	2-10	
+2-8	213-214	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[7]	*[7]	*->3-2	*[3]	punct	basic	2-10	
+2-9	214-219	Pašām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	Tot	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur\|PronType=Tot	*	*	pg0fpdn	*	pati	organization[7]	*[7]	*->3-2	*[3]	obl	basic	2-10	
+2-10	220-225	patīk	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipi130an	*	patikt	organization[7]	*[7]	*->3-2	*[3]	dep	basic	2-6	
+2-11	225-226	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[7]	*[7]	*->3-2	*[3]	punct	basic	2-10	
+2-12	226-227	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	*->3-2	*[3]	punct	basic	2-14	
+2-13	228-229	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[8]	*[8]	*->3-2	*[3]	punct	basic	2-14	
+2-14	229-239	Vecvārkava	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Vecvārkava	organization[8]	*[8]	*->3-2	*[3]	conj	basic	2-10	
+2-15	239-240	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[8]	*[8]	*->3-2	*[3]	punct	basic	2-14	
+2-16	240-241	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	*->3-2	*[3]	punct	basic	2-18	
+2-17	242-243	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[9]	*[9]	*->3-2	*[3]	punct	basic	2-18	
+2-18	243-250	Odziņas	*	*	Nom	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Ptan	*	*	npfdn4	*	Odziņas	organization[9]	*[9]	*->3-2	*[3]	conj	basic	2-10	
+2-19	250-251	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[9]	*[9]	*->3-2	*[3]	punct	basic	2-18	
+2-20	252-254	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	*->3-2	*[3]	cc	basic	2-23	
+2-21	255-256	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[10]	*[10]	*->3-2	*[3]	punct	basic	2-23	
+2-22	256-262	Dzīves	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	dzīve	organization[10]	*[10]	*->3-2	*[3]	nmod	basic	2-23	
+2-23	263-270	virpulī	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	*	virpulis	organization[10]	*[10]	*->3-2	*[3]	conj	basic	2-10	
+2-24	270-271	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[10]	*[10]	*->3-2	*[3]	punct	basic	2-23	
+2-25	271-272	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-28	
+2-26	273-275	kā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	kā	_	_	_	_	cc	basic	2-28	
+2-27	276-279	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	arī	_	_	_	_	fixed	basic	2-26	
+2-28	280-285	viesi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn2	*	viesis	_	_	_	_	conj	basic	2-6	
+2-29	286-287	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	-	_	_	_	_	punct	basic	2-34	
+2-30	288-295	senioru	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	seniors	_	_	*->2-1	*[2]	nmod	basic	2-32	
+2-31	296-300	deju	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	deja	_	_	*->2-1	*[2]	nmod	basic	2-32	
+2-32	301-310	kolektīvi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	kolektīvs	_	_	*->2-1	*[2]	nmod	basic	2-34	
+2-33	311-312	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[11]	*[11]	*->2-2	*[2]	punct	basic	2-34	
+2-34	312-320	Atvasara	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	atvasara	organization[11]	*[11]	*->2-2	*[2]	acl	basic	2-28	
+2-35	320-321	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[11]	*[11]	*->2-2	*[2]	punct	basic	2-34	
+2-36	322-324	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	no	_	_	*->2-2	*[2]	case	basic	2-37	
+2-37	325-332	Balviem	*	*	Dat	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Ptan	*	*	npmdd1	*	Balvi	GPE	https://en.wikipedia.org/wiki/Balvi	*->2-2	*[2]	nmod	basic	2-34	
+2-38	332-333	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	*->2-2	*[2]	punct	basic	2-42	
+2-39	334-340	Kubulu	*	*	Gen	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	npmdg1	*	Kubuli	GPE[12]	https://en.wikipedia.org/wiki/Kubuli\_Parish[12]	*->2-2	*[2]	nmod	basic	2-40	
+2-40	341-348	pagasta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	pagasts	GPE[12]	https://en.wikipedia.org/wiki/Kubuli\_Parish[12]	*->2-2	*[2]	nmod	basic	2-42	
+2-41	349-350	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[13]	*[13]	*->2-2	*[2]	punct	basic	2-42	
+2-42	350-355	Rūtas	*	*	Nom	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Ptan	*	*	npfdn4	*	Rūtas	organization[13]	*[13]	*->2-2	*[2]	conj	basic	2-34	
+2-43	355-356	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[13]	*[13]	*->2-2	*[2]	punct	basic	2-42	
+2-44	356-357	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	*->2-2	*[2]	punct	basic	2-48	
+2-45	358-368	Andrupenes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	*	Andrupene	GPE[14]	https://en.wikipedia.org/wiki/Andrupene\_Parish[14]	*->2-2	*[2]	nmod	basic	2-46	
+2-46	369-376	pagasta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	pagasts	GPE[14]	https://en.wikipedia.org/wiki/Andrupene\_Parish[14]	*->2-2	*[2]	nmod	basic	2-48	
+2-47	377-378	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[15]	*[15]	*->2-2	*[2]	punct	basic	2-48	
+2-48	378-387	Veldzītes	*	*	Nom	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Ptan	*	*	npfdn5	*	Veldzītes	organization[15]	*[15]	*->2-2	*[2]	conj	basic	2-34	
+2-49	387-388	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[15]	*[15]	*->2-2	*[2]	punct	basic	2-48	
+2-50	388-389	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	*->2-2	*[2]	punct	basic	2-54	
+2-51	390-395	Višķu	*	*	Gen	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	npmdg2	*	Višķi	GPE[16]	https://en.wikipedia.org/wiki/Višķi\_Parish[16]	*->2-2	*[2]	nmod	basic	2-52	
+2-52	396-403	pagasta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	pagasts	GPE[16]	https://en.wikipedia.org/wiki/Višķi\_Parish[16]	*->2-2	*[2]	nmod	basic	2-54	
+2-53	404-405	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[17]	*[17]	*->2-2	*[2]	punct	basic	2-54	
+2-54	405-412	Magones	*	*	Nom	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Ptan	*	*	npfdn5	*	Magones	organization[17]	*[17]	*->2-2	*[2]	conj	basic	2-34	
+2-55	412-413	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[17]	*[17]	*->2-2	*[2]	punct	basic	2-54	
+2-56	414-416	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	*->2-2	*[2]	cc	basic	2-59	
+2-57	417-423	Līvānu	*	*	Gen	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Ptan	*	*	npfdg1	*	Līvāni	GPE	https://en.wikipedia.org/wiki/Līvāni	*->2-2	*[2]	nmod	basic	2-59	
+2-58	424-425	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[18]	*[18]	*->2-2	*[2]	punct	basic	2-59	
+2-59	425-432	Rūžeņas	*	*	Nom	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Ptan	*	*	npfdn4	*	Rūžeņas	organization[18]	*[18]	*->2-2	*[2]	conj	basic	2-34	
+2-60	432-433	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[18]	*[18]	*->2-2	*[2]	punct	basic	2-59	
+2-61	433-434	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-2	

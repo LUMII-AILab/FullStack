@@ -1,0 +1,30 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Tam sekoja slepkavība, ko viņš pastrādāja grupā, iepriekš vienojoties.
+1-1	0-3	Tam	*	*	Dat	*	*	Masc	*	*	*	Sing	3	*	Dem	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msdn	*	tas	_	_	_	_	iobj	basic	1-2	
+1-2	4-10	sekoja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnisi230an	*	sekot	_	_	_	_	root	basic	1-2	
+1-3	11-21	slepkavība	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	slepkavība	_	_	*->1-1	*[1]	nsubj	basic	1-2	
+1-4	21-22	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-7	
+1-5	23-25	ko	*	*	Acc	*	*	*	*	*	*	*	*	*	Rel	*	*	*	Case=Acc\|PronType=Rel	*	*	pr000an	*	kas	_	_	*->1-2	*[1]	obj	basic	1-7	
+1-6	26-30	viņš	*	*	Nom	*	*	Masc	*	*	*	Sing	3	*	Prs	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msnn	*	viņš	_	_	*->2-1	*[2]	nsubj	basic	1-7	
+1-7	31-41	pastrādāja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist230an	*	pastrādāt	_	_	_	_	acl	basic	1-3	
+1-8	42-47	grupā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	grupa	_	_	_	_	obl	basic	1-7	
+1-9	47-48	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-11	
+1-10	49-57	iepriekš	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	iepriekš	_	_	_	_	advmod	basic	1-11	
+1-11	58-69	vienojoties	*	*	*	*	*	*	*	*	*	*	*	*	*	Yes	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Conv	Conv	*	vmypu0000000n	*	vienoties	_	_	_	_	advcl	basic	1-7	
+1-12	69-70	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-2	
+
+#Text=Cietumā Telešs pavadīja 10 gadus.
+2-1	71-78	Cietumā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	cietums	_	_	_	_	obl	basic	2-3	
+2-2	79-85	Telešs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Telešs	person	*	*->2-2	*[2]	nsubj	basic	2-3	
+2-3	86-94	pavadīja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist330an	*	pavadīt	_	_	_	_	root	basic	2-3	
+2-4	95-97	10	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	10	time[1]	*[1]	_	_	nummod	basic	2-5	
+2-5	98-103	gadus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	gads	time[1]	*[1]	_	_	obl	basic	2-3	
+2-6	103-104	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-3	

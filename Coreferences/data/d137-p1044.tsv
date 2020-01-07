@@ -1,29 +1,29 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Pauze.
-1-1	0-5	Pauze	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	pauze	_	_	_	_	root|root	basic|enhanced	1-1|1-1	
-1-2	5-6	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-1|1-1	
+1-1	0-5	Pauze	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	pauze	_	_	_	_	root|root	basic|enhanced	1-1|1-1	
+1-2	5-6	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	1-1|1-1	
 
 #Text=Jasmīne aiziet pie loga un skatās ārā.
-2-1	8-15	Jasmīne	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	Jasmīne	person	*	*[1]	*->1-1	nsubj|nsubj	basic|enhanced	2-2|2-2	
-2-2	16-22	aiziet	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0ii000n	aiziet	_	_	_	_	root|root	basic|enhanced	2-2|2-2	
-2-3	23-26	pie	_	_	_	_	_	_	_	_	_	_	_	_	spsg	pie	_	_	_	_	case|case	basic|enhanced	2-4|2-4	
-2-4	27-31	loga	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	logs	_	_	_	_	obl|obl	basic|enhanced	2-2|2-2	
-2-5	32-34	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	2-6|2-6	
-2-6	35-41	skatās	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipt330an	skatīties	_	_	_	_	conj|conj	basic|enhanced	2-2|2-2	
-2-7	42-45	ārā	_	_	_	_	_	_	_	_	_	_	_	_	r0p	ārā	_	_	_	_	advmod|advmod	basic|enhanced	2-6|2-6	
-2-8	45-46	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	2-2|2-2	
+2-1	8-15	Jasmīne	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	*	Jasmīne	person	*	*->1-1	*[1]	nsubj|nsubj	basic|enhanced	2-2|2-2	
+2-2	16-22	aiziet	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0ii000n	*	aiziet	_	_	_	_	root|root	basic|enhanced	2-2|2-2	
+2-3	23-26	pie	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pie	_	_	_	_	case|case	basic|enhanced	2-4|2-4	
+2-4	27-31	loga	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	logs	_	_	_	_	obl|obl	basic|enhanced	2-2|2-2	
+2-5	32-34	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc|cc	basic|enhanced	2-6|2-6	
+2-6	35-41	skatās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmyipt330an	*	skatīties	_	_	_	_	conj|conj	basic|enhanced	2-2|2-2	
+2-7	42-45	ārā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0p	*	ārā	_	_	_	_	advmod|advmod	basic|enhanced	2-6|2-6	
+2-8	45-46	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	2-2|2-2	
 
 #Text=Artis pieiet viņai tuvāk.
-3-1	48-53	Artis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	Artis	person	*	_	_	nsubj|nsubj	basic|enhanced	3-2|3-2	
-3-2	54-60	pieiet	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipii30an	pieiet	_	_	_	_	root|root	basic|enhanced	3-2|3-2	
-3-3	61-66	viņai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsdn	viņa	_	_	*[1]	*->1-2	iobj|iobj	basic|enhanced	3-2|3-2	
-3-4	67-72	tuvāk	*	*	*	Cmp	*	*	*	*	*	Degree=Cmp	*	*	rcp	tuvāk	_	_	_	_	advmod|advmod	basic|enhanced	3-2|3-2	
-3-5	72-73	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	3-2|3-2	
+3-1	48-53	Artis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	*	Artis	person	*	_	_	nsubj|nsubj	basic|enhanced	3-2|3-2	
+3-2	54-60	pieiet	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipii30an	*	pieiet	_	_	_	_	root|root	basic|enhanced	3-2|3-2	
+3-3	61-66	viņai	*	*	Dat	*	*	Fem	*	*	*	Sing	3	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3fsdn	*	viņa	_	_	*->1-2	*[1]	iobj|iobj	basic|enhanced	3-2|3-2	
+3-4	67-72	tuvāk	*	*	*	*	Cmp	*	*	*	*	*	*	*	*	*	*	*	Degree=Cmp	*	*	rcp	*	tuvāk	_	_	_	_	advmod|advmod	basic|enhanced	3-2|3-2	
+3-5	72-73	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	3-2|3-2	

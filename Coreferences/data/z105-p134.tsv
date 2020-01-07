@@ -1,0 +1,80 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Ārkārtīgi nozīmīgs stratēģiskās un konkurējošās ideju ietvarošanas kanāls ir plašsaziņas līdzekļi, kas var būt labvēlīgi, neitrāli vai naidīgi noskaņoti pret kustības darbību.
+1-1	0-9	Ārkārtīgi	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpq	*	ārkārtīgi	_	_	advmod	basic	1-2	
+1-2	10-18	nozīmīgs	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	nozīmīgs	_	_	amod	basic	1-8	
+1-3	19-31	stratēģiskās	*	*	Gen	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsgyp	*	stratēģiska	_	_	amod	basic	1-7	
+1-4	32-34	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	cc	basic	1-5	
+1-5	35-47	konkurējošās	*	Imp	Gen	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Pres	*	Aspect=Imp\|Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdfsgapypn	*	konkurēt	_	_	conj	basic	1-3	
+1-6	48-53	ideju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	ideja	_	_	nmod	basic	1-7	
+1-7	54-66	ietvarošanas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsgg	*	ietvarošanas	_	_	nmod	basic	1-8	
+1-8	67-73	kanāls	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	kanāls	_	_	root	basic	1-8	
+1-9	74-76	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	cop	basic	1-8	
+1-10	77-88	plašsaziņas	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpgg	*	plašsaziņas	*->1-1	*[1]	nmod	basic	1-11	
+1-11	89-97	līdzekļi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn2	*	līdzeklis	*->1-1	*[1]	nsubj	basic	1-8	
+1-12	97-98	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-14	
+1-13	99-102	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	*->1-2	*[1]	nsubj	basic	1-14	
+1-14	103-106	var	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vonipi330an	*	varēt	_	_	acl	basic	1-11	
+1-15	107-110	būt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vcnn0ii000n	*	būt	_	_	cop	basic	1-21	
+1-16	111-120	labvēlīgi	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	labvēlīgi	_	_	advmod	basic	1-21	
+1-17	120-121	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-18	
+1-18	122-130	neitrāli	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	neitrāli	_	_	conj	basic	1-16	
+1-19	131-134	vai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	vai	_	_	cc	basic	1-20	
+1-20	135-142	naidīgi	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	naidīgi	_	_	conj	basic	1-16	
+1-21	143-152	noskaņoti	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmpnpsnpn	*	noskaņot	_	_	xcomp	basic	1-14	
+1-22	153-157	pret	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	pret	_	_	case	basic	1-24	
+1-23	158-166	kustības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	kustība	_	_	nmod	basic	1-24	
+1-24	167-174	darbību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	darbība	_	_	iobj	basic	1-21	
+1-25	174-175	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	1-8	
+
+#Text=Turklāt plašsaziņas līdzekļi mēdz ne tikai popularizēt, ignorēt vai diskreditēt kustības definētās idejas, bet arī pārformulēt (reframe) tās.
+2-1	177-184	Turklāt	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	turklāt	_	_	mark	basic	2-4	
+2-2	185-196	plašsaziņas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsgg	*	plašsaziņas	_	_	nmod	basic	2-3	
+2-3	197-205	līdzekļi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn2	*	līdzeklis	_	_	nsubj	basic	2-4	
+2-4	206-210	mēdz	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vonipi130an	*	mēgt	_	_	root	basic	2-4	
+2-5	211-213	ne	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Neg	*	*	q	*	ne	_	_	cc	basic	2-7	
+2-6	214-219	tikai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tikai	_	_	discourse	basic	2-5	
+2-7	220-231	popularizēt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	*	popularizēt	_	_	xcomp	basic	2-4	
+2-8	231-232	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	2-9	
+2-9	233-240	ignorēt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	*	ignorēt	_	_	conj	basic	2-7	
+2-10	241-244	vai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	vai	_	_	cc	basic	2-11	
+2-11	245-256	diskreditēt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	*	diskreditēt	_	_	conj	basic	2-7	
+2-12	257-265	kustības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	kustība	_	_	nmod	basic	2-13	
+2-13	266-275	definētās	*	Perf	Gen	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsgpsypn	*	definēt	_	_	amod	basic	2-14	
+2-14	276-282	idejas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	ideja	*->2-1	*[2]	obj	basic	2-7	
+2-15	282-283	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	2-18	
+2-16	284-287	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	cc	basic	2-18	
+2-17	288-291	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	discourse	basic	2-16	
+2-18	292-303	pārformulēt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	*	pārformulēt	_	_	conj	basic	2-7	
+2-19	304-305	(	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	(	_	_	punct	basic	2-20	
+2-20	305-312	reframe	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	reframe	_	_	discourse	basic	2-18	
+2-21	312-313	)	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	)	_	_	punct	basic	2-20	
+2-22	314-317	tās	*	*	Acc	*	*	Fem	*	*	*	Plur	3	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur\|Person=3\|PronType=Dem	*	*	pd3fpan	*	tā	*->2-2	*[2]	obj	basic	2-18	
+2-23	317-318	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	2-4	
+
+#Text=Prasme atrast sabiedrotos plašsaziņas līdzekļu pārstāvju vidū un efektīvi organizēt savu mediju darbību ir būtisks kustības panākumu priekšnoteikums.
+3-1	320-326	Prasme	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	prasme	_	_	nsubj	basic	3-18	
+3-2	327-333	atrast	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	*	atrast	_	_	acl	basic	3-1	
+3-3	334-345	sabiedrotos	*	*	Acc	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpayp	*	sabiedrots	_	_	obj	basic	3-2	
+3-4	346-357	plašsaziņas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsgg	*	plašsaziņas	_	_	nmod	basic	3-5	
+3-5	358-366	līdzekļu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	līdzeklis	_	_	nmod	basic	3-6	
+3-6	367-376	pārstāvju	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	pārstāvis	_	_	nmod	basic	3-7	
+3-7	377-381	vidū	*	*	Loc	*	*	Masc	*	*	*	Coll	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Coll	*	*	ncmvl3	*	vidus	_	_	obl	basic	3-2	
+3-8	382-384	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	cc	basic	3-10	
+3-9	385-393	efektīvi	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	efektīvi	_	_	advmod	basic	3-10	
+3-10	394-403	organizēt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	*	organizēt	_	_	conj	basic	3-2	
+3-11	404-408	savu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0msan	*	savs	_	_	det	basic	3-13	
+3-12	409-415	mediju	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	medijs	_	_	nmod	basic	3-13	
+3-13	416-423	darbību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	darbība	_	_	obj	basic	3-10	
+3-14	424-426	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	cop	basic	3-18	
+3-15	427-434	būtisks	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	būtisks	_	_	amod	basic	3-18	
+3-16	435-443	kustības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	kustība	_	_	nmod	basic	3-17	
+3-17	444-452	panākumu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	panākums	_	_	nmod	basic	3-18	
+3-18	453-468	priekšnoteikums	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	priekšnoteikums	_	_	root	basic	3-18	
+3-19	468-469	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	3-18	

@@ -1,0 +1,68 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Sērijā "Latvijas filma" tiek izdotas filmas, kas kļuvušas par notikumu Latvijas kultūras dzīvē.
+1-1	0-6	Sērijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	sērija	_	_	*->1-1	*[1]	nmod	basic	1-4	
+1-2	7-8	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	product[1]	*[1]	*->1-2	*[1]	punct	basic	1-4	
+1-3	8-16	Latvijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Latvija	product[1]|GPE[2]	*[1]|https://en.wikipedia.org/wiki/Latvia[2]	*->1-2	*[1]	nmod	basic	1-4	
+1-4	17-22	filma	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	filma	product[1]	*[1]	*->1-2	*[1]	obl	basic	1-7	
+1-5	22-23	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	product[1]	*[1]	*->1-2	*[1]	punct	basic	1-4	
+1-6	24-28	tiek	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vtnipi130an	*	tikt	_	_	_	_	aux:pass	basic	1-7	
+1-7	29-36	izdotas	*	Perf	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdfpnpsnpn	*	izdot	_	_	_	_	root	basic	1-7	
+1-8	37-43	filmas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	filma	_	_	*->2-1	*[2]	nsubj:pass	basic	1-7	
+1-9	43-44	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-13	
+1-10	45-48	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	Rel	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->2-2	*[2]	nsubj	basic	1-13	
+1-11	49-57	kļuvušas	*	Perf	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vtnpdfpnasnpn	*	kļūt	_	_	_	_	cop	basic	1-13	
+1-12	58-61	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	1-13	
+1-13	62-70	notikumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	notikums	_	_	_	_	acl	basic	1-8	
+1-14	71-79	Latvijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	_	_	nmod	basic	1-16	
+1-15	80-88	kultūras	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	kultūra	_	_	_	_	nmod	basic	1-16	
+1-16	89-94	dzīvē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	*	dzīve	_	_	_	_	acl	basic	1-13	
+1-17	94-95	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-7	
+
+#Text=Līdz ar "Limuzīns Jāņu nakts krāsā" un "Ezera sonāti" filma "Pie bagātās kundzes" ir starp pirmajām Latvijas kino zelta fonda filmām, kas iznāk DVD formātā ar digitāli restaurētu attēlu un skaņu.
+2-1	96-100	Līdz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	līdz	_	_	_	_	advmod	basic	2-20	
+2-2	101-103	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	2-4	
+2-3	104-105	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	product[3]	https://en.wikipedia.org/wiki/Limuzīns\_Jāņu\_nakts\_krāsā[3]	*->3-1	*[3]	punct	basic	2-4	
+2-4	105-113	Limuzīns	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	limuzīns	product[3]	https://en.wikipedia.org/wiki/Limuzīns\_Jāņu\_nakts\_krāsā[3]	*->3-1	*[3]	iobj	basic	2-1	
+2-5	114-118	Jāņu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	npmpg2	*	Jānis	product[3]|event[4]	https://en.wikipedia.org/wiki/Limuzīns\_Jāņu\_nakts\_krāsā[3]|*[4]	*->3-1	*[3]	nmod	basic	2-6	
+2-6	119-124	nakts	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	*	nakts	product[3]	https://en.wikipedia.org/wiki/Limuzīns\_Jāņu\_nakts\_krāsā[3]	*->3-1	*[3]	nmod	basic	2-7	
+2-7	125-130	krāsā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	krāsa	product[3]	https://en.wikipedia.org/wiki/Limuzīns\_Jāņu\_nakts\_krāsā[3]	*->3-1	*[3]	acl	basic	2-4	
+2-8	130-131	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	product[3]	https://en.wikipedia.org/wiki/Limuzīns\_Jāņu\_nakts\_krāsā[3]	*->3-1	*[3]	punct	basic	2-4	
+2-9	132-134	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-12	
+2-10	135-136	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	product[5]	https://lv.wikipedia.org/wiki/Ezera\_sonāte[5]	*->3-2	*[3]	punct	basic	2-12	
+2-11	136-141	Ezera	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	ezers	product[5]	https://lv.wikipedia.org/wiki/Ezera\_sonāte[5]	*->3-2	*[3]	nmod	basic	2-12	
+2-12	142-148	sonāti	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	sonāte	product[5]	https://lv.wikipedia.org/wiki/Ezera\_sonāte[5]	*->3-2	*[3]	conj	basic	2-4	
+2-13	148-149	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	product[5]	https://lv.wikipedia.org/wiki/Ezera\_sonāte[5]	*->3-2	*[3]	punct	basic	2-12	
+2-14	150-155	filma	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	filma	_	_	*->3-3	*[3]	nmod	basic	2-18	
+2-15	156-157	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	product[6]	https://lv.wikipedia.org/wiki/Pie\_bagātās\_kundzes[6]	*->3-4	*[3]	punct	basic	2-18	
+2-16	157-160	Pie	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pie	product[6]	https://lv.wikipedia.org/wiki/Pie\_bagātās\_kundzes[6]	*->3-4	*[3]	case	basic	2-18	
+2-17	161-168	bagātās	*	*	Gen	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsgyp	*	bagāts	product[6]	https://lv.wikipedia.org/wiki/Pie\_bagātās\_kundzes[6]	*->3-4	*[3]	amod	basic	2-18	
+2-18	169-176	kundzes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	kundze	product[6]	https://lv.wikipedia.org/wiki/Pie\_bagātās\_kundzes[6]	*->3-4	*[3]	nsubj	basic	2-20	
+2-19	176-177	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	product[6]	https://lv.wikipedia.org/wiki/Pie\_bagātās\_kundzes[6]	*->3-4	*[3]	punct	basic	2-18	
+2-20	178-180	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipii30an	*	būt	_	_	_	_	root	basic	2-20	
+2-21	181-186	starp	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	starp	_	_	_	_	case	basic	2-27	
+2-22	187-195	pirmajām	*	*	Dat	*	Pos	Fem	*	*	Ord	Plur	*	*	*	*	*	*	Case=Dat\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Plur\|NumType=Ord	*	*	mosfpd	*	pirmā	_	_	_	_	amod	basic	2-27	
+2-23	196-204	Latvijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	_	_	nmod	basic	2-24	
+2-24	205-209	kino	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	nc0000	*	kino	_	_	_	_	nmod	basic	2-26	
+2-25	210-215	zelta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	zelts	_	_	_	_	nmod	basic	2-26	
+2-26	216-221	fonda	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	fonds	_	_	_	_	nmod	basic	2-27	
+2-27	222-228	filmām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	*	filma	_	_	*->3-5	*[3]	obl	basic	2-20	
+2-28	228-229	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-30	
+2-29	230-233	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	Rel	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->3-6	*[3]	nsubj	basic	2-30	
+2-30	234-239	iznāk	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipi130an	*	iznākt	_	_	_	_	acl	basic	2-27	
+2-31	240-243	DVD	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	*	DVD	_	_	_	_	nmod	basic	2-32	
+2-32	244-251	formātā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	formāts	_	_	_	_	obl	basic	2-30	
+2-33	252-254	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	2-36	
+2-34	255-263	digitāli	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	*	digitālis	_	_	_	_	obl	basic	2-35	
+2-35	264-274	restaurētu	*	Perf	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Acc\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsapsnpn	*	restaurēt	_	_	_	_	amod	basic	2-36	
+2-36	275-281	attēlu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	attēls	_	_	_	_	acl	basic	2-30	
+2-37	282-284	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-38	
+2-38	285-290	skaņu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	skaņa	_	_	_	_	conj	basic	2-36	
+2-39	290-291	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-20	

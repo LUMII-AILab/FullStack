@@ -1,111 +1,111 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Ap nulto gadu Romas imperators Augusts visā plaši sazarotajā impērijā ieviesa vienotu naudas vienību – tādu kā antīku eiro.
-1-1	0-2	Ap	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ap	_	_	_	_	case|case	basic|enhanced	1-3|1-3	
-1-2	3-8	nulto	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	m0smsa	nultais	_	_	_	_	dep|dep	basic|enhanced	1-3|1-3	
-1-3	9-13	gadu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	gads	_	_	_	_	obl|obl	basic|enhanced	1-11|1-11	
-1-4	14-19	Romas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Roma	GPE	https://en.wikipedia.org/wiki/Rome	_	_	nmod|nmod	basic|enhanced	1-5|1-5	
-1-5	20-30	imperators	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	imperators	_	_	*[1]	*->1-1	nmod|nmod	basic|enhanced	1-6|1-6	
-1-6	31-38	Augusts	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Augusts	person	https://en.wikipedia.org/wiki/Augustus	*[1]	*->1-2	nsubj|nsubj	basic|enhanced	1-11|1-11	
-1-7	39-43	visā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|PronType=Tot	*	*	pg0fsln	visa	_	_	_	_	det|det	basic|enhanced	1-10|1-10	
-1-8	44-49	plaši	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	plaši	_	_	_	_	advmod|advmod	basic|enhanced	1-9|1-9	
-1-9	50-60	sazarotajā	Fem	Sing	Loc	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Loc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfslpsyp	sazarot	_	_	_	_	amod|amod	basic|enhanced	1-10|1-10	
-1-10	61-69	impērijā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	impērija	_	_	_	_	obl|obl	basic|enhanced	1-11|1-11	
-1-11	70-77	ieviesa	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	ieviest	_	_	_	_	root|root	basic|enhanced	1-11|1-11	
-1-12	78-85	vienotu	Fem	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsanp	vienota	_	_	_	_	amod|amod	basic|enhanced	1-14|1-14	
-1-13	86-92	naudas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	nauda	_	_	_	_	nmod|nmod	basic|enhanced	1-14|1-14	
-1-14	93-100	vienību	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	vienība	_	_	_	_	obj|obj	basic|enhanced	1-11|1-11	
-1-15	101-102	–	_	_	_	_	_	_	_	_	_	_	_	_	zd	–	_	_	_	_	punct|punct	basic|enhanced	1-19|1-19	
-1-16	103-107	tādu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsan	tāda	_	_	_	_	det|det	basic|enhanced	1-19|1-19	
-1-17	108-110	kā	_	_	_	_	_	_	_	_	_	_	_	_	cs	kā	_	_	_	_	discourse|discourse	basic|enhanced	1-19|1-19	
-1-18	111-117	antīku	Masc	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsanp	antīks	_	_	_	_	amod|amod	basic|enhanced	1-19|1-19	
-1-19	118-122	eiro	_	_	_	_	_	_	_	_	_	_	_	_	nc0000	eiro	_	_	_	_	appos|appos	basic|enhanced	1-14|1-14	
-1-20	122-123	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-11|1-11	
+1-1	0-2	Ap	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ap	_	_	_	_	case|case	basic|enhanced	1-3|1-3	
+1-2	3-8	nulto	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	m0smsa	*	nultais	_	_	_	_	dep|dep	basic|enhanced	1-3|1-3	
+1-3	9-13	gadu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	gads	_	_	_	_	obl|obl	basic|enhanced	1-11|1-11	
+1-4	14-19	Romas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Roma	GPE	https://en.wikipedia.org/wiki/Rome	_	_	nmod|nmod	basic|enhanced	1-5|1-5	
+1-5	20-30	imperators	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	imperators	_	_	*->1-1	*[1]	nmod|nmod	basic|enhanced	1-6|1-6	
+1-6	31-38	Augusts	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Augusts	person	https://en.wikipedia.org/wiki/Augustus	*->1-2	*[1]	nsubj|nsubj	basic|enhanced	1-11|1-11	
+1-7	39-43	visā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|PronType=Tot	*	*	pg0fsln	*	visa	_	_	_	_	det|det	basic|enhanced	1-10|1-10	
+1-8	44-49	plaši	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	plaši	_	_	_	_	advmod|advmod	basic|enhanced	1-9|1-9	
+1-9	50-60	sazarotajā	*	Perf	Loc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Loc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdfslpsyp	*	sazarot	_	_	_	_	amod|amod	basic|enhanced	1-10|1-10	
+1-10	61-69	impērijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	impērija	_	_	_	_	obl|obl	basic|enhanced	1-11|1-11	
+1-11	70-77	ieviesa	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist130an	*	ieviest	_	_	_	_	root|root	basic|enhanced	1-11|1-11	
+1-12	78-85	vienotu	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsanp	*	vienota	_	_	_	_	amod|amod	basic|enhanced	1-14|1-14	
+1-13	86-92	naudas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	nauda	_	_	_	_	nmod|nmod	basic|enhanced	1-14|1-14	
+1-14	93-100	vienību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	vienība	_	_	_	_	obj|obj	basic|enhanced	1-11|1-11	
+1-15	101-102	–	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	–	_	_	_	_	punct|punct	basic|enhanced	1-19|1-19	
+1-16	103-107	tādu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsan	*	tāda	_	_	_	_	det|det	basic|enhanced	1-19|1-19	
+1-17	108-110	kā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	kā	_	_	_	_	discourse|discourse	basic|enhanced	1-19|1-19	
+1-18	111-117	antīku	*	*	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsanp	*	antīks	_	_	_	_	amod|amod	basic|enhanced	1-19|1-19	
+1-19	118-122	eiro	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	nc0000	*	eiro	_	_	_	_	appos|appos	basic|enhanced	1-14|1-14	
+1-20	122-123	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	1-11|1-11	
 
 #Text=Romiešu provinces turpmāk meslus maksāja nevis vīnā, labībā un audumos, bet gan solīdijos, denārijos, asenos un sestercijos.
-2-1	125-132	Romiešu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	romietis	_	_	_	_	nmod|nmod	basic|enhanced	2-2|2-2	
-2-2	133-142	provinces	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	province	_	_	_	_	nsubj|nsubj	basic|enhanced	2-5|2-5	
-2-3	143-150	turpmāk	_	_	_	_	_	_	_	_	_	_	_	_	r0t	turpmāk	_	_	_	_	advmod|advmod	basic|enhanced	2-5|2-5	
-2-4	151-157	meslus	Masc	Ptan	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Ptan	*	*	ncmda1	mesli	_	_	_	_	obj|obj	basic|enhanced	2-5|2-5	
-2-5	158-165	maksāja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist230an	maksāt	_	_	_	_	root|root	basic|enhanced	2-5|2-5	
-2-6	166-171	nevis	_	_	_	_	_	_	_	_	_	_	_	_	cc	nevis	_	_	_	_	cc|cc	basic|enhanced	2-7|2-7	
-2-7	172-176	vīnā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	vīns	_	_	_	_	obl|obl	basic|enhanced	2-5|2-5	
-2-8	176-177	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-9|2-9	
-2-9	178-184	labībā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	labība	_	_	_	_	conj|conj	basic|enhanced	2-7|2-7	
-2-10	185-187	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	2-11|2-11	
-2-11	188-195	audumos	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	audums	_	_	_	_	conj|conj	basic|enhanced	2-7|2-7	
-2-12	195-196	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-15|2-15	
-2-13	197-200	bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	_	_	cc|cc	basic|enhanced	2-15|2-15	
-2-14	201-204	gan	_	_	_	_	_	_	_	_	_	_	_	_	q	gan	_	_	_	_	discourse|discourse	basic|enhanced	2-13|2-13	
-2-15	205-214	solīdijos	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	solīdijs	_	_	_	_	conj|conj	basic|enhanced	2-7|2-7	
-2-16	214-215	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-17|2-17	
-2-17	216-225	denārijos	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	denārijs	_	_	_	_	conj|conj	basic|enhanced	2-15|2-15	
-2-18	225-226	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-19|2-19	
-2-19	227-233	asenos	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	asens	_	_	_	_	conj|conj	basic|enhanced	2-15|2-15	
-2-20	234-236	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	2-21|2-21	
-2-21	237-248	sestercijos	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	sestercijs	_	_	_	_	conj|conj	basic|enhanced	2-15|2-15	
-2-22	248-249	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	2-5|2-5	
+2-1	125-132	Romiešu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	romietis	_	_	_	_	nmod|nmod	basic|enhanced	2-2|2-2	
+2-2	133-142	provinces	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	province	_	_	_	_	nsubj|nsubj	basic|enhanced	2-5|2-5	
+2-3	143-150	turpmāk	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	turpmāk	_	_	_	_	advmod|advmod	basic|enhanced	2-5|2-5	
+2-4	151-157	meslus	*	*	Acc	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Ptan	*	*	ncmda1	*	mesli	_	_	_	_	obj|obj	basic|enhanced	2-5|2-5	
+2-5	158-165	maksāja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist230an	*	maksāt	_	_	_	_	root|root	basic|enhanced	2-5|2-5	
+2-6	166-171	nevis	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	nevis	_	_	_	_	cc|cc	basic|enhanced	2-7|2-7	
+2-7	172-176	vīnā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	vīns	_	_	_	_	obl|obl	basic|enhanced	2-5|2-5	
+2-8	176-177	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	2-9|2-9	
+2-9	178-184	labībā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	labība	_	_	_	_	conj|conj	basic|enhanced	2-7|2-7	
+2-10	185-187	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc|cc	basic|enhanced	2-11|2-11	
+2-11	188-195	audumos	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	*	audums	_	_	_	_	conj|conj	basic|enhanced	2-7|2-7	
+2-12	195-196	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	2-15|2-15	
+2-13	197-200	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	_	_	cc|cc	basic|enhanced	2-15|2-15	
+2-14	201-204	gan	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	gan	_	_	_	_	discourse|discourse	basic|enhanced	2-13|2-13	
+2-15	205-214	solīdijos	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	*	solīdijs	_	_	_	_	conj|conj	basic|enhanced	2-7|2-7	
+2-16	214-215	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	2-17|2-17	
+2-17	216-225	denārijos	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	*	denārijs	_	_	_	_	conj|conj	basic|enhanced	2-15|2-15	
+2-18	225-226	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	2-19|2-19	
+2-19	227-233	asenos	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	*	asens	_	_	_	_	conj|conj	basic|enhanced	2-15|2-15	
+2-20	234-236	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc|cc	basic|enhanced	2-21|2-21	
+2-21	237-248	sestercijos	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	*	sestercijs	_	_	_	_	conj|conj	basic|enhanced	2-15|2-15	
+2-22	248-249	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	2-5|2-5	
 
 #Text=Ar iekasēto naudu savukārt bija iespējams algot pa impēriju izkaisītos romiešu armijas leģionārus.
-3-1	251-253	Ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case|case	basic|enhanced	3-3|3-3	
-3-2	254-262	iekasēto	Fem	Sing	Acc	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsapsyp	iekasēt	_	_	_	_	amod|amod	basic|enhanced	3-3|3-3	
-3-3	263-268	naudu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	nauda	_	_	_	_	iobj|iobj	basic|enhanced	3-6|3-6	
-3-4	269-277	savukārt	_	_	_	_	_	_	_	_	_	_	_	_	r0m	savukārt	_	_	_	_	advmod|advmod	basic|enhanced	3-6|3-6	
-3-5	278-282	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vcnisii30an	būt	_	_	_	_	cop|cop	basic|enhanced	3-6|3-6	
-3-6	283-292	iespējams	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsnnp	iespējams	_	_	_	_	root|root	basic|enhanced	3-6|3-6	
-3-7	293-298	algot	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	algot	_	_	_	_	ccomp|ccomp	basic|enhanced	3-6|3-6	
-3-8	299-301	pa	_	_	_	_	_	_	_	_	_	_	_	_	spsa	pa	_	_	_	_	case|case	basic|enhanced	3-9|3-9	
-3-9	302-310	impēriju	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	impērija	_	_	_	_	obl|obl	basic|enhanced	3-10|3-10	
-3-10	311-321	izkaisītos	Masc	Plur	Acc	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpapsyp	izkaisīties	_	_	_	_	amod|amod	basic|enhanced	3-13|3-13	
-3-11	322-329	romiešu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	romietis	_	_	_	_	nmod|nmod	basic|enhanced	3-12|3-12	
-3-12	330-337	armijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	armija	_	_	_	_	nmod|nmod	basic|enhanced	3-13|3-13	
-3-13	338-348	leģionārus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	leģionārs	_	_	_	_	obj|obj	basic|enhanced	3-7|3-7	
-3-14	348-349	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	3-6|3-6	
+3-1	251-253	Ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case|case	basic|enhanced	3-3|3-3	
+3-2	254-262	iekasēto	*	Perf	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsapsyp	*	iekasēt	_	_	_	_	amod|amod	basic|enhanced	3-3|3-3	
+3-3	263-268	naudu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	nauda	_	_	_	_	iobj|iobj	basic|enhanced	3-6|3-6	
+3-4	269-277	savukārt	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	savukārt	_	_	_	_	advmod|advmod	basic|enhanced	3-6|3-6	
+3-5	278-282	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vcnisii30an	*	būt	_	_	_	_	cop|cop	basic|enhanced	3-6|3-6	
+3-6	283-292	iespējams	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsnnp	*	iespējams	_	_	_	_	root|root	basic|enhanced	3-6|3-6	
+3-7	293-298	algot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	*	algot	_	_	_	_	ccomp|ccomp	basic|enhanced	3-6|3-6	
+3-8	299-301	pa	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	pa	_	_	_	_	case|case	basic|enhanced	3-9|3-9	
+3-9	302-310	impēriju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	impērija	_	_	_	_	obl|obl	basic|enhanced	3-10|3-10	
+3-10	311-321	izkaisītos	*	Perf	Acc	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	*	vmnpdmpapsyp	*	izkaisīties	_	_	_	_	amod|amod	basic|enhanced	3-13|3-13	
+3-11	322-329	romiešu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	romietis	_	_	_	_	nmod|nmod	basic|enhanced	3-12|3-12	
+3-12	330-337	armijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	armija	_	_	_	_	nmod|nmod	basic|enhanced	3-13|3-13	
+3-13	338-348	leģionārus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	leģionārs	_	_	_	_	obj|obj	basic|enhanced	3-7|3-7	
+3-14	348-349	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	3-6|3-6	
 
 #Text=Nauda tika kalta dievietes Junonas jeb Monētas (tulkojumā – padomdevējas) tempļa kaltuvē – tāpēc arī daudzas pasaules valodas naudas apzīmēšanai ieviesušas vārdu monēta: vācu Moneten, angļu money, franču monnaie un arī latviešu monēta.
-4-1	351-356	Nauda	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	nauda	_	_	_	_	nsubj:pass|nsubj	basic|enhanced	4-3|4-3	
-4-2	357-361	tika	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vtnisi130an	tikt	_	_	_	_	aux|aux	basic|enhanced	4-3|4-3	
-4-3	362-367	kalta	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnpsnp	kalt	_	_	_	_	root|root	basic|enhanced	4-3|4-3	
-4-4	368-377	dievietes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	dieviete	_	_	*[2]	*->2-1	nmod|nmod	basic|enhanced	4-5|4-5	
-4-5	378-385	Junonas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Junona	location[1]|person[2]	*[1]|https://en.wikipedia.org/wiki/Juno\_(mythology)[2]	*[2]	*->2-2	nmod|nmod	basic|enhanced	4-13|4-13	
-4-6	386-389	jeb	_	_	_	_	_	_	_	_	_	_	_	_	cc	jeb	location[1]	*[1]	_	_	cc|cc	basic|enhanced	4-7|4-7	
-4-7	390-397	Monētas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Monēta	location[1]|person[3]	*[1]|https://en.wikipedia.org/wiki/Juno\_(mythology)[3]	_	_	conj|conj	basic|enhanced	4-5|4-5	
-4-8	398-399	(	_	_	_	_	_	_	_	_	_	_	_	_	zb	(	location[1]	*[1]	_	_	punct|punct	basic|enhanced	4-11|4-11	
-4-9	399-408	tulkojumā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	tulkojums	location[1]	*[1]	_	_	acl|acl	basic|enhanced	4-11|4-11	
-4-10	409-410	–	_	_	_	_	_	_	_	_	_	_	_	_	zd	–	location[1]	*[1]	_	_	punct|punct	basic|enhanced	4-9|4-9	
-4-11	411-423	padomdevējas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	padomdevēja	location[1]	*[1]	_	_	obl|obl	basic|enhanced	4-7|4-7	
-4-12	423-424	)	_	_	_	_	_	_	_	_	_	_	_	_	zb	)	location[1]	*[1]	_	_	punct|punct	basic|enhanced	4-11|4-11	
-4-13	425-431	tempļa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	templis	location[1]	*[1]	_	_	nmod|nmod	basic|enhanced	4-14|4-14	
-4-14	432-439	kaltuvē	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	kaltuve	_	_	_	_	obl|obl	basic|enhanced	4-3|4-3	
-4-15	440-441	–	_	_	_	_	_	_	_	_	_	_	_	_	zd	–	_	_	_	_	punct|punct	basic|enhanced	4-23|4-23	
-4-16	442-447	tāpēc	_	_	_	_	_	_	_	_	_	_	_	_	r0c	tāpēc	_	_	_	_	cc|cc	basic|enhanced	4-23|4-23	
-4-17	448-451	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse|discourse	basic|enhanced	4-16|4-16	
-4-18	452-459	daudzas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|PronType=Ind	*	*	pi0fpnn	daudzas	_	_	_	_	det|det	basic|enhanced	4-20|4-20	
-4-19	460-468	pasaules	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	pasaule	_	_	_	_	nmod|nmod	basic|enhanced	4-20|4-20	
-4-20	469-476	valodas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	valoda	_	_	_	_	nmod|nmod	basic|enhanced	4-23|4-23	
-4-21	477-483	naudas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	nauda	_	_	_	_	nmod|nmod	basic|enhanced	4-22|4-22	
-4-22	484-495	apzīmēšanai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	apzīmēšana	_	_	_	_	iobj|iobj	basic|enhanced	4-23|4-23	
-4-23	496-506	ieviesušas	Fem	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfpnasnp	ieviest	_	_	_	_	conj|conj	basic|enhanced	4-3|4-3	
-4-24	507-512	vārdu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	vārds	_	_	_	_	nmod|nmod	basic|enhanced	4-25|4-25	
-4-25	513-519	monēta	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	monēta	_	_	_	_	iobj|iobj	basic|enhanced	4-23|4-23	
-4-26	519-520	:	_	_	_	_	_	_	_	_	_	_	_	_	zo	:	_	_	_	_	punct|punct	basic|enhanced	4-28|4-28	
-4-27	521-525	vācu	Masc	Ptan	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	ncmdg1	vāci	_	_	_	_	nmod|nmod	basic|enhanced	4-28|4-28	
-4-28	526-533	Moneten	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Moneten	_	_	_	_	acl|acl	basic|enhanced	4-25|4-25	
-4-29	533-534	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	4-31|4-31	
-4-30	535-540	angļu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	anglis	_	_	_	_	nmod|nmod	basic|enhanced	4-31|4-31	
-4-31	541-546	money	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	money	_	_	_	_	conj|conj	basic|enhanced	4-28|4-28	
-4-32	546-547	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	4-34|4-34	
-4-33	548-554	franču	Masc	Ptan	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	ncmdg2	francis	_	_	_	_	nmod|nmod	basic|enhanced	4-34|4-34	
-4-34	555-562	monnaie	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	monnaie	_	_	_	_	conj|conj	basic|enhanced	4-28|4-28	
-4-35	563-565	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	4-38|4-38	
-4-36	566-569	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse|discourse	basic|enhanced	4-38|4-38	
-4-37	570-578	latviešu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	latvietis	_	_	_	_	nmod|nmod	basic|enhanced	4-38|4-38	
-4-38	579-585	monēta	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	monēta	_	_	_	_	conj|conj	basic|enhanced	4-28|4-28	
-4-39	585-586	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	4-3|4-3	
+4-1	351-356	Nauda	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	nauda	_	_	_	_	nsubj:pass|nsubj	basic|enhanced	4-3|4-3	
+4-2	357-361	tika	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vtnisi130an	*	tikt	_	_	_	_	aux|aux	basic|enhanced	4-3|4-3	
+4-3	362-367	kalta	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsnpsnp	*	kalt	_	_	_	_	root|root	basic|enhanced	4-3|4-3	
+4-4	368-377	dievietes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	dieviete	_	_	*->2-1	*[2]	nmod|nmod	basic|enhanced	4-5|4-5	
+4-5	378-385	Junonas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Junona	location[1]|person[2]	*[1]|https://en.wikipedia.org/wiki/Juno\_(mythology)[2]	*->2-2	*[2]	nmod|nmod	basic|enhanced	4-13|4-13	
+4-6	386-389	jeb	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	jeb	location[1]	*[1]	_	_	cc|cc	basic|enhanced	4-7|4-7	
+4-7	390-397	Monētas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Monēta	location[1]|person[3]	*[1]|https://en.wikipedia.org/wiki/Juno\_(mythology)[3]	_	_	conj|conj	basic|enhanced	4-5|4-5	
+4-8	398-399	(	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	(	location[1]	*[1]	_	_	punct|punct	basic|enhanced	4-11|4-11	
+4-9	399-408	tulkojumā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	tulkojums	location[1]	*[1]	_	_	acl|acl	basic|enhanced	4-11|4-11	
+4-10	409-410	–	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	–	location[1]	*[1]	_	_	punct|punct	basic|enhanced	4-9|4-9	
+4-11	411-423	padomdevējas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	padomdevēja	location[1]	*[1]	_	_	obl|obl	basic|enhanced	4-7|4-7	
+4-12	423-424	)	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	)	location[1]	*[1]	_	_	punct|punct	basic|enhanced	4-11|4-11	
+4-13	425-431	tempļa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	*	templis	location[1]	*[1]	_	_	nmod|nmod	basic|enhanced	4-14|4-14	
+4-14	432-439	kaltuvē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	*	kaltuve	_	_	_	_	obl|obl	basic|enhanced	4-3|4-3	
+4-15	440-441	–	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	–	_	_	_	_	punct|punct	basic|enhanced	4-23|4-23	
+4-16	442-447	tāpēc	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0c	*	tāpēc	_	_	_	_	cc|cc	basic|enhanced	4-23|4-23	
+4-17	448-451	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse|discourse	basic|enhanced	4-16|4-16	
+4-18	452-459	daudzas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|PronType=Ind	*	*	pi0fpnn	*	daudzas	_	_	_	_	det|det	basic|enhanced	4-20|4-20	
+4-19	460-468	pasaules	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	pasaule	_	_	_	_	nmod|nmod	basic|enhanced	4-20|4-20	
+4-20	469-476	valodas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	valoda	_	_	_	_	nmod|nmod	basic|enhanced	4-23|4-23	
+4-21	477-483	naudas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	nauda	_	_	_	_	nmod|nmod	basic|enhanced	4-22|4-22	
+4-22	484-495	apzīmēšanai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	*	apzīmēšana	_	_	_	_	iobj|iobj	basic|enhanced	4-23|4-23	
+4-23	496-506	ieviesušas	*	Perf	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Tense=Past\|VerbForm=Part	*	*	vmnpdfpnasnp	*	ieviest	_	_	_	_	conj|conj	basic|enhanced	4-3|4-3	
+4-24	507-512	vārdu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	vārds	_	_	_	_	nmod|nmod	basic|enhanced	4-25|4-25	
+4-25	513-519	monēta	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	monēta	_	_	_	_	iobj|iobj	basic|enhanced	4-23|4-23	
+4-26	519-520	:	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zo	*	:	_	_	_	_	punct|punct	basic|enhanced	4-28|4-28	
+4-27	521-525	vācu	*	*	Gen	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	ncmdg1	*	vāci	_	_	_	_	nmod|nmod	basic|enhanced	4-28|4-28	
+4-28	526-533	Moneten	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Moneten	_	_	_	_	acl|acl	basic|enhanced	4-25|4-25	
+4-29	533-534	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	4-31|4-31	
+4-30	535-540	angļu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	anglis	_	_	_	_	nmod|nmod	basic|enhanced	4-31|4-31	
+4-31	541-546	money	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	money	_	_	_	_	conj|conj	basic|enhanced	4-28|4-28	
+4-32	546-547	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	4-34|4-34	
+4-33	548-554	franču	*	*	Gen	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	ncmdg2	*	francis	_	_	_	_	nmod|nmod	basic|enhanced	4-34|4-34	
+4-34	555-562	monnaie	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	monnaie	_	_	_	_	conj|conj	basic|enhanced	4-28|4-28	
+4-35	563-565	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc|cc	basic|enhanced	4-38|4-38	
+4-36	566-569	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse|discourse	basic|enhanced	4-38|4-38	
+4-37	570-578	latviešu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	latvietis	_	_	_	_	nmod|nmod	basic|enhanced	4-38|4-38	
+4-38	579-585	monēta	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	monēta	_	_	_	_	conj|conj	basic|enhanced	4-28|4-28	
+4-39	585-586	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	4-3|4-3	

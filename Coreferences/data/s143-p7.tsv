@@ -1,0 +1,57 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Es domāju, ka mēs varbūt paklausīsim Valsts prezidentam Raimondam Vējonim, kurš aicina pēdējā lasījumā neveikt fundamentālus grozījumus, un tos arī nevar būtībā kvalitatīvi veikt budžeta divos lasījumos.
+1-1	0-2	Es	*	*	Nom	*	*	*	*	*	*	Sing	1	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	*	*	pp10snn	*	es	_	_	_	_	nsubj	basic	1-2	
+1-2	3-9	domāju	*	*	*	*	*	*	Ind	*	*	Sing	1	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt21san	*	domāt	_	_	_	_	root	basic	1-2	
+1-3	9-10	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-7	
+1-4	11-13	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	1-7	
+1-5	14-17	mēs	*	*	Nom	*	*	*	*	*	*	Plur	1	*	*	*	*	*	Case=Nom\|Number=Plur\|Person=1\|PronType=Prs	*	*	pp10pnn	*	mēs	_	_	_	_	nsubj	basic	1-7	
+1-6	18-24	varbūt	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	varbūt	_	_	_	_	discourse	basic	1-7	
+1-7	25-36	paklausīsim	*	*	*	*	*	*	Ind	*	*	Plur	1	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmnifi31pan	*	paklausīt	_	_	_	_	ccomp	basic	1-2	
+1-8	37-43	Valsts	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	*	valsts	_	_	*->1-1	*[1]	nmod	basic	1-9	
+1-9	44-55	prezidentam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	prezidents	_	_	*->1-1	*[1]	nmod	basic	1-10	
+1-10	56-65	Raimondam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	npmsd2	*	Raimonds	person[1]	https://en.wikipedia.org/wiki/Raimonds\_Vējonis[1]	*->1-2	*[1]	iobj	basic	1-7	
+1-11	66-73	Vējonim	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	npmsd2	*	Vējonis	person[1]	https://en.wikipedia.org/wiki/Raimonds\_Vējonis[1]	*->1-2	*[1]	flat:name	basic	1-10	
+1-12	73-74	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-14	
+1-13	75-79	kurš	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msnn	*	kurš	_	_	*->1-3	*[1]	nsubj	basic	1-14	
+1-14	80-86	aicina	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	aicināt	_	_	_	_	dep	basic	1-10	
+1-15	87-93	pēdējā	*	*	Loc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armslyp	*	pēdējais	_	_	_	_	amod	basic	1-16	
+1-16	94-102	lasījumā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	lasījums	_	_	_	_	obl	basic	1-17	
+1-17	103-110	neveikt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Neg\|VerbForm=Inf	*	*	vmnn0t1000y	*	neveikt	_	_	_	_	ccomp	basic	1-14	
+1-18	111-124	fundamentālus	*	*	Acc	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpanp	*	fundamentāls	_	_	_	_	amod	basic	1-19	
+1-19	125-135	grozījumus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	grozījums	_	_	*->2-1	*[2]	obj	basic	1-17	
+1-20	135-136	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-24	
+1-21	137-139	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-24	
+1-22	140-143	tos	*	*	Acc	*	*	Masc	*	*	*	Plur	3	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Dem	*	*	pd3mpan	*	tas	_	_	*->2-2	*[2]	obj	basic	1-24	
+1-23	144-147	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	1-24	
+1-24	148-153	nevar	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vonipi330ay	*	nevarēt	_	_	_	_	conj	basic	1-2	
+1-25	154-160	būtībā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	būtība	_	_	_	_	acl	basic	1-24	
+1-26	161-172	kvalitatīvi	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	kvalitatīvi	_	_	_	_	advmod	basic	1-27	
+1-27	173-178	veikt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	*	veikt	_	_	_	_	xcomp	basic	1-24	
+1-28	179-186	budžeta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	budžets	_	_	_	_	nmod	basic	1-30	
+1-29	187-192	divos	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpl	*	divi	_	_	_	_	nummod	basic	1-30	
+1-30	193-202	lasījumos	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	*	lasījums	_	_	_	_	obl	basic	1-24	
+1-31	202-203	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-2	
+
+#Text=Piedāvātā redakcija ir tik diskutabla, ka tā prasa nopietnu revīziju un analīzi.
+2-1	205-214	Piedāvātā	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsnpsypn	*	piedāvāt	_	_	_	_	amod	basic	2-2	
+2-2	215-224	redakcija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	redakcija	_	_	*->3-1	*[3]	nsubj	basic	2-5	
+2-3	225-227	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	2-5	
+2-4	228-231	tik	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0q	*	tik	_	_	_	_	advmod	basic	2-5	
+2-5	232-242	diskutabla	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	*	diskutabla	_	_	_	_	root	basic	2-5	
+2-6	242-243	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-9	
+2-7	244-246	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	2-9	
+2-8	247-249	tā	*	*	Nom	*	*	Fem	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3fsnn	*	tā	_	_	*->3-2	*[3]	nsubj	basic	2-9	
+2-9	250-255	prasa	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	prasīt	_	_	_	_	advcl	basic	2-4	
+2-10	256-264	nopietnu	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsanp	*	nopietna	_	_	_	_	amod	basic	2-11	
+2-11	265-273	revīziju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	revīzija	_	_	_	_	obj	basic	2-9	
+2-12	274-276	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-13	
+2-13	277-284	analīzi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	analīze	_	_	_	_	conj	basic	2-11	
+2-14	284-285	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-5	

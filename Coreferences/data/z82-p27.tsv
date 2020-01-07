@@ -1,0 +1,69 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Evidencialitātes kategorijas teorētiskos pamatus 1957. gadā formulējis R. Jakobsons apcerē par krievu valodas verbu sistēmu „Šifteri, verba kategorijas un krievu valodas verbs”.
+1-1	0-16	Evidencialitātes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	evidencialitāte	_	_	*->2-1	*[2]	nmod	basic	1-2	
+1-2	17-28	kategorijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	kategorija	_	_	_	_	nmod	basic	1-4	
+1-3	29-40	teorētiskos	*	*	Acc	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpayp	*	teorētisks	_	_	_	_	amod	basic	1-4	
+1-4	41-48	pamatus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	pamats	_	_	_	_	obj	basic	1-7	
+1-5	49-54	1957.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	1957.	time[1]	*[1]	_	_	amod	basic	1-6	
+1-6	55-59	gadā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	gads	time[1]	*[1]	_	_	obl	basic	1-7	
+1-7	60-70	formulējis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnasnpn	*	formulēt	_	_	_	_	root	basic	1-7	
+1-8	71-73	R.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	R.	person[2]	https://en.wikipedia.org/wiki/Roman\_Jakobson[2]	_	_	nsubj	basic	1-7	
+1-9	74-83	Jakobsons	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Jakobsons	person[2]	https://en.wikipedia.org/wiki/Roman\_Jakobson[2]	_	_	flat:name	basic	1-8	
+1-10	84-90	apcerē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	*	apcere	_	_	*->1-1	*[1]	nmod	basic	1-17	
+1-11	91-94	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	1-15	
+1-12	95-101	krievu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	krievs	_	_	_	_	nmod	basic	1-13	
+1-13	102-109	valodas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	valoda	_	_	_	_	nmod	basic	1-14	
+1-14	110-115	verbu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	verbs	_	_	_	_	nmod	basic	1-15	
+1-15	116-123	sistēmu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	sistēma	_	_	_	_	nmod	basic	1-10	
+1-16	124-125	„	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	„	product[3]	*[3]	*->1-2	*[1]	punct	basic	1-17	
+1-17	125-132	Šifteri	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	šifters	product[3]	*[3]	*->1-2	*[1]	obl	basic	1-7	
+1-18	132-133	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	product[3]	*[3]	*->1-2	*[1]	punct	basic	1-20	
+1-19	134-139	verba	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	verbs	product[3]	*[3]	*->1-2	*[1]	nmod	basic	1-20	
+1-20	140-151	kategorijas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	kategorija	product[3]	*[3]	*->1-2	*[1]	conj	basic	1-17	
+1-21	152-154	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	product[3]	*[3]	*->1-2	*[1]	cc	basic	1-24	
+1-22	155-161	krievu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	krievs	product[3]	*[3]	*->1-2	*[1]	nmod	basic	1-23	
+1-23	162-169	valodas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	valoda	product[3]	*[3]	*->1-2	*[1]	nmod	basic	1-24	
+1-24	170-175	verbs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	verbs	product[3]	*[3]	*->1-2	*[1]	conj	basic	1-17	
+1-25	175-176	”	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	”	product[3]	*[3]	*->1-2	*[1]	punct	basic	1-17	
+1-26	176-177	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-7	
+
+#Text=R. Jakobsons evidencialitāti uzlūko par gramatisku kategoriju un runā par tās gramatiskām pazīmēm.
+2-1	179-181	R.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	R.	person[4]	https://en.wikipedia.org/wiki/Roman\_Jakobson[4]	_	_	nsubj	basic	2-4	
+2-2	182-191	Jakobsons	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Jakobsons	person[4]	https://en.wikipedia.org/wiki/Roman\_Jakobson[4]	_	_	flat:name	basic	2-1	
+2-3	192-207	evidencialitāti	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	evidencialitāte	_	_	*->2-2	*[2]	obj	basic	2-4	
+2-4	208-214	uzlūko	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt230an	*	uzlūkot	_	_	_	_	root	basic	2-4	
+2-5	215-218	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	2-7	
+2-6	219-229	gramatisku	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsanp	*	gramatiska	_	_	_	_	amod	basic	2-7	
+2-7	230-240	kategoriju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	kategorija	_	_	_	_	xcomp	basic	2-4	
+2-8	241-243	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-9	
+2-9	244-248	runā	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipi230an	*	runāt	_	_	_	_	conj	basic	2-4	
+2-10	249-252	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	par	_	_	_	_	case	basic	2-13	
+2-11	253-256	tās	*	*	Gen	*	*	Fem	*	*	*	Sing	3	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3fsgn	*	tā	_	_	*->2-3	*[2]	det	basic	2-13	
+2-12	257-268	gramatiskām	*	*	Dat	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpdnp	*	gramatiska	_	_	_	_	amod	basic	2-13	
+2-13	269-276	pazīmēm	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd5	*	pazīme	_	_	_	_	iobj	basic	2-9	
+2-14	276-277	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-4	
+
+#Text=Klasificējot verba gramatiskās kategorijas, R. Jakobsons norāda, ka nepieciešams šķirt šādas pazīmes:
+3-1	279-291	Klasificējot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	*	*	vmnpu0000000n	*	klasificēt	_	_	_	_	advcl	basic	3-8	
+3-2	292-297	verba	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	verbs	_	_	_	_	nmod	basic	3-4	
+3-3	298-309	gramatiskās	*	*	Acc	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpayp	*	gramatiska	_	_	_	_	amod	basic	3-4	
+3-4	310-321	kategorijas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	kategorija	_	_	_	_	obj	basic	3-1	
+3-5	321-322	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-1	
+3-6	323-325	R.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	R.	person[5]	https://en.wikipedia.org/wiki/Roman\_Jakobson[5]	_	_	nsubj	basic	3-8	
+3-7	326-335	Jakobsons	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Jakobsons	person[5]	https://en.wikipedia.org/wiki/Roman\_Jakobson[5]	_	_	flat:name	basic	3-6	
+3-8	336-342	norāda	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	norādīt	_	_	_	_	root	basic	3-8	
+3-9	342-343	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-11	
+3-10	344-346	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	3-11	
+3-11	347-359	nepieciešams	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	nepieciešams	_	_	_	_	ccomp	basic	3-8	
+3-12	360-365	šķirt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	*	šķirt	_	_	_	_	ccomp	basic	3-11	
+3-13	366-371	šādas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur\|PronType=Dem	*	*	pd0fpan	*	šāda	_	_	_	_	det	basic	3-14	
+3-14	372-379	pazīmes	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa5	*	pazīme	_	_	_	_	obj	basic	3-12	
+3-15	379-380	:	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zo	*	:	_	_	_	_	punct	basic	3-8	

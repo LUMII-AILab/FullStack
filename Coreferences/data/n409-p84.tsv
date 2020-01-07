@@ -1,0 +1,58 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=32. Nacionālie bruņotie spēki sadarbībā ar Ārlietu ministriju nosūta pieprasījumu uz ārvalsti, no kuras gaisa kuģis veicis pēdējo izlidošanu, par to personu skaitu un identitāti, kuras atradušās militārās aviācijas nelaimes gadījumā cietušajā gaisa kuģī, ja militārais gaisa kuģis šķērsojis Latvijas gaisa telpu tranzītā.
+1-1	0-3	32.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	32.	_	_	_	_	discourse	basic	1-9	
+1-2	4-14	Nacionālie	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpnyp	*	nacionāls	organization[1]	https://en.wikipedia.org/wiki/Latvian\_National\_Armed\_Forces[1]	_	_	amod	basic	1-4	
+1-3	15-23	bruņotie	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpnyp	*	bruņots	organization[1]	https://en.wikipedia.org/wiki/Latvian\_National\_Armed\_Forces[1]	_	_	amod	basic	1-4	
+1-4	24-29	spēki	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	spēks	organization[1]	https://en.wikipedia.org/wiki/Latvian\_National\_Armed\_Forces[1]	_	_	nsubj	basic	1-9	
+1-5	30-39	sadarbībā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	sadarbība	_	_	_	_	obl	basic	1-9	
+1-6	40-42	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	1-8	
+1-7	43-50	Ārlietu	*	*	Gen	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Ptan	*	*	ncfdg4	*	ārlietas	organization[2]	https://en.wikipedia.org/wiki/Ministry\_of\_Foreign\_Affairs\_(Latvia)[2]	_	_	nmod	basic	1-8	
+1-8	51-61	ministriju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	ministrija	organization[2]	https://en.wikipedia.org/wiki/Ministry\_of\_Foreign\_Affairs\_(Latvia)[2]	_	_	iobj	basic	1-5	
+1-9	62-68	nosūta	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	nosūtīt	_	_	_	_	root	basic	1-9	
+1-10	69-81	pieprasījumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	pieprasījums	_	_	_	_	obj	basic	1-9	
+1-11	82-84	uz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	uz	_	_	_	_	case	basic	1-12	
+1-12	85-93	ārvalsti	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa6	*	ārvalsts	_	_	*->1-1	*[1]	obl	basic	1-9	
+1-13	93-94	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-18	
+1-14	95-97	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	*->1-2	*[1]	case	basic	1-15	
+1-15	98-103	kuras	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsgn	*	kura	_	_	*->1-2	*[1]	det	basic	1-18	
+1-16	104-109	gaisa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	gaiss	_	_	_	_	nmod	basic	1-17	
+1-17	110-115	kuģis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	kuģis	_	_	_	_	nsubj	basic	1-18	
+1-18	116-122	veicis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnasnpn	*	veikt	_	_	_	_	acl	basic	1-12	
+1-19	123-129	pēdējo	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsayp	*	pēdēja	_	_	_	_	amod	basic	1-20	
+1-20	130-140	izlidošanu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	izlidošana	_	_	_	_	obj	basic	1-18	
+1-21	140-141	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-18	
+1-22	142-145	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	1-25	
+1-23	146-148	to	*	*	Gen	*	*	Fem	*	*	*	Plur	3	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur\|Person=3\|PronType=Dem	*	*	pd3fpgn	*	tā	_	_	*->2-1	*[2]	det	basic	1-24	
+1-24	149-156	personu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	persona	_	_	*->2-1	*[2]	nmod	basic	1-25	
+1-25	157-163	skaitu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	skaits	_	_	*->2-1	*[2]	nmod	basic	1-10	
+1-26	164-166	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	*->2-1	*[2]	cc	basic	1-27	
+1-27	167-177	identitāti	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	identitāte	_	_	*->2-1	*[2]	conj	basic	1-25	
+1-28	177-178	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-30	
+1-29	179-184	kuras	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|PronType=Rel	*	*	pr0fpnn	*	kura	_	_	*->2-2	*[2]	nsubj	basic	1-30	
+1-30	185-194	atradušās	*	Perf	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	*	vmypdfpnasnpn	*	atrasties	_	_	_	_	acl	basic	1-24	
+1-31	195-204	militārās	*	*	Gen	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsgyp	*	militāra	_	_	_	_	amod	basic	1-32	
+1-32	205-214	aviācijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	aviācija	_	_	_	_	nmod	basic	1-33	
+1-33	215-223	nelaimes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	nelaime	_	_	_	_	nmod	basic	1-34	
+1-34	224-232	gadījumā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	gadījums	_	_	_	_	obl	basic	1-35	
+1-35	233-242	cietušajā	*	Perf	Loc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Loc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmslasypn	*	ciest	_	_	_	_	amod	basic	1-37	
+1-36	243-248	gaisa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	gaiss	_	_	_	_	nmod	basic	1-37	
+1-37	249-253	kuģī	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	*	kuģis	_	_	_	_	obl	basic	1-30	
+1-38	253-254	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-43	
+1-39	255-257	ja	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ja	_	_	_	_	mark	basic	1-43	
+1-40	258-268	militārais	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsnyp	*	militārs	_	_	_	_	amod	basic	1-42	
+1-41	269-274	gaisa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	gaiss	_	_	_	_	nmod	basic	1-42	
+1-42	275-280	kuģis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	kuģis	_	_	_	_	nsubj	basic	1-43	
+1-43	281-290	šķērsojis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnasnpn	*	šķērsot	_	_	_	_	advcl	basic	1-9	
+1-44	291-299	Latvijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	_	_	nmod	basic	1-46	
+1-45	300-305	gaisa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	gaiss	_	_	_	_	nmod	basic	1-46	
+1-46	306-311	telpu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	telpa	_	_	_	_	obj	basic	1-43	
+1-47	312-320	tranzītā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	tranzīts	_	_	_	_	obl	basic	1-43	
+1-48	320-321	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-9	

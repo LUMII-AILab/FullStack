@@ -1,43 +1,43 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text="Nē.
-1-1	0-1	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	_	_	punct	basic	1-2	
-1-2	1-3	Nē	_	_	_	_	_	_	_	_	_	_	_	_	q	nē	_	_	root	basic	1-2	
-1-3	3-4	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	1-2	
+1-1	0-1	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	_	_	punct	basic	1-2	
+1-2	1-3	Nē	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	nē	_	_	root	basic	1-2	
+1-3	3-4	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	1-2	
 
 #Text=Kad mēs lasījām zemenes mežā, Vidu nolaupīja.
-2-1	6-9	Kad	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0t	kad	_	_	advmod	basic	2-3	
-2-2	10-13	mēs	*	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Number=Plur\|Person=1\|PronType=Prs	1	*	pp10pnn	mēs	_	_	nsubj	basic	2-3	
-2-3	14-21	lasījām	*	Plur	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	1	*	vmnist31pan	lasīt	_	_	advcl	basic	2-8	
-2-4	22-29	zemenes	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa5	zemene	_	_	obj	basic	2-3	
-2-5	30-34	mežā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	mežs	_	_	obl	basic	2-3	
-2-6	34-35	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	2-3	
-2-7	36-40	Vidu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	Vida	person	*	obj	basic	2-8	
-2-8	41-50	nolaupīja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	nolaupīt	_	_	root	basic	2-8	
-2-9	50-51	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	2-8	
+2-1	6-9	Kad	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0t	*	kad	_	_	advmod	basic	2-3	
+2-2	10-13	mēs	*	*	Nom	*	*	*	*	*	*	Plur	1	*	*	*	*	*	Case=Nom\|Number=Plur\|Person=1\|PronType=Prs	*	*	pp10pnn	*	mēs	_	_	nsubj	basic	2-3	
+2-3	14-21	lasījām	*	*	*	*	*	*	Ind	*	*	Plur	1	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist31pan	*	lasīt	_	_	advcl	basic	2-8	
+2-4	22-29	zemenes	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa5	*	zemene	_	_	obj	basic	2-3	
+2-5	30-34	mežā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	mežs	_	_	obl	basic	2-3	
+2-6	34-35	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	2-3	
+2-7	36-40	Vidu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	*	Vida	person	*	obj	basic	2-8	
+2-8	41-50	nolaupīja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist330an	*	nolaupīt	_	_	root	basic	2-8	
+2-9	50-51	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	2-8	
 
 #Text=Skrēju pakaļ, bet neatradu.
-3-1	53-59	Skrēju	*	Sing	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	1	*	vmnist11san	skriet	_	_	root	basic	3-1	
-3-2	60-65	pakaļ	_	_	_	_	_	_	_	_	_	_	_	_	r0p	pakaļ	_	_	advmod	basic	3-1	
-3-3	65-66	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	3-5	
-3-4	67-70	bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	cc	basic	3-5	
-3-5	71-79	neatradu	*	Sing	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Neg\|Tense=Past\|VerbForm=Fin\|Voice=Act	1	*	vmnist11say	neatrast	_	_	conj	basic	3-1	
-3-6	79-80	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	3-1	
+3-1	53-59	Skrēju	*	*	*	*	*	*	Ind	*	*	Sing	1	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist11san	*	skriet	_	_	root	basic	3-1	
+3-2	60-65	pakaļ	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0p	*	pakaļ	_	_	advmod	basic	3-1	
+3-3	65-66	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	3-5	
+3-4	67-70	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	cc	basic	3-5	
+3-5	71-79	neatradu	*	*	*	*	*	*	Ind	*	*	Sing	1	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Neg\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist11say	*	neatrast	_	_	conj	basic	3-1	
+3-6	79-80	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	3-1	
 
 #Text=Bēdām nebija gala.
-4-1	82-87	Bēdām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	bēda	_	_	obl	basic	4-2	
-4-2	88-94	nebija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vgnisii30ay	nebūt	_	_	root	basic	4-2	
-4-3	95-99	gala	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	gals	_	_	nsubj	basic	4-2	
-4-4	99-100	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	4-2	
+4-1	82-87	Bēdām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	*	bēda	_	_	obl	basic	4-2	
+4-2	88-94	nebija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vgnisii30ay	*	nebūt	_	_	root	basic	4-2	
+4-3	95-99	gala	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	gals	_	_	nsubj	basic	4-2	
+4-4	99-100	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	4-2	
 
 #Text=Solīju sodu..."
-5-1	102-108	Solīju	*	Sing	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	1	*	vmnist31san	solīt	_	_	root	basic	5-1	
-5-2	109-113	sodu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	sods	_	_	obj	basic	5-1	
-5-3	113-116	...	_	_	_	_	_	_	_	_	_	_	_	_	zs	...	_	_	punct	basic	5-1	
-5-4	116-117	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	_	_	punct	basic	5-1	
+5-1	102-108	Solīju	*	*	*	*	*	*	Ind	*	*	Sing	1	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist31san	*	solīt	_	_	root	basic	5-1	
+5-2	109-113	sodu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	sods	_	_	obj	basic	5-1	
+5-3	113-116	...	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	...	_	_	punct	basic	5-1	
+5-4	116-117	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	_	_	punct	basic	5-1	

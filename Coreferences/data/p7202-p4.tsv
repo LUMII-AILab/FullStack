@@ -1,0 +1,34 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=2009.gadā Brauns piekāva dziedātāju Rianu, ar kuru viņam tolaik bija attiecības.
+1-1	0-5	2009.	*	*	*	*	*	*	*	*	Ord	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	2009.	time[1]	*[1]	_	_	amod	basic	1-2	
+1-2	5-9	gadā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	gads	time[1]	*[1]	_	_	obl	basic	1-4	
+1-3	10-16	Brauns	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Brauns	person	https://en.wikipedia.org/wiki/Chris\_Brown	*->2-1	*[2]	nsubj	basic	1-4	
+1-4	17-24	piekāva	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist130an	*	piekaut	_	_	_	_	root	basic	1-4	
+1-5	25-35	dziedātāju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	dziedātāja	_	_	*->1-1	*[1]	nmod	basic	1-6	
+1-6	36-41	Rianu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	*	Riana	person	https://en.wikipedia.org/wiki/Rihanna	*->1-2	*[1]	obj	basic	1-4	
+1-7	41-42	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-12	
+1-8	43-45	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	*->1-3	*[1]	case	basic	1-9	
+1-9	46-50	kuru	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	Rel	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsan	*	kura	_	_	*->1-3	*[1]	det	basic	1-13	
+1-10	51-56	viņam	*	*	Dat	*	*	Masc	*	*	*	Sing	3	*	Prs	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msdn	*	viņš	_	_	*->2-2	*[2]	obl	basic	1-12	
+1-11	57-63	tolaik	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	tolaik	_	_	_	_	advmod	basic	1-12	
+1-12	64-68	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vpnisii30an	*	būt	_	_	_	_	acl	basic	1-6	
+1-13	69-79	attiecības	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	attiecība	_	_	_	_	nsubj	basic	1-12	
+1-14	79-80	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-4	
+
+#Text=Šogad beidzās Braunam piemērotais nosacītā soda termiņš.
+2-1	81-86	Šogad	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	šogad	_	_	_	_	advmod	basic	2-2	
+2-2	87-94	beidzās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyisi130an	*	beigties	_	_	_	_	root	basic	2-2	
+2-3	95-102	Braunam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	npmsd1	*	Brauns	person	https://en.wikipedia.org/wiki/Chris\_Brown	*->2-3	*[2]	iobj	basic	2-4	
+2-4	103-114	piemērotais	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsnpsypn	*	piemērot	_	_	_	_	amod	basic	2-7	
+2-5	115-123	nosacītā	*	*	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsgyp	*	nosacīts	_	_	_	_	amod	basic	2-6	
+2-6	124-128	soda	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	sods	_	_	_	_	nmod	basic	2-7	
+2-7	129-136	termiņš	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	termiņš	_	_	_	_	nsubj	basic	2-2	
+2-8	136-137	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-2	

@@ -1,45 +1,45 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Pagājušā nedēļas nogalē policijas darbinieki veica profilaktisko pārbaudi, kuras laikā konstatēja, ka Ventspilī, Lielajā prospektā kāds vīrietis nelikumīgi tirgo alkoholiskos dzērienus, turklāt visu kāpņu telpu bija pārņēmusi nepatīkama alkohola smaka.
-1-1	0-8	Pagājušā	Masc	Sing	Gen	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsgasypn	paiet	_	_	_	_	amod	basic	1-3	
-1-2	9-16	nedēļas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	nedēļa	_	_	_	_	nmod	basic	1-3	
-1-3	17-23	nogalē	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	nogale	_	_	_	_	obl	basic	1-6	
-1-4	24-33	policijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	policija	_	_	_	_	nmod	basic	1-5	
-1-5	34-44	darbinieki	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	darbinieks	_	_	_	_	nsubj	basic	1-6	
-1-6	45-50	veica	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	veikt	_	_	_	_	root	basic	1-6	
-1-7	51-64	profilaktisko	Fem	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsayp	profilaktiska	_	_	*[1]	*->1-1	amod	basic	1-8	
-1-8	65-73	pārbaudi	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	pārbaude	_	_	*[1]	*->1-1	obj	basic	1-6	
-1-9	73-74	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-12	
-1-10	75-80	kuras	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsgn	kura	_	_	*[1]	*->1-2	det	basic	1-11	
-1-11	81-86	laikā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	laiks	_	_	_	_	obl	basic	1-12	
-1-12	87-97	konstatēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist230an	konstatēt	_	_	_	_	acl	basic	1-8	
-1-13	97-98	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-22	
-1-14	99-101	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark	basic	1-22	
-1-15	102-111	Ventspilī	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl6	Ventspils	GPE	*	_	_	obl	basic	1-22	
-1-16	111-112	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-18	
-1-17	113-120	Lielajā	Masc	Sing	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmslyp	liels	location[1]	*[1]	_	_	amod	basic	1-18	
-1-18	121-130	prospektā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	prospekts	location[1]	*[1]	_	_	conj	basic	1-15	
-1-19	131-135	kāds	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Ind	*	*	pi0msnn	kāds	_	_	_	_	det	basic	1-20	
-1-20	136-144	vīrietis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	vīrietis	_	_	_	_	nsubj	basic	1-22	
-1-21	145-155	nelikumīgi	*	*	*	*	*	*	*	*	*	PronType=Neg	*	*	r0m	nelikumīgi	_	_	_	_	advmod	basic	1-22	
-1-22	156-161	tirgo	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt230an	tirgot	_	_	_	_	ccomp	basic	1-12	
-1-23	162-174	alkoholiskos	Masc	Plur	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpayp	alkoholisks	_	_	_	_	amod	basic	1-24	
-1-24	175-184	dzērienus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	dzēriens	_	_	_	_	obj	basic	1-22	
-1-25	184-185	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-31	
-1-26	186-193	turklāt	_	_	_	_	_	_	_	_	_	_	_	_	cs	turklāt	_	_	_	_	cc	basic	1-31	
-1-27	194-198	visu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msan	viss	_	_	_	_	det	basic	1-29	
-1-28	199-204	kāpņu	Fem	Ptan	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Ptan	*	*	ncfdg5	kāpnes	_	_	_	_	nmod	basic	1-29	
-1-29	205-210	telpu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	telpa	_	_	_	_	obj	basic	1-31	
-1-30	211-215	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vcnisii30an	būt	_	_	_	_	aux	basic	1-31	
-1-31	216-225	pārņēmusi	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnasnpn	pārņemt	_	_	_	_	conj	basic	1-22	
-1-32	226-236	nepatīkama	Masc	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsgnp	nepatīkams	_	_	_	_	amod	basic	1-34	
-1-33	237-245	alkohola	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	alkohols	_	_	_	_	nmod	basic	1-34	
-1-34	246-251	smaka	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	smaka	_	_	_	_	nsubj	basic	1-31	
-1-35	251-252	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-6	
+1-1	0-8	Pagājušā	*	Perf	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsgasypn	*	paiet	_	_	_	_	amod	basic	1-3	
+1-2	9-16	nedēļas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	nedēļa	_	_	_	_	nmod	basic	1-3	
+1-3	17-23	nogalē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	*	nogale	_	_	_	_	obl	basic	1-6	
+1-4	24-33	policijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	policija	_	_	_	_	nmod	basic	1-5	
+1-5	34-44	darbinieki	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	darbinieks	_	_	_	_	nsubj	basic	1-6	
+1-6	45-50	veica	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist130an	*	veikt	_	_	_	_	root	basic	1-6	
+1-7	51-64	profilaktisko	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsayp	*	profilaktiska	_	_	*->1-1	*[1]	amod	basic	1-8	
+1-8	65-73	pārbaudi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	pārbaude	_	_	*->1-1	*[1]	obj	basic	1-6	
+1-9	73-74	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-12	
+1-10	75-80	kuras	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsgn	*	kura	_	_	*->1-2	*[1]	det	basic	1-11	
+1-11	81-86	laikā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	laiks	_	_	_	_	obl	basic	1-12	
+1-12	87-97	konstatēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist230an	*	konstatēt	_	_	_	_	acl	basic	1-8	
+1-13	97-98	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-22	
+1-14	99-101	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	1-22	
+1-15	102-111	Ventspilī	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl6	*	Ventspils	GPE	*	_	_	obl	basic	1-22	
+1-16	111-112	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-18	
+1-17	113-120	Lielajā	*	*	Loc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmslyp	*	liels	location[1]	*[1]	_	_	amod	basic	1-18	
+1-18	121-130	prospektā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	prospekts	location[1]	*[1]	_	_	conj	basic	1-15	
+1-19	131-135	kāds	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Ind	*	*	pi0msnn	*	kāds	_	_	_	_	det	basic	1-20	
+1-20	136-144	vīrietis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	vīrietis	_	_	_	_	nsubj	basic	1-22	
+1-21	145-155	nelikumīgi	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Neg	*	*	r0m	*	nelikumīgi	_	_	_	_	advmod	basic	1-22	
+1-22	156-161	tirgo	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt230an	*	tirgot	_	_	_	_	ccomp	basic	1-12	
+1-23	162-174	alkoholiskos	*	*	Acc	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpayp	*	alkoholisks	_	_	_	_	amod	basic	1-24	
+1-24	175-184	dzērienus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	dzēriens	_	_	_	_	obj	basic	1-22	
+1-25	184-185	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-31	
+1-26	186-193	turklāt	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	turklāt	_	_	_	_	cc	basic	1-31	
+1-27	194-198	visu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msan	*	viss	_	_	_	_	det	basic	1-29	
+1-28	199-204	kāpņu	*	*	Gen	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Ptan	*	*	ncfdg5	*	kāpnes	_	_	_	_	nmod	basic	1-29	
+1-29	205-210	telpu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	telpa	_	_	_	_	obj	basic	1-31	
+1-30	211-215	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vcnisii30an	*	būt	_	_	_	_	aux	basic	1-31	
+1-31	216-225	pārņēmusi	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsnasnpn	*	pārņemt	_	_	_	_	conj	basic	1-22	
+1-32	226-236	nepatīkama	*	*	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsgnp	*	nepatīkams	_	_	_	_	amod	basic	1-34	
+1-33	237-245	alkohola	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	alkohols	_	_	_	_	nmod	basic	1-34	
+1-34	246-251	smaka	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	smaka	_	_	_	_	nsubj	basic	1-31	
+1-35	251-252	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-6	

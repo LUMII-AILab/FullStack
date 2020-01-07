@@ -1,27 +1,27 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Argentīniešu futbola aizsarga Gastona Agirres spēles laikā sistā bumba trāpīja balodim, kurš no trieciena mira.
-1-1	0-12	Argentīniešu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	argentīnietis	_	_	_	_	nmod|nmod	basic|enhanced	1-3|1-3	
-1-2	13-20	futbola	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	futbols	_	_	_	_	nmod|nmod	basic|enhanced	1-3|1-3	
-1-3	21-29	aizsarga	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	aizsargs	_	_	*[1]	*->1-1	nmod|nmod	basic|enhanced	1-4|1-4	
-1-4	30-37	Gastona	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Gastons	person[1]	https://en.wikipedia.org/wiki/Gastón\_Aguirre[1]	*[1]	*->1-2	nmod|nmod	basic|enhanced	1-8|1-8	
-1-5	38-45	Agirres	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg5	Agirre	person[1]	https://en.wikipedia.org/wiki/Gastón\_Aguirre[1]	*[1]	*->1-2	flat:name|flat	basic|enhanced	1-4|1-4	
-1-6	46-52	spēles	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	spēle	_	_	_	_	nmod|nmod	basic|enhanced	1-7|1-7	
-1-7	53-58	laikā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	laiks	_	_	_	_	obl|obl	basic|enhanced	1-8|1-8	
-1-8	59-64	sistā	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnpsyp	sist	_	_	_	_	amod|amod	basic|enhanced	1-9|1-9	
-1-9	65-70	bumba	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	bumba	_	_	_	_	nsubj|nsubj	basic|enhanced	1-10|1-10	
-1-10	71-78	trāpīja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	trāpīt	_	_	_	_	root|root	basic|enhanced	1-10|1-10	
-1-11	79-86	balodim	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd2	balodis	_	_	*[2]	*->2-1	iobj|iobj	basic|enhanced	1-10|1-10	
-1-12	86-87	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-16|1-16	
-1-13	88-92	kurš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msnn	kurš	_	_	*[2]	*->2-2	nsubj|nsubj	basic|enhanced	1-16|1-16	
-1-14	93-95	no	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	_	_	_	_	case|case	basic|enhanced	1-15|1-15	
-1-15	96-105	trieciena	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	trieciens	_	_	_	_	obl|obl	basic|enhanced	1-16|1-16	
-1-16	106-110	mira	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi130an	mirt	_	_	_	_	acl|acl	basic|enhanced	1-11|1-11	
-1-17	110-111	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-10|1-10	
+1-1	0-12	Argentīniešu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	argentīnietis	_	_	_	_	nmod|nmod	basic|enhanced	1-3|1-3	
+1-2	13-20	futbola	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	futbols	_	_	_	_	nmod|nmod	basic|enhanced	1-3|1-3	
+1-3	21-29	aizsarga	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	aizsargs	_	_	*->1-1	*[1]	nmod|nmod	basic|enhanced	1-4|1-4	
+1-4	30-37	Gastona	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Gastons	person[1]	https://en.wikipedia.org/wiki/Gastón\_Aguirre[1]	*->1-2	*[1]	nmod|nmod	basic|enhanced	1-8|1-8	
+1-5	38-45	Agirres	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg5	*	Agirre	person[1]	https://en.wikipedia.org/wiki/Gastón\_Aguirre[1]	*->1-2	*[1]	flat:name|flat	basic|enhanced	1-4|1-4	
+1-6	46-52	spēles	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	spēle	_	_	_	_	nmod|nmod	basic|enhanced	1-7|1-7	
+1-7	53-58	laikā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	laiks	_	_	_	_	obl|obl	basic|enhanced	1-8|1-8	
+1-8	59-64	sistā	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsnpsyp	*	sist	_	_	_	_	amod|amod	basic|enhanced	1-9|1-9	
+1-9	65-70	bumba	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	bumba	_	_	_	_	nsubj|nsubj	basic|enhanced	1-10|1-10	
+1-10	71-78	trāpīja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist330an	*	trāpīt	_	_	_	_	root|root	basic|enhanced	1-10|1-10	
+1-11	79-86	balodim	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd2	*	balodis	_	_	*->2-1	*[2]	iobj|iobj	basic|enhanced	1-10|1-10	
+1-12	86-87	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	1-16|1-16	
+1-13	88-92	kurš	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msnn	*	kurš	_	_	*->2-2	*[2]	nsubj|nsubj	basic|enhanced	1-16|1-16	
+1-14	93-95	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case|case	basic|enhanced	1-15|1-15	
+1-15	96-105	trieciena	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	trieciens	_	_	_	_	obl|obl	basic|enhanced	1-16|1-16	
+1-16	106-110	mira	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnisi130an	*	mirt	_	_	_	_	acl|acl	basic|enhanced	1-11|1-11	
+1-17	110-111	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	1-10|1-10	

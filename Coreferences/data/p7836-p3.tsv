@@ -1,0 +1,26 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Perija plāno radīt spilgtu, interesantu kolekciju, kuru uzdrošināsies valkāt tikai pašas stilīgākās dāmas.
+1-1	0-6	Perija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Perija	person	https://en.wikipedia.org/wiki/Katy\_Perry	_	_	nsubj	basic	1-2	
+1-2	7-12	plāno	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt230an	*	plānot	_	_	_	_	root	basic	1-2	
+1-3	13-18	radīt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t3000n	*	radīt	_	_	_	_	ccomp	basic	1-2	
+1-4	19-26	spilgtu	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsanp	*	spilgts	_	_	*->1-1	*[1]	amod	basic	1-7	
+1-5	26-27	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	*->1-1	*[1]	punct	basic	1-6	
+1-6	28-39	interesantu	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsanp	*	interesants	_	_	*->1-1	*[1]	conj	basic	1-4	
+1-7	40-49	kolekciju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	kolekcija	_	_	*->1-1	*[1]	obj	basic	1-3	
+1-8	49-50	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-10	
+1-9	51-55	kuru	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	Rel	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsan	*	kura	_	_	*->1-2	*[1]	obj	basic	1-11	
+1-10	56-69	uzdrošināsies	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Fut\|VerbForm=Fin\|Voice=Act	Fin	Act	voyifi330an	*	uzdrošināties	_	_	_	_	acl	basic	1-7	
+1-11	70-76	valkāt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t2000n	*	valkāt	_	_	_	_	xcomp	basic	1-10	
+1-12	77-82	tikai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tikai	_	_	_	_	discourse	basic	1-15	
+1-13	83-88	pašas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	Tot	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|PronType=Tot	*	*	pg0fpnn	*	pati	_	_	_	_	det	basic	1-14	
+1-14	89-99	stilīgākās	*	*	Nom	*	Cmp	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Fem\|Number=Plur	*	*	affpnyc	*	stilīgs	_	_	_	_	amod	basic	1-15	
+1-15	100-105	dāmas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	dāma	_	_	_	_	nsubj	basic	1-10	
+1-16	105-106	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-2	

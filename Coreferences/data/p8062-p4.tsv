@@ -1,0 +1,52 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Nu jau kādu laiku Mamikins ir “saaudzis” ar Briseles varas koridoriem, taču pēdējos mēnešos Saskaņu pārstāvošais Eiropas Parlamenta deputāts iecienījis koridorus tieši Krievijas vēstniecībā Briselē, kā arī Maskavā.
+1-1	0-2	Nu	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	nu	_	_	_	_	advmod	basic	1-8	
+1-2	3-6	jau	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	jau	_	_	_	_	advmod	basic	1-4	
+1-3	7-11	kādu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Ind	*	*	pi0msan	*	kāds	_	_	_	_	det	basic	1-4	
+1-4	12-17	laiku	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	laiks	_	_	_	_	obl	basic	1-8	
+1-5	18-26	Mamikins	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	Mamikins	person	https://en.wikipedia.org/wiki/Andrejs\_Mamikins	*->1-1	*[1]	nsubj	basic	1-8	
+1-6	27-29	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	aux	basic	1-8	
+1-7	30-31	“	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	“	_	_	_	_	punct	basic	1-8	
+1-8	31-39	saaudzis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnasnpn	*	saaugt	_	_	_	_	root	basic	1-8	
+1-9	39-40	”	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	”	_	_	_	_	punct	basic	1-8	
+1-10	41-43	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	1-13	
+1-11	44-52	Briseles	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	*	Brisele	GPE	https://en.wikipedia.org/wiki/Brussels	_	_	nmod	basic	1-13	
+1-12	53-58	varas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	vara	_	_	_	_	nmod	basic	1-13	
+1-13	59-69	koridoriem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	koridors	_	_	_	_	iobj	basic	1-8	
+1-14	69-70	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-23	
+1-15	71-75	taču	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	taču	_	_	_	_	cc	basic	1-23	
+1-16	76-83	pēdējos	*	*	Loc	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmplnp	*	pēdējs	_	_	_	_	amod	basic	1-17	
+1-17	84-91	mēnešos	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl2	*	mēnesis	_	_	_	_	obl	basic	1-23	
+1-18	92-99	Saskaņu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	saskaņa	organization	https://en.wikipedia.org/wiki/Social\_Democratic\_Party\_"Harmony"	_	_	obj	basic	1-19	
+1-19	100-112	pārstāvošais	*	Imp	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Pres	*	Aspect=Imp\|Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdmsnapypn	*	pārstāvēt	_	_	_	_	amod	basic	1-22	
+1-20	113-120	Eiropas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Eiropa	organization[1]|location[2]	https://en.wikipedia.org/wiki/European\_Parliament[1]|https://en.wikipedia.org/wiki/Europe[2]	*->1-2	*[1]	nmod	basic	1-21	
+1-21	121-131	Parlamenta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	parlaments	organization[1]	https://en.wikipedia.org/wiki/European\_Parliament[1]	*->1-2	*[1]	nmod	basic	1-22	
+1-22	132-140	deputāts	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	deputāts	_	_	*->1-2	*[1]	nmod	basic	1-24	
+1-23	141-151	iecienījis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnasnpn	*	iecienīt	_	_	_	_	conj	basic	1-8	
+1-24	152-161	koridorus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	koridors	_	_	_	_	obj	basic	1-23	
+1-25	162-167	tieši	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tieši	_	_	_	_	discourse	basic	1-27	
+1-26	168-177	Krievijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Krievija	organization[3]|GPE[4]	*[3]|https://en.wikipedia.org/wiki/Russia[4]	_	_	nmod	basic	1-27	
+1-27	178-189	vēstniecībā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	vēstniecība	organization[3]	*[3]	_	_	acl	basic	1-24	
+1-28	190-197	Briselē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl5	*	Brisele	GPE	https://en.wikipedia.org/wiki/Brussels	_	_	acl	basic	1-27	
+1-29	197-198	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-32	
+1-30	199-201	kā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	kā	_	_	_	_	cc	basic	1-32	
+1-31	202-205	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	1-30	
+1-32	206-213	Maskavā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Maskava	GPE	https://en.wikipedia.org/wiki/Moscow	_	_	conj	basic	1-28	
+1-33	213-214	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-8	
+
+#Text=Arī viņa retorika ir jūtami pamainījusies.
+2-1	216-219	Arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	2-3	
+2-2	220-224	viņa	*	*	Gen	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msgn	*	viņš	_	_	*->1-3	*[1]	det	basic	2-3	
+2-3	225-233	retorika	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	retorika	_	_	_	_	nsubj	basic	2-6	
+2-4	234-236	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	aux	basic	2-6	
+2-5	237-243	jūtami	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	jūtami	_	_	_	_	advmod	basic	2-6	
+2-6	244-257	pamainījusies	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	*	vmypdfsnasnpn	*	pamainīties	_	_	_	_	root	basic	2-6	
+2-7	257-258	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-6	

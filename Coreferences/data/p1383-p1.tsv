@@ -1,71 +1,71 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Pagājušo piektdien Salaspilī notika Valsts policijas atklātais čempionāts svaru bumbu celšanā.
-1-1	0-8	Pagājušo	vmnpdmsaasyp	paiet	time[1]	*[1]	_	_	amod	basic	1-2	
-1-2	9-18	piektdien	r0t	piektdien	time[1]	*[1]	_	_	advmod	basic	1-4	
-1-3	19-28	Salaspilī	npfsl6	Salaspils	GPE	https://en.wikipedia.org/wiki/Salaspils	_	_	obl	basic	1-4	
-1-4	29-35	notika	vmnisi130an	notikt	_	_	_	_	root	basic	1-4	
-1-5	36-42	Valsts	ncfsg6	valsts	event[2]|organization[3]	*[2]|https://lv.wikipedia.org/wiki/Latvijas\_Valsts\_policija[3]	_	_	nmod	basic	1-6	
-1-6	43-52	policijas	ncfsg4	policija	event[2]|organization[3]	*[2]|https://lv.wikipedia.org/wiki/Latvijas\_Valsts\_policija[3]	_	_	nmod	basic	1-8	
-1-7	53-62	atklātais	vmnpdmsnpsyp	atklāt	event[2]	*[2]	_	_	amod	basic	1-8	
-1-8	63-73	čempionāts	ncmsn1	čempionāts	event[2]	*[2]	_	_	nsubj	basic	1-4	
-1-9	74-79	svaru	ncmpg1	svars	event[2]	*[2]	_	_	nmod	basic	1-10	
-1-10	80-85	bumbu	ncfpg4	bumba	event[2]	*[2]	_	_	nmod	basic	1-11	
-1-11	86-93	celšanā	ncfsl4	celšana	event[2]	*[2]	_	_	nmod	basic	1-4	
-1-12	93-94	.	zs	.	_	_	_	_	punct	basic	1-4	
+1-1	0-8	Pagājušo	vmnpdmsaasyp	*	paiet	time[1]	*[1]	_	_	amod	basic	1-2	
+1-2	9-18	piektdien	r0t	*	piektdien	time[1]	*[1]	_	_	advmod	basic	1-4	
+1-3	19-28	Salaspilī	npfsl6	*	Salaspils	GPE	https://en.wikipedia.org/wiki/Salaspils	_	_	obl	basic	1-4	
+1-4	29-35	notika	vmnisi130an	*	notikt	_	_	_	_	root	basic	1-4	
+1-5	36-42	Valsts	ncfsg6	*	valsts	event[2]|organization[3]	*[2]|https://lv.wikipedia.org/wiki/Latvijas\_Valsts\_policija[3]	_	_	nmod	basic	1-6	
+1-6	43-52	policijas	ncfsg4	*	policija	event[2]|organization[3]	*[2]|https://lv.wikipedia.org/wiki/Latvijas\_Valsts\_policija[3]	_	_	nmod	basic	1-8	
+1-7	53-62	atklātais	vmnpdmsnpsyp	*	atklāt	event[2]	*[2]	_	_	amod	basic	1-8	
+1-8	63-73	čempionāts	ncmsn1	*	čempionāts	event[2]	*[2]	_	_	nsubj	basic	1-4	
+1-9	74-79	svaru	ncmpg1	*	svars	event[2]	*[2]	_	_	nmod	basic	1-10	
+1-10	80-85	bumbu	ncfpg4	*	bumba	event[2]	*[2]	_	_	nmod	basic	1-11	
+1-11	86-93	celšanā	ncfsl4	*	celšana	event[2]	*[2]	_	_	nmod	basic	1-4	
+1-12	93-94	.	zs	*	.	_	_	_	_	punct	basic	1-4	
 
 #Text=Rēzeknes policijas pārvaldi pārstāvēja trīs dalībnieki, un visi ieguva godalgotas vietas.
-2-1	96-104	Rēzeknes	npfsg5	Rēzekne	organization[4]|GPE[5]	*[4]|https://en.wikipedia.org/wiki/Rēzekne[5]	_	_	nmod	basic	2-2	
-2-2	105-114	policijas	ncfsg4	policija	organization[4]	*[4]	_	_	nmod	basic	2-3	
-2-3	115-123	pārvaldi	ncfsa5	pārvalde	organization[4]	*[4]	_	_	obj	basic	2-4	
-2-4	124-134	pārstāvēja	vmnist330an	pārstāvēt	_	_	_	_	root	basic	2-4	
-2-5	135-139	trīs	mcsmpn	trīs	_	_	*[1]	*->1-1	nummod	basic	2-6	
-2-6	140-150	dalībnieki	ncmpn1	dalībnieks	_	_	*[1]	*->1-1	nsubj	basic	2-4	
-2-7	150-151	,	zc	,	_	_	_	_	punct	basic	2-10	
-2-8	152-154	un	cc	un	_	_	_	_	cc	basic	2-10	
-2-9	155-159	visi	pg0mpnn	viss	_	_	*[1]	*->1-2	nsubj	basic	2-10	
-2-10	160-166	ieguva	vmnist130an	iegūt	_	_	_	_	conj	basic	2-4	
-2-11	167-177	godalgotas	vmnpdfpapsnp	godalgot	_	_	_	_	amod	basic	2-12	
-2-12	178-184	vietas	ncfpa4	vieta	_	_	_	_	obj	basic	2-10	
-2-13	184-185	.	zs	.	_	_	_	_	punct	basic	2-4	
+2-1	96-104	Rēzeknes	npfsg5	*	Rēzekne	organization[4]|GPE[5]	*[4]|https://en.wikipedia.org/wiki/Rēzekne[5]	_	_	nmod	basic	2-2	
+2-2	105-114	policijas	ncfsg4	*	policija	organization[4]	*[4]	_	_	nmod	basic	2-3	
+2-3	115-123	pārvaldi	ncfsa5	*	pārvalde	organization[4]	*[4]	_	_	obj	basic	2-4	
+2-4	124-134	pārstāvēja	vmnist330an	*	pārstāvēt	_	_	_	_	root	basic	2-4	
+2-5	135-139	trīs	mcsmpn	*	trīs	_	_	*->1-1	*[1]	nummod	basic	2-6	
+2-6	140-150	dalībnieki	ncmpn1	*	dalībnieks	_	_	*->1-1	*[1]	nsubj	basic	2-4	
+2-7	150-151	,	zc	*	,	_	_	_	_	punct	basic	2-10	
+2-8	152-154	un	cc	*	un	_	_	_	_	cc	basic	2-10	
+2-9	155-159	visi	pg0mpnn	*	viss	_	_	*->1-2	*[1]	nsubj	basic	2-10	
+2-10	160-166	ieguva	vmnist130an	*	iegūt	_	_	_	_	conj	basic	2-4	
+2-11	167-177	godalgotas	vmnpdfpapsnp	*	godalgot	_	_	_	_	amod	basic	2-12	
+2-12	178-184	vietas	ncfpa4	*	vieta	_	_	_	_	obj	basic	2-10	
+2-13	184-185	.	zs	*	.	_	_	_	_	punct	basic	2-4	
 
 #Text=Svara kategorijā virs 90 kg uzvarēja Aldis Rutkovskis, otro vietu ieguva Artūrs Zaharkevičš (svara kategorija līdz 70 kg), bet Jurijam Jemeļjanovam otrā vieta svara kategorijā līdz 90 kg.
-3-1	187-192	Svara	ncmsg1	svars	_	_	_	_	nmod	basic	3-2	
-3-2	193-203	kategorijā	ncfsl4	kategorija	_	_	_	_	obl	basic	3-6	
-3-3	204-208	virs	sppd	virs	_	_	_	_	case	basic	3-5	
-3-4	209-211	90	xn	90	_	_	_	_	nummod	basic	3-5	
-3-5	212-214	kg	yn	kg	_	_	_	_	nmod	basic	3-2	
-3-6	215-223	uzvarēja	vmnist330an	uzvarēt	_	_	_	_	root	basic	3-6	
-3-7	224-229	Aldis	npmsn2	Aldis	person[6]	*[6]	_	_	nsubj	basic	3-6	
-3-8	230-240	Rutkovskis	npmsn2	Rutkovskis	person[6]	*[6]	_	_	flat:name	basic	3-7	
-3-9	240-241	,	zc	,	_	_	_	_	punct	basic	3-12	
-3-10	242-246	otro	mosfsa	otrā	_	_	_	_	amod	basic	3-11	
-3-11	247-252	vietu	ncfsa4	vieta	_	_	_	_	obj	basic	3-12	
-3-12	253-259	ieguva	vmnist130an	iegūt	_	_	_	_	conj	basic	3-6	
-3-13	260-266	Artūrs	npmsn1	Artūrs	person[7]	*[7]	_	_	nsubj	basic	3-12	
-3-14	267-278	Zaharkevičš	npmsn1	Zaharkevičš	person[7]	*[7]	_	_	flat:name	basic	3-13	
-3-15	279-280	(	zb	(	_	_	_	_	punct	basic	3-17	
-3-16	280-285	svara	ncmsg1	svars	_	_	_	_	nmod	basic	3-17	
-3-17	286-296	kategorija	ncfsn4	kategorija	_	_	_	_	parataxis	basic	3-13	
-3-18	297-301	līdz	sppd	līdz	_	_	_	_	case	basic	3-20	
-3-19	302-304	70	xn	70	_	_	_	_	nummod	basic	3-20	
-3-20	305-307	kg	yn	kg	_	_	_	_	nmod	basic	3-17	
-3-21	307-308	)	zb	)	_	_	_	_	punct	basic	3-17	
-3-22	308-309	,	zc	,	_	_	_	_	punct	basic	3-27	
-3-23	310-313	bet	cc	bet	_	_	_	_	cc	basic	3-27	
-3-24	314-321	Jurijam	npmsd1	Jurijs	person[8]	*[8]	_	_	obl	basic	3-27	
-3-25	322-334	Jemeļjanovam	npmsd1	Jemeļjanovs	person[8]	*[8]	_	_	flat:name	basic	3-24	
-3-26	335-339	otrā	mosfsn	otrā	_	_	_	_	amod	basic	3-27	
-3-27	340-345	vieta	ncfsn4	vieta	_	_	_	_	conj	basic	3-6	
-3-28	346-351	svara	ncmsg1	svars	_	_	_	_	nmod	basic	3-29	
-3-29	352-362	kategorijā	ncfsl4	kategorija	_	_	_	_	acl	basic	3-27	
-3-30	363-367	līdz	sppd	līdz	_	_	_	_	case	basic	3-32	
-3-31	368-370	90	xn	90	_	_	_	_	nummod	basic	3-32	
-3-32	371-373	kg	yn	kg	_	_	_	_	nmod	basic	3-29	
-3-33	373-374	.	zs	.	_	_	_	_	punct	basic	3-6	
+3-1	187-192	Svara	ncmsg1	*	svars	_	_	_	_	nmod	basic	3-2	
+3-2	193-203	kategorijā	ncfsl4	*	kategorija	_	_	_	_	obl	basic	3-6	
+3-3	204-208	virs	sppd	*	virs	_	_	_	_	case	basic	3-5	
+3-4	209-211	90	xn	*	90	_	_	_	_	nummod	basic	3-5	
+3-5	212-214	kg	yn	*	kg	_	_	_	_	nmod	basic	3-2	
+3-6	215-223	uzvarēja	vmnist330an	*	uzvarēt	_	_	_	_	root	basic	3-6	
+3-7	224-229	Aldis	npmsn2	*	Aldis	person[6]	*[6]	_	_	nsubj	basic	3-6	
+3-8	230-240	Rutkovskis	npmsn2	*	Rutkovskis	person[6]	*[6]	_	_	flat:name	basic	3-7	
+3-9	240-241	,	zc	*	,	_	_	_	_	punct	basic	3-12	
+3-10	242-246	otro	mosfsa	*	otrā	_	_	_	_	amod	basic	3-11	
+3-11	247-252	vietu	ncfsa4	*	vieta	_	_	_	_	obj	basic	3-12	
+3-12	253-259	ieguva	vmnist130an	*	iegūt	_	_	_	_	conj	basic	3-6	
+3-13	260-266	Artūrs	npmsn1	*	Artūrs	person[7]	*[7]	_	_	nsubj	basic	3-12	
+3-14	267-278	Zaharkevičš	npmsn1	*	Zaharkevičš	person[7]	*[7]	_	_	flat:name	basic	3-13	
+3-15	279-280	(	zb	*	(	_	_	_	_	punct	basic	3-17	
+3-16	280-285	svara	ncmsg1	*	svars	_	_	_	_	nmod	basic	3-17	
+3-17	286-296	kategorija	ncfsn4	*	kategorija	_	_	_	_	parataxis	basic	3-13	
+3-18	297-301	līdz	sppd	*	līdz	_	_	_	_	case	basic	3-20	
+3-19	302-304	70	xn	*	70	_	_	_	_	nummod	basic	3-20	
+3-20	305-307	kg	yn	*	kg	_	_	_	_	nmod	basic	3-17	
+3-21	307-308	)	zb	*	)	_	_	_	_	punct	basic	3-17	
+3-22	308-309	,	zc	*	,	_	_	_	_	punct	basic	3-27	
+3-23	310-313	bet	cc	*	bet	_	_	_	_	cc	basic	3-27	
+3-24	314-321	Jurijam	npmsd1	*	Jurijs	person[8]	*[8]	_	_	obl	basic	3-27	
+3-25	322-334	Jemeļjanovam	npmsd1	*	Jemeļjanovs	person[8]	*[8]	_	_	flat:name	basic	3-24	
+3-26	335-339	otrā	mosfsn	*	otrā	_	_	_	_	amod	basic	3-27	
+3-27	340-345	vieta	ncfsn4	*	vieta	_	_	_	_	conj	basic	3-6	
+3-28	346-351	svara	ncmsg1	*	svars	_	_	_	_	nmod	basic	3-29	
+3-29	352-362	kategorijā	ncfsl4	*	kategorija	_	_	_	_	acl	basic	3-27	
+3-30	363-367	līdz	sppd	*	līdz	_	_	_	_	case	basic	3-32	
+3-31	368-370	90	xn	*	90	_	_	_	_	nummod	basic	3-32	
+3-32	371-373	kg	yn	*	kg	_	_	_	_	nmod	basic	3-29	
+3-33	373-374	.	zs	*	.	_	_	_	_	punct	basic	3-6	

@@ -1,0 +1,52 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Tādējādi vispārinot izrādes mēģinājumu procesu pēc K. Staņislavska sistēmas, jākonstatē, ka vispārīgā gadījumā aktieri ir atbildīgi par savu lomu izstrādi, kamēr režisora funkcijas saistītas ar izrādes makrolīmeni – virsuzdevuma identificēšanu, improvizētā materiāla atlasi un temoporitma izstrādi iestudējumam.
+1-1	0-8	Tādējādi	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	tādējādi	_	_	_	_	advmod	basic	1-2	
+1-2	9-19	vispārinot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	Conv	*	vmnpu0000000n	*	vispārināt	_	_	_	_	advcl	basic	1-11	
+1-3	20-27	izrādes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	izrāde	_	_	_	_	nmod	basic	1-4	
+1-4	28-38	mēģinājumu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	mēģinājums	_	_	_	_	nmod	basic	1-5	
+1-5	39-46	procesu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	process	_	_	_	_	obj	basic	1-2	
+1-6	47-50	pēc	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pēc	_	_	_	_	case	basic	1-9	
+1-7	51-53	K.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	K.	person[1]	https://en.wikipedia.org/wiki/Konstantin\_Stanislavski[1]	_	_	nmod	basic	1-9	
+1-8	54-66	Staņislavska	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg2	*	Staņislavskis	person[1]	https://en.wikipedia.org/wiki/Konstantin\_Stanislavski[1]	_	_	flat:name	basic	1-7	
+1-9	67-75	sistēmas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	sistēma	_	_	_	_	obl	basic	1-2	
+1-10	75-76	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-2	
+1-11	77-87	jākonstatē	*	*	*	*	*	*	Nec	*	*	*	*	*	*	*	*	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnd0t200an	*	konstatēt	_	_	_	_	root	basic	1-11	
+1-12	87-88	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-18	
+1-13	89-91	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	1-18	
+1-14	92-101	vispārīgā	*	*	Loc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmslnp	*	vispārīgs	_	_	_	_	amod	basic	1-15	
+1-15	102-110	gadījumā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	gadījums	_	_	_	_	obl	basic	1-18	
+1-16	111-118	aktieri	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn2	*	aktieris	_	_	*->1-1	*[1]	nsubj	basic	1-18	
+1-17	119-121	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	1-18	
+1-18	122-131	atbildīgi	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnnp	*	atbildīgs	_	_	_	_	ccomp	basic	1-11	
+1-19	132-135	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	1-22	
+1-20	136-140	savu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	Prs	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0fsan	*	sava	_	_	*->1-2	*[1]	det	basic	1-21	
+1-21	141-145	lomu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	loma	_	_	_	_	nmod	basic	1-22	
+1-22	146-154	izstrādi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	izstrāde	_	_	_	_	iobj	basic	1-18	
+1-23	154-155	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-27	
+1-24	156-161	kamēr	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	kamēr	_	_	_	_	cc	basic	1-27	
+1-25	162-170	režisora	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	režisors	_	_	_	_	nmod	basic	1-26	
+1-26	171-180	funkcijas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	funkcija	_	_	_	_	nsubj	basic	1-27	
+1-27	181-190	saistītas	*	Perf	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdfpnpsnpn	*	saistīt	_	_	_	_	conj	basic	1-18	
+1-28	191-193	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	_	_	case	basic	1-30	
+1-29	194-201	izrādes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	izrāde	_	_	_	_	nmod	basic	1-30	
+1-30	202-213	makrolīmeni	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	*	makrolīmenis	_	_	_	_	iobj	basic	1-27	
+1-31	214-215	–	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	–	_	_	_	_	punct	basic	1-33	
+1-32	216-228	virsuzdevuma	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	virsuzdevums	_	_	_	_	nmod	basic	1-33	
+1-33	229-243	identificēšanu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	identificēšana	_	_	_	_	acl	basic	1-30	
+1-34	243-244	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-37	
+1-35	245-256	improvizētā	*	Perf	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsgpsypn	*	improvizēt	_	_	_	_	amod	basic	1-36	
+1-36	257-266	materiāla	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	materiāls	_	_	_	_	nmod	basic	1-37	
+1-37	267-273	atlasi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	atlase	_	_	_	_	conj	basic	1-33	
+1-38	274-276	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-40	
+1-39	277-288	temoporitma	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	temporitms	_	_	_	_	nmod	basic	1-40	
+1-40	289-297	izstrādi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	izstrāde	_	_	_	_	conj	basic	1-33	
+1-41	298-310	iestudējumam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	iestudējums	_	_	_	_	nmod	basic	1-40	
+1-42	310-311	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-11	

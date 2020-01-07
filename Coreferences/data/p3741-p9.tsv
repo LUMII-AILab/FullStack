@@ -1,42 +1,42 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Šī gada Pillar plānos ietilpst vēl divi daudzdzīvokļu projekti Rīgā - 80 dzīvokļu projekts Lielezeres Apartment House un 54 dzīvokļu projekts Dārza iela 32, kā arī vairāki nelieli individuālie projekti.
-1-1	0-2	Šī	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msgn	šis	_	_	_	_	det	basic	1-2	
-1-2	3-7	gada	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	gads	_	_	_	_	nmod	basic	1-4	
-1-3	8-14	Pillar	_	_	_	_	_	_	_	_	_	_	_	_	np0000	Pillar	organization	*	_	_	nmod	basic	1-4	
-1-4	15-21	plānos	Masc	Ptan	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Ptan	*	*	npmdl1	Plāni	_	_	_	_	obl	basic	1-5	
-1-5	22-30	ietilpst	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipi130an	ietilpt	_	_	_	_	root	basic	1-5	
-1-6	31-34	vēl	_	_	_	_	_	_	_	_	_	_	_	_	r0m	vēl	_	_	_	_	advmod	basic	1-5	
-1-7	35-39	divi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpn	divi	_	_	_	_	nummod	basic	1-9	
-1-8	40-53	daudzdzīvokļu	*	*	Gen	*	*	*	*	*	*	Case=Gen	*	*	nc00gg	daudzdzīvokļu	_	_	_	_	nmod	basic	1-9	
-1-9	54-62	projekti	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	projekts	_	_	_	_	nsubj	basic	1-5	
-1-10	63-67	Rīgā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	Rīga	GPE	*	_	_	acl	basic	1-9	
-1-11	68-69	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	_	_	punct	basic	1-15	
-1-12	70-72	80	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	80	_	_	*[1]	*->1-1	nummod	basic	1-13	
-1-13	73-81	dzīvokļu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	dzīvoklis	_	_	*[1]	*->1-1	nmod	basic	1-14	
-1-14	82-90	projekts	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	projekts	_	_	*[1]	*->1-1	nmod	basic	1-15	
-1-15	91-101	Lielezeres	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	Lielezere	entity[1]	*[1]	*[1]	*->1-2	acl	basic	1-9	
-1-16	102-111	Apartment	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Apartment	entity[1]	*[1]	*[1]	*->1-2	flat:name	basic	1-15	
-1-17	112-117	House	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	House	entity[1]	*[1]	*[1]	*->1-2	flat:name	basic	1-15	
-1-18	118-120	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-24	
-1-19	121-123	54	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	54	_	_	*[2]	*->2-1	nummod	basic	1-20	
-1-20	124-132	dzīvokļu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	dzīvoklis	_	_	*[2]	*->2-1	nmod	basic	1-21	
-1-21	133-141	projekts	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	projekts	_	_	*[2]	*->2-1	nmod	basic	1-24	
-1-22	142-147	Dārza	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	dārzs	location[2]	*[2]	*[2]	*->2-2	nmod	basic	1-23	
-1-23	148-152	iela	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	iela	location[2]	*[2]	*[2]	*->2-2	nmod	basic	1-24	
-1-24	153-155	32	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	32	location[2]	*[2]	*[2]	*->2-2	conj	basic	1-15	
-1-25	155-156	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-31	
-1-26	157-159	kā	_	_	_	_	_	_	_	_	_	_	_	_	cc	kā	_	_	_	_	cc	basic	1-31	
-1-27	160-163	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse	basic	1-26	
-1-28	164-171	vairāki	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Ind	*	*	pi0mpnn	vairāki	_	_	_	_	det	basic	1-31	
-1-29	172-179	nelieli	Masc	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpnnp	neliels	_	_	_	_	amod	basic	1-31	
-1-30	180-192	individuālie	Masc	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpnyp	individuāls	_	_	_	_	amod	basic	1-31	
-1-31	193-201	projekti	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	projekts	_	_	_	_	conj	basic	1-9	
-1-32	201-202	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-5	
+1-1	0-2	Šī	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msgn	*	šis	_	_	_	_	det	basic	1-2	
+1-2	3-7	gada	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	gads	_	_	_	_	nmod	basic	1-4	
+1-3	8-14	Pillar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	np0000	*	Pillar	organization	*	_	_	nmod	basic	1-4	
+1-4	15-21	plānos	*	*	Loc	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Ptan	*	*	npmdl1	*	Plāni	_	_	_	_	obl	basic	1-5	
+1-5	22-30	ietilpst	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipi130an	*	ietilpt	_	_	_	_	root	basic	1-5	
+1-6	31-34	vēl	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	vēl	_	_	_	_	advmod	basic	1-5	
+1-7	35-39	divi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpn	*	divi	_	_	_	_	nummod	basic	1-9	
+1-8	40-53	daudzdzīvokļu	*	*	Gen	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Gen	*	*	nc00gg	*	daudzdzīvokļu	_	_	_	_	nmod	basic	1-9	
+1-9	54-62	projekti	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	projekts	_	_	_	_	nsubj	basic	1-5	
+1-10	63-67	Rīgā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Rīga	GPE	*	_	_	acl	basic	1-9	
+1-11	68-69	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	-	_	_	_	_	punct	basic	1-15	
+1-12	70-72	80	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	80	_	_	*->1-1	*[1]	nummod	basic	1-13	
+1-13	73-81	dzīvokļu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	dzīvoklis	_	_	*->1-1	*[1]	nmod	basic	1-14	
+1-14	82-90	projekts	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	projekts	_	_	*->1-1	*[1]	nmod	basic	1-15	
+1-15	91-101	Lielezeres	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	*	Lielezere	entity[1]	*[1]	*->1-2	*[1]	acl	basic	1-9	
+1-16	102-111	Apartment	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Apartment	entity[1]	*[1]	*->1-2	*[1]	flat:name	basic	1-15	
+1-17	112-117	House	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	House	entity[1]	*[1]	*->1-2	*[1]	flat:name	basic	1-15	
+1-18	118-120	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-24	
+1-19	121-123	54	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	54	_	_	*->2-1	*[2]	nummod	basic	1-20	
+1-20	124-132	dzīvokļu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	dzīvoklis	_	_	*->2-1	*[2]	nmod	basic	1-21	
+1-21	133-141	projekts	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	projekts	_	_	*->2-1	*[2]	nmod	basic	1-24	
+1-22	142-147	Dārza	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	dārzs	location[2]	*[2]	*->2-2	*[2]	nmod	basic	1-23	
+1-23	148-152	iela	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	iela	location[2]	*[2]	*->2-2	*[2]	nmod	basic	1-24	
+1-24	153-155	32	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	32	location[2]	*[2]	*->2-2	*[2]	conj	basic	1-15	
+1-25	155-156	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-31	
+1-26	157-159	kā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	kā	_	_	_	_	cc	basic	1-31	
+1-27	160-163	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	1-26	
+1-28	164-171	vairāki	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Ind	*	*	pi0mpnn	*	vairāki	_	_	_	_	det	basic	1-31	
+1-29	172-179	nelieli	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpnnp	*	neliels	_	_	_	_	amod	basic	1-31	
+1-30	180-192	individuālie	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpnyp	*	individuāls	_	_	_	_	amod	basic	1-31	
+1-31	193-201	projekti	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	projekts	_	_	_	_	conj	basic	1-9	
+1-32	201-202	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-5	

@@ -1,30 +1,30 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Kas tā par Hildu, kurai paliek 15 gadi tikai kādu mēnesi, pirms Sofijai pašai būs pilni piecpadsmit?
-1-1	0-3	Kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Int	*	*	pq000nn	kas	_	_	_	_	root	basic	1-1	
-1-2	4-6	tā	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsnn	tā	_	_	_	_	nsubj	basic	1-1	
-1-3	7-10	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	_	_	case	basic	1-4	
-1-4	11-16	Hildu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	Hilda	person	*	*[1]	*->1-1	xcomp	basic	1-1	
-1-5	16-17	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-7	
-1-6	18-23	kurai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsdn	kurai	_	_	*[1]	*->1-2	obl	basic	1-7	
-1-7	24-30	paliek	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipi130an	palikt	_	_	_	_	acl	basic	1-4	
-1-8	31-33	15	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	15	_	_	_	_	nummod	basic	1-9	
-1-9	34-38	gadi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	gads	_	_	_	_	nsubj	basic	1-7	
-1-10	39-44	tikai	_	_	_	_	_	_	_	_	_	_	_	_	q	tikai	_	_	_	_	discourse	basic	1-12	
-1-11	45-49	kādu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Int	*	*	pq0msan	kāds	_	_	_	_	det	basic	1-12	
-1-12	50-56	mēnesi	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	mēnesis	_	_	_	_	obl	basic	1-7	
-1-13	56-57	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-17	
-1-14	58-63	pirms	_	_	_	_	_	_	_	_	_	_	_	_	sppd	pirms	_	_	_	_	mark	basic	1-17	
-1-15	64-71	Sofijai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	npfsd4	Sofija	person	*	*[2]	*->2-1	obl	basic	1-17	
-1-16	72-77	pašai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing\|PronType=Tot	*	*	pg0fsdn	pašai	_	_	*[2]	*->2-2	acl	basic	1-15	
-1-17	78-81	būs	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vmnifii30an	būt	_	_	_	_	advcl	basic	1-7	
-1-18	82-87	pilni	Masc	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnnp	pilns	_	_	_	_	nsubj	basic	1-17	
-1-19	88-99	piecpadsmit	*	Plur	*	*	*	*	*	*	*	Number=Plur\|NumType=Card	*	*	mcs0p0	piecpadsmit	_	_	_	_	nummod	basic	1-18	
-1-20	99-100	?	_	_	_	_	_	_	_	_	_	_	_	_	zs	?	_	_	_	_	punct	basic	1-1	
+1-1	0-3	Kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Int	*	*	pq000nn	*	kas	_	_	_	_	root	basic	1-1	
+1-2	4-6	tā	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsnn	*	tā	_	_	_	_	nsubj	basic	1-1	
+1-3	7-10	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	1-4	
+1-4	11-16	Hildu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	*	Hilda	person	*	*->1-1	*[1]	xcomp	basic	1-1	
+1-5	16-17	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-7	
+1-6	18-23	kurai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsdn	*	kurai	_	_	*->1-2	*[1]	obl	basic	1-7	
+1-7	24-30	paliek	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipi130an	*	palikt	_	_	_	_	acl	basic	1-4	
+1-8	31-33	15	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	15	_	_	_	_	nummod	basic	1-9	
+1-9	34-38	gadi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	gads	_	_	_	_	nsubj	basic	1-7	
+1-10	39-44	tikai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tikai	_	_	_	_	discourse	basic	1-12	
+1-11	45-49	kādu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Int	*	*	pq0msan	*	kāds	_	_	_	_	det	basic	1-12	
+1-12	50-56	mēnesi	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	*	mēnesis	_	_	_	_	obl	basic	1-7	
+1-13	56-57	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-17	
+1-14	58-63	pirms	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	pirms	_	_	_	_	mark	basic	1-17	
+1-15	64-71	Sofijai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	npfsd4	*	Sofija	person	*	*->2-1	*[2]	obl	basic	1-17	
+1-16	72-77	pašai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing\|PronType=Tot	*	*	pg0fsdn	*	pašai	_	_	*->2-2	*[2]	acl	basic	1-15	
+1-17	78-81	būs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmnifii30an	*	būt	_	_	_	_	advcl	basic	1-7	
+1-18	82-87	pilni	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnnp	*	pilns	_	_	_	_	nsubj	basic	1-17	
+1-19	88-99	piecpadsmit	*	*	*	*	*	*	*	*	*	Plur	*	*	*	*	*	*	Number=Plur\|NumType=Card	*	*	mcs0p0	*	piecpadsmit	_	_	_	_	nummod	basic	1-18	
+1-20	99-100	?	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	?	_	_	_	_	punct	basic	1-1	

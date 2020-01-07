@@ -1,30 +1,30 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Latvijas Mūzikas akadēmijas Studentu kluba vadītāja Anita Alksne gan atzīst, ka cilvēki rūpīgāk apsver, kurus koncertus apmeklēt.
-1-1	0-8	Latvijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Latvija	organization[1]|organization[2]|GPE[3]	*[1]|https://en.wikipedia.org/wiki/Jāzeps\_Vītols\_Latvian\_Academy\_of\_Music[2]|https://en.wikipedia.org/wiki/Latvia[3]	_	_	nmod|nmod	basic|enhanced	1-3|1-3	
-1-2	9-16	Mūzikas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	mūzika	organization[1]|organization[2]	*[1]|https://en.wikipedia.org/wiki/Jāzeps\_Vītols\_Latvian\_Academy\_of\_Music[2]	_	_	nmod|nmod	basic|enhanced	1-3|1-3	
-1-3	17-27	akadēmijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	akadēmija	organization[1]|organization[2]	*[1]|https://en.wikipedia.org/wiki/Jāzeps\_Vītols\_Latvian\_Academy\_of\_Music[2]	_	_	nmod|nmod	basic|enhanced	1-5|1-5	
-1-4	28-36	Studentu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	students	organization[1]	*[1]	_	_	nmod|nmod	basic|enhanced	1-5|1-5	
-1-5	37-42	kluba	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	klubs	organization[1]	*[1]	_	_	nmod|nmod	basic|enhanced	1-6|1-6	
-1-6	43-51	vadītāja	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	vadītāja	_	_	*[1]	*->1-1	nmod|nmod	basic|enhanced	1-7|1-7	
-1-7	52-57	Anita	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Anita	person[4]	*[4]	*[1]	*->1-2	nsubj|nsubj	basic|enhanced	1-10|1-10	
-1-8	58-64	Alksne	Fem	Ptan	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Ptan	*	*	npfdn5	Alksne	person[4]	*[4]	*[1]	*->1-2	flat:name|flat	basic|enhanced	1-7|1-7	
-1-9	65-68	gan	_	_	_	_	_	_	_	_	_	_	_	_	q	gan	_	_	_	_	discourse|discourse	basic|enhanced	1-10|1-10	
-1-10	69-75	atzīst	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt130an	atzīt	_	_	_	_	root|root	basic|enhanced	1-10|1-10	
-1-11	75-76	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-15|1-15	
-1-12	77-79	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark|mark	basic|enhanced	1-15|1-15	
-1-13	80-87	cilvēki	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	cilvēks	_	_	_	_	nsubj|nsubj	basic|enhanced	1-15|1-15	
-1-14	88-95	rūpīgāk	*	*	*	Cmp	*	*	*	*	*	Degree=Cmp	*	*	rcm	rūpīgi	_	_	_	_	advmod|advmod	basic|enhanced	1-15|1-15	
-1-15	96-102	apsver	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt130an	apsvērt	_	_	_	_	ccomp|ccomp	basic|enhanced	1-10|1-10	
-1-16	102-103	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-19|1-19	
-1-17	104-109	kurus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|PronType=Rel	*	*	pr0mpan	kurš	_	_	_	_	det|det	basic|enhanced	1-18|1-18	
-1-18	110-119	koncertus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	koncerts	_	_	_	_	obj|obj	basic|enhanced	1-19|1-19	
-1-19	120-128	apmeklēt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	apmeklēt	_	_	_	_	ccomp|ccomp	basic|enhanced	1-15|1-15	
-1-20	128-129	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-10|1-10	
+1-1	0-8	Latvijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Latvija	organization[1]|organization[2]|GPE[3]	*[1]|https://en.wikipedia.org/wiki/Jāzeps\_Vītols\_Latvian\_Academy\_of\_Music[2]|https://en.wikipedia.org/wiki/Latvia[3]	_	_	nmod|nmod	basic|enhanced	1-3|1-3	
+1-2	9-16	Mūzikas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	mūzika	organization[1]|organization[2]	*[1]|https://en.wikipedia.org/wiki/Jāzeps\_Vītols\_Latvian\_Academy\_of\_Music[2]	_	_	nmod|nmod	basic|enhanced	1-3|1-3	
+1-3	17-27	akadēmijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	akadēmija	organization[1]|organization[2]	*[1]|https://en.wikipedia.org/wiki/Jāzeps\_Vītols\_Latvian\_Academy\_of\_Music[2]	_	_	nmod|nmod	basic|enhanced	1-5|1-5	
+1-4	28-36	Studentu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	students	organization[1]	*[1]	_	_	nmod|nmod	basic|enhanced	1-5|1-5	
+1-5	37-42	kluba	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	klubs	organization[1]	*[1]	_	_	nmod|nmod	basic|enhanced	1-6|1-6	
+1-6	43-51	vadītāja	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	vadītāja	_	_	*->1-1	*[1]	nmod|nmod	basic|enhanced	1-7|1-7	
+1-7	52-57	Anita	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Anita	person[4]	*[4]	*->1-2	*[1]	nsubj|nsubj	basic|enhanced	1-10|1-10	
+1-8	58-64	Alksne	*	*	Nom	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Ptan	*	*	npfdn5	*	Alksne	person[4]	*[4]	*->1-2	*[1]	flat:name|flat	basic|enhanced	1-7|1-7	
+1-9	65-68	gan	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	gan	_	_	_	_	discourse|discourse	basic|enhanced	1-10|1-10	
+1-10	69-75	atzīst	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt130an	*	atzīt	_	_	_	_	root|root	basic|enhanced	1-10|1-10	
+1-11	75-76	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	1-15|1-15	
+1-12	77-79	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark|mark	basic|enhanced	1-15|1-15	
+1-13	80-87	cilvēki	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	cilvēks	_	_	_	_	nsubj|nsubj	basic|enhanced	1-15|1-15	
+1-14	88-95	rūpīgāk	*	*	*	*	Cmp	*	*	*	*	*	*	*	*	*	*	*	Degree=Cmp	*	*	rcm	*	rūpīgi	_	_	_	_	advmod|advmod	basic|enhanced	1-15|1-15	
+1-15	96-102	apsver	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt130an	*	apsvērt	_	_	_	_	ccomp|ccomp	basic|enhanced	1-10|1-10	
+1-16	102-103	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	1-19|1-19	
+1-17	104-109	kurus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|PronType=Rel	*	*	pr0mpan	*	kurš	_	_	_	_	det|det	basic|enhanced	1-18|1-18	
+1-18	110-119	koncertus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	koncerts	_	_	_	_	obj|obj	basic|enhanced	1-19|1-19	
+1-19	120-128	apmeklēt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	*	apmeklēt	_	_	_	_	ccomp|ccomp	basic|enhanced	1-15|1-15	
+1-20	128-129	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	1-10|1-10	

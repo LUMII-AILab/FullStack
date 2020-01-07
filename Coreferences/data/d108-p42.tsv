@@ -1,45 +1,45 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Nākamreiz, kad dēlam jau bija kļuvis labāk, Viņš atkal te piestāja.
-1-1	0-9	Nākamreiz	_	_	_	_	_	_	_	_	_	_	_	_	r0t	nākamreiz	*[1]	*->1-1	advmod|advmod	basic|enhanced	1-13|1-13	
-1-2	9-10	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct|punct	basic|enhanced	1-8|1-8	
-1-3	11-14	kad	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0t	kad	*[1]	*->1-2	advmod|advmod	basic|enhanced	1-8|1-8	
-1-4	15-20	dēlam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	dēls	_	_	obl|obl	basic|enhanced	1-8|1-8	
-1-5	21-24	jau	_	_	_	_	_	_	_	_	_	_	_	_	r0t	jau	_	_	advmod|advmod	basic|enhanced	1-8|1-8	
-1-6	25-29	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vcnisii30an	būt	_	_	aux|aux	basic|enhanced	1-8|1-8	
-1-7	30-36	kļuvis	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vtnpdmsnasnp	kļūt	_	_	aux|aux	basic|enhanced	1-8|1-8	
-1-8	37-42	labāk	*	*	*	Cmp	*	*	*	*	*	Degree=Cmp	*	*	rcm	labi	_	_	advcl|advcl	basic|enhanced	1-1|1-1	
-1-9	42-43	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct|punct	basic|enhanced	1-8|1-8	
-1-10	44-48	Viņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msnn	viņš	*[2]	*->2-1	nsubj|nsubj	basic|enhanced	1-13|1-13	
-1-11	49-54	atkal	_	_	_	_	_	_	_	_	_	_	_	_	r0t	atkal	_	_	advmod|advmod	basic|enhanced	1-13|1-13	
-1-12	55-57	te	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0p	te	_	_	advmod|advmod	basic|enhanced	1-13|1-13	
-1-13	58-66	piestāja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi130an	piestāt	_	_	root|root	basic|enhanced	1-13|1-13	
-1-14	66-67	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct|punct	basic|enhanced	1-13|1-13	
+1-1	0-9	Nākamreiz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	nākamreiz	*->1-1	*[1]	advmod|advmod	basic|enhanced	1-13|1-13	
+1-2	9-10	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct|punct	basic|enhanced	1-8|1-8	
+1-3	11-14	kad	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0t	*	kad	*->1-2	*[1]	advmod|advmod	basic|enhanced	1-8|1-8	
+1-4	15-20	dēlam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	dēls	_	_	obl|obl	basic|enhanced	1-8|1-8	
+1-5	21-24	jau	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	jau	_	_	advmod|advmod	basic|enhanced	1-8|1-8	
+1-6	25-29	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vcnisii30an	*	būt	_	_	aux|aux	basic|enhanced	1-8|1-8	
+1-7	30-36	kļuvis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vtnpdmsnasnp	*	kļūt	_	_	aux|aux	basic|enhanced	1-8|1-8	
+1-8	37-42	labāk	*	*	*	*	Cmp	*	*	*	*	*	*	*	*	*	*	*	Degree=Cmp	*	*	rcm	*	labi	_	_	advcl|advcl	basic|enhanced	1-1|1-1	
+1-9	42-43	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct|punct	basic|enhanced	1-8|1-8	
+1-10	44-48	Viņš	*	*	Nom	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msnn	*	viņš	*->2-1	*[2]	nsubj|nsubj	basic|enhanced	1-13|1-13	
+1-11	49-54	atkal	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	atkal	_	_	advmod|advmod	basic|enhanced	1-13|1-13	
+1-12	55-57	te	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0p	*	te	_	_	advmod|advmod	basic|enhanced	1-13|1-13	
+1-13	58-66	piestāja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnisi130an	*	piestāt	_	_	root|root	basic|enhanced	1-13|1-13	
+1-14	66-67	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct|punct	basic|enhanced	1-13|1-13	
 
 #Text=Gāja dedzināt svecīti, apstājās pie lapiņām un ieraudzīja savējo.
-2-1	69-73	Gāja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisii30an	iet	_	_	root|root	basic|enhanced	2-1|2-1	
-2-2	74-82	dedzināt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	dedzināt	_	_	ccomp|ccomp	basic|enhanced	2-1|2-1	
-2-3	83-90	svecīti	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	svecīte	_	_	obj|obj	basic|enhanced	2-2|2-2	
-2-4	90-91	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct|punct	basic|enhanced	2-5|2-5	
-2-5	92-100	apstājās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi130an	apstāties	_	_	conj|conj	basic|enhanced	2-1|2-1	
-2-6	101-104	pie	_	_	_	_	_	_	_	_	_	_	_	_	sppd	pie	_	_	case|case	basic|enhanced	2-7|2-7	
-2-7	105-112	lapiņām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	lapiņa	_	_	obl|obl	basic|enhanced	2-5|2-5	
-2-8	113-115	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	cc|cc	basic|enhanced	2-9|2-9	
-2-9	116-126	ieraudzīja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	ieraudzīt	_	_	conj|conj	basic|enhanced	2-1|2-1	
-2-10	127-133	savējo	Masc	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsayp	savējs	_	_	obj|obj	basic|enhanced	2-9|2-9	
-2-11	133-134	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct|punct	basic|enhanced	2-1|2-1	
+2-1	69-73	Gāja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnisii30an	*	iet	_	_	root|root	basic|enhanced	2-1|2-1	
+2-2	74-82	dedzināt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	*	dedzināt	_	_	ccomp|ccomp	basic|enhanced	2-1|2-1	
+2-3	83-90	svecīti	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	svecīte	_	_	obj|obj	basic|enhanced	2-2|2-2	
+2-4	90-91	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct|punct	basic|enhanced	2-5|2-5	
+2-5	92-100	apstājās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmyisi130an	*	apstāties	_	_	conj|conj	basic|enhanced	2-1|2-1	
+2-6	101-104	pie	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	pie	_	_	case|case	basic|enhanced	2-7|2-7	
+2-7	105-112	lapiņām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	*	lapiņa	_	_	obl|obl	basic|enhanced	2-5|2-5	
+2-8	113-115	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	cc|cc	basic|enhanced	2-9|2-9	
+2-9	116-126	ieraudzīja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist330an	*	ieraudzīt	_	_	conj|conj	basic|enhanced	2-1|2-1	
+2-10	127-133	savējo	*	*	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsayp	*	savējs	_	_	obj|obj	basic|enhanced	2-9|2-9	
+2-11	133-134	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct|punct	basic|enhanced	2-1|2-1	
 
 #Text=Lūgumu Viņš bija uzrakstījis latviešu valodā.
-3-1	136-142	Lūgumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	lūgums	_	_	obj|obj	basic|enhanced	3-4|3-4	
-3-2	143-147	Viņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msnn	viņš	*[2]	*->2-2	nsubj|nsubj	basic|enhanced	3-4|3-4	
-3-3	148-152	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vcnisii30an	būt	_	_	aux|aux	basic|enhanced	3-4|3-4	
-3-4	153-164	uzrakstījis	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnasnp	uzrakstīt	_	_	root|root	basic|enhanced	3-4|3-4	
-3-5	165-173	latviešu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	latvietis	_	_	nmod|nmod	basic|enhanced	3-6|3-6	
-3-6	174-180	valodā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	valoda	_	_	obl|obl	basic|enhanced	3-4|3-4	
-3-7	180-181	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct|punct	basic|enhanced	3-4|3-4	
+3-1	136-142	Lūgumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	lūgums	_	_	obj|obj	basic|enhanced	3-4|3-4	
+3-2	143-147	Viņš	*	*	Nom	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msnn	*	viņš	*->2-2	*[2]	nsubj|nsubj	basic|enhanced	3-4|3-4	
+3-3	148-152	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vcnisii30an	*	būt	_	_	aux|aux	basic|enhanced	3-4|3-4	
+3-4	153-164	uzrakstījis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnasnp	*	uzrakstīt	_	_	root|root	basic|enhanced	3-4|3-4	
+3-5	165-173	latviešu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	latvietis	_	_	nmod|nmod	basic|enhanced	3-6|3-6	
+3-6	174-180	valodā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	valoda	_	_	obl|obl	basic|enhanced	3-4|3-4	
+3-7	180-181	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct|punct	basic|enhanced	3-4|3-4	

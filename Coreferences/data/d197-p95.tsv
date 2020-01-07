@@ -1,38 +1,38 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=- Aha.
-1-1	0-1	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	punct	basic	1-2	
-1-2	2-5	Aha	_	_	_	_	_	_	_	_	_	_	_	_	i	aha	_	_	root	basic	1-2	
-1-3	5-6	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	1-2	
+1-1	0-1	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	-	_	_	punct	basic	1-2	
+1-2	2-5	Aha	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	i	*	aha	_	_	root	basic	1-2	
+1-3	5-6	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	1-2	
 
 #Text=Nu - tikai pagaidām, tipa ķīlu.
-2-1	8-10	Nu	_	_	_	_	_	_	_	_	_	_	_	_	q	nu	_	_	discourse	basic	2-2	
-2-2	11-12	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	root	basic	2-2	
-2-3	13-18	tikai	_	_	_	_	_	_	_	_	_	_	_	_	q	tikai	_	_	discourse	basic	2-4	
-2-4	19-27	pagaidām	_	_	_	_	_	_	_	_	_	_	_	_	r0t	pagaidām	_	_	advmod	basic	2-2	
-2-5	27-28	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	2-7	
-2-6	29-33	tipa	_	_	_	_	_	_	_	_	_	_	_	_	q	tipa	_	_	mark	basic	2-7	
-2-7	34-38	ķīlu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	ķīla	_	_	acl	basic	2-2	
-2-8	38-39	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	2-2	
+2-1	8-10	Nu	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	nu	_	_	discourse	basic	2-2	
+2-2	11-12	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	-	_	_	root	basic	2-2	
+2-3	13-18	tikai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tikai	_	_	discourse	basic	2-4	
+2-4	19-27	pagaidām	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	pagaidām	_	_	advmod	basic	2-2	
+2-5	27-28	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	2-7	
+2-6	29-33	tipa	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tipa	_	_	mark	basic	2-7	
+2-7	34-38	ķīlu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	ķīla	_	_	acl	basic	2-2	
+2-8	38-39	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	2-2	
 
 #Text=A viņš jau pats man to dāvināja, kad mēs vēl bijām kopā.
-3-1	41-42	A	_	_	_	_	_	_	_	_	_	_	_	_	cc	a	_	_	cc	basic	3-7	
-3-2	43-47	viņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msnn	viņš	*[1]	*->1-1	nsubj	basic	3-7	
-3-3	48-51	jau	_	_	_	_	_	_	_	_	_	_	_	_	q	jau	_	_	discourse	basic	3-7	
-3-4	52-56	pats	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msnn	pats	*[1]	*->1-2	acl	basic	3-7	
-3-5	57-60	man	*	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10sdn	es	_	_	iobj	basic	3-7	
-3-6	61-63	to	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	tas	_	_	obj	basic	3-7	
-3-7	64-72	dāvināja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	dāvināt	_	_	root	basic	3-7	
-3-8	72-73	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	3-7	
-3-9	74-77	kad	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0t	kad	_	_	advmod	basic	3-13	
-3-10	78-81	mēs	*	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Number=Plur\|Person=1\|PronType=Prs	1	*	pp10pnn	mēs	_	_	nsubj	basic	3-13	
-3-11	82-85	vēl	_	_	_	_	_	_	_	_	_	_	_	_	r0t	vēl	_	_	advmod	basic	3-13	
-3-12	86-91	bijām	*	Plur	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	1	*	vcnisii1pan	būt	_	_	cop	basic	3-13	
-3-13	92-96	kopā	_	_	_	_	_	_	_	_	_	_	_	_	r0m	kopā	_	_	advcl	basic	3-7	
-3-14	96-97	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	3-7	
+3-1	41-42	A	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	a	_	_	cc	basic	3-7	
+3-2	43-47	viņš	*	*	Nom	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msnn	*	viņš	*->1-1	*[1]	nsubj	basic	3-7	
+3-3	48-51	jau	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	jau	_	_	discourse	basic	3-7	
+3-4	52-56	pats	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msnn	*	pats	*->1-2	*[1]	acl	basic	3-7	
+3-5	57-60	man	*	*	Dat	*	*	*	*	*	*	Sing	1	*	*	*	*	*	Case=Dat\|Number=Sing\|Person=1\|PronType=Prs	*	*	pp10sdn	*	es	_	_	iobj	basic	3-7	
+3-6	61-63	to	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	*	tas	_	_	obj	basic	3-7	
+3-7	64-72	dāvināja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist330an	*	dāvināt	_	_	root	basic	3-7	
+3-8	72-73	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	3-7	
+3-9	74-77	kad	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0t	*	kad	_	_	advmod	basic	3-13	
+3-10	78-81	mēs	*	*	Nom	*	*	*	*	*	*	Plur	1	*	*	*	*	*	Case=Nom\|Number=Plur\|Person=1\|PronType=Prs	*	*	pp10pnn	*	mēs	_	_	nsubj	basic	3-13	
+3-11	82-85	vēl	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	vēl	_	_	advmod	basic	3-13	
+3-12	86-91	bijām	*	*	*	*	*	*	Ind	*	*	Plur	1	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vcnisii1pan	*	būt	_	_	cop	basic	3-13	
+3-13	92-96	kopā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	kopā	_	_	advcl	basic	3-7	
+3-14	96-97	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	3-7	

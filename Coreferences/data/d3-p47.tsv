@@ -1,27 +1,27 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=VITAUTS.
-1-1	0-7	VITAUTS	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	VITAUTS	person	*	*[2]	*->2-1	root|root	basic|enhanced	1-1|1-1	
-1-2	7-8	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	*[2]	*->2-1	punct|punct	basic|enhanced	1-1|1-1	
+1-1	0-7	VITAUTS	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	VITAUTS	person	*	*->2-1	*[2]	root|root	basic|enhanced	1-1|1-1	
+1-2	7-8	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	*->2-1	*[2]	punct|punct	basic|enhanced	1-1|1-1	
 
 #Text=Tā bija kļūda, es jutu, ka tas dārznieks viņu nenosargās.
-2-1	10-12	Tā	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsnn	tā	_	_	*[1]	*->1-1	nsubj|nsubj	basic|enhanced	2-3|2-3	
-2-2	13-17	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vcnisii30an	būt	_	_	_	_	cop|cop	basic|enhanced	2-3|2-3	
-2-3	18-23	kļūda	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	kļūda	_	_	*[1]	*->1-2	root|root	basic|enhanced	2-3|2-3	
-2-4	23-24	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-6|2-6	
-2-5	25-27	es	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10snn	es	_	_	*[2]	*->2-2	nsubj|nsubj	basic|enhanced	2-6|2-6	
-2-6	28-32	jutu	*	Sing	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	1	*	vmnist11san	just	_	_	_	_	conj|conj	basic|enhanced	2-3|2-3	
-2-7	32-33	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-12|2-12	
-2-8	34-36	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark|mark	basic|enhanced	2-12|2-12	
-2-9	37-40	tas	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	tas	_	_	*[3]	*->3-1	det|det	basic|enhanced	2-10|2-10	
-2-10	41-50	dārznieks	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	dārznieks	_	_	*[3]	*->3-2	nsubj|nsubj	basic|enhanced	2-12|2-12	
-2-11	51-55	viņu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsan	viņa	_	_	_	_	obj|obj	basic|enhanced	2-12|2-12	
-2-12	56-66	nenosargās	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vmnift230ay	nenosargāt	_	_	_	_	ccomp|ccomp	basic|enhanced	2-6|2-6	
-2-13	66-67	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	2-3|2-3	
+2-1	10-12	Tā	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsnn	*	tā	_	_	*->1-1	*[1]	nsubj|nsubj	basic|enhanced	2-3|2-3	
+2-2	13-17	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vcnisii30an	*	būt	_	_	_	_	cop|cop	basic|enhanced	2-3|2-3	
+2-3	18-23	kļūda	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	kļūda	_	_	*->1-2	*[1]	root|root	basic|enhanced	2-3|2-3	
+2-4	23-24	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	2-6|2-6	
+2-5	25-27	es	*	*	Nom	*	*	*	*	*	*	Sing	1	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	*	*	pp10snn	*	es	_	_	*->2-2	*[2]	nsubj|nsubj	basic|enhanced	2-6|2-6	
+2-6	28-32	jutu	*	*	*	*	*	*	Ind	*	*	Sing	1	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist11san	*	just	_	_	_	_	conj|conj	basic|enhanced	2-3|2-3	
+2-7	32-33	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	2-12|2-12	
+2-8	34-36	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark|mark	basic|enhanced	2-12|2-12	
+2-9	37-40	tas	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	*	tas	_	_	*->3-1	*[3]	det|det	basic|enhanced	2-10|2-10	
+2-10	41-50	dārznieks	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	dārznieks	_	_	*->3-2	*[3]	nsubj|nsubj	basic|enhanced	2-12|2-12	
+2-11	51-55	viņu	*	*	Acc	*	*	Fem	*	*	*	Sing	3	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3fsan	*	viņa	_	_	_	_	obj|obj	basic|enhanced	2-12|2-12	
+2-12	56-66	nenosargās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmnift230ay	*	nenosargāt	_	_	_	_	ccomp|ccomp	basic|enhanced	2-6|2-6	
+2-13	66-67	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	2-3|2-3	

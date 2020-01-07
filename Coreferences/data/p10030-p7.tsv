@@ -1,0 +1,83 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Populārāko tā laika mūziķu vārdi ir Jūlijs Riets, Žanis, Pauls un Karolīna Dakšas, Andrejs un Ivars Kasparoviči.
+1-1	0-10	Populārāko	*	*	Gen	*	Cmp	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Cmp\|Gender=Masc\|Number=Plur	*	*	afmpgyc	*	populārs	_	_	_	_	amod	basic	1-4	
+1-2	11-13	tā	*	*	Gen	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msgn	*	tas	_	_	_	_	det	basic	1-3	
+1-3	14-19	laika	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	laiks	_	_	_	_	nmod	basic	1-4	
+1-4	20-26	mūziķu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	mūziķis	_	_	_	_	nmod	basic	1-5	
+1-5	27-32	vārdi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	vārds	_	_	_	_	nsubj	basic	1-7	
+1-6	33-35	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	1-7	
+1-7	36-42	Jūlijs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Jūlijs	person[1]	*[1]	_	_	root	basic	1-7	
+1-8	43-48	Riets	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Riets	person[1]	*[1]	_	_	flat:name	basic	1-7	
+1-9	48-49	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-10	
+1-10	50-55	Žanis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	*	Žanis	person[2]|person[3]	*[2]|*[3]	_	_	conj	basic	1-7	
+1-11	55-56	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	person[2]	*[2]	_	_	punct	basic	1-17	
+1-12	57-62	Pauls	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Pauls	person[2]|person[4]	*[2]|*[4]	_	_	conj	basic	1-10	
+1-13	63-65	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	person[2]	*[2]	_	_	cc	basic	1-14	
+1-14	66-74	Karolīna	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Karolīna	person[2]|person[5]	*[2]|*[5]	*->2-1	*[2]	conj	basic	1-10	
+1-15	75-81	Dakšas	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	npmpn4	*	dakša	person[2]	*[2]	*->2-1	*[2]	flat:name	basic	1-10	
+1-16	81-82	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-17	
+1-17	83-90	Andrejs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Andrejs	person[6]|person[7]	*[6]|*[7]	_	_	conj	basic	1-7	
+1-18	91-93	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	person[6]	*[6]	_	_	cc	basic	1-19	
+1-19	94-99	Ivars	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Ivars	person[6]|person[8]	*[6]|*[8]	_	_	conj	basic	1-17	
+1-20	100-111	Kasparoviči	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Kasparovičs	person[6]	*[6]	_	_	flat:name	basic	1-17	
+1-21	111-112	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-7	
+
+#Text=Slavenā pianiste K.Dakša savās atmiņās rakstījusi, ka spēlējusi visās ballēs līdz pat 1940. gadam.
+2-1	114-121	Slavenā	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnyp	*	slavens	_	_	_	_	amod	basic	2-2	
+2-2	122-130	pianiste	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	pianiste	_	_	*->2-2	*[2]	nmod	basic	2-3	
+2-3	131-133	K.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	K.	person[9]	*[9]	*->2-3	*[2]	nsubj	basic	2-7	
+2-4	133-138	Dakša	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Dakša	person[9]	*[9]	*->2-3	*[2]	flat:name	basic	2-3	
+2-5	139-144	savās	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur\|Poss=Yes\|PronType=Prs	*	*	ps0fpln	*	sava	_	_	*->2-4	*[2]	det	basic	2-6	
+2-6	145-152	atmiņās	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	*	atmiņa	_	_	_	_	obl	basic	2-7	
+2-7	153-163	rakstījusi	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsnasnpn	*	rakstīt	_	_	_	_	root	basic	2-7	
+2-8	163-164	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-10	
+2-9	165-167	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	2-10	
+2-10	168-177	spēlējusi	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsnasnpn	*	spēlēt	_	_	_	_	ccomp	basic	2-7	
+2-11	178-183	visās	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur\|PronType=Tot	*	*	pg0fpln	*	visa	_	_	_	_	det	basic	2-12	
+2-12	184-190	ballēs	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl5	*	balle	_	_	_	_	obl	basic	2-10	
+2-13	191-195	līdz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsd	*	līdz	time[10]	*[10]	_	_	case	basic	2-16	
+2-14	196-199	pat	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	pat	time[10]	*[10]	_	_	discourse	basic	2-16	
+2-15	200-205	1940.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	1940.	time[10]	*[10]	_	_	amod	basic	2-16	
+2-16	206-211	gadam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	gads	time[10]	*[10]	_	_	nmod	basic	2-12	
+2-17	211-212	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-7	
+
+#Text=Balles tad notikušas tieši līdz trijiem naktī, kad policists visus izvadījis pa durvīm.
+3-1	214-220	Balles	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn5	*	balle	_	_	_	_	nsubj	basic	3-3	
+3-2	221-224	tad	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	*	tad	_	_	_	_	advmod	basic	3-3	
+3-3	225-234	notikušas	*	Perf	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfpnasnpn	*	notikt	_	_	_	_	root	basic	3-3	
+3-4	235-240	tieši	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tieši	_	_	_	_	discourse	basic	3-6	
+3-5	241-245	līdz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	līdz	time[11]	*[11]	*->1-1	*[1]	case	basic	3-6	
+3-6	246-253	trijiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpd	*	trīs	time[11]	*[11]	*->1-1	*[1]	nummod	basic	3-3	
+3-7	254-259	naktī	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl6	*	nakts	time[11]	*[11]	*->1-1	*[1]	acl	basic	3-6	
+3-8	259-260	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-12	
+3-9	261-264	kad	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0t	*	kad	_	_	*->1-2	*[1]	advmod	basic	3-12	
+3-10	265-274	policists	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	policists	_	_	_	_	nsubj	basic	3-12	
+3-11	275-280	visus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|PronType=Tot	*	*	pg0mpan	*	viss	_	_	_	_	obj	basic	3-12	
+3-12	281-290	izvadījis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnasnpn	*	izvadīt	_	_	_	_	acl	basic	3-6	
+3-13	291-293	pa	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	pa	_	_	_	_	case	basic	3-14	
+3-14	294-300	durvīm	*	*	Dat	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Ptan	*	*	ncfdd6	*	durvis	_	_	_	_	obl	basic	3-12	
+3-15	300-301	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-3	
+
+#Text=Tas gan nav traucējis balli turpināt, bet jau par papildu samaksu muzikantiem.
+4-1	303-306	Tas	*	*	Nom	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msnn	*	tas	_	_	_	_	nsubj	basic	4-4	
+4-2	307-310	gan	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	gan	_	_	_	_	discourse	basic	4-4	
+4-3	311-314	nav	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30ay	*	būt	_	_	_	_	aux	basic	4-4	
+4-4	315-324	traucējis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnasnpn	*	traucēt	_	_	_	_	root	basic	4-4	
+4-5	325-330	balli	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	balle	_	_	_	_	obj	basic	4-6	
+4-6	331-339	turpināt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vpnn0t3000n	*	turpināt	_	_	_	_	ccomp	basic	4-4	
+4-7	339-340	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-12	
+4-8	341-344	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	_	_	cc	basic	4-12	
+4-9	345-348	jau	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	jau	_	_	_	_	advmod	basic	4-12	
+4-10	349-352	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	4-12	
+4-11	353-360	papildu	*	*	Gen	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Gen	*	*	nc00gg	*	papildu	_	_	_	_	nmod	basic	4-12	
+4-12	361-368	samaksu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	samaksa	_	_	_	_	conj	basic	4-4	
+4-13	369-380	muzikantiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	muzikants	_	_	_	_	nmod	basic	4-12	
+4-14	380-381	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	4-4	

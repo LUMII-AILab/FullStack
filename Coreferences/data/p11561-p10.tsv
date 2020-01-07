@@ -1,0 +1,102 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=“Lai gan jāteic, ka šī slimība Latvijā ienāca no Krievijas, un, visticamāk, tieši cilvēku dēļ.
+1-1	0-1	“	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	“	_	_	_	_	punct	basic	1-4	
+1-2	1-4	Lai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	lai	_	_	_	_	mark	basic	1-4	
+1-3	5-8	gan	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	gan	_	_	_	_	discourse	basic	1-2	
+1-4	9-15	jāteic	*	*	*	*	*	*	Nec	*	*	*	*	*	*	*	*	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vmnd0t100an	*	teikt	_	_	_	_	root	basic	1-4	
+1-5	15-16	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-10	
+1-6	17-19	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	1-10	
+1-7	20-22	šī	*	*	Nom	*	*	Fem	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3fsnn	*	šī	_	_	*->2-1	*[2]	det	basic	1-8	
+1-8	23-30	slimība	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	slimība	_	_	*->2-1	*[2]	nsubj	basic	1-10	
+1-9	31-38	Latvijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	_	_	obl	basic	1-10	
+1-10	39-45	ienāca	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnisi130an	*	ienākt	_	_	_	_	ccomp	basic	1-4	
+1-11	46-48	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case	basic	1-12	
+1-12	49-58	Krievijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Krievija	GPE	https://en.wikipedia.org/wiki/Russia	_	_	obl	basic	1-10	
+1-13	58-59	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-19	
+1-14	60-62	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-19	
+1-15	62-63	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-16	
+1-16	64-74	visticamāk	*	*	*	*	Sup	*	*	*	*	*	*	*	*	*	*	*	Degree=Sup	*	*	rsm	*	ticami	_	_	_	_	discourse	basic	1-19	
+1-17	74-75	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-16	
+1-18	76-81	tieši	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tieši	_	_	_	_	discourse	basic	1-19	
+1-19	82-89	cilvēku	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	cilvēks	_	_	_	_	conj	basic	1-4	
+1-20	90-93	dēļ	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppg	*	dēļ	_	_	_	_	case	basic	1-19	
+1-21	93-94	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	conj	basic	1-4	
+
+#Text=Taču šobrīd jau vairs neko nepadarīsi.
+2-1	96-100	Taču	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	taču	_	_	_	_	cc	basic	2-6	
+2-2	101-107	šobrīd	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	šobrīd	_	_	_	_	advmod	basic	2-6	
+2-3	108-111	jau	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	jau	_	_	_	_	advmod	basic	2-6	
+2-4	112-117	vairs	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	vairs	_	_	_	_	advmod	basic	2-6	
+2-5	118-122	neko	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Ind,Neg	*	*	pi0msay	*	nekas	_	_	_	_	obj	basic	2-6	
+2-6	123-133	nepadarīsi	*	*	*	*	*	*	Ind	*	*	Sing	2	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=2\|Polarity=Neg\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmnift32say	*	nepadarīt	_	_	_	_	root	basic	2-6	
+2-7	133-134	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-6	
+
+#Text=Ir skaidrs, ka šai sērgai nav nekādas vakcīnas.
+3-1	136-138	Ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	3-2	
+3-2	139-146	skaidrs	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	skaidrs	_	_	_	_	root	basic	3-2	
+3-3	146-147	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-7	
+3-4	148-150	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	3-7	
+3-5	151-154	šai	*	*	Dat	*	*	Fem	*	*	*	Sing	3	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3fsdn	*	šī	_	_	*->2-2	*[2]	det	basic	3-6	
+3-6	155-161	sērgai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	*	sērga	_	_	*->2-2	*[2]	obl	basic	3-7	
+3-7	162-165	nav	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipii30ay	*	nebūt	_	_	_	_	csubj	basic	3-2	
+3-8	166-173	nekādas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|PronType=Ind,Neg	*	*	pi0fsgy	*	nekāda	_	_	_	_	det	basic	3-9	
+3-9	174-182	vakcīnas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	vakcīna	_	_	_	_	nsubj	basic	3-7	
+3-10	182-183	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-2	
+
+#Text=Arī mūsu kolektīvs cūkas medījis pastiprināti, taču skaidrs, ka visas nekad neizmedīsim.
+4-1	185-188	Arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	4-3	
+4-2	189-193	mūsu	*	*	Gen	*	*	*	*	*	*	Plur	1	*	*	*	*	*	Case=Gen\|Number=Plur\|Person=1\|PronType=Prs	*	*	pp10pgn	*	mēs	_	_	_	_	det	basic	4-3	
+4-3	194-203	kolektīvs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	kolektīvs	_	_	_	_	nsubj	basic	4-5	
+4-4	204-209	cūkas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	cūka	_	_	*->1-1	*[1]	obj	basic	4-5	
+4-5	210-217	medījis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnasnpn	*	medīt	_	_	_	_	root	basic	4-5	
+4-6	218-230	pastiprināti	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	pastiprināti	_	_	_	_	advmod	basic	4-5	
+4-7	230-231	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-9	
+4-8	232-236	taču	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	taču	_	_	_	_	cc	basic	4-9	
+4-9	237-244	skaidrs	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	skaidrs	_	_	_	_	conj	basic	4-5	
+4-10	244-245	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-14	
+4-11	246-248	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	4-14	
+4-12	249-254	visas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|PronType=Tot	*	*	pg0fpnn	*	visa	_	_	*->1-2	*[1]	nsubj	basic	4-14	
+4-13	255-260	nekad	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Int,Neg	*	*	r0t	*	nekad	_	_	_	_	advmod	basic	4-14	
+4-14	261-272	neizmedīsim	*	*	*	*	*	*	Ind	*	*	Plur	1	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Neg\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmnift21pay	*	neizmedīt	_	_	_	_	csubj	basic	4-9	
+4-15	272-273	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	4-5	
+
+#Text=Tāpat skaidrs, ka pēc Āfrikas cūku mēra vēl ilgi rukšus nemedīsim, bet vieta jau nekad nepaliek tukša, un nāksies medīt ko citu,” bilst J. Bērziņš.
+5-1	275-280	Tāpat	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tāpat	_	_	_	_	discourse	basic	5-2	
+5-2	281-288	skaidrs	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	skaidrs	_	_	_	_	parataxis	basic	5-28	
+5-3	288-289	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	5-12	
+5-4	290-292	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	5-12	
+5-5	293-296	pēc	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pēc	_	_	_	_	case	basic	5-8	
+5-6	297-304	Āfrikas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	Āfrika	entity[1]|location[2]	*[1]|https://en.wikipedia.org/wiki/Africa[2]	*->2-3	*[2]	nmod	basic	5-8	
+5-7	305-309	cūku	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	cūka	entity[1]	*[1]	*->2-3	*[2]	nmod	basic	5-8	
+5-8	310-314	mēra	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	mērs	entity[1]	*[1]	*->2-3	*[2]	obl	basic	5-12	
+5-9	315-318	vēl	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	vēl	_	_	_	_	advmod	basic	5-10	
+5-10	319-323	ilgi	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	ilgi	_	_	_	_	advmod	basic	5-12	
+5-11	324-330	rukšus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa2	*	ruksis	_	_	_	_	obj	basic	5-12	
+5-12	331-340	nemedīsim	*	*	*	*	*	*	Ind	*	*	Plur	1	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Neg\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmnift21pay	*	nemedīt	_	_	_	_	csubj	basic	5-2	
+5-13	340-341	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	5-18	
+5-14	342-345	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	_	_	cc	basic	5-18	
+5-15	346-351	vieta	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	vieta	_	_	_	_	nsubj	basic	5-18	
+5-16	352-355	jau	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	jau	_	_	_	_	discourse	basic	5-18	
+5-17	356-361	nekad	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Int,Neg	*	*	r0t	*	nekad	_	_	_	_	advmod	basic	5-18	
+5-18	362-370	nepaliek	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vtnipi130ay	*	nepalikt	_	_	_	_	conj	basic	5-2	
+5-19	371-376	tukša	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	*	tukša	_	_	_	_	xcomp	basic	5-18	
+5-20	376-377	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	5-22	
+5-21	378-380	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	5-22	
+5-22	381-388	nāksies	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	voyifi130an	*	nākties	_	_	_	_	conj	basic	5-2	
+5-23	389-394	medīt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	*	medīt	_	_	_	_	xcomp	basic	5-22	
+5-24	395-397	ko	*	*	Acc	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Acc\|PronType=Ind	*	*	pi000an	*	kas	_	_	_	_	obj	basic	5-23	
+5-25	398-402	citu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Ind	*	*	pi0msan	*	cits	_	_	_	_	dep	basic	5-24	
+5-26	402-403	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	5-2	
+5-27	403-404	”	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	”	_	_	_	_	punct	basic	5-2	
+5-28	405-410	bilst	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt130an	*	bilst	_	_	_	_	root	basic	5-28	
+5-29	411-413	J.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	J.	person[3]	*[3]	_	_	nsubj	basic	5-28	
+5-30	414-421	Bērziņš	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Bērziņš	person[3]	*[3]	_	_	flat:name	basic	5-29	
+5-31	421-422	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	5-28	

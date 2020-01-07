@@ -1,30 +1,30 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Meistars kopš 1975. gada dzīvo Jaunjelgavā un, uzņemot ciemiņus, prot spilgti stāstīt par savu darbu un dzīvi.
-1-1	0-8	Meistars	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	meistars	_	_	*[1]	*->1-1	dep|dep	basic|enhanced	1-5|1-5	
-1-2	9-13	kopš	_	_	_	_	_	_	_	_	_	_	_	_	spsg	kopš	_	_	_	_	case|case	basic|enhanced	1-4|1-4	
-1-3	14-19	1975.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	1975.	time[1]	*[1]	_	_	amod|amod	basic|enhanced	1-4|1-4	
-1-4	20-24	gada	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	gads	time[1]	*[1]	_	_	obl|obl	basic|enhanced	1-5|1-5	
-1-5	25-30	dzīvo	Fem	Plur	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpgyp	dzīva	_	_	_	_	root|root	basic|enhanced	1-5|1-5	
-1-6	31-42	Jaunjelgavā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	Jaunjelgava	GPE	https://en.wikipedia.org/wiki/Jaunjelgava	_	_	obl|obl	basic|enhanced	1-5|1-5	
-1-7	43-45	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	1-12|1-12	
-1-8	45-46	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-9|1-9	
-1-9	47-54	uzņemot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000	uzņemt	_	_	_	_	advcl|advcl	basic|enhanced	1-12|1-12	
-1-10	55-63	ciemiņus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	ciemiņš	_	_	_	_	obj|obj	basic|enhanced	1-9|1-9	
-1-11	63-64	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-9|1-9	
-1-12	65-69	prot	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vonipt130an	prast	_	_	_	_	conj|conj	basic|enhanced	1-5|1-5	
-1-13	70-77	spilgti	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	spilgti	_	_	_	_	advmod|advmod	basic|enhanced	1-14|1-14	
-1-14	78-85	stāstīt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	stāstīt	_	_	_	_	xcomp|xcomp	basic|enhanced	1-12|1-12	
-1-15	86-89	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	_	_	case|case	basic|enhanced	1-17|1-17	
-1-16	90-94	savu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0msan	savs	_	_	*[1]	*->1-2	det|det	basic|enhanced	1-17|1-17	
-1-17	95-100	darbu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	darbs	_	_	_	_	iobj|iobj	basic|enhanced	1-14|1-14	
-1-18	101-103	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	1-19|1-19	
-1-19	104-109	dzīvi	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	dzīve	_	_	_	_	conj|conj	basic|enhanced	1-17|1-17	
-1-20	109-110	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-5|1-5	
+1-1	0-8	Meistars	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	meistars	_	_	*->1-1	*[1]	dep|dep	basic|enhanced	1-5|1-5	
+1-2	9-13	kopš	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	kopš	_	_	_	_	case|case	basic|enhanced	1-4|1-4	
+1-3	14-19	1975.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	1975.	time[1]	*[1]	_	_	amod|amod	basic|enhanced	1-4|1-4	
+1-4	20-24	gada	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	gads	time[1]	*[1]	_	_	obl|obl	basic|enhanced	1-5|1-5	
+1-5	25-30	dzīvo	*	*	Gen	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpgyp	*	dzīva	_	_	_	_	root|root	basic|enhanced	1-5|1-5	
+1-6	31-42	Jaunjelgavā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Jaunjelgava	GPE	https://en.wikipedia.org/wiki/Jaunjelgava	_	_	obl|obl	basic|enhanced	1-5|1-5	
+1-7	43-45	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc|cc	basic|enhanced	1-12|1-12	
+1-8	45-46	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	1-9|1-9	
+1-9	47-54	uzņemot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000	*	uzņemt	_	_	_	_	advcl|advcl	basic|enhanced	1-12|1-12	
+1-10	55-63	ciemiņus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	ciemiņš	_	_	_	_	obj|obj	basic|enhanced	1-9|1-9	
+1-11	63-64	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	1-9|1-9	
+1-12	65-69	prot	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vonipt130an	*	prast	_	_	_	_	conj|conj	basic|enhanced	1-5|1-5	
+1-13	70-77	spilgti	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	spilgti	_	_	_	_	advmod|advmod	basic|enhanced	1-14|1-14	
+1-14	78-85	stāstīt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	*	stāstīt	_	_	_	_	xcomp|xcomp	basic|enhanced	1-12|1-12	
+1-15	86-89	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case|case	basic|enhanced	1-17|1-17	
+1-16	90-94	savu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0msan	*	savs	_	_	*->1-2	*[1]	det|det	basic|enhanced	1-17|1-17	
+1-17	95-100	darbu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	darbs	_	_	_	_	iobj|iobj	basic|enhanced	1-14|1-14	
+1-18	101-103	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc|cc	basic|enhanced	1-19|1-19	
+1-19	104-109	dzīvi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	dzīve	_	_	_	_	conj|conj	basic|enhanced	1-17|1-17	
+1-20	109-110	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	1-5|1-5	

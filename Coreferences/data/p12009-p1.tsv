@@ -1,0 +1,72 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Līvānietes Marijas Pudānes tekstildarbu izstādes atklāšanā Latgales mākslas un amatniecības centrā virmoja itāļiem raksturīgā brīvā un nepiespiestā atmosfēra.
+1-1	0-10	Līvānietes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	līvāniete	_	_	*->1-1	*[1]	nmod	basic	1-2	
+1-2	11-18	Marijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Marija	person[1]	*[1]	*->1-2	*[1]	nmod	basic	1-4	
+1-3	19-26	Pudānes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	*	Pudāne	person[1]	*[1]	*->1-2	*[1]	flat:name	basic	1-2	
+1-4	27-39	tekstildarbu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	tekstildarba	_	_	*->5-1	*[5]	nmod	basic	1-5	
+1-5	40-48	izstādes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	izstāde	_	_	_	_	nmod	basic	1-6	
+1-6	49-58	atklāšanā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	atklāšana	_	_	_	_	obl	basic	1-12	
+1-7	59-67	Latgales	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	*	Latgale	organization[2]|location[3]	*[2]|https://en.wikipedia.org/wiki/Latgale[3]	_	_	nmod	basic	1-11	
+1-8	68-75	mākslas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	māksla	organization[2]	*[2]	_	_	nmod	basic	1-11	
+1-9	76-78	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	organization[2]	*[2]	_	_	cc	basic	1-10	
+1-10	79-91	amatniecības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	amatniecība	organization[2]	*[2]	_	_	conj	basic	1-8	
+1-11	92-98	centrā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	centrs	organization[2]	*[2]	_	_	acl	basic	1-6	
+1-12	99-106	virmoja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnisi230an	*	virmot	_	_	_	_	root	basic	1-12	
+1-13	107-114	itāļiem	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd2	*	itālis	_	_	_	_	iobj	basic	1-14	
+1-14	115-125	raksturīgā	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnyp	*	raksturīgs	_	_	_	_	amod	basic	1-18	
+1-15	126-131	brīvā	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnyp	*	brīvs	_	_	_	_	amod	basic	1-18	
+1-16	132-134	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-17	
+1-17	135-147	nepiespiestā	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnyp	*	nepiespiests	_	_	_	_	conj	basic	1-15	
+1-18	148-157	atmosfēra	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	atmosfēra	_	_	_	_	nsubj	basic	1-12	
+1-19	157-158	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-12	
+
+#Text=Marija nu jau vairāk nekā 20 gadus dzīvo Itālijas pilsētā Trieste, kas atrodas netālu no Venēcijas, un strādā pašas izveidotā tekstilmākslas darbnīcā “La Tessoria”, bet tagad viņa atklājusi savu darbu izstādi dzimtajā pilsētā – Līvānos.
+2-1	159-165	Marija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Marija	person	*	*->1-3	*[1]	nsubj	basic	2-8	
+2-2	166-168	nu	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	nu	_	_	_	_	advmod	basic	2-8	
+2-3	169-172	jau	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	jau	_	_	_	_	advmod	basic	2-6	
+2-4	173-179	vairāk	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	vairāk	_	_	_	_	obl	basic	2-7	
+2-5	180-184	nekā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	nekā	_	_	_	_	fixed	basic	2-4	
+2-6	185-187	20	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	20	_	_	_	_	nummod	basic	2-7	
+2-7	188-193	gadus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	gads	_	_	_	_	obl	basic	2-8	
+2-8	194-199	dzīvo	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipi230an	*	dzīvot	_	_	_	_	root	basic	2-8	
+2-9	200-208	Itālijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Itālija	GPE	https://en.wikipedia.org/wiki/Italy	*->2-1	*[2]	nmod	basic	2-10	
+2-10	209-216	pilsētā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	pilsēta	_	_	*->2-1	*[2]	nmod	basic	2-11	
+2-11	217-224	Trieste	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	*	Trieste	GPE	https://en.wikipedia.org/wiki/Trieste	*->2-2	*[2]	obl	basic	2-8	
+2-12	224-225	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-14	
+2-13	226-229	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	Rel	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->2-3	*[2]	nsubj	basic	2-14	
+2-14	230-237	atrodas	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyipi130an	*	atrasties	_	_	_	_	acl	basic	2-11	
+2-15	238-244	netālu	*	*	*	*	*	*	*	*	*	*	*	*	Neg	*	*	*	PronType=Neg	*	*	r0p	*	netālu	_	_	_	_	advmod	basic	2-14	
+2-16	245-247	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case	basic	2-17	
+2-17	248-257	Venēcijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Venēcija	GPE	https://en.wikipedia.org/wiki/Venice	_	_	obl	basic	2-15	
+2-18	257-258	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-14	
+2-19	259-261	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-20	
+2-20	262-268	strādā	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt230an	*	strādāt	_	_	_	_	conj	basic	2-8	
+2-21	269-274	pašas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	Tot	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|PronType=Tot	*	*	pg0fsgn	*	pati	_	_	*->1-4	*[1]	obl	basic	2-22	
+2-22	275-284	izveidotā	*	Perf	Loc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Loc\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmslpsnpn	*	izveidot	_	_	_	_	amod	basic	2-24	
+2-23	285-299	tekstilmākslas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	tekstilmāksla	_	_	*->3-1	*[3]	nmod	basic	2-24	
+2-24	300-308	darbnīcā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	darbnīca	_	_	*->3-1	*[3]	nmod	basic	2-26	
+2-25	309-310	“	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	“	location[4]	*[4]	*->3-2	*[3]	punct	basic	2-26	
+2-26	310-312	La	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	La	location[4]	*[4]	*->3-2	*[3]	obl	basic	2-20	
+2-27	313-321	Tessoria	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Tessoria	location[4]	*[4]	*->3-2	*[3]	flat:name	basic	2-26	
+2-28	321-322	”	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	”	location[4]	*[4]	*->3-2	*[3]	punct	basic	2-26	
+2-29	322-323	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-33	
+2-30	324-327	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	_	_	cc	basic	2-33	
+2-31	328-333	tagad	*	*	*	*	*	*	*	*	*	*	*	*	Dem	*	*	*	PronType=Dem	*	*	r0t	*	tagad	_	_	_	_	advmod	basic	2-33	
+2-32	334-338	viņa	*	*	Nom	*	*	Fem	*	*	*	Sing	3	*	Prs	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3fsnn	*	viņa	_	_	*->1-5	*[1]	nsubj	basic	2-33	
+2-33	339-348	atklājusi	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdfsnasnpn	*	atklāt	_	_	_	_	conj	basic	2-8	
+2-34	349-353	savu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	Prs	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur\|Poss=Yes\|PronType=Prs	*	*	ps0mpgn	*	savs	_	_	*->1-6	*[1]	det	basic	2-35	
+2-35	354-359	darbu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	darbs	_	_	*->5-2	*[5]	nmod	basic	2-36	
+2-36	360-367	izstādi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	izstāde	_	_	_	_	obj	basic	2-33	
+2-37	368-376	dzimtajā	*	Perf	Loc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Loc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdfslpsypn	*	dzimt	_	_	*->4-1	*[4]	amod	basic	2-38	
+2-38	377-384	pilsētā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	pilsēta	_	_	*->4-1	*[4]	obl	basic	2-33	
+2-39	385-386	–	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	–	_	_	_	_	punct	basic	2-40	
+2-40	387-394	Līvānos	*	*	Loc	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Ptan	*	*	npmdl1	*	Līvāni	GPE	https://en.wikipedia.org/wiki/Venice	*->4-2	*[4]	acl	basic	2-38	
+2-41	394-395	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-8	

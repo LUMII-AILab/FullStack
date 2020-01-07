@@ -1,0 +1,41 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Futbola zvaigzne Deivids Bekhems var pretendēt uz gada labākā tēva titulu.
+1-1	0-7	Futbola	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	futbols	_	_	*->1-1	*[1]	nmod	basic	1-2	
+1-2	8-16	zvaigzne	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	zvaigzne	_	_	*->1-1	*[1]	nmod	basic	1-3	
+1-3	17-24	Deivids	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Deivids	person[1]	https://en.wikipedia.org/wiki/David\_Beckham[1]	*->1-2	*[1]	nsubj	basic	1-5	
+1-4	25-32	Bekhems	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Bekhems	person[1]	https://en.wikipedia.org/wiki/David\_Beckham[1]	*->1-2	*[1]	flat:name	basic	1-3	
+1-5	33-36	var	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vonipi330an	*	varēt	_	_	_	_	root	basic	1-5	
+1-6	37-46	pretendēt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0i2000n	*	pretendēt	_	_	_	_	xcomp	basic	1-5	
+1-7	47-49	uz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	uz	_	_	_	_	case	basic	1-11	
+1-8	50-54	gada	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	gads	_	_	_	_	nmod	basic	1-10	
+1-9	55-61	labākā	*	*	Gen	*	Cmp	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Cmp\|Gender=Masc\|Number=Sing	*	*	afmsgyc	*	labs	_	_	_	_	amod	basic	1-10	
+1-10	62-66	tēva	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	tēvs	_	_	_	_	nmod	basic	1-11	
+1-11	67-73	titulu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	tituls	_	_	_	_	iobj	basic	1-5	
+1-12	73-74	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-5	
+
+#Text=Deivids labprāt pavada laiku kopā ar četrus gadus veco meitu un pat šuj Hārperas lellei tērpus.
+2-1	75-82	Deivids	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Deivids	person	https://en.wikipedia.org/wiki/David\_Beckham	*->1-3	*[1]	nsubj	basic	2-3	
+2-2	83-90	labprāt	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	labprāt	_	_	_	_	advmod	basic	2-3	
+2-3	91-97	pavada	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt330an	*	pavadīt	_	_	_	_	root	basic	2-3	
+2-4	98-103	laiku	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	laiks	_	_	_	_	obj	basic	2-3	
+2-5	104-108	kopā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	kopā	_	_	_	_	advmod	basic	2-3	
+2-6	109-111	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	_	_	case	basic	2-10	
+2-7	112-118	četrus	*	*	Acc	*	*	Masc	*	*	Card	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpa	*	četri	_	_	_	_	nummod	basic	2-8	
+2-8	119-124	gadus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	gads	_	_	_	_	obl	basic	2-9	
+2-9	125-129	veco	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsayp	*	vecs	_	_	_	_	amod	basic	2-10	
+2-10	130-135	meitu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	meita	_	_	*->2-1	*[2]	iobj	basic	2-5	
+2-11	136-138	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-13	
+2-12	139-142	pat	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	pat	_	_	_	_	discourse	basic	2-13	
+2-13	143-146	šuj	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt130an	*	šūt	_	_	_	_	conj	basic	2-3	
+2-14	147-155	Hārperas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Hārpera	person	*	*->2-2	*[2]	nmod	basic	2-15	
+2-15	156-162	lellei	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd5	*	lelle	_	_	_	_	iobj	basic	2-13	
+2-16	163-169	tērpus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	tērps	_	_	_	_	obj	basic	2-13	
+2-17	169-170	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-3	

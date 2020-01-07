@@ -1,0 +1,34 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Baumas aizsākās vietnē "Radaronline".
+1-1	0-6	Baumas	*	*	Nom	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Ptan	*	*	ncfdn4	*	baumas	_	_	_	_	nsubj	basic	1-2	
+1-2	7-15	aizsākās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmyisi130an	*	aizsākties	_	_	_	_	root	basic	1-2	
+1-3	16-22	vietnē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	*	vietne	_	_	*->1-1	*[1]	nmod	basic	1-5	
+1-4	23-24	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	product[1]	https://en.wikipedia.org/wiki/Radar\_Online[1]	*->1-2	*[1]	punct	basic	1-5	
+1-5	24-35	Radaronline	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Radaronline	product[1]	https://en.wikipedia.org/wiki/Radar\_Online[1]	*->1-2	*[1]	obl	basic	1-2	
+1-6	35-36	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	product[1]	https://en.wikipedia.org/wiki/Radar\_Online[1]	*->1-2	*[1]	punct	basic	1-5	
+1-7	36-37	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-2	
+
+#Text=Vārdā nenosaukts informācijas avots teica, ka Džeksones ģimene ar bailēm gaidot analīžu rezultātus.
+2-1	39-44	Vārdā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	vārds	_	_	_	_	acl	basic	2-2	
+2-2	45-55	nenosaukts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Neg\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnpsnpy	*	nenosaukt	_	_	_	_	amod	basic	2-4	
+2-3	56-68	informācijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	informācija	_	_	_	_	nmod	basic	2-4	
+2-4	69-74	avots	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	avots	_	_	_	_	nsubj	basic	2-5	
+2-5	75-80	teica	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist130an	*	teikt	_	_	_	_	root	basic	2-5	
+2-6	80-81	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-12	
+2-7	82-84	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	2-12	
+2-8	85-94	Džeksones	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	*	Džeksone	person	https://en.wikipedia.org/wiki/Janet\_Jackson	_	_	nmod	basic	2-9	
+2-9	95-101	ģimene	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	ģimene	_	_	_	_	dep	basic	2-12	
+2-10	102-104	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	_	_	case	basic	2-11	
+2-11	105-111	bailēm	*	*	Dat	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Ptan	*	*	ncfdd5	*	bailes	_	_	_	_	obl	basic	2-12	
+2-12	112-118	gaidot	*	*	*	*	*	*	Qot	*	*	*	*	*	*	*	*	*	Evident=Nfh\|Mood=Qot\|Polarity=Pos\|VerbForm=Fin	*	*	vmnr0t3000n	*	gaidīt	_	_	_	_	iobj	basic	2-5	
+2-13	119-126	analīžu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg5	*	analīze	_	_	_	_	nmod	basic	2-14	
+2-14	127-137	rezultātus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	rezultāts	_	_	_	_	obj	basic	2-12	
+2-15	137-138	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-5	

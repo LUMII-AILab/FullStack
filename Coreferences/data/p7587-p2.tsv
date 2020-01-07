@@ -1,0 +1,46 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Mūziķis Maikls Lokvuds iesniedzis tiesā prasību, lai iegūtu pilnu aizbildniecību par septiņus gadus vecajām meitām, kā iemeslu minot Lisas Marijas Preslijas narkotiku un alkohola atkarību, kura neļaus viņai pilnvērtīgi parūpēties par dvīnēm.
+1-1	0-7	Mūziķis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	mūziķis	_	_	*->1-1	*[1]	nmod	basic	1-2	
+1-2	8-14	Maikls	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Maikls	person[1]	https://en.wikipedia.org/wiki/Michael\_Lockwood\_(guitarist)[1]	*->1-2	*[1]	nsubj	basic	1-4	
+1-3	15-22	Lokvuds	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Lokvuds	person[1]	https://en.wikipedia.org/wiki/Michael\_Lockwood\_(guitarist)[1]	*->1-2	*[1]	flat:name	basic	1-2	
+1-4	23-33	iesniedzis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnasnpn	*	iesniegt	_	_	_	_	root	basic	1-4	
+1-5	34-39	tiesā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	tiesa	_	_	_	_	obl	basic	1-4	
+1-6	40-47	prasību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	prasība	_	_	_	_	obj	basic	1-4	
+1-7	47-48	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-9	
+1-8	49-52	lai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	lai	_	_	_	_	mark	basic	1-9	
+1-9	53-59	iegūtu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vmnc0t100an	*	iegūt	_	_	_	_	advcl	basic	1-4	
+1-10	60-65	pilnu	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsanp	*	pilna	_	_	_	_	amod	basic	1-11	
+1-11	66-80	aizbildniecību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	aizbildniecība	_	_	_	_	obj	basic	1-9	
+1-12	81-84	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	par	_	_	_	_	case	basic	1-16	
+1-13	85-93	septiņus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpa	*	septiņi	_	_	*->4-1	*[4]	nummod	basic	1-14	
+1-14	94-99	gadus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	gads	_	_	*->4-1	*[4]	obl	basic	1-15	
+1-15	100-107	vecajām	*	*	Dat	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpdyp	*	veca	_	_	*->4-1	*[4]	amod	basic	1-16	
+1-16	108-114	meitām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	*	meita	_	_	*->4-1	*[4]	nmod	basic	1-11	
+1-17	114-115	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-20	
+1-18	116-118	kā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	kā	_	_	_	_	case	basic	1-19	
+1-19	119-126	iemeslu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	iemesls	_	_	_	_	obl	basic	1-20	
+1-20	127-132	minot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	*	*	vmnpu0000000n	*	minēt	_	_	_	_	advcl	basic	1-4	
+1-21	133-138	Lisas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Lisa	person[2]	https://en.wikipedia.org/wiki/Lisa\_Marie\_Presley[2]	*->3-1	*[3]	nmod	basic	1-27	
+1-22	139-146	Marijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Marija	person[2]	https://en.wikipedia.org/wiki/Lisa\_Marie\_Presley[2]	*->3-1	*[3]	flat:name	basic	1-21	
+1-23	147-156	Preslijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Preslija	person[2]	https://en.wikipedia.org/wiki/Lisa\_Marie\_Presley[2]	*->3-1	*[3]	flat:name	basic	1-21	
+1-24	157-166	narkotiku	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	narkotika	_	_	*->2-1	*[2]	nmod	basic	1-27	
+1-25	167-169	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	*->2-1	*[2]	cc	basic	1-26	
+1-26	170-178	alkohola	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	alkohols	_	_	*->2-1	*[2]	conj	basic	1-24	
+1-27	179-187	atkarību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	atkarība	_	_	*->2-1	*[2]	obj	basic	1-20	
+1-28	187-188	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-30	
+1-29	189-193	kura	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsnn	*	kura	_	_	*->2-2	*[2]	nsubj	basic	1-30	
+1-30	194-200	neļaus	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmnifi130ay	*	neļaut	_	_	_	_	acl	basic	1-27	
+1-31	201-206	viņai	*	*	Dat	*	*	Fem	*	*	*	Sing	3	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3fsdn	*	viņa	_	_	*->3-2	*[3]	iobj	basic	1-30	
+1-32	207-218	pilnvērtīgi	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	pilnvērtīgi	_	_	_	_	advmod	basic	1-33	
+1-33	219-229	parūpēties	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i2000n	*	parūpēties	_	_	_	_	ccomp	basic	1-30	
+1-34	230-233	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	par	_	_	_	_	case	basic	1-35	
+1-35	234-240	dvīnēm	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd5	*	dvīne	_	_	*->4-2	*[4]	iobj	basic	1-33	
+1-36	240-241	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-4	

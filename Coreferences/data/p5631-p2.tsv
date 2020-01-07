@@ -1,0 +1,25 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Tiesā sievieti iesūdzēja portjē, kurš strādā mājā, kurā aktrise pirms vairākiem gadiem mitinājās.
+1-1	0-5	Tiesā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	tiesa	_	_	obl	basic	1-3	
+1-2	6-14	sievieti	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	sieviete	*->3-1	*[3]	obj	basic	1-3	
+1-3	15-24	iesūdzēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist330an	*	iesūdzēt	_	_	root	basic	1-3	
+1-4	25-31	portjē	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	nc0000	*	portjē	*->1-1	*[1]	nsubj	basic	1-3	
+1-5	31-32	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-7	
+1-6	33-37	kurš	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	Rel	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msnn	*	kurš	*->1-2	*[1]	nsubj	basic	1-7	
+1-7	38-44	strādā	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipi230an	*	strādāt	_	_	acl	basic	1-4	
+1-8	45-49	mājā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	māja	*->2-1	*[2]	obl	basic	1-7	
+1-9	49-50	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-15	
+1-10	51-55	kurā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	Rel	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsln	*	kura	*->2-2	*[2]	obl	basic	1-15	
+1-11	56-63	aktrise	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	aktrise	*->3-2	*[3]	nsubj	basic	1-15	
+1-12	64-69	pirms	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	pirms	_	_	case	basic	1-14	
+1-13	70-79	vairākiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	Ind	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|PronType=Ind	*	*	pi0mpdn	*	vairāki	_	_	det	basic	1-14	
+1-14	80-86	gadiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	gads	_	_	obl	basic	1-15	
+1-15	87-96	mitinājās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyisi330an	*	mitināties	_	_	acl	basic	1-8	
+1-16	96-97	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	1-3	

@@ -1,45 +1,45 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Ainažu kontrolpunktā robežsargi pārbaudīja dokumentus.
-1-1	0-6	Ainažu	Masc	Ptan	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	npmdg2	Ainaži	organization[1]|GPE[2]	*[1]|https://en.wikipedia.org/wiki/Ainazi[2]	_	_	nmod|nmod	basic|enhanced	1-2|1-2	
-1-2	7-20	kontrolpunktā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	kontrolpunkts	organization[1]	*[1]	_	_	obl|obl	basic|enhanced	1-4|1-4	
-1-3	21-31	robežsargi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	robežsargs	_	_	*[1]	*->1-1	nsubj|nsubj	basic|enhanced	1-4|1-4	
-1-4	32-42	pārbaudīja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	pārbaudīt	_	_	_	_	root|root	basic|enhanced	1-4|1-4	
-1-5	43-53	dokumentus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	dokuments	_	_	_	_	obj|obj	basic|enhanced	1-4|1-4	
-1-6	53-54	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-4|1-4	
+1-1	0-6	Ainažu	*	*	Gen	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	npmdg2	*	Ainaži	organization[1]|GPE[2]	*[1]|https://en.wikipedia.org/wiki/Ainazi[2]	_	_	nmod|nmod	basic|enhanced	1-2|1-2	
+1-2	7-20	kontrolpunktā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	kontrolpunkts	organization[1]	*[1]	_	_	obl|obl	basic|enhanced	1-4|1-4	
+1-3	21-31	robežsargi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	robežsargs	_	_	*->1-1	*[1]	nsubj|nsubj	basic|enhanced	1-4|1-4	
+1-4	32-42	pārbaudīja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist330an	*	pārbaudīt	_	_	_	_	root|root	basic|enhanced	1-4|1-4	
+1-5	43-53	dokumentus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	dokuments	_	_	_	_	obj|obj	basic|enhanced	1-4|1-4	
+1-6	53-54	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	1-4|1-4	
 
 #Text=Viņi neuzdeva Aleksim jautājumus.
-2-1	56-60	Viņi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Prs	3	*	pp3mpnn	viņš	_	_	*[1]	*->1-2	nsubj|nsubj	basic|enhanced	2-2|2-2	
-2-2	61-69	neuzdeva	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisti30ay	neuzdot	_	_	_	_	root|root	basic|enhanced	2-2|2-2	
-2-3	70-77	Aleksim	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	npmsd2	Aleksis	person	*	_	_	iobj|iobj	basic|enhanced	2-2|2-2	
-2-4	78-88	jautājumus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	jautājums	_	_	_	_	obj|obj	basic|enhanced	2-2|2-2	
-2-5	88-89	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	2-2|2-2	
+2-1	56-60	Viņi	*	*	Nom	*	*	Masc	*	*	*	Plur	3	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Prs	*	*	pp3mpnn	*	viņš	_	_	*->1-2	*[1]	nsubj|nsubj	basic|enhanced	2-2|2-2	
+2-2	61-69	neuzdeva	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnisti30ay	*	neuzdot	_	_	_	_	root|root	basic|enhanced	2-2|2-2	
+2-3	70-77	Aleksim	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	npmsd2	*	Aleksis	person	*	_	_	iobj|iobj	basic|enhanced	2-2|2-2	
+2-4	78-88	jautājumus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	jautājums	_	_	_	_	obj|obj	basic|enhanced	2-2|2-2	
+2-5	88-89	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	2-2|2-2	
 
 #Text=Neviens neizteica vēlēšanos ielūkoties sagrabējušā mersedesa bagāžniekā.
-3-1	91-98	Neviens	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Ind,Neg	*	*	pi0msny	neviens	_	_	*[1]	*->1-3	nsubj|nsubj	basic|enhanced	3-2|3-2	
-3-2	99-108	neizteica	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130ay	neizteikt	_	_	_	_	root|root	basic|enhanced	3-2|3-2	
-3-3	109-118	vēlēšanos	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsar	vēlēšanās	_	_	_	_	obj|obj	basic|enhanced	3-2|3-2	
-3-4	119-129	ielūkoties	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i2000n	ielūkoties	_	_	_	_	acl|acl	basic|enhanced	3-3|3-3	
-3-5	130-141	sagrabējušā	Masc	Sing	Gen	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsgasyp	sagrabēt	_	_	_	_	amod|amod	basic|enhanced	3-6|3-6	
-3-6	142-151	mersedesa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	mersedess	product	https://en.wikipedia.org/wiki/Mercedes-Benz	*[2]	*->2-1	nmod|nmod	basic|enhanced	3-7|3-7	
-3-7	152-162	bagāžniekā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	bagāžnieks	_	_	_	_	obl|obl	basic|enhanced	3-4|3-4	
-3-8	162-163	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	3-2|3-2	
+3-1	91-98	Neviens	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Ind,Neg	*	*	pi0msny	*	neviens	_	_	*->1-3	*[1]	nsubj|nsubj	basic|enhanced	3-2|3-2	
+3-2	99-108	neizteica	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist130ay	*	neizteikt	_	_	_	_	root|root	basic|enhanced	3-2|3-2	
+3-3	109-118	vēlēšanos	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsar	*	vēlēšanās	_	_	_	_	obj|obj	basic|enhanced	3-2|3-2	
+3-4	119-129	ielūkoties	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i2000n	*	ielūkoties	_	_	_	_	acl|acl	basic|enhanced	3-3|3-3	
+3-5	130-141	sagrabējušā	*	Perf	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsgasyp	*	sagrabēt	_	_	_	_	amod|amod	basic|enhanced	3-6|3-6	
+3-6	142-151	mersedesa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	mersedess	product	https://en.wikipedia.org/wiki/Mercedes-Benz	*->2-1	*[2]	nmod|nmod	basic|enhanced	3-7|3-7	
+3-7	152-162	bagāžniekā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	bagāžnieks	_	_	_	_	obl|obl	basic|enhanced	3-4|3-4	
+3-8	162-163	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	3-2|3-2	
 
 #Text=Jau pēc pārdesmit minūtēm Alekša automašīna ieripinājās Latvijas teritorijā.
-4-1	165-168	Jau	_	_	_	_	_	_	_	_	_	_	_	_	r0t	jau	_	_	_	_	advmod|advmod	basic|enhanced	4-4|4-4	
-4-2	169-172	pēc	_	_	_	_	_	_	_	_	_	_	_	_	sppd	pēc	_	_	_	_	case|case	basic|enhanced	4-4|4-4	
-4-3	173-182	pārdesmit	*	Plur	*	*	*	*	*	*	*	Number=Plur\|NumType=Card	*	*	mcs0p0	pārdesmit	_	_	_	_	nummod|nummod	basic|enhanced	4-4|4-4	
-4-4	183-190	minūtēm	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd5	minūte	_	_	_	_	obl|obl	basic|enhanced	4-7|4-7	
-4-5	191-197	Alekša	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg2	Aleksis	person	*	_	_	nmod|nmod	basic|enhanced	4-6|4-6	
-4-6	198-208	automašīna	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	automašīna	_	_	*[2]	*->2-2	nsubj|nsubj	basic|enhanced	4-7|4-7	
-4-7	209-220	ieripinājās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi330an	ieripināties	_	_	_	_	root|root	basic|enhanced	4-7|4-7	
-4-8	221-229	Latvijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	_	_	nmod|nmod	basic|enhanced	4-9|4-9	
-4-9	230-240	teritorijā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	teritorija	_	_	_	_	obl|obl	basic|enhanced	4-7|4-7	
-4-10	240-241	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	4-7|4-7	
+4-1	165-168	Jau	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	jau	_	_	_	_	advmod|advmod	basic|enhanced	4-4|4-4	
+4-2	169-172	pēc	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	pēc	_	_	_	_	case|case	basic|enhanced	4-4|4-4	
+4-3	173-182	pārdesmit	*	*	*	*	*	*	*	*	*	Plur	*	*	*	*	*	*	Number=Plur\|NumType=Card	*	*	mcs0p0	*	pārdesmit	_	_	_	_	nummod|nummod	basic|enhanced	4-4|4-4	
+4-4	183-190	minūtēm	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd5	*	minūte	_	_	_	_	obl|obl	basic|enhanced	4-7|4-7	
+4-5	191-197	Alekša	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg2	*	Aleksis	person	*	_	_	nmod|nmod	basic|enhanced	4-6|4-6	
+4-6	198-208	automašīna	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	automašīna	_	_	*->2-2	*[2]	nsubj|nsubj	basic|enhanced	4-7|4-7	
+4-7	209-220	ieripinājās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmyisi330an	*	ieripināties	_	_	_	_	root|root	basic|enhanced	4-7|4-7	
+4-8	221-229	Latvijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	_	_	nmod|nmod	basic|enhanced	4-9|4-9	
+4-9	230-240	teritorijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	teritorija	_	_	_	_	obl|obl	basic|enhanced	4-7|4-7	
+4-10	240-241	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	4-7|4-7	

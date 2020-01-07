@@ -1,46 +1,46 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Kā aģentūru LETA informēja LU Literatūras, folkloras un mākslas institūtā, šogad dažādu projektu laikā tika sagatavots liels skaits pētījumu un monogrāfiju, latviešu literatūras un folkloras tekstu apkopojumu, kā arī dažādu tulkojumu.
-1-1	0-2	Kā	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0m	kā	_	_	_	_	advmod	basic	1-4	
-1-2	3-11	aģentūru	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	aģentūra	_	_	*[1]	*->1-1	nmod	basic	1-3	
-1-3	12-16	LETA	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	LETA	organization	*	*[1]	*->1-2	obj	basic	1-4	
-1-4	17-26	informēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist230an	informēt	_	_	_	_	parataxis	basic	1-18	
-1-5	27-29	LU	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	LU	organization[1]|organization[2]	https://lv.wikipedia.org/wiki/Latvijas\_Universitātes\_Literatūras,\_folkloras\_un\_mākslas\_institūts[1]|https://en.wikipedia.org/wiki/University\_of\_Latvia[2]	_	_	nmod	basic	1-11	
-1-6	30-41	Literatūras	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	literatūra	organization[1]	https://lv.wikipedia.org/wiki/Latvijas\_Universitātes\_Literatūras,\_folkloras\_un\_mākslas\_institūts[1]	_	_	nmod	basic	1-11	
-1-7	41-42	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	organization[1]	https://lv.wikipedia.org/wiki/Latvijas\_Universitātes\_Literatūras,\_folkloras\_un\_mākslas\_institūts[1]	_	_	punct	basic	1-8	
-1-8	43-52	folkloras	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	folklora	organization[1]	https://lv.wikipedia.org/wiki/Latvijas\_Universitātes\_Literatūras,\_folkloras\_un\_mākslas\_institūts[1]	_	_	conj	basic	1-6	
-1-9	53-55	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	organization[1]	https://lv.wikipedia.org/wiki/Latvijas\_Universitātes\_Literatūras,\_folkloras\_un\_mākslas\_institūts[1]	_	_	cc	basic	1-10	
-1-10	56-63	mākslas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	māksla	organization[1]	https://lv.wikipedia.org/wiki/Latvijas\_Universitātes\_Literatūras,\_folkloras\_un\_mākslas\_institūts[1]	_	_	conj	basic	1-6	
-1-11	64-73	institūtā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	Institūta	organization[1]	https://lv.wikipedia.org/wiki/Latvijas\_Universitātes\_Literatūras,\_folkloras\_un\_mākslas\_institūts[1]	_	_	obl	basic	1-4	
-1-12	73-74	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-4	
-1-13	75-80	šogad	_	_	_	_	_	_	_	_	_	_	_	_	r0t	šogad	_	_	_	_	advmod	basic	1-18	
-1-14	81-87	dažādu	Masc	Plur	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpgnp	dažāds	_	_	_	_	amod	basic	1-16	
-1-15	88-96	projektu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	projekts	_	_	_	_	nmod	basic	1-16	
-1-16	97-102	laikā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	laiks	_	_	_	_	obl	basic	1-18	
-1-17	103-107	tika	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vtnisi130an	tikt	_	_	_	_	aux	basic	1-18	
-1-18	108-118	sagatavots	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnp	sagatavot	_	_	_	_	root	basic	1-18	
-1-19	119-124	liels	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	liels	_	_	_	_	amod	basic	1-20	
-1-20	125-131	skaits	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	skaits	_	_	_	_	nsubj:pass	basic	1-18	
-1-21	132-140	pētījumu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	pētījums	_	_	_	_	nmod	basic	1-20	
-1-22	141-143	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-23	
-1-23	144-155	monogrāfiju	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	monogrāfija	_	_	_	_	conj	basic	1-21	
-1-24	155-156	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-30	
-1-25	157-165	latviešu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	latvietis	_	_	_	_	nmod	basic	1-26	
-1-26	166-177	literatūras	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	literatūra	_	_	_	_	nmod	basic	1-29	
-1-27	178-180	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-28	
-1-28	181-190	folkloras	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	folklora	_	_	_	_	conj	basic	1-26	
-1-29	191-197	tekstu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	teksts	_	_	_	_	nmod	basic	1-30	
-1-30	198-208	apkopojumu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	apkopojums	_	_	_	_	conj	basic	1-21	
-1-31	208-209	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-35	
-1-32	210-212	kā	_	_	_	_	_	_	_	_	_	_	_	_	cc	kā	_	_	_	_	cc	basic	1-35	
-1-33	213-216	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse	basic	1-32	
-1-34	217-223	dažādu	Masc	Plur	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpgnp	dažāds	_	_	_	_	amod	basic	1-35	
-1-35	224-233	tulkojumu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	tulkojums	_	_	_	_	conj	basic	1-21	
-1-36	233-234	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-18	
+1-1	0-2	Kā	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0m	*	kā	_	_	_	_	advmod	basic	1-4	
+1-2	3-11	aģentūru	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	aģentūra	_	_	*->1-1	*[1]	nmod	basic	1-3	
+1-3	12-16	LETA	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	LETA	organization	*	*->1-2	*[1]	obj	basic	1-4	
+1-4	17-26	informēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist230an	*	informēt	_	_	_	_	parataxis	basic	1-18	
+1-5	27-29	LU	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	LU	organization[1]|organization[2]	https://lv.wikipedia.org/wiki/Latvijas\_Universitātes\_Literatūras,\_folkloras\_un\_mākslas\_institūts[1]|https://en.wikipedia.org/wiki/University\_of\_Latvia[2]	_	_	nmod	basic	1-11	
+1-6	30-41	Literatūras	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	literatūra	organization[1]	https://lv.wikipedia.org/wiki/Latvijas\_Universitātes\_Literatūras,\_folkloras\_un\_mākslas\_institūts[1]	_	_	nmod	basic	1-11	
+1-7	41-42	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	organization[1]	https://lv.wikipedia.org/wiki/Latvijas\_Universitātes\_Literatūras,\_folkloras\_un\_mākslas\_institūts[1]	_	_	punct	basic	1-8	
+1-8	43-52	folkloras	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	folklora	organization[1]	https://lv.wikipedia.org/wiki/Latvijas\_Universitātes\_Literatūras,\_folkloras\_un\_mākslas\_institūts[1]	_	_	conj	basic	1-6	
+1-9	53-55	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	organization[1]	https://lv.wikipedia.org/wiki/Latvijas\_Universitātes\_Literatūras,\_folkloras\_un\_mākslas\_institūts[1]	_	_	cc	basic	1-10	
+1-10	56-63	mākslas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	māksla	organization[1]	https://lv.wikipedia.org/wiki/Latvijas\_Universitātes\_Literatūras,\_folkloras\_un\_mākslas\_institūts[1]	_	_	conj	basic	1-6	
+1-11	64-73	institūtā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Institūta	organization[1]	https://lv.wikipedia.org/wiki/Latvijas\_Universitātes\_Literatūras,\_folkloras\_un\_mākslas\_institūts[1]	_	_	obl	basic	1-4	
+1-12	73-74	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-4	
+1-13	75-80	šogad	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	šogad	_	_	_	_	advmod	basic	1-18	
+1-14	81-87	dažādu	*	*	Gen	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpgnp	*	dažāds	_	_	_	_	amod	basic	1-16	
+1-15	88-96	projektu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	projekts	_	_	_	_	nmod	basic	1-16	
+1-16	97-102	laikā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	laiks	_	_	_	_	obl	basic	1-18	
+1-17	103-107	tika	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vtnisi130an	*	tikt	_	_	_	_	aux	basic	1-18	
+1-18	108-118	sagatavots	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnpsnp	*	sagatavot	_	_	_	_	root	basic	1-18	
+1-19	119-124	liels	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	liels	_	_	_	_	amod	basic	1-20	
+1-20	125-131	skaits	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	skaits	_	_	_	_	nsubj:pass	basic	1-18	
+1-21	132-140	pētījumu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	pētījums	_	_	_	_	nmod	basic	1-20	
+1-22	141-143	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-23	
+1-23	144-155	monogrāfiju	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	monogrāfija	_	_	_	_	conj	basic	1-21	
+1-24	155-156	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-30	
+1-25	157-165	latviešu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	latvietis	_	_	_	_	nmod	basic	1-26	
+1-26	166-177	literatūras	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	literatūra	_	_	_	_	nmod	basic	1-29	
+1-27	178-180	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-28	
+1-28	181-190	folkloras	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	folklora	_	_	_	_	conj	basic	1-26	
+1-29	191-197	tekstu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	teksts	_	_	_	_	nmod	basic	1-30	
+1-30	198-208	apkopojumu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	apkopojums	_	_	_	_	conj	basic	1-21	
+1-31	208-209	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-35	
+1-32	210-212	kā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	kā	_	_	_	_	cc	basic	1-35	
+1-33	213-216	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	1-32	
+1-34	217-223	dažādu	*	*	Gen	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpgnp	*	dažāds	_	_	_	_	amod	basic	1-35	
+1-35	224-233	tulkojumu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	tulkojums	_	_	_	_	conj	basic	1-21	
+1-36	233-234	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-18	

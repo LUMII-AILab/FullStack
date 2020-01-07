@@ -1,0 +1,22 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Viņam piebalsoja Barbara Leci, kura ieņem tādu pašu amatu Senātā.
+1-1	0-5	Viņam	*	*	Dat	*	*	Masc	*	*	*	Sing	3	*	Prs	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msdn	*	viņš	_	_	_	_	iobj	basic	1-2	
+1-2	6-16	piebalsoja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnisi230an	*	piebalsot	_	_	_	_	root	basic	1-2	
+1-3	17-24	Barbara	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Barbara	person[1]	*[1]	*->1-1	*[1]	nsubj	basic	1-2	
+1-4	25-29	Leci	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	np0000	*	Leci	person[1]	*[1]	*->1-1	*[1]	flat:name	basic	1-3	
+1-5	29-30	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-7	
+1-6	31-35	kura	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	Rel	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsnn	*	kura	_	_	*->1-2	*[1]	nsubj	basic	1-7	
+1-7	36-41	ieņem	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt130an	*	ieņemt	_	_	_	_	acl	basic	1-3	
+1-8	42-46	tādu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	Dem	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	*	tāds	_	_	_	_	det	basic	1-10	
+1-9	47-51	pašu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	Tot	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msan	*	pats	_	_	_	_	compound	basic	1-8	
+1-10	52-57	amatu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	amats	_	_	_	_	obj	basic	1-7	
+1-11	58-64	Senātā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	senāts	organization	*	_	_	acl	basic	1-10	
+1-12	64-65	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-2	

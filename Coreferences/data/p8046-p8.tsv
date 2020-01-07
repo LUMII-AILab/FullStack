@@ -1,0 +1,32 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Mūs sagaida visspilgtākā raksturkomēdija.
+1-1	0-3	Mūs	*	*	Acc	*	*	*	*	*	*	Plur	1	*	Prs	*	*	*	Case=Acc\|Number=Plur\|Person=1\|PronType=Prs	*	*	pp10pan	*	mēs	_	_	_	_	obj	basic	1-2	
+1-2	4-11	sagaida	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt330an	*	sagaidīt	_	_	_	_	root	basic	1-2	
+1-3	12-24	visspilgtākā	*	*	Nom	*	Sup	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Sup\|Gender=Fem\|Number=Sing	*	*	affsnys	*	spilgts	_	_	_	_	amod	basic	1-4	
+1-4	25-40	raksturkomēdija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	raksturkomēdija	_	_	_	_	nsubj	basic	1-2	
+1-5	40-41	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-2	
+
+#Text=Sajaucoties šīm sastāvdaļām, veidojas „Stacija trijiem” – gudra un smieklīga izrāde.
+2-1	42-53	Sajaucoties	*	*	*	*	*	*	*	*	*	*	*	*	*	Yes	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Conv	Conv	*	vmypu0000000n	*	sajaukties	_	_	_	_	advcl	basic	2-5	
+2-2	54-57	šīm	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	Dem	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur\|PronType=Dem	*	*	pd0fpdn	*	š	_	_	_	_	det	basic	2-3	
+2-3	58-69	sastāvdaļām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	*	sastāvdaļa	_	_	_	_	acl	basic	2-1	
+2-4	69-70	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-1	
+2-5	71-79	veidojas	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyipi230an	*	veidoties	_	_	_	_	root	basic	2-5	
+2-6	80-81	„	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	„	product[1]	*[1]	*->1-1	*[1]	punct	basic	2-7	
+2-7	81-88	Stacija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	stacija	product[1]	*[1]	*->1-1	*[1]	nsubj	basic	2-5	
+2-8	89-96	trijiem	*	*	Dat	*	*	Masc	*	*	Card	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpd	*	trīs	product[1]	*[1]	*->1-1	*[1]	nummod	basic	2-7	
+2-9	96-97	”	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	”	product[1]	*[1]	*->1-1	*[1]	punct	basic	2-7	
+2-10	98-99	–	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	–	_	_	_	_	punct	basic	2-14	
+2-11	100-105	gudra	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	*	gudrs	_	_	*->1-2	*[1]	amod	basic	2-14	
+2-12	106-108	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	*->1-2	*[1]	cc	basic	2-13	
+2-13	109-118	smieklīga	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	*	smieklīgs	_	_	*->1-2	*[1]	conj	basic	2-11	
+2-14	119-125	izrāde	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	izrāde	_	_	*->1-2	*[1]	acl	basic	2-7	
+2-15	125-126	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-5	

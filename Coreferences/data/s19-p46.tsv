@@ -1,49 +1,49 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Tā bija vienīgā parlamentārā institūcija, kas cēla trauksmi jau ilgi pirms šo sabiedrībai acīm redzamo seku parādīšanās; tur tika uzklausīts Valsts ieņēmumu dienesta Muitas kriminālpārvaldes direktors Vaškeviča kungs un iztaujāts par situāciju nelegālā alkohola aprites jomā.
-1-1	0-2	Tā	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsnn	tā	_	_	_	_	nsubj|nsubj	basic|enhanced	1-5|1-5	
-1-2	3-7	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vcnisii30an	būt	_	_	_	_	cop|cop	basic|enhanced	1-5|1-5	
-1-3	8-15	vienīgā	Masc	Sing	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armslnp	vienīgs	_	_	_	_	amod|amod	basic|enhanced	1-5|1-5	
-1-4	16-28	parlamentārā	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsnyp	parlamentāra	_	_	*[1]	*->1-1	amod|amod	basic|enhanced	1-5|1-5	
-1-5	29-40	institūcija	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	institūcija	_	_	*[1]	*->1-1	root|root	basic|enhanced	1-5|1-5	
-1-6	40-41	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-8|1-8	
-1-7	42-45	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	*[1]	*->1-2	nsubj|nsubj	basic|enhanced	1-8|1-8	
-1-8	46-50	cēla	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	celt	_	_	_	_	acl|acl	basic|enhanced	1-5|1-5	
-1-9	51-59	trauksmi	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	trauksme	_	_	_	_	obj|obj	basic|enhanced	1-8|1-8	
-1-10	60-63	jau	_	_	_	_	_	_	_	_	_	_	_	_	r0t	jau	_	_	_	_	advmod|advmod	basic|enhanced	1-11|1-11	
-1-11	64-68	ilgi	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpt	ilgi	_	_	_	_	advmod|advmod	basic|enhanced	1-8|1-8	
-1-12	69-74	pirms	_	_	_	_	_	_	_	_	_	_	_	_	spsg	pirms	_	_	_	_	case|case	basic|enhanced	1-18|1-18	
-1-13	75-77	šo	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur\|PronType=Dem	*	*	pd0fpgn	šī	_	_	_	_	det|det	basic|enhanced	1-14|1-14	
-1-14	78-89	sabiedrībai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	sabiedrība	_	_	_	_	nmod|nmod	basic|enhanced	1-16|1-16	
-1-15	90-94	acīm	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd6	acs	_	_	_	_	obl|obl	basic|enhanced	1-16|1-16	
-1-16	95-102	redzamo	Fem	Plur	Gen	Pos	*	Pres	*	Pass	*	Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Plur\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	*	vmnpdfpgppyp	redzēt	_	_	_	_	amod|amod	basic|enhanced	1-17|1-17	
-1-17	103-107	seku	Fem	Ptan	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Ptan	*	*	ncfdg4	sekas	_	_	_	_	nmod|nmod	basic|enhanced	1-18|1-18	
-1-18	108-119	parādīšanās	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsnr	parādīšanās	_	_	_	_	acl|acl	basic|enhanced	1-11|1-11	
-1-19	119-120	;	_	_	_	_	_	_	_	_	_	_	_	_	zc	\;	_	_	_	_	punct|punct	basic|enhanced	1-22|1-22	
-1-20	121-124	tur	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0p	tur	_	_	_	_	advmod|advmod	basic|enhanced	1-22|1-22	
-1-21	125-129	tika	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vtnisi130an	tikt	_	_	_	_	aux|aux	basic|enhanced	1-22|1-22	
-1-22	130-140	uzklausīts	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnp	uzklausīt	_	_	_	_	parataxis|parataxis	basic|enhanced	1-5|1-5	
-1-23	141-147	Valsts	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	valsts	organization[1]|organization[2]	*[1]|https://lv.wikipedia.org/wiki/Valsts\_ieņēmumu\_dienests[2]	*[2]	*->2-1	nmod|nmod	basic|enhanced	1-24|1-24	
-1-24	148-156	ieņēmumu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	ieņēmums	organization[1]|organization[2]	*[1]|https://lv.wikipedia.org/wiki/Valsts\_ieņēmumu\_dienests[2]	*[2]	*->2-1	nmod|nmod	basic|enhanced	1-25|1-25	
-1-25	157-165	dienesta	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	dienests	organization[1]|organization[2]	*[1]|https://lv.wikipedia.org/wiki/Valsts\_ieņēmumu\_dienests[2]	*[2]	*->2-1	nmod|nmod	basic|enhanced	1-27|1-27	
-1-26	166-172	Muitas	Fem	Ptan	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Ptan	*	*	npfdn4	Muitas	organization[1]	*[1]	*[2]	*->2-1	nmod|nmod	basic|enhanced	1-27|1-27	
-1-27	173-190	kriminālpārvaldes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	kriminālpārvalde	organization[1]	*[1]	*[2]	*->2-1	nmod|nmod	basic|enhanced	1-28|1-28	
-1-28	191-200	direktors	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	direktors	_	_	*[2]	*->2-1	nmod|nmod	basic|enhanced	1-30|1-30	
-1-29	201-210	Vaškeviča	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	Vaškevičs	person[3]	*[3]	*[2]	*->2-2	flat:name|flat	basic|enhanced	1-28|1-28	
-1-30	211-216	kungs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	kungs	person[3]	*[3]	*[2]	*->2-2	iobj|iobj	basic|enhanced	1-22|1-22	
-1-31	217-219	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	1-32|1-32	
-1-32	220-229	iztaujāts	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnp	iztaujāt	_	_	_	_	conj|conj	basic|enhanced	1-22|1-22	
-1-33	230-233	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	_	_	case|case	basic|enhanced	1-34|1-34	
-1-34	234-243	situāciju	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	situācija	_	_	_	_	iobj|iobj	basic|enhanced	1-32|1-32	
-1-35	244-252	nelegālā	Masc	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsgyp	nelegāls	_	_	_	_	amod|amod	basic|enhanced	1-36|1-36	
-1-36	253-261	alkohola	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	alkohols	_	_	_	_	nmod|nmod	basic|enhanced	1-37|1-37	
-1-37	262-269	aprites	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	aprite	_	_	_	_	nmod|nmod	basic|enhanced	1-38|1-38	
-1-38	270-274	jomā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	joma	_	_	_	_	acl|acl	basic|enhanced	1-34|1-34	
-1-39	274-275	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-5|1-5	
+1-1	0-2	Tā	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsnn	*	tā	_	_	_	_	nsubj|nsubj	basic|enhanced	1-5|1-5	
+1-2	3-7	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vcnisii30an	*	būt	_	_	_	_	cop|cop	basic|enhanced	1-5|1-5	
+1-3	8-15	vienīgā	*	*	Loc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armslnp	*	vienīgs	_	_	_	_	amod|amod	basic|enhanced	1-5|1-5	
+1-4	16-28	parlamentārā	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsnyp	*	parlamentāra	_	_	*->1-1	*[1]	amod|amod	basic|enhanced	1-5|1-5	
+1-5	29-40	institūcija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	institūcija	_	_	*->1-1	*[1]	root|root	basic|enhanced	1-5|1-5	
+1-6	40-41	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	1-8|1-8	
+1-7	42-45	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->1-2	*[1]	nsubj|nsubj	basic|enhanced	1-8|1-8	
+1-8	46-50	cēla	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist130an	*	celt	_	_	_	_	acl|acl	basic|enhanced	1-5|1-5	
+1-9	51-59	trauksmi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	trauksme	_	_	_	_	obj|obj	basic|enhanced	1-8|1-8	
+1-10	60-63	jau	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	jau	_	_	_	_	advmod|advmod	basic|enhanced	1-11|1-11	
+1-11	64-68	ilgi	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpt	*	ilgi	_	_	_	_	advmod|advmod	basic|enhanced	1-8|1-8	
+1-12	69-74	pirms	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pirms	_	_	_	_	case|case	basic|enhanced	1-18|1-18	
+1-13	75-77	šo	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur\|PronType=Dem	*	*	pd0fpgn	*	šī	_	_	_	_	det|det	basic|enhanced	1-14|1-14	
+1-14	78-89	sabiedrībai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	*	sabiedrība	_	_	_	_	nmod|nmod	basic|enhanced	1-16|1-16	
+1-15	90-94	acīm	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd6	*	acs	_	_	_	_	obl|obl	basic|enhanced	1-16|1-16	
+1-16	95-102	redzamo	*	*	Gen	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Pres	*	Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Plur\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdfpgppyp	*	redzēt	_	_	_	_	amod|amod	basic|enhanced	1-17|1-17	
+1-17	103-107	seku	*	*	Gen	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Ptan	*	*	ncfdg4	*	sekas	_	_	_	_	nmod|nmod	basic|enhanced	1-18|1-18	
+1-18	108-119	parādīšanās	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsnr	*	parādīšanās	_	_	_	_	acl|acl	basic|enhanced	1-11|1-11	
+1-19	119-120	;	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	\;	_	_	_	_	punct|punct	basic|enhanced	1-22|1-22	
+1-20	121-124	tur	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0p	*	tur	_	_	_	_	advmod|advmod	basic|enhanced	1-22|1-22	
+1-21	125-129	tika	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vtnisi130an	*	tikt	_	_	_	_	aux|aux	basic|enhanced	1-22|1-22	
+1-22	130-140	uzklausīts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnpsnp	*	uzklausīt	_	_	_	_	parataxis|parataxis	basic|enhanced	1-5|1-5	
+1-23	141-147	Valsts	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	*	valsts	organization[1]|organization[2]	*[1]|https://lv.wikipedia.org/wiki/Valsts\_ieņēmumu\_dienests[2]	*->2-1	*[2]	nmod|nmod	basic|enhanced	1-24|1-24	
+1-24	148-156	ieņēmumu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	ieņēmums	organization[1]|organization[2]	*[1]|https://lv.wikipedia.org/wiki/Valsts\_ieņēmumu\_dienests[2]	*->2-1	*[2]	nmod|nmod	basic|enhanced	1-25|1-25	
+1-25	157-165	dienesta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	dienests	organization[1]|organization[2]	*[1]|https://lv.wikipedia.org/wiki/Valsts\_ieņēmumu\_dienests[2]	*->2-1	*[2]	nmod|nmod	basic|enhanced	1-27|1-27	
+1-26	166-172	Muitas	*	*	Nom	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Ptan	*	*	npfdn4	*	Muitas	organization[1]	*[1]	*->2-1	*[2]	nmod|nmod	basic|enhanced	1-27|1-27	
+1-27	173-190	kriminālpārvaldes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	kriminālpārvalde	organization[1]	*[1]	*->2-1	*[2]	nmod|nmod	basic|enhanced	1-28|1-28	
+1-28	191-200	direktors	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	direktors	_	_	*->2-1	*[2]	nmod|nmod	basic|enhanced	1-30|1-30	
+1-29	201-210	Vaškeviča	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Vaškevičs	person[3]	*[3]	*->2-2	*[2]	flat:name|flat	basic|enhanced	1-28|1-28	
+1-30	211-216	kungs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	kungs	person[3]	*[3]	*->2-2	*[2]	iobj|iobj	basic|enhanced	1-22|1-22	
+1-31	217-219	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc|cc	basic|enhanced	1-32|1-32	
+1-32	220-229	iztaujāts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnpsnp	*	iztaujāt	_	_	_	_	conj|conj	basic|enhanced	1-22|1-22	
+1-33	230-233	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case|case	basic|enhanced	1-34|1-34	
+1-34	234-243	situāciju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	situācija	_	_	_	_	iobj|iobj	basic|enhanced	1-32|1-32	
+1-35	244-252	nelegālā	*	*	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsgyp	*	nelegāls	_	_	_	_	amod|amod	basic|enhanced	1-36|1-36	
+1-36	253-261	alkohola	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	alkohols	_	_	_	_	nmod|nmod	basic|enhanced	1-37|1-37	
+1-37	262-269	aprites	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	aprite	_	_	_	_	nmod|nmod	basic|enhanced	1-38|1-38	
+1-38	270-274	jomā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	joma	_	_	_	_	acl|acl	basic|enhanced	1-34|1-34	
+1-39	274-275	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	1-5|1-5	

@@ -1,0 +1,89 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Dažas minūtes pirms paredzamā operācijas sākuma vīrietis pēkšņi izskrēja no ēkas ar granātu rokā.
+1-1	0-5	Dažas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|PronType=Ind	*	*	pi0fpnn	*	daža	_	_	_	_	det	basic	1-2	
+1-2	6-13	minūtes	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa5	*	minūte	_	_	_	_	obl	basic	1-9	
+1-3	14-19	pirms	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pirms	_	_	_	_	case	basic	1-6	
+1-4	20-29	paredzamā	*	*	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Pres	*	Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdmsgppypn	*	paredzēt	_	_	_	_	amod	basic	1-6	
+1-5	30-40	operācijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	operācija	_	_	_	_	nmod	basic	1-6	
+1-6	41-47	sākuma	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	sākums	_	_	_	_	nmod	basic	1-2	
+1-7	48-56	vīrietis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	vīrietis	_	_	*->4-1	*[4]	nsubj	basic	1-9	
+1-8	57-63	pēkšņi	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	pēkšņi	_	_	_	_	advmod	basic	1-9	
+1-9	64-72	izskrēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnisi130an	*	izskriet	_	_	_	_	root	basic	1-9	
+1-10	73-75	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case	basic	1-11	
+1-11	76-80	ēkas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	ēka	_	_	_	_	obl	basic	1-9	
+1-12	81-83	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	1-13	
+1-13	84-91	granātu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	granāta	_	_	_	_	acl	basic	1-9	
+1-14	92-96	rokā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	roka	_	_	_	_	acl	basic	1-13	
+1-15	96-97	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-9	
+
+#Text=Kauņas apriņķa policijas komisariāta priekšnieka vietniekam Darjum Žukauskam acumirklī izdevās satvert un saspiest viņa roku, kurā bija granāta, kas jebkurā mirklī varēja sprāgt, neļaujot viņam atliekt pirkstus.
+2-1	99-105	Kauņas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Kauņa	GPE[1]|GPE[2]	https://en.wikipedia.org/wiki/Kaunas\_County[1]|https://en.wikipedia.org/wiki/Kaunas[2]	_	_	nmod	basic	2-2	
+2-2	106-113	apriņķa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	*	apriņķis	GPE[1]	https://en.wikipedia.org/wiki/Kaunas\_County[1]	_	_	nmod	basic	2-4	
+2-3	114-123	policijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	policija	_	_	*->1-1	*[1]	nmod	basic	2-4	
+2-4	124-135	komisariāta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	komisariāts	_	_	*->1-1	*[1]	nmod	basic	2-5	
+2-5	136-147	priekšnieka	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	priekšnieks	_	_	*->1-1	*[1]	nmod	basic	2-6	
+2-6	148-158	vietniekam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	vietnieks	_	_	*->1-1	*[1]	nmod	basic	2-7	
+2-7	159-165	Darjum	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	npmsd3	*	Darjus	person[3]	*[3]	*->1-2	*[1]	nsubj	basic	2-10	
+2-8	166-175	Žukauskam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	npmsd1	*	Žukausks	person[3]	*[3]	*->1-2	*[1]	flat:name	basic	2-7	
+2-9	176-185	acumirklī	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	*	acumirklis	_	_	_	_	obl	basic	2-10	
+2-10	186-193	izdevās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	veyisi130an	*	izdoties	_	_	_	_	root	basic	2-10	
+2-11	194-201	satvert	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	*	satvert	_	_	_	_	xcomp	basic	2-10	
+2-12	202-204	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-13	
+2-13	205-213	saspiest	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	*	saspiest	_	_	_	_	conj	basic	2-11	
+2-14	214-218	viņa	*	*	Gen	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msgn	*	viņš	_	_	*->4-2	*[4]	det	basic	2-15	
+2-15	219-223	roku	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	roka	_	_	*->2-1	*[2]	obj	basic	2-13	
+2-16	223-224	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-18	
+2-17	225-229	kurā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msln	*	kurš	_	_	*->2-2	*[2]	obl	basic	2-18	
+2-18	230-234	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnisii30an	*	būt	_	_	_	_	acl	basic	2-15	
+2-19	235-242	granāta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	granāts	_	_	*->3-1	*[3]	nsubj	basic	2-18	
+2-20	242-243	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-24	
+2-21	244-247	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->3-2	*[3]	nsubj	basic	2-24	
+2-22	248-255	jebkurā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing\|PronType=Ind	*	*	pi0msln	*	jebkurš	_	_	_	_	det	basic	2-23	
+2-23	256-262	mirklī	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	*	mirklis	_	_	_	_	obl	basic	2-24	
+2-24	263-269	varēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vonisi330an	*	varēt	_	_	_	_	acl	basic	2-19	
+2-25	270-276	sprāgt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0i1000n	*	sprāgt	_	_	_	_	xcomp	basic	2-24	
+2-26	276-277	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-27	
+2-27	278-286	neļaujot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Neg\|VerbForm=Conv	*	*	vmnpu0000000y	*	neļaut	_	_	_	_	advcl	basic	2-11	
+2-28	287-292	viņam	*	*	Dat	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msdn	*	viņš	_	_	*->4-3	*[4]	iobj	basic	2-27	
+2-29	293-300	atliekt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	*	atliekt	_	_	_	_	ccomp	basic	2-27	
+2-30	301-309	pirkstus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	pirksts	_	_	_	_	obj	basic	2-29	
+2-31	309-310	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-10	
+
+#Text=Vīrietis mēģināja izrauties, bet tūdaļ palīgā piesteidzās arī vienības "Aras" komandieris Viktors Grabausks.
+3-1	312-320	Vīrietis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	vīrietis	_	_	*->4-4	*[4]	nsubj	basic	3-2	
+3-2	321-329	mēģināja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vonisi330an	*	mēģināt	_	_	_	_	root	basic	3-2	
+3-3	330-339	izrauties	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i1000n	*	izrauties	_	_	_	_	xcomp	basic	3-2	
+3-4	339-340	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-8	
+3-5	341-344	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	_	_	cc	basic	3-8	
+3-6	345-350	tūdaļ	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	tūdaļ	_	_	_	_	advmod	basic	3-8	
+3-7	351-357	palīgā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	palīgs	_	_	_	_	acl	basic	3-8	
+3-8	358-369	piesteidzās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmyisi130an	*	piesteigties	_	_	_	_	conj	basic	3-2	
+3-9	370-373	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	3-15	
+3-10	374-382	vienības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	vienība	_	_	*->6-1|*->5-1	*[6]|*[5]	nmod	basic	3-12	
+3-11	383-384	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[4]	*[4]	*->6-1|*->5-2	*[6]|*[5]	punct	basic	3-12	
+3-12	384-388	Aras	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Aras	organization[4]	*[4]	*->6-1|*->5-2	*[6]|*[5]	nmod	basic	3-14	
+3-13	388-389	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[4]	*[4]	*->6-1|*->5-2	*[6]|*[5]	punct	basic	3-12	
+3-14	390-401	komandieris	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	komandieris	_	_	*->6-1	*[6]	nmod	basic	3-15	
+3-15	402-409	Viktors	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Viktors	person[5]	*[5]	*->6-2	*[6]	nsubj	basic	3-8	
+3-16	410-419	Grabausks	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Grabausks	person[5]	*[5]	*->6-2	*[6]	flat:name	basic	3-15	
+3-17	419-420	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-2	
+
+#Text=Aizturēto izdevās nogāzt zemē un uzmanīgi atņemt viņam granātu.
+4-1	422-431	Aizturēto	*	Perf	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsapsypn	*	aizturēt	_	_	*->7-1	*[7]	obl	basic	4-3	
+4-2	432-439	izdevās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	veyisii30an	*	izdoties	_	_	_	_	root	basic	4-2	
+4-3	440-446	nogāzt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	*	nogāzt	_	_	_	_	xcomp	basic	4-2	
+4-4	447-451	zemē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	*	zeme	_	_	_	_	obl	basic	4-3	
+4-5	452-454	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	4-7	
+4-6	455-463	uzmanīgi	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	uzmanīgi	_	_	_	_	advmod	basic	4-7	
+4-7	464-470	atņemt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	*	atņemt	_	_	_	_	conj	basic	4-3	
+4-8	471-476	viņam	*	*	Dat	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msdn	*	viņš	_	_	*->7-2	*[7]	iobj	basic	4-7	
+4-9	477-484	granātu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	granāts	_	_	_	_	obj	basic	4-7	
+4-10	484-485	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	4-2	

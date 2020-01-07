@@ -1,0 +1,42 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=“Mūsu skolā ir divas sociālās pedagoģes.
+1-1	0-1	“	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	“	_	_	punct	basic	1-4	
+1-2	1-5	Mūsu	*	*	Gen	*	*	*	*	*	*	Plur	1	*	*	*	*	*	Case=Gen\|Number=Plur\|Person=1\|PronType=Prs	*	*	pp10pgn	*	mēs	_	_	det	basic	1-3	
+1-3	6-11	skolā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	skola	_	_	obl	basic	1-4	
+1-4	12-14	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipii30an	*	būt	_	_	root	basic	1-4	
+1-5	15-20	divas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|NumType=Card	*	*	mcsfpn	*	divas	*->1-1	*[1]	nummod	basic	1-7	
+1-6	21-29	sociālās	*	*	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpnyp	*	sociāla	*->1-1	*[1]	amod	basic	1-7	
+1-7	30-39	pedagoģes	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn5	*	pedagoģe	*->1-1	*[1]	nsubj	basic	1-4	
+1-8	39-40	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	1-4	
+
+#Text=Viņas mani pasauca un pateica, lai meitene parakstās par to, ka nevienam nesūtīs video no vakardienas,” stāsta skolniece.
+2-1	42-47	Viņas	*	*	Nom	*	*	Fem	*	*	*	Plur	3	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|Person=3\|PronType=Prs	*	*	pp3fpnn	*	viņa	*->1-2	*[1]	nsubj	basic	2-3	
+2-2	48-52	mani	*	*	Acc	*	*	*	*	*	*	Sing	1	*	*	*	*	*	Case=Acc\|Number=Sing\|Person=1\|PronType=Prs	*	*	pp10san	*	es	*->2-1	*[2]	obj	basic	2-3	
+2-3	53-60	pasauca	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist130an	*	pasaukt	_	_	parataxis	basic	2-21	
+2-4	61-63	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	cc	basic	2-5	
+2-5	64-71	pateica	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist130an	*	pateikt	_	_	conj	basic	2-3	
+2-6	71-72	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	2-9	
+2-7	73-76	lai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	lai	_	_	mark	basic	2-9	
+2-8	77-84	meitene	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	meitene	*->2-2	*[2]	nsubj	basic	2-9	
+2-9	85-94	parakstās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmyipi330an	*	parakstīties	_	_	ccomp	basic	2-5	
+2-10	95-98	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	case	basic	2-11	
+2-11	99-101	to	*	*	Acc	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msan	*	tas	_	_	iobj	basic	2-9	
+2-12	101-102	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	2-15	
+2-13	103-105	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	mark	basic	2-15	
+2-14	106-114	nevienam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|PronType=Ind,Neg	*	*	pi0msdy	*	neviens	_	_	iobj	basic	2-15	
+2-15	115-122	nesūtīs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmnift330ay	*	nesūtīt	_	_	ccomp	basic	2-11	
+2-16	123-128	video	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	nc0000	*	video	_	_	iobj	basic	2-15	
+2-17	129-131	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	case	basic	2-18	
+2-18	132-143	vakardienas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	vakardiena	_	_	nmod	basic	2-16	
+2-19	143-144	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	2-3	
+2-20	144-145	”	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	”	_	_	punct	basic	2-3	
+2-21	146-152	stāsta	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	stāstīt	_	_	root	basic	2-21	
+2-22	153-162	skolniece	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	skolniece	*->2-3	*[2]	nsubj	basic	2-21	
+2-23	162-163	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	2-21	

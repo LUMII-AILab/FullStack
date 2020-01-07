@@ -1,55 +1,55 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Rudens raksturu nosaka cikloni un anticikloni.
-1-1	0-6	Rudens	ncmsg2	rudens	_	_	_	_	nmod	basic	1-2	
-1-2	7-15	raksturu	ncmsa1	raksturs	_	_	_	_	obj	basic	1-3	
-1-3	16-22	nosaka	vmnipt330an	nosacīt	_	_	_	_	root	basic	1-3	
-1-4	23-30	cikloni	ncmpn1	ciklons	_	_	_	_	nsubj	basic	1-3	
-1-5	31-33	un	cc	un	_	_	_	_	cc	basic	1-6	
-1-6	34-45	anticikloni	ncmpn1	anticiklons	_	_	_	_	conj	basic	1-4	
-1-7	45-46	.	zs	.	_	_	_	_	punct	basic	1-3	
+1-1	0-6	Rudens	ncmsg2	*	rudens	_	_	_	_	nmod	basic	1-2	
+1-2	7-15	raksturu	ncmsa1	*	raksturs	_	_	_	_	obj	basic	1-3	
+1-3	16-22	nosaka	vmnipt330an	*	nosacīt	_	_	_	_	root	basic	1-3	
+1-4	23-30	cikloni	ncmpn1	*	ciklons	_	_	_	_	nsubj	basic	1-3	
+1-5	31-33	un	cc	*	un	_	_	_	_	cc	basic	1-6	
+1-6	34-45	anticikloni	ncmpn1	*	anticiklons	_	_	_	_	conj	basic	1-4	
+1-7	45-46	.	zs	*	.	_	_	_	_	punct	basic	1-3	
 
 #Text=Rudens mēnešos novērojama ciklonu darbības aktivizēšanās.
-2-1	48-54	Rudens	ncmsg2	rudens	_	_	_	_	nmod	basic	2-2	
-2-2	55-62	mēnešos	ncmpl2	mēnesis	_	_	_	_	obl	basic	2-3	
-2-3	63-73	novērojama	vmnpdfsnppnp	novērot	_	_	_	_	root	basic	2-3	
-2-4	74-81	ciklonu	ncmpg1	ciklons	_	_	_	_	nmod	basic	2-5	
-2-5	82-90	darbības	ncfsg4	darbība	_	_	_	_	nmod	basic	2-6	
-2-6	91-104	aktivizēšanās	ncfsnr	aktivizēšanās	_	_	_	_	nsubj	basic	2-3	
-2-7	104-105	.	zs	.	_	_	_	_	punct	basic	2-3	
+2-1	48-54	Rudens	ncmsg2	*	rudens	_	_	_	_	nmod	basic	2-2	
+2-2	55-62	mēnešos	ncmpl2	*	mēnesis	_	_	_	_	obl	basic	2-3	
+2-3	63-73	novērojama	vmnpdfsnppnp	*	novērot	_	_	_	_	root	basic	2-3	
+2-4	74-81	ciklonu	ncmpg1	*	ciklons	_	_	_	_	nmod	basic	2-5	
+2-5	82-90	darbības	ncfsg4	*	darbība	_	_	_	_	nmod	basic	2-6	
+2-6	91-104	aktivizēšanās	ncfsnr	*	aktivizēšanās	_	_	_	_	nsubj	basic	2-3	
+2-7	104-105	.	zs	*	.	_	_	_	_	punct	basic	2-3	
 
 #Text=Cikloniem virzoties no Atlantijas okeāna, tie atnes apmākušos laiku, bieži ar nokrišņiem.
-3-1	107-116	Cikloniem	ncmpd1	ciklons	_	_	*[1]	*->1-1	obl	basic	3-2	
-3-2	117-126	virzoties	vmypu0000000	virzīties	_	_	_	_	advcl	basic	3-8	
-3-3	127-129	no	spsg	no	_	_	_	_	case	basic	3-5	
-3-4	130-140	Atlantijas	npfsg4	Atlantija	location[1]	https://en.wikipedia.org/wiki/Atlantic\_Ocean[1]	_	_	nmod	basic	3-5	
-3-5	141-147	okeāna	ncmsg1	okeāns	location[1]	https://en.wikipedia.org/wiki/Atlantic\_Ocean[1]	_	_	obl	basic	3-2	
-3-6	147-148	,	zc	,	_	_	_	_	punct	basic	3-2	
-3-7	149-152	tie	pd0mpnn	tas	_	_	*[1]	*->1-2	nsubj	basic	3-8	
-3-8	153-158	atnes	vmnipt130an	atnest	_	_	_	_	root	basic	3-8	
-3-9	159-168	apmākušos	vmypdmsaasnp	apmākties	_	_	_	_	amod	basic	3-10	
-3-10	169-174	laiku	ncmsa1	laiks	_	_	_	_	obj	basic	3-8	
-3-11	174-175	,	zc	,	_	_	_	_	punct	basic	3-12	
-3-12	176-181	bieži	r0q	bieži	_	_	_	_	advcl	basic	3-10	
-3-13	182-184	ar	sppd	ar	_	_	_	_	case	basic	3-14	
-3-14	185-195	nokrišņiem	ncmdd2	nokrišņi	_	_	_	_	dep	basic	3-12	
-3-15	195-196	.	zs	.	_	_	_	_	punct	basic	3-8	
+3-1	107-116	Cikloniem	ncmpd1	*	ciklons	_	_	*->1-1	*[1]	obl	basic	3-2	
+3-2	117-126	virzoties	vmypu0000000	*	virzīties	_	_	_	_	advcl	basic	3-8	
+3-3	127-129	no	spsg	*	no	_	_	_	_	case	basic	3-5	
+3-4	130-140	Atlantijas	npfsg4	*	Atlantija	location[1]	https://en.wikipedia.org/wiki/Atlantic\_Ocean[1]	_	_	nmod	basic	3-5	
+3-5	141-147	okeāna	ncmsg1	*	okeāns	location[1]	https://en.wikipedia.org/wiki/Atlantic\_Ocean[1]	_	_	obl	basic	3-2	
+3-6	147-148	,	zc	*	,	_	_	_	_	punct	basic	3-2	
+3-7	149-152	tie	pd0mpnn	*	tas	_	_	*->1-2	*[1]	nsubj	basic	3-8	
+3-8	153-158	atnes	vmnipt130an	*	atnest	_	_	_	_	root	basic	3-8	
+3-9	159-168	apmākušos	vmypdmsaasnp	*	apmākties	_	_	_	_	amod	basic	3-10	
+3-10	169-174	laiku	ncmsa1	*	laiks	_	_	_	_	obj	basic	3-8	
+3-11	174-175	,	zc	*	,	_	_	_	_	punct	basic	3-12	
+3-12	176-181	bieži	r0q	*	bieži	_	_	_	_	advcl	basic	3-10	
+3-13	182-184	ar	sppd	*	ar	_	_	_	_	case	basic	3-14	
+3-14	185-195	nokrišņiem	ncmdd2	*	nokrišņi	_	_	_	_	dep	basic	3-12	
+3-15	195-196	.	zs	*	.	_	_	_	_	punct	basic	3-8	
 
 #Text=Gaisam atdziestot, lietu nomaina slapjdraņķis – lietus ar sniegu.
-4-1	198-204	Gaisam	ncmsd1	gaiss	_	_	_	_	acl	basic	4-2	
-4-2	205-215	atdziestot	vmnpu0000000	atdzist	_	_	_	_	advcl	basic	4-5	
-4-3	215-216	,	zc	,	_	_	_	_	punct	basic	4-2	
-4-4	217-222	lietu	ncmsa3	lietus	_	_	_	_	obj	basic	4-5	
-4-5	223-230	nomaina	vmnipt330an	nomainīt	_	_	_	_	root	basic	4-5	
-4-6	231-243	slapjdraņķis	ncmsn2	slapjdraņķis	_	_	_	_	nsubj	basic	4-5	
-4-7	244-245	–	zd	–	_	_	_	_	punct	basic	4-8	
-4-8	246-252	lietus	ncmpn3	lietus	_	_	_	_	acl	basic	4-6	
-4-9	253-255	ar	spsa	ar	_	_	_	_	case	basic	4-10	
-4-10	256-262	sniegu	ncmsa1	sniegs	_	_	_	_	nmod	basic	4-8	
-4-11	262-263	.	zs	.	_	_	_	_	punct	basic	4-5	
+4-1	198-204	Gaisam	ncmsd1	*	gaiss	_	_	_	_	acl	basic	4-2	
+4-2	205-215	atdziestot	vmnpu0000000	*	atdzist	_	_	_	_	advcl	basic	4-5	
+4-3	215-216	,	zc	*	,	_	_	_	_	punct	basic	4-2	
+4-4	217-222	lietu	ncmsa3	*	lietus	_	_	_	_	obj	basic	4-5	
+4-5	223-230	nomaina	vmnipt330an	*	nomainīt	_	_	_	_	root	basic	4-5	
+4-6	231-243	slapjdraņķis	ncmsn2	*	slapjdraņķis	_	_	_	_	nsubj	basic	4-5	
+4-7	244-245	–	zd	*	–	_	_	_	_	punct	basic	4-8	
+4-8	246-252	lietus	ncmpn3	*	lietus	_	_	_	_	acl	basic	4-6	
+4-9	253-255	ar	spsa	*	ar	_	_	_	_	case	basic	4-10	
+4-10	256-262	sniegu	ncmsa1	*	sniegs	_	_	_	_	nmod	basic	4-8	
+4-11	262-263	.	zs	*	.	_	_	_	_	punct	basic	4-5	

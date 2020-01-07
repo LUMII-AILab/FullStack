@@ -1,0 +1,31 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=3. Emitents emitē valsts vērtspapīrus, uzņemas saistības samaksāt fiksēto ienākumu un dzēst valsts vērtspapīrus to dzēšanas datumos par to nominālvērtību.
+1-1	0-2	3.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	3.	_	_	obl	basic	1-3	
+1-2	3-11	Emitents	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	emitents	_	_	nsubj	basic	1-3	
+1-3	12-17	emitē	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt230an	*	emitēt	_	_	root	basic	1-3	
+1-4	18-24	valsts	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	*	valsts	_	_	nmod	basic	1-5	
+1-5	25-37	vērtspapīrus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	vērtspapīrs	_	_	obj	basic	1-3	
+1-6	37-38	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-7	
+1-7	39-46	uzņemas	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmyipt130an	*	uzņemties	_	_	conj	basic	1-3	
+1-8	47-56	saistības	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	saistība	_	_	obj	basic	1-7	
+1-9	57-65	samaksāt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	*	samaksāt	_	_	acl	basic	1-8	
+1-10	66-73	fiksēto	*	Perf	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsapsypn	*	fiksēt	_	_	amod	basic	1-11	
+1-11	74-82	ienākumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	ienākums	_	_	obj	basic	1-9	
+1-12	83-85	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	cc	basic	1-13	
+1-13	86-91	dzēst	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	*	dzēst	_	_	conj	basic	1-9	
+1-14	92-98	valsts	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	*	valsts	*->1-1	*[1]	nmod	basic	1-15	
+1-15	99-111	vērtspapīrus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	vērtspapīrs	*->1-1	*[1]	obj	basic	1-13	
+1-16	112-114	to	*	*	Gen	*	*	Masc	*	*	*	Plur	3	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Dem	*	*	pd3mpgn	*	tas	*->1-2	*[1]	det	basic	1-17	
+1-17	115-123	dzēšanas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	dzēšana	_	_	nmod	basic	1-18	
+1-18	124-131	datumos	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	*	datums	_	_	obl	basic	1-13	
+1-19	132-135	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	case	basic	1-21	
+1-20	136-138	to	*	*	Gen	*	*	Fem	*	*	*	Plur	3	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur\|Person=3\|PronType=Dem	*	*	pd3fpgn	*	tā	*->1-3	*[1]	det	basic	1-21	
+1-21	139-153	nominālvērtību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	nominālvērtība	_	_	iobj	basic	1-13	
+1-22	153-154	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	1-3	

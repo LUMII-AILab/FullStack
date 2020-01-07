@@ -1,0 +1,39 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Lielāko daļu automobiļu Decers ieguva no muzeja Kezikā, Lielbritānijā.
+1-1	0-7	Lielāko	*	*	Acc	*	Cmp	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Cmp\|Gender=Masc\|Number=Sing	*	*	afmsayc	*	liels	_	_	_	_	amod	basic	1-2	
+1-2	8-12	daļu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	daļa	_	_	_	_	obj	basic	1-5	
+1-3	13-23	automobiļu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	automobiļs	_	_	_	_	nmod	basic	1-2	
+1-4	24-30	Decers	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	Decers	person	*	*->3-1	*[3]	nsubj	basic	1-5	
+1-5	31-37	ieguva	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist130an	*	iegūt	_	_	_	_	root	basic	1-5	
+1-6	38-40	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case	basic	1-7	
+1-7	41-47	muzeja	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	muzejs	_	_	*->1-1	*[1]	obl	basic	1-5	
+1-8	48-54	Kezikā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	Kezika	GPE	*	_	_	acl	basic	1-7	
+1-9	54-55	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-10	
+1-10	56-69	Lielbritānijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Lielbritānija	GPE	*	_	_	acl	basic	1-8	
+1-11	69-70	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-5	
+
+#Text=Pēc tā slēgšanas uzņēmējs nopirka mašīnas un lika tās pārvest uz paša izveidoto muzeju Maiami.
+2-1	72-75	Pēc	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pēc	_	_	_	_	case	basic	2-3	
+2-2	76-78	tā	*	*	Gen	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msgn	*	tas	_	_	*->1-2	*[1]	det	basic	2-3	
+2-3	79-88	slēgšanas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	slēgšana	_	_	_	_	obl	basic	2-5	
+2-4	89-97	uzņēmējs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	uzņēmējs	_	_	*->3-2	*[3]	nsubj	basic	2-5	
+2-5	98-105	nopirka	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist130an	*	nopirkt	_	_	_	_	root	basic	2-5	
+2-6	106-113	mašīnas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	mašīna	_	_	*->2-1	*[2]	obj	basic	2-5	
+2-7	114-116	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-8	
+2-8	117-121	lika	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist130an	*	likt	_	_	_	_	conj	basic	2-5	
+2-9	122-125	tās	*	*	Acc	*	*	Fem	*	*	*	Plur	3	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur\|Person=3\|PronType=Dem	*	*	pd3fpan	*	tā	_	_	*->2-2	*[2]	obj	basic	2-10	
+2-10	126-133	pārvest	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	*	pārvest	_	_	_	_	ccomp	basic	2-8	
+2-11	134-136	uz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	uz	_	_	_	_	case	basic	2-14	
+2-12	137-141	paša	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msgn	*	pats	_	_	*->3-3	*[3]	det	basic	2-13	
+2-13	142-151	izveidoto	*	Perf	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsapsypn	*	izveidot	_	_	_	_	amod	basic	2-14	
+2-14	152-158	muzeju	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	muzejs	_	_	_	_	obl	basic	2-10	
+2-15	159-165	Maiami	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	nc0000	*	Maiami	GPE	https://en.wikipedia.org/wiki/Miami	_	_	dep	basic	2-14	
+2-16	165-166	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-5	

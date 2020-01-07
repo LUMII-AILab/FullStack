@@ -1,101 +1,101 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Atpazīstamības zīmes atklāšana tiek rīkota UNESCO nedēļas ietvaros, kuras laikā no šī gada 15.-19.oktobrim īpaši tiek izcelta programma "Pasaules atmiņa" un tās 20.gadadiena.
-1-1	0-14	Atpazīstamības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	atpazīstamība	_	_	_	_	nmod	basic	1-3	
-1-2	15-20	zīmes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	zīme	_	_	_	_	nmod	basic	1-3	
-1-3	21-30	atklāšana	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	atklāšana	_	_	_	_	nsubj:pass	basic	1-5	
-1-4	31-35	tiek	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vtnipi130an	tikt	_	_	_	_	aux	basic	1-5	
-1-5	36-42	rīkota	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnpsnp	rīkot	_	_	_	_	root	basic	1-5	
-1-6	43-49	UNESCO	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	UNESCO	organization	*	*[1]	*->1-1	nmod	basic	1-7	
-1-7	50-57	nedēļas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	nedēļa	_	_	*[1]	*->1-1	nmod	basic	1-8	
-1-8	58-66	ietvaros	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	ietvars	_	_	_	_	obl	basic	1-5	
-1-9	66-67	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-21	
-1-10	68-73	kuras	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsgn	kura	_	_	*[1]	*->1-2	det	basic	1-11	
-1-11	74-79	laikā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	laiks	_	_	_	_	obl	basic	1-21	
-1-12	80-82	no	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	time[1]	*[1]	_	_	case	basic	1-15	
-1-13	83-85	šī	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msgn	šis	time[1]	*[1]	_	_	det	basic	1-14	
-1-14	86-90	gada	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	gads	time[1]	*[1]	_	_	nmod	basic	1-15	
-1-15	91-94	15.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	15.	time[1]	*[1]	_	_	obl	basic	1-21	
-1-16	94-95	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	time[1]	*[1]	_	_	case	basic	1-18	
-1-17	95-98	19.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	19.	time[1]	*[1]	_	_	amod	basic	1-18	
-1-18	98-106	oktobrim	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd2	oktobris	time[1]	*[1]	_	_	obl	basic	1-21	
-1-19	107-112	īpaši	_	_	_	_	_	_	_	_	_	_	_	_	r0m	īpaši	_	_	_	_	advmod	basic	1-21	
-1-20	113-117	tiek	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vtnipi130an	tikt	_	_	_	_	aux	basic	1-21	
-1-21	118-125	izcelta	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnpsnp	izcelt	_	_	_	_	acl	basic	1-7	
-1-22	126-135	programma	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	programma	_	_	*[2]	*->2-1	nmod	basic	1-25	
-1-23	136-137	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	entity[2]	*[2]	*[2]	*->2-2	punct	basic	1-25	
-1-24	137-145	Pasaules	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	pasaule	entity[2]	*[2]	*[2]	*->2-2	nmod	basic	1-25	
-1-25	146-152	atmiņa	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	atmiņa	entity[2]	*[2]	*[2]	*->2-2	nsubj:pass	basic	1-21	
-1-26	152-153	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	entity[2]	*[2]	*[2]	*->2-2	punct	basic	1-25	
-1-27	154-156	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-30	
-1-28	157-160	tās	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsgn	tā	_	_	*[2]	*->2-3	det	basic	1-30	
-1-29	161-164	20.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	20.	_	_	_	_	amod	basic	1-30	
-1-30	164-173	gadadiena	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	gadadiena	_	_	_	_	conj	basic	1-25	
-1-31	173-174	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-5	
+1-1	0-14	Atpazīstamības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	atpazīstamība	_	_	_	_	nmod	basic	1-3	
+1-2	15-20	zīmes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	zīme	_	_	_	_	nmod	basic	1-3	
+1-3	21-30	atklāšana	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	atklāšana	_	_	_	_	nsubj:pass	basic	1-5	
+1-4	31-35	tiek	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vtnipi130an	*	tikt	_	_	_	_	aux	basic	1-5	
+1-5	36-42	rīkota	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsnpsnp	*	rīkot	_	_	_	_	root	basic	1-5	
+1-6	43-49	UNESCO	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	UNESCO	organization	*	*->1-1	*[1]	nmod	basic	1-7	
+1-7	50-57	nedēļas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	nedēļa	_	_	*->1-1	*[1]	nmod	basic	1-8	
+1-8	58-66	ietvaros	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	*	ietvars	_	_	_	_	obl	basic	1-5	
+1-9	66-67	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-21	
+1-10	68-73	kuras	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsgn	*	kura	_	_	*->1-2	*[1]	det	basic	1-11	
+1-11	74-79	laikā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	laiks	_	_	_	_	obl	basic	1-21	
+1-12	80-82	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	time[1]	*[1]	_	_	case	basic	1-15	
+1-13	83-85	šī	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msgn	*	šis	time[1]	*[1]	_	_	det	basic	1-14	
+1-14	86-90	gada	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	gads	time[1]	*[1]	_	_	nmod	basic	1-15	
+1-15	91-94	15.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	15.	time[1]	*[1]	_	_	obl	basic	1-21	
+1-16	94-95	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	-	time[1]	*[1]	_	_	case	basic	1-18	
+1-17	95-98	19.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	19.	time[1]	*[1]	_	_	amod	basic	1-18	
+1-18	98-106	oktobrim	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd2	*	oktobris	time[1]	*[1]	_	_	obl	basic	1-21	
+1-19	107-112	īpaši	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	īpaši	_	_	_	_	advmod	basic	1-21	
+1-20	113-117	tiek	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vtnipi130an	*	tikt	_	_	_	_	aux	basic	1-21	
+1-21	118-125	izcelta	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsnpsnp	*	izcelt	_	_	_	_	acl	basic	1-7	
+1-22	126-135	programma	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	programma	_	_	*->2-1	*[2]	nmod	basic	1-25	
+1-23	136-137	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	entity[2]	*[2]	*->2-2	*[2]	punct	basic	1-25	
+1-24	137-145	Pasaules	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	pasaule	entity[2]	*[2]	*->2-2	*[2]	nmod	basic	1-25	
+1-25	146-152	atmiņa	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	atmiņa	entity[2]	*[2]	*->2-2	*[2]	nsubj:pass	basic	1-21	
+1-26	152-153	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	entity[2]	*[2]	*->2-2	*[2]	punct	basic	1-25	
+1-27	154-156	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-30	
+1-28	157-160	tās	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsgn	*	tā	_	_	*->2-3	*[2]	det	basic	1-30	
+1-29	161-164	20.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	20.	_	_	_	_	amod	basic	1-30	
+1-30	164-173	gadadiena	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	gadadiena	_	_	_	_	conj	basic	1-25	
+1-31	173-174	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-5	
 
 #Text=Gadadienas ietvaros UNESCO LNK pasniedz un atklāj UNESCO programmas "Pasaules atmiņa" atpazīstamības zīmes muzejiem, kas jau glabā kādu no programmas starptautiskajā vai Latvijas nacionālajā reģistrā iekļautu nomināciju, tādā veidā apliecinot muzeja sasniegumus un piederību šai programmai, kā arī izceļ to kā būtisku Latvijas vēstures liecību glabātāju un nozīmīgu UNESCO LNK sadarbības partneri.
-2-1	176-186	Gadadienas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	gadadiena	_	_	_	_	nmod	basic	2-2	
-2-2	187-195	ietvaros	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	ietvars	_	_	_	_	obl	basic	2-5	
-2-3	196-202	UNESCO	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	UNESCO	organization[3]	*[3]	_	_	nmod	basic	2-4	
-2-4	203-206	LNK	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	LNK	organization[3]	*[3]	_	_	nsubj	basic	2-5	
-2-5	207-215	pasniedz	*	Sing	*	*	*	*	Imp	Act	*	Mood=Imp\|Number=Sing\|Person=2\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	2	*	vmnm0t12san	pasniegt	_	_	_	_	root	basic	2-5	
-2-6	216-218	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	2-7	
-2-7	219-225	atklāj	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt130an	atklāt	_	_	_	_	conj	basic	2-5	
-2-8	226-232	UNESCO	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	UNESCO	organization	*	*[3]	*->3-1	nmod	basic	2-9	
-2-9	233-243	programmas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	programma	_	_	*[3]	*->3-1	nmod	basic	2-12	
-2-10	244-245	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	entity[4]	*[4]	*[3]	*->3-2	punct	basic	2-12	
-2-11	245-253	Pasaules	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	pasaule	entity[4]	*[4]	*[3]	*->3-2	nmod	basic	2-12	
-2-12	254-260	atmiņa	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	atmiņa	entity[4]	*[4]	*[3]	*->3-2	nmod	basic	2-15	
-2-13	260-261	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	entity[4]	*[4]	*[3]	*->3-2	punct	basic	2-12	
-2-14	262-276	atpazīstamības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	atpazīstamība	_	_	_	_	nmod	basic	2-15	
-2-15	277-282	zīmes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	zīme	_	_	_	_	nmod	basic	2-5	
-2-16	283-291	muzejiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	muzejs	_	_	_	_	iobj	basic	2-5	
-2-17	291-292	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-20	
-2-18	293-296	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	_	_	nsubj	basic	2-20	
-2-19	297-300	jau	_	_	_	_	_	_	_	_	_	_	_	_	r0t	jau	_	_	_	_	advmod	basic	2-20	
-2-20	301-306	glabā	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt230an	glabāt	_	_	_	_	acl	basic	2-16	
-2-21	307-311	kādu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Ind	*	*	pi0fsan	kāda	_	_	_	_	det	basic	2-30	
-2-22	312-314	no	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	_	_	_	_	case	basic	2-23	
-2-23	315-325	programmas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	programma	_	_	_	_	obl	basic	2-29	
-2-24	326-341	starptautiskajā	Masc	Sing	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armslyp	starptautisks	_	_	_	_	amod	basic	2-28	
-2-25	342-345	vai	_	_	_	_	_	_	_	_	_	_	_	_	cs	vai	_	_	_	_	cc	basic	2-27	
-2-26	346-354	Latvijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Latvija	entity[5]|GPE[6]	*[5]|*[6]	_	_	nmod	basic	2-27	
-2-27	355-366	nacionālajā	Masc	Sing	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armslyp	nacionāls	entity[5]	*[5]	_	_	conj	basic	2-24	
-2-28	367-375	reģistrā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	reģistrs	entity[5]	*[5]	_	_	obl	basic	2-29	
-2-29	376-384	iekļautu	Fem	Sing	Acc	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Acc\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsapsnp	iekļaut	_	_	_	_	amod	basic	2-30	
-2-30	385-395	nomināciju	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	nominācija	_	_	_	_	obj	basic	2-20	
-2-31	395-396	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-34	
-2-32	397-401	tādā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msln	tāds	_	_	_	_	det	basic	2-33	
-2-33	402-407	veidā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	veids	_	_	_	_	obl	basic	2-34	
-2-34	408-418	apliecinot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000	apliecināt	_	_	_	_	advcl	basic	2-5	
-2-35	419-425	muzeja	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	muzejs	_	_	_	_	nmod	basic	2-36	
-2-36	426-437	sasniegumus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	sasniegums	_	_	_	_	obj	basic	2-34	
-2-37	438-440	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	2-38	
-2-38	441-450	piederību	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	piederība	_	_	_	_	conj	basic	2-36	
-2-39	451-454	šai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsdn	šī	_	_	_	_	det	basic	2-40	
-2-40	455-465	programmai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	programma	_	_	_	_	nmod	basic	2-38	
-2-41	465-466	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-34	
-2-42	467-469	kā	_	_	_	_	_	_	_	_	_	_	_	_	cc	kā	_	_	_	_	cc	basic	2-44	
-2-43	470-473	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse	basic	2-42	
-2-44	474-479	izceļ	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt130an	izcelt	_	_	_	_	conj	basic	2-5	
-2-45	480-482	to	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsan	tā	_	_	_	_	obj	basic	2-44	
-2-46	483-485	kā	_	_	_	_	_	_	_	_	_	_	_	_	cs	kā	_	_	_	_	mark	basic	2-51	
-2-47	486-493	būtisku	Fem	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsanp	būtiska	_	_	_	_	amod	basic	2-50	
-2-48	494-502	Latvijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Latvija	GPE	*	_	_	nmod	basic	2-49	
-2-49	503-511	vēstures	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	vēsture	_	_	_	_	nmod	basic	2-50	
-2-50	512-519	liecību	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	liecība	_	_	_	_	nmod	basic	2-51	
-2-51	520-529	glabātāju	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	glabātājs	_	_	_	_	acl	basic	2-44	
-2-52	530-532	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	2-57	
-2-53	533-541	nozīmīgu	Fem	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsanp	nozīmīga	_	_	_	_	amod	basic	2-57	
-2-54	542-548	UNESCO	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	UNESCO	organization[7]|organization[8]	*[7]|*[8]	_	_	nmod	basic	2-55	
-2-55	549-552	LNK	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	LNK	organization[7]	*[7]	_	_	nmod	basic	2-57	
-2-56	553-563	sadarbības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	sadarbība	_	_	_	_	nmod	basic	2-57	
-2-57	564-572	partneri	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	partneris	_	_	_	_	conj	basic	2-51	
-2-58	572-573	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-5	
+2-1	176-186	Gadadienas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	gadadiena	_	_	_	_	nmod	basic	2-2	
+2-2	187-195	ietvaros	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	*	ietvars	_	_	_	_	obl	basic	2-5	
+2-3	196-202	UNESCO	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	UNESCO	organization[3]	*[3]	_	_	nmod	basic	2-4	
+2-4	203-206	LNK	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	LNK	organization[3]	*[3]	_	_	nsubj	basic	2-5	
+2-5	207-215	pasniedz	*	*	*	*	*	*	Imp	*	*	Sing	2	*	*	*	*	*	Mood=Imp\|Number=Sing\|Person=2\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vmnm0t12san	*	pasniegt	_	_	_	_	root	basic	2-5	
+2-6	216-218	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-7	
+2-7	219-225	atklāj	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt130an	*	atklāt	_	_	_	_	conj	basic	2-5	
+2-8	226-232	UNESCO	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	UNESCO	organization	*	*->3-1	*[3]	nmod	basic	2-9	
+2-9	233-243	programmas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	programma	_	_	*->3-1	*[3]	nmod	basic	2-12	
+2-10	244-245	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	entity[4]	*[4]	*->3-2	*[3]	punct	basic	2-12	
+2-11	245-253	Pasaules	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	pasaule	entity[4]	*[4]	*->3-2	*[3]	nmod	basic	2-12	
+2-12	254-260	atmiņa	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	atmiņa	entity[4]	*[4]	*->3-2	*[3]	nmod	basic	2-15	
+2-13	260-261	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	entity[4]	*[4]	*->3-2	*[3]	punct	basic	2-12	
+2-14	262-276	atpazīstamības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	atpazīstamība	_	_	_	_	nmod	basic	2-15	
+2-15	277-282	zīmes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	zīme	_	_	_	_	nmod	basic	2-5	
+2-16	283-291	muzejiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	muzejs	_	_	_	_	iobj	basic	2-5	
+2-17	291-292	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-20	
+2-18	293-296	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	_	_	nsubj	basic	2-20	
+2-19	297-300	jau	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	jau	_	_	_	_	advmod	basic	2-20	
+2-20	301-306	glabā	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt230an	*	glabāt	_	_	_	_	acl	basic	2-16	
+2-21	307-311	kādu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Ind	*	*	pi0fsan	*	kāda	_	_	_	_	det	basic	2-30	
+2-22	312-314	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case	basic	2-23	
+2-23	315-325	programmas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	programma	_	_	_	_	obl	basic	2-29	
+2-24	326-341	starptautiskajā	*	*	Loc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armslyp	*	starptautisks	_	_	_	_	amod	basic	2-28	
+2-25	342-345	vai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	vai	_	_	_	_	cc	basic	2-27	
+2-26	346-354	Latvijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Latvija	entity[5]|GPE[6]	*[5]|*[6]	_	_	nmod	basic	2-27	
+2-27	355-366	nacionālajā	*	*	Loc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armslyp	*	nacionāls	entity[5]	*[5]	_	_	conj	basic	2-24	
+2-28	367-375	reģistrā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	reģistrs	entity[5]	*[5]	_	_	obl	basic	2-29	
+2-29	376-384	iekļautu	*	Perf	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Acc\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsapsnp	*	iekļaut	_	_	_	_	amod	basic	2-30	
+2-30	385-395	nomināciju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	nominācija	_	_	_	_	obj	basic	2-20	
+2-31	395-396	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-34	
+2-32	397-401	tādā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msln	*	tāds	_	_	_	_	det	basic	2-33	
+2-33	402-407	veidā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	veids	_	_	_	_	obl	basic	2-34	
+2-34	408-418	apliecinot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000	*	apliecināt	_	_	_	_	advcl	basic	2-5	
+2-35	419-425	muzeja	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	muzejs	_	_	_	_	nmod	basic	2-36	
+2-36	426-437	sasniegumus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	sasniegums	_	_	_	_	obj	basic	2-34	
+2-37	438-440	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-38	
+2-38	441-450	piederību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	piederība	_	_	_	_	conj	basic	2-36	
+2-39	451-454	šai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsdn	*	šī	_	_	_	_	det	basic	2-40	
+2-40	455-465	programmai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	*	programma	_	_	_	_	nmod	basic	2-38	
+2-41	465-466	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-34	
+2-42	467-469	kā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	kā	_	_	_	_	cc	basic	2-44	
+2-43	470-473	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	2-42	
+2-44	474-479	izceļ	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt130an	*	izcelt	_	_	_	_	conj	basic	2-5	
+2-45	480-482	to	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsan	*	tā	_	_	_	_	obj	basic	2-44	
+2-46	483-485	kā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	kā	_	_	_	_	mark	basic	2-51	
+2-47	486-493	būtisku	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsanp	*	būtiska	_	_	_	_	amod	basic	2-50	
+2-48	494-502	Latvijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Latvija	GPE	*	_	_	nmod	basic	2-49	
+2-49	503-511	vēstures	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	vēsture	_	_	_	_	nmod	basic	2-50	
+2-50	512-519	liecību	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	liecība	_	_	_	_	nmod	basic	2-51	
+2-51	520-529	glabātāju	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	glabātājs	_	_	_	_	acl	basic	2-44	
+2-52	530-532	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-57	
+2-53	533-541	nozīmīgu	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsanp	*	nozīmīga	_	_	_	_	amod	basic	2-57	
+2-54	542-548	UNESCO	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	UNESCO	organization[7]|organization[8]	*[7]|*[8]	_	_	nmod	basic	2-55	
+2-55	549-552	LNK	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	LNK	organization[7]	*[7]	_	_	nmod	basic	2-57	
+2-56	553-563	sadarbības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	sadarbība	_	_	_	_	nmod	basic	2-57	
+2-57	564-572	partneri	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	*	partneris	_	_	_	_	conj	basic	2-51	
+2-58	572-573	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-5	

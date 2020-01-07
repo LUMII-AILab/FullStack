@@ -1,0 +1,56 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=«Apple» vadītājs Tims Kuks pagājušā gada oktobrī pirmoreiz atzina, ka ir homoseksuāls.
+1-1	0-1	«	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	«	organization[1]	https://en.wikipedia.org/wiki/Apple\_Inc.[1]	*->1-1	*[1]	punct	basic	1-2	
+1-2	1-6	Apple	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Apple	organization[1]	https://en.wikipedia.org/wiki/Apple\_Inc.[1]	*->1-1	*[1]	nmod	basic	1-4	
+1-3	6-7	»	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	»	organization[1]	https://en.wikipedia.org/wiki/Apple\_Inc.[1]	*->1-1	*[1]	punct	basic	1-2	
+1-4	8-16	vadītājs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	vadītājs	_	_	*->1-1	*[1]	nmod	basic	1-5	
+1-5	17-21	Tims	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Tims	person[2]	https://en.wikipedia.org/wiki/Tim\_Cook[2]	*->1-2	*[1]	nsubj	basic	1-11	
+1-6	22-26	Kuks	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Kuks	person[2]	https://en.wikipedia.org/wiki/Tim\_Cook[2]	*->1-2	*[1]	flat:name	basic	1-5	
+1-7	27-35	pagājušā	*	Perf	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdmsgasypn	*	paiet	time[3]	*[3]	_	_	amod	basic	1-8	
+1-8	36-40	gada	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	gads	time[3]	*[3]	_	_	nmod	basic	1-9	
+1-9	41-48	oktobrī	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	*	oktobris	time[3]	*[3]	_	_	obl	basic	1-11	
+1-10	49-58	pirmoreiz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	pirmoreiz	_	_	_	_	advmod	basic	1-11	
+1-11	59-65	atzina	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist130an	*	atzīt	_	_	_	_	root	basic	1-11	
+1-12	65-66	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-15	
+1-13	67-69	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	1-15	
+1-14	70-72	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	1-15	
+1-15	73-85	homoseksuāls	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	homoseksuāls	_	_	_	_	ccomp	basic	1-11	
+1-16	85-86	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-11	
+
+#Text=Pēc Kuka paziņojuma viena no Sanktpēterburgas augstskolām nojauca «Apple» dibinātāja Stīva Džobsa statuju, ko neilgi pēc tam koncertā asi kritizēja britu mūziķis Eltons Džons.
+2-1	87-90	Pēc	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pēc	_	_	_	_	case	basic	2-3	
+2-2	91-95	Kuka	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Kuks	person	https://en.wikipedia.org/wiki/Tim\_Cook	*->1-3	*[1]	nmod	basic	2-3	
+2-3	96-106	paziņojuma	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	paziņojums	_	_	_	_	obl	basic	2-8	
+2-4	107-112	viena	*	*	Nom	*	*	Fem	*	*	Card	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|NumType=Card	*	*	mcsfsn	*	viens	_	_	_	_	nsubj	basic	2-8	
+2-5	113-115	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	no	_	_	_	_	case	basic	2-7	
+2-6	116-132	Sanktpēterburgas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Sanktpēterburga	GPE	https://en.wikipedia.org/wiki/Saint\_Petersburg	_	_	nmod	basic	2-7	
+2-7	133-144	augstskolām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	*	augstskola	_	_	_	_	nmod	basic	2-4	
+2-8	145-152	nojauca	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist130an	*	nojaukt	_	_	_	_	root	basic	2-8	
+2-9	153-154	«	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	«	organization[4]	https://en.wikipedia.org/wiki/Apple\_Inc.[4]	*->2-1	*[2]	punct	basic	2-10	
+2-10	154-159	Apple	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Apple	organization[4]	https://en.wikipedia.org/wiki/Apple\_Inc.[4]	*->2-1	*[2]	nmod	basic	2-12	
+2-11	159-160	»	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	»	organization[4]	https://en.wikipedia.org/wiki/Apple\_Inc.[4]	*->2-1	*[2]	punct	basic	2-10	
+2-12	161-171	dibinātāja	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	dibinātājs	_	_	*->2-1	*[2]	nmod	basic	2-13	
+2-13	172-177	Stīva	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Stīvs	person[5]	https://en.wikipedia.org/wiki/Steve\_Jobs[5]	*->2-2	*[2]	nmod	basic	2-15	
+2-14	178-184	Džobsa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Džobss	person[5]	https://en.wikipedia.org/wiki/Steve\_Jobs[5]	*->2-2	*[2]	flat:name	basic	2-13	
+2-15	185-192	statuju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	statuja	_	_	*->3-1	*[3]	obj	basic	2-8	
+2-16	192-193	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-23	
+2-17	194-196	ko	*	*	Acc	*	*	*	*	*	*	*	*	*	Rel	*	*	*	Case=Acc\|PronType=Rel	*	*	pr000an	*	kas	_	_	*->3-2	*[3]	obj	basic	2-23	
+2-18	197-203	neilgi	*	*	*	*	*	*	*	*	*	*	*	*	Neg	*	*	*	PronType=Neg	*	*	r0t	*	neilgi	_	_	_	_	advmod	basic	2-20	
+2-19	204-207	pēc	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsd	*	pēc	_	_	_	_	case	basic	2-20	
+2-20	208-211	tam	*	*	Dat	*	*	Masc	*	*	*	Sing	3	*	Dem	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msdn	*	tas	_	_	_	_	obl	basic	2-23	
+2-21	212-220	koncertā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	koncerts	_	_	_	_	obl	basic	2-23	
+2-22	221-224	asi	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	asi	_	_	_	_	advmod	basic	2-23	
+2-23	225-234	kritizēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist230an	*	kritizēt	_	_	_	_	advcl	basic	2-8	
+2-24	235-240	britu	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	brits	_	_	*->4-1	*[4]	nmod	basic	2-25	
+2-25	241-248	mūziķis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	mūziķis	_	_	*->4-1	*[4]	nmod	basic	2-26	
+2-26	249-255	Eltons	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Eltons	person[6]	https://en.wikipedia.org/wiki/Elton\_John[6]	*->4-2	*[4]	nsubj	basic	2-23	
+2-27	256-261	Džons	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Džons	person[6]	https://en.wikipedia.org/wiki/Elton\_John[6]	*->4-2	*[4]	flat:name	basic	2-26	
+2-28	261-262	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-8	

@@ -1,0 +1,70 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Tagad piecgades līgums izbeidzas.
+1-1	0-5	Tagad	*	*	*	*	*	*	*	*	*	*	*	*	Dem	*	*	*	PronType=Dem	*	*	r0t	*	tagad	_	_	_	_	advmod	basic	1-4	
+1-2	6-15	piecgades	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	piecgade	_	_	_	_	nmod	basic	1-3	
+1-3	16-22	līgums	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	līgums	_	_	_	_	nsubj	basic	1-4	
+1-4	23-32	izbeidzas	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyipi130an	*	izbeigties	_	_	_	_	root	basic	1-4	
+1-5	32-33	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-4	
+
+#Text=Tāpēc novads izsludinājis jaunu iepirkumu.
+2-1	34-39	Tāpēc	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0c	*	tāpēc	_	_	_	_	advmod	basic	2-3	
+2-2	40-46	novads	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	novads	_	_	_	_	nsubj	basic	2-3	
+2-3	47-59	izsludinājis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdmsnasnpn	*	izsludināt	_	_	_	_	root	basic	2-3	
+2-4	60-65	jaunu	*	*	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsanp	*	jauns	_	_	_	_	amod	basic	2-5	
+2-5	66-75	iepirkumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	iepirkums	_	_	*->1-1	*[1]	obj	basic	2-3	
+2-6	75-76	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-3	
+
+#Text=Tajā noteikta prasība, ka 80% no pretendenta darbiniekiem jābūt piecu gadu pieredzei pašvaldībās.
+3-1	77-81	Tajā	*	*	Loc	*	*	Fem	*	*	*	Sing	3	*	Dem	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3fsln	*	tā	_	_	*->1-2	*[1]	obl	basic	3-2	
+3-2	82-90	noteikta	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdfsnpsnpn	*	noteikt	_	_	_	_	root	basic	3-2	
+3-3	91-98	prasība	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	prasība	_	_	_	_	nsubj:pass	basic	3-2	
+3-4	98-99	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-11	
+3-5	100-102	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	3-11	
+3-6	103-105	80	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	80	_	_	_	_	nummod	basic	3-7	
+3-7	105-106	%	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	xx	*	%	_	_	_	_	obl	basic	3-11	
+3-8	107-109	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case	basic	3-10	
+3-9	110-121	pretendenta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	pretendents	_	_	_	_	nmod	basic	3-10	
+3-10	122-134	darbiniekiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	darbinieks	_	_	_	_	nmod	basic	3-7	
+3-11	135-140	jābūt	*	*	*	*	*	*	Nec	*	*	*	*	*	*	*	*	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnd0ii00an	*	būt	_	_	_	_	acl	basic	3-3	
+3-12	141-146	piecu	*	*	Gen	*	*	Masc	*	*	Card	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpg	*	pieci	_	_	_	_	nummod	basic	3-13	
+3-13	147-151	gadu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	gads	_	_	_	_	nmod	basic	3-14	
+3-14	152-161	pieredzei	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd5	*	pieredze	_	_	_	_	nsubj	basic	3-11	
+3-15	162-173	pašvaldībās	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	*	pašvaldība	_	_	_	_	acl	basic	3-14	
+3-16	173-174	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-2	
+
+#Text=Tādu prasību var izpildīt tikai pašreizējā juristu firma, uzskata Jelgavas novada opozīcijas deputāts Kārlis Rimša («Reģionu alianse»), izpētījis portāls LSM.lv.
+4-1	175-179	Tādu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	Dem	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsan	*	tāda	_	_	_	_	det	basic	4-2	
+4-2	180-187	prasību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	prasība	_	_	_	_	obj	basic	4-4	
+4-3	188-191	var	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vonipi330an	*	varēt	_	_	_	_	ccomp	basic	4-10	
+4-4	192-200	izpildīt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t3000n	*	izpildīt	_	_	_	_	xcomp	basic	4-3	
+4-5	201-206	tikai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tikai	_	_	_	_	discourse	basic	4-8	
+4-6	207-217	pašreizējā	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnyp	*	pašreizējs	_	_	_	_	amod	basic	4-8	
+4-7	218-225	juristu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	jurists	_	_	_	_	nmod	basic	4-8	
+4-8	226-231	firma	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	firma	_	_	_	_	nsubj	basic	4-3	
+4-9	231-232	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-3	
+4-10	233-240	uzskata	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt330an	*	uzskatīt	_	_	_	_	ccomp	basic	4-24	
+4-11	241-249	Jelgavas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Jelgava	GPE[1]|GPE[2]	https://en.wikipedia.org/wiki/Jelgava\_Municipality[1]|https://en.wikipedia.org/wiki/Jelgava[2]	*->2-1	*[2]	nmod	basic	4-12	
+4-12	250-256	novada	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	novads	GPE[1]	https://en.wikipedia.org/wiki/Jelgava\_Municipality[1]	*->2-1	*[2]	nmod	basic	4-14	
+4-13	257-267	opozīcijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	opozīcija	_	_	*->2-1	*[2]	nmod	basic	4-14	
+4-14	268-276	deputāts	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	deputāts	_	_	*->2-1	*[2]	nmod	basic	4-15	
+4-15	277-283	Kārlis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	*	Kārlis	person[3]	*[3]	*->2-2	*[2]	nsubj	basic	4-10	
+4-16	284-289	Rimša	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Rimša	person[3]	*[3]	*->2-2	*[2]	flat:name	basic	4-15	
+4-17	290-291	(	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	(	_	_	_	_	punct	basic	4-20	
+4-18	291-292	«	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	«	organization[4]	https://lv.wikipedia.org/wiki/Reģionu\_alianse[4]	_	_	punct	basic	4-20	
+4-19	292-299	Reģionu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	reģions	organization[4]	https://lv.wikipedia.org/wiki/Reģionu\_alianse[4]	_	_	nmod	basic	4-20	
+4-20	300-307	alianse	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	alianse	organization[4]	https://lv.wikipedia.org/wiki/Reģionu\_alianse[4]	_	_	discourse	basic	4-15	
+4-21	307-308	»	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	»	organization[4]	https://lv.wikipedia.org/wiki/Reģionu\_alianse[4]	_	_	punct	basic	4-20	
+4-22	308-309	)	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	)	_	_	_	_	punct	basic	4-20	
+4-23	309-310	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-10	
+4-24	311-320	izpētījis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdmsnasnpn	*	izpētīt	_	_	_	_	root	basic	4-24	
+4-25	321-328	portāls	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	portāls	_	_	*->3-1	*[3]	nmod	basic	4-26	
+4-26	329-335	LSM.lv	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	xu	*	lsm.lv	organization	*	*->3-2	*[3]	nsubj	basic	4-24	
+4-27	335-336	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	4-24	

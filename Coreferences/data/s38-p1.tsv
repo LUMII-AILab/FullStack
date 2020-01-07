@@ -1,0 +1,99 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Laiku pa laikam cilvēces vēsturē pienāk brīži, kad nākas uzrakstīt to, kas agrāk bijis pats par sevi saprotams arī nerakstīts.
+1-1	0-5	Laiku	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	laiks	_	_	_	_	obj	basic	1-6	
+1-2	6-8	pa	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsd	*	pa	_	_	_	_	case	basic	1-3	
+1-3	9-15	laikam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	laiks	_	_	_	_	nmod	basic	1-1	
+1-4	16-24	cilvēces	*	*	Gen	*	*	Fem	*	*	*	Coll	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Coll	*	*	ncfvg5	*	cilvēce	_	_	_	_	nmod	basic	1-5	
+1-5	25-32	vēsturē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	*	vēsture	_	_	_	_	obl	basic	1-6	
+1-6	33-39	pienāk	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipi130an	*	pienākt	_	_	_	_	root	basic	1-6	
+1-7	40-45	brīži	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn2	*	brīdis	_	_	_	_	nsubj	basic	1-6	
+1-8	45-46	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-10	
+1-9	47-50	kad	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0t	*	kad	_	_	_	_	advmod	basic	1-10	
+1-10	51-56	nākas	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	voyipi130an	*	nākties	_	_	_	_	acl	basic	1-7	
+1-11	57-66	uzrakstīt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	*	uzrakstīt	_	_	_	_	xcomp	basic	1-10	
+1-12	67-69	to	*	*	Acc	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msan	*	tas	_	_	*->1-1	*[1]	obj	basic	1-11	
+1-13	69-70	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-20	
+1-14	71-74	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->1-2	*[1]	nsubj	basic	1-20	
+1-15	75-80	agrāk	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	agrāk	_	_	_	_	advmod	basic	1-20	
+1-16	81-86	bijis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vcnpdmsnasnpn	*	būt	_	_	_	_	cop	basic	1-20	
+1-17	87-91	pats	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msnn	*	pats	_	_	_	_	acl	basic	1-20	
+1-18	92-95	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	1-19	
+1-19	96-100	sevi	*	*	Acc	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Acc\|PronType=Rcp\|Reflex=Yes	*	*	px000an	*	sevis	_	_	_	_	nmod	basic	1-17	
+1-20	101-110	saprotams	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Pres	*	Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdmsnppnpn	*	saprast	_	_	_	_	acl	basic	1-12	
+1-21	111-114	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	1-22	
+1-22	115-125	nerakstīts	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Pres	*	Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdmsnppnpn	*	nerakstīt	_	_	_	_	acl	basic	1-20	
+1-23	125-126	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-6	
+
+#Text=Ja cilvēce nekad nebūtu atkritusi no Dieva, arī Bībele nebūtu uzrakstīta.
+2-1	128-130	Ja	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ja	_	_	_	_	mark	basic	2-5	
+2-2	131-138	cilvēce	*	*	Nom	*	*	Fem	*	*	*	Coll	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Coll	*	*	ncfvn5	*	cilvēce	_	_	_	_	nsubj	basic	2-5	
+2-3	139-144	nekad	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Int,Neg	*	*	r0t	*	nekad	_	_	_	_	advmod	basic	2-5	
+2-4	145-151	nebūtu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Neg\|VerbForm=Fin\|Voice=Act	*	Act	vcnc0ii00ay	*	būt	_	_	_	_	aux	basic	2-5	
+2-5	152-161	atkritusi	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsnasnpn	*	atkrist	_	_	_	_	dep	basic	2-12	
+2-6	162-164	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case	basic	2-7	
+2-7	165-170	Dieva	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	dievs	person	https://en.wikipedia.org/wiki/God	_	_	iobj	basic	2-5	
+2-8	170-171	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-5	
+2-9	172-175	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	2-10	
+2-10	176-182	Bībele	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	bībele	product	https://en.wikipedia.org/wiki/Bible	_	_	nsubj:pass	basic	2-12	
+2-11	183-189	nebūtu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Neg\|VerbForm=Fin\|Voice=Act	*	Act	vcnc0ii00ay	*	būt	_	_	_	_	aux:pass	basic	2-12	
+2-12	190-200	uzrakstīta	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsnpsnpn	*	uzrakstīt	_	_	_	_	root	basic	2-12	
+2-13	200-201	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-12	
+
+#Text=Un, ja 10 baušļi būtu ikviena cilvēka sirdsapziņā, Dievam nebūtu nācies tos ar burtiem uzrakstīt uz Mozus akmens galdiņiem.
+3-1	203-205	Un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	3-13	
+3-2	205-206	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-6	
+3-3	207-209	ja	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ja	_	_	_	_	mark	basic	3-6	
+3-4	210-212	10	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	10	_	_	*->3-1	*[3]	nummod	basic	3-5	
+3-5	213-219	baušļi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn2	*	bauslis	_	_	*->3-1	*[3]	nsubj	basic	3-6	
+3-6	220-224	būtu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vmnc0ii00an	*	būt	_	_	_	_	advcl	basic	3-13	
+3-7	225-232	ikviena	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msgn	*	ikviens	_	_	_	_	det	basic	3-8	
+3-8	233-240	cilvēka	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	cilvēks	_	_	_	_	nmod	basic	3-9	
+3-9	241-252	sirdsapziņā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	sirdsapziņa	_	_	_	_	obl	basic	3-6	
+3-10	252-253	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-6	
+3-11	254-260	Dievam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	dievs	person	https://en.wikipedia.org/wiki/God	_	_	nsubj	basic	3-13	
+3-12	261-267	nebūtu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Neg\|VerbForm=Fin\|Voice=Act	*	Act	vcnc0ii00ay	*	būt	_	_	_	_	aux	basic	3-13	
+3-13	268-274	nācies	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	*	voypdmsnasnpn	*	nākties	_	_	_	_	root	basic	3-13	
+3-14	275-278	tos	*	*	Acc	*	*	Masc	*	*	*	Plur	3	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Dem	*	*	pd3mpan	*	tas	_	_	*->3-2	*[3]	obj	basic	3-17	
+3-15	279-281	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	_	_	case	basic	3-16	
+3-16	282-289	burtiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	burts	_	_	_	_	iobj	basic	3-17	
+3-17	290-299	uzrakstīt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	*	uzrakstīt	_	_	_	_	xcomp	basic	3-13	
+3-18	300-302	uz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	uz	_	_	_	_	case	basic	3-21	
+3-19	303-308	Mozus	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg3	*	Mozus	person	https://en.wikipedia.org/wiki/Moses	_	_	nmod	basic	3-20	
+3-20	309-315	akmens	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	*	akmens	_	_	_	_	nmod	basic	3-21	
+3-21	316-325	galdiņiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	galdiņš	_	_	_	_	iobj	basic	3-17	
+3-22	325-326	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-13	
+
+#Text=Savukārt Barontēvs paguva pierakstīt latvju dainas laikā, kad tās sāka zust no latviešu tautas atmiņas, kur tās nepierakstītas bija glabājušās gadu simtiem.
+4-1	328-336	Savukārt	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	savukārt	_	_	_	_	advmod	basic	4-3	
+4-2	337-346	Barontēvs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Barontēvs	person	https://en.wikipedia.org/wiki/Krišjānis\_Barons	_	_	nsubj	basic	4-3	
+4-3	347-353	paguva	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist130an	*	pagūt	_	_	_	_	root	basic	4-3	
+4-4	354-364	pierakstīt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	*	pierakstīt	_	_	_	_	ccomp	basic	4-3	
+4-5	365-371	latvju	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	latvis	_	_	_	_	nmod	basic	4-6	
+4-6	372-378	dainas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	daina	_	_	*->2-1	*[2]	obj	basic	4-4	
+4-7	379-384	laikā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	laiks	_	_	*->4-1	*[4]	obl	basic	4-4	
+4-8	384-385	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-11	
+4-9	386-389	kad	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0t	*	kad	_	_	*->4-2	*[4]	advmod	basic	4-11	
+4-10	390-393	tās	*	*	Nom	*	*	Fem	*	*	*	Plur	3	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|Person=3\|PronType=Dem	*	*	pd3fpnn	*	tā	_	_	*->2-2	*[2]	nsubj	basic	4-11	
+4-11	394-398	sāka	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vpnisi130an	*	sākt	_	_	_	_	acl	basic	4-7	
+4-12	399-403	zust	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0i1000n	*	zust	_	_	_	_	xcomp	basic	4-11	
+4-13	404-406	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case	basic	4-16	
+4-14	407-415	latviešu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	latvietis	_	_	_	_	nmod	basic	4-15	
+4-15	416-422	tautas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	tauta	_	_	_	_	nmod	basic	4-16	
+4-16	423-430	atmiņas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	atmiņa	_	_	_	_	obl	basic	4-12	
+4-17	430-431	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-22	
+4-18	432-435	kur	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0p	*	kur	_	_	_	_	advmod	basic	4-22	
+4-19	436-439	tās	*	*	Nom	*	*	Fem	*	*	*	Plur	3	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|Person=3\|PronType=Dem	*	*	pd3fpnn	*	tā	_	_	*->2-3	*[2]	nsubj	basic	4-22	
+4-20	440-454	nepierakstītas	*	Perf	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Neg\|Tense=Past\|VerbForm=Part	*	*	vmnpdfpnpsnpy	*	nepierakstīt	_	_	_	_	acl	basic	4-22	
+4-21	455-459	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vcnisii30an	*	būt	_	_	_	_	aux	basic	4-22	
+4-22	460-470	glabājušās	*	Perf	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	*	vmypdfpnasnpn	*	glabāties	_	_	_	_	acl	basic	4-16	
+4-23	471-475	gadu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	gads	_	_	_	_	nmod	basic	4-24	
+4-24	476-483	simtiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	simts	_	_	_	_	obl	basic	4-22	
+4-25	483-484	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	4-3	

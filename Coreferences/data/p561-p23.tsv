@@ -1,71 +1,71 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Latvijas pašvaldību policisti tiek pakļauti nežēlīgai diskriminācijai, “Kursas Laikam” pauž kāds vīrietis, kurš vēlas palikt anonīms.
-1-1	0-8	Latvijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	_	_	nmod|nmod	basic|enhanced	1-2|1-2	
-1-2	9-19	pašvaldību	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	pašvaldība	_	_	_	_	nmod|nmod	basic|enhanced	1-3|1-3	
-1-3	20-29	policisti	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	policists	_	_	_	_	nsubj:pass|nsubj	basic|enhanced	1-5|1-5	
-1-4	30-34	tiek	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vtnipi130an	tikt	_	_	_	_	aux|aux	basic|enhanced	1-5|1-5	
-1-5	35-43	pakļauti	Masc	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpnpsnp	pakļaut	_	_	_	_	ccomp|ccomp	basic|enhanced	1-13|1-13	
-1-6	44-53	nežēlīgai	Fem	Sing	Dat	Pos	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsdnp	nežēlīga	_	_	_	_	amod|amod	basic|enhanced	1-7|1-7	
-1-7	54-69	diskriminācijai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	diskriminācija	_	_	_	_	iobj|iobj	basic|enhanced	1-5|1-5	
-1-8	69-70	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-5|1-5	
-1-9	71-72	“	_	_	_	_	_	_	_	_	_	_	_	_	zq	“	product[1]	*[1]	_	_	punct|punct	basic|enhanced	1-11|1-11	
-1-10	72-78	Kursas	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	Kursa	product[1]	*[1]	_	_	nmod|nmod	basic|enhanced	1-11|1-11	
-1-11	79-85	Laikam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	laikam	product[1]	*[1]	_	_	iobj|iobj	basic|enhanced	1-13|1-13	
-1-12	85-86	”	_	_	_	_	_	_	_	_	_	_	_	_	zq	”	product[1]	*[1]	_	_	punct|punct	basic|enhanced	1-11|1-11	
-1-13	87-91	pauž	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt130an	paust	_	_	_	_	root|root	basic|enhanced	1-13|1-13	
-1-14	92-96	kāds	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Ind	*	*	pi0msnn	kāds	_	_	_	_	det|det	basic|enhanced	1-15|1-15	
-1-15	97-105	vīrietis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	vīrietis	_	_	*[1]	*->1-1	nsubj|nsubj	basic|enhanced	1-13|1-13	
-1-16	105-106	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-19|1-19	
-1-17	107-111	kurš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msnn	kurš	_	_	*[1]	*->1-2	nsubj|nsubj	basic|enhanced	1-19|1-19	
-1-18	112-117	vēlas	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	voyipt330an	vēlēties	_	_	_	_	aux|aux	basic|enhanced	1-19|1-19	
-1-19	118-124	palikt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vtnn0i1000n	palikt	_	_	_	_	acl|acl	basic|enhanced	1-15|1-15	
-1-20	125-132	anonīms	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsnnp	anonīms	_	_	_	_	xcomp|xcomp	basic|enhanced	1-19|1-19	
-1-21	132-133	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-13|1-13	
+1-1	0-8	Latvijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	_	_	nmod|nmod	basic|enhanced	1-2|1-2	
+1-2	9-19	pašvaldību	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	pašvaldība	_	_	_	_	nmod|nmod	basic|enhanced	1-3|1-3	
+1-3	20-29	policisti	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	policists	_	_	_	_	nsubj:pass|nsubj	basic|enhanced	1-5|1-5	
+1-4	30-34	tiek	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vtnipi130an	*	tikt	_	_	_	_	aux|aux	basic|enhanced	1-5|1-5	
+1-5	35-43	pakļauti	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	*	vmnpdmpnpsnp	*	pakļaut	_	_	_	_	ccomp|ccomp	basic|enhanced	1-13|1-13	
+1-6	44-53	nežēlīgai	*	*	Dat	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsdnp	*	nežēlīga	_	_	_	_	amod|amod	basic|enhanced	1-7|1-7	
+1-7	54-69	diskriminācijai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	*	diskriminācija	_	_	_	_	iobj|iobj	basic|enhanced	1-5|1-5	
+1-8	69-70	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	1-5|1-5	
+1-9	71-72	“	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	“	product[1]	*[1]	_	_	punct|punct	basic|enhanced	1-11|1-11	
+1-10	72-78	Kursas	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	Kursa	product[1]	*[1]	_	_	nmod|nmod	basic|enhanced	1-11|1-11	
+1-11	79-85	Laikam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	laikam	product[1]	*[1]	_	_	iobj|iobj	basic|enhanced	1-13|1-13	
+1-12	85-86	”	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	”	product[1]	*[1]	_	_	punct|punct	basic|enhanced	1-11|1-11	
+1-13	87-91	pauž	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt130an	*	paust	_	_	_	_	root|root	basic|enhanced	1-13|1-13	
+1-14	92-96	kāds	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Ind	*	*	pi0msnn	*	kāds	_	_	_	_	det|det	basic|enhanced	1-15|1-15	
+1-15	97-105	vīrietis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	vīrietis	_	_	*->1-1	*[1]	nsubj|nsubj	basic|enhanced	1-13|1-13	
+1-16	105-106	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	1-19|1-19	
+1-17	107-111	kurš	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msnn	*	kurš	_	_	*->1-2	*[1]	nsubj|nsubj	basic|enhanced	1-19|1-19	
+1-18	112-117	vēlas	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	voyipt330an	*	vēlēties	_	_	_	_	aux|aux	basic|enhanced	1-19|1-19	
+1-19	118-124	palikt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vtnn0i1000n	*	palikt	_	_	_	_	acl|acl	basic|enhanced	1-15|1-15	
+1-20	125-132	anonīms	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsnnp	*	anonīms	_	_	_	_	xcomp|xcomp	basic|enhanced	1-19|1-19	
+1-21	132-133	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	1-13|1-13	
 
 #Text=Diskriminēšanā esot vainojama Latvijas valsts, kas ar likumu starpniecību pašvaldības policistus nostādījusi atšķirīgā situācijā no Valsts policijas un Drošības policijas darbiniekiem.
-2-1	135-149	Diskriminēšanā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	diskriminēšana	_	_	_	_	obl|obl	basic|enhanced	2-3|2-3	
-2-2	150-154	esot	*	*	*	*	*	Pres	Qot	Act	*	Evident=Nfh\|Mood=Qot\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	*	vcnrpii00an	būt	_	_	_	_	aux|aux	basic|enhanced	2-3|2-3	
-2-3	155-164	vainojama	Fem	Sing	Nom	Pos	*	Pres	*	Pass	*	Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	*	vmnpdfsnppnp	vainot	_	_	_	_	root|root	basic|enhanced	2-3|2-3	
-2-4	165-173	Latvijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Latvija	GPE[2]	https://en.wikipedia.org/wiki/Latvia[2]	*[2]	*->2-1	nmod|nmod	basic|enhanced	2-5|2-5	
-2-5	174-180	valsts	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn6	valsts	GPE[2]	https://en.wikipedia.org/wiki/Latvia[2]	*[2]	*->2-1	nsubj|nsubj	basic|enhanced	2-3|2-3	
-2-6	180-181	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-13|2-13	
-2-7	182-185	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	*[2]	*->2-2	nsubj|nsubj	basic|enhanced	2-13|2-13	
-2-8	186-188	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case|case	basic|enhanced	2-10|2-10	
-2-9	189-195	likumu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	likums	_	_	_	_	nmod|nmod	basic|enhanced	2-10|2-10	
-2-10	196-208	starpniecību	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	starpniecība	_	_	_	_	obl|obl	basic|enhanced	2-13|2-13	
-2-11	209-220	pašvaldības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	pašvaldība	_	_	_	_	nmod|nmod	basic|enhanced	2-12|2-12	
-2-12	221-231	policistus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	policists	_	_	_	_	obj|obj	basic|enhanced	2-13|2-13	
-2-13	232-243	nostādījusi	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnasnp	nostādīt	_	_	_	_	acl|acl	basic|enhanced	2-5|2-5	
-2-14	244-253	atšķirīgā	Fem	Sing	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affslnp	atšķirīga	_	_	_	_	amod|amod	basic|enhanced	2-15|2-15	
-2-15	254-263	situācijā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	situācija	_	_	_	_	acl|acl	basic|enhanced	2-13|2-13	
-2-16	264-266	no	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	_	_	_	_	case|case	basic|enhanced	2-22|2-22	
-2-17	267-273	Valsts	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	valsts	organization[3]	https://lv.wikipedia.org/wiki/Latvijas\_Valsts\_policija[3]	_	_	nmod|nmod	basic|enhanced	2-18|2-18	
-2-18	274-283	policijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	policija	organization[3]	https://lv.wikipedia.org/wiki/Latvijas\_Valsts\_policija[3]	_	_	nmod|nmod	basic|enhanced	2-22|2-22	
-2-19	284-286	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	2-21|2-21	
-2-20	287-295	Drošības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	drošība	organization[4]	https://lv.wikipedia.org/wiki/Drošības\_policija[4]	_	_	nmod|nmod	basic|enhanced	2-21|2-21	
-2-21	296-305	policijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	policija	organization[4]	https://lv.wikipedia.org/wiki/Drošības\_policija[4]	_	_	conj|conj	basic|enhanced	2-18|2-18	
-2-22	306-318	darbiniekiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	darbinieks	_	_	_	_	obl|obl	basic|enhanced	2-13|2-13	
-2-23	318-319	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	2-3|2-3	
+2-1	135-149	Diskriminēšanā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	diskriminēšana	_	_	_	_	obl|obl	basic|enhanced	2-3|2-3	
+2-2	150-154	esot	*	*	*	*	*	*	Qot	*	*	*	*	*	*	*	Pres	*	Evident=Nfh\|Mood=Qot\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnrpii00an	*	būt	_	_	_	_	aux|aux	basic|enhanced	2-3|2-3	
+2-3	155-164	vainojama	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Pres	*	Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdfsnppnp	*	vainot	_	_	_	_	root|root	basic|enhanced	2-3|2-3	
+2-4	165-173	Latvijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Latvija	GPE[2]	https://en.wikipedia.org/wiki/Latvia[2]	*->2-1	*[2]	nmod|nmod	basic|enhanced	2-5|2-5	
+2-5	174-180	valsts	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn6	*	valsts	GPE[2]	https://en.wikipedia.org/wiki/Latvia[2]	*->2-1	*[2]	nsubj|nsubj	basic|enhanced	2-3|2-3	
+2-6	180-181	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	2-13|2-13	
+2-7	182-185	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->2-2	*[2]	nsubj|nsubj	basic|enhanced	2-13|2-13	
+2-8	186-188	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case|case	basic|enhanced	2-10|2-10	
+2-9	189-195	likumu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	likums	_	_	_	_	nmod|nmod	basic|enhanced	2-10|2-10	
+2-10	196-208	starpniecību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	starpniecība	_	_	_	_	obl|obl	basic|enhanced	2-13|2-13	
+2-11	209-220	pašvaldības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	pašvaldība	_	_	_	_	nmod|nmod	basic|enhanced	2-12|2-12	
+2-12	221-231	policistus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	policists	_	_	_	_	obj|obj	basic|enhanced	2-13|2-13	
+2-13	232-243	nostādījusi	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsnasnp	*	nostādīt	_	_	_	_	acl|acl	basic|enhanced	2-5|2-5	
+2-14	244-253	atšķirīgā	*	*	Loc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affslnp	*	atšķirīga	_	_	_	_	amod|amod	basic|enhanced	2-15|2-15	
+2-15	254-263	situācijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	situācija	_	_	_	_	acl|acl	basic|enhanced	2-13|2-13	
+2-16	264-266	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case|case	basic|enhanced	2-22|2-22	
+2-17	267-273	Valsts	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	*	valsts	organization[3]	https://lv.wikipedia.org/wiki/Latvijas\_Valsts\_policija[3]	_	_	nmod|nmod	basic|enhanced	2-18|2-18	
+2-18	274-283	policijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	policija	organization[3]	https://lv.wikipedia.org/wiki/Latvijas\_Valsts\_policija[3]	_	_	nmod|nmod	basic|enhanced	2-22|2-22	
+2-19	284-286	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc|cc	basic|enhanced	2-21|2-21	
+2-20	287-295	Drošības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	drošība	organization[4]	https://lv.wikipedia.org/wiki/Drošības\_policija[4]	_	_	nmod|nmod	basic|enhanced	2-21|2-21	
+2-21	296-305	policijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	policija	organization[4]	https://lv.wikipedia.org/wiki/Drošības\_policija[4]	_	_	conj|conj	basic|enhanced	2-18|2-18	
+2-22	306-318	darbiniekiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	darbinieks	_	_	_	_	obl|obl	basic|enhanced	2-13|2-13	
+2-23	318-319	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	2-3|2-3	
 
 #Text=Arī Pašvaldības policijas vadība nepievēršot uzmanību likuma “Par policiju” izpildei.
-3-1	321-324	Arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse|discourse	basic|enhanced	3-4|3-4	
-3-2	325-336	Pašvaldības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	pašvaldība	organization[5]	*[5]	_	_	nmod|nmod	basic|enhanced	3-3|3-3	
-3-3	337-346	policijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	policija	organization[5]	*[5]	_	_	nmod|nmod	basic|enhanced	3-4|3-4	
-3-4	347-353	vadība	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	vadība	_	_	_	_	nsubj|nsubj	basic|enhanced	3-5|3-5	
-3-5	354-365	nepievēršot	*	*	*	*	*	Pres	Qot	Act	*	Evident=Nfh\|Mood=Qot\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	*	vmnrpt100an	nepievērt	_	_	_	_	root|root	basic|enhanced	3-5|3-5	
-3-6	366-374	uzmanību	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	uzmanība	_	_	_	_	obj|obj	basic|enhanced	3-5|3-5	
-3-7	375-381	likuma	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	likums	entity[6]	*[6]	_	_	nmod|nmod	basic|enhanced	3-10|3-10	
-3-8	382-383	“	_	_	_	_	_	_	_	_	_	_	_	_	zq	“	entity[6]	*[6]	_	_	punct|punct	basic|enhanced	3-10|3-10	
-3-9	383-386	Par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	entity[6]	*[6]	_	_	case|case	basic|enhanced	3-10|3-10	
-3-10	387-395	policiju	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	policija	entity[6]	*[6]	_	_	nmod|nmod	basic|enhanced	3-12|3-12	
-3-11	395-396	”	_	_	_	_	_	_	_	_	_	_	_	_	zq	”	entity[6]	*[6]	_	_	punct|punct	basic|enhanced	3-10|3-10	
-3-12	397-405	izpildei	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd5	izpilde	_	_	_	_	iobj|iobj	basic|enhanced	3-5|3-5	
-3-13	405-406	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	3-5|3-5	
+3-1	321-324	Arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse|discourse	basic|enhanced	3-4|3-4	
+3-2	325-336	Pašvaldības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	pašvaldība	organization[5]	*[5]	_	_	nmod|nmod	basic|enhanced	3-3|3-3	
+3-3	337-346	policijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	policija	organization[5]	*[5]	_	_	nmod|nmod	basic|enhanced	3-4|3-4	
+3-4	347-353	vadība	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	vadība	_	_	_	_	nsubj|nsubj	basic|enhanced	3-5|3-5	
+3-5	354-365	nepievēršot	*	*	*	*	*	*	Qot	*	*	*	*	*	*	*	Pres	*	Evident=Nfh\|Mood=Qot\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnrpt100an	*	nepievērt	_	_	_	_	root|root	basic|enhanced	3-5|3-5	
+3-6	366-374	uzmanību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	uzmanība	_	_	_	_	obj|obj	basic|enhanced	3-5|3-5	
+3-7	375-381	likuma	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	likums	entity[6]	*[6]	_	_	nmod|nmod	basic|enhanced	3-10|3-10	
+3-8	382-383	“	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	“	entity[6]	*[6]	_	_	punct|punct	basic|enhanced	3-10|3-10	
+3-9	383-386	Par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	entity[6]	*[6]	_	_	case|case	basic|enhanced	3-10|3-10	
+3-10	387-395	policiju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	policija	entity[6]	*[6]	_	_	nmod|nmod	basic|enhanced	3-12|3-12	
+3-11	395-396	”	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	”	entity[6]	*[6]	_	_	punct|punct	basic|enhanced	3-10|3-10	
+3-12	397-405	izpildei	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd5	*	izpilde	_	_	_	_	iobj|iobj	basic|enhanced	3-5|3-5	
+3-13	405-406	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	3-5|3-5	

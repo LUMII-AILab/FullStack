@@ -1,0 +1,70 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Lai labāk ilustrētu iegūto skaitļu nozīmi, tie ir jāpaskaidro reālos un ar pētāmo jautājumu saistītos lielumos.
+1-1	0-3	Lai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	lai	_	_	_	_	mark	basic	1-3	
+1-2	4-9	labāk	*	*	*	*	Cmp	*	*	*	*	*	*	*	*	*	*	*	Degree=Cmp	*	*	rcm	*	labi	_	_	_	_	advmod	basic	1-3	
+1-3	10-19	ilustrētu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vmnc0t200an	*	ilustrēt	_	_	_	_	advcl	basic	1-10	
+1-4	20-26	iegūto	*	Perf	Gen	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmpgpsypn	*	iegūt	_	_	_	_	amod	basic	1-5	
+1-5	27-34	skaitļu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	skaitlis	_	_	*->1-1	*[1]	nmod	basic	1-6	
+1-6	35-41	nozīmi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	nozīme	_	_	_	_	obj	basic	1-3	
+1-7	41-42	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-3	
+1-8	43-46	tie	*	*	Nom	*	*	Masc	*	*	*	Plur	3	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Dem	*	*	pd3mpnn	*	tas	_	_	*->1-2	*[1]	obj	basic	1-10	
+1-9	47-49	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	aux	basic	1-10	
+1-10	50-61	jāpaskaidro	*	*	*	*	*	*	Nec	*	*	*	*	*	*	*	*	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vmnd0t200an	*	paskaidrot	_	_	_	_	root	basic	1-10	
+1-11	62-68	reālos	*	*	Acc	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpayp	*	reāls	_	_	_	_	amod	basic	1-17	
+1-12	69-71	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-16	
+1-13	72-74	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	1-15	
+1-14	75-81	pētāmo	*	*	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Pres	*	Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdmsappypn	*	pētīt	_	_	_	_	amod	basic	1-15	
+1-15	82-91	jautājumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	jautājums	_	_	_	_	nmod	basic	1-16	
+1-16	92-101	saistītos	*	Perf	Acc	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmpapsypn	*	saistīt	_	_	_	_	conj	basic	1-11	
+1-17	102-110	lielumos	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	*	lielums	_	_	_	_	obl	basic	1-10	
+1-18	110-111	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-10	
+
+#Text=Tā kā tiek pētīts okupētās Latvijas devums Vācijas kara ekonomikā, šāds lielums varētu būt Vācijas bruņoto spēku kājnieku divīzijas 2. pasaules karā, t.i., cik divīzijas un cik ilgā laika posmā varēja apgādāt ar Latvijā iegūtajiem produktiem.
+2-1	113-115	Tā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tā	_	_	_	_	discourse	basic	2-2	
+2-2	116-118	kā	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0m	*	kā	_	_	_	_	mark	basic	2-4	
+2-3	119-123	tiek	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vtnipi130an	*	tikt	_	_	_	_	aux:pass	basic	2-4	
+2-4	124-130	pētīts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnpsnpn	*	pētīt	_	_	_	_	advcl	basic	2-14	
+2-5	131-139	okupētās	*	Perf	Gen	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsgpsypn	*	okupēt	_	_	_	_	amod	basic	2-6	
+2-6	140-148	Latvijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	_	_	nmod	basic	2-7	
+2-7	149-155	devums	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	devums	_	_	_	_	nsubj:pass	basic	2-4	
+2-8	156-163	Vācijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Vācija	GPE	https://en.wikipedia.org/wiki/Germany	_	_	nmod	basic	2-10	
+2-9	164-168	kara	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	karš	_	_	_	_	nmod	basic	2-10	
+2-10	169-178	ekonomikā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	ekonomika	_	_	_	_	acl	basic	2-7	
+2-11	178-179	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-4	
+2-12	180-184	šāds	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	*	šāds	_	_	_	_	det	basic	2-13	
+2-13	185-192	lielums	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	lielums	_	_	_	_	nsubj	basic	2-14	
+2-14	193-199	varētu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vonc0i300an	*	varēt	_	_	_	_	root	basic	2-14	
+2-15	200-203	būt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0ii000n	*	būt	_	_	_	_	xcomp	basic	2-14	
+2-16	204-211	Vācijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Vācija	organization[1]|organization[2]|GPE[3]	*[1]|*[2]|https://en.wikipedia.org/wiki/Germany[3]	_	_	nmod	basic	2-17	
+2-17	212-219	bruņoto	*	*	Gen	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpgyp	*	bruņots	organization[1]|organization[2]	*[1]|*[2]	_	_	amod	basic	2-18	
+2-18	220-225	spēku	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	spēks	organization[1]|organization[2]	*[1]|*[2]	_	_	nmod	basic	2-19	
+2-19	226-234	kājnieku	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	kājnieks	organization[1]	*[1]	_	_	nmod	basic	2-20	
+2-20	235-244	divīzijas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	divīzija	organization[1]	*[1]	_	_	nsubj	basic	2-14	
+2-21	245-247	2.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	2.	event[4]	https://en.wikipedia.org/wiki/World\_War\_II[4]	_	_	amod	basic	2-23	
+2-22	248-256	pasaules	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	pasaule	event[4]	https://en.wikipedia.org/wiki/World\_War\_II[4]	_	_	nmod	basic	2-23	
+2-23	257-261	karā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	karš	event[4]	https://en.wikipedia.org/wiki/World\_War\_II[4]	_	_	acl	basic	2-20	
+2-24	261-262	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-25	
+2-25	263-267	t.i.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	*	t.i.	_	_	_	_	discourse	basic	2-28	
+2-26	267-268	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-25	
+2-27	269-272	cik	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0q	*	cik	_	_	_	_	advmod	basic	2-28	
+2-28	273-282	divīzijas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	divīzija	_	_	_	_	conj	basic	2-14	
+2-29	283-285	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-34	
+2-30	286-289	cik	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0q	*	cik	_	_	_	_	advmod	basic	2-31	
+2-31	290-294	ilgā	*	*	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsgyp	*	ilgs	_	_	_	_	amod	basic	2-33	
+2-32	295-300	laika	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	laiks	_	_	_	_	nmod	basic	2-33	
+2-33	301-306	posmā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	posms	_	_	_	_	obl	basic	2-34	
+2-34	307-313	varēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vonisi330an	*	varēt	_	_	_	_	conj	basic	2-28	
+2-35	314-321	apgādāt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	*	apgādāt	_	_	_	_	xcomp	basic	2-34	
+2-36	322-324	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	2-39	
+2-37	325-332	Latvijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	_	_	obl	basic	2-38	
+2-38	333-343	iegūtajiem	*	Perf	Dat	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Dat\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmpdpsypn	*	iegūt	_	_	_	_	amod	basic	2-39	
+2-39	344-354	produktiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	produkts	_	_	_	_	iobj	basic	2-35	
+2-40	354-355	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-14	

@@ -1,0 +1,37 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Cilvēki rosījās, sagaidot Jauno gadu.
+1-1	0-7	Cilvēki	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	cilvēks	_	_	_	_	nsubj	basic	1-2	
+1-2	8-15	rosījās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyisi330an	*	rosīties	_	_	_	_	root	basic	1-2	
+1-3	15-16	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-4	
+1-4	17-25	sagaidot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	Conv	*	vmnpu0000000n	*	sagaidīt	_	_	_	_	advcl	basic	1-2	
+1-5	26-31	Jauno	*	*	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsayp	*	jauns	event[1]	*[1]	_	_	amod	basic	1-6	
+1-6	32-36	gadu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	gads	event[1]	*[1]	_	_	obj	basic	1-4	
+1-7	36-37	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-2	
+
+#Text=Rosība notika arī senioru deju kolektīvos, jo viņi bija aicināti atzīmēt nenogurstošās vadītājas Aloīdas Andžānes jubileju.
+2-1	38-44	Rosība	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	rosība	_	_	_	_	nsubj	basic	2-2	
+2-2	45-51	notika	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnisi130an	*	notikt	_	_	_	_	root	basic	2-2	
+2-3	52-55	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	2-6	
+2-4	56-63	senioru	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	seniors	_	_	*->1-1	*[1]	nmod	basic	2-6	
+2-5	64-68	deju	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	deja	_	_	_	_	nmod	basic	2-6	
+2-6	69-79	kolektīvos	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	*	kolektīvs	_	_	_	_	obl	basic	2-2	
+2-7	79-80	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-11	
+2-8	81-83	jo	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	jo	_	_	_	_	mark	basic	2-11	
+2-9	84-88	viņi	*	*	Nom	*	*	Masc	*	*	*	Plur	3	*	Prs	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Prs	*	*	pp3mpnn	*	viņš	_	_	*->1-2	*[1]	nsubj:pass	basic	2-11	
+2-10	89-93	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnisii30an	*	būt	_	_	_	_	aux:pass	basic	2-11	
+2-11	94-102	aicināti	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmpnpsnpn	*	aicināt	_	_	_	_	advcl	basic	2-2	
+2-12	103-110	atzīmēt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t2000n	*	atzīmēt	_	_	_	_	ccomp	basic	2-11	
+2-13	111-124	nenogurstošās	*	*	Gen	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing\|VerbForm=Part\|Voice=Act	Part	Act	affsgyp	*	nenogurstošs	_	_	_	_	amod	basic	2-14	
+2-14	125-134	vadītājas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	vadītāja	_	_	*->2-1	*[2]	nmod	basic	2-15	
+2-15	135-142	Aloīdas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Aloīda	person[2]	*[2]	*->2-2	*[2]	nmod	basic	2-17	
+2-16	143-151	Andžānes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	*	Andžāne	person[2]	*[2]	*->2-2	*[2]	flat:name	basic	2-15	
+2-17	152-160	jubileju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	jubileja	_	_	_	_	obj	basic	2-12	
+2-18	160-161	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-2	

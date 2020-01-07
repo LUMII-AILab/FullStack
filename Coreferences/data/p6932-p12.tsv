@@ -1,0 +1,63 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Mārtiņš pastāsta, ka mākslinieki, mūziķi, ir tieši tādi paši cilvēki kā ikviens no mums.
+1-1	0-7	Mārtiņš	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Mārtiņš	person	*	_	_	nsubj	basic	1-2	
+1-2	8-16	pastāsta	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt330an	*	pastāstīt	_	_	_	_	root	basic	1-2	
+1-3	16-17	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-13	
+1-4	18-20	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	1-13	
+1-5	21-32	mākslinieki	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	mākslinieks	_	_	*->1-1	*[1]	nsubj	basic	1-13	
+1-6	32-33	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	*->1-1	*[1]	punct	basic	1-7	
+1-7	34-40	mūziķi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn2	*	mūziķis	_	_	*->1-1	*[1]	conj	basic	1-5	
+1-8	40-41	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-7	
+1-9	42-44	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	1-13	
+1-10	45-50	tieši	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpq	*	tieši	_	_	_	_	advmod	basic	1-11	
+1-11	51-55	tādi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	Dem	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpnn	*	tāds	_	_	_	_	det	basic	1-13	
+1-12	56-60	paši	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	Tot	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Tot	*	*	pg0mpnn	*	pats	_	_	_	_	compound	basic	1-11	
+1-13	61-68	cilvēki	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	cilvēks	_	_	_	_	ccomp	basic	1-2	
+1-14	69-71	kā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	kā	_	_	_	_	case	basic	1-15	
+1-15	72-79	ikviens	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	Tot	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msnn	*	ikviens	_	_	_	_	obl	basic	1-11	
+1-16	80-82	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	no	_	_	_	_	case	basic	1-17	
+1-17	83-87	mums	*	*	Dat	*	*	*	*	*	*	Plur	1	*	Prs	*	*	*	Case=Dat\|Number=Plur\|Person=1\|PronType=Prs	*	*	pp10pdn	*	mēs	_	_	_	_	nmod	basic	1-15	
+1-18	87-88	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-2	
+
+#Text=Viņi cieš, pārdzīvo, mīl, sirdis tiek «salauztas», un viņi cenšas tās izārstēt, bet pareizo zāļu jau nav - laiks dziedē un visu noliek pa plauktiņiem.
+2-1	89-93	Viņi	*	*	Nom	*	*	Masc	*	*	*	Plur	3	*	Prs	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Prs	*	*	pp3mpnn	*	viņš	_	_	*->1-2	*[1]	nsubj	basic	2-2	
+2-2	94-98	cieš	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt130an	*	ciest	_	_	_	_	root	basic	2-2	
+2-3	98-99	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-4	
+2-4	100-108	pārdzīvo	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt230an	*	pārdzīvot	_	_	_	_	conj	basic	2-2	
+2-5	108-109	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-6	
+2-6	110-113	mīl	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt330an	*	mīlēt	_	_	_	_	conj	basic	2-2	
+2-7	113-114	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-11	
+2-8	115-121	sirdis	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn6	*	sirds	_	_	*->2-1	*[2]	nsubj:pass	basic	2-11	
+2-9	122-126	tiek	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vtnipi130an	*	tikt	_	_	_	_	aux:pass	basic	2-11	
+2-10	127-128	«	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	«	_	_	_	_	punct	basic	2-11	
+2-11	128-137	salauztas	*	Perf	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdfpnpsnpn	*	salauzt	_	_	_	_	conj	basic	2-2	
+2-12	137-138	»	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	»	_	_	_	_	punct	basic	2-11	
+2-13	138-139	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-16	
+2-14	140-142	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-16	
+2-15	143-147	viņi	*	*	Nom	*	*	Masc	*	*	*	Plur	3	*	Prs	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Prs	*	*	pp3mpnn	*	viņš	_	_	*->1-3	*[1]	nsubj	basic	2-16	
+2-16	148-154	cenšas	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	voyipt130an	*	censties	_	_	_	_	conj	basic	2-2	
+2-17	155-158	tās	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	Dem	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur\|PronType=Dem	*	*	pd0fpan	*	tā	_	_	*->2-2	*[2]	obj	basic	2-18	
+2-18	159-167	izārstēt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t2000n	*	izārstēt	_	_	_	_	xcomp	basic	2-16	
+2-19	167-168	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-24	
+2-20	169-172	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	_	_	cc	basic	2-24	
+2-21	173-180	pareizo	*	*	Gen	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpgyp	*	pareizs	_	_	_	_	amod	basic	2-22	
+2-22	181-185	zāļu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg5	*	zāle	_	_	_	_	nsubj	basic	2-24	
+2-23	186-189	jau	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	jau	_	_	_	_	discourse	basic	2-24	
+2-24	190-193	nav	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipii30ay	*	būt	_	_	_	_	conj	basic	2-2	
+2-25	194-195	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	-	_	_	_	_	punct	basic	2-27	
+2-26	196-201	laiks	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	laiks	_	_	_	_	nsubj	basic	2-27	
+2-27	202-208	dziedē	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt230an	*	dziedēt	_	_	_	_	conj	basic	2-2	
+2-28	209-211	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-30	
+2-29	212-216	visu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	Tot	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msan	*	viss	_	_	_	_	obj	basic	2-30	
+2-30	217-223	noliek	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt130an	*	nolikt	_	_	_	_	conj	basic	2-27	
+2-31	224-226	pa	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	pa	_	_	_	_	case	basic	2-32	
+2-32	227-238	plauktiņiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	plauktiņš	_	_	_	_	obl	basic	2-30	
+2-33	238-239	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-2	

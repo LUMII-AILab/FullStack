@@ -1,184 +1,184 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Ģirts Kuplais: Ministrija plānoja atļaut atkritumu radītājiem, kuri atbrīvoti no dabas resursu nodokļa samaksas un kuru radīto sadzīves atkritumu apjoms sasniedz 240 kubikmetrus gadā, pašiem izvēlēties atkritumu apsaimniekotāju.
-1-1	0-5	Ģirts	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Ģirts	person[1]	*[1]	_	_	parataxis	basic	1-5	
-1-2	6-13	Kuplais	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	Kuplais	person[1]	*[1]	_	_	flat:name	basic	1-1	
-1-3	13-14	:	_	_	_	_	_	_	_	_	_	_	_	_	zo	:	_	_	_	_	punct	basic	1-1	
-1-4	15-25	Ministrija	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	ministrija	_	_	_	_	nsubj	basic	1-5	
-1-5	26-33	plānoja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist230an	plānot	_	_	_	_	root	basic	1-5	
-1-6	34-40	atļaut	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	atļaut	_	_	_	_	ccomp	basic	1-5	
-1-7	41-50	atkritumu	Masc	Ptan	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	ncmdg1	atkritumi	_	_	*[1]	*->1-1	nmod	basic	1-8	
-1-8	51-61	radītājiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	radītājs	_	_	*[1]	*->1-1	iobj	basic	1-5	
-1-9	61-62	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-11	
-1-10	63-67	kuri	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Rel	*	*	pr0mpnn	kurš	_	_	*[1]	*->1-2	nsubj:pass	basic	1-11	
-1-11	68-77	atbrīvoti	Masc	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpnpsnp	atbrīvot	_	_	_	_	acl	basic	1-8	
-1-12	78-80	no	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	_	_	_	_	case	basic	1-16	
-1-13	81-86	dabas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	daba	_	_	_	_	nmod	basic	1-14	
-1-14	87-94	resursu	Masc	Ptan	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	ncmdg1	resursi	_	_	_	_	nmod	basic	1-15	
-1-15	95-102	nodokļa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	nodoklis	_	_	_	_	nmod	basic	1-16	
-1-16	103-111	samaksas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	samaksa	_	_	_	_	obl	basic	1-11	
-1-17	112-114	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-23	
-1-18	115-119	kuru	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur\|PronType=Rel	*	*	pr0mpgn	kurš	_	_	*[1]	*->1-3	det	basic	1-19	
-1-19	120-126	radīto	Masc	Plur	Gen	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpgpsyp	radīt	_	_	_	_	amod	basic	1-21	
-1-20	127-135	sadzīves	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	sadzīve	_	_	_	_	nmod	basic	1-21	
-1-21	136-145	atkritumu	Masc	Ptan	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	ncmdg1	atkritumi	_	_	_	_	nmod	basic	1-22	
-1-22	146-152	apjoms	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	apjoms	_	_	_	_	nsubj	basic	1-23	
-1-23	153-161	sasniedz	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt130an	sasniegt	_	_	_	_	conj	basic	1-11	
-1-24	162-165	240	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	240	_	_	_	_	nummod	basic	1-25	
-1-25	166-177	kubikmetrus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	kubikmetrs	_	_	_	_	obj	basic	1-23	
-1-26	178-182	gadā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	gads	_	_	_	_	obl	basic	1-23	
-1-27	182-183	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-23	
-1-28	184-190	pašiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|PronType=Tot	*	*	pg0mpdn	pats	_	_	_	_	obl	basic	1-29	
-1-29	191-201	izvēlēties	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i3000n	izvēlēties	_	_	_	_	ccomp	basic	1-6	
-1-30	202-211	atkritumu	Masc	Ptan	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	ncmdg1	atkritumi	_	_	_	_	nmod	basic	1-31	
-1-31	212-227	apsaimniekotāju	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	apsaimniekotājs	_	_	_	_	obj	basic	1-29	
-1-32	227-228	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-5	
+1-1	0-5	Ģirts	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Ģirts	person[1]	*[1]	_	_	parataxis	basic	1-5	
+1-2	6-13	Kuplais	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	*	Kuplais	person[1]	*[1]	_	_	flat:name	basic	1-1	
+1-3	13-14	:	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zo	*	:	_	_	_	_	punct	basic	1-1	
+1-4	15-25	Ministrija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	ministrija	_	_	_	_	nsubj	basic	1-5	
+1-5	26-33	plānoja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist230an	*	plānot	_	_	_	_	root	basic	1-5	
+1-6	34-40	atļaut	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	*	atļaut	_	_	_	_	ccomp	basic	1-5	
+1-7	41-50	atkritumu	*	*	Gen	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	ncmdg1	*	atkritumi	_	_	*->1-1	*[1]	nmod	basic	1-8	
+1-8	51-61	radītājiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	radītājs	_	_	*->1-1	*[1]	iobj	basic	1-5	
+1-9	61-62	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-11	
+1-10	63-67	kuri	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Rel	*	*	pr0mpnn	*	kurš	_	_	*->1-2	*[1]	nsubj:pass	basic	1-11	
+1-11	68-77	atbrīvoti	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	*	vmnpdmpnpsnp	*	atbrīvot	_	_	_	_	acl	basic	1-8	
+1-12	78-80	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case	basic	1-16	
+1-13	81-86	dabas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	daba	_	_	_	_	nmod	basic	1-14	
+1-14	87-94	resursu	*	*	Gen	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	ncmdg1	*	resursi	_	_	_	_	nmod	basic	1-15	
+1-15	95-102	nodokļa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	*	nodoklis	_	_	_	_	nmod	basic	1-16	
+1-16	103-111	samaksas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	samaksa	_	_	_	_	obl	basic	1-11	
+1-17	112-114	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-23	
+1-18	115-119	kuru	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur\|PronType=Rel	*	*	pr0mpgn	*	kurš	_	_	*->1-3	*[1]	det	basic	1-19	
+1-19	120-126	radīto	*	Perf	Gen	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	*	vmnpdmpgpsyp	*	radīt	_	_	_	_	amod	basic	1-21	
+1-20	127-135	sadzīves	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	sadzīve	_	_	_	_	nmod	basic	1-21	
+1-21	136-145	atkritumu	*	*	Gen	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	ncmdg1	*	atkritumi	_	_	_	_	nmod	basic	1-22	
+1-22	146-152	apjoms	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	apjoms	_	_	_	_	nsubj	basic	1-23	
+1-23	153-161	sasniedz	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt130an	*	sasniegt	_	_	_	_	conj	basic	1-11	
+1-24	162-165	240	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	240	_	_	_	_	nummod	basic	1-25	
+1-25	166-177	kubikmetrus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	kubikmetrs	_	_	_	_	obj	basic	1-23	
+1-26	178-182	gadā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	gads	_	_	_	_	obl	basic	1-23	
+1-27	182-183	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-23	
+1-28	184-190	pašiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|PronType=Tot	*	*	pg0mpdn	*	pats	_	_	_	_	obl	basic	1-29	
+1-29	191-201	izvēlēties	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i3000n	*	izvēlēties	_	_	_	_	ccomp	basic	1-6	
+1-30	202-211	atkritumu	*	*	Gen	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	ncmdg1	*	atkritumi	_	_	_	_	nmod	basic	1-31	
+1-31	212-227	apsaimniekotāju	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	apsaimniekotājs	_	_	_	_	obj	basic	1-29	
+1-32	227-228	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-5	
 
 #Text=Iemesls šādai iecerei bija konkurences veicināšana.
-2-1	230-237	Iemesls	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	iemesls	_	_	_	_	nsubj	basic	2-6	
-2-2	238-243	šādai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsdn	šāda	_	_	_	_	det	basic	2-3	
-2-3	244-251	iecerei	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd5	iecere	_	_	_	_	nmod	basic	2-1	
-2-4	252-256	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vcnisii30an	būt	_	_	_	_	cop	basic	2-6	
-2-5	257-268	konkurences	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	konkurence	_	_	_	_	nmod	basic	2-6	
-2-6	269-280	veicināšana	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	veicināšana	_	_	_	_	root	basic	2-6	
-2-7	280-281	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-6	
+2-1	230-237	Iemesls	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	iemesls	_	_	_	_	nsubj	basic	2-6	
+2-2	238-243	šādai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsdn	*	šāda	_	_	_	_	det	basic	2-3	
+2-3	244-251	iecerei	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd5	*	iecere	_	_	_	_	nmod	basic	2-1	
+2-4	252-256	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vcnisii30an	*	būt	_	_	_	_	cop	basic	2-6	
+2-5	257-268	konkurences	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	konkurence	_	_	_	_	nmod	basic	2-6	
+2-6	269-280	veicināšana	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	veicināšana	_	_	_	_	root	basic	2-6	
+2-7	280-281	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-6	
 
 #Text=Tas nozīmē, ka, piemēram, lielveikali varētu slēgt līgumu ar sevis izvēlētu apsaimniekotāju.
-3-1	283-286	Tas	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msn\_	tas	_	_	_	_	nsubj	basic	3-2	
-3-2	287-293	nozīmē	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt230an	nozīmēt	_	_	_	_	root	basic	3-2	
-3-3	293-294	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-9	
-3-4	295-297	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark	basic	3-9	
-3-5	297-298	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-6	
-3-6	299-307	piemēram	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	piemērs	_	_	_	_	parataxis	basic	3-8	
-3-7	307-308	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-6	
-3-8	309-320	lielveikali	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	lielveikals	_	_	*[2]	*->2-1	nsubj	basic	3-9	
-3-9	321-327	varētu	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vonc0t300an	varēt	_	_	_	_	ccomp	basic	3-2	
-3-10	328-333	slēgt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	slēgt	_	_	_	_	xcomp	basic	3-9	
-3-11	334-340	līgumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	līgums	_	_	_	_	obj	basic	3-10	
-3-12	341-343	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case	basic	3-15	
-3-13	344-349	sevis	*	*	Gen	*	*	*	*	*	*	Case=Gen\|PronType=Rcp\|Reflex=Yes	*	*	px000gn	sevis	_	_	*[2]	*->2-2	det	basic	3-14	
-3-14	350-358	izvēlētu	Masc	Sing	Acc	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Acc\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsapsnp	izvēlēt	_	_	_	_	amod	basic	3-15	
-3-15	359-374	apsaimniekotāju	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	apsaimniekotājs	_	_	_	_	iobj	basic	3-10	
-3-16	374-375	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-2	
+3-1	283-286	Tas	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msn\_	*	tas	_	_	_	_	nsubj	basic	3-2	
+3-2	287-293	nozīmē	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt230an	*	nozīmēt	_	_	_	_	root	basic	3-2	
+3-3	293-294	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-9	
+3-4	295-297	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	3-9	
+3-5	297-298	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-6	
+3-6	299-307	piemēram	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	piemērs	_	_	_	_	parataxis	basic	3-8	
+3-7	307-308	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-6	
+3-8	309-320	lielveikali	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	lielveikals	_	_	*->2-1	*[2]	nsubj	basic	3-9	
+3-9	321-327	varētu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vonc0t300an	*	varēt	_	_	_	_	ccomp	basic	3-2	
+3-10	328-333	slēgt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	*	slēgt	_	_	_	_	xcomp	basic	3-9	
+3-11	334-340	līgumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	līgums	_	_	_	_	obj	basic	3-10	
+3-12	341-343	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	3-15	
+3-13	344-349	sevis	*	*	Gen	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Gen\|PronType=Rcp\|Reflex=Yes	*	*	px000gn	*	sevis	_	_	*->2-2	*[2]	det	basic	3-14	
+3-14	350-358	izvēlētu	*	Perf	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Acc\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsapsnp	*	izvēlēt	_	_	_	_	amod	basic	3-15	
+3-15	359-374	apsaimniekotāju	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	apsaimniekotājs	_	_	_	_	iobj	basic	3-10	
+3-16	374-375	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-2	
 
 #Text=Šādu izmaiņu rezultātā varētu samazināties „ZAAO" savākto atkritumu apjoms, kas varētu atsaukties uz maksu par atkritumu apsaimniekošanu iedzīvotājiem, īpaši lauku teritorijās.
-4-1	377-381	Šādu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur\|PronType=Dem	*	*	pd0fpgn	šāda	_	_	_	_	det	basic	4-2	
-4-2	382-389	izmaiņu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	izmaiņa	_	_	_	_	nmod	basic	4-3	
-4-3	390-399	rezultātā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	rezultāts	_	_	_	_	obl	basic	4-4	
-4-4	400-406	varētu	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vonc0t300an	varēt	_	_	_	_	root	basic	4-4	
-4-5	407-419	samazināties	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i3000n	samazināties	_	_	_	_	xcomp	basic	4-4	
-4-6	420-421	„	_	_	_	_	_	_	_	_	_	_	_	_	zq	„	organization[2]	*[2]	_	_	punct	basic	4-7	
-4-7	421-425	ZAAO	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	ZAAO	organization[2]	*[2]	_	_	nmod	basic	4-9	
-4-8	425-426	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[2]	*[2]	_	_	punct	basic	4-7	
-4-9	427-434	savākto	Masc	Plur	Gen	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpgpsyp	savākt	_	_	*[3]	*->3-1	amod	basic	4-10	
-4-10	435-444	atkritumu	Masc	Ptan	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	ncmdg1	atkritumi	_	_	*[3]	*->3-1	nmod	basic	4-11	
-4-11	445-451	apjoms	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	apjoms	_	_	*[3]	*->3-1	nsubj	basic	4-4	
-4-12	451-452	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	4-14	
-4-13	453-456	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Ind	*	*	pi000nn	kas	_	_	*[3]	*->3-2	nsubj	basic	4-14	
-4-14	457-463	varētu	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vonc0t300an	varēt	_	_	_	_	advcl	basic	4-4	
-4-15	464-474	atsaukties	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i1000n	atsaukties	_	_	_	_	xcomp	basic	4-14	
-4-16	475-477	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsa	uz	_	_	_	_	case	basic	4-17	
-4-17	478-483	maksu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	maksa	_	_	_	_	obl	basic	4-15	
-4-18	484-487	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	_	_	case	basic	4-20	
-4-19	488-497	atkritumu	Masc	Ptan	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	ncmdg1	atkritumi	_	_	_	_	nmod	basic	4-20	
-4-20	498-513	apsaimniekošanu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	apsaimniekošana	_	_	_	_	nmod	basic	4-17	
-4-21	514-527	iedzīvotājiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	iedzīvotājs	_	_	_	_	nmod	basic	4-17	
-4-22	527-528	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	4-25	
-4-23	529-534	īpaši	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpq	īpaši	_	_	_	_	advmod	basic	4-25	
-4-24	535-540	lauku	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	lauks	_	_	_	_	nmod	basic	4-25	
-4-25	541-552	teritorijās	Fem	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	teritorija	_	_	_	_	acl	basic	4-15	
-4-26	552-553	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	4-4	
+4-1	377-381	Šādu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur\|PronType=Dem	*	*	pd0fpgn	*	šāda	_	_	_	_	det	basic	4-2	
+4-2	382-389	izmaiņu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	izmaiņa	_	_	_	_	nmod	basic	4-3	
+4-3	390-399	rezultātā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	rezultāts	_	_	_	_	obl	basic	4-4	
+4-4	400-406	varētu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vonc0t300an	*	varēt	_	_	_	_	root	basic	4-4	
+4-5	407-419	samazināties	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i3000n	*	samazināties	_	_	_	_	xcomp	basic	4-4	
+4-6	420-421	„	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	„	organization[2]	*[2]	_	_	punct	basic	4-7	
+4-7	421-425	ZAAO	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	ZAAO	organization[2]	*[2]	_	_	nmod	basic	4-9	
+4-8	425-426	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[2]	*[2]	_	_	punct	basic	4-7	
+4-9	427-434	savākto	*	Perf	Gen	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	*	vmnpdmpgpsyp	*	savākt	_	_	*->3-1	*[3]	amod	basic	4-10	
+4-10	435-444	atkritumu	*	*	Gen	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	ncmdg1	*	atkritumi	_	_	*->3-1	*[3]	nmod	basic	4-11	
+4-11	445-451	apjoms	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	apjoms	_	_	*->3-1	*[3]	nsubj	basic	4-4	
+4-12	451-452	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-14	
+4-13	453-456	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Ind	*	*	pi000nn	*	kas	_	_	*->3-2	*[3]	nsubj	basic	4-14	
+4-14	457-463	varētu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vonc0t300an	*	varēt	_	_	_	_	advcl	basic	4-4	
+4-15	464-474	atsaukties	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i1000n	*	atsaukties	_	_	_	_	xcomp	basic	4-14	
+4-16	475-477	uz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	uz	_	_	_	_	case	basic	4-17	
+4-17	478-483	maksu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	maksa	_	_	_	_	obl	basic	4-15	
+4-18	484-487	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	4-20	
+4-19	488-497	atkritumu	*	*	Gen	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	ncmdg1	*	atkritumi	_	_	_	_	nmod	basic	4-20	
+4-20	498-513	apsaimniekošanu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	apsaimniekošana	_	_	_	_	nmod	basic	4-17	
+4-21	514-527	iedzīvotājiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	iedzīvotājs	_	_	_	_	nmod	basic	4-17	
+4-22	527-528	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-25	
+4-23	529-534	īpaši	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpq	*	īpaši	_	_	_	_	advmod	basic	4-25	
+4-24	535-540	lauku	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	lauks	_	_	_	_	nmod	basic	4-25	
+4-25	541-552	teritorijās	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	*	teritorija	_	_	_	_	acl	basic	4-15	
+4-26	552-553	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	4-4	
 
 #Text=Proti, saskaņojot ar pašvaldībām cenu aprēķinus, esam rēķinājušies ar noteiktu atkritumu apjomu kopumā, taču likumdošanas izmaiņu gadījumā nespētu segt plānotās izmaksas.
-5-1	555-560	Proti	_	_	_	_	_	_	_	_	_	_	_	_	q	proti	_	_	_	_	parataxis	basic	5-10	
-5-2	560-561	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	5-1	
-5-3	562-572	saskaņojot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000	saskaņot	_	_	_	_	advcl	basic	5-10	
-5-4	573-575	ar	_	_	_	_	_	_	_	_	_	_	_	_	sppd	ar	_	_	_	_	case	basic	5-5	
-5-5	576-587	pašvaldībām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	pašvaldība	_	_	_	_	iobj	basic	5-3	
-5-6	588-592	cenu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	cena	_	_	_	_	nmod	basic	5-7	
-5-7	593-602	aprēķinus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	aprēķins	_	_	_	_	obj	basic	5-3	
-5-8	602-603	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	5-3	
-5-9	604-608	esam	*	Plur	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	1	*	vcnipii1pan	būt	_	_	_	_	aux	basic	5-10	
-5-10	609-621	rēķinājušies	Masc	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	Perf	vmypdmpnasnp	rēķināties	_	_	_	_	root	basic	5-10	
-5-11	622-624	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case	basic	5-14	
-5-12	625-633	noteiktu	Masc	Plur	Gen	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Gen\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpgpsnp	noteikt	_	_	_	_	amod	basic	5-14	
-5-13	634-643	atkritumu	Masc	Ptan	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	ncmdg1	atkritumi	_	_	_	_	nmod	basic	5-14	
-5-14	644-650	apjomu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	apjoms	_	_	_	_	iobj	basic	5-10	
-5-15	651-657	kopumā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	kopums	_	_	_	_	acl	basic	5-14	
-5-16	657-658	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	5-21	
-5-17	659-663	taču	_	_	_	_	_	_	_	_	_	_	_	_	cc	taču	_	_	_	_	cc	basic	5-10	
-5-18	664-676	likumdošanas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	likumdošana	_	_	_	_	nmod	basic	5-20	
-5-19	677-684	izmaiņu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	izmaiņa	_	_	_	_	nmod	basic	5-20	
-5-20	685-693	gadījumā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	gadījums	_	_	_	_	obl	basic	5-21	
-5-21	694-701	nespētu	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vonc0t100an	nespēt	_	_	_	_	conj	basic	5-10	
-5-22	702-706	segt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	segt	_	_	_	_	xcomp	basic	5-21	
-5-23	707-715	plānotās	Fem	Plur	Acc	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfpapsyp	plānot	_	_	_	_	amod	basic	5-24	
-5-24	716-724	izmaksas	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	izmaksa	_	_	_	_	obj	basic	5-22	
-5-25	724-725	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	5-10	
+5-1	555-560	Proti	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	proti	_	_	_	_	parataxis	basic	5-10	
+5-2	560-561	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	5-1	
+5-3	562-572	saskaņojot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000	*	saskaņot	_	_	_	_	advcl	basic	5-10	
+5-4	573-575	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	_	_	case	basic	5-5	
+5-5	576-587	pašvaldībām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	*	pašvaldība	_	_	_	_	iobj	basic	5-3	
+5-6	588-592	cenu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	cena	_	_	_	_	nmod	basic	5-7	
+5-7	593-602	aprēķinus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	aprēķins	_	_	_	_	obj	basic	5-3	
+5-8	602-603	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	5-3	
+5-9	604-608	esam	*	*	*	*	*	*	Ind	*	*	Plur	1	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii1pan	*	būt	_	_	_	_	aux	basic	5-10	
+5-10	609-621	rēķinājušies	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	*	vmypdmpnasnp	*	rēķināties	_	_	_	_	root	basic	5-10	
+5-11	622-624	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	5-14	
+5-12	625-633	noteiktu	*	Perf	Gen	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Gen\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	*	vmnpdmpgpsnp	*	noteikt	_	_	_	_	amod	basic	5-14	
+5-13	634-643	atkritumu	*	*	Gen	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	ncmdg1	*	atkritumi	_	_	_	_	nmod	basic	5-14	
+5-14	644-650	apjomu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	apjoms	_	_	_	_	iobj	basic	5-10	
+5-15	651-657	kopumā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	kopums	_	_	_	_	acl	basic	5-14	
+5-16	657-658	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	5-21	
+5-17	659-663	taču	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	taču	_	_	_	_	cc	basic	5-10	
+5-18	664-676	likumdošanas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	likumdošana	_	_	_	_	nmod	basic	5-20	
+5-19	677-684	izmaiņu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	izmaiņa	_	_	_	_	nmod	basic	5-20	
+5-20	685-693	gadījumā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	gadījums	_	_	_	_	obl	basic	5-21	
+5-21	694-701	nespētu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vonc0t100an	*	nespēt	_	_	_	_	conj	basic	5-10	
+5-22	702-706	segt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	*	segt	_	_	_	_	xcomp	basic	5-21	
+5-23	707-715	plānotās	*	Perf	Acc	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Plur\|Tense=Past\|VerbForm=Part	*	*	vmnpdfpapsyp	*	plānot	_	_	_	_	amod	basic	5-24	
+5-24	716-724	izmaksas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	izmaksa	_	_	_	_	obj	basic	5-22	
+5-25	724-725	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	5-10	
 
 #Text=Tāpat šādu izmaiņu dēļ dārgāka varētu kļūt dalītās atkritumu vākšanas infrastruktūras sakārtošana iedzīvotājiem, ko kā obligātu pieprasa ES.
-6-1	727-732	Tāpat	_	_	_	_	_	_	_	_	_	_	_	_	q	tāpat	_	_	_	_	discourse	basic	6-5	
-6-2	733-737	šādu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur\|PronType=Dem	*	*	pd0fpgn	šāda	_	_	_	_	det	basic	6-3	
-6-3	738-745	izmaiņu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	izmaiņa	_	_	_	_	obl	basic	6-5	
-6-4	746-749	dēļ	_	_	_	_	_	_	_	_	_	_	_	_	stpg	dēļ	_	_	_	_	case	basic	6-3	
-6-5	750-757	dārgāka	Fem	Sing	Nom	Cmp	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Fem\|Number=Sing	*	*	affsnnc	dārga	_	_	_	_	root	basic	6-5	
-6-6	758-764	varētu	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vonc0t300an	varēt	_	_	_	_	xcomp	basic	6-5	
-6-7	765-769	kļūt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vtnn0i1000n	kļūt	_	_	_	_	xcomp	basic	6-6	
-6-8	770-777	dalītās	Fem	Sing	Gen	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsgpsyp	dalīt	_	_	_	_	amod	basic	6-10	
-6-9	778-787	atkritumu	Masc	Ptan	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	ncmdg1	atkritumi	_	_	_	_	nmod	basic	6-10	
-6-10	788-796	vākšanas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	vākšana	_	_	_	_	nmod	basic	6-11	
-6-11	797-812	infrastruktūras	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	infrastruktūra	_	_	_	_	nmod	basic	6-12	
-6-12	813-824	sakārtošana	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	sakārtošana	_	_	_	_	nsubj	basic	6-5	
-6-13	825-838	iedzīvotājiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	iedzīvotājs	_	_	_	_	obl	basic	6-5	
-6-14	838-839	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	6-18	
-6-15	840-842	ko	*	*	Acc	*	*	*	*	*	*	Case=Acc\|PronType=Rel	*	*	pr000an	kas	_	_	_	_	obj	basic	6-18	
-6-16	843-845	kā	_	_	_	_	_	_	_	_	_	_	_	_	cs	kā	_	_	_	_	mark	basic	6-17	
-6-17	846-854	obligātu	Fem	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsanp	obligāta	_	_	_	_	acl	basic	6-15	
-6-18	855-863	pieprasa	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	pieprasīt	_	_	_	_	acl	basic	6-12	
-6-19	864-866	ES	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	ES	GPE	*	_	_	nsubj	basic	6-18	
-6-20	866-867	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	6-5	
+6-1	727-732	Tāpat	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tāpat	_	_	_	_	discourse	basic	6-5	
+6-2	733-737	šādu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur\|PronType=Dem	*	*	pd0fpgn	*	šāda	_	_	_	_	det	basic	6-3	
+6-3	738-745	izmaiņu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	izmaiņa	_	_	_	_	obl	basic	6-5	
+6-4	746-749	dēļ	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	stpg	*	dēļ	_	_	_	_	case	basic	6-3	
+6-5	750-757	dārgāka	*	*	Nom	*	Cmp	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Fem\|Number=Sing	*	*	affsnnc	*	dārga	_	_	_	_	root	basic	6-5	
+6-6	758-764	varētu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vonc0t300an	*	varēt	_	_	_	_	xcomp	basic	6-5	
+6-7	765-769	kļūt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vtnn0i1000n	*	kļūt	_	_	_	_	xcomp	basic	6-6	
+6-8	770-777	dalītās	*	Perf	Gen	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsgpsyp	*	dalīt	_	_	_	_	amod	basic	6-10	
+6-9	778-787	atkritumu	*	*	Gen	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	ncmdg1	*	atkritumi	_	_	_	_	nmod	basic	6-10	
+6-10	788-796	vākšanas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	vākšana	_	_	_	_	nmod	basic	6-11	
+6-11	797-812	infrastruktūras	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	infrastruktūra	_	_	_	_	nmod	basic	6-12	
+6-12	813-824	sakārtošana	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	sakārtošana	_	_	_	_	nsubj	basic	6-5	
+6-13	825-838	iedzīvotājiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	iedzīvotājs	_	_	_	_	obl	basic	6-5	
+6-14	838-839	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	6-18	
+6-15	840-842	ko	*	*	Acc	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Acc\|PronType=Rel	*	*	pr000an	*	kas	_	_	_	_	obj	basic	6-18	
+6-16	843-845	kā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	kā	_	_	_	_	mark	basic	6-17	
+6-17	846-854	obligātu	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsanp	*	obligāta	_	_	_	_	acl	basic	6-15	
+6-18	855-863	pieprasa	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	pieprasīt	_	_	_	_	acl	basic	6-12	
+6-19	864-866	ES	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	ES	GPE	*	_	_	nsubj	basic	6-18	
+6-20	866-867	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	6-5	
 
 #Text=Proti, dalīti vākto atkritumu apjoms, ko veido lielveikali, nenonāktu tajās šķirošanas līnijās, kas savulaik tika izbūvētas poligonos, pamatojoties uz Vides aizsardzības un reģionālās attīstības ministrijas plāniem un spēkā esošajiem normatīviem.
-7-1	869-874	Proti	_	_	_	_	_	_	_	_	_	_	_	_	q	proti	_	_	_	_	parataxis	basic	7-12	
-7-2	874-875	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	7-1	
-7-3	876-882	dalīti	_	_	_	_	_	_	_	_	_	_	_	_	r0m	dalīti	_	_	*[4]	*->4-1	advmod	basic	7-4	
-7-4	883-888	vākto	Masc	Plur	Gen	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpgpsyp	vākt	_	_	*[4]	*->4-1	amod	basic	7-5	
-7-5	889-898	atkritumu	Masc	Ptan	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	ncmdg1	atkritumi	_	_	*[4]	*->4-1	nmod	basic	7-6	
-7-6	899-905	apjoms	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	apjoms	_	_	*[4]	*->4-1	nsubj	basic	7-12	
-7-7	905-906	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	7-9	
-7-8	907-909	ko	*	*	Acc	*	*	*	*	*	*	Case=Acc\|PronType=Rel	*	*	pr000an	kas	_	_	*[4]	*->4-2	obj	basic	7-9	
-7-9	910-915	veido	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt230an	veidot	_	_	_	_	acl	basic	7-6	
-7-10	916-927	lielveikali	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	lielveikals	_	_	_	_	nsubj	basic	7-9	
-7-11	927-928	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	7-9	
-7-12	929-938	nenonāktu	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Neg\|VerbForm=Fin\|Voice=Act	*	*	vmnc0i100ay	nenonākt	_	_	_	_	root	basic	7-12	
-7-13	939-944	tajās	Fem	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur\|PronType=Dem	*	*	pd0fpln	tā	_	_	*[5]	*->5-1	det	basic	7-15	
-7-14	945-955	šķirošanas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	šķirošana	_	_	*[5]	*->5-1	nmod	basic	7-15	
-7-15	956-963	līnijās	Fem	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	līnija	_	_	*[5]	*->5-1	obl	basic	7-12	
-7-16	963-964	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	7-20	
-7-17	965-968	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	*[5]	*->5-2	nsubj:pass	basic	7-20	
-7-18	969-977	savulaik	_	_	_	_	_	_	_	_	_	_	_	_	r0t	savulaik	_	_	_	_	advmod	basic	7-20	
-7-19	978-982	tika	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vtnisi130an	tikt	_	_	_	_	aux	basic	7-20	
-7-20	983-992	izbūvētas	Fem	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfpnpsnp	izbūvēt	_	_	_	_	acl	basic	7-15	
-7-21	993-1002	poligonos	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	poligons	_	_	_	_	obl	basic	7-20	
-7-22	1002-1003	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	7-23	
-7-23	1004-1016	pamatojoties	*	*	*	*	*	*	*	*	*	Reflex=Yes\|VerbForm=Conv	*	*	vmypu0000000	pamatoties	_	_	_	_	advcl	basic	7-20	
-7-24	1017-1019	uz	_	_	_	_	_	_	_	_	_	_	_	_	sppd	uz	_	_	_	_	case	basic	7-31	
-7-25	1020-1025	Vides	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	vide	organization[3]	*[3]	_	_	nmod	basic	7-26	
-7-26	1026-1038	aizsardzības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	aizsardzība	organization[3]	*[3]	_	_	nmod	basic	7-30	
-7-27	1039-1041	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	organization[3]	*[3]	_	_	cc	basic	7-29	
-7-28	1042-1052	reģionālās	Fem	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsgyp	reģionāla	organization[3]	*[3]	_	_	amod	basic	7-29	
-7-29	1053-1063	attīstības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	attīstība	organization[3]	*[3]	_	_	conj	basic	7-26	
-7-30	1064-1075	ministrijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	ministrija	organization[3]	*[3]	_	_	nmod	basic	7-31	
-7-31	1076-1083	plāniem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	plāns	_	_	_	_	iobj	basic	7-23	
-7-32	1084-1086	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	7-35	
-7-33	1087-1092	spēkā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	spēks	_	_	_	_	obl	basic	7-34	
-7-34	1093-1102	esošajiem	Masc	Plur	Dat	Pos	*	Pres	*	Pass	*	Aspect=Imp\|Case=Dat\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Imp	vmnpdmpdapyp	esošajiem	_	_	_	_	amod	basic	7-35	
-7-35	1103-1114	normatīviem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	normatīvs	_	_	_	_	conj	basic	7-31	
-7-36	1114-1115	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	7-12	
+7-1	869-874	Proti	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	proti	_	_	_	_	parataxis	basic	7-12	
+7-2	874-875	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	7-1	
+7-3	876-882	dalīti	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	dalīti	_	_	*->4-1	*[4]	advmod	basic	7-4	
+7-4	883-888	vākto	*	Perf	Gen	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	*	vmnpdmpgpsyp	*	vākt	_	_	*->4-1	*[4]	amod	basic	7-5	
+7-5	889-898	atkritumu	*	*	Gen	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	ncmdg1	*	atkritumi	_	_	*->4-1	*[4]	nmod	basic	7-6	
+7-6	899-905	apjoms	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	apjoms	_	_	*->4-1	*[4]	nsubj	basic	7-12	
+7-7	905-906	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	7-9	
+7-8	907-909	ko	*	*	Acc	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Acc\|PronType=Rel	*	*	pr000an	*	kas	_	_	*->4-2	*[4]	obj	basic	7-9	
+7-9	910-915	veido	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt230an	*	veidot	_	_	_	_	acl	basic	7-6	
+7-10	916-927	lielveikali	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	lielveikals	_	_	_	_	nsubj	basic	7-9	
+7-11	927-928	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	7-9	
+7-12	929-938	nenonāktu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Neg\|VerbForm=Fin\|Voice=Act	*	Act	vmnc0i100ay	*	nenonākt	_	_	_	_	root	basic	7-12	
+7-13	939-944	tajās	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur\|PronType=Dem	*	*	pd0fpln	*	tā	_	_	*->5-1	*[5]	det	basic	7-15	
+7-14	945-955	šķirošanas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	šķirošana	_	_	*->5-1	*[5]	nmod	basic	7-15	
+7-15	956-963	līnijās	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	*	līnija	_	_	*->5-1	*[5]	obl	basic	7-12	
+7-16	963-964	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	7-20	
+7-17	965-968	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->5-2	*[5]	nsubj:pass	basic	7-20	
+7-18	969-977	savulaik	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	savulaik	_	_	_	_	advmod	basic	7-20	
+7-19	978-982	tika	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vtnisi130an	*	tikt	_	_	_	_	aux	basic	7-20	
+7-20	983-992	izbūvētas	*	Perf	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Tense=Past\|VerbForm=Part	*	*	vmnpdfpnpsnp	*	izbūvēt	_	_	_	_	acl	basic	7-15	
+7-21	993-1002	poligonos	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	*	poligons	_	_	_	_	obl	basic	7-20	
+7-22	1002-1003	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	7-23	
+7-23	1004-1016	pamatojoties	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Reflex=Yes\|VerbForm=Conv	*	*	vmypu0000000	*	pamatoties	_	_	_	_	advcl	basic	7-20	
+7-24	1017-1019	uz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	uz	_	_	_	_	case	basic	7-31	
+7-25	1020-1025	Vides	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	vide	organization[3]	*[3]	_	_	nmod	basic	7-26	
+7-26	1026-1038	aizsardzības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	aizsardzība	organization[3]	*[3]	_	_	nmod	basic	7-30	
+7-27	1039-1041	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	organization[3]	*[3]	_	_	cc	basic	7-29	
+7-28	1042-1052	reģionālās	*	*	Gen	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsgyp	*	reģionāla	organization[3]	*[3]	_	_	amod	basic	7-29	
+7-29	1053-1063	attīstības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	attīstība	organization[3]	*[3]	_	_	conj	basic	7-26	
+7-30	1064-1075	ministrijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	ministrija	organization[3]	*[3]	_	_	nmod	basic	7-31	
+7-31	1076-1083	plāniem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	plāns	_	_	_	_	iobj	basic	7-23	
+7-32	1084-1086	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	7-35	
+7-33	1087-1092	spēkā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	spēks	_	_	_	_	obl	basic	7-34	
+7-34	1093-1102	esošajiem	*	Imp	Dat	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Pres	*	Aspect=Imp\|Case=Dat\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdmpdapyp	*	esošajiem	_	_	_	_	amod	basic	7-35	
+7-35	1103-1114	normatīviem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	normatīvs	_	_	_	_	conj	basic	7-31	
+7-36	1114-1115	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	7-12	

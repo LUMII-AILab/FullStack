@@ -1,45 +1,45 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text="Mazi klaidoņi, sīkas tautas, tagad viņu vairs nav, jo saule tos izkausējusi.
-1-1	0-1	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	_	_	punct	basic	1-3	
-1-2	1-5	Mazi	Masc	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnnp	mazs	_	_	amod	basic	1-3	
-1-3	6-14	klaidoņi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn2	klaidonis	*[1]	*->1-1	root	basic	1-3	
-1-4	14-15	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-6	
-1-5	16-21	sīkas	Fem	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsgnp	sīka	_	_	amod	basic	1-6	
-1-6	22-28	tautas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	tauta	*[1]	*->1-2	conj	basic	1-3	
-1-7	28-29	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-11	
-1-8	30-35	tagad	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	tagad	_	_	advmod	basic	1-11	
-1-9	36-40	viņu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Prs	3	*	pp3mpgn	viņš	*[1]	*->1-3	nsubj	basic	1-11	
-1-10	41-46	vairs	_	_	_	_	_	_	_	_	_	_	_	_	r0t	vairs	_	_	advmod	basic	1-11	
-1-11	47-50	nav	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vgnipii30ay	nebūt	_	_	conj	basic	1-3	
-1-12	50-51	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-16	
-1-13	52-54	jo	_	_	_	_	_	_	_	_	_	_	_	_	cs	jo	_	_	mark	basic	1-16	
-1-14	55-60	saule	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	saule	_	_	nsubj	basic	1-16	
-1-15	61-64	tos	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpan	tas	*[1]	*->1-4	obj	basic	1-16	
-1-16	65-76	izkausējusi	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnasnpn	izkausēt	_	_	advcl	basic	1-11	
-1-17	76-77	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	1-3	
+1-1	0-1	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	_	_	punct	basic	1-3	
+1-2	1-5	Mazi	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnnp	*	mazs	_	_	amod	basic	1-3	
+1-3	6-14	klaidoņi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn2	*	klaidonis	*->1-1	*[1]	root	basic	1-3	
+1-4	14-15	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-6	
+1-5	16-21	sīkas	*	*	Gen	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsgnp	*	sīka	_	_	amod	basic	1-6	
+1-6	22-28	tautas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	tauta	*->1-2	*[1]	conj	basic	1-3	
+1-7	28-29	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-11	
+1-8	30-35	tagad	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	*	tagad	_	_	advmod	basic	1-11	
+1-9	36-40	viņu	*	*	Gen	*	*	Masc	*	*	*	Plur	3	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Prs	*	*	pp3mpgn	*	viņš	*->1-3	*[1]	nsubj	basic	1-11	
+1-10	41-46	vairs	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	vairs	_	_	advmod	basic	1-11	
+1-11	47-50	nav	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vgnipii30ay	*	nebūt	_	_	conj	basic	1-3	
+1-12	50-51	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-16	
+1-13	52-54	jo	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	jo	_	_	mark	basic	1-16	
+1-14	55-60	saule	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	saule	_	_	nsubj	basic	1-16	
+1-15	61-64	tos	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpan	*	tas	*->1-4	*[1]	obj	basic	1-16	
+1-16	65-76	izkausējusi	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsnasnpn	*	izkausēt	_	_	advcl	basic	1-11	
+1-17	76-77	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	1-3	
 
 #Text=Agrāk viņi pārtika no svaiga gaisa un lietus.
-2-1	79-84	Agrāk	*	*	*	Cmp	*	*	*	*	*	Degree=Cmp	*	*	rct	agri	_	_	advmod	basic	2-3	
-2-2	85-89	viņi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Prs	3	*	pp3mpnn	viņš	*[1]	*->1-5	nsubj	basic	2-3	
-2-3	90-97	pārtika	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi130an	pārtikt	_	_	root	basic	2-3	
-2-4	98-100	no	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	_	_	case	basic	2-6	
-2-5	101-107	svaiga	Masc	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsgnp	svaigs	_	_	amod	basic	2-6	
-2-6	108-113	gaisa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	gaiss	_	_	iobj	basic	2-3	
-2-7	114-116	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	cc	basic	2-8	
-2-8	117-123	lietus	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg3	lietus	_	_	conj	basic	2-6	
-2-9	123-124	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	2-3	
+2-1	79-84	Agrāk	*	*	*	*	Cmp	*	*	*	*	*	*	*	*	*	*	*	Degree=Cmp	*	*	rct	*	agri	_	_	advmod	basic	2-3	
+2-2	85-89	viņi	*	*	Nom	*	*	Masc	*	*	*	Plur	3	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Prs	*	*	pp3mpnn	*	viņš	*->1-5	*[1]	nsubj	basic	2-3	
+2-3	90-97	pārtika	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnisi130an	*	pārtikt	_	_	root	basic	2-3	
+2-4	98-100	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	case	basic	2-6	
+2-5	101-107	svaiga	*	*	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsgnp	*	svaigs	_	_	amod	basic	2-6	
+2-6	108-113	gaisa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	gaiss	_	_	iobj	basic	2-3	
+2-7	114-116	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	cc	basic	2-8	
+2-8	117-123	lietus	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg3	*	lietus	_	_	conj	basic	2-6	
+2-9	123-124	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	2-3	
 
 #Text=Zaga meitas un lopus."
-3-1	126-130	Zaga	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	zagt	_	_	root	basic	3-1	
-3-2	131-137	meitas	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	meita	_	_	obj	basic	3-1	
-3-3	138-140	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	cc	basic	3-4	
-3-4	141-146	lopus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	lops	_	_	conj	basic	3-2	
-3-5	146-147	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	3-1	
-3-6	147-148	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	_	_	punct	basic	3-1	
+3-1	126-130	Zaga	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist130an	*	zagt	_	_	root	basic	3-1	
+3-2	131-137	meitas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	meita	_	_	obj	basic	3-1	
+3-3	138-140	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	cc	basic	3-4	
+3-4	141-146	lopus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	lops	_	_	conj	basic	3-2	
+3-5	146-147	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	3-1	
+3-6	147-148	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	_	_	punct	basic	3-1	

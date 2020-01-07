@@ -1,0 +1,85 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Pārkāpt likumu ir neētiski.
+1-1	0-7	Pārkāpt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t1000n	*	pārkāpt	_	_	_	_	csubj	basic	1-4	
+1-2	8-14	likumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	likums	_	_	_	_	obj	basic	1-1	
+1-3	15-17	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	1-4	
+1-4	18-26	neētiski	*	*	*	*	*	*	*	*	*	*	*	*	Neg	*	*	*	PronType=Neg	*	*	r0m	*	neētiski	_	_	_	_	root	basic	1-4	
+1-5	26-27	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-4	
+
+#Text=Ētiskas dabas pārkāpumi grauj reputāciju, un reputācija nav konstants lielums, kas nemainās cilvēka dzīves laikā.
+2-1	28-35	Ētiskas	*	*	Gen	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsgnp	*	ētisks	_	_	_	_	amod	basic	2-2	
+2-2	36-41	dabas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	daba	_	_	_	_	nmod	basic	2-3	
+2-3	42-51	pārkāpumi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	pārkāpums	_	_	_	_	nsubj	basic	2-4	
+2-4	52-57	grauj	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt130an	*	graut	_	_	_	_	root	basic	2-4	
+2-5	58-68	reputāciju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	reputācija	_	_	*->1-1	*[1]	obj	basic	2-4	
+2-6	68-69	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-11	
+2-7	70-72	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-11	
+2-8	73-83	reputācija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	reputācija	_	_	*->1-2	*[1]	nsubj	basic	2-11	
+2-9	84-87	nav	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30ay	*	būt	_	_	_	_	cop	basic	2-11	
+2-10	88-97	konstants	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsnnp	*	konstants	_	_	_	_	amod	basic	2-11	
+2-11	98-105	lielums	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	lielums	_	_	*->2-1	*[2]	conj	basic	2-4	
+2-12	105-106	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-14	
+2-13	107-110	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	Rel	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->2-2	*[2]	nsubj	basic	2-14	
+2-14	111-119	nemainās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyipi330ay	*	mainīties	_	_	_	_	acl	basic	2-11	
+2-15	120-127	cilvēka	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	cilvēks	_	_	_	_	nmod	basic	2-16	
+2-16	128-134	dzīves	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	dzīve	_	_	_	_	nmod	basic	2-17	
+2-17	135-140	laikā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	laiks	_	_	_	_	obl	basic	2-14	
+2-18	140-141	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-4	
+
+#Text=Tāpēc izskanējušie argumenti, ka Saeima Dimanta kungu ar šādu reputāciju ir ievēlējusi, patiesībā ir naivi un muļķīgi.
+3-1	142-147	Tāpēc	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0c	*	tāpēc	_	_	_	_	advmod	basic	3-17	
+3-2	148-160	izskanējušie	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdmpnasypn	*	izskanēt	_	_	_	_	amod	basic	3-3	
+3-3	161-170	argumenti	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	arguments	_	_	_	_	nsubj	basic	3-17	
+3-4	170-171	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-13	
+3-5	172-174	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	3-13	
+3-6	175-181	Saeima	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Saeima	organization	https://en.wikipedia.org/wiki/Saeima	_	_	nsubj	basic	3-13	
+3-7	182-189	Dimanta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Dimants	person[1]	https://lv.wikipedia.org/wiki/Ainārs\_Dimants[1]	*->3-1	*[3]	nmod	basic	3-8	
+3-8	190-195	kungu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	kungs	person[1]	https://lv.wikipedia.org/wiki/Ainārs\_Dimants[1]	*->3-1	*[3]	obj	basic	3-13	
+3-9	196-198	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	3-11	
+3-10	199-203	šādu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	Dem	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsan	*	šāda	_	_	_	_	det	basic	3-11	
+3-11	204-214	reputāciju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	reputācija	_	_	_	_	nmod	basic	3-8	
+3-12	215-217	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	_	_	aux	basic	3-13	
+3-13	218-228	ievēlējusi	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdfsnasnpn	*	ievēlēt	_	_	_	_	acl	basic	3-3	
+3-14	228-229	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-13	
+3-15	230-239	patiesībā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	patiesība	_	_	_	_	obl	basic	3-17	
+3-16	240-242	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	3-17	
+3-17	243-248	naivi	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnnp	*	naivs	_	_	_	_	root	basic	3-17	
+3-18	249-251	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	3-19	
+3-19	252-259	muļķīgi	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnnp	*	muļķīgs	_	_	_	_	conj	basic	3-17	
+3-20	259-260	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-17	
+
+#Text=Diemžēl pirms iecelšanas amatā Nacionālajā elektronisko plašsaziņas līdzekļu padomē Dimanta kungam nebija nekādas pieredzes tiešās pārvaldes iestādes vadīšanā, un viņš joprojām nesaprot vadītāja funkcijas.
+4-1	261-268	Diemžēl	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	diemžēl	_	_	_	_	discourse	basic	4-12	
+4-2	269-274	pirms	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pirms	_	_	_	_	case	basic	4-3	
+4-3	275-285	iecelšanas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	iecelšana	_	_	_	_	obl	basic	4-12	
+4-4	286-291	amatā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	amats	_	_	_	_	acl	basic	4-3	
+4-5	292-303	Nacionālajā	*	*	Loc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfslyp	*	nacionāls	organization[2]	*[2]	_	_	amod	basic	4-9	
+4-6	304-316	elektronisko	*	*	Gen	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpgyp	*	elektronisks	organization[2]	*[2]	_	_	amod	basic	4-8	
+4-7	317-328	plašsaziņas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsgg	*	plašsaziņas	organization[2]	*[2]	_	_	nmod	basic	4-8	
+4-8	329-337	līdzekļu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	līdzeklis	organization[2]	*[2]	_	_	nmod	basic	4-9	
+4-9	338-344	padomē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	*	padome	organization[2]	*[2]	_	_	acl	basic	4-4	
+4-10	345-352	Dimanta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Dimants	person[3]	https://lv.wikipedia.org/wiki/Ainārs\_Dimants[3]	*->3-2	*[3]	nmod	basic	4-11	
+4-11	353-359	kungam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	kungs	person[3]	https://lv.wikipedia.org/wiki/Ainārs\_Dimants[3]	*->3-2	*[3]	obl	basic	4-12	
+4-12	360-366	nebija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnisii30ay	*	būt	_	_	_	_	root	basic	4-12	
+4-13	367-374	nekādas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	Ind,Neg	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|PronType=Ind,Neg	*	*	pi0fsgy	*	nekāda	_	_	_	_	det	basic	4-14	
+4-14	375-384	pieredzes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	pieredze	_	_	_	_	nsubj	basic	4-12	
+4-15	385-391	tiešās	*	*	Gen	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsgyp	*	tiešs	_	_	_	_	amod	basic	4-16	
+4-16	392-401	pārvaldes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	pārvalde	_	_	_	_	nmod	basic	4-17	
+4-17	402-410	iestādes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	iestāde	_	_	_	_	nmod	basic	4-18	
+4-18	411-419	vadīšanā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	vadīšana	_	_	_	_	acl	basic	4-14	
+4-19	419-420	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-23	
+4-20	421-423	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	4-23	
+4-21	424-428	viņš	*	*	Nom	*	*	Masc	*	*	*	Sing	3	*	Prs	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msnn	*	viņš	_	_	*->3-3	*[3]	nsubj	basic	4-23	
+4-22	429-437	joprojām	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	joprojām	_	_	_	_	advmod	basic	4-23	
+4-23	438-446	nesaprot	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt130ay	*	saprast	_	_	_	_	conj	basic	4-12	
+4-24	447-455	vadītāja	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	vadītājs	_	_	_	_	nmod	basic	4-25	
+4-25	456-465	funkcijas	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	funkcija	_	_	_	_	obj	basic	4-23	
+4-26	465-466	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	4-12	

@@ -1,73 +1,73 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=P.S.
-1-1	0-2	P.	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yd	P.	_	_	_	_	root	basic	1-1	
-1-2	2-4	S.	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yd	S.	_	_	_	_	dep	basic	1-1	
+1-1	0-2	P.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yd	*	P.	_	_	_	_	root	basic	1-1	
+1-2	2-4	S.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yd	*	S.	_	_	_	_	dep	basic	1-1	
 
 #Text=Runājot par balto trusīti, varbūt pareizāk būtu to salīdzināt ar Visumu.
-2-1	6-13	Runājot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000n	runāt	_	_	_	_	advcl	basic	2-7	
-2-2	14-17	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	_	_	case	basic	2-4	
-2-3	18-23	balto	Masc	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsayp	balts	_	_	_	_	amod	basic	2-4	
-2-4	24-31	trusīti	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	trusītis	_	_	*[2]	*->2-1	iobj	basic	2-1	
-2-5	31-32	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-1	
-2-6	33-39	varbūt	_	_	_	_	_	_	_	_	_	_	_	_	q	varbūt	_	_	_	_	discourse	basic	2-7	
-2-7	40-48	pareizāk	*	*	*	Cmp	*	*	*	*	*	Degree=Cmp	*	*	rcm	pareizi	_	_	_	_	root	basic	2-7	
-2-8	49-53	būtu	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vcnc0ii00an	būt	_	_	_	_	cop	basic	2-7	
-2-9	54-56	to	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	tas	_	_	*[2]	*->2-2	obj	basic	2-10	
-2-10	57-67	salīdzināt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	salīdzināt	_	_	_	_	ccomp	basic	2-7	
-2-11	68-70	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case	basic	2-12	
-2-12	71-77	Visumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	visums	location	*	_	_	iobj	basic	2-10	
-2-13	77-78	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-7	
+2-1	6-13	Runājot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000n	*	runāt	_	_	_	_	advcl	basic	2-7	
+2-2	14-17	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	2-4	
+2-3	18-23	balto	*	*	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsayp	*	balts	_	_	_	_	amod	basic	2-4	
+2-4	24-31	trusīti	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	*	trusītis	_	_	*->2-1	*[2]	iobj	basic	2-1	
+2-5	31-32	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-1	
+2-6	33-39	varbūt	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	varbūt	_	_	_	_	discourse	basic	2-7	
+2-7	40-48	pareizāk	*	*	*	*	Cmp	*	*	*	*	*	*	*	*	*	*	*	Degree=Cmp	*	*	rcm	*	pareizi	_	_	_	_	root	basic	2-7	
+2-8	49-53	būtu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vcnc0ii00an	*	būt	_	_	_	_	cop	basic	2-7	
+2-9	54-56	to	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	*	tas	_	_	*->2-2	*[2]	obj	basic	2-10	
+2-10	57-67	salīdzināt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	*	salīdzināt	_	_	_	_	ccomp	basic	2-7	
+2-11	68-70	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	2-12	
+2-12	71-77	Visumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	visums	location	*	_	_	iobj	basic	2-10	
+2-13	77-78	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-7	
 
 #Text=Mēs, kas šeit dzīvojam, esam kaut kādas sīkas būtnes, kas uzturas dziļi lejā truša kažoka biezumā.
-3-1	80-83	Mēs	*	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Number=Plur\|Person=1\|PronType=Prs	1	*	pp10pnn	mēs	_	_	_	_	nsubj	basic	3-11	
-3-2	83-84	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-5	
-3-3	85-88	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	_	_	nsubj	basic	3-5	
-3-4	89-93	šeit	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0p	šeit	_	_	_	_	advmod	basic	3-5	
-3-5	94-102	dzīvojam	*	Plur	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	1	*	vmnipt21pan	dzīvot	_	_	_	_	acl	basic	3-1	
-3-6	102-103	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-5	
-3-7	104-108	esam	*	Plur	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	1	*	vcnipii1pan	būt	_	_	_	_	cop	basic	3-11	
-3-8	109-113	kaut	_	_	_	_	_	_	_	_	_	_	_	_	q	kaut	_	_	_	_	discourse	basic	3-9	
-3-9	114-119	kādas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|PronType=Ind	*	*	pi0fpnn	kādas	_	_	_	_	det	basic	3-11	
-3-10	120-125	sīkas	Fem	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpnnp	sīka	_	_	_	_	amod	basic	3-11	
-3-11	126-132	būtnes	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn5	būtne	_	_	*[1]	*->1-1	root	basic	3-11	
-3-12	132-133	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-14	
-3-13	134-137	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	*[1]	*->1-2	nsubj	basic	3-14	
-3-14	138-145	uzturas	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipi330an	uzturēties	_	_	_	_	acl	basic	3-11	
-3-15	146-151	dziļi	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpq	dziļi	_	_	_	_	advmod	basic	3-16	
-3-16	152-156	lejā	_	_	_	_	_	_	_	_	_	_	_	_	r0p	lejā	_	_	_	_	advmod	basic	3-14	
-3-17	157-162	truša	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	trusis	_	_	*[2]	*->2-3	nmod	basic	3-18	
-3-18	163-169	kažoka	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	kažoks	_	_	_	_	nmod	basic	3-19	
-3-19	170-177	biezumā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	biezums	_	_	_	_	obl	basic	3-16	
-3-20	177-178	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-11	
+3-1	80-83	Mēs	*	*	Nom	*	*	*	*	*	*	Plur	1	*	*	*	*	*	Case=Nom\|Number=Plur\|Person=1\|PronType=Prs	*	*	pp10pnn	*	mēs	_	_	_	_	nsubj	basic	3-11	
+3-2	83-84	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-5	
+3-3	85-88	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	_	_	nsubj	basic	3-5	
+3-4	89-93	šeit	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0p	*	šeit	_	_	_	_	advmod	basic	3-5	
+3-5	94-102	dzīvojam	*	*	*	*	*	*	Ind	*	*	Plur	1	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt21pan	*	dzīvot	_	_	_	_	acl	basic	3-1	
+3-6	102-103	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-5	
+3-7	104-108	esam	*	*	*	*	*	*	Ind	*	*	Plur	1	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii1pan	*	būt	_	_	_	_	cop	basic	3-11	
+3-8	109-113	kaut	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	kaut	_	_	_	_	discourse	basic	3-9	
+3-9	114-119	kādas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|PronType=Ind	*	*	pi0fpnn	*	kādas	_	_	_	_	det	basic	3-11	
+3-10	120-125	sīkas	*	*	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpnnp	*	sīka	_	_	_	_	amod	basic	3-11	
+3-11	126-132	būtnes	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn5	*	būtne	_	_	*->1-1	*[1]	root	basic	3-11	
+3-12	132-133	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-14	
+3-13	134-137	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->1-2	*[1]	nsubj	basic	3-14	
+3-14	138-145	uzturas	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmyipi330an	*	uzturēties	_	_	_	_	acl	basic	3-11	
+3-15	146-151	dziļi	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpq	*	dziļi	_	_	_	_	advmod	basic	3-16	
+3-16	152-156	lejā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0p	*	lejā	_	_	_	_	advmod	basic	3-14	
+3-17	157-162	truša	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	*	trusis	_	_	*->2-3	*[2]	nmod	basic	3-18	
+3-18	163-169	kažoka	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	kažoks	_	_	_	_	nmod	basic	3-19	
+3-19	170-177	biezumā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	biezums	_	_	_	_	obl	basic	3-16	
+3-20	177-178	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-11	
 
 #Text=Bet filosofi mēģina rāpties augšup pa vienu no šī kažoka smalkajām spalviņām, lai varētu paskatīties lielajam burvju māksliniekam gluži acīs.
-4-1	180-183	Bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	_	_	cc	basic	4-3	
-4-2	184-192	filosofi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	filosofs	_	_	_	_	nsubj	basic	4-3	
-4-3	193-199	mēģina	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vonipt330an	mēģināt	_	_	_	_	root	basic	4-3	
-4-4	200-207	rāpties	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i1000n	rāpties	_	_	_	_	xcomp	basic	4-3	
-4-5	208-214	augšup	_	_	_	_	_	_	_	_	_	_	_	_	r0p	augšup	_	_	_	_	advmod	basic	4-3	
-4-6	215-217	pa	_	_	_	_	_	_	_	_	_	_	_	_	spsa	pa	_	_	_	_	case	basic	4-7	
-4-7	218-223	vienu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|NumType=Card	*	*	mcsmsa	viens	_	_	_	_	nummod	basic	4-3	
-4-8	224-226	no	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	_	_	_	_	case	basic	4-12	
-4-9	227-229	šī	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msgn	šis	_	_	_	_	det	basic	4-10	
-4-10	230-236	kažoka	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	kažoks	_	_	_	_	nmod	basic	4-12	
-4-11	237-246	smalkajām	Fem	Plur	Dat	Pos	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpdyp	smalka	_	_	_	_	amod	basic	4-12	
-4-12	247-256	spalviņām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	spalviņa	_	_	_	_	nmod	basic	4-7	
-4-13	256-257	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	4-15	
-4-14	258-261	lai	_	_	_	_	_	_	_	_	_	_	_	_	cs	lai	_	_	_	_	mark	basic	4-15	
-4-15	262-268	varētu	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vonc0t300an	varēt	_	_	_	_	advcl	basic	4-3	
-4-16	269-280	paskatīties	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0t3000n	paskatīties	_	_	_	_	xcomp	basic	4-15	
-4-17	281-289	lielajam	Masc	Sing	Dat	Pos	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsdyp	liels	_	_	_	_	amod	basic	4-19	
-4-18	290-296	burvju	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	burvis	_	_	_	_	nmod	basic	4-19	
-4-19	297-309	māksliniekam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	mākslinieks	_	_	_	_	iobj	basic	4-16	
-4-20	310-315	gluži	_	_	_	_	_	_	_	_	_	_	_	_	r0q	gluži	_	_	_	_	advmod	basic	4-21	
-4-21	316-320	acīs	Fem	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl6	acs	_	_	_	_	obl	basic	4-16	
-4-22	320-321	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	4-3	
+4-1	180-183	Bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	_	_	cc	basic	4-3	
+4-2	184-192	filosofi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	filosofs	_	_	_	_	nsubj	basic	4-3	
+4-3	193-199	mēģina	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vonipt330an	*	mēģināt	_	_	_	_	root	basic	4-3	
+4-4	200-207	rāpties	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i1000n	*	rāpties	_	_	_	_	xcomp	basic	4-3	
+4-5	208-214	augšup	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0p	*	augšup	_	_	_	_	advmod	basic	4-3	
+4-6	215-217	pa	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	pa	_	_	_	_	case	basic	4-7	
+4-7	218-223	vienu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|NumType=Card	*	*	mcsmsa	*	viens	_	_	_	_	nummod	basic	4-3	
+4-8	224-226	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case	basic	4-12	
+4-9	227-229	šī	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msgn	*	šis	_	_	_	_	det	basic	4-10	
+4-10	230-236	kažoka	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	kažoks	_	_	_	_	nmod	basic	4-12	
+4-11	237-246	smalkajām	*	*	Dat	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpdyp	*	smalka	_	_	_	_	amod	basic	4-12	
+4-12	247-256	spalviņām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	*	spalviņa	_	_	_	_	nmod	basic	4-7	
+4-13	256-257	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-15	
+4-14	258-261	lai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	lai	_	_	_	_	mark	basic	4-15	
+4-15	262-268	varētu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vonc0t300an	*	varēt	_	_	_	_	advcl	basic	4-3	
+4-16	269-280	paskatīties	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0t3000n	*	paskatīties	_	_	_	_	xcomp	basic	4-15	
+4-17	281-289	lielajam	*	*	Dat	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsdyp	*	liels	_	_	_	_	amod	basic	4-19	
+4-18	290-296	burvju	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	burvis	_	_	_	_	nmod	basic	4-19	
+4-19	297-309	māksliniekam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	mākslinieks	_	_	_	_	iobj	basic	4-16	
+4-20	310-315	gluži	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	gluži	_	_	_	_	advmod	basic	4-21	
+4-21	316-320	acīs	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl6	*	acs	_	_	_	_	obl	basic	4-16	
+4-22	320-321	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	4-3	

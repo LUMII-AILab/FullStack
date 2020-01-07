@@ -1,54 +1,54 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Viņš ST priekšsēdētāja amatā pirmo reizi stājās 2007.gada 31.janvārī, savukārt 2010.gadā viņš priekšsēdētāja amatā tika ievēlēts atkārtoti.
-1-1	0-4	Viņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msnn	viņš	_	_	*[1]	*->1-1	nsubj	basic	1-7	
-1-2	5-7	ST	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	ST	organization	https://en.wikipedia.org/wiki/Constitutional\_Court\_of\_Latvia	_	_	nmod	basic	1-3	
-1-3	8-22	priekšsēdētāja	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	priekšsēdētājs	_	_	_	_	nmod	basic	1-4	
-1-4	23-28	amatā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	amats	_	_	_	_	obl	basic	1-7	
-1-5	29-34	pirmo	Fem	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|NumType=Ord	*	*	mosfsa	pirmā	_	_	_	_	amod	basic	1-6	
-1-6	35-40	reizi	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	reize	_	_	_	_	obl	basic	1-7	
-1-7	41-47	stājās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi130an	stāties	_	_	_	_	root	basic	1-7	
-1-8	48-53	2007.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	2007.	time[1]	*[1]	_	_	amod	basic	1-9	
-1-9	53-57	gada	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	gads	time[1]	*[1]	_	_	nmod	basic	1-11	
-1-10	58-61	31.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	31.	time[1]	*[1]	_	_	amod	basic	1-11	
-1-11	61-68	janvārī	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	janvāris	time[1]	*[1]	_	_	obl	basic	1-7	
-1-12	68-69	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-20	
-1-13	70-78	savukārt	_	_	_	_	_	_	_	_	_	_	_	_	r0m	savukārt	_	_	_	_	advmod	basic	1-20	
-1-14	79-84	2010.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	2010.	time[2]	*[2]	_	_	amod	basic	1-15	
-1-15	84-88	gadā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	gads	time[2]	*[2]	_	_	obl	basic	1-20	
-1-16	89-93	viņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msnn	viņš	_	_	*[1]	*->1-2	nsubj:pass	basic	1-20	
-1-17	94-108	priekšsēdētāja	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	priekšsēdētājs	_	_	_	_	nmod	basic	1-18	
-1-18	109-114	amatā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	amats	_	_	_	_	obl	basic	1-20	
-1-19	115-119	tika	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vtnisi130an	tikt	_	_	_	_	aux	basic	1-20	
-1-20	120-128	ievēlēts	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnp	ievēlēt	_	_	_	_	conj	basic	1-7	
-1-21	129-138	atkārtoti	_	_	_	_	_	_	_	_	_	_	_	_	r0m	atkārtoti	_	_	_	_	advmod	basic	1-20	
-1-22	138-139	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-7	
+1-1	0-4	Viņš	*	*	Nom	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msnn	*	viņš	_	_	*->1-1	*[1]	nsubj	basic	1-7	
+1-2	5-7	ST	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	ST	organization	https://en.wikipedia.org/wiki/Constitutional\_Court\_of\_Latvia	_	_	nmod	basic	1-3	
+1-3	8-22	priekšsēdētāja	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	priekšsēdētājs	_	_	_	_	nmod	basic	1-4	
+1-4	23-28	amatā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	amats	_	_	_	_	obl	basic	1-7	
+1-5	29-34	pirmo	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|NumType=Ord	*	*	mosfsa	*	pirmā	_	_	_	_	amod	basic	1-6	
+1-6	35-40	reizi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	reize	_	_	_	_	obl	basic	1-7	
+1-7	41-47	stājās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmyisi130an	*	stāties	_	_	_	_	root	basic	1-7	
+1-8	48-53	2007.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	2007.	time[1]	*[1]	_	_	amod	basic	1-9	
+1-9	53-57	gada	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	gads	time[1]	*[1]	_	_	nmod	basic	1-11	
+1-10	58-61	31.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	31.	time[1]	*[1]	_	_	amod	basic	1-11	
+1-11	61-68	janvārī	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	*	janvāris	time[1]	*[1]	_	_	obl	basic	1-7	
+1-12	68-69	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-20	
+1-13	70-78	savukārt	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	savukārt	_	_	_	_	advmod	basic	1-20	
+1-14	79-84	2010.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	2010.	time[2]	*[2]	_	_	amod	basic	1-15	
+1-15	84-88	gadā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	gads	time[2]	*[2]	_	_	obl	basic	1-20	
+1-16	89-93	viņš	*	*	Nom	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msnn	*	viņš	_	_	*->1-2	*[1]	nsubj:pass	basic	1-20	
+1-17	94-108	priekšsēdētāja	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	priekšsēdētājs	_	_	_	_	nmod	basic	1-18	
+1-18	109-114	amatā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	amats	_	_	_	_	obl	basic	1-20	
+1-19	115-119	tika	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vtnisi130an	*	tikt	_	_	_	_	aux	basic	1-20	
+1-20	120-128	ievēlēts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnpsnp	*	ievēlēt	_	_	_	_	conj	basic	1-7	
+1-21	129-138	atkārtoti	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	atkārtoti	_	_	_	_	advmod	basic	1-20	
+1-22	138-139	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-7	
 
 #Text=Tiesas priekšsēdētāja pilnvaras beidzas šā gada 30.janvārī, bet Kūtra pilnvaras Satversmes tiesā - vēl pēc aptuveni gada.
-2-1	141-147	Tiesas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	tiesa	_	_	_	_	nmod	basic	2-2	
-2-2	148-162	priekšsēdētāja	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	priekšsēdētājs	_	_	_	_	nmod	basic	2-3	
-2-3	163-172	pilnvaras	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	pilnvara	_	_	_	_	nsubj	basic	2-4	
-2-4	173-180	beidzas	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipi130an	beigties	_	_	_	_	root	basic	2-4	
-2-5	181-183	šā	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msgn	šis	time[3]	*[3]	_	_	obl	basic	2-6	
-2-6	184-188	gada	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	gads	time[3]	*[3]	_	_	nmod	basic	2-8	
-2-7	189-192	30.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	30.	time[3]	*[3]	_	_	amod	basic	2-8	
-2-8	192-199	janvārī	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	janvāris	time[3]	*[3]	_	_	obl	basic	2-4	
-2-9	199-200	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-15	
-2-10	201-204	bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	_	_	cc	basic	2-15	
-2-11	205-210	Kūtra	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg2	Kūtris	person	*	*[1]	*->1-3	nmod	basic	2-12	
-2-12	211-220	pilnvaras	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	pilnvara	_	_	_	_	nmod	basic	2-15	
-2-13	221-231	Satversmes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	satversme	organization[4]	*[4]	_	_	nmod	basic	2-14	
-2-14	232-237	tiesā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	tiesa	organization[4]	*[4]	_	_	acl	basic	2-12	
-2-15	238-239	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	_	_	conj	basic	2-4	
-2-16	240-243	vēl	_	_	_	_	_	_	_	_	_	_	_	_	r0t	vēl	_	_	_	_	advmod	basic	2-19	
-2-17	244-247	pēc	_	_	_	_	_	_	_	_	_	_	_	_	spsg	pēc	time[5]	*[5]	_	_	case	basic	2-19	
-2-18	248-256	aptuveni	_	_	_	_	_	_	_	_	_	_	_	_	r0q	aptuveni	time[5]	*[5]	_	_	advmod	basic	2-19	
-2-19	257-261	gada	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	gads	time[5]	*[5]	_	_	obl	basic	2-15	
-2-20	261-262	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-4	
+2-1	141-147	Tiesas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	tiesa	_	_	_	_	nmod	basic	2-2	
+2-2	148-162	priekšsēdētāja	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	priekšsēdētājs	_	_	_	_	nmod	basic	2-3	
+2-3	163-172	pilnvaras	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	pilnvara	_	_	_	_	nsubj	basic	2-4	
+2-4	173-180	beidzas	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmyipi130an	*	beigties	_	_	_	_	root	basic	2-4	
+2-5	181-183	šā	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msgn	*	šis	time[3]	*[3]	_	_	obl	basic	2-6	
+2-6	184-188	gada	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	gads	time[3]	*[3]	_	_	nmod	basic	2-8	
+2-7	189-192	30.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	30.	time[3]	*[3]	_	_	amod	basic	2-8	
+2-8	192-199	janvārī	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	*	janvāris	time[3]	*[3]	_	_	obl	basic	2-4	
+2-9	199-200	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-15	
+2-10	201-204	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	_	_	cc	basic	2-15	
+2-11	205-210	Kūtra	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg2	*	Kūtris	person	*	*->1-3	*[1]	nmod	basic	2-12	
+2-12	211-220	pilnvaras	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	pilnvara	_	_	_	_	nmod	basic	2-15	
+2-13	221-231	Satversmes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	satversme	organization[4]	*[4]	_	_	nmod	basic	2-14	
+2-14	232-237	tiesā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	tiesa	organization[4]	*[4]	_	_	acl	basic	2-12	
+2-15	238-239	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	-	_	_	_	_	conj	basic	2-4	
+2-16	240-243	vēl	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	vēl	_	_	_	_	advmod	basic	2-19	
+2-17	244-247	pēc	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pēc	time[5]	*[5]	_	_	case	basic	2-19	
+2-18	248-256	aptuveni	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	aptuveni	time[5]	*[5]	_	_	advmod	basic	2-19	
+2-19	257-261	gada	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	gads	time[5]	*[5]	_	_	obl	basic	2-15	
+2-20	261-262	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-4	

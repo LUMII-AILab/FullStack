@@ -1,0 +1,44 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Festivāla direktors Pauls Klemente mākslinieku instalāciju “ARMPIT” noskatījis 2015. gadā Venēcijas biennālē.
+1-1	0-9	Festivāla	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	festivāls	_	_	*->1-1	*[1]	nmod	basic	1-2	
+1-2	10-19	direktors	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	direktors	_	_	*->1-1	*[1]	nmod	basic	1-3	
+1-3	20-25	Pauls	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Pauls	person[1]	*[1]	*->1-2	*[1]	nsubj	basic	1-10	
+1-4	26-34	Klemente	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	*	Klemente	person[1]	*[1]	*->1-2	*[1]	flat:name	basic	1-3	
+1-5	35-46	mākslinieku	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	mākslinieks	_	_	*->2-1	*[2]	nmod	basic	1-6	
+1-6	47-58	instalāciju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	instalācija	_	_	*->2-1	*[2]	nmod	basic	1-8	
+1-7	59-60	“	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	“	product[2]	*[2]	*->2-2	*[2]	punct	basic	1-8	
+1-8	60-66	ARMPIT	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	xx	*	ARMPIT	product[2]	*[2]	*->2-2	*[2]	obj	basic	1-10	
+1-9	66-67	”	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	”	product[2]	*[2]	*->2-2	*[2]	punct	basic	1-8	
+1-10	68-78	noskatījis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnasnpn	*	noskatīt	_	_	_	_	root	basic	1-10	
+1-11	79-84	2015.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	2015.	time[3]	*[3]	_	_	amod	basic	1-12	
+1-12	85-89	gadā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	gads	time[3]	*[3]	_	_	obl	basic	1-10	
+1-13	90-99	Venēcijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Venēcija	event[4]|GPE[5]	https://en.wikipedia.org/wiki/Venice\_Biennale[4]|https://en.wikipedia.org/wiki/Venice[5]	_	_	nmod	basic	1-14	
+1-14	100-108	biennālē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	*	biennāle	event[4]	https://en.wikipedia.org/wiki/Venice\_Biennale[4]	_	_	obl	basic	1-10	
+1-15	108-109	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-10	
+
+#Text=Mākslinieki speciāli Coachella uzbūvēja paplašinātāku instalācijas variantu, to nosaucot par “ARMPIT California Edition”.
+2-1	111-122	Mākslinieki	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	mākslinieks	_	_	_	_	nsubj	basic	2-4	
+2-2	123-131	speciāli	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	speciāli	_	_	_	_	advmod	basic	2-4	
+2-3	132-141	Coachella	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	np0000	*	Coachella	event	https://en.wikipedia.org/wiki/Coachella\_Valley\_Music\_and\_Arts\_Festival	_	_	iobj	basic	2-2	
+2-4	142-150	uzbūvēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist230an	*	uzbūvēt	_	_	_	_	root	basic	2-4	
+2-5	151-164	paplašinātāku	*	*	Acc	*	Cmp	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Cmp\|Gender=Fem\|Number=Sing	*	*	affsanc	*	paplašināts	_	_	_	_	amod	basic	2-7	
+2-6	165-177	instalācijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	instalācija	_	_	_	_	nmod	basic	2-7	
+2-7	178-186	variantu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	variants	_	_	*->3-1	*[3]	obj	basic	2-4	
+2-8	186-187	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-10	
+2-9	188-190	to	*	*	Acc	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msan	*	tas	_	_	*->3-2	*[3]	obj	basic	2-10	
+2-10	191-199	nosaucot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	*	*	vmnpu0000000n	*	nosaukt	_	_	_	_	advcl	basic	2-4	
+2-11	200-203	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	2-13	
+2-12	204-205	“	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	“	product[6]	*[6]	_	_	punct	basic	2-13	
+2-13	205-211	ARMPIT	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	ARMPIT	product[6]	*[6]	_	_	xcomp	basic	2-10	
+2-14	212-222	California	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	California	product[6]	*[6]	_	_	flat:name	basic	2-13	
+2-15	223-230	Edition	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Edition	product[6]	*[6]	_	_	flat:name	basic	2-13	
+2-16	230-231	”	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	”	product[6]	*[6]	_	_	punct	basic	2-13	
+2-17	231-232	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-4	

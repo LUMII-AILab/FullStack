@@ -1,0 +1,114 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Neilgi pēc tam 12:35, VUGD saņēma informāciju, ka Saldus novada, Zirņu pagastā, grāvī atrodas zirgs, kurš saviem spēkiem no tā nevar izkļūt.
+1-1	0-6	Neilgi	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Neg	*	*	r0t	*	neilgi	_	_	_	_	advmod	basic	1-3	
+1-2	7-10	pēc	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsd	*	pēc	_	_	_	_	case	basic	1-3	
+1-3	11-14	tam	*	*	Dat	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msdn	*	tas	_	_	_	_	obl	basic	1-7	
+1-4	15-20	12:35	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	12:35	time	*	_	_	acl	basic	1-3	
+1-5	20-21	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-4	
+1-6	22-26	VUGD	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	VUGD	organization	*	_	_	nsubj	basic	1-7	
+1-7	27-33	saņēma	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist130an	*	saņemt	_	_	_	_	root	basic	1-7	
+1-8	34-45	informāciju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	informācija	_	_	_	_	obj	basic	1-7	
+1-9	45-46	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-18	
+1-10	47-49	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	1-18	
+1-11	50-56	Saldus	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg3	*	Saldus	GPE[1]|GPE[2]	*[1]|*[2]	_	_	nmod	basic	1-12	
+1-12	57-63	novada	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	novads	GPE[1]	*[1]	_	_	nmod	basic	1-17	
+1-13	63-64	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-15	
+1-14	65-70	Zirņu	*	*	Gen	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	npmdg2	*	Zirņi	GPE[3]	https://en.wikipedia.org/wiki/Zirņi\_Parish[3]	_	_	nmod	basic	1-15	
+1-15	71-78	pagastā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	pagasts	GPE[3]	https://en.wikipedia.org/wiki/Zirņi\_Parish[3]	_	_	acl	basic	1-12	
+1-16	78-79	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-15	
+1-17	80-85	grāvī	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	*	grāvis	_	_	*->1-1	*[1]	obl	basic	1-18	
+1-18	86-93	atrodas	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmyipi130an	*	atrasties	_	_	_	_	acl	basic	1-8	
+1-19	94-99	zirgs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	zirgs	_	_	*->2-1	*[2]	nsubj	basic	1-18	
+1-20	99-100	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-26	
+1-21	101-105	kurš	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msnn	*	kurš	_	_	*->2-2	*[2]	nsubj	basic	1-26	
+1-22	106-112	saviem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|Poss=Yes\|PronType=Prs	*	*	ps0mpdn	*	savs	_	_	_	_	det	basic	1-23	
+1-23	113-120	spēkiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	spēks	_	_	_	_	obl	basic	1-26	
+1-24	121-123	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case	basic	1-25	
+1-25	124-126	tā	*	*	Gen	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msgn	*	tas	_	_	*->1-2	*[1]	obl	basic	1-26	
+1-26	127-132	nevar	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vonipi330ay	*	varēt	_	_	_	_	acl	basic	1-19	
+1-27	133-139	izkļūt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0i1000n	*	izkļūt	_	_	_	_	xcomp	basic	1-26	
+1-28	139-140	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-7	
+
+#Text=Ierodoties notikuma vietā, ugunsdzēsēji glābēji konstatēja, ka blakus ceļa braucamajai daļai grāvī guļ zirgs, kurš nevar piecelties.
+2-1	142-152	Ierodoties	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Conv	*	*	vmypu0000000n	*	ierasties	_	_	_	_	advcl	basic	2-7	
+2-2	153-161	notikuma	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	notikums	_	_	_	_	nmod	basic	2-3	
+2-3	162-167	vietā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	vieta	_	_	_	_	obl	basic	2-1	
+2-4	167-168	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-1	
+2-5	169-181	ugunsdzēsēji	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	ugunsdzēsējs	_	_	_	_	nmod	basic	2-6	
+2-6	182-189	glābēji	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	glābējs	_	_	_	_	nsubj	basic	2-7	
+2-7	190-200	konstatēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist230an	*	konstatēt	_	_	_	_	root	basic	2-7	
+2-8	200-201	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-15	
+2-9	202-204	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	2-15	
+2-10	205-211	blakus	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0p	*	blakus	_	_	_	_	case	basic	2-13	
+2-11	212-216	ceļa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	ceļš	_	_	_	_	nmod	basic	2-13	
+2-12	217-228	braucamajai	*	*	Dat	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsdyp	*	braucams	_	_	_	_	amod	basic	2-13	
+2-13	229-234	daļai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	*	daļa	_	_	_	_	obl	basic	2-15	
+2-14	235-240	grāvī	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	*	grāvis	_	_	*->1-3	*[1]	obl	basic	2-15	
+2-15	241-244	guļ	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipi330an	*	gulēt	_	_	_	_	ccomp	basic	2-7	
+2-16	245-250	zirgs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	zirgs	_	_	*->2-3	*[2]	nsubj	basic	2-15	
+2-17	250-251	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-19	
+2-18	252-256	kurš	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msnn	*	kurš	_	_	*->2-4	*[2]	nsubj	basic	2-19	
+2-19	257-262	nevar	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vonipt330ay	*	varēt	_	_	_	_	acl	basic	2-16	
+2-20	263-273	piecelties	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i1000n	*	piecelties	_	_	_	_	xcomp	basic	2-19	
+2-21	273-274	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-7	
+
+#Text=Izmantojot kaimiņu traktoru, ugunsdzēsēji glābēji zirgu no grāvja izvilka un apsedza ar sienu.
+3-1	276-286	Izmantojot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	*	*	vmnpu0000000n	*	izmantot	_	_	_	_	advcl	basic	3-10	
+3-2	287-294	kaimiņu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	kaimiņš	_	_	_	_	nmod	basic	3-3	
+3-3	295-303	traktoru	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	traktors	_	_	_	_	obj	basic	3-1	
+3-4	303-304	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-1	
+3-5	305-317	ugunsdzēsēji	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	ugunsdzēsējs	_	_	_	_	nmod	basic	3-6	
+3-6	318-325	glābēji	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	glābējs	_	_	_	_	nsubj	basic	3-10	
+3-7	326-331	zirgu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	zirgs	_	_	*->2-5	*[2]	obj	basic	3-10	
+3-8	332-334	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case	basic	3-9	
+3-9	335-341	grāvja	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	*	grāvis	_	_	*->1-4	*[1]	obl	basic	3-10	
+3-10	342-349	izvilka	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist130an	*	izvilkt	_	_	_	_	root	basic	3-10	
+3-11	350-352	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	3-12	
+3-12	353-360	apsedza	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist130an	*	apsegt	_	_	_	_	conj	basic	3-10	
+3-13	361-363	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	3-14	
+3-14	364-369	sienu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	siena	_	_	_	_	iobj	basic	3-12	
+3-15	369-370	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-10	
+
+#Text=Notikuma vietā ieradās arī veterinārārsts, kurš konstatēja, ka zirgam ir lauzta kāja.
+4-1	372-380	Notikuma	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	notikums	_	_	_	_	nmod	basic	4-2	
+4-2	381-386	vietā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	vieta	_	_	_	_	obl	basic	4-3	
+4-3	387-394	ieradās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmyisi130an	*	ierasties	_	_	_	_	root	basic	4-3	
+4-4	395-398	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	4-5	
+4-5	399-413	veterinārārsts	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	veterinārārsts	_	_	*->3-1	*[3]	nsubj	basic	4-3	
+4-6	413-414	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-8	
+4-7	415-419	kurš	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msnn	*	kurš	_	_	*->3-2	*[3]	nsubj	basic	4-8	
+4-8	420-430	konstatēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist230an	*	konstatēt	_	_	_	_	acl	basic	4-5	
+4-9	430-431	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-13	
+4-10	432-434	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	4-13	
+4-11	435-441	zirgam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	zirgs	_	_	*->2-6	*[2]	obl	basic	4-13	
+4-12	442-444	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	4-13	
+4-13	445-451	lauzta	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsnpsnpn	*	lauzt	_	_	_	_	ccomp	basic	4-8	
+4-14	452-456	kāja	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	kāja	_	_	_	_	nsubj	basic	4-13	
+4-15	456-457	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	4-3	
+
+#Text=Tā kā tālāka ugunsdzēsēju glābēju palīdzība vairs nebija nepieciešama, ugunsdzēsēji glābēji izglābto zirgu nodeva veterinārārstam.
+5-1	459-461	Tā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tā	_	_	_	_	discourse	basic	5-2	
+5-2	462-464	kā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	kā	_	_	_	_	mark	basic	5-9	
+5-3	465-471	tālāka	*	*	Nom	*	Cmp	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Fem\|Number=Sing	*	*	affsnnc	*	tāls	_	_	_	_	amod	basic	5-6	
+5-4	472-484	ugunsdzēsēju	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	ugunsdzēsējs	_	_	_	_	nmod	basic	5-5	
+5-5	485-492	glābēju	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	glābējs	_	_	_	_	nmod	basic	5-6	
+5-6	493-502	palīdzība	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	palīdzība	_	_	_	_	nsubj	basic	5-9	
+5-7	503-508	vairs	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	vairs	_	_	_	_	advmod	basic	5-9	
+5-8	509-515	nebija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vcnisii30ay	*	būt	_	_	_	_	cop	basic	5-9	
+5-9	516-528	nepieciešama	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	*	nepieciešams	_	_	_	_	advcl	basic	5-15	
+5-10	528-529	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	5-9	
+5-11	530-542	ugunsdzēsēji	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	ugunsdzēsējs	_	_	_	_	nmod	basic	5-12	
+5-12	543-550	glābēji	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	glābējs	_	_	_	_	nsubj	basic	5-15	
+5-13	551-559	izglābto	*	Perf	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsapsypn	*	izglābt	_	_	_	_	amod	basic	5-14	
+5-14	560-565	zirgu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	zirgs	_	_	*->2-7	*[2]	obj	basic	5-15	
+5-15	566-572	nodeva	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist130an	*	nodot	_	_	_	_	root	basic	5-15	
+5-16	573-588	veterinārārstam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	veterinārārsts	_	_	*->3-3	*[3]	iobj	basic	5-15	
+5-17	588-589	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	5-15	

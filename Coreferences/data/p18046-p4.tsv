@@ -1,0 +1,57 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Ceturtdien "Liverpool" UEFA Eiropas līgas spēlē tiksies ar Vaņina pārstāvēto "Sion".
+1-1	0-10	Ceturtdien	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	ceturtdien	time	*	_	_	advmod	basic	1-9	
+1-2	11-12	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[1]	https://en.wikipedia.org/wiki/Liverpool\_F.C.[1]	_	_	punct	basic	1-3	
+1-3	12-21	Liverpool	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Liverpool	organization[1]	https://en.wikipedia.org/wiki/Liverpool\_F.C.[1]	_	_	nsubj	basic	1-9	
+1-4	21-22	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[1]	https://en.wikipedia.org/wiki/Liverpool\_F.C.[1]	_	_	punct	basic	1-3	
+1-5	23-27	UEFA	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	UEFA	event[2]|organization[3]	https://en.wikipedia.org/wiki/UEFA\_Europa\_League[2]|https://en.wikipedia.org/wiki/UEFA[3]	_	_	nmod	basic	1-7	
+1-6	28-35	Eiropas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Eiropa	event[2]|event[4]|location[5]	https://en.wikipedia.org/wiki/UEFA\_Europa\_League[2]|*[4]|https://en.wikipedia.org/wiki/Europe[5]	_	_	nmod	basic	1-7	
+1-7	36-41	līgas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	līga	event[2]|event[4]	https://en.wikipedia.org/wiki/UEFA\_Europa\_League[2]|*[4]	_	_	nmod	basic	1-8	
+1-8	42-47	spēlē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	*	spēle	_	_	_	_	obl	basic	1-9	
+1-9	48-55	tiksies	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Fut\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyifi130an	*	tikties	_	_	_	_	root	basic	1-9	
+1-10	56-58	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	_	_	case	basic	1-14	
+1-11	59-65	Vaņina	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Vaņins	person	https://en.wikipedia.org/wiki/Andris\_Vaņins	_	_	obl	basic	1-12	
+1-12	66-76	pārstāvēto	*	Perf	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdfsapsypn	*	pārstāvēt	_	_	_	_	amod	basic	1-14	
+1-13	77-78	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[6]	https://en.wikipedia.org/wiki/FC\_Sion[6]	_	_	punct	basic	1-14	
+1-14	78-82	Sion	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	xx	*	Sion	organization[6]	https://en.wikipedia.org/wiki/FC\_Sion[6]	_	_	iobj	basic	1-9	
+1-15	82-83	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[6]	https://en.wikipedia.org/wiki/FC\_Sion[6]	_	_	punct	basic	1-14	
+1-16	83-84	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-9	
+
+#Text=Pirmajās piecās kārtās "Sion" komanda pamanījusies nopelnīt astoņus punktus un atrodas otrajā pozīcijā, kamēr "Liverpool" kontā deviņi punkti un garantēta vieta izslēgšanas spēlēs.
+2-1	85-93	Pirmajās	*	*	Loc	*	Pos	Fem	*	*	Ord	Plur	*	*	*	*	*	*	Case=Loc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Plur\|NumType=Ord	*	*	mosfpl	*	pirmais	_	_	_	_	amod	basic	2-2	
+2-2	94-100	piecās	*	*	Loc	*	*	Fem	*	*	Card	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur\|NumType=Card	*	*	mcsfpl	*	pieci	_	_	_	_	nummod	basic	2-3	
+2-3	101-107	kārtās	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	*	kārta	_	_	_	_	obl	basic	2-8	
+2-4	108-109	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[7]	https://en.wikipedia.org/wiki/FC\_Sion[7]	*->1-1	*[1]	punct	basic	2-5	
+2-5	109-113	Sion	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	xx	*	Sion	organization[7]	https://en.wikipedia.org/wiki/FC\_Sion[7]	*->1-1	*[1]	amod	basic	2-7	
+2-6	113-114	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[7]	https://en.wikipedia.org/wiki/FC\_Sion[7]	*->1-1	*[1]	punct	basic	2-5	
+2-7	115-122	komanda	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	komanda	_	_	*->1-2	*[1]	nsubj	basic	2-8	
+2-8	123-135	pamanījusies	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	Yes	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmypdfsnasnpn	*	pamanīties	_	_	_	_	root	basic	2-8	
+2-9	136-144	nopelnīt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t3000n	*	nopelnīt	_	_	_	_	xcomp	basic	2-8	
+2-10	145-152	astoņus	*	*	Acc	*	*	Masc	*	*	Card	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpa	*	astoņi	_	_	_	_	nummod	basic	2-11	
+2-11	153-160	punktus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	punkts	_	_	_	_	obj	basic	2-9	
+2-12	161-163	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-13	
+2-13	164-171	atrodas	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyipi130an	*	atrasties	_	_	_	_	conj	basic	2-8	
+2-14	172-178	otrajā	*	*	Loc	*	Pos	Fem	*	*	Ord	Sing	*	*	*	*	*	*	Case=Loc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|NumType=Ord	*	*	mosfsl	*	otrais	_	_	_	_	amod	basic	2-15	
+2-15	179-187	pozīcijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	pozīcija	_	_	_	_	obl	basic	2-13	
+2-16	187-188	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-23	
+2-17	189-194	kamēr	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	kamēr	_	_	_	_	cc	basic	2-23	
+2-18	195-196	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[8]	ttps://en.wikipedia.org/wiki/Liverpool\_F.C.[8]	_	_	punct	basic	2-19	
+2-19	196-205	Liverpool	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Liverpool	organization[8]	ttps://en.wikipedia.org/wiki/Liverpool\_F.C.[8]	_	_	nmod	basic	2-21	
+2-20	205-206	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[8]	ttps://en.wikipedia.org/wiki/Liverpool\_F.C.[8]	_	_	punct	basic	2-19	
+2-21	207-212	kontā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	konts	_	_	_	_	orphan	basic	2-23	
+2-22	213-219	deviņi	*	*	Nom	*	*	Masc	*	*	Card	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpn	*	deviņi	_	_	_	_	nummod	basic	2-23	
+2-23	220-226	punkti	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	punkts	_	_	_	_	conj	basic	2-8	
+2-24	227-229	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-26	
+2-25	230-239	garantēta	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdfsnpsnpn	*	garantēt	_	_	_	_	amod	basic	2-26	
+2-26	240-245	vieta	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	vieta	_	_	_	_	conj	basic	2-23	
+2-27	246-257	izslēgšanas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	izslēgšana	_	_	_	_	nmod	basic	2-28	
+2-28	258-264	spēlēs	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl5	*	spēle	_	_	_	_	acl	basic	2-26	
+2-29	264-265	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-8	

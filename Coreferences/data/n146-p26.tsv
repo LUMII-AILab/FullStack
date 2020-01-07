@@ -1,0 +1,59 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=6. Ādažu novada pašvaldībai nodot publiskos ūdeņus atpakaļ valstij, sastādot attiecīgu pieņemšanas un nodošanas aktu, ja tie vairs netiek izmantoti šā rīkojuma 3. un 4. punktā minēto mērķu īstenošanai, un par saviem līdzekļiem dzēst ierakstu Nekustamā īpašuma valsts kadastra informācijas sistēmā par nekustamā īpašuma valdītāju.
+1-1	0-2	6.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	6.	_	_	_	_	discourse	basic	1-5	
+1-2	3-8	Ādažu	*	*	Gen	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	npmdg2	*	Ādaži	organization[1]|GPE[2]|GPE[3]	*[1]|https://en.wikipedia.org/wiki/Ādaži\_Municipality[2]|https://en.wikipedia.org/wiki/Ādaži[3]	*->2-1	*[2]	nmod	basic	1-3	
+1-3	9-15	novada	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	novads	organization[1]|GPE[2]	*[1]|https://en.wikipedia.org/wiki/Ādaži\_Municipality[2]	*->2-1	*[2]	nmod	basic	1-4	
+1-4	16-27	pašvaldībai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	*	pašvaldība	organization[1]	*[1]	*->2-1	*[2]	nsubj	basic	1-5	
+1-5	28-33	nodot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	*	nodot	_	_	_	_	root	basic	1-5	
+1-6	34-43	publiskos	*	*	Acc	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpayp	*	publisks	_	_	_	_	amod	basic	1-7	
+1-7	44-50	ūdeņus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa2	*	ūdens	_	_	*->1-1	*[1]	obj	basic	1-5	
+1-8	51-58	atpakaļ	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	atpakaļ	_	_	_	_	advmod	basic	1-5	
+1-9	59-66	valstij	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd6	*	valsts	_	_	_	_	iobj	basic	1-5	
+1-10	66-67	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-11	
+1-11	68-76	sastādot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	*	*	vmnpu0000000n	*	sastādīt	_	_	_	_	advcl	basic	1-5	
+1-12	77-86	attiecīgu	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsanp	*	attiecīga	_	_	_	_	amod	basic	1-16	
+1-13	87-98	pieņemšanas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	pieņemšana	_	_	_	_	nmod	basic	1-16	
+1-14	99-101	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-15	
+1-15	102-111	nodošanas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	nodošana	_	_	_	_	conj	basic	1-13	
+1-16	112-116	aktu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	akts	_	_	_	_	nmod	basic	1-11	
+1-17	116-117	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-22	
+1-18	118-120	ja	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ja	_	_	_	_	mark	basic	1-22	
+1-19	121-124	tie	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpnn	*	tie	_	_	*->1-2	*[1]	nsubj:pass	basic	1-22	
+1-20	125-130	vairs	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	vairs	_	_	_	_	advmod	basic	1-22	
+1-21	131-137	netiek	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vtnipi130ay	*	netikt	_	_	_	_	aux:pass	basic	1-22	
+1-22	138-147	izmantoti	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmpnpsnpn	*	izmantot	_	_	_	_	dep	basic	1-5	
+1-23	148-150	šā	*	*	Gen	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msgn	*	šis	_	_	_	_	det	basic	1-24	
+1-24	151-159	rīkojuma	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	rīkojums	_	_	_	_	nmod	basic	1-28	
+1-25	160-162	3.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	3.	_	_	_	_	amod	basic	1-28	
+1-26	163-165	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-27	
+1-27	166-168	4.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	4.	_	_	_	_	conj	basic	1-25	
+1-28	169-175	punktā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	punkts	_	_	_	_	obl	basic	1-29	
+1-29	176-182	minēto	*	Perf	Gen	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmpgpsypn	*	minēt	_	_	_	_	amod	basic	1-30	
+1-30	183-188	mērķu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	mērķis	_	_	_	_	nmod	basic	1-31	
+1-31	189-200	īstenošanai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	*	īstenošana	_	_	_	_	iobj	basic	1-22	
+1-32	200-201	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-22	
+1-33	202-204	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-37	
+1-34	205-208	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	par	_	_	_	_	case	basic	1-36	
+1-35	209-215	saviem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|Poss=Yes\|PronType=Prs	*	*	ps0mpdn	*	savs	_	_	*->2-2	*[2]	det	basic	1-36	
+1-36	216-226	līdzekļiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd2	*	līdzeklis	_	_	_	_	obl	basic	1-37	
+1-37	227-232	dzēst	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	*	dzēst	_	_	_	_	conj	basic	1-5	
+1-38	233-241	ierakstu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	ieraksts	_	_	_	_	obj	basic	1-37	
+1-39	242-251	Nekustamā	*	*	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsgyp	*	nekustams	product[4]	*[4]	_	_	amod	basic	1-40	
+1-40	252-259	īpašuma	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	īpašums	product[4]	*[4]	_	_	nmod	basic	1-42	
+1-41	260-266	valsts	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	*	valsts	product[4]	*[4]	_	_	nmod	basic	1-42	
+1-42	267-275	kadastra	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	kadastrs	product[4]	*[4]	_	_	nmod	basic	1-43	
+1-43	276-288	informācijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	informācija	product[4]	*[4]	_	_	nmod	basic	1-44	
+1-44	289-296	sistēmā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	sistēma	product[4]	*[4]	_	_	acl	basic	1-38	
+1-45	297-300	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	1-48	
+1-46	301-310	nekustamā	*	*	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Pres	*	Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdmsgppypn	*	nekustamā	_	_	_	_	amod	basic	1-47	
+1-47	311-318	īpašuma	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	īpašums	_	_	_	_	nmod	basic	1-48	
+1-48	319-328	valdītāju	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	valdītājs	_	_	_	_	nmod	basic	1-38	
+1-49	328-329	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-5	

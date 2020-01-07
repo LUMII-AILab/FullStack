@@ -1,53 +1,53 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Latvijas futbola izlases aizsargs Kaspars Gorkšs pēc neliela atvaļinājuma šodien atsāks treniņus pirms maija beigās paredzētās Baltijas kausa izcīņas.
-1-1	0-8	Latvijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Latvija	organization[1]|GPE[2]	https://lv.wikipedia.org/wiki/Latvijas\_futbola\_izlase[1]|https://en.wikipedia.org/wiki/Latvia[2]	*[1]	*->1-1	nmod|nmod	basic|enhanced	1-3|1-3	
-1-2	9-16	futbola	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	futbols	organization[1]	https://lv.wikipedia.org/wiki/Latvijas\_futbola\_izlase[1]	*[1]	*->1-1	nmod|nmod	basic|enhanced	1-3|1-3	
-1-3	17-24	izlases	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	izlase	organization[1]	https://lv.wikipedia.org/wiki/Latvijas\_futbola\_izlase[1]	*[1]	*->1-1	nmod|nmod	basic|enhanced	1-4|1-4	
-1-4	25-33	aizsargs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	aizsargs	_	_	*[1]	*->1-1	nmod|nmod	basic|enhanced	1-5|1-5	
-1-5	34-41	Kaspars	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Kaspars	person[3]	https://en.wikipedia.org/wiki/Kaspars\_Gorkšs[3]	*[1]	*->1-2	nsubj|nsubj	basic|enhanced	1-11|1-11	
-1-6	42-48	Gorkšs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Gorkšs	person[3]	https://en.wikipedia.org/wiki/Kaspars\_Gorkšs[3]	*[1]	*->1-2	flat:name|flat	basic|enhanced	1-5|1-5	
-1-7	49-52	pēc	_	_	_	_	_	_	_	_	_	_	_	_	spsg	pēc	_	_	_	_	case|case	basic|enhanced	1-9|1-9	
-1-8	53-60	neliela	Masc	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsgnp	neliels	_	_	_	_	amod|amod	basic|enhanced	1-9|1-9	
-1-9	61-73	atvaļinājuma	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	atvaļinājums	_	_	_	_	obl|obl	basic|enhanced	1-11|1-11	
-1-10	74-80	šodien	_	_	_	_	_	_	_	_	_	_	_	_	r0t	šodien	_	_	_	_	advmod|advmod	basic|enhanced	1-11|1-11	
-1-11	81-87	atsāks	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vpnift130an	atsākt	_	_	_	_	root|root	basic|enhanced	1-11|1-11	
-1-12	88-96	treniņus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	treniņš	_	_	_	_	obj|obj	basic|enhanced	1-11|1-11	
-1-13	97-102	pirms	_	_	_	_	_	_	_	_	_	_	_	_	spsg	pirms	_	_	_	_	case|case	basic|enhanced	1-19|1-19	
-1-14	103-108	maija	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	maijs	time[4]	*[4]	_	_	nmod|nmod	basic|enhanced	1-15|1-15	
-1-15	109-115	beigās	Fem	Ptan	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Ptan	*	*	ncfdl4	beigas	time[4]	*[4]	_	_	obl|obl	basic|enhanced	1-16|1-16	
-1-16	116-126	paredzētās	Fem	Plur	Acc	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfpapsyp	paredzēt	_	_	_	_	amod|amod	basic|enhanced	1-19|1-19	
-1-17	127-135	Baltijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Baltija	event[5]|GPE[6]	https://en.wikipedia.org/wiki/Baltic\_Cup\_(football)[5]|https://en.wikipedia.org/wiki/Baltic\_states[6]	_	_	nmod|nmod	basic|enhanced	1-18|1-18	
-1-18	136-141	kausa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	kauss	event[5]	https://en.wikipedia.org/wiki/Baltic\_Cup\_(football)[5]	_	_	nmod|nmod	basic|enhanced	1-19|1-19	
-1-19	142-149	izcīņas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	izcīņa	_	_	_	_	nmod|nmod	basic|enhanced	1-12|1-12	
-1-20	149-150	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-11|1-11	
+1-1	0-8	Latvijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Latvija	organization[1]|GPE[2]	https://lv.wikipedia.org/wiki/Latvijas\_futbola\_izlase[1]|https://en.wikipedia.org/wiki/Latvia[2]	*->1-1	*[1]	nmod|nmod	basic|enhanced	1-3|1-3	
+1-2	9-16	futbola	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	futbols	organization[1]	https://lv.wikipedia.org/wiki/Latvijas\_futbola\_izlase[1]	*->1-1	*[1]	nmod|nmod	basic|enhanced	1-3|1-3	
+1-3	17-24	izlases	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	izlase	organization[1]	https://lv.wikipedia.org/wiki/Latvijas\_futbola\_izlase[1]	*->1-1	*[1]	nmod|nmod	basic|enhanced	1-4|1-4	
+1-4	25-33	aizsargs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	aizsargs	_	_	*->1-1	*[1]	nmod|nmod	basic|enhanced	1-5|1-5	
+1-5	34-41	Kaspars	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Kaspars	person[3]	https://en.wikipedia.org/wiki/Kaspars\_Gorkšs[3]	*->1-2	*[1]	nsubj|nsubj	basic|enhanced	1-11|1-11	
+1-6	42-48	Gorkšs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Gorkšs	person[3]	https://en.wikipedia.org/wiki/Kaspars\_Gorkšs[3]	*->1-2	*[1]	flat:name|flat	basic|enhanced	1-5|1-5	
+1-7	49-52	pēc	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pēc	_	_	_	_	case|case	basic|enhanced	1-9|1-9	
+1-8	53-60	neliela	*	*	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsgnp	*	neliels	_	_	_	_	amod|amod	basic|enhanced	1-9|1-9	
+1-9	61-73	atvaļinājuma	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	atvaļinājums	_	_	_	_	obl|obl	basic|enhanced	1-11|1-11	
+1-10	74-80	šodien	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	šodien	_	_	_	_	advmod|advmod	basic|enhanced	1-11|1-11	
+1-11	81-87	atsāks	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vpnift130an	*	atsākt	_	_	_	_	root|root	basic|enhanced	1-11|1-11	
+1-12	88-96	treniņus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	treniņš	_	_	_	_	obj|obj	basic|enhanced	1-11|1-11	
+1-13	97-102	pirms	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pirms	_	_	_	_	case|case	basic|enhanced	1-19|1-19	
+1-14	103-108	maija	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	maijs	time[4]	*[4]	_	_	nmod|nmod	basic|enhanced	1-15|1-15	
+1-15	109-115	beigās	*	*	Loc	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Ptan	*	*	ncfdl4	*	beigas	time[4]	*[4]	_	_	obl|obl	basic|enhanced	1-16|1-16	
+1-16	116-126	paredzētās	*	Perf	Acc	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Plur\|Tense=Past\|VerbForm=Part	*	*	vmnpdfpapsyp	*	paredzēt	_	_	_	_	amod|amod	basic|enhanced	1-19|1-19	
+1-17	127-135	Baltijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Baltija	event[5]|GPE[6]	https://en.wikipedia.org/wiki/Baltic\_Cup\_(football)[5]|https://en.wikipedia.org/wiki/Baltic\_states[6]	_	_	nmod|nmod	basic|enhanced	1-18|1-18	
+1-18	136-141	kausa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	kauss	event[5]	https://en.wikipedia.org/wiki/Baltic\_Cup\_(football)[5]	_	_	nmod|nmod	basic|enhanced	1-19|1-19	
+1-19	142-149	izcīņas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	izcīņa	_	_	_	_	nmod|nmod	basic|enhanced	1-12|1-12	
+1-20	149-150	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	1-11|1-11	
 
 #Text=Joprojām nav zināms, kurā klubā viņš spēlēs nākamsezon, bet patlaban reālākā izskatās pievienošanās Anglijas Līgas čempionāta klubam Burnley.
-2-1	152-160	Joprojām	_	_	_	_	_	_	_	_	_	_	_	_	r0t	joprojām	_	_	_	_	advmod|advmod	basic|enhanced	2-3|2-3	
-2-2	161-164	nav	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30ay	nebūt	_	_	_	_	aux|aux	basic|enhanced	2-3|2-3	
-2-3	165-171	zināms	Masc	Sing	Nom	Pos	*	Pres	*	Pass	*	Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	*	vmnpdmsnppnp	zināt	_	_	_	_	root|root	basic|enhanced	2-3|2-3	
-2-4	171-172	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-8|2-8	
-2-5	173-177	kurā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msln	kurš	_	_	_	_	det|det	basic|enhanced	2-6|2-6	
-2-6	178-183	klubā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	klubs	_	_	_	_	obl|obl	basic|enhanced	2-8|2-8	
-2-7	184-188	viņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msnn	viņš	_	_	*[1]	*->1-3	nsubj|nsubj	basic|enhanced	2-8|2-8	
-2-8	189-195	spēlēs	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vmnift230an	spēlēt	_	_	_	_	csubj|csubj	basic|enhanced	2-3|2-3	
-2-9	196-206	nākamsezon	_	_	_	_	_	_	_	_	_	_	_	_	r0t	nākamsezon	_	_	_	_	advmod|advmod	basic|enhanced	2-8|2-8	
-2-10	206-207	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-14|2-14	
-2-11	208-211	bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	_	_	cc|cc	basic|enhanced	2-14|2-14	
-2-12	212-220	patlaban	_	_	_	_	_	_	_	_	_	_	_	_	r0t	patlaban	_	_	_	_	advmod|advmod	basic|enhanced	2-14|2-14	
-2-13	221-228	reālākā	Fem	Sing	Nom	Cmp	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Fem\|Number=Sing	*	*	arfsnyc	reāla	_	_	_	_	xcomp|xcomp	basic|enhanced	2-14|2-14	
-2-14	229-237	izskatās	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcyipt330an	izskatīties	_	_	_	_	conj|conj	basic|enhanced	2-3|2-3	
-2-15	238-251	pievienošanās	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsnr	pievienošanās	_	_	_	_	nsubj|nsubj	basic|enhanced	2-14|2-14	
-2-16	252-260	Anglijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Anglija	event[7]|GPE[8]	https://en.wikipedia.org/wiki/EFL\_Championship[7]|https://en.wikipedia.org/wiki/United\_Kingdom[8]	*[2]	*->2-1	nmod|nmod	basic|enhanced	2-17|2-17	
-2-17	261-266	Līgas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	līga	event[7]	https://en.wikipedia.org/wiki/EFL\_Championship[7]	*[2]	*->2-1	nmod|nmod	basic|enhanced	2-18|2-18	
-2-18	267-277	čempionāta	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	čempionāts	event[7]	https://en.wikipedia.org/wiki/EFL\_Championship[7]	*[2]	*->2-1	nmod|nmod	basic|enhanced	2-20|2-20	
-2-19	278-284	klubam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	klubs	_	_	*[2]	*->2-1	nmod|nmod	basic|enhanced	2-20|2-20	
-2-20	285-292	Burnley	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Burnley	organization	https://en.wikipedia.org/wiki/Burnley\_F.C.	*[2]	*->2-2	iobj|iobj	basic|enhanced	2-15|2-15	
-2-21	292-293	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	2-3|2-3	
+2-1	152-160	Joprojām	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	joprojām	_	_	_	_	advmod|advmod	basic|enhanced	2-3|2-3	
+2-2	161-164	nav	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30ay	*	nebūt	_	_	_	_	aux|aux	basic|enhanced	2-3|2-3	
+2-3	165-171	zināms	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Pres	*	Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdmsnppnp	*	zināt	_	_	_	_	root|root	basic|enhanced	2-3|2-3	
+2-4	171-172	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	2-8|2-8	
+2-5	173-177	kurā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msln	*	kurš	_	_	_	_	det|det	basic|enhanced	2-6|2-6	
+2-6	178-183	klubā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	klubs	_	_	_	_	obl|obl	basic|enhanced	2-8|2-8	
+2-7	184-188	viņš	*	*	Nom	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msnn	*	viņš	_	_	*->1-3	*[1]	nsubj|nsubj	basic|enhanced	2-8|2-8	
+2-8	189-195	spēlēs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmnift230an	*	spēlēt	_	_	_	_	csubj|csubj	basic|enhanced	2-3|2-3	
+2-9	196-206	nākamsezon	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	nākamsezon	_	_	_	_	advmod|advmod	basic|enhanced	2-8|2-8	
+2-10	206-207	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	2-14|2-14	
+2-11	208-211	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	_	_	cc|cc	basic|enhanced	2-14|2-14	
+2-12	212-220	patlaban	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	patlaban	_	_	_	_	advmod|advmod	basic|enhanced	2-14|2-14	
+2-13	221-228	reālākā	*	*	Nom	*	Cmp	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Fem\|Number=Sing	*	*	arfsnyc	*	reāla	_	_	_	_	xcomp|xcomp	basic|enhanced	2-14|2-14	
+2-14	229-237	izskatās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcyipt330an	*	izskatīties	_	_	_	_	conj|conj	basic|enhanced	2-3|2-3	
+2-15	238-251	pievienošanās	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsnr	*	pievienošanās	_	_	_	_	nsubj|nsubj	basic|enhanced	2-14|2-14	
+2-16	252-260	Anglijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Anglija	event[7]|GPE[8]	https://en.wikipedia.org/wiki/EFL\_Championship[7]|https://en.wikipedia.org/wiki/United\_Kingdom[8]	*->2-1	*[2]	nmod|nmod	basic|enhanced	2-17|2-17	
+2-17	261-266	Līgas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	līga	event[7]	https://en.wikipedia.org/wiki/EFL\_Championship[7]	*->2-1	*[2]	nmod|nmod	basic|enhanced	2-18|2-18	
+2-18	267-277	čempionāta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	čempionāts	event[7]	https://en.wikipedia.org/wiki/EFL\_Championship[7]	*->2-1	*[2]	nmod|nmod	basic|enhanced	2-20|2-20	
+2-19	278-284	klubam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	klubs	_	_	*->2-1	*[2]	nmod|nmod	basic|enhanced	2-20|2-20	
+2-20	285-292	Burnley	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Burnley	organization	https://en.wikipedia.org/wiki/Burnley\_F.C.	*->2-2	*[2]	iobj|iobj	basic|enhanced	2-15|2-15	
+2-21	292-293	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	2-3|2-3	

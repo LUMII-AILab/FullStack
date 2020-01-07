@@ -1,24 +1,24 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Sāksim ar vienu personīgu jautājumu.
-1-1	0-6	Sāksim	*	Plur	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	1	*	vmnift11pan	sākt	_	_	root	basic	1-1	
-1-2	7-9	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	case	basic	1-5	
-1-3	10-15	vienu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|NumType=Card	*	*	mcsmsa	viens	_	_	nummod	basic	1-5	
-1-4	16-25	personīgu	Masc	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsanp	personīgs	_	_	amod	basic	1-5	
-1-5	26-35	jautājumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	jautājums	_	_	iobj	basic	1-1	
-1-6	35-36	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	1-1	
+1-1	0-6	Sāksim	*	*	*	*	*	*	Ind	*	*	Plur	1	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmnift11pan	*	sākt	_	_	root	basic	1-1	
+1-2	7-9	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	case	basic	1-5	
+1-3	10-15	vienu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|NumType=Card	*	*	mcsmsa	*	viens	_	_	nummod	basic	1-5	
+1-4	16-25	personīgu	*	*	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsanp	*	personīgs	_	_	amod	basic	1-5	
+1-5	26-35	jautājumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	jautājums	_	_	iobj	basic	1-1	
+1-6	35-36	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	1-1	
 
 #Text=Vai jūs atcerieties savu pirmo grāmatu?
-2-1	38-41	Vai	_	_	_	_	_	_	_	_	_	_	_	_	q	vai	_	_	discourse	basic	2-3	
-2-2	42-45	jūs	*	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Number=Plur\|Person=2\|PronType=Prs	2	*	pp20pnn	jūs	*[1]	*->1-1	nsubj	basic	2-3	
-2-3	46-57	atcerieties	*	Plur	*	*	*	*	Imp	Act	*	Mood=Imp\|Number=Plur\|Person=2\|Polarity=Pos\|Reflex=Yes\|VerbForm=Fin\|Voice=Act	2	*	vmym0t32pan	atcerēties	_	_	root	basic	2-3	
-2-4	58-62	savu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0fsan	sava	*[1]	*->1-2	det	basic	2-6	
-2-5	63-68	pirmo	Fem	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|NumType=Ord	*	*	mosfsa	pirmā	_	_	amod	basic	2-6	
-2-6	69-76	grāmatu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	grāmata	_	_	obj	basic	2-3	
-2-7	76-77	?	_	_	_	_	_	_	_	_	_	_	_	_	zs	?	_	_	punct	basic	2-3	
+2-1	38-41	Vai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	vai	_	_	discourse	basic	2-3	
+2-2	42-45	jūs	*	*	Nom	*	*	*	*	*	*	Plur	2	*	*	*	*	*	Case=Nom\|Number=Plur\|Person=2\|PronType=Prs	*	*	pp20pnn	*	jūs	*->1-1	*[1]	nsubj	basic	2-3	
+2-3	46-57	atcerieties	*	*	*	*	*	*	Imp	*	*	Plur	2	*	*	*	*	*	Mood=Imp\|Number=Plur\|Person=2\|Polarity=Pos\|Reflex=Yes\|VerbForm=Fin\|Voice=Act	*	Act	vmym0t32pan	*	atcerēties	_	_	root	basic	2-3	
+2-4	58-62	savu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0fsan	*	sava	*->1-2	*[1]	det	basic	2-6	
+2-5	63-68	pirmo	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|NumType=Ord	*	*	mosfsa	*	pirmā	_	_	amod	basic	2-6	
+2-6	69-76	grāmatu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	grāmata	_	_	obj	basic	2-3	
+2-7	76-77	?	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	?	_	_	punct	basic	2-3	

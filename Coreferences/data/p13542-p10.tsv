@@ -1,0 +1,53 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Pirms katras ārsta vizītes pavaicā vīram, vai viņam nav kādi jautājumi, ko arī viņš vēlētos uzzināt.
+1-1	0-5	Pirms	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pirms	_	_	case	basic	1-4	
+1-2	6-12	katras	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|PronType=Tot	*	*	pg0fsgn	*	katra	_	_	det	basic	1-4	
+1-3	13-18	ārsta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	ārsts	_	_	nmod	basic	1-4	
+1-4	19-26	vizītes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	vizīte	_	_	obl	basic	1-5	
+1-5	27-34	pavaicā	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt230an	*	pavaicāt	_	_	root	basic	1-5	
+1-6	35-40	vīram	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	vīrs	*->1-1	*[1]	iobj	basic	1-5	
+1-7	40-41	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-10	
+1-8	42-45	vai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	vai	_	_	mark	basic	1-10	
+1-9	46-51	viņam	*	*	Dat	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msdn	*	viņš	*->1-2	*[1]	obl	basic	1-10	
+1-10	52-55	nav	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipii30ay	*	nebūt	_	_	ccomp	basic	1-5	
+1-11	56-60	kādi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Ind	*	*	pi0mpnn	*	kāds	_	_	det	basic	1-12	
+1-12	61-70	jautājumi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	jautājums	*->2-1	*[2]	nsubj	basic	1-10	
+1-13	70-71	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-17	
+1-14	72-74	ko	*	*	Acc	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Acc\|PronType=Rel	*	*	pr000an	*	kas	*->2-2	*[2]	obj	basic	1-18	
+1-15	75-78	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	discourse	basic	1-16	
+1-16	79-83	viņš	*	*	Nom	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msnn	*	viņš	*->1-3	*[1]	nsubj	basic	1-17	
+1-17	84-91	vēlētos	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|Reflex=Yes\|VerbForm=Fin\|Voice=Act	*	Act	vmyc0i300an	*	vēlēties	_	_	acl	basic	1-12	
+1-18	92-99	uzzināt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	*	uzzināt	_	_	xcomp	basic	1-17	
+1-19	99-100	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	1-5	
+
+#Text=Pieraksti tos, jo vizītes satraukumā daudzas svarīgas lietas mēdz aizmirsties.
+2-1	102-111	Pieraksti	*	*	*	*	*	*	Imp	*	*	Sing	2	*	*	*	*	*	Mood=Imp\|Number=Sing\|Person=2\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vmnm0t32san	*	pierakstīt	_	_	root	basic	2-1	
+2-2	112-115	tos	*	*	Acc	*	*	Masc	*	*	*	Plur	3	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Dem	*	*	pd3mpan	*	tas	*->2-3	*[2]	obj	basic	2-1	
+2-3	115-116	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	2-10	
+2-4	117-119	jo	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	jo	_	_	mark	basic	2-10	
+2-5	120-127	vizītes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	vizīte	_	_	nmod	basic	2-6	
+2-6	128-138	satraukumā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	satraukums	_	_	obl	basic	2-10	
+2-7	139-146	daudzas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|PronType=Ind	*	*	pi0fpnn	*	daudzas	_	_	det	basic	2-9	
+2-8	147-155	svarīgas	*	*	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpnnp	*	svarīga	_	_	amod	basic	2-9	
+2-9	156-162	lietas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	lieta	_	_	nsubj	basic	2-10	
+2-10	163-167	mēdz	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vonipi130an	*	mēgt	_	_	advcl	basic	2-1	
+2-11	168-179	aizmirsties	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i1000n	*	aizmirsties	_	_	xcomp	basic	2-10	
+2-12	179-180	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	2-1	
+
+#Text=Iespējams, jūs izlemjat pie ārsta doties kopā!
+3-1	182-191	Iespējams	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	iespējams	_	_	discourse	basic	3-4	
+3-2	191-192	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	3-1	
+3-3	193-196	jūs	*	*	Nom	*	*	*	*	*	*	Plur	2	*	*	*	*	*	Case=Nom\|Number=Plur\|Person=2\|PronType=Prs	*	*	pp20pnn	*	jūs	_	_	nsubj	basic	3-4	
+3-4	197-205	izlemjat	*	*	*	*	*	*	Ind	*	*	Plur	2	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=2\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt12pan	*	izlemt	_	_	root	basic	3-4	
+3-5	206-209	pie	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pie	_	_	case	basic	3-6	
+3-6	210-215	ārsta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	ārsts	_	_	iobj	basic	3-7	
+3-7	216-222	doties	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i1000n	*	doties	_	_	ccomp	basic	3-4	
+3-8	223-227	kopā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	kopā	_	_	advmod	basic	3-7	
+3-9	227-228	!	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	!	_	_	punct	basic	3-4	

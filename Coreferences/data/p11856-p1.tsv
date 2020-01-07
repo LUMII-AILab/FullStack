@@ -1,0 +1,63 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=3.augustā pulksten 20.31 tika saņemts izsaukums uz Alūksnes novada Malienas pagastu, kur pēc ceļu satiksmes negadījuma vieglajā automašīnā bija iespiests viens vīrietis.
+1-1	0-2	3.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	3.	time[1]	*[1]	_	_	amod	basic	1-2	
+1-2	2-9	augustā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	augusts	time[1]	*[1]	_	_	obl	basic	1-6	
+1-3	10-18	pulksten	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	pulksten	time[1]	*[1]	_	_	advmod	basic	1-4	
+1-4	19-24	20.31	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	20.31	time[1]	*[1]	_	_	nummod	basic	1-6	
+1-5	25-29	tika	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vtnisi130an	*	tikt	_	_	_	_	aux:pass	basic	1-6	
+1-6	30-37	saņemts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnpsnpn	*	saņemt	_	_	_	_	root	basic	1-6	
+1-7	38-47	izsaukums	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	izsaukums	_	_	_	_	nsubj:pass	basic	1-6	
+1-8	48-50	uz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	uz	_	_	_	_	case	basic	1-12	
+1-9	51-59	Alūksnes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	*	Alūksne	GPE[2]|GPE[3]	https://en.wikipedia.org/wiki/Alūksne\_Municipality[2]|https://en.wikipedia.org/wiki/Alūksne[3]	*->1-1	*[1]	nmod	basic	1-10	
+1-10	60-66	novada	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	novads	GPE[2]	https://en.wikipedia.org/wiki/Alūksne\_Municipality[2]	*->1-1	*[1]	nmod	basic	1-12	
+1-11	67-75	Malienas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	maliena	GPE[4]|GPE[5]	https://en.wikipedia.org/wiki/Maliena\_Parish[4]|https://lv.wikipedia.org/wiki/Maliena[5]	*->1-1	*[1]	nmod	basic	1-12	
+1-12	76-83	pagastu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	pagasts	GPE[4]	https://en.wikipedia.org/wiki/Maliena\_Parish[4]	*->1-1	*[1]	nmod	basic	1-7	
+1-13	83-84	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-22	
+1-14	85-88	kur	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0p	*	kur	_	_	*->1-2	*[1]	advmod	basic	1-22	
+1-15	89-92	pēc	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	pēc	_	_	_	_	case	basic	1-18	
+1-16	93-97	ceļu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	ceļš	_	_	_	_	nmod	basic	1-17	
+1-17	98-107	satiksmes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	satiksme	_	_	_	_	nmod	basic	1-18	
+1-18	108-118	negadījuma	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	negadījums	_	_	_	_	obl	basic	1-22	
+1-19	119-127	vieglajā	*	*	Loc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affslyp	*	viegla	_	_	_	_	amod	basic	1-20	
+1-20	128-138	automašīnā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	automašīna	_	_	_	_	obl	basic	1-22	
+1-21	139-143	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vcnisii30an	*	būt	_	_	_	_	aux:pass	basic	1-22	
+1-22	144-153	iespiests	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnpsnpn	*	iespiest	_	_	_	_	acl	basic	1-12	
+1-23	154-159	viens	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|NumType=Card	*	*	mcsmsn	*	viens	_	_	_	_	nummod	basic	1-24	
+1-24	160-168	vīrietis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	vīrietis	_	_	_	_	nsubj:pass	basic	1-22	
+1-25	168-169	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-6	
+
+#Text=Pirms VUGD ierašanās trīs vīrieši no automašīnas izkļuva saviem spēkiem, savukārt glābēji vienu vīrieti ar nestuvju palīdzību nogādāja līdz neatliekamās medicīniskās palīdzības mediķu automašīnai.
+2-1	171-176	Pirms	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pirms	_	_	_	_	case	basic	2-3	
+2-2	177-181	VUGD	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	VUGD	organization	https://lv.wikipedia.org/wiki/Valsts\_ugunsdzēsības\_un\_glābšanas\_dienests	_	_	nmod	basic	2-3	
+2-3	182-191	ierašanās	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsgr	*	ierašanās	_	_	_	_	obl	basic	2-8	
+2-4	192-196	trīs	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpn	*	trīs	_	_	_	_	nummod	basic	2-5	
+2-5	197-204	vīrieši	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn2	*	vīrietis	_	_	_	_	nsubj	basic	2-8	
+2-6	205-207	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case	basic	2-7	
+2-7	208-219	automašīnas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	automašīna	_	_	_	_	obl	basic	2-8	
+2-8	220-227	izkļuva	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnisi130an	*	izkļūt	_	_	_	_	root	basic	2-8	
+2-9	228-234	saviem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|Poss=Yes\|PronType=Prs	*	*	ps0mpdn	*	savs	_	_	_	_	det	basic	2-10	
+2-10	235-242	spēkiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	spēks	_	_	_	_	obl	basic	2-8	
+2-11	242-243	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-19	
+2-12	244-252	savukārt	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	savukārt	_	_	_	_	advmod	basic	2-19	
+2-13	253-260	glābēji	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	glābējs	_	_	_	_	nsubj	basic	2-19	
+2-14	261-266	vienu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|NumType=Card	*	*	mcsmsa	*	viens	_	_	_	_	nummod	basic	2-15	
+2-15	267-274	vīrieti	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	*	vīrietis	_	_	_	_	obj	basic	2-19	
+2-16	275-277	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	2-18	
+2-17	278-286	nestuvju	*	*	Gen	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Ptan	*	*	ncfdg5	*	nestuves	_	_	_	_	nmod	basic	2-18	
+2-18	287-296	palīdzību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	palīdzība	_	_	_	_	obl	basic	2-19	
+2-19	297-305	nogādāja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist230an	*	nogādāt	_	_	_	_	conj	basic	2-8	
+2-20	306-310	līdz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsd	*	līdz	_	_	_	_	case	basic	2-25	
+2-21	311-323	neatliekamās	*	*	Gen	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsgyp	*	neatliekama	_	_	_	_	amod	basic	2-23	
+2-22	324-336	medicīniskās	*	*	Gen	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsgyp	*	medicīniska	_	_	_	_	amod	basic	2-23	
+2-23	337-347	palīdzības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	palīdzība	_	_	_	_	nmod	basic	2-24	
+2-24	348-354	mediķu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	mediķis	_	_	_	_	nmod	basic	2-25	
+2-25	355-366	automašīnai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	*	automašīna	_	_	_	_	obl	basic	2-19	
+2-26	366-367	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-8	

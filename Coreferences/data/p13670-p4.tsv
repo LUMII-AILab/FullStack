@@ -1,0 +1,70 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Grupa nosēdīsies arī Lietuvā, kur 23. jūnijā sniegs koncertu Kauņas Žalgiris arēnā.
+1-1	0-5	Grupa	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	grupa	_	_	_	_	nsubj	basic	1-2	
+1-2	6-16	nosēdīsies	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmyifi130an	*	nosēsties	_	_	_	_	root	basic	1-2	
+1-3	17-20	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	1-4	
+1-4	21-28	Lietuvā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Lietuva	GPE	https://en.wikipedia.org/wiki/Lithuania	*->1-1	*[1]	obl	basic	1-2	
+1-5	28-29	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-9	
+1-6	30-33	kur	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0t	*	kur	_	_	*->1-2	*[1]	advmod	basic	1-9	
+1-7	34-37	23.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	23.	time[1]	*[1]	_	_	amod	basic	1-8	
+1-8	38-44	jūnijā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	jūnijs	time[1]	*[1]	_	_	obl	basic	1-9	
+1-9	45-51	sniegs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmnift130an	*	sniegt	_	_	_	_	advcl	basic	1-4	
+1-10	52-60	koncertu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	koncerts	_	_	_	_	obj	basic	1-9	
+1-11	61-67	Kauņas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Kauņa	GPE	https://en.wikipedia.org/wiki/Kaunas	_	_	nmod	basic	1-12	
+1-12	68-76	Žalgiris	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	Žalgiris	location[2]	https://en.wikipedia.org/wiki/Žalgiris\_Arena[2]	_	_	nmod	basic	1-13	
+1-13	77-82	arēnā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	arēna	location[2]	https://en.wikipedia.org/wiki/Žalgiris\_Arena[2]	_	_	obl	basic	1-9	
+1-14	82-83	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-2	
+
+#Text=The Book of Souls turneja , starp citu, ir pirmā reize, kad Iron Maiden lidmašīnu izmanto arī Eiropas turnejā.
+2-1	85-88	The	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	the	event[3]	*[3]	_	_	nmod	basic	2-5	
+2-2	89-93	Book	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Book	event[3]	*[3]	_	_	flat:name	basic	2-1	
+2-3	94-96	of	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	of	event[3]	*[3]	_	_	flat:name	basic	2-1	
+2-4	97-102	Souls	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Souls	event[3]	*[3]	_	_	flat:name	basic	2-1	
+2-5	103-110	turneja	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	turneja	event[3]	*[3]	_	_	nsubj	basic	2-12	
+2-6	111-112	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-8	
+2-7	113-118	starp	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	starp	_	_	_	_	case	basic	2-8	
+2-8	119-123	citu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Ind	*	*	pi0msan	*	cits	_	_	_	_	discourse	basic	2-12	
+2-9	123-124	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-8	
+2-10	125-127	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	2-12	
+2-11	128-133	pirmā	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|NumType=Ord	*	*	mosfsn	*	pirmā	_	_	*->2-1	*[2]	amod	basic	2-12	
+2-12	134-139	reize	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	reize	_	_	*->2-1	*[2]	root	basic	2-12	
+2-13	139-140	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-18	
+2-14	141-144	kad	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0t	*	kad	_	_	*->2-2	*[2]	advmod	basic	2-18	
+2-15	145-149	Iron	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Iron	entity[4]	https://en.wikipedia.org/wiki/Iron\_Maiden[4]	_	_	nsubj	basic	2-18	
+2-16	150-156	Maiden	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Maiden	entity[4]	https://en.wikipedia.org/wiki/Iron\_Maiden[4]	_	_	flat:name	basic	2-15	
+2-17	157-166	lidmašīnu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	lidmašīna	_	_	_	_	obj	basic	2-18	
+2-18	167-174	izmanto	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt230an	*	izmantot	_	_	_	_	acl	basic	2-12	
+2-19	175-178	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	2-21	
+2-20	179-186	Eiropas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Eiropa	location	https://en.wikipedia.org/wiki/Europe	_	_	nmod	basic	2-21	
+2-21	187-194	turnejā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	turneja	_	_	_	_	obl	basic	2-18	
+2-22	194-195	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-12	
+
+#Text=Tikai 17. jūnijā uz Gēteborgas Ullvei stadionu grupa dosies, izmantojot sauszemes ceļus, jo šādi loģiska būs izdevīgāka.
+3-1	197-202	Tikai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tikai	_	_	_	_	discourse	basic	3-3	
+3-2	203-206	17.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	17.	time[5]	*[5]	_	_	amod	basic	3-3	
+3-3	207-213	jūnijā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	jūnijs	time[5]	*[5]	_	_	obl	basic	3-9	
+3-4	214-216	uz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	uz	_	_	_	_	case	basic	3-7	
+3-5	217-227	Gēteborgas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Gēteborga	GPE	https://en.wikipedia.org/wiki/Gothenburg	_	_	nmod	basic	3-7	
+3-6	228-234	Ullvei	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Ullvei	location[6]	*[6]	_	_	nmod	basic	3-7	
+3-7	235-243	stadionu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	stadions	location[6]	*[6]	_	_	acl	basic	3-9	
+3-8	244-249	grupa	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	grupa	_	_	_	_	nsubj	basic	3-9	
+3-9	250-256	dosies	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmyifi130an	*	doties	_	_	_	_	root	basic	3-9	
+3-10	256-257	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-11	
+3-11	258-268	izmantojot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	*	*	vmnpu0000000n	*	izmantot	_	_	_	_	advcl	basic	3-9	
+3-12	269-278	sauszemes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	sauszeme	_	_	_	_	nmod	basic	3-13	
+3-13	279-284	ceļus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	ceļš	_	_	_	_	obj	basic	3-11	
+3-14	284-285	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-19	
+3-15	286-288	jo	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	jo	_	_	_	_	mark	basic	3-19	
+3-16	289-293	šādi	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	šādi	_	_	_	_	advmod	basic	3-19	
+3-17	294-301	loģiska	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	loģistika	_	_	_	_	nsubj	basic	3-19	
+3-18	302-305	būs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vcnifii30an	*	būt	_	_	_	_	cop	basic	3-19	
+3-19	306-316	izdevīgāka	*	*	Nom	*	Cmp	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Fem\|Number=Sing	*	*	affsnnc	*	izdevīga	_	_	_	_	advcl	basic	3-11	
+3-20	316-317	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-9	

@@ -1,0 +1,56 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Jauns auto stāvlaukums ar 50 auto stāvvietām izbūvēts dzelzceļa stacijas "Tukums 1" teritorijā.
+1-1	0-5	Jauns	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	jauns	_	_	_	_	amod	basic	1-3	
+1-2	6-10	auto	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	nc0000	*	auto	_	_	_	_	nmod	basic	1-3	
+1-3	11-22	stāvlaukums	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	stāvlaukums	_	_	_	_	nsubj:pass	basic	1-8	
+1-4	23-25	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	_	_	case	basic	1-7	
+1-5	26-28	50	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	50	_	_	_	_	nummod	basic	1-7	
+1-6	29-33	auto	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	nc0000	*	auto	_	_	_	_	nmod	basic	1-7	
+1-7	34-44	stāvvietām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	*	stāvvieta	_	_	_	_	nmod	basic	1-3	
+1-8	45-53	izbūvēts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnpsnpn	*	izbūvēt	_	_	_	_	root	basic	1-8	
+1-9	54-63	dzelzceļa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	dzelzceļš	_	_	*->1-1	*[1]	nmod	basic	1-10	
+1-10	64-72	stacijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	stacija	_	_	*->1-1	*[1]	nmod	basic	1-12	
+1-11	73-74	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	location[1]	https://en.wikipedia.org/wiki/Tukums\_I\_Station[1]	*->1-2	*[1]	punct	basic	1-12	
+1-12	74-80	Tukums	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Tukums	location[1]	https://en.wikipedia.org/wiki/Tukums\_I\_Station[1]	*->1-2	*[1]	nmod	basic	1-15	
+1-13	81-82	1	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	1	location[1]	https://en.wikipedia.org/wiki/Tukums\_I\_Station[1]	*->1-2	*[1]	flat:name	basic	1-12	
+1-14	82-83	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	location[1]	https://en.wikipedia.org/wiki/Tukums\_I\_Station[1]	*->1-2	*[1]	punct	basic	1-12	
+1-15	84-94	teritorijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	teritorija	_	_	_	_	obl	basic	1-8	
+1-16	94-95	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-8	
+
+#Text=Stāvlaukumā ir izbūvēta teritorijas apgaismojuma sistēma un lietus ūdens novadīšanas sistēma, veikta stāvlaukuma bruģēšana un labiekārtošana.
+2-1	97-108	Stāvlaukumā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	stāvlaukums	_	_	_	_	obl	basic	2-3	
+2-2	109-111	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	aux:pass	basic	2-3	
+2-3	112-120	izbūvēta	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsnpsnpn	*	izbūvēt	_	_	_	_	root	basic	2-3	
+2-4	121-132	teritorijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	teritorija	_	_	_	_	nmod	basic	2-5	
+2-5	133-145	apgaismojuma	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	apgaismojums	_	_	_	_	nmod	basic	2-6	
+2-6	146-153	sistēma	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	sistēma	_	_	_	_	obl	basic	2-3	
+2-7	154-156	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-11	
+2-8	157-163	lietus	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg3	*	lietus	_	_	_	_	nmod	basic	2-9	
+2-9	164-169	ūdens	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	*	ūdens	_	_	_	_	nmod	basic	2-10	
+2-10	170-181	novadīšanas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	novadīšana	_	_	_	_	nmod	basic	2-11	
+2-11	182-189	sistēma	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	sistēma	_	_	_	_	conj	basic	2-6	
+2-12	189-190	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-13	
+2-13	191-197	veikta	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsnpsnpn	*	veikt	_	_	_	_	conj	basic	2-3	
+2-14	198-209	stāvlaukuma	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	stāvlaukums	_	_	_	_	nmod	basic	2-15	
+2-15	210-219	bruģēšana	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	bruģēšana	_	_	_	_	obl	basic	2-13	
+2-16	220-222	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-17	
+2-17	223-237	labiekārtošana	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	labiekārtošana	_	_	_	_	conj	basic	2-15	
+2-18	237-238	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-3	
+
+#Text=Darbus veica SIA "Ribetons ceļi".
+3-1	240-246	Darbus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	darbs	_	_	_	_	obj	basic	3-2	
+3-2	247-252	veica	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist130an	*	veikt	_	_	_	_	root	basic	3-2	
+3-3	253-256	SIA	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	*	SIA	_	_	*->2-1	*[2]	nmod	basic	3-5	
+3-4	257-258	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[2]	*[2]	*->2-2	*[2]	punct	basic	3-5	
+3-5	258-266	Ribetons	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Ribetons	organization[2]	*[2]	*->2-2	*[2]	nsubj	basic	3-2	
+3-6	267-271	ceļi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	ceļš	organization[2]	*[2]	*->2-2	*[2]	flat:name	basic	3-5	
+3-7	271-272	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[2]	*[2]	*->2-2	*[2]	punct	basic	3-5	
+3-8	272-273	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-2	

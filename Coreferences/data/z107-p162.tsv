@@ -1,0 +1,150 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Cilvēkdrošības jēdzienu pirmo reizi plašāka Latvijas sabiedrības daļa iepazina 2003. gadā, kad tika prezentēts ANO Tautas attīstības pārskats (2002./2003. gads) par cilvēkdrošību Latvijā, analizējot galvenokārt cilvēkdrošības iekšpolitisko dimensiju.
+1-1	0-14	Cilvēkdrošības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	Cilvēkdrošība	_	_	_	_	nmod	basic	1-2	
+1-2	15-23	jēdzienu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	jēdziens	_	_	_	_	nmod	basic	1-9	
+1-3	24-29	pirmo	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|NumType=Ord	*	*	mosfsa	*	pirmā	_	_	_	_	amod	basic	1-4	
+1-4	30-35	reizi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	reize	_	_	_	_	obl	basic	1-9	
+1-5	36-43	plašāka	*	*	Nom	*	Cmp	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Fem\|Number=Sing	*	*	affsnnc	*	plaša	_	_	_	_	amod	basic	1-8	
+1-6	44-52	Latvijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	_	_	nmod	basic	1-7	
+1-7	53-64	sabiedrības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	sabiedrība	_	_	_	_	nmod	basic	1-8	
+1-8	65-69	daļa	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	daļa	_	_	_	_	nsubj	basic	1-9	
+1-9	70-78	iepazina	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist130an	*	iepazīt	_	_	_	_	root	basic	1-9	
+1-10	79-84	2003.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	2003.	time[1]	*[1]	*->1-1	*[1]	amod	basic	1-11	
+1-11	85-89	gadā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	gads	time[1]	*[1]	*->1-1	*[1]	obl	basic	1-9	
+1-12	89-90	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-15	
+1-13	91-94	kad	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0t	*	kad	_	_	*->1-2	*[1]	advmod	basic	1-15	
+1-14	95-99	tika	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vtnisi130an	*	tikt	_	_	_	_	aux:pass	basic	1-15	
+1-15	100-110	prezentēts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnpsnpn	*	prezentēt	_	_	_	_	advcl	basic	1-11	
+1-16	111-114	ANO	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	ANO	entity[2]|organization[3]	*[2]|https://en.wikipedia.org/wiki/United\_Nations[3]	_	_	nmod	basic	1-19	
+1-17	115-121	Tautas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	tauta	entity[2]	*[2]	_	_	nmod	basic	1-18	
+1-18	122-132	attīstības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	attīstība	entity[2]	*[2]	_	_	nmod	basic	1-19	
+1-19	133-141	pārskats	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	pārskats	entity[2]	*[2]	_	_	nsubj:pass	basic	1-15	
+1-20	142-143	(	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	(	_	_	_	_	punct	basic	1-24	
+1-21	143-148	2002.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	2002.	time[4]	*[4]	_	_	amod	basic	1-24	
+1-22	148-149	/	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zx	*	/	time[4]	*[4]	_	_	punct	basic	1-23	
+1-23	149-154	2003.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	2003.	time[4]	*[4]	_	_	conj	basic	1-21	
+1-24	155-159	gads	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	gads	time[4]	*[4]	_	_	discourse	basic	1-19	
+1-25	159-160	)	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	)	_	_	_	_	punct	basic	1-24	
+1-26	161-164	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	1-27	
+1-27	165-178	cilvēkdrošību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	cilvēkdrošība	_	_	_	_	nmod	basic	1-19	
+1-28	179-186	Latvijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	_	_	acl	basic	1-27	
+1-29	186-187	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-30	
+1-30	188-198	analizējot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	*	*	vmnpu0000000n	*	analizēt	_	_	_	_	advcl	basic	1-15	
+1-31	199-210	galvenokārt	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	galvenokārt	_	_	_	_	advmod	basic	1-30	
+1-32	211-225	cilvēkdrošības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	cilvēkdrošība	_	_	_	_	nmod	basic	1-34	
+1-33	226-239	iekšpolitisko	*	*	Gen	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	arfpgyp	*	iekšpolitiska	_	_	_	_	amod	basic	1-34	
+1-34	240-249	dimensiju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	dimensija	_	_	_	_	obj	basic	1-30	
+1-35	249-250	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-9	
+
+#Text=Pārskata metodoloģijas pamatā bija veiktās sabiedrības aptaujas par indivīdu galvenajiem nedrošības cēloņiem, cenšoties identificēt, kuras ir aktuālākās cilvēkdrošības jomas, kurās valdībai būtu jāuzņemas lielāka atbildība.
+2-1	252-260	Pārskata	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	pārskats	_	_	_	_	nmod	basic	2-2	
+2-2	261-274	metodoloģijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	metodoloģija	_	_	_	_	nmod	basic	2-3	
+2-3	275-281	pamatā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	pamats	_	_	_	_	obl	basic	2-4	
+2-4	282-286	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnisii30an	*	būt	_	_	_	_	root	basic	2-4	
+2-5	287-294	veiktās	*	Perf	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfpnpsypn	*	veikt	_	_	_	_	amod	basic	2-7	
+2-6	295-306	sabiedrības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	sabiedrība	_	_	_	_	nmod	basic	2-7	
+2-7	307-315	aptaujas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	aptauja	_	_	_	_	nsubj	basic	2-4	
+2-8	316-319	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	2-12	
+2-9	320-328	indivīdu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	indivīds	_	_	_	_	nmod	basic	2-11	
+2-10	329-340	galvenajiem	*	*	Dat	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpdyp	*	galvenais	_	_	_	_	amod	basic	2-12	
+2-11	341-351	nedrošības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	nedrošība	_	_	_	_	nmod	basic	2-12	
+2-12	352-360	cēloņiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd2	*	cēlonis	_	_	_	_	nmod	basic	2-7	
+2-13	360-361	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-14	
+2-14	362-371	cenšoties	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Conv	*	*	voypu0000000n	*	censties	_	_	_	_	advcl	basic	2-4	
+2-15	372-383	identificēt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	*	identificēt	_	_	_	_	xcomp	basic	2-14	
+2-16	383-384	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-17	
+2-17	385-390	kuras	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|PronType=Rel	*	*	pr0fpnn	*	kura	_	_	_	_	ccomp	basic	2-15	
+2-18	391-393	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	2-17	
+2-19	394-404	aktuālākās	*	*	Nom	*	Cmp	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Fem\|Number=Plur	*	*	affpnyc	*	aktuāla	_	_	_	_	amod	basic	2-21	
+2-20	405-419	cilvēkdrošības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	cilvēkdrošība	_	_	_	_	nmod	basic	2-21	
+2-21	420-425	jomas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	joma	_	_	*->2-1	*[2]	nsubj	basic	2-17	
+2-22	425-426	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-26	
+2-23	427-432	kurās	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur\|PronType=Rel	*	*	pr0fpln	*	kura	_	_	*->2-2	*[2]	obl	basic	2-26	
+2-24	433-441	valdībai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	*	valdība	_	_	_	_	nsubj	basic	2-26	
+2-25	442-446	būtu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vcnc0ii00an	*	būt	_	_	_	_	aux	basic	2-26	
+2-26	447-456	jāuzņemas	*	*	*	*	*	*	Nec	*	*	*	*	*	*	*	*	*	Mood=Nec\|Polarity=Pos\|Reflex=Yes\|VerbForm=Fin\|Voice=Act	*	Act	vmyd0i100an	*	uzņemties	_	_	_	_	acl	basic	2-21	
+2-27	457-464	lielāka	*	*	Nom	*	Cmp	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Fem\|Number=Sing	*	*	affsnnc	*	liela	_	_	_	_	amod	basic	2-28	
+2-28	465-474	atbildība	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	atbildība	_	_	_	_	iobj	basic	2-26	
+2-29	474-475	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-4	
+
+#Text=Šādu pieeju atzinīgi novērtēja sers Ričards Džollijs (Richard Jolly), norādot, ka subjektīvā uztvere, kas atspoguļojas sabiedrības aptaujās, ir atzīstams instruments, lai izprastu aktuālās cilvēkdrošības jomas nacionālajā līmenī.
+3-1	477-481	Šādu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsan	*	šāda	_	_	_	_	det	basic	3-2	
+3-2	482-488	pieeju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	pieeja	_	_	_	_	obj	basic	3-4	
+3-3	489-497	atzinīgi	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	atzinīgi	_	_	_	_	advmod	basic	3-4	
+3-4	498-507	novērtēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist230an	*	novērtēt	_	_	_	_	root	basic	3-4	
+3-5	508-512	sers	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	sers	_	_	*->3-1	*[3]	nmod	basic	3-6	
+3-6	513-520	Ričards	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Ričards	person[5]	https://en.wikipedia.org/wiki/Richard\_Jolly[5]	*->3-2	*[3]	nsubj	basic	3-4	
+3-7	521-529	Džollijs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Džollijs	person[5]	https://en.wikipedia.org/wiki/Richard\_Jolly[5]	*->3-2	*[3]	flat:name	basic	3-6	
+3-8	530-531	(	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	(	_	_	*->3-3	*[3]	punct	basic	3-9	
+3-9	531-538	Richard	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Richard	person[6]	https://en.wikipedia.org/wiki/Richard\_Jolly[6]	*->3-3	*[3]	discourse	basic	3-6	
+3-10	539-544	Jolly	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Jolly	person[6]	https://en.wikipedia.org/wiki/Richard\_Jolly[6]	*->3-3	*[3]	flat:name	basic	3-9	
+3-11	544-545	)	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	)	_	_	*->3-3	*[3]	punct	basic	3-9	
+3-12	545-546	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-13	
+3-13	547-554	norādot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	*	*	vmnpu0000000n	*	norādīt	_	_	_	_	advcl	basic	3-4	
+3-14	554-555	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-26	
+3-15	556-558	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	3-26	
+3-16	559-569	subjektīvā	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsnyp	*	subjektīva	_	_	_	_	amod	basic	3-17	
+3-17	570-577	uztvere	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	uztvere	_	_	*->4-1	*[4]	nsubj	basic	3-26	
+3-18	577-578	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-20	
+3-19	579-582	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->4-2	*[4]	nsubj	basic	3-20	
+3-20	583-595	atspoguļojas	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmyipi230an	*	atspoguļoties	_	_	_	_	acl	basic	3-17	
+3-21	596-607	sabiedrības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	sabiedrība	_	_	_	_	nmod	basic	3-22	
+3-22	608-616	aptaujās	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	*	aptauja	_	_	_	_	obl	basic	3-20	
+3-23	616-617	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-20	
+3-24	618-620	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	3-26	
+3-25	621-630	atzīstams	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	atzīstams	_	_	_	_	amod	basic	3-26	
+3-26	631-642	instruments	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	instruments	_	_	_	_	ccomp	basic	3-13	
+3-27	642-643	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-29	
+3-28	644-647	lai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	lai	_	_	_	_	mark	basic	3-29	
+3-29	648-656	izprastu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vmnc0t100an	*	izprast	_	_	_	_	advcl	basic	3-26	
+3-30	657-665	aktuālās	*	*	Acc	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpayp	*	aktuāla	_	_	_	_	amod	basic	3-32	
+3-31	666-680	cilvēkdrošības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	cilvēkdrošība	_	_	_	_	nmod	basic	3-32	
+3-32	681-686	jomas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	joma	_	_	_	_	obj	basic	3-29	
+3-33	687-698	nacionālajā	*	*	Loc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armslyp	*	nacionāls	_	_	_	_	amod	basic	3-34	
+3-34	699-705	līmenī	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	*	līmenis	_	_	_	_	acl	basic	3-32	
+3-35	705-706	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-4	
+
+#Text=Cilvēkdrošība Latvijas ārpolitikā ANO pārskatā netika analizēta.
+4-1	707-720	Cilvēkdrošība	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	cilvēkdrošība	_	_	_	_	nsubj:pass	basic	4-7	
+4-2	721-729	Latvijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	_	_	nmod	basic	4-3	
+4-3	730-740	ārpolitikā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	ārpolitika	_	_	_	_	acl	basic	4-1	
+4-4	741-744	ANO	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	ANO	organization	https://en.wikipedia.org/wiki/United\_Nations	_	_	nmod	basic	4-5	
+4-5	745-753	pārskatā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	pārskats	_	_	_	_	obl	basic	4-7	
+4-6	754-760	netika	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vtnisi130ay	*	netikt	_	_	_	_	aux:pass	basic	4-7	
+4-7	761-770	analizēta	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsnpsnpn	*	analizēt	_	_	_	_	root	basic	4-7	
+4-8	770-771	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	4-7	
+
+#Text=Lai gan pārskata rezultāti tika prezentēti plašākai sabiedrībai plašsaziņas līdzekļos, izpratne par cilvēkdrošības jēdzienu neaizsniedzās līdz politiskajam līmenim, paliekot nevalstiskā sektora ietvaros.
+5-1	773-776	Lai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	lai	_	_	_	_	mark	basic	5-6	
+5-2	777-780	gan	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	gan	_	_	_	_	dep	basic	5-1	
+5-3	781-789	pārskata	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	pārskats	_	_	_	_	nmod	basic	5-4	
+5-4	790-799	rezultāti	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	rezultāts	_	_	_	_	nsubj:pass	basic	5-6	
+5-5	800-804	tika	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vtnisi130an	*	tikt	_	_	_	_	aux:pass	basic	5-6	
+5-6	805-815	prezentēti	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmpnpsnpn	*	prezentēt	_	_	_	_	advcl	basic	5-16	
+5-7	816-824	plašākai	*	*	Dat	*	Cmp	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Degree=Cmp\|Gender=Fem\|Number=Sing	*	*	affsdnc	*	plaša	_	_	_	_	amod	basic	5-8	
+5-8	825-836	sabiedrībai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	*	sabiedrība	_	_	_	_	iobj	basic	5-6	
+5-9	837-848	plašsaziņas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsgg	*	plašsaziņas	_	_	_	_	nmod	basic	5-10	
+5-10	849-858	līdzekļos	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl2	*	līdzeklis	_	_	_	_	obl	basic	5-6	
+5-11	858-859	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	5-6	
+5-12	860-868	izpratne	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	izpratne	_	_	_	_	nsubj	basic	5-16	
+5-13	869-872	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	5-15	
+5-14	873-887	cilvēkdrošības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	cilvēkdrošība	_	_	_	_	nmod	basic	5-15	
+5-15	888-896	jēdzienu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	jēdziens	_	_	_	_	nmod	basic	5-12	
+5-16	897-910	neaizsniedzās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmyisi130ay	*	neaizsniegties	_	_	_	_	root	basic	5-16	
+5-17	911-915	līdz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	līdz	_	_	_	_	case	basic	5-19	
+5-18	916-928	politiskajam	*	*	Dat	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsdyp	*	politisks	_	_	_	_	amod	basic	5-19	
+5-19	929-936	līmenim	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd2	*	līmenis	_	_	_	_	obl	basic	5-16	
+5-20	936-937	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	5-21	
+5-21	938-946	paliekot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	*	*	vmnpu0000000n	*	palikt	_	_	_	_	advcl	basic	5-16	
+5-22	947-958	nevalstiskā	*	*	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsgyp	*	nevalstisks	_	_	_	_	amod	basic	5-23	
+5-23	959-966	sektora	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	sektors	_	_	_	_	nmod	basic	5-24	
+5-24	967-975	ietvaros	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	*	ietvars	_	_	_	_	obl	basic	5-21	
+5-25	975-976	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	5-16	

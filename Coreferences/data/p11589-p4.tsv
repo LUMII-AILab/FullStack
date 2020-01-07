@@ -1,0 +1,72 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=“Sveču dienā Stalbē vienmēr ir kas jauns.
+1-1	0-1	“	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	“	_	_	_	_	punct	basic	1-6	
+1-2	1-6	Sveču	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg5	*	svece	event[1]	*[1]	*->1-1	*[1]	nmod	basic	1-3	
+1-3	7-12	dienā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	diena	event[1]	*[1]	*->1-1	*[1]	obl	basic	1-6	
+1-4	13-19	Stalbē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl5	*	Stalbe	GPE	*	_	_	obl	basic	1-6	
+1-5	20-27	vienmēr	*	*	*	*	*	*	*	*	*	*	*	*	Tot	*	*	*	PronType=Tot	*	*	r0t	*	vienmēr	_	_	_	_	advmod	basic	1-6	
+1-6	28-30	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipii30an	*	būt	_	_	_	_	root	basic	1-6	
+1-7	31-34	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	Ind	*	*	*	Case=Nom\|PronType=Ind	*	*	pi000nn	*	kas	_	_	_	_	det	basic	1-8	
+1-8	35-40	jauns	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	jauns	_	_	_	_	nsubj	basic	1-6	
+1-9	40-41	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-6	
+
+#Text=Cilvēkiem gribas satikties, parunāties, parādīt, ko kurš māk.
+2-1	42-51	Cilvēkiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	cilvēks	_	_	_	_	nsubj	basic	2-2	
+2-2	52-58	gribas	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	voyipt330an	*	gribēties	_	_	_	_	root	basic	2-2	
+2-3	59-68	satikties	*	*	*	*	*	*	*	*	*	*	*	*	*	Yes	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	Inf	*	vmyn0i1000n	*	satikties	_	_	_	_	xcomp	basic	2-2	
+2-4	68-69	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-5	
+2-5	70-80	parunāties	*	*	*	*	*	*	*	*	*	*	*	*	*	Yes	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	Inf	*	vmyn0i2000n	*	parunāties	_	_	_	_	conj	basic	2-3	
+2-6	80-81	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-7	
+2-7	82-89	parādīt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t3000n	*	parādīt	_	_	_	_	conj	basic	2-3	
+2-8	89-90	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-11	
+2-9	91-93	ko	*	*	Acc	*	*	*	*	*	*	*	*	*	Rel	*	*	*	Case=Acc\|PronType=Rel	*	*	pr000an	*	kas	_	_	_	_	obj	basic	2-11	
+2-10	94-98	kurš	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	Rel	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msnn	*	kurš	_	_	_	_	nsubj	basic	2-11	
+2-11	99-102	māk	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vonipt330an	*	mācēt	_	_	_	_	ccomp	basic	2-7	
+2-12	102-103	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-2	
+
+#Text=Te var aizņemties idejas, “ saka biedrības „Dzīvotprieks” vadītāja Grieta Grosberga, kura, rīkojot dažādus pasākumus, bagātina pagasta kultūras dzīvi.
+3-1	104-106	Te	*	*	*	*	*	*	*	*	*	*	*	*	Dem	*	*	*	PronType=Dem	*	*	r0p	*	te	_	_	*->1-2	*[1]	advmod	basic	3-2	
+3-2	107-110	var	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vonipi330an	*	varēt	_	_	_	_	parataxis	basic	3-7	
+3-3	111-121	aizņemties	*	*	*	*	*	*	*	*	*	*	*	*	*	Yes	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	Inf	*	vmyn0t1000n	*	aizņemties	_	_	_	_	xcomp	basic	3-2	
+3-4	122-128	idejas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	ideja	_	_	_	_	obj	basic	3-3	
+3-5	128-129	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-2	
+3-6	130-131	“	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	“	_	_	_	_	punct	basic	3-2	
+3-7	132-136	saka	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt330an	*	sacīt	_	_	_	_	root	basic	3-7	
+3-8	137-146	biedrības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	biedrība	_	_	*->2-1	*[2]	nmod	basic	3-10	
+3-9	147-148	„	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	„	organization[2]	*[2]	*->2-2	*[2]	punct	basic	3-10	
+3-10	148-160	Dzīvotprieks	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	dzīvotprieks	organization[2]	*[2]	*->2-2	*[2]	nmod	basic	3-12	
+3-11	160-161	”	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	”	organization[2]	*[2]	*->2-2	*[2]	punct	basic	3-10	
+3-12	162-170	vadītāja	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	vadītāja	_	_	*->3-1	*[3]	nmod	basic	3-13	
+3-13	171-177	Grieta	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Grieta	person[3]	https://en.wikipedia.org/wiki/Stalbe[3]	*->3-2	*[3]	nsubj	basic	3-7	
+3-14	178-187	Grosberga	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Grosberga	person[3]	https://en.wikipedia.org/wiki/Stalbe[3]	*->3-2	*[3]	flat:name	basic	3-13	
+3-15	187-188	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-22	
+3-16	189-193	kura	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	Rel	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsnn	*	kura	_	_	*->3-3	*[3]	nsubj	basic	3-22	
+3-17	193-194	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-18	
+3-18	195-202	rīkojot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	Conv	*	vmnpu0000000n	*	rīkot	_	_	_	_	advcl	basic	3-22	
+3-19	203-210	dažādus	*	*	Acc	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpanp	*	dažāds	_	_	_	_	amod	basic	3-20	
+3-20	211-220	pasākumus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	pasākums	_	_	_	_	obj	basic	3-18	
+3-21	220-221	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-18	
+3-22	222-230	bagātina	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt330an	*	bagātināt	_	_	_	_	acl	basic	3-13	
+3-23	231-238	pagasta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	pagasts	_	_	_	_	nmod	basic	3-25	
+3-24	239-247	kultūras	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	kultūra	_	_	_	_	nmod	basic	3-25	
+3-25	248-253	dzīvi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	dzīve	_	_	_	_	obj	basic	3-22	
+3-26	253-254	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-7	
+
+#Text=Par rokdarbnieču izstādi liela interese bija arī skolēniem.
+4-1	255-258	Par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	4-3	
+4-2	259-271	rokdarbnieču	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg5	*	rokdarbniece	_	_	_	_	nmod	basic	4-3	
+4-3	272-279	izstādi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	izstāde	_	_	_	_	nmod	basic	4-5	
+4-4	280-285	liela	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	*	liels	_	_	_	_	amod	basic	4-5	
+4-5	286-294	interese	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	interese	_	_	_	_	nsubj	basic	4-6	
+4-6	295-299	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnisii30an	*	būt	_	_	_	_	root	basic	4-6	
+4-7	300-303	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	4-8	
+4-8	304-313	skolēniem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	skolēns	_	_	_	_	obl	basic	4-6	
+4-9	313-314	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	4-6	

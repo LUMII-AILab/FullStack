@@ -1,69 +1,69 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Desmit gadu vecumā viņš jau intervēja Alfrēdu Rubiku un Edgaru Liepiņu, trakajos deviņdesmitajos Juris kļuva par pasaulē jaunāko uzņēmēju, plikā vietā izveidodams pats savu konkursu.
-1-1	0-6	Desmit	*	Plur	*	*	*	*	*	*	*	Number=Plur\|NumType=Card	*	*	mcs0p0	desmit	_	_	_	_	nummod	basic	1-2	
-1-2	7-11	gadu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	gads	_	_	_	_	nmod	basic	1-3	
-1-3	12-18	vecumā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	vecums	_	_	_	_	obl	basic	1-6	
-1-4	19-23	viņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msnn	viņš	_	_	*[1]	*->1-1	nsubj	basic	1-6	
-1-5	24-27	jau	_	_	_	_	_	_	_	_	_	_	_	_	r0t	jau	_	_	_	_	advmod	basic	1-6	
-1-6	28-37	intervēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist230an	intervēt	_	_	_	_	root	basic	1-6	
-1-7	38-45	Alfrēdu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	Alfrēds	person[1]	*[1]	_	_	obj	basic	1-6	
-1-8	46-52	Rubiku	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	Rubiks	person[1]	*[1]	_	_	flat:name	basic	1-7	
-1-9	53-55	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-10	
-1-10	56-62	Edgaru	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	Edgars	person[2]	*[2]	_	_	conj	basic	1-7	
-1-11	63-70	Liepiņu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	Liepiņš	person[2]	*[2]	_	_	flat:name	basic	1-10	
-1-12	70-71	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-20	
-1-13	72-80	trakajos	Masc	Plur	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmplyp	traks	_	_	_	_	amod	basic	1-14	
-1-14	81-96	deviņdesmitajos	Masc	Plur	Loc	Pos	*	*	*	*	*	Case=Loc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|NumType=Ord	*	*	mosmpl	deviņdesmitais	time	*	_	_	obl	basic	1-20	
-1-15	97-102	Juris	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	Juris	person	*	*[1]	*->1-2	nsubj	basic	1-20	
-1-16	103-108	kļuva	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vtnisi130an	kļūt	_	_	_	_	cop	basic	1-20	
-1-17	109-112	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	_	_	case	basic	1-20	
-1-18	113-120	pasaulē	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	pasaule	_	_	_	_	obl	basic	1-19	
-1-19	121-128	jaunāko	Masc	Sing	Acc	Cmp	*	*	*	*	*	Case=Acc\|Degree=Cmp\|Gender=Masc\|Number=Sing	*	*	afmsayc	jauns	_	_	_	_	amod	basic	1-20	
-1-20	129-137	uzņēmēju	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	uzņēmējs	_	_	_	_	conj	basic	1-6	
-1-21	137-138	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-24	
-1-22	139-144	plikā	Fem	Sing	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affslnp	plika	_	_	_	_	amod	basic	1-23	
-1-23	145-150	vietā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	vieta	_	_	_	_	obl	basic	1-24	
-1-24	151-162	izveidodams	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|VerbForm=Conv	*	*	vmnppmsn0000n	izveidot	_	_	_	_	acl	basic	1-20	
-1-25	163-167	pats	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msnn	pats	_	_	*[1]	*->1-3	obl	basic	1-24	
-1-26	168-172	savu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0msan	savs	_	_	*[1]	*->1-3	det	basic	1-27	
-1-27	173-181	konkursu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	konkurss	_	_	_	_	obj	basic	1-24	
-1-28	181-182	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-6	
+1-1	0-6	Desmit	*	*	*	*	*	*	*	*	*	Plur	*	*	*	*	*	*	Number=Plur\|NumType=Card	*	*	mcs0p0	*	desmit	_	_	_	_	nummod	basic	1-2	
+1-2	7-11	gadu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	gads	_	_	_	_	nmod	basic	1-3	
+1-3	12-18	vecumā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	vecums	_	_	_	_	obl	basic	1-6	
+1-4	19-23	viņš	*	*	Nom	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msnn	*	viņš	_	_	*->1-1	*[1]	nsubj	basic	1-6	
+1-5	24-27	jau	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	jau	_	_	_	_	advmod	basic	1-6	
+1-6	28-37	intervēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist230an	*	intervēt	_	_	_	_	root	basic	1-6	
+1-7	38-45	Alfrēdu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	*	Alfrēds	person[1]	*[1]	_	_	obj	basic	1-6	
+1-8	46-52	Rubiku	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	*	Rubiks	person[1]	*[1]	_	_	flat:name	basic	1-7	
+1-9	53-55	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-10	
+1-10	56-62	Edgaru	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	*	Edgars	person[2]	*[2]	_	_	conj	basic	1-7	
+1-11	63-70	Liepiņu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	*	Liepiņš	person[2]	*[2]	_	_	flat:name	basic	1-10	
+1-12	70-71	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-20	
+1-13	72-80	trakajos	*	*	Loc	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmplyp	*	traks	_	_	_	_	amod	basic	1-14	
+1-14	81-96	deviņdesmitajos	*	*	Loc	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|NumType=Ord	*	*	mosmpl	*	deviņdesmitais	time	*	_	_	obl	basic	1-20	
+1-15	97-102	Juris	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	*	Juris	person	*	*->1-2	*[1]	nsubj	basic	1-20	
+1-16	103-108	kļuva	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vtnisi130an	*	kļūt	_	_	_	_	cop	basic	1-20	
+1-17	109-112	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	1-20	
+1-18	113-120	pasaulē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	*	pasaule	_	_	_	_	obl	basic	1-19	
+1-19	121-128	jaunāko	*	*	Acc	*	Cmp	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Cmp\|Gender=Masc\|Number=Sing	*	*	afmsayc	*	jauns	_	_	_	_	amod	basic	1-20	
+1-20	129-137	uzņēmēju	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	uzņēmējs	_	_	_	_	conj	basic	1-6	
+1-21	137-138	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-24	
+1-22	139-144	plikā	*	*	Loc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affslnp	*	plika	_	_	_	_	amod	basic	1-23	
+1-23	145-150	vietā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	vieta	_	_	_	_	obl	basic	1-24	
+1-24	151-162	izveidodams	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|VerbForm=Conv	*	*	vmnppmsn0000n	*	izveidot	_	_	_	_	acl	basic	1-20	
+1-25	163-167	pats	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msnn	*	pats	_	_	*->1-3	*[1]	obl	basic	1-24	
+1-26	168-172	savu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0msan	*	savs	_	_	*->1-3	*[1]	det	basic	1-27	
+1-27	173-181	konkursu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	konkurss	_	_	_	_	obj	basic	1-24	
+1-28	181-182	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-6	
 
 #Text=Vēl pienapuika būdams, viņš bīdīja lietas ar nopietniem onkuļiem, vēlāk izvārtījās pedofilijas skandāla dubļos, spēja piecelties un virzīties tālāk, pats sevi nodēvējot par paparaci.
-2-1	184-187	Vēl	_	_	_	_	_	_	_	_	_	_	_	_	r0t	vēl	_	_	_	_	advmod	basic	2-2	
-2-2	188-198	pienapuika	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn4	pienapuika	_	_	*[1]	*->1-4	acl	basic	2-6	
-2-3	199-205	būdams	Masc	Sing	Nom	Pos	*	Pres	*	Pass	*	Aspect=Imp\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Imp	vcnpdmsnapnpn	būt	_	_	_	_	cop	basic	2-2	
-2-4	205-206	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-2	
-2-5	207-211	viņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msnn	viņš	_	_	*[1]	*->1-5	nsubj	basic	2-6	
-2-6	212-218	bīdīja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	bīdīt	_	_	_	_	root	basic	2-6	
-2-7	219-225	lietas	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	lieta	_	_	_	_	obj	basic	2-6	
-2-8	226-228	ar	_	_	_	_	_	_	_	_	_	_	_	_	sppd	ar	_	_	_	_	case	basic	2-10	
-2-9	229-239	nopietniem	Masc	Plur	Dat	Pos	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpdnp	nopietns	_	_	_	_	amod	basic	2-10	
-2-10	240-248	onkuļiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd2	onkulis	_	_	_	_	iobj	basic	2-6	
-2-11	248-249	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-13	
-2-12	250-255	vēlāk	*	*	*	Cmp	*	*	*	*	*	Degree=Cmp	*	*	rct	vēlu	_	_	_	_	advmod	basic	2-13	
-2-13	256-266	izvārtījās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi330an	izvārtīties	_	_	_	_	conj	basic	2-6	
-2-14	267-278	pedofilijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	pedofilija	_	_	_	_	nmod	basic	2-15	
-2-15	279-287	skandāla	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	skandāls	_	_	_	_	nmod	basic	2-16	
-2-16	288-294	dubļos	Masc	Ptan	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Ptan	*	*	ncmdl2	dubļi	_	_	_	_	obl	basic	2-13	
-2-17	294-295	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-18	
-2-18	296-301	spēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	spēt	_	_	_	_	conj	basic	2-6	
-2-19	302-312	piecelties	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0t1000n	piecelties	_	_	_	_	xcomp	basic	2-18	
-2-20	313-315	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	2-21	
-2-21	316-325	virzīties	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i3000n	virzīties	_	_	_	_	conj	basic	2-19	
-2-22	326-331	tālāk	*	*	*	Cmp	*	*	*	*	*	Degree=Cmp	*	*	rcp	tālu	_	_	_	_	advmod	basic	2-21	
-2-23	331-332	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-26	
-2-24	333-337	pats	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msnn	pats	_	_	*[1]	*->1-6	obl	basic	2-26	
-2-25	338-342	sevi	*	*	Acc	*	*	*	*	*	*	Case=Acc\|PronType=Rcp\|Reflex=Yes	*	*	px000an	sevis	_	_	*[1]	*->1-6	obj	basic	2-26	
-2-26	343-352	nodēvējot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000n	nodēvēt	_	_	_	_	advcl	basic	2-18	
-2-27	353-356	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	_	_	case	basic	2-28	
-2-28	357-365	paparaci	_	_	_	_	_	_	_	_	_	_	_	_	nc0000	paparaci	_	_	_	_	iobj	basic	2-26	
-2-29	365-366	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-6	
+2-1	184-187	Vēl	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	vēl	_	_	_	_	advmod	basic	2-2	
+2-2	188-198	pienapuika	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn4	*	pienapuika	_	_	*->1-4	*[1]	acl	basic	2-6	
+2-3	199-205	būdams	*	Imp	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Pres	*	Aspect=Imp\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vcnpdmsnapnpn	*	būt	_	_	_	_	cop	basic	2-2	
+2-4	205-206	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-2	
+2-5	207-211	viņš	*	*	Nom	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msnn	*	viņš	_	_	*->1-5	*[1]	nsubj	basic	2-6	
+2-6	212-218	bīdīja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist330an	*	bīdīt	_	_	_	_	root	basic	2-6	
+2-7	219-225	lietas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	lieta	_	_	_	_	obj	basic	2-6	
+2-8	226-228	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	_	_	case	basic	2-10	
+2-9	229-239	nopietniem	*	*	Dat	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpdnp	*	nopietns	_	_	_	_	amod	basic	2-10	
+2-10	240-248	onkuļiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd2	*	onkulis	_	_	_	_	iobj	basic	2-6	
+2-11	248-249	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-13	
+2-12	250-255	vēlāk	*	*	*	*	Cmp	*	*	*	*	*	*	*	*	*	*	*	Degree=Cmp	*	*	rct	*	vēlu	_	_	_	_	advmod	basic	2-13	
+2-13	256-266	izvārtījās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmyisi330an	*	izvārtīties	_	_	_	_	conj	basic	2-6	
+2-14	267-278	pedofilijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	pedofilija	_	_	_	_	nmod	basic	2-15	
+2-15	279-287	skandāla	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	skandāls	_	_	_	_	nmod	basic	2-16	
+2-16	288-294	dubļos	*	*	Loc	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Ptan	*	*	ncmdl2	*	dubļi	_	_	_	_	obl	basic	2-13	
+2-17	294-295	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-18	
+2-18	296-301	spēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist130an	*	spēt	_	_	_	_	conj	basic	2-6	
+2-19	302-312	piecelties	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0t1000n	*	piecelties	_	_	_	_	xcomp	basic	2-18	
+2-20	313-315	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-21	
+2-21	316-325	virzīties	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i3000n	*	virzīties	_	_	_	_	conj	basic	2-19	
+2-22	326-331	tālāk	*	*	*	*	Cmp	*	*	*	*	*	*	*	*	*	*	*	Degree=Cmp	*	*	rcp	*	tālu	_	_	_	_	advmod	basic	2-21	
+2-23	331-332	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-26	
+2-24	333-337	pats	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msnn	*	pats	_	_	*->1-6	*[1]	obl	basic	2-26	
+2-25	338-342	sevi	*	*	Acc	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Acc\|PronType=Rcp\|Reflex=Yes	*	*	px000an	*	sevis	_	_	*->1-6	*[1]	obj	basic	2-26	
+2-26	343-352	nodēvējot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000n	*	nodēvēt	_	_	_	_	advcl	basic	2-18	
+2-27	353-356	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	2-28	
+2-28	357-365	paparaci	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	nc0000	*	paparaci	_	_	_	_	iobj	basic	2-26	
+2-29	365-366	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-6	

@@ -1,0 +1,64 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text="Sauciet mūs par vecmodīgiem, bet mēs domājam, ka mums jāizvairās darīt tieši to, ko mūsu ienaidnieki vēlas, lai mēs darām.
+1-1	0-1	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	_	_	punct	basic	1-2	
+1-2	1-8	Sauciet	*	*	*	*	*	*	Imp	*	*	Plur	2	*	*	*	*	*	Mood=Imp\|Number=Plur\|Person=2\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnm0t12pan	*	saukt	_	_	root	basic	1-2	
+1-3	9-12	mūs	*	*	Acc	*	*	*	*	*	*	Plur	1	*	Prs	*	*	*	Case=Acc\|Number=Plur\|Person=1\|PronType=Prs	*	*	pp10pan	*	mēs	*->1-1	*[1]	obj	basic	1-2	
+1-4	13-16	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	par	_	_	case	basic	1-5	
+1-5	17-28	vecmodīgiem	*	*	Dat	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpdnp	*	vecmodīgs	_	_	xcomp	basic	1-2	
+1-6	28-29	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-9	
+1-7	30-33	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	cc	basic	1-9	
+1-8	34-37	mēs	*	*	Nom	*	*	*	*	*	*	Plur	1	*	Prs	*	*	*	Case=Nom\|Number=Plur\|Person=1\|PronType=Prs	*	*	pp10pnn	*	mēs	*->1-2	*[1]	nsubj	basic	1-9	
+1-9	38-45	domājam	*	*	*	*	*	*	Ind	*	*	Plur	1	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt21pan	*	domāt	_	_	conj	basic	1-2	
+1-10	45-46	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-13	
+1-11	47-49	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	mark	basic	1-13	
+1-12	50-54	mums	*	*	Dat	*	*	*	*	*	*	Plur	1	*	Prs	*	*	*	Case=Dat\|Number=Plur\|Person=1\|PronType=Prs	*	*	pp10pdn	*	mēs	*->1-3	*[1]	nsubj	basic	1-13	
+1-13	55-65	jāizvairās	*	*	*	*	*	*	Nec	*	*	*	*	*	*	Yes	*	*	Mood=Nec\|Polarity=Pos\|Reflex=Yes\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyd0i300an	*	izvairīties	_	_	ccomp	basic	1-9	
+1-14	66-71	darīt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t3000n	*	darīt	_	_	ccomp	basic	1-13	
+1-15	72-77	tieši	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	tieši	_	_	advmod	basic	1-16	
+1-16	78-80	to	*	*	Acc	*	*	Masc	*	*	*	Sing	3	*	Dem	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msan	*	tas	*->2-1	*[2]	obj	basic	1-14	
+1-17	80-81	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-21	
+1-18	82-84	ko	*	*	Acc	*	*	*	*	*	*	*	*	*	Rel	*	*	*	Case=Acc\|PronType=Rel	*	*	pr000an	*	kas	*->2-2	*[2]	obj	basic	1-21	
+1-19	85-89	mūsu	*	*	Gen	*	*	*	*	*	*	Plur	1	*	Prs	*	*	*	Case=Gen\|Number=Plur\|Person=1\|PronType=Prs	*	*	pp10pgn	*	mēs	*->1-4	*[1]	det	basic	1-20	
+1-20	90-101	ienaidnieki	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	ienaidnieks	*->3-1	*[3]	nsubj	basic	1-21	
+1-21	102-107	vēlas	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyipt330an	*	vēlēties	_	_	ccomp	basic	1-16	
+1-22	107-108	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-25	
+1-23	109-112	lai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	lai	_	_	mark	basic	1-25	
+1-24	113-116	mēs	*	*	Nom	*	*	*	*	*	*	Plur	1	*	Prs	*	*	*	Case=Nom\|Number=Plur\|Person=1\|PronType=Prs	*	*	pp10pnn	*	mēs	*->1-5	*[1]	nsubj	basic	1-25	
+1-25	117-122	darām	*	*	*	*	*	*	Ind	*	*	Plur	1	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt31pan	*	darīt	_	_	ccomp	basic	1-21	
+1-26	122-123	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	1-2	
+
+#Text=Viņi vēlas, lai mēs tos novērtējam, lai padodamies bailēm, lai pakļaujamies naidam, lai uzlūkojam viens otru ar aizdomām," norādīja premjers.
+2-1	124-128	Viņi	*	*	Nom	*	*	Masc	*	*	*	Plur	3	*	Prs	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Prs	*	*	pp3mpnn	*	viņš	*->3-2	*[3]	nsubj	basic	2-2	
+2-2	129-134	vēlas	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyipt330an	*	vēlēties	_	_	parataxis	basic	2-25	
+2-3	134-135	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	2-7	
+2-4	136-139	lai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	lai	_	_	mark	basic	2-7	
+2-5	140-143	mēs	*	*	Nom	*	*	*	*	*	*	Plur	1	*	Prs	*	*	*	Case=Nom\|Number=Plur\|Person=1\|PronType=Prs	*	*	pp10pnn	*	mēs	*->1-6	*[1]	nsubj	basic	2-7	
+2-6	144-147	tos	*	*	Acc	*	*	Masc	*	*	*	Plur	3	*	Dem	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Dem	*	*	pd3mpan	*	tas	*->3-3	*[3]	obj	basic	2-7	
+2-7	148-158	novērtējam	*	*	*	*	*	*	Ind	*	*	Plur	1	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt21pan	*	novērtēt	_	_	ccomp	basic	2-2	
+2-8	158-159	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	2-10	
+2-9	160-163	lai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	lai	_	_	mark	basic	2-10	
+2-10	164-174	padodamies	*	*	*	*	*	*	Ind	*	*	Plur	1	*	*	Yes	Pres	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyipi11pan	*	padoties	_	_	conj	basic	2-7	
+2-11	175-181	bailēm	*	*	Dat	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Ptan	*	*	ncfdd5	*	bailes	_	_	iobj	basic	2-10	
+2-12	181-182	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	2-14	
+2-13	183-186	lai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	lai	_	_	mark	basic	2-14	
+2-14	187-199	pakļaujamies	*	*	*	*	*	*	Ind	*	*	Plur	1	*	*	Yes	Pres	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyipi11pan	*	pakļauties	_	_	conj	basic	2-7	
+2-15	200-206	naidam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	naids	_	_	iobj	basic	2-14	
+2-16	206-207	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	2-18	
+2-17	208-211	lai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	lai	_	_	mark	basic	2-18	
+2-18	212-221	uzlūkojam	*	*	*	*	*	*	Ind	*	*	Plur	1	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt21pan	*	uzlūkot	_	_	conj	basic	2-7	
+2-19	222-227	viens	*	*	Nom	*	*	Masc	*	*	Card	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|NumType=Card	*	*	mcsmsn	*	viens	_	_	nsubj	basic	2-18	
+2-20	228-232	otru	*	*	Acc	*	*	Masc	*	*	Card	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|NumType=Card	*	*	mcsmsa	*	otrs	_	_	obj	basic	2-18	
+2-21	233-235	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	case	basic	2-22	
+2-22	236-244	aizdomām	*	*	Dat	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Ptan	*	*	ncfdd4	*	aizdomas	_	_	obl	basic	2-18	
+2-23	244-245	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	2-2	
+2-24	245-246	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	_	_	punct	basic	2-2	
+2-25	247-255	norādīja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist330an	*	norādīt	_	_	root	basic	2-25	
+2-26	256-264	premjers	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	premjers	_	_	nsubj	basic	2-25	
+2-27	264-265	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	2-25	

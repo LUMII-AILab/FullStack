@@ -1,0 +1,53 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Liecinieki policijai stāstīja, ka ar pūķi darbojušies divi cilvēki.
+1-1	0-10	Liecinieki	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	liecinieks	_	_	nsubj	basic	1-3	
+1-2	11-20	policijai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	*	policija	_	_	iobj	basic	1-3	
+1-3	21-29	stāstīja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist330an	*	stāstīt	_	_	root	basic	1-3	
+1-4	29-30	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-8	
+1-5	31-33	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	mark	basic	1-8	
+1-6	34-36	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	case	basic	1-7	
+1-7	37-41	pūķi	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	*	pūķis	_	_	iobj	basic	1-8	
+1-8	42-53	darbojušies	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	Yes	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmypdmpnasnpn	*	darboties	_	_	ccomp	basic	1-3	
+1-9	54-58	divi	*	*	Nom	*	*	Masc	*	*	Card	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpn	*	divi	*->1-1	*[1]	nummod	basic	1-10	
+1-10	59-66	cilvēki	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	cilvēks	*->1-1	*[1]	nsubj	basic	1-8	
+1-11	66-67	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	1-3	
+
+#Text=Kādā brīdī spēcīgāka vēja brāzma vienu no viņiem uzrāvusi gaisā, vīrietis pūķi atlaidis vaļā un tas iepūsts jūrā.
+2-1	68-72	Kādā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	Ind	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing\|PronType=Ind	*	*	pi0msln	*	kāds	_	_	det	basic	2-2	
+2-2	73-78	brīdī	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	*	brīdis	_	_	obl	basic	2-9	
+2-3	79-88	spēcīgāka	*	*	Nom	*	Cmp	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Fem\|Number=Sing	*	*	affsnnc	*	spēcīgs	_	_	amod	basic	2-5	
+2-4	89-93	vēja	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	vējš	_	_	nmod	basic	2-5	
+2-5	94-100	brāzma	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	brāzma	_	_	nsubj	basic	2-9	
+2-6	101-106	vienu	*	*	Acc	*	*	Masc	*	*	Card	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|NumType=Card	*	*	mcsmsa	*	viens	_	_	obj	basic	2-9	
+2-7	107-109	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	no	_	_	case	basic	2-8	
+2-8	110-116	viņiem	*	*	Dat	*	*	Masc	*	*	*	Plur	3	*	Prs	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Prs	*	*	pp3mpdn	*	viņš	*->1-2	*[1]	nmod	basic	2-6	
+2-9	117-125	uzrāvusi	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdfsnasnpn	*	uzraut	_	_	root	basic	2-9	
+2-10	126-131	gaisā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	gaiss	_	_	obl	basic	2-9	
+2-11	131-132	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	2-14	
+2-12	133-141	vīrietis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	vīrietis	_	_	nsubj	basic	2-14	
+2-13	142-146	pūķi	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	*	pūķis	*->2-1	*[2]	obj	basic	2-14	
+2-14	147-155	atlaidis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdmsnasnpn	*	atlaist	_	_	conj	basic	2-9	
+2-15	156-160	vaļā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0p	*	vaļā	_	_	advmod	basic	2-14	
+2-16	161-163	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	cc	basic	2-18	
+2-17	164-167	tas	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	Dem	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	*	tas	*->2-2	*[2]	nsubj:pass	basic	2-18	
+2-18	168-175	iepūsts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsnpsnpn	*	iepūst	_	_	conj	basic	2-9	
+2-19	176-180	jūrā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	jūra	_	_	obl	basic	2-18	
+2-20	180-181	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	2-9	
+
+#Text=Pēc šāda starpgadījuma abi vīrieši aizbraukuši no pludmales.
+3-1	182-185	Pēc	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	pēc	_	_	case	basic	3-3	
+3-2	186-190	šāda	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	Dem	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msgn	*	šāds	_	_	det	basic	3-3	
+3-3	191-204	starpgadījuma	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	starpgadījums	_	_	obl	basic	3-6	
+3-4	205-208	abi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	Tot	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Tot	*	*	pg0mpnn	*	abi	*->1-3	*[1]	det	basic	3-5	
+3-5	209-216	vīrieši	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn2	*	vīrietis	*->1-3	*[1]	nsubj	basic	3-6	
+3-6	217-228	aizbraukuši	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdmpnasnpn	*	aizbraukt	_	_	root	basic	3-6	
+3-7	229-231	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	case	basic	3-8	
+3-8	232-241	pludmales	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	pludmale	_	_	obl	basic	3-6	
+3-9	241-242	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	3-6	

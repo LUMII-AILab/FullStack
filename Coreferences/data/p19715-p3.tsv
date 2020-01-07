@@ -1,0 +1,76 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Ikvienam meistarklases apmeklētājam būs iespēja izgatavot porcelāna brošu un dekorēt to, izmantojot Rīgas Porcelāna rūpnīcas oriģinālos materiālus, ar kuriem tika izdaiļots, kā arī marķēts porcelāns un fajanss.
+1-1	0-8	Ikvienam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	Tot	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msdn	*	ikviens	_	_	_	_	det	basic	1-3	
+1-2	9-22	meistarklases	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	meistarklase	_	_	_	_	nmod	basic	1-3	
+1-3	23-35	apmeklētājam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	apmeklētājs	_	_	_	_	obl	basic	1-4	
+1-4	36-39	būs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnifii30an	*	būt	_	_	_	_	root	basic	1-4	
+1-5	40-47	iespēja	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	iespēja	_	_	_	_	nsubj	basic	1-4	
+1-6	48-57	izgatavot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t2000n	*	izgatavot	_	_	_	_	acl	basic	1-5	
+1-7	58-67	porcelāna	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	porcelāns	_	_	_	_	nmod	basic	1-8	
+1-8	68-73	brošu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	broša	_	_	*->1-1	*[1]	obj	basic	1-6	
+1-9	74-76	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-10	
+1-10	77-84	dekorēt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t2000n	*	dekorēt	_	_	_	_	conj	basic	1-6	
+1-11	85-87	to	*	*	Acc	*	*	Fem	*	*	*	Sing	3	*	Dem	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3fsan	*	tā	_	_	*->1-2	*[1]	obj	basic	1-10	
+1-12	87-88	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-13	
+1-13	89-99	izmantojot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	Conv	*	vmnpu0000000n	*	izmantot	_	_	_	_	advcl	basic	1-10	
+1-14	100-105	Rīgas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Rīga	organization[1]|GPE[2]	*[1]|https://en.wikipedia.org/wiki/Riga[2]	_	_	nmod	basic	1-16	
+1-15	106-115	Porcelāna	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	porcelāns	organization[1]	*[1]	_	_	nmod	basic	1-16	
+1-16	116-124	rūpnīcas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	rūpnīca	organization[1]	*[1]	_	_	nmod	basic	1-18	
+1-17	125-135	oriģinālos	*	*	Acc	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpayp	*	oriģināls	_	_	_	_	amod	basic	1-18	
+1-18	136-146	materiālus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	materiāls	_	_	*->2-1	*[2]	obj	basic	1-13	
+1-19	146-147	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-23	
+1-20	148-150	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	*->2-2	*[2]	case	basic	1-21	
+1-21	151-157	kuriem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	Rel	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|PronType=Rel	*	*	pr0mpdn	*	kurš	_	_	*->2-2	*[2]	iobj	basic	1-23	
+1-22	158-162	tika	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vtnisi130an	*	tikt	_	_	_	_	aux:pass	basic	1-23	
+1-23	163-172	izdaiļots	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsnpsnpn	*	izdaiļot	_	_	_	_	acl	basic	1-18	
+1-24	172-173	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-27	
+1-25	174-176	kā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	kā	_	_	_	_	cc	basic	1-27	
+1-26	177-180	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	arī	_	_	_	_	fixed	basic	1-25	
+1-27	181-188	marķēts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsnpsnpn	*	marķēt	_	_	_	_	conj	basic	1-23	
+1-28	189-198	porcelāns	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	porcelāns	_	_	_	_	nsubj:pass	basic	1-23	
+1-29	199-201	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-30	
+1-30	202-209	fajanss	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	fajanss	_	_	_	_	conj	basic	1-28	
+1-31	209-210	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-4	
+
+#Text=Tie ir dekoratīvi metāla šabloni dažādās formās, kā arī autogrāfi - zīmogi un paraksti ar cipariem vai tekstu, kas apzīmēja noteiktu priekšmeta tipu, šķiru vai sniedza citu tehnisko informāciju.
+2-1	211-214	Tie	*	*	Nom	*	*	Masc	*	*	*	Plur	3	*	Dem	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Dem	*	*	pd3mpnn	*	tas	_	_	*->2-3	*[2]	nsubj	basic	2-5	
+2-2	215-217	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	2-5	
+2-3	218-228	dekoratīvi	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnnp	*	dekoratīvs	_	_	_	_	amod	basic	2-5	
+2-4	229-235	metāla	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	metāls	_	_	_	_	nmod	basic	2-5	
+2-5	236-243	šabloni	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	šablons	_	_	_	_	root	basic	2-5	
+2-6	244-251	dažādās	*	*	Loc	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affplnp	*	dažāds	_	_	_	_	amod	basic	2-7	
+2-7	252-258	formās	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	*	forma	_	_	_	_	acl	basic	2-5	
+2-8	258-259	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-11	
+2-9	260-262	kā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	kā	_	_	_	_	cc	basic	2-11	
+2-10	263-266	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	arī	_	_	_	_	fixed	basic	2-9	
+2-11	267-276	autogrāfi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	autogrāfs	_	_	_	_	conj	basic	2-5	
+2-12	277-278	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	-	_	_	_	_	punct	basic	2-13	
+2-13	279-285	zīmogi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	zīmogs	_	_	_	_	acl	basic	2-11	
+2-14	286-288	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-15	
+2-15	289-297	paraksti	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	paraksts	_	_	_	_	conj	basic	2-13	
+2-16	298-300	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	_	_	case	basic	2-17	
+2-17	301-309	cipariem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	cipars	_	_	_	_	nmod	basic	2-13	
+2-18	310-313	vai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	vai	_	_	_	_	cc	basic	2-19	
+2-19	314-320	tekstu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	teksts	_	_	*->3-1	*[3]	conj	basic	2-17	
+2-20	320-321	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-22	
+2-21	322-325	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	Rel	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->3-2	*[3]	nsubj	basic	2-22	
+2-22	326-334	apzīmēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist230an	*	apzīmēt	_	_	_	_	acl	basic	2-13	
+2-23	335-343	noteiktu	*	Perf	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Acc\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsapsnpn	*	noteikt	_	_	_	_	amod	basic	2-25	
+2-24	344-354	priekšmeta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	priekšmets	_	_	_	_	nmod	basic	2-25	
+2-25	355-359	tipu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	tips	_	_	_	_	obj	basic	2-22	
+2-26	359-360	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-27	
+2-27	361-366	šķiru	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	šķira	_	_	_	_	conj	basic	2-25	
+2-28	367-370	vai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	vai	_	_	_	_	cc	basic	2-29	
+2-29	371-378	sniedza	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist130an	*	sniegt	_	_	_	_	conj	basic	2-22	
+2-30	379-383	citu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	Ind	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Ind	*	*	pi0fsan	*	cita	_	_	_	_	det	basic	2-32	
+2-31	384-392	tehnisko	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsayp	*	tehnisks	_	_	_	_	amod	basic	2-32	
+2-32	393-404	informāciju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	informācija	_	_	_	_	obj	basic	2-29	
+2-33	404-405	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-5	

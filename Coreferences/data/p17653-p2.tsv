@@ -1,0 +1,45 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Kā liecina informācija Iepirkumu uzraudzības biroja mājaslapā, jaunā cietā kurināma apkures katla iegāde SIA "Naujenes pakalpojumu serviss" izmaksās 57 747 eiro.
+1-1	0-2	Kā	*	*	*	*	*	*	*	*	*	*	*	*	Int	*	*	*	PronType=Int	*	*	r0m	*	kā	_	_	_	_	advmod	basic	1-2	
+1-2	3-10	liecina	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt330an	*	liecināt	_	_	_	_	parataxis	basic	1-21	
+1-3	11-22	informācija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	informācija	_	_	_	_	nsubj	basic	1-2	
+1-4	23-32	Iepirkumu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	iepirkums	organization[1]	*[1]	_	_	nmod	basic	1-5	
+1-5	33-44	uzraudzības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	uzraudzība	organization[1]	*[1]	_	_	nmod	basic	1-6	
+1-6	45-51	biroja	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	birojs	organization[1]	*[1]	_	_	nmod	basic	1-7	
+1-7	52-61	mājaslapā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	mājaslapa	_	_	_	_	acl	basic	1-3	
+1-8	61-62	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-2	
+1-9	63-68	jaunā	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnyp	*	jauns	_	_	_	_	amod	basic	1-13	
+1-10	69-74	cietā	*	*	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsgyp	*	ciets	_	_	_	_	amod	basic	1-11	
+1-11	75-83	kurināma	*	*	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Pres	*	Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsgppypn	*	kurināt	_	_	_	_	amod	basic	1-13	
+1-12	84-91	apkures	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	apkure	_	_	_	_	nmod	basic	1-13	
+1-13	92-97	katla	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	katls	_	_	_	_	nmod	basic	1-14	
+1-14	98-104	iegāde	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	iegāde	_	_	_	_	nsubj	basic	1-21	
+1-15	105-108	SIA	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	*	SIA	organization[2]	*[2]	*->1-1	*[1]	nmod	basic	1-19	
+1-16	109-110	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[2]	*[2]	*->1-2	*[1]	punct	basic	1-19	
+1-17	110-118	Naujenes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	*	Naujene	organization[2]|GPE[3]	*[2]|https://lv.wikipedia.org/wiki/Naujene[3]	*->1-2	*[1]	nmod	basic	1-19	
+1-18	119-130	pakalpojumu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	pakalpojums	organization[2]	*[2]	*->1-2	*[1]	nmod	basic	1-19	
+1-19	131-138	serviss	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	serviss	organization[2]	*[2]	*->1-2	*[1]	obl	basic	1-21	
+1-20	138-139	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[2]	*[2]	*->1-2	*[1]	punct	basic	1-19	
+1-21	140-148	izmaksās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnift230an	*	izmaksāt	_	_	_	_	root	basic	1-21	
+1-22	149-155	57 747	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	57 747	money[4]	*[4]	_	_	nummod	basic	1-23	
+1-23	156-160	eiro	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	nc0000	*	eiro	money[4]	*[4]	_	_	iobj	basic	1-21	
+1-24	160-161	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-21	
+
+#Text=Savus piedāvājumus iepirkuma rīkotājiem bija iesūtījuši divi pretendenti.
+2-1	162-167	Savus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	Prs	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|Poss=Yes\|PronType=Prs	*	*	ps0mpan	*	savs	_	_	*->2-1	*[2]	det	basic	2-2	
+2-2	168-180	piedāvājumus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	piedāvājums	_	_	_	_	obj	basic	2-6	
+2-3	181-190	iepirkuma	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	iepirkums	_	_	_	_	nmod	basic	2-4	
+2-4	191-201	rīkotājiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	rīkotājs	_	_	_	_	iobj	basic	2-6	
+2-5	202-206	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnisii30an	*	būt	_	_	_	_	aux	basic	2-6	
+2-6	207-217	iesūtījuši	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdmpnasnpn	*	iesūtīt	_	_	_	_	root	basic	2-6	
+2-7	218-222	divi	*	*	Nom	*	*	Masc	*	*	Card	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpn	*	divi	_	_	*->2-2	*[2]	nummod	basic	2-8	
+2-8	223-234	pretendenti	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	pretendents	_	_	*->2-2	*[2]	nsubj	basic	2-6	
+2-9	234-235	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-6	

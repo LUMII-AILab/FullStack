@@ -1,0 +1,64 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Kā norādīja Podnieks, pēdējo divu gadu laikā ar Eiropas Savienības (ES) fondu atbalstu attīstībā ieguldīti apmēram četri miljoni eiro, kas ļāvis automatizēt ražošanu, dažādot produkciju, nostiprināt kvalitāti.
+1-1	0-2	Kā	*	*	*	*	*	*	*	*	*	*	*	*	Int	*	*	*	PronType=Int	*	*	r0m	*	kā	_	_	_	_	advmod	basic	1-2	
+1-2	3-11	norādīja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist330an	*	norādīt	_	_	_	_	parataxis	basic	1-18	
+1-3	12-20	Podnieks	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Podnieks	person	*	_	_	nsubj	basic	1-2	
+1-4	20-21	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-2	
+1-5	22-28	pēdējo	*	*	Gen	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpgyp	*	pēdējais	time[1]	*[1]	_	_	amod	basic	1-7	
+1-6	29-33	divu	*	*	Gen	*	*	Masc	*	*	Card	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpg	*	divi	time[1]	*[1]	_	_	nummod	basic	1-7	
+1-7	34-38	gadu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	gads	time[1]	*[1]	_	_	nmod	basic	1-8	
+1-8	39-44	laikā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	laiks	time[1]	*[1]	_	_	obl	basic	1-18	
+1-9	45-47	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	1-16	
+1-10	48-55	Eiropas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Eiropa	GPE[2]	*[2]	*->1-1	*[1]	nmod	basic	1-11	
+1-11	56-66	Savienības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	savienība	GPE[2]	*[2]	*->1-1	*[1]	nmod	basic	1-15	
+1-12	67-68	(	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	(	_	_	_	_	punct	basic	1-13	
+1-13	68-70	ES	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	ES	GPE	*	*->1-2	*[1]	discourse	basic	1-11	
+1-14	70-71	)	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	)	_	_	_	_	punct	basic	1-13	
+1-15	72-77	fondu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	fonds	_	_	_	_	nmod	basic	1-16	
+1-16	78-86	atbalstu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	atbalsts	_	_	_	_	obl	basic	1-18	
+1-17	87-96	attīstībā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	attīstība	_	_	_	_	obl	basic	1-18	
+1-18	97-106	ieguldīti	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmpnpsnpn	*	ieguldīt	_	_	_	_	root	basic	1-18	
+1-19	107-114	apmēram	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	apmēram	_	_	_	_	advmod	basic	1-20	
+1-20	115-120	četri	*	*	Nom	*	*	Masc	*	*	Card	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpn	*	četri	money[3]	*[3]	_	_	nummod	basic	1-21	
+1-21	121-128	miljoni	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	miljons	money[3]	*[3]	_	_	nsubj:pass	basic	1-18	
+1-22	129-133	eiro	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	nc0000	*	eiro	money[3]	*[3]	_	_	nmod	basic	1-21	
+1-23	133-134	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-25	
+1-24	135-138	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	Rel	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	_	_	nsubj	basic	1-25	
+1-25	139-144	ļāvis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdmsnasnpn	*	ļaut	_	_	_	_	advcl	basic	1-18	
+1-26	145-156	automatizēt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t2000n	*	automatizēt	_	_	_	_	ccomp	basic	1-25	
+1-27	157-165	ražošanu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	ražošana	_	_	_	_	obj	basic	1-26	
+1-28	165-166	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-29	
+1-29	167-174	dažādot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t2000n	*	dažādot	_	_	_	_	conj	basic	1-26	
+1-30	175-185	produkciju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	produkcija	_	_	_	_	obj	basic	1-29	
+1-31	185-186	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-32	
+1-32	187-198	nostiprināt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t3000n	*	nostiprināt	_	_	_	_	conj	basic	1-26	
+1-33	199-208	kvalitāti	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	kvalitāte	_	_	_	_	obj	basic	1-32	
+1-34	208-209	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-18	
+
+#Text=Uzņēmuma straujāk augošais darbības virziens ir mājdzīvnieku barība, īpaši - suņu barības zīmols "Dogo".
+2-1	210-218	Uzņēmuma	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	uzņēmums	_	_	_	_	nmod	basic	2-5	
+2-2	219-227	straujāk	*	*	*	*	Cmp	*	*	*	*	*	*	*	*	*	*	*	Degree=Cmp	*	*	rcm	*	strauji	_	_	_	_	advmod	basic	2-3	
+2-3	228-236	augošais	*	Imp	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Pres	*	Aspect=Imp\|Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdmsnapypn	*	augt	_	_	_	_	amod	basic	2-5	
+2-4	237-245	darbības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	darbība	_	_	_	_	nmod	basic	2-5	
+2-5	246-254	virziens	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	virziens	_	_	_	_	root	basic	2-5	
+2-6	255-257	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	2-5	
+2-7	258-270	mājdzīvnieku	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	mājdzīvnieks	_	_	_	_	nmod	basic	2-8	
+2-8	271-277	barība	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	barība	_	_	_	_	nsubj	basic	2-5	
+2-9	277-278	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-16	
+2-10	279-284	īpaši	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	īpaši	_	_	_	_	discourse	basic	2-16	
+2-11	285-286	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	-	_	_	_	_	punct	basic	2-10	
+2-12	287-291	suņu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	suns	_	_	*->2-1	*[2]	nmod	basic	2-13	
+2-13	292-299	barības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	barība	_	_	*->2-1	*[2]	nmod	basic	2-14	
+2-14	300-306	zīmols	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	zīmols	_	_	*->2-1	*[2]	nmod	basic	2-16	
+2-15	307-308	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	product[4]	*[4]	*->2-2	*[2]	punct	basic	2-16	
+2-16	308-312	Dogo	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	np0000	*	Dogo	product[4]	*[4]	*->2-2	*[2]	acl	basic	2-8	
+2-17	312-313	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	product[4]	*[4]	*->2-2	*[2]	punct	basic	2-16	
+2-18	313-314	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-5	

@@ -1,0 +1,41 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Pašlaik 55 gadus vecais Benitess tiek minēts kā favorīts uz Madrides "Real" galvenā trenera amatu, jo pirms pāris dienām no šī posteņa tika atstādināts itālis Karlo Ančeloti.
+1-1	0-7	Pašlaik	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	pašlaik	_	_	_	_	advmod	basic	1-7	
+1-2	8-10	55	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	55	_	_	_	_	nummod	basic	1-3	
+1-3	11-16	gadus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	gads	_	_	_	_	obl	basic	1-4	
+1-4	17-23	vecais	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnyp	*	vecs	_	_	_	_	amod	basic	1-5	
+1-5	24-32	Benitess	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Benitess	person	*	_	_	nsubj:pass	basic	1-7	
+1-6	33-37	tiek	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vtnipi130an	*	tikt	_	_	_	_	aux:pass	basic	1-7	
+1-7	38-44	minēts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsnpsnpn	*	minēt	_	_	_	_	root	basic	1-7	
+1-8	45-47	kā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	kā	_	_	_	_	case	basic	1-9	
+1-9	48-56	favorīts	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	favorīts	_	_	_	_	obl	basic	1-7	
+1-10	57-59	uz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	uz	_	_	_	_	case	basic	1-17	
+1-11	60-68	Madrides	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	*	Madride	organization[1]|GPE[2]	https://en.wikipedia.org/wiki/Real\_Madrid\_C.F.[1]|https://en.wikipedia.org/wiki/Madrid[2]	_	_	nmod	basic	1-13	
+1-12	69-70	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[1]|organization[3]	https://en.wikipedia.org/wiki/Real\_Madrid\_C.F.[1]|*[3]	_	_	punct	basic	1-13	
+1-13	70-74	Real	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Real	organization[1]|organization[3]	https://en.wikipedia.org/wiki/Real\_Madrid\_C.F.[1]|*[3]	_	_	nmod	basic	1-16	
+1-14	74-75	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[1]|organization[3]	https://en.wikipedia.org/wiki/Real\_Madrid\_C.F.[1]|*[3]	_	_	punct	basic	1-13	
+1-15	76-83	galvenā	*	*	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsgyp	*	galvenais	_	_	_	_	amod	basic	1-16	
+1-16	84-91	trenera	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	*	treneris	_	_	_	_	nmod	basic	1-17	
+1-17	92-97	amatu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	amats	_	_	*->1-1	*[1]	nmod	basic	1-9	
+1-18	97-98	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-27	
+1-19	99-101	jo	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	jo	_	_	_	_	mark	basic	1-27	
+1-20	102-107	pirms	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	pirms	time[4]	*[4]	_	_	case	basic	1-22	
+1-21	108-113	pāris	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	pāris	time[4]	*[4]	_	_	nmod	basic	1-22	
+1-22	114-120	dienām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	*	diena	time[4]	*[4]	_	_	obl	basic	1-27	
+1-23	121-123	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case	basic	1-25	
+1-24	124-126	šī	*	*	Gen	*	*	Masc	*	*	*	Sing	3	*	Dem	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msgn	*	šis	_	_	_	_	det	basic	1-25	
+1-25	127-134	posteņa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	*	postenis	_	_	*->1-2	*[1]	obl	basic	1-27	
+1-26	135-139	tika	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vtnisi130an	*	tikt	_	_	_	_	aux:pass	basic	1-27	
+1-27	140-151	atstādināts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsnpsnpn	*	atstādināt	_	_	_	_	advcl	basic	1-7	
+1-28	152-158	itālis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	itālis	_	_	*->2-1	*[2]	nmod	basic	1-29	
+1-29	159-164	Karlo	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	np0000	*	Karlo	person[5]	https://en.wikipedia.org/wiki/Carlo\_Ancelotti[5]	*->2-2	*[2]	nsubj:pass	basic	1-27	
+1-30	165-173	Ančeloti	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	np0000	*	Ančeloti	person[5]	https://en.wikipedia.org/wiki/Carlo\_Ancelotti[5]	*->2-2	*[2]	flat:name	basic	1-29	
+1-31	173-174	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-7	

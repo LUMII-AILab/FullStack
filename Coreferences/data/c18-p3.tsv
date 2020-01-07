@@ -1,0 +1,149 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Drīz pēc tam, kad 1944. gada vasarā padomju armija pārgāja Latvijas robežu un sāka pildīt savu "atbrīvošanas" misiju, daudzās vietās pēkšņi sāka pazust cilvēki.
+1-1	0-4	Drīz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	drīz	time[1]	*[1]	*->1-1	*[1]	advmod	basic	1-26	
+1-2	5-8	pēc	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsd	*	pēc	time[1]	*[1]	*->1-1	*[1]	case	basic	1-3	
+1-3	9-12	tam	*	*	Dat	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msdn	*	tas	time[1]	*[1]	*->1-1	*[1]	obl	basic	1-1	
+1-4	12-13	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-11	
+1-5	14-17	kad	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0t	*	kad	_	_	*->1-2	*[1]	advmod	basic	1-11	
+1-6	18-23	1944.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	1944.	time[2]	*[2]	_	_	amod	basic	1-7	
+1-7	24-28	gada	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	gads	time[2]	*[2]	_	_	nmod	basic	1-8	
+1-8	29-35	vasarā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	vasara	time[2]	*[2]	_	_	obl	basic	1-11	
+1-9	36-43	padomju	*	*	Gen	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsgnp	*	padomju	_	_	_	_	amod	basic	1-10	
+1-10	44-50	armija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	armija	_	_	*->2-1	*[2]	nsubj	basic	1-11	
+1-11	51-58	pārgāja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnisti30an	*	pāriet	_	_	_	_	advcl	basic	1-3	
+1-12	59-67	Latvijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	_	_	nmod	basic	1-13	
+1-13	68-74	robežu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	robeža	_	_	_	_	obj	basic	1-11	
+1-14	75-77	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-15	
+1-15	78-82	sāka	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vpnisi130an	*	sākt	_	_	_	_	conj	basic	1-11	
+1-16	83-89	pildīt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	*	pildīt	_	_	_	_	xcomp	basic	1-15	
+1-17	90-94	savu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0msan	*	savs	_	_	*->2-2	*[2]	det	basic	1-21	
+1-18	95-96	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	_	_	_	_	punct	basic	1-19	
+1-19	96-108	atbrīvošanas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	atbrīvošana	_	_	_	_	nmod	basic	1-21	
+1-20	108-109	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	_	_	_	_	punct	basic	1-19	
+1-21	110-116	misiju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	misija	_	_	_	_	obj	basic	1-16	
+1-22	116-117	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-11	
+1-23	118-125	daudzās	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur\|PronType=Ind	*	*	pi0fpln	*	daudzas	_	_	_	_	det	basic	1-24	
+1-24	126-132	vietās	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	*	vieta	_	_	_	_	obl	basic	1-26	
+1-25	133-139	pēkšņi	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	pēkšņi	_	_	_	_	advmod	basic	1-26	
+1-26	140-144	sāka	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vpnisi130an	*	sākt	_	_	_	_	root	basic	1-26	
+1-27	145-151	pazust	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0i1000n	*	pazust	_	_	_	_	xcomp	basic	1-26	
+1-28	152-159	cilvēki	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	cilvēks	_	_	_	_	nsubj	basic	1-26	
+1-29	159-160	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-26	
+
+#Text=Tie, kas bija redzējuši notiekošo, stāstīja, ka ieradušies bruņoti padomju karavīri un aizveduši apcietināto līdzi.
+2-1	162-165	Tie	*	*	Nom	*	*	Masc	*	*	*	Plur	3	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Dem	*	*	pd3mpnn	*	tas	_	_	*->3-1	*[3]	nsubj	basic	2-8	
+2-2	165-166	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-5	
+2-3	167-170	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->3-2	*[3]	nsubj	basic	2-5	
+2-4	171-175	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vcnisii30an	*	būt	_	_	_	_	aux	basic	2-5	
+2-5	176-185	redzējuši	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmpnasnpn	*	redzēt	_	_	_	_	acl	basic	2-1	
+2-6	186-195	notiekošo	*	Imp	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Pres	*	Aspect=Imp\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdmsaapypn	*	notikt	_	_	_	_	obj	basic	2-5	
+2-7	195-196	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-5	
+2-8	197-205	stāstīja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist330an	*	stāstīt	_	_	_	_	root	basic	2-8	
+2-9	205-206	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-11	
+2-10	207-209	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	2-11	
+2-11	210-220	ieradušies	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	*	vmypdmpnasnpn	*	ierasties	_	_	_	_	ccomp	basic	2-8	
+2-12	221-228	bruņoti	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnnp	*	bruņots	_	_	_	_	amod	basic	2-14	
+2-13	229-236	padomju	*	*	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsgnp	*	padomju	_	_	_	_	amod	basic	2-14	
+2-14	237-245	karavīri	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	karavīrs	_	_	_	_	nsubj	basic	2-11	
+2-15	246-248	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-16	
+2-16	249-258	aizveduši	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmpnasnpn	*	aizvest	_	_	_	_	conj	basic	2-11	
+2-17	259-270	apcietināto	*	Perf	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsapsypn	*	apcietināt	_	_	_	_	obj	basic	2-16	
+2-18	271-276	līdzi	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	rrp	*	līdzi	_	_	_	_	advmod	basic	2-16	
+2-19	276-277	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-8	
+
+#Text=Neizpratni par notiekošo vēl vairāk palielināja apstāklis, ka aizvestie nereti bija plašā apkārtnē cienījami cilvēki skolotāji, ārsti.
+3-1	279-289	Neizpratni	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	neizpratne	_	_	_	_	obj	basic	3-6	
+3-2	290-293	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	3-3	
+3-3	294-303	notiekošo	*	Imp	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Pres	*	Aspect=Imp\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdmsaapypn	*	notikt	_	_	_	_	amod	basic	3-1	
+3-4	304-307	vēl	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	vēl	_	_	_	_	advmod	basic	3-5	
+3-5	308-314	vairāk	*	*	*	*	Cmp	*	*	*	*	*	*	*	*	*	*	*	Degree=Cmp	*	*	rcq	*	daudz	_	_	_	_	advmod	basic	3-6	
+3-6	315-326	palielināja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist330an	*	palielināt	_	_	_	_	root	basic	3-6	
+3-7	327-336	apstāklis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	apstāklis	_	_	_	_	nsubj	basic	3-6	
+3-8	336-337	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-17	
+3-9	338-340	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	3-17	
+3-10	341-350	aizvestie	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmpnpsypn	*	aizvest	_	_	*->4-1	*[4]	nsubj	basic	3-17	
+3-11	351-357	nereti	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Neg	*	*	r0t	*	nereti	_	_	_	_	advmod	basic	3-17	
+3-12	358-362	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vcnisii30an	*	būt	_	_	_	_	cop	basic	3-17	
+3-13	363-368	plašā	*	*	Loc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affslnp	*	plaša	_	_	_	_	amod	basic	3-14	
+3-14	369-377	apkārtnē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	*	apkārtne	_	_	_	_	acl	basic	3-15	
+3-15	378-387	cienījami	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Pres	*	Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdmpnppnpn	*	cienīt	_	_	_	_	amod	basic	3-16	
+3-16	388-395	cilvēki	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	cilvēks	_	_	*->5-1	*[5]	nmod	basic	3-17	
+3-17	396-405	skolotāji	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	skolotājs	_	_	*->5-2	*[5]	acl	basic	3-7	
+3-18	405-406	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	*->5-2	*[5]	punct	basic	3-19	
+3-19	407-412	ārsti	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	ārsts	_	_	*->5-2	*[5]	conj	basic	3-17	
+3-20	412-413	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-6	
+
+#Text=Pat jaunās varas ieceltās vietējās varas iestādes nezināja, kur tie palikuši.
+4-1	415-418	Pat	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	pat	_	_	_	_	discourse	basic	4-8	
+4-2	419-425	jaunās	*	*	Gen	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsgyp	*	jauna	_	_	_	_	amod	basic	4-3	
+4-3	426-431	varas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	vara	_	_	_	_	nmod	basic	4-4	
+4-4	432-440	ieceltās	*	Perf	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfpnpsypn	*	iecelt	_	_	_	_	amod	basic	4-7	
+4-5	441-449	vietējās	*	*	Gen	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsgyp	*	vietēja	_	_	_	_	amod	basic	4-6	
+4-6	450-455	varas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	vara	_	_	_	_	nmod	basic	4-7	
+4-7	456-464	iestādes	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn5	*	iestāde	_	_	_	_	nsubj	basic	4-8	
+4-8	465-473	nezināja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist330ay	*	nezināt	_	_	_	_	root	basic	4-8	
+4-9	473-474	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-12	
+4-10	475-478	kur	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0p	*	kur	_	_	_	_	advmod	basic	4-12	
+4-11	479-482	tie	*	*	Nom	*	*	Masc	*	*	*	Plur	3	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Dem	*	*	pd3mpnn	*	tas	_	_	*->4-2	*[4]	nsubj	basic	4-12	
+4-12	483-491	palikuši	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmpnasnpn	*	palikt	_	_	_	_	ccomp	basic	4-8	
+4-13	491-492	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	4-8	
+
+#Text=Tagad varam nojaust, ka tādā noslēpumainībā rīkojās ne jau čekisti no Rīgas, bet gan "spiegu un tautas ienaidnieku" mednieki no pašas Maskavas, kuri vietējiem atskaitīties neuzskatīja par vajadzīgu.
+5-1	494-499	Tagad	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	*	tagad	_	_	_	_	advmod	basic	5-2	
+5-2	500-505	varam	*	*	*	*	*	*	Ind	*	*	Plur	1	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vonipi31pan	*	varēt	_	_	_	_	root	basic	5-2	
+5-3	506-513	nojaust	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	*	nojaust	_	_	_	_	xcomp	basic	5-2	
+5-4	513-514	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	5-8	
+5-5	515-517	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	5-8	
+5-6	518-522	tādā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsln	*	tāda	_	_	_	_	det	basic	5-7	
+5-7	523-537	noslēpumainībā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	noslēpumainība	_	_	_	_	obl	basic	5-8	
+5-8	538-545	rīkojās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmyisi230an	*	rīkoties	_	_	_	_	ccomp	basic	5-3	
+5-9	546-548	ne	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Neg	*	*	cc	*	ne	_	_	_	_	cc	basic	5-11	
+5-10	549-552	jau	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	jau	_	_	_	_	discourse	basic	5-9	
+5-11	553-560	čekisti	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	čekists	_	_	_	_	nsubj	basic	5-8	
+5-12	561-563	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case	basic	5-13	
+5-13	564-569	Rīgas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Rīga	GPE	https://en.wikipedia.org/wiki/Riga	_	_	nmod	basic	5-11	
+5-14	569-570	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	5-8	
+5-15	571-574	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	_	_	cc	basic	5-23	
+5-16	575-578	gan	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	gan	_	_	_	_	discourse	basic	5-15	
+5-17	579-580	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	_	_	*->6-1	*[6]	punct	basic	5-18	
+5-18	580-586	spiegu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	spiegs	_	_	*->6-1	*[6]	nmod	basic	5-23	
+5-19	587-589	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	*->6-1	*[6]	cc	basic	5-21	
+5-20	590-596	tautas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	tauta	_	_	*->6-1	*[6]	nmod	basic	5-21	
+5-21	597-608	ienaidnieku	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	ienaidnieks	_	_	*->6-1	*[6]	conj	basic	5-18	
+5-22	608-609	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	_	_	*->6-1	*[6]	punct	basic	5-18	
+5-23	610-618	mednieki	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	mednieks	_	_	*->6-1	*[6]	conj	basic	5-11	
+5-24	619-621	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case	basic	5-26	
+5-25	622-627	pašas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|PronType=Tot	*	*	pg0fsgn	*	pati	_	_	_	_	det	basic	5-26	
+5-26	628-636	Maskavas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Maskava	GPE	https://en.wikipedia.org/wiki/Moscow	_	_	nmod	basic	5-23	
+5-27	636-637	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	5-31	
+5-28	638-642	kuri	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Rel	*	*	pr0mpnn	*	kurš	_	_	*->6-2	*[6]	nsubj	basic	5-31	
+5-29	643-652	vietējiem	*	*	Dat	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpdnp	*	vietējs	_	_	_	_	acl	basic	5-30	
+5-30	653-665	atskaitīties	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i3000n	*	atskaitīties	_	_	_	_	acl	basic	5-33	
+5-31	666-677	neuzskatīja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist330ay	*	neuzskatīt	_	_	_	_	acl	basic	5-23	
+5-32	678-681	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	5-33	
+5-33	682-691	vajadzīgu	*	*	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsanp	*	vajadzīgs	_	_	_	_	xcomp	basic	5-31	
+5-34	691-692	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	5-2	
+
+#Text=Par notikumiem pirms 60 gadiem Latvijas Valsts arhīva vecākā referenta Jāņa Riekstiņa rakstā.
+6-1	694-697	Par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	par	_	_	_	_	case	basic	6-2	
+6-2	698-708	notikumiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	notikums	_	_	_	_	nmod	basic	6-13	
+6-3	709-714	pirms	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	pirms	time[3]	*[3]	_	_	case	basic	6-5	
+6-4	715-717	60	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	60	time[3]	*[3]	_	_	nummod	basic	6-5	
+6-5	718-724	gadiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	gads	time[3]	*[3]	_	_	nmod	basic	6-2	
+6-6	725-733	Latvijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Latvija	organization[4]|GPE[5]	https://lv.wikipedia.org/wiki/Latvijas\_Valsts\_arhīvs[4]|https://en.wikipedia.org/wiki/Latvia[5]	*->7-1	*[7]	nmod	basic	6-8	
+6-7	734-740	Valsts	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	*	valsts	organization[4]	https://lv.wikipedia.org/wiki/Latvijas\_Valsts\_arhīvs[4]	*->7-1	*[7]	nmod	basic	6-8	
+6-8	741-747	arhīva	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	arhīvs	organization[4]	https://lv.wikipedia.org/wiki/Latvijas\_Valsts\_arhīvs[4]	*->7-1	*[7]	nmod	basic	6-10	
+6-9	748-754	vecākā	*	*	Gen	*	Cmp	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Cmp\|Gender=Masc\|Number=Sing	*	*	afmsgyc	*	vecs	_	_	*->7-1	*[7]	amod	basic	6-10	
+6-10	755-764	referenta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	referents	_	_	*->7-1	*[7]	nmod	basic	6-11	
+6-11	765-769	Jāņa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg2	*	Jānis	person[6]	*[6]	*->7-2	*[7]	nmod	basic	6-13	
+6-12	770-779	Riekstiņa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Riekstiņš	person[6]	*[6]	*->7-2	*[7]	flat:name	basic	6-11	
+6-13	780-786	rakstā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	raksts	_	_	_	_	root	basic	6-13	
+6-14	786-787	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	6-13	

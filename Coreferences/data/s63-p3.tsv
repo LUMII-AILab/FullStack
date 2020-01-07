@@ -1,0 +1,62 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Komisija noklausījās Centrālās vēlēšanu komisijas priekšsēdētāja Arņa Cimdara informāciju par sagatavošanās darbu 12.Saeimas vēlēšanām, to organizāciju un norisi.
+1-1	0-8	Komisija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	komisija	_	_	_	_	nsubj	basic	1-2	
+1-2	9-20	noklausījās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmyisi330an	*	noklausīties	_	_	_	_	root	basic	1-2	
+1-3	21-30	Centrālās	*	*	Gen	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsgyp	*	centrāla	organization[1]	https://lv.wikipedia.org/wiki/Centrālā\_vēlēšanu\_komisija[1]	*->2-1	*[2]	amod	basic	1-5	
+1-4	31-39	vēlēšanu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	vēlēšana	organization[1]	https://lv.wikipedia.org/wiki/Centrālā\_vēlēšanu\_komisija[1]	*->2-1	*[2]	nmod	basic	1-5	
+1-5	40-49	komisijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	komisija	organization[1]	https://lv.wikipedia.org/wiki/Centrālā\_vēlēšanu\_komisija[1]	*->2-1	*[2]	nmod	basic	1-6	
+1-6	50-64	priekšsēdētāja	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	priekšsēdētājs	_	_	*->2-1	*[2]	nmod	basic	1-7	
+1-7	65-69	Arņa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg2	*	Arnis	person[2]	https://lv.wikipedia.org/wiki/Arnis\_Cimdars[2]	*->2-2	*[2]	nmod	basic	1-9	
+1-8	70-77	Cimdara	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Cimdars	person[2]	https://lv.wikipedia.org/wiki/Arnis\_Cimdars[2]	*->2-2	*[2]	flat:name	basic	1-7	
+1-9	78-89	informāciju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	informācija	_	_	_	_	obj	basic	1-2	
+1-10	90-93	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	1-12	
+1-11	94-107	sagatavošanās	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsgr	*	sagatavošanās	_	_	_	_	nmod	basic	1-12	
+1-12	108-113	darbu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	darbs	_	_	_	_	nmod	basic	1-9	
+1-13	114-117	12.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	12.	event[3]	https://en.wikipedia.org/wiki/Latvian\_parliamentary\_election,\_2014[3]	*->1-1	*[1]	amod	basic	1-15	
+1-14	117-124	Saeimas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Saeima	event[3]	https://en.wikipedia.org/wiki/Latvian\_parliamentary\_election,\_2014[3]	*->1-1	*[1]	nmod	basic	1-15	
+1-15	125-134	vēlēšanām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	*	vēlēšana	event[3]	https://en.wikipedia.org/wiki/Latvian\_parliamentary\_election,\_2014[3]	*->1-1	*[1]	nmod	basic	1-11	
+1-16	134-135	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-18	
+1-17	136-138	to	*	*	Gen	*	*	Masc	*	*	*	Plur	3	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Dem	*	*	pd3mpgn	*	tas	_	_	*->1-2	*[1]	det	basic	1-18	
+1-18	139-151	organizāciju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	organizācija	_	_	_	_	conj	basic	1-12	
+1-19	152-154	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-20	
+1-20	155-161	norisi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	norise	_	_	_	_	conj	basic	1-12	
+1-21	161-162	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-2	
+
+#Text=Komisija iepazinās ar Centrālās vēlēšanu komisijas balsu skaitīšanas protokolu.
+2-1	164-172	Komisija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	komisija	_	_	_	_	nsubj	basic	2-2	
+2-2	173-182	iepazinās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmyisi130an	*	iepazīties	_	_	_	_	root	basic	2-2	
+2-3	183-185	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	2-9	
+2-4	186-195	Centrālās	*	*	Gen	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsgyp	*	centrāla	organization[4]	https://lv.wikipedia.org/wiki/Centrālā\_vēlēšanu\_komisija[4]	_	_	amod	basic	2-6	
+2-5	196-204	vēlēšanu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	vēlēšana	organization[4]	https://lv.wikipedia.org/wiki/Centrālā\_vēlēšanu\_komisija[4]	_	_	nmod	basic	2-6	
+2-6	205-214	komisijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	komisija	organization[4]	https://lv.wikipedia.org/wiki/Centrālā\_vēlēšanu\_komisija[4]	_	_	nmod	basic	2-9	
+2-7	215-220	balsu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg6	*	balss	_	_	_	_	nmod	basic	2-8	
+2-8	221-232	skaitīšanas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	skaitīšana	_	_	_	_	nmod	basic	2-9	
+2-9	233-242	protokolu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	protokols	_	_	_	_	iobj	basic	2-2	
+2-10	242-243	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-2	
+
+#Text=Centrālās vēlēšanu komisijas priekšsēdētājs Arnis Cimdars informēja komisiju, ka vēlēšanas bijušas atklātas un profesionāli organizētas.
+3-1	245-254	Centrālās	*	*	Gen	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsgyp	*	centrāla	organization[5]	https://lv.wikipedia.org/wiki/Centrālā\_vēlēšanu\_komisija[5]	*->3-1	*[3]	amod	basic	3-3	
+3-2	255-263	vēlēšanu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	vēlēšana	organization[5]	https://lv.wikipedia.org/wiki/Centrālā\_vēlēšanu\_komisija[5]	*->3-1	*[3]	nmod	basic	3-3	
+3-3	264-273	komisijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	komisija	organization[5]	https://lv.wikipedia.org/wiki/Centrālā\_vēlēšanu\_komisija[5]	*->3-1	*[3]	nmod	basic	3-4	
+3-4	274-288	priekšsēdētājs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	priekšsēdētājs	_	_	*->3-1	*[3]	nmod	basic	3-5	
+3-5	289-294	Arnis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	*	Arnis	person[6]	https://lv.wikipedia.org/wiki/Arnis\_Cimdars[6]	*->3-2	*[3]	nsubj	basic	3-7	
+3-6	295-302	Cimdars	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Cimdars	person[6]	https://lv.wikipedia.org/wiki/Arnis\_Cimdars[6]	*->3-2	*[3]	flat:name	basic	3-5	
+3-7	303-312	informēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist230an	*	informēt	_	_	_	_	root	basic	3-7	
+3-8	313-321	komisiju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	komisija	_	_	_	_	obj	basic	3-7	
+3-9	321-322	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-13	
+3-10	323-325	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	3-13	
+3-11	326-335	vēlēšanas	*	*	Nom	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Ptan	*	*	ncfdn4	*	vēlēšanas	_	_	_	_	nsubj	basic	3-13	
+3-12	336-343	bijušas	*	Perf	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vcnpdfpnasnpn	*	būt	_	_	_	_	aux	basic	3-13	
+3-13	344-352	atklātas	*	Perf	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfpnpsnpn	*	atklāt	_	_	_	_	ccomp	basic	3-7	
+3-14	353-355	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	3-16	
+3-15	356-368	profesionāli	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	profesionāli	_	_	_	_	advmod	basic	3-16	
+3-16	369-380	organizētas	*	Perf	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfpnpsnpn	*	organizēt	_	_	_	_	conj	basic	3-13	
+3-17	380-381	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-7	

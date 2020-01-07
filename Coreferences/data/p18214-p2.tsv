@@ -1,0 +1,63 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Grāmatā ir stāsts par lidojošo pelēnu Šmuku, kurš izlidoja no cietokšņa kazemāta un apmaldījās.
+1-1	0-7	Grāmatā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	grāmata	_	_	_	_	obl	basic	1-2	
+1-2	8-10	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipii30an	*	būt	_	_	_	_	root	basic	1-2	
+1-3	11-17	stāsts	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	stāsts	_	_	_	_	nsubj	basic	1-2	
+1-4	18-21	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	1-7	
+1-5	22-30	lidojošo	*	Imp	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Pres	*	Aspect=Imp\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdmsaapypn	*	lidot	_	_	*->1-1	*[1]	amod	basic	1-6	
+1-6	31-37	pelēnu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	pelēns	_	_	*->1-1	*[1]	nmod	basic	1-7	
+1-7	38-43	Šmuku	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	*	Šmuks	person	*	*->1-2	*[1]	nmod	basic	1-3	
+1-8	43-44	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-10	
+1-9	45-49	kurš	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	Rel	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msnn	*	kurš	_	_	*->1-3	*[1]	nsubj	basic	1-10	
+1-10	50-58	izlidoja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnisi230an	*	izlidot	_	_	_	_	acl	basic	1-7	
+1-11	59-61	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case	basic	1-13	
+1-12	62-71	cietokšņa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	*	cietoksnis	_	_	_	_	nmod	basic	1-13	
+1-13	72-80	kazemāta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	kazemāts	_	_	_	_	obl	basic	1-10	
+1-14	81-83	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-15	
+1-15	84-94	apmaldījās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyisi330an	*	apmaldīties	_	_	_	_	conj	basic	1-10	
+1-16	94-95	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-2	
+
+#Text=Taču pilsētā, kur visi ir savējie, viņu nepametīs nelaimē.
+2-1	96-100	Taču	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	taču	_	_	_	_	cc	basic	2-10	
+2-2	101-108	pilsētā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	pilsēta	_	_	*->2-1	*[2]	obl	basic	2-10	
+2-3	108-109	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-7	
+2-4	110-113	kur	*	*	*	*	*	*	*	*	*	*	*	*	Int	*	*	*	PronType=Int	*	*	r0p	*	kur	_	_	*->2-2	*[2]	advmod	basic	2-7	
+2-5	114-118	visi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	Tot	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Tot	*	*	pg0mpnn	*	viss	_	_	_	_	nsubj	basic	2-7	
+2-6	119-121	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	2-7	
+2-7	122-129	savējie	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	Prs	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur\|Poss=Yes\|PronType=Prs	*	*	afmpnyp	*	savējais	_	_	_	_	acl	basic	2-2	
+2-8	129-130	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-7	
+2-9	131-135	viņu	*	*	Acc	*	*	Masc	*	*	*	Sing	3	*	Prs	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msan	*	viņš	_	_	*->1-4	*[1]	obj	basic	2-10	
+2-10	136-145	nepametīs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Fut\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnift130ay	*	pamest	_	_	_	_	root	basic	2-10	
+2-11	146-153	nelaimē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	*	nelaime	_	_	_	_	obl	basic	2-10	
+2-12	153-154	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-10	
+
+#Text=Ceļojot pa pilsētu, pelēns pabūs Baznīckalnā, Dubrovina parkā, kā arī citās vietās, pēc kā atgriezīsies mājās.
+3-1	155-162	Ceļojot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	Conv	*	vmnpu0000000n	*	ceļot	_	_	_	_	advcl	basic	3-6	
+3-2	163-165	pa	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	pa	_	_	_	_	case	basic	3-3	
+3-3	166-173	pilsētu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	pilsēta	_	_	_	_	obl	basic	3-1	
+3-4	173-174	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-1	
+3-5	175-181	pelēns	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	pelēns	_	_	*->1-5	*[1]	nsubj	basic	3-6	
+3-6	182-187	pabūs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnifi230an	*	pabūt	_	_	_	_	root	basic	3-6	
+3-7	188-199	Baznīckalnā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	npmsl1	*	Baznīckalns	location	*	_	_	obl	basic	3-6	
+3-8	199-200	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-10	
+3-9	201-210	Dubrovina	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Dubrovins	location[1]	https://lv.wikipedia.org/wiki/Dubrovina\_parks[1]	_	_	nmod	basic	3-10	
+3-10	211-216	parkā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	parks	location[1]	https://lv.wikipedia.org/wiki/Dubrovina\_parks[1]	_	_	conj	basic	3-7	
+3-11	216-217	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-15	
+3-12	218-220	kā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	kā	_	_	_	_	cc	basic	3-15	
+3-13	221-224	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	arī	_	_	_	_	fixed	basic	3-12	
+3-14	225-230	citās	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	Ind	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur\|PronType=Ind	*	*	pi0fpln	*	cita	_	_	_	_	det	basic	3-15	
+3-15	231-237	vietās	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	*	vieta	_	_	_	_	conj	basic	3-7	
+3-16	237-238	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-19	
+3-17	239-242	pēc	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pēc	_	_	_	_	case	basic	3-18	
+3-18	243-245	kā	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	Ind	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Ind	*	*	pi0msgn	*	kas	_	_	_	_	obl	basic	3-19	
+3-19	246-258	atgriezīsies	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Fut\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyifi130an	*	atgriezties	_	_	_	_	conj	basic	3-6	
+3-20	259-264	mājās	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	*	māja	_	_	_	_	obl	basic	3-19	
+3-21	264-265	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-6	

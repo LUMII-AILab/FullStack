@@ -1,0 +1,48 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Latgalē apdegumus guvis desmit mēnešus vecs zīdainis, kas ar abām plaukstām atspiedies pret krāsni.
+1-1	0-7	Latgalē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl5	*	Latgale	location	https://en.wikipedia.org/wiki/Latgale	_	_	obl	basic	1-3	
+1-2	8-17	apdegumus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	apdegums	_	_	_	_	obj	basic	1-3	
+1-3	18-23	guvis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdmsnasnpn	*	gūt	_	_	_	_	root	basic	1-3	
+1-4	24-30	desmit	*	*	*	*	*	*	*	*	Card	Plur	*	*	*	*	*	*	Number=Plur\|NumType=Card	*	*	mcs0p0	*	desmit	_	_	*->1-1	*[1]	nummod	basic	1-5	
+1-5	31-38	mēnešus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa2	*	mēnesis	_	_	*->1-1	*[1]	obl	basic	1-6	
+1-6	39-43	vecs	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	vecs	_	_	*->1-1	*[1]	amod	basic	1-7	
+1-7	44-52	zīdainis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	zīdainis	_	_	*->1-1	*[1]	nsubj	basic	1-3	
+1-8	52-53	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-13	
+1-9	54-57	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	Rel	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->1-2	*[1]	nsubj	basic	1-13	
+1-10	58-60	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	_	_	case	basic	1-12	
+1-11	61-65	abām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	Tot	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur\|PronType=Tot	*	*	pg0fpdn	*	abas	_	_	_	_	det	basic	1-12	
+1-12	66-75	plaukstām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	*	plauksta	_	_	_	_	obl	basic	1-13	
+1-13	76-86	atspiedies	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	Yes	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmypdmsnasnpn	*	atspiesties	_	_	_	_	acl	basic	1-7	
+1-14	87-91	pret	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	pret	_	_	_	_	case	basic	1-15	
+1-15	92-98	krāsni	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa6	*	krāsns	_	_	_	_	obl	basic	1-13	
+1-16	98-99	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-3	
+
+#Text=Latgalē abu roku apdegumus guvis arī 23 gadus vecs vīrietis, kurš uzgāzis sev virsū tējkannu ar verdošu ūdeni.
+2-1	100-107	Latgalē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl5	*	Latgale	location	https://en.wikipedia.org/wiki/Latgale	_	_	obl	basic	2-5	
+2-2	108-111	abu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	Tot	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur\|PronType=Tot	*	*	pg0fpgn	*	abas	_	_	_	_	det	basic	2-3	
+2-3	112-116	roku	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	roka	_	_	_	_	nmod	basic	2-4	
+2-4	117-126	apdegumus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	apdegums	_	_	_	_	obj	basic	2-5	
+2-5	127-132	guvis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdmsnasnpn	*	gūt	_	_	_	_	root	basic	2-5	
+2-6	133-136	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	2-10	
+2-7	137-139	23	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	23	_	_	*->2-1	*[2]	nummod	basic	2-8	
+2-8	140-145	gadus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	gads	_	_	*->2-1	*[2]	obl	basic	2-9	
+2-9	146-150	vecs	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	vecs	_	_	*->2-1	*[2]	amod	basic	2-10	
+2-10	151-159	vīrietis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	vīrietis	_	_	*->2-1	*[2]	nsubj	basic	2-5	
+2-11	159-160	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-13	
+2-12	161-165	kurš	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	Rel	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msnn	*	kurš	_	_	*->2-2	*[2]	nsubj	basic	2-13	
+2-13	166-173	uzgāzis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdmsnasnpn	*	uzgāzt	_	_	_	_	acl	basic	2-10	
+2-14	174-177	sev	*	*	Dat	*	*	*	*	*	*	*	*	*	Rcp	Yes	*	*	Case=Dat\|PronType=Rcp\|Reflex=Yes	*	*	px000dn	*	sevis	_	_	*->2-3	*[2]	iobj	basic	2-15	
+2-15	178-183	virsū	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0p	*	virsū	_	_	_	_	advmod	basic	2-13	
+2-16	184-192	tējkannu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	tējkanna	_	_	_	_	obj	basic	2-13	
+2-17	193-195	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	2-19	
+2-18	196-203	verdošu	*	*	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing\|VerbForm=Part\|Voice=Act	Part	Act	afmsanp	*	verdošs	_	_	_	_	amod	basic	2-19	
+2-19	204-209	ūdeni	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	*	ūdens	_	_	_	_	nmod	basic	2-16	
+2-20	209-210	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-5	

@@ -1,0 +1,78 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Skolas sporta skolotāja Nataļja Gorškova stāsta, ka programmas aktīvākie dalībnieki skolā bija sporta skolotāji.
+1-1	0-6	Skolas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	skola	_	_	*->1-1	*[1]	nmod	basic	1-3	
+1-2	7-13	sporta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	sports	_	_	*->1-1	*[1]	nmod	basic	1-3	
+1-3	14-23	skolotāja	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	skolotāja	_	_	*->1-1	*[1]	nmod	basic	1-4	
+1-4	24-31	Nataļja	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Nataļja	person[1]	*[1]	*->1-2	*[1]	nsubj	basic	1-6	
+1-5	32-40	Gorškova	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Gorškova	person[1]	*[1]	*->1-2	*[1]	flat:name	basic	1-4	
+1-6	41-47	stāsta	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	stāstīt	_	_	_	_	root	basic	1-6	
+1-7	47-48	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-11	
+1-8	49-51	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	1-11	
+1-9	52-62	programmas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	programma	_	_	_	_	nmod	basic	1-11	
+1-10	63-72	aktīvākie	*	*	Nom	*	Cmp	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Masc\|Number=Plur	*	*	afmpnyc	*	aktīvs	_	_	_	_	amod	basic	1-11	
+1-11	73-83	dalībnieki	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	dalībnieks	_	_	_	_	ccomp	basic	1-6	
+1-12	84-89	skolā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	skola	_	_	_	_	acl	basic	1-11	
+1-13	90-94	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vcnisii30an	*	būt	_	_	_	_	cop	basic	1-11	
+1-14	95-101	sporta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	sports	_	_	_	_	nmod	basic	1-15	
+1-15	102-111	skolotāji	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	skolotājs	_	_	_	_	nsubj	basic	1-11	
+1-16	111-112	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-6	
+
+#Text=Pedagogu mērķis bija lielveikala «Maxima» rīkotajā uzlīmju konkursā tās sakrāt vienam galda tenisa galdam, lai dinamiski aizpildītu starpbrīžus, taču ieguvums ir daudz lielāks.
+2-1	114-122	Pedagogu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	pedagogs	_	_	_	_	nmod	basic	2-2	
+2-2	123-129	mērķis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	mērķis	_	_	_	_	root	basic	2-2	
+2-3	130-134	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vcnisii30an	*	būt	_	_	_	_	cop	basic	2-2	
+2-4	135-146	lielveikala	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	lielveikals	_	_	*->2-1	*[2]	nmod	basic	2-6	
+2-5	147-148	«	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	«	organization[2]	*[2]	*->2-2	*[2]	punct	basic	2-6	
+2-6	148-154	Maxima	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Maxima	organization[2]	*[2]	*->2-2	*[2]	obl	basic	2-8	
+2-7	154-155	»	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	»	organization[2]	*[2]	*->2-2	*[2]	punct	basic	2-6	
+2-8	156-164	rīkotajā	*	Perf	Loc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Loc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfslpsypn	*	rīkot	_	_	_	_	amod	basic	2-10	
+2-9	165-172	uzlīmju	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg5	*	uzlīme	_	_	*->3-1	*[3]	nmod	basic	2-10	
+2-10	173-181	konkursā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	konkurss	_	_	_	_	obl	basic	2-12	
+2-11	182-185	tās	*	*	Acc	*	*	Fem	*	*	*	Plur	3	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur\|Person=3\|PronType=Dem	*	*	pd3fpan	*	tā	_	_	*->3-2	*[3]	obj	basic	2-12	
+2-12	186-192	sakrāt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	*	sakrāt	_	_	_	_	ccomp	basic	2-2	
+2-13	193-199	vienam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|NumType=Card	*	*	mcsmsd	*	viens	_	_	_	_	nummod	basic	2-16	
+2-14	200-205	galda	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	galds	_	_	_	_	nmod	basic	2-15	
+2-15	206-212	tenisa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	teniss	_	_	_	_	nmod	basic	2-16	
+2-16	213-219	galdam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	galds	_	_	_	_	iobj	basic	2-12	
+2-17	219-220	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-20	
+2-18	221-224	lai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	lai	_	_	_	_	mark	basic	2-20	
+2-19	225-234	dinamiski	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	dinamiski	_	_	_	_	advmod	basic	2-20	
+2-20	235-245	aizpildītu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vmnc0t300an	*	aizpildīt	_	_	_	_	advcl	basic	2-2	
+2-21	246-257	starpbrīžus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa2	*	starpbrīdis	_	_	_	_	obj	basic	2-20	
+2-22	257-258	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-27	
+2-23	259-263	taču	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	taču	_	_	_	_	cc	basic	2-27	
+2-24	264-272	ieguvums	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	ieguvums	_	_	_	_	nsubj	basic	2-27	
+2-25	273-275	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	2-27	
+2-26	276-281	daudz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	daudz	_	_	_	_	advmod	basic	2-27	
+2-27	282-289	lielāks	*	*	Nom	*	Cmp	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Masc\|Number=Sing	*	*	afmsnnc	*	liels	_	_	_	_	conj	basic	2-2	
+2-28	289-290	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-2	
+
+#Text=Skolotājai prieks arī par iegūtajiem mūzikas centriem, kas palīdzēs attīstīt aerobikas konkursu tradīciju, kas skolā ir populāra.
+3-1	292-302	Skolotājai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	*	skolotāja	_	_	*->1-3	*[1]	obl	basic	3-2	
+3-2	303-309	prieks	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	prieks	_	_	_	_	root	basic	3-2	
+3-3	310-313	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	3-7	
+3-4	314-317	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	par	_	_	_	_	case	basic	3-7	
+3-5	318-328	iegūtajiem	*	Perf	Dat	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Dat\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmpdpsypn	*	iegūt	_	_	_	_	amod	basic	3-7	
+3-6	329-336	mūzikas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	mūzika	_	_	*->4-1	*[4]	nmod	basic	3-7	
+3-7	337-345	centriem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	centrs	_	_	*->4-1	*[4]	nmod	basic	3-2	
+3-8	345-346	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-10	
+3-9	347-350	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->4-2	*[4]	nsubj	basic	3-10	
+3-10	351-359	palīdzēs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmnifi330an	*	palīdzēt	_	_	_	_	acl	basic	3-7	
+3-11	360-368	attīstīt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	*	attīstīt	_	_	_	_	ccomp	basic	3-10	
+3-12	369-378	aerobikas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	aerobika	_	_	_	_	nmod	basic	3-13	
+3-13	379-387	konkursu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	konkurss	_	_	_	_	nmod	basic	3-14	
+3-14	388-397	tradīciju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	tradīcija	_	_	*->5-1	*[5]	obj	basic	3-11	
+3-15	397-398	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-19	
+3-16	399-402	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->5-2	*[5]	nsubj	basic	3-19	
+3-17	403-408	skolā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	skola	_	_	_	_	obl	basic	3-19	
+3-18	409-411	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	3-19	
+3-19	412-420	populāra	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	*	populārs	_	_	_	_	acl	basic	3-14	
+3-20	420-421	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-2	

@@ -1,0 +1,53 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Minhenē sapulcējās ap 10 000 protestētāju, kas ir uz pusi mazāk nekā pirms nedēļas.
+1-1	0-7	Minhenē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl5	*	Minhene	GPE	https://en.wikipedia.org/wiki/Munich	_	_	obl	basic	1-2	
+1-2	8-18	sapulcējās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyisi230an	*	sapulcēties	_	_	_	_	root	basic	1-2	
+1-3	19-21	ap	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ap	_	_	_	_	case	basic	1-4	
+1-4	22-28	10 000	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	10 000	_	_	_	_	nummod	basic	1-5	
+1-5	29-41	protestētāju	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	protestētājs	_	_	*->1-1	*[1]	nsubj	basic	1-2	
+1-6	41-42	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-11	
+1-7	43-46	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	Rel	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->1-2	*[1]	nsubj	basic	1-11	
+1-8	47-49	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	1-11	
+1-9	50-52	uz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	uz	_	_	_	_	case	basic	1-10	
+1-10	53-57	pusi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	puse	_	_	_	_	obl	basic	1-11	
+1-11	58-63	mazāk	*	*	*	*	Cmp	*	*	*	*	*	*	*	*	*	*	*	Degree=Cmp	*	*	rcq	*	maz	_	_	_	_	advcl	basic	1-2	
+1-12	64-68	nekā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	nekā	_	_	_	_	case	basic	1-14	
+1-13	69-74	pirms	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pirms	time[1]	*[1]	_	_	case	basic	1-14	
+1-14	75-82	nedēļas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	nedēļa	time[1]	*[1]	_	_	obl	basic	1-11	
+1-15	82-83	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-2	
+
+#Text=Aptuveni tūkstotis protestēja citās Bavārijas pilsētās Vircburgā un Nirnbergā.
+2-1	84-92	Aptuveni	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpq	*	aptuveni	_	_	_	_	advmod	basic	2-2	
+2-2	93-102	tūkstotis	*	*	Nom	*	*	Masc	*	*	Card	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|NumType=Card	*	*	mcsmsn	*	tūkstotis	_	_	_	_	nsubj	basic	2-3	
+2-3	103-113	protestēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnisi230an	*	protestēt	_	_	_	_	root	basic	2-3	
+2-4	114-119	citās	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	Ind	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur\|PronType=Ind	*	*	pi0fpln	*	cita	_	_	_	_	det	basic	2-6	
+2-5	120-129	Bavārijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Bavārija	GPE	https://en.wikipedia.org/wiki/Bavaria	*->2-1	*[2]	nmod	basic	2-6	
+2-6	130-138	pilsētās	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	*	pilsēta	_	_	*->2-1	*[2]	nmod	basic	2-7	
+2-7	139-148	Vircburgā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Vircburga	GPE	https://en.wikipedia.org/wiki/Würzburg	*->2-2	*[2]	obl	basic	2-3	
+2-8	149-151	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	*->2-2	*[2]	cc	basic	2-9	
+2-9	152-161	Nirnbergā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Nirnberga	GPE	https://en.wikipedia.org/wiki/Nuremberg	*->2-2	*[2]	conj	basic	2-7	
+2-10	161-162	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-3	
+
+#Text=Protesti tika organizēti arī Berlīnē un Diseldorfā, aptuveni 6000 cilvēku izgāja Magdeburgā.
+3-1	163-171	Protesti	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	protests	_	_	_	_	nsubj:pass	basic	3-3	
+3-2	172-176	tika	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vtnisi130an	*	tikt	_	_	_	_	aux:pass	basic	3-3	
+3-3	177-187	organizēti	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmpnpsnpn	*	organizēt	_	_	_	_	root	basic	3-3	
+3-4	188-191	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	3-5	
+3-5	192-199	Berlīnē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl5	*	Berlīne	GPE	https://en.wikipedia.org/wiki/Berlin	_	_	obl	basic	3-3	
+3-6	200-202	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	3-7	
+3-7	203-213	Diseldorfā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Diseldorfa	GPE	https://en.wikipedia.org/wiki/Düsseldorf	_	_	conj	basic	3-5	
+3-8	213-214	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-12	
+3-9	215-223	aptuveni	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpq	*	aptuveni	_	_	_	_	advmod	basic	3-10	
+3-10	224-228	6000	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	6000	_	_	_	_	nummod	basic	3-11	
+3-11	229-236	cilvēku	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	cilvēks	_	_	_	_	iobj	basic	3-12	
+3-12	237-243	izgāja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnisi130an	*	iziet	_	_	_	_	conj	basic	3-3	
+3-13	244-254	Magdeburgā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Magdeburga	GPE	https://en.wikipedia.org/wiki/Magdeburg	_	_	obl	basic	3-12	
+3-14	254-255	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-3	

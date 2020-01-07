@@ -1,0 +1,66 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Oficiālais filmas Suicide Squad albums sevī ietver daudz jaunu dziesmu no tādiem māksliniekiem kā Grimes, Mark Ronson, Kehlani un citiem.
+1-1	0-10	Oficiālais	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnyp	*	oficiāls	_	_	_	_	amod	basic	1-5	
+1-2	11-17	filmas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	filma	_	_	*->1-1	*[1]	nmod	basic	1-3	
+1-3	18-25	Suicide	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Suicide	product[1]	https://en.wikipedia.org/wiki/Suicide\_Squad\_(film)[1]	*->1-2	*[1]	nmod	basic	1-5	
+1-4	26-31	Squad	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Squad	product[1]	https://en.wikipedia.org/wiki/Suicide\_Squad\_(film)[1]	*->1-2	*[1]	flat:name	basic	1-3	
+1-5	32-38	albums	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	albums	_	_	*->3-1	*[3]	nsubj	basic	1-7	
+1-6	39-43	sevī	*	*	Loc	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Loc\|PronType=Rcp\|Reflex=Yes	*	*	px000ln	*	sevis	_	_	*->3-2	*[3]	obl	basic	1-7	
+1-7	44-50	ietver	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt130an	*	ietvert	_	_	_	_	root	basic	1-7	
+1-8	51-56	daudz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0p	*	daudz	_	_	_	_	advmod	basic	1-10	
+1-9	57-62	jaunu	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsanp	*	jauns	_	_	_	_	amod	basic	1-10	
+1-10	63-70	dziesmu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	dziesma	_	_	_	_	obj	basic	1-7	
+1-11	71-73	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	no	_	_	_	_	case	basic	1-13	
+1-12	74-80	tādiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpdn	*	tāds	_	_	_	_	det	basic	1-13	
+1-13	81-94	māksliniekiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	mākslinieks	_	_	*->2-1	*[2]	nmod	basic	1-10	
+1-14	95-97	kā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	kā	_	_	_	_	case	basic	1-15	
+1-15	98-104	Grimes	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Grimes	person	https://en.wikipedia.org/wiki/Grimes\_(musician)	*->2-2	*[2]	nmod	basic	1-13	
+1-16	104-105	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	*->2-2	*[2]	punct	basic	1-17	
+1-17	106-110	Mark	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Mark	person[2]	https://en.wikipedia.org/wiki/Mark\_Ronson[2]	*->2-2	*[2]	conj	basic	1-15	
+1-18	111-117	Ronson	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Ronson	person[2]	https://en.wikipedia.org/wiki/Mark\_Ronson[2]	*->2-2	*[2]	flat:name	basic	1-17	
+1-19	117-118	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	*->2-2	*[2]	punct	basic	1-20	
+1-20	119-126	Kehlani	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Kehlani	person	https://en.wikipedia.org/wiki/Kehlani	*->2-2	*[2]	conj	basic	1-15	
+1-21	127-129	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-22	
+1-22	130-136	citiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|PronType=Ind	*	*	pi0mpdn	*	cits	_	_	_	_	conj	basic	1-15	
+1-23	136-137	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-7	
+
+#Text=Dziesmu izvēle šai filmai ir ļoti precīza un tās perfekti iederas paredzētajās ainās.
+2-1	139-146	Dziesmu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	dziesma	_	_	*->4-1	*[4]	nmod	basic	2-2	
+2-2	147-153	izvēle	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	izvēle	_	_	_	_	nsubj	basic	2-7	
+2-3	154-157	šai	*	*	Dat	*	*	Fem	*	*	*	Sing	3	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3fsdn	*	šī	_	_	*->1-3	*[1]	det	basic	2-4	
+2-4	158-164	filmai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	*	filma	_	_	*->1-3	*[1]	obl	basic	2-7	
+2-5	165-167	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipii30an	*	būt	_	_	_	_	cop	basic	2-7	
+2-6	168-172	ļoti	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	ļoti	_	_	_	_	advmod	basic	2-7	
+2-7	173-180	precīza	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	*	precīzs	_	_	_	_	root	basic	2-7	
+2-8	181-183	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-11	
+2-9	184-187	tās	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsgn	*	tās	_	_	*->4-2	*[4]	nsubj	basic	2-11	
+2-10	188-196	perfekti	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	perfekti	_	_	_	_	advmod	basic	2-11	
+2-11	197-204	iederas	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmyipi330an	*	iederēties	_	_	_	_	conj	basic	2-7	
+2-12	205-217	paredzētajās	*	Perf	Loc	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Loc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfplpsypn	*	paredzēt	_	_	_	_	amod	basic	2-13	
+2-13	218-223	ainās	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	*	aina	_	_	_	_	obl	basic	2-11	
+2-14	223-224	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-7	
+
+#Text=Taču dīvainākais ir tas, ka dažas no tām ir palikušas ārpus oficiālā albuma.
+3-1	226-230	Taču	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	taču	_	_	_	_	cc	basic	3-2	
+3-2	231-242	dīvainākais	*	*	Nom	*	Cmp	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Masc\|Number=Sing	*	*	afmsnyc	*	dīvains	_	_	_	_	root	basic	3-2	
+3-3	243-245	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	3-2	
+3-4	246-249	tas	*	*	Nom	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msnn	*	tas	_	_	_	_	nsubj	basic	3-2	
+3-5	249-250	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-11	
+3-6	251-253	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	3-11	
+3-7	254-259	dažas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|PronType=Ind	*	*	pi0fpnn	*	daža	_	_	*->4-3	*[4]	nsubj	basic	3-11	
+3-8	260-262	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	no	_	_	*->4-3	*[4]	case	basic	3-9	
+3-9	263-266	tām	*	*	Dat	*	*	Fem	*	*	*	Plur	3	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur\|Person=3\|PronType=Dem	*	*	pd3fpdn	*	tā	_	_	*->4-3	*[4]	nmod	basic	3-7	
+3-10	267-269	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	aux	basic	3-11	
+3-11	270-279	palikušas	*	Perf	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfpnasnpn	*	palikt	_	_	_	_	acl	basic	3-4	
+3-12	280-285	ārpus	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	ārpus	_	_	_	_	case	basic	3-14	
+3-13	286-294	oficiālā	*	*	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsgyp	*	oficiāls	_	_	_	_	amod	basic	3-14	
+3-14	295-301	albuma	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	albums	_	_	_	_	iobj	basic	3-11	
+3-15	301-302	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-2	

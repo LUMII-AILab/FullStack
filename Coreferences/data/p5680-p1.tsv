@@ -1,0 +1,65 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Grūtniecību laikā iegūtā liekā svara dēļ, vēlāk strauja svara zaudēšanas dēļ Kima Kardašjana iedzīvojusies nokarenās krūtīs un liekajā ādā.
+1-1	0-11	Grūtniecību	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	grūtniecība	_	_	_	_	nmod	basic	1-2	
+1-2	12-17	laikā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	laiks	_	_	_	_	obl	basic	1-3	
+1-3	18-24	iegūtā	*	Perf	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsgpsypn	*	iegūt	_	_	_	_	amod	basic	1-5	
+1-4	25-30	liekā	*	*	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsgyp	*	lieks	_	_	_	_	amod	basic	1-5	
+1-5	31-36	svara	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	svars	_	_	_	_	obl	basic	1-15	
+1-6	37-40	dēļ	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	stsg	*	dēļ	_	_	_	_	case	basic	1-5	
+1-7	40-41	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-11	
+1-8	42-47	vēlāk	*	*	*	*	Cmp	*	*	*	*	*	*	*	*	*	*	*	Degree=Cmp	*	*	rct	*	vēlu	_	_	_	_	advmod	basic	1-11	
+1-9	48-55	strauja	*	*	Gen	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsgnp	*	straujš	_	_	_	_	amod	basic	1-11	
+1-10	56-61	svara	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	svars	_	_	_	_	nmod	basic	1-11	
+1-11	62-72	zaudēšanas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	zaudēšana	_	_	_	_	conj	basic	1-5	
+1-12	73-76	dēļ	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	stsg	*	dēļ	_	_	_	_	case	basic	1-11	
+1-13	77-81	Kima	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Kima	person[1]	https://en.wikipedia.org/wiki/Kim\_Kardashian[1]	*->2-1	*[2]	nsubj	basic	1-15	
+1-14	82-92	Kardašjana	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Kardašjana	person[1]	https://en.wikipedia.org/wiki/Kim\_Kardashian[1]	*->2-1	*[2]	flat:name	basic	1-13	
+1-15	93-106	iedzīvojusies	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	Yes	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmypdfsnasnpn	*	iedzīvoties	_	_	_	_	root	basic	1-15	
+1-16	107-116	nokarenās	*	*	Loc	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affplnp	*	nokarens	_	_	_	_	amod	basic	1-17	
+1-17	117-123	krūtīs	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl6	*	krūts	_	_	_	_	obl	basic	1-15	
+1-18	124-126	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-20	
+1-19	127-134	liekajā	*	*	Loc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affslyp	*	lieks	_	_	_	_	amod	basic	1-20	
+1-20	135-138	ādā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	āda	_	_	_	_	conj	basic	1-17	
+1-21	138-139	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-15	
+
+#Text=Realitātes šovu zvaigzne vēlējās to visu izlabot ar operāciju palīdzību, bet reperis Kanje Vests aizliedz sievai gulties zem skalpeļa, bet iesaka vairāk sportot un tādā veidā panākt vēlamo rezultātu.
+2-1	140-150	Realitātes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	realitāte	_	_	*->2-2	*[2]	nmod	basic	2-2	
+2-2	151-155	šovu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	šovs	_	_	*->2-2	*[2]	nmod	basic	2-3	
+2-3	156-164	zvaigzne	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	zvaigzne	_	_	*->2-2	*[2]	nsubj	basic	2-4	
+2-4	165-172	vēlējās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	voyisi330an	*	vēlēties	_	_	_	_	root	basic	2-4	
+2-5	173-175	to	*	*	Acc	*	*	Masc	*	*	*	Sing	3	*	Dem	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msan	*	tas	_	_	_	_	obj	basic	2-7	
+2-6	176-180	visu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	Tot	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msan	*	viss	_	_	_	_	compound	basic	2-5	
+2-7	181-188	izlabot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t2000n	*	izlabot	_	_	_	_	xcomp	basic	2-4	
+2-8	189-191	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	2-10	
+2-9	192-201	operāciju	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	operācija	_	_	_	_	nmod	basic	2-10	
+2-10	202-211	palīdzību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	palīdzība	_	_	_	_	iobj	basic	2-7	
+2-11	211-212	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-16	
+2-12	213-216	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	_	_	cc	basic	2-16	
+2-13	217-224	reperis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	reperis	_	_	*->1-1	*[1]	nmod	basic	2-14	
+2-14	225-230	Kanje	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	np0000	*	Kanje	person[2]	https://en.wikipedia.org/wiki/Kanye\_West[2]	*->1-2	*[1]	nsubj	basic	2-16	
+2-15	231-236	Vests	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Vests	person[2]	https://en.wikipedia.org/wiki/Kanye\_West[2]	*->1-2	*[1]	flat:name	basic	2-14	
+2-16	237-245	aizliedz	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt130an	*	aizliegt	_	_	_	_	conj	basic	2-4	
+2-17	246-252	sievai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	*	sieva	_	_	*->2-3	*[2]	iobj	basic	2-16	
+2-18	253-260	gulties	*	*	*	*	*	*	*	*	*	*	*	*	*	Yes	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	Inf	*	vmyn0i1000n	*	gulties	_	_	_	_	ccomp	basic	2-16	
+2-19	261-264	zem	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	zem	_	_	_	_	case	basic	2-20	
+2-20	265-273	skalpeļa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	*	skalpelis	_	_	_	_	obl	basic	2-18	
+2-21	273-274	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-23	
+2-22	275-278	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	_	_	cc	basic	2-23	
+2-23	279-285	iesaka	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt330an	*	iesacīt	_	_	_	_	conj	basic	2-16	
+2-24	286-292	vairāk	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	vairāk	_	_	_	_	advmod	basic	2-25	
+2-25	293-300	sportot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0i2000n	*	sportot	_	_	_	_	ccomp	basic	2-23	
+2-26	301-303	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-29	
+2-27	304-308	tādā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	Dem	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msln	*	tāds	_	_	_	_	det	basic	2-28	
+2-28	309-314	veidā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	veids	_	_	_	_	obl	basic	2-29	
+2-29	315-321	panākt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t1000n	*	panākt	_	_	_	_	conj	basic	2-25	
+2-30	322-328	vēlamo	*	*	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsayp	*	vēlams	_	_	_	_	amod	basic	2-31	
+2-31	329-338	rezultātu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	rezultāts	_	_	_	_	obj	basic	2-29	
+2-32	338-339	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-4	

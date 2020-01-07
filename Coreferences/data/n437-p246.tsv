@@ -1,0 +1,101 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=1. Jebkura konvencijas dalībvalsts var ierosināt grozījumus un iesniegt tos Apvienoto Nāciju Organizācijas ģenerālsekretāram.
+1-1	0-2	1.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	1.	_	_	_	_	discourse	basic	1-5	
+1-2	3-10	Jebkura	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Ind	*	*	pi0fsnn	*	jebkura	_	_	_	_	det	basic	1-4	
+1-3	11-22	konvencijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	konvencija	_	_	_	_	nmod	basic	1-4	
+1-4	23-34	dalībvalsts	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn6	*	dalībvalsts	_	_	_	_	nsubj	basic	1-5	
+1-5	35-38	var	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vonipi330an	*	varēt	_	_	_	_	root	basic	1-5	
+1-6	39-48	ierosināt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	*	ierosināt	_	_	_	_	xcomp	basic	1-5	
+1-7	49-59	grozījumus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	grozījums	_	_	*->1-1	*[1]	obj	basic	1-6	
+1-8	60-62	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-9	
+1-9	63-71	iesniegt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	*	iesniegt	_	_	_	_	conj	basic	1-6	
+1-10	72-75	tos	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpan	*	tas	_	_	*->1-2	*[1]	obj	basic	1-9	
+1-11	76-85	Apvienoto	*	Perf	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsapsypn	*	apvienot	organization[1]	https://en.wikipedia.org/wiki/United\_Nations[1]	_	_	amod	basic	1-12	
+1-12	86-92	Nāciju	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	nācija	organization[1]	https://en.wikipedia.org/wiki/United\_Nations[1]	_	_	nmod	basic	1-13	
+1-13	93-106	Organizācijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	organizācija	organization[1]	https://en.wikipedia.org/wiki/United\_Nations[1]	_	_	nmod	basic	1-14	
+1-14	107-124	ģenerālsekretāram	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	ģenerālsekretārs	_	_	_	_	iobj	basic	1-9	
+1-15	124-125	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-5	
+
+#Text=Ģenerālsekretārs pēc tam nosūta ierosināto labojumu dalībvalstīm ar lūgumu norādīt, vai tās pieprasa sasaukt dalībvalstu konferenci, lai izskatītu šos priekšlikumus un sarīkotu par tiem balsošanu.
+2-1	127-143	Ģenerālsekretārs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	ģenerālsekretārs	_	_	_	_	nsubj	basic	2-4	
+2-2	144-147	pēc	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsd	*	pēc	_	_	_	_	case	basic	2-3	
+2-3	148-151	tam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msdn	*	tas	_	_	_	_	obl	basic	2-4	
+2-4	152-158	nosūta	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	nosūtīt	_	_	_	_	root	basic	2-4	
+2-5	159-169	ierosināto	*	Perf	Gen	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmpgpsypn	*	ierosināt	_	_	_	_	amod	basic	2-6	
+2-6	170-178	labojumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	labojums	_	_	_	_	obj	basic	2-4	
+2-7	179-191	dalībvalstīm	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd6	*	dalībvalsts	_	_	*->2-1	*[2]	iobj	basic	2-4	
+2-8	192-194	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	2-9	
+2-9	195-201	lūgumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	lūgums	_	_	_	_	obl	basic	2-4	
+2-10	202-209	norādīt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	*	norādīt	_	_	_	_	acl	basic	2-9	
+2-11	209-210	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-14	
+2-12	211-214	vai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	vai	_	_	_	_	discourse	basic	2-14	
+2-13	215-218	tās	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|PronType=Dem	*	*	pd0fpnn	*	tā	_	_	*->2-2	*[2]	nsubj	basic	2-14	
+2-14	219-227	pieprasa	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	pieprasīt	_	_	_	_	acl	basic	2-10	
+2-15	228-235	sasaukt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	*	sasaukt	_	_	_	_	ccomp	basic	2-14	
+2-16	236-247	dalībvalstu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg6	*	dalībvalsts	_	_	_	_	nmod	basic	2-17	
+2-17	248-258	konferenci	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	konference	_	_	_	_	obj	basic	2-15	
+2-18	258-259	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-20	
+2-19	260-263	lai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	lai	_	_	_	_	mark	basic	2-20	
+2-20	264-273	izskatītu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vmnc0t300an	*	izskatīt	_	_	_	_	advcl	basic	2-14	
+2-21	274-277	šos	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpan	*	šis	_	_	*->3-1	*[3]	det	basic	2-22	
+2-22	278-291	priekšlikumus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	priekšlikums	_	_	*->3-1	*[3]	obj	basic	2-20	
+2-23	292-294	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-24	
+2-24	295-303	sarīkotu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vmnc0t200an	*	sarīkot	_	_	_	_	conj	basic	2-20	
+2-25	304-307	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	par	_	_	_	_	case	basic	2-26	
+2-26	308-312	tiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpdn	*	tas	_	_	*->3-2	*[3]	det	basic	2-27	
+2-27	313-322	balsošanu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	balsošana	_	_	_	_	obj	basic	2-24	
+2-28	322-323	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-4	
+
+#Text=Ja četros mēnešos pēc šāda paziņojuma vismaz viena trešdaļa dalībvalstu atbalsta konferences sasaukšanu, ģenerālsekretārs sasauc konferenci Apvienoto Nāciju Organizācijas paspārnē.
+3-1	325-327	Ja	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ja	_	_	_	_	mark	basic	3-11	
+3-2	328-334	četros	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpl	*	četri	_	_	_	_	nummod	basic	3-3	
+3-3	335-342	mēnešos	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl2	*	mēnesis	_	_	_	_	obl	basic	3-11	
+3-4	343-346	pēc	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pēc	_	_	_	_	case	basic	3-6	
+3-5	347-351	šāda	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msgn	*	šāds	_	_	_	_	det	basic	3-6	
+3-6	352-362	paziņojuma	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	paziņojums	_	_	_	_	obl	basic	3-11	
+3-7	363-369	vismaz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	vismaz	_	_	_	_	advmod	basic	3-9	
+3-8	370-375	viena	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|NumType=Card	*	*	mcsfsn	*	viena	_	_	_	_	nummod	basic	3-9	
+3-9	376-384	trešdaļa	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	trešdaļa	_	_	_	_	nsubj	basic	3-11	
+3-10	385-396	dalībvalstu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg6	*	dalībvalsts	_	_	_	_	nmod	basic	3-9	
+3-11	397-405	atbalsta	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	atbalstīt	_	_	_	_	root	basic	3-11	
+3-12	406-417	konferences	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	konference	_	_	_	_	nmod	basic	3-13	
+3-13	418-428	sasaukšanu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	sasaukšana	_	_	_	_	obj	basic	3-11	
+3-14	428-429	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-11	
+3-15	430-446	ģenerālsekretārs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	ģenerālsekretārs	_	_	_	_	nsubj	basic	3-16	
+3-16	447-453	sasauc	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt130an	*	sasaukt	_	_	_	_	dep	basic	3-11	
+3-17	454-464	konferenci	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	konference	_	_	_	_	obj	basic	3-16	
+3-18	465-474	Apvienoto	*	Perf	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsapsypn	*	apvienot	organization[2]	https://en.wikipedia.org/wiki/United\_Nations[2]	_	_	amod	basic	3-19	
+3-19	475-481	Nāciju	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	nācija	organization[2]	https://en.wikipedia.org/wiki/United\_Nations[2]	_	_	nmod	basic	3-20	
+3-20	482-495	Organizācijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	organizācija	organization[2]	https://en.wikipedia.org/wiki/United\_Nations[2]	_	_	nmod	basic	3-21	
+3-21	496-504	paspārnē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	*	paspārne	_	_	_	_	acl	basic	3-17	
+3-22	504-505	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-11	
+
+#Text=Jebkurš grozījums, ko pieņēmis šajā konferencē klātesošo un balsošanā piedalījušos dalībvalstu vairākums, tiek iesniegts Ģenerālajai asamblejai apstiprināšanai.
+4-1	507-514	Jebkurš	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Ind	*	*	pi0msnn	*	jebkurš	_	_	*->4-1	*[4]	det	basic	4-2	
+4-2	515-524	grozījums	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	grozījums	_	_	*->4-1	*[4]	nsubj:pass	basic	4-16	
+4-3	524-525	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-5	
+4-4	526-528	ko	*	*	Acc	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Acc\|PronType=Rel	*	*	pr000an	*	kas	_	_	*->4-2	*[4]	obj	basic	4-5	
+4-5	529-537	pieņēmis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnasnpn	*	pieņemt	_	_	_	_	acl	basic	4-2	
+4-6	538-542	šajā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsln	*	šī	_	_	_	_	det	basic	4-7	
+4-7	543-553	konferencē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	*	konference	_	_	_	_	obl	basic	4-8	
+4-8	554-563	klātesošo	*	*	Gen	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpgyp	*	armpg	_	_	_	_	amod	basic	4-12	
+4-9	564-566	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	4-11	
+4-10	567-576	balsošanā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	balsošana	_	_	_	_	obl	basic	4-11	
+4-11	577-589	piedalījušos	*	Perf	Acc	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmpaasypn	*	piedalīt	_	_	_	_	conj	basic	4-8	
+4-12	590-601	dalībvalstu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg6	*	dalībvalsts	_	_	_	_	nmod	basic	4-13	
+4-13	602-611	vairākums	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	vairākums	_	_	_	_	nmod	basic	4-5	
+4-14	611-612	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-5	
+4-15	613-617	tiek	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vtnipi130an	*	tikt	_	_	_	_	aux:pass	basic	4-16	
+4-16	618-627	iesniegts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnpsnpn	*	iesniegt	_	_	_	_	root	basic	4-16	
+4-17	628-639	Ģenerālajai	*	*	Dat	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsdyp	*	ģenerāla	organization[3]	https://en.wikipedia.org/wiki/United\_Nations\_General\_Assembly[3]	_	_	amod	basic	4-18	
+4-18	640-650	asamblejai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	*	asambleja	organization[3]	https://en.wikipedia.org/wiki/United\_Nations\_General\_Assembly[3]	_	_	iobj	basic	4-16	
+4-19	651-666	apstiprināšanai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	*	apstiprināšana	_	_	_	_	iobj	basic	4-16	
+4-20	666-667	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	4-16	

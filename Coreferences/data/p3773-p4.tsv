@@ -1,60 +1,60 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Grāmatu atvēršanas svētkos savu vērtējumu par LU Literatūras, folkloras un mākslas institūta darbu paudīs LZA prezidents Ojārs Spārītis, Latvijas Nacionālās bibliotēkas direktors Andris Vilks, žurnāla "Latvju Teksti” galvenais redaktors, dzejnieks Guntars Godiņš, veselības un literatūras lietpratējs, ārsts un rakstnieks Jānis Liepiņš.
-1-1	0-7	Grāmatu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	grāmata	_	_	_	_	nmod	basic	1-2	
-1-2	8-18	atvēršanas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	atvēršana	_	_	_	_	nmod	basic	1-3	
-1-3	19-26	svētkos	Masc	Ptan	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Ptan	*	*	ncmdl1	svētki	_	_	_	_	obl	basic	1-15	
-1-4	27-31	savu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0msan	savs	_	_	_	_	det	basic	1-5	
-1-5	32-41	vērtējumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	vērtējums	_	_	_	_	obj	basic	1-15	
-1-6	42-45	par	_	_	_	_	_	_	_	_	_	_	_	_	sppd	par	_	_	_	_	case	basic	1-14	
-1-7	46-48	LU	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	LU	organization[1]|organization[2]	*[1]|https://en.wikipedia.org/wiki/University\_of\_Latvia[2]	_	_	nmod	basic	1-13	
-1-8	49-60	Literatūras	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	literatūra	organization[1]	*[1]	_	_	nmod	basic	1-13	
-1-9	60-61	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	organization[1]	*[1]	_	_	punct	basic	1-10	
-1-10	62-71	folkloras	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	folklora	organization[1]	*[1]	_	_	conj	basic	1-8	
-1-11	72-74	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	organization[1]	*[1]	_	_	cc	basic	1-12	
-1-12	75-82	mākslas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	māksla	organization[1]	*[1]	_	_	conj	basic	1-8	
-1-13	83-92	institūta	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	institūts	organization[1]	*[1]	_	_	nmod	basic	1-14	
-1-14	93-98	darbu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	darbs	_	_	_	_	nmod	basic	1-5	
-1-15	99-105	paudīs	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vmnift130an	paust	_	_	_	_	root	basic	1-15	
-1-16	106-109	LZA	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	LZA	organization	https://en.wikipedia.org/wiki/Latvian\_Academy\_of\_Sciences	*[1]	*->1-1	nmod	basic	1-17	
-1-17	110-120	prezidents	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	prezidents	_	_	*[1]	*->1-1	nmod	basic	1-18	
-1-18	121-126	Ojārs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Ojārs	person[3]	https://lv.wikipedia.org/wiki/Ojārs\_Spārītis[3]	*[1]	*->1-2	nsubj	basic	1-15	
-1-19	127-135	Spārītis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	Spārītis	person[3]	https://lv.wikipedia.org/wiki/Ojārs\_Spārītis[3]	*[1]	*->1-2	flat:name	basic	1-18	
-1-20	135-136	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-26	
-1-21	137-145	Latvijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Latvija	organization[4]|GPE[5]	*[4]|*[5]	*[2]	*->2-1	nmod	basic	1-23	
-1-22	146-156	Nacionālās	Fem	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsgyp	nacionāla	organization[4]	*[4]	*[2]	*->2-1	amod	basic	1-23	
-1-23	157-168	bibliotēkas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	bibliotēka	organization[4]	*[4]	*[2]	*->2-1	nmod	basic	1-24	
-1-24	169-178	direktors	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	direktors	_	_	*[2]	*->2-1	nmod	basic	1-26	
-1-25	179-185	Andris	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	Andris	person[6]	https://lv.wikipedia.org/wiki/Andris\_Vilks\_(filologs)[6]	*[2]	*->2-2	nmod	basic	1-26	
-1-26	186-191	Vilks	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Vilks	person[6]	https://lv.wikipedia.org/wiki/Andris\_Vilks\_(filologs)[6]	*[2]	*->2-2	conj	basic	1-18	
-1-27	191-192	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-37	
-1-28	193-200	žurnāla	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	žurnāls	_	_	*[3]	*->3-1	nmod	basic	1-31	
-1-29	201-202	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	product[7]	*[7]	*[3]	*->3-1	punct	basic	1-31	
-1-30	202-208	Latvju	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	latvis	product[7]	*[7]	*[3]	*->3-1	nmod	basic	1-31	
-1-31	209-215	Teksti	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	teksts	product[7]	*[7]	*[3]	*->3-1	nmod	basic	1-34	
-1-32	215-216	”	_	_	_	_	_	_	_	_	_	_	_	_	zq	”	product[7]	*[7]	*[3]	*->3-1	punct	basic	1-31	
-1-33	217-226	galvenais	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsnyp	galvenais	_	_	*[3]	*->3-1	amod	basic	1-34	
-1-34	227-236	redaktors	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	redaktors	_	_	*[3]	*->3-1	nmod	basic	1-37	
-1-35	236-237	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-36	
-1-36	238-247	dzejnieks	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	dzejnieks	_	_	*[4]	*->4-1	conj	basic	1-34	
-1-37	248-255	Guntars	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Guntars	person[8]	https://lv.wikipedia.org/wiki/Guntars\_Godiņš[8]	*[4]	*->4-2	conj	basic	1-18	
-1-38	256-262	Godiņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Godiņš	person[8]	https://lv.wikipedia.org/wiki/Guntars\_Godiņš[8]	*[4]	*->4-2	flat:name	basic	1-37	
-1-39	262-263	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-48	
-1-40	264-273	veselības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	veselība	_	_	*[5]	*->5-1	nmod	basic	1-43	
-1-41	274-276	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	*[5]	*->5-1	cc	basic	1-42	
-1-42	277-288	literatūras	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	literatūra	_	_	*[5]	*->5-1	conj	basic	1-40	
-1-43	289-300	lietpratējs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	lietpratējs	_	_	*[5]	*->5-1	nmod	basic	1-48	
-1-44	300-301	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-45	
-1-45	302-307	ārsts	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	ārsts	_	_	*[5]	*->5-2	conj	basic	1-43	
-1-46	308-310	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-47	
-1-47	311-321	rakstnieks	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	rakstnieks	_	_	*[5]	*->5-3	conj	basic	1-45	
-1-48	322-327	Jānis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	Jānis	person[9]	https://lv.wikipedia.org/wiki/Jānis\_Liepiņš\_(rakstnieks)[9]	*[5]	*->5-4	conj	basic	1-18	
-1-49	328-335	Liepiņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Liepiņš	person[9]	https://lv.wikipedia.org/wiki/Jānis\_Liepiņš\_(rakstnieks)[9]	*[5]	*->5-4	flat:name	basic	1-48	
-1-50	335-336	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-15	
+1-1	0-7	Grāmatu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	grāmata	_	_	_	_	nmod	basic	1-2	
+1-2	8-18	atvēršanas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	atvēršana	_	_	_	_	nmod	basic	1-3	
+1-3	19-26	svētkos	*	*	Loc	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Ptan	*	*	ncmdl1	*	svētki	_	_	_	_	obl	basic	1-15	
+1-4	27-31	savu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0msan	*	savs	_	_	_	_	det	basic	1-5	
+1-5	32-41	vērtējumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	vērtējums	_	_	_	_	obj	basic	1-15	
+1-6	42-45	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	par	_	_	_	_	case	basic	1-14	
+1-7	46-48	LU	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	LU	organization[1]|organization[2]	*[1]|https://en.wikipedia.org/wiki/University\_of\_Latvia[2]	_	_	nmod	basic	1-13	
+1-8	49-60	Literatūras	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	literatūra	organization[1]	*[1]	_	_	nmod	basic	1-13	
+1-9	60-61	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	organization[1]	*[1]	_	_	punct	basic	1-10	
+1-10	62-71	folkloras	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	folklora	organization[1]	*[1]	_	_	conj	basic	1-8	
+1-11	72-74	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	organization[1]	*[1]	_	_	cc	basic	1-12	
+1-12	75-82	mākslas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	māksla	organization[1]	*[1]	_	_	conj	basic	1-8	
+1-13	83-92	institūta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	institūts	organization[1]	*[1]	_	_	nmod	basic	1-14	
+1-14	93-98	darbu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	darbs	_	_	_	_	nmod	basic	1-5	
+1-15	99-105	paudīs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmnift130an	*	paust	_	_	_	_	root	basic	1-15	
+1-16	106-109	LZA	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	LZA	organization	https://en.wikipedia.org/wiki/Latvian\_Academy\_of\_Sciences	*->1-1	*[1]	nmod	basic	1-17	
+1-17	110-120	prezidents	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	prezidents	_	_	*->1-1	*[1]	nmod	basic	1-18	
+1-18	121-126	Ojārs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Ojārs	person[3]	https://lv.wikipedia.org/wiki/Ojārs\_Spārītis[3]	*->1-2	*[1]	nsubj	basic	1-15	
+1-19	127-135	Spārītis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	*	Spārītis	person[3]	https://lv.wikipedia.org/wiki/Ojārs\_Spārītis[3]	*->1-2	*[1]	flat:name	basic	1-18	
+1-20	135-136	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-26	
+1-21	137-145	Latvijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Latvija	organization[4]|GPE[5]	*[4]|*[5]	*->2-1	*[2]	nmod	basic	1-23	
+1-22	146-156	Nacionālās	*	*	Gen	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsgyp	*	nacionāla	organization[4]	*[4]	*->2-1	*[2]	amod	basic	1-23	
+1-23	157-168	bibliotēkas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	bibliotēka	organization[4]	*[4]	*->2-1	*[2]	nmod	basic	1-24	
+1-24	169-178	direktors	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	direktors	_	_	*->2-1	*[2]	nmod	basic	1-26	
+1-25	179-185	Andris	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	*	Andris	person[6]	https://lv.wikipedia.org/wiki/Andris\_Vilks\_(filologs)[6]	*->2-2	*[2]	nmod	basic	1-26	
+1-26	186-191	Vilks	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Vilks	person[6]	https://lv.wikipedia.org/wiki/Andris\_Vilks\_(filologs)[6]	*->2-2	*[2]	conj	basic	1-18	
+1-27	191-192	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-37	
+1-28	193-200	žurnāla	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	žurnāls	_	_	*->3-1	*[3]	nmod	basic	1-31	
+1-29	201-202	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	product[7]	*[7]	*->3-1	*[3]	punct	basic	1-31	
+1-30	202-208	Latvju	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	latvis	product[7]	*[7]	*->3-1	*[3]	nmod	basic	1-31	
+1-31	209-215	Teksti	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	teksts	product[7]	*[7]	*->3-1	*[3]	nmod	basic	1-34	
+1-32	215-216	”	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	”	product[7]	*[7]	*->3-1	*[3]	punct	basic	1-31	
+1-33	217-226	galvenais	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsnyp	*	galvenais	_	_	*->3-1	*[3]	amod	basic	1-34	
+1-34	227-236	redaktors	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	redaktors	_	_	*->3-1	*[3]	nmod	basic	1-37	
+1-35	236-237	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-36	
+1-36	238-247	dzejnieks	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	dzejnieks	_	_	*->4-1	*[4]	conj	basic	1-34	
+1-37	248-255	Guntars	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Guntars	person[8]	https://lv.wikipedia.org/wiki/Guntars\_Godiņš[8]	*->4-2	*[4]	conj	basic	1-18	
+1-38	256-262	Godiņš	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Godiņš	person[8]	https://lv.wikipedia.org/wiki/Guntars\_Godiņš[8]	*->4-2	*[4]	flat:name	basic	1-37	
+1-39	262-263	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-48	
+1-40	264-273	veselības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	veselība	_	_	*->5-1	*[5]	nmod	basic	1-43	
+1-41	274-276	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	*->5-1	*[5]	cc	basic	1-42	
+1-42	277-288	literatūras	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	literatūra	_	_	*->5-1	*[5]	conj	basic	1-40	
+1-43	289-300	lietpratējs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	lietpratējs	_	_	*->5-1	*[5]	nmod	basic	1-48	
+1-44	300-301	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-45	
+1-45	302-307	ārsts	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	ārsts	_	_	*->5-2	*[5]	conj	basic	1-43	
+1-46	308-310	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-47	
+1-47	311-321	rakstnieks	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	rakstnieks	_	_	*->5-3	*[5]	conj	basic	1-45	
+1-48	322-327	Jānis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	*	Jānis	person[9]	https://lv.wikipedia.org/wiki/Jānis\_Liepiņš\_(rakstnieks)[9]	*->5-4	*[5]	conj	basic	1-18	
+1-49	328-335	Liepiņš	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Liepiņš	person[9]	https://lv.wikipedia.org/wiki/Jānis\_Liepiņš\_(rakstnieks)[9]	*->5-4	*[5]	flat:name	basic	1-48	
+1-50	335-336	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-15	

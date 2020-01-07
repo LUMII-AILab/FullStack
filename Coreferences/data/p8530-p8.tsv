@@ -1,0 +1,82 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Ideālais prezidents, kādu vēlētos tauta, ir godprātīgs.
+1-1	0-8	Ideālais	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnyp	*	ideāls	_	_	amod	basic	1-2	
+1-2	9-19	prezidents	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	prezidents	*->2-1	*[2]	nsubj	basic	1-9	
+1-3	19-20	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-5	
+1-4	21-25	kādu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	Rel	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsan	*	kāda	*->2-2	*[2]	obj	basic	1-5	
+1-5	26-33	vēlētos	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	Yes	*	*	Mood=Cnd\|Polarity=Pos\|Reflex=Yes\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyc0t300an	*	vēlēties	_	_	acl	basic	1-2	
+1-6	34-39	tauta	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	tauta	_	_	nsubj	basic	1-5	
+1-7	39-40	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-5	
+1-8	41-43	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	cop	basic	1-9	
+1-9	44-54	godprātīgs	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	godprātīgs	_	_	root	basic	1-9	
+1-10	54-55	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	1-9	
+
+#Text=Tātad prezidents ir godīgs pret sevi un citiem.
+2-1	56-61	Tātad	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tātad	_	_	discourse	basic	2-4	
+2-2	62-72	prezidents	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	prezidents	*->2-3	*[2]	nsubj	basic	2-4	
+2-3	73-75	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	cop	basic	2-4	
+2-4	76-82	godīgs	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	godīgs	_	_	root	basic	2-4	
+2-5	83-87	pret	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	pret	_	_	case	basic	2-6	
+2-6	88-92	sevi	*	*	Acc	*	*	*	*	*	*	*	*	*	Rcp	Yes	*	*	Case=Acc\|PronType=Rcp\|Reflex=Yes	*	*	px000an	*	sevis	*->2-4	*[2]	iobj	basic	2-4	
+2-7	93-95	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	cc	basic	2-8	
+2-8	96-102	citiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	Ind	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|PronType=Ind	*	*	pi0mpdn	*	cits	_	_	conj	basic	2-6	
+2-9	102-103	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	2-4	
+
+#Text=Augstā amata pildītājs ir gudrs, erudīts un no viņa staro emocionālā inteliģence.
+3-1	104-110	Augstā	*	*	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsgyp	*	augsts	*->2-5	*[2]	amod	basic	3-2	
+3-2	111-116	amata	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	amats	*->2-5	*[2]	nmod	basic	3-3	
+3-3	117-126	pildītājs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	pildītājs	*->2-5	*[2]	nsubj	basic	3-5	
+3-4	127-129	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	cop	basic	3-5	
+3-5	130-135	gudrs	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	gudrs	_	_	root	basic	3-5	
+3-6	135-136	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	3-7	
+3-7	137-144	erudīts	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	erudīts	_	_	conj	basic	3-5	
+3-8	145-147	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	cc	basic	3-11	
+3-9	148-150	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	case	basic	3-10	
+3-10	151-155	viņa	*	*	Gen	*	*	Masc	*	*	*	Sing	3	*	Prs	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msgn	*	viņš	*->2-6	*[2]	obl	basic	3-11	
+3-11	156-161	staro	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipi230an	*	starot	_	_	conj	basic	3-5	
+3-12	162-172	emocionālā	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnyp	*	emocionāls	_	_	amod	basic	3-13	
+3-13	173-184	inteliģence	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	inteliģence	_	_	nsubj	basic	3-11	
+3-14	184-185	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	3-5	
+
+#Text=Prezidents pauž stingrību, nelokāmību un gatavību uzņemties atbildību brīžos, kad tas ir īpaši nepieciešams.
+4-1	186-196	Prezidents	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	prezidents	*->2-7	*[2]	nsubj	basic	4-2	
+4-2	197-201	pauž	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt130an	*	paust	_	_	root	basic	4-2	
+4-3	202-211	stingrību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	stingrība	_	_	obj	basic	4-2	
+4-4	211-212	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	4-5	
+4-5	213-223	nelokāmību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	nelokāmība	_	_	conj	basic	4-3	
+4-6	224-226	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	cc	basic	4-7	
+4-7	227-235	gatavību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	gatavība	_	_	conj	basic	4-3	
+4-8	236-245	uzņemties	*	*	*	*	*	*	*	*	*	*	*	*	*	Yes	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	Inf	*	vmyn0t1000n	*	uzņemties	_	_	acl	basic	4-7	
+4-9	246-255	atbildību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	atbildība	_	_	obj	basic	4-8	
+4-10	256-262	brīžos	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl2	*	brīdis	*->1-1	*[1]	obl	basic	4-8	
+4-11	262-263	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	4-16	
+4-12	264-267	kad	*	*	*	*	*	*	*	*	*	*	*	*	Int	*	*	*	PronType=Int	*	*	r0t	*	kad	*->1-2	*[1]	advmod	basic	4-16	
+4-13	268-271	tas	*	*	Nom	*	*	Masc	*	*	*	Sing	3	*	Dem	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msnn	*	tas	_	_	nsubj	basic	4-16	
+4-14	272-274	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	cop	basic	4-16	
+4-15	275-280	īpaši	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpq	*	īpaši	_	_	advmod	basic	4-16	
+4-16	281-293	nepieciešams	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	nepieciešams	_	_	acl	basic	4-10	
+4-17	293-294	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	4-2	
+
+#Text=Valsts prezidents ir apveltīts ar stipru gribu, viņu raksturo tikumīgas vērtības un principi.
+5-1	295-301	Valsts	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	*	valsts	*->2-8	*[2]	nmod	basic	5-2	
+5-2	302-312	prezidents	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	prezidents	*->2-8	*[2]	nsubj:pass	basic	5-4	
+5-3	313-315	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	aux:pass	basic	5-4	
+5-4	316-325	apveltīts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsnpsnpn	*	apveltīt	_	_	root	basic	5-4	
+5-5	326-328	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	case	basic	5-7	
+5-6	329-335	stipru	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsanp	*	stiprs	_	_	amod	basic	5-7	
+5-7	336-341	gribu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	griba	_	_	iobj	basic	5-4	
+5-8	341-342	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	5-10	
+5-9	343-347	viņu	*	*	Acc	*	*	Masc	*	*	*	Sing	3	*	Prs	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msan	*	viņš	*->2-9	*[2]	obj	basic	5-10	
+5-10	348-356	raksturo	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt230an	*	raksturot	_	_	conj	basic	5-4	
+5-11	357-366	tikumīgas	*	*	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpnnp	*	tikumīgs	_	_	amod	basic	5-12	
+5-12	367-375	vērtības	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	vērtība	_	_	nsubj	basic	5-10	
+5-13	376-378	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	cc	basic	5-14	
+5-14	379-387	principi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	princips	_	_	conj	basic	5-12	
+5-15	387-388	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	5-4	

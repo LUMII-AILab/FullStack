@@ -1,44 +1,44 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=SIA “Elpa” vadītājs Gundars Sisenis pastāsta, ka par brīvajām veikala telpām viņam pateicis A. Paipa, aicinot kooperēties.
-1-1	0-3	SIA	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	sia	organization[1]	*[1]	_	_	nmod|nmod	basic|enhanced	1-3|1-3	
-1-2	4-5	“	_	_	_	_	_	_	_	_	_	_	_	_	zq	“	organization[1]	*[1]	_	_	punct|punct	basic|enhanced	1-3|1-3	
-1-3	5-9	Elpa	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	elpa	organization[1]	*[1]	_	_	nmod|nmod	basic|enhanced	1-5|1-5	
-1-4	9-10	”	_	_	_	_	_	_	_	_	_	_	_	_	zq	”	organization[1]	*[1]	_	_	punct|punct	basic|enhanced	1-3|1-3	
-1-5	11-19	vadītājs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	vadītājs	_	_	*[1]	*->1-1	nmod|nmod	basic|enhanced	1-6|1-6	
-1-6	20-27	Gundars	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Gundars	person[2]	*[2]	*[1]	*->1-2	nsubj|nsubj	basic|enhanced	1-8|1-8	
-1-7	28-35	Sisenis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	sisenis	person[2]	*[2]	*[1]	*->1-2	flat:name|flat	basic|enhanced	1-6|1-6	
-1-8	36-44	pastāsta	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	pastāstīt	_	_	_	_	root|root	basic|enhanced	1-8|1-8	
-1-9	44-45	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-16|1-16	
-1-10	46-48	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark|mark	basic|enhanced	1-16|1-16	
-1-11	49-52	par	_	_	_	_	_	_	_	_	_	_	_	_	sppd	par	_	_	_	_	case|case	basic|enhanced	1-14|1-14	
-1-12	53-61	brīvajām	Fem	Plur	Dat	Pos	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpdyp	brīva	_	_	*[2]	*->2-1	amod|amod	basic|enhanced	1-14|1-14	
-1-13	62-69	veikala	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	veikals	_	_	*[2]	*->2-1	nmod|nmod	basic|enhanced	1-14|1-14	
-1-14	70-76	telpām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	telpa	_	_	*[2]	*->2-1	iobj|iobj	basic|enhanced	1-16|1-16	
-1-15	77-82	viņam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msdn	viņš	_	_	*[1]	*->1-3	iobj|iobj	basic|enhanced	1-16|1-16	
-1-16	83-91	pateicis	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnasnp	pateikt	_	_	_	_	ccomp|ccomp	basic|enhanced	1-8|1-8	
-1-17	92-94	A.	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	a.	person[3]	*[3]	_	_	nsubj|nsubj	basic|enhanced	1-16|1-16	
-1-18	95-100	Paipa	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn4	Paipa	person[3]	*[3]	_	_	flat:name|flat	basic|enhanced	1-17|1-17	
-1-19	100-101	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-20|1-20	
-1-20	102-109	aicinot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000	aicināt	_	_	_	_	advcl|advcl	basic|enhanced	1-16|1-16	
-1-21	110-121	kooperēties	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i2000n	kooperēties	_	_	_	_	ccomp|ccomp	basic|enhanced	1-20|1-20	
-1-22	121-122	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-8|1-8	
+1-1	0-3	SIA	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	*	sia	organization[1]	*[1]	_	_	nmod|nmod	basic|enhanced	1-3|1-3	
+1-2	4-5	“	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	“	organization[1]	*[1]	_	_	punct|punct	basic|enhanced	1-3|1-3	
+1-3	5-9	Elpa	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	elpa	organization[1]	*[1]	_	_	nmod|nmod	basic|enhanced	1-5|1-5	
+1-4	9-10	”	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	”	organization[1]	*[1]	_	_	punct|punct	basic|enhanced	1-3|1-3	
+1-5	11-19	vadītājs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	vadītājs	_	_	*->1-1	*[1]	nmod|nmod	basic|enhanced	1-6|1-6	
+1-6	20-27	Gundars	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Gundars	person[2]	*[2]	*->1-2	*[1]	nsubj|nsubj	basic|enhanced	1-8|1-8	
+1-7	28-35	Sisenis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	sisenis	person[2]	*[2]	*->1-2	*[1]	flat:name|flat	basic|enhanced	1-6|1-6	
+1-8	36-44	pastāsta	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	pastāstīt	_	_	_	_	root|root	basic|enhanced	1-8|1-8	
+1-9	44-45	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	1-16|1-16	
+1-10	46-48	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark|mark	basic|enhanced	1-16|1-16	
+1-11	49-52	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	par	_	_	_	_	case|case	basic|enhanced	1-14|1-14	
+1-12	53-61	brīvajām	*	*	Dat	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpdyp	*	brīva	_	_	*->2-1	*[2]	amod|amod	basic|enhanced	1-14|1-14	
+1-13	62-69	veikala	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	veikals	_	_	*->2-1	*[2]	nmod|nmod	basic|enhanced	1-14|1-14	
+1-14	70-76	telpām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	*	telpa	_	_	*->2-1	*[2]	iobj|iobj	basic|enhanced	1-16|1-16	
+1-15	77-82	viņam	*	*	Dat	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msdn	*	viņš	_	_	*->1-3	*[1]	iobj|iobj	basic|enhanced	1-16|1-16	
+1-16	83-91	pateicis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnasnp	*	pateikt	_	_	_	_	ccomp|ccomp	basic|enhanced	1-8|1-8	
+1-17	92-94	A.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	a.	person[3]	*[3]	_	_	nsubj|nsubj	basic|enhanced	1-16|1-16	
+1-18	95-100	Paipa	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn4	*	Paipa	person[3]	*[3]	_	_	flat:name|flat	basic|enhanced	1-17|1-17	
+1-19	100-101	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	1-20|1-20	
+1-20	102-109	aicinot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000	*	aicināt	_	_	_	_	advcl|advcl	basic|enhanced	1-16|1-16	
+1-21	110-121	kooperēties	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i2000n	*	kooperēties	_	_	_	_	ccomp|ccomp	basic|enhanced	1-20|1-20	
+1-22	121-122	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	1-8|1-8	
 
 #Text=Tās esot pielāgotas daudzdzīvokļu mājas pirmā stāva trīsistabu dzīvoklī.
-2-1	124-127	Tās	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|PronType=Dem	*	*	pd0fpnn	tā	_	_	*[2]	*->2-2	nsubj|nsubj	basic|enhanced	2-3|2-3	
-2-2	128-132	esot	*	*	*	*	*	Pres	Qot	Act	*	Evident=Nfh\|Mood=Qot\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	*	vcnrpii00an	būt	_	_	_	_	aux|aux	basic|enhanced	2-3|2-3	
-2-3	133-143	pielāgotas	Fem	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfpnpsnp	pielāgot	_	_	_	_	root|root	basic|enhanced	2-3|2-3	
-2-4	144-157	daudzdzīvokļu	Masc	Ptan	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	ncmdgg	daudzdzīvokļu	_	_	_	_	nmod|nmod	basic|enhanced	2-5|2-5	
-2-5	158-163	mājas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	māja	_	_	_	_	nmod|nmod	basic|enhanced	2-9|2-9	
-2-6	164-169	pirmā	Masc	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|NumType=Ord	*	*	mosmsa	pirmais	_	_	_	_	amod|amod	basic|enhanced	2-7|2-7	
-2-7	170-175	stāva	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	stāva	_	_	_	_	amod|amod	basic|enhanced	2-9|2-9	
-2-8	176-186	trīsistabu	Fem	Ptan	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Ptan	*	*	ncfdgg	trīsistabu	_	_	_	_	nmod|nmod	basic|enhanced	2-9|2-9	
-2-9	187-195	dzīvoklī	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	dzīvoklis	_	_	_	_	acl|acl	basic|enhanced	2-3|2-3	
-2-10	195-196	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	2-3|2-3	
+2-1	124-127	Tās	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|PronType=Dem	*	*	pd0fpnn	*	tā	_	_	*->2-2	*[2]	nsubj|nsubj	basic|enhanced	2-3|2-3	
+2-2	128-132	esot	*	*	*	*	*	*	Qot	*	*	*	*	*	*	*	Pres	*	Evident=Nfh\|Mood=Qot\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnrpii00an	*	būt	_	_	_	_	aux|aux	basic|enhanced	2-3|2-3	
+2-3	133-143	pielāgotas	*	Perf	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Tense=Past\|VerbForm=Part	*	*	vmnpdfpnpsnp	*	pielāgot	_	_	_	_	root|root	basic|enhanced	2-3|2-3	
+2-4	144-157	daudzdzīvokļu	*	*	Gen	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	ncmdgg	*	daudzdzīvokļu	_	_	_	_	nmod|nmod	basic|enhanced	2-5|2-5	
+2-5	158-163	mājas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	māja	_	_	_	_	nmod|nmod	basic|enhanced	2-9|2-9	
+2-6	164-169	pirmā	*	*	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|NumType=Ord	*	*	mosmsa	*	pirmais	_	_	_	_	amod|amod	basic|enhanced	2-7|2-7	
+2-7	170-175	stāva	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	*	stāva	_	_	_	_	amod|amod	basic|enhanced	2-9|2-9	
+2-8	176-186	trīsistabu	*	*	Gen	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Ptan	*	*	ncfdgg	*	trīsistabu	_	_	_	_	nmod|nmod	basic|enhanced	2-9|2-9	
+2-9	187-195	dzīvoklī	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	*	dzīvoklis	_	_	_	_	acl|acl	basic|enhanced	2-3|2-3	
+2-10	195-196	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	2-3|2-3	

@@ -1,0 +1,40 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Kembridžas hercogu meitiņa piedzima 2.maijā plkst. 08:34 pēc Lielbritānijas laika.
+1-1	0-10	Kembridžas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Kembridža	GPE	https://en.wikipedia.org/wiki/Cambridge	*->1-1	*[1]	nmod	basic	1-2	
+1-2	11-18	hercogu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	hercogs	_	_	*->1-1	*[1]	nmod	basic	1-3	
+1-3	19-26	meitiņa	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	meitiņa	_	_	*->1-1	*[1]	nsubj	basic	1-4	
+1-4	27-35	piedzima	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnisi130an	*	piedzimt	_	_	_	_	root	basic	1-4	
+1-5	36-38	2.	*	*	*	*	*	*	*	*	Ord	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	2.	time[1]|time[2]	*[1]|*[2]	_	_	amod	basic	1-6	
+1-6	38-43	maijā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	maijs	time[1]|time[2]	*[1]|*[2]	_	_	obl	basic	1-4	
+1-7	44-50	plkst.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	*	plkst.	time[1]	*[1]	_	_	obl	basic	1-8	
+1-8	51-56	08:34	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	08:34	time[1]	*[1]	_	_	nummod	basic	1-4	
+1-9	57-60	pēc	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	pēc	_	_	_	_	case	basic	1-11	
+1-10	61-75	Lielbritānijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Lielbritānija	GPE	https://en.wikipedia.org/wiki/United\_Kingdom	_	_	nmod	basic	1-11	
+1-11	76-81	laika	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	laiks	_	_	_	_	nmod	basic	1-8	
+1-12	81-82	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-4	
+
+#Text=Princese piedzimstot svērusi 3,71 kilogramus.
+2-1	83-91	Princese	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	princese	_	_	*->1-2	*[1]	nsubj	basic	2-3	
+2-2	92-103	piedzimstot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	Conv	*	vmnpu0000000n	*	piedzimt	_	_	_	_	dep	basic	2-3	
+2-3	104-111	svērusi	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdfsnasnpn	*	svērt	_	_	_	_	root	basic	2-3	
+2-4	112-116	3,71	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	3,71	_	_	_	_	nummod	basic	2-5	
+2-5	117-127	kilogramus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	kilograms	_	_	_	_	obl	basic	2-3	
+2-6	127-128	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-3	
+
+#Text=Dzemdībās klāt bijis arī Kembridžas hercogs princis Viljams
+3-1	129-138	Dzemdībās	*	*	Loc	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Ptan	*	*	ncfdl4	*	dzemdības	_	_	_	_	obl	basic	3-2	
+3-2	139-143	klāt	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0p	*	klāt	_	_	_	_	root	basic	3-2	
+3-3	144-149	bijis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vcnpdmsnasnpn	*	būt	_	_	_	_	cop	basic	3-2	
+3-4	150-153	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	3-8	
+3-5	154-164	Kembridžas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Kembridža	GPE	https://en.wikipedia.org/wiki/Cambridge	*->2-1	*[2]	nmod	basic	3-6	
+3-6	165-172	hercogs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	hercogs	_	_	*->2-1	*[2]	nmod	basic	3-8	
+3-7	173-180	princis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	princis	_	_	*->2-1	*[2]	nmod	basic	3-8	
+3-8	181-188	Viljams	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Viljams	person	https://en.wikipedia.org/wiki/Prince\_William,\_Duke\_of\_Cambridge	*->2-2	*[2]	nsubj	basic	3-2	

@@ -1,0 +1,39 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Vissīvākā cīņa par čempionu titulu norisinājās starp trīs elites skrējējiem – J.Višķeru, Valēriju Žolneroviču un Jāni Girgensonu, kuri visas trases garumā bija atrāvušies no pārējiem.
+1-1	0-9	Vissīvākā	*	*	Nom	*	Sup	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Sup\|Gender=Fem\|Number=Sing	*	*	affsnys	*	sīvs	_	_	_	_	amod	basic	1-2	
+1-2	10-14	cīņa	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	cīņa	_	_	_	_	nsubj	basic	1-6	
+1-3	15-18	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	1-5	
+1-4	19-27	čempionu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	čempions	_	_	_	_	nmod	basic	1-5	
+1-5	28-34	titulu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	tituls	_	_	_	_	nmod	basic	1-2	
+1-6	35-46	norisinājās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyisi330an	*	norisināties	_	_	_	_	root	basic	1-6	
+1-7	47-52	starp	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	starp	_	_	_	_	case	basic	1-10	
+1-8	53-57	trīs	*	*	Dat	*	*	Fem	*	*	Card	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur\|NumType=Card	*	*	mcsfpd	*	trīs	_	_	*->1-1	*[1]	nummod	basic	1-10	
+1-9	58-64	elites	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	elite	_	_	*->1-1	*[1]	nmod	basic	1-10	
+1-10	65-75	skrējējiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	skrējējs	_	_	*->1-1	*[1]	obl	basic	1-6	
+1-11	76-77	–	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	–	_	_	_	_	punct	basic	1-12	
+1-12	78-80	J.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	J.	person[1]	*[1]	*->1-2	*[1]	acl	basic	1-10	
+1-13	80-87	Višķeru	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	*	Višķers	person[1]	*[1]	*->1-2	*[1]	flat:name	basic	1-12	
+1-14	87-88	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	*->1-2	*[1]	punct	basic	1-15	
+1-15	89-97	Valēriju	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	*	Valērijs	person[2]	https://en.wikipedia.org/wiki/Valērijs\_Žolnerovičs[2]	*->1-2	*[1]	conj	basic	1-12	
+1-16	98-109	Žolneroviču	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	*	Žolnerovičs	person[2]	https://en.wikipedia.org/wiki/Valērijs\_Žolnerovičs[2]	*->1-2	*[1]	flat:name	basic	1-15	
+1-17	110-112	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	*->1-2	*[1]	cc	basic	1-18	
+1-18	113-117	Jāni	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa2	*	Jānis	person[3]	*[3]	*->1-2	*[1]	conj	basic	1-12	
+1-19	118-128	Girgensonu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	*	Girgensons	person[3]	*[3]	*->1-2	*[1]	flat:name	basic	1-18	
+1-20	128-129	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-26	
+1-21	130-134	kuri	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	Rel	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Rel	*	*	pr0mpnn	*	kurš	_	_	*->1-3	*[1]	nsubj	basic	1-26	
+1-22	135-140	visas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	Tot	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|PronType=Tot	*	*	pg0fsgn	*	visa	_	_	_	_	det	basic	1-23	
+1-23	141-147	trases	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	trase	_	_	_	_	nmod	basic	1-24	
+1-24	148-154	garumā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	garums	_	_	_	_	obl	basic	1-26	
+1-25	155-159	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnisii30an	*	būt	_	_	_	_	aux	basic	1-26	
+1-26	160-170	atrāvušies	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	Yes	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmypdmpnasnpn	*	atrauties	_	_	_	_	acl	basic	1-12	
+1-27	171-173	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	no	_	_	_	_	case	basic	1-28	
+1-28	174-182	pārējiem	*	*	Dat	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpdnp	*	pārējais	_	_	_	_	obl	basic	1-26	
+1-29	182-183	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-6	

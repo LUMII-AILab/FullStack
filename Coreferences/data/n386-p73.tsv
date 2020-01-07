@@ -1,0 +1,71 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=24. Līdz 2015. gada 30. septembrim personas, kurām izsniegta Ministru kabineta 2006. gada 9. maija noteikumu Nr. 370 "Pirmsmuitošanas darbību noteikumi" 9. punktā minētā atļauja, preces pagaidu uzglabāšanai piesaka un pagaidu uzglabāšanai pieteiktās preces uzskaita šajos noteikumos noteiktajā kārtībā vai Ministru kabineta 2006. gada 9. maija noteikumos Nr. 370 "Pirmsmuitošanas darbību noteikumi" noteiktajā kārtībā.
+1-1	0-3	24.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	24.	_	_	_	_	discourse	basic	1-33	
+1-2	4-8	Līdz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsd	*	līdz	time[1]	*[1]	_	_	case	basic	1-6	
+1-3	9-14	2015.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	2015.	time[1]	*[1]	_	_	amod	basic	1-4	
+1-4	15-19	gada	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	gads	time[1]	*[1]	_	_	nmod	basic	1-6	
+1-5	20-23	30.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	30.	time[1]	*[1]	_	_	amod	basic	1-6	
+1-6	24-34	septembrim	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd2	*	septembris	time[1]	*[1]	_	_	obl	basic	1-33	
+1-7	35-43	personas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	persona	_	_	*->1-1	*[1]	nsubj	basic	1-33	
+1-8	43-44	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-10	
+1-9	45-50	kurām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur\|PronType=Rel	*	*	pr0fpdn	*	kura	_	_	*->1-2	*[1]	iobj	basic	1-10	
+1-10	51-60	izsniegta	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsnpsnpn	*	izsniegt	_	_	_	_	acl	basic	1-7	
+1-11	61-69	Ministru	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	ministrs	entity[2]|organization[3]	*[2]|*[3]	_	_	nmod	basic	1-12	
+1-12	70-78	kabineta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	kabinets	entity[2]|organization[3]	*[2]|*[3]	_	_	nmod	basic	1-17	
+1-13	79-84	2006.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	2006.	entity[2]|time[4]	*[2]|*[4]	_	_	amod	basic	1-14	
+1-14	85-89	gada	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	gads	entity[2]|time[4]	*[2]|*[4]	_	_	nmod	basic	1-16	
+1-15	90-92	9.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	9.	entity[2]|time[4]	*[2]|*[4]	_	_	amod	basic	1-16	
+1-16	93-98	maija	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	maijs	entity[2]|time[4]	*[2]|*[4]	_	_	nmod	basic	1-17	
+1-17	99-108	noteikumu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	noteikums	entity[2]	*[2]	_	_	nmod	basic	1-23	
+1-18	109-112	Nr.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	*	nr.	entity[2]	*[2]	_	_	nmod	basic	1-19	
+1-19	113-116	370	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	370	entity[2]	*[2]	_	_	dep	basic	1-17	
+1-20	117-118	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	entity[2]	*[2]	_	_	punct	basic	1-23	
+1-21	118-133	Pirmsmuitošanas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	pirmsmuitošana	entity[2]	*[2]	_	_	nmod	basic	1-22	
+1-22	134-141	darbību	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	darbība	entity[2]	*[2]	_	_	nmod	basic	1-23	
+1-23	142-151	noteikumi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	noteikums	entity[2]	*[2]	_	_	nmod	basic	1-26	
+1-24	151-152	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	entity[2]	*[2]	_	_	punct	basic	1-23	
+1-25	153-155	9.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	9.	_	_	_	_	amod	basic	1-26	
+1-26	156-162	punktā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	punkts	_	_	_	_	obl	basic	1-27	
+1-27	163-169	minētā	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsnpsypn	*	minēt	_	_	_	_	amod	basic	1-28	
+1-28	170-177	atļauja	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	atļauja	_	_	_	_	nsubj:pass	basic	1-10	
+1-29	177-178	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-10	
+1-30	179-185	preces	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa5	*	prece	_	_	_	_	obj	basic	1-33	
+1-31	186-193	pagaidu	*	*	Gen	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Gen	*	*	nc00gg	*	pagaidu	_	_	_	_	nmod	basic	1-32	
+1-32	194-206	uzglabāšanai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	*	uzglabāšana	_	_	_	_	obl	basic	1-33	
+1-33	207-214	piesaka	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	piesacīt	_	_	_	_	root	basic	1-33	
+1-34	215-217	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-39	
+1-35	218-225	pagaidu	*	*	Gen	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Gen	*	*	nc00gg	*	pagaidu	_	_	_	_	nmod	basic	1-36	
+1-36	226-238	uzglabāšanai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	*	uzglabāšana	_	_	_	_	obl	basic	1-37	
+1-37	239-249	pieteiktās	*	Perf	Acc	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfpapsypn	*	pieteikt	_	_	_	_	amod	basic	1-38	
+1-38	250-256	preces	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa5	*	prece	_	_	_	_	obj	basic	1-39	
+1-39	257-265	uzskaita	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	uzskaitīt	_	_	_	_	conj	basic	1-33	
+1-40	266-271	šajos	*	*	Loc	*	*	Masc	*	*	*	Plur	3	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Dem	*	*	pd3mpln	*	šis	_	_	_	_	det	basic	1-41	
+1-41	272-282	noteikumos	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	*	noteikums	_	_	_	_	obl	basic	1-42	
+1-42	283-293	noteiktajā	*	Perf	Loc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Loc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfslpsypn	*	noteikt	_	_	_	_	amod	basic	1-43	
+1-43	294-301	kārtībā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	kārtība	_	_	_	_	obl	basic	1-39	
+1-44	302-305	vai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	vai	_	_	_	_	cc	basic	1-60	
+1-45	306-314	Ministru	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	ministrs	entity[5]|organization[6]	*[5]|*[6]	_	_	nmod	basic	1-46	
+1-46	315-323	kabineta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	kabinets	entity[5]|organization[6]	*[5]|*[6]	_	_	nmod	basic	1-51	
+1-47	324-329	2006.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	2006.	entity[5]|time[7]	*[5]|*[7]	_	_	amod	basic	1-48	
+1-48	330-334	gada	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	gads	entity[5]|time[7]	*[5]|*[7]	_	_	nmod	basic	1-50	
+1-49	335-337	9.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	9.	entity[5]|time[7]	*[5]|*[7]	_	_	amod	basic	1-50	
+1-50	338-343	maija	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	maijs	entity[5]|time[7]	*[5]|*[7]	_	_	nmod	basic	1-51	
+1-51	344-354	noteikumos	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	*	noteikums	entity[5]	*[5]	_	_	nmod	basic	1-57	
+1-52	355-358	Nr.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	*	nr.	entity[5]	*[5]	_	_	nmod	basic	1-53	
+1-53	359-362	370	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	370	entity[5]	*[5]	_	_	dep	basic	1-51	
+1-54	363-364	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	entity[5]	*[5]	_	_	punct	basic	1-57	
+1-55	364-379	Pirmsmuitošanas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	pirmsmuitošana	entity[5]	*[5]	_	_	nmod	basic	1-56	
+1-56	380-387	darbību	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	darbība	entity[5]	*[5]	_	_	nmod	basic	1-57	
+1-57	388-397	noteikumi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	noteikums	entity[5]	*[5]	_	_	obl	basic	1-59	
+1-58	397-398	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	entity[5]	*[5]	_	_	punct	basic	1-57	
+1-59	399-409	noteiktajā	*	Perf	Loc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Loc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfslpsypn	*	noteikt	_	_	_	_	amod	basic	1-60	
+1-60	410-417	kārtībā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	kārtība	_	_	_	_	conj	basic	1-43	
+1-61	417-418	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-33	

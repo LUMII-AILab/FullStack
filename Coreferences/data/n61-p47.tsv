@@ -1,27 +1,27 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Fondu pārvalda Fonda padome, tās darbību nodrošina direktors, projektus izvērtē Fonda nozaru ekspertu komisijas.
-1-1	0-5	Fondu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	fonds	_	_	_	_	obj|obj	basic|enhanced	1-2|1-2	
-1-2	6-14	pārvalda	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	pārvaldīt	_	_	_	_	root|root	basic|enhanced	1-2|1-2	
-1-3	15-20	Fonda	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	fonds	organization[1]	*[1]	*[1]	*->1-1	nmod|nmod	basic|enhanced	1-4|1-4	
-1-4	21-27	padome	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	padome	organization[1]	*[1]	*[1]	*->1-1	nsubj|nsubj	basic|enhanced	1-2|1-2	
-1-5	27-28	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-8|1-8	
-1-6	29-32	tās	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsgn	tā	_	_	*[1]	*->1-2	det|det	basic|enhanced	1-7|1-7	
-1-7	33-40	darbību	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	darbība	_	_	_	_	obj|obj	basic|enhanced	1-8|1-8	
-1-8	41-50	nodrošina	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	nodrošināt	_	_	_	_	conj|conj	basic|enhanced	1-2|1-2	
-1-9	51-60	direktors	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	direktors	_	_	_	_	nsubj|nsubj	basic|enhanced	1-8|1-8	
-1-10	60-61	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-12|1-12	
-1-11	62-71	projektus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	projekts	_	_	_	_	obj|obj	basic|enhanced	1-12|1-12	
-1-12	72-79	izvērtē	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt230an	izvērtēt	_	_	_	_	conj|conj	basic|enhanced	1-2|1-2	
-1-13	80-85	Fonda	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	fonds	organization[2]	*[2]	_	_	nmod|nmod	basic|enhanced	1-16|1-16	
-1-14	86-92	nozaru	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg5	nozare	organization[2]	*[2]	_	_	nmod|nmod	basic|enhanced	1-15|1-15	
-1-15	93-101	ekspertu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	eksperts	organization[2]	*[2]	_	_	nmod|nmod	basic|enhanced	1-16|1-16	
-1-16	102-111	komisijas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	komisija	organization[2]	*[2]	_	_	nsubj|nsubj	basic|enhanced	1-12|1-12	
-1-17	111-112	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-2|1-2	
+1-1	0-5	Fondu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	fonds	_	_	_	_	obj|obj	basic|enhanced	1-2|1-2	
+1-2	6-14	pārvalda	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	pārvaldīt	_	_	_	_	root|root	basic|enhanced	1-2|1-2	
+1-3	15-20	Fonda	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	fonds	organization[1]	*[1]	*->1-1	*[1]	nmod|nmod	basic|enhanced	1-4|1-4	
+1-4	21-27	padome	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	padome	organization[1]	*[1]	*->1-1	*[1]	nsubj|nsubj	basic|enhanced	1-2|1-2	
+1-5	27-28	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	1-8|1-8	
+1-6	29-32	tās	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsgn	*	tā	_	_	*->1-2	*[1]	det|det	basic|enhanced	1-7|1-7	
+1-7	33-40	darbību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	darbība	_	_	_	_	obj|obj	basic|enhanced	1-8|1-8	
+1-8	41-50	nodrošina	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	nodrošināt	_	_	_	_	conj|conj	basic|enhanced	1-2|1-2	
+1-9	51-60	direktors	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	direktors	_	_	_	_	nsubj|nsubj	basic|enhanced	1-8|1-8	
+1-10	60-61	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	1-12|1-12	
+1-11	62-71	projektus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	projekts	_	_	_	_	obj|obj	basic|enhanced	1-12|1-12	
+1-12	72-79	izvērtē	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt230an	*	izvērtēt	_	_	_	_	conj|conj	basic|enhanced	1-2|1-2	
+1-13	80-85	Fonda	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	fonds	organization[2]	*[2]	_	_	nmod|nmod	basic|enhanced	1-16|1-16	
+1-14	86-92	nozaru	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg5	*	nozare	organization[2]	*[2]	_	_	nmod|nmod	basic|enhanced	1-15|1-15	
+1-15	93-101	ekspertu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	eksperts	organization[2]	*[2]	_	_	nmod|nmod	basic|enhanced	1-16|1-16	
+1-16	102-111	komisijas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	komisija	organization[2]	*[2]	_	_	nsubj|nsubj	basic|enhanced	1-12|1-12	
+1-17	111-112	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	1-2|1-2	

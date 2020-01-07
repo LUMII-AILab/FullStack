@@ -1,69 +1,69 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Elīne.
-1-1	0-5	Elīne	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	Elīne	person	*	*[3]	*->3-1	root|root	basic|enhanced	1-1|1-1	
-1-2	5-6	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-1|1-1	
+1-1	0-5	Elīne	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	*	Elīne	person	*	*->3-1	*[3]	root|root	basic|enhanced	1-1|1-1	
+1-2	5-6	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	1-1|1-1	
 
 #Text=Ar Laumu!
-2-1	8-10	Ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case|case	basic|enhanced	2-2|2-2	
-2-2	11-16	Laumu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	Lauma	person	*	*[1]	*->1-1	root|root	basic|enhanced	2-2|2-2	
-2-3	16-17	!	_	_	_	_	_	_	_	_	_	_	_	_	zs	!	_	_	_	_	punct|punct	basic|enhanced	2-2|2-2	
+2-1	8-10	Ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case|case	basic|enhanced	2-2|2-2	
+2-2	11-16	Laumu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	*	Lauma	person	*	*->1-1	*[1]	root|root	basic|enhanced	2-2|2-2	
+2-3	16-17	!	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	!	_	_	_	_	punct|punct	basic|enhanced	2-2|2-2	
 
 #Text=Viņa gribēja, lai es mirstu!
-3-1	19-23	Viņa	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsnn	viņa	_	_	*[1]	*->1-2	nsubj|nsubj	basic|enhanced	3-2|3-2	
-3-2	24-31	gribēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vonist330an	gribēt	_	_	_	_	root|root	basic|enhanced	3-2|3-2	
-3-3	31-32	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	3-6|3-6	
-3-4	33-36	lai	_	_	_	_	_	_	_	_	_	_	_	_	cs	lai	_	_	_	_	mark|mark	basic|enhanced	3-6|3-6	
-3-5	37-39	es	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10snn	es	_	_	*[3]	*->3-2	nsubj|nsubj	basic|enhanced	3-6|3-6	
-3-6	40-46	mirstu	*	Sing	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	1	*	vmnipi11san	mirt	_	_	_	_	ccomp|ccomp	basic|enhanced	3-2|3-2	
-3-7	46-47	!	_	_	_	_	_	_	_	_	_	_	_	_	zs	!	_	_	_	_	punct|punct	basic|enhanced	3-2|3-2	
+3-1	19-23	Viņa	*	*	Nom	*	*	Fem	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3fsnn	*	viņa	_	_	*->1-2	*[1]	nsubj|nsubj	basic|enhanced	3-2|3-2	
+3-2	24-31	gribēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vonist330an	*	gribēt	_	_	_	_	root|root	basic|enhanced	3-2|3-2	
+3-3	31-32	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	3-6|3-6	
+3-4	33-36	lai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	lai	_	_	_	_	mark|mark	basic|enhanced	3-6|3-6	
+3-5	37-39	es	*	*	Nom	*	*	*	*	*	*	Sing	1	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	*	*	pp10snn	*	es	_	_	*->3-2	*[3]	nsubj|nsubj	basic|enhanced	3-6|3-6	
+3-6	40-46	mirstu	*	*	*	*	*	*	Ind	*	*	Sing	1	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipi11san	*	mirt	_	_	_	_	ccomp|ccomp	basic|enhanced	3-2|3-2	
+3-7	46-47	!	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	!	_	_	_	_	punct|punct	basic|enhanced	3-2|3-2	
 
 #Text=Tur, mežā!
-4-1	49-52	Tur	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0p	tur	_	_	*[2]	*->2-1	root|root	basic|enhanced	4-1|4-1	
-4-2	52-53	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	4-3|4-3	
-4-3	54-58	mežā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	mežs	_	_	*[2]	*->2-2	acl|acl	basic|enhanced	4-1|4-1	
-4-4	58-59	!	_	_	_	_	_	_	_	_	_	_	_	_	zs	!	_	_	_	_	punct|punct	basic|enhanced	4-1|4-1	
+4-1	49-52	Tur	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0p	*	tur	_	_	*->2-1	*[2]	root|root	basic|enhanced	4-1|4-1	
+4-2	52-53	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	4-3|4-3	
+4-3	54-58	mežā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	mežs	_	_	*->2-2	*[2]	acl|acl	basic|enhanced	4-1|4-1	
+4-4	58-59	!	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	!	_	_	_	_	punct|punct	basic|enhanced	4-1|4-1	
 
 #Text=Mēs taču šovakar gājām kopā!
-5-1	61-64	Mēs	*	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Number=Plur\|Person=1\|PronType=Prs	1	*	pp10pnn	mēs	_	_	_	_	nsubj|nsubj	basic|enhanced	5-4|5-4	
-5-2	65-69	taču	_	_	_	_	_	_	_	_	_	_	_	_	q	taču	_	_	_	_	discourse|discourse	basic|enhanced	5-4|5-4	
-5-3	70-77	šovakar	_	_	_	_	_	_	_	_	_	_	_	_	r0t	šovakar	_	_	_	_	advmod|advmod	basic|enhanced	5-4|5-4	
-5-4	78-83	gājām	*	Plur	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	1	*	vmnisii1pan	iet	_	_	_	_	root|root	basic|enhanced	5-4|5-4	
-5-5	84-88	kopā	_	_	_	_	_	_	_	_	_	_	_	_	r0m	kopā	_	_	_	_	advmod|advmod	basic|enhanced	5-4|5-4	
-5-6	88-89	!	_	_	_	_	_	_	_	_	_	_	_	_	zs	!	_	_	_	_	punct|punct	basic|enhanced	5-4|5-4	
+5-1	61-64	Mēs	*	*	Nom	*	*	*	*	*	*	Plur	1	*	*	*	*	*	Case=Nom\|Number=Plur\|Person=1\|PronType=Prs	*	*	pp10pnn	*	mēs	_	_	_	_	nsubj|nsubj	basic|enhanced	5-4|5-4	
+5-2	65-69	taču	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	taču	_	_	_	_	discourse|discourse	basic|enhanced	5-4|5-4	
+5-3	70-77	šovakar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	šovakar	_	_	_	_	advmod|advmod	basic|enhanced	5-4|5-4	
+5-4	78-83	gājām	*	*	*	*	*	*	Ind	*	*	Plur	1	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnisii1pan	*	iet	_	_	_	_	root|root	basic|enhanced	5-4|5-4	
+5-5	84-88	kopā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	kopā	_	_	_	_	advmod|advmod	basic|enhanced	5-4|5-4	
+5-6	88-89	!	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	!	_	_	_	_	punct|punct	basic|enhanced	5-4|5-4	
 
 #Text=Un tad es iekritu bedrē, un viņa aizgāja!
-6-1	91-93	Un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	6-4|6-4	
-6-2	94-97	tad	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	tad	_	_	_	_	advmod|advmod	basic|enhanced	6-4|6-4	
-6-3	98-100	es	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10snn	es	_	_	*[3]	*->3-3	nsubj|nsubj	basic|enhanced	6-4|6-4	
-6-4	101-108	iekritu	*	Sing	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	1	*	vmnisi11san	iekrist	_	_	_	_	root|root	basic|enhanced	6-4|6-4	
-6-5	109-114	bedrē	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	bedre	_	_	_	_	obl|obl	basic|enhanced	6-4|6-4	
-6-6	114-115	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	6-9|6-9	
-6-7	116-118	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	6-9|6-9	
-6-8	119-123	viņa	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsnn	viņa	_	_	*[1]	*->1-3	nsubj|nsubj	basic|enhanced	6-9|6-9	
-6-9	124-131	aizgāja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisii30an	aiziet	_	_	_	_	conj|conj	basic|enhanced	6-4|6-4	
-6-10	131-132	!	_	_	_	_	_	_	_	_	_	_	_	_	zs	!	_	_	_	_	punct|punct	basic|enhanced	6-4|6-4	
+6-1	91-93	Un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc|cc	basic|enhanced	6-4|6-4	
+6-2	94-97	tad	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	*	tad	_	_	_	_	advmod|advmod	basic|enhanced	6-4|6-4	
+6-3	98-100	es	*	*	Nom	*	*	*	*	*	*	Sing	1	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	*	*	pp10snn	*	es	_	_	*->3-3	*[3]	nsubj|nsubj	basic|enhanced	6-4|6-4	
+6-4	101-108	iekritu	*	*	*	*	*	*	Ind	*	*	Sing	1	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnisi11san	*	iekrist	_	_	_	_	root|root	basic|enhanced	6-4|6-4	
+6-5	109-114	bedrē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	*	bedre	_	_	_	_	obl|obl	basic|enhanced	6-4|6-4	
+6-6	114-115	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	6-9|6-9	
+6-7	116-118	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc|cc	basic|enhanced	6-9|6-9	
+6-8	119-123	viņa	*	*	Nom	*	*	Fem	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3fsnn	*	viņa	_	_	*->1-3	*[1]	nsubj|nsubj	basic|enhanced	6-9|6-9	
+6-9	124-131	aizgāja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnisii30an	*	aiziet	_	_	_	_	conj|conj	basic|enhanced	6-4|6-4	
+6-10	131-132	!	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	!	_	_	_	_	punct|punct	basic|enhanced	6-4|6-4	
 
 #Text=Pameta mani tur vienu, pat atpakaļ nepaskatījās!
-7-1	134-140	Pameta	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	pamest	_	_	_	_	root|root	basic|enhanced	7-1|7-1	
-7-2	141-145	mani	*	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10san	es	_	_	*[3]	*->3-4	obj|obj	basic|enhanced	7-1|7-1	
-7-3	146-149	tur	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0p	tur	_	_	_	_	advmod|advmod	basic|enhanced	7-1|7-1	
-7-4	150-155	vienu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|NumType=Card	*	*	mcsmsa	viens	_	_	_	_	acl|acl	basic|enhanced	7-1|7-1	
-7-5	155-156	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	7-8|7-8	
-7-6	157-160	pat	_	_	_	_	_	_	_	_	_	_	_	_	q	pat	_	_	_	_	discourse|discourse	basic|enhanced	7-8|7-8	
-7-7	161-168	atpakaļ	_	_	_	_	_	_	_	_	_	_	_	_	r0p	atpakaļ	_	_	_	_	advmod|advmod	basic|enhanced	7-8|7-8	
-7-8	169-181	nepaskatījās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyist330ay	nepaskatīties	_	_	_	_	conj|conj	basic|enhanced	7-1|7-1	
-7-9	181-182	!	_	_	_	_	_	_	_	_	_	_	_	_	zs	!	_	_	_	_	punct|punct	basic|enhanced	7-1|7-1	
+7-1	134-140	Pameta	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist130an	*	pamest	_	_	_	_	root|root	basic|enhanced	7-1|7-1	
+7-2	141-145	mani	*	*	Acc	*	*	*	*	*	*	Sing	1	*	*	*	*	*	Case=Acc\|Number=Sing\|Person=1\|PronType=Prs	*	*	pp10san	*	es	_	_	*->3-4	*[3]	obj|obj	basic|enhanced	7-1|7-1	
+7-3	146-149	tur	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0p	*	tur	_	_	_	_	advmod|advmod	basic|enhanced	7-1|7-1	
+7-4	150-155	vienu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|NumType=Card	*	*	mcsmsa	*	viens	_	_	_	_	acl|acl	basic|enhanced	7-1|7-1	
+7-5	155-156	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	7-8|7-8	
+7-6	157-160	pat	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	pat	_	_	_	_	discourse|discourse	basic|enhanced	7-8|7-8	
+7-7	161-168	atpakaļ	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0p	*	atpakaļ	_	_	_	_	advmod|advmod	basic|enhanced	7-8|7-8	
+7-8	169-181	nepaskatījās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmyist330ay	*	nepaskatīties	_	_	_	_	conj|conj	basic|enhanced	7-1|7-1	
+7-9	181-182	!	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	!	_	_	_	_	punct|punct	basic|enhanced	7-1|7-1	
 
 #Text=Viņa mani ienīst!
-8-1	184-188	Viņa	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsnn	viņa	_	_	*[1]	*->1-4	nsubj|nsubj	basic|enhanced	8-3|8-3	
-8-2	189-193	mani	*	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10san	es	_	_	*[3]	*->3-5	obj|obj	basic|enhanced	8-3|8-3	
-8-3	194-200	ienīst	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt130an	ienīst	_	_	_	_	root|root	basic|enhanced	8-3|8-3	
-8-4	200-201	!	_	_	_	_	_	_	_	_	_	_	_	_	zs	!	_	_	_	_	punct|punct	basic|enhanced	8-3|8-3	
+8-1	184-188	Viņa	*	*	Nom	*	*	Fem	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3fsnn	*	viņa	_	_	*->1-4	*[1]	nsubj|nsubj	basic|enhanced	8-3|8-3	
+8-2	189-193	mani	*	*	Acc	*	*	*	*	*	*	Sing	1	*	*	*	*	*	Case=Acc\|Number=Sing\|Person=1\|PronType=Prs	*	*	pp10san	*	es	_	_	*->3-5	*[3]	obj|obj	basic|enhanced	8-3|8-3	
+8-3	194-200	ienīst	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt130an	*	ienīst	_	_	_	_	root|root	basic|enhanced	8-3|8-3	
+8-4	200-201	!	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	!	_	_	_	_	punct|punct	basic|enhanced	8-3|8-3	

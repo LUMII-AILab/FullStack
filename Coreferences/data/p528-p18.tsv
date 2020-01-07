@@ -1,58 +1,58 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Pansionātā viena iemītnieka uzturēšana izmaksā 80 latus mēnesī.
-1-1	0-10	Pansionātā	ncmsl1	pansionāts	_	_	_	_	obl	basic	1-5	
-1-2	11-16	viena	mcsmsg	viens	_	_	_	_	nummod	basic	1-3	
-1-3	17-27	iemītnieka	ncmsg1	iemītnieks	_	_	_	_	nmod	basic	1-4	
-1-4	28-38	uzturēšana	ncfsn4	uzturēšana	_	_	*[1]	*->1-1	nsubj	basic	1-5	
-1-5	39-46	izmaksā	vmnipt230an	izmaksāt	_	_	_	_	root	basic	1-5	
-1-6	47-49	80	xn	80	_	_	_	_	nummod	basic	1-7	
-1-7	50-55	latus	ncmpa1	lats	_	_	_	_	obj	basic	1-5	
-1-8	56-62	mēnesī	ncmsl2	mēnesis	_	_	_	_	acl	basic	1-7	
-1-9	62-63	.	zs	.	_	_	_	_	punct	basic	1-5	
+1-1	0-10	Pansionātā	ncmsl1	*	pansionāts	_	_	_	_	obl	basic	1-5	
+1-2	11-16	viena	mcsmsg	*	viens	_	_	_	_	nummod	basic	1-3	
+1-3	17-27	iemītnieka	ncmsg1	*	iemītnieks	_	_	_	_	nmod	basic	1-4	
+1-4	28-38	uzturēšana	ncfsn4	*	uzturēšana	_	_	*->1-1	*[1]	nsubj	basic	1-5	
+1-5	39-46	izmaksā	vmnipt230an	*	izmaksāt	_	_	_	_	root	basic	1-5	
+1-6	47-49	80	xn	*	80	_	_	_	_	nummod	basic	1-7	
+1-7	50-55	latus	ncmpa1	*	lats	_	_	_	_	obj	basic	1-5	
+1-8	56-62	mēnesī	ncmsl2	*	mēnesis	_	_	_	_	acl	basic	1-7	
+1-9	62-63	.	zs	*	.	_	_	_	_	punct	basic	1-5	
 
 #Text=To finansē Alūksnes rajona padome.
-2-1	65-67	To	pd0msan	tas	_	_	*[1]	*->1-2	obj	basic	2-2	
-2-2	68-75	finansē	vmnipt230an	finansēt	_	_	_	_	root	basic	2-2	
-2-3	76-84	Alūksnes	npfsg5	Alūksne	organization[1]|GPE[2]	*[1]|https://en.wikipedia.org/wiki/Alūksne[2]	_	_	nmod	basic	2-4	
-2-4	85-91	rajona	ncmsg1	rajons	organization[1]	*[1]	_	_	nmod	basic	2-5	
-2-5	92-98	padome	ncfsn5	padome	organization[1]	*[1]	_	_	nsubj	basic	2-2	
-2-6	98-99	.	zs	.	_	_	_	_	punct	basic	2-2	
+2-1	65-67	To	pd0msan	*	tas	_	_	*->1-2	*[1]	obj	basic	2-2	
+2-2	68-75	finansē	vmnipt230an	*	finansēt	_	_	_	_	root	basic	2-2	
+2-3	76-84	Alūksnes	npfsg5	*	Alūksne	organization[1]|GPE[2]	*[1]|https://en.wikipedia.org/wiki/Alūksne[2]	_	_	nmod	basic	2-4	
+2-4	85-91	rajona	ncmsg1	*	rajons	organization[1]	*[1]	_	_	nmod	basic	2-5	
+2-5	92-98	padome	ncfsn5	*	padome	organization[1]	*[1]	_	_	nsubj	basic	2-2	
+2-6	98-99	.	zs	*	.	_	_	_	_	punct	basic	2-2	
 
 #Text=Daļēji izdevumi jāsedz arī iemītniekiem - viņi saņem 15 procentus no pensijas, bet pārējā nauda paliek sociālās aprūpes iestādei.
-3-1	101-107	Daļēji	r0m	daļēji	_	_	_	_	advmod	basic	3-3	
-3-2	108-116	izdevumi	ncmdn1	izdevumi	_	_	_	_	obj	basic	3-3	
-3-3	117-123	jāsedz	vmnd0t100an	segt	_	_	_	_	root	basic	3-3	
-3-4	124-127	arī	q	arī	_	_	_	_	discourse	basic	3-5	
-3-5	128-140	iemītniekiem	ncmpd1	iemītnieks	_	_	*[2]	*->2-1	nsubj	basic	3-3	
-3-6	141-142	-	zd	-	_	_	_	_	punct	basic	3-8	
-3-7	143-147	viņi	pp3mpnn	viņš	_	_	*[2]	*->2-2	nsubj	basic	3-8	
-3-8	148-153	saņem	vmnipt130an	saņemt	_	_	_	_	conj	basic	3-3	
-3-9	154-156	15	xn	15	_	_	_	_	nummod	basic	3-10	
-3-10	157-166	procentus	ncmpa1	procents	_	_	_	_	obj	basic	3-8	
-3-11	167-169	no	spsg	no	_	_	_	_	case	basic	3-12	
-3-12	170-178	pensijas	ncfsg4	pensija	_	_	_	_	nmod	basic	3-10	
-3-13	178-179	,	zc	,	_	_	_	_	punct	basic	3-17	
-3-14	180-183	bet	cc	bet	_	_	_	_	cc	basic	3-17	
-3-15	184-190	pārējā	arfsnyp	pārēja	_	_	_	_	amod	basic	3-16	
-3-16	191-196	nauda	ncfsn4	nauda	_	_	_	_	nsubj	basic	3-17	
-3-17	197-203	paliek	vmnipi130an	palikt	_	_	_	_	conj	basic	3-3	
-3-18	204-212	sociālās	arfsgyp	sociāla	_	_	_	_	amod	basic	3-19	
-3-19	213-220	aprūpes	ncfsg5	aprūpe	_	_	_	_	nmod	basic	3-20	
-3-20	221-229	iestādei	ncfsd5	iestāde	_	_	_	_	iobj	basic	3-17	
-3-21	229-230	.	zs	.	_	_	_	_	punct	basic	3-3	
+3-1	101-107	Daļēji	r0m	*	daļēji	_	_	_	_	advmod	basic	3-3	
+3-2	108-116	izdevumi	ncmdn1	*	izdevumi	_	_	_	_	obj	basic	3-3	
+3-3	117-123	jāsedz	vmnd0t100an	*	segt	_	_	_	_	root	basic	3-3	
+3-4	124-127	arī	q	*	arī	_	_	_	_	discourse	basic	3-5	
+3-5	128-140	iemītniekiem	ncmpd1	*	iemītnieks	_	_	*->2-1	*[2]	nsubj	basic	3-3	
+3-6	141-142	-	zd	*	-	_	_	_	_	punct	basic	3-8	
+3-7	143-147	viņi	pp3mpnn	*	viņš	_	_	*->2-2	*[2]	nsubj	basic	3-8	
+3-8	148-153	saņem	vmnipt130an	*	saņemt	_	_	_	_	conj	basic	3-3	
+3-9	154-156	15	xn	*	15	_	_	_	_	nummod	basic	3-10	
+3-10	157-166	procentus	ncmpa1	*	procents	_	_	_	_	obj	basic	3-8	
+3-11	167-169	no	spsg	*	no	_	_	_	_	case	basic	3-12	
+3-12	170-178	pensijas	ncfsg4	*	pensija	_	_	_	_	nmod	basic	3-10	
+3-13	178-179	,	zc	*	,	_	_	_	_	punct	basic	3-17	
+3-14	180-183	bet	cc	*	bet	_	_	_	_	cc	basic	3-17	
+3-15	184-190	pārējā	arfsnyp	*	pārēja	_	_	_	_	amod	basic	3-16	
+3-16	191-196	nauda	ncfsn4	*	nauda	_	_	_	_	nsubj	basic	3-17	
+3-17	197-203	paliek	vmnipi130an	*	palikt	_	_	_	_	conj	basic	3-3	
+3-18	204-212	sociālās	arfsgyp	*	sociāla	_	_	_	_	amod	basic	3-19	
+3-19	213-220	aprūpes	ncfsg5	*	aprūpe	_	_	_	_	nmod	basic	3-20	
+3-20	221-229	iestādei	ncfsd5	*	iestāde	_	_	_	_	iobj	basic	3-17	
+3-21	229-230	.	zs	*	.	_	_	_	_	punct	basic	3-3	
 
 #Text=Patlaban kosmētiskais remonts notiek pansionāta koridorā.
-4-1	232-240	Patlaban	r0t	patlaban	_	_	_	_	advmod	basic	4-4	
-4-2	241-253	kosmētiskais	armsnyp	kosmētisks	_	_	_	_	amod	basic	4-3	
-4-3	254-261	remonts	ncmsn1	remonts	_	_	_	_	nsubj	basic	4-4	
-4-4	262-268	notiek	vmnipi130an	notikt	_	_	_	_	root	basic	4-4	
-4-5	269-279	pansionāta	ncmsg1	pansionāts	_	_	_	_	nmod	basic	4-6	
-4-6	280-288	koridorā	ncmsl1	koridors	_	_	_	_	obl	basic	4-4	
-4-7	288-289	.	zs	.	_	_	_	_	punct	basic	4-4	
+4-1	232-240	Patlaban	r0t	*	patlaban	_	_	_	_	advmod	basic	4-4	
+4-2	241-253	kosmētiskais	armsnyp	*	kosmētisks	_	_	_	_	amod	basic	4-3	
+4-3	254-261	remonts	ncmsn1	*	remonts	_	_	_	_	nsubj	basic	4-4	
+4-4	262-268	notiek	vmnipi130an	*	notikt	_	_	_	_	root	basic	4-4	
+4-5	269-279	pansionāta	ncmsg1	*	pansionāts	_	_	_	_	nmod	basic	4-6	
+4-6	280-288	koridorā	ncmsl1	*	koridors	_	_	_	_	obl	basic	4-4	
+4-7	288-289	.	zs	*	.	_	_	_	_	punct	basic	4-4	

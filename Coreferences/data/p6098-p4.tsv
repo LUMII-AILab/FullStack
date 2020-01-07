@@ -1,0 +1,80 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=– Jā, šodien bez angļu valodas cilvēks vairs nevar iztikt.
+1-1	0-1	–	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	–	_	_	_	_	punct	basic	1-2	
+1-2	2-4	Jā	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos	*	*	q	*	jā	_	_	_	_	discourse	basic	1-10	
+1-3	4-5	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-2	
+1-4	6-12	šodien	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	šodien	_	_	_	_	advmod	basic	1-10	
+1-5	13-16	bez	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	bez	_	_	_	_	case	basic	1-7	
+1-6	17-22	angļu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	anglis	_	_	_	_	nmod	basic	1-7	
+1-7	23-30	valodas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	valoda	_	_	_	_	iobj	basic	1-11	
+1-8	31-38	cilvēks	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	cilvēks	_	_	_	_	nsubj	basic	1-10	
+1-9	39-44	vairs	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	vairs	_	_	_	_	advmod	basic	1-10	
+1-10	45-50	nevar	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vonipi330ay	*	varēt	_	_	_	_	root	basic	1-10	
+1-11	51-57	iztikt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0i1000n	*	iztikt	_	_	_	_	xcomp	basic	1-10	
+1-12	57-58	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-10	
+
+#Text=Visai nepatīkams gadījums, kad man ļoti pietrūka angļu valodas zināšanu, bija ceļojuma laikā Vācijā.
+2-1	59-64	Visai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	visai	_	_	_	_	advmod	basic	2-2	
+2-2	65-75	nepatīkams	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	nepatīkams	_	_	_	_	amod	basic	2-3	
+2-3	76-84	gadījums	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	gadījums	_	_	*->1-1	*[1]	nsubj	basic	2-13	
+2-4	84-85	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-8	
+2-5	86-89	kad	*	*	*	*	*	*	*	*	*	*	*	*	Int	*	*	*	PronType=Int	*	*	r0t	*	kad	_	_	*->1-2	*[1]	advmod	basic	2-8	
+2-6	90-93	man	*	*	Dat	*	*	*	*	*	*	Sing	1	*	Prs	*	*	*	Case=Dat\|Number=Sing\|Person=1\|PronType=Prs	*	*	pp10sdn	*	es	_	_	*->2-1	*[2]	obl	basic	2-8	
+2-7	94-98	ļoti	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	ļoti	_	_	_	_	advmod	basic	2-8	
+2-8	99-107	pietrūka	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnisi130an	*	pietrūkt	_	_	_	_	acl	basic	2-3	
+2-9	108-113	angļu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	anglis	_	_	_	_	nmod	basic	2-10	
+2-10	114-121	valodas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	valoda	_	_	_	_	nmod	basic	2-11	
+2-11	122-130	zināšanu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	zināšana	_	_	_	_	iobj	basic	2-8	
+2-12	130-131	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-8	
+2-13	132-136	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnisii30an	*	būt	_	_	_	_	root	basic	2-13	
+2-14	137-145	ceļojuma	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	ceļojums	_	_	_	_	nmod	basic	2-15	
+2-15	146-151	laikā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	laiks	_	_	_	_	obl	basic	2-13	
+2-16	152-158	Vācijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Vācija	GPE	https://en.wikipedia.org/wiki/Germany	_	_	obl	basic	2-13	
+2-17	158-159	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-13	
+
+#Text=Lidostas darbinieks man angliski kaut ko jautāja, bet es nesapratu, par ko ir runa.
+3-1	160-168	Lidostas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	lidosta	_	_	_	_	nmod	basic	3-2	
+3-2	169-179	darbinieks	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	darbinieks	_	_	_	_	nsubj	basic	3-7	
+3-3	180-183	man	*	*	Dat	*	*	*	*	*	*	Sing	1	*	Prs	*	*	*	Case=Dat\|Number=Sing\|Person=1\|PronType=Prs	*	*	pp10sdn	*	es	_	_	*->2-2	*[2]	iobj	basic	3-7	
+3-4	184-192	angliski	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	angliski	_	_	_	_	advmod	basic	3-7	
+3-5	193-197	kaut	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	kaut	_	_	_	_	dep	basic	3-6	
+3-6	198-200	ko	*	*	Acc	*	*	*	*	*	*	*	*	*	Ind	*	*	*	Case=Acc\|PronType=Ind	*	*	pi000an	*	kas	_	_	_	_	obj	basic	3-7	
+3-7	201-208	jautāja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist230an	*	jautāt	_	_	_	_	root	basic	3-7	
+3-8	208-209	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-11	
+3-9	210-213	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	_	_	cc	basic	3-11	
+3-10	214-216	es	*	*	Nom	*	*	*	*	*	*	Sing	1	*	Prs	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	*	*	pp10snn	*	es	_	_	*->2-3	*[2]	nsubj	basic	3-11	
+3-11	217-226	nesapratu	*	*	*	*	*	*	Ind	*	*	Sing	1	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Neg\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist11say	*	saprast	_	_	_	_	conj	basic	3-7	
+3-12	226-227	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-14	
+3-13	228-231	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	3-14	
+3-14	232-234	ko	*	*	Acc	*	*	*	*	*	*	*	*	*	Ind	*	*	*	Case=Acc\|PronType=Ind	*	*	pi000an	*	kas	_	_	_	_	ccomp	basic	3-11	
+3-15	235-237	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	3-14	
+3-16	238-242	runa	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	runa	_	_	_	_	nsubj	basic	3-14	
+3-17	242-243	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-7	
+
+#Text=Jutos briesmīgi, man bija liels kauns – bija jāprasa svešiem cilvēkiem no lidmašīnas, lai iztulko.
+4-1	244-249	Jutos	*	*	*	*	*	*	Ind	*	*	Sing	1	*	*	Yes	Past	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyisi11san	*	justies	_	_	_	_	root	basic	4-1	
+4-2	250-259	briesmīgi	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	briesmīgi	_	_	_	_	advmod	basic	4-1	
+4-3	259-260	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-5	
+4-4	261-264	man	*	*	Dat	*	*	*	*	*	*	Sing	1	*	Prs	*	*	*	Case=Dat\|Number=Sing\|Person=1\|PronType=Prs	*	*	pp10sdn	*	es	_	_	*->2-4	*[2]	obl	basic	4-5	
+4-5	265-269	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnisii30an	*	būt	_	_	_	_	conj	basic	4-1	
+4-6	270-275	liels	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	liels	_	_	_	_	amod	basic	4-7	
+4-7	276-281	kauns	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	kauns	_	_	_	_	nsubj	basic	4-5	
+4-8	282-283	–	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	–	_	_	_	_	punct	basic	4-10	
+4-9	284-288	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnisii30an	*	būt	_	_	_	_	aux	basic	4-10	
+4-10	289-296	jāprasa	*	*	*	*	*	*	Nec	*	*	*	*	*	*	*	*	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnd0t300an	*	prasīt	_	_	_	_	conj	basic	4-1	
+4-11	297-304	svešiem	*	*	Dat	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpdnp	*	svešs	_	_	_	_	amod	basic	4-12	
+4-12	305-314	cilvēkiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	cilvēks	_	_	_	_	iobj	basic	4-10	
+4-13	315-317	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case	basic	4-14	
+4-14	318-328	lidmašīnas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	lidmašīna	_	_	_	_	nmod	basic	4-12	
+4-15	328-329	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-17	
+4-16	330-333	lai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	lai	_	_	_	_	mark	basic	4-17	
+4-17	334-341	iztulko	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt230an	*	iztulkot	_	_	_	_	ccomp	basic	4-10	
+4-18	341-342	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	4-1	

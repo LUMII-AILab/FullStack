@@ -1,0 +1,30 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Intars nemēģina kopēt Gregoriju Lepsu, bet piešķir dziesmai savu īpašo skanējumu, kopā sadziedāšanos padarot intīmāku, erotiskāku.
+1-1	0-6	Intars	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Intars	person	https://en.wikipedia.org/wiki/Intars\_Busulis	*->1-1	*[1]	nsubj	basic	1-2	
+1-2	7-15	nemēģina	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vonipi330ay	*	mēģināt	_	_	_	_	root	basic	1-2	
+1-3	16-21	kopēt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t2000n	*	kopēt	_	_	_	_	xcomp	basic	1-2	
+1-4	22-31	Gregoriju	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	*	Gregorijs	person[1]	https://en.wikipedia.org/wiki/Grigory\_Leps[1]	_	_	obj	basic	1-3	
+1-5	32-37	Lepsu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	*	Lepss	person[1]	https://en.wikipedia.org/wiki/Grigory\_Leps[1]	_	_	flat:name	basic	1-4	
+1-6	37-38	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-8	
+1-7	39-42	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	_	_	cc	basic	1-8	
+1-8	43-50	piešķir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt130an	*	piešķirt	_	_	_	_	conj	basic	1-2	
+1-9	51-59	dziesmai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	*	dziesma	_	_	_	_	iobj	basic	1-8	
+1-10	60-64	savu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	Prs	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0fsan	*	sava	_	_	*->1-2	*[1]	det	basic	1-12	
+1-11	65-70	īpašo	*	*	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsayp	*	īpašs	_	_	_	_	amod	basic	1-12	
+1-12	71-80	skanējumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	skanējums	_	_	_	_	obj	basic	1-8	
+1-13	80-81	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-16	
+1-14	82-86	kopā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	kopā	_	_	_	_	advmod	basic	1-15	
+1-15	87-100	sadziedāšanos	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsar	*	sadziedāšanās	_	_	_	_	obj	basic	1-16	
+1-16	101-108	padarot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	Conv	*	vmnpu0000000n	*	padarīt	_	_	_	_	advcl	basic	1-2	
+1-17	109-117	intīmāku	*	*	Acc	*	Cmp	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Cmp\|Gender=Masc\|Number=Sing	*	*	afmsanc	*	intīms	_	_	_	_	acl	basic	1-16	
+1-18	117-118	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-19	
+1-19	119-129	erotiskāku	*	*	Acc	*	Cmp	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Cmp\|Gender=Masc\|Number=Sing	*	*	afmsanc	*	erotisks	_	_	_	_	conj	basic	1-17	
+1-20	129-130	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-2	

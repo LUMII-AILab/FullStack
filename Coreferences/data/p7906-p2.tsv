@@ -1,0 +1,75 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Jaunā sirdāķīša vārdu dziedātāja neatklāj, bet foto ir jau publicējusi.
+1-1	0-5	Jaunā	*	*	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsgyp	*	jauns	_	_	_	_	amod	basic	1-2	
+1-2	6-15	sirdāķīša	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	sirdāķīšs	_	_	_	_	nmod	basic	1-3	
+1-3	16-21	vārdu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	vārds	_	_	_	_	obj	basic	1-5	
+1-4	22-32	dziedātāja	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	dziedātāja	_	_	*->1-1	*[1]	nsubj	basic	1-5	
+1-5	33-41	neatklāj	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt130ay	*	atklāt	_	_	_	_	root	basic	1-5	
+1-6	41-42	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-5	
+1-7	43-46	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	_	_	cc	basic	1-11	
+1-8	47-51	foto	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	nc0000	*	foto	_	_	_	_	iobj	basic	1-11	
+1-9	52-54	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	_	_	aux	basic	1-11	
+1-10	55-58	jau	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	jau	_	_	_	_	advmod	basic	1-11	
+1-11	59-70	publicējusi	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdfsnasnpn	*	publicēt	_	_	_	_	conj	basic	1-5	
+1-12	70-71	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-5	
+
+#Text=Abi esot pazīstami ilgāku, bet mīlestības jūtas uzplaukušas Ziemassvētku laikā.
+2-1	72-75	Abi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	Tot	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Tot	*	*	pg0mpnn	*	abi	_	_	_	_	nsubj	basic	2-3	
+2-2	76-80	esot	*	*	*	*	*	*	Qot	*	*	*	*	*	*	*	Pres	*	Evident=Nfh\|Mood=Qot\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnrpii00an	*	būt	_	_	_	_	cop	basic	2-3	
+2-3	81-90	pazīstami	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Pres	*	Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmpnppnpn	*	pazīt	_	_	_	_	root	basic	2-3	
+2-4	91-97	ilgāku	*	*	Acc	*	Cmp	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Cmp\|Gender=Masc\|Number=Sing	*	*	afmsanc	*	ilgs	_	_	_	_	obl	basic	2-3	
+2-5	97-98	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-9	
+2-6	99-102	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	_	_	cc	basic	2-9	
+2-7	103-113	mīlestības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	mīlestība	_	_	_	_	nmod	basic	2-8	
+2-8	114-119	jūtas	*	*	Nom	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Ptan	*	*	ncfdn4	*	jūtas	_	_	_	_	nsubj	basic	2-9	
+2-9	120-131	uzplaukušas	*	Perf	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdfpnasnpn	*	uzplaukt	_	_	_	_	conj	basic	2-3	
+2-10	132-144	Ziemassvētku	*	*	Gen	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	npmdg1	*	Ziemassvētki	time[1]|event[2]	*[1]|https://en.wikipedia.org/wiki/Ziemassvētki[2]	_	_	nmod	basic	2-11	
+2-11	145-150	laikā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	laiks	time[1]	*[1]	_	_	obl	basic	2-9	
+2-12	150-151	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-3	
+
+#Text=Neko vairāk Šomases jaunkundze šobrīd nevēloties komentēt.
+3-1	152-156	Neko	*	*	Acc	*	*	*	*	*	*	*	*	*	Ind,Neg	*	*	*	Case=Acc\|PronType=Ind,Neg	*	*	pi000ay	*	nekas	_	_	_	_	obj	basic	3-7	
+3-2	157-163	vairāk	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	vairāk	_	_	_	_	advmod	basic	3-7	
+3-3	164-171	Šomases	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	*	Šomase	person	https://lv.wikipedia.org/wiki/Liene\_Šomase	*->1-2	*[1]	nmod	basic	3-4	
+3-4	172-182	jaunkundze	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	jaunkundze	_	_	*->1-2	*[1]	nsubj	basic	3-6	
+3-5	183-189	šobrīd	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	šobrīd	_	_	_	_	advmod	basic	3-6	
+3-6	190-200	nevēloties	*	*	*	*	*	*	Qot	*	*	*	*	*	*	Yes	Pres	*	Evident=Nfh\|Mood=Qot\|Polarity=Neg\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	voyrpi300ay	*	vēlēties	_	_	_	_	root	basic	3-6	
+3-7	201-209	komentēt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t2000n	*	komentēt	_	_	_	_	xcomp	basic	3-6	
+3-8	209-210	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-6	
+
+#Text=Šovā Jaunā Talantu fabrika viņa mēģināja veidot attiecības ar Dāvi Mazureno, tomēr toreiz nekas nesanāca.
+4-1	211-215	Šovā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	šovs	_	_	_	_	nmod	basic	4-4	
+4-2	216-221	Jaunā	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnyp	*	jauns	event[3]	https://lv.wikipedia.org/wiki/Jaunā\_talantu\_fabrika[3]	_	_	amod	basic	4-4	
+4-3	222-229	Talantu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	talants	event[3]	https://lv.wikipedia.org/wiki/Jaunā\_talantu\_fabrika[3]	_	_	nmod	basic	4-4	
+4-4	230-237	fabrika	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	fabrika	event[3]	https://lv.wikipedia.org/wiki/Jaunā\_talantu\_fabrika[3]	_	_	obl	basic	4-6	
+4-5	238-242	viņa	*	*	Nom	*	*	Fem	*	*	*	Sing	3	*	Prs	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3fsnn	*	viņa	_	_	*->1-3	*[1]	nsubj	basic	4-6	
+4-6	243-251	mēģināja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vonisi330an	*	mēģināt	_	_	_	_	root	basic	4-6	
+4-7	252-258	veidot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t2000n	*	veidot	_	_	_	_	xcomp	basic	4-6	
+4-8	259-269	attiecības	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	attiecība	_	_	_	_	obj	basic	4-7	
+4-9	270-272	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	4-10	
+4-10	273-277	Dāvi	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa2	*	Dāvis	person[4]	*[4]	*->2-1	*[2]	nmod	basic	4-8	
+4-11	278-286	Mazureno	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	np0000	*	Mazureno	person[4]	*[4]	*->2-1	*[2]	flat:name	basic	4-10	
+4-12	286-287	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-16	
+4-13	288-293	tomēr	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	tomēr	_	_	_	_	cc	basic	4-16	
+4-14	294-300	toreiz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	toreiz	_	_	_	_	advmod	basic	4-16	
+4-15	301-306	nekas	*	*	Nom	*	*	*	*	*	*	*	*	*	Ind,Neg	*	*	*	Case=Nom\|PronType=Ind,Neg	*	*	pi000ny	*	nekas	_	_	_	_	nsubj	basic	4-16	
+4-16	307-315	nesanāca	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnisi130ay	*	sanākt	_	_	_	_	conj	basic	4-6	
+4-17	315-316	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	4-6	
+
+#Text=Dāvis ieķērās citā šova dalībniecē - Elizabetē.
+5-1	317-322	Dāvis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	*	Dāvis	person	*	*->2-2	*[2]	nsubj	basic	5-2	
+5-2	323-330	ieķērās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyisi130an	*	ieķerties	_	_	_	_	root	basic	5-2	
+5-3	331-335	citā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	Ind	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|PronType=Ind	*	*	pi0fsln	*	cita	_	_	_	_	det	basic	5-5	
+5-4	336-340	šova	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	šovs	_	_	*->3-1	*[3]	nmod	basic	5-5	
+5-5	341-351	dalībniecē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	*	dalībniece	_	_	*->3-1	*[3]	obl	basic	5-2	
+5-6	352-353	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	-	_	_	_	_	punct	basic	5-7	
+5-7	354-363	Elizabetē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl5	*	Elizabete	person	*	*->3-2	*[3]	acl	basic	5-5	
+5-8	363-364	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	5-2	

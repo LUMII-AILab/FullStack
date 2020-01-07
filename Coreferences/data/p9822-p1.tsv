@@ -1,0 +1,40 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=28. novembrī Ventspils Rātslaukumā kopā ar Jūrmalas teātra aktieriem tika dots STARTS Ziemassvētku Sajūtu maratonam “Lapzeme – Ventspils 2015” un tika iedegta Ventspils pilsētas galvenā Ziemassvētku egle.
+1-1	0-3	28.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	28.	time[1]	*[1]	_	_	amod	basic	1-2	
+1-2	4-12	novembrī	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	*	novembris	time[1]	*[1]	_	_	obl	basic	1-11	
+1-3	13-22	Ventspils	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg6	*	Ventspils	location[2]|GPE[3]	*[2]|https://en.wikipedia.org/wiki/Ventspils[3]	_	_	nmod	basic	1-4	
+1-4	23-34	Rātslaukumā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	rātslaukums	location[2]	*[2]	_	_	obl	basic	1-11	
+1-5	35-39	kopā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	kopā	_	_	_	_	advmod	basic	1-11	
+1-6	40-42	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	_	_	case	basic	1-9	
+1-7	43-51	Jūrmalas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Jūrmala	organization[4]|GPE[5]	*[4]|https://en.wikipedia.org/wiki/Jūrmala[5]	_	_	nmod	basic	1-8	
+1-8	52-58	teātra	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	*	teātris	organization[4]	*[4]	_	_	nmod	basic	1-9	
+1-9	59-68	aktieriem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd2	*	aktieris	_	_	_	_	iobj	basic	1-5	
+1-10	69-73	tika	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vtnisi130an	*	tikt	_	_	_	_	aux:pass	basic	1-11	
+1-11	74-78	dots	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnpsnpn	*	dot	_	_	_	_	root	basic	1-11	
+1-12	79-85	STARTS	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	starts	_	_	_	_	nsubj:pass	basic	1-11	
+1-13	86-98	Ziemassvētku	*	*	Gen	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	npmdg1	*	Ziemassvētki	event[6]|event[7]	*[6]|https://en.wikipedia.org/wiki/Ziemassvētki[7]	*->1-1	*[1]	nmod	basic	1-14	
+1-14	99-105	Sajūtu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	sajūta	event[6]	*[6]	*->1-1	*[1]	nmod	basic	1-15	
+1-15	106-115	maratonam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	maratons	event[6]	*[6]	*->1-1	*[1]	nmod	basic	1-17	
+1-16	116-117	“	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	“	event[6]|event[8]	*[6]|*[8]	*->1-2	*[1]	punct	basic	1-17	
+1-17	117-124	Lapzeme	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	*	Lapzeme	event[6]|event[8]|location[9]	*[6]|*[8]|https://en.wikipedia.org/wiki/Lapland\_(Finland)[9]	*->1-2	*[1]	iobj	basic	1-11	
+1-18	125-126	–	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	–	event[6]|event[8]	*[6]|*[8]	*->1-2	*[1]	punct	basic	1-19	
+1-19	127-136	Ventspils	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn6	*	Ventspils	event[6]|event[8]|GPE[10]	*[6]|*[8]|https://en.wikipedia.org/wiki/Ventspils[10]	*->1-2	*[1]	conj	basic	1-17	
+1-20	137-141	2015	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	2015	event[6]|event[8]	*[6]|*[8]	*->1-2	*[1]	flat:name	basic	1-17	
+1-21	141-142	”	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	”	event[6]|event[8]	*[6]|*[8]	*->1-2	*[1]	punct	basic	1-17	
+1-22	143-145	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-24	
+1-23	146-150	tika	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vtnisi130an	*	tikt	_	_	_	_	aux:pass	basic	1-24	
+1-24	151-158	iedegta	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsnpsnpn	*	iedegt	_	_	_	_	conj	basic	1-11	
+1-25	159-168	Ventspils	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg6	*	Ventspils	GPE[11]	https://en.wikipedia.org/wiki/Ventspils[11]	_	_	nmod	basic	1-26	
+1-26	169-177	pilsētas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	pilsēta	GPE[11]	https://en.wikipedia.org/wiki/Ventspils[11]	_	_	nmod	basic	1-29	
+1-27	178-185	galvenā	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnyp	*	galvenais	_	_	_	_	amod	basic	1-29	
+1-28	186-198	Ziemassvētku	*	*	Gen	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	npmdg1	*	Ziemassvētki	event	https://en.wikipedia.org/wiki/Ziemassvētki	_	_	nmod	basic	1-29	
+1-29	199-203	egle	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	egle	_	_	_	_	nsubj:pass	basic	1-24	
+1-30	203-204	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-11	

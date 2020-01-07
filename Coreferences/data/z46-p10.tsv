@@ -1,65 +1,65 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Vēl tiešāku saistību starp ekonomisko situāciju un skolotāju skaitu saskata Dolton P., Tremayne A. un Chung T.P., kas, saistot izglītības sistēmas nodrošinājumu ar skolotājiem ar ekonomiskās attīstības cikliskumu, veido skolotāju darba tirgus modeli un analizē faktorus, kas nosaka pieprasījuma un piedāvājuma samēru tajā (Dolton, 2003).
-1-1	0-3	Vēl	_	_	_	_	_	_	_	_	_	_	_	_	r0t	vēl	_	_	_	_	advmod	basic	1-2	
-1-2	4-11	tiešāku	Fem	Sing	Acc	Cmp	*	*	*	*	*	Case=Acc\|Degree=Cmp\|Gender=Fem\|Number=Sing	*	*	affsanc	tieša	_	_	_	_	amod	basic	1-3	
-1-3	12-20	saistību	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	saistība	_	_	_	_	obj	basic	1-10	
-1-4	21-26	starp	_	_	_	_	_	_	_	_	_	_	_	_	spsa	starp	_	_	_	_	case	basic	1-6	
-1-5	27-37	ekonomisko	Masc	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsayp	ekonomisks	_	_	_	_	amod	basic	1-6	
-1-6	38-47	situāciju	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	situācija	_	_	_	_	obl	basic	1-10	
-1-7	48-50	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-9	
-1-8	51-60	skolotāju	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	skolotājs	_	_	_	_	nmod	basic	1-9	
-1-9	61-67	skaitu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	skaits	_	_	_	_	conj	basic	1-6	
-1-10	68-75	saskata	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	saskatīt	_	_	_	_	root	basic	1-10	
-1-11	76-82	Dolton	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Dolton	person[1]	*[1]	*[1]	*->1-1	nsubj	basic	1-10	
-1-12	83-85	P.	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	p.	person[1]	*[1]	*[1]	*->1-1	flat:name	basic	1-11	
-1-13	85-86	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-14	
-1-14	87-95	Tremayne	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Tremayne	person[2]	*[2]	_	_	conj	basic	1-11	
-1-15	96-98	A.	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	a.	person[2]	*[2]	_	_	flat:name	basic	1-14	
-1-16	99-101	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-17	
-1-17	102-107	Chung	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Chung	person[3]	*[3]	_	_	conj	basic	1-11	
-1-18	108-110	T.	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	t.	person[3]	*[3]	_	_	flat:name	basic	1-17	
-1-19	110-112	P.	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	p.	person[3]	*[3]	_	_	flat:name	basic	1-17	
-1-20	112-113	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-34	
-1-21	114-117	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	_	_	nsubj	basic	1-34	
-1-22	117-118	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-23	
-1-23	119-126	saistot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000n	saistīt	_	_	_	_	advcl	basic	1-34	
-1-24	127-137	izglītības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	izglītība	_	_	_	_	nmod	basic	1-25	
-1-25	138-146	sistēmas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	sistēma	_	_	_	_	nmod	basic	1-26	
-1-26	147-160	nodrošinājumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	nodrošinājums	_	_	_	_	obj	basic	1-23	
-1-27	161-163	ar	_	_	_	_	_	_	_	_	_	_	_	_	sppd	ar	_	_	_	_	case	basic	1-28	
-1-28	164-175	skolotājiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	skolotājs	_	_	_	_	nmod	basic	1-26	
-1-29	176-178	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case	basic	1-32	
-1-30	179-190	ekonomiskās	Fem	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsgyp	ekonomiska	_	_	_	_	amod	basic	1-31	
-1-31	191-201	attīstības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	attīstība	_	_	_	_	nmod	basic	1-32	
-1-32	202-212	cikliskumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	cikliskums	_	_	_	_	iobj	basic	1-23	
-1-33	212-213	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-23	
-1-34	214-219	veido	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt230an	veidot	_	_	_	_	acl	basic	1-11	
-1-35	220-229	skolotāju	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	skolotājs	_	_	_	_	nmod	basic	1-37	
-1-36	230-235	darba	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	darbs	_	_	_	_	nmod	basic	1-37	
-1-37	236-242	tirgus	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg3	tirgus	_	_	_	_	nmod	basic	1-38	
-1-38	243-249	modeli	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	modelis	_	_	_	_	obj	basic	1-34	
-1-39	250-252	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-40	
-1-40	253-260	analizē	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt230an	analizēt	_	_	_	_	conj	basic	1-34	
-1-41	261-269	faktorus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	faktors	_	_	*[2]	*->2-1	obj	basic	1-40	
-1-42	269-270	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-44	
-1-43	271-274	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	*[2]	*->2-2	nsubj	basic	1-44	
-1-44	275-281	nosaka	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	nosacīt	_	_	_	_	acl	basic	1-41	
-1-45	282-294	pieprasījuma	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	pieprasījums	_	_	_	_	nmod	basic	1-48	
-1-46	295-297	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-47	
-1-47	298-309	piedāvājuma	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	piedāvājums	_	_	_	_	conj	basic	1-45	
-1-48	310-316	samēru	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	samērs	_	_	_	_	obj	basic	1-44	
-1-49	317-321	tajā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsln	tā	_	_	_	_	obl	basic	1-44	
-1-50	322-323	(	_	_	_	_	_	_	_	_	_	_	_	_	zb	(	_	_	_	_	punct	basic	1-51	
-1-51	323-329	Dolton	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Dolton	person	*	*[1]	*->1-2	parataxis	basic	1-10	
-1-52	329-330	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-53	
-1-53	331-335	2003	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	2003	time	*	_	_	acl	basic	1-51	
-1-54	335-336	)	_	_	_	_	_	_	_	_	_	_	_	_	zb	)	_	_	_	_	punct	basic	1-51	
-1-55	336-337	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-10	
+1-1	0-3	Vēl	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	vēl	_	_	_	_	advmod	basic	1-2	
+1-2	4-11	tiešāku	*	*	Acc	*	Cmp	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Cmp\|Gender=Fem\|Number=Sing	*	*	affsanc	*	tieša	_	_	_	_	amod	basic	1-3	
+1-3	12-20	saistību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	saistība	_	_	_	_	obj	basic	1-10	
+1-4	21-26	starp	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	starp	_	_	_	_	case	basic	1-6	
+1-5	27-37	ekonomisko	*	*	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsayp	*	ekonomisks	_	_	_	_	amod	basic	1-6	
+1-6	38-47	situāciju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	situācija	_	_	_	_	obl	basic	1-10	
+1-7	48-50	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-9	
+1-8	51-60	skolotāju	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	skolotājs	_	_	_	_	nmod	basic	1-9	
+1-9	61-67	skaitu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	skaits	_	_	_	_	conj	basic	1-6	
+1-10	68-75	saskata	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	saskatīt	_	_	_	_	root	basic	1-10	
+1-11	76-82	Dolton	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Dolton	person[1]	*[1]	*->1-1	*[1]	nsubj	basic	1-10	
+1-12	83-85	P.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	p.	person[1]	*[1]	*->1-1	*[1]	flat:name	basic	1-11	
+1-13	85-86	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-14	
+1-14	87-95	Tremayne	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Tremayne	person[2]	*[2]	_	_	conj	basic	1-11	
+1-15	96-98	A.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	a.	person[2]	*[2]	_	_	flat:name	basic	1-14	
+1-16	99-101	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-17	
+1-17	102-107	Chung	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Chung	person[3]	*[3]	_	_	conj	basic	1-11	
+1-18	108-110	T.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	t.	person[3]	*[3]	_	_	flat:name	basic	1-17	
+1-19	110-112	P.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	p.	person[3]	*[3]	_	_	flat:name	basic	1-17	
+1-20	112-113	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-34	
+1-21	114-117	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	_	_	nsubj	basic	1-34	
+1-22	117-118	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-23	
+1-23	119-126	saistot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000n	*	saistīt	_	_	_	_	advcl	basic	1-34	
+1-24	127-137	izglītības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	izglītība	_	_	_	_	nmod	basic	1-25	
+1-25	138-146	sistēmas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	sistēma	_	_	_	_	nmod	basic	1-26	
+1-26	147-160	nodrošinājumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	nodrošinājums	_	_	_	_	obj	basic	1-23	
+1-27	161-163	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	_	_	case	basic	1-28	
+1-28	164-175	skolotājiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	skolotājs	_	_	_	_	nmod	basic	1-26	
+1-29	176-178	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	1-32	
+1-30	179-190	ekonomiskās	*	*	Gen	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsgyp	*	ekonomiska	_	_	_	_	amod	basic	1-31	
+1-31	191-201	attīstības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	attīstība	_	_	_	_	nmod	basic	1-32	
+1-32	202-212	cikliskumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	cikliskums	_	_	_	_	iobj	basic	1-23	
+1-33	212-213	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-23	
+1-34	214-219	veido	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt230an	*	veidot	_	_	_	_	acl	basic	1-11	
+1-35	220-229	skolotāju	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	skolotājs	_	_	_	_	nmod	basic	1-37	
+1-36	230-235	darba	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	darbs	_	_	_	_	nmod	basic	1-37	
+1-37	236-242	tirgus	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg3	*	tirgus	_	_	_	_	nmod	basic	1-38	
+1-38	243-249	modeli	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	*	modelis	_	_	_	_	obj	basic	1-34	
+1-39	250-252	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-40	
+1-40	253-260	analizē	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt230an	*	analizēt	_	_	_	_	conj	basic	1-34	
+1-41	261-269	faktorus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	faktors	_	_	*->2-1	*[2]	obj	basic	1-40	
+1-42	269-270	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-44	
+1-43	271-274	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->2-2	*[2]	nsubj	basic	1-44	
+1-44	275-281	nosaka	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	nosacīt	_	_	_	_	acl	basic	1-41	
+1-45	282-294	pieprasījuma	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	pieprasījums	_	_	_	_	nmod	basic	1-48	
+1-46	295-297	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-47	
+1-47	298-309	piedāvājuma	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	piedāvājums	_	_	_	_	conj	basic	1-45	
+1-48	310-316	samēru	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	samērs	_	_	_	_	obj	basic	1-44	
+1-49	317-321	tajā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsln	*	tā	_	_	_	_	obl	basic	1-44	
+1-50	322-323	(	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	(	_	_	_	_	punct	basic	1-51	
+1-51	323-329	Dolton	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Dolton	person	*	*->1-2	*[1]	parataxis	basic	1-10	
+1-52	329-330	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-53	
+1-53	331-335	2003	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	2003	time	*	_	_	acl	basic	1-51	
+1-54	335-336	)	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	)	_	_	_	_	punct	basic	1-51	
+1-55	336-337	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-10	

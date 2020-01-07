@@ -1,0 +1,52 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Konferencē sumināja divas jaunas izglītības iestāžu direktores.
+1-1	0-10	Konferencē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	*	konference	_	_	_	_	obl	basic	1-2	
+1-2	11-19	sumināja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist330an	*	sumināt	_	_	_	_	root	basic	1-2	
+1-3	20-25	divas	*	*	Acc	*	*	Fem	*	*	Card	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur\|NumType=Card	*	*	mcsfpa	*	divi	_	_	_	_	nummod	basic	1-7	
+1-4	26-32	jaunas	*	*	Acc	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpanp	*	jauns	_	_	_	_	amod	basic	1-7	
+1-5	33-43	izglītības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	izglītība	_	_	_	_	nmod	basic	1-6	
+1-6	44-51	iestāžu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg5	*	iestāde	_	_	_	_	nmod	basic	1-7	
+1-7	52-62	direktores	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa5	*	direktore	_	_	_	_	nsubj	basic	1-2	
+1-8	62-63	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-2	
+
+#Text=Īslīces vidusskolu turpmāk vadīs Irina Vargušenko, savukārt par Vecsaules pamatskolas direktori izraudzīta Lilija Bula.
+2-1	64-71	Īslīces	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	*	Īslīce	organization[1]|GPE[2]	*[1]|https://lv.wikipedia.org/wiki/Īslīce[2]	_	_	nmod	basic	2-2	
+2-2	72-82	vidusskolu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	vidusskola	organization[1]	*[1]	_	_	obj	basic	2-4	
+2-3	83-90	turpmāk	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	turpmāk	_	_	_	_	advmod	basic	2-4	
+2-4	91-96	vadīs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnift330an	*	vadīt	_	_	_	_	root	basic	2-4	
+2-5	97-102	Irina	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Irina	person[3]	*[3]	_	_	nsubj	basic	2-4	
+2-6	103-113	Vargušenko	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	np0000	*	Vargušenko	person[3]	*[3]	_	_	flat:name	basic	2-5	
+2-7	113-114	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-13	
+2-8	115-123	savukārt	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	savukārt	_	_	_	_	advmod	basic	2-13	
+2-9	124-127	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	2-12	
+2-10	128-137	Vecsaules	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	*	Vecsaule	organization[4]|GPE[5]	*[4]|https://lv.wikipedia.org/wiki/Vecsaule[5]	*->1-1	*[1]	nmod	basic	2-11	
+2-11	138-149	pamatskolas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	pamatskola	organization[4]	*[4]	*->1-1	*[1]	nmod	basic	2-12	
+2-12	150-159	direktori	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	direktore	_	_	*->1-1	*[1]	xcomp	basic	2-13	
+2-13	160-170	izraudzīta	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdfsnpsnpn	*	izraudzīt	_	_	_	_	conj	basic	2-4	
+2-14	171-177	Lilija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Lilija	person[6]	*[6]	*->1-2	*[1]	nsubj	basic	2-13	
+2-15	178-182	Bula	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Bula	person[6]	*[6]	*->1-2	*[1]	flat:name	basic	2-14	
+2-16	182-183	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-4	
+
+#Text=Skolotājus jaunā mācību gada priekšvakarā sveica Bauskas jaunieši – grupa «Bekars».
+3-1	184-194	Skolotājus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	skolotājs	_	_	_	_	obj	basic	3-6	
+3-2	195-200	jaunā	*	*	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsgyp	*	jauns	_	_	_	_	amod	basic	3-4	
+3-3	201-207	mācību	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	mācība	_	_	_	_	nmod	basic	3-4	
+3-4	208-212	gada	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	gads	_	_	_	_	nmod	basic	3-5	
+3-5	213-225	priekšvakarā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	priekšvakars	_	_	_	_	obl	basic	3-6	
+3-6	226-232	sveica	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist130an	*	sveikt	_	_	_	_	root	basic	3-6	
+3-7	233-240	Bauskas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Bauska	GPE	https://en.wikipedia.org/wiki/Bauska	_	_	nmod	basic	3-8	
+3-8	241-249	jaunieši	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn2	*	jaunietis	_	_	_	_	nsubj	basic	3-6	
+3-9	250-251	–	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	–	_	_	_	_	punct	basic	3-12	
+3-10	252-257	grupa	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	grupa	_	_	*->2-1	*[2]	nmod	basic	3-12	
+3-11	258-259	«	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	«	organization[7]	*[7]	*->2-2	*[2]	punct	basic	3-12	
+3-12	259-265	Bekars	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Bekars	organization[7]	*[7]	*->2-2	*[2]	acl	basic	3-8	
+3-13	265-266	»	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	»	organization[7]	*[7]	*->2-2	*[2]	punct	basic	3-12	
+3-14	266-267	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-6	

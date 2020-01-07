@@ -1,0 +1,100 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Vienmēr uzmanies ar zemenēm, ko pērc kastītēs, - tās var būt saspiestas.
+1-1	0-7	Vienmēr	*	*	*	*	*	*	*	*	*	*	*	*	Tot	*	*	*	PronType=Tot	*	*	r0t	*	vienmēr	_	_	advmod	basic	1-2	
+1-2	8-16	uzmanies	*	*	*	*	*	*	Imp	*	*	Sing	2	*	*	Yes	*	*	Mood=Imp\|Number=Sing\|Person=2\|Polarity=Pos\|Reflex=Yes\|VerbForm=Fin\|Voice=Act	Fin	Act	vmym0i32san	*	uzmanīties	_	_	root	basic	1-2	
+1-3	17-19	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	case	basic	1-4	
+1-4	20-27	zemenēm	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd5	*	zemene	*->1-1	*[1]	iobj	basic	1-2	
+1-5	27-28	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-7	
+1-6	29-31	ko	*	*	Acc	*	*	*	*	*	*	*	*	*	Rel	*	*	*	Case=Acc\|PronType=Rel	*	*	pr000an	*	kas	*->1-2	*[1]	obj	basic	1-7	
+1-7	32-36	pērc	*	*	*	*	*	*	Ind	*	*	Sing	2	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=2\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt12san	*	pirkt	_	_	acl	basic	1-4	
+1-8	37-45	kastītēs	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl5	*	kastīte	_	_	obl	basic	1-7	
+1-9	45-46	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-7	
+1-10	47-48	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	-	_	_	punct	basic	1-12	
+1-11	49-52	tās	*	*	Nom	*	*	Fem	*	*	*	Plur	3	*	Dem	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|Person=3\|PronType=Dem	*	*	pd3fpnn	*	tā	*->1-3	*[1]	nsubj	basic	1-12	
+1-12	53-56	var	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vonipi330an	*	varēt	_	_	conj	basic	1-2	
+1-13	57-60	būt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vcnn0ii000n	*	būt	_	_	cop	basic	1-14	
+1-14	61-71	saspiestas	*	Perf	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdfpnpsnpn	*	saspiest	_	_	xcomp	basic	1-12	
+1-15	71-72	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	1-2	
+
+#Text=Zemenēm nevajadzētu atrasties vairāk nekā trīs slāņos.
+2-1	73-80	Zemenēm	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd5	*	zemene	*->1-4	*[1]	nsubj	basic	2-2	
+2-2	81-92	nevajadzētu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Neg\|VerbForm=Fin\|Voice=Act	Fin	Act	vonc0i300ay	*	vajadzēt	_	_	root	basic	2-2	
+2-3	93-102	atrasties	*	*	*	*	*	*	*	*	*	*	*	*	*	Yes	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	Inf	*	vmyn0i1000n	*	atrasties	_	_	xcomp	basic	2-2	
+2-4	103-109	vairāk	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	vairāk	_	_	obl	basic	2-6	
+2-5	110-114	nekā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	nekā	_	_	fixed	basic	2-4	
+2-6	115-119	trīs	*	*	Loc	*	*	Fem	*	*	Card	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur\|NumType=Card	*	*	mcsfpl	*	trīs	_	_	nummod	basic	2-7	
+2-7	120-126	slāņos	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl2	*	slānis	_	_	obl	basic	2-3	
+2-8	126-127	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	2-2	
+
+#Text=Vēl kas.
+3-1	128-131	Vēl	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	vēl	_	_	orphan	basic	3-2	
+3-2	132-135	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	Ind	*	*	*	Case=Nom\|PronType=Ind	*	*	pi000nn	*	kas	_	_	root	basic	3-2	
+3-3	135-136	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	3-2	
+
+#Text=Vienmēr pavēro arī pašu zemeņu pārdevēju – tie, kas savas zemeņu kastītes pārvieto ar maigumu, visticamāk, arī paši ir savu zemeņu audzētāji.
+4-1	137-144	Vienmēr	*	*	*	*	*	*	*	*	*	*	*	*	Tot	*	*	*	PronType=Tot	*	*	r0t	*	vienmēr	_	_	advmod	basic	4-2	
+4-2	145-151	pavēro	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt230an	*	pavērot	_	_	root	basic	4-2	
+4-3	152-155	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	discourse	basic	4-6	
+4-4	156-160	pašu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	Tot	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Tot	*	*	pg0fsan	*	pašu	_	_	det	basic	4-6	
+4-5	161-167	zemeņu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg5	*	zemene	*->1-5	*[1]	nmod	basic	4-6	
+4-6	168-177	pārdevēju	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	pārdevējs	_	_	obj	basic	4-2	
+4-7	178-179	–	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	–	_	_	punct	basic	4-25	
+4-8	180-183	tie	*	*	Nom	*	*	Masc	*	*	*	Plur	3	*	Dem	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Dem	*	*	pd3mpnn	*	tas	*->2-1	*[2]	nsubj	basic	4-25	
+4-9	183-184	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	4-14	
+4-10	185-188	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	Rel	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	*->2-2	*[2]	nsubj	basic	4-14	
+4-11	189-194	savas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	Prs	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur\|Poss=Yes\|PronType=Prs	*	*	ps0fpan	*	sava	*->2-3	*[2]	det	basic	4-13	
+4-12	195-201	zemeņu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg5	*	zemene	*->1-6	*[1]	nmod	basic	4-13	
+4-13	202-210	kastītes	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa5	*	kastīte	_	_	obj	basic	4-14	
+4-14	211-219	pārvieto	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt230an	*	pārvietot	_	_	acl	basic	4-8	
+4-15	220-222	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	case	basic	4-16	
+4-16	223-230	maigumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	maigums	_	_	obl	basic	4-14	
+4-17	230-231	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	4-14	
+4-18	232-242	visticamāk	*	*	*	*	Sup	*	*	*	*	*	*	*	*	*	*	*	Degree=Sup	*	*	rsm	*	ticami	_	_	discourse	basic	4-14	
+4-19	242-243	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	4-18	
+4-20	244-247	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	discourse	basic	4-25	
+4-21	248-252	paši	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	Tot	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Tot	*	*	pg0mpnn	*	pats	*->2-4	*[2]	acl	basic	4-25	
+4-22	253-255	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	cop	basic	4-25	
+4-23	256-260	savu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	Prs	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur\|Poss=Yes\|PronType=Prs	*	*	ps0fpgn	*	sava	*->2-5	*[2]	det	basic	4-24	
+4-24	261-267	zemeņu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg5	*	zemene	*->2-6|*->1-7	*[2]|*[1]	nmod	basic	4-25	
+4-25	268-277	audzētāji	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	audzētājs	*->2-6	*[2]	conj	basic	4-2	
+4-26	277-278	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	4-2	
+
+#Text=Ledusskapī zemenes uzglabā 2–3 dienas, bet pirms tam noteikti atdali bojātās zemenes.
+5-1	279-289	Ledusskapī	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	*	ledusskapis	_	_	obl	basic	5-3	
+5-2	290-297	zemenes	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa5	*	zemene	*->1-8	*[1]	obj	basic	5-3	
+5-3	298-305	uzglabā	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt230an	*	uzglabāt	_	_	root	basic	5-3	
+5-4	306-307	2	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	2	_	_	nummod	basic	5-7	
+5-5	307-308	–	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	–	_	_	punct	basic	5-6	
+5-6	308-309	3	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	3	_	_	conj	basic	5-4	
+5-7	310-316	dienas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	diena	_	_	obl	basic	5-3	
+5-8	316-317	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	5-13	
+5-9	318-321	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	cc	basic	5-13	
+5-10	322-327	pirms	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsd	*	pirms	_	_	case	basic	5-11	
+5-11	328-331	tam	*	*	Dat	*	*	Masc	*	*	*	Sing	3	*	Dem	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msdn	*	tas	_	_	obl	basic	5-13	
+5-12	332-340	noteikti	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	noteikti	_	_	advmod	basic	5-13	
+5-13	341-347	atdali	*	*	*	*	*	*	Imp	*	*	Sing	2	*	*	*	*	*	Mood=Imp\|Number=Sing\|Person=2\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnm0t32san	*	atdalīt	_	_	conj	basic	5-3	
+5-14	348-355	bojātās	*	Perf	Acc	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdfpapsypn	*	bojāt	_	_	amod	basic	5-15	
+5-15	356-363	zemenes	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa5	*	zemene	*->1-9	*[1]	obj	basic	5-13	
+5-16	363-364	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	5-3	
+
+#Text=Ja vēlies zemenes saldēt, pirms tam neaizmirsti rūpīgi nomazgāt un nosusināt.
+6-1	365-367	Ja	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ja	_	_	mark	basic	6-2	
+6-2	368-374	vēlies	*	*	*	*	*	*	Ind	*	*	Sing	2	*	*	Yes	Pres	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=2\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyipi32san	*	vēlēties	_	_	advcl	basic	6-8	
+6-3	375-382	zemenes	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa5	*	zemene	*->1-10	*[1]	obj	basic	6-4	
+6-4	383-389	saldēt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t2000n	*	saldēt	_	_	xcomp	basic	6-2	
+6-5	389-390	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	6-2	
+6-6	391-396	pirms	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsd	*	pirms	_	_	case	basic	6-7	
+6-7	397-400	tam	*	*	Dat	*	*	Masc	*	*	*	Sing	3	*	Dem	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msdn	*	tas	_	_	obl	basic	6-8	
+6-8	401-412	neaizmirsti	*	*	*	*	*	*	Imp	*	*	Sing	2	*	*	*	Pres	*	Mood=Imp\|Number=Sing\|Person=2\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnmpt12say	*	aizmirst	_	_	root	basic	6-8	
+6-9	413-419	rūpīgi	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	rūpīgi	_	_	advmod	basic	6-10	
+6-10	420-428	nomazgāt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t2000n	*	nomazgāt	_	_	ccomp	basic	6-8	
+6-11	429-431	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	cc	basic	6-12	
+6-12	432-441	nosusināt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t3000n	*	nosusināt	_	_	conj	basic	6-10	
+6-13	441-442	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	6-8	

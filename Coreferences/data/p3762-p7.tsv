@@ -1,22 +1,22 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Kad jūs sapratāt, ka jūsu dzīve pamatā būs saistīta ar grāmatām?
-1-1	0-3	Kad	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0t	kad	_	_	advmod	basic	1-3	
-1-2	4-7	jūs	*	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Number=Plur\|Person=2\|PronType=Prs	2	*	pp20pnn	jūs	*[1]	*->1-1	nsubj	basic	1-3	
-1-3	8-16	sapratāt	*	Plur	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=2\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	2	*	vmnist12pan	saprast	_	_	root	basic	1-3	
-1-4	16-17	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-10	
-1-5	18-20	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	mark	basic	1-10	
-1-6	21-25	jūsu	*	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Number=Plur\|Person=2\|PronType=Prs	2	*	pp20pgn	jūs	*[1]	*->1-2	det	basic	1-7	
-1-7	26-31	dzīve	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	dzīve	_	_	nsubj:pass	basic	1-10	
-1-8	32-38	pamatā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	pamats	_	_	obl	basic	1-10	
-1-9	39-42	būs	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vcnifii30an	būt	_	_	aux	basic	1-10	
-1-10	43-51	saistīta	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnpsnp	saistīt	_	_	ccomp	basic	1-3	
-1-11	52-54	ar	_	_	_	_	_	_	_	_	_	_	_	_	sppd	ar	_	_	case	basic	1-12	
-1-12	55-63	grāmatām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	grāmata	_	_	iobj	basic	1-10	
-1-13	63-64	?	_	_	_	_	_	_	_	_	_	_	_	_	zs	?	_	_	punct	basic	1-3	
+1-1	0-3	Kad	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0t	*	kad	_	_	advmod	basic	1-3	
+1-2	4-7	jūs	*	*	Nom	*	*	*	*	*	*	Plur	2	*	*	*	*	*	Case=Nom\|Number=Plur\|Person=2\|PronType=Prs	*	*	pp20pnn	*	jūs	*->1-1	*[1]	nsubj	basic	1-3	
+1-3	8-16	sapratāt	*	*	*	*	*	*	Ind	*	*	Plur	2	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=2\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist12pan	*	saprast	_	_	root	basic	1-3	
+1-4	16-17	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-10	
+1-5	18-20	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	mark	basic	1-10	
+1-6	21-25	jūsu	*	*	Gen	*	*	*	*	*	*	Plur	2	*	*	*	*	*	Case=Gen\|Number=Plur\|Person=2\|PronType=Prs	*	*	pp20pgn	*	jūs	*->1-2	*[1]	det	basic	1-7	
+1-7	26-31	dzīve	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	dzīve	_	_	nsubj:pass	basic	1-10	
+1-8	32-38	pamatā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	pamats	_	_	obl	basic	1-10	
+1-9	39-42	būs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vcnifii30an	*	būt	_	_	aux	basic	1-10	
+1-10	43-51	saistīta	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsnpsnp	*	saistīt	_	_	ccomp	basic	1-3	
+1-11	52-54	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	case	basic	1-12	
+1-12	55-63	grāmatām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	*	grāmata	_	_	iobj	basic	1-10	
+1-13	63-64	?	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	?	_	_	punct	basic	1-3	

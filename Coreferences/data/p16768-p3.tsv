@@ -1,0 +1,58 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Nīderlandes prezidentūras programmā uzsvērts, ka ES pašlaik ir pakļauta testam - tā saskaras ar plašu kara un nemieru skartu cilvēku pieplūdumu.
+1-1	0-11	Nīderlandes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	*	Nīderlande	entity[1]|organization[2]|GPE[3]	*[1]|*[2]|https://en.wikipedia.org/wiki/Netherlands[3]	_	_	nmod	basic	1-2	
+1-2	12-25	prezidentūras	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	prezidentūra	entity[1]|organization[2]	*[1]|*[2]	_	_	nmod	basic	1-3	
+1-3	26-35	programmā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	programma	entity[1]	*[1]	_	_	obl	basic	1-4	
+1-4	36-44	uzsvērts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsnpsnpn	*	uzsvērt	_	_	_	_	root	basic	1-4	
+1-5	44-45	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-10	
+1-6	46-48	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	1-10	
+1-7	49-51	ES	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	ES	organization	https://en.wikipedia.org/wiki/European\_Union	*->1-1	*[1]	nsubj:pass	basic	1-10	
+1-8	52-59	pašlaik	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	pašlaik	_	_	_	_	advmod	basic	1-10	
+1-9	60-62	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	_	_	aux:pass	basic	1-10	
+1-10	63-71	pakļauta	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdfsnpsnpn	*	pakļaut	_	_	_	_	ccomp	basic	1-4	
+1-11	72-78	testam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	tests	_	_	_	_	iobj	basic	1-10	
+1-12	79-80	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	-	_	_	_	_	punct	basic	1-14	
+1-13	81-83	tā	*	*	Nom	*	*	Fem	*	*	*	Sing	3	*	Dem	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3fsnn	*	tā	_	_	*->1-2	*[1]	nsubj	basic	1-14	
+1-14	84-92	saskaras	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyipi130an	*	saskarties	_	_	_	_	conj	basic	1-10	
+1-15	93-95	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	1-22	
+1-16	96-101	plašu	*	*	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsanp	*	plašs	_	_	_	_	amod	basic	1-22	
+1-17	102-106	kara	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	kars	_	_	_	_	obl	basic	1-20	
+1-18	107-109	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-19	
+1-19	110-117	nemieru	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	nemiers	_	_	_	_	conj	basic	1-17	
+1-20	118-124	skartu	*	Perf	Gen	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Gen\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmpgpsnpn	*	skart	_	_	_	_	amod	basic	1-21	
+1-21	125-132	cilvēku	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	cilvēks	_	_	_	_	nmod	basic	1-22	
+1-22	133-143	pieplūdumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	pieplūdums	_	_	_	_	iobj	basic	1-14	
+1-23	143-144	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-4	
+
+#Text=Tāpat arī ģeopolitisko saspīlējumu dēļ ES rēgojas fragmentācijas draudi, turklāt teroristi apdraud eiropiešu dzīvesveidu, tādējādi sabiedrībā sējot bailes un sašķeltību.
+2-1	145-150	Tāpat	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tāpat	_	_	_	_	discourse	basic	2-2	
+2-2	151-154	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	2-4	
+2-3	155-167	ģeopolitisko	*	*	Gen	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpgyp	*	ģeopolitisks	_	_	_	_	amod	basic	2-4	
+2-4	168-179	saspīlējumu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	saspīlējums	_	_	_	_	obl	basic	2-7	
+2-5	180-183	dēļ	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	stpg	*	dēļ	_	_	_	_	case	basic	2-4	
+2-6	184-186	ES	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	ES	organization	https://en.wikipedia.org/wiki/European\_Union	*->1-3	*[1]	obl	basic	2-7	
+2-7	187-194	rēgojas	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyipi230an	*	rēgoties	_	_	_	_	root	basic	2-7	
+2-8	195-209	fragmentācijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	fragmentācija	_	_	_	_	nmod	basic	2-9	
+2-9	210-216	draudi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	drauds	_	_	_	_	nsubj	basic	2-7	
+2-10	216-217	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-13	
+2-11	218-225	turklāt	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	turklāt	_	_	_	_	cc	basic	2-13	
+2-12	226-235	teroristi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	terorists	_	_	_	_	nsubj	basic	2-13	
+2-13	236-243	apdraud	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt330an	*	apdraudēt	_	_	_	_	conj	basic	2-7	
+2-14	244-253	eiropiešu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	eiropietis	_	_	_	_	nmod	basic	2-15	
+2-15	254-265	dzīvesveidu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	dzīvesveids	_	_	_	_	obj	basic	2-13	
+2-16	265-266	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-19	
+2-17	267-275	tādējādi	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	tādējādi	_	_	_	_	advmod	basic	2-19	
+2-18	276-286	sabiedrībā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	sabiedrība	_	_	_	_	obl	basic	2-19	
+2-19	287-292	sējot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	Conv	*	vmnpu0000000n	*	sēt	_	_	_	_	advcl	basic	2-13	
+2-20	293-299	bailes	*	*	Acc	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Ptan	*	*	ncfda5	*	bailes	_	_	_	_	obj	basic	2-19	
+2-21	300-302	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-22	
+2-22	303-313	sašķeltību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	sašķeltība	_	_	_	_	conj	basic	2-20	
+2-23	313-314	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-7	

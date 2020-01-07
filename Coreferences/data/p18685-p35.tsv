@@ -1,0 +1,70 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Levits nav nevienas partijas biedrs, un līdz 2018.gadam viņam ir ES Tiesas tiesneša statuss.
+1-1	0-6	Levits	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Levits	person	https://en.wikipedia.org/wiki/Egils\_Levits	*->1-1	*[1]	nsubj	basic	1-5	
+1-2	7-10	nav	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30ay	*	būt	_	_	_	_	cop	basic	1-5	
+1-3	11-19	nevienas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	Ind,Neg	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|PronType=Ind,Neg	*	*	pi0fsgy	*	neviena	_	_	_	_	det	basic	1-4	
+1-4	20-28	partijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	partija	_	_	_	_	nmod	basic	1-5	
+1-5	29-35	biedrs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	biedrs	_	_	_	_	root	basic	1-5	
+1-6	35-36	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-12	
+1-7	37-39	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-12	
+1-8	40-44	līdz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsd	*	līdz	time[1]	*[1]	*->2-1	*[2]	case	basic	1-10	
+1-9	45-50	2018.	*	*	*	*	*	*	*	*	Ord	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	2018.	time[1]	*[1]	*->2-1	*[2]	amod	basic	1-10	
+1-10	50-55	gadam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	gads	time[1]	*[1]	*->2-1	*[2]	obl	basic	1-12	
+1-11	56-61	viņam	*	*	Dat	*	*	Masc	*	*	*	Sing	3	*	Prs	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msdn	*	viņš	_	_	*->1-2	*[1]	obl	basic	1-12	
+1-12	62-64	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipii30an	*	būt	_	_	_	_	conj	basic	1-5	
+1-13	65-67	ES	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	ES	organization[2]|GPE[3]	https://en.wikipedia.org/wiki/Court\_of\_Justice\_of\_the\_European\_Union[2]|*[3]	_	_	nmod	basic	1-14	
+1-14	68-74	Tiesas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	tiesa	organization[2]	https://en.wikipedia.org/wiki/Court\_of\_Justice\_of\_the\_European\_Union[2]	_	_	nmod	basic	1-15	
+1-15	75-83	tiesneša	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	*	tiesnesis	_	_	_	_	nmod	basic	1-16	
+1-16	84-91	statuss	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	statuss	_	_	_	_	nsubj	basic	1-12	
+1-17	91-92	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-5	
+
+#Text=Šai pašā gadā būs Saeimas vēlēšanas.
+2-1	93-96	Šai	*	*	Loc	*	*	Masc	*	*	*	Sing	3	*	Dem	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msln	*	šis	_	_	*->2-2	*[2]	det	basic	2-3	
+2-2	97-101	pašā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	Tot	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msln	*	pats	_	_	*->2-2	*[2]	compound	basic	2-1	
+2-3	102-106	gadā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	gads	_	_	*->2-2	*[2]	obl	basic	2-4	
+2-4	107-110	būs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnifii30an	*	būt	_	_	_	_	root	basic	2-4	
+2-5	111-118	Saeimas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Saeima	event[4]|organization[5]	https://lv.wikipedia.org/wiki/13.\_Saeimas\_vēlēšanas[4]|*[5]	_	_	nmod	basic	2-6	
+2-6	119-128	vēlēšanas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	vēlēšana	event[4]	https://lv.wikipedia.org/wiki/13.\_Saeimas\_vēlēšanas[4]	_	_	nsubj	basic	2-4	
+2-7	128-129	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-4	
+
+#Text=Levits ir izrādījis politisku aktivitāti, viņš ir Satversmes preambulas autors.
+3-1	130-136	Levits	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Levits	person	https://en.wikipedia.org/wiki/Egils\_Levits	*->1-3	*[1]	nsubj	basic	3-3	
+3-2	137-139	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	_	_	aux	basic	3-3	
+3-3	140-149	izrādījis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdmsnasnpn	*	izrādīt	_	_	_	_	root	basic	3-3	
+3-4	150-159	politisku	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsanp	*	politisks	_	_	_	_	amod	basic	3-5	
+3-5	160-170	aktivitāti	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	aktivitāte	_	_	_	_	obj	basic	3-3	
+3-6	170-171	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-11	
+3-7	172-176	viņš	*	*	Nom	*	*	Masc	*	*	*	Sing	3	*	Prs	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msnn	*	viņš	_	_	*->1-4	*[1]	nsubj	basic	3-11	
+3-8	177-179	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	3-11	
+3-9	180-190	Satversmes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	*	Satversme	entity[6]|entity[7]	*[6]|*[7]	_	_	nmod	basic	3-10	
+3-10	191-201	preambulas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	preambula	entity[6]	*[6]	_	_	nmod	basic	3-11	
+3-11	202-208	autors	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	autors	_	_	_	_	conj	basic	3-3	
+3-12	208-209	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-3	
+
+#Text=Ja Levits vēlēsies kandidēt nākamajās Saeimas vēlēšanās, Nacionālā apvienība viņu labprāt vēlētos redzēt savu domubiedru pulkā.
+4-1	210-212	Ja	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ja	_	_	_	_	mark	basic	4-3	
+4-2	213-219	Levits	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Levits	person	https://en.wikipedia.org/wiki/Egils\_Levits	*->1-5	*[1]	nsubj	basic	4-3	
+4-3	220-228	vēlēsies	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Fut\|VerbForm=Fin\|Voice=Act	Fin	Act	voyifi330an	*	vēlēties	_	_	_	_	advcl	basic	4-13	
+4-4	229-237	kandidēt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0i2000n	*	kandidēt	_	_	_	_	xcomp	basic	4-3	
+4-5	238-247	nākamajās	*	*	Loc	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Pres	*	Case=Loc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdfplppypn	*	nākt	_	_	_	_	amod	basic	4-7	
+4-6	248-255	Saeimas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Saeima	event[8]|organization[9]	https://lv.wikipedia.org/wiki/13.\_Saeimas\_vēlēšanas[8]|https://en.wikipedia.org/wiki/Saeima[9]	_	_	nmod	basic	4-7	
+4-7	256-265	vēlēšanās	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfslr	*	vēlēšanās	event[8]	https://lv.wikipedia.org/wiki/13.\_Saeimas\_vēlēšanas[8]	_	_	obl	basic	4-4	
+4-8	265-266	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-3	
+4-9	267-276	Nacionālā	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnyp	*	nacionāls	organization[10]	https://en.wikipedia.org/wiki/National\_Alliance\_(Latvia)[10]	*->3-1	*[3]	amod	basic	4-10	
+4-10	277-286	apvienība	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	apvienība	organization[10]	https://en.wikipedia.org/wiki/National\_Alliance\_(Latvia)[10]	*->3-1	*[3]	nsubj	basic	4-13	
+4-11	287-291	viņu	*	*	Acc	*	*	Masc	*	*	*	Sing	3	*	Prs	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msan	*	viņš	_	_	*->1-6	*[1]	obj	basic	4-14	
+4-12	292-299	labprāt	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	labprāt	_	_	_	_	advmod	basic	4-13	
+4-13	300-307	vēlētos	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	Yes	*	*	Mood=Cnd\|Polarity=Pos\|Reflex=Yes\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyc0i300an	*	vēlēties	_	_	_	_	root	basic	4-13	
+4-14	308-314	redzēt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t3000n	*	redzēt	_	_	_	_	xcomp	basic	4-13	
+4-15	315-319	savu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	Prs	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur\|Poss=Yes\|PronType=Prs	*	*	ps0mpgn	*	savs	_	_	*->3-2	*[3]	det	basic	4-16	
+4-16	320-330	domubiedru	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	domubiedrs	_	_	_	_	nmod	basic	4-17	
+4-17	331-336	pulkā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	pulka	_	_	_	_	obl	basic	4-14	
+4-18	336-337	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	4-13	

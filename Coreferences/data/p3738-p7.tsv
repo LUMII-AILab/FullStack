@@ -1,84 +1,84 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=AS "Grindeks" akcijas tiek kotētas "NASDAQ OMX Riga" Oficiālajā sarakstā.
-1-1	0-2	AS	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	AS	organization[1]	*[1]	nmod	basic	1-3	
-1-2	3-4	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[1]	*[1]	punct	basic	1-3	
-1-3	4-12	Grindeks	_	_	_	_	_	_	_	_	_	_	_	_	np0000	Grindeks	organization[1]	*[1]	nmod	basic	1-5	
-1-4	12-13	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[1]	*[1]	punct	basic	1-3	
-1-5	14-21	akcijas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	akcija	_	_	nsubj:pass	basic	1-7	
-1-6	22-26	tiek	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vtnipi130an	tikt	_	_	aux	basic	1-7	
-1-7	27-34	kotētas	Fem	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfpnpsnp	kotēt	_	_	root	basic	1-7	
-1-8	35-36	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	entity[2]	*[2]	punct	basic	1-9	
-1-9	36-42	NASDAQ	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	NASDAQ	entity[2]	*[2]	nmod	basic	1-14	
-1-10	43-46	OMX	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	OMX	entity[2]	*[2]	flat:name	basic	1-9	
-1-11	47-51	Riga	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Riga	entity[2]	*[2]	flat:name	basic	1-9	
-1-12	51-52	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	entity[2]	*[2]	punct	basic	1-9	
-1-13	53-63	Oficiālajā	Masc	Sing	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armslyp	oficiāls	_	_	amod	basic	1-14	
-1-14	64-72	sarakstā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	saraksts	_	_	obl	basic	1-7	
-1-15	72-73	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	1-7	
+1-1	0-2	AS	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	*	AS	organization[1]	*[1]	nmod	basic	1-3	
+1-2	3-4	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[1]	*[1]	punct	basic	1-3	
+1-3	4-12	Grindeks	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	np0000	*	Grindeks	organization[1]	*[1]	nmod	basic	1-5	
+1-4	12-13	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[1]	*[1]	punct	basic	1-3	
+1-5	14-21	akcijas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	akcija	_	_	nsubj:pass	basic	1-7	
+1-6	22-26	tiek	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vtnipi130an	*	tikt	_	_	aux	basic	1-7	
+1-7	27-34	kotētas	*	Perf	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Tense=Past\|VerbForm=Part	*	*	vmnpdfpnpsnp	*	kotēt	_	_	root	basic	1-7	
+1-8	35-36	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	entity[2]	*[2]	punct	basic	1-9	
+1-9	36-42	NASDAQ	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	NASDAQ	entity[2]	*[2]	nmod	basic	1-14	
+1-10	43-46	OMX	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	OMX	entity[2]	*[2]	flat:name	basic	1-9	
+1-11	47-51	Riga	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Riga	entity[2]	*[2]	flat:name	basic	1-9	
+1-12	51-52	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	entity[2]	*[2]	punct	basic	1-9	
+1-13	53-63	Oficiālajā	*	*	Loc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armslyp	*	oficiāls	_	_	amod	basic	1-14	
+1-14	64-72	sarakstā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	saraksts	_	_	obl	basic	1-7	
+1-15	72-73	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	1-7	
 
 #Text=AS "Grindeks" lielākie akcionāri ir Lipmans - 33,29%, Anna Lipmane - 16,69%, "AB.LV Private Equity fund 2010" - 11,38%, "Skandinaviska Enskilda Banken" (nomināla turētājs) - 10,53%, ""Swedbank" AS Clients Account" (nomināla turētājs) - 8,79%.
-2-1	75-77	AS	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	AS	organization[3]	*[3]	nmod	basic	2-3	
-2-2	78-79	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[3]	*[3]	punct	basic	2-3	
-2-3	79-87	Grindeks	_	_	_	_	_	_	_	_	_	_	_	_	np0000	Grindeks	organization[3]	*[3]	nmod	basic	2-6	
-2-4	87-88	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[3]	*[3]	punct	basic	2-3	
-2-5	89-97	lielākie	Masc	Plur	Nom	Cmp	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Masc\|Number=Plur	*	*	afmpnyc	liels	_	_	amod	basic	2-6	
-2-6	98-107	akcionāri	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	akcionārs	_	_	nsubj	basic	2-8	
-2-7	108-110	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	cop	basic	2-8	
-2-8	111-118	Lipmans	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Lipmans	person	*	root	basic	2-8	
-2-9	119-120	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	punct	basic	2-11	
-2-10	121-126	33,29	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	33,29	_	_	nummod	basic	2-11	
-2-11	126-127	%	_	_	_	_	_	_	_	_	_	_	_	_	xx	%	_	_	acl	basic	2-8	
-2-12	127-128	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	2-13	
-2-13	129-133	Anna	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Anna	person[4]	*[4]	conj	basic	2-8	
-2-14	134-141	Lipmane	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	Lipmane	person[4]	*[4]	flat:name	basic	2-13	
-2-15	142-143	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	punct	basic	2-17	
-2-16	144-149	16,69	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	16,69	_	_	nummod	basic	2-17	
-2-17	149-150	%	_	_	_	_	_	_	_	_	_	_	_	_	xx	%	_	_	acl	basic	2-13	
-2-18	150-151	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	2-20	
-2-19	152-153	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[5]	*[5]	punct	basic	2-20	
-2-20	153-158	AB.LV	_	_	_	_	_	_	_	_	_	_	_	_	xx	AB.LV	organization[5]	*[5]	conj	basic	2-8	
-2-21	159-166	Private	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Private	organization[5]	*[5]	flat:name	basic	2-20	
-2-22	167-173	Equity	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Equity	organization[5]	*[5]	flat:name	basic	2-20	
-2-23	174-178	fund	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	fund	organization[5]	*[5]	flat:name	basic	2-20	
-2-24	179-183	2010	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	2010	organization[5]	*[5]	flat:name	basic	2-20	
-2-25	183-184	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[5]	*[5]	punct	basic	2-20	
-2-26	185-186	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	punct	basic	2-28	
-2-27	187-192	11,38	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	11,38	_	_	nummod	basic	2-28	
-2-28	192-193	%	_	_	_	_	_	_	_	_	_	_	_	_	xx	%	_	_	acl	basic	2-20	
-2-29	193-194	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	2-31	
-2-30	195-196	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[6]	*[6]	punct	basic	2-31	
-2-31	196-209	Skandinaviska	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Skandinaviska	organization[6]	*[6]	conj	basic	2-8	
-2-32	210-218	Enskilda	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Enskilda	organization[6]	*[6]	flat:name	basic	2-31	
-2-33	219-225	Banken	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Banken	organization[6]	*[6]	flat:name	basic	2-31	
-2-34	225-226	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[6]	*[6]	punct	basic	2-31	
-2-35	227-228	(	_	_	_	_	_	_	_	_	_	_	_	_	zb	(	_	_	punct	basic	2-37	
-2-36	228-236	nomināla	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	nomināls	_	_	nmod	basic	2-37	
-2-37	237-245	turētājs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	turētājs	_	_	parataxis	basic	2-31	
-2-38	245-246	)	_	_	_	_	_	_	_	_	_	_	_	_	zb	)	_	_	punct	basic	2-37	
-2-39	247-248	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	punct	basic	2-41	
-2-40	249-254	10,53	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	10,53	_	_	nummod	basic	2-41	
-2-41	254-255	%	_	_	_	_	_	_	_	_	_	_	_	_	xx	%	_	_	acl	basic	2-31	
-2-42	255-256	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	2-45	
-2-43	257-258	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[7]	*[7]	punct	basic	2-45	
-2-44	258-259	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[7]|organization[8]	*[7]|*[8]	punct	basic	2-45	
-2-45	259-267	Swedbank	_	_	_	_	_	_	_	_	_	_	_	_	np0000	Swedbank	organization[7]|organization[8]	*[7]|*[8]	conj	basic	2-8	
-2-46	267-268	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[7]|organization[8]	*[7]|*[8]	punct	basic	2-45	
-2-47	269-271	AS	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	AS	organization[7]	*[7]	flat:name	basic	2-45	
-2-48	272-279	Clients	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Clients	organization[7]	*[7]	flat:name	basic	2-45	
-2-49	280-287	Account	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Account	organization[7]	*[7]	flat:name	basic	2-45	
-2-50	287-288	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[7]	*[7]	punct	basic	2-45	
-2-51	289-290	(	_	_	_	_	_	_	_	_	_	_	_	_	zb	(	_	_	punct	basic	2-53	
-2-52	290-298	nomināla	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	nomināls	_	_	nmod	basic	2-53	
-2-53	299-307	turētājs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	turētājs	_	_	parataxis	basic	2-45	
-2-54	307-308	)	_	_	_	_	_	_	_	_	_	_	_	_	zb	)	_	_	punct	basic	2-53	
-2-55	309-310	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	punct	basic	2-57	
-2-56	311-315	8,79	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	8,79	_	_	nummod	basic	2-57	
-2-57	315-316	%	_	_	_	_	_	_	_	_	_	_	_	_	xx	%	_	_	acl	basic	2-45	
-2-58	316-317	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	2-8	
+2-1	75-77	AS	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	*	AS	organization[3]	*[3]	nmod	basic	2-3	
+2-2	78-79	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[3]	*[3]	punct	basic	2-3	
+2-3	79-87	Grindeks	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	np0000	*	Grindeks	organization[3]	*[3]	nmod	basic	2-6	
+2-4	87-88	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[3]	*[3]	punct	basic	2-3	
+2-5	89-97	lielākie	*	*	Nom	*	Cmp	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Masc\|Number=Plur	*	*	afmpnyc	*	liels	_	_	amod	basic	2-6	
+2-6	98-107	akcionāri	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	akcionārs	_	_	nsubj	basic	2-8	
+2-7	108-110	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	cop	basic	2-8	
+2-8	111-118	Lipmans	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Lipmans	person	*	root	basic	2-8	
+2-9	119-120	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	-	_	_	punct	basic	2-11	
+2-10	121-126	33,29	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	33,29	_	_	nummod	basic	2-11	
+2-11	126-127	%	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	xx	*	%	_	_	acl	basic	2-8	
+2-12	127-128	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	2-13	
+2-13	129-133	Anna	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Anna	person[4]	*[4]	conj	basic	2-8	
+2-14	134-141	Lipmane	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	*	Lipmane	person[4]	*[4]	flat:name	basic	2-13	
+2-15	142-143	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	-	_	_	punct	basic	2-17	
+2-16	144-149	16,69	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	16,69	_	_	nummod	basic	2-17	
+2-17	149-150	%	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	xx	*	%	_	_	acl	basic	2-13	
+2-18	150-151	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	2-20	
+2-19	152-153	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[5]	*[5]	punct	basic	2-20	
+2-20	153-158	AB.LV	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	xx	*	AB.LV	organization[5]	*[5]	conj	basic	2-8	
+2-21	159-166	Private	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Private	organization[5]	*[5]	flat:name	basic	2-20	
+2-22	167-173	Equity	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Equity	organization[5]	*[5]	flat:name	basic	2-20	
+2-23	174-178	fund	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	fund	organization[5]	*[5]	flat:name	basic	2-20	
+2-24	179-183	2010	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	2010	organization[5]	*[5]	flat:name	basic	2-20	
+2-25	183-184	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[5]	*[5]	punct	basic	2-20	
+2-26	185-186	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	-	_	_	punct	basic	2-28	
+2-27	187-192	11,38	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	11,38	_	_	nummod	basic	2-28	
+2-28	192-193	%	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	xx	*	%	_	_	acl	basic	2-20	
+2-29	193-194	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	2-31	
+2-30	195-196	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[6]	*[6]	punct	basic	2-31	
+2-31	196-209	Skandinaviska	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Skandinaviska	organization[6]	*[6]	conj	basic	2-8	
+2-32	210-218	Enskilda	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Enskilda	organization[6]	*[6]	flat:name	basic	2-31	
+2-33	219-225	Banken	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Banken	organization[6]	*[6]	flat:name	basic	2-31	
+2-34	225-226	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[6]	*[6]	punct	basic	2-31	
+2-35	227-228	(	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	(	_	_	punct	basic	2-37	
+2-36	228-236	nomināla	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	nomināls	_	_	nmod	basic	2-37	
+2-37	237-245	turētājs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	turētājs	_	_	parataxis	basic	2-31	
+2-38	245-246	)	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	)	_	_	punct	basic	2-37	
+2-39	247-248	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	-	_	_	punct	basic	2-41	
+2-40	249-254	10,53	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	10,53	_	_	nummod	basic	2-41	
+2-41	254-255	%	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	xx	*	%	_	_	acl	basic	2-31	
+2-42	255-256	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	2-45	
+2-43	257-258	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[7]	*[7]	punct	basic	2-45	
+2-44	258-259	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[7]|organization[8]	*[7]|*[8]	punct	basic	2-45	
+2-45	259-267	Swedbank	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	np0000	*	Swedbank	organization[7]|organization[8]	*[7]|*[8]	conj	basic	2-8	
+2-46	267-268	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[7]|organization[8]	*[7]|*[8]	punct	basic	2-45	
+2-47	269-271	AS	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	*	AS	organization[7]	*[7]	flat:name	basic	2-45	
+2-48	272-279	Clients	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Clients	organization[7]	*[7]	flat:name	basic	2-45	
+2-49	280-287	Account	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Account	organization[7]	*[7]	flat:name	basic	2-45	
+2-50	287-288	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[7]	*[7]	punct	basic	2-45	
+2-51	289-290	(	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	(	_	_	punct	basic	2-53	
+2-52	290-298	nomināla	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	nomināls	_	_	nmod	basic	2-53	
+2-53	299-307	turētājs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	turētājs	_	_	parataxis	basic	2-45	
+2-54	307-308	)	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	)	_	_	punct	basic	2-53	
+2-55	309-310	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	-	_	_	punct	basic	2-57	
+2-56	311-315	8,79	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	8,79	_	_	nummod	basic	2-57	
+2-57	315-316	%	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	xx	*	%	_	_	acl	basic	2-45	
+2-58	316-317	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	2-8	

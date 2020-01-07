@@ -1,0 +1,101 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Kā norāda Latvijas Tirdzniecības un rūpniecības kameras (LTRK) valdes priekšsēdētājs Jānis Endziņš, Krievijas noteiktā embargo Eiropas Savienības, tajā skaitā, Latvijas precēm un izejvielām, negatīvā ietekme uz valsts tautsaimniecību mērāma miljonos eiro.
+1-1	0-2	Kā	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0m	*	kā	_	_	_	_	advmod	basic	1-2	
+1-2	3-9	norāda	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	norādīt	_	_	_	_	parataxis	basic	1-35	
+1-3	10-18	Latvijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Latvija	organization[1]|GPE[2]	https://lv.wikipedia.org/wiki/Latvijas\_Tirdzniecības\_un\_rūpniecības\_kamera[1]|https://en.wikipedia.org/wiki/Latvia[2]	*->1-1	*[1]	nmod	basic	1-4	
+1-4	19-32	Tirdzniecības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	tirdzniecība	organization[1]	https://lv.wikipedia.org/wiki/Latvijas\_Tirdzniecības\_un\_rūpniecības\_kamera[1]	*->1-1	*[1]	nmod	basic	1-7	
+1-5	33-35	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	organization[1]	https://lv.wikipedia.org/wiki/Latvijas\_Tirdzniecības\_un\_rūpniecības\_kamera[1]	*->1-1	*[1]	cc	basic	1-6	
+1-6	36-47	rūpniecības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	rūpniecība	organization[1]	https://lv.wikipedia.org/wiki/Latvijas\_Tirdzniecības\_un\_rūpniecības\_kamera[1]	*->1-1	*[1]	conj	basic	1-4	
+1-7	48-55	kameras	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	kamera	organization[1]	https://lv.wikipedia.org/wiki/Latvijas\_Tirdzniecības\_un\_rūpniecības\_kamera[1]	*->1-1	*[1]	nmod	basic	1-11	
+1-8	56-57	(	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	(	organization[3]	https://lv.wikipedia.org/wiki/Latvijas\_Tirdzniecības\_un\_rūpniecības\_kamera[3]	_	_	punct	basic	1-9	
+1-9	57-61	LTRK	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	LTRK	organization[3]	https://lv.wikipedia.org/wiki/Latvijas\_Tirdzniecības\_un\_rūpniecības\_kamera[3]	*->1-2	*[1]	discourse	basic	1-7	
+1-10	61-62	)	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	)	organization[3]	https://lv.wikipedia.org/wiki/Latvijas\_Tirdzniecības\_un\_rūpniecības\_kamera[3]	_	_	punct	basic	1-9	
+1-11	63-69	valdes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	valde	_	_	*->2-1	*[2]	nmod	basic	1-12	
+1-12	70-84	priekšsēdētājs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	priekšsēdētājs	_	_	*->2-1	*[2]	nmod	basic	1-13	
+1-13	85-90	Jānis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	*	Jānis	person[4]	*[4]	*->2-2	*[2]	nsubj	basic	1-2	
+1-14	91-98	Endziņš	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Endziņš	person[4]	*[4]	*->2-2	*[2]	flat:name	basic	1-13	
+1-15	98-99	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-2	
+1-16	100-109	Krievijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Krievija	GPE	https://en.wikipedia.org/wiki/Russia	_	_	nmod	basic	1-17	
+1-17	110-118	noteiktā	*	Perf	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Gen\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsgpsnpn	*	noteikt	_	_	_	_	amod	basic	1-18	
+1-18	119-126	embargo	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	nc0000	*	embargo	_	_	_	_	nmod	basic	1-31	
+1-19	127-134	Eiropas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Eiropa	GPE[5]	https://en.wikipedia.org/wiki/European\_Union[5]	_	_	nmod	basic	1-20	
+1-20	135-145	Savienības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	savienība	GPE[5]	https://en.wikipedia.org/wiki/European\_Union[5]	_	_	nmod	basic	1-26	
+1-21	145-146	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-25	
+1-22	147-151	tajā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msln	*	tajā	_	_	_	_	det	basic	1-23	
+1-23	152-158	skaitā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	skaits	_	_	_	_	discourse	basic	1-25	
+1-24	158-159	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	z\_	*	_	_	_	_	_	punct	basic	1-23	
+1-25	160-168	Latvijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	_	_	discourse	basic	1-20	
+1-26	169-175	precēm	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd5	*	prece	_	_	_	_	nmod	basic	1-18	
+1-27	176-178	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-28	
+1-28	179-189	izejvielām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	*	izejviela	_	_	_	_	conj	basic	1-26	
+1-29	189-190	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	z\_	*	_	_	_	_	_	punct	basic	1-28	
+1-30	191-199	negatīvā	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnyp	*	negatīvs	_	_	_	_	amod	basic	1-31	
+1-31	200-207	ietekme	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	ietekme	_	_	_	_	nsubj	basic	1-35	
+1-32	208-210	uz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	uz	_	_	_	_	case	basic	1-34	
+1-33	211-217	valsts	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	*	valsts	_	_	_	_	nmod	basic	1-34	
+1-34	218-233	tautsaimniecību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	tautsaimniecība	_	_	_	_	nmod	basic	1-31	
+1-35	234-240	mērāma	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Pres	*	Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdfsnppnpn	*	mērīt	_	_	_	_	root	basic	1-35	
+1-36	241-249	miljonos	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	*	miljons	_	_	_	_	nmod	basic	1-37	
+1-37	250-254	eiro	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	nc0000	*	eiro	_	_	_	_	obl	basic	1-35	
+1-38	254-255	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-35	
+
+#Text="Pavērst to pozitīvā virzienā var divējādi: diferencējot eksporta tirgus, vai īstermiņā – kāpinot patēriņu vietējā, Latvijas tirgū.
+2-1	257-258	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	_	_	_	_	punct	basic	2-6	
+2-2	258-265	Pavērst	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	*	pavērst	_	_	_	_	xcomp	basic	2-6	
+2-3	266-268	to	*	*	Gen	*	*	Fem	*	*	*	Plur	3	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur\|Person=3\|PronType=Dem	*	*	pd3fpgn	*	tā	_	_	_	_	iobj	basic	2-2	
+2-4	269-277	pozitīvā	*	*	Loc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmslnp	*	pozitīvs	_	_	_	_	amod	basic	2-5	
+2-5	278-286	virzienā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	virziens	_	_	_	_	obl	basic	2-2	
+2-6	287-290	var	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vonipi330an	*	varēt	_	_	_	_	root	basic	2-6	
+2-7	291-299	divējādi	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	divējādi	_	_	_	_	advmod	basic	2-6	
+2-8	299-300	:	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zo	*	:	_	_	_	_	punct	basic	2-9	
+2-9	301-313	diferencējot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	*	*	vmnpu0000000n	*	diferencēt	_	_	_	_	advcl	basic	2-7	
+2-10	314-322	eksporta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	eksports	_	_	_	_	nmod	basic	2-11	
+2-11	323-329	tirgus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa3	*	tirgus	_	_	_	_	obj	basic	2-9	
+2-12	329-330	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	z\_	*	_	_	_	_	_	punct	basic	2-11	
+2-13	331-334	vai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	vai	_	_	_	_	cc	basic	2-16	
+2-14	335-344	īstermiņā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	īstermiņš	_	_	_	_	discourse	basic	2-16	
+2-15	345-346	–	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	–	_	_	_	_	punct	basic	2-14	
+2-16	347-354	kāpinot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	*	*	vmnpu0000000n	*	kāpināt	_	_	_	_	conj	basic	2-9	
+2-17	355-363	patēriņu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	patēriņš	_	_	_	_	obj	basic	2-16	
+2-18	364-371	vietējā	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnyp	*	vietējs	_	_	_	_	amod	basic	2-21	
+2-19	371-372	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-20	
+2-20	373-381	Latvijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	_	_	conj	basic	2-18	
+2-21	382-387	tirgū	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl3	*	tirgus	_	_	_	_	obl	basic	2-16	
+2-22	387-388	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-6	
+
+#Text=Tādēļ LTRK kā Latvijā radītās, pašpatēriņu veicinošās sociālās kampaņas “Latvijas Labums” iniciatoru jo īpaši priecē Citadele Index pētījuma rezultāti,” sacīja Endziņš.
+3-1	390-395	Tādēļ	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0c	*	tādēļ	_	_	_	_	advmod	basic	3-18	
+3-2	396-400	LTRK	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	LTRK	organization	https://lv.wikipedia.org/wiki/Latvijas\_Tirdzniecības\_un\_rūpniecības\_kamera	*->1-3	*[1]	iobj	basic	3-18	
+3-3	401-403	kā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	kā	_	_	_	_	case	basic	3-15	
+3-4	404-411	Latvijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	_	_	obl	basic	3-5	
+3-5	412-419	radītās	*	Perf	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfpnpsypn	*	radīt	_	_	_	_	amod	basic	3-10	
+3-6	419-420	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-8	
+3-7	421-432	pašpatēriņu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	pašpatēriņš	_	_	_	_	obj	basic	3-8	
+3-8	433-443	veicinošās	*	Imp	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Pres	*	Aspect=Imp\|Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdfpnapypn	*	veicināt	_	_	_	_	conj	basic	3-5	
+3-9	444-452	sociālās	*	*	Gen	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsgyp	*	sociāls	_	_	_	_	amod	basic	3-10	
+3-10	453-461	kampaņas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	kampaņa	_	_	_	_	nmod	basic	3-13	
+3-11	462-463	“	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	“	event[6]	*[6]	_	_	punct	basic	3-13	
+3-12	463-471	Latvijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Latvija	event[6]|GPE[7]	*[6]|https://en.wikipedia.org/wiki/Latvia[7]	_	_	nmod	basic	3-13	
+3-13	472-478	Labums	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	labums	event[6]	*[6]	_	_	nmod	basic	3-15	
+3-14	478-479	”	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	”	event[6]	*[6]	_	_	punct	basic	3-13	
+3-15	480-490	iniciatoru	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	iniciators	_	_	_	_	nmod	basic	3-2	
+3-16	491-493	jo	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	jo	_	_	_	_	discourse	basic	3-17	
+3-17	494-499	īpaši	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	īpaši	_	_	_	_	advmod	basic	3-18	
+3-18	500-506	priecē	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt230an	*	priecēt	_	_	_	_	parataxis	basic	3-25	
+3-19	507-515	Citadele	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	*	Citadele	organization[8]	*[8]	_	_	nmod	basic	3-21	
+3-20	516-521	Index	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Index	organization[8]	*[8]	_	_	flat:name	basic	3-19	
+3-21	522-530	pētījuma	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	pētījums	_	_	_	_	nmod	basic	3-22	
+3-22	531-540	rezultāti	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	rezultāts	_	_	_	_	nsubj	basic	3-18	
+3-23	540-541	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-18	
+3-24	541-542	”	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	”	_	_	_	_	punct	basic	3-18	
+3-25	543-549	sacīja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist330an	*	sacīt	_	_	_	_	root	basic	3-25	
+3-26	550-557	Endziņš	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Endziņš	person	*	*->3-1	*[3]	nsubj	basic	3-25	
+3-27	557-558	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-25	

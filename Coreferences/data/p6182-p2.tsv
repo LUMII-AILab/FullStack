@@ -1,0 +1,46 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Aktieris Džona Hills jau vairākus gadus cīnījies ar lieko svaru, tomēr jau atkal viņam nācies pieņemties svarā.
+1-1	0-8	Aktieris	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	aktieris	_	_	*->1-1	*[1]	nmod	basic	1-2	
+1-2	9-14	Džona	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn4	*	Džona	person[1]	https://en.wikipedia.org/wiki/Jonah\_Hill[1]	*->1-2	*[1]	nsubj	basic	1-7	
+1-3	15-20	Hills	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Hills	person[1]	https://en.wikipedia.org/wiki/Jonah\_Hill[1]	*->1-2	*[1]	flat:name	basic	1-2	
+1-4	21-24	jau	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	jau	_	_	_	_	advmod	basic	1-7	
+1-5	25-33	vairākus	*	*	Acc	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpanp	*	vairāki	_	_	_	_	det	basic	1-6	
+1-6	34-39	gadus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	gads	_	_	_	_	obl	basic	1-7	
+1-7	40-48	cīnījies	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	*	vmypdmsnasnpn	*	cīnīties	_	_	_	_	root	basic	1-7	
+1-8	49-51	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	1-10	
+1-9	52-57	lieko	*	*	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsayp	*	lieks	_	_	_	_	amod	basic	1-10	
+1-10	58-63	svaru	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	svars	_	_	_	_	iobj	basic	1-7	
+1-11	63-64	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-16	
+1-12	65-70	tomēr	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	tomēr	_	_	_	_	cc	basic	1-16	
+1-13	71-74	jau	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	jau	_	_	_	_	advmod	basic	1-16	
+1-14	75-80	atkal	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	atkal	_	_	_	_	advmod	basic	1-16	
+1-15	81-86	viņam	*	*	Dat	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msdn	*	viņš	_	_	*->1-3	*[1]	nsubj	basic	1-16	
+1-16	87-93	nācies	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	*	voypdmsnasnpn	*	nākties	_	_	_	_	conj	basic	1-7	
+1-17	94-104	pieņemties	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i1000n	*	pieņemties	_	_	_	_	xcomp	basic	1-16	
+1-18	105-110	svarā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	svars	_	_	_	_	obl	basic	1-17	
+1-19	110-111	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-7	
+
+#Text=Dramatiskās izskata izmaiņas skaidrojamas ar aktiera dalību filmā «Arms And The Dudes».
+2-1	113-124	Dramatiskās	*	*	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpnyp	*	dramatiska	_	_	_	_	amod	basic	2-3	
+2-2	125-132	izskata	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	izskats	_	_	_	_	nmod	basic	2-3	
+2-3	133-141	izmaiņas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	izmaiņa	_	_	_	_	nsubj	basic	2-4	
+2-4	142-154	skaidrojamas	*	*	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Pres	*	Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdfpnppnpn	*	skaidrot	_	_	_	_	root	basic	2-4	
+2-5	155-157	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	2-7	
+2-6	158-165	aktiera	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	*	aktieris	_	_	*->1-4	*[1]	nmod	basic	2-7	
+2-7	166-172	dalību	*	*	Acc	*	*	Fem	*	*	*	Coll	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Coll	*	*	ncfva4	*	dalība	_	_	_	_	iobj	basic	2-4	
+2-8	173-178	filmā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	filma	_	_	*->2-1	*[2]	nmod	basic	2-10	
+2-9	179-180	«	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	«	_	_	*->2-2	*[2]	punct	basic	2-10	
+2-10	180-184	Arms	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Arms	product[2]	*[2]	*->2-2	*[2]	acl	basic	2-7	
+2-11	185-188	And	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	And	product[2]	*[2]	*->2-2	*[2]	flat:name	basic	2-10	
+2-12	189-192	The	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	the	product[2]	*[2]	*->2-2	*[2]	flat:name	basic	2-10	
+2-13	193-198	Dudes	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Dudes	product[2]	*[2]	*->2-2	*[2]	flat:name	basic	2-10	
+2-14	198-199	»	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	»	_	_	*->2-2	*[2]	punct	basic	2-10	
+2-15	199-200	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	dep	basic	2-4	

@@ -1,0 +1,55 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Kozlovs uzskata, ka Rozes un Bruņinieka titula ieguvējiem noteikti jābūt radošiem cilvēkiem, kuri mīl komunicēt ar citiem cilvēkiem, viņiem jāmāk justies brīvi un improvizēt, jo, "pildot savus pienākumus, nāksies vadīt dažādus pasākumus un cita veida aktivitātes".
+1-1	0-7	Kozlovs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Kozlovs	person	*	_	_	nsubj	basic	1-2	
+1-2	8-15	uzskata	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt330an	*	uzskatīt	_	_	_	_	root	basic	1-2	
+1-3	15-16	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-13	
+1-4	17-19	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	1-13	
+1-5	20-25	Rozes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	roze	person	*	_	_	nmod	basic	1-8	
+1-6	26-28	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-7	
+1-7	29-39	Bruņinieka	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	bruņinieks	person	*	_	_	conj	basic	1-5	
+1-8	40-46	titula	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	tituls	_	_	_	_	nmod	basic	1-9	
+1-9	47-57	ieguvējiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	ieguvējs	_	_	_	_	nsubj	basic	1-13	
+1-10	58-66	noteikti	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	noteikti	_	_	_	_	advmod	basic	1-13	
+1-11	67-72	jābūt	*	*	*	*	*	*	Nec	*	*	*	*	*	*	*	*	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnd0ii00an	*	būt	_	_	_	_	aux	basic	1-13	
+1-12	73-81	radošiem	*	Imp	Dat	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Pres	*	Aspect=Imp\|Case=Dat\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdmpdapnpn	*	radīt	_	_	*->1-1	*[1]	amod	basic	1-13	
+1-13	82-91	cilvēkiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	cilvēks	_	_	*->1-1	*[1]	ccomp	basic	1-2	
+1-14	91-92	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-16	
+1-15	93-97	kuri	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	Rel	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Rel	*	*	pr0mpnn	*	kurš	_	_	*->1-2	*[1]	nsubj	basic	1-16	
+1-16	98-101	mīl	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vonipi330an	*	mīlēt	_	_	_	_	acl	basic	1-13	
+1-17	102-111	komunicēt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0i2000n	*	komunicēt	_	_	_	_	xcomp	basic	1-16	
+1-18	112-114	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	_	_	case	basic	1-20	
+1-19	115-121	citiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	Ind	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|PronType=Ind	*	*	pi0mpdn	*	cits	_	_	_	_	det	basic	1-20	
+1-20	122-131	cilvēkiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	cilvēks	_	_	_	_	iobj	basic	1-17	
+1-21	131-132	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-23	
+1-22	133-139	viņiem	*	*	Dat	*	*	Masc	*	*	*	Plur	3	*	Prs	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Prs	*	*	pp3mpdn	*	viņš	_	_	*->1-3	*[1]	nsubj	basic	1-23	
+1-23	140-145	jāmāk	*	*	*	*	*	*	Nec	*	*	*	*	*	*	*	*	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	Fin	Act	vond0t300an	*	mācēt	_	_	_	_	conj	basic	1-13	
+1-24	146-153	justies	*	*	*	*	*	*	*	*	*	*	*	*	*	Yes	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	Inf	*	vmyn0i1000n	*	justies	_	_	_	_	xcomp	basic	1-23	
+1-25	154-159	brīvi	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	brīvi	_	_	_	_	advmod	basic	1-24	
+1-26	160-162	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-27	
+1-27	163-173	improvizēt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t2000n	*	improvizēt	_	_	_	_	conj	basic	1-24	
+1-28	173-174	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-36	
+1-29	175-177	jo	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	jo	_	_	_	_	mark	basic	1-36	
+1-30	177-178	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-32	
+1-31	179-180	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	_	_	_	_	punct	basic	1-36	
+1-32	180-186	pildot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	Conv	*	vmnpu0000000n	*	pildīt	_	_	_	_	advcl	basic	1-36	
+1-33	187-192	savus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	Prs	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|Poss=Yes\|PronType=Prs	*	*	ps0mpan	*	savs	_	_	_	_	det	basic	1-34	
+1-34	193-203	pienākumus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	pienākums	_	_	_	_	obj	basic	1-32	
+1-35	203-204	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-32	
+1-36	205-212	nāksies	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Fut\|VerbForm=Fin\|Voice=Act	Fin	Act	voyifi130an	*	nākties	_	_	_	_	advcl	basic	1-13	
+1-37	213-218	vadīt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t3000n	*	vadīt	_	_	_	_	xcomp	basic	1-36	
+1-38	219-226	dažādus	*	*	Acc	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpanp	*	dažāds	_	_	_	_	amod	basic	1-39	
+1-39	227-236	pasākumus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	pasākums	_	_	_	_	obj	basic	1-37	
+1-40	237-239	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-43	
+1-41	240-244	cita	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	Ind	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Ind	*	*	pi0msgn	*	cits	_	_	_	_	det	basic	1-42	
+1-42	245-250	veida	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	veids	_	_	_	_	nmod	basic	1-43	
+1-43	251-262	aktivitātes	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa5	*	aktivitāte	_	_	_	_	conj	basic	1-39	
+1-44	262-263	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	_	_	_	_	punct	basic	1-36	
+1-45	263-264	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-2	

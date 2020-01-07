@@ -1,0 +1,48 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text="Nu, pagaidiet.
+1-1	0-1	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	_	_	_	_	punct	basic	1-4	
+1-2	1-3	Nu	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	nu	_	_	_	_	discourse	basic	1-4	
+1-3	3-4	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-2	
+1-4	5-14	pagaidiet	*	*	*	*	*	*	Imp	*	*	Plur	2	*	*	*	*	*	Mood=Imp\|Number=Plur\|Person=2\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnm0t32pan	*	pagaidīt	_	_	_	_	root	basic	1-4	
+1-5	14-15	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-4	
+
+#Text=Stop, stop, stop," iesaucās Bībers.
+2-1	16-20	Stop	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	i	*	stop	_	_	_	_	parataxis	basic	2-8	
+2-2	20-21	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-3	
+2-3	22-26	stop	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	i	*	stop	_	_	_	_	conj	basic	2-1	
+2-4	26-27	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-5	
+2-5	28-32	stop	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	i	*	stop	_	_	_	_	conj	basic	2-1	
+2-6	32-33	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-1	
+2-7	33-34	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	_	_	_	_	punct	basic	2-1	
+2-8	35-43	iesaucās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyisi130an	*	iesaukties	_	_	_	_	root	basic	2-8	
+2-9	44-50	Bībers	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Bībers	person	https://en.wikipedia.org/wiki/Justin\_Bieber	_	_	nsubj	basic	2-8	
+2-10	50-51	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-8	
+
+#Text="Tas jādara šādi.
+3-1	52-53	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	_	_	_	_	punct	basic	3-3	
+3-2	53-56	Tas	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	Dem	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	*	tas	_	_	*->1-1	*[1]	iobj	basic	3-3	
+3-3	57-63	jādara	*	*	*	*	*	*	Nec	*	*	*	*	*	*	*	*	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnd0t300an	*	darīt	_	_	_	_	root	basic	3-3	
+3-4	64-68	šādi	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	šādi	_	_	_	_	advmod	basic	3-3	
+3-5	68-69	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-3	
+
+#Text=Ja jūs gribat aplaudēt, tad vismaz dariet to ritmā."
+4-1	70-72	Ja	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ja	_	_	_	_	mark	basic	4-3	
+4-2	73-76	jūs	*	*	Nom	*	*	*	*	*	*	Plur	2	*	Prs	*	*	*	Case=Nom\|Number=Plur\|Person=2\|PronType=Prs	*	*	pp20pnn	*	jūs	_	_	_	_	nsubj	basic	4-3	
+4-3	77-83	gribat	*	*	*	*	*	*	Ind	*	*	Plur	2	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=2\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vonipi32pan	*	gribēt	_	_	_	_	dep	basic	4-8	
+4-4	84-92	aplaudēt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0i2000n	*	aplaudēt	_	_	_	_	xcomp	basic	4-3	
+4-5	92-93	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-3	
+4-6	94-97	tad	*	*	*	*	*	*	*	*	*	*	*	*	Dem	*	*	*	PronType=Dem	*	*	r0t	*	tad	_	_	_	_	advmod	basic	4-8	
+4-7	98-104	vismaz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	vismaz	_	_	_	_	advmod	basic	4-8	
+4-8	105-111	dariet	*	*	*	*	*	*	Imp	*	*	Plur	2	*	*	*	*	*	Mood=Imp\|Number=Plur\|Person=2\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnm0t32pan	*	darīt	_	_	_	_	root	basic	4-8	
+4-9	112-114	to	*	*	Acc	*	*	Masc	*	*	*	Sing	3	*	Dem	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msan	*	tas	_	_	*->1-2	*[1]	obj	basic	4-8	
+4-10	115-120	ritmā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	ritms	_	_	_	_	obl	basic	4-8	
+4-11	120-121	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	4-8	
+4-12	121-122	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	_	_	_	_	punct	basic	4-8	

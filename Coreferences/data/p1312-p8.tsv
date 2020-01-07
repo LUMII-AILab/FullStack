@@ -1,35 +1,35 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=G.Kārkliņš priecājas, ka izdevies visu veiksmīgi saskaņot ar Kurmāles pašvaldības vadītāju Juri Štorhu un amatpersonām, kas atbild par zivsaimniecību Kuldīgas rajonā.
-1-1	0-2	G.	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	g.	person[1]	*[1]	_	_	nsubj|nsubj	basic|enhanced	1-3|1-3	
-1-2	2-10	Kārkliņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Kārkliņš	person[1]	*[1]	_	_	flat:name|flat	basic|enhanced	1-1|1-1	
-1-3	11-20	priecājas	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipi230an	priecāties	_	_	_	_	root|root	basic|enhanced	1-3|1-3	
-1-4	20-21	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-6|1-6	
-1-5	22-24	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark|mark	basic|enhanced	1-6|1-6	
-1-6	25-33	izdevies	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	Perf	veypdmsnasnp	izdoties	_	_	_	_	ccomp|ccomp	basic|enhanced	1-3|1-3	
-1-7	34-38	visu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msan	viss	_	_	_	_	obj|obj	basic|enhanced	1-9|1-9	
-1-8	39-48	veiksmīgi	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	veiksmīgi	_	_	_	_	advmod|advmod	basic|enhanced	1-9|1-9	
-1-9	49-57	saskaņot	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	saskaņot	_	_	_	_	xcomp|xcomp	basic|enhanced	1-6|1-6	
-1-10	58-60	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case|case	basic|enhanced	1-14|1-14	
-1-11	61-69	Kurmāles	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	Kurmāle	organization[2]|GPE[3]	*[2]|https://en.wikipedia.org/wiki/Kurmāle\_Parish[3]	_	_	nmod|nmod	basic|enhanced	1-12|1-12	
-1-12	70-81	pašvaldības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	pašvaldība	organization[2]	*[2]	_	_	nmod|nmod	basic|enhanced	1-13|1-13	
-1-13	82-90	vadītāju	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	vadītājs	_	_	*[1]	*->1-1	nmod|nmod	basic|enhanced	1-14|1-14	
-1-14	91-95	Juri	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa2	Juris	person[4]	*[4]	*[1]	*->1-2	iobj|iobj	basic|enhanced	1-9|1-9	
-1-15	96-102	Štorhu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	Štorhu	person[4]	*[4]	*[1]	*->1-2	flat:name|flat	basic|enhanced	1-14|1-14	
-1-16	103-105	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	1-17|1-17	
-1-17	106-118	amatpersonām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	amatpersona	_	_	*[2]	*->2-1	conj|conj	basic|enhanced	1-14|1-14	
-1-18	118-119	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-20|1-20	
-1-19	120-123	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	*[2]	*->2-2	nsubj|nsubj	basic|enhanced	1-20|1-20	
-1-20	124-130	atbild	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	atbildēt	_	_	_	_	acl|acl	basic|enhanced	1-17|1-17	
-1-21	131-134	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	_	_	case|case	basic|enhanced	1-22|1-22	
-1-22	135-149	zivsaimniecību	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	zivsaimniecība	_	_	_	_	iobj|iobj	basic|enhanced	1-20|1-20	
-1-23	150-158	Kuldīgas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Kuldīga	GPE[5]|GPE[6]	https://en.wikipedia.org/wiki/Kuldīga\_District[5]|https://en.wikipedia.org/wiki/Kuldīga[6]	_	_	nmod|nmod	basic|enhanced	1-24|1-24	
-1-24	159-165	rajonā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	rajons	GPE[5]	https://en.wikipedia.org/wiki/Kuldīga\_District[5]	_	_	acl|acl	basic|enhanced	1-22|1-22	
-1-25	165-166	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-3|1-3	
+1-1	0-2	G.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	g.	person[1]	*[1]	_	_	nsubj|nsubj	basic|enhanced	1-3|1-3	
+1-2	2-10	Kārkliņš	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Kārkliņš	person[1]	*[1]	_	_	flat:name|flat	basic|enhanced	1-1|1-1	
+1-3	11-20	priecājas	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmyipi230an	*	priecāties	_	_	_	_	root|root	basic|enhanced	1-3|1-3	
+1-4	20-21	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	1-6|1-6	
+1-5	22-24	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark|mark	basic|enhanced	1-6|1-6	
+1-6	25-33	izdevies	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	*	veypdmsnasnp	*	izdoties	_	_	_	_	ccomp|ccomp	basic|enhanced	1-3|1-3	
+1-7	34-38	visu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msan	*	viss	_	_	_	_	obj|obj	basic|enhanced	1-9|1-9	
+1-8	39-48	veiksmīgi	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	veiksmīgi	_	_	_	_	advmod|advmod	basic|enhanced	1-9|1-9	
+1-9	49-57	saskaņot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	*	saskaņot	_	_	_	_	xcomp|xcomp	basic|enhanced	1-6|1-6	
+1-10	58-60	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case|case	basic|enhanced	1-14|1-14	
+1-11	61-69	Kurmāles	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	*	Kurmāle	organization[2]|GPE[3]	*[2]|https://en.wikipedia.org/wiki/Kurmāle\_Parish[3]	_	_	nmod|nmod	basic|enhanced	1-12|1-12	
+1-12	70-81	pašvaldības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	pašvaldība	organization[2]	*[2]	_	_	nmod|nmod	basic|enhanced	1-13|1-13	
+1-13	82-90	vadītāju	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	vadītājs	_	_	*->1-1	*[1]	nmod|nmod	basic|enhanced	1-14|1-14	
+1-14	91-95	Juri	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa2	*	Juris	person[4]	*[4]	*->1-2	*[1]	iobj|iobj	basic|enhanced	1-9|1-9	
+1-15	96-102	Štorhu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	*	Štorhu	person[4]	*[4]	*->1-2	*[1]	flat:name|flat	basic|enhanced	1-14|1-14	
+1-16	103-105	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc|cc	basic|enhanced	1-17|1-17	
+1-17	106-118	amatpersonām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	*	amatpersona	_	_	*->2-1	*[2]	conj|conj	basic|enhanced	1-14|1-14	
+1-18	118-119	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	1-20|1-20	
+1-19	120-123	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->2-2	*[2]	nsubj|nsubj	basic|enhanced	1-20|1-20	
+1-20	124-130	atbild	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	atbildēt	_	_	_	_	acl|acl	basic|enhanced	1-17|1-17	
+1-21	131-134	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case|case	basic|enhanced	1-22|1-22	
+1-22	135-149	zivsaimniecību	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	zivsaimniecība	_	_	_	_	iobj|iobj	basic|enhanced	1-20|1-20	
+1-23	150-158	Kuldīgas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Kuldīga	GPE[5]|GPE[6]	https://en.wikipedia.org/wiki/Kuldīga\_District[5]|https://en.wikipedia.org/wiki/Kuldīga[6]	_	_	nmod|nmod	basic|enhanced	1-24|1-24	
+1-24	159-165	rajonā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	rajons	GPE[5]	https://en.wikipedia.org/wiki/Kuldīga\_District[5]	_	_	acl|acl	basic|enhanced	1-22|1-22	
+1-25	165-166	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	1-3|1-3	

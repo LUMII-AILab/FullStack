@@ -1,0 +1,43 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Zvaigzne, lietojot alkoholu, jūt sevī Napoleona kompleksu un apzinās, ka nekādas apreibinošas vielas nav domātas viņam, jo dzīve ir pārāk īsa, lai to pazaudētu šāda mēsla dēļ.
+1-1	0-8	Zvaigzne	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	zvaigzne	_	_	*->1-1	*[1]	nsubj	basic	1-6	
+1-2	8-9	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-3	
+1-3	10-18	lietojot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	Conv	*	vmnpu0000000n	*	lietot	_	_	_	_	advcl	basic	1-6	
+1-4	19-27	alkoholu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	alkohols	_	_	_	_	obj	basic	1-3	
+1-5	27-28	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-3	
+1-6	29-32	jūt	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt130an	*	just	_	_	_	_	root	basic	1-6	
+1-7	33-37	sevī	*	*	Loc	*	*	*	*	*	*	*	*	*	Rcp	Yes	*	*	Case=Loc\|PronType=Rcp\|Reflex=Yes	*	*	px000ln	*	sevis	_	_	*->1-2	*[1]	obl	basic	1-6	
+1-8	38-47	Napoleona	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Napoleons	person	https://en.wikipedia.org/wiki/The\_Sun\_(United\_Kingdom)	_	_	nmod	basic	1-9	
+1-9	48-57	kompleksu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	komplekss	_	_	_	_	obj	basic	1-6	
+1-10	58-60	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-11	
+1-11	61-68	apzinās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyipt330an	*	apzināties	_	_	_	_	conj	basic	1-6	
+1-12	68-69	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-18	
+1-13	70-72	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	1-18	
+1-14	73-80	nekādas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	Ind,Neg	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|PronType=Ind,Neg	*	*	pi0fpny	*	nekāda	_	_	_	_	det	basic	1-16	
+1-15	81-93	apreibinošas	*	Imp	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Pres	*	Aspect=Imp\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdfpnapnpn	*	apreibināt	_	_	_	_	amod	basic	1-16	
+1-16	94-100	vielas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	viela	_	_	_	_	nsubj:pass	basic	1-18	
+1-17	101-104	nav	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30ay	*	būt	_	_	_	_	aux:pass	basic	1-18	
+1-18	105-112	domātas	*	Perf	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdfpnpsnpn	*	domāt	_	_	_	_	ccomp	basic	1-11	
+1-19	113-118	viņam	*	*	Dat	*	*	Masc	*	*	*	Sing	3	*	Prs	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msdn	*	viņš	_	_	*->1-3	*[1]	iobj	basic	1-18	
+1-20	118-119	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-25	
+1-21	120-122	jo	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	jo	_	_	_	_	mark	basic	1-25	
+1-22	123-128	dzīve	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	dzīve	_	_	*->2-1	*[2]	nsubj	basic	1-25	
+1-23	129-131	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	1-25	
+1-24	132-137	pārāk	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	pārāk	_	_	_	_	advmod	basic	1-25	
+1-25	138-141	īsa	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	*	īss	_	_	_	_	advcl	basic	1-18	
+1-26	141-142	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-29	
+1-27	143-146	lai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	lai	_	_	_	_	mark	basic	1-29	
+1-28	147-149	to	*	*	Acc	*	*	Masc	*	*	*	Sing	3	*	Dem	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msan	*	tas	_	_	*->2-2	*[2]	obj	basic	1-29	
+1-29	150-159	pazaudētu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnc0t200an	*	pazaudēt	_	_	_	_	advcl	basic	1-25	
+1-30	160-164	šāda	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	Dem	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msgn	*	šāds	_	_	_	_	det	basic	1-31	
+1-31	165-170	mēsla	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	mēsls	_	_	_	_	obl	basic	1-29	
+1-32	171-174	dēļ	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	stsg	*	dēļ	_	_	_	_	case	basic	1-31	
+1-33	174-175	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-6	

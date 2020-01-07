@@ -1,0 +1,88 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=5. martā viņš stingri nolēmis braukt uz Straupi pēc savām meitām, jo neesot izturams, kā bērni pārdzīvo.
+1-1	0-2	5.	*	*	*	*	*	*	*	*	Ord	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	5.	time[1]	*[1]	_	_	amod	basic	1-2	
+1-2	3-8	martā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	marts	time[1]	*[1]	_	_	obl	basic	1-5	
+1-3	9-13	viņš	*	*	Nom	*	*	Masc	*	*	*	Sing	3	*	Prs	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msnn	*	viņš	_	_	*->1-1	*[1]	nsubj	basic	1-5	
+1-4	14-21	stingri	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	stingri	_	_	_	_	advmod	basic	1-5	
+1-5	22-29	nolēmis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdmsnasnpn	*	nolemt	_	_	_	_	root	basic	1-5	
+1-6	30-36	braukt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0i1000n	*	braukt	_	_	_	_	ccomp	basic	1-5	
+1-7	37-39	uz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	uz	_	_	_	_	case	basic	1-8	
+1-8	40-47	Straupi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa5	*	Straupe	GPE	https://en.wikipedia.org/wiki/Straupe	_	_	obl	basic	1-6	
+1-9	48-51	pēc	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	pēc	_	_	_	_	case	basic	1-11	
+1-10	52-57	savām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	Prs	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur\|Poss=Yes\|PronType=Prs	*	*	ps0fpdn	*	sava	_	_	*->1-2	*[1]	det	basic	1-11	
+1-11	58-64	meitām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	*	meita	_	_	_	_	obl	basic	1-6	
+1-12	64-65	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-15	
+1-13	66-68	jo	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	jo	_	_	_	_	mark	basic	1-15	
+1-14	69-75	neesot	*	*	*	*	*	*	Qot	*	*	*	*	*	*	*	Pres	*	Evident=Nfh\|Mood=Qot\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnrpii00ay	*	būt	_	_	_	_	cop	basic	1-15	
+1-15	76-84	izturams	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Pres	*	Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsnppnpn	*	izturēt	_	_	_	_	advcl	basic	1-5	
+1-16	84-85	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-19	
+1-17	86-88	kā	*	*	*	*	*	*	*	*	*	*	*	*	Int	*	*	*	PronType=Int	*	*	r0m	*	kā	_	_	_	_	advmod	basic	1-19	
+1-18	89-94	bērni	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	bērns	_	_	*->2-1	*[2]	nsubj	basic	1-19	
+1-19	95-103	pārdzīvo	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt230an	*	pārdzīvot	_	_	_	_	csubj	basic	1-15	
+1-20	103-104	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-5	
+
+#Text=Tagad bērni ir mājās, un pirmdien viņus atkal gaida Rendas skolā.
+2-1	105-110	Tagad	*	*	*	*	*	*	*	*	*	*	*	*	Dem	*	*	*	PronType=Dem	*	*	r0t	*	tagad	_	_	_	_	advmod	basic	2-3	
+2-2	111-116	bērni	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	bērns	_	_	*->2-2	*[2]	nsubj	basic	2-3	
+2-3	117-119	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipii30an	*	būt	_	_	_	_	root	basic	2-3	
+2-4	120-125	mājās	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	*	māja	_	_	_	_	obl	basic	2-3	
+2-5	125-126	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-10	
+2-6	127-129	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-10	
+2-7	130-138	pirmdien	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	pirmdien	time	*	_	_	advmod	basic	2-10	
+2-8	139-144	viņus	*	*	Acc	*	*	Masc	*	*	*	Plur	3	*	Prs	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Prs	*	*	pp3mpan	*	viņš	_	_	*->2-3	*[2]	obj	basic	2-10	
+2-9	145-150	atkal	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	atkal	_	_	_	_	advmod	basic	2-10	
+2-10	151-156	gaida	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt330an	*	gaidīt	_	_	_	_	conj	basic	2-3	
+2-11	157-163	Rendas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Renda	organization[2]|GPE[3]	*[2]|https://en.wikipedia.org/wiki/Renda,\_Latvia[3]	_	_	nmod	basic	2-12	
+2-12	164-169	skolā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	skola	organization[2]	*[2]	_	_	obl	basic	2-10	
+2-13	169-170	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-3	
+
+#Text=Inese saka lielu paldies visiem radiem, draugiem un paziņām, kas, padzirdējuši par viņu situāciju, piedāvā mēbeles, šujmašīnu, drēbes un citu palīdzību.
+3-1	171-176	Inese	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	*	Inese	person	*	_	_	nsubj	basic	3-2	
+3-2	177-181	saka	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt330an	*	sacīt	_	_	_	_	root	basic	3-2	
+3-3	182-187	lielu	*	*	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsanp	*	liels	_	_	_	_	amod	basic	3-4	
+3-4	188-195	paldies	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	i	*	paldies	_	_	_	_	iobj	basic	3-2	
+3-5	196-202	visiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	Tot	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|PronType=Tot	*	*	pg0mpdn	*	viss	_	_	*->3-1	*[3]	det	basic	3-6	
+3-6	203-209	radiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	rads	_	_	*->3-1	*[3]	iobj	basic	3-2	
+3-7	209-210	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	*->3-1	*[3]	punct	basic	3-8	
+3-8	211-219	draugiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	draugs	_	_	*->3-1	*[3]	conj	basic	3-6	
+3-9	220-222	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	*->3-1	*[3]	cc	basic	3-10	
+3-10	223-230	paziņām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	*	paziņa	_	_	*->3-1	*[3]	conj	basic	3-6	
+3-11	230-231	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-19	
+3-12	232-235	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	Rel	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->3-2	*[3]	nsubj	basic	3-14	
+3-13	235-236	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-14	
+3-14	237-249	padzirdējuši	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdmpnasnpn	*	padzirdēt	_	_	_	_	acl	basic	3-19	
+3-15	250-253	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	3-17	
+3-16	254-258	viņu	*	*	Gen	*	*	Masc	*	*	*	Plur	3	*	Prs	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Prs	*	*	pp3mpgn	*	viņš	_	_	_	_	det	basic	3-17	
+3-17	259-268	situāciju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	situācija	_	_	_	_	iobj	basic	3-14	
+3-18	268-269	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-14	
+3-19	270-277	piedāvā	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt230an	*	piedāvāt	_	_	_	_	acl	basic	3-6	
+3-20	278-285	mēbeles	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa5	*	mēbele	_	_	_	_	obj	basic	3-19	
+3-21	285-286	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-22	
+3-22	287-296	šujmašīnu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	šujmašīna	_	_	_	_	conj	basic	3-20	
+3-23	296-297	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-24	
+3-24	298-304	drēbes	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa5	*	drēbe	_	_	_	_	conj	basic	3-20	
+3-25	305-307	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	3-27	
+3-26	308-312	citu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	Ind	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Ind	*	*	pi0fsan	*	cita	_	_	_	_	det	basic	3-27	
+3-27	313-322	palīdzību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	palīdzība	_	_	_	_	conj	basic	3-20	
+3-28	322-323	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-2	
+
+#Text=Ģimene gan lēš, ka ļoti noderētu kāda jurista padoms.
+4-1	324-330	Ģimene	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	ģimene	_	_	_	_	nsubj	basic	4-3	
+4-2	331-334	gan	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	gan	_	_	_	_	discourse	basic	4-3	
+4-3	335-338	lēš	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt130an	*	lēst	_	_	_	_	root	basic	4-3	
+4-4	338-339	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-7	
+4-5	340-342	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	4-7	
+4-6	343-347	ļoti	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	ļoti	_	_	_	_	advmod	basic	4-7	
+4-7	348-356	noderētu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnc0i300an	*	noderēt	_	_	_	_	ccomp	basic	4-3	
+4-8	357-361	kāda	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	Ind	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Ind	*	*	pi0msgn	*	kāds	_	_	_	_	det	basic	4-9	
+4-9	362-369	jurista	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	jurists	_	_	_	_	nmod	basic	4-10	
+4-10	370-376	padoms	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	padoms	_	_	_	_	nsubj	basic	4-7	
+4-11	376-377	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	4-3	

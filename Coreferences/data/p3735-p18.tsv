@@ -1,85 +1,85 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Starp aizdomās turētajiem ir arī konsultants Andrejs Livanovičs, kuram piederošā firma SIA "Energy Consulting" darbojās kā Šveices uzņēmuma "AF Colenco" aģents.
-1-1	0-5	Starp	_	_	_	_	_	_	_	_	_	_	_	_	sppd	starp	_	_	_	_	case	basic	1-3	
-1-2	6-14	aizdomās	Fem	Ptan	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Ptan	*	*	ncfdl4	aizdomas	_	_	_	_	obl	basic	1-3	
-1-3	15-25	turētajiem	Masc	Plur	Dat	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Dat\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpdpsyp	turēt	_	_	_	_	obl	basic	1-4	
-1-4	26-28	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipii30an	būt	_	_	_	_	root	basic	1-4	
-1-5	29-32	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse	basic	1-7	
-1-6	33-44	konsultants	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	konsultants	_	_	*[1]	*->1-1	nmod	basic	1-7	
-1-7	45-52	Andrejs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Andrejs	person[1]	*[1]	*[1]	*->1-2	nsubj	basic	1-4	
-1-8	53-63	Livanovičs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Livanovičs	person[1]	*[1]	*[1]	*->1-2	flat:name	basic	1-7	
-1-9	63-64	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-18	
-1-10	65-70	kuram	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msdn	kurš	_	_	*[1]	*->1-3	det	basic	1-11	
-1-11	71-80	piederošā	Fem	Sing	Nom	Pos	*	Pres	*	Pass	*	Aspect=Imp\|Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Imp	vmnpdfsnapyp	piederēt	_	_	_	_	amod	basic	1-12	
-1-12	81-86	firma	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	firma	_	_	*[2]	*->2-1	nmod	basic	1-15	
-1-13	87-90	SIA	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	SIA	organization[2]	*[2]	*[2]	*->2-2	nmod	basic	1-15	
-1-14	91-92	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[2]	*[2]	*[2]	*->2-2	punct	basic	1-15	
-1-15	92-98	Energy	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Energy	organization[2]	*[2]	*[2]	*->2-2	nsubj	basic	1-18	
-1-16	99-109	Consulting	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Consulting	organization[2]	*[2]	*[2]	*->2-2	flat:name	basic	1-15	
-1-17	109-110	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[2]	*[2]	*[2]	*->2-2	punct	basic	1-15	
-1-18	111-119	darbojās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi230an	darboties	_	_	_	_	acl	basic	1-7	
-1-19	120-122	kā	_	_	_	_	_	_	_	_	_	_	_	_	cs	kā	_	_	_	_	mark	basic	1-26	
-1-20	123-130	Šveices	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	Šveice	GPE	*	*[3]	*->3-1	nmod	basic	1-21	
-1-21	131-139	uzņēmuma	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	uzņēmums	_	_	*[3]	*->3-1	nmod	basic	1-23	
-1-22	140-141	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[3]	*[3]	*[3]	*->3-2	punct	basic	1-23	
-1-23	141-143	AF	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	AF	organization[3]	*[3]	*[3]	*->3-2	nmod	basic	1-26	
-1-24	144-151	Colenco	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Colenco	organization[3]	*[3]	*[3]	*->3-2	flat:name	basic	1-23	
-1-25	151-152	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[3]	*[3]	*[3]	*->3-2	punct	basic	1-23	
-1-26	153-159	aģents	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	aģents	_	_	_	_	obl	basic	1-18	
-1-27	159-160	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-4	
+1-1	0-5	Starp	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	starp	_	_	_	_	case	basic	1-3	
+1-2	6-14	aizdomās	*	*	Loc	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Ptan	*	*	ncfdl4	*	aizdomas	_	_	_	_	obl	basic	1-3	
+1-3	15-25	turētajiem	*	Perf	Dat	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Dat\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	*	vmnpdmpdpsyp	*	turēt	_	_	_	_	obl	basic	1-4	
+1-4	26-28	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipii30an	*	būt	_	_	_	_	root	basic	1-4	
+1-5	29-32	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	1-7	
+1-6	33-44	konsultants	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	konsultants	_	_	*->1-1	*[1]	nmod	basic	1-7	
+1-7	45-52	Andrejs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Andrejs	person[1]	*[1]	*->1-2	*[1]	nsubj	basic	1-4	
+1-8	53-63	Livanovičs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Livanovičs	person[1]	*[1]	*->1-2	*[1]	flat:name	basic	1-7	
+1-9	63-64	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-18	
+1-10	65-70	kuram	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msdn	*	kurš	_	_	*->1-3	*[1]	det	basic	1-11	
+1-11	71-80	piederošā	*	Imp	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Pres	*	Aspect=Imp\|Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdfsnapyp	*	piederēt	_	_	_	_	amod	basic	1-12	
+1-12	81-86	firma	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	firma	_	_	*->2-1	*[2]	nmod	basic	1-15	
+1-13	87-90	SIA	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	*	SIA	organization[2]	*[2]	*->2-2	*[2]	nmod	basic	1-15	
+1-14	91-92	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[2]	*[2]	*->2-2	*[2]	punct	basic	1-15	
+1-15	92-98	Energy	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Energy	organization[2]	*[2]	*->2-2	*[2]	nsubj	basic	1-18	
+1-16	99-109	Consulting	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Consulting	organization[2]	*[2]	*->2-2	*[2]	flat:name	basic	1-15	
+1-17	109-110	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[2]	*[2]	*->2-2	*[2]	punct	basic	1-15	
+1-18	111-119	darbojās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmyisi230an	*	darboties	_	_	_	_	acl	basic	1-7	
+1-19	120-122	kā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	kā	_	_	_	_	mark	basic	1-26	
+1-20	123-130	Šveices	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	*	Šveice	GPE	*	*->3-1	*[3]	nmod	basic	1-21	
+1-21	131-139	uzņēmuma	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	uzņēmums	_	_	*->3-1	*[3]	nmod	basic	1-23	
+1-22	140-141	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[3]	*[3]	*->3-2	*[3]	punct	basic	1-23	
+1-23	141-143	AF	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	AF	organization[3]	*[3]	*->3-2	*[3]	nmod	basic	1-26	
+1-24	144-151	Colenco	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Colenco	organization[3]	*[3]	*->3-2	*[3]	flat:name	basic	1-23	
+1-25	151-152	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[3]	*[3]	*->3-2	*[3]	punct	basic	1-23	
+1-26	153-159	aģents	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	aģents	_	_	_	_	obl	basic	1-18	
+1-27	159-160	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-4	
 
 #Text="AF Colenco" ir "Latvenergo" īstenotā vairāku simtu miljonu latu vērtā TEC-2 rekonstrukcijas projekta konsultants.
-2-1	162-163	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[4]	*[4]	*[3]	*->3-3	punct	basic	2-2	
-2-2	163-165	AF	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	AF	organization[4]	*[4]	*[3]	*->3-3	nsubj	basic	2-18	
-2-3	166-173	Colenco	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Colenco	organization[4]	*[4]	*[3]	*->3-3	flat:name	basic	2-2	
-2-4	173-174	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[4]	*[4]	*[3]	*->3-3	punct	basic	2-2	
-2-5	175-177	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	cop	basic	2-18	
-2-6	178-179	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[5]	*[5]	_	_	punct	basic	2-7	
-2-7	179-189	Latvenergo	_	_	_	_	_	_	_	_	_	_	_	_	np0000	Latvenergo	organization[5]	*[5]	_	_	dep	basic	2-9	
-2-8	189-190	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[5]	*[5]	_	_	punct	basic	2-7	
-2-9	191-199	īstenotā	*	Sing	Gen	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Gen\|Definite=Def\|Degree=Pos\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpd\_sgpsyp	īstenot	_	_	_	_	amod	basic	2-17	
-2-10	200-207	vairāku	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur\|PronType=Ind	*	*	pi0mpg\_	vairāki	_	_	_	_	det	basic	2-11	
-2-11	208-213	simtu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	simts	_	_	_	_	nmod	basic	2-12	
-2-12	214-221	miljonu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	miljons	_	_	_	_	obl	basic	2-14	
-2-13	222-226	latu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	lats	_	_	_	_	nmod	basic	2-12	
-2-14	227-232	vērtā	Masc	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsgyp	vērts	_	_	_	_	amod	basic	2-17	
-2-15	233-238	TEC-2	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	TEC-2	organization	*	_	_	nmod	basic	2-16	
-2-16	239-254	rekonstrukcijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	rekonstrukcija	_	_	_	_	nmod	basic	2-17	
-2-17	255-263	projekta	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	projekts	_	_	_	_	nmod	basic	2-18	
-2-18	264-275	konsultants	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	konsultants	_	_	_	_	root	basic	2-18	
-2-19	275-276	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-18	
+2-1	162-163	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[4]	*[4]	*->3-3	*[3]	punct	basic	2-2	
+2-2	163-165	AF	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	AF	organization[4]	*[4]	*->3-3	*[3]	nsubj	basic	2-18	
+2-3	166-173	Colenco	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Colenco	organization[4]	*[4]	*->3-3	*[3]	flat:name	basic	2-2	
+2-4	173-174	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[4]	*[4]	*->3-3	*[3]	punct	basic	2-2	
+2-5	175-177	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	2-18	
+2-6	178-179	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[5]	*[5]	_	_	punct	basic	2-7	
+2-7	179-189	Latvenergo	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	np0000	*	Latvenergo	organization[5]	*[5]	_	_	dep	basic	2-9	
+2-8	189-190	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[5]	*[5]	_	_	punct	basic	2-7	
+2-9	191-199	īstenotā	*	Perf	Gen	*	Pos	*	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Gen\|Definite=Def\|Degree=Pos\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpd\_sgpsyp	*	īstenot	_	_	_	_	amod	basic	2-17	
+2-10	200-207	vairāku	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur\|PronType=Ind	*	*	pi0mpg\_	*	vairāki	_	_	_	_	det	basic	2-11	
+2-11	208-213	simtu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	simts	_	_	_	_	nmod	basic	2-12	
+2-12	214-221	miljonu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	miljons	_	_	_	_	obl	basic	2-14	
+2-13	222-226	latu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	lats	_	_	_	_	nmod	basic	2-12	
+2-14	227-232	vērtā	*	*	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsgyp	*	vērts	_	_	_	_	amod	basic	2-17	
+2-15	233-238	TEC-2	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	TEC-2	organization	*	_	_	nmod	basic	2-16	
+2-16	239-254	rekonstrukcijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	rekonstrukcija	_	_	_	_	nmod	basic	2-17	
+2-17	255-263	projekta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	projekts	_	_	_	_	nmod	basic	2-18	
+2-18	264-275	konsultants	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	konsultants	_	_	_	_	root	basic	2-18	
+2-19	275-276	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-18	
 
 #Text=Šveices uzņēmums projektā darbojas kopš tā pirmsākumiem pirms astoņiem gadiem.
-3-1	278-285	Šveices	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	Šveice	GPE	*	*[3]	*->3-4	nmod	basic	3-2	
-3-2	286-294	uzņēmums	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	uzņēmums	_	_	*[3]	*->3-4	nsubj	basic	3-4	
-3-3	295-303	projektā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	projekts	_	_	_	_	obl	basic	3-4	
-3-4	304-312	darbojas	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipi230an	darboties	_	_	_	_	root	basic	3-4	
-3-5	313-317	kopš	_	_	_	_	_	_	_	_	_	_	_	_	sppd	kopš	_	_	_	_	case	basic	3-7	
-3-6	318-320	tā	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msgn	tas	_	_	_	_	det	basic	3-7	
-3-7	321-333	pirmsākumiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	pirmsākums	_	_	_	_	obl	basic	3-4	
-3-8	334-339	pirms	_	_	_	_	_	_	_	_	_	_	_	_	sppd	pirms	time[6]	*[6]	_	_	case	basic	3-10	
-3-9	340-348	astoņiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpd	astoņi	time[6]	*[6]	_	_	nummod	basic	3-10	
-3-10	349-355	gadiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	gads	time[6]	*[6]	_	_	nmod	basic	3-7	
-3-11	355-356	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-4	
+3-1	278-285	Šveices	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	*	Šveice	GPE	*	*->3-4	*[3]	nmod	basic	3-2	
+3-2	286-294	uzņēmums	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	uzņēmums	_	_	*->3-4	*[3]	nsubj	basic	3-4	
+3-3	295-303	projektā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	projekts	_	_	_	_	obl	basic	3-4	
+3-4	304-312	darbojas	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmyipi230an	*	darboties	_	_	_	_	root	basic	3-4	
+3-5	313-317	kopš	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	kopš	_	_	_	_	case	basic	3-7	
+3-6	318-320	tā	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msgn	*	tas	_	_	_	_	det	basic	3-7	
+3-7	321-333	pirmsākumiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	pirmsākums	_	_	_	_	obl	basic	3-4	
+3-8	334-339	pirms	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	pirms	time[6]	*[6]	_	_	case	basic	3-10	
+3-9	340-348	astoņiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpd	*	astoņi	time[6]	*[6]	_	_	nummod	basic	3-10	
+3-10	349-355	gadiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	gads	time[6]	*[6]	_	_	nmod	basic	3-7	
+3-11	355-356	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-4	
 
 #Text="AF Colenco" filiāle Latvijā reģistrēta Livanoviču ģimenes privātmājā Mārupē.
-4-1	358-359	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[7]	*[7]	*[3]	*->3-5	punct	basic	4-2	
-4-2	359-361	AF	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	AF	organization[7]	*[7]	*[3]	*->3-5	nmod	basic	4-5	
-4-3	362-369	Colenco	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	Colenco	organization[7]	*[7]	*[3]	*->3-5	flat:name	basic	4-2	
-4-4	369-370	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[7]	*[7]	*[3]	*->3-5	punct	basic	4-2	
-4-5	371-378	filiāle	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	filiāle	_	_	_	_	nsubj:pass	basic	4-7	
-4-6	379-386	Latvijā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	Latvija	GPE	*	_	_	acl	basic	4-5	
-4-7	387-397	reģistrēta	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnpsnp	reģistrēt	_	_	_	_	root	basic	4-7	
-4-8	398-408	Livanoviču	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	npmpg1	Livanovičs	person[8]	*[8]	_	_	nmod	basic	4-9	
-4-9	409-416	ģimenes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	ģimene	person[8]	*[8]	_	_	nmod	basic	4-10	
-4-10	417-427	privātmājā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	privātmāja	_	_	_	_	obl	basic	4-7	
-4-11	428-434	Mārupē	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl5	Mārupe	GPE	*	_	_	acl	basic	4-10	
-4-12	434-435	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	4-7	
+4-1	358-359	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[7]	*[7]	*->3-5	*[3]	punct	basic	4-2	
+4-2	359-361	AF	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	AF	organization[7]	*[7]	*->3-5	*[3]	nmod	basic	4-5	
+4-3	362-369	Colenco	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Colenco	organization[7]	*[7]	*->3-5	*[3]	flat:name	basic	4-2	
+4-4	369-370	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[7]	*[7]	*->3-5	*[3]	punct	basic	4-2	
+4-5	371-378	filiāle	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	filiāle	_	_	_	_	nsubj:pass	basic	4-7	
+4-6	379-386	Latvijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Latvija	GPE	*	_	_	acl	basic	4-5	
+4-7	387-397	reģistrēta	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsnpsnp	*	reģistrēt	_	_	_	_	root	basic	4-7	
+4-8	398-408	Livanoviču	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	npmpg1	*	Livanovičs	person[8]	*[8]	_	_	nmod	basic	4-9	
+4-9	409-416	ģimenes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	ģimene	person[8]	*[8]	_	_	nmod	basic	4-10	
+4-10	417-427	privātmājā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	privātmāja	_	_	_	_	obl	basic	4-7	
+4-11	428-434	Mārupē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl5	*	Mārupe	GPE	*	_	_	acl	basic	4-10	
+4-12	434-435	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	4-7	

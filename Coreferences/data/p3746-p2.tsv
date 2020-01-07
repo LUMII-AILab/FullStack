@@ -1,66 +1,66 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=11. februārī LTV1 raidījumā "Viss notiek" rubrikā "Ideju mežs" varēs noskatīties sižetu par SIA "Zemgales tehnoloģisko centru" (ZTC), informē "Dienas Bizness".
-1-1	0-3	11.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	11.	time[1]	*[1]	_	_	amod	basic	1-2	
-1-2	4-12	februārī	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	februāris	time[1]	*[1]	_	_	obl	basic	1-14	
-1-3	13-17	LTV1	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	LTV1	organization	*	*[1]	*->1-1	nmod	basic	1-4	
-1-4	18-27	raidījumā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	raidījums	_	_	*[1]	*->1-1	nmod	basic	1-7	
-1-5	28-29	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	product[2]	*[2]	*[1]	*->1-2	punct	basic	1-7	
-1-6	29-33	Viss	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msnn	viss	product[2]	*[2]	*[1]	*->1-2	nsubj	basic	1-7	
-1-7	34-40	notiek	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipi130an	notikt	product[2]	*[2]	*[1]	*->1-2	obl	basic	1-14	
-1-8	40-41	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	product[2]	*[2]	*[1]	*->1-2	punct	basic	1-7	
-1-9	42-49	rubrikā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	rubrika	_	_	*[2]	*->2-1	nmod	basic	1-12	
-1-10	50-51	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	entity[3]	*[3]	*[2]	*->2-2	punct	basic	1-12	
-1-11	51-56	Ideju	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	ideja	entity[3]	*[3]	*[2]	*->2-2	nmod	basic	1-12	
-1-12	57-61	mežs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	mežs	entity[3]	*[3]	*[2]	*->2-2	obl	basic	1-14	
-1-13	61-62	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	entity[3]	*[3]	*[2]	*->2-2	punct	basic	1-12	
-1-14	63-68	varēs	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vonift330an	varēt	_	_	_	_	ccomp	basic	1-28	
-1-15	69-80	noskatīties	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0t3000n	noskatīties	_	_	_	_	xcomp	basic	1-14	
-1-16	81-87	sižetu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	sižets	_	_	_	_	obj	basic	1-15	
-1-17	88-91	par	_	_	_	_	_	_	_	_	_	_	_	_	sppd	par	_	_	_	_	case	basic	1-22	
-1-18	92-95	SIA	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	SIA	organization[4]	*[4]	*[3]	*->3-1	nmod	basic	1-22	
-1-19	96-97	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[4]	*[4]	*[3]	*->3-1	punct	basic	1-22	
-1-20	97-105	Zemgales	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	zemgale	organization[4]	*[4]	*[3]	*->3-1	nmod	basic	1-22	
-1-21	106-118	tehnoloģisko	Masc	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsayp	tehnoloģisks	organization[4]	*[4]	*[3]	*->3-1	amod	basic	1-22	
-1-22	119-125	centru	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	centrs	organization[4]	*[4]	*[3]	*->3-1	nmod	basic	1-16	
-1-23	125-126	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[4]	*[4]	*[3]	*->3-1	punct	basic	1-22	
-1-24	127-128	(	_	_	_	_	_	_	_	_	_	_	_	_	zb	(	_	_	_	_	punct	basic	1-25	
-1-25	128-131	ZTC	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	ZTC	organization	*	*[3]	*->3-2	parataxis	basic	1-22	
-1-26	131-132	)	_	_	_	_	_	_	_	_	_	_	_	_	zb	)	_	_	_	_	punct	basic	1-25	
-1-27	132-133	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-14	
-1-28	134-141	informē	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt230an	informēt	_	_	_	_	root	basic	1-28	
-1-29	142-143	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[5]	*[5]	_	_	punct	basic	1-31	
-1-30	143-149	Dienas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	diena	organization[5]	*[5]	_	_	nmod	basic	1-31	
-1-31	150-157	Bizness	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	bizness	organization[5]	*[5]	_	_	nsubj	basic	1-28	
-1-32	157-158	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[5]	*[5]	_	_	punct	basic	1-31	
-1-33	158-159	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-28	
+1-1	0-3	11.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	11.	time[1]	*[1]	_	_	amod	basic	1-2	
+1-2	4-12	februārī	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	*	februāris	time[1]	*[1]	_	_	obl	basic	1-14	
+1-3	13-17	LTV1	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	LTV1	organization	*	*->1-1	*[1]	nmod	basic	1-4	
+1-4	18-27	raidījumā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	raidījums	_	_	*->1-1	*[1]	nmod	basic	1-7	
+1-5	28-29	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	product[2]	*[2]	*->1-2	*[1]	punct	basic	1-7	
+1-6	29-33	Viss	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msnn	*	viss	product[2]	*[2]	*->1-2	*[1]	nsubj	basic	1-7	
+1-7	34-40	notiek	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipi130an	*	notikt	product[2]	*[2]	*->1-2	*[1]	obl	basic	1-14	
+1-8	40-41	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	product[2]	*[2]	*->1-2	*[1]	punct	basic	1-7	
+1-9	42-49	rubrikā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	rubrika	_	_	*->2-1	*[2]	nmod	basic	1-12	
+1-10	50-51	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	entity[3]	*[3]	*->2-2	*[2]	punct	basic	1-12	
+1-11	51-56	Ideju	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	ideja	entity[3]	*[3]	*->2-2	*[2]	nmod	basic	1-12	
+1-12	57-61	mežs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	mežs	entity[3]	*[3]	*->2-2	*[2]	obl	basic	1-14	
+1-13	61-62	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	entity[3]	*[3]	*->2-2	*[2]	punct	basic	1-12	
+1-14	63-68	varēs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vonift330an	*	varēt	_	_	_	_	ccomp	basic	1-28	
+1-15	69-80	noskatīties	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0t3000n	*	noskatīties	_	_	_	_	xcomp	basic	1-14	
+1-16	81-87	sižetu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	sižets	_	_	_	_	obj	basic	1-15	
+1-17	88-91	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	par	_	_	_	_	case	basic	1-22	
+1-18	92-95	SIA	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	*	SIA	organization[4]	*[4]	*->3-1	*[3]	nmod	basic	1-22	
+1-19	96-97	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[4]	*[4]	*->3-1	*[3]	punct	basic	1-22	
+1-20	97-105	Zemgales	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	*	zemgale	organization[4]	*[4]	*->3-1	*[3]	nmod	basic	1-22	
+1-21	106-118	tehnoloģisko	*	*	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsayp	*	tehnoloģisks	organization[4]	*[4]	*->3-1	*[3]	amod	basic	1-22	
+1-22	119-125	centru	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	centrs	organization[4]	*[4]	*->3-1	*[3]	nmod	basic	1-16	
+1-23	125-126	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[4]	*[4]	*->3-1	*[3]	punct	basic	1-22	
+1-24	127-128	(	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	(	_	_	_	_	punct	basic	1-25	
+1-25	128-131	ZTC	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	ZTC	organization	*	*->3-2	*[3]	parataxis	basic	1-22	
+1-26	131-132	)	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	)	_	_	_	_	punct	basic	1-25	
+1-27	132-133	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-14	
+1-28	134-141	informē	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt230an	*	informēt	_	_	_	_	root	basic	1-28	
+1-29	142-143	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[5]	*[5]	_	_	punct	basic	1-31	
+1-30	143-149	Dienas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	diena	organization[5]	*[5]	_	_	nmod	basic	1-31	
+1-31	150-157	Bizness	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	bizness	organization[5]	*[5]	_	_	nsubj	basic	1-28	
+1-32	157-158	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[5]	*[5]	_	_	punct	basic	1-31	
+1-33	158-159	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-28	
 
 #Text=Šim uzņēmumam inovatīvi tehniskie risinājumi un pastāvīgi ieguldījumi pētniecībā devuši iespēju veiksmīgi konkurēt koka paneļu māju ražotāju piesātinātajā tirgū Eiropā.
-2-1	161-164	Šim	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msdn	šis	_	_	*[3]	*->3-3	det	basic	2-2	
-2-2	165-174	uzņēmumam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	uzņēmums	_	_	*[3]	*->3-3	obl	basic	2-10	
-2-3	175-184	inovatīvi	Masc	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpnnp	inovatīvi	_	_	_	_	amod	basic	2-5	
-2-4	185-194	tehniskie	Masc	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpnyp	tehnisks	_	_	_	_	amod	basic	2-5	
-2-5	195-205	risinājumi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	risinājums	_	_	_	_	nsubj	basic	2-10	
-2-6	206-208	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	2-8	
-2-7	209-218	pastāvīgi	Masc	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnnp	pastāvīgs	_	_	_	_	amod	basic	2-8	
-2-8	219-230	ieguldījumi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	ieguldījums	_	_	_	_	conj	basic	2-5	
-2-9	231-241	pētniecībā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	pētniecība	_	_	_	_	acl	basic	2-8	
-2-10	242-248	devuši	Masc	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpnasnp	dot	_	_	_	_	root	basic	2-10	
-2-11	249-256	iespēju	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	iespēja	_	_	_	_	obj	basic	2-10	
-2-12	257-266	veiksmīgi	_	_	_	_	_	_	_	_	_	_	_	_	r0m	veiksmīgi	_	_	_	_	advmod	basic	2-13	
-2-13	267-275	konkurēt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0i2000n	konkurēt	_	_	_	_	acl	basic	2-11	
-2-14	276-280	koka	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	koks	_	_	_	_	nmod	basic	2-15	
-2-15	281-287	paneļu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	panelis	_	_	_	_	nmod	basic	2-16	
-2-16	288-292	māju	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	māja	_	_	_	_	nmod	basic	2-17	
-2-17	293-301	ražotāju	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	ražotājs	_	_	_	_	nmod	basic	2-18	
-2-18	302-315	piesātinātajā	Masc	Sing	Loc	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Loc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmslpsyp	piesātināt	_	_	_	_	amod	basic	2-19	
-2-19	316-321	tirgū	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl3	tirgus	_	_	_	_	obl	basic	2-13	
-2-20	322-328	Eiropā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	Eiropa	location	*	_	_	acl	basic	2-19	
-2-21	328-329	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-10	
+2-1	161-164	Šim	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msdn	*	šis	_	_	*->3-3	*[3]	det	basic	2-2	
+2-2	165-174	uzņēmumam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	uzņēmums	_	_	*->3-3	*[3]	obl	basic	2-10	
+2-3	175-184	inovatīvi	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpnnp	*	inovatīvi	_	_	_	_	amod	basic	2-5	
+2-4	185-194	tehniskie	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpnyp	*	tehnisks	_	_	_	_	amod	basic	2-5	
+2-5	195-205	risinājumi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	risinājums	_	_	_	_	nsubj	basic	2-10	
+2-6	206-208	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-8	
+2-7	209-218	pastāvīgi	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnnp	*	pastāvīgs	_	_	_	_	amod	basic	2-8	
+2-8	219-230	ieguldījumi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	ieguldījums	_	_	_	_	conj	basic	2-5	
+2-9	231-241	pētniecībā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	pētniecība	_	_	_	_	acl	basic	2-8	
+2-10	242-248	devuši	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	*	vmnpdmpnasnp	*	dot	_	_	_	_	root	basic	2-10	
+2-11	249-256	iespēju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	iespēja	_	_	_	_	obj	basic	2-10	
+2-12	257-266	veiksmīgi	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	veiksmīgi	_	_	_	_	advmod	basic	2-13	
+2-13	267-275	konkurēt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0i2000n	*	konkurēt	_	_	_	_	acl	basic	2-11	
+2-14	276-280	koka	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	koks	_	_	_	_	nmod	basic	2-15	
+2-15	281-287	paneļu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	panelis	_	_	_	_	nmod	basic	2-16	
+2-16	288-292	māju	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	māja	_	_	_	_	nmod	basic	2-17	
+2-17	293-301	ražotāju	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	ražotājs	_	_	_	_	nmod	basic	2-18	
+2-18	302-315	piesātinātajā	*	Perf	Loc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Loc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdmslpsyp	*	piesātināt	_	_	_	_	amod	basic	2-19	
+2-19	316-321	tirgū	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl3	*	tirgus	_	_	_	_	obl	basic	2-13	
+2-20	322-328	Eiropā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Eiropa	location	*	_	_	acl	basic	2-19	
+2-21	328-329	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-10	

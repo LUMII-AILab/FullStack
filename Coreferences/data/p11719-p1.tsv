@@ -1,0 +1,52 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Apes novada mājaslapā informēts, ka D.Ozoliņa Apes vidusskolas skolēni Lielās talkas ietvaros palīdzēja labiekārtot skolas apkārtni - sakopa skolas un Raganu klinšu apkārtni.
+1-1	0-4	Apes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	*	Ape	GPE[1]	https://en.wikipedia.org/wiki/Ape\_Municipality[1]	_	_	nmod	basic	1-2	
+1-2	5-11	novada	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	novads	GPE[1]	https://en.wikipedia.org/wiki/Ape\_Municipality[1]	_	_	nmod	basic	1-3	
+1-3	12-21	mājaslapā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	mājaslapa	_	_	_	_	obl	basic	1-4	
+1-4	22-31	informēts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsnpsnpn	*	informēt	_	_	_	_	root	basic	1-4	
+1-5	31-32	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-15	
+1-6	33-35	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	1-15	
+1-7	36-38	D.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	d.	person[2]	*[2]	*->1-1	*[1]	nmod	basic	1-10	
+1-8	38-45	Ozoliņa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Ozoliņš	person[2]	*[2]	*->1-1	*[1]	flat:name	basic	1-7	
+1-9	46-50	Apes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	*	Ape	organization[3]|GPE[4]	*[3]|https://en.wikipedia.org/wiki/Ape,\_Latvia[4]	*->1-1	*[1]	nmod	basic	1-10	
+1-10	51-62	vidusskolas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	vidusskola	organization[3]	*[3]	*->1-1	*[1]	nmod	basic	1-11	
+1-11	63-70	skolēni	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	skolēns	_	_	_	_	nsubj	basic	1-15	
+1-12	71-77	Lielās	*	*	Gen	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsgyp	*	liels	event[5]	https://en.wikipedia.org/wiki/Ape,\_Latvia[5]	_	_	amod	basic	1-13	
+1-13	78-84	talkas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	talka	event[5]	https://en.wikipedia.org/wiki/Ape,\_Latvia[5]	_	_	nmod	basic	1-14	
+1-14	85-93	ietvaros	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	*	ietvars	_	_	_	_	obl	basic	1-15	
+1-15	94-103	palīdzēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnisi330an	*	palīdzēt	_	_	_	_	ccomp	basic	1-4	
+1-16	104-115	labiekārtot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t2000n	*	labiekārtot	_	_	_	_	ccomp	basic	1-15	
+1-17	116-122	skolas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	skola	_	_	_	_	nmod	basic	1-18	
+1-18	123-131	apkārtni	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	apkārtne	_	_	_	_	obj	basic	1-16	
+1-19	132-133	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	-	_	_	_	_	punct	basic	1-20	
+1-20	134-140	sakopa	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist130an	*	sakopt	_	_	_	_	dep	basic	1-15	
+1-21	141-147	skolas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	skola	_	_	*->1-2	*[1]	nmod	basic	1-25	
+1-22	148-150	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-24	
+1-23	151-157	Raganu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	ragana	location[6]	*[6]	_	_	nmod	basic	1-24	
+1-24	158-164	klinšu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg6	*	klints	location[6]	*[6]	_	_	conj	basic	1-21	
+1-25	165-173	apkārtni	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	apkārtne	_	_	_	_	obj	basic	1-20	
+1-26	173-174	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-4	
+
+#Text=Pie skolas iestādīja 80 spireju krūmus, bet Zaļajā klasē - 30 krūmus.
+2-1	175-178	Pie	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pie	_	_	_	_	case	basic	2-2	
+2-2	179-185	skolas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	skola	_	_	*->1-3	*[1]	obl	basic	2-3	
+2-3	186-195	iestādīja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist330an	*	iestādīt	_	_	_	_	root	basic	2-3	
+2-4	196-198	80	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	80	_	_	_	_	nummod	basic	2-6	
+2-5	199-206	spireju	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	spireja	_	_	_	_	nmod	basic	2-6	
+2-6	207-213	krūmus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	krūms	_	_	_	_	obj	basic	2-3	
+2-7	213-214	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-13	
+2-8	215-218	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	_	_	cc	basic	2-13	
+2-9	219-225	Zaļajā	*	*	Loc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affslyp	*	zaļš	location[7]	*[7]	_	_	amod	basic	2-10	
+2-10	226-231	klasē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	*	klase	location[7]	*[7]	_	_	orphan	basic	2-13	
+2-11	232-233	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	-	_	_	_	_	punct	basic	2-13	
+2-12	234-236	30	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	30	_	_	_	_	nummod	basic	2-13	
+2-13	237-243	krūmus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	krūms	_	_	_	_	conj	basic	2-3	
+2-14	243-244	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-3	

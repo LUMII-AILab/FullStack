@@ -1,0 +1,122 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Šogad ceļš vedīs uz Padures, Īvandes un Ēdoles pagastu, kur dalībnieki tiks iepazīstināti ne tikai ar bibliotēkām, bet arī ievērojamiem novadniekiem, interesantām vietām un objektiem.
+1-1	0-5	Šogad	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	šogad	_	_	_	_	advmod	basic	1-3	
+1-2	6-10	ceļš	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	ceļš	_	_	_	_	nsubj	basic	1-3	
+1-3	11-16	vedīs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmnift130an	*	vest	_	_	_	_	root	basic	1-3	
+1-4	17-19	uz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	uz	_	_	_	_	case	basic	1-10	
+1-5	20-27	Padures	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	*	Padure	GPE	https://en.wikipedia.org/wiki/Padure\_Parish	*->3-1	*[3]	nmod	basic	1-10	
+1-6	27-28	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	*->3-1	*[3]	punct	basic	1-7	
+1-7	29-36	Īvandes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	*	Īvande	GPE	https://en.wikipedia.org/wiki/Īvande\_Parish	*->3-1	*[3]	conj	basic	1-5	
+1-8	37-39	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	*->3-1	*[3]	cc	basic	1-9	
+1-9	40-46	Ēdoles	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	*	Ēdole	GPE[1]|GPE[2]	https://en.wikipedia.org/wiki/Ēdole\_Parish[1]|*[2]	*->3-1	*[3]	conj	basic	1-5	
+1-10	47-54	pagastu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	pagasts	GPE[1]	https://en.wikipedia.org/wiki/Ēdole\_Parish[1]	*->3-1	*[3]	obl	basic	1-3	
+1-11	54-55	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-15	
+1-12	56-59	kur	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0t	*	kur	_	_	*->3-2	*[3]	advmod	basic	1-15	
+1-13	60-70	dalībnieki	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	dalībnieks	_	_	_	_	nsubj:pass	basic	1-15	
+1-14	71-75	tiks	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vtnifi130an	*	tikt	_	_	_	_	aux:pass	basic	1-15	
+1-15	76-89	iepazīstināti	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmpnpsnpn	*	iepazīstināt	_	_	_	_	advcl	basic	1-10	
+1-16	90-92	ne	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Neg	*	*	cc	*	ne	_	_	_	_	cc	basic	1-19	
+1-17	93-98	tikai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tikai	_	_	_	_	discourse	basic	1-16	
+1-18	99-101	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	_	_	case	basic	1-19	
+1-19	102-113	bibliotēkām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	*	bibliotēka	_	_	_	_	iobj	basic	1-15	
+1-20	113-114	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-24	
+1-21	115-118	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	_	_	cc	basic	1-24	
+1-22	119-122	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	arī	_	_	_	_	cc	basic	1-24	
+1-23	123-135	ievērojamiem	*	*	Dat	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpdnp	*	ievērojams	_	_	_	_	amod	basic	1-24	
+1-24	136-148	novadniekiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	novadnieks	_	_	_	_	conj	basic	1-19	
+1-25	148-149	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-27	
+1-26	150-162	interesantām	*	*	Dat	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpdnp	*	interesanta	_	_	_	_	amod	basic	1-27	
+1-27	163-169	vietām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	*	vieta	_	_	_	_	conj	basic	1-24	
+1-28	170-172	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-29	
+1-29	173-182	objektiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	objekts	_	_	_	_	conj	basic	1-27	
+1-30	182-183	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-3	
+
+#Text=Padurē klētniece Alise izvadās pa Padures vēstures apcirkņiem, varēs nobaudīt pļavās vāktās tējas.
+2-1	185-191	Padurē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl5	*	Padure	GPE	https://en.wikipedia.org/wiki/Padure\_Parish	_	_	obl	basic	2-4	
+2-2	192-201	klētniece	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	klētniece	_	_	*->1-1	*[1]	nmod	basic	2-3	
+2-3	202-207	Alise	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	*	Alise	person	*	*->1-2	*[1]	nsubj	basic	2-4	
+2-4	208-215	izvadās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmnift230an	*	izvadāt	_	_	_	_	root	basic	2-4	
+2-5	216-218	pa	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	pa	_	_	_	_	case	basic	2-8	
+2-6	219-226	Padures	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	*	Padure	GPE	https://en.wikipedia.org/wiki/Padure\_Parish	_	_	nmod	basic	2-7	
+2-7	227-235	vēstures	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	vēsture	_	_	_	_	nmod	basic	2-8	
+2-8	236-246	apcirkņiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd2	*	apcirknis	_	_	_	_	obl	basic	2-4	
+2-9	246-247	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-10	
+2-10	248-253	varēs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vonifi330an	*	varēt	_	_	_	_	conj	basic	2-4	
+2-11	254-262	nobaudīt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	*	nobaudīt	_	_	_	_	xcomp	basic	2-10	
+2-12	263-269	pļavās	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	*	pļava	_	_	_	_	obl	basic	2-13	
+2-13	270-276	vāktās	*	Perf	Acc	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfpapsypn	*	vākt	_	_	_	_	amod	basic	2-14	
+2-14	277-282	tējas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	tēja	_	_	_	_	obj	basic	2-11	
+2-15	282-283	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-4	
+
+#Text=Īvandē velobraucēji uzzinās, kur dzimis un skolojies rakstnieks Mārtiņš Kalndruva, izstaigās muižu, dosies uz ūdensdzirnavām un apskatīs 1816. gadā celto luterāņu baznīcu.
+3-1	285-291	Īvandē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl5	*	Īvande	GPE	*	_	_	obl	basic	3-3	
+3-2	292-304	velobraucēji	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	velobraucējs	_	_	_	_	nsubj	basic	3-3	
+3-3	305-312	uzzinās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmnift330an	*	uzzināt	_	_	_	_	root	basic	3-3	
+3-4	312-313	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-6	
+3-5	314-317	kur	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0p	*	kur	_	_	_	_	advmod	basic	3-6	
+3-6	318-324	dzimis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnasnpn	*	dzimt	_	_	_	_	ccomp	basic	3-3	
+3-7	325-327	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	3-8	
+3-8	328-337	skolojies	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	*	vmypdmsnasnpn	*	skoloties	_	_	_	_	conj	basic	3-6	
+3-9	338-348	rakstnieks	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	rakstnieks	_	_	*->2-1	*[2]	nmod	basic	3-10	
+3-10	349-356	Mārtiņš	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Mārtiņš	person[3]	*[3]	*->2-2	*[2]	nsubj	basic	3-6	
+3-11	357-366	Kalndruva	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn4	*	Kalndruva	person[3]	*[3]	*->2-2	*[2]	flat:name	basic	3-10	
+3-12	366-367	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-13	
+3-13	368-377	izstaigās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmnift230an	*	izstaigāt	_	_	_	_	conj	basic	3-3	
+3-14	378-383	muižu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	muiža	_	_	_	_	obj	basic	3-13	
+3-15	383-384	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-16	
+3-16	385-391	dosies	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmyifi130an	*	doties	_	_	_	_	conj	basic	3-3	
+3-17	392-394	uz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	uz	_	_	_	_	case	basic	3-18	
+3-18	395-409	ūdensdzirnavām	*	*	Dat	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Ptan	*	*	ncfdd4	*	ūdensdzirnavas	_	_	_	_	obl	basic	3-16	
+3-19	410-412	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	3-20	
+3-20	413-421	apskatīs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmnift330an	*	apskatīt	_	_	_	_	conj	basic	3-3	
+3-21	422-427	1816.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	1816.	time[4]	*[4]	_	_	amod	basic	3-22	
+3-22	428-432	gadā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	gads	time[4]	*[4]	_	_	obl	basic	3-23	
+3-23	433-438	celto	*	Perf	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsapsypn	*	celt	_	_	_	_	amod	basic	3-25	
+3-24	439-447	luterāņu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg5	*	luterāne	_	_	_	_	nmod	basic	3-25	
+3-25	448-455	baznīcu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	baznīca	_	_	_	_	obj	basic	3-20	
+3-26	455-456	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-3	
+
+#Text=Ēdolē bibliotēkas vadītāja rādīs, kur pirmo reizi Latvijā radās doma dibināt publisku bibliotēku.
+4-1	458-463	Ēdolē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl5	*	Ēdolē	GPE	https://lv.wikipedia.org/wiki/Ēdole	_	_	obl	basic	4-4	
+4-2	464-475	bibliotēkas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	bibliotēka	_	_	_	_	nmod	basic	4-3	
+4-3	476-484	vadītāja	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	vadītāja	_	_	_	_	nsubj	basic	4-4	
+4-4	485-490	rādīs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmnift330an	*	rādīt	_	_	_	_	root	basic	4-4	
+4-5	490-491	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-10	
+4-6	492-495	kur	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0p	*	kur	_	_	_	_	advmod	basic	4-10	
+4-7	496-501	pirmo	*	*	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|NumType=Ord	*	*	mosmsa	*	pirmais	_	_	_	_	amod	basic	4-8	
+4-8	502-507	reizi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	reize	_	_	_	_	obl	basic	4-10	
+4-9	508-515	Latvijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Latvija	GPE	*	_	_	acl	basic	4-8	
+4-10	516-521	radās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmyisi130an	*	rasties	_	_	_	_	ccomp	basic	4-4	
+4-11	522-526	doma	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	doma	_	_	_	_	nsubj	basic	4-10	
+4-12	527-534	dibināt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	*	dibināt	_	_	_	_	acl	basic	4-11	
+4-13	535-543	publisku	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsanp	*	publiska	_	_	_	_	amod	basic	4-14	
+4-14	544-554	bibliotēku	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	bibliotēka	_	_	_	_	obj	basic	4-12	
+4-15	554-555	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	4-4	
+
+#Text=Pēc tam varēs izstaigāt pils parku un apskatīt Romanovas šķirnes aitas.
+5-1	557-560	Pēc	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	pēc	_	_	_	_	case	basic	5-2	
+5-2	561-564	tam	*	*	Dat	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msdn	*	tas	_	_	_	_	obl	basic	5-3	
+5-3	565-570	varēs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vonifi330an	*	varēt	_	_	_	_	root	basic	5-3	
+5-4	571-580	izstaigāt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	*	izstaigāt	_	_	_	_	xcomp	basic	5-3	
+5-5	581-585	pils	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	*	pils	_	_	_	_	nmod	basic	5-6	
+5-6	586-591	parku	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	parks	_	_	_	_	obj	basic	5-4	
+5-7	592-594	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	5-8	
+5-8	595-603	apskatīt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	*	apskatīt	_	_	_	_	conj	basic	5-4	
+5-9	604-613	Romanovas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Romanova	person	*	_	_	nmod	basic	5-10	
+5-10	614-621	šķirnes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	šķirne	_	_	_	_	nmod	basic	5-11	
+5-11	622-627	aitas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	aita	_	_	_	_	obj	basic	5-8	
+5-12	627-628	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	5-3	
+
+#Text=Sīkāka informācija http://biblio.kuldiga.lv/.
+6-1	630-636	Sīkāka	*	*	Nom	*	Cmp	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Fem\|Number=Sing	*	*	affsnnc	*	sīka	_	_	_	_	amod	basic	6-2	
+6-2	637-648	informācija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	informācija	_	_	_	_	root	basic	6-2	
+6-3	649-674	http://biblio.kuldiga.lv/	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	xu	*	http://biblio.kuldiga.lv/	_	_	_	_	dep	basic	6-2	
+6-4	674-675	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	6-2	

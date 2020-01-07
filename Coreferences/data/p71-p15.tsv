@@ -1,86 +1,86 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Izteiksi pārmetumus citiem.
-1-1	0-8	Izteiksi	vmnift12san	izteikt	_	_	root	basic	1-1	
-1-2	9-19	pārmetumus	ncmpa1	pārmetums	_	_	obj	basic	1-1	
-1-3	20-26	citiem	pi0mpdn	cits	_	_	iobj	basic	1-1	
-1-4	26-27	.	zs	.	_	_	punct	basic	1-1	
+1-1	0-8	Izteiksi	vmnift12san	*	izteikt	_	_	root	basic	1-1	
+1-2	9-19	pārmetumus	ncmpa1	*	pārmetums	_	_	obj	basic	1-1	
+1-3	20-26	citiem	pi0mpdn	*	cits	_	_	iobj	basic	1-1	
+1-4	26-27	.	zs	*	.	_	_	punct	basic	1-1	
 
 #Text=Tā kā perfekcionisti paši nekad nespēj dzīvot pēc saviem standartiem, tad vēl jo vairāk ar viņu standartiem netiek galā arī ģimenes locekļi vai draugi.
-2-1	29-31	Tā	q	tā	_	_	discourse	basic	2-2	
-2-2	32-34	kā	cs	kā	_	_	mark	basic	2-6	
-2-3	35-49	perfekcionisti	ncmpn1	perfekcionists	*[1]	*->1-1	nsubj	basic	2-6	
-2-4	50-54	paši	pg0mpnn	pats	*[1]	*->1-2	acl	basic	2-6	
-2-5	55-60	nekad	r0t	nekad	_	_	advmod	basic	2-6	
-2-6	61-67	nespēj	vonipt130an	nespēt	_	_	advcl	basic	2-19	
-2-7	68-74	dzīvot	vmnn0t2000n	dzīvot	_	_	xcomp	basic	2-6	
-2-8	75-78	pēc	sppd	pēc	_	_	case	basic	2-10	
-2-9	79-85	saviem	ps0mpdn	savs	*[1]	*->1-3	det	basic	2-10	
-2-10	86-97	standartiem	ncmpd1	standarts	_	_	obl	basic	2-7	
-2-11	97-98	,	zc	,	_	_	punct	basic	2-6	
-2-12	99-102	tad	r0t	tad	_	_	dep	basic	2-19	
-2-13	103-106	vēl	r0t	vēl	_	_	advmod	basic	2-15	
-2-14	107-109	jo	q	jo	_	_	discourse	basic	2-15	
-2-15	110-116	vairāk	rcq	daudz	_	_	advmod	basic	2-19	
-2-16	117-119	ar	spsa	ar	_	_	case	basic	2-18	
-2-17	120-124	viņu	pp3msan	viņš	*[1]	*->1-4	det	basic	2-18	
-2-18	125-136	standartiem	ncmpd1	standarts	_	_	iobj	basic	2-19	
-2-19	137-143	netiek	vmnipi130ay	netikt	_	_	root	basic	2-19	
-2-20	144-148	galā	ncmsl1	gals	_	_	obl	basic	2-19	
-2-21	149-152	arī	q	arī	_	_	discourse	basic	2-19	
-2-22	153-160	ģimenes	ncfsg5	ģimene	_	_	nmod	basic	2-23	
-2-23	161-168	locekļi	ncmpn2	loceklis	_	_	iobj	basic	2-19	
-2-24	169-172	vai	cc	vai	_	_	cc	basic	2-25	
-2-25	173-179	draugi	ncmpn1	draugs	_	_	conj	basic	2-23	
-2-26	179-180	.	zs	.	_	_	punct	basic	2-19	
+2-1	29-31	Tā	q	*	tā	_	_	discourse	basic	2-2	
+2-2	32-34	kā	cs	*	kā	_	_	mark	basic	2-6	
+2-3	35-49	perfekcionisti	ncmpn1	*	perfekcionists	*->1-1	*[1]	nsubj	basic	2-6	
+2-4	50-54	paši	pg0mpnn	*	pats	*->1-2	*[1]	acl	basic	2-6	
+2-5	55-60	nekad	r0t	*	nekad	_	_	advmod	basic	2-6	
+2-6	61-67	nespēj	vonipt130an	*	nespēt	_	_	advcl	basic	2-19	
+2-7	68-74	dzīvot	vmnn0t2000n	*	dzīvot	_	_	xcomp	basic	2-6	
+2-8	75-78	pēc	sppd	*	pēc	_	_	case	basic	2-10	
+2-9	79-85	saviem	ps0mpdn	*	savs	*->1-3	*[1]	det	basic	2-10	
+2-10	86-97	standartiem	ncmpd1	*	standarts	_	_	obl	basic	2-7	
+2-11	97-98	,	zc	*	,	_	_	punct	basic	2-6	
+2-12	99-102	tad	r0t	*	tad	_	_	dep	basic	2-19	
+2-13	103-106	vēl	r0t	*	vēl	_	_	advmod	basic	2-15	
+2-14	107-109	jo	q	*	jo	_	_	discourse	basic	2-15	
+2-15	110-116	vairāk	rcq	*	daudz	_	_	advmod	basic	2-19	
+2-16	117-119	ar	spsa	*	ar	_	_	case	basic	2-18	
+2-17	120-124	viņu	pp3msan	*	viņš	*->1-4	*[1]	det	basic	2-18	
+2-18	125-136	standartiem	ncmpd1	*	standarts	_	_	iobj	basic	2-19	
+2-19	137-143	netiek	vmnipi130ay	*	netikt	_	_	root	basic	2-19	
+2-20	144-148	galā	ncmsl1	*	gals	_	_	obl	basic	2-19	
+2-21	149-152	arī	q	*	arī	_	_	discourse	basic	2-19	
+2-22	153-160	ģimenes	ncfsg5	*	ģimene	_	_	nmod	basic	2-23	
+2-23	161-168	locekļi	ncmpn2	*	loceklis	_	_	iobj	basic	2-19	
+2-24	169-172	vai	cc	*	vai	_	_	cc	basic	2-25	
+2-25	173-179	draugi	ncmpn1	*	draugs	_	_	conj	basic	2-23	
+2-26	179-180	.	zs	*	.	_	_	punct	basic	2-19	
 
 #Text=Tas rada līdzcilvēkos stresu un aizvainojumu.
-3-1	182-185	Tas	pd0msnn	tas	_	_	nsubj	basic	3-2	
-3-2	186-190	rada	vmnipt330an	radīt	_	_	root	basic	3-2	
-3-3	191-203	līdzcilvēkos	ncmpl1	līdzcilvēks	_	_	obl	basic	3-2	
-3-4	204-210	stresu	ncmsa1	stress	_	_	obj	basic	3-2	
-3-5	211-213	un	cc	un	_	_	cc	basic	3-6	
-3-6	214-226	aizvainojumu	ncmsa1	aizvainojums	_	_	conj	basic	3-4	
-3-7	226-227	.	zs	.	_	_	punct	basic	3-2	
+3-1	182-185	Tas	pd0msnn	*	tas	_	_	nsubj	basic	3-2	
+3-2	186-190	rada	vmnipt330an	*	radīt	_	_	root	basic	3-2	
+3-3	191-203	līdzcilvēkos	ncmpl1	*	līdzcilvēks	_	_	obl	basic	3-2	
+3-4	204-210	stresu	ncmsa1	*	stress	_	_	obj	basic	3-2	
+3-5	211-213	un	cc	*	un	_	_	cc	basic	3-6	
+3-6	214-226	aizvainojumu	ncmsa1	*	aizvainojums	_	_	conj	basic	3-4	
+3-7	226-227	.	zs	*	.	_	_	punct	basic	3-2	
 
 #Text=Ja tu nepārtraukti kritizēsi savu partneri, viņš sāks justies demoralizēts.
-4-1	229-231	Ja	cs	ja	_	_	mark	basic	4-4	
-4-2	232-234	tu	pp20snn	tu	*[3]	*->3-1	nsubj	basic	4-4	
-4-3	235-247	nepārtraukti	r0m	nepārtraukti	_	_	advmod	basic	4-4	
-4-4	248-257	kritizēsi	vmnift22san	kritizēt	_	_	advcl	basic	4-9	
-4-5	258-262	savu	ps0msan	savs	*[3]	*->3-2	det	basic	4-6	
-4-6	263-271	partneri	ncmsa2	partneris	*[2]	*->2-1	obj	basic	4-4	
-4-7	271-272	,	zc	,	_	_	punct	basic	4-4	
-4-8	273-277	viņš	pp3msnn	viņš	*[2]	*->2-2	nsubj	basic	4-9	
-4-9	278-282	sāks	vpnift130an	sākt	_	_	root	basic	4-9	
-4-10	283-290	justies	vtyn0t1000n	justies	_	_	aux	basic	4-11	
-4-11	291-303	demoralizēts	vmnpdmsnpsnp	demoralizēt	_	_	xcomp	basic	4-9	
-4-12	303-304	.	zs	.	_	_	punct	basic	4-9	
+4-1	229-231	Ja	cs	*	ja	_	_	mark	basic	4-4	
+4-2	232-234	tu	pp20snn	*	tu	*->3-1	*[3]	nsubj	basic	4-4	
+4-3	235-247	nepārtraukti	r0m	*	nepārtraukti	_	_	advmod	basic	4-4	
+4-4	248-257	kritizēsi	vmnift22san	*	kritizēt	_	_	advcl	basic	4-9	
+4-5	258-262	savu	ps0msan	*	savs	*->3-2	*[3]	det	basic	4-6	
+4-6	263-271	partneri	ncmsa2	*	partneris	*->2-1	*[2]	obj	basic	4-4	
+4-7	271-272	,	zc	*	,	_	_	punct	basic	4-4	
+4-8	273-277	viņš	pp3msnn	*	viņš	*->2-2	*[2]	nsubj	basic	4-9	
+4-9	278-282	sāks	vpnift130an	*	sākt	_	_	root	basic	4-9	
+4-10	283-290	justies	vtyn0t1000n	*	justies	_	_	aux	basic	4-11	
+4-11	291-303	demoralizēts	vmnpdmsnpsnp	*	demoralizēt	_	_	xcomp	basic	4-9	
+4-12	303-304	.	zs	*	.	_	_	punct	basic	4-9	
 
 #Text=Tā tu pakļauj briesmām savas attiecības.
-5-1	306-308	Tā	r0m	tā	_	_	advmod	basic	5-3	
-5-2	309-311	tu	pp20snn	tu	*[3]	*->3-3	nsubj	basic	5-3	
-5-3	312-319	pakļauj	vmnipt12san	pakļaut	_	_	root	basic	5-3	
-5-4	320-328	briesmām	ncfdd4	briesmas	_	_	iobj	basic	5-3	
-5-5	329-334	savas	ps0fsgn	sava	*[3]	*->3-4	det	basic	5-6	
-5-6	335-345	attiecības	ncfpa4	attiecība	_	_	obj	basic	5-3	
-5-7	345-346	.	zs	.	_	_	punct	basic	5-3	
+5-1	306-308	Tā	r0m	*	tā	_	_	advmod	basic	5-3	
+5-2	309-311	tu	pp20snn	*	tu	*->3-3	*[3]	nsubj	basic	5-3	
+5-3	312-319	pakļauj	vmnipt12san	*	pakļaut	_	_	root	basic	5-3	
+5-4	320-328	briesmām	ncfdd4	*	briesmas	_	_	iobj	basic	5-3	
+5-5	329-334	savas	ps0fsgn	*	sava	*->3-4	*[3]	det	basic	5-6	
+5-6	335-345	attiecības	ncfpa4	*	attiecība	_	_	obj	basic	5-3	
+5-7	345-346	.	zs	*	.	_	_	punct	basic	5-3	
 
 #Text=Mācies pieņemt un paciest nepilnības, jo neviena mīlestība nav ideāla.
-6-1	348-354	Mācies	vmym0i32san	mācīties	_	_	root	basic	6-1	
-6-2	355-362	pieņemt	vmnn0t1000n	pieņemt	_	_	ccomp	basic	6-1	
-6-3	363-365	un	cc	un	_	_	cc	basic	6-4	
-6-4	366-373	paciest	vmnn0t1000n	paciest	_	_	conj	basic	6-2	
-6-5	374-384	nepilnības	ncfpa4	nepilnība	_	_	obj	basic	6-2	
-6-6	384-385	,	zc	,	_	_	punct	basic	6-11	
-6-7	386-388	jo	cs	jo	_	_	mark	basic	6-11	
-6-8	389-396	neviena	pi0fsny	neviena	_	_	det	basic	6-9	
-6-9	397-406	mīlestība	ncfsn4	mīlestība	_	_	nsubj	basic	6-11	
-6-10	407-410	nav	vcnipii30ay	nebūt	_	_	cop	basic	6-11	
-6-11	411-417	ideāla	arfsnnp	ideāla	_	_	advcl	basic	6-1	
-6-12	417-418	.	zs	.	_	_	punct	basic	6-1	
+6-1	348-354	Mācies	vmym0i32san	*	mācīties	_	_	root	basic	6-1	
+6-2	355-362	pieņemt	vmnn0t1000n	*	pieņemt	_	_	ccomp	basic	6-1	
+6-3	363-365	un	cc	*	un	_	_	cc	basic	6-4	
+6-4	366-373	paciest	vmnn0t1000n	*	paciest	_	_	conj	basic	6-2	
+6-5	374-384	nepilnības	ncfpa4	*	nepilnība	_	_	obj	basic	6-2	
+6-6	384-385	,	zc	*	,	_	_	punct	basic	6-11	
+6-7	386-388	jo	cs	*	jo	_	_	mark	basic	6-11	
+6-8	389-396	neviena	pi0fsny	*	neviena	_	_	det	basic	6-9	
+6-9	397-406	mīlestība	ncfsn4	*	mīlestība	_	_	nsubj	basic	6-11	
+6-10	407-410	nav	vcnipii30ay	*	nebūt	_	_	cop	basic	6-11	
+6-11	411-417	ideāla	arfsnnp	*	ideāla	_	_	advcl	basic	6-1	
+6-12	417-418	.	zs	*	.	_	_	punct	basic	6-1	

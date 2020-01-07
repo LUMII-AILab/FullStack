@@ -1,0 +1,91 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=«Pieminekļiem arī ir savi likteņi.
+1-1	0-1	«	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	«	_	_	_	_	punct	basic	1-4	
+1-2	1-13	Pieminekļiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd2	*	piemineklis	_	_	*->1-1	*[1]	obl	basic	1-4	
+1-3	14-17	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	1-4	
+1-4	18-20	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipii30an	*	būt	_	_	_	_	root	basic	1-4	
+1-5	21-25	savi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|Poss=Yes\|PronType=Prs	*	*	ps0mpnn	*	savs	_	_	*->1-2	*[1]	det	basic	1-6	
+1-6	26-33	likteņi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn2	*	liktenis	_	_	_	_	nsubj	basic	1-4	
+1-7	33-34	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-4	
+
+#Text=Ir ēkas, kuras kaut kādu nelaimīgu notikumu dēļ iet bojā, un mēs tās vairs nekad neieraugām.
+2-1	36-38	Ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipii30an	*	būt	_	_	_	_	root	basic	2-1	
+2-2	39-43	ēkas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	ēka	_	_	*->2-1	*[2]	nsubj	basic	2-1	
+2-3	43-44	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-10	
+2-4	45-50	kuras	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|PronType=Rel	*	*	pr0fpnn	*	kura	_	_	*->2-2	*[2]	nsubj	basic	2-10	
+2-5	51-55	kaut	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	kaut	_	_	_	_	discourse	basic	2-6	
+2-6	56-60	kādu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Ind	*	*	pi0fsan	*	kāda	_	_	_	_	det	basic	2-8	
+2-7	61-70	nelaimīgu	*	*	Gen	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpgnp	*	nelaimīgs	_	_	_	_	amod	basic	2-8	
+2-8	71-79	notikumu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	notikums	_	_	_	_	obl	basic	2-10	
+2-9	80-83	dēļ	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	stpg	*	dēļ	_	_	_	_	case	basic	2-8	
+2-10	84-87	iet	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0i1000n	*	iet	_	_	_	_	acl	basic	2-2	
+2-11	88-92	bojā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0p	*	bojā	_	_	_	_	advmod	basic	2-10	
+2-12	92-93	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-18	
+2-13	94-96	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-18	
+2-14	97-100	mēs	*	*	Nom	*	*	*	*	*	*	Plur	1	*	*	*	*	*	Case=Nom\|Number=Plur\|Person=1\|PronType=Prs	*	*	pp10pnn	*	mēs	_	_	_	_	nsubj	basic	2-18	
+2-15	101-104	tās	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur\|PronType=Dem	*	*	pd0fpan	*	tās	_	_	_	_	obj	basic	2-18	
+2-16	105-110	vairs	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	vairs	_	_	_	_	advmod	basic	2-18	
+2-17	111-116	nekad	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Int,Neg	*	*	r0t	*	nekad	_	_	_	_	advmod	basic	2-18	
+2-18	117-127	neieraugām	*	*	*	*	*	*	Ind	*	*	Plur	1	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt31pay	*	neieraudzīt	_	_	_	_	conj	basic	2-1	
+2-19	127-128	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-1	
+
+#Text=Taču ir ēkas, kurām lemts atdzimt.
+3-1	130-134	Taču	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	taču	_	_	_	_	cc	basic	3-2	
+3-2	135-137	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipii30an	*	būt	_	_	_	_	root	basic	3-2	
+3-3	138-142	ēkas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	ēka	_	_	*->3-1	*[3]	nsubj	basic	3-2	
+3-4	142-143	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-6	
+3-5	144-149	kurām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur\|PronType=Rel	*	*	pr0fpdn	*	kura	_	_	*->3-2	*[3]	iobj	basic	3-6	
+3-6	150-155	lemts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnpsnpn	*	lemt	_	_	_	_	acl	basic	3-3	
+3-7	156-163	atdzimt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0i1000n	*	atdzimt	_	_	_	_	ccomp	basic	3-6	
+3-8	163-164	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-2	
+
+#Text=Bauskā ir noticis brīnums – pilsētā ir divas šādas celtnes.
+4-1	166-172	Bauskā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Bauska	GPE	https://en.wikipedia.org/wiki/Bauska	*->4-1	*[4]	obl	basic	4-3	
+4-2	173-175	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	aux	basic	4-3	
+4-3	176-183	noticis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnasnpn	*	notikt	_	_	_	_	root	basic	4-3	
+4-4	184-191	brīnums	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	brīnums	_	_	_	_	nsubj	basic	4-3	
+4-5	192-193	–	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	–	_	_	_	_	punct	basic	4-7	
+4-6	194-201	pilsētā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	pilsēta	_	_	*->4-2	*[4]	obl	basic	4-7	
+4-7	202-204	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipii30an	*	būt	_	_	_	_	conj	basic	4-3	
+4-8	205-210	divas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|NumType=Card	*	*	mcsfpn	*	divas	_	_	_	_	nummod	basic	4-10	
+4-9	211-216	šādas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|PronType=Dem	*	*	pd0fpnn	*	šāda	_	_	_	_	det	basic	4-10	
+4-10	217-224	celtnes	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn5	*	celtne	_	_	_	_	nsubj	basic	4-7	
+4-11	224-225	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	4-3	
+
+#Text=Viena no tām ir Bauskas pils, kurai tagad pievienojies arī Rātsnams.
+5-1	227-232	Viena	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|NumType=Card	*	*	mcsfsn	*	viena	_	_	_	_	nsubj	basic	5-6	
+5-2	233-235	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	no	_	_	_	_	case	basic	5-3	
+5-3	236-239	tām	*	*	Dat	*	*	Fem	*	*	*	Plur	3	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur\|Person=3\|PronType=Dem	*	*	pd3fpdn	*	tā	_	_	_	_	nmod	basic	5-1	
+5-4	240-242	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	5-6	
+5-5	243-250	Bauskas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Bauska	location[1]|GPE[2]	https://en.wikipedia.org/wiki/Bauska\_Castle[1]|https://en.wikipedia.org/wiki/Bauska[2]	*->5-1	*[5]	nmod	basic	5-6	
+5-6	251-255	pils	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn6	*	pils	location[1]	https://en.wikipedia.org/wiki/Bauska\_Castle[1]	*->5-1	*[5]	root	basic	5-6	
+5-7	255-256	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	5-10	
+5-8	257-262	kurai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsdn	*	kura	_	_	*->5-2	*[5]	iobj	basic	5-10	
+5-9	263-268	tagad	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	*	tagad	_	_	_	_	advmod	basic	5-10	
+5-10	269-281	pievienojies	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	*	vmypdmsnasnpn	*	pievienoties	_	_	_	_	acl	basic	5-6	
+5-11	282-285	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	5-12	
+5-12	286-294	Rātsnams	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	rātsnams	location	https://en.wikipedia.org/wiki/Bauska\_Town\_Hall	_	_	nsubj	basic	5-10	
+5-13	294-295	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	5-6	
+
+#Text=Ar atjaunoto Rātsnamu Bauska ir atgriezusies Eiropā,» sacīja I. Lancmanis.
+6-1	297-299	Ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	6-3	
+6-2	300-309	atjaunoto	*	Perf	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsapsypn	*	atjaunot	_	_	_	_	amod	basic	6-3	
+6-3	310-318	Rātsnamu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	rātsnams	location	https://en.wikipedia.org/wiki/Bauska\_Town\_Hall	_	_	nsubj	basic	6-6	
+6-4	319-325	Bauska	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Bauska	GPE	https://en.wikipedia.org/wiki/Bauska	*->4-3	*[4]	nsubj	basic	6-6	
+6-5	326-328	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	aux	basic	6-6	
+6-6	329-341	atgriezusies	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	*	vmypdfsnasnpn	*	atgriezties	_	_	_	_	parataxis	basic	6-10	
+6-7	342-348	Eiropā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Eiropa	location	https://en.wikipedia.org/wiki/Bauska	_	_	obl	basic	6-6	
+6-8	348-349	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	6-6	
+6-9	349-350	»	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	»	_	_	_	_	punct	basic	6-6	
+6-10	351-357	sacīja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist330an	*	sacīt	_	_	_	_	root	basic	6-10	
+6-11	358-360	I.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	I.	person[3]	https://en.wikipedia.org/wiki/Imants\_Lancmanis[3]	_	_	nsubj	basic	6-10	
+6-12	361-370	Lancmanis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	*	Lancmanis	person[3]	https://en.wikipedia.org/wiki/Imants\_Lancmanis[3]	_	_	flat:name	basic	6-11	
+6-13	370-371	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	6-10	

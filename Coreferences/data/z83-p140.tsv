@@ -1,0 +1,207 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Vistiešāk tomēr A. Hermanis uz tradīciju atsaucas Pīķa dāmā, kurā titullomu atveido Latvijas teātra primadonna Vija Artmane.
+1-1	0-9	Vistiešāk	*	*	*	*	Sup	*	*	*	*	*	*	*	*	*	*	*	Degree=Sup	*	*	rsm	*	tieši	_	_	_	_	advmod	basic	1-7	
+1-2	10-15	tomēr	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tomēr	_	_	_	_	discourse	basic	1-7	
+1-3	16-18	A.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	A.	person[1]	https://en.wikipedia.org/wiki/Alvis\_Hermanis[1]	_	_	nsubj	basic	1-7	
+1-4	19-27	Hermanis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	*	Hermanis	person[1]	https://en.wikipedia.org/wiki/Alvis\_Hermanis[1]	_	_	flat:name	basic	1-3	
+1-5	28-30	uz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	uz	_	_	_	_	case	basic	1-6	
+1-6	31-40	tradīciju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	tradīcija	_	_	_	_	iobj	basic	1-7	
+1-7	41-49	atsaucas	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmyipi130an	*	atsaukties	_	_	_	_	root	basic	1-7	
+1-8	50-54	Pīķa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	*	pīķis	product[2]	https://en.wikipedia.org/wiki/The\_Queen\_of\_Spades\_(story)[2]	*->4-1	*[4]	nmod	basic	1-9	
+1-9	55-59	dāmā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	dāma	product[2]	https://en.wikipedia.org/wiki/The\_Queen\_of\_Spades\_(story)[2]	*->4-1	*[4]	obl	basic	1-7	
+1-10	59-60	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-13	
+1-11	61-65	kurā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msln	*	kurš	_	_	*->4-2	*[4]	obl	basic	1-13	
+1-12	66-75	titullomu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	titulloma	_	_	_	_	obj	basic	1-13	
+1-13	76-83	atveido	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt230an	*	atveidot	_	_	_	_	acl	basic	1-9	
+1-14	84-92	Latvijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	*->1-1	*[1]	nmod	basic	1-15	
+1-15	93-99	teātra	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	*	teātris	_	_	*->1-1	*[1]	nmod	basic	1-16	
+1-16	100-110	primadonna	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	primadonna	_	_	*->1-1	*[1]	nmod	basic	1-17	
+1-17	111-115	Vija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Vija	person[3]	https://en.wikipedia.org/wiki/Vija\_Artmane[3]	*->1-2	*[1]	nsubj	basic	1-13	
+1-18	116-123	Artmane	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	*	Artmane	person[3]	https://en.wikipedia.org/wiki/Vija\_Artmane[3]	*->1-2	*[1]	flat:name	basic	1-17	
+1-19	123-124	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-7	
+
+#Text=Izrādei ir objektīva nozīme latviešu teātra estētiskās pieredzes bagātināšanā – A. Hermanis inovatīvi izmanto atmosfēru, ko rada ar nereālistisku gaismu, baznīcas dziedājumu, intonāciju un kustību (tai skaitā tiešu un stilizētu kabuki pozu un kustību) palīdzību.
+2-1	126-133	Izrādei	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd5	*	izrāde	_	_	*->4-3	*[4]	obl	basic	2-2	
+2-2	134-136	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipii30an	*	būt	_	_	_	_	root	basic	2-2	
+2-3	137-146	objektīva	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	*	objektīva	_	_	_	_	amod	basic	2-4	
+2-4	147-153	nozīme	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	nozīme	_	_	_	_	nsubj	basic	2-2	
+2-5	154-162	latviešu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	latvietis	_	_	_	_	nmod	basic	2-6	
+2-6	163-169	teātra	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	*	teātris	_	_	_	_	nmod	basic	2-8	
+2-7	170-180	estētiskās	*	*	Gen	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsgyp	*	estētiska	_	_	_	_	amod	basic	2-8	
+2-8	181-190	pieredzes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	pieredze	_	_	_	_	nmod	basic	2-9	
+2-9	191-203	bagātināšanā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	bagātināšana	_	_	_	_	acl	basic	2-4	
+2-10	204-205	–	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	–	_	_	_	_	punct	basic	2-14	
+2-11	206-208	A.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	A.	person[4]	*[4]	_	_	nsubj	basic	2-14	
+2-12	209-217	Hermanis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	*	Hermanis	person[4]	*[4]	_	_	flat:name	basic	2-11	
+2-13	218-227	inovatīvi	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	inovatīvi	_	_	_	_	advmod	basic	2-14	
+2-14	228-235	izmanto	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt230an	*	izmantot	_	_	_	_	conj	basic	2-2	
+2-15	236-245	atmosfēru	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	atmosfēra	_	_	*->2-1	*[2]	obj	basic	2-14	
+2-16	245-246	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-18	
+2-17	247-249	ko	*	*	Acc	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Acc\|PronType=Rel	*	*	pr000an	*	kas	_	_	*->2-2	*[2]	obj	basic	2-18	
+2-18	250-254	rada	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	radīt	_	_	_	_	acl	basic	2-15	
+2-19	255-257	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	_	_	case	basic	2-40	
+2-20	258-271	nereālistisku	*	*	Gen	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	arfpgnp	*	nereālistiska	_	_	_	_	amod	basic	2-21	
+2-21	272-278	gaismu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	gaisma	_	_	_	_	nmod	basic	2-40	
+2-22	278-279	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-24	
+2-23	280-288	baznīcas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	baznīca	_	_	_	_	nmod	basic	2-24	
+2-24	289-299	dziedājumu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	dziedājums	_	_	_	_	conj	basic	2-21	
+2-25	299-300	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-26	
+2-26	301-311	intonāciju	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	intonācija	_	_	_	_	conj	basic	2-21	
+2-27	312-314	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-28	
+2-28	315-322	kustību	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	kustība	_	_	_	_	conj	basic	2-21	
+2-29	323-324	(	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	(	_	_	_	_	punct	basic	2-36	
+2-30	324-327	tai	*	*	Loc	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msln	*	tas	_	_	_	_	det	basic	2-31	
+2-31	328-334	skaitā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	skaits	_	_	_	_	discourse	basic	2-36	
+2-32	335-340	tiešu	*	*	Gen	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpgnp	*	tieša	_	_	_	_	amod	basic	2-36	
+2-33	341-343	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-34	
+2-34	344-353	stilizētu	*	Perf	Gen	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Gen\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfpgpsnpn	*	stilizēt	_	_	_	_	conj	basic	2-32	
+2-35	354-360	kabuki	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	nc0000	*	kabuki	_	_	_	_	nmod	basic	2-36	
+2-36	361-365	pozu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	poza	_	_	_	_	discourse	basic	2-21	
+2-37	366-368	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-38	
+2-38	369-376	kustību	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	kustība	_	_	_	_	conj	basic	2-36	
+2-39	376-377	)	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	)	_	_	_	_	punct	basic	2-36	
+2-40	378-387	palīdzību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	palīdzība	_	_	_	_	iobj	basic	2-18	
+2-41	387-388	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-2	
+
+#Text=Savukārt tukšā skatuve eksistē kā audekls, kurā no nekurienes iznirst V. Daudziņa Hermaņa iedomātas lietas un parādības – varonim tā ir subjektīva, atmiņu telpa, vienlaikus tā ir arī teātra kā mākslas veida zīme.
+3-1	390-398	Savukārt	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	savukārt	_	_	_	_	advmod	basic	3-4	
+3-2	399-404	tukšā	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnyp	*	tukša	_	_	_	_	amod	basic	3-3	
+3-3	405-412	skatuve	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	skatuve	_	_	*->5-1	*[5]	nsubj	basic	3-4	
+3-4	413-420	eksistē	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipi230an	*	eksistēt	_	_	_	_	root	basic	3-4	
+3-5	421-423	kā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	kā	_	_	_	_	case	basic	3-6	
+3-6	424-431	audekls	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	audekls	_	_	*->3-1	*[3]	obl	basic	3-4	
+3-7	431-432	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-11	
+3-8	433-437	kurā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsln	*	kura	_	_	*->3-2	*[3]	obl	basic	3-11	
+3-9	438-440	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	no	_	_	_	_	case	basic	3-10	
+3-10	441-451	nekurienes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|PronType=Neg	*	*	ncfsg5	*	nekuriene	_	_	_	_	obl	basic	3-11	
+3-11	452-459	iznirst	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipi130an	*	iznirt	_	_	_	_	acl	basic	3-6	
+3-12	460-462	V.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	V.	person[5]	https://en.wikipedia.org/wiki/Vilis\_Daudziņš[5]	_	_	nmod	basic	3-14	
+3-13	463-471	Daudziņa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Daudziņš	person[5]	https://en.wikipedia.org/wiki/Vilis\_Daudziņš[5]	_	_	flat:name	basic	3-12	
+3-14	472-479	Hermaņa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg2	*	Hermanis	person	*	_	_	obl	basic	3-15	
+3-15	480-489	iedomātas	*	Perf	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfpnpsnpn	*	iedomāt	_	_	_	_	amod	basic	3-16	
+3-16	490-496	lietas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	lieta	_	_	_	_	nsubj	basic	3-11	
+3-17	497-499	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	3-18	
+3-18	500-509	parādības	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	parādība	_	_	_	_	conj	basic	3-16	
+3-19	510-511	–	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	–	_	_	_	_	punct	basic	3-26	
+3-20	512-519	varonim	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd2	*	varonis	_	_	_	_	obl	basic	3-26	
+3-21	520-522	tā	*	*	Nom	*	*	Fem	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3fsnn	*	tā	_	_	_	_	nsubj	basic	3-26	
+3-22	523-525	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	3-26	
+3-23	526-536	subjektīva	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsnnp	*	subjektīva	_	_	_	_	amod	basic	3-26	
+3-24	536-537	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-25	
+3-25	538-544	atmiņu	*	*	Gen	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Ptan	*	*	ncfdg4	*	atmiņas	_	_	_	_	conj	basic	3-23	
+3-26	545-550	telpa	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	telpa	_	_	_	_	conj	basic	3-4	
+3-27	550-551	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-36	
+3-28	552-562	vienlaikus	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	vienlaikus	_	_	_	_	advmod	basic	3-36	
+3-29	563-565	tā	*	*	Nom	*	*	Fem	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3fsnn	*	tā	_	_	*->5-2	*[5]	nsubj	basic	3-36	
+3-30	566-568	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	3-36	
+3-31	569-572	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	3-36	
+3-32	573-579	teātra	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	*	teātris	_	_	_	_	nmod	basic	3-36	
+3-33	580-582	kā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	kā	_	_	_	_	case	basic	3-35	
+3-34	583-590	mākslas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	māksla	_	_	_	_	nmod	basic	3-35	
+3-35	591-596	veida	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	veids	_	_	_	_	nmod	basic	3-32	
+3-36	597-601	zīme	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	zīme	_	_	_	_	conj	basic	3-4	
+3-37	601-602	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-4	
+
+#Text=V. Čakare uzsver arī, ka Pīķa dāma ir pirmā izrāde, kurā A. Hermanis dramatizējumā atstāj trešās personas tekstu, tādējādi, viņasprāt, šis ir nozīmīgs tilts uz 2004.gadā veidoto Latviešu stāstu projektu (Čakare 2006c, 465).
+4-1	604-606	V.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	V.	person[6]	https://lv.wikipedia.org/wiki/Valda\_Čakare[6]	*->7-1	*[7]	nsubj	basic	4-3	
+4-2	607-613	Čakare	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	*	Čakare	person[6]	https://lv.wikipedia.org/wiki/Valda\_Čakare[6]	*->7-1	*[7]	flat:name	basic	4-1	
+4-3	614-620	uzsver	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt130an	*	uzsvērt	_	_	_	_	root	basic	4-3	
+4-4	621-624	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	4-3	
+4-5	624-625	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-11	
+4-6	626-628	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	4-11	
+4-7	629-633	Pīķa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	*	pīķis	product[7]	*[7]	*->4-4	nam[4]	nmod	basic	4-8	
+4-8	634-638	dāma	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	dāma	product[7]	*[7]	*->4-4	nam[4]	nsubj	basic	4-11	
+4-9	639-641	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	4-11	
+4-10	642-647	pirmā	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|NumType=Ord	*	*	mosfsn	*	pirmā	_	_	_	_	amod	basic	4-11	
+4-11	648-654	izrāde	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	izrāde	_	_	*->4-5|*->6-1	*[4]|*[6]	ccomp	basic	4-3	
+4-12	654-655	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-17	
+4-13	656-660	kurā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsln	*	kura	_	_	*->4-6	*[4]	obl	basic	4-17	
+4-14	661-663	A.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	A.	person[8]	*[8]	_	_	nsubj	basic	4-17	
+4-15	664-672	Hermanis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	*	Hermanis	person[8]	*[8]	_	_	flat:name	basic	4-14	
+4-16	673-686	dramatizējumā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	dramatizējums	_	_	_	_	obl	basic	4-17	
+4-17	687-693	atstāj	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt130an	*	atstāt	_	_	_	_	acl	basic	4-11	
+4-18	694-700	trešās	*	*	Gen	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|NumType=Ord	*	*	mosfsg	*	trešā	_	_	_	_	amod	basic	4-20	
+4-19	701-709	personas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	persona	_	_	_	_	nmod	basic	4-20	
+4-20	710-716	tekstu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	teksts	_	_	_	_	obj	basic	4-17	
+4-21	716-717	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-17	
+4-22	718-726	tādējādi	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	tādējādi	_	_	_	_	advmod	basic	4-29	
+4-23	726-727	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-24	
+4-24	728-737	viņasprāt	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	viņasprāt	_	_	*->7-2	*[7]	discourse	basic	4-29	
+4-25	737-738	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-24	
+4-26	739-742	šis	*	*	Nom	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msnn	*	šis	_	_	_	_	nsubj	basic	4-29	
+4-27	743-745	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	4-29	
+4-28	746-754	nozīmīgs	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	nozīmīgs	_	_	_	_	amod	basic	4-29	
+4-29	755-760	tilts	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	tilts	_	_	_	_	conj	basic	4-3	
+4-30	761-763	uz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	uz	_	_	_	_	case	basic	4-36	
+4-31	764-769	2004.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	2004.	time[9]	*[9]	_	_	amod	basic	4-32	
+4-32	769-773	gadā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	gads	time[9]	*[9]	_	_	obl	basic	4-33	
+4-33	774-781	veidoto	*	Perf	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsapsypn	*	veidot	_	_	_	_	amod	basic	4-36	
+4-34	782-790	Latviešu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	latvietis	product[10]	*[10]	_	_	nmod	basic	4-35	
+4-35	791-797	stāstu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	stāsts	product[10]	*[10]	_	_	nmod	basic	4-36	
+4-36	798-806	projektu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	projekts	_	_	_	_	nmod	basic	4-29	
+4-37	807-808	(	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	(	_	_	_	_	punct	basic	4-38	
+4-38	808-814	Čakare	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	*	Čakare	person	*	*->7-3	*[7]	discourse	basic	4-3	
+4-39	815-820	2006c	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	xx	*	2006c	_	_	_	_	acl	basic	4-38	
+4-40	820-821	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-41	
+4-41	822-825	465	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	465	_	_	_	_	acl	basic	4-38	
+4-42	825-826	)	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	)	_	_	_	_	punct	basic	4-38	
+4-43	826-827	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	4-3	
+
+#Text=Estētiskā ziņā Pīķa dāma ir postmoderna izrāde, kā arī pieder pie A. Hermaņa asprātīgākajiem darbiem.
+5-1	829-838	Estētiskā	*	*	Loc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affslnp	*	estētiska	_	_	_	_	amod	basic	5-2	
+5-2	839-843	ziņā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	ziņa	_	_	_	_	obl	basic	5-7	
+5-3	844-848	Pīķa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	*	pīķis	product[11]	*[11]	*->4-7	*[4]	nmod	basic	5-4	
+5-4	849-853	dāma	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	dāma	product[11]	*[11]	*->4-7	*[4]	nsubj	basic	5-7	
+5-5	854-856	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	product[11]	*[11]	_	_	cop	basic	5-7	
+5-6	857-868	postmoderna	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsnnp	*	postmoderna	_	_	_	_	amod	basic	5-7	
+5-7	869-875	izrāde	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	izrāde	_	_	_	_	root	basic	5-7	
+5-8	875-876	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	5-11	
+5-9	877-879	kā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	kā	_	_	_	_	cc	basic	5-11	
+5-10	880-883	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	5-9	
+5-11	884-890	pieder	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipi330an	*	piederēt	_	_	_	_	conj	basic	5-7	
+5-12	891-894	pie	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	pie	_	_	_	_	case	basic	5-16	
+5-13	895-897	A.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	A.	person[12]	*[12]	_	_	nmod	basic	5-16	
+5-14	898-905	Hermaņa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg2	*	Hermanis	person[12]	*[12]	_	_	flat:name	basic	5-13	
+5-15	906-921	asprātīgākajiem	*	*	Dat	*	Cmp	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Degree=Cmp\|Gender=Masc\|Number=Plur	*	*	afmpdyc	*	asprātīgs	_	_	_	_	amod	basic	5-16	
+5-16	922-929	darbiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	darbs	_	_	_	_	obl	basic	5-11	
+5-17	929-930	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	5-7	
+
+#Text=Bet arī šajā gadījumā recepcijā vērojams paradoksāls process – izrādi skatītājs neuztver vis kā pašvērtību, mākslas darbu par sevi, bet gan kā primāri sociālu vai kultūrvēsturisku zīmi.
+6-1	932-935	Bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	_	_	cc	basic	6-6	
+6-2	936-939	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	6-4	
+6-3	940-944	šajā	*	*	Loc	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msln	*	šis	_	_	_	_	det	basic	6-4	
+6-4	945-953	gadījumā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	gadījums	_	_	_	_	obl	basic	6-6	
+6-5	954-963	recepcijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	recepcija	_	_	_	_	obl	basic	6-6	
+6-6	964-972	vērojams	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Pres	*	Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdmsnppnpn	*	vērot	_	_	_	_	root	basic	6-6	
+6-7	973-984	paradoksāls	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsnnp	*	paradoksāls	_	_	_	_	amod	basic	6-8	
+6-8	985-992	process	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	process	_	_	_	_	nsubj	basic	6-6	
+6-9	993-994	–	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	–	_	_	_	_	punct	basic	6-12	
+6-10	995-1001	izrādi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	izrāde	_	_	_	_	obj	basic	6-12	
+6-11	1002-1011	skatītājs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	skatītājs	_	_	_	_	nsubj	basic	6-12	
+6-12	1012-1020	neuztver	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt130ay	*	neuztvert	_	_	_	_	conj	basic	6-6	
+6-13	1021-1024	vis	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	vis	_	_	_	_	discourse	basic	6-12	
+6-14	1025-1027	kā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	kā	_	_	_	_	case	basic	6-15	
+6-15	1028-1038	pašvērtību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	pašvērtība	_	_	_	_	acl	basic	6-12	
+6-16	1038-1039	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	6-18	
+6-17	1040-1047	mākslas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	māksla	_	_	_	_	nmod	basic	6-18	
+6-18	1048-1053	darbu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	darbs	_	_	_	_	conj	basic	6-15	
+6-19	1054-1057	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	6-20	
+6-20	1058-1062	sevi	*	*	Acc	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Acc\|PronType=Rcp\|Reflex=Yes	*	*	px000an	*	sevis	_	_	_	_	nmod	basic	6-18	
+6-21	1062-1063	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	6-29	
+6-22	1064-1067	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	_	_	cc	basic	6-29	
+6-23	1068-1071	gan	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	gan	_	_	_	_	discourse	basic	6-22	
+6-24	1072-1074	kā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	kā	_	_	_	_	case	basic	6-29	
+6-25	1075-1082	primāri	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	primāri	_	_	_	_	advmod	basic	6-26	
+6-26	1083-1090	sociālu	*	*	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsanp	*	sociāls	_	_	_	_	amod	basic	6-29	
+6-27	1091-1094	vai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	vai	_	_	_	_	cc	basic	6-28	
+6-28	1095-1111	kultūrvēsturisku	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsanp	*	kultūrvēsturiska	_	_	_	_	conj	basic	6-26	
+6-29	1112-1116	zīmi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	zīme	_	_	_	_	conj	basic	6-15	
+6-30	1116-1117	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	6-6	

@@ -1,0 +1,60 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Te vienu dienu, braucot ar rolleri, man ieskanējās viena melodija, to es pierakstīju.
+1-1	0-2	Te	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	te	_	_	_	_	discourse	basic	1-10	
+1-2	3-8	vienu	*	*	Acc	*	*	Fem	*	*	Card	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|NumType=Card	*	*	mcsfsa	*	viena	time[1]	*[1]	_	_	nummod	basic	1-3	
+1-3	9-14	dienu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	diena	time[1]	*[1]	_	_	obl	basic	1-10	
+1-4	14-15	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-5	
+1-5	16-23	braucot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	Conv	*	vmnpu0000000n	*	braukt	_	_	_	_	advcl	basic	1-10	
+1-6	24-26	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	1-7	
+1-7	27-34	rolleri	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	*	rolleris	_	_	_	_	iobj	basic	1-5	
+1-8	34-35	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-5	
+1-9	36-39	man	*	*	Dat	*	*	*	*	*	*	Sing	1	*	Prs	*	*	*	Case=Dat\|Number=Sing\|Person=1\|PronType=Prs	*	*	pp10sdn	*	es	_	_	*->2-1	*[2]	obl	basic	1-10	
+1-10	40-50	ieskanējās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyisi330an	*	ieskanēties	_	_	_	_	root	basic	1-10	
+1-11	51-56	viena	*	*	Nom	*	*	Fem	*	*	Card	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|NumType=Card	*	*	mcsfsn	*	viena	_	_	_	_	nummod	basic	1-12	
+1-12	57-65	melodija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	melodija	_	_	*->1-1	*[1]	nsubj	basic	1-10	
+1-13	65-66	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-16	
+1-14	67-69	to	*	*	Acc	*	*	Fem	*	*	*	Sing	3	*	Dem	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3fsan	*	tā	_	_	*->1-2	*[1]	obj	basic	1-16	
+1-15	70-72	es	*	*	Nom	*	*	*	*	*	*	Sing	1	*	Prs	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	*	*	pp10snn	*	es	_	_	*->2-2	*[2]	nsubj	basic	1-16	
+1-16	73-84	pierakstīju	*	*	*	*	*	*	Ind	*	*	Sing	1	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist31san	*	pierakstīt	_	_	_	_	conj	basic	1-10	
+1-17	84-85	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-10	
+
+#Text=Patiesībā tā vēlme komponēt man būtu, tikai vienmēr apstājos pie tā, ka šo muzikālo frāzi es jau esmu kaut kur dzirdējis, šis intervāls ir pārāk bieži izmantots utt.
+2-1	86-95	Patiesībā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	patiesība	_	_	_	_	obl	basic	2-6	
+2-2	96-98	tā	*	*	Nom	*	*	Fem	*	*	*	Sing	3	*	Dem	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3fsnn	*	tā	_	_	_	_	det	basic	2-3	
+2-3	99-104	vēlme	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	vēlme	_	_	_	_	nsubj	basic	2-6	
+2-4	105-113	komponēt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t2000n	*	komponēt	_	_	_	_	acl	basic	2-3	
+2-5	114-117	man	*	*	Dat	*	*	*	*	*	*	Sing	1	*	Prs	*	*	*	Case=Dat\|Number=Sing\|Person=1\|PronType=Prs	*	*	pp10sdn	*	es	_	_	*->2-3	*[2]	obl	basic	2-6	
+2-6	118-122	būtu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnc0ii00an	*	būt	_	_	_	_	root	basic	2-6	
+2-7	122-123	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-10	
+2-8	124-129	tikai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tikai	_	_	_	_	discourse	basic	2-10	
+2-9	130-137	vienmēr	*	*	*	*	*	*	*	*	*	*	*	*	Tot	*	*	*	PronType=Tot	*	*	r0t	*	vienmēr	_	_	_	_	advmod	basic	2-10	
+2-10	138-146	apstājos	*	*	*	*	*	*	Ind	*	*	Sing	1	*	*	Yes	Past	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyisi11san	*	apstāties	_	_	_	_	conj	basic	2-6	
+2-11	147-150	pie	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pie	_	_	_	_	case	basic	2-12	
+2-12	151-153	tā	*	*	Gen	*	*	Masc	*	*	*	Sing	3	*	Dem	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msgn	*	tas	_	_	_	_	obl	basic	2-10	
+2-13	153-154	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-23	
+2-14	155-157	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	2-23	
+2-15	158-160	šo	*	*	Acc	*	*	Masc	*	*	*	Sing	3	*	Dem	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msan	*	šis	_	_	_	_	det	basic	2-17	
+2-16	161-169	muzikālo	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsayp	*	muzikāls	_	_	_	_	amod	basic	2-17	
+2-17	170-175	frāzi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	frāze	_	_	_	_	obj	basic	2-23	
+2-18	176-178	es	*	*	Nom	*	*	*	*	*	*	Sing	1	*	Prs	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	*	*	pp10snn	*	es	_	_	*->2-4	*[2]	nsubj	basic	2-23	
+2-19	179-182	jau	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	jau	_	_	_	_	advmod	basic	2-23	
+2-20	183-187	esmu	*	*	*	*	*	*	Ind	*	*	Sing	1	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii1san	*	būt	_	_	_	_	aux	basic	2-23	
+2-21	188-192	kaut	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	kaut	_	_	_	_	discourse	basic	2-22	
+2-22	193-196	kur	*	*	*	*	*	*	*	*	*	*	*	*	Ind	*	*	*	PronType=Ind	*	*	r0p	*	kur	_	_	_	_	advmod	basic	2-23	
+2-23	197-206	dzirdējis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdmsnasnpn	*	dzirdēt	_	_	_	_	advcl	basic	2-12	
+2-24	206-207	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-30	
+2-25	208-211	šis	*	*	Nom	*	*	Masc	*	*	*	Sing	3	*	Dem	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msnn	*	šis	_	_	_	_	det	basic	2-26	
+2-26	212-221	intervāls	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	intervāls	_	_	_	_	nsubj:pass	basic	2-30	
+2-27	222-224	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	_	_	aux:pass	basic	2-30	
+2-28	225-230	pārāk	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	pārāk	_	_	_	_	advmod	basic	2-29	
+2-29	231-236	bieži	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpt	*	bieži	_	_	_	_	advmod	basic	2-30	
+2-30	237-246	izmantots	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsnpsnpn	*	izmantot	_	_	_	_	conj	basic	2-23	
+2-31	247-251	utt.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yd	*	utt.	_	_	_	_	conj	basic	2-23	

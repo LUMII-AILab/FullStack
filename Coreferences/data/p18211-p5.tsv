@@ -1,0 +1,50 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Slavenska biogrāfijā lielākoties aprakstīta Selindžera dzīve pirms "Catcher in the Rye" iznākšanas 1951.gadā, kad rakstnieks bija 32 gadus vecs.
+1-1	0-9	Slavenska	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg2	*	Slavenskis	person	*	_	_	nmod	basic	1-2	
+1-2	10-20	biogrāfijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	biogrāfija	_	_	_	_	obl	basic	1-4	
+1-3	21-32	lielākoties	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	lielākoties	_	_	_	_	advmod	basic	1-4	
+1-4	33-43	aprakstīta	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdfsnpsnpn	*	aprakstīt	_	_	_	_	root	basic	1-4	
+1-5	44-54	Selindžera	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Selindžers	person	https://en.wikipedia.org/wiki/J.\_D.\_Salinger	*->1-1	*[1]	nmod	basic	1-6	
+1-6	55-60	dzīve	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	dzīve	_	_	_	_	nsubj:pass	basic	1-4	
+1-7	61-66	pirms	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pirms	_	_	_	_	case	basic	1-14	
+1-8	67-68	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	product[1]	https://en.wikipedia.org/wiki/The\_Catcher\_in\_the\_Rye[1]	_	_	punct	basic	1-9	
+1-9	68-75	Catcher	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Catcher	product[1]	https://en.wikipedia.org/wiki/The\_Catcher\_in\_the\_Rye[1]	_	_	nmod	basic	1-14	
+1-10	76-78	in	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	in	product[1]	https://en.wikipedia.org/wiki/The\_Catcher\_in\_the\_Rye[1]	_	_	flat:name	basic	1-9	
+1-11	79-82	the	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	the	product[1]	https://en.wikipedia.org/wiki/The\_Catcher\_in\_the\_Rye[1]	_	_	flat:name	basic	1-9	
+1-12	83-86	Rye	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Rye	product[1]	https://en.wikipedia.org/wiki/The\_Catcher\_in\_the\_Rye[1]	_	_	flat:name	basic	1-9	
+1-13	86-87	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	product[1]	https://en.wikipedia.org/wiki/The\_Catcher\_in\_the\_Rye[1]	_	_	punct	basic	1-9	
+1-14	88-98	iznākšanas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	iznākšana	_	_	_	_	nmod	basic	1-6	
+1-15	99-104	1951.	*	*	*	*	*	*	*	*	Ord	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	1951.	time[2]	*[2]	*->2-1	*[2]	amod	basic	1-16	
+1-16	104-108	gadā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	gads	time[2]	*[2]	*->2-1	*[2]	obl	basic	1-14	
+1-17	108-109	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-23	
+1-18	110-113	kad	*	*	*	*	*	*	*	*	*	*	*	*	Int	*	*	*	PronType=Int	*	*	r0t	*	kad	_	_	*->2-2	*[2]	advmod	basic	1-23	
+1-19	114-124	rakstnieks	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	rakstnieks	_	_	*->1-2	*[1]	nsubj	basic	1-23	
+1-20	125-129	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnisii30an	*	būt	_	_	_	_	cop	basic	1-23	
+1-21	130-132	32	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	32	_	_	_	_	nummod	basic	1-22	
+1-22	133-138	gadus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	gads	_	_	_	_	obl	basic	1-23	
+1-23	139-143	vecs	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	vecs	_	_	_	_	advcl	basic	1-16	
+1-24	143-144	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-4	
+
+#Text=Pēc tam Selindžers uzsāka noslēgtu dzīvi, vairoties no slavas un mediju uzmanības.
+2-1	145-148	Pēc	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	pēc	_	_	_	_	case	basic	2-2	
+2-2	149-152	tam	*	*	Dat	*	*	Masc	*	*	*	Sing	3	*	Dem	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msdn	*	tas	_	_	_	_	acl	basic	2-4	
+2-3	153-163	Selindžers	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Selindžers	person	https://en.wikipedia.org/wiki/J.\_D.\_Salinger	*->1-3	*[1]	nsubj	basic	2-4	
+2-4	164-170	uzsāka	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist130an	*	uzsākt	_	_	_	_	root	basic	2-4	
+2-5	171-179	noslēgtu	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsanp	*	noslēgts	_	_	_	_	amod	basic	2-6	
+2-6	180-185	dzīvi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	dzīve	_	_	_	_	obj	basic	2-4	
+2-7	185-186	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-8	
+2-8	187-196	vairoties	*	*	*	*	*	*	*	*	*	*	*	*	*	Yes	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Conv	Conv	*	vmypu0000000n	*	vairīties	_	_	_	_	advcl	basic	2-4	
+2-9	197-199	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case	basic	2-10	
+2-10	200-206	slavas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	slava	_	_	_	_	iobj	basic	2-8	
+2-11	207-209	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-13	
+2-12	210-216	mediju	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	medijs	_	_	_	_	nmod	basic	2-13	
+2-13	217-226	uzmanības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	uzmanība	_	_	_	_	conj	basic	2-10	
+2-14	226-227	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-4	

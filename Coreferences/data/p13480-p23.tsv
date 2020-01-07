@@ -1,0 +1,128 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Kā nekļūdīties medus iegādē?
+1-1	0-2	Kā	*	*	*	*	*	*	*	*	*	*	*	*	Int	*	*	*	PronType=Int	*	*	r0m	*	kā	_	_	advmod	basic	1-2	
+1-2	3-14	nekļūdīties	*	*	*	*	*	*	*	*	*	*	*	*	*	Yes	*	*	Polarity=Neg\|Reflex=Yes\|VerbForm=Inf	Inf	*	vmyn0i3000y	*	kļūdīties	_	_	root	basic	1-2	
+1-3	15-20	medus	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg3	*	medus	*->1-1	*[1]	nmod	basic	1-4	
+1-4	21-27	iegādē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	*	iegāde	_	_	acl	basic	1-2	
+1-5	27-28	?	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	?	_	_	punct	basic	1-2	
+
+#Text=Lai medum netiktu klāt nevajadzīgs mitrums, nepietiek ar pareizu uzglabāšanu – vispirms tas dravniekam pareizi un godīgi jāiegūst.
+2-1	29-32	Lai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	lai	_	_	mark	basic	2-3	
+2-2	33-38	medum	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd3	*	medus	*->1-2	*[1]	iobj	basic	2-3	
+2-3	39-46	netiktu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Neg\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnc0i100ay	*	tikt	_	_	advcl	basic	2-8	
+2-4	47-51	klāt	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0p	*	klāt	_	_	advmod	basic	2-3	
+2-5	52-63	nevajadzīgs	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	nevajadzīgs	_	_	amod	basic	2-6	
+2-6	64-71	mitrums	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	mitrums	_	_	nsubj	basic	2-3	
+2-7	71-72	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	2-3	
+2-8	73-82	nepietiek	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipi130ay	*	pietikt	_	_	root	basic	2-8	
+2-9	83-85	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	case	basic	2-11	
+2-10	86-93	pareizu	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsanp	*	pareizs	_	_	amod	basic	2-11	
+2-11	94-105	uzglabāšanu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	uzglabāšana	_	_	iobj	basic	2-8	
+2-12	106-107	–	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	–	_	_	punct	basic	2-19	
+2-13	108-116	vispirms	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	vispirms	_	_	advmod	basic	2-19	
+2-14	117-120	tas	*	*	Nom	*	*	Masc	*	*	*	Sing	3	*	Dem	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msnn	*	tas	*->1-3	*[1]	obj	basic	2-19	
+2-15	121-131	dravniekam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	dravnieks	_	_	nsubj	basic	2-19	
+2-16	132-139	pareizi	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	pareizi	_	_	advmod	basic	2-19	
+2-17	140-142	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	cc	basic	2-18	
+2-18	143-149	godīgi	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	godīgi	_	_	conj	basic	2-16	
+2-19	150-158	jāiegūst	*	*	*	*	*	*	Nec	*	*	*	*	*	*	*	*	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnd0t100an	*	iegūt	_	_	conj	basic	2-8	
+2-20	158-159	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	2-8	
+
+#Text=Kamēr medus ir iepildīts šūnās, tajā notiek ne tikai fermentācijas procesi, bet arī izgaro liekais ūdens.
+3-1	160-165	Kamēr	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	kamēr	_	_	mark	basic	3-4	
+3-2	166-171	medus	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn3	*	medus	*->1-4	*[1]	nsubj:pass	basic	3-4	
+3-3	172-174	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	aux:pass	basic	3-4	
+3-4	175-184	iepildīts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsnpsnpn	*	iepildīt	_	_	advcl	basic	3-8	
+3-5	185-190	šūnās	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	*	šūna	_	_	obl	basic	3-4	
+3-6	190-191	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	3-4	
+3-7	192-196	tajā	*	*	Loc	*	*	Fem	*	*	*	Sing	3	*	Dem	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3fsln	*	tā	*->1-5	*[1]	obl	basic	3-8	
+3-8	197-203	notiek	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipi130an	*	notikt	_	_	root	basic	3-8	
+3-9	204-206	ne	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Neg	*	*	cc	*	ne	_	_	cc	basic	3-8	
+3-10	207-212	tikai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	tikai	_	_	fixed	basic	3-9	
+3-11	213-226	fermentācijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	fermentācija	_	_	nmod	basic	3-12	
+3-12	227-234	procesi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	process	_	_	nsubj	basic	3-8	
+3-13	234-235	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	3-16	
+3-14	236-239	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	cc	basic	3-16	
+3-15	240-243	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	arī	_	_	fixed	basic	3-14	
+3-16	244-250	izgaro	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipi230an	*	izgarot	_	_	conj	basic	3-8	
+3-17	251-258	liekais	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnyp	*	lieks	_	_	amod	basic	3-18	
+3-18	259-264	ūdens	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	ūdens	_	_	nsubj	basic	3-16	
+3-19	264-265	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	3-8	
+
+#Text=Tiklīdz mitruma līmenis ir optimāls, bites aizvāko šūnas.
+4-1	266-273	Tiklīdz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	tiklīdz	_	_	mark	basic	4-5	
+4-2	274-281	mitruma	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	mitrums	_	_	nmod	basic	4-3	
+4-3	282-289	līmenis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	līmenis	_	_	nsubj	basic	4-5	
+4-4	290-292	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	cop	basic	4-5	
+4-5	293-301	optimāls	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	optimāls	_	_	advcl	basic	4-8	
+4-6	301-302	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	4-5	
+4-7	303-308	bites	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn5	*	bite	_	_	nsubj	basic	4-8	
+4-8	309-316	aizvāko	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt230an	*	aizvākot	_	_	root	basic	4-8	
+4-9	317-322	šūnas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	šūna	_	_	obj	basic	4-8	
+4-10	322-323	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	4-8	
+
+#Text=Ja dravnieks nesagaida īsto brīdi, kad medus ir gatavs un šūnas aizvākotas, bet rauj kāres ārā no stropiem, medū būs augsts ūdens saturs.
+5-1	324-326	Ja	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ja	_	_	mark	basic	5-3	
+5-2	327-336	dravnieks	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	dravnieks	_	_	nsubj	basic	5-3	
+5-3	337-346	nesagaida	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt330ay	*	sagaidīt	_	_	advcl	basic	5-23	
+5-4	347-351	īsto	*	*	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsayp	*	īsts	_	_	amod	basic	5-5	
+5-5	352-357	brīdi	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	*	brīdis	*->2-1	*[2]	obj	basic	5-3	
+5-6	357-358	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	5-10	
+5-7	359-362	kad	*	*	*	*	*	*	*	*	*	*	*	*	Int	*	*	*	PronType=Int	*	*	r0t	*	kad	*->2-2	*[2]	advmod	basic	5-10	
+5-8	363-368	medus	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn3	*	medus	*->1-6	*[1]	nsubj	basic	5-10	
+5-9	369-371	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	cop	basic	5-10	
+5-10	372-378	gatavs	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	gatavs	_	_	acl	basic	5-5	
+5-11	379-381	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	cc	basic	5-13	
+5-12	382-387	šūnas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	šūna	_	_	nsubj:pass	basic	5-13	
+5-13	388-398	aizvākotas	*	Perf	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdfpnpsnpn	*	aizvākot	_	_	conj	basic	5-10	
+5-14	398-399	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	5-16	
+5-15	400-403	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	cc	basic	5-16	
+5-16	404-408	rauj	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt130an	*	raut	_	_	conj	basic	5-3	
+5-17	409-414	kāres	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa5	*	kāre	_	_	obj	basic	5-16	
+5-18	415-418	ārā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0p	*	ārā	_	_	advmod	basic	5-16	
+5-19	419-421	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	no	_	_	case	basic	5-20	
+5-20	422-430	stropiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	strops	_	_	iobj	basic	5-18	
+5-21	430-431	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	5-3	
+5-22	432-436	medū	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl3	*	medus	*->1-7	*[1]	obl	basic	5-23	
+5-23	437-440	būs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnifii30an	*	būt	_	_	root	basic	5-23	
+5-24	441-447	augsts	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	augsts	_	_	amod	basic	5-26	
+5-25	448-453	ūdens	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	*	ūdens	_	_	nmod	basic	5-26	
+5-26	454-460	saturs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	saturs	_	_	nsubj	basic	5-23	
+5-27	460-461	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	5-23	
+
+#Text=Dažreiz šādu kļūdu pieļauj nepieredzējuši dravnieki, bet nevar izslēgt arī apzinātu rīcību – nenogatavinātu medu ir vieglāk sviest, turklāt tā apjoms un svars būs lielāks.
+6-1	462-469	Dažreiz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	dažreiz	_	_	advmod	basic	6-4	
+6-2	470-474	šādu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	Dem	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsan	*	šāda	_	_	det	basic	6-3	
+6-3	475-480	kļūdu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	kļūda	_	_	obj	basic	6-4	
+6-4	481-488	pieļauj	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt130an	*	pieļaut	_	_	root	basic	6-4	
+6-5	489-503	nepieredzējuši	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnnp	*	nepieredzējis	_	_	amod	basic	6-6	
+6-6	504-513	dravnieki	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	dravnieks	_	_	nsubj	basic	6-4	
+6-7	513-514	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	6-9	
+6-8	515-518	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	cc	basic	6-9	
+6-9	519-524	nevar	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vonipi330ay	*	varēt	_	_	conj	basic	6-4	
+6-10	525-532	izslēgt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t1000n	*	izslēgt	_	_	xcomp	basic	6-9	
+6-11	533-536	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	discourse	basic	6-13	
+6-12	537-545	apzinātu	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsanp	*	apzināts	_	_	amod	basic	6-13	
+6-13	546-552	rīcību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	rīcība	_	_	obj	basic	6-10	
+6-14	553-554	–	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	–	_	_	punct	basic	6-18	
+6-15	555-569	nenogatavinātu	*	Perf	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Acc\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Neg\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsapsnpy	*	nogatavināt	_	_	amod	basic	6-16	
+6-16	570-574	medu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa3	*	medus	*->1-8	*[1]	obj	basic	6-19	
+6-17	575-577	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	cop	basic	6-18	
+6-18	578-585	vieglāk	*	*	*	*	Cmp	*	*	*	*	*	*	*	*	*	*	*	Degree=Cmp	*	*	rcm	*	viegli	_	_	conj	basic	6-4	
+6-19	586-592	sviest	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t1000n	*	sviest	_	_	csubj	basic	6-18	
+6-20	592-593	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	6-27	
+6-21	594-601	turklāt	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	turklāt	_	_	cc	basic	6-27	
+6-22	602-604	tā	*	*	Gen	*	*	Masc	*	*	*	Sing	3	*	Dem	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msgn	*	tas	*->1-9	*[1]	det	basic	6-23	
+6-23	605-611	apjoms	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	apjoms	_	_	nsubj	basic	6-27	
+6-24	612-614	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	cc	basic	6-25	
+6-25	615-620	svars	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	svars	_	_	conj	basic	6-23	
+6-26	621-624	būs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnifii30an	*	būt	_	_	cop	basic	6-27	
+6-27	625-632	lielāks	*	*	Nom	*	Cmp	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Masc\|Number=Sing	*	*	afmsnnc	*	liels	_	_	conj	basic	6-4	
+6-28	632-633	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	6-4	

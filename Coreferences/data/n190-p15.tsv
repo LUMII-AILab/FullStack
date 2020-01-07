@@ -1,0 +1,42 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Atcelt 2012.gada 8.novembra likumu "Grozījumi likumā "Par tautas nobalsošanu, likumu ierosināšanu un Eiropas pilsoņu iniciatīvu"".
+1-1	0-6	Atcelt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	*	atcelt	_	_	_	_	root	basic	1-1	
+1-2	7-12	2012.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	2012.	entity[1]|time[2]	*[1]|*[2]	_	_	amod	basic	1-3	
+1-3	12-16	gada	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	gads	entity[1]|time[2]	*[1]|*[2]	_	_	nmod	basic	1-5	
+1-4	17-19	8.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	8.	entity[1]|time[2]	*[1]|*[2]	_	_	amod	basic	1-5	
+1-5	19-27	novembra	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	*	novembris	entity[1]|time[2]	*[1]|*[2]	_	_	nmod	basic	1-8	
+1-6	28-34	likumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	likums	entity[1]	*[1]	*->1-1	*[1]	nmod	basic	1-8	
+1-7	35-36	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	entity[1]	*[1]	*->1-2	*[1]	punct	basic	1-8	
+1-8	36-45	Grozījumi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	grozījums	entity[1]	*[1]	*->1-2	*[1]	obj	basic	1-1	
+1-9	46-52	likumā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	likums	entity[1]	*[1]	*->1-2	*[1]	nmod	basic	1-13	
+1-10	53-54	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	entity[1]	*[1]	*->1-2	*[1]	punct	basic	1-13	
+1-11	54-57	Par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	entity[1]	*[1]	*->1-2	*[1]	case	basic	1-13	
+1-12	58-64	tautas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	tauta	entity[1]	*[1]	*->1-2	*[1]	nmod	basic	1-13	
+1-13	65-76	nobalsošanu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	nobalsošana	entity[1]	*[1]	*->1-2	*[1]	acl	basic	1-8	
+1-14	76-77	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	entity[1]	*[1]	*->1-2	*[1]	punct	basic	1-16	
+1-15	78-84	likumu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	likums	entity[1]	*[1]	*->1-2	*[1]	nmod	basic	1-16	
+1-16	85-97	ierosināšanu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	ierosināšana	entity[1]	*[1]	*->1-2	*[1]	conj	basic	1-13	
+1-17	98-100	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	entity[1]	*[1]	*->1-2	*[1]	cc	basic	1-20	
+1-18	101-108	Eiropas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Eiropa	entity[1]|location[3]	*[1]|https://en.wikipedia.org/wiki/Europe[3]	*->1-2	*[1]	nmod	basic	1-19	
+1-19	109-116	pilsoņu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	pilsonis	entity[1]	*[1]	*->1-2	*[1]	nmod	basic	1-20	
+1-20	117-127	iniciatīvu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	iniciatīva	entity[1]	*[1]	*->1-2	*[1]	conj	basic	1-13	
+1-21	127-128	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	entity[1]	*[1]	*->1-2	*[1]	punct	basic	1-13	
+1-22	128-129	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	entity[1]	*[1]	_	_	punct	basic	1-8	
+1-23	129-130	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-1	
+
+#Text=Likums stājas spēkā tā izsludināšanas dienā.
+2-1	132-138	Likums	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	likums	_	_	*->1-3	*[1]	nsubj	basic	2-2	
+2-2	139-145	stājas	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmyipi130an	*	stāties	_	_	_	_	root	basic	2-2	
+2-3	146-151	spēkā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	spēks	_	_	_	_	obl	basic	2-2	
+2-4	152-154	tā	*	*	Gen	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msgn	*	tas	_	_	*->1-4	*[1]	det	basic	2-5	
+2-5	155-169	izsludināšanas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	izsludināšana	_	_	_	_	nmod	basic	2-6	
+2-6	170-175	dienā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	diena	_	_	_	_	obl	basic	2-2	
+2-7	175-176	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-2	

@@ -1,0 +1,36 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Kā aģentūrai LETA pastāstīja organizācijā "Zemes draugi", lietus dēļ neesot bijis iespējams darbināt elektrības ģeneratorus, kuriem būtu jāuzpūš Trojas zirga figūra.
+1-1	0-2	Kā	*	*	*	*	*	*	*	*	*	*	*	*	Int	*	*	*	PronType=Int	*	*	r0m	*	kā	_	_	_	_	advmod	basic	1-4	
+1-2	3-12	aģentūrai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	*	aģentūra	_	_	*->1-1	*[1]	nmod	basic	1-3	
+1-3	13-17	LETA	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	LETA	organization	https://en.wikipedia.org/wiki/LETA	*->1-2	*[1]	iobj	basic	1-4	
+1-4	18-28	pastāstīja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist330an	*	pastāstīt	_	_	_	_	parataxis	basic	1-15	
+1-5	29-41	organizācijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	organizācija	_	_	*->2-1	*[2]	nmod	basic	1-8	
+1-6	42-43	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[1]	*[1]	*->2-2	*[2]	punct	basic	1-8	
+1-7	43-48	Zemes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	zeme	organization[1]	*[1]	*->2-2	*[2]	nmod	basic	1-8	
+1-8	49-55	draugi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	draugs	organization[1]	*[1]	*->2-2	*[2]	obl	basic	1-4	
+1-9	55-56	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[1]	*[1]	*->2-2	*[2]	punct	basic	1-8	
+1-10	56-57	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-4	
+1-11	58-64	lietus	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg3	*	lietus	_	_	_	_	obl	basic	1-15	
+1-12	65-68	dēļ	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	dēļ	_	_	_	_	case	basic	1-11	
+1-13	69-75	neesot	*	*	*	*	*	*	Qot	*	*	*	*	*	*	*	Pres	*	Evident=Nfh\|Mood=Qot\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnrpii00ay	*	būt	_	_	_	_	cop	basic	1-15	
+1-14	76-81	bijis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vcnpdmsnasnpn	*	būt	_	_	_	_	cop	basic	1-15	
+1-15	82-91	iespējams	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	iespējams	_	_	_	_	root	basic	1-15	
+1-16	92-100	darbināt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t3000n	*	darbināt	_	_	_	_	csubj	basic	1-15	
+1-17	101-111	elektrības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	elektrība	_	_	*->3-1	*[3]	nmod	basic	1-18	
+1-18	112-123	ģeneratorus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	ģenerators	_	_	*->3-1	*[3]	obj	basic	1-16	
+1-19	123-124	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-22	
+1-20	125-131	kuriem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	Rel	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|PronType=Rel	*	*	pr0mpdn	*	kurš	_	_	*->3-2	*[3]	nsubj	basic	1-22	
+1-21	132-136	būtu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnc0ii00an	*	būt	_	_	_	_	aux	basic	1-22	
+1-22	137-144	jāuzpūš	*	*	*	*	*	*	Nec	*	*	*	*	*	*	*	*	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnd0t100an	*	uzpūst	_	_	_	_	acl	basic	1-18	
+1-23	145-151	Trojas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Troja	product[2]|GPE[3]	https://en.wikipedia.org/wiki/Trojan\_Horse[2]|https://en.wikipedia.org/wiki/Troy[3]	_	_	nmod	basic	1-24	
+1-24	152-157	zirga	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	zirgs	product[2]	https://en.wikipedia.org/wiki/Trojan\_Horse[2]	_	_	nmod	basic	1-25	
+1-25	158-164	figūra	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	figūra	_	_	_	_	iobj	basic	1-22	
+1-26	164-165	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-15	

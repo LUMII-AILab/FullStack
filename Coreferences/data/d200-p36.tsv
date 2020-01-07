@@ -1,102 +1,102 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Bet, kad visas šādas vajadzības ir apmierinātas — vai tomēr ir kaut kas, kas nepieciešams visiem?
-1-1	0-3	Bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	cc	basic	1-12	
-1-2	3-4	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-8	
-1-3	5-8	kad	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0t	kad	_	_	advmod	basic	1-8	
-1-4	9-14	visas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|PronType=Tot	*	*	pg0fpnn	visa	_	_	det	basic	1-6	
-1-5	15-20	šādas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|PronType=Dem	*	*	pd0fpnn	šāda	_	_	det	basic	1-6	
-1-6	21-31	vajadzības	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	vajadzība	_	_	nsubj:pass	basic	1-8	
-1-7	32-34	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	aux:pass	basic	1-8	
-1-8	35-47	apmierinātas	Fem	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfpnpsnpn	apmierināt	_	_	advcl	basic	1-12	
-1-9	48-49	—	_	_	_	_	_	_	_	_	_	_	_	_	zd	—	_	_	punct	basic	1-8	
-1-10	50-53	vai	_	_	_	_	_	_	_	_	_	_	_	_	q	vai	_	_	discourse	basic	1-12	
-1-11	54-59	tomēr	_	_	_	_	_	_	_	_	_	_	_	_	q	tomēr	_	_	discourse	basic	1-12	
-1-12	60-62	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipii30an	būt	_	_	root	basic	1-12	
-1-13	63-67	kaut	_	_	_	_	_	_	_	_	_	_	_	_	q	kaut	*[1]	*->1-1	discourse	basic	1-14	
-1-14	68-71	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Ind	*	*	pi000nn	kas	*[1]	*->1-1	nsubj	basic	1-12	
-1-15	71-72	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-17	
-1-16	73-76	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	*[1]	*->1-2	nsubj	basic	1-17	
-1-17	77-89	nepieciešams	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	nepieciešams	_	_	csubj	basic	1-12	
-1-18	90-96	visiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|PronType=Tot	*	*	pg0mpdn	viss	_	_	obl	basic	1-17	
-1-19	96-97	?	_	_	_	_	_	_	_	_	_	_	_	_	zs	?	_	_	punct	basic	1-12	
+1-1	0-3	Bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	cc	basic	1-12	
+1-2	3-4	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-8	
+1-3	5-8	kad	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0t	*	kad	_	_	advmod	basic	1-8	
+1-4	9-14	visas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|PronType=Tot	*	*	pg0fpnn	*	visa	_	_	det	basic	1-6	
+1-5	15-20	šādas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|PronType=Dem	*	*	pd0fpnn	*	šāda	_	_	det	basic	1-6	
+1-6	21-31	vajadzības	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	vajadzība	_	_	nsubj:pass	basic	1-8	
+1-7	32-34	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	aux:pass	basic	1-8	
+1-8	35-47	apmierinātas	*	Perf	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Tense=Past\|VerbForm=Part	*	*	vmnpdfpnpsnpn	*	apmierināt	_	_	advcl	basic	1-12	
+1-9	48-49	—	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	—	_	_	punct	basic	1-8	
+1-10	50-53	vai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	vai	_	_	discourse	basic	1-12	
+1-11	54-59	tomēr	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tomēr	_	_	discourse	basic	1-12	
+1-12	60-62	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipii30an	*	būt	_	_	root	basic	1-12	
+1-13	63-67	kaut	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	kaut	*->1-1	*[1]	discourse	basic	1-14	
+1-14	68-71	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Ind	*	*	pi000nn	*	kas	*->1-1	*[1]	nsubj	basic	1-12	
+1-15	71-72	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-17	
+1-16	73-76	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	*->1-2	*[1]	nsubj	basic	1-17	
+1-17	77-89	nepieciešams	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	nepieciešams	_	_	csubj	basic	1-12	
+1-18	90-96	visiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|PronType=Tot	*	*	pg0mpdn	*	viss	_	_	obl	basic	1-17	
+1-19	96-97	?	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	?	_	_	punct	basic	1-12	
 
 #Text=Par to domā filosofi.
-2-1	99-102	Par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	case	basic	2-2	
-2-2	103-105	to	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	tas	_	_	iobj	basic	2-3	
-2-3	106-110	domā	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt230an	domāt	_	_	root	basic	2-3	
-2-4	111-119	filosofi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	filosofs	*[2]	*->2-1	nsubj	basic	2-3	
-2-5	119-120	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	2-3	
+2-1	99-102	Par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	case	basic	2-2	
+2-2	103-105	to	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	*	tas	_	_	iobj	basic	2-3	
+2-3	106-110	domā	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt230an	*	domāt	_	_	root	basic	2-3	
+2-4	111-119	filosofi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	filosofs	*->2-1	*[2]	nsubj	basic	2-3	
+2-5	119-120	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	2-3	
 
 #Text=Viņi uzskata, ka cilvēks nevar dzīvot tikai no maizes vien.
-3-1	122-126	Viņi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Prs	3	*	pp3mpnn	viņš	*[2]	*->2-2	nsubj	basic	3-2	
-3-2	127-134	uzskata	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	uzskatīt	_	_	root	basic	3-2	
-3-3	134-135	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	3-6	
-3-4	136-138	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	mark	basic	3-6	
-3-5	139-146	cilvēks	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	cilvēks	_	_	nsubj	basic	3-6	
-3-6	147-152	nevar	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vonipt330ay	nevarēt	_	_	ccomp	basic	3-2	
-3-7	153-159	dzīvot	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	dzīvot	_	_	xcomp	basic	3-6	
-3-8	160-165	tikai	_	_	_	_	_	_	_	_	_	_	_	_	q	tikai	_	_	discourse	basic	3-10	
-3-9	166-168	no	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	_	_	case	basic	3-10	
-3-10	169-175	maizes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	maize	_	_	obl	basic	3-6	
-3-11	176-180	vien	_	_	_	_	_	_	_	_	_	_	_	_	q	vien	_	_	discourse	basic	3-10	
-3-12	180-181	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	3-2	
+3-1	122-126	Viņi	*	*	Nom	*	*	Masc	*	*	*	Plur	3	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Prs	*	*	pp3mpnn	*	viņš	*->2-2	*[2]	nsubj	basic	3-2	
+3-2	127-134	uzskata	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	uzskatīt	_	_	root	basic	3-2	
+3-3	134-135	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	3-6	
+3-4	136-138	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	mark	basic	3-6	
+3-5	139-146	cilvēks	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	cilvēks	_	_	nsubj	basic	3-6	
+3-6	147-152	nevar	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vonipt330ay	*	nevarēt	_	_	ccomp	basic	3-2	
+3-7	153-159	dzīvot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	*	dzīvot	_	_	xcomp	basic	3-6	
+3-8	160-165	tikai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tikai	_	_	discourse	basic	3-10	
+3-9	166-168	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	case	basic	3-10	
+3-10	169-175	maizes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	maize	_	_	obl	basic	3-6	
+3-11	176-180	vien	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	vien	_	_	discourse	basic	3-10	
+3-12	180-181	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	3-2	
 
 #Text=Protams, visiem cilvēkiem nepieciešams ēdiens, pārtika.
-4-1	183-190	Protams	Masc	Sing	Nom	Pos	*	Pres	*	Pass	*	Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	*	vmnpdmsnppnpn	prast	_	_	parataxis	basic	4-5	
-4-2	190-191	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	4-1	
-4-3	192-198	visiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|PronType=Tot	*	*	pg0mpdn	viss	_	_	det	basic	4-4	
-4-4	199-208	cilvēkiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	cilvēks	_	_	obl	basic	4-5	
-4-5	209-221	nepieciešams	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	nepieciešams	_	_	root	basic	4-5	
-4-6	222-228	ēdiens	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	ēdiens	_	_	nsubj	basic	4-5	
-4-7	228-229	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	4-8	
-4-8	230-237	pārtika	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	pārtika	_	_	conj	basic	4-6	
-4-9	237-238	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	4-5	
+4-1	183-190	Protams	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Pres	*	Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdmsnppnpn	*	prast	_	_	parataxis	basic	4-5	
+4-2	190-191	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	4-1	
+4-3	192-198	visiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|PronType=Tot	*	*	pg0mpdn	*	viss	_	_	det	basic	4-4	
+4-4	199-208	cilvēkiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	cilvēks	_	_	obl	basic	4-5	
+4-5	209-221	nepieciešams	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	nepieciešams	_	_	root	basic	4-5	
+4-6	222-228	ēdiens	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	ēdiens	_	_	nsubj	basic	4-5	
+4-7	228-229	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	4-8	
+4-8	230-237	pārtika	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	pārtika	_	_	conj	basic	4-6	
+4-9	237-238	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	4-5	
 
 #Text=Tāpat visiem ir nepieciešama arī mīlestība un gādība.
-5-1	240-245	Tāpat	_	_	_	_	_	_	_	_	_	_	_	_	q	tāpat	_	_	discourse	basic	5-4	
-5-2	246-252	visiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|PronType=Tot	*	*	pg0mpdn	viss	_	_	obl	basic	5-4	
-5-3	253-255	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	cop	basic	5-4	
-5-4	256-268	nepieciešama	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	nepieciešama	_	_	root	basic	5-4	
-5-5	269-272	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	discourse	basic	5-6	
-5-6	273-282	mīlestība	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	mīlestība	_	_	nsubj	basic	5-4	
-5-7	283-285	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	cc	basic	5-8	
-5-8	286-292	gādība	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	gādība	_	_	conj	basic	5-6	
-5-9	292-293	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	5-4	
+5-1	240-245	Tāpat	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tāpat	_	_	discourse	basic	5-4	
+5-2	246-252	visiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|PronType=Tot	*	*	pg0mpdn	*	viss	_	_	obl	basic	5-4	
+5-3	253-255	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	cop	basic	5-4	
+5-4	256-268	nepieciešama	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	*	nepieciešama	_	_	root	basic	5-4	
+5-5	269-272	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	discourse	basic	5-6	
+5-6	273-282	mīlestība	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	mīlestība	_	_	nsubj	basic	5-4	
+5-7	283-285	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	cc	basic	5-8	
+5-8	286-292	gādība	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	gādība	_	_	conj	basic	5-6	
+5-9	292-293	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	5-4	
 
 #Text=Bet bez visa tā cilvēkiem ir vajadzīgs vēl kaut kas.
-6-1	295-298	Bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	cc	basic	6-7	
-6-2	299-302	bez	_	_	_	_	_	_	_	_	_	_	_	_	spsg	bez	_	_	case	basic	6-3	
-6-3	303-307	visa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msgn	viss	_	_	obl	basic	6-7	
-6-4	308-310	tā	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msgn	tas	_	_	compound	basic	6-3	
-6-5	311-320	cilvēkiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	cilvēks	_	_	obl	basic	6-7	
-6-6	321-323	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	cop	basic	6-7	
-6-7	324-333	vajadzīgs	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	vajadzīgs	_	_	root	basic	6-7	
-6-8	334-337	vēl	_	_	_	_	_	_	_	_	_	_	_	_	r0m	vēl	_	_	advmod	basic	6-7	
-6-9	338-342	kaut	_	_	_	_	_	_	_	_	_	_	_	_	q	kaut	_	_	discourse	basic	6-10	
-6-10	343-346	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	nsubj	basic	6-7	
-6-11	346-347	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	6-7	
+6-1	295-298	Bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	cc	basic	6-7	
+6-2	299-302	bez	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	bez	_	_	case	basic	6-3	
+6-3	303-307	visa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msgn	*	viss	_	_	obl	basic	6-7	
+6-4	308-310	tā	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msgn	*	tas	_	_	compound	basic	6-3	
+6-5	311-320	cilvēkiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	cilvēks	_	_	obl	basic	6-7	
+6-6	321-323	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	cop	basic	6-7	
+6-7	324-333	vajadzīgs	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	vajadzīgs	_	_	root	basic	6-7	
+6-8	334-337	vēl	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	vēl	_	_	advmod	basic	6-7	
+6-9	338-342	kaut	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	kaut	_	_	discourse	basic	6-10	
+6-10	343-346	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	nsubj	basic	6-7	
+6-11	346-347	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	6-7	
 
 #Text=Mums ir vajadzība iegūt atbildi uz jautājumu, kas mēs esam un kāpēc mēs dzīvojam.
-7-1	349-353	Mums	*	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Number=Plur\|Person=1\|PronType=Prs	1	*	pp10pdn	mēs	*[3]	*->3-1	obl	basic	7-2	
-7-2	354-356	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipii30an	būt	_	_	root	basic	7-2	
-7-3	357-366	vajadzība	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	vajadzība	_	_	nsubj	basic	7-2	
-7-4	367-372	iegūt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	iegūt	_	_	acl	basic	7-3	
-7-5	373-380	atbildi	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	atbilde	_	_	obj	basic	7-4	
-7-6	381-383	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsa	uz	_	_	case	basic	7-7	
-7-7	384-393	jautājumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	jautājums	_	_	nmod	basic	7-5	
-7-8	393-394	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	7-9	
-7-9	395-398	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	acl	basic	7-7	
-7-10	399-402	mēs	*	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Number=Plur\|Person=1\|PronType=Prs	1	*	pp10pnn	mēs	*[3]	*->3-2	nsubj	basic	7-9	
-7-11	403-407	esam	*	Plur	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	1	*	vcnipii1pan	būt	_	_	cop	basic	7-9	
-7-12	408-410	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	cc	basic	7-15	
-7-13	411-416	kāpēc	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0c	kāpēc	_	_	advmod	basic	7-15	
-7-14	417-420	mēs	*	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Number=Plur\|Person=1\|PronType=Prs	1	*	pp10pnn	mēs	*[3]	*->3-3	nsubj	basic	7-15	
-7-15	421-429	dzīvojam	*	Plur	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	1	*	vmnipt21pan	dzīvot	_	_	conj	basic	7-9	
-7-16	429-430	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	7-2	
+7-1	349-353	Mums	*	*	Dat	*	*	*	*	*	*	Plur	1	*	*	*	*	*	Case=Dat\|Number=Plur\|Person=1\|PronType=Prs	*	*	pp10pdn	*	mēs	*->3-1	*[3]	obl	basic	7-2	
+7-2	354-356	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipii30an	*	būt	_	_	root	basic	7-2	
+7-3	357-366	vajadzība	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	vajadzība	_	_	nsubj	basic	7-2	
+7-4	367-372	iegūt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	*	iegūt	_	_	acl	basic	7-3	
+7-5	373-380	atbildi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	atbilde	_	_	obj	basic	7-4	
+7-6	381-383	uz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	uz	_	_	case	basic	7-7	
+7-7	384-393	jautājumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	jautājums	_	_	nmod	basic	7-5	
+7-8	393-394	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	7-9	
+7-9	395-398	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	acl	basic	7-7	
+7-10	399-402	mēs	*	*	Nom	*	*	*	*	*	*	Plur	1	*	*	*	*	*	Case=Nom\|Number=Plur\|Person=1\|PronType=Prs	*	*	pp10pnn	*	mēs	*->3-2	*[3]	nsubj	basic	7-9	
+7-11	403-407	esam	*	*	*	*	*	*	Ind	*	*	Plur	1	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii1pan	*	būt	_	_	cop	basic	7-9	
+7-12	408-410	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	cc	basic	7-15	
+7-13	411-416	kāpēc	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0c	*	kāpēc	_	_	advmod	basic	7-15	
+7-14	417-420	mēs	*	*	Nom	*	*	*	*	*	*	Plur	1	*	*	*	*	*	Case=Nom\|Number=Plur\|Person=1\|PronType=Prs	*	*	pp10pnn	*	mēs	*->3-3	*[3]	nsubj	basic	7-15	
+7-15	421-429	dzīvojam	*	*	*	*	*	*	Ind	*	*	Plur	1	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt21pan	*	dzīvot	_	_	conj	basic	7-9	
+7-16	429-430	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	7-2	

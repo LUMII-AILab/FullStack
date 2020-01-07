@@ -1,0 +1,55 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Belgrada, 16.okt., LETA--AFP.
+1-1	0-8	Belgrada	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Belgrada	GPE	https://en.wikipedia.org/wiki/Belgrade	_	_	root	basic	1-1	
+1-2	8-9	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-4	
+1-3	10-13	16.	*	*	*	*	*	*	*	*	Ord	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	16.	time[1]	*[1]	_	_	amod	basic	1-4	
+1-4	13-17	okt.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	*	okt.	time[1]	*[1]	_	_	parataxis	basic	1-1	
+1-5	17-18	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-6	
+1-6	19-23	LETA	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	LETA	organization	https://en.wikipedia.org/wiki/LETA	_	_	parataxis	basic	1-1	
+1-7	23-24	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	-	_	_	_	_	punct	basic	1-9	
+1-8	24-25	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	z\_	*	_	_	_	_	_	punct	basic	1-7	
+1-9	25-28	AFP	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	AFP	organization	https://en.wikipedia.org/wiki/Agence\_France-Presse	_	_	conj	basic	1-6	
+1-10	28-29	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-1	
+
+#Text=Serbija ceturtdien izklāja sarkano paklāju Krievijas prezidentam Vladimiram Putinam, kurš laikā, kad Maskava starptautiskajā arēnā kļūst arvien izolētāka, ieradies vizītē, lai stiprinātu saites ar savu uzticamo Eiropas sabiedroto.
+2-1	30-37	Serbija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Serbija	GPE	https://en.wikipedia.org/wiki/Serbia	_	_	nsubj	basic	2-3	
+2-2	38-48	ceturtdien	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	ceturtdien	time	*	_	_	advmod	basic	2-3	
+2-3	49-56	izklāja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist130an	*	izklāt	_	_	_	_	root	basic	2-3	
+2-4	57-64	sarkano	*	*	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsayp	*	sarkans	_	_	_	_	amod	basic	2-5	
+2-5	65-72	paklāju	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	paklājs	_	_	_	_	obj	basic	2-3	
+2-6	73-82	Krievijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Krievija	GPE	https://en.wikipedia.org/wiki/Russia	*->1-1	*[1]	nmod	basic	2-7	
+2-7	83-94	prezidentam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	prezidents	_	_	*->1-1	*[1]	nmod	basic	2-8	
+2-8	95-105	Vladimiram	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	npmsd1	*	Vladimirs	person[2]	https://en.wikipedia.org/wiki/Vladimir\_Putin[2]	*->2-1	*[2]	iobj	basic	2-3	
+2-9	106-113	Putinam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	npmsd1	*	Putins	person[2]	https://en.wikipedia.org/wiki/Vladimir\_Putin[2]	*->2-1	*[2]	flat:name	basic	2-8	
+2-10	113-114	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-22	
+2-11	115-119	kurš	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	Rel	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msnn	*	kurš	_	_	*->2-2	*[2]	nsubj	basic	2-22	
+2-12	120-125	laikā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	laiks	_	_	*->3-1	*[3]	obl	basic	2-22	
+2-13	125-126	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-20	
+2-14	127-130	kad	*	*	*	*	*	*	*	*	*	*	*	*	Int	*	*	*	PronType=Int	*	*	r0t	*	kad	_	_	*->3-2	*[3]	advmod	basic	2-20	
+2-15	131-138	Maskava	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Maskava	GPE	https://en.wikipedia.org/wiki/Moscow	_	_	nsubj	basic	2-20	
+2-16	139-154	starptautiskajā	*	*	Loc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affslyp	*	starptautisks	_	_	_	_	amod	basic	2-17	
+2-17	155-160	arēnā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	arēna	_	_	_	_	obl	basic	2-20	
+2-18	161-166	kļūst	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vtnipi130an	*	kļūt	_	_	_	_	cop	basic	2-20	
+2-19	167-173	arvien	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	arvien	_	_	_	_	advmod	basic	2-20	
+2-20	174-183	izolētāka	*	Perf	Nom	*	Cmp	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Cmp\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdfsnpsncn	*	izolēt	_	_	_	_	acl	basic	2-12	
+2-21	183-184	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-20	
+2-22	185-193	ieradies	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	Yes	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmypdmsnasnpn	*	ierasties	_	_	_	_	acl	basic	2-9	
+2-23	194-200	vizītē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	*	vizīte	_	_	_	_	obl	basic	2-22	
+2-24	200-201	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-26	
+2-25	202-205	lai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	lai	_	_	_	_	mark	basic	2-26	
+2-26	206-216	stiprinātu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnc0t300an	*	stiprināt	_	_	_	_	advcl	basic	2-22	
+2-27	217-223	saites	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa5	*	saite	_	_	_	_	obj	basic	2-26	
+2-28	224-226	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	2-32	
+2-29	227-231	savu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	Prs	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0msan	*	savs	_	_	*->2-3	*[2]	det	basic	2-32	
+2-30	232-240	uzticamo	*	*	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsayp	*	uzticams	_	_	_	_	amod	basic	2-32	
+2-31	241-248	Eiropas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Eiropa	location	https://en.wikipedia.org/wiki/Europe	_	_	nmod	basic	2-32	
+2-32	249-259	sabiedroto	*	*	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsayp	*	sabiedrots	_	_	_	_	iobj	basic	2-26	
+2-33	259-260	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-3	

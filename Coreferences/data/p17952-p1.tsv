@@ -1,0 +1,49 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Maskava, 8.febr., LETA--AFP.
+1-1	0-7	Maskava	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Maskava	GPE	https://en.wikipedia.org/wiki/Moscow	_	_	root	basic	1-1	
+1-2	7-8	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-4	
+1-3	9-11	8.	*	*	*	*	*	*	*	*	Ord	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	8.	time[1]	*[1]	*->1-1	*[1]	amod	basic	1-4	
+1-4	11-16	febr.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	*	febr.	time[1]	*[1]	*->1-1	*[1]	parataxis	basic	1-1	
+1-5	16-17	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-6	
+1-6	18-22	LETA	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	LETA	organization	https://en.wikipedia.org/wiki/LETA	_	_	parataxis	basic	1-1	
+1-7	22-24	--	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	--	_	_	_	_	punct	basic	1-8	
+1-8	24-27	AFP	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	AFP	organization	https://en.wikipedia.org/wiki/Agence\_France-Presse	_	_	conj	basic	1-6	
+1-9	27-28	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-1	
+
+#Text=Krievijas Centrālā banka pirmdien paziņoja, ka tā anulējusi vēl divu banku darbības licences, valdībai cenšoties konsolidēt finanšu nozari laikā, kad pieaug valsts ekonomiskās problēmas.
+2-1	29-38	Krievijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Krievija	organization[2]|GPE[3]	*[2]|https://en.wikipedia.org/wiki/Russia[3]	*->2-1	*[2]	nmod	basic	2-3	
+2-2	39-47	Centrālā	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnyp	*	centrāls	organization[2]	*[2]	*->2-1	*[2]	amod	basic	2-3	
+2-3	48-53	banka	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	banka	organization[2]	*[2]	*->2-1	*[2]	nsubj	basic	2-5	
+2-4	54-62	pirmdien	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	pirmdien	time	*	*->1-2	*[1]	advmod	basic	2-5	
+2-5	63-71	paziņoja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist230an	*	paziņot	_	_	_	_	root	basic	2-5	
+2-6	71-72	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-9	
+2-7	73-75	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	2-9	
+2-8	76-78	tā	*	*	Nom	*	*	Fem	*	*	*	Sing	3	*	Dem	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3fsnn	*	tā	_	_	*->2-2	*[2]	nsubj	basic	2-9	
+2-9	79-88	anulējusi	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdfsnasnpn	*	anulēt	_	_	_	_	ccomp	basic	2-5	
+2-10	89-92	vēl	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	vēl	_	_	_	_	advmod	basic	2-11	
+2-11	93-97	divu	*	*	Gen	*	*	Fem	*	*	Card	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur\|NumType=Card	*	*	mcsfpg	*	divi	_	_	_	_	nummod	basic	2-12	
+2-12	98-103	banku	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	banka	_	_	_	_	nmod	basic	2-14	
+2-13	104-112	darbības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	darbība	_	_	_	_	nmod	basic	2-14	
+2-14	113-121	licences	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa5	*	licence	_	_	_	_	obj	basic	2-9	
+2-15	121-122	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-17	
+2-16	123-131	valdībai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	*	valdība	_	_	_	_	acl	basic	2-17	
+2-17	132-141	cenšoties	*	*	*	*	*	*	*	*	*	*	*	*	*	Yes	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Conv	Conv	*	voypu0000000n	*	censties	_	_	_	_	advcl	basic	2-5	
+2-18	142-152	konsolidēt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t2000n	*	konsolidēt	_	_	_	_	xcomp	basic	2-17	
+2-19	153-160	finanšu	*	*	Gen	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Ptan	*	*	ncfdg5	*	finanses	_	_	_	_	nmod	basic	2-20	
+2-20	161-167	nozari	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	nozare	_	_	_	_	obj	basic	2-18	
+2-21	168-173	laikā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	laiks	_	_	*->3-1	*[3]	obl	basic	2-18	
+2-22	173-174	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-24	
+2-23	175-178	kad	*	*	*	*	*	*	*	*	*	*	*	*	Int	*	*	*	PronType=Int	*	*	r0t	*	kad	_	_	*->3-2	*[3]	advmod	basic	2-24	
+2-24	179-185	pieaug	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipi130an	*	pieaugt	_	_	_	_	acl	basic	2-21	
+2-25	186-192	valsts	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	*	valsts	_	_	_	_	nmod	basic	2-27	
+2-26	193-204	ekonomiskās	*	*	Gen	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsgyp	*	ekonomisks	_	_	_	_	amod	basic	2-27	
+2-27	205-214	problēmas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	problēma	_	_	_	_	nsubj	basic	2-24	
+2-28	214-215	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-5	

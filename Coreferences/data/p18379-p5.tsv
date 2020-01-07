@@ -1,0 +1,77 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Pirmās sezonas otrajā pusē viņš bija izīrēts Anglijas trešās līgas - "League One" - vienībai Jovilas "Town", palīdzot nopelnīt paaugstinājumu uz "Championship" turnīru.
+1-1	0-6	Pirmās	*	*	Gen	*	Pos	Fem	*	*	Ord	Sing	*	*	*	*	*	*	Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|NumType=Ord	*	*	mosfsg	*	pirmā	_	_	_	_	amod	basic	1-2	
+1-2	7-14	sezonas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	sezona	_	_	_	_	nmod	basic	1-4	
+1-3	15-21	otrajā	*	*	Loc	*	Pos	Fem	*	*	Ord	Sing	*	*	*	*	*	*	Case=Loc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|NumType=Ord	*	*	mosfsl	*	otrā	_	_	_	_	amod	basic	1-4	
+1-4	22-26	pusē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	*	puse	_	_	_	_	obl	basic	1-7	
+1-5	27-31	viņš	*	*	Nom	*	*	Masc	*	*	*	Sing	3	*	Prs	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msnn	*	viņš	_	_	*->6-1	*[6]	nsubj:pass	basic	1-7	
+1-6	32-36	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnisii30an	*	būt	_	_	_	_	aux:pass	basic	1-7	
+1-7	37-44	izīrēts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsnpsnpn	*	izīrēt	_	_	_	_	root	basic	1-7	
+1-8	45-53	Anglijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Anglija	entity[1]|GPE[2]	https://en.wikipedia.org/wiki/EFL\_League\_One[1]|https://en.wikipedia.org/wiki/United\_Kingdom[2]	*->7-1	*[7]	nmod	basic	1-10	
+1-9	54-60	trešās	*	*	Gen	*	Pos	Fem	*	*	Ord	Sing	*	*	*	*	*	*	Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|NumType=Ord	*	*	mosfsg	*	trešā	entity[1]	https://en.wikipedia.org/wiki/EFL\_League\_One[1]	*->7-1	*[7]	amod	basic	1-10	
+1-10	61-66	līgas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	līga	entity[1]	https://en.wikipedia.org/wiki/EFL\_League\_One[1]	*->7-1	*[7]	nmod	basic	1-20	
+1-11	67-68	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	-	_	_	_	_	punct	basic	1-13	
+1-12	69-70	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[3]	https://en.wikipedia.org/wiki/EFL\_League\_One[3]	*->7-2	*[7]	punct	basic	1-13	
+1-13	70-76	League	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	League	organization[3]	https://en.wikipedia.org/wiki/EFL\_League\_One[3]	*->7-2	*[7]	acl	basic	1-10	
+1-14	77-80	One	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	One	organization[3]	https://en.wikipedia.org/wiki/EFL\_League\_One[3]	*->7-2	*[7]	flat:name	basic	1-13	
+1-15	80-81	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[3]	https://en.wikipedia.org/wiki/EFL\_League\_One[3]	*->7-2	*[7]	punct	basic	1-13	
+1-16	82-83	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	-	_	_	_	_	punct	basic	1-13	
+1-17	84-92	vienībai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	*	vienība	_	_	*->1-1	*[1]	nmod	basic	1-20	
+1-18	93-100	Jovilas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Jovila	organization[4]|GPE[5]	https://en.wikipedia.org/wiki/Yeovil\_Town\_F.C.[4]|https://en.wikipedia.org/wiki/Yeovil[5]	*->1-2	*[1]	nmod	basic	1-20	
+1-19	101-102	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[4]|organization[6]	https://en.wikipedia.org/wiki/Yeovil\_Town\_F.C.[4]|*[6]	*->1-2	*[1]	punct	basic	1-20	
+1-20	102-106	Town	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Town	organization[4]|organization[6]	https://en.wikipedia.org/wiki/Yeovil\_Town\_F.C.[4]|*[6]	*->1-2	*[1]	iobj	basic	1-7	
+1-21	106-107	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[4]|organization[6]	https://en.wikipedia.org/wiki/Yeovil\_Town\_F.C.[4]|*[6]	*->1-2	*[1]	punct	basic	1-20	
+1-22	107-108	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-23	
+1-23	109-117	palīdzot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	Conv	*	vmnpu0000000n	*	palīdzēt	_	_	_	_	advcl	basic	1-7	
+1-24	118-126	nopelnīt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t3000n	*	nopelnīt	_	_	_	_	ccomp	basic	1-23	
+1-25	127-141	paaugstinājumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	paaugstinājums	_	_	_	_	obj	basic	1-24	
+1-26	142-144	uz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	uz	_	_	_	_	case	basic	1-30	
+1-27	145-146	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	event[7]|organization[8]	https://en.wikipedia.org/wiki/EFL\_Championship[7]|https://en.wikipedia.org/wiki/EFL\_Championship[8]	*->2-1	*[2]	punct	basic	1-28	
+1-28	146-158	Championship	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Championship	event[7]|organization[8]	https://en.wikipedia.org/wiki/EFL\_Championship[7]|https://en.wikipedia.org/wiki/EFL\_Championship[8]	*->2-1	*[2]	nmod	basic	1-30	
+1-29	158-159	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	event[7]|organization[8]	https://en.wikipedia.org/wiki/EFL\_Championship[7]|https://en.wikipedia.org/wiki/EFL\_Championship[8]	*->2-1	*[2]	punct	basic	1-28	
+1-30	160-167	turnīru	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	turnīrs	event[7]	https://en.wikipedia.org/wiki/EFL\_Championship[7]	*->2-2	*[2]	nmod	basic	1-25	
+1-31	167-168	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-7	
+
+#Text=Gandrīz visu nākamo sezonu aizsargs aizvadīja Skotijas komandā "Kilmarnock", bet iepriekšējā sezonā Maksimenko bija izīrēts Nīderlandes otrās spēcīgākās līgas vienībai Venlo VVV, bet vasarā līgums ar viņu netika pagarināts.
+2-1	169-176	Gandrīz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	gandrīz	time[9]	*[9]	_	_	advmod	basic	2-2	
+2-2	177-181	visu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	Tot	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msan	*	viss	time[9]	*[9]	_	_	det	basic	2-4	
+2-3	182-188	nākamo	*	*	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Pres	*	Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsappypn	*	nākt	time[9]	*[9]	_	_	amod	basic	2-4	
+2-4	189-195	sezonu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	sezona	time[9]	*[9]	_	_	obl	basic	2-6	
+2-5	196-204	aizsargs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	aizsargs	_	_	*->6-2	*[6]	nsubj	basic	2-6	
+2-6	205-214	aizvadīja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist330an	*	aizvadīt	_	_	_	_	root	basic	2-6	
+2-7	215-223	Skotijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Skotija	GPE	https://en.wikipedia.org/wiki/Scotland	*->3-1	*[3]	nmod	basic	2-8	
+2-8	224-231	komandā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	komanda	_	_	*->3-1	*[3]	nmod	basic	2-10	
+2-9	232-233	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[10]	https://en.wikipedia.org/wiki/Kilmarnock\_F.C.[10]	*->3-2	*[3]	punct	basic	2-10	
+2-10	233-243	Kilmarnock	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Kilmarnock	organization[10]	https://en.wikipedia.org/wiki/Kilmarnock\_F.C.[10]	*->3-2	*[3]	obl	basic	2-6	
+2-11	243-244	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[10]	https://en.wikipedia.org/wiki/Kilmarnock\_F.C.[10]	*->3-2	*[3]	punct	basic	2-10	
+2-12	244-245	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-18	
+2-13	246-249	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	_	_	cc	basic	2-18	
+2-14	250-261	iepriekšējā	*	*	Loc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affslnp	*	iepriekšējs	_	_	_	_	amod	basic	2-15	
+2-15	262-268	sezonā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	sezona	_	_	_	_	obl	basic	2-18	
+2-16	269-279	Maksimenko	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	np0000	*	Maksimenko	person	*	*->6-3	*[6]	nsubj:pass	basic	2-18	
+2-17	280-284	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnisii30an	*	būt	_	_	_	_	aux:pass	basic	2-18	
+2-18	285-292	izīrēts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsnpsnpn	*	izīrēt	_	_	_	_	conj	basic	2-6	
+2-19	293-304	Nīderlandes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	*	Nīderlande	GPE	https://en.wikipedia.org/wiki/Netherlands	*->4-1	*[4]	nmod	basic	2-22	
+2-20	305-310	otrās	*	*	Gen	*	Pos	Fem	*	*	Ord	Sing	*	*	*	*	*	*	Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|NumType=Ord	*	*	mosfsg	*	otrā	_	_	*->4-1	*[4]	amod	basic	2-21	
+2-21	311-321	spēcīgākās	*	*	Nom	*	Cmp	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Fem\|Number=Plur	*	*	affpnyc	*	spēcīgs	_	_	*->4-1	*[4]	amod	basic	2-22	
+2-22	322-327	līgas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	līga	_	_	*->4-1	*[4]	nmod	basic	2-23	
+2-23	328-336	vienībai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	*	vienība	_	_	*->4-1	*[4]	nmod	basic	2-24	
+2-24	337-342	Venlo	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	np0000	*	Venlo	organization[11]	https://en.wikipedia.org/wiki/VVV-Venlo[11]	*->5-1	*[5]	iobj	basic	2-18	
+2-25	343-346	VVV	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	xx	*	VVV	organization[11]	https://en.wikipedia.org/wiki/VVV-Venlo[11]	*->5-1	*[5]	flat:name	basic	2-24	
+2-26	346-347	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-33	
+2-27	348-351	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	_	_	cc	basic	2-33	
+2-28	352-358	vasarā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	vasara	time	*	_	_	obl	basic	2-33	
+2-29	359-365	līgums	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	līgums	_	_	_	_	nsubj:pass	basic	2-33	
+2-30	366-368	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	2-31	
+2-31	369-373	viņu	*	*	Acc	*	*	Masc	*	*	*	Sing	3	*	Prs	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msan	*	viņš	_	_	*->6-4	*[6]	det	basic	2-29	
+2-32	374-380	netika	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vtnisi130ay	*	tikt	_	_	_	_	aux:pass	basic	2-33	
+2-33	381-391	pagarināts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsnpsnpn	*	pagarināt	_	_	_	_	conj	basic	2-6	
+2-34	391-392	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-6	

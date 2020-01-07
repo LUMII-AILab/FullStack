@@ -1,0 +1,93 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Ar zaudējumu sacensības sāka arī Latvijas komandas smagākais cīkstonis Dmitrijs Mihailovs, kurš svarā līdz 125 kilogramiem ar 1:8 zaudēja Andrejam Romanovam no Moldovas, kurš iekļuva ceturtdaļfinālā.
+1-1	0-2	Ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	1-2	
+1-2	3-12	zaudējumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	zaudējums	_	_	_	_	obl	basic	1-4	
+1-3	13-23	sacensības	*	*	Acc	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Ptan	*	*	ncfda4	*	sacensības	_	_	_	_	obj	basic	1-4	
+1-4	24-28	sāka	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist130an	*	sākt	_	_	_	_	root	basic	1-4	
+1-5	29-32	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	1-10	
+1-6	33-41	Latvijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	*->1-1	*[1]	nmod	basic	1-7	
+1-7	42-50	komandas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	komanda	_	_	*->1-1	*[1]	nmod	basic	1-9	
+1-8	51-60	smagākais	*	*	Nom	*	Cmp	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Masc\|Number=Sing	*	*	afmsnyc	*	smags	_	_	*->1-1	*[1]	amod	basic	1-9	
+1-9	61-70	cīkstonis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	cīkstonis	_	_	*->1-1	*[1]	nmod	basic	1-10	
+1-10	71-79	Dmitrijs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Dmitrijs	person[1]	https://lv.wikipedia.org/wiki/Dmitrijs\_Mihailovs[1]	*->1-2	*[1]	nsubj	basic	1-4	
+1-11	80-89	Mihailovs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Mihailovs	person[1]	https://lv.wikipedia.org/wiki/Dmitrijs\_Mihailovs[1]	*->1-2	*[1]	flat:name	basic	1-10	
+1-12	89-90	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-22	
+1-13	91-95	kurš	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	Rel	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msnn	*	kurš	_	_	*->1-3	*[1]	nsubj	basic	1-22	
+1-14	96-101	svarā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	svars	_	_	_	_	acl	basic	1-22	
+1-15	102-106	līdz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	līdz	_	_	_	_	case	basic	1-17	
+1-16	107-110	125	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	125	_	_	_	_	nummod	basic	1-17	
+1-17	111-122	kilogramiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	kilograms	_	_	_	_	nmod	basic	1-14	
+1-18	123-125	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	_	_	case	basic	1-19	
+1-19	126-127	1	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	1	_	_	_	_	nummod	basic	1-22	
+1-20	127-128	:	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zo	*	:	_	_	_	_	punct	basic	1-19	
+1-21	128-129	8	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	8	_	_	_	_	flat	basic	1-19	
+1-22	130-137	zaudēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist230an	*	zaudēt	_	_	_	_	acl	basic	1-10	
+1-23	138-146	Andrejam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	npmsd1	*	Andrejs	person[2]	https://en.wikipedia.org/wiki/Andrei\_Romanov\_(wrestler)[2]	*->2-1	*[2]	iobj	basic	1-22	
+1-24	147-156	Romanovam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	npmsd1	*	Romanovs	person[2]	https://en.wikipedia.org/wiki/Andrei\_Romanov\_(wrestler)[2]	*->2-1	*[2]	flat:name	basic	1-23	
+1-25	157-159	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case	basic	1-26	
+1-26	160-168	Moldovas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Moldova	GPE	https://en.wikipedia.org/wiki/Moldova	_	_	nmod	basic	1-23	
+1-27	168-169	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-29	
+1-28	170-174	kurš	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	Rel	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msnn	*	kurš	_	_	*->2-2	*[2]	nsubj	basic	1-29	
+1-29	175-182	iekļuva	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnisi130an	*	iekļūt	_	_	_	_	acl	basic	1-23	
+1-30	183-198	ceturtdaļfinālā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	ceturtdaļfināls	_	_	_	_	obl	basic	1-29	
+1-31	198-199	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-4	
+
+#Text=Mihailovs cīņas ievadā reizi izgrūda pretinieku no cīņas laukuma, bet līdz puslaika beigām pretiniekam reizi izdevās viņu piespiest pie paklāja un pārņemt vadību.
+2-1	200-209	Mihailovs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Mihailovs	person	https://lv.wikipedia.org/wiki/Dmitrijs\_Mihailovs	*->1-4	*[1]	nsubj	basic	2-5	
+2-2	210-215	cīņas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	cīņa	_	_	_	_	nmod	basic	2-3	
+2-3	216-222	ievadā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	ievads	_	_	_	_	obl	basic	2-5	
+2-4	223-228	reizi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	reize	_	_	_	_	obl	basic	2-5	
+2-5	229-236	izgrūda	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist130an	*	izgrūst	_	_	_	_	root	basic	2-5	
+2-6	237-247	pretinieku	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	pretinieks	_	_	*->2-3	*[2]	obj	basic	2-5	
+2-7	248-250	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case	basic	2-9	
+2-8	251-256	cīņas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	cīņa	_	_	_	_	nmod	basic	2-9	
+2-9	257-264	laukuma	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	laukums	_	_	_	_	obl	basic	2-5	
+2-10	264-265	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-17	
+2-11	266-269	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	_	_	cc	basic	2-17	
+2-12	270-274	līdz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	līdz	_	_	_	_	case	basic	2-14	
+2-13	275-283	puslaika	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	puslaiks	_	_	_	_	nmod	basic	2-14	
+2-14	284-290	beigām	*	*	Dat	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Ptan	*	*	ncfdd4	*	beigas	_	_	_	_	obl	basic	2-17	
+2-15	291-302	pretiniekam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	pretinieks	_	_	*->2-4	*[2]	nsubj	basic	2-17	
+2-16	303-308	reizi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	reize	_	_	_	_	obl	basic	2-17	
+2-17	309-316	izdevās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	veyisii30an	*	izdoties	_	_	_	_	conj	basic	2-5	
+2-18	317-321	viņu	*	*	Acc	*	*	Masc	*	*	*	Sing	3	*	Prs	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msan	*	viņš	_	_	*->1-5	*[1]	obj	basic	2-19	
+2-19	322-331	piespiest	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t1000n	*	piespiest	_	_	_	_	xcomp	basic	2-17	
+2-20	332-335	pie	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pie	_	_	_	_	case	basic	2-21	
+2-21	336-343	paklāja	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	paklājs	_	_	_	_	obl	basic	2-19	
+2-22	344-346	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-23	
+2-23	347-354	pārņemt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t1000n	*	pārņemt	_	_	_	_	conj	basic	2-19	
+2-24	355-361	vadību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	vadība	_	_	_	_	obj	basic	2-23	
+2-25	361-362	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-5	
+
+#Text=Otrajā puslaikā cīņa kļuva pasīvāka, tomēr Moldovas sportists spēkus saglabāja ilgāk un veica vēl trīs rezultatīvus uzbrukumus, izcīnot pārliecinošu uzvaru.
+3-1	363-369	Otrajā	*	*	Loc	*	Pos	Masc	*	*	Ord	Sing	*	*	*	*	*	*	Case=Loc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|NumType=Ord	*	*	mosmsl	*	otrais	_	_	_	_	amod	basic	3-2	
+3-2	370-378	puslaikā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	puslaiks	_	_	_	_	obl	basic	3-5	
+3-3	379-383	cīņa	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	cīņa	_	_	_	_	nsubj	basic	3-5	
+3-4	384-389	kļuva	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vtnisi130an	*	kļūt	_	_	_	_	cop	basic	3-5	
+3-5	390-398	pasīvāka	*	*	Nom	*	Cmp	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Fem\|Number=Sing	*	*	affsnnc	*	pasīvs	_	_	_	_	root	basic	3-5	
+3-6	398-399	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-11	
+3-7	400-405	tomēr	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	tomēr	_	_	_	_	cc	basic	3-11	
+3-8	406-414	Moldovas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Moldova	GPE	https://en.wikipedia.org/wiki/Moldova	*->2-5	*[2]	nmod	basic	3-9	
+3-9	415-424	sportists	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	sportists	_	_	*->2-5	*[2]	nsubj	basic	3-11	
+3-10	425-431	spēkus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	spēks	_	_	_	_	obj	basic	3-11	
+3-11	432-441	saglabāja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist230an	*	saglabāt	_	_	_	_	conj	basic	3-5	
+3-12	442-447	ilgāk	*	*	*	*	Cmp	*	*	*	*	*	*	*	*	*	*	*	Degree=Cmp	*	*	rct	*	ilgi	_	_	_	_	advmod	basic	3-11	
+3-13	448-450	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	3-14	
+3-14	451-456	veica	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist130an	*	veikt	_	_	_	_	conj	basic	3-11	
+3-15	457-460	vēl	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	vēl	_	_	_	_	advmod	basic	3-16	
+3-16	461-465	trīs	*	*	Acc	*	*	Masc	*	*	Card	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpa	*	trīs	_	_	_	_	nummod	basic	3-18	
+3-17	466-478	rezultatīvus	*	*	Acc	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpanp	*	rezultatīvs	_	_	_	_	amod	basic	3-18	
+3-18	479-489	uzbrukumus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	uzbrukums	_	_	_	_	obj	basic	3-14	
+3-19	489-490	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-20	
+3-20	491-498	izcīnot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	Conv	*	vmnpu0000000n	*	izcīnīt	_	_	_	_	advcl	basic	3-14	
+3-21	499-511	pārliecinošu	*	Imp	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Pres	*	Aspect=Imp\|Case=Acc\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdfsaapnpn	*	pārliecināt	_	_	_	_	amod	basic	3-22	
+3-22	512-518	uzvaru	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	uzvara	_	_	_	_	obj	basic	3-20	
+3-23	518-519	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-5	

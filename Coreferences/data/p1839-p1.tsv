@@ -1,52 +1,52 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Sporta kluba «SAM-KAN-TKD» dalībniekiem īpašas ir tās reizes, kad viņi tiekas ar teikvondo lielmeistaru Dae Džinu Hvangu.
-1-1	0-6	Sporta	ncmsg1	sports	_	_	*[1]	*->1-1	nmod	basic	1-2	
-1-2	7-12	kluba	ncmsg1	klubs	_	_	*[1]	*->1-1	nmod	basic	1-4	
-1-3	13-14	«	zq	«	organization[1]	*[1]	*[1]	*->1-2	punct	basic	1-4	
-1-4	14-25	SAM-KAN-TKD	xx	SAM-KAN-TKD	organization[1]	*[1]	*[1]	*->1-2	nmod	basic	1-6	
-1-5	25-26	»	zq	»	organization[1]	*[1]	*[1]	*->1-2	punct	basic	1-4	
-1-6	27-39	dalībniekiem	ncmpd1	dalībnieks	_	_	*[3]	*->3-1	obl	basic	1-7	
-1-7	40-46	īpašas	affpnnp	īpaša	_	_	_	_	root	basic	1-7	
-1-8	47-49	ir	vcnipii30an	būt	_	_	_	_	cop	basic	1-7	
-1-9	50-53	tās	pd0fpnn	tā	_	_	_	_	det	basic	1-10	
-1-10	54-60	reizes	ncfpn5	reize	_	_	*[2]	*->2-1	nsubj	basic	1-7	
-1-11	60-61	,	zc	,	_	_	_	_	punct	basic	1-14	
-1-12	62-65	kad	r0t	kad	_	_	*[2]	*->2-2	advmod	basic	1-14	
-1-13	66-70	viņi	pp3mpnn	viņš	_	_	*[3]	*->3-2	nsubj	basic	1-14	
-1-14	71-77	tiekas	vmyipi130an	tikties	_	_	_	_	acl	basic	1-10	
-1-15	78-80	ar	spsa	ar	_	_	_	_	case	basic	1-18	
-1-16	81-90	teikvondo	nc0000	teikvondo	_	_	_	_	nmod	basic	1-17	
-1-17	91-103	lielmeistaru	ncmsa1	lielmeistars	_	_	*[4]	*->4-1	nmod	basic	1-18	
-1-18	104-107	Dae	np0000	Dae	person[2]	*[2]	*[4]	*->4-2	iobj	basic	1-14	
-1-19	108-113	Džinu	npmsa1	Džins	person[2]	*[2]	*[4]	*->4-2	flat:name	basic	1-18	
-1-20	114-120	Hvangu	npmsa1	Hvangs	person[2]	*[2]	*[4]	*->4-2	flat:name	basic	1-18	
-1-21	120-121	.	zs	.	_	_	_	_	punct	basic	1-7	
+1-1	0-6	Sporta	ncmsg1	*	sports	_	_	*->1-1	*[1]	nmod	basic	1-2	
+1-2	7-12	kluba	ncmsg1	*	klubs	_	_	*->1-1	*[1]	nmod	basic	1-4	
+1-3	13-14	«	zq	*	«	organization[1]	*[1]	*->1-2	*[1]	punct	basic	1-4	
+1-4	14-25	SAM-KAN-TKD	xx	*	SAM-KAN-TKD	organization[1]	*[1]	*->1-2	*[1]	nmod	basic	1-6	
+1-5	25-26	»	zq	*	»	organization[1]	*[1]	*->1-2	*[1]	punct	basic	1-4	
+1-6	27-39	dalībniekiem	ncmpd1	*	dalībnieks	_	_	*->3-1	*[3]	obl	basic	1-7	
+1-7	40-46	īpašas	affpnnp	*	īpaša	_	_	_	_	root	basic	1-7	
+1-8	47-49	ir	vcnipii30an	*	būt	_	_	_	_	cop	basic	1-7	
+1-9	50-53	tās	pd0fpnn	*	tā	_	_	_	_	det	basic	1-10	
+1-10	54-60	reizes	ncfpn5	*	reize	_	_	*->2-1	*[2]	nsubj	basic	1-7	
+1-11	60-61	,	zc	*	,	_	_	_	_	punct	basic	1-14	
+1-12	62-65	kad	r0t	*	kad	_	_	*->2-2	*[2]	advmod	basic	1-14	
+1-13	66-70	viņi	pp3mpnn	*	viņš	_	_	*->3-2	*[3]	nsubj	basic	1-14	
+1-14	71-77	tiekas	vmyipi130an	*	tikties	_	_	_	_	acl	basic	1-10	
+1-15	78-80	ar	spsa	*	ar	_	_	_	_	case	basic	1-18	
+1-16	81-90	teikvondo	nc0000	*	teikvondo	_	_	_	_	nmod	basic	1-17	
+1-17	91-103	lielmeistaru	ncmsa1	*	lielmeistars	_	_	*->4-1	*[4]	nmod	basic	1-18	
+1-18	104-107	Dae	np0000	*	Dae	person[2]	*[2]	*->4-2	*[4]	iobj	basic	1-14	
+1-19	108-113	Džinu	npmsa1	*	Džins	person[2]	*[2]	*->4-2	*[4]	flat:name	basic	1-18	
+1-20	114-120	Hvangu	npmsa1	*	Hvangs	person[2]	*[2]	*->4-2	*[4]	flat:name	basic	1-18	
+1-21	120-121	.	zs	*	.	_	_	_	_	punct	basic	1-7	
 
 #Text=Šoruden viņš ieradās Bauskā, lai vadītu treniņu un demonstrētu, kāda meistarība ir melnās jostas 9. dana īpašniekam.
-2-1	123-130	Šoruden	r0t	šoruden	time	*	_	_	advmod	basic	2-3	
-2-2	131-135	viņš	pp3msnn	viņš	_	_	*[4]	*->4-3	nsubj	basic	2-3	
-2-3	136-143	ieradās	vmyisi130an	ierasties	_	_	_	_	root	basic	2-3	
-2-4	144-150	Bauskā	npfsl4	Bauska	GPE	https://en.wikipedia.org/wiki/Bauska	_	_	obl	basic	2-3	
-2-5	150-151	,	zc	,	_	_	_	_	punct	basic	2-7	
-2-6	152-155	lai	cs	lai	_	_	_	_	mark	basic	2-7	
-2-7	156-162	vadītu	vmnc0t300an	vadīt	_	_	_	_	advcl	basic	2-3	
-2-8	163-170	treniņu	ncmsa1	treniņš	_	_	_	_	obj	basic	2-7	
-2-9	171-173	un	cc	un	_	_	_	_	cc	basic	2-10	
-2-10	174-185	demonstrētu	vmnc0t200an	demonstrēt	_	_	_	_	conj	basic	2-7	
-2-11	185-186	,	zc	,	_	_	_	_	punct	basic	2-10	
-2-12	187-191	kāda	pi0fsnn	kāda	_	_	_	_	det	basic	2-13	
-2-13	192-202	meistarība	ncfsn4	meistarība	_	_	_	_	nsubj	basic	2-14	
-2-14	203-205	ir	vmnipii30an	būt	_	_	_	_	ccomp	basic	2-10	
-2-15	206-212	melnās	affpnyp	melna	_	_	_	_	amod	basic	2-16	
-2-16	213-219	jostas	ncfsg4	josta	_	_	_	_	nmod	basic	2-18	
-2-17	220-222	9.	xo	9.	_	_	_	_	amod	basic	2-18	
-2-18	223-227	dana	ncmsg1	dans	_	_	_	_	nmod	basic	2-19	
-2-19	228-238	īpašniekam	ncmsd1	īpašnieks	_	_	_	_	obl	basic	2-14	
-2-20	238-239	.	zs	.	_	_	_	_	punct	basic	2-3	
+2-1	123-130	Šoruden	r0t	*	šoruden	time	*	_	_	advmod	basic	2-3	
+2-2	131-135	viņš	pp3msnn	*	viņš	_	_	*->4-3	*[4]	nsubj	basic	2-3	
+2-3	136-143	ieradās	vmyisi130an	*	ierasties	_	_	_	_	root	basic	2-3	
+2-4	144-150	Bauskā	npfsl4	*	Bauska	GPE	https://en.wikipedia.org/wiki/Bauska	_	_	obl	basic	2-3	
+2-5	150-151	,	zc	*	,	_	_	_	_	punct	basic	2-7	
+2-6	152-155	lai	cs	*	lai	_	_	_	_	mark	basic	2-7	
+2-7	156-162	vadītu	vmnc0t300an	*	vadīt	_	_	_	_	advcl	basic	2-3	
+2-8	163-170	treniņu	ncmsa1	*	treniņš	_	_	_	_	obj	basic	2-7	
+2-9	171-173	un	cc	*	un	_	_	_	_	cc	basic	2-10	
+2-10	174-185	demonstrētu	vmnc0t200an	*	demonstrēt	_	_	_	_	conj	basic	2-7	
+2-11	185-186	,	zc	*	,	_	_	_	_	punct	basic	2-10	
+2-12	187-191	kāda	pi0fsnn	*	kāda	_	_	_	_	det	basic	2-13	
+2-13	192-202	meistarība	ncfsn4	*	meistarība	_	_	_	_	nsubj	basic	2-14	
+2-14	203-205	ir	vmnipii30an	*	būt	_	_	_	_	ccomp	basic	2-10	
+2-15	206-212	melnās	affpnyp	*	melna	_	_	_	_	amod	basic	2-16	
+2-16	213-219	jostas	ncfsg4	*	josta	_	_	_	_	nmod	basic	2-18	
+2-17	220-222	9.	xo	*	9.	_	_	_	_	amod	basic	2-18	
+2-18	223-227	dana	ncmsg1	*	dans	_	_	_	_	nmod	basic	2-19	
+2-19	228-238	īpašniekam	ncmsd1	*	īpašnieks	_	_	_	_	obl	basic	2-14	
+2-20	238-239	.	zs	*	.	_	_	_	_	punct	basic	2-3	

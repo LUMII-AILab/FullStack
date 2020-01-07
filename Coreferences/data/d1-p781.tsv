@@ -1,45 +1,45 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=BALVIS.
-1-1	0-6	BALVIS	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	Balvis	person	*	*[1]	*->1-1	root|root	basic|enhanced	1-1|1-1	
-1-2	6-7	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-1|1-1	
+1-1	0-6	BALVIS	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	*	Balvis	person	*	*->1-1	*[1]	root|root	basic|enhanced	1-1|1-1	
+1-2	6-7	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	1-1|1-1	
 
 #Text=Viņa ir mana māte, Armand.
-2-1	9-13	Viņa	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsnn	viņa	_	_	*[2]	*->2-1	nsubj|nsubj	basic|enhanced	2-4|2-4	
-2-2	14-16	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	cop|cop	basic|enhanced	2-4|2-4	
-2-3	17-21	mana	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0fsnn	mana	_	_	*[1]	*->1-2	det|det	basic|enhanced	2-4|2-4	
-2-4	22-26	māte	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	māte	_	_	*[2]	*->2-2	root|root	basic|enhanced	2-4|2-4	
-2-5	26-27	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-6|2-6	
-2-6	28-34	Armand	Masc	Sing	Voc	*	*	*	*	*	*	Case=Voc\|Gender=Masc\|Number=Sing	*	*	npmsv1	Armands	person	*	_	_	parataxis|parataxis	basic|enhanced	2-4|2-4	
-2-7	34-35	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	2-4|2-4	
+2-1	9-13	Viņa	*	*	Nom	*	*	Fem	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3fsnn	*	viņa	_	_	*->2-1	*[2]	nsubj|nsubj	basic|enhanced	2-4|2-4	
+2-2	14-16	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop|cop	basic|enhanced	2-4|2-4	
+2-3	17-21	mana	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0fsnn	*	mana	_	_	*->1-2	*[1]	det|det	basic|enhanced	2-4|2-4	
+2-4	22-26	māte	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	māte	_	_	*->2-2	*[2]	root|root	basic|enhanced	2-4|2-4	
+2-5	26-27	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	2-6|2-6	
+2-6	28-34	Armand	*	*	Voc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Voc\|Gender=Masc\|Number=Sing	*	*	npmsv1	*	Armands	person	*	_	_	parataxis|parataxis	basic|enhanced	2-4|2-4	
+2-7	34-35	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	2-4|2-4	
 
 #Text=Dažreiz man jābūt arī dēlam, ne tikai brālim.
-3-1	37-44	Dažreiz	_	_	_	_	_	_	_	_	_	_	_	_	r0t	dažreiz	_	_	_	_	advmod|advmod	basic|enhanced	3-5|3-5	
-3-2	45-48	man	*	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10sdn	es	_	_	*[1]	*->1-3	nsubj|nsubj	basic|enhanced	3-5|3-5	
-3-3	49-54	jābūt	*	*	*	*	*	*	Nec	Act	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vcnd0ii00an	būt	_	_	_	_	xcomp|xcomp	basic|enhanced	3-5|3-5	
-3-4	55-58	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse|discourse	basic|enhanced	3-5|3-5	
-3-5	59-64	dēlam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	dēls	_	_	_	_	root|root	basic|enhanced	3-5|3-5	
-3-6	64-65	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	3-9|3-9	
-3-7	66-68	ne	_	_	_	_	_	_	_	_	_	_	_	_	cc	ne	_	_	_	_	cc|cc	basic|enhanced	3-9|3-9	
-3-8	69-74	tikai	_	_	_	_	_	_	_	_	_	_	_	_	q	tikai	_	_	_	_	discourse|discourse	basic|enhanced	3-7|3-7	
-3-9	75-81	brālim	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd2	brālis	_	_	_	_	conj|conj	basic|enhanced	3-5|3-5	
-3-10	81-82	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	3-5|3-5	
+3-1	37-44	Dažreiz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	dažreiz	_	_	_	_	advmod|advmod	basic|enhanced	3-5|3-5	
+3-2	45-48	man	*	*	Dat	*	*	*	*	*	*	Sing	1	*	*	*	*	*	Case=Dat\|Number=Sing\|Person=1\|PronType=Prs	*	*	pp10sdn	*	es	_	_	*->1-3	*[1]	nsubj|nsubj	basic|enhanced	3-5|3-5	
+3-3	49-54	jābūt	*	*	*	*	*	*	Nec	*	*	*	*	*	*	*	*	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vcnd0ii00an	*	būt	_	_	_	_	xcomp|xcomp	basic|enhanced	3-5|3-5	
+3-4	55-58	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse|discourse	basic|enhanced	3-5|3-5	
+3-5	59-64	dēlam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	dēls	_	_	_	_	root|root	basic|enhanced	3-5|3-5	
+3-6	64-65	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	3-9|3-9	
+3-7	66-68	ne	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	ne	_	_	_	_	cc|cc	basic|enhanced	3-9|3-9	
+3-8	69-74	tikai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tikai	_	_	_	_	discourse|discourse	basic|enhanced	3-7|3-7	
+3-9	75-81	brālim	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd2	*	brālis	_	_	_	_	conj|conj	basic|enhanced	3-5|3-5	
+3-10	81-82	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	3-5|3-5	
 
 #Text=Novērtē to, ka esmu te, nevis mājās.
-4-1	84-91	Novērtē	*	Sing	*	*	*	*	Imp	Act	*	Mood=Imp\|Number=Sing\|Person=2\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	2	*	vmnm0t22san	novērtēt	_	_	_	_	root|root	basic|enhanced	4-1|4-1	
-4-2	92-94	to	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	tas	_	_	_	_	obj|obj	basic|enhanced	4-1|4-1	
-4-3	94-95	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	4-5|4-5	
-4-4	96-98	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark|mark	basic|enhanced	4-5|4-5	
-4-5	99-103	esmu	*	Sing	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	1	*	vmnipii1san	būt	_	_	_	_	ccomp|ccomp	basic|enhanced	4-2|4-2	
-4-6	104-106	te	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0p	te	_	_	_	_	advmod|advmod	basic|enhanced	4-5|4-5	
-4-7	106-107	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	4-9|4-9	
-4-8	108-113	nevis	_	_	_	_	_	_	_	_	_	_	_	_	cc	nevis	_	_	_	_	cc|cc	basic|enhanced	4-9|4-9	
-4-9	114-119	mājās	Fem	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	māja	_	_	_	_	conj|conj	basic|enhanced	4-6|4-6	
-4-10	119-120	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	4-1|4-1	
+4-1	84-91	Novērtē	*	*	*	*	*	*	Imp	*	*	Sing	2	*	*	*	*	*	Mood=Imp\|Number=Sing\|Person=2\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vmnm0t22san	*	novērtēt	_	_	_	_	root|root	basic|enhanced	4-1|4-1	
+4-2	92-94	to	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	*	tas	_	_	_	_	obj|obj	basic|enhanced	4-1|4-1	
+4-3	94-95	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	4-5|4-5	
+4-4	96-98	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark|mark	basic|enhanced	4-5|4-5	
+4-5	99-103	esmu	*	*	*	*	*	*	Ind	*	*	Sing	1	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipii1san	*	būt	_	_	_	_	ccomp|ccomp	basic|enhanced	4-2|4-2	
+4-6	104-106	te	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0p	*	te	_	_	_	_	advmod|advmod	basic|enhanced	4-5|4-5	
+4-7	106-107	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	4-9|4-9	
+4-8	108-113	nevis	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	nevis	_	_	_	_	cc|cc	basic|enhanced	4-9|4-9	
+4-9	114-119	mājās	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	*	māja	_	_	_	_	conj|conj	basic|enhanced	4-6|4-6	
+4-10	119-120	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	4-1|4-1	

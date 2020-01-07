@@ -1,35 +1,35 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=–– Un vispār... turpina mazmeita.
-1-1	0-1	–	_	_	_	_	_	_	_	_	_	_	_	_	zd	–	_	_	_	_	punct	basic	1-4	
-1-2	1-2	–	_	_	_	_	_	_	_	_	_	_	_	_	zd	–	_	_	_	_	punct	basic	1-4	
-1-3	3-5	Un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-4	
-1-4	6-12	vispār	_	_	_	_	_	_	_	_	_	_	_	_	r0m	vispār	_	_	_	_	parataxis	basic	1-6	
-1-5	12-15	...	_	_	_	_	_	_	_	_	_	_	_	_	zs	...	_	_	_	_	punct	basic	1-4	
-1-6	16-23	turpina	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vpnipt330an	turpināt	_	_	_	_	root	basic	1-6	
-1-7	24-32	mazmeita	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	mazmeita	_	_	*[1]	*->1-1	nsubj	basic	1-6	
-1-8	32-33	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-6	
+1-1	0-1	–	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	–	_	_	_	_	punct	basic	1-4	
+1-2	1-2	–	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	–	_	_	_	_	punct	basic	1-4	
+1-3	3-5	Un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-4	
+1-4	6-12	vispār	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	vispār	_	_	_	_	parataxis	basic	1-6	
+1-5	12-15	...	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	...	_	_	_	_	punct	basic	1-4	
+1-6	16-23	turpina	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vpnipt330an	*	turpināt	_	_	_	_	root	basic	1-6	
+1-7	24-32	mazmeita	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	mazmeita	_	_	*->1-1	*[1]	nsubj	basic	1-6	
+1-8	32-33	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-6	
 
 #Text=Kāpēc tādā vecumā vajag bērnus; es jau Luīzi auklējot, tik ļoti nogurstu...
-2-1	35-40	Kāpēc	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0c	kāpēc	_	_	_	_	advmod	basic	2-4	
-2-2	41-45	tādā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msln	tāds	_	_	_	_	det	basic	2-3	
-2-3	46-52	vecumā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	vecums	_	_	_	_	obl	basic	2-4	
-2-4	53-58	vajag	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	vajadzēt	_	_	_	_	root	basic	2-4	
-2-5	59-65	bērnus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	bērns	_	_	_	_	obj	basic	2-4	
-2-6	65-66	;	_	_	_	_	_	_	_	_	_	_	_	_	zc	\;	_	_	_	_	punct	basic	2-14	
-2-7	67-69	es	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10snn	es	_	_	*[1]	*->1-2	nsubj	basic	2-14	
-2-8	70-73	jau	_	_	_	_	_	_	_	_	_	_	_	_	r0t	jau	_	_	_	_	advmod	basic	2-14	
-2-9	74-79	Luīzi	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa5	Luīze	person	*	_	_	obj	basic	2-10	
-2-10	80-88	auklējot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000n	auklēt	_	_	_	_	advcl	basic	2-14	
-2-11	88-89	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-10	
-2-12	90-93	tik	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0q	tik	_	_	_	_	advmod	basic	2-13	
-2-13	94-98	ļoti	_	_	_	_	_	_	_	_	_	_	_	_	r0q	ļoti	_	_	_	_	advmod	basic	2-14	
-2-14	99-107	nogurstu	*	Sing	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	1	*	vmnipi11san	nogurt	_	_	_	_	parataxis	basic	2-4	
-2-15	107-110	...	_	_	_	_	_	_	_	_	_	_	_	_	zs	...	_	_	_	_	punct	basic	2-4	
+2-1	35-40	Kāpēc	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0c	*	kāpēc	_	_	_	_	advmod	basic	2-4	
+2-2	41-45	tādā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msln	*	tāds	_	_	_	_	det	basic	2-3	
+2-3	46-52	vecumā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	vecums	_	_	_	_	obl	basic	2-4	
+2-4	53-58	vajag	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	vajadzēt	_	_	_	_	root	basic	2-4	
+2-5	59-65	bērnus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	bērns	_	_	_	_	obj	basic	2-4	
+2-6	65-66	;	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	\;	_	_	_	_	punct	basic	2-14	
+2-7	67-69	es	*	*	Nom	*	*	*	*	*	*	Sing	1	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	*	*	pp10snn	*	es	_	_	*->1-2	*[1]	nsubj	basic	2-14	
+2-8	70-73	jau	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	jau	_	_	_	_	advmod	basic	2-14	
+2-9	74-79	Luīzi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa5	*	Luīze	person	*	_	_	obj	basic	2-10	
+2-10	80-88	auklējot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000n	*	auklēt	_	_	_	_	advcl	basic	2-14	
+2-11	88-89	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-10	
+2-12	90-93	tik	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0q	*	tik	_	_	_	_	advmod	basic	2-13	
+2-13	94-98	ļoti	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	ļoti	_	_	_	_	advmod	basic	2-14	
+2-14	99-107	nogurstu	*	*	*	*	*	*	Ind	*	*	Sing	1	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipi11san	*	nogurt	_	_	_	_	parataxis	basic	2-4	
+2-15	107-110	...	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	...	_	_	_	_	punct	basic	2-4	

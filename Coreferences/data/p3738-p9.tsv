@@ -1,51 +1,51 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Savukārt koncerna neto peļņa, kas attiecināma uz mātes sabiedrības akcionāriem, 2012.gada deviņos mēnešos bija pieci miljoni latu, kas, salīdzinot ar 2011.gada deviņiem mēnešiem, ir samazinājusies par 0,8 miljoniem latu jeb par 13,8%.
-1-1	0-8	Savukārt	_	_	_	_	_	_	_	_	_	_	_	_	r0q	savukārt	_	_	_	_	advmod	basic	1-19	
-1-2	9-17	koncerna	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	koncerns	_	_	*[1]	*->1-1	nmod	basic	1-4	
-1-3	18-22	neto	Masc	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsg\_p	neto	_	_	*[1]	*->1-1	amod	basic	1-4	
-1-4	23-28	peļņa	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	peļņa	_	_	*[1]	*->1-1	nsubj	basic	1-19	
-1-5	28-29	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-7	
-1-6	30-33	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	*[1]	*->1-2	nsubj	basic	1-7	
-1-7	34-45	attiecināma	Fem	Sing	Nom	Pos	*	Pres	*	Pass	*	Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	*	vmnpdfsnppnp	attiecināt	_	_	_	_	acl	basic	1-4	
-1-8	46-48	uz	_	_	_	_	_	_	_	_	_	_	_	_	sppd	uz	_	_	_	_	case	basic	1-11	
-1-9	49-54	mātes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	māte	_	_	_	_	nmod	basic	1-10	
-1-10	55-66	sabiedrības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	sabiedrība	_	_	_	_	nmod	basic	1-11	
-1-11	67-78	akcionāriem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	akcionārs	_	_	_	_	obl	basic	1-7	
-1-12	78-79	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-7	
-1-13	80-85	2012.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	2012.	time[1]	*[1]	_	_	amod	basic	1-14	
-1-14	85-89	gada	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	gads	time[1]	*[1]	_	_	nmod	basic	1-16	
-1-15	90-97	deviņos	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpl	deviņi	time[1]	*[1]	_	_	nummod	basic	1-16	
-1-16	98-105	mēnešos	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl2	mēness	time[1]	*[1]	_	_	obl	basic	1-19	
-1-17	106-110	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vcnisii30an	būt	_	_	_	_	cop	basic	1-19	
-1-18	111-116	pieci	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpn	pieci	_	_	_	_	nummod	basic	1-19	
-1-19	117-124	miljoni	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	miljons	_	_	_	_	root	basic	1-19	
-1-20	125-129	latu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	lats	_	_	_	_	nmod	basic	1-19	
-1-21	129-130	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-32	
-1-22	131-134	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	_	_	nsubj	basic	1-32	
-1-23	134-135	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-24	
-1-24	136-146	salīdzinot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000	salīdzināt	_	_	_	_	advcl	basic	1-32	
-1-25	147-149	ar	_	_	_	_	_	_	_	_	_	_	_	_	sppd	ar	_	_	_	_	case	basic	1-29	
-1-26	150-155	2011.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	2011.	time[2]	*[2]	_	_	amod	basic	1-27	
-1-27	155-159	gada	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	gads	time[2]	*[2]	_	_	nmod	basic	1-29	
-1-28	160-168	deviņiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpd	deviņi	time[2]	*[2]	_	_	nummod	basic	1-29	
-1-29	169-177	mēnešiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd2	mēness	time[2]	*[2]	_	_	iobj	basic	1-24	
-1-30	177-178	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-24	
-1-31	179-181	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	aux	basic	1-32	
-1-32	182-196	samazinājusies	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	Perf	vmypdfsnasnp	samazināties	_	_	_	_	acl	basic	1-4	
-1-33	197-200	par	_	_	_	_	_	_	_	_	_	_	_	_	sppd	par	_	_	_	_	case	basic	1-35	
-1-34	201-204	0,8	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	0,8	_	_	_	_	nummod	basic	1-35	
-1-35	205-214	miljoniem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	miljons	_	_	_	_	obl	basic	1-32	
-1-36	215-219	latu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	lats	_	_	_	_	nmod	basic	1-35	
-1-37	220-223	jeb	_	_	_	_	_	_	_	_	_	_	_	_	cc	jeb	_	_	_	_	cc	basic	1-40	
-1-38	224-227	par	_	_	_	_	_	_	_	_	_	_	_	_	sppd	par	_	_	_	_	case	basic	1-40	
-1-39	228-232	13,8	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	13,8	_	_	_	_	nummod	basic	1-40	
-1-40	232-233	%	_	_	_	_	_	_	_	_	_	_	_	_	xx	%	_	_	_	_	conj	basic	1-35	
-1-41	233-234	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-19	
+1-1	0-8	Savukārt	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	savukārt	_	_	_	_	advmod	basic	1-19	
+1-2	9-17	koncerna	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	koncerns	_	_	*->1-1	*[1]	nmod	basic	1-4	
+1-3	18-22	neto	*	*	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsg\_p	*	neto	_	_	*->1-1	*[1]	amod	basic	1-4	
+1-4	23-28	peļņa	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	peļņa	_	_	*->1-1	*[1]	nsubj	basic	1-19	
+1-5	28-29	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-7	
+1-6	30-33	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->1-2	*[1]	nsubj	basic	1-7	
+1-7	34-45	attiecināma	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Pres	*	Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdfsnppnp	*	attiecināt	_	_	_	_	acl	basic	1-4	
+1-8	46-48	uz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	uz	_	_	_	_	case	basic	1-11	
+1-9	49-54	mātes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	māte	_	_	_	_	nmod	basic	1-10	
+1-10	55-66	sabiedrības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	sabiedrība	_	_	_	_	nmod	basic	1-11	
+1-11	67-78	akcionāriem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	akcionārs	_	_	_	_	obl	basic	1-7	
+1-12	78-79	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-7	
+1-13	80-85	2012.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	2012.	time[1]	*[1]	_	_	amod	basic	1-14	
+1-14	85-89	gada	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	gads	time[1]	*[1]	_	_	nmod	basic	1-16	
+1-15	90-97	deviņos	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpl	*	deviņi	time[1]	*[1]	_	_	nummod	basic	1-16	
+1-16	98-105	mēnešos	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl2	*	mēness	time[1]	*[1]	_	_	obl	basic	1-19	
+1-17	106-110	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vcnisii30an	*	būt	_	_	_	_	cop	basic	1-19	
+1-18	111-116	pieci	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpn	*	pieci	_	_	_	_	nummod	basic	1-19	
+1-19	117-124	miljoni	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	miljons	_	_	_	_	root	basic	1-19	
+1-20	125-129	latu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	lats	_	_	_	_	nmod	basic	1-19	
+1-21	129-130	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-32	
+1-22	131-134	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	_	_	nsubj	basic	1-32	
+1-23	134-135	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-24	
+1-24	136-146	salīdzinot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000	*	salīdzināt	_	_	_	_	advcl	basic	1-32	
+1-25	147-149	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	_	_	case	basic	1-29	
+1-26	150-155	2011.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	2011.	time[2]	*[2]	_	_	amod	basic	1-27	
+1-27	155-159	gada	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	gads	time[2]	*[2]	_	_	nmod	basic	1-29	
+1-28	160-168	deviņiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpd	*	deviņi	time[2]	*[2]	_	_	nummod	basic	1-29	
+1-29	169-177	mēnešiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd2	*	mēness	time[2]	*[2]	_	_	iobj	basic	1-24	
+1-30	177-178	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-24	
+1-31	179-181	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	aux	basic	1-32	
+1-32	182-196	samazinājusies	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	*	vmypdfsnasnp	*	samazināties	_	_	_	_	acl	basic	1-4	
+1-33	197-200	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	par	_	_	_	_	case	basic	1-35	
+1-34	201-204	0,8	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	0,8	_	_	_	_	nummod	basic	1-35	
+1-35	205-214	miljoniem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	miljons	_	_	_	_	obl	basic	1-32	
+1-36	215-219	latu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	lats	_	_	_	_	nmod	basic	1-35	
+1-37	220-223	jeb	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	jeb	_	_	_	_	cc	basic	1-40	
+1-38	224-227	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	par	_	_	_	_	case	basic	1-40	
+1-39	228-232	13,8	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	13,8	_	_	_	_	nummod	basic	1-40	
+1-40	232-233	%	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	xx	*	%	_	_	_	_	conj	basic	1-35	
+1-41	233-234	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-19	

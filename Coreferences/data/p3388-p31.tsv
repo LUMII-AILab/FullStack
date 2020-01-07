@@ -1,78 +1,78 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Kukuļus ņēma visi, kam nebija slinkums.
-1-1	0-7	Kukuļus	ncmpa2	kukulis	_	_	_	_	obj	basic	1-2	
-1-2	8-12	ņēma	vmnist130an	ņemt	_	_	_	_	root	basic	1-2	
-1-3	13-17	visi	pg0mpnn	visi	_	_	*[1]	*->1-1	nsubj	basic	1-2	
-1-4	17-18	,	zc	,	_	_	_	_	punct	basic	1-6	
-1-5	19-22	kam	pr000dn	kas	_	_	*[1]	*->1-2	obl	basic	1-6	
-1-6	23-29	nebija	vmnisii30ay	nebūt	_	_	_	_	acl	basic	1-3	
-1-7	30-38	slinkums	ncmsn1	slinkums	_	_	_	_	nsubj	basic	1-6	
-1-8	38-39	.	zs	.	_	_	_	_	punct	basic	1-2	
+1-1	0-7	Kukuļus	ncmpa2	*	kukulis	_	_	_	_	obj	basic	1-2	
+1-2	8-12	ņēma	vmnist130an	*	ņemt	_	_	_	_	root	basic	1-2	
+1-3	13-17	visi	pg0mpnn	*	visi	_	_	*->1-1	*[1]	nsubj	basic	1-2	
+1-4	17-18	,	zc	*	,	_	_	_	_	punct	basic	1-6	
+1-5	19-22	kam	pr000dn	*	kas	_	_	*->1-2	*[1]	obl	basic	1-6	
+1-6	23-29	nebija	vmnisii30ay	*	nebūt	_	_	_	_	acl	basic	1-3	
+1-7	30-38	slinkums	ncmsn1	*	slinkums	_	_	_	_	nsubj	basic	1-6	
+1-8	38-39	.	zs	*	.	_	_	_	_	punct	basic	1-2	
 
 #Text=Savā ziņā komisks skats bija redzams jau 1920. gadā, kad asiņainajās bandu cīņās par ietekmi nogalināja slavenu gangsteru vadoni Džimu Kolosimo.
-2-1	41-45	Savā	ps0fsln	sava	_	_	_	_	det	basic	2-2	
-2-2	46-50	ziņā	ncfsl4	ziņa	_	_	_	_	obl	basic	2-3	
-2-3	51-58	komisks	afmsnnp	komisks	_	_	_	_	amod	basic	2-4	
-2-4	59-64	skats	ncmsn1	skats	_	_	_	_	nsubj	basic	2-6	
-2-5	65-69	bija	vcnisii30an	būt	_	_	_	_	aux	basic	2-6	
-2-6	70-77	redzams	vmnpdmsnppnp	redzēt	_	_	_	_	root	basic	2-6	
-2-7	78-81	jau	r0t	jau	_	_	_	_	advmod	basic	2-9	
-2-8	82-87	1920.	xo	1920.	time[1]	*[1]	*[2]	*->2-1	amod	basic	2-9	
-2-9	88-92	gadā	ncmsl1	gads	time[1]	*[1]	*[2]	*->2-1	obl	basic	2-6	
-2-10	92-93	,	zc	,	_	_	_	_	punct	basic	2-17	
-2-11	94-97	kad	r0t	kad	_	_	*[2]	*->2-2	advmod	basic	2-17	
-2-12	98-109	asiņainajās	affplyp	asiņaina	_	_	_	_	amod	basic	2-14	
-2-13	110-115	bandu	ncfpg4	banda	_	_	_	_	nmod	basic	2-14	
-2-14	116-121	cīņās	ncfpl4	cīņa	_	_	_	_	obl	basic	2-17	
-2-15	122-125	par	spsa	par	_	_	_	_	case	basic	2-16	
-2-16	126-133	ietekmi	ncfsa5	ietekme	_	_	_	_	nmod	basic	2-14	
-2-17	134-144	nogalināja	vmnist330an	nogalināt	_	_	_	_	advcl	basic	2-9	
-2-18	145-152	slavenu	afmpgnp	slavens	_	_	_	_	amod	basic	2-20	
-2-19	153-162	gangsteru	ncmpg2	gangsteris	_	_	_	_	nmod	basic	2-20	
-2-20	163-169	vadoni	ncmsa2	vadonis	_	_	*[3]	*->3-1	nmod	basic	2-21	
-2-21	170-175	Džimu	npmsa1	Džims	person[2]	https://en.wikipedia.org/wiki/Big\_Jim\_Colosimo[2]	*[3]	*->3-2	nsubj	basic	2-17	
-2-22	176-184	Kolosimo	np0000	Kolosimo	person[2]	https://en.wikipedia.org/wiki/Big\_Jim\_Colosimo[2]	*[3]	*->3-2	flat:name	basic	2-21	
-2-23	184-185	.	zs	.	_	_	_	_	punct	basic	2-6	
+2-1	41-45	Savā	ps0fsln	*	sava	_	_	_	_	det	basic	2-2	
+2-2	46-50	ziņā	ncfsl4	*	ziņa	_	_	_	_	obl	basic	2-3	
+2-3	51-58	komisks	afmsnnp	*	komisks	_	_	_	_	amod	basic	2-4	
+2-4	59-64	skats	ncmsn1	*	skats	_	_	_	_	nsubj	basic	2-6	
+2-5	65-69	bija	vcnisii30an	*	būt	_	_	_	_	aux	basic	2-6	
+2-6	70-77	redzams	vmnpdmsnppnp	*	redzēt	_	_	_	_	root	basic	2-6	
+2-7	78-81	jau	r0t	*	jau	_	_	_	_	advmod	basic	2-9	
+2-8	82-87	1920.	xo	*	1920.	time[1]	*[1]	*->2-1	*[2]	amod	basic	2-9	
+2-9	88-92	gadā	ncmsl1	*	gads	time[1]	*[1]	*->2-1	*[2]	obl	basic	2-6	
+2-10	92-93	,	zc	*	,	_	_	_	_	punct	basic	2-17	
+2-11	94-97	kad	r0t	*	kad	_	_	*->2-2	*[2]	advmod	basic	2-17	
+2-12	98-109	asiņainajās	affplyp	*	asiņaina	_	_	_	_	amod	basic	2-14	
+2-13	110-115	bandu	ncfpg4	*	banda	_	_	_	_	nmod	basic	2-14	
+2-14	116-121	cīņās	ncfpl4	*	cīņa	_	_	_	_	obl	basic	2-17	
+2-15	122-125	par	spsa	*	par	_	_	_	_	case	basic	2-16	
+2-16	126-133	ietekmi	ncfsa5	*	ietekme	_	_	_	_	nmod	basic	2-14	
+2-17	134-144	nogalināja	vmnist330an	*	nogalināt	_	_	_	_	advcl	basic	2-9	
+2-18	145-152	slavenu	afmpgnp	*	slavens	_	_	_	_	amod	basic	2-20	
+2-19	153-162	gangsteru	ncmpg2	*	gangsteris	_	_	_	_	nmod	basic	2-20	
+2-20	163-169	vadoni	ncmsa2	*	vadonis	_	_	*->3-1	*[3]	nmod	basic	2-21	
+2-21	170-175	Džimu	npmsa1	*	Džims	person[2]	https://en.wikipedia.org/wiki/Big\_Jim\_Colosimo[2]	*->3-2	*[3]	nsubj	basic	2-17	
+2-22	176-184	Kolosimo	np0000	*	Kolosimo	person[2]	https://en.wikipedia.org/wiki/Big\_Jim\_Colosimo[2]	*->3-2	*[3]	flat:name	basic	2-21	
+2-23	184-185	.	zs	*	.	_	_	_	_	punct	basic	2-6	
 
 #Text=Viņa zārka nesēju skaitā bija arī trīs tiesneši un viens prokurors.
-3-1	187-191	Viņa	pp3msgn	viņš	_	_	*[3]	*->3-3	det	basic	3-2	
-3-2	192-197	zārka	ncmsg1	zārks	_	_	_	_	nmod	basic	3-3	
-3-3	198-204	nesēju	ncmpg1	nesējs	_	_	_	_	nmod	basic	3-4	
-3-4	205-211	skaitā	ncmsl1	skaits	_	_	_	_	obl	basic	3-5	
-3-5	212-216	bija	vmnisii30an	būt	_	_	_	_	root	basic	3-5	
-3-6	217-220	arī	q	arī	_	_	_	_	discourse	basic	3-8	
-3-7	221-225	trīs	mcsmpn	trīs	_	_	_	_	nummod	basic	3-8	
-3-8	226-234	tiesneši	ncmpn2	tiesnesis	_	_	_	_	nsubj	basic	3-5	
-3-9	235-237	un	cc	un	_	_	_	_	cc	basic	3-11	
-3-10	238-243	viens	mcsmsn	viens	_	_	_	_	nummod	basic	3-11	
-3-11	244-253	prokurors	ncmsn1	prokurors	_	_	_	_	conj	basic	3-8	
-3-12	253-254	.	zs	.	_	_	_	_	punct	basic	3-5	
+3-1	187-191	Viņa	pp3msgn	*	viņš	_	_	*->3-3	*[3]	det	basic	3-2	
+3-2	192-197	zārka	ncmsg1	*	zārks	_	_	_	_	nmod	basic	3-3	
+3-3	198-204	nesēju	ncmpg1	*	nesējs	_	_	_	_	nmod	basic	3-4	
+3-4	205-211	skaitā	ncmsl1	*	skaits	_	_	_	_	obl	basic	3-5	
+3-5	212-216	bija	vmnisii30an	*	būt	_	_	_	_	root	basic	3-5	
+3-6	217-220	arī	q	*	arī	_	_	_	_	discourse	basic	3-8	
+3-7	221-225	trīs	mcsmpn	*	trīs	_	_	_	_	nummod	basic	3-8	
+3-8	226-234	tiesneši	ncmpn2	*	tiesnesis	_	_	_	_	nsubj	basic	3-5	
+3-9	235-237	un	cc	*	un	_	_	_	_	cc	basic	3-11	
+3-10	238-243	viens	mcsmsn	*	viens	_	_	_	_	nummod	basic	3-11	
+3-11	244-253	prokurors	ncmsn1	*	prokurors	_	_	_	_	conj	basic	3-8	
+3-12	253-254	.	zs	*	.	_	_	_	_	punct	basic	3-5	
 
 #Text=Aiz zārka Kolosimo tuvākie līdzgaitnieki plecu pie pleca gāja kopā ar deviņiem pilsētas domes locekļiem un vienu štata politiķi.
-4-1	256-259	Aiz	spsg	aiz	_	_	_	_	case	basic	4-2	
-4-2	260-265	zārka	ncmsg1	zārks	_	_	_	_	obl	basic	4-9	
-4-3	266-274	Kolosimo	np0000	Kolosimo	person	https://en.wikipedia.org/wiki/Big\_Jim\_Colosimo	*[3]	*->3-4	nmod	basic	4-5	
-4-4	275-282	tuvākie	armpnyc	tuvs	_	_	_	_	amod	basic	4-5	
-4-5	283-296	līdzgaitnieki	ncmpn1	līdzgaitnieks	_	_	_	_	nsubj	basic	4-9	
-4-6	297-302	plecu	ncmsa1	plecs	_	_	_	_	obl	basic	4-9	
-4-7	303-306	pie	spsg	pie	_	_	_	_	case	basic	4-8	
-4-8	307-312	pleca	ncmsg1	plecs	_	_	_	_	nmod	basic	4-6	
-4-9	313-317	gāja	vmnisii30an	iet	_	_	_	_	root	basic	4-9	
-4-10	318-322	kopā	r0m	kopā	_	_	_	_	advmod	basic	4-9	
-4-11	323-325	ar	sppd	ar	_	_	_	_	case	basic	4-15	
-4-12	326-334	deviņiem	mcsmpd	deviņi	_	_	_	_	nummod	basic	4-15	
-4-13	335-343	pilsētas	ncfsg4	pilsēta	_	_	_	_	nmod	basic	4-14	
-4-14	344-349	domes	ncfsg5	dome	_	_	_	_	nmod	basic	4-15	
-4-15	350-359	locekļiem	ncmpd2	loceklis	_	_	_	_	iobj	basic	4-10	
-4-16	360-362	un	cc	un	_	_	_	_	cc	basic	4-19	
-4-17	363-368	vienu	mcsfsa	viena	_	_	_	_	nummod	basic	4-19	
-4-18	369-374	štata	ncmsg1	štats	_	_	_	_	nmod	basic	4-19	
-4-19	375-383	politiķi	ncmpa2	politiķis	_	_	_	_	conj	basic	4-15	
-4-20	383-384	.	zs	.	_	_	_	_	punct	basic	4-9	
+4-1	256-259	Aiz	spsg	*	aiz	_	_	_	_	case	basic	4-2	
+4-2	260-265	zārka	ncmsg1	*	zārks	_	_	_	_	obl	basic	4-9	
+4-3	266-274	Kolosimo	np0000	*	Kolosimo	person	https://en.wikipedia.org/wiki/Big\_Jim\_Colosimo	*->3-4	*[3]	nmod	basic	4-5	
+4-4	275-282	tuvākie	armpnyc	*	tuvs	_	_	_	_	amod	basic	4-5	
+4-5	283-296	līdzgaitnieki	ncmpn1	*	līdzgaitnieks	_	_	_	_	nsubj	basic	4-9	
+4-6	297-302	plecu	ncmsa1	*	plecs	_	_	_	_	obl	basic	4-9	
+4-7	303-306	pie	spsg	*	pie	_	_	_	_	case	basic	4-8	
+4-8	307-312	pleca	ncmsg1	*	plecs	_	_	_	_	nmod	basic	4-6	
+4-9	313-317	gāja	vmnisii30an	*	iet	_	_	_	_	root	basic	4-9	
+4-10	318-322	kopā	r0m	*	kopā	_	_	_	_	advmod	basic	4-9	
+4-11	323-325	ar	sppd	*	ar	_	_	_	_	case	basic	4-15	
+4-12	326-334	deviņiem	mcsmpd	*	deviņi	_	_	_	_	nummod	basic	4-15	
+4-13	335-343	pilsētas	ncfsg4	*	pilsēta	_	_	_	_	nmod	basic	4-14	
+4-14	344-349	domes	ncfsg5	*	dome	_	_	_	_	nmod	basic	4-15	
+4-15	350-359	locekļiem	ncmpd2	*	loceklis	_	_	_	_	iobj	basic	4-10	
+4-16	360-362	un	cc	*	un	_	_	_	_	cc	basic	4-19	
+4-17	363-368	vienu	mcsfsa	*	viena	_	_	_	_	nummod	basic	4-19	
+4-18	369-374	štata	ncmsg1	*	štats	_	_	_	_	nmod	basic	4-19	
+4-19	375-383	politiķi	ncmpa2	*	politiķis	_	_	_	_	conj	basic	4-15	
+4-20	383-384	.	zs	*	.	_	_	_	_	punct	basic	4-9	

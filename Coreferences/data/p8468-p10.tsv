@@ -1,0 +1,86 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Raidījumā „Eksperti dīvānā” piedalīsies septiņas dažāda vecuma draugu kompānijas un ģimenes - ierindas skatītāji, kuri katru nedēļu vērtēs vairākus Latvijā pieejamo televīziju raidījumus.
+1-1	0-9	Raidījumā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	raidījums	_	_	*->2-1	*[2]	nmod	basic	1-3	
+1-2	10-11	„	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	„	product[1]	*[1]	*->2-2	*[2]	punct	basic	1-3	
+1-3	11-19	Eksperti	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	eksperts	product[1]	*[1]	*->2-2	*[2]	obl	basic	1-6	
+1-4	20-26	dīvānā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	dīvāns	product[1]	*[1]	*->2-2	*[2]	acl	basic	1-3	
+1-5	26-27	”	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	”	product[1]	*[1]	*->2-2	*[2]	punct	basic	1-3	
+1-6	28-39	piedalīsies	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Fut\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyifi330an	*	piedalīties	_	_	_	_	root	basic	1-6	
+1-7	40-48	septiņas	*	*	Nom	*	*	Fem	*	*	Card	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|NumType=Card	*	*	mcsfpn	*	septiņas	_	_	_	_	nummod	basic	1-11	
+1-8	49-55	dažāda	*	*	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsgnp	*	dažāds	_	_	_	_	amod	basic	1-9	
+1-9	56-62	vecuma	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	vecums	_	_	_	_	nmod	basic	1-11	
+1-10	63-69	draugu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	draugs	_	_	_	_	nmod	basic	1-11	
+1-11	70-80	kompānijas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	kompānija	_	_	_	_	nsubj	basic	1-6	
+1-12	81-83	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-13	
+1-13	84-91	ģimenes	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn5	*	ģimene	_	_	_	_	conj	basic	1-11	
+1-14	92-93	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	-	_	_	_	_	punct	basic	1-16	
+1-15	94-102	ierindas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	ierinda	_	_	*->1-1	*[1]	nmod	basic	1-16	
+1-16	103-112	skatītāji	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	skatītājs	_	_	*->1-1	*[1]	acl	basic	1-11	
+1-17	112-113	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-21	
+1-18	114-118	kuri	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	Rel	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Rel	*	*	pr0mpnn	*	kurš	_	_	*->1-2	*[1]	nsubj	basic	1-21	
+1-19	119-124	katru	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	Tot	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Tot	*	*	pg0fsan	*	katra	_	_	_	_	det	basic	1-20	
+1-20	125-131	nedēļu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	nedēļa	_	_	_	_	obl	basic	1-21	
+1-21	132-138	vērtēs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnift230an	*	vērtēt	_	_	_	_	acl	basic	1-16	
+1-22	139-147	vairākus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	Ind	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|PronType=Ind	*	*	pi0mpan	*	vairāki	_	_	_	_	det	basic	1-26	
+1-23	148-155	Latvijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Latvija	GPE	*	_	_	obl	basic	1-24	
+1-24	156-164	pieejamo	*	*	Gen	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpgyp	*	pieejams	_	_	_	_	amod	basic	1-25	
+1-25	165-175	televīziju	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	televīzija	_	_	_	_	nmod	basic	1-26	
+1-26	176-186	raidījumus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	raidījums	_	_	_	_	obj	basic	1-21	
+1-27	186-187	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-6	
+
+#Text=„Eksperti dīvānā” veidots pēc britu pārraides “Gogglebox” parauga, kas Lielbritānijā guvis lieliskus panākumus.
+2-1	188-189	„	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	„	product[2]	*[2]	*->2-3	*[2]	punct	basic	2-2	
+2-2	189-197	Eksperti	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	eksperts	product[2]	*[2]	*->2-3	*[2]	nsubj:pass	basic	2-5	
+2-3	198-204	dīvānā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	dīvāns	product[2]	*[2]	*->2-3	*[2]	acl	basic	2-2	
+2-4	204-205	”	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	”	product[2]	*[2]	*->2-3	*[2]	punct	basic	2-2	
+2-5	206-213	veidots	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsnpsnpn	*	veidot	_	_	_	_	root	basic	2-5	
+2-6	214-217	pēc	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pēc	_	_	_	_	case	basic	2-12	
+2-7	218-223	britu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	brits	_	_	*->3-1	*[3]	nmod	basic	2-8	
+2-8	224-233	pārraides	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	pārraide	_	_	*->3-1	*[3]	nmod	basic	2-10	
+2-9	234-235	“	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	“	product[3]	*[3]	*->3-2	*[3]	punct	basic	2-10	
+2-10	235-244	Gogglebox	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	xx	*	Gogglebox	product[3]	*[3]	*->3-2	*[3]	nmod	basic	2-12	
+2-11	244-245	”	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	”	product[3]	*[3]	*->3-2	*[3]	punct	basic	2-10	
+2-12	246-253	parauga	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	paraugs	_	_	_	_	obl	basic	2-5	
+2-13	253-254	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-16	
+2-14	255-258	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	Rel	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->3-3	*[3]	nsubj	basic	2-16	
+2-15	259-272	Lielbritānijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Lielbritānija	_	_	_	_	obl	basic	2-16	
+2-16	273-278	guvis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdmsnasnpn	*	gūt	_	_	_	_	acl	basic	2-10	
+2-17	279-288	lieliskus	*	*	Acc	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpanp	*	lielisks	_	_	_	_	amod	basic	2-18	
+2-18	289-298	panākumus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	panākums	_	_	_	_	obj	basic	2-16	
+2-19	298-299	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-5	
+
+#Text=Šajā sezonā formāts adaptēts 16 pasaules valstīs, tajā skaitā Lietuvā un Igaunijā.
+3-1	300-304	Šajā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	Dem	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsln	*	šī	_	_	_	_	det	basic	3-2	
+3-2	305-311	sezonā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	sezona	_	_	_	_	obl	basic	3-4	
+3-3	312-319	formāts	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	formāts	_	_	_	_	nsubj:pass	basic	3-4	
+3-4	320-328	adaptēts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsnpsnpn	*	adaptēt	_	_	_	_	root	basic	3-4	
+3-5	329-331	16	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	16	_	_	_	_	nummod	basic	3-7	
+3-6	332-340	pasaules	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	pasaule	_	_	_	_	nmod	basic	3-7	
+3-7	341-348	valstīs	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl6	*	valsts	_	_	_	_	obl	basic	3-4	
+3-8	348-349	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-11	
+3-9	350-354	tajā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	Dem	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msln	*	tas	_	_	_	_	det	basic	3-10	
+3-10	355-361	skaitā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	skaits	_	_	_	_	discourse	basic	3-11	
+3-11	362-369	Lietuvā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Lietuva	GPE	https://en.wikipedia.org/wiki/Lithuania	_	_	acl	basic	3-7	
+3-12	370-372	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	3-13	
+3-13	373-381	Igaunijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Igaunija	GPE	https://en.wikipedia.org/wiki/Estonia	_	_	conj	basic	3-11	
+3-14	381-382	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-4	
+
+#Text=Raidījumu LTV varēs vērot katru trešdienu, plkst. 19.15.
+4-1	383-392	Raidījumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	raidījums	_	_	_	_	obj	basic	4-4	
+4-2	393-396	LTV	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	LTV	organization	https://en.wikipedia.org/wiki/Latvijas\_Televīzija	_	_	obl	basic	4-4	
+4-3	397-402	varēs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	Fin	Act	vonift330an	*	varēt	_	_	_	_	root	basic	4-3	
+4-4	403-408	vērot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t2000n	*	vērot	_	_	_	_	xcomp	basic	4-3	
+4-5	409-414	katru	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	Tot	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Tot	*	*	pg0fsan	*	katra	time[4]	*[4]	_	_	det	basic	4-6	
+4-6	415-424	trešdienu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	trešdiena	time[4]	*[4]	_	_	obj	basic	4-3	
+4-7	424-425	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	time[4]	*[4]	_	_	punct	basic	4-9	
+4-8	426-432	plkst.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yr	*	plkst.	time[4]	*[4]	_	_	advmod	basic	4-9	
+4-9	433-438	19.15	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	19.15	time[4]	*[4]	_	_	acl	basic	4-6	
+4-10	438-439	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	time[4]	*[4]	_	_	punct	basic	4-3	

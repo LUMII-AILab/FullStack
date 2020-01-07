@@ -1,69 +1,69 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Sevilja bija Spānijas lielākā ostas pilsēta, kurā ieradās tirdzniecības kuģi no tuvām un tālām zemēm.
-1-1	0-7	Sevilja	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Sevilja	GPE	https://en.wikipedia.org/wiki/Seville	*[1]	*->1-1	nsubj|nsubj	basic|enhanced	1-6|1-6	
-1-2	8-12	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vcnisii30an	būt	_	_	_	_	cop|cop	basic|enhanced	1-6|1-6	
-1-3	13-21	Spānijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Spānija	GPE	https://en.wikipedia.org/wiki/Spain	_	_	nmod|nmod	basic|enhanced	1-6|1-6	
-1-4	22-29	lielākā	Fem	Sing	Nom	Cmp	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Fem\|Number=Sing	*	*	affsnyc	liela	_	_	_	_	amod|amod	basic|enhanced	1-6|1-6	
-1-5	30-35	ostas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	osta	_	_	_	_	nmod|nmod	basic|enhanced	1-6|1-6	
-1-6	36-43	pilsēta	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	pilsēta	_	_	*[1]	*->1-2	root|root	basic|enhanced	1-6|1-6	
-1-7	43-44	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-9|1-9	
-1-8	45-49	kurā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsln	kura	_	_	*[2]	*->2-1	acl|acl	basic|enhanced	1-9|1-9	
-1-9	50-57	ieradās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi130an	ierasties	_	_	_	_	acl|acl	basic|enhanced	1-6|1-6	
-1-10	58-71	tirdzniecības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	tirdzniecība	_	_	_	_	nmod|nmod	basic|enhanced	1-11|1-11	
-1-11	72-76	kuģi	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	kuģis	_	_	_	_	obj|obj	basic|enhanced	1-9|1-9	
-1-12	77-79	no	_	_	_	_	_	_	_	_	_	_	_	_	sppd	no	_	_	_	_	case|case	basic|enhanced	1-16|1-16	
-1-13	80-85	tuvām	Fem	Plur	Dat	Pos	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	arfpdnp	tuva	_	_	_	_	amod|amod	basic|enhanced	1-16|1-16	
-1-14	86-88	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	1-15|1-15	
-1-15	89-94	tālām	Fem	Plur	Dat	Pos	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpdnp	tāla	_	_	_	_	conj|conj	basic|enhanced	1-13|1-13	
-1-16	95-100	zemēm	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd5	zeme	_	_	_	_	obl|obl	basic|enhanced	1-11|1-11	
-1-17	100-101	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-6|1-6	
+1-1	0-7	Sevilja	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Sevilja	GPE	https://en.wikipedia.org/wiki/Seville	*->1-1	*[1]	nsubj|nsubj	basic|enhanced	1-6|1-6	
+1-2	8-12	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vcnisii30an	*	būt	_	_	_	_	cop|cop	basic|enhanced	1-6|1-6	
+1-3	13-21	Spānijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Spānija	GPE	https://en.wikipedia.org/wiki/Spain	_	_	nmod|nmod	basic|enhanced	1-6|1-6	
+1-4	22-29	lielākā	*	*	Nom	*	Cmp	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Fem\|Number=Sing	*	*	affsnyc	*	liela	_	_	_	_	amod|amod	basic|enhanced	1-6|1-6	
+1-5	30-35	ostas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	osta	_	_	_	_	nmod|nmod	basic|enhanced	1-6|1-6	
+1-6	36-43	pilsēta	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	pilsēta	_	_	*->1-2	*[1]	root|root	basic|enhanced	1-6|1-6	
+1-7	43-44	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	1-9|1-9	
+1-8	45-49	kurā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsln	*	kura	_	_	*->2-1	*[2]	acl|acl	basic|enhanced	1-9|1-9	
+1-9	50-57	ieradās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmyisi130an	*	ierasties	_	_	_	_	acl|acl	basic|enhanced	1-6|1-6	
+1-10	58-71	tirdzniecības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	tirdzniecība	_	_	_	_	nmod|nmod	basic|enhanced	1-11|1-11	
+1-11	72-76	kuģi	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	*	kuģis	_	_	_	_	obj|obj	basic|enhanced	1-9|1-9	
+1-12	77-79	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	no	_	_	_	_	case|case	basic|enhanced	1-16|1-16	
+1-13	80-85	tuvām	*	*	Dat	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	arfpdnp	*	tuva	_	_	_	_	amod|amod	basic|enhanced	1-16|1-16	
+1-14	86-88	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc|cc	basic|enhanced	1-15|1-15	
+1-15	89-94	tālām	*	*	Dat	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpdnp	*	tāla	_	_	_	_	conj|conj	basic|enhanced	1-13|1-13	
+1-16	95-100	zemēm	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd5	*	zeme	_	_	_	_	obl|obl	basic|enhanced	1-11|1-11	
+1-17	100-101	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	1-6|1-6	
 
 #Text=Pilsētas ielās skanēja dažādas valodas, tur bija sastopami jūrnieki, tirgotāji un klejojoši komedianti krāsainos tērpos no visas pasaules.
-2-1	103-111	Pilsētas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	pilsēta	_	_	_	_	nmod|nmod	basic|enhanced	2-2|2-2	
-2-2	112-117	ielās	Fem	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	iela	_	_	_	_	obl|obl	basic|enhanced	2-3|2-3	
-2-3	118-125	skanēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	skanēt	_	_	_	_	root|root	basic|enhanced	2-3|2-3	
-2-4	126-133	dažādas	Fem	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	arfpnnp	dažāda	_	_	_	_	amod|amod	basic|enhanced	2-5|2-5	
-2-5	134-141	valodas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	valoda	_	_	_	_	nsubj|nsubj	basic|enhanced	2-3|2-3	
-2-6	141-142	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-9|2-9	
-2-7	143-146	tur	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0p	tur	_	_	_	_	advmod|advmod	basic|enhanced	2-9|2-9	
-2-8	147-151	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vcnisii30an	būt	_	_	_	_	aux|aux	basic|enhanced	2-9|2-9	
-2-9	152-161	sastopami	Masc	Plur	Nom	Pos	*	Pres	*	Pass	*	Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	*	vmnpdmpnppnp	sastapt	_	_	_	_	conj|conj	basic|enhanced	2-3|2-3	
-2-10	162-170	jūrnieki	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	jūrnieks	_	_	_	_	nsubj|nsubj	basic|enhanced	2-9|2-9	
-2-11	170-171	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-12|2-12	
-2-12	172-181	tirgotāji	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	tirgotājs	_	_	_	_	conj|conj	basic|enhanced	2-10|2-10	
-2-13	182-184	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	2-15|2-15	
-2-14	185-194	klejojoši	Masc	Plur	Nom	Pos	*	Pres	*	Pass	*	Aspect=Imp\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Imp	vmnpdmpnapnp	klejot	_	_	_	_	amod|amod	basic|enhanced	2-15|2-15	
-2-15	195-205	komedianti	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	komediants	_	_	_	_	conj|conj	basic|enhanced	2-10|2-10	
-2-16	206-215	krāsainos	Masc	Plur	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmplnp	krāsains	_	_	_	_	amod|amod	basic|enhanced	2-17|2-17	
-2-17	216-222	tērpos	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	tērps	_	_	_	_	acl|acl	basic|enhanced	2-15|2-15	
-2-18	223-225	no	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	_	_	_	_	case|case	basic|enhanced	2-20|2-20	
-2-19	226-231	visas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|PronType=Tot	*	*	pg0fsgn	visa	_	_	_	_	det|det	basic|enhanced	2-20|2-20	
-2-20	232-240	pasaules	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	pasaule	_	_	_	_	nmod|nmod	basic|enhanced	2-15|2-15	
-2-21	240-241	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	2-3|2-3	
+2-1	103-111	Pilsētas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	pilsēta	_	_	_	_	nmod|nmod	basic|enhanced	2-2|2-2	
+2-2	112-117	ielās	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	*	iela	_	_	_	_	obl|obl	basic|enhanced	2-3|2-3	
+2-3	118-125	skanēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist330an	*	skanēt	_	_	_	_	root|root	basic|enhanced	2-3|2-3	
+2-4	126-133	dažādas	*	*	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	arfpnnp	*	dažāda	_	_	_	_	amod|amod	basic|enhanced	2-5|2-5	
+2-5	134-141	valodas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	valoda	_	_	_	_	nsubj|nsubj	basic|enhanced	2-3|2-3	
+2-6	141-142	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	2-9|2-9	
+2-7	143-146	tur	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0p	*	tur	_	_	_	_	advmod|advmod	basic|enhanced	2-9|2-9	
+2-8	147-151	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vcnisii30an	*	būt	_	_	_	_	aux|aux	basic|enhanced	2-9|2-9	
+2-9	152-161	sastopami	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Pres	*	Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdmpnppnp	*	sastapt	_	_	_	_	conj|conj	basic|enhanced	2-3|2-3	
+2-10	162-170	jūrnieki	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	jūrnieks	_	_	_	_	nsubj|nsubj	basic|enhanced	2-9|2-9	
+2-11	170-171	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	2-12|2-12	
+2-12	172-181	tirgotāji	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	tirgotājs	_	_	_	_	conj|conj	basic|enhanced	2-10|2-10	
+2-13	182-184	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc|cc	basic|enhanced	2-15|2-15	
+2-14	185-194	klejojoši	*	Imp	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Pres	*	Aspect=Imp\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdmpnapnp	*	klejot	_	_	_	_	amod|amod	basic|enhanced	2-15|2-15	
+2-15	195-205	komedianti	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	komediants	_	_	_	_	conj|conj	basic|enhanced	2-10|2-10	
+2-16	206-215	krāsainos	*	*	Loc	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmplnp	*	krāsains	_	_	_	_	amod|amod	basic|enhanced	2-17|2-17	
+2-17	216-222	tērpos	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	*	tērps	_	_	_	_	acl|acl	basic|enhanced	2-15|2-15	
+2-18	223-225	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case|case	basic|enhanced	2-20|2-20	
+2-19	226-231	visas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|PronType=Tot	*	*	pg0fsgn	*	visa	_	_	_	_	det|det	basic|enhanced	2-20|2-20	
+2-20	232-240	pasaules	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	pasaule	_	_	_	_	nmod|nmod	basic|enhanced	2-15|2-15	
+2-21	240-241	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	2-3|2-3	
 
 #Text=Taču šajā 1481. gada februāra dienā pilsēta pieklusa, jo pūļa uzmanību piesaistīja kāds drūms gājiens.
-3-1	243-247	Taču	_	_	_	_	_	_	_	_	_	_	_	_	cc	taču	_	_	_	_	cc|cc	basic|enhanced	3-8|3-8	
-3-2	248-252	šajā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Dem	3	*	pd3fsln	šī	_	_	_	_	det|det	basic|enhanced	3-6|3-6	
-3-3	253-258	1481.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	1481.	time[1]	*[1]	_	_	amod|amod	basic|enhanced	3-4|3-4	
-3-4	259-263	gada	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	gads	time[1]	*[1]	_	_	nmod|nmod	basic|enhanced	3-5|3-5	
-3-5	264-272	februāra	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	februāris	time[1]	*[1]	_	_	nmod|nmod	basic|enhanced	3-6|3-6	
-3-6	273-278	dienā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	diena	_	_	_	_	obl|obl	basic|enhanced	3-8|3-8	
-3-7	279-286	pilsēta	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	pilsēta	_	_	_	_	nsubj|nsubj	basic|enhanced	3-8|3-8	
-3-8	287-295	pieklusa	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi130an	pieklust	_	_	_	_	root|root	basic|enhanced	3-8|3-8	
-3-9	295-296	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	3-13|3-13	
-3-10	297-299	jo	_	_	_	_	_	_	_	_	_	_	_	_	cs	jo	_	_	_	_	mark|mark	basic|enhanced	3-13|3-13	
-3-11	300-304	pūļa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	pūlis	_	_	_	_	nmod|nmod	basic|enhanced	3-12|3-12	
-3-12	305-313	uzmanību	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	uzmanība	_	_	_	_	obj|obj	basic|enhanced	3-13|3-13	
-3-13	314-325	piesaistīja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	piesaistīt	_	_	_	_	ccomp|ccomp	basic|enhanced	3-8|3-8	
-3-14	326-330	kāds	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Ind	*	*	pi0msnn	kāds	_	_	_	_	det|det	basic|enhanced	3-16|3-16	
-3-15	331-336	drūms	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	drūms	_	_	_	_	amod|amod	basic|enhanced	3-16|3-16	
-3-16	337-344	gājiens	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	gājiens	_	_	_	_	nsubj|nsubj	basic|enhanced	3-13|3-13	
-3-17	344-345	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	3-8|3-8	
+3-1	243-247	Taču	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	taču	_	_	_	_	cc|cc	basic|enhanced	3-8|3-8	
+3-2	248-252	šajā	*	*	Loc	*	*	Fem	*	*	*	Sing	3	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3fsln	*	šī	_	_	_	_	det|det	basic|enhanced	3-6|3-6	
+3-3	253-258	1481.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	1481.	time[1]	*[1]	_	_	amod|amod	basic|enhanced	3-4|3-4	
+3-4	259-263	gada	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	gads	time[1]	*[1]	_	_	nmod|nmod	basic|enhanced	3-5|3-5	
+3-5	264-272	februāra	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	*	februāris	time[1]	*[1]	_	_	nmod|nmod	basic|enhanced	3-6|3-6	
+3-6	273-278	dienā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	diena	_	_	_	_	obl|obl	basic|enhanced	3-8|3-8	
+3-7	279-286	pilsēta	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	pilsēta	_	_	_	_	nsubj|nsubj	basic|enhanced	3-8|3-8	
+3-8	287-295	pieklusa	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnisi130an	*	pieklust	_	_	_	_	root|root	basic|enhanced	3-8|3-8	
+3-9	295-296	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	3-13|3-13	
+3-10	297-299	jo	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	jo	_	_	_	_	mark|mark	basic|enhanced	3-13|3-13	
+3-11	300-304	pūļa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	*	pūlis	_	_	_	_	nmod|nmod	basic|enhanced	3-12|3-12	
+3-12	305-313	uzmanību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	uzmanība	_	_	_	_	obj|obj	basic|enhanced	3-13|3-13	
+3-13	314-325	piesaistīja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist330an	*	piesaistīt	_	_	_	_	ccomp|ccomp	basic|enhanced	3-8|3-8	
+3-14	326-330	kāds	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Ind	*	*	pi0msnn	*	kāds	_	_	_	_	det|det	basic|enhanced	3-16|3-16	
+3-15	331-336	drūms	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	drūms	_	_	_	_	amod|amod	basic|enhanced	3-16|3-16	
+3-16	337-344	gājiens	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	gājiens	_	_	_	_	nsubj|nsubj	basic|enhanced	3-13|3-13	
+3-17	344-345	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	3-8|3-8	

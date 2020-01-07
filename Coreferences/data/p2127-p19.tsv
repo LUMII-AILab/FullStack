@@ -1,39 +1,39 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Lielbritānijas dzelzceļa operators paziņoja, ka sniegs un ledus visvairāk var ietekmēt līnijas Kentā un Saseksā, jo tur vilcieniem elektrība tiek piegādāta pa sliedēm, nevis vadiem.
-1-1	0-14	Lielbritānijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Lielbritānija	organization[1]|GPE[2]	*[1]|https://en.wikipedia.org/wiki/United\_Kingdom[2]	_	_	nmod|nmod	basic|enhanced	1-2|1-2	
-1-2	15-24	dzelzceļa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	dzelzceļš	organization[1]	*[1]	_	_	nmod|nmod	basic|enhanced	1-3|1-3	
-1-3	25-34	operators	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	operators	organization[1]	*[1]	_	_	nsubj|nsubj	basic|enhanced	1-4|1-4	
-1-4	35-43	paziņoja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist230an	paziņot	_	_	_	_	root|root	basic|enhanced	1-4|1-4	
-1-5	43-44	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-11|1-11	
-1-6	45-47	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark|mark	basic|enhanced	1-11|1-11	
-1-7	48-54	sniegs	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vmnift130an	sniegt	_	_	_	_	dep|dep	basic|enhanced	1-11|1-11	
-1-8	55-57	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	1-9|1-9	
-1-9	58-63	ledus	Masc	Coll	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Coll	*	*	ncmvn3	ledus	_	_	_	_	conj|conj	basic|enhanced	1-7|1-7	
-1-10	64-73	visvairāk	*	*	*	Sup	*	*	*	*	*	Degree=Sup	*	*	rsq	visvairāk	_	_	_	_	advmod|advmod	basic|enhanced	1-11|1-11	
-1-11	74-77	var	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vonipt330an	varēt	_	_	_	_	ccomp|ccomp	basic|enhanced	1-4|1-4	
-1-12	78-86	ietekmēt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	ietekmēt	_	_	_	_	xcomp|xcomp	basic|enhanced	1-11|1-11	
-1-13	87-94	līnijas	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	līnija	_	_	_	_	obj|obj	basic|enhanced	1-11|1-11	
-1-14	95-100	Kentā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	Kenta	GPE	https://en.wikipedia.org/wiki/Kent	*[1]	*->1-1	acl|acl	basic|enhanced	1-13|1-13	
-1-15	101-103	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	*[1]	*->1-1	cc|cc	basic|enhanced	1-16|1-16	
-1-16	104-111	Saseksā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	Saseksa	_	_	*[1]	*->1-1	conj|conj	basic|enhanced	1-14|1-14	
-1-17	111-112	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-23|1-23	
-1-18	113-115	jo	_	_	_	_	_	_	_	_	_	_	_	_	cs	jo	_	_	_	_	mark|mark	basic|enhanced	1-23|1-23	
-1-19	116-119	tur	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0p	tur	_	_	*[1]	*->1-2	advmod|advmod	basic|enhanced	1-23|1-23	
-1-20	120-130	vilcieniem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	vilciens	_	_	_	_	iobj|iobj	basic|enhanced	1-23|1-23	
-1-21	131-140	elektrība	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	elektrība	_	_	_	_	nsubj:pass|nsubj	basic|enhanced	1-23|1-23	
-1-22	141-145	tiek	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vtnipi130an	tikt	_	_	_	_	aux|aux	basic|enhanced	1-23|1-23	
-1-23	146-155	piegādāta	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnpsnp	piegādāt	_	_	_	_	advcl|advcl	basic|enhanced	1-11|1-11	
-1-24	156-158	pa	_	_	_	_	_	_	_	_	_	_	_	_	sppd	pa	_	_	_	_	case|case	basic|enhanced	1-25|1-25	
-1-25	159-166	sliedēm	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd5	sliede	_	_	_	_	obl|obl	basic|enhanced	1-23|1-23	
-1-26	166-167	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-28|1-28	
-1-27	168-173	nevis	_	_	_	_	_	_	_	_	_	_	_	_	cc	nevis	_	_	_	_	cc|cc	basic|enhanced	1-28|1-28	
-1-28	174-180	vadiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	vads	_	_	_	_	conj|conj	basic|enhanced	1-25|1-25	
-1-29	180-181	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-4|1-4	
+1-1	0-14	Lielbritānijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Lielbritānija	organization[1]|GPE[2]	*[1]|https://en.wikipedia.org/wiki/United\_Kingdom[2]	_	_	nmod|nmod	basic|enhanced	1-2|1-2	
+1-2	15-24	dzelzceļa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	dzelzceļš	organization[1]	*[1]	_	_	nmod|nmod	basic|enhanced	1-3|1-3	
+1-3	25-34	operators	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	operators	organization[1]	*[1]	_	_	nsubj|nsubj	basic|enhanced	1-4|1-4	
+1-4	35-43	paziņoja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist230an	*	paziņot	_	_	_	_	root|root	basic|enhanced	1-4|1-4	
+1-5	43-44	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	1-11|1-11	
+1-6	45-47	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark|mark	basic|enhanced	1-11|1-11	
+1-7	48-54	sniegs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmnift130an	*	sniegt	_	_	_	_	dep|dep	basic|enhanced	1-11|1-11	
+1-8	55-57	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc|cc	basic|enhanced	1-9|1-9	
+1-9	58-63	ledus	*	*	Nom	*	*	Masc	*	*	*	Coll	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Coll	*	*	ncmvn3	*	ledus	_	_	_	_	conj|conj	basic|enhanced	1-7|1-7	
+1-10	64-73	visvairāk	*	*	*	*	Sup	*	*	*	*	*	*	*	*	*	*	*	Degree=Sup	*	*	rsq	*	visvairāk	_	_	_	_	advmod|advmod	basic|enhanced	1-11|1-11	
+1-11	74-77	var	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vonipt330an	*	varēt	_	_	_	_	ccomp|ccomp	basic|enhanced	1-4|1-4	
+1-12	78-86	ietekmēt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	*	ietekmēt	_	_	_	_	xcomp|xcomp	basic|enhanced	1-11|1-11	
+1-13	87-94	līnijas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	līnija	_	_	_	_	obj|obj	basic|enhanced	1-11|1-11	
+1-14	95-100	Kentā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Kenta	GPE	https://en.wikipedia.org/wiki/Kent	*->1-1	*[1]	acl|acl	basic|enhanced	1-13|1-13	
+1-15	101-103	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	*->1-1	*[1]	cc|cc	basic|enhanced	1-16|1-16	
+1-16	104-111	Saseksā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Saseksa	_	_	*->1-1	*[1]	conj|conj	basic|enhanced	1-14|1-14	
+1-17	111-112	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	1-23|1-23	
+1-18	113-115	jo	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	jo	_	_	_	_	mark|mark	basic|enhanced	1-23|1-23	
+1-19	116-119	tur	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0p	*	tur	_	_	*->1-2	*[1]	advmod|advmod	basic|enhanced	1-23|1-23	
+1-20	120-130	vilcieniem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	vilciens	_	_	_	_	iobj|iobj	basic|enhanced	1-23|1-23	
+1-21	131-140	elektrība	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	elektrība	_	_	_	_	nsubj:pass|nsubj	basic|enhanced	1-23|1-23	
+1-22	141-145	tiek	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vtnipi130an	*	tikt	_	_	_	_	aux|aux	basic|enhanced	1-23|1-23	
+1-23	146-155	piegādāta	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsnpsnp	*	piegādāt	_	_	_	_	advcl|advcl	basic|enhanced	1-11|1-11	
+1-24	156-158	pa	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	pa	_	_	_	_	case|case	basic|enhanced	1-25|1-25	
+1-25	159-166	sliedēm	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd5	*	sliede	_	_	_	_	obl|obl	basic|enhanced	1-23|1-23	
+1-26	166-167	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	1-28|1-28	
+1-27	168-173	nevis	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	nevis	_	_	_	_	cc|cc	basic|enhanced	1-28|1-28	
+1-28	174-180	vadiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	vads	_	_	_	_	conj|conj	basic|enhanced	1-25|1-25	
+1-29	180-181	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	1-4|1-4	

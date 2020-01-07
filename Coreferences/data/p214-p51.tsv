@@ -1,37 +1,37 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Vai tu savu vārdu uzskati par zīmolu?
-1-1	0-3	Vai	_	_	_	_	_	_	_	_	_	_	_	_	q	vai	_	_	discourse	basic	1-5	
-1-2	4-6	tu	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=2\|PronType=Prs	2	*	pp20snn	tu	*[1]	*->1-1	dep	basic	1-5	
-1-3	7-11	savu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0msan	savs	*[1]	*->1-2	det	basic	1-4	
-1-4	12-17	vārdu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	vārds	_	_	obj	basic	1-5	
-1-5	18-25	uzskati	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	uzskats	_	_	root	basic	1-5	
-1-6	26-29	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	case	basic	1-7	
-1-7	30-36	zīmolu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	zīmols	_	_	xcomp	basic	1-5	
-1-8	36-37	?	_	_	_	_	_	_	_	_	_	_	_	_	zs	?	_	_	punct	basic	1-5	
+1-1	0-3	Vai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	vai	_	_	discourse	basic	1-5	
+1-2	4-6	tu	*	*	Nom	*	*	*	*	*	*	Sing	2	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=2\|PronType=Prs	*	*	pp20snn	*	tu	*->1-1	*[1]	dep	basic	1-5	
+1-3	7-11	savu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0msan	*	savs	*->1-2	*[1]	det	basic	1-4	
+1-4	12-17	vārdu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	vārds	_	_	obj	basic	1-5	
+1-5	18-25	uzskati	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	uzskats	_	_	root	basic	1-5	
+1-6	26-29	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	case	basic	1-7	
+1-7	30-36	zīmolu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	zīmols	_	_	xcomp	basic	1-5	
+1-8	36-37	?	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	?	_	_	punct	basic	1-5	
 
 #Text=Vai pēdējos gados esi apzināti virzījies uz to, lai tavs tēls, tavs zīmols būtu skandalozs?
-2-1	39-42	Vai	_	_	_	_	_	_	_	_	_	_	_	_	q	vai	_	_	discourse	basic	2-6	
-2-2	43-50	pēdējos	Masc	Plur	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armplnp	pēdējs	_	_	amod	basic	2-3	
-2-3	51-56	gados	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	gads	_	_	obl	basic	2-6	
-2-4	57-60	esi	*	Sing	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=2\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	2	*	vcnipii2san	būt	_	_	aux	basic	2-6	
-2-5	61-69	apzināti	_	_	_	_	_	_	_	_	_	_	_	_	r0m	apzināti	_	_	advmod	basic	2-6	
-2-6	70-79	virzījies	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	Perf	vmypdmsnasnp	virzīties	_	_	root	basic	2-6	
-2-7	80-82	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsa	uz	_	_	case	basic	2-8	
-2-8	83-85	to	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	tas	_	_	obl	basic	2-6	
-2-9	85-86	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	2-17	
-2-10	87-90	lai	_	_	_	_	_	_	_	_	_	_	_	_	cs	lai	_	_	mark	basic	2-17	
-2-11	91-95	tavs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0msnn	tavs	*[1]	*->1-3	det	basic	2-12	
-2-12	96-100	tēls	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	tēls	_	_	nsubj	basic	2-17	
-2-13	100-101	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	2-15	
-2-14	102-106	tavs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0msnn	tavs	*[1]	*->1-4	det	basic	2-15	
-2-15	107-113	zīmols	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	zīmols	_	_	conj	basic	2-12	
-2-16	114-118	būtu	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vcnc0ii00an	būt	_	_	cop	basic	2-17	
-2-17	119-129	skandalozs	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	skandalozs	_	_	advcl	basic	2-6	
-2-18	129-130	?	_	_	_	_	_	_	_	_	_	_	_	_	zs	?	_	_	punct	basic	2-6	
+2-1	39-42	Vai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	vai	_	_	discourse	basic	2-6	
+2-2	43-50	pēdējos	*	*	Loc	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armplnp	*	pēdējs	_	_	amod	basic	2-3	
+2-3	51-56	gados	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	*	gads	_	_	obl	basic	2-6	
+2-4	57-60	esi	*	*	*	*	*	*	Ind	*	*	Sing	2	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=2\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii2san	*	būt	_	_	aux	basic	2-6	
+2-5	61-69	apzināti	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	apzināti	_	_	advmod	basic	2-6	
+2-6	70-79	virzījies	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	*	vmypdmsnasnp	*	virzīties	_	_	root	basic	2-6	
+2-7	80-82	uz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	uz	_	_	case	basic	2-8	
+2-8	83-85	to	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	*	tas	_	_	obl	basic	2-6	
+2-9	85-86	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	2-17	
+2-10	87-90	lai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	lai	_	_	mark	basic	2-17	
+2-11	91-95	tavs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0msnn	*	tavs	*->1-3	*[1]	det	basic	2-12	
+2-12	96-100	tēls	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	tēls	_	_	nsubj	basic	2-17	
+2-13	100-101	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	2-15	
+2-14	102-106	tavs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0msnn	*	tavs	*->1-4	*[1]	det	basic	2-15	
+2-15	107-113	zīmols	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	zīmols	_	_	conj	basic	2-12	
+2-16	114-118	būtu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vcnc0ii00an	*	būt	_	_	cop	basic	2-17	
+2-17	119-129	skandalozs	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	skandalozs	_	_	advcl	basic	2-6	
+2-18	129-130	?	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	?	_	_	punct	basic	2-6	

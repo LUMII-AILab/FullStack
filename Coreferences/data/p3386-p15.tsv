@@ -1,75 +1,75 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Īpaši nozīmīgs tirgus bija Ēģipte.
-1-1	0-5	Īpaši	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpq	īpaši	_	_	_	_	advmod	basic	1-2	
-1-2	6-14	nozīmīgs	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	nozīmīgs	_	_	_	_	amod	basic	1-3	
-1-3	15-21	tirgus	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn3	tirgus	_	_	_	_	root	basic	1-3	
-1-4	22-26	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vcnisii30an	būt	_	_	_	_	cop	basic	1-3	
-1-5	27-33	Ēģipte	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	Ēģipte	GPE	*	*[1]	*->1-1	nsubj	basic	1-3	
-1-6	33-34	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-3	
+1-1	0-5	Īpaši	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpq	*	īpaši	_	_	_	_	advmod	basic	1-2	
+1-2	6-14	nozīmīgs	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	nozīmīgs	_	_	_	_	amod	basic	1-3	
+1-3	15-21	tirgus	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn3	*	tirgus	_	_	_	_	root	basic	1-3	
+1-4	22-26	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vcnisii30an	*	būt	_	_	_	_	cop	basic	1-3	
+1-5	27-33	Ēģipte	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	*	Ēģipte	GPE	*	*->1-1	*[1]	nsubj	basic	1-3	
+1-6	33-34	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-3	
 
 #Text=Tās ostu pilsētās pienāca karavānas ar Āzijas garšvielām, kuras vēlāk pārkrāva kuģos, kā arī eiropiešu tirdzniecības kuģi, kas veda metālu un kokmateriālus.
-2-1	36-39	Tās	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsgn	tā	_	_	*[1]	*->1-2	det	basic	2-3	
-2-2	40-44	ostu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	osta	_	_	_	_	dep	basic	2-3	
-2-3	45-53	pilsētās	Fem	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	pilsēta	_	_	_	_	obl	basic	2-4	
-2-4	54-61	pienāca	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi130an	pienākt	_	_	_	_	root	basic	2-4	
-2-5	62-71	karavānas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	karavāna	_	_	_	_	nsubj	basic	2-4	
-2-6	72-74	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case	basic	2-8	
-2-7	75-81	Āzijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Āzija	location	*	*[2]	*->2-1	nmod	basic	2-8	
-2-8	82-92	garšvielām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	garšviela	_	_	*[2]	*->2-1	nmod	basic	2-5	
-2-9	92-93	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-12	
-2-10	94-99	kuras	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur\|PronType=Rel	*	*	pr0fpan	kura	_	_	*[2]	*->2-2	obj	basic	2-12	
-2-11	100-105	vēlāk	*	*	*	Cmp	*	*	*	*	*	Degree=Cmp	*	*	rct	vēlu	_	_	_	_	advmod	basic	2-12	
-2-12	106-114	pārkrāva	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	pārkraut	_	_	_	_	acl	basic	2-8	
-2-13	115-120	kuģos	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl2	kuģis	_	_	_	_	obl	basic	2-12	
-2-14	120-121	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-19	
-2-15	122-124	kā	_	_	_	_	_	_	_	_	_	_	_	_	cs	kā	_	_	_	_	cc	basic	2-19	
-2-16	125-128	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse	basic	2-15	
-2-17	129-138	eiropiešu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	eiropietis	_	_	*[3]	*->3-1	nmod	basic	2-19	
-2-18	139-152	tirdzniecības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	tirdzniecība	_	_	*[3]	*->3-1	nmod	basic	2-19	
-2-19	153-157	kuģi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn2	kuģis	_	_	*[3]	*->3-1	conj	basic	2-5	
-2-20	157-158	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-22	
-2-21	159-162	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	*[3]	*->3-2	nsubj	basic	2-22	
-2-22	163-167	veda	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	vest	_	_	_	_	acl	basic	2-19	
-2-23	168-174	metālu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	metāls	_	_	_	_	obj	basic	2-22	
-2-24	175-177	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	2-25	
-2-25	178-191	kokmateriālus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	kokmateriāls	_	_	_	_	conj	basic	2-23	
-2-26	191-192	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-4	
+2-1	36-39	Tās	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsgn	*	tā	_	_	*->1-2	*[1]	det	basic	2-3	
+2-2	40-44	ostu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	osta	_	_	_	_	dep	basic	2-3	
+2-3	45-53	pilsētās	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	*	pilsēta	_	_	_	_	obl	basic	2-4	
+2-4	54-61	pienāca	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnisi130an	*	pienākt	_	_	_	_	root	basic	2-4	
+2-5	62-71	karavānas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	karavāna	_	_	_	_	nsubj	basic	2-4	
+2-6	72-74	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	2-8	
+2-7	75-81	Āzijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Āzija	location	*	*->2-1	*[2]	nmod	basic	2-8	
+2-8	82-92	garšvielām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	*	garšviela	_	_	*->2-1	*[2]	nmod	basic	2-5	
+2-9	92-93	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-12	
+2-10	94-99	kuras	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur\|PronType=Rel	*	*	pr0fpan	*	kura	_	_	*->2-2	*[2]	obj	basic	2-12	
+2-11	100-105	vēlāk	*	*	*	*	Cmp	*	*	*	*	*	*	*	*	*	*	*	Degree=Cmp	*	*	rct	*	vēlu	_	_	_	_	advmod	basic	2-12	
+2-12	106-114	pārkrāva	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist130an	*	pārkraut	_	_	_	_	acl	basic	2-8	
+2-13	115-120	kuģos	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl2	*	kuģis	_	_	_	_	obl	basic	2-12	
+2-14	120-121	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-19	
+2-15	122-124	kā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	kā	_	_	_	_	cc	basic	2-19	
+2-16	125-128	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	2-15	
+2-17	129-138	eiropiešu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	eiropietis	_	_	*->3-1	*[3]	nmod	basic	2-19	
+2-18	139-152	tirdzniecības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	tirdzniecība	_	_	*->3-1	*[3]	nmod	basic	2-19	
+2-19	153-157	kuģi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn2	*	kuģis	_	_	*->3-1	*[3]	conj	basic	2-5	
+2-20	157-158	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-22	
+2-21	159-162	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->3-2	*[3]	nsubj	basic	2-22	
+2-22	163-167	veda	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist130an	*	vest	_	_	_	_	acl	basic	2-19	
+2-23	168-174	metālu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	metāls	_	_	_	_	obj	basic	2-22	
+2-24	175-177	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-25	
+2-25	178-191	kokmateriālus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	kokmateriāls	_	_	_	_	conj	basic	2-23	
+2-26	191-192	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-4	
 
 #Text=Musulmaņu zemēs trūka kokmateriālu kuģu būvniecībai, un venēciešu tirgotāji bija naski izejmateriālu piegādātāji par spīti tam, ka šos kuģus gatavojās izmantot cīņā pret eiropiešu krusta karotājiem.
-3-1	194-203	Musulmaņu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	musulmanis	_	_	_	_	nmod	basic	3-2	
-3-2	204-209	zemēs	Fem	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl5	zeme	_	_	_	_	obl	basic	3-3	
-3-3	210-215	trūka	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi130an	trūkt	_	_	_	_	root	basic	3-3	
-3-4	216-228	kokmateriālu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	kokmateriāls	_	_	_	_	nsubj	basic	3-3	
-3-5	229-233	kuģu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	kuģis	_	_	_	_	nmod	basic	3-6	
-3-6	234-245	būvniecībai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	būvniecība	_	_	_	_	nmod	basic	3-4	
-3-7	245-246	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-14	
-3-8	247-249	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	3-14	
-3-9	250-259	venēciešu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	venēcietis	_	_	_	_	nmod	basic	3-10	
-3-10	260-269	tirgotāji	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	tirgotājs	_	_	_	_	nsubj	basic	3-14	
-3-11	270-274	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vcnisii30an	būt	_	_	_	_	cop	basic	3-14	
-3-12	275-280	naski	Masc	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnnp	nasks	_	_	_	_	amod	basic	3-14	
-3-13	281-294	izejmateriālu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	izejmateriāls	_	_	_	_	nmod	basic	3-14	
-3-14	295-306	piegādātāji	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	piegādātājs	_	_	_	_	conj	basic	3-3	
-3-15	307-310	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	_	_	case	basic	3-16	
-3-16	311-316	spīti	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	spīts	_	_	_	_	obl	basic	3-14	
-3-17	317-320	tam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msdn	tas	_	_	_	_	iobj	basic	3-16	
-3-18	320-321	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-22	
-3-19	322-324	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark	basic	3-22	
-3-20	325-328	šos	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpan	šis	_	_	_	_	det	basic	3-21	
-3-21	329-334	kuģus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa2	kuģis	_	_	_	_	obj	basic	3-23	
-3-22	335-344	gatavojās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	voyisi230an	gatavoties	_	_	_	_	acl	basic	3-17	
-3-23	345-353	izmantot	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	izmantot	_	_	_	_	xcomp	basic	3-22	
-3-24	354-358	cīņā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	cīņa	_	_	_	_	obl	basic	3-23	
-3-25	359-363	pret	_	_	_	_	_	_	_	_	_	_	_	_	spsa	pret	_	_	_	_	case	basic	3-28	
-3-26	364-373	eiropiešu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	eiropietis	_	_	_	_	nmod	basic	3-27	
-3-27	374-380	krusta	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	krusts	_	_	_	_	nmod	basic	3-28	
-3-28	381-391	karotājiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	karotājs	_	_	_	_	nmod	basic	3-24	
-3-29	391-392	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-3	
+3-1	194-203	Musulmaņu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	musulmanis	_	_	_	_	nmod	basic	3-2	
+3-2	204-209	zemēs	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl5	*	zeme	_	_	_	_	obl	basic	3-3	
+3-3	210-215	trūka	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnisi130an	*	trūkt	_	_	_	_	root	basic	3-3	
+3-4	216-228	kokmateriālu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	kokmateriāls	_	_	_	_	nsubj	basic	3-3	
+3-5	229-233	kuģu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	kuģis	_	_	_	_	nmod	basic	3-6	
+3-6	234-245	būvniecībai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	*	būvniecība	_	_	_	_	nmod	basic	3-4	
+3-7	245-246	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-14	
+3-8	247-249	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	3-14	
+3-9	250-259	venēciešu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	venēcietis	_	_	_	_	nmod	basic	3-10	
+3-10	260-269	tirgotāji	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	tirgotājs	_	_	_	_	nsubj	basic	3-14	
+3-11	270-274	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vcnisii30an	*	būt	_	_	_	_	cop	basic	3-14	
+3-12	275-280	naski	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnnp	*	nasks	_	_	_	_	amod	basic	3-14	
+3-13	281-294	izejmateriālu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	izejmateriāls	_	_	_	_	nmod	basic	3-14	
+3-14	295-306	piegādātāji	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	piegādātājs	_	_	_	_	conj	basic	3-3	
+3-15	307-310	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	3-16	
+3-16	311-316	spīti	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	spīts	_	_	_	_	obl	basic	3-14	
+3-17	317-320	tam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msdn	*	tas	_	_	_	_	iobj	basic	3-16	
+3-18	320-321	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-22	
+3-19	322-324	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	3-22	
+3-20	325-328	šos	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpan	*	šis	_	_	_	_	det	basic	3-21	
+3-21	329-334	kuģus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa2	*	kuģis	_	_	_	_	obj	basic	3-23	
+3-22	335-344	gatavojās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	voyisi230an	*	gatavoties	_	_	_	_	acl	basic	3-17	
+3-23	345-353	izmantot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	*	izmantot	_	_	_	_	xcomp	basic	3-22	
+3-24	354-358	cīņā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	cīņa	_	_	_	_	obl	basic	3-23	
+3-25	359-363	pret	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	pret	_	_	_	_	case	basic	3-28	
+3-26	364-373	eiropiešu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	eiropietis	_	_	_	_	nmod	basic	3-27	
+3-27	374-380	krusta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	krusts	_	_	_	_	nmod	basic	3-28	
+3-28	381-391	karotājiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	karotājs	_	_	_	_	nmod	basic	3-24	
+3-29	391-392	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-3	

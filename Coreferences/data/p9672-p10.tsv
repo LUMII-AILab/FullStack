@@ -1,0 +1,58 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=2000. gadā dibinātā kompānija "Pobeda Confectionery" ir viena no lielākajā Krievijā.
+1-1	0-5	2000.	*	*	*	*	*	*	*	*	Ord	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	2000.	time[1]	*[1]	_	_	amod	basic	1-2	
+1-2	6-10	gadā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	gads	time[1]	*[1]	_	_	obl	basic	1-3	
+1-3	11-19	dibinātā	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdfsnpsypn	*	dibināt	_	_	_	_	amod	basic	1-4	
+1-4	20-29	kompānija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	kompānija	_	_	*->1-1	*[1]	nmod	basic	1-6	
+1-5	30-31	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[2]	*[2]	*->1-2	*[1]	punct	basic	1-6	
+1-6	31-37	Pobeda	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Pobeda	organization[2]	*[2]	*->1-2	*[1]	nsubj	basic	1-10	
+1-7	38-51	Confectionery	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Confectionery	organization[2]	*[2]	*->1-2	*[1]	flat:name	basic	1-6	
+1-8	51-52	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[2]	*[2]	*->1-2	*[1]	punct	basic	1-6	
+1-9	53-55	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	1-10	
+1-10	56-61	viena	*	*	Nom	*	*	Fem	*	*	Card	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|NumType=Card	*	*	mcsfsn	*	viena	_	_	_	_	root	basic	1-10	
+1-11	62-64	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	no	_	_	_	_	case	basic	1-12	
+1-12	65-74	lielākajā	*	*	Dat	*	Cmp	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Degree=Cmp\|Gender=Fem\|Number=Plur	*	*	affpdyc	*	liels	_	_	_	_	amod	basic	1-10	
+1-13	75-83	Krievijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Krievija	GPE	https://en.wikipedia.org/wiki/Russia	_	_	acl	basic	1-12	
+1-14	83-84	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-10	
+
+#Text=Tā atrodas Maskavas pievārtē 35 000 kvadrātmetru platībā un nodarbina vairāk nekā 900 darbiniekus.
+2-1	85-87	Tā	*	*	Nom	*	*	Fem	*	*	*	Sing	3	*	Dem	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3fsnn	*	tā	_	_	*->1-3	*[1]	nsubj	basic	2-2	
+2-2	88-95	atrodas	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyipi130an	*	atrasties	_	_	_	_	root	basic	2-2	
+2-3	96-104	Maskavas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Maskava	GPE	https://en.wikipedia.org/wiki/Moscow	_	_	nmod	basic	2-4	
+2-4	105-113	pievārtē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	*	pievārte	_	_	_	_	obl	basic	2-2	
+2-5	114-120	35 000	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	35 000	_	_	_	_	nummod	basic	2-6	
+2-6	121-133	kvadrātmetru	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	kvadrātmetrs	_	_	_	_	nmod	basic	2-7	
+2-7	134-141	platībā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	platība	_	_	_	_	obl	basic	2-2	
+2-8	142-144	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-9	
+2-9	145-154	nodarbina	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt330an	*	nodarbināt	_	_	_	_	conj	basic	2-2	
+2-10	155-161	vairāk	*	*	*	*	Cmp	*	*	*	*	*	*	*	*	*	*	*	Degree=Cmp	*	*	rcq	*	vairāk	_	_	_	_	obl	basic	2-12	
+2-11	162-166	nekā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	nekā	_	_	_	_	fixed	basic	2-10	
+2-12	167-170	900	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	900	_	_	_	_	nummod	basic	2-13	
+2-13	171-182	darbiniekus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	darbinieks	_	_	_	_	obj	basic	2-9	
+2-14	182-183	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-2	
+
+#Text=Galvenā produkcija - šokolādes konfektes, tāfelītes un trifeles - tiek eksportēta uz 20 valstīm.
+3-1	184-191	Galvenā	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnyp	*	galvenais	_	_	_	_	amod	basic	3-2	
+3-2	192-202	produkcija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	produkcija	_	_	_	_	nsubj:pass	basic	3-12	
+3-3	203-204	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	-	_	_	_	_	punct	basic	3-5	
+3-4	205-214	šokolādes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	šokolāde	_	_	_	_	nmod	basic	3-5	
+3-5	215-224	konfektes	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn5	*	konfekte	_	_	_	_	acl	basic	3-2	
+3-6	224-225	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-7	
+3-7	226-235	tāfelītes	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn5	*	tāfelīte	_	_	_	_	conj	basic	3-5	
+3-8	236-238	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	3-9	
+3-9	239-247	trifeles	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn5	*	trifele	_	_	_	_	conj	basic	3-5	
+3-10	248-249	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	-	_	_	_	_	punct	basic	3-5	
+3-11	250-254	tiek	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vtnipi130an	*	tikt	_	_	_	_	aux:pass	basic	3-12	
+3-12	255-265	eksportēta	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdfsnpsnpn	*	eksportēt	_	_	_	_	root	basic	3-12	
+3-13	266-268	uz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	uz	_	_	_	_	case	basic	3-15	
+3-14	269-271	20	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	20	_	_	_	_	nummod	basic	3-15	
+3-15	272-279	valstīm	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd6	*	valsts	_	_	_	_	advcl	basic	3-12	
+3-16	279-280	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-12	

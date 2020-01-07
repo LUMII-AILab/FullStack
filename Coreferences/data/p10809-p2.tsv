@@ -1,0 +1,52 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Ceļa Dobele–Bauska 69. kilometrā Rundāles novadā, netālu no Saulaines, tuvu braucoša automobiļa «Renault Megane» priekšā izskrēja stirna.
+1-1	0-4	Ceļa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	ceļš	location[1]	*[1]	*->1-1	*[1]	nmod	basic	1-2	
+1-2	5-11	Dobele	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	*	Dobele	location[1]|GPE[2]	*[1]|https://en.wikipedia.org/wiki/Dobele[2]	*->1-2	*[1]	nmod	basic	1-6	
+1-3	11-12	–	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	–	location[1]	*[1]	*->1-2	*[1]	punct	basic	1-4	
+1-4	12-18	Bauska	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Bauska	location[1]|GPE[3]	*[1]|https://en.wikipedia.org/wiki/Dobele[3]	*->1-2	*[1]	conj	basic	1-2	
+1-5	19-22	69.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	69.	location[1]	*[1]	_	_	amod	basic	1-6	
+1-6	23-32	kilometrā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	kilometrs	location[1]	*[1]	_	_	obl	basic	1-22	
+1-7	33-41	Rundāles	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	*	Rundāle	GPE[4]|GPE[5]	https://en.wikipedia.org/wiki/Rundāle\_Parish[4]|https://en.wikipedia.org/wiki/Pilsrundāle[5]	_	_	nmod	basic	1-8	
+1-8	42-48	novadā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	novads	GPE[4]	https://en.wikipedia.org/wiki/Rundāle\_Parish[4]	_	_	obl	basic	1-22	
+1-9	48-49	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-10	
+1-10	50-56	netālu	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Neg	*	*	r0p	*	netālu	_	_	_	_	advcl	basic	1-8	
+1-11	57-59	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case	basic	1-12	
+1-12	60-69	Saulaines	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	*	Saulaine	GPE	https://lv.wikipedia.org/wiki/Saulaine\_(Rundāles\_pagasts)	_	_	iobj	basic	1-10	
+1-13	69-70	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-10	
+1-14	71-75	tuvu	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0p	*	tuvu	_	_	_	_	advmod	basic	1-22	
+1-15	76-84	braucoša	*	Imp	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Pres	*	Aspect=Imp\|Case=Gen\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdmsgapnpn	*	braukt	_	_	_	_	amod	basic	1-18	
+1-16	85-95	automobiļa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	*	automobilis	_	_	*->2-1	*[2]	nmod	basic	1-18	
+1-17	96-97	«	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	«	product[6]	https://en.wikipedia.org/wiki/Renault\_Mégane[6]	*->2-2	*[2]	punct	basic	1-18	
+1-18	97-104	Renault	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Renault	product[6]	https://en.wikipedia.org/wiki/Renault\_Mégane[6]	*->2-2	*[2]	iobj	basic	1-21	
+1-19	105-111	Megane	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Megane	product[6]	https://en.wikipedia.org/wiki/Renault\_Mégane[6]	*->2-2	*[2]	flat:name	basic	1-18	
+1-20	111-112	»	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	»	product[6]	https://en.wikipedia.org/wiki/Renault\_Mégane[6]	*->2-2	*[2]	punct	basic	1-18	
+1-21	113-120	priekšā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0p	*	priekšā	_	_	_	_	advmod	basic	1-22	
+1-22	121-129	izskrēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnisi130an	*	izskriet	_	_	_	_	root	basic	1-22	
+1-23	130-136	stirna	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	stirna	_	_	_	_	nsubj	basic	1-22	
+1-24	136-137	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-22	
+
+#Text=Šoferis no sadursmes nespēja izvairīties.
+2-1	139-146	Šoferis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	šoferis	_	_	_	_	nsubj	basic	2-4	
+2-2	147-149	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case	basic	2-3	
+2-3	150-159	sadursmes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	sadursme	_	_	_	_	iobj	basic	2-5	
+2-4	160-167	nespēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vonisi130ay	*	nespēt	_	_	_	_	root	basic	2-4	
+2-5	168-179	izvairīties	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i3000n	*	izvairīties	_	_	_	_	xcomp	basic	2-4	
+2-6	179-180	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-4	
+
+#Text=Negadījumā cietušo nav, bojāts transporta līdzeklis.
+3-1	182-192	Negadījumā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	negadījums	_	_	_	_	obl	basic	3-3	
+3-2	193-200	cietušo	*	Perf	Gen	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmpgasypn	*	ciest	_	_	_	_	nsubj	basic	3-3	
+3-3	201-204	nav	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30ay	*	nebūt	_	_	_	_	root	basic	3-3	
+3-4	204-205	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-5	
+3-5	206-212	bojāts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnpsnpn	*	bojāt	_	_	_	_	conj	basic	3-3	
+3-6	213-223	transporta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	transports	_	_	*->2-3	*[2]	nmod	basic	3-7	
+3-7	224-233	līdzeklis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	līdzeklis	_	_	*->2-3	*[2]	nsubj:pass	basic	3-5	
+3-8	233-234	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-3	

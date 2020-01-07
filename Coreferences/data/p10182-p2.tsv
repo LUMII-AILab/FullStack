@@ -1,0 +1,132 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=E. A. Rumba Dzejas dienas sauc par satikšanos, kas dod iespēju dzirdēt pašu autoru savā īpatnībā lasām dzeju.
+1-1	0-2	E.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	E.	person[1]	*[1]	_	_	nsubj	basic	1-6	
+1-2	3-5	A.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	A.	person[1]	*[1]	_	_	flat:name	basic	1-1	
+1-3	6-11	Rumba	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn4	*	Rumba	person[1]	*[1]	_	_	flat:name	basic	1-1	
+1-4	12-18	Dzejas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	dzeja	event[2]	https://lv.wikipedia.org/wiki/Dzejas\_dienas[2]	_	_	nmod	basic	1-5	
+1-5	19-25	dienas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	diena	event[2]	https://lv.wikipedia.org/wiki/Dzejas\_dienas[2]	_	_	obj	basic	1-6	
+1-6	26-30	sauc	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt130an	*	saukt	_	_	_	_	root	basic	1-6	
+1-7	31-34	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	1-8	
+1-8	35-45	satikšanos	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsar	*	satikšanās	_	_	*->1-1	*[1]	xcomp	basic	1-6	
+1-9	45-46	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-11	
+1-10	47-50	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->1-2	*[1]	nsubj	basic	1-11	
+1-11	51-54	dod	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt130an	*	dot	_	_	_	_	acl	basic	1-8	
+1-12	55-62	iespēju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	iespēja	_	_	_	_	obj	basic	1-11	
+1-13	63-70	dzirdēt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	*	dzirdēt	_	_	_	_	acl	basic	1-12	
+1-14	71-75	pašu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msan	*	pats	_	_	*->2-1	*[2]	det	basic	1-15	
+1-15	76-82	autoru	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	autors	_	_	*->2-1	*[2]	obj	basic	1-13	
+1-16	83-87	savā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0fsln	*	sava	_	_	*->2-2	*[2]	det	basic	1-17	
+1-17	88-96	īpatnībā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	īpatnība	_	_	_	_	obl	basic	1-18	
+1-18	97-102	lasām	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	*	*	vmnpu0000000n	*	lasīt	_	_	_	_	advcl	basic	1-13	
+1-19	103-108	dzeju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	dzeja	_	_	_	_	obj	basic	1-18	
+1-20	108-109	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-6	
+
+#Text=R. Bula uzskata, ka šāda tikšanās dod iespēju ielūkoties citā dzīves skatījumā.
+2-1	111-113	R.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	R.	person[3]	*[3]	_	_	nsubj	basic	2-3	
+2-2	114-118	Bula	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Bula	person[3]	*[3]	_	_	flat:name	basic	2-1	
+2-3	119-126	uzskata	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	uzskatīt	_	_	_	_	root	basic	2-3	
+2-4	126-127	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-8	
+2-5	128-130	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	2-8	
+2-6	131-135	šāda	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsnn	*	šāda	_	_	_	_	det	basic	2-7	
+2-7	136-144	tikšanās	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsnr	*	tikšanās	_	_	_	_	nsubj	basic	2-8	
+2-8	145-148	dod	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt130an	*	dot	_	_	_	_	ccomp	basic	2-3	
+2-9	149-156	iespēju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	iespēja	_	_	_	_	obj	basic	2-8	
+2-10	157-167	ielūkoties	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i2000n	*	ielūkoties	_	_	_	_	acl	basic	2-9	
+2-11	168-172	citā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|PronType=Ind	*	*	pi0fsln	*	cita	_	_	_	_	det	basic	2-13	
+2-12	173-179	dzīves	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	dzīve	_	_	_	_	nmod	basic	2-13	
+2-13	180-189	skatījumā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	skatījums	_	_	_	_	obl	basic	2-10	
+2-14	189-190	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-3	
+
+#Text=Savukārt M. Anmanei Dzejas dienas liek atminēties senākus laikus, kad dzejnieki dzeju rakstīja Ēzopa valodā, kādu tagad vairs nedzird…
+3-1	192-200	Savukārt	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	savukārt	_	_	_	_	advmod	basic	3-6	
+3-2	201-203	M.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	M.	person[4]	*[4]	_	_	iobj	basic	3-6	
+3-3	204-211	Anmanei	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	npfsd5	*	Anmane	person[4]	*[4]	_	_	flat:name	basic	3-2	
+3-4	212-218	Dzejas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	dzeja	event[5]	https://lv.wikipedia.org/wiki/Dzejas\_dienas[5]	_	_	nmod	basic	3-5	
+3-5	219-225	dienas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	diena	event[5]	https://lv.wikipedia.org/wiki/Dzejas\_dienas[5]	_	_	nsubj	basic	3-6	
+3-6	226-230	liek	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipi130an	*	likt	_	_	_	_	root	basic	3-6	
+3-7	231-241	atminēties	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0t3000n	*	atminēties	_	_	_	_	ccomp	basic	3-6	
+3-8	242-249	senākus	*	*	Acc	*	Cmp	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Degree=Cmp\|Gender=Masc\|Number=Plur	*	*	afmpanc	*	sens	_	_	*->3-1	*[3]	amod	basic	3-9	
+3-9	250-256	laikus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	laiks	_	_	*->3-1	*[3]	obj	basic	3-7	
+3-10	256-257	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-14	
+3-11	258-261	kad	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0t	*	kad	_	_	*->3-2	*[3]	advmod	basic	3-14	
+3-12	262-271	dzejnieki	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	dzejnieks	_	_	_	_	nsubj	basic	3-14	
+3-13	272-277	dzeju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	dzeja	_	_	_	_	obj	basic	3-14	
+3-14	278-286	rakstīja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist330an	*	rakstīt	_	_	_	_	acl	basic	3-9	
+3-15	287-292	Ēzopa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	Ēzops	person	https://en.wikipedia.org/wiki/Aesop	*->4-1	*[4]	nmod	basic	3-16	
+3-16	293-299	valodā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	valoda	_	_	*->4-1	*[4]	obl	basic	3-14	
+3-17	299-300	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-21	
+3-18	301-305	kādu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsan	*	kāda	_	_	*->4-2	*[4]	obj	basic	3-21	
+3-19	306-311	tagad	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	*	tagad	_	_	_	_	advmod	basic	3-21	
+3-20	312-317	vairs	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	vairs	_	_	_	_	advmod	basic	3-21	
+3-21	318-325	nedzird	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330ay	*	nedzirdēt	_	_	_	_	acl	basic	3-16	
+3-22	325-326	…	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	…	_	_	_	_	punct	basic	3-6	
+
+#Text=Gvido Drage saka, ka dzejas rakstīšana ir process, taču ne jau Dzejas dienām kāds rakstot.
+4-1	328-333	Gvido	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	np0000	*	Gvido	person[6]	*[6]	_	_	nsubj	basic	4-3	
+4-2	334-339	Drage	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn5	*	Drage	person[6]	*[6]	_	_	flat:name	basic	4-1	
+4-3	340-344	saka	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	sacīt	_	_	_	_	root	basic	4-3	
+4-4	344-345	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-9	
+4-5	346-348	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	4-9	
+4-6	349-355	dzejas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	dzeja	_	_	_	_	nmod	basic	4-7	
+4-7	356-366	rakstīšana	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	rakstīšana	_	_	_	_	nsubj	basic	4-9	
+4-8	367-369	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	4-9	
+4-9	370-377	process	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	process	_	_	_	_	ccomp	basic	4-3	
+4-10	377-378	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-17	
+4-11	379-383	taču	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	taču	_	_	_	_	cc	basic	4-17	
+4-12	384-386	ne	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Neg	*	*	q	*	ne	_	_	_	_	discourse	basic	4-15	
+4-13	387-390	jau	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	jau	_	_	_	_	flat	basic	4-12	
+4-14	391-397	Dzejas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	dzeja	event[7]	*[7]	_	_	nmod	basic	4-15	
+4-15	398-404	dienām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	*	diena	event[7]	*[7]	_	_	iobj	basic	4-17	
+4-16	405-409	kāds	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Ind	*	*	pi0msnn	*	kāds	_	_	_	_	nsubj	basic	4-17	
+4-17	410-417	rakstot	*	*	*	*	*	*	Qot	*	*	*	*	*	*	*	Pres	*	Evident=Nfh\|Mood=Qot\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnrpt300an	*	rakstīt	_	_	_	_	conj	basic	4-9	
+4-18	417-418	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	4-3	
+
+#Text=I. Bindrei Dzejas dienas ir kā pieturas punkts, kad var izvērtēt iepriekšējo un doties tālāk.
+5-1	420-422	I.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	I.	person[8]	*[8]	_	_	obl	basic	5-6	
+5-2	423-430	Bindrei	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	npfsd5	*	Bindre	person[8]	*[8]	_	_	flat:name	basic	5-1	
+5-3	431-437	Dzejas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	dzeja	event[9]	*[9]	_	_	nmod	basic	5-4	
+5-4	438-444	dienas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	diena	event[9]	*[9]	_	_	nsubj	basic	5-6	
+5-5	445-447	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	5-6	
+5-6	448-450	kā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	kā	_	_	_	_	root	basic	5-6	
+5-7	451-459	pieturas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	pietura	_	_	_	_	nmod	basic	5-8	
+5-8	460-466	punkts	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	punkts	_	_	*->5-1	*[5]	fixed	basic	5-6	
+5-9	466-467	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	5-11	
+5-10	468-471	kad	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0t	*	kad	_	_	*->5-2	*[5]	advmod	basic	5-11	
+5-11	472-475	var	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vonipi330an	*	varēt	_	_	_	_	acl	basic	5-8	
+5-12	476-484	izvērtēt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	*	izvērtēt	_	_	_	_	xcomp	basic	5-11	
+5-13	485-496	iepriekšējo	*	*	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsayp	*	iepriekšējs	_	_	_	_	obj	basic	5-12	
+5-14	497-499	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	5-15	
+5-15	500-506	doties	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i1000n	*	doties	_	_	_	_	conj	basic	5-12	
+5-16	507-512	tālāk	*	*	*	*	Cmp	*	*	*	*	*	*	*	*	*	*	*	Degree=Cmp	*	*	rcp	*	tāli	_	_	_	_	advmod	basic	5-15	
+5-17	512-513	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	5-6	
+
+#Text=A. Briesma Dzejas dienas sauc par skaistiem svētkiem.
+6-1	515-517	A.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	a.	person[10]	*[10]	_	_	nsubj	basic	6-5	
+6-2	518-525	Briesma	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	*	Briesma	person[10]	*[10]	_	_	flat:name	basic	6-1	
+6-3	526-532	Dzejas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	dzeja	event[11]	*[11]	_	_	nmod	basic	6-4	
+6-4	533-539	dienas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	diena	event[11]	*[11]	_	_	obj	basic	6-5	
+6-5	540-544	sauc	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt130an	*	saukt	_	_	_	_	root	basic	6-5	
+6-6	545-548	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	par	_	_	_	_	case	basic	6-8	
+6-7	549-558	skaistiem	*	*	Dat	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpdnp	*	skaists	_	_	_	_	amod	basic	6-8	
+6-8	559-567	svētkiem	*	*	Dat	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Ptan	*	*	ncmdd1	*	svētki	_	_	_	_	xcomp	basic	6-5	
+6-9	567-568	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	6-5	
+
+#Text=B. Talcei Dzejas dienas ir tikšanās ar spalvas brāļiem.
+7-1	570-572	B.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	B.	person[12]	*[12]	_	_	obl	basic	7-6	
+7-2	573-579	Talcei	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	npfsd5	*	Talce	person[12]	*[12]	_	_	flat:name	basic	7-1	
+7-3	580-586	Dzejas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	dzeja	event[13]	*[13]	_	_	nmod	basic	7-4	
+7-4	587-593	dienas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	diena	event[13]	*[13]	_	_	nsubj	basic	7-6	
+7-5	594-596	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	7-6	
+7-6	597-605	tikšanās	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsnr	*	tikšanās	_	_	_	_	root	basic	7-6	
+7-7	606-608	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	_	_	case	basic	7-9	
+7-8	609-616	spalvas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	spalva	_	_	_	_	nmod	basic	7-9	
+7-9	617-624	brāļiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd2	*	brālis	_	_	_	_	nmod	basic	7-6	
+7-10	624-625	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	7-6	

@@ -1,0 +1,73 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Rīga, 14.sept., LETA.
+1-1	0-4	Rīga	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Rīga	GPE	https://en.wikipedia.org/wiki/Riga	_	_	root	basic	1-1	
+1-2	4-5	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-4	
+1-3	6-9	14.	*	*	*	*	*	*	*	*	Ord	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	14.	time[1]	*[1]	_	_	amod	basic	1-4	
+1-4	9-14	sept.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	*	sept.	time[1]	*[1]	_	_	parataxis	basic	1-1	
+1-5	14-15	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-6	
+1-6	16-20	LETA	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	LETA	organization	https://en.wikipedia.org/wiki/LETA	_	_	parataxis	basic	1-1	
+1-7	20-21	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-1	
+
+#Text=Eiropas Parlamenta (EP) deputāte Iveta Grigule (ZZS) lūgusi viņas pārstāvēto Brīvības un tiešās demokrātijas Eiropas grupu (EFD) un tās līderi Naidželu Faridžu saudzēt Valdi Dombrovski (V) viņa uzklausīšanas procedūrā EP, lai ieņemtu Eiropas Komisijas (EK) viceprezidenta amatu eiro un sociālā dialoga jautājumos.
+2-1	22-29	Eiropas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Eiropa	organization[2]|location[3]	https://en.wikipedia.org/wiki/European\_Parliament[2]|https://en.wikipedia.org/wiki/Europe[3]	*->1-1	*[1]	nmod	basic	2-2	
+2-2	30-40	Parlamenta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	parlaments	organization[2]	https://en.wikipedia.org/wiki/European\_Parliament[2]	*->1-1	*[1]	nmod	basic	2-6	
+2-3	41-42	(	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	(	_	_	_	_	punct	basic	2-4	
+2-4	42-44	EP	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	EP	organization	https://en.wikipedia.org/wiki/European\_Parliament	*->1-2	*[1]	discourse	basic	2-2	
+2-5	44-45	)	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	)	_	_	_	_	punct	basic	2-4	
+2-6	46-54	deputāte	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	deputāte	_	_	*->2-1	*[2]	nmod	basic	2-7	
+2-7	55-60	Iveta	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Iveta	person[4]	https://en.wikipedia.org/wiki/Iveta\_Grigule-Pēterse[4]	*->2-2	*[2]	nsubj	basic	2-12	
+2-8	61-68	Grigule	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	*	Grigule	person[4]	https://en.wikipedia.org/wiki/Iveta\_Grigule-Pēterse[4]	*->2-2	*[2]	flat:name	basic	2-7	
+2-9	69-70	(	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	(	_	_	_	_	punct	basic	2-10	
+2-10	70-73	ZZS	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	ZZS	organization	https://en.wikipedia.org/wiki/Union\_of\_Greens\_and\_Farmers	_	_	discourse	basic	2-7	
+2-11	73-74	)	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	)	_	_	_	_	punct	basic	2-10	
+2-12	75-81	lūgusi	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdfsnasnpn	*	lūgt	_	_	_	_	root	basic	2-12	
+2-13	82-87	viņas	*	*	Gen	*	*	Fem	*	*	*	Sing	3	*	Prs	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3fsgn	*	viņa	_	_	*->2-3	*[2]	obl	basic	2-14	
+2-14	88-98	pārstāvēto	*	Perf	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsapsypn	*	pārstāvēt	_	_	_	_	amod	basic	2-20	
+2-15	99-107	Brīvības	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	brīvība	organization[5]	https://en.wikipedia.org/wiki/Europe\_of\_Freedom\_and\_Direct\_Democracy[5]	*->3-1	*[3]	nmod	basic	2-20	
+2-16	108-110	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	organization[5]	https://en.wikipedia.org/wiki/Europe\_of\_Freedom\_and\_Direct\_Democracy[5]	*->3-1	*[3]	cc	basic	2-18	
+2-17	111-117	tiešās	*	*	Gen	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsgyp	*	tiešs	organization[5]	https://en.wikipedia.org/wiki/Europe\_of\_Freedom\_and\_Direct\_Democracy[5]	*->3-1	*[3]	amod	basic	2-18	
+2-18	118-130	demokrātijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	demokrātija	organization[5]	https://en.wikipedia.org/wiki/Europe\_of\_Freedom\_and\_Direct\_Democracy[5]	*->3-1	*[3]	conj	basic	2-15	
+2-19	131-138	Eiropas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Eiropa	organization[5]|location[6]	https://en.wikipedia.org/wiki/Europe\_of\_Freedom\_and\_Direct\_Democracy[5]|https://en.wikipedia.org/wiki/Europe[6]	*->3-1	*[3]	nmod	basic	2-20	
+2-20	139-144	grupu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	grupa	organization[5]	https://en.wikipedia.org/wiki/Europe\_of\_Freedom\_and\_Direct\_Democracy[5]	*->3-1	*[3]	obj	basic	2-12	
+2-21	145-146	(	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	(	_	_	_	_	punct	basic	2-22	
+2-22	146-149	EFD	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	EFD	organization	https://en.wikipedia.org/wiki/Europe\_of\_Freedom\_and\_Direct\_Democracy	*->3-2	*[3]	discourse	basic	2-20	
+2-23	149-150	)	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	)	_	_	_	_	punct	basic	2-22	
+2-24	151-153	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-27	
+2-25	154-157	tās	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	Dem	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsgn	*	tā	_	_	*->3-3	*[3]	det	basic	2-26	
+2-26	158-164	līderi	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	*	līderis	_	_	*->4-1	*[4]	nmod	basic	2-27	
+2-27	165-173	Naidželu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	*	Naidžels	person[7]	https://en.wikipedia.org/wiki/Nigel\_Farage[7]	*->4-2	*[4]	conj	basic	2-20	
+2-28	174-181	Faridžu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	*	Faridžs	person[7]	https://en.wikipedia.org/wiki/Nigel\_Farage[7]	*->4-2	*[4]	flat:name	basic	2-27	
+2-29	182-189	saudzēt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t2000n	*	saudzēt	_	_	_	_	ccomp	basic	2-12	
+2-30	190-195	Valdi	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa2	*	Valdis	person[8]	https://en.wikipedia.org/wiki/Valdis\_Dombrovskis[8]	*->5-1	*[5]	obj	basic	2-29	
+2-31	196-206	Dombrovski	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa2	*	Dombrovskis	person[8]	https://en.wikipedia.org/wiki/Valdis\_Dombrovskis[8]	*->5-1	*[5]	flat:name	basic	2-30	
+2-32	207-208	(	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	(	_	_	_	_	punct	basic	2-33	
+2-33	208-209	V	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	V	organization	https://en.wikipedia.org/wiki/Unity\_(Latvian\_political\_party)	_	_	discourse	basic	2-30	
+2-34	209-210	)	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	)	_	_	_	_	punct	basic	2-33	
+2-35	211-215	viņa	*	*	Gen	*	*	Masc	*	*	*	Sing	3	*	Prs	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msgn	*	viņš	_	_	*->5-2	*[5]	det	basic	2-36	
+2-36	216-229	uzklausīšanas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	uzklausīšana	_	_	_	_	nmod	basic	2-37	
+2-37	230-239	procedūrā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	procedūra	_	_	_	_	obl	basic	2-29	
+2-38	240-242	EP	*	*	Voc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Voc\|Gender=Masc\|Number=Sing	*	*	ncmsv1	*	eps	organization	https://en.wikipedia.org/wiki/European\_Parliament	*->1-3	*[1]	dep	basic	2-37	
+2-39	242-243	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-41	
+2-40	244-247	lai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	lai	_	_	_	_	mark	basic	2-41	
+2-41	248-255	ieņemtu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnc0t100an	*	ieņemt	_	_	_	_	advcl	basic	2-37	
+2-42	256-263	Eiropas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Eiropa	organization[9]|location[10]	https://en.wikipedia.org/wiki/European\_Commission[9]|https://en.wikipedia.org/wiki/Europe[10]	*->6-1	*[6]	nmod	basic	2-43	
+2-43	264-273	Komisijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	komisija	organization[9]	https://en.wikipedia.org/wiki/European\_Commission[9]	*->6-1	*[6]	nmod	basic	2-47	
+2-44	274-275	(	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	(	_	_	_	_	punct	basic	2-45	
+2-45	275-277	EK	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	EK	organization	https://en.wikipedia.org/wiki/European\_Commission	*->6-2	*[6]	discourse	basic	2-43	
+2-46	277-278	)	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	)	_	_	_	_	punct	basic	2-45	
+2-47	279-293	viceprezidenta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	viceprezidents	_	_	_	_	nmod	basic	2-48	
+2-48	294-299	amatu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	amats	_	_	_	_	obj	basic	2-41	
+2-49	300-304	eiro	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	nc0000	*	eiro	_	_	_	_	nmod	basic	2-53	
+2-50	305-307	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-52	
+2-51	308-315	sociālā	*	*	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsgyp	*	sociāls	_	_	_	_	amod	basic	2-52	
+2-52	316-323	dialoga	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	dialogs	_	_	_	_	conj	basic	2-49	
+2-53	324-334	jautājumos	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	*	jautājums	_	_	_	_	acl	basic	2-48	
+2-54	334-335	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-12	

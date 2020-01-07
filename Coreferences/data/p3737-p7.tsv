@@ -1,42 +1,42 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Būvfirma SIA "Re&Re" 2011.gadā ir strādājusi ar 23 527 842 latu apgrozījumu, kas ir par 12% mazāks nekā 2010.gadā, liecina "Firmas.lv" informācija.
-1-1	0-8	Būvfirma	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	būvfirma	_	_	*[1]	*->1-1	nmod	basic	1-4	
-1-2	9-12	SIA	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	SIA	organization[1]	*[1]	*[1]	*->1-2	nmod	basic	1-4	
-1-3	13-14	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[1]	*[1]	*[1]	*->1-2	punct	basic	1-4	
-1-4	14-16	Re	_	_	_	_	_	_	_	_	_	_	_	_	xx	Re	organization[1]	*[1]	*[1]	*->1-2	nsubj	basic	1-11	
-1-5	16-17	&	_	_	_	_	_	_	_	_	_	_	_	_	xx	&	organization[1]	*[1]	*[1]	*->1-2	flat:name	basic	1-4	
-1-6	17-19	Re	_	_	_	_	_	_	_	_	_	_	_	_	xx	Re	organization[1]	*[1]	*[1]	*->1-2	flat:name	basic	1-4	
-1-7	19-20	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[1]	*[1]	*[1]	*->1-2	punct	basic	1-4	
-1-8	21-26	2011.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	2011.	time[2]	*[2]	_	_	amod	basic	1-9	
-1-9	26-30	gadā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	gads	time[2]	*[2]	_	_	obl	basic	1-11	
-1-10	31-33	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	aux	basic	1-11	
-1-11	34-44	strādājusi	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfsnasnp	strādāt	_	_	_	_	ccomp	basic	1-27	
-1-12	45-47	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case	basic	1-15	
-1-13	48-58	23 527 842	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	23 527 842	_	_	_	_	nummod	basic	1-14	
-1-14	59-63	latu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	lats	_	_	_	_	nmod	basic	1-15	
-1-15	64-75	apgrozījumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	apgrozījums	_	_	*[2]	*->2-1	obl	basic	1-11	
-1-16	75-76	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-22	
-1-17	77-80	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	*[2]	*->2-2	nsubj	basic	1-22	
-1-18	81-83	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	cop	basic	1-22	
-1-19	84-87	par	_	_	_	_	_	_	_	_	_	_	_	_	sppd	par	_	_	_	_	case	basic	1-21	
-1-20	88-90	12	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	12	_	_	_	_	nummod	basic	1-21	
-1-21	90-91	%	_	_	_	_	_	_	_	_	_	_	_	_	xx	%	_	_	_	_	iobj	basic	1-22	
-1-22	92-98	mazāks	Masc	Sing	Nom	Cmp	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Masc\|Number=Sing	*	*	afmsnnc	mazs	_	_	_	_	acl	basic	1-15	
-1-23	99-103	nekā	_	_	_	_	_	_	_	_	_	_	_	_	cs	nekā	_	_	_	_	mark	basic	1-25	
-1-24	104-109	2010.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	2010.	time[3]	*[3]	_	_	amod	basic	1-25	
-1-25	109-113	gadā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	gads	time[3]	*[3]	_	_	acl	basic	1-22	
-1-26	113-114	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-11	
-1-27	115-122	liecina	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	liecināt	_	_	_	_	root	basic	1-27	
-1-28	123-124	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[4]	*[4]	_	_	punct	basic	1-29	
-1-29	124-133	Firmas.lv	_	_	_	_	_	_	_	_	_	_	_	_	np0000	Firmas.lv	organization[4]	*[4]	_	_	nmod	basic	1-31	
-1-30	133-134	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[4]	*[4]	_	_	punct	basic	1-29	
-1-31	135-146	informācija	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	informācija	_	_	_	_	nsubj	basic	1-27	
-1-32	146-147	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-27	
+1-1	0-8	Būvfirma	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	būvfirma	_	_	*->1-1	*[1]	nmod	basic	1-4	
+1-2	9-12	SIA	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	*	SIA	organization[1]	*[1]	*->1-2	*[1]	nmod	basic	1-4	
+1-3	13-14	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[1]	*[1]	*->1-2	*[1]	punct	basic	1-4	
+1-4	14-16	Re	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	xx	*	Re	organization[1]	*[1]	*->1-2	*[1]	nsubj	basic	1-11	
+1-5	16-17	&	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	xx	*	&	organization[1]	*[1]	*->1-2	*[1]	flat:name	basic	1-4	
+1-6	17-19	Re	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	xx	*	Re	organization[1]	*[1]	*->1-2	*[1]	flat:name	basic	1-4	
+1-7	19-20	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[1]	*[1]	*->1-2	*[1]	punct	basic	1-4	
+1-8	21-26	2011.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	2011.	time[2]	*[2]	_	_	amod	basic	1-9	
+1-9	26-30	gadā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	gads	time[2]	*[2]	_	_	obl	basic	1-11	
+1-10	31-33	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	aux	basic	1-11	
+1-11	34-44	strādājusi	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsnasnp	*	strādāt	_	_	_	_	ccomp	basic	1-27	
+1-12	45-47	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	1-15	
+1-13	48-58	23 527 842	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	23 527 842	_	_	_	_	nummod	basic	1-14	
+1-14	59-63	latu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	lats	_	_	_	_	nmod	basic	1-15	
+1-15	64-75	apgrozījumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	apgrozījums	_	_	*->2-1	*[2]	obl	basic	1-11	
+1-16	75-76	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-22	
+1-17	77-80	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->2-2	*[2]	nsubj	basic	1-22	
+1-18	81-83	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	1-22	
+1-19	84-87	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	par	_	_	_	_	case	basic	1-21	
+1-20	88-90	12	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	12	_	_	_	_	nummod	basic	1-21	
+1-21	90-91	%	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	xx	*	%	_	_	_	_	iobj	basic	1-22	
+1-22	92-98	mazāks	*	*	Nom	*	Cmp	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Masc\|Number=Sing	*	*	afmsnnc	*	mazs	_	_	_	_	acl	basic	1-15	
+1-23	99-103	nekā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	nekā	_	_	_	_	mark	basic	1-25	
+1-24	104-109	2010.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	2010.	time[3]	*[3]	_	_	amod	basic	1-25	
+1-25	109-113	gadā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	gads	time[3]	*[3]	_	_	acl	basic	1-22	
+1-26	113-114	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-11	
+1-27	115-122	liecina	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	liecināt	_	_	_	_	root	basic	1-27	
+1-28	123-124	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[4]	*[4]	_	_	punct	basic	1-29	
+1-29	124-133	Firmas.lv	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	np0000	*	Firmas.lv	organization[4]	*[4]	_	_	nmod	basic	1-31	
+1-30	133-134	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[4]	*[4]	_	_	punct	basic	1-29	
+1-31	135-146	informācija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	informācija	_	_	_	_	nsubj	basic	1-27	
+1-32	146-147	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-27	

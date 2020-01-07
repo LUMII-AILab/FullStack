@@ -1,0 +1,98 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Šāda politika, protams, tika ilgstoši piekopta gan cariskajā Krievijā, gan it īpaši Padomju Savienībā - un ne tikai tur.
+1-1	0-4	Šāda	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsnn	*	šāda	_	_	_	_	det	basic	1-2	
+1-2	5-13	politika	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	politika	_	_	_	_	nsubj:pass	basic	1-8	
+1-3	13-14	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-4	
+1-4	15-22	protams	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	protams	_	_	_	_	discourse	basic	1-8	
+1-5	22-23	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-4	
+1-6	24-28	tika	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vtnisi130an	*	tikt	_	_	_	_	aux:pass	basic	1-8	
+1-7	29-37	ilgstoši	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpt	*	ilgstoši	_	_	_	_	advmod	basic	1-8	
+1-8	38-46	piekopta	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsnpsnpn	*	piekopt	_	_	_	_	root	basic	1-8	
+1-9	47-50	gan	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	gan	_	_	_	_	cc	basic	1-11	
+1-10	51-60	cariskajā	*	*	Loc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfslyp	*	cariska	_	_	_	_	amod	basic	1-11	
+1-11	61-69	Krievijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Krievija	GPE	https://en.wikipedia.org/wiki/Russia	_	_	obl	basic	1-8	
+1-12	69-70	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-17	
+1-13	71-74	gan	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	gan	_	_	_	_	cc	basic	1-17	
+1-14	75-77	it	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	it	_	_	_	_	discourse	basic	1-15	
+1-15	78-83	īpaši	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	īpaši	_	_	_	_	dep	basic	1-17	
+1-16	84-91	Padomju	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg5	*	padome	GPE[1]	https://en.wikipedia.org/wiki/Soviet\_Union[1]	*->1-1	*[1]	nmod	basic	1-17	
+1-17	92-101	Savienībā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	savienība	GPE[1]	https://en.wikipedia.org/wiki/Soviet\_Union[1]	*->1-1	*[1]	conj	basic	1-11	
+1-18	102-103	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	-	_	_	_	_	punct	basic	1-22	
+1-19	104-106	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-22	
+1-20	107-109	ne	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Neg	*	*	q	*	ne	_	_	_	_	discourse	basic	1-22	
+1-21	110-115	tikai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tikai	_	_	_	_	flat	basic	1-20	
+1-22	116-119	tur	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0p	*	tur	_	_	*->1-2	*[1]	conj	basic	1-11	
+1-23	119-120	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-8	
+
+#Text=Šī savu tautiešu aizsargāšanas kārts ir izmantota daudzkārt.
+2-1	122-124	Šī	*	*	Nom	*	*	Fem	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3fsnn	*	šī	_	_	_	_	det	basic	2-5	
+2-2	125-129	savu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur\|Poss=Yes\|PronType=Prs	*	*	ps0fpgn	*	sava	_	_	_	_	det	basic	2-3	
+2-3	130-138	tautiešu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	tautietis	_	_	_	_	nmod	basic	2-4	
+2-4	139-152	aizsargāšanas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	aizsargāšana	_	_	_	_	nmod	basic	2-5	
+2-5	153-158	kārts	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn6	*	kārts	_	_	_	_	nsubj:pass	basic	2-7	
+2-6	159-161	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	aux:pass	basic	2-7	
+2-7	162-171	izmantota	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsnpsnpn	*	izmantot	_	_	_	_	root	basic	2-7	
+2-8	172-181	daudzkārt	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	daudzkārt	_	_	_	_	advmod	basic	2-7	
+2-9	181-182	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-7	
+
+#Text=Spilgts piemērs bija Sudetija, kur toreizējās Čehoslovākijas teritorijā...
+3-1	184-191	Spilgts	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	spilgts	_	_	_	_	amod	basic	3-2	
+3-2	192-199	piemērs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	piemērs	_	_	_	_	root	basic	3-2	
+3-3	200-204	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vcnisii30an	*	būt	_	_	_	_	cop	basic	3-2	
+3-4	205-213	Sudetija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Sudetija	GPE	https://en.wikipedia.org/wiki/Sudetenland	*->2-1	*[2]	nsubj	basic	3-2	
+3-5	213-214	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-9	
+3-6	215-218	kur	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0p	*	kur	_	_	*->2-2	*[2]	advmod	basic	3-9	
+3-7	219-229	toreizējās	*	*	Gen	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsgyp	*	toreizēja	_	_	_	_	amod	basic	3-8	
+3-8	230-244	Čehoslovākijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Čehoslovākija	GPE	https://en.wikipedia.org/wiki/Czechoslovakia	_	_	nmod	basic	3-9	
+3-9	245-255	teritorijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	teritorija	_	_	_	_	acl	basic	3-4	
+3-10	255-258	...	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	...	_	_	_	_	punct	basic	3-2	
+
+#Text=Mēs zinām, ka Sudetiju apdzīvoja pamatā vācieši un Hitlers nolēma, ka šie Sudetijas vācieši ir jāaizstāv...
+4-1	260-263	Mēs	*	*	Nom	*	*	*	*	*	*	Plur	1	*	*	*	*	*	Case=Nom\|Number=Plur\|Person=1\|PronType=Prs	*	*	pp10pnn	*	mēs	_	_	_	_	nsubj	basic	4-2	
+4-2	264-269	zinām	*	*	*	*	*	*	Ind	*	*	Plur	1	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Number=Plur\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt31pan	*	zināt	_	_	_	_	root	basic	4-2	
+4-3	269-270	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-6	
+4-4	271-273	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	4-6	
+4-5	274-282	Sudetiju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	*	Sudetija	GPE	https://en.wikipedia.org/wiki/Sudetenland	_	_	nsubj	basic	4-6	
+4-6	283-292	apdzīvoja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist230an	*	apdzīvot	_	_	_	_	ccomp	basic	4-2	
+4-7	293-299	pamatā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	pamats	_	_	_	_	obl	basic	4-6	
+4-8	300-307	vācieši	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn2	*	vācietis	_	_	_	_	nsubj	basic	4-6	
+4-9	308-310	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	4-11	
+4-10	311-318	Hitlers	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Hitlers	person	https://en.wikipedia.org/wiki/Adolf\_Hitler	_	_	nsubj	basic	4-11	
+4-11	319-325	nolēma	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist130an	*	nolemt	_	_	_	_	conj	basic	4-6	
+4-12	325-326	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-18	
+4-13	327-329	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	4-18	
+4-14	330-333	šie	*	*	Nom	*	*	Masc	*	*	*	Plur	3	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Dem	*	*	pd3mpnn	*	šis	_	_	_	_	det	basic	4-16	
+4-15	334-343	Sudetijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Sudetija	GPE	https://en.wikipedia.org/wiki/Sudetenland	_	_	nmod	basic	4-16	
+4-16	344-351	vācieši	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn2	*	vācietis	_	_	_	_	nsubj	basic	4-18	
+4-17	352-354	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	aux	basic	4-18	
+4-18	355-364	jāaizstāv	*	*	*	*	*	*	Nec	*	*	*	*	*	*	*	*	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vmnd0t300an	*	aizstāvēt	_	_	_	_	ccomp	basic	4-11	
+4-19	364-367	...	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	...	_	_	_	_	punct	basic	4-2	
+
+#Text=Un diemžēl toreiz pārējā Eiropa un pasaule rīkojās gļēvi; to, protams, nedrīkst šodien vairs atkārtot.
+5-1	369-371	Un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	5-8	
+5-2	372-379	diemžēl	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	diemžēl	_	_	_	_	discourse	basic	5-8	
+5-3	380-386	toreiz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	toreiz	_	_	_	_	advmod	basic	5-8	
+5-4	387-393	pārējā	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsnyp	*	pārēja	_	_	_	_	amod	basic	5-5	
+5-5	394-400	Eiropa	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Eiropa	location	https://en.wikipedia.org/wiki/Europe	_	_	nsubj	basic	5-8	
+5-6	401-403	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	5-7	
+5-7	404-411	pasaule	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	pasaule	_	_	_	_	conj	basic	5-5	
+5-8	412-419	rīkojās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmyisi230an	*	rīkoties	_	_	_	_	root	basic	5-8	
+5-9	420-425	gļēvi	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	gļēvi	_	_	_	_	advmod	basic	5-8	
+5-10	425-426	;	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	\;	_	_	_	_	punct	basic	5-15	
+5-11	427-429	to	*	*	Acc	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msan	*	tas	_	_	_	_	obj	basic	5-18	
+5-12	429-430	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	5-13	
+5-13	431-438	protams	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	protams	_	_	_	_	discourse	basic	5-15	
+5-14	438-439	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	5-13	
+5-15	440-448	nedrīkst	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vonipi330ay	*	nedrīkstēt	_	_	_	_	parataxis	basic	5-8	
+5-16	449-455	šodien	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	šodien	_	_	_	_	advmod	basic	5-15	
+5-17	456-461	vairs	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	vairs	_	_	_	_	advmod	basic	5-15	
+5-18	462-470	atkārtot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	*	atkārtot	_	_	_	_	xcomp	basic	5-15	
+5-19	470-471	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	5-8	

@@ -1,25 +1,25 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Jasmīne.
-1-1	0-7	Jasmīne	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	Jasmīne	person	*	_	_	root|root	basic|enhanced	1-1|1-1	
-1-2	7-8	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-1|1-1	
+1-1	0-7	Jasmīne	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	*	Jasmīne	person	*	_	_	root|root	basic|enhanced	1-1|1-1	
+1-2	7-8	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	1-1|1-1	
 
 #Text=Bet tu esi dzīva!
-2-1	10-13	Bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	_	_	cc|cc	basic|enhanced	2-4|2-4	
-2-2	14-16	tu	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=2\|PronType=Prs	2	*	pp20snn	tu	_	_	*[1]	*->1-1	nsubj|nsubj	basic|enhanced	2-4|2-4	
-2-3	17-20	esi	*	Sing	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=2\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	2	*	vcnipii2san	būt	_	_	_	_	cop|cop	basic|enhanced	2-4|2-4	
-2-4	21-26	dzīva	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	dzīva	_	_	_	_	root|root	basic|enhanced	2-4|2-4	
-2-5	26-27	!	_	_	_	_	_	_	_	_	_	_	_	_	zs	!	_	_	_	_	punct|punct	basic|enhanced	2-4|2-4	
+2-1	10-13	Bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	_	_	cc|cc	basic|enhanced	2-4|2-4	
+2-2	14-16	tu	*	*	Nom	*	*	*	*	*	*	Sing	2	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=2\|PronType=Prs	*	*	pp20snn	*	tu	_	_	*->1-1	*[1]	nsubj|nsubj	basic|enhanced	2-4|2-4	
+2-3	17-20	esi	*	*	*	*	*	*	Ind	*	*	Sing	2	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=2\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii2san	*	būt	_	_	_	_	cop|cop	basic|enhanced	2-4|2-4	
+2-4	21-26	dzīva	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	*	dzīva	_	_	_	_	root|root	basic|enhanced	2-4|2-4	
+2-5	26-27	!	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	!	_	_	_	_	punct|punct	basic|enhanced	2-4|2-4	
 
 #Text=Tu izskaties lieliski!
-3-1	29-31	Tu	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=2\|PronType=Prs	2	*	pp20snn	tu	_	_	*[1]	*->1-2	nsubj|nsubj	basic|enhanced	3-2|3-2	
-3-2	32-41	izskaties	*	Sing	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=2\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	2	*	vmyipt32san	izskatīties	_	_	_	_	root|root	basic|enhanced	3-2|3-2	
-3-3	42-50	lieliski	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	lieliski	_	_	_	_	advmod|advmod	basic|enhanced	3-2|3-2	
-3-4	50-51	!	_	_	_	_	_	_	_	_	_	_	_	_	zs	!	_	_	_	_	punct|punct	basic|enhanced	3-2|3-2	
+3-1	29-31	Tu	*	*	Nom	*	*	*	*	*	*	Sing	2	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=2\|PronType=Prs	*	*	pp20snn	*	tu	_	_	*->1-2	*[1]	nsubj|nsubj	basic|enhanced	3-2|3-2	
+3-2	32-41	izskaties	*	*	*	*	*	*	Ind	*	*	Sing	2	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=2\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmyipt32san	*	izskatīties	_	_	_	_	root|root	basic|enhanced	3-2|3-2	
+3-3	42-50	lieliski	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	lieliski	_	_	_	_	advmod|advmod	basic|enhanced	3-2|3-2	
+3-4	50-51	!	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	!	_	_	_	_	punct|punct	basic|enhanced	3-2|3-2	

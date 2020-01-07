@@ -1,35 +1,35 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Notikumi mani neinteresēja.
-1-1	0-8	Notikumi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	notikums	_	_	nsubj	basic	1-3	
-1-2	9-13	mani	*	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10san	es	_	_	obj	basic	1-3	
-1-3	14-26	neinteresēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist230ay	neinteresēt	_	_	root	basic	1-3	
-1-4	26-27	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	1-3	
+1-1	0-8	Notikumi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	notikums	_	_	nsubj	basic	1-3	
+1-2	9-13	mani	*	*	Acc	*	*	*	*	*	*	Sing	1	*	*	*	*	*	Case=Acc\|Number=Sing\|Person=1\|PronType=Prs	*	*	pp10san	*	es	_	_	obj	basic	1-3	
+1-3	14-26	neinteresēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist230ay	*	neinteresēt	_	_	root	basic	1-3	
+1-4	26-27	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	1-3	
 
 #Text=Interesēja tas, kas aiz.
-2-1	29-39	Interesēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist230an	interesēt	_	_	root	basic	2-1	
-2-2	40-43	tas	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	tas	*[1]	*->1-1	nsubj	basic	2-1	
-2-3	43-44	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	2-4	
-2-4	45-48	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	*[1]	*->1-2	acl	basic	2-2	
-2-5	49-52	aiz	_	_	_	_	_	_	_	_	_	_	_	_	sppd	aiz	_	_	obl	basic	2-4	
-2-6	52-53	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	2-1	
+2-1	29-39	Interesēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist230an	*	interesēt	_	_	root	basic	2-1	
+2-2	40-43	tas	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	*	tas	*->1-1	*[1]	nsubj	basic	2-1	
+2-3	43-44	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	2-4	
+2-4	45-48	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	*->1-2	*[1]	acl	basic	2-2	
+2-5	49-52	aiz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	aiz	_	_	obl	basic	2-4	
+2-6	52-53	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	2-1	
 
 #Text=Bet to neviens negribēja stāstīt.
-3-1	55-58	Bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	cc	basic	3-4	
-3-2	59-61	to	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	tas	*[1]	*->1-3	obj	basic	3-5	
-3-3	62-69	neviens	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Ind,Neg	*	*	pi0msny	neviens	_	_	nsubj	basic	3-4	
-3-4	70-79	negribēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vonist330ay	negribēt	_	_	root	basic	3-4	
-3-5	80-87	stāstīt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	stāstīt	_	_	xcomp	basic	3-4	
-3-6	87-88	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	3-4	
+3-1	55-58	Bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	cc	basic	3-4	
+3-2	59-61	to	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	*	tas	*->1-3	*[1]	obj	basic	3-5	
+3-3	62-69	neviens	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Ind,Neg	*	*	pi0msny	*	neviens	_	_	nsubj	basic	3-4	
+3-4	70-79	negribēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vonist330ay	*	negribēt	_	_	root	basic	3-4	
+3-5	80-87	stāstīt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	*	stāstīt	_	_	xcomp	basic	3-4	
+3-6	87-88	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	3-4	
 
 #Text=Vai arī nezināja.
-4-1	90-93	Vai	_	_	_	_	_	_	_	_	_	_	_	_	cc	vai	_	_	cc	basic	4-3	
-4-2	94-97	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	discourse	basic	4-1	
-4-3	98-106	nezināja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330ay	nezināt	_	_	root	basic	4-3	
-4-4	106-107	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	4-3	
+4-1	90-93	Vai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	vai	_	_	cc	basic	4-3	
+4-2	94-97	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	discourse	basic	4-1	
+4-3	98-106	nezināja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist330ay	*	nezināt	_	_	root	basic	4-3	
+4-4	106-107	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	4-3	

@@ -1,82 +1,82 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Jāatzīst, ka daudzās no tām bija pausts patiess prieks par notiekošo.
-1-1	0-8	Jāatzīst	vmnd0t100an	atzīt	_	_	root	basic	1-1	
-1-2	8-9	,	zc	,	_	_	punct	basic	1-8	
-1-3	10-12	ka	cs	ka	_	_	mark	basic	1-8	
-1-4	13-20	daudzās	pi0fpln	daudzas	_	_	obl	basic	1-8	
-1-5	21-23	no	sppd	no	_	_	case	basic	1-6	
-1-6	24-27	tām	pd0fpdn	tā	_	_	compound	basic	1-4	
-1-7	28-32	bija	vcnisii30an	būt	_	_	aux	basic	1-8	
-1-8	33-39	pausts	vmnpdmsnpsnp	paust	_	_	csubj	basic	1-1	
-1-9	40-47	patiess	afmsnnp	patiess	_	_	amod	basic	1-10	
-1-10	48-54	prieks	ncmsn1	prieks	_	_	nsubj:pass	basic	1-8	
-1-11	55-58	par	spsa	par	_	_	case	basic	1-12	
-1-12	59-68	notiekošo	vmnpdmsaapyp	notikt	_	_	amod	basic	1-10	
-1-13	68-69	.	zs	.	_	_	punct	basic	1-1	
+1-1	0-8	Jāatzīst	vmnd0t100an	*	atzīt	_	_	root	basic	1-1	
+1-2	8-9	,	zc	*	,	_	_	punct	basic	1-8	
+1-3	10-12	ka	cs	*	ka	_	_	mark	basic	1-8	
+1-4	13-20	daudzās	pi0fpln	*	daudzas	_	_	obl	basic	1-8	
+1-5	21-23	no	sppd	*	no	_	_	case	basic	1-6	
+1-6	24-27	tām	pd0fpdn	*	tā	_	_	compound	basic	1-4	
+1-7	28-32	bija	vcnisii30an	*	būt	_	_	aux	basic	1-8	
+1-8	33-39	pausts	vmnpdmsnpsnp	*	paust	_	_	csubj	basic	1-1	
+1-9	40-47	patiess	afmsnnp	*	patiess	_	_	amod	basic	1-10	
+1-10	48-54	prieks	ncmsn1	*	prieks	_	_	nsubj:pass	basic	1-8	
+1-11	55-58	par	spsa	*	par	_	_	case	basic	1-12	
+1-12	59-68	notiekošo	vmnpdmsaapyp	*	notikt	_	_	amod	basic	1-10	
+1-13	68-69	.	zs	*	.	_	_	punct	basic	1-1	
 
 #Text=Nometnes noslēgumā bija izstāde, uz kuru tika uzaicināti arī vecāki.
-2-1	71-79	Nometnes	ncfsg5	nometne	_	_	nmod	basic	2-2	
-2-2	80-89	noslēgumā	ncmsl1	noslēgums	_	_	obl	basic	2-3	
-2-3	90-94	bija	vmnisii30an	būt	_	_	root	basic	2-3	
-2-4	95-102	izstāde	ncfsn5	izstāde	*[1]	*->1-1	nsubj	basic	2-3	
-2-5	102-103	,	zc	,	_	_	punct	basic	2-9	
-2-6	104-106	uz	spsa	uz	*[1]	*->1-2	case	basic	2-7	
-2-7	107-111	kuru	pr0fsan	kura	*[1]	*->1-2	obl	basic	2-9	
-2-8	112-116	tika	vtnisi130an	tikt	_	_	aux	basic	2-9	
-2-9	117-127	uzaicināti	vmnpdmpnpsnp	uzaicināt	_	_	acl	basic	2-4	
-2-10	128-131	arī	q	arī	_	_	discourse	basic	2-11	
-2-11	132-138	vecāki	afmpnnc	vecs	_	_	iobj	basic	2-9	
-2-12	138-139	.	zs	.	_	_	punct	basic	2-3	
+2-1	71-79	Nometnes	ncfsg5	*	nometne	_	_	nmod	basic	2-2	
+2-2	80-89	noslēgumā	ncmsl1	*	noslēgums	_	_	obl	basic	2-3	
+2-3	90-94	bija	vmnisii30an	*	būt	_	_	root	basic	2-3	
+2-4	95-102	izstāde	ncfsn5	*	izstāde	*->1-1	*[1]	nsubj	basic	2-3	
+2-5	102-103	,	zc	*	,	_	_	punct	basic	2-9	
+2-6	104-106	uz	spsa	*	uz	*->1-2	*[1]	case	basic	2-7	
+2-7	107-111	kuru	pr0fsan	*	kura	*->1-2	*[1]	obl	basic	2-9	
+2-8	112-116	tika	vtnisi130an	*	tikt	_	_	aux	basic	2-9	
+2-9	117-127	uzaicināti	vmnpdmpnpsnp	*	uzaicināt	_	_	acl	basic	2-4	
+2-10	128-131	arī	q	*	arī	_	_	discourse	basic	2-11	
+2-11	132-138	vecāki	afmpnnc	*	vecs	_	_	iobj	basic	2-9	
+2-12	138-139	.	zs	*	.	_	_	punct	basic	2-3	
 
 #Text=Varēja dzirdēt bērnu sarunas ar vecākiem, kur bērns izteica vēlēšanos apmeklēt mākslas skolu.
-3-1	141-147	Varēja	vonist330an	varēt	_	_	root	basic	3-1	
-3-2	148-155	dzirdēt	vmnn0t3000n	dzirdēt	_	_	xcomp	basic	3-1	
-3-3	156-161	bērnu	ncmpg1	bērns	_	_	nmod	basic	3-4	
-3-4	162-169	sarunas	ncfpn4	saruna	_	_	iobj	basic	3-2	
-3-5	170-172	ar	sppd	ar	_	_	case	basic	3-6	
-3-6	173-181	vecākiem	ncmdd1	vecāki	_	_	nmod	basic	3-4	
-3-7	181-182	,	zc	,	_	_	punct	basic	3-10	
-3-8	183-186	kur	r0p	kur	_	_	advmod	basic	3-10	
-3-9	187-192	bērns	ncmsn1	bērns	_	_	nsubj	basic	3-10	
-3-10	193-200	izteica	vmnist130an	izteikt	_	_	acl	basic	3-4	
-3-11	201-210	vēlēšanos	ncfsar	vēlēšanās	_	_	obj	basic	3-10	
-3-12	211-219	apmeklēt	vmnn0t2000n	apmeklēt	_	_	acl	basic	3-11	
-3-13	220-227	mākslas	ncfsg4	māksla	_	_	nmod	basic	3-14	
-3-14	228-233	skolu	ncfsa4	skola	_	_	obj	basic	3-12	
-3-15	233-234	.	zs	.	_	_	punct	basic	3-1	
+3-1	141-147	Varēja	vonist330an	*	varēt	_	_	root	basic	3-1	
+3-2	148-155	dzirdēt	vmnn0t3000n	*	dzirdēt	_	_	xcomp	basic	3-1	
+3-3	156-161	bērnu	ncmpg1	*	bērns	_	_	nmod	basic	3-4	
+3-4	162-169	sarunas	ncfpn4	*	saruna	_	_	iobj	basic	3-2	
+3-5	170-172	ar	sppd	*	ar	_	_	case	basic	3-6	
+3-6	173-181	vecākiem	ncmdd1	*	vecāki	_	_	nmod	basic	3-4	
+3-7	181-182	,	zc	*	,	_	_	punct	basic	3-10	
+3-8	183-186	kur	r0p	*	kur	_	_	advmod	basic	3-10	
+3-9	187-192	bērns	ncmsn1	*	bērns	_	_	nsubj	basic	3-10	
+3-10	193-200	izteica	vmnist130an	*	izteikt	_	_	acl	basic	3-4	
+3-11	201-210	vēlēšanos	ncfsar	*	vēlēšanās	_	_	obj	basic	3-10	
+3-12	211-219	apmeklēt	vmnn0t2000n	*	apmeklēt	_	_	acl	basic	3-11	
+3-13	220-227	mākslas	ncfsg4	*	māksla	_	_	nmod	basic	3-14	
+3-14	228-233	skolu	ncfsa4	*	skola	_	_	obj	basic	3-12	
+3-15	233-234	.	zs	*	.	_	_	punct	basic	3-1	
 
 #Text=Kā piemiņu bērni saņēma CD ar bildēm, savukārt mākslas darbu fotogrāfijas tiks apkopotas kalendārā, ko saņems visi dalībnieki.
-4-1	236-238	Kā	r0m	kā	_	_	advmod	basic	4-2	
-4-2	239-246	piemiņu	ncfsa4	piemiņa	_	_	obj	basic	4-4	
-4-3	247-252	bērni	ncmpn1	bērns	_	_	nsubj	basic	4-4	
-4-4	253-259	saņēma	vmnist130an	saņemt	_	_	root	basic	4-4	
-4-5	260-262	CD	yn	Cd	_	_	iobj	basic	4-4	
-4-6	263-265	ar	sppd	ar	_	_	case	basic	4-7	
-4-7	266-272	bildēm	ncfpd5	bilde	_	_	nmod	basic	4-5	
-4-8	272-273	,	zc	,	_	_	punct	basic	4-14	
-4-9	274-282	savukārt	r0m	savukārt	_	_	advmod	basic	4-14	
-4-10	283-290	mākslas	ncfsg4	māksla	_	_	nmod	basic	4-11	
-4-11	291-296	darbu	ncmpg1	darbs	_	_	nmod	basic	4-12	
-4-12	297-309	fotogrāfijas	ncfsg4	fotogrāfija	_	_	iobj	basic	4-14	
-4-13	310-314	tiks	vtnifi130an	tikt	_	_	aux	basic	4-14	
-4-14	315-324	apkopotas	vmnpdfpnpsnp	apkopot	_	_	conj	basic	4-4	
-4-15	325-334	kalendārā	ncmsl1	kalendārs	*[2]	*->2-1	obl	basic	4-14	
-4-16	334-335	,	zc	,	_	_	punct	basic	4-18	
-4-17	336-338	ko	pr000an	kas	*[2]	*->2-2	obj	basic	4-18	
-4-18	339-345	saņems	vmnift130an	saņemt	_	_	acl	basic	4-15	
-4-19	346-350	visi	pg0mpnn	viss	_	_	det	basic	4-20	
-4-20	351-361	dalībnieki	ncmpn1	dalībnieks	_	_	nsubj	basic	4-18	
-4-21	361-362	.	zs	.	_	_	punct	basic	4-4	
+4-1	236-238	Kā	r0m	*	kā	_	_	advmod	basic	4-2	
+4-2	239-246	piemiņu	ncfsa4	*	piemiņa	_	_	obj	basic	4-4	
+4-3	247-252	bērni	ncmpn1	*	bērns	_	_	nsubj	basic	4-4	
+4-4	253-259	saņēma	vmnist130an	*	saņemt	_	_	root	basic	4-4	
+4-5	260-262	CD	yn	*	Cd	_	_	iobj	basic	4-4	
+4-6	263-265	ar	sppd	*	ar	_	_	case	basic	4-7	
+4-7	266-272	bildēm	ncfpd5	*	bilde	_	_	nmod	basic	4-5	
+4-8	272-273	,	zc	*	,	_	_	punct	basic	4-14	
+4-9	274-282	savukārt	r0m	*	savukārt	_	_	advmod	basic	4-14	
+4-10	283-290	mākslas	ncfsg4	*	māksla	_	_	nmod	basic	4-11	
+4-11	291-296	darbu	ncmpg1	*	darbs	_	_	nmod	basic	4-12	
+4-12	297-309	fotogrāfijas	ncfsg4	*	fotogrāfija	_	_	iobj	basic	4-14	
+4-13	310-314	tiks	vtnifi130an	*	tikt	_	_	aux	basic	4-14	
+4-14	315-324	apkopotas	vmnpdfpnpsnp	*	apkopot	_	_	conj	basic	4-4	
+4-15	325-334	kalendārā	ncmsl1	*	kalendārs	*->2-1	*[2]	obl	basic	4-14	
+4-16	334-335	,	zc	*	,	_	_	punct	basic	4-18	
+4-17	336-338	ko	pr000an	*	kas	*->2-2	*[2]	obj	basic	4-18	
+4-18	339-345	saņems	vmnift130an	*	saņemt	_	_	acl	basic	4-15	
+4-19	346-350	visi	pg0mpnn	*	viss	_	_	det	basic	4-20	
+4-20	351-361	dalībnieki	ncmpn1	*	dalībnieks	_	_	nsubj	basic	4-18	
+4-21	361-362	.	zs	*	.	_	_	punct	basic	4-4	
 
 #Text=Gaidāma arī ceļojošā izstāde.
-5-1	364-371	Gaidāma	vmnpdfsnppnp	gaidīt	_	_	root	basic	5-1	
-5-2	372-375	arī	q	arī	_	_	discourse	basic	5-4	
-5-3	376-384	ceļojošā	arfsnyp	ceļojoša	_	_	amod	basic	5-4	
-5-4	385-392	izstāde	ncfsn5	izstāde	_	_	nsubj	basic	5-1	
-5-5	392-393	.	zs	.	_	_	punct	basic	5-1	
+5-1	364-371	Gaidāma	vmnpdfsnppnp	*	gaidīt	_	_	root	basic	5-1	
+5-2	372-375	arī	q	*	arī	_	_	discourse	basic	5-4	
+5-3	376-384	ceļojošā	arfsnyp	*	ceļojoša	_	_	amod	basic	5-4	
+5-4	385-392	izstāde	ncfsn5	*	izstāde	_	_	nsubj	basic	5-1	
+5-5	392-393	.	zs	*	.	_	_	punct	basic	5-1	

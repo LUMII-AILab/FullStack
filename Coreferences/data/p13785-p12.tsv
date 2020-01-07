@@ -1,0 +1,49 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Tieši vai netieši, īslaicīgi vai pastāvīgi reproducēt izpildījuma fiksāciju.
+1-1	0-5	Tieši	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	tieši	_	_	advmod	basic	1-8	
+1-2	6-9	vai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	vai	_	_	cc	basic	1-3	
+1-3	10-17	netieši	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	netieši	_	_	conj	basic	1-1	
+1-4	17-18	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-5	
+1-5	19-28	īslaicīgi	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	īslaicīgi	_	_	conj	basic	1-1	
+1-6	29-32	vai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	vai	_	_	cc	basic	1-7	
+1-7	33-42	pastāvīgi	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	pastāvīgi	_	_	conj	basic	1-1	
+1-8	43-53	reproducēt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t2000n	*	reproducēt	_	_	root	basic	1-8	
+1-9	54-65	izpildījuma	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	izpildījums	_	_	nmod	basic	1-10	
+1-10	66-75	fiksāciju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	fiksācija	_	_	obj	basic	1-8	
+1-11	75-76	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	1-8	
+
+#Text=Piemēram, diskžokeji no vairākiem CD vai digitālajiem datu nesējiem, nokopē dziesmas un izkārto tās sev vēlamā dziesmu sarakstā, lai atskaņotu diskotēkās, pasākumos.
+2-1	77-85	Piemēram	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	piemērs	_	_	discourse	basic	2-12	
+2-2	85-86	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	2-1	
+2-3	87-97	diskžokeji	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	diskžokejs	*->2-1	*[2]	nsubj	basic	2-12	
+2-4	98-100	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	no	_	_	case	basic	2-6	
+2-5	101-110	vairākiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	Ind	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|PronType=Ind	*	*	pi0mpdn	*	vairāki	_	_	det	basic	2-6	
+2-6	111-113	CD	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	*	CD	_	_	obl	basic	2-12	
+2-7	114-117	vai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	vai	_	_	cc	basic	2-10	
+2-8	118-130	digitālajiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	digitālajs	_	_	nmod	basic	2-10	
+2-9	131-135	datu	*	*	Gen	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	ncmdg1	*	dati	_	_	nmod	basic	2-10	
+2-10	136-144	nesējiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	nesējs	_	_	conj	basic	2-6	
+2-11	144-145	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	z\_	*	_	_	_	punct	basic	2-10	
+2-12	146-152	nokopē	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt230an	*	nokopēt	_	_	root	basic	2-12	
+2-13	153-161	dziesmas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	dziesma	*->1-1	*[1]	obj	basic	2-12	
+2-14	162-164	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	cc	basic	2-15	
+2-15	165-172	izkārto	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt230an	*	izkārtot	_	_	conj	basic	2-12	
+2-16	173-176	tās	*	*	Acc	*	*	Fem	*	*	*	Plur	3	*	Dem	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur\|Person=3\|PronType=Dem	*	*	pd3fpan	*	tā	*->1-2	*[1]	obj	basic	2-15	
+2-17	177-180	sev	*	*	Dat	*	*	*	*	*	*	*	*	*	Rcp	Yes	*	*	Case=Dat\|PronType=Rcp\|Reflex=Yes	*	*	px000dn	*	sevis	*->2-2	*[2]	iobj	basic	2-18	
+2-18	181-187	vēlamā	*	*	Loc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Pres	*	Case=Loc\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmslppnpn	*	vēlēt	_	_	amod	basic	2-20	
+2-19	188-195	dziesmu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	dziesma	_	_	nmod	basic	2-20	
+2-20	196-204	sarakstā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	saraksts	_	_	obl	basic	2-15	
+2-21	204-205	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	2-23	
+2-22	206-209	lai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	lai	_	_	mark	basic	2-23	
+2-23	210-219	atskaņotu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnc0t200an	*	atskaņot	_	_	dep	basic	2-15	
+2-24	220-230	diskotēkās	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	*	diskotēka	_	_	obl	basic	2-23	
+2-25	230-231	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	2-26	
+2-26	232-241	pasākumos	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	*	pasākums	_	_	conj	basic	2-24	
+2-27	241-242	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	2-12	

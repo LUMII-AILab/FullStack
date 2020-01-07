@@ -1,0 +1,48 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Labdien, kolēģi!
+1-1	0-7	Labdien	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	i	*	labdien	_	_	_	_	root	basic	1-1	
+1-2	7-8	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-3	
+1-3	9-15	kolēģi	*	*	Voc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Voc\|Gender=Masc\|Number=Sing	*	*	ncmsv2	*	kolēģi	_	_	_	_	vocative	basic	1-1	
+1-4	15-16	!	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	!	_	_	_	_	punct	basic	1-1	
+
+#Text=Pateicoties SASKAŅAS frakcijas deputātu jautājumiem izglītības un zinātnes ministrei Mārītei Seilei, divas nedēļas atpakaļ Saeimas mājaslapā tika publiskoti dienesta pārbaudes materiāli saistībā ar projekta “Par portālu www.skolas.lv” attīstību.
+2-1	18-29	Pateicoties	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Conv	*	*	vmypu0000000n	*	pateikties	_	_	_	_	advcl	basic	2-19	
+2-2	30-38	SASKAŅAS	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	saskaņa	organization	https://en.wikipedia.org/wiki/Social\_Democratic\_Party\_"Harmony"	*->2-1	*[2]	nmod	basic	2-3	
+2-3	39-48	frakcijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	frakcija	_	_	*->2-2	*[2]	nmod	basic	2-4	
+2-4	49-57	deputātu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	deputāts	_	_	_	_	nmod	basic	2-5	
+2-5	58-69	jautājumiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	jautājums	_	_	_	_	iobj	basic	2-1	
+2-6	70-80	izglītības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	izglītība	_	_	*->1-1	*[1]	nmod	basic	2-9	
+2-7	81-83	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	*->1-1	*[1]	cc	basic	2-8	
+2-8	84-92	zinātnes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	zinātne	_	_	*->1-1	*[1]	conj	basic	2-6	
+2-9	93-102	ministrei	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd5	*	ministre	_	_	*->1-1	*[1]	nmod	basic	2-10	
+2-10	103-110	Mārītei	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	npfsd5	*	Mārīte	person[1]	https://lv.wikipedia.org/wiki/Mārīte\_Seile[1]	*->1-2	*[1]	nmod	basic	2-5	
+2-11	111-117	Seilei	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	*	Seile	person[1]	https://lv.wikipedia.org/wiki/Mārīte\_Seile[1]	*->1-2	*[1]	flat:name	basic	2-10	
+2-12	117-118	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-1	
+2-13	119-124	divas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur\|NumType=Card	*	*	mcsfpa	*	divas	time[2]	*[2]	_	_	nummod	basic	2-14	
+2-14	125-132	nedēļas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	nedēļa	time[2]	*[2]	_	_	obl	basic	2-15	
+2-15	133-140	atpakaļ	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0p	*	atpakaļ	time[2]	*[2]	_	_	advmod	basic	2-19	
+2-16	141-148	Saeimas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Saeima	organization	https://en.wikipedia.org/wiki/Saeima	_	_	nmod	basic	2-17	
+2-17	149-158	mājaslapā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	mājaslapā	_	_	_	_	obl	basic	2-19	
+2-18	159-163	tika	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vtnisi130an	*	tikt	_	_	_	_	aux:pass	basic	2-19	
+2-19	164-174	publiskoti	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmpnpsnpn	*	publiskot	_	_	_	_	root	basic	2-19	
+2-20	175-183	dienesta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	dienests	_	_	_	_	nmod	basic	2-21	
+2-21	184-193	pārbaudes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	pārbaude	_	_	_	_	nmod	basic	2-22	
+2-22	194-203	materiāli	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	materiāls	_	_	_	_	nsubj:pass	basic	2-19	
+2-23	204-212	saistībā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	saistība	_	_	_	_	acl	basic	2-22	
+2-24	213-215	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	2-31	
+2-25	216-224	projekta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	projekts	_	_	*->3-1	*[3]	nmod	basic	2-29	
+2-26	225-226	“	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	“	product[3]	*[3]	*->3-2	*[3]	punct	basic	2-29	
+2-27	226-229	Par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	product[3]	*[3]	*->3-2	*[3]	case	basic	2-29	
+2-28	230-237	portālu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	portāls	product[3]	*[3]	*->3-2	*[3]	nmod	basic	2-29	
+2-29	238-251	www.skolas.lv	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	xu	*	www.skolas.lv	product[3]	*[3]	*->3-2	*[3]	nmod	basic	2-31	
+2-30	251-252	”	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	”	product[3]	*[3]	*->3-2	*[3]	punct	basic	2-29	
+2-31	253-262	attīstību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	attīstība	_	_	_	_	iobj	basic	2-23	
+2-32	262-263	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-19	

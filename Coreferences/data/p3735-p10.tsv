@@ -1,62 +1,62 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Korupcijas novēršanas un apkarošanas biroja (KNAB) vēsturē apjomīgāko krimināllietu prokuratūra saņēma pērn septembrī un šajā pašā mēnesī apsūdzības uzrādīja divām no 17 lietā iesaistītajām personām.
-1-1	0-10	Korupcijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	korupcija	organization[1]	*[1]	*[1]	*->1-1	nmod	basic	1-2	
-1-2	11-21	novēršanas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg\_	novērsšana	organization[1]	*[1]	*[1]	*->1-1	nmod	basic	1-5	
-1-3	22-24	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	organization[1]	*[1]	*[1]	*->1-1	cc	basic	1-4	
-1-4	25-36	apkarošanas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	apkarošana	organization[1]	*[1]	*[1]	*->1-1	conj	basic	1-2	
-1-5	37-43	biroja	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	birojs	organization[1]	*[1]	*[1]	*->1-1	nmod	basic	1-9	
-1-6	44-45	(	_	_	_	_	_	_	_	_	_	_	_	_	zb	(	_	_	_	_	punct	basic	1-7	
-1-7	45-49	KNAB	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	KNAB	organization	*	*[1]	*->1-2	parataxis	basic	1-5	
-1-8	49-50	)	_	_	_	_	_	_	_	_	_	_	_	_	zb	)	_	_	_	_	punct	basic	1-7	
-1-9	51-58	vēsturē	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	vēsture	_	_	_	_	obl	basic	1-10	
-1-10	59-69	apjomīgāko	Fem	Sing	Acc	Cmp	*	*	*	*	*	Case=Acc\|Degree=Cmp\|Gender=Fem\|Number=Sing	*	*	affsayc	apjomīga	_	_	_	_	amod	basic	1-11	
-1-11	70-83	krimināllietu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	krimināllieta	_	_	_	_	obj	basic	1-13	
-1-12	84-95	prokuratūra	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	prokuratūra	_	_	_	_	nsubj	basic	1-13	
-1-13	96-102	saņēma	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	saņemt	_	_	_	_	root	basic	1-13	
-1-14	103-107	pērn	_	_	_	_	_	_	_	_	_	_	_	_	r0t	pērn	time[2]	*[2]	_	_	advmod	basic	1-13	
-1-15	108-117	septembrī	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	septembris	time[2]	*[2]	_	_	obl	basic	1-13	
-1-16	118-120	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-21	
-1-17	121-125	šajā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msln	šis	time[3]	*[3]	_	_	obl	basic	1-19	
-1-18	126-130	pašā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msln	pats	time[3]	*[3]	_	_	obl	basic	1-19	
-1-19	131-137	mēnesī	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	mēnesis	time[3]	*[3]	_	_	obl	basic	1-21	
-1-20	138-148	apsūdzības	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	apsūdzība	_	_	_	_	obj	basic	1-21	
-1-21	149-157	uzrādīja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	uzrādīt	_	_	_	_	conj	basic	1-13	
-1-22	158-163	divām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur\|NumType=Card	*	*	mcsfpd	divas	_	_	_	_	iobj	basic	1-21	
-1-23	164-166	no	_	_	_	_	_	_	_	_	_	_	_	_	sppd	no	_	_	_	_	case	basic	1-27	
-1-24	167-169	17	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	17	_	_	_	_	nummod	basic	1-27	
-1-25	170-175	lietā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	lieta	_	_	_	_	obl	basic	1-26	
-1-26	176-189	iesaistītajām	Fem	Plur	Dat	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Dat\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfpdpsyp	iesaistīt	_	_	_	_	amod	basic	1-27	
-1-27	190-198	personām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	persona	_	_	_	_	compound	basic	1-22	
-1-28	198-199	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-13	
+1-1	0-10	Korupcijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	korupcija	organization[1]	*[1]	*->1-1	*[1]	nmod	basic	1-2	
+1-2	11-21	novēršanas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg\_	*	novērsšana	organization[1]	*[1]	*->1-1	*[1]	nmod	basic	1-5	
+1-3	22-24	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	organization[1]	*[1]	*->1-1	*[1]	cc	basic	1-4	
+1-4	25-36	apkarošanas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	apkarošana	organization[1]	*[1]	*->1-1	*[1]	conj	basic	1-2	
+1-5	37-43	biroja	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	birojs	organization[1]	*[1]	*->1-1	*[1]	nmod	basic	1-9	
+1-6	44-45	(	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	(	_	_	_	_	punct	basic	1-7	
+1-7	45-49	KNAB	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	KNAB	organization	*	*->1-2	*[1]	parataxis	basic	1-5	
+1-8	49-50	)	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	)	_	_	_	_	punct	basic	1-7	
+1-9	51-58	vēsturē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	*	vēsture	_	_	_	_	obl	basic	1-10	
+1-10	59-69	apjomīgāko	*	*	Acc	*	Cmp	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Cmp\|Gender=Fem\|Number=Sing	*	*	affsayc	*	apjomīga	_	_	_	_	amod	basic	1-11	
+1-11	70-83	krimināllietu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	krimināllieta	_	_	_	_	obj	basic	1-13	
+1-12	84-95	prokuratūra	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	prokuratūra	_	_	_	_	nsubj	basic	1-13	
+1-13	96-102	saņēma	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist130an	*	saņemt	_	_	_	_	root	basic	1-13	
+1-14	103-107	pērn	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	pērn	time[2]	*[2]	_	_	advmod	basic	1-13	
+1-15	108-117	septembrī	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	*	septembris	time[2]	*[2]	_	_	obl	basic	1-13	
+1-16	118-120	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-21	
+1-17	121-125	šajā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msln	*	šis	time[3]	*[3]	_	_	obl	basic	1-19	
+1-18	126-130	pašā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msln	*	pats	time[3]	*[3]	_	_	obl	basic	1-19	
+1-19	131-137	mēnesī	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	*	mēnesis	time[3]	*[3]	_	_	obl	basic	1-21	
+1-20	138-148	apsūdzības	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	apsūdzība	_	_	_	_	obj	basic	1-21	
+1-21	149-157	uzrādīja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist330an	*	uzrādīt	_	_	_	_	conj	basic	1-13	
+1-22	158-163	divām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur\|NumType=Card	*	*	mcsfpd	*	divas	_	_	_	_	iobj	basic	1-21	
+1-23	164-166	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	no	_	_	_	_	case	basic	1-27	
+1-24	167-169	17	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	17	_	_	_	_	nummod	basic	1-27	
+1-25	170-175	lietā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	lieta	_	_	_	_	obl	basic	1-26	
+1-26	176-189	iesaistītajām	*	Perf	Dat	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Dat\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Plur\|Tense=Past\|VerbForm=Part	*	*	vmnpdfpdpsyp	*	iesaistīt	_	_	_	_	amod	basic	1-27	
+1-27	190-198	personām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	*	persona	_	_	_	_	compound	basic	1-22	
+1-28	198-199	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-13	
 
 #Text=Abas personas apsūdzētas par "Latvenergo" rīkoto konkursu "Pļaviņu hidroelektrostacijas hidroagregāta Nr.4, 5, 7 rekonstrukcija".
-2-1	201-205	Abas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|PronType=Tot	*	*	pg0fpnn	abas	_	_	_	_	det	basic	2-2	
-2-2	206-214	personas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	persona	_	_	_	_	nsubj:pass	basic	2-3	
-2-3	215-225	apsūdzētas	Fem	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfpnpsnp	apsūdzēt	_	_	_	_	root	basic	2-3	
-2-4	226-229	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	_	_	case	basic	2-20	
-2-5	230-231	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[4]	*[4]	_	_	punct	basic	2-6	
-2-6	231-241	Latvenergo	_	_	_	_	_	_	_	_	_	_	_	_	np0000	Latvenergo	organization[4]	*[4]	_	_	nmod	basic	2-8	
-2-7	241-242	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[4]	*[4]	_	_	punct	basic	2-6	
-2-8	243-249	rīkoto	Masc	Sing	Acc	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsapsyp	rīkot	_	_	_	_	amod	basic	2-9	
-2-9	250-258	konkursu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	konkurss	_	_	*[2]	*->2-1	nmod	basic	2-20	
-2-10	259-260	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	entity[5]	*[5]	*[2]	*->2-2	punct	basic	2-20	
-2-11	260-267	Pļaviņu	Fem	Ptan	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Ptan	*	*	npfdg4	Pļaviņas	entity[5]|GPE[6]	*[5]|*[6]	*[2]	*->2-2	nmod	basic	2-12	
-2-12	268-288	hidroelektrostacijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	hidroelektrostacija	entity[5]	*[5]	*[2]	*->2-2	nmod	basic	2-13	
-2-13	289-302	hidroagregāta	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	hidroagregāts	entity[5]	*[5]	*[2]	*->2-2	nmod	basic	2-15	
-2-14	303-306	Nr.	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	nr.	entity[5]	*[5]	*[2]	*->2-2	nmod	basic	2-15	
-2-15	306-307	4	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	4	entity[5]	*[5]	*[2]	*->2-2	nmod	basic	2-20	
-2-16	307-308	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	entity[5]	*[5]	*[2]	*->2-2	punct	basic	2-17	
-2-17	309-310	5	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	5	entity[5]	*[5]	*[2]	*->2-2	conj	basic	2-15	
-2-18	310-311	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	entity[5]	*[5]	*[2]	*->2-2	punct	basic	2-19	
-2-19	312-313	7	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	7	entity[5]	*[5]	*[2]	*->2-2	conj	basic	2-15	
-2-20	314-328	rekonstrukcija	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	rekonstrukcija	entity[5]	*[5]	*[2]	*->2-2	iobj	basic	2-3	
-2-21	328-329	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	entity[5]	*[5]	*[2]	*->2-2	punct	basic	2-20	
-2-22	329-330	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-3	
+2-1	201-205	Abas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|PronType=Tot	*	*	pg0fpnn	*	abas	_	_	_	_	det	basic	2-2	
+2-2	206-214	personas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	persona	_	_	_	_	nsubj:pass	basic	2-3	
+2-3	215-225	apsūdzētas	*	Perf	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Tense=Past\|VerbForm=Part	*	*	vmnpdfpnpsnp	*	apsūdzēt	_	_	_	_	root	basic	2-3	
+2-4	226-229	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	2-20	
+2-5	230-231	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[4]	*[4]	_	_	punct	basic	2-6	
+2-6	231-241	Latvenergo	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	np0000	*	Latvenergo	organization[4]	*[4]	_	_	nmod	basic	2-8	
+2-7	241-242	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[4]	*[4]	_	_	punct	basic	2-6	
+2-8	243-249	rīkoto	*	Perf	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsapsyp	*	rīkot	_	_	_	_	amod	basic	2-9	
+2-9	250-258	konkursu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	konkurss	_	_	*->2-1	*[2]	nmod	basic	2-20	
+2-10	259-260	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	entity[5]	*[5]	*->2-2	*[2]	punct	basic	2-20	
+2-11	260-267	Pļaviņu	*	*	Gen	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Ptan	*	*	npfdg4	*	Pļaviņas	entity[5]|GPE[6]	*[5]|*[6]	*->2-2	*[2]	nmod	basic	2-12	
+2-12	268-288	hidroelektrostacijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	hidroelektrostacija	entity[5]	*[5]	*->2-2	*[2]	nmod	basic	2-13	
+2-13	289-302	hidroagregāta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	hidroagregāts	entity[5]	*[5]	*->2-2	*[2]	nmod	basic	2-15	
+2-14	303-306	Nr.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	*	nr.	entity[5]	*[5]	*->2-2	*[2]	nmod	basic	2-15	
+2-15	306-307	4	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	4	entity[5]	*[5]	*->2-2	*[2]	nmod	basic	2-20	
+2-16	307-308	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	entity[5]	*[5]	*->2-2	*[2]	punct	basic	2-17	
+2-17	309-310	5	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	5	entity[5]	*[5]	*->2-2	*[2]	conj	basic	2-15	
+2-18	310-311	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	entity[5]	*[5]	*->2-2	*[2]	punct	basic	2-19	
+2-19	312-313	7	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	7	entity[5]	*[5]	*->2-2	*[2]	conj	basic	2-15	
+2-20	314-328	rekonstrukcija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	rekonstrukcija	entity[5]	*[5]	*->2-2	*[2]	iobj	basic	2-3	
+2-21	328-329	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	entity[5]	*[5]	*->2-2	*[2]	punct	basic	2-20	
+2-22	329-330	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-3	

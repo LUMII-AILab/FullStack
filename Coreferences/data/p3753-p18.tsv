@@ -1,60 +1,60 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Tieši tā.
-1-1	0-5	Tieši	_	_	_	_	_	_	_	_	_	_	_	_	r0m	tieši	_	_	advmod	basic	1-2	
-1-2	6-8	tā	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0m	tā	_	_	root	basic	1-2	
-1-3	8-9	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	1-2	
+1-1	0-5	Tieši	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	tieši	_	_	advmod	basic	1-2	
+1-2	6-8	tā	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0m	*	tā	_	_	root	basic	1-2	
+1-3	8-9	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	1-2	
 
 #Text=Šāda funkcionalitāte ir , un arī varēs zvanīt kaut vai par "nulles tarifu", kas iekļauts kādā no pakalpojumu pakām.
-2-1	11-15	Šāda	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsnn	šāda	_	_	det	basic	2-2	
-2-2	16-31	funkcionalitāte	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	funkcionalitāte	_	_	nsubj	basic	2-3	
-2-3	32-34	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipii30an	būt	_	_	root	basic	2-3	
-2-4	35-36	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	2-7	
-2-5	37-39	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	cc	basic	2-7	
-2-6	40-43	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	discourse	basic	2-7	
-2-7	44-49	varēs	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vonift330an	varēt	_	_	conj	basic	2-3	
-2-8	50-56	zvanīt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	zvanīt	_	_	xcomp	basic	2-7	
-2-9	57-61	kaut	_	_	_	_	_	_	_	_	_	_	_	_	q	kaut	_	_	discourse	basic	2-14	
-2-10	62-65	vai	_	_	_	_	_	_	_	_	_	_	_	_	q	vai	_	_	discourse	basic	2-14	
-2-11	66-69	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	case	basic	2-14	
-2-12	70-71	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	*[1]	*->1-1	punct	basic	2-14	
-2-13	71-77	nulles	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	nulle	*[1]	*->1-1	nmod	basic	2-14	
-2-14	78-84	tarifu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	tarifs	*[1]	*->1-1	obl	basic	2-8	
-2-15	84-85	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	*[1]	*->1-1	punct	basic	2-14	
-2-16	85-86	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	2-18	
-2-17	87-90	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	*[1]	*->1-2	nsubj:pass	basic	2-18	
-2-18	91-99	iekļauts	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnp	iekļaut	_	_	acl	basic	2-14	
-2-19	100-104	kādā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|PronType=Ind	*	*	pi0fsln	kāda	_	_	obl	basic	2-18	
-2-20	105-107	no	_	_	_	_	_	_	_	_	_	_	_	_	sppd	no	_	_	case	basic	2-22	
-2-21	108-119	pakalpojumu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	pakalpojums	_	_	nmod	basic	2-22	
-2-22	120-125	pakām	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	paka	_	_	nmod	basic	2-19	
-2-23	125-126	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	2-3	
+2-1	11-15	Šāda	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsnn	*	šāda	_	_	det	basic	2-2	
+2-2	16-31	funkcionalitāte	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	funkcionalitāte	_	_	nsubj	basic	2-3	
+2-3	32-34	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipii30an	*	būt	_	_	root	basic	2-3	
+2-4	35-36	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	2-7	
+2-5	37-39	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	cc	basic	2-7	
+2-6	40-43	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	discourse	basic	2-7	
+2-7	44-49	varēs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vonift330an	*	varēt	_	_	conj	basic	2-3	
+2-8	50-56	zvanīt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	*	zvanīt	_	_	xcomp	basic	2-7	
+2-9	57-61	kaut	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	kaut	_	_	discourse	basic	2-14	
+2-10	62-65	vai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	vai	_	_	discourse	basic	2-14	
+2-11	66-69	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	case	basic	2-14	
+2-12	70-71	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	*->1-1	*[1]	punct	basic	2-14	
+2-13	71-77	nulles	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	nulle	*->1-1	*[1]	nmod	basic	2-14	
+2-14	78-84	tarifu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	tarifs	*->1-1	*[1]	obl	basic	2-8	
+2-15	84-85	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	*->1-1	*[1]	punct	basic	2-14	
+2-16	85-86	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	2-18	
+2-17	87-90	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	*->1-2	*[1]	nsubj:pass	basic	2-18	
+2-18	91-99	iekļauts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnpsnp	*	iekļaut	_	_	acl	basic	2-14	
+2-19	100-104	kādā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|PronType=Ind	*	*	pi0fsln	*	kāda	_	_	obl	basic	2-18	
+2-20	105-107	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	no	_	_	case	basic	2-22	
+2-21	108-119	pakalpojumu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	pakalpojums	_	_	nmod	basic	2-22	
+2-22	120-125	pakām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	*	paka	_	_	nmod	basic	2-19	
+2-23	125-126	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	2-3	
 
 #Text=Protams, ja nav bezmaksas bezvadu interneta, kā dažās lidostās un viesnīcās, jārēķinās ar maksu par interneta pieslēgumu.
-3-1	128-135	Protams	_	_	_	_	_	_	_	_	_	_	_	_	q	protams	_	_	parataxis	basic	3-15	
-3-2	135-136	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	3-1	
-3-3	137-139	ja	_	_	_	_	_	_	_	_	_	_	_	_	cs	ja	_	_	mark	basic	3-4	
-3-4	140-143	nav	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipii30ay	nebūt	_	_	advcl	basic	3-15	
-3-5	144-153	bezmaksas	*	*	Gen	*	*	*	*	*	*	Case=Gen	*	*	nc00gg	bezmaksas	_	_	nmod	basic	3-7	
-3-6	154-161	bezvadu	*	*	Gen	*	*	*	*	*	*	Case=Gen	*	*	nc00gg	bezvadu	_	_	nmod	basic	3-7	
-3-7	162-171	interneta	Masc	Coll	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Coll	*	*	ncmvg1	internets	_	_	nsubj	basic	3-4	
-3-8	171-172	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	3-11	
-3-9	173-175	kā	_	_	_	_	_	_	_	_	_	_	_	_	cs	kā	_	_	mark	basic	3-11	
-3-10	176-181	dažās	Fem	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur\|PronType=Ind	*	*	pi0fpln	daža	_	_	det	basic	3-11	
-3-11	182-190	lidostās	Fem	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	lidosta	_	_	acl	basic	3-4	
-3-12	191-193	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	cc	basic	3-13	
-3-13	194-203	viesnīcās	Fem	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	viesnīca	_	_	conj	basic	3-11	
-3-14	203-204	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	3-4	
-3-15	205-214	jārēķinās	*	*	*	*	*	*	Nec	Act	*	Mood=Nec\|Polarity=Pos\|Reflex=Yes\|VerbForm=Fin\|Voice=Act	*	*	vmyd0i300an	rēķināties	_	_	root	basic	3-15	
-3-16	215-217	ar	_	_	_	_	_	_	_	_	_	_	_	_	sppd	ar	_	_	case	basic	3-17	
-3-17	218-223	maksu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	maksa	_	_	iobj	basic	3-15	
-3-18	224-227	par	_	_	_	_	_	_	_	_	_	_	_	_	sppd	par	_	_	case	basic	3-20	
-3-19	228-237	interneta	Masc	Coll	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Coll	*	*	ncmvg1	internets	_	_	nmod	basic	3-20	
-3-20	238-248	pieslēgumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	pieslēgums	_	_	obl	basic	3-15	
-3-21	248-249	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	3-15	
+3-1	128-135	Protams	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	protams	_	_	parataxis	basic	3-15	
+3-2	135-136	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	3-1	
+3-3	137-139	ja	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ja	_	_	mark	basic	3-4	
+3-4	140-143	nav	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipii30ay	*	nebūt	_	_	advcl	basic	3-15	
+3-5	144-153	bezmaksas	*	*	Gen	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Gen	*	*	nc00gg	*	bezmaksas	_	_	nmod	basic	3-7	
+3-6	154-161	bezvadu	*	*	Gen	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Gen	*	*	nc00gg	*	bezvadu	_	_	nmod	basic	3-7	
+3-7	162-171	interneta	*	*	Gen	*	*	Masc	*	*	*	Coll	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Coll	*	*	ncmvg1	*	internets	_	_	nsubj	basic	3-4	
+3-8	171-172	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	3-11	
+3-9	173-175	kā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	kā	_	_	mark	basic	3-11	
+3-10	176-181	dažās	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur\|PronType=Ind	*	*	pi0fpln	*	daža	_	_	det	basic	3-11	
+3-11	182-190	lidostās	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	*	lidosta	_	_	acl	basic	3-4	
+3-12	191-193	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	cc	basic	3-13	
+3-13	194-203	viesnīcās	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	*	viesnīca	_	_	conj	basic	3-11	
+3-14	203-204	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	3-4	
+3-15	205-214	jārēķinās	*	*	*	*	*	*	Nec	*	*	*	*	*	*	*	*	*	Mood=Nec\|Polarity=Pos\|Reflex=Yes\|VerbForm=Fin\|Voice=Act	*	Act	vmyd0i300an	*	rēķināties	_	_	root	basic	3-15	
+3-16	215-217	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	case	basic	3-17	
+3-17	218-223	maksu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	maksa	_	_	iobj	basic	3-15	
+3-18	224-227	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	par	_	_	case	basic	3-20	
+3-19	228-237	interneta	*	*	Gen	*	*	Masc	*	*	*	Coll	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Coll	*	*	ncmvg1	*	internets	_	_	nmod	basic	3-20	
+3-20	238-248	pieslēgumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	pieslēgums	_	_	obl	basic	3-15	
+3-21	248-249	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	3-15	

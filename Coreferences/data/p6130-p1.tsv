@@ -1,0 +1,59 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Nabaga Kanje Vestu vadoties no viņa ierakstiem portālā «Twitter» atdarina un izsmej ne tikai viņa klausītāji, bet arī Holivudas zvaigznes.
+1-1	0-6	Nabaga	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	*	nabaga	_	_	_	_	amod	basic	1-2	
+1-2	7-12	Kanje	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	np0000	*	Kanje	person[1]	https://en.wikipedia.org/wiki/Kanye\_West[1]	*->4-1	*[4]	obj	basic	1-12	
+1-3	13-18	Vestu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	*	Vests	person[1]	https://en.wikipedia.org/wiki/Kanye\_West[1]	*->4-1	*[4]	flat:name	basic	1-2	
+1-4	19-27	vadoties	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Conv	*	*	vmypu0000000n	*	vadīties	_	_	_	_	advcl	basic	1-12	
+1-5	28-30	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case	basic	1-7	
+1-6	31-35	viņa	*	*	Gen	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msgn	*	viņš	_	_	*->4-2	*[4]	det	basic	1-7	
+1-7	36-46	ierakstiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	ieraksts	_	_	_	_	iobj	basic	1-4	
+1-8	47-54	portālā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	portāls	_	_	*->1-1	*[1]	nmod	basic	1-10	
+1-9	55-56	«	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	«	_	_	*->1-2	*[1]	punct	basic	1-10	
+1-10	56-63	Twitter	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	twitter	organization	*	*->1-2	*[1]	acl	basic	1-7	
+1-11	63-64	»	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	»	_	_	*->1-2	*[1]	punct	basic	1-10	
+1-12	65-73	atdarina	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	atdarināt	_	_	_	_	root	basic	1-12	
+1-13	74-76	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-14	
+1-14	77-83	izsmej	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt130an	*	izsmiet	_	_	_	_	conj	basic	1-12	
+1-15	84-86	ne	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Neg	*	*	cc	*	ne	_	_	_	_	cc	basic	1-18	
+1-16	87-92	tikai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tikai	_	_	_	_	discourse	basic	1-15	
+1-17	93-97	viņa	*	*	Gen	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msgn	*	viņš	_	_	*->4-3	*[4]	det	basic	1-18	
+1-18	98-108	klausītāji	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	klausītājs	_	_	_	_	nsubj	basic	1-12	
+1-19	108-109	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-23	
+1-20	110-113	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	_	_	cc	basic	1-23	
+1-21	114-117	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	1-20	
+1-22	118-127	Holivudas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Holivuda	GPE	https://en.wikipedia.org/wiki/Hollywood	_	_	nmod	basic	1-23	
+1-23	128-137	zvaigznes	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn5	*	zvaigzne	_	_	_	_	conj	basic	1-18	
+1-24	137-138	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-12	
+
+#Text=Aktrises Mila Kunisa un Kristena Bella pat pacentās uzņemt īpašu fotogrāfiju, ar kuras palīdzību paziņo, ka lūdzas par Kanje Vestu.
+2-1	140-148	Aktrises	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn5	*	aktrise	_	_	*->2-1	*[2]	nmod	basic	2-2	
+2-2	149-153	Mila	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Mila	person[2]	https://en.wikipedia.org/wiki/Mila\_Kunis[2]	*->2-2	*[2]	nsubj	basic	2-8	
+2-3	154-160	Kunisa	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Kunisa	person[2]	https://en.wikipedia.org/wiki/Mila\_Kunis[2]	*->2-2	*[2]	flat:name	basic	2-2	
+2-4	161-163	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	*->2-2	*[2]	cc	basic	2-5	
+2-5	164-172	Kristena	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Kristena	person[3]	https://en.wikipedia.org/wiki/Kristen\_Bell[3]	*->2-2	*[2]	conj	basic	2-2	
+2-6	173-178	Bella	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Bella	person[3]	https://en.wikipedia.org/wiki/Kristen\_Bell[3]	*->2-2	*[2]	flat:name	basic	2-5	
+2-7	179-182	pat	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	pat	_	_	_	_	discourse	basic	2-8	
+2-8	183-191	pacentās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmyisi130an	*	pacensties	_	_	_	_	root	basic	2-8	
+2-9	192-198	uzņemt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	*	uzņemt	_	_	_	_	ccomp	basic	2-8	
+2-10	199-204	īpašu	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsanp	*	īpaša	_	_	*->3-1	*[3]	amod	basic	2-11	
+2-11	205-216	fotogrāfiju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	fotogrāfija	_	_	*->3-1	*[3]	obj	basic	2-9	
+2-12	216-217	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-16	
+2-13	218-220	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	*->3-2	*[3]	case	basic	2-15	
+2-14	221-226	kuras	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsgn	*	kura	_	_	*->3-2	*[3]	det	basic	2-15	
+2-15	227-236	palīdzību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	palīdzība	_	_	_	_	obl	basic	2-16	
+2-16	237-243	paziņo	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt230an	*	paziņot	_	_	_	_	acl	basic	2-11	
+2-17	243-244	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-19	
+2-18	245-247	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	2-19	
+2-19	248-254	lūdzas	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmyipi130an	*	lūgties	_	_	_	_	ccomp	basic	2-16	
+2-20	255-258	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	2-21	
+2-21	259-264	Kanje	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	np0000	*	Kanje	person[4]	https://en.wikipedia.org/wiki/Kanye\_West[4]	*->4-4	*[4]	iobj	basic	2-19	
+2-22	265-270	Vestu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	npmsa1	*	Vests	person[4]	https://en.wikipedia.org/wiki/Kanye\_West[4]	*->4-4	*[4]	flat:name	basic	2-21	
+2-23	270-271	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-8	

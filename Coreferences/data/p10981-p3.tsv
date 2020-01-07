@@ -1,0 +1,69 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Vecumnieku novada Valles pagastā 26. janvārī četrus gadus vecs puisēns ar abām rociņām pieskārās sakarsušam skurstenim un guva vieglus plaukstas apdegumus.
+1-1	0-10	Vecumnieku	*	*	Gen	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	npmdg1	*	Vecumnieki	GPE[1]	https://en.wikipedia.org/wiki/Vecumnieki\_Municipality[1]	_	_	nmod	basic	1-2	
+1-2	11-17	novada	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	novads	GPE[1]	https://en.wikipedia.org/wiki/Vecumnieki\_Municipality[1]	_	_	nmod	basic	1-4	
+1-3	18-24	Valles	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	*	Valle	GPE[2]	https://en.wikipedia.org/wiki/Valle\_Parish[2]	_	_	nmod	basic	1-4	
+1-4	25-32	pagastā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	pagasts	GPE[2]	https://en.wikipedia.org/wiki/Valle\_Parish[2]	_	_	obl	basic	1-14	
+1-5	33-36	26.	*	*	*	*	*	*	*	*	Ord	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	26.	time[3]	*[3]	_	_	amod	basic	1-6	
+1-6	37-44	janvārī	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	*	janvāris	time[3]	*[3]	_	_	obl	basic	1-14	
+1-7	45-51	četrus	*	*	Acc	*	*	Masc	*	*	Card	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpa	*	četri	_	_	*->1-1	*[1]	nummod	basic	1-8	
+1-8	52-57	gadus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	gads	_	_	*->1-1	*[1]	obl	basic	1-9	
+1-9	58-62	vecs	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	vecs	_	_	*->1-1	*[1]	amod	basic	1-10	
+1-10	63-70	puisēns	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	puisēns	_	_	*->1-1	*[1]	nsubj	basic	1-14	
+1-11	71-73	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	_	_	case	basic	1-13	
+1-12	74-78	abām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	Tot	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur\|PronType=Tot	*	*	pg0fpdn	*	abas	_	_	_	_	det	basic	1-13	
+1-13	79-86	rociņām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	*	rociņa	_	_	_	_	iobj	basic	1-14	
+1-14	87-96	pieskārās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyisi130an	*	pieskarties	_	_	_	_	root	basic	1-14	
+1-15	97-107	sakarsušam	*	Perf	Dat	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Dat\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdmsdasnpn	*	sakarst	_	_	_	_	amod	basic	1-16	
+1-16	108-118	skurstenim	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd2	*	skurstenis	_	_	_	_	iobj	basic	1-14	
+1-17	119-121	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-18	
+1-18	122-126	guva	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist130an	*	gūt	_	_	_	_	conj	basic	1-14	
+1-19	127-134	vieglus	*	*	Acc	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpanp	*	viegls	_	_	_	_	amod	basic	1-21	
+1-20	135-144	plaukstas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	plauksta	_	_	_	_	nmod	basic	1-21	
+1-21	145-154	apdegumus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	apdegums	_	_	_	_	obj	basic	1-18	
+1-22	154-155	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-14	
+
+#Text=Vecāki no bērna hospitalizācijas atteicās, pēc mediķu sniegtās pirmās palīdzības aprūpi uzņemsies ģimenes ārsts.
+2-1	156-162	Vecāki	*	*	Nom	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Ptan	*	*	ncmdn1	*	vecāki	_	_	_	_	nsubj	basic	2-5	
+2-2	163-165	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case	basic	2-4	
+2-3	166-171	bērna	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	bērns	_	_	*->1-2	*[1]	nmod	basic	2-4	
+2-4	172-188	hospitalizācijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	hospitalizācija	_	_	_	_	iobj	basic	2-5	
+2-5	189-197	atteicās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyisi130an	*	atteikties	_	_	_	_	root	basic	2-5	
+2-6	197-198	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-13	
+2-7	199-202	pēc	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pēc	_	_	_	_	case	basic	2-11	
+2-8	203-209	mediķu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	mediķis	_	_	_	_	obl	basic	2-9	
+2-9	210-218	sniegtās	*	Perf	Gen	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdfsgpsypn	*	sniegt	_	_	_	_	amod	basic	2-11	
+2-10	219-225	pirmās	*	*	Gen	*	Pos	Fem	*	*	Ord	Sing	*	*	*	*	*	*	Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|NumType=Ord	*	*	mosfsg	*	pirmais	_	_	_	_	amod	basic	2-11	
+2-11	226-236	palīdzības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	palīdzība	_	_	_	_	obl	basic	2-13	
+2-12	237-243	aprūpi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	aprūpe	_	_	_	_	obj	basic	2-13	
+2-13	244-253	uzņemsies	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Fut\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyift130an	*	uzņemties	_	_	_	_	conj	basic	2-5	
+2-14	254-261	ģimenes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	ģimene	_	_	_	_	nmod	basic	2-15	
+2-15	262-267	ārsts	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	ārsts	_	_	_	_	nsubj	basic	2-13	
+2-16	267-268	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-5	
+
+#Text=Kristians Galanders pastāstīja, ka, ievērojot dažus nosacījumus, vieglus apdegumus var izārstēt mājas apstākļos.
+3-1	269-278	Kristians	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Kristians	person[4]	*[4]	_	_	nsubj	basic	3-3	
+3-2	279-288	Galanders	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Galanders	person[4]	*[4]	_	_	flat:name	basic	3-1	
+3-3	289-299	pastāstīja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist330an	*	pastāstīt	_	_	_	_	root	basic	3-3	
+3-4	299-300	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-13	
+3-5	301-303	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	3-13	
+3-6	303-304	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-7	
+3-7	305-314	ievērojot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	Conv	*	vmnpu0000000n	*	ievērot	_	_	_	_	advcl	basic	3-13	
+3-8	315-320	dažus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	Ind	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|PronType=Ind	*	*	pi0mpan	*	dažs	_	_	_	_	det	basic	3-9	
+3-9	321-332	nosacījumus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	nosacījums	_	_	_	_	obj	basic	3-7	
+3-10	332-333	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-7	
+3-11	334-341	vieglus	*	*	Acc	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpanp	*	viegls	_	_	_	_	amod	basic	3-12	
+3-12	342-351	apdegumus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	apdegums	_	_	_	_	obj	basic	3-14	
+3-13	352-355	var	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vonipi330an	*	varēt	_	_	_	_	ccomp	basic	3-3	
+3-14	356-364	izārstēt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t2000n	*	izārstēt	_	_	_	_	xcomp	basic	3-13	
+3-15	365-370	mājas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	māja	_	_	_	_	nmod	basic	3-16	
+3-16	371-380	apstākļos	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl2	*	apstāklis	_	_	_	_	obl	basic	3-14	
+3-17	380-381	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-3	

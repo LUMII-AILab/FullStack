@@ -1,0 +1,52 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Ziemassvētki ir laiks, kad dvēseles mieru baznīcā meklē gan ticīgi cilvēki, gan tie, kas Dieva vārdu savās ikdienas gaitās piemirst.
+1-1	0-12	Ziemassvētki	*	*	Nom	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Ptan	*	*	npmdn1	*	Ziemassvētki	event	https://en.wikipedia.org/wiki/Ziemassvētki	_	_	nsubj	basic	1-3	
+1-2	13-15	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	1-3	
+1-3	16-21	laiks	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	laiks	_	_	*->1-1	*[1]	root	basic	1-3	
+1-4	21-22	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-9	
+1-5	23-26	kad	*	*	*	*	*	*	*	*	*	*	*	*	Int	*	*	*	PronType=Int	*	*	r0t	*	kad	_	_	*->1-2	*[1]	advmod	basic	1-9	
+1-6	27-35	dvēseles	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	dvēsele	_	_	_	_	nmod	basic	1-7	
+1-7	36-41	mieru	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	miers	_	_	_	_	obj	basic	1-9	
+1-8	42-49	baznīcā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	baznīca	_	_	_	_	obl	basic	1-9	
+1-9	50-55	meklē	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt230an	*	meklēt	_	_	_	_	acl	basic	1-3	
+1-10	56-59	gan	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	gan	_	_	_	_	cc	basic	1-12	
+1-11	60-66	ticīgi	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnnp	*	ticīgs	_	_	_	_	amod	basic	1-12	
+1-12	67-74	cilvēki	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	cilvēks	_	_	_	_	nsubj	basic	1-9	
+1-13	74-75	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-15	
+1-14	76-79	gan	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	gan	_	_	_	_	cc	basic	1-15	
+1-15	80-83	tie	*	*	Nom	*	*	Masc	*	*	*	Plur	3	*	Dem	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Dem	*	*	pd3mpnn	*	tas	_	_	*->2-1	*[2]	conj	basic	1-12	
+1-16	83-84	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-23	
+1-17	85-88	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	Rel	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->2-2	*[2]	nsubj	basic	1-23	
+1-18	89-94	Dieva	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	dievs	person	https://en.wikipedia.org/wiki/Jesus	_	_	nmod	basic	1-19	
+1-19	95-100	vārdu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	vārds	_	_	_	_	obj	basic	1-23	
+1-20	101-106	savās	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	Prs	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur\|Poss=Yes\|PronType=Prs	*	*	ps0fpln	*	sava	_	_	_	_	det	basic	1-22	
+1-21	107-115	ikdienas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	ikdiena	_	_	_	_	nmod	basic	1-22	
+1-22	116-122	gaitās	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	*	gaita	_	_	_	_	obl	basic	1-23	
+1-23	123-131	piemirst	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt130an	*	piemirst	_	_	_	_	acl	basic	1-15	
+1-24	131-132	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-3	
+
+#Text=Jēzus Kristus dzimšanas laiks piepilda arī baznīcas, kurās citkārt dievkalpojumus apmeklē neliels pulciņš dievlūdzēju.
+2-1	133-138	Jēzus	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg3	*	Jēzus	person[1]	https://en.wikipedia.org/wiki/Jesus[1]	_	_	nmod	basic	2-3	
+2-2	139-146	Kristus	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg3	*	Kristus	person[1]	https://en.wikipedia.org/wiki/Jesus[1]	_	_	flat:name	basic	2-1	
+2-3	147-156	dzimšanas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	dzimšana	_	_	_	_	nmod	basic	2-4	
+2-4	157-162	laiks	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	laiks	_	_	_	_	nsubj	basic	2-5	
+2-5	163-171	piepilda	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt330an	*	piepildīt	_	_	_	_	root	basic	2-5	
+2-6	172-175	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	2-7	
+2-7	176-184	baznīcas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	baznīca	_	_	*->3-1	*[3]	obj	basic	2-5	
+2-8	184-185	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-12	
+2-9	186-191	kurās	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	Rel	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur\|PronType=Rel	*	*	pr0fpln	*	kura	_	_	*->3-2	*[3]	obl	basic	2-12	
+2-10	192-199	citkārt	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	citkārt	_	_	_	_	advmod	basic	2-12	
+2-11	200-214	dievkalpojumus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	dievkalpojums	_	_	_	_	obj	basic	2-12	
+2-12	215-222	apmeklē	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt230an	*	apmeklēt	_	_	_	_	acl	basic	2-7	
+2-13	223-230	neliels	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	neliels	_	_	_	_	amod	basic	2-14	
+2-14	231-238	pulciņš	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	pulciņš	_	_	_	_	nsubj	basic	2-12	
+2-15	239-250	dievlūdzēju	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	dievlūdzējs	_	_	_	_	nmod	basic	2-14	
+2-16	250-251	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-5	

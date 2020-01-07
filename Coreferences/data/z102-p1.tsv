@@ -1,0 +1,334 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Latvijas pievienošanās Eiropas Savienībai (ES) ir bijis ārpolitiski un iekšpolitiski nozīmīgākais notikums kopš valstiskās neatkarības atjaunošanas.
+1-1	0-8	Latvijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	_	_	nmod	basic	1-2	
+1-2	9-22	pievienošanās	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsnr	*	pievienošanās	_	_	_	_	nsubj	basic	1-14	
+1-3	23-30	Eiropas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Eiropa	GPE[1]|location[2]	*[1]|https://en.wikipedia.org/wiki/Europe[2]	*->9-1	*[9]	nmod	basic	1-4	
+1-4	31-41	Savienībai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	*	savienība	GPE[1]	*[1]	*->9-1	*[9]	iobj	basic	1-14	
+1-5	42-43	(	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	(	_	_	_	_	punct	basic	1-6	
+1-6	43-45	ES	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	ES	GPE	*	*->9-2	*[9]	discourse	basic	1-4	
+1-7	45-46	)	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	)	_	_	_	_	punct	basic	1-6	
+1-8	47-49	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	aux	basic	1-14	
+1-9	50-55	bijis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vcnpdmsnasnpn	*	būt	_	_	_	_	cop	basic	1-14	
+1-10	56-67	ārpolitiski	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	ārpolitiski	_	_	_	_	advmod	basic	1-13	
+1-11	68-70	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-12	
+1-12	71-84	iekšpolitiski	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	iekšpolitiski	_	_	_	_	conj	basic	1-10	
+1-13	85-97	nozīmīgākais	*	*	Nom	*	Cmp	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Masc\|Number=Sing	*	*	afmsnyc	*	nozīmīgs	_	_	_	_	amod	basic	1-14	
+1-14	98-106	notikums	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	notikums	_	_	_	_	root	basic	1-14	
+1-15	107-111	kopš	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	kopš	_	_	_	_	case	basic	1-18	
+1-16	112-122	valstiskās	*	*	Gen	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsgyp	*	valstiska	_	_	_	_	amod	basic	1-17	
+1-17	123-134	neatkarības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	neatkarība	_	_	_	_	nmod	basic	1-18	
+1-18	135-147	atjaunošanas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	atjaunošana	_	_	_	_	obl	basic	1-14	
+1-19	147-148	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-14	
+
+#Text=Latvijas līdzdalība ES ir mainījusi un ietekmējusi valsts ekonomisko, sociālo un iekšpolitisko attīstību.
+2-1	150-158	Latvijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	_	_	nmod	basic	2-2	
+2-2	159-169	līdzdalība	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	līdzdalība	_	_	_	_	nsubj	basic	2-5	
+2-3	170-172	ES	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	ES	GPE	https://en.wikipedia.org/wiki/European\_Union	*->9-3	*[9]	acl	basic	2-2	
+2-4	173-175	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	aux	basic	2-5	
+2-5	176-185	mainījusi	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsnasnpn	*	mainīt	_	_	_	_	root	basic	2-5	
+2-6	186-188	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-7	
+2-7	189-200	ietekmējusi	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsnasnpn	*	ietekmēt	_	_	_	_	conj	basic	2-5	
+2-8	201-207	valsts	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	*	valsts	_	_	_	_	nmod	basic	2-14	
+2-9	208-218	ekonomisko	*	*	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsayp	*	ekonomisks	_	_	_	_	amod	basic	2-14	
+2-10	218-219	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-11	
+2-11	220-227	sociālo	*	*	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsayp	*	sociāls	_	_	_	_	conj	basic	2-9	
+2-12	228-230	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-13	
+2-13	231-244	iekšpolitisko	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsayp	*	iekšpolitiska	_	_	_	_	conj	basic	2-9	
+2-14	245-254	attīstību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	attīstība	_	_	_	_	obj	basic	2-5	
+2-15	254-255	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-5	
+
+#Text=Viens no redzamākajiem ES veicinātiem fenomeniem ir brīva darbaspēka kustība, kas Latvijas gadījumā nozīmēja strauju ietekmi uz demogrāfisko situāciju, proti, starptautiskās migrācijas neprognozēti augstu pieaugumu.
+3-1	257-262	Viens	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|NumType=Card	*	*	mcsmsn	*	viens	_	_	_	_	root	basic	3-1	
+3-2	263-265	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	no	_	_	_	_	case	basic	3-6	
+3-3	266-279	redzamākajiem	*	*	Dat	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Pres	*	Case=Dat\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdmpdppypn	*	redzēt	_	_	_	_	amod	basic	3-6	
+3-4	280-282	ES	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	ES	GPE	https://en.wikipedia.org/wiki/European\_Union	*->9-4	*[9]	nmod	basic	3-5	
+3-5	283-294	veicinātiem	*	Perf	Dat	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Dat\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmpdpsnpn	*	veicināt	_	_	_	_	amod	basic	3-6	
+3-6	295-305	fenomeniem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	fenomens	_	_	_	_	nmod	basic	3-1	
+3-7	306-308	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	3-1	
+3-8	309-314	brīva	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	*	brīva	_	_	_	_	amod	basic	3-10	
+3-9	315-325	darbaspēka	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	darbaspēks	_	_	_	_	nmod	basic	3-10	
+3-10	326-333	kustība	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	kustība	_	_	*->1-1	*[1]	nsubj	basic	3-1	
+3-11	333-334	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-15	
+3-12	335-338	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->1-2	*[1]	nsubj	basic	3-15	
+3-13	339-347	Latvijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	_	_	nmod	basic	3-14	
+3-14	348-356	gadījumā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	gadījums	_	_	_	_	obl	basic	3-15	
+3-15	357-365	nozīmēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist230an	*	nozīmēt	_	_	_	_	advcl	basic	3-1	
+3-16	366-373	strauju	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsanp	*	strauja	_	_	_	_	amod	basic	3-17	
+3-17	374-381	ietekmi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	ietekme	_	_	_	_	obj	basic	3-15	
+3-18	382-384	uz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	uz	_	_	_	_	case	basic	3-20	
+3-19	385-397	demogrāfisko	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsayp	*	demogrāfiska	_	_	_	_	amod	basic	3-20	
+3-20	398-407	situāciju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	situācija	_	_	_	_	nmod	basic	3-17	
+3-21	407-408	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-22	
+3-22	409-414	proti	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	proti	_	_	_	_	discourse	basic	3-28	
+3-23	414-415	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-22	
+3-24	416-430	starptautiskās	*	*	Gen	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsgyp	*	starptautiska	_	_	_	_	amod	basic	3-25	
+3-25	431-441	migrācijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	migrācija	_	_	_	_	dep	basic	3-28	
+3-26	442-454	neprognozēti	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Neg	*	*	r0q	*	neprognozēti	_	_	_	_	advmod	basic	3-27	
+3-27	455-461	augstu	*	*	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsanp	*	augsts	_	_	_	_	amod	basic	3-28	
+3-28	462-471	pieaugumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	pieaugums	_	_	_	_	acl	basic	3-15	
+3-29	471-472	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-1	
+
+#Text=Masveida emigrācijas rezultātā Latvija ir zaudējusi 150 000–200 000 iedzīvotāju aktīvā darbaspēka un reproduktīvajā vecumā.
+4-1	474-482	Masveida	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsgg	*	masveida	_	_	_	_	nmod	basic	4-2	
+4-2	483-494	emigrācijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	emigrācija	_	_	_	_	nmod	basic	4-3	
+4-3	495-504	rezultātā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	rezultāts	_	_	_	_	obl	basic	4-6	
+4-4	505-512	Latvija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Latvija	_	_	_	_	nsubj	basic	4-6	
+4-5	513-515	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	aux	basic	4-6	
+4-6	516-525	zaudējusi	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsnasnpn	*	zaudēt	_	_	_	_	root	basic	4-6	
+4-7	526-533	150 000	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	150 000	_	_	_	_	nummod	basic	4-10	
+4-8	533-534	–	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	–	_	_	_	_	punct	basic	4-9	
+4-9	534-541	200 000	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	200 000	_	_	_	_	conj	basic	4-7	
+4-10	542-553	iedzīvotāju	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	iedzīvotājs	_	_	_	_	iobj	basic	4-6	
+4-11	554-560	aktīvā	*	*	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsgyp	*	aktīvs	_	_	_	_	amod	basic	4-12	
+4-12	561-571	darbaspēka	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	darbaspēks	_	_	_	_	nmod	basic	4-15	
+4-13	572-574	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	4-14	
+4-14	575-589	reproduktīvajā	*	*	Loc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armslyp	*	reproduktīvs	_	_	_	_	conj	basic	4-12	
+4-15	590-596	vecumā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	vecums	_	_	_	_	acl	basic	4-10	
+4-16	596-597	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	4-6	
+
+#Text=Ņemot vērā zemos dzimstības rādītājus, emigrācija veicina Latvijas depopulāciju.
+5-1	599-604	Ņemot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	*	*	vmnpu0000000n	*	ņemt	_	_	_	_	advcl	basic	5-8	
+5-2	605-609	vērā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0p	*	vērā	_	_	_	_	advmod	basic	5-1	
+5-3	610-615	zemos	*	*	Acc	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpayp	*	zems	_	_	_	_	amod	basic	5-5	
+5-4	616-626	dzimstības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	dzimstība	_	_	_	_	nmod	basic	5-5	
+5-5	627-636	rādītājus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	rādītājs	_	_	_	_	obj	basic	5-1	
+5-6	636-637	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	5-1	
+5-7	638-648	emigrācija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	emigrācija	_	_	_	_	nsubj	basic	5-8	
+5-8	649-656	veicina	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	veicināt	_	_	_	_	root	basic	5-8	
+5-9	657-665	Latvijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Latvija	GPE	*	_	_	nmod	basic	5-10	
+5-10	666-678	depopulāciju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	depopulācija	_	_	_	_	obj	basic	5-8	
+5-11	678-679	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	5-8	
+
+#Text=Kopš 2008. gada Latviju vissmagāk skāra globālā ekonomiskā finanšu krīze, kas pastiprināja emigrācijas tendences.
+6-1	681-685	Kopš	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	kopš	time[3]	*[3]	_	_	case	basic	6-3	
+6-2	686-691	2008.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	2008.	time[3]	*[3]	_	_	amod	basic	6-3	
+6-3	692-696	gada	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	gads	time[3]	*[3]	_	_	obl	basic	6-6	
+6-4	697-704	Latviju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	*	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	_	_	obj	basic	6-6	
+6-5	705-714	vissmagāk	*	*	*	*	Sup	*	*	*	*	*	*	*	*	*	*	*	Degree=Sup	*	*	rsm	*	smagi	_	_	_	_	advmod	basic	6-6	
+6-6	715-720	skāra	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist130an	*	skart	_	_	_	_	root	basic	6-6	
+6-7	721-728	globālā	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnyp	*	globāla	_	_	_	_	amod	basic	6-10	
+6-8	729-739	ekonomiskā	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnyp	*	ekonomiskā	_	_	_	_	amod	basic	6-10	
+6-9	740-747	finanšu	*	*	Gen	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Ptan	*	*	ncfdg5	*	finanses	_	_	_	_	nmod	basic	6-10	
+6-10	748-753	krīze	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	krīze	_	_	*->2-1	*[2]	nsubj	basic	6-6	
+6-11	753-754	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	6-13	
+6-12	755-758	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->2-2	*[2]	nsubj	basic	6-13	
+6-13	759-771	pastiprināja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist330an	*	pastiprināt	_	_	_	_	acl	basic	6-10	
+6-14	772-783	emigrācijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	emigrācija	_	_	_	_	nmod	basic	6-15	
+6-15	784-793	tendences	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa5	*	tendence	_	_	_	_	obj	basic	6-13	
+6-16	793-794	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	6-6	
+
+#Text=Latvijai masveidīgi zaudējot darbaspēku, ilgtermiņā būs arvien sarežģītāk nodrošināt iekšzemes kopprodukta (IKP) izaugsmi, kas pakāpeniski atsākusies 2010. gadā uz eksportspējīgo nozaru rēķina.
+7-1	796-804	Latvijai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	npfsd4	*	Latvija	GPE	*	_	_	obl	basic	7-3	
+7-2	805-815	masveidīgi	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	masveidīgi	_	_	_	_	advmod	basic	7-3	
+7-3	816-824	zaudējot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	*	*	vmnpu0000000n	*	zaudēt	_	_	_	_	advcl	basic	7-9	
+7-4	825-835	darbaspēku	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	darbaspēks	_	_	_	_	obj	basic	7-3	
+7-5	835-836	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	7-3	
+7-6	837-847	ilgtermiņā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl1	*	ilgtermiņā	_	_	_	_	obl	basic	7-9	
+7-7	848-851	būs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vcnifii30an	*	būt	_	_	_	_	cop	basic	7-9	
+7-8	852-858	arvien	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	arvien	_	_	_	_	advmod	basic	7-9	
+7-9	859-869	sarežģītāk	*	*	*	*	Cmp	*	*	*	*	*	*	*	*	*	*	*	Degree=Cmp	*	*	rcm	*	sarežģīti	_	_	_	_	root	basic	7-9	
+7-10	870-880	nodrošināt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	*	nodrošināt	_	_	_	_	ccomp	basic	7-9	
+7-11	881-890	iekšzemes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	iekšzeme	_	_	_	_	nmod	basic	7-12	
+7-12	891-902	kopprodukta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	kopprodukts	_	_	_	_	nmod	basic	7-16	
+7-13	903-904	(	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	(	_	_	_	_	punct	basic	7-14	
+7-14	904-907	IKP	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	*	IKP	_	_	_	_	discourse	basic	7-12	
+7-15	907-908	)	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	)	_	_	_	_	punct	basic	7-14	
+7-16	909-917	izaugsmi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	izaugsme	_	_	*->3-1	*[3]	obj	basic	7-10	
+7-17	917-918	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	7-20	
+7-18	919-922	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->3-2	*[3]	nsubj	basic	7-20	
+7-19	923-934	pakāpeniski	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	pakāpeniski	_	_	_	_	advmod	basic	7-20	
+7-20	935-945	atsākusies	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	*	vmypdfsnasnpn	*	atsākties	_	_	_	_	acl	basic	7-16	
+7-21	946-951	2010.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	2010.	time[4]	*[4]	_	_	amod	basic	7-22	
+7-22	952-956	gadā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	gads	time[4]	*[4]	_	_	obl	basic	7-20	
+7-23	957-959	uz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	uz	_	_	_	_	case	basic	7-26	
+7-24	960-974	eksportspējīgo	*	*	Gen	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpgyp	*	eksportspējīga	_	_	_	_	amod	basic	7-25	
+7-25	975-981	nozaru	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg5	*	nozare	_	_	_	_	nmod	basic	7-26	
+7-26	982-988	rēķina	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	rēķins	_	_	_	_	obl	basic	7-20	
+7-27	988-989	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	7-9	
+
+#Text=Ekonomiskā situācija diktē nepieciešamību izstrādāt migrācijas politiku, kas līdz šim savos pamatos ir veidota laika periodā līdz Latvijas iestāšanās ES.
+8-1	991-1001	Ekonomiskā	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnyp	*	ekonomiska	_	_	_	_	amod	basic	8-2	
+8-2	1002-1011	situācija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	situācija	_	_	_	_	nsubj	basic	8-3	
+8-3	1012-1017	diktē	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt230an	*	diktēt	_	_	_	_	root	basic	8-3	
+8-4	1018-1032	nepieciešamību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	nepieciešamība	_	_	_	_	obj	basic	8-3	
+8-5	1033-1042	izstrādāt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	*	izstrādāt	_	_	_	_	acl	basic	8-4	
+8-6	1043-1053	migrācijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	migrācija	_	_	_	_	nmod	basic	8-7	
+8-7	1054-1062	politiku	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	politika	_	_	*->8-1	*[8]	obj	basic	8-5	
+8-8	1062-1063	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	8-15	
+8-9	1064-1067	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->8-2	*[8]	nsubj:pass	basic	8-15	
+8-10	1068-1072	līdz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsd	*	līdz	_	_	_	_	case	basic	8-11	
+8-11	1073-1076	šim	*	*	Dat	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msdn	*	šis	_	_	_	_	obl	basic	8-15	
+8-12	1077-1082	savos	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur\|Poss=Yes\|PronType=Prs	*	*	ps0mpln	*	savs	_	_	*->8-3	*[8]	det	basic	8-13	
+8-13	1083-1090	pamatos	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	*	pamats	_	_	_	_	obl	basic	8-15	
+8-14	1091-1093	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	aux:pass	basic	8-15	
+8-15	1094-1101	veidota	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsnpsnpn	*	veidot	_	_	_	_	dep	basic	8-7	
+8-16	1102-1107	laika	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	laiks	_	_	_	_	nmod	basic	8-17	
+8-17	1108-1115	periodā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	periods	_	_	_	_	obl	basic	8-15	
+8-18	1116-1120	līdz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsd	*	līdz	_	_	_	_	case	basic	8-20	
+8-19	1121-1129	Latvijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Latvija	GPE	*	_	_	nmod	basic	8-20	
+8-20	1130-1140	iestāšanās	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	*	iestāšana	_	_	_	_	nmod	basic	8-17	
+8-21	1141-1143	ES	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	ES	GPE	https://en.wikipedia.org/wiki/European\_Union	*->9-5	*[9]	acl	basic	8-20	
+8-22	1143-1144	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	8-3	
+
+#Text=Latvijas iedzīvotāju sašaurinātā paaudžu nomaiņa un negatīvie migrācijas rādītāji izvirza jautājumu par darbaspēka piesaisti no ārzemēm.
+9-1	1146-1154	Latvijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Latvija	GPE	*	_	_	nmod	basic	9-2	
+9-2	1155-1166	iedzīvotāju	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	iedzīvotājs	_	_	_	_	nmod	basic	9-5	
+9-3	1167-1178	sašaurinātā	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsnpsypn	*	sašaurināt	_	_	_	_	amod	basic	9-5	
+9-4	1179-1186	paaudžu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg5	*	paaudze	_	_	_	_	nmod	basic	9-5	
+9-5	1187-1194	nomaiņa	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	nomaiņa	_	_	_	_	nsubj	basic	9-10	
+9-6	1195-1197	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	9-9	
+9-7	1198-1207	negatīvie	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnyp	*	negatīvs	_	_	_	_	amod	basic	9-9	
+9-8	1208-1218	migrācijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	migrācija	_	_	_	_	nmod	basic	9-9	
+9-9	1219-1227	rādītāji	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	rādītājs	_	_	_	_	conj	basic	9-5	
+9-10	1228-1235	izvirza	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	izvirzīt	_	_	_	_	root	basic	9-10	
+9-11	1236-1245	jautājumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	jautājums	_	_	_	_	obj	basic	9-10	
+9-12	1246-1249	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	9-14	
+9-13	1250-1260	darbaspēka	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	darbaspēks	_	_	_	_	nmod	basic	9-14	
+9-14	1261-1270	piesaisti	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	piesaiste	_	_	_	_	nmod	basic	9-11	
+9-15	1271-1273	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	no	_	_	_	_	case	basic	9-16	
+9-16	1274-1281	ārzemēm	*	*	Dat	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Ptan	*	*	ncfdd5	*	ārzemes	_	_	_	_	nmod	basic	9-14	
+9-17	1281-1282	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	9-10	
+
+#Text=Saskaņā ar LR Ekonomikas ministrijas (EM) aplēsēm atkarībā no ekonomiskās izaugsmes un demogrāfijas scenārija ekonomiski aktīvo iedzīvotāju skaits līdz 2018. gadam samazināsies vismaz par 50 000 – 70 000.
+10-1	1284-1291	Saskaņā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	saskaņa	_	_	_	_	obl	basic	10-24	
+10-2	1292-1294	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	10-9	
+10-3	1295-1297	LR	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	LR	organization[5]|GPE[6]	en.wikipedia.org/wiki/Ministry\_of\_Economics\_(Latvia)[5]|*[6]	*->4-1	*[4]	nmod	basic	10-5	
+10-4	1298-1308	Ekonomikas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	ekonomika	organization[5]	en.wikipedia.org/wiki/Ministry\_of\_Economics\_(Latvia)[5]	*->4-1	*[4]	nmod	basic	10-5	
+10-5	1309-1320	ministrijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	ministrija	organization[5]	en.wikipedia.org/wiki/Ministry\_of\_Economics\_(Latvia)[5]	*->4-1	*[4]	nmod	basic	10-9	
+10-6	1321-1322	(	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	(	_	_	_	_	punct	basic	10-7	
+10-7	1322-1324	EM	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	EM	organization	en.wikipedia.org/wiki/Ministry\_of\_Economics\_(Latvia)	*->4-2	*[4]	discourse	basic	10-5	
+10-8	1324-1325	)	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	)	_	_	_	_	punct	basic	10-7	
+10-9	1326-1333	aplēsēm	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd5	*	aplēse	_	_	_	_	iobj	basic	10-1	
+10-10	1334-1342	atkarībā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	atkarība	_	_	_	_	obl	basic	10-24	
+10-11	1343-1345	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case	basic	10-13	
+10-12	1346-1357	ekonomiskās	*	*	Gen	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsgyp	*	ekonomiska	_	_	_	_	amod	basic	10-13	
+10-13	1358-1367	izaugsmes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	izaugsme	_	_	_	_	iobj	basic	10-10	
+10-14	1368-1370	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	dep	basic	10-16	
+10-15	1371-1383	demogrāfijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	demogrāfija	_	_	_	_	nmod	basic	10-16	
+10-16	1384-1393	scenārija	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	scenārijs	_	_	_	_	conj	basic	10-13	
+10-17	1394-1404	ekonomiski	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	ekonomiski	_	_	_	_	advmod	basic	10-18	
+10-18	1405-1411	aktīvo	*	*	Gen	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpgyp	*	aktīvs	_	_	_	_	amod	basic	10-19	
+10-19	1412-1423	iedzīvotāju	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	iedzīvotājs	_	_	_	_	nmod	basic	10-20	
+10-20	1424-1430	skaits	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	skaits	_	_	_	_	nsubj	basic	10-24	
+10-21	1431-1435	līdz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsd	*	līdz	time[7]	*[7]	_	_	case	basic	10-23	
+10-22	1436-1441	2018.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	2018.	time[7]	*[7]	_	_	amod	basic	10-23	
+10-23	1442-1447	gadam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	gads	time[7]	*[7]	_	_	obl	basic	10-24	
+10-24	1448-1460	samazināsies	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmyifi330an	*	samazināties	_	_	_	_	root	basic	10-24	
+10-25	1461-1467	vismaz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	vismaz	_	_	_	_	advmod	basic	10-27	
+10-26	1468-1471	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	par	_	_	_	_	case	basic	10-27	
+10-27	1472-1478	50 000	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	50 000	_	_	_	_	nummod	basic	10-24	
+10-28	1479-1480	–	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	–	_	_	_	_	punct	basic	10-29	
+10-29	1481-1487	70 000	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	70 000	_	_	_	_	conj	basic	10-27	
+10-30	1487-1488	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	10-24	
+
+#Text=Izmaiņas Imigrācijas likumā un migrācijas politikā valdības līmenī ir paredzēts pieņemt 2013. gada laikā.
+11-1	1490-1498	Izmaiņas	*	*	Acc	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Ptan	*	*	ncfda4	*	izmaiņas	_	_	_	_	obj	basic	11-11	
+11-2	1499-1510	Imigrācijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	imigrācija	entity[8]	*[8]	_	_	nmod	basic	11-3	
+11-3	1511-1517	likumā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	likums	entity[8]	*[8]	_	_	acl	basic	11-1	
+11-4	1518-1520	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	11-6	
+11-5	1521-1531	migrācijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	migrācija	_	_	_	_	nmod	basic	11-6	
+11-6	1532-1540	politikā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	politika	_	_	_	_	conj	basic	11-3	
+11-7	1541-1549	valdības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	valdība	_	_	_	_	nmod	basic	11-8	
+11-8	1550-1556	līmenī	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	*	līmenis	_	_	_	_	obl	basic	11-11	
+11-9	1557-1559	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	aux:pass	basic	11-10	
+11-10	1560-1569	paredzēts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnpsnpn	*	paredzēt	_	_	_	_	root	basic	11-10	
+11-11	1570-1577	pieņemt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	*	pieņemt	_	_	_	_	ccomp	basic	11-10	
+11-12	1578-1583	2013.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	2013.	time[9]	*[9]	_	_	amod	basic	11-13	
+11-13	1584-1588	gada	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	gads	time[9]	*[9]	_	_	nmod	basic	11-14	
+11-14	1589-1594	laikā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	laiks	time[9]	*[9]	_	_	obl	basic	11-11	
+11-15	1594-1595	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	11-10	
+
+#Text=Latvijas migrācijas politikai pašlaik ir jārisina virkne problēmjautājumu, kas saistās ar emigrācijas pieaugošo apjomu, kvalificētā darbaspēka deficītu, sabiedrības novecošanos, strukturālo bezdarbu un vispārējo valsts mērķi pēc iespējas ātrāk pārvarēt atpalicību no ES vidējā dzīves līmeņa.
+12-1	1597-1605	Latvijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Latvija	GPE	*	_	_	nmod	basic	12-3	
+12-2	1606-1616	migrācijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	migrācija	_	_	_	_	nmod	basic	12-3	
+12-3	1617-1626	politikai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	*	politika	_	_	_	_	nsubj	basic	12-6	
+12-4	1627-1634	pašlaik	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	pašlaik	_	_	_	_	advmod	basic	12-6	
+12-5	1635-1637	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	aux	basic	12-6	
+12-6	1638-1646	jārisina	*	*	*	*	*	*	Nec	*	*	*	*	*	*	*	*	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vmnd0t300an	*	risināt	_	_	_	_	root	basic	12-6	
+12-7	1647-1653	virkne	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	virkne	_	_	_	_	obj	basic	12-6	
+12-8	1654-1670	problēmjautājumu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	problēmjautājums	_	_	*->5-1	*[5]	nmod	basic	12-7	
+12-9	1670-1671	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	12-11	
+12-10	1672-1675	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->5-2	*[5]	nsubj	basic	12-11	
+12-11	1676-1683	saistās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmyipi330an	*	saistīties	_	_	_	_	acl	basic	12-8	
+12-12	1684-1686	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	12-15	
+12-13	1687-1698	emigrācijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	emigrācija	_	_	_	_	nmod	basic	12-15	
+12-14	1699-1708	pieaugošo	*	Imp	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Pres	*	Aspect=Imp\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdmsaapypn	*	pieaugt	_	_	_	_	amod	basic	12-15	
+12-15	1709-1715	apjomu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	apjoms	_	_	_	_	iobj	basic	12-11	
+12-16	1715-1716	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	12-19	
+12-17	1717-1728	kvalificētā	*	*	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsgyp	*	kvalificēts	_	_	_	_	amod	basic	12-18	
+12-18	1729-1739	darbaspēka	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	darbaspēks	_	_	_	_	nmod	basic	12-19	
+12-19	1740-1748	deficītu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	deficīts	_	_	_	_	conj	basic	12-15	
+12-20	1748-1749	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	12-22	
+12-21	1750-1761	sabiedrības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	sabiedrība	_	_	_	_	nmod	basic	12-22	
+12-22	1762-1773	novecošanos	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsar	*	novecošanās	_	_	_	_	conj	basic	12-15	
+12-23	1773-1774	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	12-25	
+12-24	1775-1786	strukturālo	*	*	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsayp	*	strukturāls	_	_	_	_	amod	basic	12-25	
+12-25	1787-1795	bezdarbu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	bezdarbs	_	_	_	_	conj	basic	12-15	
+12-26	1796-1798	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	12-29	
+12-27	1799-1808	vispārējo	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsayp	*	vispārēja	_	_	_	_	amod	basic	12-29	
+12-28	1809-1815	valsts	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	*	valsts	_	_	_	_	nmod	basic	12-29	
+12-29	1816-1821	mērķi	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	*	mērķis	_	_	_	_	conj	basic	12-15	
+12-30	1822-1825	pēc	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pēc	_	_	_	_	case	basic	12-31	
+12-31	1826-1834	iespējas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	iespēja	_	_	_	_	obl	basic	12-32	
+12-32	1835-1840	ātrāk	*	*	*	*	Cmp	*	*	*	*	*	*	*	*	*	*	*	Degree=Cmp	*	*	rcm	*	ātri	_	_	_	_	advmod	basic	12-33	
+12-33	1841-1849	pārvarēt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	*	pārvarēt	_	_	_	_	acl	basic	12-29	
+12-34	1850-1860	atpalicību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	atpalicība	_	_	_	_	obj	basic	12-33	
+12-35	1861-1863	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case	basic	12-39	
+12-36	1864-1866	ES	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	ES	GPE	https://en.wikipedia.org/wiki/European\_Union	*->9-6	*[9]	nmod	basic	12-39	
+12-37	1867-1873	vidējā	*	*	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsgyp	*	vidējs	_	_	_	_	amod	basic	12-39	
+12-38	1874-1880	dzīves	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	dzīve	_	_	_	_	nmod	basic	12-39	
+12-39	1881-1887	līmeņa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	*	līmenis	_	_	_	_	nmod	basic	12-34	
+12-40	1887-1888	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	12-6	
+
+#Text=Darbaspēka prasmju neatbilstība tirgus vajadzībām var izraisīt algu kāpumu, kas ir straujāks nekā produktivitātes izaugsme.
+13-1	1890-1900	Darbaspēka	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	darbaspēks	_	_	_	_	nmod	basic	13-2	
+13-2	1901-1908	prasmju	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg5	*	prasme	_	_	_	_	nmod	basic	13-3	
+13-3	1909-1921	neatbilstība	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	neatbilstība	_	_	_	_	nsubj	basic	13-6	
+13-4	1922-1928	tirgus	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg3	*	tirgus	_	_	_	_	nmod	basic	13-5	
+13-5	1929-1939	vajadzībām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	*	vajadzība	_	_	_	_	nmod	basic	13-3	
+13-6	1940-1943	var	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vonipi330an	*	varēt	_	_	_	_	root	basic	13-6	
+13-7	1944-1952	izraisīt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	*	izraisīt	_	_	_	_	xcomp	basic	13-6	
+13-8	1953-1957	algu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	alga	_	_	_	_	nmod	basic	13-9	
+13-9	1958-1964	kāpumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	kāpums	_	_	*->6-1	*[6]	obj	basic	13-7	
+13-10	1964-1965	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	13-13	
+13-11	1966-1969	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->6-2	*[6]	nsubj	basic	13-13	
+13-12	1970-1972	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	13-13	
+13-13	1973-1982	straujāks	*	*	Nom	*	Cmp	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Masc\|Number=Sing	*	*	afmsnnc	*	straujš	_	_	_	_	acl	basic	13-9	
+13-14	1983-1987	nekā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	nekā	_	_	_	_	case	basic	13-16	
+13-15	1988-2003	produktivitātes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	produktivitāte	_	_	_	_	nmod	basic	13-16	
+13-16	2004-2012	izaugsme	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	izaugsme	_	_	_	_	obl	basic	13-13	
+13-17	2012-2013	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	13-6	
+
+#Text=Ekonomikai attīstoties, palielinās pieprasījums pēc darbaspēka, ko nav iespējams apmierināt ar esošo piedāvājumu, jo lielai daļai bezdarbnieku trūkst nepieciešamo prasmju.
+14-1	2015-2025	Ekonomikai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	*	ekonomika	_	_	_	_	obl	basic	14-2	
+14-2	2026-2037	attīstoties	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Conv	*	*	vmypu0000000n	*	attīstīties	_	_	_	_	advcl	basic	14-4	
+14-3	2037-2038	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	14-2	
+14-4	2039-2049	palielinās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmnift330an	*	palielināt	_	_	_	_	root	basic	14-4	
+14-5	2050-2062	pieprasījums	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	pieprasījums	_	_	*->7-1	*[7]	nsubj	basic	14-4	
+14-6	2063-2066	pēc	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pēc	_	_	_	_	case	basic	14-7	
+14-7	2067-2077	darbaspēka	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	darbaspēks	_	_	_	_	nmod	basic	14-5	
+14-8	2077-2078	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	14-11	
+14-9	2079-2081	ko	*	*	Acc	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Acc\|PronType=Rel	*	*	pr000an	*	kas	_	_	*->7-2	*[7]	obj	basic	14-12	
+14-10	2082-2085	nav	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30ay	*	nebūt	_	_	_	_	cop	basic	14-11	
+14-11	2086-2095	iespējams	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsnnp	*	iespējams	_	_	_	_	acl	basic	14-5	
+14-12	2096-2106	apmierināt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	*	apmierināt	_	_	_	_	ccomp	basic	14-11	
+14-13	2107-2109	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	14-15	
+14-14	2110-2115	esošo	*	Imp	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Pres	*	Aspect=Imp\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdmsaapypn	*	būt	_	_	_	_	amod	basic	14-15	
+14-15	2116-2127	piedāvājumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	piedāvājums	_	_	_	_	iobj	basic	14-12	
+14-16	2127-2128	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	14-21	
+14-17	2129-2131	jo	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	jo	_	_	_	_	mark	basic	14-21	
+14-18	2132-2138	lielai	*	*	Dat	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsdnp	*	liela	_	_	_	_	amod	basic	14-19	
+14-19	2139-2144	daļai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	*	daļa	_	_	_	_	obl	basic	14-21	
+14-20	2145-2157	bezdarbnieku	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	bezdarbnieks	_	_	_	_	nmod	basic	14-19	
+14-21	2158-2164	trūkst	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipi130an	*	trūkt	_	_	_	_	advcl	basic	14-11	
+14-22	2165-2177	nepieciešamo	*	*	Gen	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpgyp	*	nepieciešama	_	_	_	_	amod	basic	14-23	
+14-23	2178-2185	prasmju	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg5	*	prasme	_	_	_	_	nsubj	basic	14-21	
+14-24	2185-2186	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	14-4	

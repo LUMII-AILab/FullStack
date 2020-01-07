@@ -1,52 +1,52 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Rīga, 11.marts, LETA.
-1-1	0-4	Rīga	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Rīga	GPE	*	_	_	root	basic	1-1	
-1-2	4-5	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-4	
-1-3	6-9	11.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	11.	time[1]	*[1]	_	_	amod	basic	1-4	
-1-4	9-14	marts	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	marts	time[1]	*[1]	_	_	parataxis	basic	1-1	
-1-5	14-15	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-6	
-1-6	16-20	LETA	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	LETA	organization	*	_	_	parataxis	basic	1-1	
-1-7	20-21	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-1	
+1-1	0-4	Rīga	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Rīga	GPE	*	_	_	root	basic	1-1	
+1-2	4-5	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-4	
+1-3	6-9	11.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	11.	time[1]	*[1]	_	_	amod	basic	1-4	
+1-4	9-14	marts	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	marts	time[1]	*[1]	_	_	parataxis	basic	1-1	
+1-5	14-15	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-6	
+1-6	16-20	LETA	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	LETA	organization	*	_	_	parataxis	basic	1-1	
+1-7	20-21	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-1	
 
 #Text=Finanšu ministrija (FM), komentējot jaunākos iekšzemes kopprodukta (IKP) apjoma datus, uzsver, ka IKP pieaugums ir izcils sasniegums un arī aizvadītais gads Latvijas ekonomikā bijis izcils.
-2-1	23-30	Finanšu	Fem	Ptan	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Ptan	*	*	ncfdg5	finanses	organization[2]	*[2]	*[1]	*->1-1	nmod	basic	2-2	
-2-2	31-41	ministrija	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	ministrija	organization[2]	*[2]	*[1]	*->1-1	nsubj	basic	2-17	
-2-3	42-43	(	_	_	_	_	_	_	_	_	_	_	_	_	zb	(	_	_	_	_	punct	basic	2-4	
-2-4	43-45	FM	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	FM	organization	*	*[1]	*->1-2	parataxis	basic	2-2	
-2-5	45-46	)	_	_	_	_	_	_	_	_	_	_	_	_	zb	)	_	_	_	_	punct	basic	2-4	
-2-6	46-47	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-7	
-2-7	48-58	komentējot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000	komentēt	_	_	_	_	advcl	basic	2-17	
-2-8	59-67	jaunākos	Masc	Plur	Acc	Cmp	*	*	*	*	*	Case=Acc\|Degree=Cmp\|Gender=Masc\|Number=Plur	*	*	afmpayc	jauns	_	_	_	_	amod	basic	2-15	
-2-9	68-77	iekšzemes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	iekšzeme	_	_	*[2]	*->2-1	nmod	basic	2-10	
-2-10	78-89	kopprodukta	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	kopprodukts	_	_	*[2]	*->2-1	nmod	basic	2-14	
-2-11	90-91	(	_	_	_	_	_	_	_	_	_	_	_	_	zb	(	_	_	_	_	punct	basic	2-12	
-2-12	91-94	IKP	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	IKP	_	_	*[2]	*->2-2	parataxis	basic	2-10	
-2-13	94-95	)	_	_	_	_	_	_	_	_	_	_	_	_	zb	)	_	_	_	_	punct	basic	2-12	
-2-14	96-102	apjoma	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	apjoms	_	_	_	_	nmod	basic	2-15	
-2-15	103-108	datus	Masc	Ptan	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Ptan	*	*	ncmda1	dati	_	_	_	_	obj	basic	2-7	
-2-16	108-109	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-7	
-2-17	110-116	uzsver	*	Sing	*	*	*	*	Imp	Act	*	Mood=Imp\|Number=Sing\|Person=2\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	2	*	vmnm0t12san	uzsvērt	_	_	_	_	root	basic	2-17	
-2-18	116-117	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-24	
-2-19	118-120	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark	basic	2-24	
-2-20	121-124	IKP	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	IKP	_	_	*[2]	*->2-3	nmod	basic	2-21	
-2-21	125-134	pieaugums	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	pieaugums	_	_	_	_	nsubj	basic	2-24	
-2-22	135-137	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	cop	basic	2-24	
-2-23	138-144	izcils	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	izcils	_	_	_	_	amod	basic	2-24	
-2-24	145-155	sasniegums	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	sasniegums	_	_	_	_	ccomp	basic	2-17	
-2-25	156-158	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	2-32	
-2-26	159-162	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse	basic	2-28	
-2-27	163-174	aizvadītais	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsyp	aizvadīt	_	_	_	_	amod	basic	2-28	
-2-28	175-179	gads	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	gads	_	_	_	_	nsubj	basic	2-32	
-2-29	180-188	Latvijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Latvija	GPE	*	_	_	nmod	basic	2-30	
-2-30	189-198	ekonomikā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	ekonomika	_	_	_	_	obl	basic	2-32	
-2-31	199-204	bijis	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vcnpdmsnasnp	būt	_	_	_	_	cop	basic	2-32	
-2-32	205-211	izcils	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	izcils	_	_	_	_	conj	basic	2-24	
-2-33	211-212	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-17	
+2-1	23-30	Finanšu	*	*	Gen	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Ptan	*	*	ncfdg5	*	finanses	organization[2]	*[2]	*->1-1	*[1]	nmod	basic	2-2	
+2-2	31-41	ministrija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	ministrija	organization[2]	*[2]	*->1-1	*[1]	nsubj	basic	2-17	
+2-3	42-43	(	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	(	_	_	_	_	punct	basic	2-4	
+2-4	43-45	FM	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	FM	organization	*	*->1-2	*[1]	parataxis	basic	2-2	
+2-5	45-46	)	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	)	_	_	_	_	punct	basic	2-4	
+2-6	46-47	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-7	
+2-7	48-58	komentējot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000	*	komentēt	_	_	_	_	advcl	basic	2-17	
+2-8	59-67	jaunākos	*	*	Acc	*	Cmp	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Degree=Cmp\|Gender=Masc\|Number=Plur	*	*	afmpayc	*	jauns	_	_	_	_	amod	basic	2-15	
+2-9	68-77	iekšzemes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	iekšzeme	_	_	*->2-1	*[2]	nmod	basic	2-10	
+2-10	78-89	kopprodukta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	kopprodukts	_	_	*->2-1	*[2]	nmod	basic	2-14	
+2-11	90-91	(	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	(	_	_	_	_	punct	basic	2-12	
+2-12	91-94	IKP	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	*	IKP	_	_	*->2-2	*[2]	parataxis	basic	2-10	
+2-13	94-95	)	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	)	_	_	_	_	punct	basic	2-12	
+2-14	96-102	apjoma	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	apjoms	_	_	_	_	nmod	basic	2-15	
+2-15	103-108	datus	*	*	Acc	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Ptan	*	*	ncmda1	*	dati	_	_	_	_	obj	basic	2-7	
+2-16	108-109	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-7	
+2-17	110-116	uzsver	*	*	*	*	*	*	Imp	*	*	Sing	2	*	*	*	*	*	Mood=Imp\|Number=Sing\|Person=2\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vmnm0t12san	*	uzsvērt	_	_	_	_	root	basic	2-17	
+2-18	116-117	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-24	
+2-19	118-120	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	2-24	
+2-20	121-124	IKP	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	*	IKP	_	_	*->2-3	*[2]	nmod	basic	2-21	
+2-21	125-134	pieaugums	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	pieaugums	_	_	_	_	nsubj	basic	2-24	
+2-22	135-137	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	2-24	
+2-23	138-144	izcils	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	izcils	_	_	_	_	amod	basic	2-24	
+2-24	145-155	sasniegums	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	sasniegums	_	_	_	_	ccomp	basic	2-17	
+2-25	156-158	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-32	
+2-26	159-162	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	2-28	
+2-27	163-174	aizvadītais	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnpsyp	*	aizvadīt	_	_	_	_	amod	basic	2-28	
+2-28	175-179	gads	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	gads	_	_	_	_	nsubj	basic	2-32	
+2-29	180-188	Latvijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Latvija	GPE	*	_	_	nmod	basic	2-30	
+2-30	189-198	ekonomikā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	ekonomika	_	_	_	_	obl	basic	2-32	
+2-31	199-204	bijis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vcnpdmsnasnp	*	būt	_	_	_	_	cop	basic	2-32	
+2-32	205-211	izcils	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	izcils	_	_	_	_	conj	basic	2-24	
+2-33	211-212	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-17	

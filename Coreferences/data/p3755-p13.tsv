@@ -1,88 +1,88 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Galvenie projekti, kas jārealizē LDz un kuriem pievērsīšu uzmanību, lai tie veiksmīgi tiktu realizēti, ir dzelzceļa elektrifikācijas projekts, pasažieru piekļuves un apkalpošanas infrastruktūras modernizācijas un augsto peronu būvniecības 13 stacijās (Bulduri, Dzintari, Majori, Babīte, Lielupe, Sloka, Imanta, Zolitūde, Cukurfabrika, Jelgava, Ikšķile, Salaspils, Ogre) projekts, kā arī dzelzceļa sliežu rekonstrukcija Rietumu-Austrumu koridorā, rekonstruējot apmēram 180 kilometru sliežu ceļa.
-1-1	0-8	Galvenie	Masc	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpnyp	galvenais	_	_	*[1]	*->1-1	amod	basic	1-2	
-1-2	9-17	projekti	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	projekts	_	_	*[1]	*->1-1	nsubj	basic	1-21	
-1-3	17-18	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-5	
-1-4	19-22	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	*[1]	*->1-2	nsubj	basic	1-5	
-1-5	23-32	jārealizē	*	*	*	*	*	*	Nec	Act	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vmnd0t200an	realizēt	_	_	_	_	acl	basic	1-2	
-1-6	33-36	LDz	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	LDz	organization	*	_	_	obl	basic	1-5	
-1-7	37-39	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-9	
-1-8	40-46	kuriem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|PronType=Rel	*	*	pr0mpdn	kurš	_	_	*[1]	*->1-3	iobj	basic	1-9	
-1-9	47-57	pievērsīšu	*	Sing	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	1	*	vmnift11san	pievērst	_	_	_	_	conj	basic	1-5	
-1-10	58-66	uzmanību	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	uzmanība	_	_	_	_	obj	basic	1-9	
-1-11	66-67	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-16	
-1-12	68-71	lai	_	_	_	_	_	_	_	_	_	_	_	_	cs	lai	_	_	_	_	mark	basic	1-16	
-1-13	72-75	tie	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpnn	tas	_	_	*[1]	*->1-4	nsubj:pass	basic	1-16	
-1-14	76-85	veiksmīgi	_	_	_	_	_	_	_	_	_	_	_	_	r0c	veiksmīgi	_	_	_	_	advmod	basic	1-16	
-1-15	86-91	tiktu	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vtnc0i100an	tikt	_	_	_	_	aux	basic	1-16	
-1-16	92-101	realizēti	Masc	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpnpsnp	realizēt	_	_	_	_	advcl	basic	1-9	
-1-17	101-102	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-16	
-1-18	103-105	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	cop	basic	1-21	
-1-19	106-115	dzelzceļa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	dzelzceļš	_	_	_	_	nmod	basic	1-20	
-1-20	116-132	elektrifikācijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	elektrifikācija	_	_	_	_	nmod	basic	1-21	
-1-21	133-141	projekts	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	projekts	_	_	_	_	root	basic	1-21	
-1-22	141-142	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-62	
-1-23	143-152	pasažieru	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	pasažieris	_	_	_	_	nmod	basic	1-24	
-1-24	153-162	piekļuves	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	piekļuve	_	_	_	_	nmod	basic	1-28	
-1-25	163-165	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-27	
-1-26	166-178	apkalpošanas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	apkalpošana	_	_	_	_	nmod	basic	1-27	
-1-27	179-194	infrastruktūras	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	infrastruktūra	_	_	_	_	conj	basic	1-24	
-1-28	195-209	modernizācijas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	modernizācija	_	_	_	_	nmod	basic	1-62	
-1-29	210-212	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-32	
-1-30	213-219	augsto	Masc	Plur	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpgyp	augsts	_	_	_	_	amod	basic	1-31	
-1-31	220-226	peronu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	perons	_	_	_	_	nmod	basic	1-32	
-1-32	227-238	būvniecības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	būvniecība	_	_	_	_	conj	basic	1-28	
-1-33	239-241	13	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	13	_	_	_	_	nummod	basic	1-34	
-1-34	242-250	stacijās	Fem	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	stacija	_	_	_	_	acl	basic	1-32	
-1-35	251-252	(	_	_	_	_	_	_	_	_	_	_	_	_	zb	(	_	_	_	_	punct	basic	1-36	
-1-36	252-259	Bulduri	Masc	Ptan	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Ptan	*	*	npmdn1	Bulduri	location	https://en.wikipedia.org/wiki/Bulduri\_Station	_	_	parataxis	basic	1-34	
-1-37	259-260	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-38	
-1-38	261-269	Dzintari	Masc	Ptan	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Ptan	*	*	npmdn1	Dzintari	location	https://en.wikipedia.org/wiki/Dzintari\_Station	_	_	conj	basic	1-36	
-1-39	269-270	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-40	
-1-40	271-277	Majori	Masc	Ptan	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Ptan	*	*	npmdn1	Majori	location	https://en.wikipedia.org/wiki/Majori\_Station	_	_	conj	basic	1-36	
-1-41	277-278	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-42	
-1-42	279-285	Babīte	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	Babīte	location	https://en.wikipedia.org/wiki/Babīte\_Station	_	_	conj	basic	1-36	
-1-43	285-286	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-44	
-1-44	287-294	Lielupe	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	Lielupe	location	https://en.wikipedia.org/wiki/Lielupe\_Station	_	_	conj	basic	1-36	
-1-45	294-295	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-46	
-1-46	296-301	Sloka	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Sloka	location	https://en.wikipedia.org/wiki/Sloka\_Station	_	_	conj	basic	1-36	
-1-47	301-302	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-48	
-1-48	303-309	Imanta	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Imanta	location	https://en.wikipedia.org/wiki/Imanta\_Station	_	_	conj	basic	1-36	
-1-49	309-310	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-50	
-1-50	311-319	Zolitūde	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	Zolitūde	location	https://en.wikipedia.org/wiki/Zolitūde\_Station	_	_	conj	basic	1-36	
-1-51	319-320	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-52	
-1-52	321-333	Cukurfabrika	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	cukurfabrika	location	https://en.wikipedia.org/wiki/Cukurfabrika\_Station	_	_	conj	basic	1-36	
-1-53	333-334	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-54	
-1-54	335-342	Jelgava	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Jelgava	location	https://en.wikipedia.org/wiki/Jelgava\_Station	_	_	conj	basic	1-36	
-1-55	342-343	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-56	
-1-56	344-351	Ikšķile	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	Ikšķile	location	https://en.wikipedia.org/wiki/Ikšķile\_Station	_	_	conj	basic	1-36	
-1-57	351-352	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-58	
-1-58	353-362	Salaspils	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn6	Salaspils	location	https://en.wikipedia.org/wiki/Salaspils\_Station	_	_	conj	basic	1-36	
-1-59	362-363	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-60	
-1-60	364-368	Ogre	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	Ogre	location	https://en.wikipedia.org/wiki/Ogre\_Station	_	_	conj	basic	1-36	
-1-61	368-369	)	_	_	_	_	_	_	_	_	_	_	_	_	zb	)	_	_	_	_	punct	basic	1-36	
-1-62	370-378	projekts	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	projekts	_	_	_	_	conj	basic	1-21	
-1-63	378-379	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-68	
-1-64	380-382	kā	_	_	_	_	_	_	_	_	_	_	_	_	cc	kā	_	_	_	_	cc	basic	1-68	
-1-65	383-386	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse	basic	1-64	
-1-66	387-396	dzelzceļa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	dzelzceļš	_	_	_	_	nmod	basic	1-67	
-1-67	397-403	sliežu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg5	sliede	_	_	_	_	nmod	basic	1-68	
-1-68	404-418	rekonstrukcija	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	rekonstrukcija	_	_	_	_	conj	basic	1-21	
-1-69	419-435	Rietumu-Austrumu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	npmpgg	Rietumu-Austrumu	_	_	_	_	nmod	basic	1-70	
-1-70	436-444	koridorā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	koridors	_	_	_	_	acl	basic	1-68	
-1-71	444-445	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-72	
-1-72	446-459	rekonstruējot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000	rekonstruēt	_	_	_	_	advcl	basic	1-68	
-1-73	460-467	apmēram	_	_	_	_	_	_	_	_	_	_	_	_	r0q	apmēram	_	_	_	_	advmod	basic	1-74	
-1-74	468-471	180	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	180	_	_	_	_	nummod	basic	1-75	
-1-75	472-481	kilometru	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	kilometrs	_	_	_	_	nmod	basic	1-77	
-1-76	482-488	sliežu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg5	sliede	_	_	_	_	nmod	basic	1-77	
-1-77	489-493	ceļa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	ceļš	_	_	_	_	iobj	basic	1-72	
-1-78	493-494	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-21	
+1-1	0-8	Galvenie	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpnyp	*	galvenais	_	_	*->1-1	*[1]	amod	basic	1-2	
+1-2	9-17	projekti	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	projekts	_	_	*->1-1	*[1]	nsubj	basic	1-21	
+1-3	17-18	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-5	
+1-4	19-22	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->1-2	*[1]	nsubj	basic	1-5	
+1-5	23-32	jārealizē	*	*	*	*	*	*	Nec	*	*	*	*	*	*	*	*	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vmnd0t200an	*	realizēt	_	_	_	_	acl	basic	1-2	
+1-6	33-36	LDz	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	LDz	organization	*	_	_	obl	basic	1-5	
+1-7	37-39	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-9	
+1-8	40-46	kuriem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|PronType=Rel	*	*	pr0mpdn	*	kurš	_	_	*->1-3	*[1]	iobj	basic	1-9	
+1-9	47-57	pievērsīšu	*	*	*	*	*	*	Ind	*	*	Sing	1	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmnift11san	*	pievērst	_	_	_	_	conj	basic	1-5	
+1-10	58-66	uzmanību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	uzmanība	_	_	_	_	obj	basic	1-9	
+1-11	66-67	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-16	
+1-12	68-71	lai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	lai	_	_	_	_	mark	basic	1-16	
+1-13	72-75	tie	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpnn	*	tas	_	_	*->1-4	*[1]	nsubj:pass	basic	1-16	
+1-14	76-85	veiksmīgi	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0c	*	veiksmīgi	_	_	_	_	advmod	basic	1-16	
+1-15	86-91	tiktu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vtnc0i100an	*	tikt	_	_	_	_	aux	basic	1-16	
+1-16	92-101	realizēti	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	*	vmnpdmpnpsnp	*	realizēt	_	_	_	_	advcl	basic	1-9	
+1-17	101-102	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-16	
+1-18	103-105	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	1-21	
+1-19	106-115	dzelzceļa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	dzelzceļš	_	_	_	_	nmod	basic	1-20	
+1-20	116-132	elektrifikācijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	elektrifikācija	_	_	_	_	nmod	basic	1-21	
+1-21	133-141	projekts	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	projekts	_	_	_	_	root	basic	1-21	
+1-22	141-142	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-62	
+1-23	143-152	pasažieru	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	pasažieris	_	_	_	_	nmod	basic	1-24	
+1-24	153-162	piekļuves	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	piekļuve	_	_	_	_	nmod	basic	1-28	
+1-25	163-165	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-27	
+1-26	166-178	apkalpošanas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	apkalpošana	_	_	_	_	nmod	basic	1-27	
+1-27	179-194	infrastruktūras	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	infrastruktūra	_	_	_	_	conj	basic	1-24	
+1-28	195-209	modernizācijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	modernizācija	_	_	_	_	nmod	basic	1-62	
+1-29	210-212	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-32	
+1-30	213-219	augsto	*	*	Gen	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpgyp	*	augsts	_	_	_	_	amod	basic	1-31	
+1-31	220-226	peronu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	perons	_	_	_	_	nmod	basic	1-32	
+1-32	227-238	būvniecības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	būvniecība	_	_	_	_	conj	basic	1-28	
+1-33	239-241	13	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	13	_	_	_	_	nummod	basic	1-34	
+1-34	242-250	stacijās	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	*	stacija	_	_	_	_	acl	basic	1-32	
+1-35	251-252	(	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	(	_	_	_	_	punct	basic	1-36	
+1-36	252-259	Bulduri	*	*	Nom	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Ptan	*	*	npmdn1	*	Bulduri	location	https://en.wikipedia.org/wiki/Bulduri\_Station	_	_	parataxis	basic	1-34	
+1-37	259-260	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-38	
+1-38	261-269	Dzintari	*	*	Nom	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Ptan	*	*	npmdn1	*	Dzintari	location	https://en.wikipedia.org/wiki/Dzintari\_Station	_	_	conj	basic	1-36	
+1-39	269-270	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-40	
+1-40	271-277	Majori	*	*	Nom	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Ptan	*	*	npmdn1	*	Majori	location	https://en.wikipedia.org/wiki/Majori\_Station	_	_	conj	basic	1-36	
+1-41	277-278	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-42	
+1-42	279-285	Babīte	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	*	Babīte	location	https://en.wikipedia.org/wiki/Babīte\_Station	_	_	conj	basic	1-36	
+1-43	285-286	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-44	
+1-44	287-294	Lielupe	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	*	Lielupe	location	https://en.wikipedia.org/wiki/Lielupe\_Station	_	_	conj	basic	1-36	
+1-45	294-295	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-46	
+1-46	296-301	Sloka	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Sloka	location	https://en.wikipedia.org/wiki/Sloka\_Station	_	_	conj	basic	1-36	
+1-47	301-302	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-48	
+1-48	303-309	Imanta	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Imanta	location	https://en.wikipedia.org/wiki/Imanta\_Station	_	_	conj	basic	1-36	
+1-49	309-310	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-50	
+1-50	311-319	Zolitūde	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	*	Zolitūde	location	https://en.wikipedia.org/wiki/Zolitūde\_Station	_	_	conj	basic	1-36	
+1-51	319-320	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-52	
+1-52	321-333	Cukurfabrika	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	cukurfabrika	location	https://en.wikipedia.org/wiki/Cukurfabrika\_Station	_	_	conj	basic	1-36	
+1-53	333-334	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-54	
+1-54	335-342	Jelgava	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Jelgava	location	https://en.wikipedia.org/wiki/Jelgava\_Station	_	_	conj	basic	1-36	
+1-55	342-343	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-56	
+1-56	344-351	Ikšķile	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	*	Ikšķile	location	https://en.wikipedia.org/wiki/Ikšķile\_Station	_	_	conj	basic	1-36	
+1-57	351-352	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-58	
+1-58	353-362	Salaspils	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn6	*	Salaspils	location	https://en.wikipedia.org/wiki/Salaspils\_Station	_	_	conj	basic	1-36	
+1-59	362-363	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-60	
+1-60	364-368	Ogre	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	*	Ogre	location	https://en.wikipedia.org/wiki/Ogre\_Station	_	_	conj	basic	1-36	
+1-61	368-369	)	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	)	_	_	_	_	punct	basic	1-36	
+1-62	370-378	projekts	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	projekts	_	_	_	_	conj	basic	1-21	
+1-63	378-379	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-68	
+1-64	380-382	kā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	kā	_	_	_	_	cc	basic	1-68	
+1-65	383-386	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	1-64	
+1-66	387-396	dzelzceļa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	dzelzceļš	_	_	_	_	nmod	basic	1-67	
+1-67	397-403	sliežu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg5	*	sliede	_	_	_	_	nmod	basic	1-68	
+1-68	404-418	rekonstrukcija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	rekonstrukcija	_	_	_	_	conj	basic	1-21	
+1-69	419-435	Rietumu-Austrumu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	npmpgg	*	Rietumu-Austrumu	_	_	_	_	nmod	basic	1-70	
+1-70	436-444	koridorā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	koridors	_	_	_	_	acl	basic	1-68	
+1-71	444-445	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-72	
+1-72	446-459	rekonstruējot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000	*	rekonstruēt	_	_	_	_	advcl	basic	1-68	
+1-73	460-467	apmēram	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	apmēram	_	_	_	_	advmod	basic	1-74	
+1-74	468-471	180	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	180	_	_	_	_	nummod	basic	1-75	
+1-75	472-481	kilometru	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	kilometrs	_	_	_	_	nmod	basic	1-77	
+1-76	482-488	sliežu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg5	*	sliede	_	_	_	_	nmod	basic	1-77	
+1-77	489-493	ceļa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	ceļš	_	_	_	_	iobj	basic	1-72	
+1-78	493-494	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-21	

@@ -1,53 +1,53 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Morics mēģināja atcerēties pēdējos notikumus.
-1-1	0-6	Morics	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Morics	person	*	*[2]	*->2-1	nsubj|nsubj	basic|enhanced	1-2|1-2	
-1-2	7-15	mēģināja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vonist330an	mēģināt	_	_	_	_	root|root	basic|enhanced	1-2|1-2	
-1-3	16-26	atcerēties	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0t3000n	atcerēties	_	_	_	_	xcomp|xcomp	basic|enhanced	1-2|1-2	
-1-4	27-34	pēdējos	Masc	Plur	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpayp	pēdējs	_	_	_	_	amod|amod	basic|enhanced	1-5|1-5	
-1-5	35-44	notikumus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	notikums	_	_	_	_	obj|obj	basic|enhanced	1-2|1-2	
-1-6	44-45	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-2|1-2	
+1-1	0-6	Morics	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Morics	person	*	*->2-1	*[2]	nsubj|nsubj	basic|enhanced	1-2|1-2	
+1-2	7-15	mēģināja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vonist330an	*	mēģināt	_	_	_	_	root|root	basic|enhanced	1-2|1-2	
+1-3	16-26	atcerēties	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0t3000n	*	atcerēties	_	_	_	_	xcomp|xcomp	basic|enhanced	1-2|1-2	
+1-4	27-34	pēdējos	*	*	Acc	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpayp	*	pēdējs	_	_	_	_	amod|amod	basic|enhanced	1-5|1-5	
+1-5	35-44	notikumus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	notikums	_	_	_	_	obj|obj	basic|enhanced	1-2|1-2	
+1-6	44-45	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	1-2|1-2	
 
 #Text=Viss griezās ap to, ka modinātājs nenozvanīja.
-2-1	47-51	Viss	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msnn	viss	_	_	_	_	nsubj|nsubj	basic|enhanced	2-2|2-2	
-2-2	52-59	griezās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi130an	griezties	_	_	_	_	root|root	basic|enhanced	2-2|2-2	
-2-3	60-62	ap	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ap	_	_	_	_	case|case	basic|enhanced	2-4|2-4	
-2-4	63-65	to	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	tas	_	_	_	_	iobj|iobj	basic|enhanced	2-2|2-2	
-2-5	65-66	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-8|2-8	
-2-6	67-69	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark|mark	basic|enhanced	2-8|2-8	
-2-7	70-80	modinātājs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	modinātājs	_	_	_	_	nsubj|nsubj	basic|enhanced	2-8|2-8	
-2-8	81-92	nenozvanīja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi330ay	nenozvanīt	_	_	_	_	iobj|iobj	basic|enhanced	2-4|2-4	
-2-9	92-93	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	2-2|2-2	
+2-1	47-51	Viss	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msnn	*	viss	_	_	_	_	nsubj|nsubj	basic|enhanced	2-2|2-2	
+2-2	52-59	griezās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmyisi130an	*	griezties	_	_	_	_	root|root	basic|enhanced	2-2|2-2	
+2-3	60-62	ap	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ap	_	_	_	_	case|case	basic|enhanced	2-4|2-4	
+2-4	63-65	to	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	*	tas	_	_	_	_	iobj|iobj	basic|enhanced	2-2|2-2	
+2-5	65-66	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	2-8|2-8	
+2-6	67-69	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark|mark	basic|enhanced	2-8|2-8	
+2-7	70-80	modinātājs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	modinātājs	_	_	_	_	nsubj|nsubj	basic|enhanced	2-8|2-8	
+2-8	81-92	nenozvanīja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnisi330ay	*	nenozvanīt	_	_	_	_	iobj|iobj	basic|enhanced	2-4|2-4	
+2-9	92-93	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	2-2|2-2	
 
 #Text=Ja ārsti novērotu viņa miegu, viņi konstatētu, ka Morics miegā bieži vien iekrīt bezsamaņā, kas dažreiz ilgst pat vairākas diennaktis.
-3-1	95-97	Ja	_	_	_	_	_	_	_	_	_	_	_	_	cs	ja	_	_	_	_	mark|mark	basic|enhanced	3-3|3-3	
-3-2	98-103	ārsti	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	ārsts	_	_	*[1]	*->1-1	nsubj|nsubj	basic|enhanced	3-3|3-3	
-3-3	104-112	novērotu	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vmnc0t200an	novērot	_	_	_	_	advcl|advcl	basic|enhanced	3-8|3-8	
-3-4	113-117	viņa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msgn	viņš	_	_	*[2]	*->2-2	det|det	basic|enhanced	3-5|3-5	
-3-5	118-123	miegu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	miegs	_	_	_	_	obj|obj	basic|enhanced	3-3|3-3	
-3-6	123-124	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	3-3|3-3	
-3-7	125-129	viņi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Prs	3	*	pp3mpnn	viņš	_	_	*[1]	*->1-2	nsubj|nsubj	basic|enhanced	3-8|3-8	
-3-8	130-140	konstatētu	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vmnc0t200an	konstatēt	_	_	_	_	root|root	basic|enhanced	3-8|3-8	
-3-9	140-141	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	3-15|3-15	
-3-10	142-144	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark|mark	basic|enhanced	3-15|3-15	
-3-11	145-151	Morics	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Morics	person	*	*[2]	*->2-3	nsubj|nsubj	basic|enhanced	3-15|3-15	
-3-12	152-157	miegā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	miegs	_	_	_	_	obl|obl	basic|enhanced	3-15|3-15	
-3-13	158-163	bieži	_	_	_	_	_	_	_	_	_	_	_	_	r0q	bieži	_	_	_	_	advmod|advmod	basic|enhanced	3-15|3-15	
-3-14	164-168	vien	_	_	_	_	_	_	_	_	_	_	_	_	q	vien	_	_	_	_	discourse|discourse	basic|enhanced	3-13|3-13	
-3-15	169-175	iekrīt	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipi130an	iekrist	_	_	_	_	ccomp|ccomp	basic|enhanced	3-8|3-8	
-3-16	176-185	bezsamaņā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	bezsamaņa	_	_	*[3]	*->3-1	obl|obl	basic|enhanced	3-15|3-15	
-3-17	185-186	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	3-20|3-20	
-3-18	187-190	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	_	_	*[3]	*->3-2	nsubj|nsubj	basic|enhanced	3-20|3-20	
-3-19	191-198	dažreiz	_	_	_	_	_	_	_	_	_	_	_	_	r0t	dažreiz	_	_	_	_	advmod|advmod	basic|enhanced	3-20|3-20	
-3-20	199-204	ilgst	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipi130an	ilgt	_	_	_	_	acl|acl	basic|enhanced	3-16|3-16	
-3-21	205-208	pat	_	_	_	_	_	_	_	_	_	_	_	_	q	pat	_	_	_	_	discourse|discourse	basic|enhanced	3-23|3-23	
-3-22	209-217	vairākas	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur\|PronType=Ind	*	*	pi0fpan	vairākas	_	_	_	_	det|det	basic|enhanced	3-23|3-23	
-3-23	218-228	diennaktis	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa6	diennakts	_	_	_	_	obl|obl	basic|enhanced	3-20|3-20	
-3-24	228-229	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	3-8|3-8	
+3-1	95-97	Ja	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ja	_	_	_	_	mark|mark	basic|enhanced	3-3|3-3	
+3-2	98-103	ārsti	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	ārsts	_	_	*->1-1	*[1]	nsubj|nsubj	basic|enhanced	3-3|3-3	
+3-3	104-112	novērotu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vmnc0t200an	*	novērot	_	_	_	_	advcl|advcl	basic|enhanced	3-8|3-8	
+3-4	113-117	viņa	*	*	Gen	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msgn	*	viņš	_	_	*->2-2	*[2]	det|det	basic|enhanced	3-5|3-5	
+3-5	118-123	miegu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	miegs	_	_	_	_	obj|obj	basic|enhanced	3-3|3-3	
+3-6	123-124	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	3-3|3-3	
+3-7	125-129	viņi	*	*	Nom	*	*	Masc	*	*	*	Plur	3	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Prs	*	*	pp3mpnn	*	viņš	_	_	*->1-2	*[1]	nsubj|nsubj	basic|enhanced	3-8|3-8	
+3-8	130-140	konstatētu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vmnc0t200an	*	konstatēt	_	_	_	_	root|root	basic|enhanced	3-8|3-8	
+3-9	140-141	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	3-15|3-15	
+3-10	142-144	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark|mark	basic|enhanced	3-15|3-15	
+3-11	145-151	Morics	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Morics	person	*	*->2-3	*[2]	nsubj|nsubj	basic|enhanced	3-15|3-15	
+3-12	152-157	miegā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	miegs	_	_	_	_	obl|obl	basic|enhanced	3-15|3-15	
+3-13	158-163	bieži	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	bieži	_	_	_	_	advmod|advmod	basic|enhanced	3-15|3-15	
+3-14	164-168	vien	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	vien	_	_	_	_	discourse|discourse	basic|enhanced	3-13|3-13	
+3-15	169-175	iekrīt	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipi130an	*	iekrist	_	_	_	_	ccomp|ccomp	basic|enhanced	3-8|3-8	
+3-16	176-185	bezsamaņā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	bezsamaņa	_	_	*->3-1	*[3]	obl|obl	basic|enhanced	3-15|3-15	
+3-17	185-186	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	3-20|3-20	
+3-18	187-190	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->3-2	*[3]	nsubj|nsubj	basic|enhanced	3-20|3-20	
+3-19	191-198	dažreiz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	dažreiz	_	_	_	_	advmod|advmod	basic|enhanced	3-20|3-20	
+3-20	199-204	ilgst	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipi130an	*	ilgt	_	_	_	_	acl|acl	basic|enhanced	3-16|3-16	
+3-21	205-208	pat	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	pat	_	_	_	_	discourse|discourse	basic|enhanced	3-23|3-23	
+3-22	209-217	vairākas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur\|PronType=Ind	*	*	pi0fpan	*	vairākas	_	_	_	_	det|det	basic|enhanced	3-23|3-23	
+3-23	218-228	diennaktis	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa6	*	diennakts	_	_	_	_	obl|obl	basic|enhanced	3-20|3-20	
+3-24	228-229	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	3-8|3-8	

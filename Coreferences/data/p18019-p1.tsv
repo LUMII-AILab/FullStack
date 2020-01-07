@@ -1,0 +1,40 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Sarajeva, 8.febr., LETA--BBC.
+1-1	0-8	Sarajeva	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Sarajeva	GPE	https://en.wikipedia.org/wiki/Sarajevo	_	_	root	basic	1-1	
+1-2	8-9	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-4	
+1-3	10-12	8.	*	*	*	*	*	*	*	*	Ord	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	8.	time[1]	*[1]	_	_	amod	basic	1-4	
+1-4	12-17	febr.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	*	febr.	time[1]	*[1]	_	_	parataxis	basic	1-1	
+1-5	17-18	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-6	
+1-6	19-23	LETA	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	LETA	organization	https://en.wikipedia.org/wiki/LETA	_	_	parataxis	basic	1-1	
+1-7	23-25	--	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	--	_	_	_	_	punct	basic	1-8	
+1-8	25-28	BBC	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	BBC	organization	https://en.wikipedia.org/wiki/BBC	_	_	parataxis	basic	1-1	
+1-9	28-29	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-1	
+
+#Text=Aptuveni 2000 sieviešu Bosnijas galvaspilsētā Sarajevā svētdien piedalījās protesta akcijā pret aizliegumu tieslietu iestādēs valkāt tradicionālās musulmaņu galvassegas.
+2-1	30-38	Aptuveni	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpq	*	aptuveni	_	_	_	_	advmod	basic	2-2	
+2-2	39-43	2000	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	2000	_	_	_	_	nummod	basic	2-3	
+2-3	44-52	sieviešu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg5	*	sieviete	_	_	_	_	nsubj	basic	2-8	
+2-4	53-61	Bosnijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Bosnija	GPE	https://en.wikipedia.org/wiki/Bosnia\_(region)	*->1-1	*[1]	nmod	basic	2-5	
+2-5	62-75	galvaspilsētā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	galvaspilsēta	_	_	*->1-1	*[1]	nmod	basic	2-6	
+2-6	76-84	Sarajevā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Sarajeva	GPE	https://en.wikipedia.org/wiki/Sarajevo	*->1-2	*[1]	obl	basic	2-8	
+2-7	85-93	svētdien	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	svētdien	time	*	_	_	advmod	basic	2-8	
+2-8	94-104	piedalījās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyisi330an	*	piedalīties	_	_	_	_	root	basic	2-8	
+2-9	105-113	protesta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	protests	_	_	_	_	nmod	basic	2-10	
+2-10	114-120	akcijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	akcija	_	_	_	_	obl	basic	2-8	
+2-11	121-125	pret	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	pret	_	_	_	_	case	basic	2-12	
+2-12	126-136	aizliegumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	aizliegums	_	_	_	_	nmod	basic	2-10	
+2-13	137-146	tieslietu	*	*	Gen	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Ptan	*	*	ncfdg4	*	tieslietas	_	_	_	_	nmod	basic	2-14	
+2-14	147-155	iestādēs	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl5	*	iestāde	_	_	_	_	obl	basic	2-15	
+2-15	156-162	valkāt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t2000n	*	valkāt	_	_	_	_	acl	basic	2-12	
+2-16	163-176	tradicionālās	*	*	Acc	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpayp	*	tradicionāls	_	_	_	_	amod	basic	2-18	
+2-17	177-186	musulmaņu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	musulmanis	_	_	_	_	nmod	basic	2-18	
+2-18	187-198	galvassegas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	galvassega	_	_	_	_	obj	basic	2-15	
+2-19	198-199	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-8	

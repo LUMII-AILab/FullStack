@@ -1,79 +1,79 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Airisai ir trīs gadiņi.
-1-1	0-7	Airisai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	npfsd4	Airisa	person	*	*[4]	*->4-1	iobj|iobj	basic|enhanced	1-2|1-2	
-1-2	8-10	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipii30an	būt	_	_	_	_	root|root	basic|enhanced	1-2|1-2	
-1-3	11-15	trīs	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpn	trīs	_	_	_	_	nummod|nummod	basic|enhanced	1-4|1-4	
-1-4	16-22	gadiņi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	gadiņš	_	_	_	_	nsubj|nsubj	basic|enhanced	1-2|1-2	
-1-5	22-23	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-2|1-2	
+1-1	0-7	Airisai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	npfsd4	*	Airisa	person	*	*->4-1	*[4]	iobj|iobj	basic|enhanced	1-2|1-2	
+1-2	8-10	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipii30an	*	būt	_	_	_	_	root|root	basic|enhanced	1-2|1-2	
+1-3	11-15	trīs	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpn	*	trīs	_	_	_	_	nummod|nummod	basic|enhanced	1-4|1-4	
+1-4	16-22	gadiņi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	gadiņš	_	_	_	_	nsubj|nsubj	basic|enhanced	1-2|1-2	
+1-5	22-23	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	1-2|1-2	
 
 #Text=Pašlaik, kamēr bērnudārzā vasaras atvaļinājums, viņa dzīvo pa māju kopā ar vecmāmiņu.
-2-1	25-32	Pašlaik	_	_	_	_	_	_	_	_	_	_	_	_	r0t	pašlaik	_	_	_	_	advmod|advmod	basic|enhanced	2-9|2-9	
-2-2	32-33	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-6|2-6	
-2-3	34-39	kamēr	_	_	_	_	_	_	_	_	_	_	_	_	cs	kamēr	_	_	_	_	mark|mark	basic|enhanced	2-6|2-6	
-2-4	40-50	bērnudārzā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	bērnudārzs	_	_	_	_	obl|obl	basic|enhanced	2-6|2-6	
-2-5	51-58	vasaras	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	vasara	_	_	_	_	nmod|nmod	basic|enhanced	2-6|2-6	
-2-6	59-71	atvaļinājums	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	atvaļinājums	_	_	_	_	advcl|advcl	basic|enhanced	2-9|2-9	
-2-7	71-72	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-6|2-6	
-2-8	73-77	viņa	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsnn	viņa	_	_	*[4]	*->4-2	nsubj|nsubj	basic|enhanced	2-9|2-9	
-2-9	78-83	dzīvo	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt230an	dzīvot	_	_	_	_	root|root	basic|enhanced	2-9|2-9	
-2-10	84-86	pa	_	_	_	_	_	_	_	_	_	_	_	_	spsa	pa	_	_	_	_	case|case	basic|enhanced	2-11|2-11	
-2-11	87-91	māju	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	māja	_	_	_	_	obl|obl	basic|enhanced	2-9|2-9	
-2-12	92-96	kopā	_	_	_	_	_	_	_	_	_	_	_	_	r0m	kopā	_	_	_	_	advmod|advmod	basic|enhanced	2-9|2-9	
-2-13	97-99	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	_	_	case|case	basic|enhanced	2-14|2-14	
-2-14	100-109	vecmāmiņu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	vecmāmiņa	_	_	_	_	iobj|iobj	basic|enhanced	2-12|2-12	
-2-15	109-110	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	2-9|2-9	
+2-1	25-32	Pašlaik	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	pašlaik	_	_	_	_	advmod|advmod	basic|enhanced	2-9|2-9	
+2-2	32-33	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	2-6|2-6	
+2-3	34-39	kamēr	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	kamēr	_	_	_	_	mark|mark	basic|enhanced	2-6|2-6	
+2-4	40-50	bērnudārzā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	bērnudārzs	_	_	_	_	obl|obl	basic|enhanced	2-6|2-6	
+2-5	51-58	vasaras	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	vasara	_	_	_	_	nmod|nmod	basic|enhanced	2-6|2-6	
+2-6	59-71	atvaļinājums	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	atvaļinājums	_	_	_	_	advcl|advcl	basic|enhanced	2-9|2-9	
+2-7	71-72	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	2-6|2-6	
+2-8	73-77	viņa	*	*	Nom	*	*	Fem	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3fsnn	*	viņa	_	_	*->4-2	*[4]	nsubj|nsubj	basic|enhanced	2-9|2-9	
+2-9	78-83	dzīvo	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt230an	*	dzīvot	_	_	_	_	root|root	basic|enhanced	2-9|2-9	
+2-10	84-86	pa	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	pa	_	_	_	_	case|case	basic|enhanced	2-11|2-11	
+2-11	87-91	māju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	māja	_	_	_	_	obl|obl	basic|enhanced	2-9|2-9	
+2-12	92-96	kopā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	kopā	_	_	_	_	advmod|advmod	basic|enhanced	2-9|2-9	
+2-13	97-99	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case|case	basic|enhanced	2-14|2-14	
+2-14	100-109	vecmāmiņu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	vecmāmiņa	_	_	_	_	iobj|iobj	basic|enhanced	2-12|2-12	
+2-15	109-110	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	2-9|2-9	
 
 #Text=Viņai bērnudārzā ļoti patīk, jo tur ir draudzenes Šeila, Karīna, draugs Arnis, tur viņa kopā ar bērniem spēlējas, dzied un zīmē.
-3-1	112-117	Viņai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsdn	viņa	_	_	*[4]	*->4-3	obl|obl	basic|enhanced	3-4|3-4	
-3-2	118-128	bērnudārzā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	bērnudārzs	_	_	*[3]	*->3-1	obl|obl	basic|enhanced	3-4|3-4	
-3-3	129-133	ļoti	_	_	_	_	_	_	_	_	_	_	_	_	r0q	ļoti	_	_	_	_	advmod|advmod	basic|enhanced	3-4|3-4	
-3-4	134-139	patīk	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipi130an	patikt	_	_	_	_	root|root	basic|enhanced	3-4|3-4	
-3-5	139-140	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	3-8|3-8	
-3-6	141-143	jo	_	_	_	_	_	_	_	_	_	_	_	_	cs	jo	_	_	_	_	cc|cc	basic|enhanced	3-8|3-8	
-3-7	144-147	tur	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0p	tur	_	_	*[3]	*->3-2	advmod|advmod	basic|enhanced	3-8|3-8	
-3-8	148-150	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipii30an	būt	_	_	_	_	advcl|advcl	basic|enhanced	3-4|3-4	
-3-9	151-161	draudzenes	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn5	draudzene	_	_	*[1]	*->1-1	nmod|nmod	basic|enhanced	3-10|3-10	
-3-10	162-167	Šeila	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Šeila	person	*	*[1]	*->1-2	nsubj|nsubj	basic|enhanced	3-8|3-8	
-3-11	167-168	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	*[1]	*->1-2	punct|punct	basic|enhanced	3-12|3-12	
-3-12	169-175	Karīna	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Karīna	person	*	*[1]	*->1-2	conj|conj	basic|enhanced	3-10|3-10	
-3-13	175-176	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	3-15|3-15	
-3-14	177-183	draugs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	draugs	_	_	*[2]	*->2-1	nmod|nmod	basic|enhanced	3-15|3-15	
-3-15	184-189	Arnis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	Arnis	person	*	*[2]	*->2-2	conj|conj	basic|enhanced	3-10|3-10	
-3-16	189-190	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	3-22|3-22	
-3-17	191-194	tur	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0p	tur	_	_	*[3]	*->3-3	advmod|advmod	basic|enhanced	3-22|3-22	
-3-18	195-199	viņa	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsnn	viņa	_	_	*[4]	*->4-4	nsubj|nsubj	basic|enhanced	3-22|3-22	
-3-19	200-204	kopā	_	_	_	_	_	_	_	_	_	_	_	_	r0m	kopā	_	_	_	_	advmod|advmod	basic|enhanced	3-22|3-22	
-3-20	205-207	ar	_	_	_	_	_	_	_	_	_	_	_	_	sppd	ar	_	_	_	_	case|case	basic|enhanced	3-21|3-21	
-3-21	208-215	bērniem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	bērns	_	_	_	_	iobj|iobj	basic|enhanced	3-19|3-19	
-3-22	216-224	spēlējas	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipi230an	spēlēties	_	_	_	_	conj|conj	basic|enhanced	3-8|3-8	
-3-23	224-225	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	3-24|3-24	
-3-24	226-231	dzied	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	dziedāt	_	_	_	_	conj|conj	basic|enhanced	3-22|3-22	
-3-25	232-234	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	3-26|3-26	
-3-26	235-239	zīmē	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	zīme	_	_	_	_	conj|conj	basic|enhanced	3-22|3-22	
-3-27	239-240	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	3-4|3-4	
+3-1	112-117	Viņai	*	*	Dat	*	*	Fem	*	*	*	Sing	3	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3fsdn	*	viņa	_	_	*->4-3	*[4]	obl|obl	basic|enhanced	3-4|3-4	
+3-2	118-128	bērnudārzā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	bērnudārzs	_	_	*->3-1	*[3]	obl|obl	basic|enhanced	3-4|3-4	
+3-3	129-133	ļoti	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	ļoti	_	_	_	_	advmod|advmod	basic|enhanced	3-4|3-4	
+3-4	134-139	patīk	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipi130an	*	patikt	_	_	_	_	root|root	basic|enhanced	3-4|3-4	
+3-5	139-140	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	3-8|3-8	
+3-6	141-143	jo	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	jo	_	_	_	_	cc|cc	basic|enhanced	3-8|3-8	
+3-7	144-147	tur	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0p	*	tur	_	_	*->3-2	*[3]	advmod|advmod	basic|enhanced	3-8|3-8	
+3-8	148-150	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipii30an	*	būt	_	_	_	_	advcl|advcl	basic|enhanced	3-4|3-4	
+3-9	151-161	draudzenes	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn5	*	draudzene	_	_	*->1-1	*[1]	nmod|nmod	basic|enhanced	3-10|3-10	
+3-10	162-167	Šeila	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Šeila	person	*	*->1-2	*[1]	nsubj|nsubj	basic|enhanced	3-8|3-8	
+3-11	167-168	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	*->1-2	*[1]	punct|punct	basic|enhanced	3-12|3-12	
+3-12	169-175	Karīna	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Karīna	person	*	*->1-2	*[1]	conj|conj	basic|enhanced	3-10|3-10	
+3-13	175-176	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	3-15|3-15	
+3-14	177-183	draugs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	draugs	_	_	*->2-1	*[2]	nmod|nmod	basic|enhanced	3-15|3-15	
+3-15	184-189	Arnis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	*	Arnis	person	*	*->2-2	*[2]	conj|conj	basic|enhanced	3-10|3-10	
+3-16	189-190	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	3-22|3-22	
+3-17	191-194	tur	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0p	*	tur	_	_	*->3-3	*[3]	advmod|advmod	basic|enhanced	3-22|3-22	
+3-18	195-199	viņa	*	*	Nom	*	*	Fem	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3fsnn	*	viņa	_	_	*->4-4	*[4]	nsubj|nsubj	basic|enhanced	3-22|3-22	
+3-19	200-204	kopā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	kopā	_	_	_	_	advmod|advmod	basic|enhanced	3-22|3-22	
+3-20	205-207	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	_	_	case|case	basic|enhanced	3-21|3-21	
+3-21	208-215	bērniem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	bērns	_	_	_	_	iobj|iobj	basic|enhanced	3-19|3-19	
+3-22	216-224	spēlējas	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmyipi230an	*	spēlēties	_	_	_	_	conj|conj	basic|enhanced	3-8|3-8	
+3-23	224-225	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	3-24|3-24	
+3-24	226-231	dzied	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	dziedāt	_	_	_	_	conj|conj	basic|enhanced	3-22|3-22	
+3-25	232-234	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc|cc	basic|enhanced	3-26|3-26	
+3-26	235-239	zīmē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	*	zīme	_	_	_	_	conj|conj	basic|enhanced	3-22|3-22	
+3-27	239-240	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	3-4|3-4	
 
 #Text=Un tad vēl bijis interesanti, kad kopā vienā grupiņā viņa bija ar lielākiem bērniem.
-4-1	242-244	Un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	4-5|4-5	
-4-2	245-248	tad	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	tad	_	_	_	_	advmod|advmod	basic|enhanced	4-5|4-5	
-4-3	249-252	vēl	_	_	_	_	_	_	_	_	_	_	_	_	q	vēl	_	_	_	_	discourse|discourse	basic|enhanced	4-5|4-5	
-4-4	253-258	bijis	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vcnpdmsnasnp	būt	_	_	_	_	aux|aux	basic|enhanced	4-5|4-5	
-4-5	259-270	interesanti	*	*	*	Pos	*	*	*	*	*	Degree=Pos	*	*	rpm	interesanti	_	_	_	_	root|root	basic|enhanced	4-5|4-5	
-4-6	270-271	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	4-12|4-12	
-4-7	272-275	kad	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0t	kad	_	_	_	_	advmod|advmod	basic|enhanced	4-12|4-12	
-4-8	276-280	kopā	_	_	_	_	_	_	_	_	_	_	_	_	r0m	kopā	_	_	_	_	advmod|advmod	basic|enhanced	4-12|4-12	
-4-9	281-286	vienā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|NumType=Card	*	*	mcsfsl	viena	_	_	_	_	nummod|nummod	basic|enhanced	4-10|4-10	
-4-10	287-294	grupiņā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	grupiņa	_	_	_	_	obl|obl	basic|enhanced	4-12|4-12	
-4-11	295-299	viņa	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsnn	viņa	_	_	*[4]	*->4-5	nsubj|nsubj	basic|enhanced	4-12|4-12	
-4-12	300-304	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisii30an	būt	_	_	_	_	advcl|advcl	basic|enhanced	4-5|4-5	
-4-13	305-307	ar	_	_	_	_	_	_	_	_	_	_	_	_	sppd	ar	_	_	_	_	case|case	basic|enhanced	4-15|4-15	
-4-14	308-317	lielākiem	Masc	Plur	Dat	Cmp	*	*	*	*	*	Case=Dat\|Degree=Cmp\|Gender=Masc\|Number=Plur	*	*	afmpdnc	liels	_	_	_	_	amod|amod	basic|enhanced	4-15|4-15	
-4-15	318-325	bērniem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	bērns	_	_	_	_	iobj|iobj	basic|enhanced	4-12|4-12	
-4-16	325-326	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	4-5|4-5	
+4-1	242-244	Un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc|cc	basic|enhanced	4-5|4-5	
+4-2	245-248	tad	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	*	tad	_	_	_	_	advmod|advmod	basic|enhanced	4-5|4-5	
+4-3	249-252	vēl	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	vēl	_	_	_	_	discourse|discourse	basic|enhanced	4-5|4-5	
+4-4	253-258	bijis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vcnpdmsnasnp	*	būt	_	_	_	_	aux|aux	basic|enhanced	4-5|4-5	
+4-5	259-270	interesanti	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	interesanti	_	_	_	_	root|root	basic|enhanced	4-5|4-5	
+4-6	270-271	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	4-12|4-12	
+4-7	272-275	kad	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0t	*	kad	_	_	_	_	advmod|advmod	basic|enhanced	4-12|4-12	
+4-8	276-280	kopā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	kopā	_	_	_	_	advmod|advmod	basic|enhanced	4-12|4-12	
+4-9	281-286	vienā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|NumType=Card	*	*	mcsfsl	*	viena	_	_	_	_	nummod|nummod	basic|enhanced	4-10|4-10	
+4-10	287-294	grupiņā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	grupiņa	_	_	_	_	obl|obl	basic|enhanced	4-12|4-12	
+4-11	295-299	viņa	*	*	Nom	*	*	Fem	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3fsnn	*	viņa	_	_	*->4-5	*[4]	nsubj|nsubj	basic|enhanced	4-12|4-12	
+4-12	300-304	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnisii30an	*	būt	_	_	_	_	advcl|advcl	basic|enhanced	4-5|4-5	
+4-13	305-307	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	_	_	case|case	basic|enhanced	4-15|4-15	
+4-14	308-317	lielākiem	*	*	Dat	*	Cmp	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Degree=Cmp\|Gender=Masc\|Number=Plur	*	*	afmpdnc	*	liels	_	_	_	_	amod|amod	basic|enhanced	4-15|4-15	
+4-15	318-325	bērniem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	bērns	_	_	_	_	iobj|iobj	basic|enhanced	4-12|4-12	
+4-16	325-326	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	4-5|4-5	

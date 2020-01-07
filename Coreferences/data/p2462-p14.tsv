@@ -1,30 +1,30 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=VDI kampaņu rīko jau trešo gadu.
-1-1	0-3	VDI	yp	VDI	organization	*	_	_	nsubj	basic	1-3	
-1-2	4-11	kampaņu	ncfsa4	kampaņa	_	_	*[1]	*->1-1	obj	basic	1-3	
-1-3	12-16	rīko	vmnipt230an	rīkot	_	_	_	_	root	basic	1-3	
-1-4	17-20	jau	r0t	jau	_	_	_	_	advmod	basic	1-5	
-1-5	21-26	trešo	mosmsa	trešais	_	_	_	_	amod	basic	1-6	
-1-6	27-31	gadu	ncmsa1	gads	_	_	_	_	obl	basic	1-3	
-1-7	31-32	.	zs	.	_	_	_	_	punct	basic	1-3	
+1-1	0-3	VDI	yp	*	VDI	organization	*	_	_	nsubj	basic	1-3	
+1-2	4-11	kampaņu	ncfsa4	*	kampaņa	_	_	*->1-1	*[1]	obj	basic	1-3	
+1-3	12-16	rīko	vmnipt230an	*	rīkot	_	_	_	_	root	basic	1-3	
+1-4	17-20	jau	r0t	*	jau	_	_	_	_	advmod	basic	1-5	
+1-5	21-26	trešo	mosmsa	*	trešais	_	_	_	_	amod	basic	1-6	
+1-6	27-31	gadu	ncmsa1	*	gads	_	_	_	_	obl	basic	1-3	
+1-7	31-32	.	zs	*	.	_	_	_	_	punct	basic	1-3	
 
 #Text=Tā tiek organizēta ar Eiropas Sociālā fonda (ESF) atbalstu.
-2-1	34-36	Tā	pd0fsnn	tā	_	_	*[1]	*->1-2	nsubj:pass	basic	2-3	
-2-2	37-41	tiek	vtnipi130an	tikt	_	_	_	_	aux	basic	2-3	
-2-3	42-52	organizēta	vmnpdfsnpsnp	organizēt	_	_	_	_	root	basic	2-3	
-2-4	53-55	ar	spsa	ar	_	_	_	_	case	basic	2-11	
-2-5	56-63	Eiropas	npfsg4	Eiropa	organization[1]	https://en.wikipedia.org/wiki/European\_Social\_Fund[1]	_	_	nmod	basic	2-7	
-2-6	64-71	Sociālā	armsgyp	sociāls	organization[1]	https://en.wikipedia.org/wiki/European\_Social\_Fund[1]	_	_	amod	basic	2-7	
-2-7	72-77	fonda	ncmsg1	fonds	organization[1]	https://en.wikipedia.org/wiki/European\_Social\_Fund[1]	_	_	nmod	basic	2-11	
-2-8	78-79	(	zb	(	_	_	_	_	punct	basic	2-9	
-2-9	79-82	ESF	yp	ESF	organization	https://en.wikipedia.org/wiki/European\_Social\_Fund	_	_	parataxis	basic	2-7	
-2-10	82-83	)	zb	)	_	_	_	_	punct	basic	2-9	
-2-11	84-92	atbalstu	ncmsa1	atbalsts	_	_	_	_	obl	basic	2-3	
-2-12	92-93	.	zs	.	_	_	_	_	punct	basic	2-3	
+2-1	34-36	Tā	pd0fsnn	*	tā	_	_	*->1-2	*[1]	nsubj:pass	basic	2-3	
+2-2	37-41	tiek	vtnipi130an	*	tikt	_	_	_	_	aux	basic	2-3	
+2-3	42-52	organizēta	vmnpdfsnpsnp	*	organizēt	_	_	_	_	root	basic	2-3	
+2-4	53-55	ar	spsa	*	ar	_	_	_	_	case	basic	2-11	
+2-5	56-63	Eiropas	npfsg4	*	Eiropa	organization[1]	https://en.wikipedia.org/wiki/European\_Social\_Fund[1]	_	_	nmod	basic	2-7	
+2-6	64-71	Sociālā	armsgyp	*	sociāls	organization[1]	https://en.wikipedia.org/wiki/European\_Social\_Fund[1]	_	_	amod	basic	2-7	
+2-7	72-77	fonda	ncmsg1	*	fonds	organization[1]	https://en.wikipedia.org/wiki/European\_Social\_Fund[1]	_	_	nmod	basic	2-11	
+2-8	78-79	(	zb	*	(	_	_	_	_	punct	basic	2-9	
+2-9	79-82	ESF	yp	*	ESF	organization	https://en.wikipedia.org/wiki/European\_Social\_Fund	_	_	parataxis	basic	2-7	
+2-10	82-83	)	zb	*	)	_	_	_	_	punct	basic	2-9	
+2-11	84-92	atbalstu	ncmsa1	*	atbalsts	_	_	_	_	obl	basic	2-3	
+2-12	92-93	.	zs	*	.	_	_	_	_	punct	basic	2-3	

@@ -1,0 +1,87 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Pasaules čempionātu vēsturē zelta medaļām bagātākā ir Krievijas izlase (iepriekš - PSRS), kas medaļas kaklā kārusi 44 reizes - 27 zelta, desmit sudraba un septiņas bronzas.
+1-1	0-8	Pasaules	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	pasaule	_	_	_	_	nmod	basic	1-2	
+1-2	9-19	čempionātu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	čempionāts	_	_	_	_	nmod	basic	1-3	
+1-3	20-27	vēsturē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	*	vēsture	_	_	_	_	obl	basic	1-6	
+1-4	28-33	zelta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	zelts	_	_	_	_	nmod	basic	1-5	
+1-5	34-41	medaļām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	*	medaļa	_	_	_	_	iobj	basic	1-6	
+1-6	42-50	bagātākā	*	*	Nom	*	Cmp	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Fem\|Number=Sing	*	*	affsnyc	*	bagāts	_	_	_	_	root	basic	1-6	
+1-7	51-53	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	1-6	
+1-8	54-63	Krievijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Krievija	organization[1]|GPE[2]	*[1]|https://en.wikipedia.org/wiki/Russia[2]	*->1-1	*[1]	nmod	basic	1-9	
+1-9	64-70	izlase	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	izlase	organization[1]	*[1]	*->1-1	*[1]	nsubj	basic	1-6	
+1-10	71-72	(	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	(	_	_	_	_	punct	basic	1-13	
+1-11	72-80	iepriekš	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	iepriekš	_	_	_	_	orphan	basic	1-13	
+1-12	81-82	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	-	_	_	_	_	punct	basic	1-13	
+1-13	83-87	PSRS	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	PSRS	GPE	https://en.wikipedia.org/wiki/Soviet\_Union	*->1-2	*[1]	parataxis	basic	1-9	
+1-14	87-88	)	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	)	_	_	_	_	punct	basic	1-13	
+1-15	88-89	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-19	
+1-16	90-93	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	Rel	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->1-3	*[1]	nsubj	basic	1-19	
+1-17	94-101	medaļas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	medaļa	_	_	_	_	obj	basic	1-19	
+1-18	102-107	kaklā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	kakls	_	_	_	_	obl	basic	1-19	
+1-19	108-114	kārusi	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdfsnasnpn	*	kārt	_	_	_	_	acl	basic	1-9	
+1-20	115-117	44	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	44	_	_	_	_	nummod	basic	1-21	
+1-21	118-124	reizes	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa5	*	reize	_	_	_	_	obl	basic	1-19	
+1-22	125-126	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	-	_	_	_	_	punct	basic	1-23	
+1-23	127-129	27	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	27	_	_	_	_	acl	basic	1-21	
+1-24	130-135	zelta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	zelts	_	_	_	_	orphan	basic	1-23	
+1-25	135-136	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-26	
+1-26	137-143	desmit	*	*	*	*	*	*	*	*	Card	Plur	*	*	*	*	*	*	Number=Plur\|NumType=Card	*	*	mcs0p0	*	desmit	_	_	_	_	conj	basic	1-23	
+1-27	144-151	sudraba	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	sudrabs	_	_	_	_	orphan	basic	1-26	
+1-28	152-154	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-29	
+1-29	155-163	septiņas	*	*	Acc	*	*	Fem	*	*	Card	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur\|NumType=Card	*	*	mcsfpa	*	septiņas	_	_	_	_	conj	basic	1-23	
+1-30	164-171	bronzas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	bronza	_	_	_	_	orphan	basic	1-29	
+1-31	171-172	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-6	
+
+#Text=Hokeja dzimtenes Kanādas pārstāvji iekrājuši 47 medaļas (25 zelta, 13 sudraba un deviņas bronzas), bet trešajā vietā ar 46 godalgām atrodas Čehija (agrāk - Čehoslovākija), kas izcīnījusi 12 zelta, 13 bronzas un 21 bronzas medaļu.
+2-1	173-179	Hokeja	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	hokejs	_	_	_	_	nmod	basic	2-2	
+2-2	180-189	dzimtenes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	dzimtene	_	_	_	_	nmod	basic	2-3	
+2-3	190-197	Kanādas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Kanāda	GPE	https://en.wikipedia.org/wiki/Canada	_	_	nmod	basic	2-4	
+2-4	198-207	pārstāvji	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn2	*	pārstāvis	_	_	_	_	nsubj	basic	2-5	
+2-5	208-217	iekrājuši	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdmpnasnpn	*	iekrāt	_	_	_	_	root	basic	2-5	
+2-6	218-220	47	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	47	_	_	_	_	nummod	basic	2-7	
+2-7	221-228	medaļas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	medaļa	_	_	_	_	obj	basic	2-5	
+2-8	229-230	(	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	(	_	_	_	_	punct	basic	2-10	
+2-9	230-232	25	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	25	_	_	_	_	nummod	basic	2-10	
+2-10	233-238	zelta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	zelts	_	_	_	_	discourse	basic	2-7	
+2-11	238-239	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-13	
+2-12	240-242	13	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	13	_	_	_	_	nummod	basic	2-13	
+2-13	243-250	sudraba	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	sudrabs	_	_	_	_	conj	basic	2-10	
+2-14	251-253	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-16	
+2-15	254-261	deviņas	*	*	Acc	*	*	Fem	*	*	Card	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur\|NumType=Card	*	*	mcsfpa	*	deviņas	_	_	_	_	nummod	basic	2-16	
+2-16	262-269	bronzas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	bronza	_	_	_	_	conj	basic	2-10	
+2-17	269-270	)	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	)	_	_	_	_	punct	basic	2-10	
+2-18	270-271	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-25	
+2-19	272-275	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	_	_	cc	basic	2-25	
+2-20	276-283	trešajā	*	*	Loc	*	Pos	Fem	*	*	Ord	Sing	*	*	*	*	*	*	Case=Loc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|NumType=Ord	*	*	mosfsl	*	trešā	_	_	_	_	amod	basic	2-21	
+2-21	284-289	vietā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	vieta	_	_	_	_	obl	basic	2-25	
+2-22	290-292	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	_	_	case	basic	2-24	
+2-23	293-295	46	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	46	_	_	_	_	nummod	basic	2-24	
+2-24	296-304	godalgām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	*	godalga	_	_	_	_	nmod	basic	2-21	
+2-25	305-312	atrodas	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyipi130an	*	atrasties	_	_	_	_	conj	basic	2-5	
+2-26	313-319	Čehija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Čehija	GPE	https://en.wikipedia.org/wiki/Czech\_Republic	*->2-1	*[2]	nsubj	basic	2-25	
+2-27	320-321	(	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	(	_	_	_	_	punct	basic	2-30	
+2-28	321-326	agrāk	*	*	*	*	Cmp	*	*	*	*	*	*	*	*	*	*	*	Degree=Cmp	*	*	rct	*	agri	_	_	_	_	orphan	basic	2-30	
+2-29	327-328	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	-	_	_	_	_	punct	basic	2-30	
+2-30	329-342	Čehoslovākija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Čehoslovākija	GPE	https://en.wikipedia.org/wiki/Czechoslovakia	*->2-2	*[2]	parataxis	basic	2-26	
+2-31	342-343	)	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	)	_	_	_	_	punct	basic	2-30	
+2-32	343-344	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-34	
+2-33	345-348	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	Rel	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->2-3	*[2]	nsubj	basic	2-34	
+2-34	349-359	izcīnījusi	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdfsnasnpn	*	izcīnīt	_	_	_	_	acl	basic	2-26	
+2-35	360-362	12	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	12	_	_	_	_	obj	basic	2-34	
+2-36	363-368	zelta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	zelts	_	_	_	_	orphan	basic	2-35	
+2-37	368-369	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-38	
+2-38	370-372	13	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	13	_	_	_	_	conj	basic	2-35	
+2-39	373-380	bronzas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	bronza	_	_	_	_	orphan	basic	2-38	
+2-40	381-383	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-43	
+2-41	384-386	21	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	21	_	_	_	_	nummod	basic	2-43	
+2-42	387-394	bronzas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	bronza	_	_	_	_	nmod	basic	2-43	
+2-43	395-401	medaļu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	medaļa	_	_	_	_	conj	basic	2-35	
+2-44	401-402	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-5	

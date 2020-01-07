@@ -1,72 +1,72 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=– Vai, manu, vai!
-1-1	0-1	–	zd	–	_	_	punct	basic	1-4	
-1-2	2-5	Vai	i	vai	_	_	discourse	basic	1-4	
-1-3	5-6	,	zc	,	_	_	punct	basic	1-2	
-1-4	7-11	manu	ps0msan	mans	_	_	root	basic	1-4	
-1-5	11-12	,	zc	,	_	_	punct	basic	1-6	
-1-6	13-16	vai	i	vai	_	_	discourse	basic	1-4	
-1-7	16-17	!	zs	!	_	_	punct	basic	1-4	
+1-1	0-1	–	zd	*	–	_	_	punct	basic	1-4	
+1-2	2-5	Vai	i	*	vai	_	_	discourse	basic	1-4	
+1-3	5-6	,	zc	*	,	_	_	punct	basic	1-2	
+1-4	7-11	manu	ps0msan	*	mans	_	_	root	basic	1-4	
+1-5	11-12	,	zc	*	,	_	_	punct	basic	1-6	
+1-6	13-16	vai	i	*	vai	_	_	discourse	basic	1-4	
+1-7	16-17	!	zs	*	!	_	_	punct	basic	1-4	
 
 #Text=Kā tu tā, bračkiņ?!
-2-1	19-21	Kā	r0m	kā	_	_	advmod	basic	2-2	
-2-2	22-24	tu	pp20snn	tu	*[1]	*->1-1	root	basic	2-2	
-2-3	25-27	tā	r0m	tā	_	_	advmod	basic	2-2	
-2-4	27-28	,	zc	,	_	_	punct	basic	2-5	
-2-5	29-36	bračkiņ	ncmsv1	bračkiņš	*[1]	*->1-2	vocative	basic	2-2	
-2-6	36-38	?!	zs	?!	_	_	punct	basic	2-2	
+2-1	19-21	Kā	r0m	*	kā	_	_	advmod	basic	2-2	
+2-2	22-24	tu	pp20snn	*	tu	*->1-1	*[1]	root	basic	2-2	
+2-3	25-27	tā	r0m	*	tā	_	_	advmod	basic	2-2	
+2-4	27-28	,	zc	*	,	_	_	punct	basic	2-5	
+2-5	29-36	bračkiņ	ncmsv1	*	bračkiņš	*->1-2	*[1]	vocative	basic	2-2	
+2-6	36-38	?!	zs	*	?!	_	_	punct	basic	2-2	
 
 #Text=Kā tu tā, tik neuzmanīgi...
-3-1	40-42	Kā	r0m	kā	_	_	advmod	basic	3-2	
-3-2	43-45	tu	pp20snn	tu	*[1]	*->1-3	root	basic	3-2	
-3-3	46-48	tā	r0m	tā	_	_	advmod	basic	3-2	
-3-4	48-49	,	zc	,	_	_	punct	basic	3-6	
-3-5	50-53	tik	r0q	tik	_	_	advmod	basic	3-6	
-3-6	54-64	neuzmanīgi	rpm	neuzmanīgi	_	_	conj	basic	3-3	
-3-7	64-67	...	zs	...	_	_	punct	basic	3-2	
+3-1	40-42	Kā	r0m	*	kā	_	_	advmod	basic	3-2	
+3-2	43-45	tu	pp20snn	*	tu	*->1-3	*[1]	root	basic	3-2	
+3-3	46-48	tā	r0m	*	tā	_	_	advmod	basic	3-2	
+3-4	48-49	,	zc	*	,	_	_	punct	basic	3-6	
+3-5	50-53	tik	r0q	*	tik	_	_	advmod	basic	3-6	
+3-6	54-64	neuzmanīgi	rpm	*	neuzmanīgi	_	_	conj	basic	3-3	
+3-7	64-67	...	zs	*	...	_	_	punct	basic	3-2	
 
 #Text=Vaimanas pārtrūka, jo uz mums sāka lidot atkritumi: kartupeļu mizas, bojāti dārzeņi, caurumotas rabarberu lapas, tad kaut kādas papīra driskas un vecas, nekur nederīgas lupatas.
-4-1	69-77	Vaimanas	ncfdn4	vaimanas	_	_	nsubj	basic	4-2	
-4-2	78-86	pārtrūka	vmnisi130an	pārtrūkt	_	_	root	basic	4-2	
-4-3	86-87	,	zc	,	_	_	punct	basic	4-7	
-4-4	88-90	jo	cs	jo	_	_	mark	basic	4-7	
-4-5	91-93	uz	sppd	uz	_	_	case	basic	4-6	
-4-6	94-98	mums	pp10pdn	mēs	_	_	obl	basic	4-8	
-4-7	99-103	sāka	vpnist130an	sākt	_	_	advcl	basic	4-2	
-4-8	104-109	lidot	vmnn0t2000n	lidot	_	_	xcomp	basic	4-7	
-4-9	110-119	atkritumi	ncmdn1	atkritumi	_	_	nsubj	basic	4-7	
-4-10	119-120	:	zo	:	_	_	punct	basic	4-12	
-4-11	121-130	kartupeļu	ncmpg2	kartupelis	_	_	nmod	basic	4-12	
-4-12	131-136	mizas	ncfpn4	miza	_	_	acl	basic	4-9	
-4-13	136-137	,	zc	,	_	_	punct	basic	4-15	
-4-14	138-144	bojāti	vmnpdmpnpsnp	bojāt	_	_	amod	basic	4-15	
-4-15	145-152	dārzeņi	ncmpn2	dārzenis	_	_	conj	basic	4-12	
-4-16	152-153	,	zc	,	_	_	punct	basic	4-19	
-4-17	154-164	caurumotas	vmnpdfpnpsnp	caurumot	_	_	amod	basic	4-19	
-4-18	165-174	rabarberu	ncmpg1	rabarbers	_	_	nmod	basic	4-19	
-4-19	175-180	lapas	ncfpn4	lapa	_	_	conj	basic	4-12	
-4-20	180-181	,	zc	,	_	_	punct	basic	4-25	
-4-21	182-185	tad	r0t	tad	_	_	cc	basic	4-25	
-4-22	186-190	kaut	q	kaut	_	_	discourse	basic	4-23	
-4-23	191-196	kādas	pi0fpnn	kāda	_	_	det	basic	4-25	
-4-24	197-203	papīra	ncmsg1	papīrs	_	_	nmod	basic	4-25	
-4-25	204-211	driskas	ncfpn4	driska	_	_	conj	basic	4-12	
-4-26	212-214	un	cc	un	_	_	cc	basic	4-31	
-4-27	215-220	vecas	affpnnp	veca	_	_	amod	basic	4-31	
-4-28	220-221	,	zc	,	_	_	punct	basic	4-30	
-4-29	222-227	nekur	r0p	nekur	_	_	advmod	basic	4-30	
-4-30	228-237	nederīgas	arfpnnp	nederīga	_	_	conj	basic	4-27	
-4-31	238-245	lupatas	ncfsg4	lupata	_	_	conj	basic	4-25	
-4-32	245-246	.	zs	.	_	_	punct	basic	4-2	
+4-1	69-77	Vaimanas	ncfdn4	*	vaimanas	_	_	nsubj	basic	4-2	
+4-2	78-86	pārtrūka	vmnisi130an	*	pārtrūkt	_	_	root	basic	4-2	
+4-3	86-87	,	zc	*	,	_	_	punct	basic	4-7	
+4-4	88-90	jo	cs	*	jo	_	_	mark	basic	4-7	
+4-5	91-93	uz	sppd	*	uz	_	_	case	basic	4-6	
+4-6	94-98	mums	pp10pdn	*	mēs	_	_	obl	basic	4-8	
+4-7	99-103	sāka	vpnist130an	*	sākt	_	_	advcl	basic	4-2	
+4-8	104-109	lidot	vmnn0t2000n	*	lidot	_	_	xcomp	basic	4-7	
+4-9	110-119	atkritumi	ncmdn1	*	atkritumi	_	_	nsubj	basic	4-7	
+4-10	119-120	:	zo	*	:	_	_	punct	basic	4-12	
+4-11	121-130	kartupeļu	ncmpg2	*	kartupelis	_	_	nmod	basic	4-12	
+4-12	131-136	mizas	ncfpn4	*	miza	_	_	acl	basic	4-9	
+4-13	136-137	,	zc	*	,	_	_	punct	basic	4-15	
+4-14	138-144	bojāti	vmnpdmpnpsnp	*	bojāt	_	_	amod	basic	4-15	
+4-15	145-152	dārzeņi	ncmpn2	*	dārzenis	_	_	conj	basic	4-12	
+4-16	152-153	,	zc	*	,	_	_	punct	basic	4-19	
+4-17	154-164	caurumotas	vmnpdfpnpsnp	*	caurumot	_	_	amod	basic	4-19	
+4-18	165-174	rabarberu	ncmpg1	*	rabarbers	_	_	nmod	basic	4-19	
+4-19	175-180	lapas	ncfpn4	*	lapa	_	_	conj	basic	4-12	
+4-20	180-181	,	zc	*	,	_	_	punct	basic	4-25	
+4-21	182-185	tad	r0t	*	tad	_	_	cc	basic	4-25	
+4-22	186-190	kaut	q	*	kaut	_	_	discourse	basic	4-23	
+4-23	191-196	kādas	pi0fpnn	*	kāda	_	_	det	basic	4-25	
+4-24	197-203	papīra	ncmsg1	*	papīrs	_	_	nmod	basic	4-25	
+4-25	204-211	driskas	ncfpn4	*	driska	_	_	conj	basic	4-12	
+4-26	212-214	un	cc	*	un	_	_	cc	basic	4-31	
+4-27	215-220	vecas	affpnnp	*	veca	_	_	amod	basic	4-31	
+4-28	220-221	,	zc	*	,	_	_	punct	basic	4-30	
+4-29	222-227	nekur	r0p	*	nekur	_	_	advmod	basic	4-30	
+4-30	228-237	nederīgas	arfpnnp	*	nederīga	_	_	conj	basic	4-27	
+4-31	238-245	lupatas	ncfsg4	*	lupata	_	_	conj	basic	4-25	
+4-32	245-246	.	zs	*	.	_	_	punct	basic	4-2	
 
 #Text=Tāpēc vajadzēja pieliekties.
-5-1	248-253	Tāpēc	r0c	tāpēc	_	_	advmod	basic	5-2	
-5-2	254-263	vajadzēja	vonist330an	vajadzēt	_	_	root	basic	5-2	
-5-3	264-275	pieliekties	vmyn0i1000n	pieliekties	_	_	xcomp	basic	5-2	
-5-4	275-276	.	zs	.	_	_	punct	basic	5-2	
+5-1	248-253	Tāpēc	r0c	*	tāpēc	_	_	advmod	basic	5-2	
+5-2	254-263	vajadzēja	vonist330an	*	vajadzēt	_	_	root	basic	5-2	
+5-3	264-275	pieliekties	vmyn0i1000n	*	pieliekties	_	_	xcomp	basic	5-2	
+5-4	275-276	.	zs	*	.	_	_	punct	basic	5-2	

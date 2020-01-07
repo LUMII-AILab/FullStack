@@ -1,64 +1,64 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Valsts pirmo amatpersonu un viņa dzīvesbiedri Lilitu Zatleri strencēnieši vakar uzņēma viesmīlīgi, veltot V. Zatleram labus vārdus.
-1-1	0-6	Valsts	ncfsg6	valsts	_	_	*[2]	*->2-1	nmod	basic	1-3	
-1-2	7-12	pirmo	mosfsa	pirmā	_	_	*[2]	*->2-1	amod	basic	1-3	
-1-3	13-24	amatpersonu	ncfsa4	amatpersona	_	_	*[2]	*->2-1	obj	basic	1-11	
-1-4	25-27	un	cc	un	_	_	_	_	cc	basic	1-7	
-1-5	28-32	viņa	pp3msgn	viņš	_	_	*[2]	*->2-2	det	basic	1-6	
-1-6	33-45	dzīvesbiedri	ncfsa5	dzīvesbiedre	_	_	*[1]	*->1-1	nmod	basic	1-7	
-1-7	46-52	Lilitu	npfsa4	Lilita	person[1]	https://lv.wikipedia.org/wiki/Lilita\_Zatlere[1]	*[1]	*->1-2	conj	basic	1-3	
-1-8	53-60	Zatleri	npfsa5	Zatlere	person[1]	https://lv.wikipedia.org/wiki/Lilita\_Zatlere[1]	*[1]	*->1-2	flat:name	basic	1-7	
-1-9	61-73	strencēnieši	ncmpn2	strencēnietis	_	_	_	_	nsubj	basic	1-11	
-1-10	74-79	vakar	r0t	vakar	_	_	_	_	advmod	basic	1-11	
-1-11	80-86	uzņēma	vmnist130an	uzņemt	_	_	_	_	root	basic	1-11	
-1-12	87-97	viesmīlīgi	rpm	viesmīlīgi	_	_	_	_	advmod	basic	1-11	
-1-13	97-98	,	zc	,	_	_	_	_	punct	basic	1-14	
-1-14	99-105	veltot	vmnpu0000000	veltīt	_	_	_	_	advcl	basic	1-11	
-1-15	106-108	V.	yp	V.	person[2]	https://en.wikipedia.org/wiki/Valdis\_Zatlers[2]	*[2]	*->2-3	iobj	basic	1-14	
-1-16	109-117	Zatleram	npmsd1	Zatlers	person[2]	https://en.wikipedia.org/wiki/Valdis\_Zatlers[2]	*[2]	*->2-3	flat:name	basic	1-15	
-1-17	118-123	labus	afmpanp	labs	_	_	_	_	amod	basic	1-18	
-1-18	124-130	vārdus	ncmpa1	vārds	_	_	_	_	obj	basic	1-14	
-1-19	130-131	.	zs	.	_	_	_	_	punct	basic	1-11	
+1-1	0-6	Valsts	ncfsg6	*	valsts	_	_	*->2-1	*[2]	nmod	basic	1-3	
+1-2	7-12	pirmo	mosfsa	*	pirmā	_	_	*->2-1	*[2]	amod	basic	1-3	
+1-3	13-24	amatpersonu	ncfsa4	*	amatpersona	_	_	*->2-1	*[2]	obj	basic	1-11	
+1-4	25-27	un	cc	*	un	_	_	_	_	cc	basic	1-7	
+1-5	28-32	viņa	pp3msgn	*	viņš	_	_	*->2-2	*[2]	det	basic	1-6	
+1-6	33-45	dzīvesbiedri	ncfsa5	*	dzīvesbiedre	_	_	*->1-1	*[1]	nmod	basic	1-7	
+1-7	46-52	Lilitu	npfsa4	*	Lilita	person[1]	https://lv.wikipedia.org/wiki/Lilita\_Zatlere[1]	*->1-2	*[1]	conj	basic	1-3	
+1-8	53-60	Zatleri	npfsa5	*	Zatlere	person[1]	https://lv.wikipedia.org/wiki/Lilita\_Zatlere[1]	*->1-2	*[1]	flat:name	basic	1-7	
+1-9	61-73	strencēnieši	ncmpn2	*	strencēnietis	_	_	_	_	nsubj	basic	1-11	
+1-10	74-79	vakar	r0t	*	vakar	_	_	_	_	advmod	basic	1-11	
+1-11	80-86	uzņēma	vmnist130an	*	uzņemt	_	_	_	_	root	basic	1-11	
+1-12	87-97	viesmīlīgi	rpm	*	viesmīlīgi	_	_	_	_	advmod	basic	1-11	
+1-13	97-98	,	zc	*	,	_	_	_	_	punct	basic	1-14	
+1-14	99-105	veltot	vmnpu0000000	*	veltīt	_	_	_	_	advcl	basic	1-11	
+1-15	106-108	V.	yp	*	V.	person[2]	https://en.wikipedia.org/wiki/Valdis\_Zatlers[2]	*->2-3	*[2]	iobj	basic	1-14	
+1-16	109-117	Zatleram	npmsd1	*	Zatlers	person[2]	https://en.wikipedia.org/wiki/Valdis\_Zatlers[2]	*->2-3	*[2]	flat:name	basic	1-15	
+1-17	118-123	labus	afmpanp	*	labs	_	_	_	_	amod	basic	1-18	
+1-18	124-130	vārdus	ncmpa1	*	vārds	_	_	_	_	obj	basic	1-14	
+1-19	130-131	.	zs	*	.	_	_	_	_	punct	basic	1-11	
 
 #Text="Prezidenta vizīte ļoti patika.
-2-1	133-134	"	zq	"	_	_	_	_	punct	basic	2-5	
-2-2	134-144	Prezidenta	ncmsg1	prezidents	_	_	*[2]	*->2-4	nmod	basic	2-3	
-2-3	145-151	vizīte	ncfsn5	vizīte	_	_	_	_	nsubj	basic	2-5	
-2-4	152-156	ļoti	r0q	ļoti	_	_	_	_	advmod	basic	2-5	
-2-5	157-163	patika	vmnisi130an	patikt	_	_	_	_	root	basic	2-5	
-2-6	163-164	.	zs	.	_	_	_	_	punct	basic	2-5	
+2-1	133-134	"	zq	*	"	_	_	_	_	punct	basic	2-5	
+2-2	134-144	Prezidenta	ncmsg1	*	prezidents	_	_	*->2-4	*[2]	nmod	basic	2-3	
+2-3	145-151	vizīte	ncfsn5	*	vizīte	_	_	_	_	nsubj	basic	2-5	
+2-4	152-156	ļoti	r0q	*	ļoti	_	_	_	_	advmod	basic	2-5	
+2-5	157-163	patika	vmnisi130an	*	patikt	_	_	_	_	root	basic	2-5	
+2-6	163-164	.	zs	*	.	_	_	_	_	punct	basic	2-5	
 
 #Text=Uz jautājumiem viņš atbildēja korekti un solīdi, tikai žēl, ka jautājumi bija dažādi, arī šādi tādi," spriež strencēniete Inese Kārkliņa.
-3-1	166-168	Uz	sppd	uz	_	_	_	_	case	basic	3-2	
-3-2	169-180	jautājumiem	ncmpd1	jautājums	_	_	_	_	iobj	basic	3-4	
-3-3	181-185	viņš	pp3msnn	viņš	_	_	*[2]	*->2-5	nsubj	basic	3-4	
-3-4	186-195	atbildēja	vmnist330an	atbildēt	_	_	_	_	parataxis	basic	3-22	
-3-5	196-203	korekti	rpm	korekti	_	_	_	_	advmod	basic	3-4	
-3-6	204-206	un	cc	un	_	_	_	_	cc	basic	3-7	
-3-7	207-213	solīdi	rpm	solīdi	_	_	_	_	conj	basic	3-5	
-3-8	213-214	,	zc	,	_	_	_	_	punct	basic	3-10	
-3-9	215-220	tikai	q	tikai	_	_	_	_	discourse	basic	3-10	
-3-10	221-224	žēl	r0m	žēl	_	_	_	_	conj	basic	3-4	
-3-11	224-225	,	zc	,	_	_	_	_	punct	basic	3-15	
-3-12	226-228	ka	cs	ka	_	_	_	_	mark	basic	3-15	
-3-13	229-238	jautājumi	ncmpn1	jautājums	_	_	_	_	nsubj	basic	3-15	
-3-14	239-243	bija	vcnisii30an	būt	_	_	_	_	cop	basic	3-15	
-3-15	244-250	dažādi	armpnnp	dažāds	_	_	_	_	csubj	basic	3-10	
-3-16	250-251	,	zc	,	_	_	_	_	punct	basic	3-18	
-3-17	252-255	arī	q	arī	_	_	_	_	discourse	basic	3-18	
-3-18	256-260	šādi	pd0mpnn	šāds	_	_	_	_	conj	basic	3-15	
-3-19	261-265	tādi	pd0mpnn	tāds	_	_	_	_	compound	basic	3-18	
-3-20	265-266	,	zc	,	_	_	_	_	punct	basic	3-4	
-3-21	266-267	"	zq	"	_	_	_	_	punct	basic	3-4	
-3-22	268-274	spriež	vmnipt130an	spriest	_	_	_	_	root	basic	3-22	
-3-23	275-287	strencēniete	ncfsn5	strencēniete	_	_	*[3]	*->3-1	nmod	basic	3-24	
-3-24	288-293	Inese	npfsn5	Inese	person[3]	*[3]	*[3]	*->3-2	nsubj	basic	3-22	
-3-25	294-302	Kārkliņa	npfsn4	Kārkliņa	person[3]	*[3]	*[3]	*->3-2	flat:name	basic	3-24	
-3-26	302-303	.	zs	.	_	_	_	_	punct	basic	3-22	
+3-1	166-168	Uz	sppd	*	uz	_	_	_	_	case	basic	3-2	
+3-2	169-180	jautājumiem	ncmpd1	*	jautājums	_	_	_	_	iobj	basic	3-4	
+3-3	181-185	viņš	pp3msnn	*	viņš	_	_	*->2-5	*[2]	nsubj	basic	3-4	
+3-4	186-195	atbildēja	vmnist330an	*	atbildēt	_	_	_	_	parataxis	basic	3-22	
+3-5	196-203	korekti	rpm	*	korekti	_	_	_	_	advmod	basic	3-4	
+3-6	204-206	un	cc	*	un	_	_	_	_	cc	basic	3-7	
+3-7	207-213	solīdi	rpm	*	solīdi	_	_	_	_	conj	basic	3-5	
+3-8	213-214	,	zc	*	,	_	_	_	_	punct	basic	3-10	
+3-9	215-220	tikai	q	*	tikai	_	_	_	_	discourse	basic	3-10	
+3-10	221-224	žēl	r0m	*	žēl	_	_	_	_	conj	basic	3-4	
+3-11	224-225	,	zc	*	,	_	_	_	_	punct	basic	3-15	
+3-12	226-228	ka	cs	*	ka	_	_	_	_	mark	basic	3-15	
+3-13	229-238	jautājumi	ncmpn1	*	jautājums	_	_	_	_	nsubj	basic	3-15	
+3-14	239-243	bija	vcnisii30an	*	būt	_	_	_	_	cop	basic	3-15	
+3-15	244-250	dažādi	armpnnp	*	dažāds	_	_	_	_	csubj	basic	3-10	
+3-16	250-251	,	zc	*	,	_	_	_	_	punct	basic	3-18	
+3-17	252-255	arī	q	*	arī	_	_	_	_	discourse	basic	3-18	
+3-18	256-260	šādi	pd0mpnn	*	šāds	_	_	_	_	conj	basic	3-15	
+3-19	261-265	tādi	pd0mpnn	*	tāds	_	_	_	_	compound	basic	3-18	
+3-20	265-266	,	zc	*	,	_	_	_	_	punct	basic	3-4	
+3-21	266-267	"	zq	*	"	_	_	_	_	punct	basic	3-4	
+3-22	268-274	spriež	vmnipt130an	*	spriest	_	_	_	_	root	basic	3-22	
+3-23	275-287	strencēniete	ncfsn5	*	strencēniete	_	_	*->3-1	*[3]	nmod	basic	3-24	
+3-24	288-293	Inese	npfsn5	*	Inese	person[3]	*[3]	*->3-2	*[3]	nsubj	basic	3-22	
+3-25	294-302	Kārkliņa	npfsn4	*	Kārkliņa	person[3]	*[3]	*->3-2	*[3]	flat:name	basic	3-24	
+3-26	302-303	.	zs	*	.	_	_	_	_	punct	basic	3-22	

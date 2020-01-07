@@ -1,0 +1,43 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Dziedātāja Britnija Spīrsa vienmēr variējusi ar savu matu garumu, bet nekad ne ar matu krāsām.
+1-1	0-10	Dziedātāja	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	dziedātāja	_	_	*->2-1	*[2]	nmod	basic	1-2	
+1-2	11-19	Britnija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Britnija	person[1]	https://en.wikipedia.org/wiki/Britney\_Spears[1]	*->2-2	*[2]	nsubj	basic	1-5	
+1-3	20-26	Spīrsa	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Spīrsa	person[1]	https://en.wikipedia.org/wiki/Britney\_Spears[1]	*->2-2	*[2]	flat:name	basic	1-2	
+1-4	27-34	vienmēr	*	*	*	*	*	*	*	*	*	*	*	*	Tot	*	*	*	PronType=Tot	*	*	r0t	*	vienmēr	_	_	_	_	advmod	basic	1-5	
+1-5	35-44	variējusi	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdfsnasnpn	*	variēt	_	_	_	_	root	basic	1-5	
+1-6	45-47	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	1-9	
+1-7	48-52	savu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	Prs	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur\|Poss=Yes\|PronType=Prs	*	*	ps0mpgn	*	savs	_	_	*->2-3	*[2]	det	basic	1-8	
+1-8	53-57	matu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	mats	_	_	_	_	nmod	basic	1-9	
+1-9	58-64	garumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	garums	_	_	_	_	iobj	basic	1-5	
+1-10	64-65	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-16	
+1-11	66-69	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	_	_	cc	basic	1-16	
+1-12	70-75	nekad	*	*	*	*	*	*	*	*	*	*	*	*	Int,Neg	*	*	*	PronType=Int,Neg	*	*	r0t	*	nekad	_	_	_	_	orphan	basic	1-16	
+1-13	76-78	ne	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Neg	*	*	q	*	ne	_	_	_	_	dep	basic	1-16	
+1-14	79-81	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	1-16	
+1-15	82-86	matu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	mats	_	_	_	_	nmod	basic	1-16	
+1-16	87-93	krāsām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	*	krāsa	_	_	_	_	conj	basic	1-5	
+1-17	93-94	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-5	
+
+#Text=Šobrīd mākslinieces galvu rotā dažādu krāsu šķipsnas, kuras zvaigznei liek justies nebēdnīgākai.
+2-1	95-101	Šobrīd	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	šobrīd	_	_	_	_	advmod	basic	2-4	
+2-2	102-114	mākslinieces	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	māksliniece	_	_	*->2-4	*[2]	nmod	basic	2-3	
+2-3	115-120	galvu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	galva	_	_	_	_	obj	basic	2-4	
+2-4	121-125	rotā	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt230an	*	rotāt	_	_	_	_	root	basic	2-4	
+2-5	126-132	dažādu	*	*	Gen	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpgnp	*	dažāds	_	_	*->1-1	*[1]	amod	basic	2-6	
+2-6	133-138	krāsu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	krāsa	_	_	*->1-1	*[1]	nmod	basic	2-7	
+2-7	139-147	šķipsnas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	šķipsna	_	_	*->1-1	*[1]	nsubj	basic	2-4	
+2-8	147-148	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-11	
+2-9	149-154	kuras	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	Rel	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|PronType=Rel	*	*	pr0fpnn	*	kura	_	_	*->1-2	*[1]	nsubj	basic	2-11	
+2-10	155-164	zvaigznei	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd5	*	zvaigzne	_	_	*->2-5	*[2]	iobj	basic	2-11	
+2-11	165-169	liek	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipi130an	*	likt	_	_	_	_	acl	basic	2-7	
+2-12	170-177	justies	*	*	*	*	*	*	*	*	*	*	*	*	*	Yes	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	Inf	*	vmyn0i1000n	*	justies	_	_	_	_	ccomp	basic	2-11	
+2-13	178-190	nebēdnīgākai	*	*	Dat	*	Cmp	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Degree=Cmp\|Gender=Fem\|Number=Sing	*	*	affsdnc	*	nebēdnīgs	_	_	_	_	acl	basic	2-12	
+2-14	190-191	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-4	

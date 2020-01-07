@@ -1,0 +1,49 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Divas stundas vēlāk glābēji steigušies palīgā kādai 63 gadus vecai sievietei, kura bija apmaldījusies Valkas pagasta Lugažos esošajā Trakajā purvā.
+1-1	0-5	Divas	*	*	Acc	*	*	Fem	*	*	Card	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur\|NumType=Card	*	*	mcsfpa	*	divas	time[1]	*[1]	_	_	nummod	basic	1-2	
+1-2	6-13	stundas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	stunda	time[1]	*[1]	_	_	obl	basic	1-3	
+1-3	14-19	vēlāk	*	*	*	*	Cmp	*	*	*	*	*	*	*	*	*	*	*	Degree=Cmp	*	*	rct	*	vēlu	time[1]	*[1]	_	_	advmod	basic	1-5	
+1-4	20-27	glābēji	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	glābējs	_	_	_	_	nsubj	basic	1-5	
+1-5	28-38	steigušies	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	Yes	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmypdmpnasnpn	*	steigties	_	_	_	_	root	basic	1-5	
+1-6	39-45	palīgā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	palīgs	_	_	_	_	obl	basic	1-5	
+1-7	46-51	kādai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	Ind	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing\|PronType=Ind	*	*	pi0fsdn	*	kāda	_	_	_	_	det	basic	1-11	
+1-8	52-54	63	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	63	_	_	_	_	nummod	basic	1-9	
+1-9	55-60	gadus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	gads	_	_	_	_	obl	basic	1-10	
+1-10	61-66	vecai	*	*	Dat	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsdnp	*	vecs	_	_	_	_	amod	basic	1-11	
+1-11	67-76	sievietei	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd5	*	sieviete	_	_	*->1-1	*[1]	iobj	basic	1-6	
+1-12	76-77	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-15	
+1-13	78-82	kura	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	Rel	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsnn	*	kura	_	_	*->1-2	*[1]	nsubj	basic	1-15	
+1-14	83-87	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnisii30an	*	būt	_	_	_	_	aux	basic	1-15	
+1-15	88-101	apmaldījusies	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	Yes	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmypdfsnasnpn	*	apmaldīties	_	_	_	_	acl	basic	1-11	
+1-16	102-108	Valkas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Valka	GPE[2]|GPE[3]	https://en.wikipedia.org/wiki/Valka\_Parish[2]|https://en.wikipedia.org/wiki/Valka[3]	_	_	nmod	basic	1-17	
+1-17	109-116	pagasta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	pagasts	GPE[2]	https://en.wikipedia.org/wiki/Valka\_Parish[2]	_	_	nmod	basic	1-18	
+1-18	117-124	Lugažos	*	*	Loc	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Ptan	*	*	npmdl2	*	Lugaži	GPE	https://en.wikipedia.org/wiki/Lugaži	_	_	obl	basic	1-19	
+1-19	125-132	esošajā	*	Imp	Loc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Pres	*	Aspect=Imp\|Case=Loc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdmslapypn	*	būt	_	_	_	_	amod	basic	1-21	
+1-20	133-140	Trakajā	*	*	Loc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmslyp	*	traks	location[4]	*[4]	*->2-1	*[2]	amod	basic	1-21	
+1-21	141-146	purvā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	purvs	location[4]	*[4]	*->2-1	*[2]	obl	basic	1-15	
+1-22	146-147	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-5	
+
+#Text=Izmantojot skaņas signālu, VUGD darbinieki sievietei “parādījuši” ceļu ārā no purva.
+2-1	148-158	Izmantojot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	Conv	*	vmnpu0000000n	*	izmantot	_	_	_	_	advcl	basic	2-9	
+2-2	159-165	skaņas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	skaņa	_	_	_	_	nmod	basic	2-3	
+2-3	166-173	signālu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	signāls	_	_	_	_	obj	basic	2-1	
+2-4	173-174	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-1	
+2-5	175-179	VUGD	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	VUGD	organization	https://lv.wikipedia.org/wiki/Valsts\_ugunsdzēsības\_un\_glābšanas\_dienests	_	_	nmod	basic	2-6	
+2-6	180-190	darbinieki	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	darbinieks	_	_	_	_	nsubj	basic	2-9	
+2-7	191-200	sievietei	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd5	*	sieviete	_	_	*->1-3	*[1]	iobj	basic	2-9	
+2-8	201-202	“	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	“	_	_	_	_	punct	basic	2-9	
+2-9	202-212	parādījuši	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdmpnasnpn	*	parādīt	_	_	_	_	root	basic	2-9	
+2-10	212-213	”	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	”	_	_	_	_	punct	basic	2-9	
+2-11	214-218	ceļu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	ceļš	_	_	_	_	obj	basic	2-9	
+2-12	219-222	ārā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0p	*	ārā	_	_	_	_	dep	basic	2-11	
+2-13	223-225	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case	basic	2-14	
+2-14	226-231	purva	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	purvs	_	_	*->2-2	*[2]	obl	basic	2-12	
+2-15	231-232	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-9	

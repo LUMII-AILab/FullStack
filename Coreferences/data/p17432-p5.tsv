@@ -1,0 +1,65 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Muzeja apmeklētāji Dabas informācijas centrā varēs iegūt jaunas zināšanas, iepazīties ar nozīmīgām vietām un kombinēt savu ceļojumu maršrutus, kurus iespējams pārsūtīt uz elektroniskā pasta adresi.
+1-1	0-6	Muzeja	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	muzejs	_	_	*->1-1	*[1]	nmod	basic	1-2	
+1-2	7-18	apmeklētāji	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	apmeklētājs	_	_	*->1-1	*[1]	nsubj	basic	1-6	
+1-3	19-24	Dabas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	daba	organization[1]	*[1]	_	_	nmod	basic	1-4	
+1-4	25-37	informācijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	informācija	organization[1]	*[1]	_	_	nmod	basic	1-5	
+1-5	38-44	centrā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	centrs	organization[1]	*[1]	_	_	obl	basic	1-6	
+1-6	45-50	varēs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	Fin	Act	vonifi330an	*	varēt	_	_	_	_	root	basic	1-6	
+1-7	51-56	iegūt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t1000n	*	iegūt	_	_	_	_	xcomp	basic	1-6	
+1-8	57-63	jaunas	*	*	Acc	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpanp	*	jauns	_	_	_	_	amod	basic	1-9	
+1-9	64-73	zināšanas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	zināšana	_	_	_	_	obj	basic	1-7	
+1-10	73-74	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-11	
+1-11	75-85	iepazīties	*	*	*	*	*	*	*	*	*	*	*	*	*	Yes	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	Inf	*	vmyn0i1000n	*	iepazīties	_	_	_	_	conj	basic	1-7	
+1-12	86-88	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	_	_	case	basic	1-14	
+1-13	89-98	nozīmīgām	*	*	Dat	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpdnp	*	nozīmīgs	_	_	_	_	amod	basic	1-14	
+1-14	99-105	vietām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	*	vieta	_	_	_	_	iobj	basic	1-11	
+1-15	106-108	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-16	
+1-16	109-117	kombinēt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t2000n	*	kombinēt	_	_	_	_	conj	basic	1-7	
+1-17	118-122	savu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	Prs	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur\|Poss=Yes\|PronType=Prs	*	*	ps0mpgn	*	savs	_	_	*->1-2	*[1]	det	basic	1-18	
+1-18	123-131	ceļojumu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	ceļojums	_	_	*->2-1	*[2]	nmod	basic	1-19	
+1-19	132-141	maršrutus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	maršruts	_	_	*->2-1	*[2]	obj	basic	1-16	
+1-20	141-142	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-22	
+1-21	143-148	kurus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	Rel	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|PronType=Rel	*	*	pr0mpan	*	kurš	_	_	*->2-2	*[2]	obj	basic	1-23	
+1-22	149-158	iespējams	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	iespējams	_	_	_	_	acl	basic	1-19	
+1-23	159-167	pārsūtīt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t3000n	*	pārsūtīt	_	_	_	_	ccomp	basic	1-22	
+1-24	168-170	uz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	uz	_	_	_	_	case	basic	1-27	
+1-25	171-183	elektroniskā	*	*	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsgyp	*	elektronisks	_	_	_	_	amod	basic	1-26	
+1-26	184-189	pasta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	pasts	_	_	_	_	nmod	basic	1-27	
+1-27	190-196	adresi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	adrese	_	_	_	_	obl	basic	1-23	
+1-28	196-197	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-6	
+
+#Text=Interaktīvajā stikla sienā varēs izkrāsot Naujenes bilžu grāmatu, aplūkot Lielo Naujenes musturdeķi, salikt virtuālās puzles ar dabas un kultūras mantojuma objektu attēliem.
+2-1	198-211	Interaktīvajā	*	*	Loc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affslyp	*	interaktīvs	_	_	_	_	amod	basic	2-3	
+2-2	212-218	stikla	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	stikls	_	_	_	_	nmod	basic	2-3	
+2-3	219-224	sienā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	siena	_	_	_	_	obl	basic	2-4	
+2-4	225-230	varēs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	Fin	Act	vonifi330an	*	varēt	_	_	_	_	root	basic	2-4	
+2-5	231-239	izkrāsot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t2000n	*	izkrāsot	_	_	_	_	xcomp	basic	2-4	
+2-6	240-248	Naujenes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	*	Naujene	product[2]|GPE[3]	*[2]|https://lv.wikipedia.org/wiki/Naujene[3]	_	_	nmod	basic	2-8	
+2-7	249-254	bilžu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg5	*	bilde	product[2]	*[2]	_	_	nmod	basic	2-8	
+2-8	255-262	grāmatu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	grāmata	product[2]	*[2]	_	_	obj	basic	2-5	
+2-9	262-263	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-10	
+2-10	264-271	aplūkot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t2000n	*	aplūkot	_	_	_	_	conj	basic	2-5	
+2-11	272-277	Lielo	*	*	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsayp	*	liels	product[4]	*[4]	_	_	amod	basic	2-13	
+2-12	278-286	Naujenes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	*	Naujene	product[4]|GPE[5]	*[4]|https://lv.wikipedia.org/wiki/Naujene[5]	_	_	nmod	basic	2-13	
+2-13	287-297	musturdeķi	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa2	*	musturdeķis	product[4]	*[4]	_	_	obj	basic	2-10	
+2-14	297-298	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-15	
+2-15	299-305	salikt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t1000n	*	salikt	_	_	_	_	conj	basic	2-5	
+2-16	306-315	virtuālās	*	*	Acc	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpayp	*	virtuāls	_	_	_	_	amod	basic	2-17	
+2-17	316-322	puzles	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa5	*	puzle	_	_	_	_	obj	basic	2-15	
+2-18	323-325	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	_	_	case	basic	2-24	
+2-19	326-331	dabas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	daba	_	_	_	_	nmod	basic	2-22	
+2-20	332-334	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-21	
+2-21	335-343	kultūras	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	kultūra	_	_	_	_	conj	basic	2-19	
+2-22	344-353	mantojuma	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	mantojums	_	_	_	_	nmod	basic	2-23	
+2-23	354-361	objektu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	objekts	_	_	_	_	nmod	basic	2-24	
+2-24	362-370	attēliem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	attēls	_	_	_	_	nmod	basic	2-17	
+2-25	370-371	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-4	

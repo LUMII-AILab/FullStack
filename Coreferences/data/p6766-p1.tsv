@@ -1,0 +1,48 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Aktieris Kriss Prats sešu mēnešu laikā pratis atbrīvoties no divdesmit astoņiem kilogramiem svara un nu lepojas ar ikviena vīrieša sapņu augumu.
+1-1	0-8	Aktieris	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	aktieris	_	_	*->1-1	*[1]	nmod	basic	1-2	
+1-2	9-14	Kriss	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Kriss	person[1]	https://en.wikipedia.org/wiki/Chris\_Pratt[1]	*->1-2	*[1]	nsubj	basic	1-7	
+1-3	15-20	Prats	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Prats	person[1]	https://en.wikipedia.org/wiki/Chris\_Pratt[1]	*->1-2	*[1]	flat:name	basic	1-2	
+1-4	21-25	sešu	*	*	Gen	*	*	Masc	*	*	Card	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpg	*	seši	time[2]	*[2]	_	_	nummod	basic	1-5	
+1-5	26-32	mēnešu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	mēnesis	time[2]	*[2]	_	_	nmod	basic	1-6	
+1-6	33-38	laikā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	laiks	time[2]	*[2]	_	_	obl	basic	1-7	
+1-7	39-45	pratis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vonpdmsnasnpn	*	prast	_	_	_	_	root	basic	1-7	
+1-8	46-57	atbrīvoties	*	*	*	*	*	*	*	*	*	*	*	*	*	Yes	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	Inf	*	vmyn0i2000n	*	atbrīvoties	_	_	_	_	xcomp	basic	1-7	
+1-9	58-60	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	no	_	_	_	_	case	basic	1-12	
+1-10	61-70	divdesmit	*	*	*	*	*	*	*	*	Card	Plur	*	*	*	*	*	*	Number=Plur\|NumType=Card	*	*	mcc0p0	*	divdesmit	_	_	_	_	compound	basic	1-11	
+1-11	71-79	astoņiem	*	*	Dat	*	*	Masc	*	*	Card	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|NumType=Card	*	*	mcsmpd	*	astoņi	_	_	_	_	nummod	basic	1-12	
+1-12	80-91	kilogramiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	kilograms	_	_	_	_	iobj	basic	1-8	
+1-13	92-97	svara	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	svars	_	_	_	_	nmod	basic	1-12	
+1-14	98-100	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-16	
+1-15	101-103	nu	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	nu	_	_	_	_	advmod	basic	1-16	
+1-16	104-111	lepojas	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyipi230an	*	lepoties	_	_	_	_	conj	basic	1-7	
+1-17	112-114	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	1-21	
+1-18	115-122	ikviena	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	Tot	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msgn	*	ikviens	_	_	_	_	det	basic	1-19	
+1-19	123-130	vīrieša	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	*	vīrietis	_	_	_	_	nmod	basic	1-20	
+1-20	131-136	sapņu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	sapnis	_	_	_	_	nmod	basic	1-21	
+1-21	137-143	augumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	augums	_	_	_	_	iobj	basic	1-16	
+1-22	143-144	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-7	
+
+#Text=Aktieris neslēpj, lai ko tādu panāktu nācās svīst daudzas stundas sporta zālē.
+2-1	145-153	Aktieris	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	aktieris	_	_	*->1-3	*[1]	nsubj	basic	2-2	
+2-2	154-161	neslēpj	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt130ay	*	slēpt	_	_	_	_	root	basic	2-2	
+2-3	161-162	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-7	
+2-4	163-166	lai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	lai	_	_	_	_	mark	basic	2-7	
+2-5	167-169	ko	*	*	Acc	*	*	*	*	*	*	*	*	*	Rel	*	*	*	Case=Acc\|PronType=Rel	*	*	pr000an	*	kas	_	_	_	_	obj	basic	2-7	
+2-6	170-174	tādu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	Dem	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	*	tāds	_	_	_	_	compound	basic	2-5	
+2-7	175-182	panāktu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnc0t100an	*	panākt	_	_	_	_	advcl	basic	2-8	
+2-8	183-188	nācās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	voyisi130an	*	nākties	_	_	_	_	ccomp	basic	2-2	
+2-9	189-194	svīst	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0i1000n	*	svīst	_	_	_	_	xcomp	basic	2-8	
+2-10	195-202	daudzas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	Ind	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur\|PronType=Ind	*	*	pi0fpan	*	daudzas	_	_	_	_	det	basic	2-11	
+2-11	203-210	stundas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	stunda	_	_	_	_	obl	basic	2-9	
+2-12	211-217	sporta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	sports	_	_	_	_	nmod	basic	2-13	
+2-13	218-222	zālē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	*	zāle	_	_	_	_	obl	basic	2-9	
+2-14	222-223	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-2	

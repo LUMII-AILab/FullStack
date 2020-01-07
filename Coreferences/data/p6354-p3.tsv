@@ -1,0 +1,43 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Šarlote kristīta tajā pašā tērpā, kurā tika kristīts viņas brālis - princis Džordžs.
+1-1	0-7	Šarlote	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	*	Šarlote	person	https://en.wikipedia.org/wiki/Princess\_Charlotte\_of\_Cambridge	*->2-1	*[2]	nsubj:pass	basic	1-2	
+1-2	8-16	kristīta	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdfsnpsnpn	*	kristīt	_	_	_	_	root	basic	1-2	
+1-3	17-21	tajā	*	*	Loc	*	*	Masc	*	*	*	Sing	3	*	Dem	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msln	*	tas	_	_	*->1-1	*[1]	det	basic	1-5	
+1-4	22-26	pašā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	Tot	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msln	*	pats	_	_	*->1-1	*[1]	compound	basic	1-3	
+1-5	27-32	tērpā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	tērps	_	_	*->1-1	*[1]	obl	basic	1-2	
+1-6	32-33	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	*->1-1	*[1]	punct	basic	1-9	
+1-7	34-38	kurā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	Rel	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msln	*	kurš	_	_	*->1-2	*[1]	obl	basic	1-9	
+1-8	39-43	tika	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vtnisi130an	*	tikt	_	_	_	_	aux:pass	basic	1-9	
+1-9	44-52	kristīts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsnpsnpn	*	kristīt	_	_	_	_	acl	basic	1-5	
+1-10	53-58	viņas	*	*	Gen	*	*	Fem	*	*	*	Sing	3	*	Prs	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3fsgn	*	viņa	_	_	*->2-2	*[2]	det	basic	1-11	
+1-11	59-65	brālis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	brālis	_	_	*->3-1	*[3]	nsubj:pass	basic	1-9	
+1-12	66-67	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	-	_	_	_	_	punct	basic	1-14	
+1-13	68-75	princis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	princis	_	_	*->3-2	*[3]	nmod	basic	1-14	
+1-14	76-83	Džordžs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Džordžs	person	https://en.wikipedia.org/wiki/Prince\_George\_of\_Cambridge	*->3-3	*[3]	acl	basic	1-11	
+1-15	83-84	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-2	
+
+#Text=Kristību kleita ir kopija tērpam, ko savās kristībās valkāja karalienes Viktorijas meita 1841. gadā.
+2-1	85-93	Kristību	*	*	Gen	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Ptan	*	*	ncfdg4	*	kristības	_	_	*->1-3	*[1]	nmod	basic	2-2	
+2-2	94-100	kleita	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	kleita	_	_	*->1-3	*[1]	nsubj	basic	2-4	
+2-3	101-103	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	2-4	
+2-4	104-110	kopija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	kopija	_	_	*->5-1	*[5]	root	basic	2-4	
+2-5	111-117	tērpam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	tērps	_	_	*->5-1	*[5]	nmod	basic	2-4	
+2-6	117-118	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-10	
+2-7	119-121	ko	*	*	Acc	*	*	*	*	*	*	*	*	*	Rel	*	*	*	Case=Acc\|PronType=Rel	*	*	pr000an	*	kas	_	_	*->5-2	*[5]	obj	basic	2-10	
+2-8	122-127	savās	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	Prs	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur\|Poss=Yes\|PronType=Prs	*	*	ps0fpln	*	sava	_	_	*->4-1	*[4]	det	basic	2-9	
+2-9	128-137	kristībās	*	*	Loc	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Ptan	*	*	ncfdl4	*	kristības	_	_	_	_	obl	basic	2-10	
+2-10	138-145	valkāja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist230an	*	valkāt	_	_	_	_	acl	basic	2-5	
+2-11	146-156	karalienes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	karaliene	_	_	*->4-2|*->6-1	*[4]|*[6]	nmod	basic	2-12	
+2-12	157-167	Viktorijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Viktorija	person	https://en.wikipedia.org/wiki/Queen\_Victoria	*->4-2|*->6-2	*[4]|*[6]	nmod	basic	2-13	
+2-13	168-173	meita	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	meita	_	_	*->4-2	*[4]	nsubj	basic	2-10	
+2-14	174-179	1841.	*	*	*	*	*	*	*	*	Ord	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	1841.	time[1]	*[1]	_	_	amod	basic	2-15	
+2-15	180-184	gadā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	gads	time[1]	*[1]	_	_	obl	basic	2-10	
+2-16	184-185	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-4	

@@ -1,43 +1,43 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Jā, šad un tad.
-1-1	0-2	Jā	_	_	_	_	_	_	_	_	_	_	_	_	q	jā	_	_	discourse	basic	1-3	
-1-2	2-3	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-1	
-1-3	4-7	šad	_	_	_	_	_	_	_	_	_	_	_	_	r0t	šad	_	_	root	basic	1-3	
-1-4	8-10	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	cc	basic	1-5	
-1-5	11-14	tad	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	tad	_	_	conj	basic	1-3	
-1-6	14-15	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	1-3	
+1-1	0-2	Jā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	jā	_	_	discourse	basic	1-3	
+1-2	2-3	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-1	
+1-3	4-7	šad	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	šad	_	_	root	basic	1-3	
+1-4	8-10	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	cc	basic	1-5	
+1-5	11-14	tad	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	*	tad	_	_	conj	basic	1-3	
+1-6	14-15	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	1-3	
 
 #Text=Bērnudārzā es pirmais iemācījos lasīt, un tad man vajadzēja lasīt visiem priekšā.
-2-1	17-27	Bērnudārzā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	bērnudārzs	_	_	obl	basic	2-4	
-2-2	28-30	es	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10snn	es	*[1]	*->1-1	nsubj	basic	2-4	
-2-3	31-38	pirmais	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|NumType=Ord	*	*	mosmsn	pirmais	_	_	acl	basic	2-4	
-2-4	39-48	iemācījos	*	Sing	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	1	*	vmyist31san	iemācīties	_	_	root	basic	2-4	
-2-5	49-54	lasīt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	lasīt	_	_	ccomp	basic	2-4	
-2-6	54-55	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	2-10	
-2-7	56-58	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	cc	basic	2-10	
-2-8	59-62	tad	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	tad	_	_	advmod	basic	2-10	
-2-9	63-66	man	*	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10sdn	es	*[1]	*->1-2	nsubj	basic	2-10	
-2-10	67-76	vajadzēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vonist330an	vajadzēt	_	_	conj	basic	2-4	
-2-11	77-82	lasīt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	lasīt	_	_	xcomp	basic	2-10	
-2-12	83-89	visiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|PronType=Tot	*	*	pg0mpdn	viss	_	_	iobj	basic	2-11	
-2-13	90-97	priekšā	_	_	_	_	_	_	_	_	_	_	_	_	r0p	priekšā	_	_	advmod	basic	2-11	
-2-14	97-98	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	2-4	
+2-1	17-27	Bērnudārzā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	bērnudārzs	_	_	obl	basic	2-4	
+2-2	28-30	es	*	*	Nom	*	*	*	*	*	*	Sing	1	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	*	*	pp10snn	*	es	*->1-1	*[1]	nsubj	basic	2-4	
+2-3	31-38	pirmais	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|NumType=Ord	*	*	mosmsn	*	pirmais	_	_	acl	basic	2-4	
+2-4	39-48	iemācījos	*	*	*	*	*	*	Ind	*	*	Sing	1	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmyist31san	*	iemācīties	_	_	root	basic	2-4	
+2-5	49-54	lasīt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	*	lasīt	_	_	ccomp	basic	2-4	
+2-6	54-55	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	2-10	
+2-7	56-58	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	cc	basic	2-10	
+2-8	59-62	tad	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	*	tad	_	_	advmod	basic	2-10	
+2-9	63-66	man	*	*	Dat	*	*	*	*	*	*	Sing	1	*	*	*	*	*	Case=Dat\|Number=Sing\|Person=1\|PronType=Prs	*	*	pp10sdn	*	es	*->1-2	*[1]	nsubj	basic	2-10	
+2-10	67-76	vajadzēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vonist330an	*	vajadzēt	_	_	conj	basic	2-4	
+2-11	77-82	lasīt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	*	lasīt	_	_	xcomp	basic	2-10	
+2-12	83-89	visiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|PronType=Tot	*	*	pg0mpdn	*	viss	_	_	iobj	basic	2-11	
+2-13	90-97	priekšā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0p	*	priekšā	_	_	advmod	basic	2-11	
+2-14	97-98	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	2-4	
 
 #Text=Līdz ar to zināju šo grāmatu gandrīz no galvas.
-3-1	100-104	Līdz	_	_	_	_	_	_	_	_	_	_	_	_	r0p	līdz	_	_	advmod	basic	3-4	
-3-2	105-107	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	case	basic	3-3	
-3-3	108-110	to	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	tas	_	_	iobj	basic	3-1	
-3-4	111-117	zināju	*	Sing	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	1	*	vmnist31san	zināt	_	_	root	basic	3-4	
-3-5	118-120	šo	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsan	šī	_	_	det	basic	3-6	
-3-6	121-128	grāmatu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	grāmata	_	_	obj	basic	3-4	
-3-7	129-136	gandrīz	_	_	_	_	_	_	_	_	_	_	_	_	r0q	gandrīz	_	_	advmod	basic	3-9	
-3-8	137-139	no	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	_	_	case	basic	3-9	
-3-9	140-146	galvas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	galva	_	_	obl	basic	3-4	
-3-10	146-147	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	3-4	
+3-1	100-104	Līdz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0p	*	līdz	_	_	advmod	basic	3-4	
+3-2	105-107	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	case	basic	3-3	
+3-3	108-110	to	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msan	*	tas	_	_	iobj	basic	3-1	
+3-4	111-117	zināju	*	*	*	*	*	*	Ind	*	*	Sing	1	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist31san	*	zināt	_	_	root	basic	3-4	
+3-5	118-120	šo	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsan	*	šī	_	_	det	basic	3-6	
+3-6	121-128	grāmatu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	grāmata	_	_	obj	basic	3-4	
+3-7	129-136	gandrīz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	gandrīz	_	_	advmod	basic	3-9	
+3-8	137-139	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	case	basic	3-9	
+3-9	140-146	galvas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	galva	_	_	obl	basic	3-4	
+3-10	146-147	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	3-4	

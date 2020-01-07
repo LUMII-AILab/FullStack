@@ -1,0 +1,95 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=„Izbraucu no noliktavas Nīcgales ielā plkst. 8.00, lai dotos uz Izstāžu centru Ķīpsalā.
+1-1	0-1	„	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	„	_	_	_	_	punct	basic	1-2	
+1-2	1-9	Izbraucu	*	*	*	*	*	*	Ind	*	*	Sing	1	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnisi11san	*	izbraukt	_	_	_	_	root	basic	1-2	
+1-3	10-12	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case	basic	1-4	
+1-4	13-23	noliktavas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	noliktava	_	_	_	_	obl	basic	1-2	
+1-5	24-32	Nīcgales	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	*	Nīcgale	location[1]|GPE[2]	https://lv.wikipedia.org/wiki/Nīcgales\_iela\_(Rīga)[1]|https://en.wikipedia.org/wiki/Nīcgale[2]	_	_	nmod	basic	1-6	
+1-6	33-37	ielā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	iela	location[1]	https://lv.wikipedia.org/wiki/Nīcgales\_iela\_(Rīga)[1]	_	_	acl	basic	1-4	
+1-7	38-44	plkst.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yr	*	plkst.	time[3]	*[3]	_	_	advmod	basic	1-8	
+1-8	45-50	8.00,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	xx	*	8.00,	time[3]	*[3]	_	_	dep	basic	1-2	
+1-9	51-54	lai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	lai	_	_	_	_	mark	basic	1-10	
+1-10	55-60	dotos	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	Yes	*	*	Mood=Cnd\|Polarity=Pos\|Reflex=Yes\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyc0i100an	*	doties	_	_	_	_	advcl	basic	1-2	
+1-11	61-63	uz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	uz	_	_	_	_	case	basic	1-13	
+1-12	64-71	Izstāžu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg5	*	izstāde	organization[4]	*[4]	*->1-1	*[1]	nmod	basic	1-13	
+1-13	72-78	centru	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	centrs	organization[4]	*[4]	*->1-1	*[1]	obl	basic	1-10	
+1-14	79-86	Ķīpsalā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Ķīpsalā	location	https://en.wikipedia.org/wiki/Ķīpsala	*->1-2	*[1]	acl	basic	1-13	
+1-15	86-87	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-2	
+
+#Text=Tālāk braucu pa A. Čaka ielu un nogriezos uz Merķeļa ielas, kur apstājos uz 15 minūtēm, lai iegādātos rīta kafiju un bulciņas.
+2-1	88-93	Tālāk	*	*	*	*	Cmp	*	*	*	*	*	*	*	*	*	*	*	Degree=Cmp	*	*	rcp	*	tāli	_	_	_	_	advmod	basic	2-2	
+2-2	94-100	braucu	*	*	*	*	*	*	Ind	*	*	Sing	1	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnisi11san	*	braukt	_	_	_	_	root	basic	2-2	
+2-3	101-103	pa	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	pa	_	_	_	_	case	basic	2-6	
+2-4	104-106	A.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	A.	location[5]|person[6]	https://lv.wikipedia.org/wiki/Aleksandra\_Čaka\_iela\_(Rīga)[5]|https://en.wikipedia.org/wiki/Aleksandrs\_Čaks[6]	_	_	nmod	basic	2-6	
+2-5	107-111	Čaka	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Čaks	location[5]|person[6]	https://lv.wikipedia.org/wiki/Aleksandra\_Čaka\_iela\_(Rīga)[5]|https://en.wikipedia.org/wiki/Aleksandrs\_Čaks[6]	_	_	flat:name	basic	2-4	
+2-6	112-116	ielu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	iela	location[5]	https://lv.wikipedia.org/wiki/Aleksandra\_Čaka\_iela\_(Rīga)[5]	_	_	obl	basic	2-2	
+2-7	117-119	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-8	
+2-8	120-129	nogriezos	*	*	*	*	*	*	Ind	*	*	Sing	1	*	*	Yes	Past	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyisi11san	*	nogriezties	_	_	_	_	conj	basic	2-2	
+2-9	130-132	uz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	uz	_	_	*->2-1	*[2]	case	basic	2-11	
+2-10	133-140	Merķeļa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg2	*	Merķelis	location[7]|person[8]	https://lv.wikipedia.org/wiki/Merķeļa\_iela\_(Rīga)[7]|https://en.wikipedia.org/wiki/Garlieb\_Merkel[8]	*->2-1	*[2]	nmod	basic	2-11	
+2-11	141-146	ielas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	iela	location[7]	https://lv.wikipedia.org/wiki/Merķeļa\_iela\_(Rīga)[7]	*->2-1	*[2]	obl	basic	2-8	
+2-12	146-147	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-14	
+2-13	148-151	kur	*	*	*	*	*	*	*	*	*	*	*	*	Int	*	*	*	PronType=Int	*	*	r0p	*	kur	_	_	*->2-2	*[2]	advmod	basic	2-14	
+2-14	152-160	apstājos	*	*	*	*	*	*	Ind	*	*	Sing	1	*	*	Yes	Past	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyisi11san	*	apstāties	_	_	_	_	advcl	basic	2-11	
+2-15	161-163	uz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	uz	_	_	_	_	case	basic	2-17	
+2-16	164-166	15	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	15	_	_	_	_	nummod	basic	2-17	
+2-17	167-174	minūtēm	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd5	*	minūte	_	_	_	_	obl	basic	2-14	
+2-18	174-175	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-20	
+2-19	176-179	lai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	lai	_	_	_	_	mark	basic	2-20	
+2-20	180-189	iegādātos	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	Yes	*	*	Mood=Cnd\|Polarity=Pos\|Reflex=Yes\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyc0t200an	*	iegādāties	_	_	_	_	advcl	basic	2-14	
+2-21	190-194	rīta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	rīts	_	_	_	_	nmod	basic	2-22	
+2-22	195-201	kafiju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	kafija	_	_	_	_	obj	basic	2-20	
+2-23	202-204	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-24	
+2-24	205-213	bulciņas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	bulciņa	_	_	_	_	conj	basic	2-22	
+2-25	213-214	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-2	
+
+#Text=Turpināju ceļu pa Kalpaka bulvāri, kur nogriezos uz K. Valdemāra ielu, lai dotos pāri Vanšu tiltam.
+3-1	215-224	Turpināju	*	*	*	*	*	*	Ind	*	*	Sing	1	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist31san	*	turpināt	_	_	_	_	root	basic	3-1	
+3-2	225-229	ceļu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	ceļš	_	_	_	_	obj	basic	3-1	
+3-3	230-232	pa	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	pa	_	_	*->3-1	*[3]	case	basic	3-5	
+3-4	233-240	Kalpaka	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Kalpaks	location[9]|person[10]	https://lv.wikipedia.org/wiki/Kalpaka\_bulvāris[9]|https://en.wikipedia.org/wiki/Oskars\_Kalpaks[10]	*->3-1	*[3]	nmod	basic	3-5	
+3-5	241-248	bulvāri	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	*	bulvāris	location[9]	https://lv.wikipedia.org/wiki/Kalpaka\_bulvāris[9]	*->3-1	*[3]	obl	basic	3-1	
+3-6	248-249	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-8	
+3-7	250-253	kur	*	*	*	*	*	*	*	*	*	*	*	*	Int	*	*	*	PronType=Int	*	*	r0p	*	kur	_	_	*->3-2	*[3]	advmod	basic	3-8	
+3-8	254-263	nogriezos	*	*	*	*	*	*	Ind	*	*	Sing	1	*	*	Yes	Past	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyisi11san	*	nogriezties	_	_	_	_	advcl	basic	3-5	
+3-9	264-266	uz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	uz	_	_	_	_	case	basic	3-12	
+3-10	267-269	K.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	K.	location[11]|person[12]	https://lv.wikipedia.org/wiki/Krišjāņa\_Valdemāra\_iela\_(Rīga)[11]|https://en.wikipedia.org/wiki/Krišjānis\_Valdemārs[12]	_	_	nmod	basic	3-12	
+3-11	270-279	Valdemāra	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Valdemārs	location[11]|person[12]	https://lv.wikipedia.org/wiki/Krišjāņa\_Valdemāra\_iela\_(Rīga)[11]|https://en.wikipedia.org/wiki/Krišjānis\_Valdemārs[12]	_	_	flat:name	basic	3-10	
+3-12	280-284	ielu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	iela	location[11]	https://lv.wikipedia.org/wiki/Krišjāņa\_Valdemāra\_iela\_(Rīga)[11]	_	_	obl	basic	3-8	
+3-13	284-285	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-15	
+3-14	286-289	lai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	lai	_	_	_	_	mark	basic	3-15	
+3-15	290-295	dotos	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	Yes	*	*	Mood=Cnd\|Polarity=Pos\|Reflex=Yes\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyc0i100an	*	doties	_	_	_	_	advcl	basic	3-8	
+3-16	296-300	pāri	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsd	*	pāri	_	_	_	_	case	basic	3-18	
+3-17	301-306	Vanšu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg6	*	vants	location[13]	https://en.wikipedia.org/wiki/Vanšu\_Bridge[13]	_	_	nmod	basic	3-18	
+3-18	307-313	tiltam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	tilts	location[13]	https://en.wikipedia.org/wiki/Vanšu\_Bridge[13]	_	_	obl	basic	3-15	
+3-19	313-314	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-1	
+
+#Text=Nonākot galapunktā un atverot busiņa durvis, secināju, ka tas ir tukšs,” satraukts stāsta šoferis Valērijs.
+4-1	315-322	Nonākot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	Conv	*	vmnpu0000000n	*	nonākt	_	_	_	_	advcl	basic	4-8	
+4-2	323-333	galapunktā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	galapunkts	_	_	_	_	obl	basic	4-1	
+4-3	334-336	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	4-4	
+4-4	337-344	atverot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	Conv	*	vmnpu0000000n	*	atvērt	_	_	_	_	conj	basic	4-1	
+4-5	345-351	busiņa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	busiņs	_	_	*->5-1	*[5]	nmod	basic	4-6	
+4-6	352-358	durvis	*	*	Acc	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Ptan	*	*	ncfda6	*	durvis	_	_	_	_	obj	basic	4-4	
+4-7	358-359	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-4	
+4-8	360-368	secināju	*	*	*	*	*	*	Ind	*	*	Sing	1	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist31san	*	secināt	_	_	_	_	parataxis	basic	4-17	
+4-9	368-369	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-13	
+4-10	370-372	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	4-13	
+4-11	373-376	tas	*	*	Nom	*	*	Masc	*	*	*	Sing	3	*	Dem	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msnn	*	tas	_	_	*->5-2	*[5]	nsubj	basic	4-13	
+4-12	377-379	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	4-13	
+4-13	380-385	tukšs	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	tukšs	_	_	_	_	ccomp	basic	4-8	
+4-14	385-386	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-8	
+4-15	386-387	”	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	”	_	_	_	_	punct	basic	4-8	
+4-16	388-397	satraukts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsnpsnpn	*	satraukt	_	_	_	_	acl	basic	4-17	
+4-17	398-404	stāsta	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt330an	*	stāstīt	_	_	_	_	root	basic	4-17	
+4-18	405-412	šoferis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	šoferis	_	_	*->4-1	*[4]	nmod	basic	4-19	
+4-19	413-421	Valērijs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Valērijs	person	*	*->4-2	*[4]	nsubj	basic	4-17	
+4-20	421-422	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	4-17	

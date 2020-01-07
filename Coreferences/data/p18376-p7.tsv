@@ -1,0 +1,109 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Liepājas ostas Karostas kanāls ir mākslīga būve, kas izveidota 20.gadsimta sākumā.
+1-1	0-8	Liepājas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Liepāja	location[1]|organization[2]|GPE[3]	*[1]|https://en.wikipedia.org/wiki/Port\_of\_Liepāja[2]|*[3]	_	_	nmod	basic	1-2	
+1-2	9-14	ostas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	osta	location[1]|organization[2]	*[1]|https://en.wikipedia.org/wiki/Port\_of\_Liepāja[2]	_	_	nmod	basic	1-3	
+1-3	15-23	Karostas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Karosta	location[1]|location[4]|location[5]	*[1]|*[4]|*[5]	_	_	nmod	basic	1-4	
+1-4	24-30	kanāls	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	kanāls	location[1]|location[4]	*[1]|*[4]	_	_	nsubj	basic	1-7	
+1-5	31-33	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	1-7	
+1-6	34-42	mākslīga	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	*	mākslīgs	_	_	*->1-1	*[1]	amod	basic	1-7	
+1-7	43-47	būve	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	būve	_	_	*->1-1	*[1]	root	basic	1-7	
+1-8	47-48	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-10	
+1-9	49-52	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	Rel	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->1-2	*[1]	nsubj:pass	basic	1-10	
+1-10	53-62	izveidota	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdfsnpsnpn	*	izveidot	_	_	_	_	acl	basic	1-7	
+1-11	63-66	20.	*	*	*	*	*	*	*	*	Ord	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	20.	time[6]	*[6]	_	_	amod	basic	1-12	
+1-12	66-74	gadsimta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	gadsimts	time[6]	*[6]	_	_	nmod	basic	1-13	
+1-13	75-81	sākumā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	sākums	time[6]	*[6]	_	_	obl	basic	1-10	
+1-14	81-82	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-7	
+
+#Text=No 1945.gada līdz 1994.gadam Karostas kanāls bija slēgta militāra teritorija, kurā atradās jūras kara flotes zemūdeņu bāze.
+2-1	83-85	No	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	time[7]	*[7]	_	_	case	basic	2-3	
+2-2	86-91	1945.	*	*	*	*	*	*	*	*	Ord	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	1945.	time[7]	*[7]	_	_	amod	basic	2-3	
+2-3	91-95	gada	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	gads	time[7]	*[7]	_	_	obl	basic	2-12	
+2-4	96-100	līdz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsd	*	līdz	time[7]	*[7]	_	_	case	basic	2-6	
+2-5	101-106	1994.	*	*	*	*	*	*	*	*	Ord	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	1994.	time[7]	*[7]	_	_	amod	basic	2-6	
+2-6	106-111	gadam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	gads	time[7]	*[7]	_	_	obl	basic	2-12	
+2-7	112-120	Karostas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Karosta	location[8]|location[9]	*[8]|https://en.wikipedia.org/wiki/Karosta[9]	_	_	nmod	basic	2-8	
+2-8	121-127	kanāls	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	kanāls	location[8]	*[8]	_	_	nsubj	basic	2-12	
+2-9	128-132	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnisii30an	*	būt	_	_	_	_	cop	basic	2-12	
+2-10	133-139	slēgta	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdfsnpsnpn	*	slēgt	_	_	*->2-1	*[2]	amod	basic	2-12	
+2-11	140-148	militāra	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	*	militārs	_	_	*->2-1	*[2]	amod	basic	2-12	
+2-12	149-159	teritorija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	teritorija	_	_	*->2-1	*[2]	root	basic	2-12	
+2-13	159-160	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-15	
+2-14	161-165	kurā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	Rel	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsln	*	kura	_	_	*->2-2	*[2]	obl	basic	2-15	
+2-15	166-173	atradās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyisi130an	*	atrasties	_	_	_	_	acl	basic	2-12	
+2-16	174-179	jūras	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	jūra	_	_	_	_	nmod	basic	2-17	
+2-17	180-184	kara	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	kars	_	_	_	_	nmod	basic	2-20	
+2-18	185-191	flotes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	flote	_	_	_	_	nmod	basic	2-19	
+2-19	192-200	zemūdeņu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg5	*	zemūdene	_	_	_	_	nmod	basic	2-20	
+2-20	201-205	bāze	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	bāze	_	_	_	_	nsubj	basic	2-15	
+2-21	205-206	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-12	
+
+#Text=Šo gadu laikā padomju militāro spēku darbība ir radījusi nopietnas ekoloģiskas problēmas.
+3-1	207-209	Šo	*	*	Gen	*	*	Masc	*	*	*	Plur	3	*	Dem	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Dem	*	*	pd3mpgn	*	šis	time[10]	*[10]	_	_	det	basic	3-2	
+3-2	210-214	gadu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	gads	time[10]	*[10]	_	_	nmod	basic	3-3	
+3-3	215-220	laikā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	laiks	time[10]	*[10]	_	_	obl	basic	3-9	
+3-4	221-228	padomju	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg5	*	padome	_	_	_	_	nmod	basic	3-6	
+3-5	229-237	militāro	*	*	Gen	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpgyp	*	militārs	_	_	_	_	amod	basic	3-6	
+3-6	238-243	spēku	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	spēks	_	_	_	_	nmod	basic	3-7	
+3-7	244-251	darbība	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	darbība	_	_	_	_	nsubj	basic	3-9	
+3-8	252-254	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	_	_	aux	basic	3-9	
+3-9	255-263	radījusi	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdfsnasnpn	*	radīt	_	_	_	_	root	basic	3-9	
+3-10	264-273	nopietnas	*	*	Acc	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpanp	*	nopietns	_	_	_	_	amod	basic	3-12	
+3-11	274-285	ekoloģiskas	*	*	Acc	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpanp	*	ekoloģisks	_	_	_	_	amod	basic	3-12	
+3-12	286-295	problēmas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	problēma	_	_	_	_	obj	basic	3-9	
+3-13	295-296	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-9	
+
+#Text=Karostas kanāls tika ekspluatēts, neņemot vērā negatīvo ietekmi uz apkārtējo vidi.
+4-1	297-305	Karostas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Karosta	location[11]|location[12]	*[11]|https://en.wikipedia.org/wiki/Karosta[12]	_	_	nmod	basic	4-2	
+4-2	306-312	kanāls	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	kanāls	location[11]	*[11]	_	_	nsubj:pass	basic	4-4	
+4-3	313-317	tika	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vtnisi130an	*	tikt	_	_	_	_	aux:pass	basic	4-4	
+4-4	318-329	ekspluatēts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsnpsnpn	*	ekspluatēt	_	_	_	_	root	basic	4-4	
+4-5	329-330	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-6	
+4-6	331-338	neņemot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Neg\|VerbForm=Conv	Conv	*	vmnpu0000000y	*	ņemt	_	_	_	_	advcl	basic	4-4	
+4-7	339-343	vērā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0p	*	vērā	_	_	_	_	advmod	basic	4-6	
+4-8	344-352	negatīvo	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsayp	*	negatīvs	_	_	_	_	amod	basic	4-9	
+4-9	353-360	ietekmi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	ietekme	_	_	_	_	obj	basic	4-6	
+4-10	361-363	uz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	uz	_	_	_	_	case	basic	4-12	
+4-11	364-373	apkārtējo	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsayp	*	apkārtējs	_	_	_	_	amod	basic	4-12	
+4-12	374-378	vidi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	vide	_	_	_	_	nmod	basic	4-9	
+4-13	378-379	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	4-4	
+
+#Text=Piemēram, kanālā tika novadītas notekas, kuru piesārņojums ar smagajiem metāliem ievērojami pārsniedza pieļaujamās normas.
+5-1	380-388	Piemēram	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	piemērs	_	_	_	_	discourse	basic	5-5	
+5-2	388-389	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	5-1	
+5-3	390-396	kanālā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	kanāls	_	_	_	_	obl	basic	5-5	
+5-4	397-401	tika	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vtnisi130an	*	tikt	_	_	_	_	aux:pass	basic	5-5	
+5-5	402-411	novadītas	*	Perf	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdfpnpsnpn	*	novadīt	_	_	*->3-1	*[3]	root	basic	5-5	
+5-6	412-419	notekas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	noteka	_	_	*->3-1	*[3]	nsubj:pass	basic	5-5	
+5-7	419-420	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	5-14	
+5-8	421-425	kuru	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	Rel	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur\|PronType=Rel	*	*	pr0fpgn	*	kura	_	_	*->3-2	*[3]	det	basic	5-9	
+5-9	426-438	piesārņojums	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	piesārņojums	_	_	_	_	nsubj	basic	5-14	
+5-10	439-441	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	_	_	case	basic	5-12	
+5-11	442-451	smagajiem	*	*	Dat	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpdyp	*	smags	_	_	_	_	amod	basic	5-12	
+5-12	452-460	metāliem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	metāls	_	_	_	_	nmod	basic	5-9	
+5-13	461-471	ievērojami	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpq	*	ievērojami	_	_	_	_	advmod	basic	5-14	
+5-14	472-482	pārsniedza	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist130an	*	pārsniegt	_	_	_	_	acl	basic	5-6	
+5-15	483-494	pieļaujamās	*	*	Acc	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpayp	*	pieļaujams	_	_	_	_	amod	basic	5-16	
+5-16	495-501	normas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	norma	_	_	_	_	obj	basic	5-14	
+5-17	501-502	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	5-5	
+
+#Text=Smago metālu savienojumi ilgu laiku akumulējās Karostas kanāla gultnes nogulumos.
+6-1	503-508	Smago	*	*	Gen	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpgyp	*	smags	_	_	_	_	amod	basic	6-2	
+6-2	509-515	metālu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	metāls	_	_	_	_	nmod	basic	6-3	
+6-3	516-527	savienojumi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	savienojums	_	_	_	_	nsubj	basic	6-6	
+6-4	528-532	ilgu	*	*	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsanp	*	ilgs	_	_	_	_	amod	basic	6-5	
+6-5	533-538	laiku	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	laiks	_	_	_	_	obl	basic	6-6	
+6-6	539-549	akumulējās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyisi230an	*	akumulēties	_	_	_	_	root	basic	6-6	
+6-7	550-558	Karostas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Karosta	location[13]|location[14]	*[13]|https://en.wikipedia.org/wiki/Karosta[14]	_	_	nmod	basic	6-8	
+6-8	559-565	kanāla	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	kanāls	location[13]	*[13]	_	_	nmod	basic	6-9	
+6-9	566-573	gultnes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	gultne	_	_	_	_	nmod	basic	6-10	
+6-10	574-583	nogulumos	*	*	Loc	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Ptan	*	*	ncmdl1	*	nogulumi	_	_	_	_	obl	basic	6-6	
+6-11	583-584	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	6-6	

@@ -1,0 +1,273 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Latvijas Nacionālo bruņoto spēku (NBS) attīstība, tāpat kā Igaunijai un Lietuvai, pēc neatkarības atgūšanas 90. gados norisinājās, īstenojot Baltijas bataljona projektu.
+1-1	0-8	Latvijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Latvija	organization[1]|GPE[2]	https://en.wikipedia.org/wiki/Latvian\_National\_Armed\_Forces[1]|https://en.wikipedia.org/wiki/Latvia[2]	*->1-1	*[1]	nmod	basic	1-4	
+1-2	9-18	Nacionālo	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsayp	*	nacionāla	organization[1]	https://en.wikipedia.org/wiki/Latvian\_National\_Armed\_Forces[1]	*->1-1	*[1]	amod	basic	1-4	
+1-3	19-26	bruņoto	*	*	Gen	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpgyp	*	bruņots	organization[1]	https://en.wikipedia.org/wiki/Latvian\_National\_Armed\_Forces[1]	*->1-1	*[1]	amod	basic	1-4	
+1-4	27-32	spēku	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	spēks	organization[1]	https://en.wikipedia.org/wiki/Latvian\_National\_Armed\_Forces[1]	*->1-1	*[1]	nmod	basic	1-8	
+1-5	33-34	(	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	(	_	_	*->1-2	*[1]	punct	basic	1-6	
+1-6	34-37	NBS	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	NBS	organization	https://en.wikipedia.org/wiki/Latvian\_National\_Armed\_Forces	*->1-2	*[1]	discourse	basic	1-4	
+1-7	37-38	)	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	)	_	_	*->1-2	*[1]	punct	basic	1-6	
+1-8	39-48	attīstība	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	attīstība	_	_	_	_	nsubj	basic	1-21	
+1-9	48-49	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-12	
+1-10	50-55	tāpat	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tāpat	_	_	_	_	discourse	basic	1-11	
+1-11	56-58	kā	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0m	*	kā	_	_	_	_	advmod	basic	1-12	
+1-12	59-68	Igaunijai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	npfsd4	*	Igaunija	GPE	https://en.wikipedia.org/wiki/Estonia	_	_	discourse	basic	1-21	
+1-13	69-71	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-14	
+1-14	72-80	Lietuvai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	npfsd4	*	Lietuva	GPE	https://en.wikipedia.org/wiki/Lithuania	_	_	conj	basic	1-12	
+1-15	80-81	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-12	
+1-16	82-85	pēc	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pēc	_	_	_	_	case	basic	1-18	
+1-17	86-97	neatkarības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	neatkarība	_	_	_	_	nmod	basic	1-18	
+1-18	98-107	atgūšanas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	atgūšana	_	_	_	_	obl	basic	1-21	
+1-19	108-111	90.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	90.	time[3]	*[3]	_	_	amod	basic	1-20	
+1-20	112-117	gados	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	*	gads	time[3]	*[3]	_	_	obl	basic	1-21	
+1-21	118-129	norisinājās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmyisi330an	*	norisināties	_	_	_	_	root	basic	1-21	
+1-22	129-130	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-23	
+1-23	131-140	īstenojot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	*	*	vmnpu0000000n	*	īstenot	_	_	_	_	advcl	basic	1-21	
+1-24	141-149	Baltijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Baltija	product[4]|location[5]	*[4]|https://en.wikipedia.org/wiki/Baltic\_states[5]	*->3-1	*[3]	nmod	basic	1-25	
+1-25	150-159	bataljona	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	bataljons	product[4]	*[4]	*->3-1	*[3]	nmod	basic	1-26	
+1-26	160-168	projektu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	projekts	product[4]	*[4]	*->3-1	*[3]	obj	basic	1-23	
+1-27	168-169	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-21	
+
+#Text=Tā mērķis bija attīstīt Baltijas valstu bruņotos spēkus atbilstoši Rietumu valstu standartiem, apmācot militārās personas dalībai miera uzturēšanas operācijās.
+2-1	171-173	Tā	*	*	Gen	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msgn	*	tas	_	_	*->3-2	*[3]	det	basic	2-2	
+2-2	174-180	mērķis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	mērķis	_	_	_	_	root	basic	2-2	
+2-3	181-185	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vcnisii30an	*	būt	_	_	_	_	cop	basic	2-2	
+2-4	186-194	attīstīt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	*	attīstīt	_	_	_	_	ccomp	basic	2-2	
+2-5	195-203	Baltijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Baltija	location[6]	https://en.wikipedia.org/wiki/Baltic\_states[6]	_	_	nmod	basic	2-6	
+2-6	204-210	valstu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg6	*	valsts	location[6]	https://en.wikipedia.org/wiki/Baltic\_states[6]	_	_	nmod	basic	2-8	
+2-7	211-219	bruņotos	*	*	Acc	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpayp	*	bruņots	_	_	_	_	amod	basic	2-8	
+2-8	220-226	spēkus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	spēks	_	_	_	_	obj	basic	2-4	
+2-9	227-237	atbilstoši	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	atbilstoši	_	_	_	_	advmod	basic	2-4	
+2-10	238-245	Rietumu	*	*	Gen	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	ncmdg1	*	rietumi	location[7]	*[7]	_	_	nmod	basic	2-11	
+2-11	246-252	valstu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg6	*	valsts	location[7]	*[7]	_	_	nmod	basic	2-12	
+2-12	253-264	standartiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	standarts	_	_	_	_	iobj	basic	2-9	
+2-13	264-265	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-14	
+2-14	266-273	apmācot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	*	*	vmnpu0000000n	*	apmācīt	_	_	_	_	advcl	basic	2-4	
+2-15	274-283	militārās	*	*	Acc	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	arfpayp	*	militāra	_	_	_	_	amod	basic	2-16	
+2-16	284-292	personas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	persona	_	_	_	_	obj	basic	2-14	
+2-17	293-300	dalībai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	*	dalība	_	_	_	_	obl	basic	2-14	
+2-18	301-306	miera	*	*	Gen	*	*	Masc	*	*	*	Coll	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Coll	*	*	ncmvg1	*	miers	_	_	_	_	nmod	basic	2-19	
+2-19	307-318	uzturēšanas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	uzturēšana	_	_	_	_	nmod	basic	2-20	
+2-20	319-329	operācijās	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	*	operācija	_	_	_	_	acl	basic	2-17	
+2-21	329-330	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-2	
+
+#Text=Vadošā valsts bija Dānija sadarbībā ar citām Skandināvijas valstīm – Norvēģiju un Zviedriju.
+3-1	332-338	Vadošā	*	Imp	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Pres	*	Aspect=Imp\|Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdfsnapypn	*	vadīt	_	_	_	_	amod	basic	3-2	
+3-2	339-345	valsts	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn6	*	valsts	_	_	_	_	root	basic	3-2	
+3-3	346-350	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vcnisii30an	*	būt	_	_	_	_	cop	basic	3-2	
+3-4	351-357	Dānija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Dānija	GPE	https://en.wikipedia.org/wiki/Denmark	_	_	nsubj	basic	3-2	
+3-5	358-367	sadarbībā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	sadarbība	_	_	_	_	acl	basic	3-2	
+3-6	368-370	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	_	_	case	basic	3-9	
+3-7	371-376	citām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur\|PronType=Ind	*	*	pi0fpdn	*	cita	_	_	_	_	det	basic	3-9	
+3-8	377-390	Skandināvijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Skandināvija	location[8]|location[9]	*[8]|https://en.wikipedia.org/wiki/Scandinavia[9]	*->2-1	*[2]	nmod	basic	3-9	
+3-9	391-398	valstīm	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd6	*	valsts	location[8]	*[8]	*->2-1	*[2]	iobj	basic	3-5	
+3-10	399-400	–	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	–	_	_	_	_	punct	basic	3-11	
+3-11	401-410	Norvēģiju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	*	Norvēģija	GPE	https://en.wikipedia.org/wiki/Norway	*->2-2	*[2]	acl	basic	3-9	
+3-12	411-413	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	*->2-2	*[2]	cc	basic	3-13	
+3-13	414-423	Zviedriju	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	npfpg4	*	Zviedrija	GPE	https://en.wikipedia.org/wiki/Sweden	*->2-2	*[2]	conj	basic	3-11	
+3-14	423-424	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-2	
+
+#Text=Projekts tika noslēgts 2004. gadā pēc desmit gadu darbības līdz ar Baltijas valstu iestāšanos NATO.
+4-1	426-434	Projekts	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	projekts	_	_	*->3-3	*[3]	nsubj:pass	basic	4-3	
+4-2	435-439	tika	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vtnisi130an	*	tikt	_	_	_	_	aux:pass	basic	4-3	
+4-3	440-448	noslēgts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnpsnpn	*	noslēgt	_	_	_	_	root	basic	4-3	
+4-4	449-454	2004.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	2004.	time[10]	*[10]	_	_	amod	basic	4-5	
+4-5	455-459	gadā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	gads	time[10]	*[10]	_	_	obl	basic	4-3	
+4-6	460-463	pēc	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	pēc	time[11]	*[11]	_	_	case	basic	4-9	
+4-7	464-470	desmit	*	*	*	*	*	*	*	*	*	Plur	*	*	*	*	*	*	Number=Plur\|NumType=Card	*	*	mcs0p0	*	desmit	time[11]	*[11]	_	_	nummod	basic	4-8	
+4-8	471-475	gadu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	gads	time[11]	*[11]	_	_	nmod	basic	4-9	
+4-9	476-484	darbības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	darbība	_	_	_	_	obl	basic	4-3	
+4-10	485-489	līdz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	līdz	_	_	_	_	advmod	basic	4-14	
+4-11	490-492	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	4-14	
+4-12	493-501	Baltijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Baltija	location[12]	https://en.wikipedia.org/wiki/Baltic\_states[12]	_	_	nmod	basic	4-13	
+4-13	502-508	valstu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg6	*	valsts	location[12]	https://en.wikipedia.org/wiki/Baltic\_states[12]	_	_	nmod	basic	4-14	
+4-14	509-519	iestāšanos	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsar	*	iestāšanās	_	_	_	_	obl	basic	4-3	
+4-15	520-524	NATO	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	NATO	organization	https://en.wikipedia.org/wiki/NATO	_	_	acl	basic	4-14	
+4-16	524-525	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	4-3	
+
+#Text=Projekts tiek vērtēts kā veiksmīgs, jo tas bija veicinājis Baltijas valstu savstarpējo militāro integrāciju un nodrošinājis nepieciešamo apmācību un personāla kvalifikāciju, lai piedalītos starptautiskajās operācijās.
+5-1	527-535	Projekts	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	projekts	_	_	*->3-4	*[3]	nsubj:pass	basic	5-3	
+5-2	536-540	tiek	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vtnipi130an	*	tikt	_	_	_	_	aux:pass	basic	5-3	
+5-3	541-548	vērtēts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnpsnpn	*	vērtēt	_	_	_	_	root	basic	5-3	
+5-4	549-551	kā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	kā	_	_	_	_	case	basic	5-5	
+5-5	552-561	veiksmīgs	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	veiksmīgs	_	_	_	_	obl	basic	5-3	
+5-6	561-562	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	5-10	
+5-7	563-565	jo	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	jo	_	_	_	_	mark	basic	5-10	
+5-8	566-569	tas	*	*	Nom	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msnn	*	tas	_	_	*->3-5	*[3]	nsubj	basic	5-10	
+5-9	570-574	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vcnisii30an	*	būt	_	_	_	_	aux	basic	5-10	
+5-10	575-585	veicinājis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnasnpn	*	veicināt	_	_	_	_	advcl	basic	5-3	
+5-11	586-594	Baltijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Baltija	location[13]	*[13]	_	_	nmod	basic	5-12	
+5-12	595-601	valstu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg6	*	valsts	location[13]	*[13]	_	_	nmod	basic	5-15	
+5-13	602-613	savstarpējo	*	*	Gen	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	arfpgyp	*	savstarpēja	_	_	_	_	amod	basic	5-15	
+5-14	614-622	militāro	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsayp	*	militāra	_	_	_	_	amod	basic	5-15	
+5-15	623-634	integrāciju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	integrācija	_	_	_	_	obj	basic	5-10	
+5-16	635-637	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	5-17	
+5-17	638-650	nodrošinājis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnasnpn	*	nodrošināt	_	_	_	_	conj	basic	5-10	
+5-18	651-663	nepieciešamo	*	*	Gen	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpgyp	*	nepieciešama	_	_	_	_	amod	basic	5-19	
+5-19	664-672	apmācību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	apmācība	_	_	_	_	nmod	basic	5-17	
+5-20	673-675	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	5-22	
+5-21	676-685	personāla	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	personāls	_	_	_	_	nmod	basic	5-22	
+5-22	686-699	kvalifikāciju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	kvalifikācija	_	_	_	_	conj	basic	5-19	
+5-23	699-700	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	5-25	
+5-24	701-704	lai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	lai	_	_	_	_	mark	basic	5-25	
+5-25	705-715	piedalītos	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|Reflex=Yes\|VerbForm=Fin\|Voice=Act	*	Act	vmyc0i300an	*	piedalīties	_	_	_	_	advcl	basic	5-10	
+5-26	716-732	starptautiskajās	*	*	Loc	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	arfplyp	*	starptautiska	_	_	_	_	amod	basic	5-27	
+5-27	733-743	operācijās	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	*	operācija	_	_	_	_	obl	basic	5-25	
+5-28	743-744	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	5-3	
+
+#Text=Par to liecina fakts, ka Latvijas bruņotie spēki pirmo reizi piedalījās starptautiskajā operācijā jau 1996. gadā Bosnijā un Hercegovinā, kam 1999. gadā sekoja Albānija un Kosova.
+6-1	745-748	Par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	6-2	
+6-2	749-751	to	*	*	Acc	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msan	*	tas	_	_	_	_	iobj	basic	6-3	
+6-3	752-759	liecina	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	liecināt	_	_	_	_	root	basic	6-3	
+6-4	760-765	fakts	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	fakts	_	_	_	_	nsubj	basic	6-3	
+6-5	765-766	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	6-12	
+6-6	767-769	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	6-12	
+6-7	770-778	Latvijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Latvija	organization[14]|GPE[15]	https://en.wikipedia.org/wiki/Latvian\_National\_Armed\_Forces[14]|https://en.wikipedia.org/wiki/Latvia[15]	_	_	nmod	basic	6-9	
+6-8	779-787	bruņotie	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnyp	*	bruņots	organization[14]	https://en.wikipedia.org/wiki/Latvian\_National\_Armed\_Forces[14]	_	_	amod	basic	6-9	
+6-9	788-793	spēki	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	spēks	organization[14]	https://en.wikipedia.org/wiki/Latvian\_National\_Armed\_Forces[14]	_	_	nsubj	basic	6-12	
+6-10	794-799	pirmo	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|NumType=Ord	*	*	mosfsa	*	pirmā	_	_	_	_	amod	basic	6-11	
+6-11	800-805	reizi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	reize	_	_	_	_	obl	basic	6-12	
+6-12	806-816	piedalījās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmyisi330an	*	piedalīties	_	_	_	_	acl	basic	6-4	
+6-13	817-832	starptautiskajā	*	*	Loc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfslyp	*	starptautiska	_	_	_	_	amod	basic	6-14	
+6-14	833-842	operācijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	operācija	_	_	_	_	obl	basic	6-12	
+6-15	843-846	jau	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	jau	_	_	_	_	advmod	basic	6-17	
+6-16	847-852	1996.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	1996.	time[16]	*[16]	_	_	amod	basic	6-17	
+6-17	853-857	gadā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	gads	time[16]	*[16]	_	_	obl	basic	6-12	
+6-18	858-865	Bosnijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Bosnija	GPE[17]	https://en.wikipedia.org/wiki/Bosnia\_and\_Herzegovina[17]	_	_	obl	basic	6-12	
+6-19	866-868	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	GPE[17]	https://en.wikipedia.org/wiki/Bosnia\_and\_Herzegovina[17]	_	_	cc	basic	6-20	
+6-20	869-880	Hercegovinā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Hercegovina	GPE[17]	https://en.wikipedia.org/wiki/Bosnia\_and\_Herzegovina[17]	_	_	conj	basic	6-18	
+6-21	880-881	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	6-25	
+6-22	882-885	kam	*	*	Dat	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Dat\|PronType=Rel	*	*	pr000dn	*	kas	_	_	_	_	iobj	basic	6-25	
+6-23	886-891	1999.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	1999.	time[18]	*[18]	_	_	amod	basic	6-24	
+6-24	892-896	gadā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	gads	time[18]	*[18]	_	_	obl	basic	6-25	
+6-25	897-903	sekoja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnisi230an	*	sekot	_	_	_	_	advcl	basic	6-12	
+6-26	904-912	Albānija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Albānija	GPE	https://en.wikipedia.org/wiki/Albania	_	_	nsubj	basic	6-25	
+6-27	913-915	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	6-28	
+6-28	916-922	Kosova	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Kosova	GPE	https://en.wikipedia.org/wiki/Kosovo	_	_	conj	basic	6-26	
+6-29	922-923	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	6-3	
+
+#Text=Līdz ar iestāšanos NATO kā savu ieguldījumu kolektīvajā drošībā Latvija varēja piedāvāt tieši savu militārpersonu dalību starptautiskajās operācijās, kas izpaudās kā dalība ASV vadītajā gribas koalīcijas operācijā Irākā (2003–2008) un nepārtraukta dalība operācijā Afganistānā (kopš 2003. gada).
+7-1	925-929	Līdz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	līdz	_	_	_	_	advmod	basic	7-11	
+7-2	930-932	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	7-3	
+7-3	933-943	iestāšanos	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsar	*	iestāšanās	_	_	_	_	iobj	basic	7-1	
+7-4	944-948	NATO	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	NATO	organization	https://en.wikipedia.org/wiki/NATO	_	_	nmod	basic	7-3	
+7-5	949-951	kā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	kā	_	_	_	_	case	basic	7-7	
+7-6	952-956	savu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0msan	*	savs	_	_	_	_	det	basic	7-7	
+7-7	957-968	ieguldījumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	ieguldījums	_	_	_	_	nmod	basic	7-16	
+7-8	969-980	kolektīvajā	*	*	Loc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfslyp	*	kolektīva	_	_	_	_	amod	basic	7-9	
+7-9	981-988	drošībā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	drošība	_	_	_	_	acl	basic	7-7	
+7-10	989-996	Latvija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Latvija	GPE	*	*->5-1	*[5]	nsubj	basic	7-11	
+7-11	997-1003	varēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vonisi330an	*	varēt	_	_	_	_	root	basic	7-11	
+7-12	1004-1012	piedāvāt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t2000n	*	piedāvāt	_	_	_	_	xcomp	basic	7-11	
+7-13	1013-1018	tieši	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tieši	_	_	_	_	discourse	basic	7-16	
+7-14	1019-1023	savu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur\|Poss=Yes\|PronType=Prs	*	*	ps0fpgn	*	sava	_	_	*->5-2	*[5]	det	basic	7-15	
+7-15	1024-1038	militārpersonu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	militārpersona	_	_	_	_	nmod	basic	7-16	
+7-16	1039-1045	dalību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	dalība	_	_	_	_	obj	basic	7-12	
+7-17	1046-1062	starptautiskajās	*	*	Loc	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	arfplyp	*	starptautiska	_	_	_	_	amod	basic	7-18	
+7-18	1063-1073	operācijās	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	*	operācija	_	_	*->6-1	*[6]	acl	basic	7-16	
+7-19	1073-1074	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	7-21	
+7-20	1075-1078	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->6-2	*[6]	nsubj	basic	7-21	
+7-21	1079-1087	izpaudās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmyist130an	*	izpausties	_	_	_	_	acl	basic	7-16	
+7-22	1088-1090	kā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	kā	_	_	_	_	case	basic	7-23	
+7-23	1091-1097	dalība	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	dalība	_	_	_	_	obl	basic	7-21	
+7-24	1098-1101	ASV	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	ASV	GPE	https://en.wikipedia.org/wiki/United\_States	_	_	nmod	basic	7-25	
+7-25	1102-1110	vadītajā	*	Perf	Loc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Loc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmslpsypn	*	vadīt	_	_	_	_	amod	basic	7-26	
+7-26	1111-1117	gribas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	griba	_	_	_	_	nmod	basic	7-27	
+7-27	1118-1128	koalīcijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	koalīcija	_	_	_	_	nmod	basic	7-28	
+7-28	1129-1138	operācijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	operācija	_	_	_	_	acl	basic	7-23	
+7-29	1139-1144	Irākā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Irāka	GPE	https://en.wikipedia.org/wiki/Iraq	_	_	acl	basic	7-21	
+7-30	1145-1146	(	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	(	_	_	_	_	punct	basic	7-31	
+7-31	1146-1150	2003	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	2003	time[19]	*[19]	_	_	discourse	basic	7-23	
+7-32	1150-1151	–	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	–	time[19]	*[19]	_	_	punct	basic	7-33	
+7-33	1151-1155	2008	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	2008	time[19]	*[19]	_	_	conj	basic	7-31	
+7-34	1155-1156	)	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	)	_	_	_	_	punct	basic	7-31	
+7-35	1157-1159	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	7-37	
+7-36	1160-1172	nepārtraukta	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	*	nepārtraukta	_	_	_	_	amod	basic	7-37	
+7-37	1173-1179	dalība	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	dalība	_	_	_	_	conj	basic	7-23	
+7-38	1180-1189	operācijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	operācija	_	_	_	_	acl	basic	7-37	
+7-39	1190-1201	Afganistānā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Afganistāna	GPE	https://en.wikipedia.org/wiki/Afghanistan	_	_	acl	basic	7-38	
+7-40	1202-1203	(	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	(	_	_	_	_	punct	basic	7-43	
+7-41	1203-1207	kopš	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	kopš	time[20]	*[20]	_	_	case	basic	7-43	
+7-42	1208-1213	2003.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	2003.	time[20]	*[20]	_	_	amod	basic	7-43	
+7-43	1214-1218	gada	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	gads	time[20]	*[20]	_	_	discourse	basic	7-37	
+7-44	1218-1219	)	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	)	_	_	_	_	punct	basic	7-43	
+7-45	1219-1220	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	7-11	
+
+#Text=Lai sniegtu savu ieguldījumu arī ES īstenotajā drošības politikā, Latvijas Jūras spēku virsnieki kopš 2011. gada piedalās pretpirātisma operācijā pie Somālijas krastiem, kura ir unikāla ar to, ka tā ir vienīgā jūras operācija pēdējos gadu desmitos.
+8-1	1222-1225	Lai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	lai	_	_	_	_	mark	basic	8-2	
+8-2	1226-1233	sniegtu	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vmnc0t100an	*	sniegt	_	_	_	_	advcl	basic	8-18	
+8-3	1234-1238	savu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0fsan	*	sava	_	_	*->6-3	*[6]	det	basic	8-4	
+8-4	1239-1250	ieguldījumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	ieguldījums	_	_	_	_	obj	basic	8-2	
+8-5	1251-1254	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	8-6	
+8-6	1255-1257	ES	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	ES	GPE	*	_	_	nmod	basic	8-7	
+8-7	1258-1268	īstenotajā	*	Perf	Loc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Loc\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmslpsypn	*	īstenot	_	_	_	_	amod	basic	8-8	
+8-8	1269-1277	drošības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	drošība	_	_	_	_	nmod	basic	8-9	
+8-9	1278-1286	politikā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	politika	_	_	_	_	acl	basic	8-4	
+8-10	1286-1287	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	8-2	
+8-11	1288-1296	Latvijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Latvija	organization[21]|GPE[22]	https://en.wikipedia.org/wiki/Latvian\_Naval\_Forces[21]|https://en.wikipedia.org/wiki/Latvia[22]	_	_	nmod	basic	8-13	
+8-12	1297-1302	Jūras	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	jūra	organization[21]	https://en.wikipedia.org/wiki/Latvian\_Naval\_Forces[21]	_	_	nmod	basic	8-13	
+8-13	1303-1308	spēku	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	spēks	organization[21]	https://en.wikipedia.org/wiki/Latvian\_Naval\_Forces[21]	_	_	nmod	basic	8-14	
+8-14	1309-1318	virsnieki	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	virsnieks	_	_	_	_	nsubj	basic	8-18	
+8-15	1319-1323	kopš	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	kopš	time[23]	*[23]	_	_	case	basic	8-17	
+8-16	1324-1329	2011.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	2011.	time[23]	*[23]	_	_	amod	basic	8-17	
+8-17	1330-1334	gada	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	gads	time[23]	*[23]	_	_	obl	basic	8-18	
+8-18	1335-1343	piedalās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmyipi330an	*	piedalīties	_	_	_	_	root	basic	8-18	
+8-19	1344-1357	pretpirātisma	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	pretpirātisms	_	_	*->4-1	*[4]	obl	basic	8-20	
+8-20	1358-1367	operācijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	operācija	_	_	*->4-1|*->7-1	*[4]|*[7]	obl	basic	8-18	
+8-21	1368-1371	pie	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pie	_	_	_	_	case	basic	8-23	
+8-22	1372-1381	Somālijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Somālija	GPE	https://en.wikipedia.org/wiki/Somalia	_	_	nmod	basic	8-23	
+8-23	1382-1390	krastiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	krasts	_	_	_	_	nmod	basic	8-20	
+8-24	1390-1391	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	8-27	
+8-25	1392-1396	kura	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsnn	*	kura	_	_	*->7-2	*[7]	nsubj	basic	8-27	
+8-26	1397-1399	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	8-27	
+8-27	1400-1407	unikāla	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsnnp	*	unikāla	_	_	_	_	acl	basic	8-20	
+8-28	1408-1410	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	8-29	
+8-29	1411-1413	to	*	*	Acc	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msan	*	tas	_	_	_	_	acl	basic	8-27	
+8-30	1413-1414	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	8-36	
+8-31	1415-1417	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	8-36	
+8-32	1418-1420	tā	*	*	Nom	*	*	Fem	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3fsnn	*	tā	_	_	*->7-3	*[7]	nsubj	basic	8-36	
+8-33	1421-1423	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	8-36	
+8-34	1424-1431	vienīgā	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsnyp	*	vienīga	_	_	_	_	amod	basic	8-36	
+8-35	1432-1437	jūras	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	jūra	_	_	*->4-2	*[4]	nmod	basic	8-36	
+8-36	1438-1447	operācija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	operācija	_	_	*->4-2	*[4]	acl	basic	8-29	
+8-37	1448-1455	pēdējos	*	*	Loc	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armplnp	*	pēdējs	time[24]	*[24]	_	_	amod	basic	8-38	
+8-38	1456-1460	gadu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	gads	time[24]	*[24]	_	_	nmod	basic	8-39	
+8-39	1461-1469	desmitos	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	*	desmits	time[24]	*[24]	_	_	obl	basic	8-36	
+8-40	1469-1470	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	8-18	
+
+#Text=Savukārt sauszemes spēki pirmo reizi piedalās starptautiskās operācijās Āfrikā, kopš 2013. gada piedaloties Mali bruņoto spēku apmācībā un sniedzot atbalstu ES militārajai operācijai Centrālāfrikas Republikā.
+9-1	1472-1480	Savukārt	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	savukārt	_	_	_	_	advmod	basic	9-6	
+9-2	1481-1490	sauszemes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	sauszeme	_	_	_	_	nmod	basic	9-3	
+9-3	1491-1496	spēki	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	spēks	_	_	_	_	nsubj	basic	9-6	
+9-4	1497-1502	pirmo	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|NumType=Ord	*	*	mosfsa	*	pirmā	_	_	_	_	amod	basic	9-5	
+9-5	1503-1508	reizi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	reize	_	_	_	_	obl	basic	9-6	
+9-6	1509-1517	piedalās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmyipi330an	*	piedalīties	_	_	_	_	root	basic	9-6	
+9-7	1518-1532	starptautiskās	*	*	Loc	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	arfplnp	*	starptautiska	_	_	_	_	amod	basic	9-8	
+9-8	1533-1543	operācijās	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	*	operācija	_	_	_	_	obl	basic	9-6	
+9-9	1544-1550	Āfrikā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Āfrika	location	https://en.wikipedia.org/wiki/Africa	_	_	acl	basic	9-8	
+9-10	1550-1551	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	9-14	
+9-11	1552-1556	kopš	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	kopš	time[25]	*[25]	_	_	case	basic	9-13	
+9-12	1557-1562	2013.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	2013.	time[25]	*[25]	_	_	amod	basic	9-13	
+9-13	1563-1567	gada	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	gads	time[25]	*[25]	_	_	obl	basic	9-14	
+9-14	1568-1579	piedaloties	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Conv	*	*	vmypu0000000n	*	piedalīties	_	_	_	_	advcl	basic	9-6	
+9-15	1580-1584	Mali	*	*	*	*	*	*	Ind	*	*	Sing	2	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=2\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist12san	*	malt	organization[26]|GPE[27]	*[26]|https://en.wikipedia.org/wiki/Mali[27]	_	_	dep	basic	9-17	
+9-16	1585-1592	bruņoto	*	*	Gen	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpgyp	*	bruņots	organization[26]	*[26]	_	_	amod	basic	9-17	
+9-17	1593-1598	spēku	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	spēks	organization[26]	*[26]	_	_	obj	basic	9-18	
+9-18	1599-1607	apmācībā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	apmācība	_	_	_	_	obl	basic	9-14	
+9-19	1608-1610	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	9-20	
+9-20	1611-1619	sniedzot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	*	*	vmnpu0000000n	*	sniegt	_	_	_	_	conj	basic	9-14	
+9-21	1620-1628	atbalstu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	atbalsts	_	_	_	_	obj	basic	9-20	
+9-22	1629-1631	ES	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	ES	GPE	https://en.wikipedia.org/wiki/European\_Union	_	_	nmod	basic	9-24	
+9-23	1632-1643	militārajai	*	*	Dat	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsdyp	*	militāra	_	_	_	_	amod	basic	9-24	
+9-24	1644-1654	operācijai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	*	operācija	_	_	_	_	nmod	basic	9-21	
+9-25	1655-1669	Centrālāfrikas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Centrālāfrika	GPE[28]	https://en.wikipedia.org/wiki/Central\_African\_Republic[28]	_	_	nmod	basic	9-26	
+9-26	1670-1679	Republikā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	republika	GPE[28]	https://en.wikipedia.org/wiki/Central\_African\_Republic[28]	_	_	acl	basic	9-24	
+9-27	1679-1680	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	9-6	

@@ -1,87 +1,87 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Diemžēl tauri izmira, jo to medīšana bija pārāk intensīva.
-1-1	0-7	Diemžēl	_	_	_	_	_	_	_	_	_	_	_	_	q	diemžēl	_	_	_	_	discourse|discourse	basic|enhanced	1-3|1-3	
-1-2	8-13	tauri	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	taurs	_	_	*[1]	*->1-1	nsubj|nsubj	basic|enhanced	1-3|1-3	
-1-3	14-20	izmira	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi130an	izmirt	_	_	_	_	root|root	basic|enhanced	1-3|1-3	
-1-4	20-21	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-10|1-10	
-1-5	22-24	jo	_	_	_	_	_	_	_	_	_	_	_	_	cs	jo	_	_	_	_	mark|mark	basic|enhanced	1-10|1-10	
-1-6	25-27	to	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur\|PronType=Dem	*	*	pd0fpgn	tā	_	_	*[1]	*->1-2	det|det	basic|enhanced	1-7|1-7	
-1-7	28-36	medīšana	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	medīšana	_	_	_	_	nsubj|nsubj	basic|enhanced	1-10|1-10	
-1-8	37-41	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vcnisii30an	būt	_	_	_	_	cop|cop	basic|enhanced	1-10|1-10	
-1-9	42-47	pārāk	_	_	_	_	_	_	_	_	_	_	_	_	r0q	pārāk	_	_	_	_	advmod|advmod	basic|enhanced	1-10|1-10	
-1-10	48-57	intensīva	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	intensīva	_	_	_	_	advcl|advcl	basic|enhanced	1-3|1-3	
-1-11	57-58	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-3|1-3	
+1-1	0-7	Diemžēl	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	diemžēl	_	_	_	_	discourse|discourse	basic|enhanced	1-3|1-3	
+1-2	8-13	tauri	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	taurs	_	_	*->1-1	*[1]	nsubj|nsubj	basic|enhanced	1-3|1-3	
+1-3	14-20	izmira	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnisi130an	*	izmirt	_	_	_	_	root|root	basic|enhanced	1-3|1-3	
+1-4	20-21	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	1-10|1-10	
+1-5	22-24	jo	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	jo	_	_	_	_	mark|mark	basic|enhanced	1-10|1-10	
+1-6	25-27	to	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur\|PronType=Dem	*	*	pd0fpgn	*	tā	_	_	*->1-2	*[1]	det|det	basic|enhanced	1-7|1-7	
+1-7	28-36	medīšana	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	medīšana	_	_	_	_	nsubj|nsubj	basic|enhanced	1-10|1-10	
+1-8	37-41	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vcnisii30an	*	būt	_	_	_	_	cop|cop	basic|enhanced	1-10|1-10	
+1-9	42-47	pārāk	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	pārāk	_	_	_	_	advmod|advmod	basic|enhanced	1-10|1-10	
+1-10	48-57	intensīva	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	*	intensīva	_	_	_	_	advcl|advcl	basic|enhanced	1-3|1-3	
+1-11	57-58	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	1-3|1-3	
 
 #Text=Pēdējais zināmais Eiropas tauru ciltstēvs mira Polijā pirms gandrīz 400 gadiem, tāpēc tiešu pēcteču šiem dzīvniekiem nav.
-2-1	60-68	Pēdējais	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsnyp	pēdējs	_	_	_	_	amod|amod	basic|enhanced	2-5|2-5	
-2-2	69-77	zināmais	Masc	Sing	Nom	Pos	*	Pres	*	Pass	*	Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	*	vmnpdmsnppyp	zināt	_	_	_	_	amod|amod	basic|enhanced	2-5|2-5	
-2-3	78-85	Eiropas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Eiropa	location	https://en.wikipedia.org/wiki/Europe	_	_	nmod|nmod	basic|enhanced	2-4|2-4	
-2-4	86-91	tauru	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	taurs	_	_	*[1]	*->1-3	nmod|nmod	basic|enhanced	2-5|2-5	
-2-5	92-101	ciltstēvs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	ciltstēvs	_	_	_	_	nsubj|nsubj	basic|enhanced	2-6|2-6	
-2-6	102-106	mira	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi130an	mirt	_	_	_	_	root|root	basic|enhanced	2-6|2-6	
-2-7	107-113	Polijā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	Polija	GPE	https://en.wikipedia.org/wiki/Poland	_	_	obl|obl	basic|enhanced	2-6|2-6	
-2-8	114-119	pirms	_	_	_	_	_	_	_	_	_	_	_	_	spsg	pirms	time[1]	*[1]	_	_	case|case	basic|enhanced	2-11|2-11	
-2-9	120-127	gandrīz	_	_	_	_	_	_	_	_	_	_	_	_	r0q	gandrīz	time[1]	*[1]	_	_	advmod|advmod	basic|enhanced	2-10|2-10	
-2-10	128-131	400	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	400	time[1]	*[1]	_	_	nummod|nummod	basic|enhanced	2-11|2-11	
-2-11	132-138	gadiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	gads	time[1]	*[1]	_	_	obl|obl	basic|enhanced	2-6|2-6	
-2-12	138-139	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-18|2-18	
-2-13	140-145	tāpēc	_	_	_	_	_	_	_	_	_	_	_	_	r0c	tāpēc	_	_	_	_	cc|cc	basic|enhanced	2-18|2-18	
-2-14	146-151	tiešu	Masc	Plur	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpgnp	tiešs	_	_	_	_	amod|amod	basic|enhanced	2-15|2-15	
-2-15	152-159	pēcteču	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	pēctecis	_	_	_	_	nsubj|nsubj	basic|enhanced	2-18|2-18	
-2-16	160-164	šiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpdn	šis	_	_	_	_	det|det	basic|enhanced	2-17|2-17	
-2-17	165-176	dzīvniekiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	dzīvnieks	_	_	_	_	obl|obl	basic|enhanced	2-18|2-18	
-2-18	177-180	nav	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vgnipii30ay	nebūt	_	_	_	_	conj|conj	basic|enhanced	2-6|2-6	
-2-19	180-181	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	2-6|2-6	
+2-1	60-68	Pēdējais	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsnyp	*	pēdējs	_	_	_	_	amod|amod	basic|enhanced	2-5|2-5	
+2-2	69-77	zināmais	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Pres	*	Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdmsnppyp	*	zināt	_	_	_	_	amod|amod	basic|enhanced	2-5|2-5	
+2-3	78-85	Eiropas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Eiropa	location	https://en.wikipedia.org/wiki/Europe	_	_	nmod|nmod	basic|enhanced	2-4|2-4	
+2-4	86-91	tauru	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	taurs	_	_	*->1-3	*[1]	nmod|nmod	basic|enhanced	2-5|2-5	
+2-5	92-101	ciltstēvs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	ciltstēvs	_	_	_	_	nsubj|nsubj	basic|enhanced	2-6|2-6	
+2-6	102-106	mira	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnisi130an	*	mirt	_	_	_	_	root|root	basic|enhanced	2-6|2-6	
+2-7	107-113	Polijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Polija	GPE	https://en.wikipedia.org/wiki/Poland	_	_	obl|obl	basic|enhanced	2-6|2-6	
+2-8	114-119	pirms	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pirms	time[1]	*[1]	_	_	case|case	basic|enhanced	2-11|2-11	
+2-9	120-127	gandrīz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	gandrīz	time[1]	*[1]	_	_	advmod|advmod	basic|enhanced	2-10|2-10	
+2-10	128-131	400	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	400	time[1]	*[1]	_	_	nummod|nummod	basic|enhanced	2-11|2-11	
+2-11	132-138	gadiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	gads	time[1]	*[1]	_	_	obl|obl	basic|enhanced	2-6|2-6	
+2-12	138-139	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	2-18|2-18	
+2-13	140-145	tāpēc	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0c	*	tāpēc	_	_	_	_	cc|cc	basic|enhanced	2-18|2-18	
+2-14	146-151	tiešu	*	*	Gen	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpgnp	*	tiešs	_	_	_	_	amod|amod	basic|enhanced	2-15|2-15	
+2-15	152-159	pēcteču	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	pēctecis	_	_	_	_	nsubj|nsubj	basic|enhanced	2-18|2-18	
+2-16	160-164	šiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpdn	*	šis	_	_	_	_	det|det	basic|enhanced	2-17|2-17	
+2-17	165-176	dzīvniekiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	dzīvnieks	_	_	_	_	obl|obl	basic|enhanced	2-18|2-18	
+2-18	177-180	nav	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vgnipii30ay	*	nebūt	_	_	_	_	conj|conj	basic|enhanced	2-6|2-6	
+2-19	180-181	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	2-6|2-6	
 
 #Text=Tomēr tiek uzskatīts, ka ikvienā Eiropas mājas govī ir kaut kas no šī senā dzīvnieka.
-3-1	183-188	Tomēr	_	_	_	_	_	_	_	_	_	_	_	_	cc	tomēr	_	_	_	_	cc|cc	basic|enhanced	3-3|3-3	
-3-2	189-193	tiek	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vtnipi130an	tikt	_	_	_	_	aux|aux	basic|enhanced	3-3|3-3	
-3-3	194-203	uzskatīts	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnp	uzskatīt	_	_	_	_	root|root	basic|enhanced	3-3|3-3	
-3-4	203-204	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	3-10|3-10	
-3-5	205-207	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark|mark	basic|enhanced	3-10|3-10	
-3-6	208-215	ikvienā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|PronType=Tot	*	*	pg0fsln	ikviena	_	_	_	_	det|det	basic|enhanced	3-9|3-9	
-3-7	216-223	Eiropas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Eiropa	_	_	_	_	nmod|nmod	basic|enhanced	3-9|3-9	
-3-8	224-229	mājas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	māja	_	_	_	_	nmod|nmod	basic|enhanced	3-9|3-9	
-3-9	230-234	govī	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl6	govs	_	_	_	_	obl|obl	basic|enhanced	3-10|3-10	
-3-10	235-237	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipii30an	būt	_	_	_	_	csubj:pass|csubj	basic|enhanced	3-3|3-3	
-3-11	238-242	kaut	_	_	_	_	_	_	_	_	_	_	_	_	q	kaut	_	_	_	_	discourse|discourse	basic|enhanced	3-12|3-12	
-3-12	243-246	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Ind	*	*	pi000nn	kas	_	_	_	_	nsubj|nsubj	basic|enhanced	3-10|3-10	
-3-13	247-249	no	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	_	_	_	_	case|case	basic|enhanced	3-16|3-16	
-3-14	250-252	šī	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msgn	šis	_	_	_	_	det|det	basic|enhanced	3-16|3-16	
-3-15	253-257	senā	Masc	Sing	Gen	Pos	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsgyp	sens	_	_	_	_	amod|amod	basic|enhanced	3-16|3-16	
-3-16	258-267	dzīvnieka	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	dzīvnieks	_	_	_	_	compound|compound	basic|enhanced	3-12|3-12	
-3-17	267-268	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	3-3|3-3	
+3-1	183-188	Tomēr	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	tomēr	_	_	_	_	cc|cc	basic|enhanced	3-3|3-3	
+3-2	189-193	tiek	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vtnipi130an	*	tikt	_	_	_	_	aux|aux	basic|enhanced	3-3|3-3	
+3-3	194-203	uzskatīts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnpsnp	*	uzskatīt	_	_	_	_	root|root	basic|enhanced	3-3|3-3	
+3-4	203-204	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	3-10|3-10	
+3-5	205-207	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark|mark	basic|enhanced	3-10|3-10	
+3-6	208-215	ikvienā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|PronType=Tot	*	*	pg0fsln	*	ikviena	_	_	_	_	det|det	basic|enhanced	3-9|3-9	
+3-7	216-223	Eiropas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Eiropa	_	_	_	_	nmod|nmod	basic|enhanced	3-9|3-9	
+3-8	224-229	mājas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	māja	_	_	_	_	nmod|nmod	basic|enhanced	3-9|3-9	
+3-9	230-234	govī	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl6	*	govs	_	_	_	_	obl|obl	basic|enhanced	3-10|3-10	
+3-10	235-237	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipii30an	*	būt	_	_	_	_	csubj:pass|csubj	basic|enhanced	3-3|3-3	
+3-11	238-242	kaut	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	kaut	_	_	_	_	discourse|discourse	basic|enhanced	3-12|3-12	
+3-12	243-246	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Ind	*	*	pi000nn	*	kas	_	_	_	_	nsubj|nsubj	basic|enhanced	3-10|3-10	
+3-13	247-249	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case|case	basic|enhanced	3-16|3-16	
+3-14	250-252	šī	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msgn	*	šis	_	_	_	_	det|det	basic|enhanced	3-16|3-16	
+3-15	253-257	senā	*	*	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsgyp	*	sens	_	_	_	_	amod|amod	basic|enhanced	3-16|3-16	
+3-16	258-267	dzīvnieka	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	dzīvnieks	_	_	_	_	compound|compound	basic|enhanced	3-12|3-12	
+3-17	267-268	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	3-3|3-3	
 
 #Text=Viduslaikos šos miermīlīgos zālēdājus vēl varēja sastapt Eiropas centrālajā daļā un dienvidos, arī Āfrikā, Tuvajos Austrumos un Āzijā līdz pat Indijai.
-4-1	270-281	Viduslaikos	Masc	Ptan	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Ptan	*	*	ncmdl1	viduslaiki	time	https://en.wikipedia.org/wiki/Middle\_Ages	_	_	obl|obl	basic|enhanced	4-6|4-6	
-4-2	282-285	šos	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpan	šis	_	_	_	_	det|det	basic|enhanced	4-4|4-4	
-4-3	286-297	miermīlīgos	Masc	Plur	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpayp	miermīlīgs	_	_	*[1]	*->1-4	amod|amod	basic|enhanced	4-4|4-4	
-4-4	298-307	zālēdājus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	zālēdājs	_	_	*[1]	*->1-4	obj|obj	basic|enhanced	4-7|4-7	
-4-5	308-311	vēl	_	_	_	_	_	_	_	_	_	_	_	_	r0t	vēl	_	_	_	_	advmod|advmod	basic|enhanced	4-6|4-6	
-4-6	312-318	varēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vonist330an	varēt	_	_	_	_	root|root	basic|enhanced	4-6|4-6	
-4-7	319-326	sastapt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	sastapt	_	_	_	_	xcomp|xcomp	basic|enhanced	4-6|4-6	
-4-8	327-334	Eiropas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Eiropa	location	ttps://en.wikipedia.org/wiki/Europe	_	_	nmod|nmod	basic|enhanced	4-10|4-10	
-4-9	335-345	centrālajā	Fem	Sing	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfslyp	centrāla	_	_	_	_	amod|amod	basic|enhanced	4-10|4-10	
-4-10	346-350	daļā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	daļa	_	_	_	_	obl|obl	basic|enhanced	4-6|4-6	
-4-11	351-353	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	4-12|4-12	
-4-12	354-363	dienvidos	Masc	Ptan	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Ptan	*	*	ncmdl1	dienvidi	_	_	_	_	conj|conj	basic|enhanced	4-10|4-10	
-4-13	363-364	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	4-15|4-15	
-4-14	365-368	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse|discourse	basic|enhanced	4-15|4-15	
-4-15	369-375	Āfrikā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	Āfrika	location	https://en.wikipedia.org/wiki/Africa	_	_	conj|conj	basic|enhanced	4-10|4-10	
-4-16	375-376	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	4-17|4-17	
-4-17	377-384	Tuvajos	Masc	Plur	Loc	Pos	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armplyp	Tuvs	GPE[2]	https://en.wikipedia.org/wiki/Near\_East[2]	_	_	conj|conj	basic|enhanced	4-10|4-10	
-4-18	385-394	Austrumos	Masc	Ptan	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Ptan	*	*	npmdl1	Austrumi	GPE[2]	https://en.wikipedia.org/wiki/Near\_East[2]	_	_	flat:name|flat	basic|enhanced	4-17|4-17	
-4-19	395-397	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	4-20|4-20	
-4-20	398-403	Āzijā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	Āzija	location	https://en.wikipedia.org/wiki/Asia	_	_	conj|conj	basic|enhanced	4-10|4-10	
-4-21	404-408	līdz	_	_	_	_	_	_	_	_	_	_	_	_	spsd	līdz	_	_	_	_	case|case	basic|enhanced	4-23|4-23	
-4-22	409-412	pat	_	_	_	_	_	_	_	_	_	_	_	_	q	pat	_	_	_	_	discourse|discourse	basic|enhanced	4-23|4-23	
-4-23	413-420	Indijai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	npfsd4	Indija	GPE	https://en.wikipedia.org/wiki/India	_	_	obl|obl	basic|enhanced	4-20|4-20	
-4-24	420-421	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	4-6|4-6	
+4-1	270-281	Viduslaikos	*	*	Loc	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Ptan	*	*	ncmdl1	*	viduslaiki	time	https://en.wikipedia.org/wiki/Middle\_Ages	_	_	obl|obl	basic|enhanced	4-6|4-6	
+4-2	282-285	šos	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpan	*	šis	_	_	_	_	det|det	basic|enhanced	4-4|4-4	
+4-3	286-297	miermīlīgos	*	*	Acc	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpayp	*	miermīlīgs	_	_	*->1-4	*[1]	amod|amod	basic|enhanced	4-4|4-4	
+4-4	298-307	zālēdājus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	zālēdājs	_	_	*->1-4	*[1]	obj|obj	basic|enhanced	4-7|4-7	
+4-5	308-311	vēl	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	vēl	_	_	_	_	advmod|advmod	basic|enhanced	4-6|4-6	
+4-6	312-318	varēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vonist330an	*	varēt	_	_	_	_	root|root	basic|enhanced	4-6|4-6	
+4-7	319-326	sastapt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	*	sastapt	_	_	_	_	xcomp|xcomp	basic|enhanced	4-6|4-6	
+4-8	327-334	Eiropas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Eiropa	location	ttps://en.wikipedia.org/wiki/Europe	_	_	nmod|nmod	basic|enhanced	4-10|4-10	
+4-9	335-345	centrālajā	*	*	Loc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfslyp	*	centrāla	_	_	_	_	amod|amod	basic|enhanced	4-10|4-10	
+4-10	346-350	daļā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	daļa	_	_	_	_	obl|obl	basic|enhanced	4-6|4-6	
+4-11	351-353	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc|cc	basic|enhanced	4-12|4-12	
+4-12	354-363	dienvidos	*	*	Loc	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Ptan	*	*	ncmdl1	*	dienvidi	_	_	_	_	conj|conj	basic|enhanced	4-10|4-10	
+4-13	363-364	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	4-15|4-15	
+4-14	365-368	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse|discourse	basic|enhanced	4-15|4-15	
+4-15	369-375	Āfrikā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Āfrika	location	https://en.wikipedia.org/wiki/Africa	_	_	conj|conj	basic|enhanced	4-10|4-10	
+4-16	375-376	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	4-17|4-17	
+4-17	377-384	Tuvajos	*	*	Loc	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armplyp	*	Tuvs	GPE[2]	https://en.wikipedia.org/wiki/Near\_East[2]	_	_	conj|conj	basic|enhanced	4-10|4-10	
+4-18	385-394	Austrumos	*	*	Loc	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Ptan	*	*	npmdl1	*	Austrumi	GPE[2]	https://en.wikipedia.org/wiki/Near\_East[2]	_	_	flat:name|flat	basic|enhanced	4-17|4-17	
+4-19	395-397	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc|cc	basic|enhanced	4-20|4-20	
+4-20	398-403	Āzijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Āzija	location	https://en.wikipedia.org/wiki/Asia	_	_	conj|conj	basic|enhanced	4-10|4-10	
+4-21	404-408	līdz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsd	*	līdz	_	_	_	_	case|case	basic|enhanced	4-23|4-23	
+4-22	409-412	pat	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	pat	_	_	_	_	discourse|discourse	basic|enhanced	4-23|4-23	
+4-23	413-420	Indijai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	npfsd4	*	Indija	GPE	https://en.wikipedia.org/wiki/India	_	_	obl|obl	basic|enhanced	4-20|4-20	
+4-24	420-421	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	4-6|4-6	

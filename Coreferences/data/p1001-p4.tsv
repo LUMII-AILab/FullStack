@@ -1,28 +1,28 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Viņa pastāstīja, ka svētki norisināsies trīs dienas, tie būs 1., 2. un 3. augustā.
-1-1	0-4	Viņa	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsnn	viņa	_	_	_	_	nsubj|nsubj	basic|enhanced	1-2|1-2	
-1-2	5-15	pastāstīja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	pastāstīt	_	_	_	_	root|root	basic|enhanced	1-2|1-2	
-1-3	15-16	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-6|1-6	
-1-4	17-19	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark|mark	basic|enhanced	1-6|1-6	
-1-5	20-26	svētki	Masc	Ptan	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Ptan	*	*	ncmdn1	svētki	_	_	*[1]	*->1-1	nsubj|nsubj	basic|enhanced	1-6|1-6	
-1-6	27-39	norisināsies	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vmyifi330an	norisināties	_	_	_	_	ccomp|ccomp	basic|enhanced	1-2|1-2	
-1-7	40-44	trīs	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|NumType=Card	*	*	mcsfpn	trīs	_	_	_	_	nummod|nummod	basic|enhanced	1-8|1-8	
-1-8	45-51	dienas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	diena	_	_	_	_	obl|obl	basic|enhanced	1-6|1-6	
-1-9	51-52	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-11|1-11	
-1-10	53-56	tie	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpnn	tas	_	_	*[1]	*->1-2	nsubj|nsubj	basic|enhanced	1-11|1-11	
-1-11	57-60	būs	*	*	*	*	*	Fut	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	3	*	vmnifii30an	būt	_	_	_	_	conj|conj	basic|enhanced	1-6|1-6	
-1-12	61-63	1.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	1.	time[1]	*[1]	_	_	amod|amod	basic|enhanced	1-17|1-17	
-1-13	63-64	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	time[1]	*[1]	_	_	punct|punct	basic|enhanced	1-14|1-14	
-1-14	65-67	2.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	2.	time[1]	*[1]	_	_	conj|conj	basic|enhanced	1-12|1-12	
-1-15	68-70	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	time[1]	*[1]	_	_	cc|cc	basic|enhanced	1-16|1-16	
-1-16	71-73	3.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	3.	time[1]	*[1]	_	_	conj|conj	basic|enhanced	1-12|1-12	
-1-17	74-81	augustā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	augusts	time[1]	*[1]	_	_	obl|obl	basic|enhanced	1-11|1-11	
-1-18	81-82	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-2|1-2	
+1-1	0-4	Viņa	*	*	Nom	*	*	Fem	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3fsnn	*	viņa	_	_	_	_	nsubj|nsubj	basic|enhanced	1-2|1-2	
+1-2	5-15	pastāstīja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist330an	*	pastāstīt	_	_	_	_	root|root	basic|enhanced	1-2|1-2	
+1-3	15-16	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	1-6|1-6	
+1-4	17-19	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark|mark	basic|enhanced	1-6|1-6	
+1-5	20-26	svētki	*	*	Nom	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Ptan	*	*	ncmdn1	*	svētki	_	_	*->1-1	*[1]	nsubj|nsubj	basic|enhanced	1-6|1-6	
+1-6	27-39	norisināsies	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmyifi330an	*	norisināties	_	_	_	_	ccomp|ccomp	basic|enhanced	1-2|1-2	
+1-7	40-44	trīs	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|NumType=Card	*	*	mcsfpn	*	trīs	_	_	_	_	nummod|nummod	basic|enhanced	1-8|1-8	
+1-8	45-51	dienas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	diena	_	_	_	_	obl|obl	basic|enhanced	1-6|1-6	
+1-9	51-52	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	1-11|1-11	
+1-10	53-56	tie	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpnn	*	tas	_	_	*->1-2	*[1]	nsubj|nsubj	basic|enhanced	1-11|1-11	
+1-11	57-60	būs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmnifii30an	*	būt	_	_	_	_	conj|conj	basic|enhanced	1-6|1-6	
+1-12	61-63	1.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	1.	time[1]	*[1]	_	_	amod|amod	basic|enhanced	1-17|1-17	
+1-13	63-64	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	time[1]	*[1]	_	_	punct|punct	basic|enhanced	1-14|1-14	
+1-14	65-67	2.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	2.	time[1]	*[1]	_	_	conj|conj	basic|enhanced	1-12|1-12	
+1-15	68-70	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	time[1]	*[1]	_	_	cc|cc	basic|enhanced	1-16|1-16	
+1-16	71-73	3.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	3.	time[1]	*[1]	_	_	conj|conj	basic|enhanced	1-12|1-12	
+1-17	74-81	augustā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	augusts	time[1]	*[1]	_	_	obl|obl	basic|enhanced	1-11|1-11	
+1-18	81-82	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	1-2|1-2	

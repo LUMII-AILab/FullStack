@@ -1,0 +1,34 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Klipa lielākā vērtība ir Latvijas porno zvaigznes Violas Bailey piedalīšanās, kura atsvaidzina video un padara to baudāmāku un pietuvina ballīšu patiesajai noskaņai.
+1-1	0-5	Klipa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	klips	_	_	_	_	nmod	basic	1-3	
+1-2	6-13	lielākā	*	*	Nom	*	Sup	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Sup\|Gender=Fem\|Number=Sing	*	*	affsnys	*	liels	_	_	_	_	amod	basic	1-3	
+1-3	14-21	vērtība	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	vērtība	_	_	_	_	root	basic	1-3	
+1-4	22-24	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	1-3	
+1-5	25-33	Latvijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	*->1-1	*[1]	nmod	basic	1-7	
+1-6	34-39	porno	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	nc0000	*	porno	_	_	*->1-1	*[1]	nmod	basic	1-7	
+1-7	40-49	zvaigznes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	zvaigzne	_	_	*->1-1	*[1]	nmod	basic	1-8	
+1-8	50-56	Violas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Viola	person[1]	*[1]	*->1-2	*[1]	nmod	basic	1-10	
+1-9	57-63	Bailey	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Bailey	person[1]	*[1]	*->1-2	*[1]	flat:name	basic	1-8	
+1-10	64-76	piedalīšanās	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsnr	*	piedalīšanās	_	_	_	_	nsubj	basic	1-3	
+1-11	76-77	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-13	
+1-12	78-82	kura	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	Rel	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsnn	*	kura	_	_	*->1-3	*[1]	nsubj	basic	1-13	
+1-13	83-94	atsvaidzina	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt330an	*	atsvaidzināt	_	_	_	_	acl	basic	1-10	
+1-14	95-100	video	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	nc0000	*	video	_	_	*->2-1	*[2]	iobj	basic	1-13	
+1-15	101-103	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-16	
+1-16	104-110	padara	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt330an	*	padarīt	_	_	_	_	conj	basic	1-13	
+1-17	111-113	to	*	*	Acc	*	*	Masc	*	*	*	Sing	3	*	Dem	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msan	*	tas	_	_	*->2-2	*[2]	obj	basic	1-16	
+1-18	114-123	baudāmāku	*	*	Acc	*	Cmp	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Cmp\|Gender=Masc\|Number=Sing	*	*	afmsanc	*	baudāmāku	_	_	_	_	acl	basic	1-16	
+1-19	124-126	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-20	
+1-20	127-136	pietuvina	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt330an	*	pietuvināt	_	_	_	_	conj	basic	1-13	
+1-21	137-144	ballīšu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg5	*	ballīte	_	_	_	_	nmod	basic	1-23	
+1-22	145-155	patiesajai	*	*	Dat	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsdyp	*	patiess	_	_	_	_	amod	basic	1-23	
+1-23	156-164	noskaņai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	*	noskaņa	_	_	_	_	iobj	basic	1-20	
+1-24	164-165	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-3	

@@ -1,0 +1,48 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Profesora Lazovska balva iedibināta 2011.gadā, godinot izcilā iekšķīgo slimību ārsta, nefrologa, sabiedrības veselības speciālista un medicīnas filozofa piemiņu.
+1-1	0-9	Profesora	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	profesors	entity[1]	*[1]	*->2-1|*->1-1	*[2]|*[1]	nmod	basic	1-2	
+1-2	10-18	Lazovska	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg2	*	Lazovskis	entity[1]|entity[2]|person[3]	*[1]|*[2]|https://lv.wikipedia.org/wiki/Ilmārs\_Lazovskis[3]	*->2-1|*->1-2	*[2]|*[1]	nmod	basic	1-3	
+1-3	19-24	balva	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	balva	entity[1]|entity[2]	*[1]|*[2]	*->2-1	*[2]	nsubj:pass	basic	1-4	
+1-4	25-35	iedibināta	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdfsnpsnpn	*	iedibināt	_	_	_	_	root	basic	1-4	
+1-5	36-41	2011.	*	*	*	*	*	*	*	*	Ord	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	2011.	time[4]	*[4]	_	_	amod	basic	1-6	
+1-6	41-45	gadā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	gads	time[4]	*[4]	_	_	obl	basic	1-4	
+1-7	45-46	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-8	
+1-8	47-54	godinot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	Conv	*	vmnpu0000000n	*	godināt	_	_	_	_	advcl	basic	1-4	
+1-9	55-61	izcilā	*	*	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsgyp	*	izcils	_	_	_	_	amod	basic	1-12	
+1-10	62-70	iekšķīgo	*	*	Gen	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpgyp	*	iekšķīgs	_	_	*->1-3	*[1]	amod	basic	1-11	
+1-11	71-78	slimību	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	slimība	_	_	*->1-3	*[1]	nmod	basic	1-12	
+1-12	79-84	ārsta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	ārsts	_	_	*->1-3	*[1]	nmod	basic	1-22	
+1-13	84-85	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-14	
+1-14	86-95	nefrologa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	nefrologs	_	_	*->1-4	*[1]	conj	basic	1-12	
+1-15	95-96	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-18	
+1-16	97-108	sabiedrības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	sabiedrība	_	_	*->1-5	*[1]	nmod	basic	1-17	
+1-17	109-118	veselības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	veselība	_	_	*->1-5	*[1]	nmod	basic	1-18	
+1-18	119-130	speciālista	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	speciālists	_	_	*->1-5	*[1]	conj	basic	1-12	
+1-19	131-133	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-21	
+1-20	134-143	medicīnas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	medicīna	_	_	*->1-6	*[1]	nmod	basic	1-21	
+1-21	144-152	filozofa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	filozofs	_	_	*->1-6	*[1]	conj	basic	1-12	
+1-22	153-160	piemiņu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	piemiņa	_	_	_	_	obj	basic	1-8	
+1-23	160-161	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-4	
+
+#Text=Ik gadu balvas laureāts tiek paziņots 1.septembrī - profesora Lazovska vārdadienā.
+2-1	162-164	Ik	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	ik	_	_	_	_	discourse	basic	2-2	
+2-2	165-169	gadu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	gads	_	_	_	_	obl	basic	2-6	
+2-3	170-176	balvas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	balva	_	_	*->2-2	*[2]	nmod	basic	2-4	
+2-4	177-185	laureāts	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	laureāts	_	_	_	_	nsubj:pass	basic	2-6	
+2-5	186-190	tiek	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vtnipi130an	*	tikt	_	_	_	_	aux:pass	basic	2-6	
+2-6	191-199	paziņots	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsnpsnpn	*	paziņot	_	_	_	_	root	basic	2-6	
+2-7	200-202	1.	*	*	*	*	*	*	*	*	Ord	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	1.	time[5]	*[5]	_	_	amod	basic	2-8	
+2-8	202-211	septembrī	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	*	septembris	time[5]	*[5]	_	_	obl	basic	2-6	
+2-9	212-213	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	-	_	_	_	_	punct	basic	2-12	
+2-10	214-223	profesora	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	profesors	_	_	*->1-7	*[1]	nmod	basic	2-11	
+2-11	224-232	Lazovska	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Lazovskis	person	https://lv.wikipedia.org/wiki/Ilmārs\_Lazovskis	*->1-8	*[1]	nmod	basic	2-12	
+2-12	233-243	vārdadienā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	vārdadiena	_	_	_	_	acl	basic	2-8	
+2-13	243-244	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-6	

@@ -1,106 +1,106 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Nagu modelēšana, to mākslīgā pagarināšana un cietības paaugstināšana ir aizsākusies ASV vairāk kā 50 gadus atpakaļ.
-1-1	0-4	Nagu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	nags	_	_	*[1]	*->1-1	nmod	basic	1-2	
-1-2	5-15	modelēšana	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	modelēšana	_	_	_	_	nsubj	basic	1-11	
-1-3	15-16	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-6	
-1-4	17-19	to	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpgn	tas	_	_	*[1]	*->1-2	det	basic	1-6	
-1-5	20-28	mākslīgā	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsnyp	mākslīga	_	_	_	_	amod	basic	1-6	
-1-6	29-41	pagarināšana	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	pagarināšana	_	_	_	_	conj	basic	1-2	
-1-7	42-44	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	1-9	
-1-8	45-53	cietības	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	cietība	_	_	_	_	nmod	basic	1-9	
-1-9	54-68	paaugstināšana	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	paaugstināšana	_	_	_	_	conj	basic	1-6	
-1-10	69-71	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	cop	basic	1-11	
-1-11	72-83	aizsākusies	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	Perf	vmypdfsnasnpn	aizsākties	_	_	_	_	root	basic	1-11	
-1-12	84-87	ASV	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	ASV	GPE	*	_	_	obl	basic	1-11	
-1-13	88-94	vairāk	*	*	*	Cmp	*	*	*	*	*	Degree=Cmp	*	*	rcq	daudz	time[1]	*[1]	_	_	advmod	basic	1-15	
-1-14	95-97	kā	_	_	_	_	_	_	_	_	_	_	_	_	cs	kā	time[1]	*[1]	_	_	fixed	basic	1-13	
-1-15	98-100	50	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	50	time[1]	*[1]	_	_	nummod	basic	1-16	
-1-16	101-106	gadus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	gads	time[1]	*[1]	_	_	obl	basic	1-17	
-1-17	107-114	atpakaļ	_	_	_	_	_	_	_	_	_	_	_	_	r0t	atpakaļ	time[1]	*[1]	_	_	advmod	basic	1-11	
-1-18	114-115	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-11	
+1-1	0-4	Nagu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	nags	_	_	*->1-1	*[1]	nmod	basic	1-2	
+1-2	5-15	modelēšana	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	modelēšana	_	_	_	_	nsubj	basic	1-11	
+1-3	15-16	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-6	
+1-4	17-19	to	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur\|PronType=Dem	*	*	pd0mpgn	*	tas	_	_	*->1-2	*[1]	det	basic	1-6	
+1-5	20-28	mākslīgā	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsnyp	*	mākslīga	_	_	_	_	amod	basic	1-6	
+1-6	29-41	pagarināšana	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	pagarināšana	_	_	_	_	conj	basic	1-2	
+1-7	42-44	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-9	
+1-8	45-53	cietības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	cietība	_	_	_	_	nmod	basic	1-9	
+1-9	54-68	paaugstināšana	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	paaugstināšana	_	_	_	_	conj	basic	1-6	
+1-10	69-71	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	1-11	
+1-11	72-83	aizsākusies	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	*	vmypdfsnasnpn	*	aizsākties	_	_	_	_	root	basic	1-11	
+1-12	84-87	ASV	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	ASV	GPE	*	_	_	obl	basic	1-11	
+1-13	88-94	vairāk	*	*	*	*	Cmp	*	*	*	*	*	*	*	*	*	*	*	Degree=Cmp	*	*	rcq	*	daudz	time[1]	*[1]	_	_	advmod	basic	1-15	
+1-14	95-97	kā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	kā	time[1]	*[1]	_	_	fixed	basic	1-13	
+1-15	98-100	50	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	50	time[1]	*[1]	_	_	nummod	basic	1-16	
+1-16	101-106	gadus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	gads	time[1]	*[1]	_	_	obl	basic	1-17	
+1-17	107-114	atpakaļ	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	atpakaļ	time[1]	*[1]	_	_	advmod	basic	1-11	
+1-18	114-115	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-11	
 
 #Text=Var teikt, ka šī procedūra ir radusies pilnībā pateicoties kino.
-2-1	117-120	Var	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vonipt330an	varēt	_	_	_	_	root	basic	2-1	
-2-2	121-126	teikt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	teikt	_	_	_	_	xcomp	basic	2-1	
-2-3	126-127	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-8	
-2-4	128-130	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	_	_	mark	basic	2-8	
-2-5	131-133	šī	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsnn	šī	_	_	_	_	det	basic	2-6	
-2-6	134-143	procedūra	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	procedūra	_	_	_	_	nsubj	basic	2-8	
-2-7	144-146	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	cop	basic	2-8	
-2-8	147-155	radusies	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	Perf	vmypdfsnasnpn	rasties	_	_	_	_	ccomp	basic	2-2	
-2-9	156-163	pilnībā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	pilnība	_	_	_	_	obl	basic	2-10	
-2-10	164-175	pateicoties	*	*	*	*	*	*	*	*	*	Reflex=Yes\|VerbForm=Conv	*	*	vmypu0000000n	pateikties	_	_	_	_	advcl	basic	2-8	
-2-11	176-180	kino	_	_	_	_	_	_	_	_	_	_	_	_	nc0000	kino	_	_	_	_	iobj	basic	2-10	
-2-12	180-181	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-1	
+2-1	117-120	Var	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vonipt330an	*	varēt	_	_	_	_	root	basic	2-1	
+2-2	121-126	teikt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t1000n	*	teikt	_	_	_	_	xcomp	basic	2-1	
+2-3	126-127	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-8	
+2-4	128-130	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	2-8	
+2-5	131-133	šī	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsnn	*	šī	_	_	_	_	det	basic	2-6	
+2-6	134-143	procedūra	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	procedūra	_	_	_	_	nsubj	basic	2-8	
+2-7	144-146	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	2-8	
+2-8	147-155	radusies	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	*	vmypdfsnasnpn	*	rasties	_	_	_	_	ccomp	basic	2-2	
+2-9	156-163	pilnībā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	pilnība	_	_	_	_	obl	basic	2-10	
+2-10	164-175	pateicoties	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Reflex=Yes\|VerbForm=Conv	*	*	vmypu0000000n	*	pateikties	_	_	_	_	advcl	basic	2-8	
+2-11	176-180	kino	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	nc0000	*	kino	_	_	_	_	iobj	basic	2-10	
+2-12	180-181	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-1	
 
 #Text=Tā laika kino tuvplāni no aktrisēm prasīja ne tikai nevainojamu frizūru, grimu, bet arī skaitus nagus.
-3-1	183-185	Tā	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msgn	tas	_	_	_	_	det	basic	3-2	
-3-2	186-191	laika	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	laiks	_	_	_	_	nmod	basic	3-4	
-3-3	192-196	kino	_	_	_	_	_	_	_	_	_	_	_	_	nc0000	kino	_	_	_	_	nmod	basic	3-4	
-3-4	197-205	tuvplāni	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	tuvplāns	_	_	_	_	nsubj	basic	3-7	
-3-5	206-208	no	_	_	_	_	_	_	_	_	_	_	_	_	sppd	no	_	_	_	_	case	basic	3-6	
-3-6	209-217	aktrisēm	Fem	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd5	aktrise	_	_	_	_	iobj	basic	3-7	
-3-7	218-225	prasīja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist330an	prasīt	_	_	_	_	root	basic	3-7	
-3-8	226-228	ne	_	_	_	_	_	_	_	_	_	_	_	_	cc	ne	_	_	_	_	cc	basic	3-11	
-3-9	229-234	tikai	_	_	_	_	_	_	_	_	_	_	_	_	q	tikai	_	_	_	_	discourse	basic	3-8	
-3-10	235-246	nevainojamu	Fem	Sing	Acc	Pos	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsanp	nevainojama	_	_	_	_	amod	basic	3-11	
-3-11	247-254	frizūru	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	frizūra	_	_	_	_	obj	basic	3-7	
-3-12	254-255	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-13	
-3-13	256-261	grimu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	grims	_	_	_	_	conj	basic	3-11	
-3-14	261-262	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-18	
-3-15	263-266	bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	_	_	cc	basic	3-18	
-3-16	267-270	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse	basic	3-15	
-3-17	271-278	skaitus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	skaists	_	_	_	_	nmod	basic	3-18	
-3-18	279-284	nagus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	nags	_	_	_	_	conj	basic	3-11	
-3-19	284-285	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-7	
+3-1	183-185	Tā	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msgn	*	tas	_	_	_	_	det	basic	3-2	
+3-2	186-191	laika	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	laiks	_	_	_	_	nmod	basic	3-4	
+3-3	192-196	kino	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	nc0000	*	kino	_	_	_	_	nmod	basic	3-4	
+3-4	197-205	tuvplāni	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	tuvplāns	_	_	_	_	nsubj	basic	3-7	
+3-5	206-208	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	no	_	_	_	_	case	basic	3-6	
+3-6	209-217	aktrisēm	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd5	*	aktrise	_	_	_	_	iobj	basic	3-7	
+3-7	218-225	prasīja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist330an	*	prasīt	_	_	_	_	root	basic	3-7	
+3-8	226-228	ne	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	ne	_	_	_	_	cc	basic	3-11	
+3-9	229-234	tikai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tikai	_	_	_	_	discourse	basic	3-8	
+3-10	235-246	nevainojamu	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	arfsanp	*	nevainojama	_	_	_	_	amod	basic	3-11	
+3-11	247-254	frizūru	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	frizūra	_	_	_	_	obj	basic	3-7	
+3-12	254-255	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-13	
+3-13	256-261	grimu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	grims	_	_	_	_	conj	basic	3-11	
+3-14	261-262	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-18	
+3-15	263-266	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	_	_	cc	basic	3-18	
+3-16	267-270	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse	basic	3-15	
+3-17	271-278	skaitus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	skaists	_	_	_	_	nmod	basic	3-18	
+3-18	279-284	nagus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	nags	_	_	_	_	conj	basic	3-11	
+3-19	284-285	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-7	
 
 #Text=Bet ne katrai tas ir dots no dabas!
-4-1	287-290	Bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	_	_	cc	basic	4-6	
-4-2	291-293	ne	_	_	_	_	_	_	_	_	_	_	_	_	q	ne	_	_	_	_	discourse	basic	4-3	
-4-3	294-300	katrai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing\|PronType=Tot	*	*	pg0fsdn	katra	_	_	_	_	iobj	basic	4-6	
-4-4	301-304	tas	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	tas	_	_	_	_	nsubj	basic	4-6	
-4-5	305-307	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	cop	basic	4-6	
-4-6	308-312	dots	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnpn	dot	_	_	_	_	root	basic	4-6	
-4-7	313-315	no	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	_	_	_	_	case	basic	4-8	
-4-8	316-321	dabas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	daba	_	_	_	_	obl	basic	4-6	
-4-9	321-322	!	_	_	_	_	_	_	_	_	_	_	_	_	zs	!	_	_	_	_	punct	basic	4-6	
+4-1	287-290	Bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	_	_	cc	basic	4-6	
+4-2	291-293	ne	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	ne	_	_	_	_	discourse	basic	4-3	
+4-3	294-300	katrai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing\|PronType=Tot	*	*	pg0fsdn	*	katra	_	_	_	_	iobj	basic	4-6	
+4-4	301-304	tas	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Dem	*	*	pd0msnn	*	tas	_	_	_	_	nsubj	basic	4-6	
+4-5	305-307	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	4-6	
+4-6	308-312	dots	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnpsnpn	*	dot	_	_	_	_	root	basic	4-6	
+4-7	313-315	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case	basic	4-8	
+4-8	316-321	dabas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	daba	_	_	_	_	obl	basic	4-6	
+4-9	321-322	!	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	!	_	_	_	_	punct	basic	4-6	
 
 #Text=AKRILS FRENC
-5-1	324-330	AKRILS	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	akrils	_	_	_	_	nmod	basic	5-2	
-5-2	331-336	FRENC	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	french	_	_	_	_	root	basic	5-2	
+5-1	324-330	AKRILS	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	akrils	_	_	_	_	nmod	basic	5-2	
+5-2	331-336	FRENC	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	french	_	_	_	_	root	basic	5-2	
 
 #Text=„Franču manikīrs" tika ieviests Holivudas kinostudijās jau 1976. gadā.
-6-1	338-339	„	_	_	_	_	_	_	_	_	_	_	_	_	zq	„	product[2]	*[2]	_	_	punct	basic	6-3	
-6-2	339-345	Franču	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	francis	product[2]	*[2]	_	_	nmod	basic	6-3	
-6-3	346-354	manikīrs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	manikīrs	product[2]	*[2]	_	_	nsubj:pass	basic	6-6	
-6-4	354-355	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	product[2]	*[2]	_	_	punct	basic	6-3	
-6-5	356-360	tika	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vtnisi130an	tikt	_	_	_	_	aux:pass	basic	6-6	
-6-6	361-369	ieviests	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnpn	ieviest	_	_	_	_	root	basic	6-6	
-6-7	370-379	Holivudas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	Holivuda	GPE	*	_	_	nmod	basic	6-8	
-6-8	380-392	kinostudijās	Fem	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	kinostudija	_	_	_	_	obl	basic	6-6	
-6-9	393-396	jau	_	_	_	_	_	_	_	_	_	_	_	_	r0t	jau	_	_	_	_	advmod	basic	6-11	
-6-10	397-402	1976.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	1976.	time[3]	*[3]	_	_	amod	basic	6-11	
-6-11	403-407	gadā	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	gads	time[3]	*[3]	_	_	obl	basic	6-6	
-6-12	407-408	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	6-6	
+6-1	338-339	„	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	„	product[2]	*[2]	_	_	punct	basic	6-3	
+6-2	339-345	Franču	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	francis	product[2]	*[2]	_	_	nmod	basic	6-3	
+6-3	346-354	manikīrs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	manikīrs	product[2]	*[2]	_	_	nsubj:pass	basic	6-6	
+6-4	354-355	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	product[2]	*[2]	_	_	punct	basic	6-3	
+6-5	356-360	tika	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vtnisi130an	*	tikt	_	_	_	_	aux:pass	basic	6-6	
+6-6	361-369	ieviests	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnpsnpn	*	ieviest	_	_	_	_	root	basic	6-6	
+6-7	370-379	Holivudas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Holivuda	GPE	*	_	_	nmod	basic	6-8	
+6-8	380-392	kinostudijās	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl4	*	kinostudija	_	_	_	_	obl	basic	6-6	
+6-9	393-396	jau	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	jau	_	_	_	_	advmod	basic	6-11	
+6-10	397-402	1976.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	1976.	time[3]	*[3]	_	_	amod	basic	6-11	
+6-11	403-407	gadā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	gads	time[3]	*[3]	_	_	obl	basic	6-6	
+6-12	407-408	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	6-6	
 
 #Text=Nevainojamie aktrišu nagi izskatījās pilnīgi dabīgi un harmonēja ar visiem tērpiem.
-7-1	410-422	Nevainojamie	Masc	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpnyp	nevainojams	_	_	_	_	amod	basic	7-3	
-7-2	423-430	aktrišu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg5	aktrise	_	_	_	_	nmod	basic	7-3	
-7-3	431-435	nagi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	nags	_	_	_	_	nsubj	basic	7-4	
-7-4	436-446	izskatījās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyist330an	izskatīties	_	_	_	_	root	basic	7-4	
-7-5	447-454	pilnīgi	_	_	_	_	_	_	_	_	_	_	_	_	r0q	pilnīgi	_	_	_	_	advmod	basic	7-6	
-7-6	455-461	dabīgi	Masc	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpnnp	dabīgs	_	_	_	_	acl	basic	7-4	
-7-7	462-464	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	7-8	
-7-8	465-474	harmonēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi230an	harmonēt	_	_	_	_	conj	basic	7-4	
-7-9	475-477	ar	_	_	_	_	_	_	_	_	_	_	_	_	sppd	ar	_	_	_	_	case	basic	7-11	
-7-10	478-484	visiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	viss	_	_	_	_	nmod	basic	7-11	
-7-11	485-492	tērpiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	tērps	_	_	_	_	iobj	basic	7-8	
-7-12	492-493	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	7-4	
+7-1	410-422	Nevainojamie	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpnyp	*	nevainojams	_	_	_	_	amod	basic	7-3	
+7-2	423-430	aktrišu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg5	*	aktrise	_	_	_	_	nmod	basic	7-3	
+7-3	431-435	nagi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	nags	_	_	_	_	nsubj	basic	7-4	
+7-4	436-446	izskatījās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmyist330an	*	izskatīties	_	_	_	_	root	basic	7-4	
+7-5	447-454	pilnīgi	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	pilnīgi	_	_	_	_	advmod	basic	7-6	
+7-6	455-461	dabīgi	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpnnp	*	dabīgs	_	_	_	_	acl	basic	7-4	
+7-7	462-464	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	7-8	
+7-8	465-474	harmonēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnisi230an	*	harmonēt	_	_	_	_	conj	basic	7-4	
+7-9	475-477	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	_	_	case	basic	7-11	
+7-10	478-484	visiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	viss	_	_	_	_	nmod	basic	7-11	
+7-11	485-492	tērpiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	tērps	_	_	_	_	iobj	basic	7-8	
+7-12	492-493	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	7-4	

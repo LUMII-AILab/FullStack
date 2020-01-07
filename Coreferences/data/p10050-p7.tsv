@@ -1,0 +1,41 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Mirklis no Vilgāles pamatskolas teātra izrādes Kā pasakas sliņķi pārmācīja (režisore Alda Alksne).
+1-1	0-7	Mirklis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	mirklis	_	_	_	_	root	basic	1-1	
+1-2	8-10	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case	basic	1-10	
+1-3	11-19	Vilgāles	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	*	Vilgāle	organization[1]|location[2]	*[1]|https://lv.wikipedia.org/wiki/Vilgāle[2]	*->3-1	*[3]	nmod	basic	1-4	
+1-4	20-31	pamatskolas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	pamatskola	organization[1]	*[1]	*->3-1	*[3]	nmod	basic	1-5	
+1-5	32-38	teātra	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	*	teātris	_	_	*->3-1	*[3]	nmod	basic	1-6	
+1-6	39-46	izrādes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	izrāde	_	_	*->3-1	*[3]	nmod	basic	1-10	
+1-7	47-49	Kā	*	*	*	*	*	*	*	*	*	*	*	*	Int	*	*	*	PronType=Int	*	*	r0m	*	kā	product[3]	*[3]	*->3-2	*[3]	advmod	basic	1-10	
+1-8	50-57	pasakas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	pasaka	product[3]	*[3]	*->3-2	*[3]	nsubj	basic	1-10	
+1-9	58-64	sliņķi	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	*	sliņķis	product[3]	*[3]	*->3-2	*[3]	obj	basic	1-10	
+1-10	65-74	pārmācīja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist330an	*	pārmācīt	product[3]	*[3]	*->3-2	*[3]	nmod	basic	1-1	
+1-11	75-76	(	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	(	_	_	_	_	punct	basic	1-13	
+1-12	76-84	režisore	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	režisore	_	_	*->1-1	*[1]	nmod	basic	1-13	
+1-13	85-89	Alda	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Alda	person[4]	*[4]	*->1-2	*[1]	discourse	basic	1-10	
+1-14	90-96	Alksne	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	*	Alksne	person[4]	*[4]	*->1-2	*[1]	flat:name	basic	1-13	
+1-15	96-97	)	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	)	_	_	_	_	punct	basic	1-13	
+1-16	97-98	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-1	
+
+#Text=Rūdolfs Ļebedevs atveido zēnu, kuru pasakas mudinājušas atrauties no datora ekrāna.
+2-1	99-106	Rūdolfs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Rūdolfs	person[5]	*[5]	_	_	nsubj	basic	2-3	
+2-2	107-115	Ļebedevs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Ļebedevs	person[5]	*[5]	_	_	flat:name	basic	2-1	
+2-3	116-123	atveido	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt230an	*	atveidot	_	_	_	_	root	basic	2-3	
+2-4	124-128	zēnu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	zēns	_	_	*->2-1	*[2]	obj	basic	2-3	
+2-5	128-129	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-8	
+2-6	130-134	kuru	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	Rel	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msan	*	kurš	_	_	*->2-2	*[2]	obj	basic	2-8	
+2-7	135-142	pasakas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	pasaka	_	_	_	_	nsubj	basic	2-8	
+2-8	143-154	mudinājušas	*	Perf	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdfpnasnpn	*	mudināt	_	_	_	_	acl	basic	2-4	
+2-9	155-164	atrauties	*	*	*	*	*	*	*	*	*	*	*	*	*	Yes	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	Inf	*	vmyn0i1000n	*	atrauties	_	_	_	_	ccomp	basic	2-8	
+2-10	165-167	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case	basic	2-12	
+2-11	168-174	datora	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	dators	_	_	_	_	nmod	basic	2-12	
+2-12	175-181	ekrāna	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	ekrāns	_	_	_	_	obl	basic	2-9	
+2-13	181-182	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-3	

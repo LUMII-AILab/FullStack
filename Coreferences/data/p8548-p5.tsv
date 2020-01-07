@@ -1,0 +1,41 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Pieteikšanās konkursam noris līdz 1. septembrim.
+1-1	0-12	Pieteikšanās	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsnr	*	pieteikšanās	_	_	_	_	nsubj	basic	1-3	
+1-2	13-22	konkursam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	konkurss	_	_	_	_	nmod	basic	1-1	
+1-3	23-28	noris	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipi330an	*	norisēt	_	_	_	_	root	basic	1-3	
+1-4	29-33	līdz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsd	*	līdz	time[1]	*[1]	_	_	case	basic	1-6	
+1-5	34-36	1.	*	*	*	*	*	*	*	*	Ord	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	1.	time[1]	*[1]	_	_	amod	basic	1-6	
+1-6	37-47	septembrim	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd2	*	septembris	time[1]	*[1]	_	_	obl	basic	1-3	
+1-7	47-48	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-3	
+
+#Text=Savukārt no 23. septembra Skaties.lv tiks publicētas 12 konkursa finālistes, par kurām Skaties.lv portāla lasītāji varēs balsot līdz 20. oktobrim.
+2-1	49-57	Savukārt	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	savukārt	_	_	_	_	advmod	basic	2-4	
+2-2	58-60	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	time[2]	*[2]	_	_	case	basic	2-4	
+2-3	61-64	23.	*	*	*	*	*	*	*	*	Ord	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	23.	time[2]	*[2]	_	_	amod	basic	2-4	
+2-4	65-74	septembra	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg2	*	septembris	time[2]	*[2]	_	_	obl	basic	2-7	
+2-5	75-85	Skaties.lv	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	xu	*	skaties.lv	entity	*	_	_	dep	basic	2-7	
+2-6	86-90	tiks	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	Fin	Act	vtnifi130an	*	tikt	_	_	_	_	aux:pass	basic	2-7	
+2-7	91-101	publicētas	*	Perf	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdfpnpsnpn	*	publicēt	_	_	_	_	root	basic	2-7	
+2-8	102-104	12	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	12	_	_	*->1-1	*[1]	nummod	basic	2-10	
+2-9	105-113	konkursa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	konkurss	_	_	*->1-1	*[1]	nmod	basic	2-10	
+2-10	114-124	finālistes	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn5	*	fināliste	_	_	*->1-1	*[1]	nsubj:pass	basic	2-7	
+2-11	124-125	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-17	
+2-12	126-129	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	par	_	_	*->1-2	*[1]	case	basic	2-13	
+2-13	130-135	kurām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	Rel	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur\|PronType=Rel	*	*	pr0fpdn	*	kura	_	_	*->1-2	*[1]	iobj	basic	2-18	
+2-14	136-146	Skaties.lv	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	xu	*	skaties.lv	entity	*	_	_	nmod	basic	2-15	
+2-15	147-154	portāla	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	portāls	_	_	_	_	nmod	basic	2-16	
+2-16	155-163	lasītāji	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	lasītājs	_	_	_	_	nsubj	basic	2-17	
+2-17	164-169	varēs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	Fin	Act	vonifi330an	*	varēt	_	_	_	_	acl	basic	2-10	
+2-18	170-176	balsot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0i2000n	*	balsot	_	_	_	_	xcomp	basic	2-17	
+2-19	177-181	līdz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsd	*	līdz	time[3]	*[3]	_	_	case	basic	2-21	
+2-20	182-185	20.	*	*	*	*	*	*	*	*	Ord	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	20.	time[3]	*[3]	_	_	amod	basic	2-21	
+2-21	186-194	oktobrim	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd2	*	oktobris	time[3]	*[3]	_	_	obl	basic	2-18	
+2-22	194-195	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-7	

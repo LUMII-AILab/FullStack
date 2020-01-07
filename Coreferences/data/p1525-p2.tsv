@@ -1,0 +1,73 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Latvijas Dabas muzeja ornitologs Dmitrijs Boiko pastāstīja, ka šīs figūras gulbji veido tieši pavasarī, tādējādi apliecinot viens otram savu mīlestību.
+1-1	0-8	Latvijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Latvija	organization[1]|GPE[2]	https://en.wikipedia.org/wiki/Latvian\_Museum\_of\_Natural\_History[1]|*[2]	_	_	nmod	basic	1-3	
+1-2	9-14	Dabas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	daba	organization[1]	https://en.wikipedia.org/wiki/Latvian\_Museum\_of\_Natural\_History[1]	_	_	nmod	basic	1-3	
+1-3	15-21	muzeja	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	muzejs	organization[1]	https://en.wikipedia.org/wiki/Latvian\_Museum\_of\_Natural\_History[1]	_	_	nmod	basic	1-4	
+1-4	22-32	ornitologs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	ornitologs	_	_	*->2-1	*[2]	nmod	basic	1-5	
+1-5	33-41	Dmitrijs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Dmitrijs	person[3]	*[3]	*->2-2	*[2]	nsubj	basic	1-7	
+1-6	42-47	Boiko	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	np0000	*	Boiko	person[3]	*[3]	*->2-2	*[2]	flat:name	basic	1-5	
+1-7	48-58	pastāstīja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnisi330an	*	pastāstīt	_	_	_	_	root	basic	1-7	
+1-8	58-59	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-13	
+1-9	60-62	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	1-13	
+1-10	63-66	šīs	*	*	Acc	*	*	Fem	*	*	*	Plur	3	*	Dem	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur\|Person=3\|PronType=Dem	*	*	pd3fpan	*	šī	_	_	*->5-1	*[5]	det	basic	1-11	
+1-11	67-74	figūras	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	figūra	_	_	*->5-2	*[5]	obj	basic	1-13	
+1-12	75-81	gulbji	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn2	*	gulbis	_	_	*->3-1	*[3]	nsubj	basic	1-13	
+1-13	82-87	veido	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt230an	*	veidot	_	_	_	_	ccomp	basic	1-7	
+1-14	88-93	tieši	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tieši	_	_	_	_	discourse	basic	1-15	
+1-15	94-102	pavasarī	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	*	pavasaris	_	_	_	_	obl	basic	1-13	
+1-16	102-103	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-18	
+1-17	104-112	tādējādi	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	tādējādi	_	_	_	_	advmod	basic	1-18	
+1-18	113-123	apliecinot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	Conv	*	vmnpu0000000n	*	apliecināt	_	_	_	_	advcl	basic	1-13	
+1-19	124-129	viens	*	*	Nom	*	*	Masc	*	*	Card	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|NumType=Card	*	*	mcsmsn	*	viens	_	_	*->3-2	*[3]	acl	basic	1-18	
+1-20	130-135	otram	*	*	Dat	*	*	Masc	*	*	Card	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|NumType=Card	*	*	mcsmsd	*	otrs	_	_	*->3-2	*[3]	iobj	basic	1-18	
+1-21	136-140	savu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	Prs	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing\|Poss=Yes\|PronType=Prs	*	*	ps0fsan	*	sava	_	_	_	_	det	basic	1-22	
+1-22	141-150	mīlestību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	mīlestība	_	_	_	_	obj	basic	1-18	
+1-23	150-151	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-7	
+
+#Text=Šajā brīdī gulbji izdveš neparastas skaņas, kas līdzinās skaļai kaisles nopūtai.
+2-1	152-156	Šajā	*	*	Loc	*	*	Masc	*	*	*	Sing	3	*	Dem	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msln	*	šis	_	_	_	_	det	basic	2-2	
+2-2	157-162	brīdī	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	*	brīdis	_	_	_	_	obl	basic	2-4	
+2-3	163-169	gulbji	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn2	*	gulbis	_	_	*->3-3	*[3]	nsubj	basic	2-4	
+2-4	170-176	izdveš	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt130an	*	izdvest	_	_	_	_	root	basic	2-4	
+2-5	177-187	neparastas	*	*	Acc	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpanp	*	neparasts	_	_	_	_	amod	basic	2-6	
+2-6	188-194	skaņas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	skaņa	_	_	*->1-1	*[1]	obj	basic	2-4	
+2-7	194-195	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-9	
+2-8	196-199	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	Rel	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->1-2	*[1]	nsubj	basic	2-9	
+2-9	200-208	līdzinās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyipi330an	*	līdzināties	_	_	_	_	acl	basic	2-6	
+2-10	209-215	skaļai	*	*	Dat	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsdnp	*	skaļš	_	_	_	_	amod	basic	2-12	
+2-11	216-223	kaisles	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	kaisle	_	_	_	_	nmod	basic	2-12	
+2-12	224-231	nopūtai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	*	nopūta	_	_	_	_	iobj	basic	2-9	
+2-13	231-232	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-4	
+
+#Text=Dmitrijs stāsta, ka tieši gulbji ir ieviesuši cilvēku dzīvē mīlestības simbolu – sirdi, ko putni atveido ar saviem garajiem kakliem.
+3-1	233-241	Dmitrijs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Dmitrijs	person	*	*->2-3	*[2]	nsubj	basic	3-2	
+3-2	242-248	stāsta	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt330an	*	stāstīt	_	_	_	_	root	basic	3-2	
+3-3	248-249	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-8	
+3-4	250-252	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	3-8	
+3-5	253-258	tieši	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tieši	_	_	_	_	discourse	basic	3-6	
+3-6	259-265	gulbji	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn2	*	gulbis	_	_	_	_	nsubj	basic	3-8	
+3-7	266-268	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30an	*	būt	_	_	_	_	aux	basic	3-8	
+3-8	269-278	ieviesuši	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdmpnasnpn	*	ieviest	_	_	_	_	ccomp	basic	3-2	
+3-9	279-286	cilvēku	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	cilvēks	_	_	_	_	nmod	basic	3-10	
+3-10	287-292	dzīvē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	*	dzīve	_	_	_	_	obl	basic	3-8	
+3-11	293-303	mīlestības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	mīlestība	_	_	*->4-1	*[4]	nmod	basic	3-12	
+3-12	304-311	simbolu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	simbols	_	_	*->4-1	*[4]	obj	basic	3-8	
+3-13	312-313	–	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	–	_	_	_	_	punct	basic	3-14	
+3-14	314-319	sirdi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa6	*	sirds	_	_	*->4-2	*[4]	acl	basic	3-12	
+3-15	319-320	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-18	
+3-16	321-323	ko	*	*	Acc	*	*	*	*	*	*	*	*	*	Rel	*	*	*	Case=Acc\|PronType=Rel	*	*	pr000an	*	kas	_	_	*->4-3	*[4]	obj	basic	3-18	
+3-17	324-329	putni	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	putns	_	_	_	_	nsubj	basic	3-18	
+3-18	330-337	atveido	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt230an	*	atveidot	_	_	_	_	acl	basic	3-14	
+3-19	338-340	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	_	_	case	basic	3-22	
+3-20	341-347	saviem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	Prs	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|Poss=Yes\|PronType=Prs	*	*	ps0mpdn	*	savs	_	_	_	_	det	basic	3-22	
+3-21	348-356	garajiem	*	*	Dat	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpdyp	*	garš	_	_	_	_	amod	basic	3-22	
+3-22	357-364	kakliem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	kakls	_	_	_	_	iobj	basic	3-18	
+3-23	364-365	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-2	

@@ -1,0 +1,41 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Pagājušajā sezonā "Grissin Bon" ar Siliņa palīdzību triumfēja Eiropas Izaicinājuma kausa turnīrā, bet šajā sezonā komanda spēlēja Eiropas kausa izcīņā, tomēr nespēja kvalificēties sacensību otrajam posmam.
+1-1	0-10	Pagājušajā	*	Perf	Loc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Loc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdfslasypn	*	paiet	time[1]	*[1]	_	_	amod	basic	1-2	
+1-2	11-17	sezonā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	sezona	time[1]	*[1]	_	_	obl	basic	1-10	
+1-3	18-19	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[2]	*[2]	*->1-1	*[1]	punct	basic	1-4	
+1-4	19-26	Grissin	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	Grissin	organization[2]	*[2]	*->1-1	*[1]	nsubj	basic	1-10	
+1-5	27-30	Bon	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Foreign=Yes	*	*	xf	*	bon	organization[2]	*[2]	*->1-1	*[1]	flat:name	basic	1-4	
+1-6	30-31	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[2]	*[2]	*->1-1	*[1]	punct	basic	1-4	
+1-7	32-34	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	1-9	
+1-8	35-41	Siliņa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Siliņš	person	https://en.wikipedia.org/wiki/Ojārs\_Siliņš	_	_	nmod	basic	1-9	
+1-9	42-51	palīdzību	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	palīdzība	_	_	_	_	iobj	basic	1-10	
+1-10	52-61	triumfēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnisi230an	*	triumfēt	_	_	_	_	root	basic	1-10	
+1-11	62-69	Eiropas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Eiropa	event[3]|event[4]|location[5]	*[3]|*[4]|*[5]	_	_	nmod	basic	1-14	
+1-12	70-82	Izaicinājuma	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	izaicinājums	event[3]|event[4]	*[3]|*[4]	_	_	nmod	basic	1-13	
+1-13	83-88	kausa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	kauss	event[3]|event[4]	*[3]|*[4]	_	_	nmod	basic	1-14	
+1-14	89-96	turnīrā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	turnīrs	event[3]	*[3]	_	_	obl	basic	1-10	
+1-15	96-97	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-20	
+1-16	98-101	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	_	_	cc	basic	1-20	
+1-17	102-106	šajā	*	*	Loc	*	*	Fem	*	*	*	Sing	3	*	Dem	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3fsln	*	šī	_	_	_	_	det	basic	1-18	
+1-18	107-113	sezonā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	sezona	_	_	_	_	obl	basic	1-20	
+1-19	114-121	komanda	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	komanda	_	_	*->1-2	*[1]	nsubj	basic	1-20	
+1-20	122-129	spēlēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist230an	*	spēlēt	_	_	_	_	conj	basic	1-10	
+1-21	130-137	Eiropas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Eiropa	event[6]|location[7]	https://en.wikipedia.org/wiki/Ojārs\_Siliņš[6]|https://en.wikipedia.org/wiki/Europe[7]	_	_	nmod	basic	1-22	
+1-22	138-143	kausa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	kauss	event[6]	https://en.wikipedia.org/wiki/Ojārs\_Siliņš[6]	_	_	nmod	basic	1-23	
+1-23	144-150	izcīņā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	izcīņa	_	_	_	_	obl	basic	1-20	
+1-24	150-151	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-26	
+1-25	152-157	tomēr	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	tomēr	_	_	_	_	cc	basic	1-26	
+1-26	158-165	nespēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vonisi130ay	*	spēt	_	_	_	_	conj	basic	1-20	
+1-27	166-179	kvalificēties	*	*	*	*	*	*	*	*	*	*	*	*	*	Yes	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	Inf	*	vmyn0i2000n	*	kvalificēties	_	_	_	_	xcomp	basic	1-26	
+1-28	180-189	sacensību	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	sacensība	_	_	_	_	nmod	basic	1-30	
+1-29	190-197	otrajam	*	*	Dat	*	Pos	Masc	*	*	Ord	Sing	*	*	*	*	*	*	Case=Dat\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|NumType=Ord	*	*	mosmsd	*	otrais	_	_	_	_	amod	basic	1-30	
+1-30	198-204	posmam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	posms	_	_	_	_	iobj	basic	1-27	
+1-31	204-205	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-10	

@@ -1,0 +1,58 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Rīga, 9.maijs, LETA.
+1-1	0-4	Rīga	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Rīga	GPE	https://en.wikipedia.org/wiki/Riga	_	_	root	basic	1-1	
+1-2	4-5	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-4	
+1-3	6-8	9.	*	*	*	*	*	*	*	*	Ord	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	9.	time[1]	*[1]	*->4-1	*[4]	amod	basic	1-4	
+1-4	8-13	maijs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	maijs	time[1]	*[1]	*->4-1	*[4]	parataxis	basic	1-1	
+1-5	13-14	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-6	
+1-6	15-19	LETA	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	LETA	organization	https://en.wikipedia.org/wiki/LETA	_	_	parataxis	basic	1-1	
+1-7	19-20	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-1	
+
+#Text=Latvijas augstskolas nav konkurētspējīgas un valsts izglītības sistēma nokauj studējošo iniciatīvas, to šodien tikšanās laikā ar Rīgas Valsts 3.ģimnācijas skolēniem sacīja Eiropas Savienības (ES) attīstības komisārs un bijušais izglītības un zinātnes ministrs Andris Piebalgs.
+2-1	21-29	Latvijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	*->1-1	*[1]	nmod	basic	2-2	
+2-2	30-41	augstskolas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	augstskola	_	_	*->1-1	*[1]	nsubj	basic	2-4	
+2-3	42-45	nav	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnipii30ay	*	būt	_	_	*->1-1	*[1]	cop	basic	2-4	
+2-4	46-62	konkurētspējīgas	*	*	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpnnp	*	konkurētspējīgs	_	_	*->1-1	*[1]	root	basic	2-4	
+2-5	63-65	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	*->1-1	*[1]	cc	basic	2-9	
+2-6	66-72	valsts	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	*	valsts	_	_	*->1-1	*[1]	nmod	basic	2-8	
+2-7	73-83	izglītības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	izglītība	_	_	*->1-1	*[1]	nmod	basic	2-8	
+2-8	84-91	sistēma	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	sistēma	_	_	*->1-1	*[1]	nsubj	basic	2-9	
+2-9	92-98	nokauj	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt130an	*	nokaut	_	_	*->1-1	*[1]	conj	basic	2-4	
+2-10	99-108	studējošo	*	Imp	Gen	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Pres	*	Aspect=Imp\|Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdmpgapypn	*	studēt	_	_	*->1-1	*[1]	amod	basic	2-11	
+2-11	109-120	iniciatīvas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	iniciatīva	_	_	*->1-1	*[1]	obj	basic	2-9	
+2-12	120-121	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-23	
+2-13	122-124	to	*	*	Acc	*	*	Masc	*	*	*	Sing	3	*	Dem	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msan	*	tas	_	_	*->1-2	*[1]	obj	basic	2-23	
+2-14	125-131	šodien	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	šodien	_	_	*->4-2	*[4]	advmod	basic	2-23	
+2-15	132-140	tikšanās	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsgr	*	tikšanās	_	_	_	_	nmod	basic	2-16	
+2-16	141-146	laikā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	laiks	_	_	_	_	obl	basic	2-23	
+2-17	147-149	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	_	_	case	basic	2-22	
+2-18	150-155	Rīgas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Rīga	organization[2]|GPE[3]	https://lv.wikipedia.org/wiki/Rīgas\_Valsts\_3.\_ģimnāzija[2]|https://en.wikipedia.org/wiki/Riga[3]	_	_	nmod	basic	2-21	
+2-19	156-162	Valsts	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	*	valsts	organization[2]	https://lv.wikipedia.org/wiki/Rīgas\_Valsts\_3.\_ģimnāzija[2]	_	_	nmod	basic	2-21	
+2-20	163-165	3.	*	*	*	*	*	*	*	*	Ord	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	3.	organization[2]	https://lv.wikipedia.org/wiki/Rīgas\_Valsts\_3.\_ģimnāzija[2]	_	_	amod	basic	2-21	
+2-21	165-175	ģimnācijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	ģimnācija	organization[2]	https://lv.wikipedia.org/wiki/Rīgas\_Valsts\_3.\_ģimnāzija[2]	_	_	nmod	basic	2-22	
+2-22	176-185	skolēniem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	skolēns	_	_	_	_	nmod	basic	2-16	
+2-23	186-192	sacīja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist330an	*	sacīt	_	_	_	_	conj	basic	2-4	
+2-24	193-200	Eiropas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Eiropa	GPE[4]	*[4]	*->3-1|*->2-1	*[3]|*[2]	nmod	basic	2-25	
+2-25	201-211	Savienības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	savienība	GPE[4]	*[4]	*->3-1|*->2-1	*[3]|*[2]	nmod	basic	2-30	
+2-26	212-213	(	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	(	GPE[5]	*[5]	*->3-1	*[3]	punct	basic	2-27	
+2-27	213-215	ES	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	ES	GPE[5]	*[5]	*->3-1|*->2-2	*[3]|*[2]	discourse	basic	2-25	
+2-28	215-216	)	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	)	GPE[5]	*[5]	*->3-1	*[3]	punct	basic	2-27	
+2-29	217-227	attīstības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	attīstība	_	_	*->3-1	*[3]	nmod	basic	2-30	
+2-30	228-236	komisārs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	komisārs	_	_	*->3-1	*[3]	nmod	basic	2-37	
+2-31	237-239	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	*->3-1	*[3]	cc	basic	2-36	
+2-32	240-248	bijušais	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnyp	*	bijušais	_	_	*->3-1	*[3]	amod	basic	2-36	
+2-33	249-259	izglītības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	izglītība	_	_	*->3-1	*[3]	nmod	basic	2-36	
+2-34	260-262	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	*->3-1	*[3]	cc	basic	2-35	
+2-35	263-271	zinātnes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	zinātne	_	_	*->3-1	*[3]	conj	basic	2-33	
+2-36	272-280	ministrs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	ministrs	_	_	*->3-1	*[3]	conj	basic	2-30	
+2-37	281-287	Andris	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	*	Andris	person[6]	https://en.wikipedia.org/wiki/Andris\_Piebalgs[6]	*->3-2	*[3]	nsubj	basic	2-23	
+2-38	288-296	Piebalgs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Piebalgs	person[6]	https://en.wikipedia.org/wiki/Andris\_Piebalgs[6]	*->3-2	*[3]	flat:name	basic	2-37	
+2-39	296-297	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-4	

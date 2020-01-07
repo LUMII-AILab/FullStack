@@ -1,0 +1,68 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Limbažu novada pašvaldības ēkas 1. stāvā šobrīd skatāma izstāde par Soču Olimpiskajām spēlēm Vareni spēki no Latvijas.
+1-1	0-7	Limbažu	*	*	Gen	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	npmdg2	*	Limbaži	organization[1]|GPE[2]|GPE[3]	*[1]|https://en.wikipedia.org/wiki/Limbaži\_Municipality[2]|https://en.wikipedia.org/wiki/Limbaži[3]	_	_	nmod	basic	1-2	
+1-2	8-14	novada	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	novads	organization[1]|GPE[2]	*[1]|https://en.wikipedia.org/wiki/Limbaži\_Municipality[2]	_	_	nmod	basic	1-3	
+1-3	15-26	pašvaldības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	pašvaldība	organization[1]	*[1]	_	_	nmod	basic	1-4	
+1-4	27-31	ēkas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	ēka	_	_	_	_	nmod	basic	1-6	
+1-5	32-34	1.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	1.	_	_	_	_	amod	basic	1-6	
+1-6	35-40	stāvā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	stāvs	_	_	_	_	obl	basic	1-8	
+1-7	41-47	šobrīd	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	šobrīd	_	_	_	_	advmod	basic	1-8	
+1-8	48-55	skatāma	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Pres	*	Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdfsnppnpn	*	skatīt	_	_	_	_	root	basic	1-8	
+1-9	56-63	izstāde	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	izstāde	_	_	*->2-1	*[2]	nmod	basic	1-15	
+1-10	64-67	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	*->2-1	*[2]	case	basic	1-13	
+1-11	68-72	Soču	*	*	Gen	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	npmdg2	*	Soči	event[4]|GPE[5]	https://en.wikipedia.org/wiki/2014\_Winter\_Olympics[4]|*[5]	*->2-1	*[2]	nmod	basic	1-13	
+1-12	73-85	Olimpiskajām	*	*	Dat	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpdyp	*	olimpiska	event[4]	https://en.wikipedia.org/wiki/2014\_Winter\_Olympics[4]	*->2-1	*[2]	amod	basic	1-13	
+1-13	86-92	spēlēm	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd5	*	spēle	event[4]	https://en.wikipedia.org/wiki/2014\_Winter\_Olympics[4]	*->2-1	*[2]	nmod	basic	1-9	
+1-14	93-99	Vareni	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnnp	*	varens	event[6]	*[6]	*->2-2	*[2]	amod	basic	1-15	
+1-15	100-105	spēki	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	spēks	event[6]	*[6]	*->2-2	*[2]	nsubj	basic	1-8	
+1-16	106-108	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	*->2-2	*[2]	case	basic	1-17	
+1-17	109-117	Latvijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Latvija	GPE	*	*->2-2	*[2]	nmod	basic	1-15	
+1-18	117-118	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-8	
+
+#Text=Izstādē redzamas Ilmāra Znotiņa, Aivara Liepiņa, Romāna Kokšarova un Zigismunda Zālmaņa fotogrāfijas, kurās tverti Latvijas olimpiešu spilgtākie mirkļi un emocijas Soču spēlēs šogad februārī.
+2-1	120-127	Izstādē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	*	izstāde	_	_	_	_	obl	basic	2-2	
+2-2	128-136	redzamas	*	*	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Pres	*	Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdfpnppnpn	*	redzēt	_	_	_	_	root	basic	2-2	
+2-3	137-143	Ilmāra	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Ilmārs	person[7]	*[7]	_	_	nmod	basic	2-14	
+2-4	144-151	Znotiņa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Znotiņš	person[7]	*[7]	_	_	flat:name	basic	2-3	
+2-5	151-152	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-6	
+2-6	153-159	Aivara	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Aivars	person[8]	*[8]	_	_	conj	basic	2-3	
+2-7	160-167	Liepiņa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Liepiņš	person[8]	*[8]	_	_	flat:name	basic	2-6	
+2-8	167-168	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-9	
+2-9	169-175	Romāna	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Romāns	person[9]	*[9]	_	_	conj	basic	2-3	
+2-10	176-185	Kokšarova	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Kokšarovs	person[9]	*[9]	_	_	flat:name	basic	2-9	
+2-11	186-188	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-12	
+2-12	189-199	Zigismunda	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Zigismunds	person[10]	*[10]	_	_	conj	basic	2-3	
+2-13	200-207	Zālmaņa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Zālmanis	person[10]	*[10]	_	_	flat:name	basic	2-12	
+2-14	208-220	fotogrāfijas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	fotogrāfija	_	_	*->1-1	*[1]	nsubj	basic	2-2	
+2-15	220-221	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-17	
+2-16	222-227	kurās	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur\|PronType=Rel	*	*	pr0fpln	*	kura	_	_	*->1-2	*[1]	obl	basic	2-17	
+2-17	228-234	tverti	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdmpnpsnpn	*	tvert	_	_	_	_	acl	basic	2-14	
+2-18	235-243	Latvijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Latvija	GPE	*	_	_	nmod	basic	2-19	
+2-19	244-253	olimpiešu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	olimpietis	_	_	_	_	nmod	basic	2-21	
+2-20	254-264	spilgtākie	*	*	Nom	*	Cmp	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Cmp\|Gender=Masc\|Number=Plur	*	*	afmpnyc	*	spilgts	_	_	_	_	amod	basic	2-21	
+2-21	265-271	mirkļi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn2	*	mirklis	_	_	_	_	nsubj:pass	basic	2-17	
+2-22	272-274	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-23	
+2-23	275-283	emocijas	*	*	Nom	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Ptan	*	*	ncfdn4	*	emocijas	_	_	_	_	conj	basic	2-21	
+2-24	284-288	Soču	*	*	Gen	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	npmdg1	*	Soči	event[11]|GPE[12]	https://en.wikipedia.org/wiki/2014\_Winter\_Olympics[11]|https://en.wikipedia.org/wiki/Sochi[12]	_	_	nmod	basic	2-25	
+2-25	289-295	spēlēs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vmnift230an	*	spēlēt	event[11]	https://en.wikipedia.org/wiki/2014\_Winter\_Olympics[11]	_	_	dep	basic	2-21	
+2-26	296-301	šogad	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	šogad	time[13]	*[13]	_	_	advmod	basic	2-27	
+2-27	302-310	februārī	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	*	februāris	time[13]	*[13]	_	_	acl	basic	2-25	
+2-28	310-311	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-2	
+
+#Text=Izstāde Limbažos būs apskatāma līdz 13. decembrim.
+3-1	313-320	Izstāde	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	izstāde	_	_	*->2-3	*[2]	nsubj	basic	3-4	
+3-2	321-329	Limbažos	*	*	Loc	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Ptan	*	*	npmdl1	*	Limbaži	GPE	*	_	_	obl	basic	3-4	
+3-3	330-333	būs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	*	Act	vcnifii30an	*	būt	_	_	_	_	cop	basic	3-4	
+3-4	334-343	apskatāma	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Pres	*	Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	*	Pass	vmnpdfsnppnpn	*	apskatīt	_	_	_	_	root	basic	3-4	
+3-5	344-348	līdz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsd	*	līdz	time[14]	*[14]	_	_	case	basic	3-7	
+3-6	349-352	13.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	13.	time[14]	*[14]	_	_	amod	basic	3-7	
+3-7	353-362	decembrim	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd2	*	decembris	time[14]	*[14]	_	_	obl	basic	3-4	
+3-8	362-363	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-4	

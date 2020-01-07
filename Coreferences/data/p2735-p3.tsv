@@ -1,32 +1,32 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Krastiņš informēja, ka mazās planētas, kuras nosauktas Latvijas vietu vēsturiskos nosaukumos, riņķo Saules sistēmā orbītās starp Marsu un Jupiteru.
-1-1	0-8	Krastiņš	ncmsn1	Krastiņš	person	*	_	_	nsubj	basic	1-2	
-1-2	9-18	informēja	vmnist230an	informēt	_	_	_	_	root	basic	1-2	
-1-3	18-19	,	zc	,	_	_	_	_	punct	basic	1-15	
-1-4	20-22	ka	cs	ka	_	_	_	_	mark	basic	1-15	
-1-5	23-28	mazās	affpnyp	maza	_	_	_	_	amod	basic	1-6	
-1-6	29-37	planētas	ncfpn4	planēta	_	_	*[1]	*->1-1	nsubj	basic	1-15	
-1-7	37-38	,	zc	,	_	_	_	_	punct	basic	1-9	
-1-8	39-44	kuras	pr0fpnn	kura	_	_	*[1]	*->1-2	nsubj:pass	basic	1-9	
-1-9	45-54	nosauktas	vmnpdfpnpsnp	nosaukt	_	_	_	_	acl	basic	1-6	
-1-10	55-63	Latvijas	npfsg4	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	_	_	nmod	basic	1-11	
-1-11	64-69	vietu	ncfsa4	vieta	_	_	_	_	nmod	basic	1-12	
-1-12	70-81	vēsturiskos	armplnp	vēsturisks	_	_	_	_	amod	basic	1-13	
-1-13	82-92	nosaukumos	ncmpl1	nosaukums	_	_	_	_	obl	basic	1-9	
-1-14	92-93	,	zc	,	_	_	_	_	punct	basic	1-9	
-1-15	94-99	riņķo	vmnipt230an	riņķot	_	_	_	_	ccomp	basic	1-2	
-1-16	100-106	Saules	ncfsg5	saule	entity[1]	https://en.wikipedia.org/wiki/Solar\_System[1]	_	_	nmod	basic	1-17	
-1-17	107-114	sistēmā	ncfsl4	sistēma	entity[1]	https://en.wikipedia.org/wiki/Solar\_System[1]	_	_	obl	basic	1-15	
-1-18	115-122	orbītās	ncfpl4	orbīta	_	_	_	_	obl	basic	1-15	
-1-19	123-128	starp	sppd	starp	_	_	_	_	case	basic	1-20	
-1-20	129-134	Marsu	npmsa1	Marss	entity	https://en.wikipedia.org/wiki/Mars	_	_	nmod	basic	1-18	
-1-21	135-137	un	cc	un	_	_	_	_	cc	basic	1-22	
-1-22	138-146	Jupiteru	npmsa1	Jupiters	entity	https://en.wikipedia.org/wiki/Jupiter	_	_	conj	basic	1-20	
-1-23	146-147	.	zs	.	_	_	_	_	punct	basic	1-2	
+1-1	0-8	Krastiņš	ncmsn1	*	Krastiņš	person	*	_	_	nsubj	basic	1-2	
+1-2	9-18	informēja	vmnist230an	*	informēt	_	_	_	_	root	basic	1-2	
+1-3	18-19	,	zc	*	,	_	_	_	_	punct	basic	1-15	
+1-4	20-22	ka	cs	*	ka	_	_	_	_	mark	basic	1-15	
+1-5	23-28	mazās	affpnyp	*	maza	_	_	_	_	amod	basic	1-6	
+1-6	29-37	planētas	ncfpn4	*	planēta	_	_	*->1-1	*[1]	nsubj	basic	1-15	
+1-7	37-38	,	zc	*	,	_	_	_	_	punct	basic	1-9	
+1-8	39-44	kuras	pr0fpnn	*	kura	_	_	*->1-2	*[1]	nsubj:pass	basic	1-9	
+1-9	45-54	nosauktas	vmnpdfpnpsnp	*	nosaukt	_	_	_	_	acl	basic	1-6	
+1-10	55-63	Latvijas	npfsg4	*	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	_	_	nmod	basic	1-11	
+1-11	64-69	vietu	ncfsa4	*	vieta	_	_	_	_	nmod	basic	1-12	
+1-12	70-81	vēsturiskos	armplnp	*	vēsturisks	_	_	_	_	amod	basic	1-13	
+1-13	82-92	nosaukumos	ncmpl1	*	nosaukums	_	_	_	_	obl	basic	1-9	
+1-14	92-93	,	zc	*	,	_	_	_	_	punct	basic	1-9	
+1-15	94-99	riņķo	vmnipt230an	*	riņķot	_	_	_	_	ccomp	basic	1-2	
+1-16	100-106	Saules	ncfsg5	*	saule	entity[1]	https://en.wikipedia.org/wiki/Solar\_System[1]	_	_	nmod	basic	1-17	
+1-17	107-114	sistēmā	ncfsl4	*	sistēma	entity[1]	https://en.wikipedia.org/wiki/Solar\_System[1]	_	_	obl	basic	1-15	
+1-18	115-122	orbītās	ncfpl4	*	orbīta	_	_	_	_	obl	basic	1-15	
+1-19	123-128	starp	sppd	*	starp	_	_	_	_	case	basic	1-20	
+1-20	129-134	Marsu	npmsa1	*	Marss	entity	https://en.wikipedia.org/wiki/Mars	_	_	nmod	basic	1-18	
+1-21	135-137	un	cc	*	un	_	_	_	_	cc	basic	1-22	
+1-22	138-146	Jupiteru	npmsa1	*	Jupiters	entity	https://en.wikipedia.org/wiki/Jupiter	_	_	conj	basic	1-20	
+1-23	146-147	.	zs	*	.	_	_	_	_	punct	basic	1-2	

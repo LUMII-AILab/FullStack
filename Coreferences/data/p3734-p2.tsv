@@ -1,33 +1,33 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Rīga, 23.janv., LETA.
-1-1	0-4	Rīga	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	rīga	GPE	*	_	_	root	basic	1-1	
-1-2	4-5	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-4	
-1-3	6-9	23.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	23.	time[1]	*[1]	_	_	amod	basic	1-4	
-1-4	9-14	janv.	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	janv.	time[1]	*[1]	_	_	parataxis	basic	1-1	
-1-5	14-15	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-6	
-1-6	16-20	LETA	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	LETA	organization	*	_	_	parataxis	basic	1-1	
-1-7	20-21	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-1	
+1-1	0-4	Rīga	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	rīga	GPE	*	_	_	root	basic	1-1	
+1-2	4-5	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-4	
+1-3	6-9	23.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	23.	time[1]	*[1]	_	_	amod	basic	1-4	
+1-4	9-14	janv.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	*	janv.	time[1]	*[1]	_	_	parataxis	basic	1-1	
+1-5	14-15	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-6	
+1-6	16-20	LETA	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	LETA	organization	*	_	_	parataxis	basic	1-1	
+1-7	20-21	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-1	
 
 #Text=Par Satversmes tiesas (ST) priekšsēdētāju šodien atkārtoti tika ievēlēts Gunārs Kūtris.
-2-1	23-26	Par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	_	_	case	basic	2-7	
-2-2	27-37	Satversmes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	satversme	organization[2]	*[2]	*[1]	*->1-1	nmod	basic	2-3	
-2-3	38-44	tiesas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	tiesa	organization[2]	*[2]	*[1]	*->1-1	nmod	basic	2-7	
-2-4	45-46	(	_	_	_	_	_	_	_	_	_	_	_	_	zb	(	_	_	_	_	punct	basic	2-5	
-2-5	46-48	ST	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	ST	organization	*	*[1]	*->1-2	parataxis	basic	2-3	
-2-6	48-49	)	_	_	_	_	_	_	_	_	_	_	_	_	zb	)	_	_	_	_	punct	basic	2-5	
-2-7	50-64	priekšsēdētāju	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	priekšsēdētājs	_	_	_	_	iobj	basic	2-11	
-2-8	65-71	šodien	_	_	_	_	_	_	_	_	_	_	_	_	r0t	šodien	time	*	_	_	advmod	basic	2-11	
-2-9	72-81	atkārtoti	_	_	_	_	_	_	_	_	_	_	_	_	r0m	atkārtoti	_	_	_	_	advmod	basic	2-11	
-2-10	82-86	tika	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vtnisi130an	tikt	_	_	_	_	aux	basic	2-11	
-2-11	87-95	ievēlēts	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmsnpsnp	ievēlēt	_	_	_	_	root	basic	2-11	
-2-12	96-102	Gunārs	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Gunārs	person[3]	*[3]	_	_	nsubj:pass	basic	2-11	
-2-13	103-109	Kūtris	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	Kūtris	person[3]	*[3]	_	_	flat:name	basic	2-12	
-2-14	109-110	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-11	
+2-1	23-26	Par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	2-7	
+2-2	27-37	Satversmes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	satversme	organization[2]	*[2]	*->1-1	*[1]	nmod	basic	2-3	
+2-3	38-44	tiesas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	tiesa	organization[2]	*[2]	*->1-1	*[1]	nmod	basic	2-7	
+2-4	45-46	(	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	(	_	_	_	_	punct	basic	2-5	
+2-5	46-48	ST	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	ST	organization	*	*->1-2	*[1]	parataxis	basic	2-3	
+2-6	48-49	)	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zb	*	)	_	_	_	_	punct	basic	2-5	
+2-7	50-64	priekšsēdētāju	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	priekšsēdētājs	_	_	_	_	iobj	basic	2-11	
+2-8	65-71	šodien	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	šodien	time	*	_	_	advmod	basic	2-11	
+2-9	72-81	atkārtoti	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	atkārtoti	_	_	_	_	advmod	basic	2-11	
+2-10	82-86	tika	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vtnisi130an	*	tikt	_	_	_	_	aux	basic	2-11	
+2-11	87-95	ievēlēts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Tense=Past\|VerbForm=Part	*	*	vmnpdmsnpsnp	*	ievēlēt	_	_	_	_	root	basic	2-11	
+2-12	96-102	Gunārs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Gunārs	person[3]	*[3]	_	_	nsubj:pass	basic	2-11	
+2-13	103-109	Kūtris	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn2	*	Kūtris	person[3]	*[3]	_	_	flat:name	basic	2-12	
+2-14	109-110	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-11	

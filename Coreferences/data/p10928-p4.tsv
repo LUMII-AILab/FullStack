@@ -1,0 +1,73 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Idomeni nometne izveidojās pēc tam, kad Maķedonija un pārējās Balkānu valstis nolēma slēgt savas robežas Āzijas un Āfrikas nelegālajiem imigrantiem, kas caur to teritoriju vēlējās sasniegt Vāciju un citas pārtikušās Rietumeiropas valstis.
+1-1	0-7	Idomeni	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	np0000	*	Idomeni	GPE	https://en.wikipedia.org/wiki/Idomeni	_	_	nmod	basic	1-2	
+1-2	8-15	nometne	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	nometne	_	_	_	_	nsubj	basic	1-3	
+1-3	16-26	izveidojās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyisi230an	*	izveidoties	_	_	_	_	root	basic	1-3	
+1-4	27-30	pēc	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsd	*	pēc	_	_	*->1-1	*[1]	case	basic	1-5	
+1-5	31-34	tam	*	*	Dat	*	*	Masc	*	*	*	Sing	3	*	Dem	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msdn	*	tas	_	_	*->1-1	*[1]	acl	basic	1-3	
+1-6	34-35	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-13	
+1-7	36-39	kad	*	*	*	*	*	*	*	*	*	*	*	*	Int	*	*	*	PronType=Int	*	*	r0t	*	kad	_	_	*->1-2	*[1]	advmod	basic	1-13	
+1-8	40-50	Maķedonija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Maķedonija	GPE	https://en.wikipedia.org/wiki/North\_Macedonia	*->3-1	*[3]	nsubj	basic	1-13	
+1-9	51-53	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	*->3-1	*[3]	cc	basic	1-12	
+1-10	54-61	pārējās	*	*	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpnyp	*	pārējais	_	_	*->3-1	*[3]	amod	basic	1-12	
+1-11	62-69	Balkānu	*	*	Gen	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	npmdg1	*	Balkāni	location	https://en.wikipedia.org/wiki/Balkans	*->3-1	*[3]	nmod	basic	1-12	
+1-12	70-77	valstis	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn6	*	valsts	_	_	*->3-1	*[3]	conj	basic	1-8	
+1-13	78-84	nolēma	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist130an	*	nolemt	_	_	_	_	advcl	basic	1-5	
+1-14	85-90	slēgt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t1000n	*	slēgt	_	_	_	_	ccomp	basic	1-13	
+1-15	91-96	savas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	Prs	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur\|Poss=Yes\|PronType=Prs	*	*	ps0fpan	*	sava	_	_	_	_	det	basic	1-16	
+1-16	97-104	robežas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa4	*	robeža	_	_	_	_	obj	basic	1-14	
+1-17	105-111	Āzijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Āzija	location	https://en.wikipedia.org/wiki/Asia	_	_	nmod	basic	1-21	
+1-18	112-114	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-19	
+1-19	115-122	Āfrikas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Āfrika	location	https://en.wikipedia.org/wiki/Africa	_	_	conj	basic	1-17	
+1-20	123-135	nelegālajiem	*	*	Dat	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpdyp	*	nelegāls	_	_	_	_	amod	basic	1-21	
+1-21	136-147	imigrantiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	imigrants	_	_	*->2-1	*[2]	iobj	basic	1-14	
+1-22	147-148	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-27	
+1-23	149-152	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	Rel	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	_	_	*->2-2	*[2]	nsubj	basic	1-27	
+1-24	153-157	caur	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	caur	_	_	_	_	case	basic	1-26	
+1-25	158-160	to	*	*	Gen	*	*	Fem	*	*	*	Plur	3	*	Dem	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur\|Person=3\|PronType=Dem	*	*	pd3fpgn	*	tā	_	_	*->3-2	*[3]	det	basic	1-26	
+1-26	161-171	teritoriju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	teritorija	_	_	_	_	obl	basic	1-28	
+1-27	172-179	vēlējās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyisi330an	*	vēlēties	_	_	_	_	acl	basic	1-21	
+1-28	180-188	sasniegt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t1000n	*	sasniegt	_	_	_	_	xcomp	basic	1-27	
+1-29	189-195	Vāciju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	*	Vācija	GPE	https://en.wikipedia.org/wiki/Germany	_	_	obj	basic	1-28	
+1-30	196-198	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-34	
+1-31	199-204	citas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	Ind	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur\|PronType=Ind	*	*	pi0fpan	*	cita	_	_	_	_	det	basic	1-34	
+1-32	205-215	pārtikušās	*	Perf	Acc	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdfpaasypn	*	pārtikt	_	_	_	_	amod	basic	1-34	
+1-33	216-229	Rietumeiropas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Rietumeiropa	location	https://en.wikipedia.org/wiki/Western\_Europe	_	_	nmod	basic	1-34	
+1-34	230-237	valstis	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa6	*	valsts	_	_	_	_	conj	basic	1-29	
+1-35	237-238	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-3	
+
+#Text=Iepriekš, cenšoties apspiest kareivīgi noskaņotu mēģinājumu izlauzties cauri Grieķijas un Maķedonijas robežai, Maķedonijas policija izmantoja asaru gāzi un sadursmēs cieta ap 260 cilvēku.
+2-1	239-247	Iepriekš	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	iepriekš	_	_	_	_	advmod	basic	2-17	
+2-2	247-248	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-3	
+2-3	249-258	cenšoties	*	*	*	*	*	*	*	*	*	*	*	*	*	Yes	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Conv	Conv	*	voypu0000000n	*	censties	_	_	_	_	advcl	basic	2-17	
+2-4	259-267	apspiest	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t1000n	*	apspiest	_	_	_	_	xcomp	basic	2-3	
+2-5	268-277	kareivīgi	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	kareivīgi	_	_	_	_	advmod	basic	2-6	
+2-6	278-287	noskaņotu	*	Perf	Acc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Acc\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsapsnpn	*	noskaņot	_	_	_	_	amod	basic	2-7	
+2-7	288-298	mēģinājumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	mēģinājums	_	_	_	_	obj	basic	2-4	
+2-8	299-309	izlauzties	*	*	*	*	*	*	*	*	*	*	*	*	*	Yes	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	Inf	*	vmyn0i1000n	*	izlauzties	_	_	_	_	acl	basic	2-7	
+2-9	310-315	cauri	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpp	*	cauri	_	_	_	_	case	basic	2-13	
+2-10	316-325	Grieķijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Grieķija	GPE	https://en.wikipedia.org/wiki/Greece	_	_	nmod	basic	2-13	
+2-11	326-328	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-12	
+2-12	329-340	Maķedonijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Maķedonija	GPE	https://en.wikipedia.org/wiki/Macedonia\_(Greece)	_	_	conj	basic	2-10	
+2-13	341-348	robežai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	*	robeža	_	_	_	_	obl	basic	2-8	
+2-14	348-349	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-3	
+2-15	350-361	Maķedonijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Maķedonija	organization[1]|GPE[2]	*[1]|https://en.wikipedia.org/wiki/North\_Macedonia[2]	_	_	nmod	basic	2-16	
+2-16	362-370	policija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	policija	organization[1]	*[1]	_	_	nsubj	basic	2-17	
+2-17	371-380	izmantoja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist230an	*	izmantot	_	_	_	_	root	basic	2-17	
+2-18	381-386	asaru	*	*	Gen	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Ptan	*	*	ncfdg4	*	asaras	_	_	_	_	nmod	basic	2-19	
+2-19	387-391	gāzi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	gāze	_	_	_	_	obj	basic	2-17	
+2-20	392-394	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-22	
+2-21	395-404	sadursmēs	*	*	Loc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Plur	*	*	ncfpl5	*	sadursme	_	_	_	_	obl	basic	2-22	
+2-22	405-410	cieta	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnisi130an	*	ciest	_	_	_	_	conj	basic	2-17	
+2-23	411-413	ap	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ap	_	_	_	_	case	basic	2-24	
+2-24	414-417	260	*	*	*	*	*	*	*	*	Card	*	*	*	*	*	*	*	NumType=Card	*	*	xn	*	260	_	_	_	_	nummod	basic	2-25	
+2-25	418-425	cilvēku	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	cilvēks	_	_	_	_	nsubj	basic	2-22	
+2-26	425-426	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-17	

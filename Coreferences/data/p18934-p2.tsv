@@ -1,0 +1,39 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Noslēguma koncerta programmā tiks atskaņots Sergeja Rahmaņinova Otrais klavierkoncerts, kurā solists būs pianists Andrejs Osokins, kā arī Aleksandra Skrjabina Trešā simfonija jeb "Dievišķā poēma".
+1-1	0-9	Noslēguma	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	noslēgums	_	_	_	_	nmod	basic	1-2	
+1-2	10-18	koncerta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	koncerts	_	_	_	_	nmod	basic	1-3	
+1-3	19-28	programmā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	programma	_	_	_	_	obl	basic	1-5	
+1-4	29-33	tiks	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	Fin	Act	vtnifi130an	*	tikt	_	_	_	_	aux:pass	basic	1-5	
+1-5	34-43	atskaņots	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsnpsnpn	*	atskaņot	_	_	_	_	root	basic	1-5	
+1-6	44-51	Sergeja	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Sergejs	person[1]	https://en.wikipedia.org/wiki/Sergei\_Rachmaninoff[1]	*->4-1	*[4]	nmod	basic	1-9	
+1-7	52-63	Rahmaņinova	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Rahmaņinovs	person[1]	https://en.wikipedia.org/wiki/Sergei\_Rachmaninoff[1]	*->4-1	*[4]	flat:name	basic	1-6	
+1-8	64-70	Otrais	*	*	Nom	*	Pos	Masc	*	*	Ord	Sing	*	*	*	*	*	*	Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|NumType=Ord	*	*	mosmsn	*	otrais	product[2]	https://en.wikipedia.org/wiki/Piano\_Concerto\_No.\_2\_(Rachmaninoff)[2]	*->4-2	*[4]	amod	basic	1-9	
+1-9	71-86	klavierkoncerts	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	klavierkoncerts	product[2]	https://en.wikipedia.org/wiki/Piano\_Concerto\_No.\_2\_(Rachmaninoff)[2]	*->4-2	*[4]	nsubj:pass	basic	1-5	
+1-10	86-87	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-12	
+1-11	88-92	kurā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	Rel	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsln	*	kura	_	_	*->4-3	*[4]	obl	basic	1-12	
+1-12	93-100	solists	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	solists	_	_	_	_	acl	basic	1-9	
+1-13	101-104	būs	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Fut	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Fut\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnifii30an	*	būt	_	_	_	_	cop	basic	1-12	
+1-14	105-113	pianists	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	pianists	_	_	*->2-1	*[2]	nmod	basic	1-15	
+1-15	114-121	Andrejs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Andrejs	person[3]	https://en.wikipedia.org/wiki/Andrejs\_Osokins[3]	*->2-2	*[2]	nsubj	basic	1-12	
+1-16	122-129	Osokins	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Osokins	person[3]	https://en.wikipedia.org/wiki/Andrejs\_Osokins[3]	*->2-2	*[2]	flat:name	basic	1-15	
+1-17	129-130	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-23	
+1-18	131-133	kā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	kā	_	_	_	_	cc	basic	1-23	
+1-19	134-137	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	arī	_	_	_	_	fixed	basic	1-18	
+1-20	138-148	Aleksandra	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Aleksandrs	person[4]	https://en.wikipedia.org/wiki/Alexander\_Scriabin[4]	*->3-1	*[3]	nmod	basic	1-23	
+1-21	149-158	Skrjabina	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Skrjabins	person[4]	https://en.wikipedia.org/wiki/Alexander\_Scriabin[4]	*->3-1	*[3]	flat:name	basic	1-20	
+1-22	159-164	Trešā	*	*	Nom	*	Pos	Fem	*	*	Ord	Sing	*	*	*	*	*	*	Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|NumType=Ord	*	*	mosfsn	*	trešais	product[5]|product[6]	https://en.wikipedia.org/wiki/Symphony\_No.\_3\_(Scriabin)[5]|*[6]	*->3-2|*->1-1	*[3]|*[1]	amod	basic	1-23	
+1-23	165-174	simfonija	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	simfonija	product[5]|product[6]	https://en.wikipedia.org/wiki/Symphony\_No.\_3\_(Scriabin)[5]|*[6]	*->3-2|*->1-1	*[3]|*[1]	conj	basic	1-9	
+1-24	175-178	jeb	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	jeb	product[5]	https://en.wikipedia.org/wiki/Symphony\_No.\_3\_(Scriabin)[5]	*->3-2	*[3]	cc	basic	1-27	
+1-25	179-180	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	product[5]|product[7]	https://en.wikipedia.org/wiki/Symphony\_No.\_3\_(Scriabin)[5]|*[7]	*->3-2|*->1-2	*[3]|*[1]	punct	basic	1-27	
+1-26	180-188	Dievišķā	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnyp	*	dievišķs	product[5]|product[7]	https://en.wikipedia.org/wiki/Symphony\_No.\_3\_(Scriabin)[5]|*[7]	*->3-2|*->1-2	*[3]|*[1]	amod	basic	1-27	
+1-27	189-194	poēma	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	poēma	product[5]|product[7]	https://en.wikipedia.org/wiki/Symphony\_No.\_3\_(Scriabin)[5]|*[7]	*->3-2|*->1-2	*[3]|*[1]	conj	basic	1-23	
+1-28	194-195	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	product[5]|product[7]	https://en.wikipedia.org/wiki/Symphony\_No.\_3\_(Scriabin)[5]|*[7]	*->3-2|*->1-2	*[3]|*[1]	punct	basic	1-27	
+1-29	195-196	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-5	

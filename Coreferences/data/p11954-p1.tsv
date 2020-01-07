@@ -1,0 +1,76 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Jēkabpils bērnu un jauniešu ar īpašām vajadzībām biedrības “Cerību sala” dalībnieki devās braucienā uz Lietuvu, kur viesojās Klaipēdas delfinārijā un apmeklēja “Dinozauru parku” Radaiļu muižā.
+1-1	0-9	Jēkabpils	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg6	*	Jēkabpils	GPE	https://en.wikipedia.org/wiki/Jēkabpils	*->1-1	*[1]	nmod	basic	1-2	
+1-2	10-15	bērnu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	bērns	_	_	*->1-1	*[1]	nmod	basic	1-8	
+1-3	16-18	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	*->1-1	*[1]	cc	basic	1-4	
+1-4	19-27	jauniešu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	jaunietis	_	_	*->1-1	*[1]	conj	basic	1-2	
+1-5	28-30	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	*->1-1	*[1]	case	basic	1-7	
+1-6	31-37	īpašām	*	*	Dat	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpdnp	*	īpaša	_	_	*->1-1	*[1]	amod	basic	1-7	
+1-7	38-48	vajadzībām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	*	vajadzība	_	_	*->1-1	*[1]	nmod	basic	1-2	
+1-8	49-58	biedrības	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	biedrība	_	_	*->1-1	*[1]	nmod	basic	1-11	
+1-9	59-60	“	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	“	organization[1]	*[1]	*->1-2	*[1]	punct	basic	1-11	
+1-10	60-66	Cerību	*	*	Gen	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Ptan	*	*	ncfdg4	*	cerības	organization[1]	*[1]	*->1-2	*[1]	nmod	basic	1-11	
+1-11	67-71	sala	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	sala	organization[1]	*[1]	*->1-2	*[1]	nmod	basic	1-13	
+1-12	71-72	”	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	”	organization[1]	*[1]	*->1-2	*[1]	punct	basic	1-11	
+1-13	73-83	dalībnieki	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	dalībnieks	_	_	_	_	nsubj	basic	1-14	
+1-14	84-89	devās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmyisi130an	*	doties	_	_	_	_	root	basic	1-14	
+1-15	90-99	braucienā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	brauciens	_	_	_	_	obl	basic	1-14	
+1-16	100-102	uz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	uz	_	_	_	_	case	basic	1-17	
+1-17	103-110	Lietuvu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	*	Lietuva	GPE	https://en.wikipedia.org/wiki/Lithuania	*->2-1	*[2]	nmod	basic	1-15	
+1-18	110-111	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-20	
+1-19	112-115	kur	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0p	*	kur	_	_	*->2-2	*[2]	advmod	basic	1-20	
+1-20	116-124	viesojās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmyisi230an	*	viesoties	_	_	_	_	advcl	basic	1-15	
+1-21	125-134	Klaipēdas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg4	*	Klaipēda	location[2]|GPE[3]	*[2]|*[3]	_	_	nmod	basic	1-22	
+1-22	135-146	delfinārijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	delfinārija	location[2]	*[2]	_	_	obl	basic	1-20	
+1-23	147-149	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	1-24	
+1-24	150-159	apmeklēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist230an	*	apmeklēt	_	_	_	_	conj	basic	1-20	
+1-25	160-161	“	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	“	location[4]	*[4]	_	_	punct	basic	1-27	
+1-26	161-170	Dinozauru	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	Dinozaura	location[4]	*[4]	_	_	nmod	basic	1-27	
+1-27	171-176	parku	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	parks	location[4]	*[4]	_	_	obj	basic	1-24	
+1-28	176-177	”	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	”	location[4]	*[4]	_	_	punct	basic	1-27	
+1-29	178-185	Radaiļu	*	*	Gen	*	*	Masc	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Ptan	*	*	npmdg1	*	Radaiļi	location[5]	*[5]	_	_	nmod	basic	1-30	
+1-30	186-191	muižā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	muiža	location[5]	*[5]	_	_	acl	basic	1-27	
+1-31	191-192	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-14	
+
+#Text=Bērniem un jauniešiem ar īpašām vajadzībām ikviena izkustēšanās ārpus ierastās vides ir liels emocionāls piedzīvojums un iespēja sajusties piederīgiem sabiedrībai.
+2-1	194-201	Bērniem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	bērns	_	_	_	_	obl	basic	2-15	
+2-2	202-204	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-3	
+2-3	205-215	jauniešiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd2	*	jaunietis	_	_	_	_	conj	basic	2-1	
+2-4	216-218	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	_	_	case	basic	2-6	
+2-5	219-225	īpašām	*	*	Dat	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	affpdnp	*	īpaša	_	_	_	_	amod	basic	2-6	
+2-6	226-236	vajadzībām	*	*	Dat	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Plur	*	*	ncfpd4	*	vajadzība	_	_	_	_	nmod	basic	2-1	
+2-7	237-244	ikviena	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|PronType=Tot	*	*	pg0fsnn	*	ikviena	_	_	_	_	det	basic	2-8	
+2-8	245-257	izkustēšanās	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsnr	*	izkustēšanās	_	_	_	_	nsubj	basic	2-15	
+2-9	258-263	ārpus	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0p	*	ārpus	_	_	_	_	advmod	basic	2-8	
+2-10	264-272	ierastās	*	Perf	Gen	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsgpsypn	*	ierast	_	_	_	_	amod	basic	2-11	
+2-11	273-278	vides	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	vide	_	_	_	_	iobj	basic	2-9	
+2-12	279-281	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	2-15	
+2-13	282-287	liels	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	liels	_	_	_	_	amod	basic	2-15	
+2-14	288-298	emocionāls	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnnp	*	emocionāls	_	_	_	_	amod	basic	2-15	
+2-15	299-311	piedzīvojums	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	piedzīvojums	_	_	_	_	root	basic	2-15	
+2-16	312-314	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-17	
+2-17	315-322	iespēja	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	iespēja	_	_	_	_	conj	basic	2-15	
+2-18	323-332	sajusties	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	*	*	vmyn0i1000n	*	sajusties	_	_	_	_	acl	basic	2-17	
+2-19	333-344	piederīgiem	*	*	Dat	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpdnp	*	piederīgs	_	_	_	_	acl	basic	2-18	
+2-20	345-356	sabiedrībai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	*	sabiedrība	_	_	_	_	iobj	basic	2-19	
+2-21	356-357	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-15	
+
+#Text=Visi brauciena dalībnieki bija priecīgi par iespēju apskatīt Lietuvu.
+3-1	359-363	Visi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Tot	*	*	pg0mpnn	*	viss	_	_	_	_	det	basic	3-3	
+3-2	364-373	brauciena	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	brauciens	_	_	_	_	nmod	basic	3-3	
+3-3	374-384	dalībnieki	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	dalībnieks	_	_	_	_	nsubj	basic	3-5	
+3-4	385-389	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vcnisii30an	*	būt	_	_	_	_	cop	basic	3-5	
+3-5	390-398	priecīgi	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpnnp	*	priecīgs	_	_	_	_	root	basic	3-5	
+3-6	399-402	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	3-7	
+3-7	403-410	iespēju	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	iespēja	_	_	_	_	iobj	basic	3-5	
+3-8	411-419	apskatīt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	*	apskatīt	_	_	_	_	acl	basic	3-7	
+3-9	420-427	Lietuvu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	*	Lietuva	GPE	https://en.wikipedia.org/wiki/Lithuania	_	_	obj	basic	3-8	
+3-10	427-428	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-5	

@@ -1,0 +1,89 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Ideja komponēt baletu "Romeo un Džuljeta" Prokofjevam radās 1934.gadā.
+1-1	0-5	Ideja	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	ideja	_	_	_	_	nsubj	basic	1-10	
+1-2	6-14	komponēt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t2000n	*	komponēt	_	_	_	_	acl	basic	1-1	
+1-3	15-21	baletu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	balets	_	_	*->1-1	*[1]	nmod	basic	1-5	
+1-4	22-23	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	product[1]	https://en.wikipedia.org/wiki/Romeo\_and\_Juliet\_(Prokofiev)[1]	*->1-2	*[1]	punct	basic	1-5	
+1-5	23-28	Romeo	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	np0000	*	Romeo	product[1]|person[2]	https://en.wikipedia.org/wiki/Romeo\_and\_Juliet\_(Prokofiev)[1]|https://en.wikipedia.org/wiki/Romeo[2]	*->1-2	*[1]	obj	basic	1-2	
+1-6	29-31	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	product[1]	https://en.wikipedia.org/wiki/Romeo\_and\_Juliet\_(Prokofiev)[1]	*->1-2	*[1]	cc	basic	1-7	
+1-7	32-40	Džuljeta	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Džuljeta	product[1]|person[3]	https://en.wikipedia.org/wiki/Romeo\_and\_Juliet\_(Prokofiev)[1]|https://en.wikipedia.org/wiki/Juliet[3]	*->1-2	*[1]	conj	basic	1-5	
+1-8	40-41	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	product[1]	https://en.wikipedia.org/wiki/Romeo\_and\_Juliet\_(Prokofiev)[1]	*->1-2	*[1]	punct	basic	1-5	
+1-9	42-53	Prokofjevam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	npmsd1	*	Prokofjevs	person	https://en.wikipedia.org/wiki/Sergei\_Prokofiev	*->2-1	*[2]	obl	basic	1-10	
+1-10	54-59	radās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	Yes	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmyisi130an	*	rasties	_	_	_	_	root	basic	1-10	
+1-11	60-65	1934.	*	*	*	*	*	*	*	*	Ord	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	1934.	time[4]	*[4]	_	_	amod	basic	1-12	
+1-12	65-69	gadā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	gads	time[4]	*[4]	_	_	obl	basic	1-10	
+1-13	69-70	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-10	
+
+#Text=Sākotnēji viņš bija iecerējis mainīt visiem zināmā stāsta beigas un ļaut jaunajiem mīlētājiem laimīgi turpināt dzīvi, taču Staļina laika represiju atmosfēras iespaidā Prokofjevs nolēma pieturēties pie tradicionālā noslēguma.
+2-1	71-80	Sākotnēji	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpt	*	sākotnēji	_	_	_	_	advmod	basic	2-4	
+2-2	81-85	viņš	*	*	Nom	*	*	Masc	*	*	*	Sing	3	*	Prs	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msnn	*	viņš	_	_	*->2-2	*[2]	nsubj	basic	2-4	
+2-3	86-90	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vcnisii30an	*	būt	_	_	_	_	aux	basic	2-4	
+2-4	91-100	iecerējis	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmnpdmsnasnpn	*	iecerēt	_	_	_	_	root	basic	2-4	
+2-5	101-107	mainīt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t3000n	*	mainīt	_	_	_	_	ccomp	basic	2-4	
+2-6	108-114	visiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	Tot	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur\|PronType=Tot	*	*	pg0mpdn	*	viss	_	_	_	_	iobj	basic	2-7	
+2-7	115-121	zināmā	*	*	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Pres	*	Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Pres\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsgppypn	*	zināt	_	_	_	_	amod	basic	2-8	
+2-8	122-128	stāsta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	stāsts	_	_	_	_	nmod	basic	2-9	
+2-9	129-135	beigas	*	*	Acc	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Ptan	*	*	ncfda4	*	beigas	_	_	_	_	obj	basic	2-5	
+2-10	136-138	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	2-11	
+2-11	139-143	ļaut	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0i1000n	*	ļaut	_	_	_	_	conj	basic	2-5	
+2-12	144-153	jaunajiem	*	*	Dat	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmpdyp	*	jauns	_	_	_	_	amod	basic	2-13	
+2-13	154-164	mīlētājiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	mīlētājs	_	_	_	_	iobj	basic	2-11	
+2-14	165-172	laimīgi	*	*	*	*	Pos	*	*	*	*	*	*	*	*	*	*	*	Degree=Pos	*	*	rpm	*	laimīgi	_	_	_	_	advmod	basic	2-15	
+2-15	173-181	turpināt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	Inf	*	vmnn0t3000n	*	turpināt	_	_	_	_	ccomp	basic	2-11	
+2-16	182-187	dzīvi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	dzīve	_	_	_	_	obj	basic	2-15	
+2-17	187-188	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-25	
+2-18	189-193	taču	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	taču	_	_	_	_	cc	basic	2-25	
+2-19	194-201	Staļina	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Staļins	event[5]|person[6]	*[5]|https://en.wikipedia.org/wiki/Joseph\_Stalin[6]	_	_	nmod	basic	2-20	
+2-20	202-207	laika	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	laiks	event[5]	*[5]	_	_	nmod	basic	2-21	
+2-21	208-217	represiju	*	*	Gen	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Ptan	*	*	ncfdg4	*	represijas	_	_	_	_	nmod	basic	2-22	
+2-22	218-228	atmosfēras	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	atmosfēra	_	_	_	_	nmod	basic	2-23	
+2-23	229-237	iespaidā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	iespaids	_	_	_	_	obl	basic	2-25	
+2-24	238-248	Prokofjevs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Prokofjevs	person	https://en.wikipedia.org/wiki/Sergei\_Prokofiev	*->2-3	*[2]	nsubj	basic	2-25	
+2-25	249-255	nolēma	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist130an	*	nolemt	_	_	_	_	conj	basic	2-4	
+2-26	256-267	pieturēties	*	*	*	*	*	*	*	*	*	*	*	*	*	Yes	*	*	Polarity=Pos\|Reflex=Yes\|VerbForm=Inf	Inf	*	vmyn0i3000n	*	pieturēties	_	_	_	_	ccomp	basic	2-25	
+2-27	268-271	pie	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pie	_	_	_	_	case	basic	2-29	
+2-28	272-284	tradicionālā	*	*	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsgyp	*	tradicionāls	_	_	_	_	amod	basic	2-29	
+2-29	285-294	noslēguma	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	noslēgums	_	_	_	_	iobj	basic	2-26	
+2-30	294-295	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-4	
+
+#Text=Triumfālo pirmizrādi balets "Romeo un Džuljeta" piedzīvoja 1938.gadā Brno.
+3-1	296-305	Triumfālo	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsayp	*	triumfāls	_	_	_	_	amod	basic	3-2	
+3-2	306-316	pirmizrādi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	pirmizrāde	_	_	_	_	obj	basic	3-9	
+3-3	317-323	balets	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	balets	_	_	*->1-3	*[1]	nmod	basic	3-5	
+3-4	324-325	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	product[7]	https://en.wikipedia.org/wiki/Romeo\_and\_Juliet\_(Prokofiev)[7]	*->1-4	*[1]	punct	basic	3-5	
+3-5	325-330	Romeo	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	np0000	*	Romeo	product[7]	https://en.wikipedia.org/wiki/Romeo\_and\_Juliet\_(Prokofiev)[7]	*->1-4	*[1]	nsubj	basic	3-9	
+3-6	331-333	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	product[7]	https://en.wikipedia.org/wiki/Romeo\_and\_Juliet\_(Prokofiev)[7]	*->1-4	*[1]	cc	basic	3-7	
+3-7	334-342	Džuljeta	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Džuljeta	product[7]	https://en.wikipedia.org/wiki/Romeo\_and\_Juliet\_(Prokofiev)[7]	*->1-4	*[1]	conj	basic	3-5	
+3-8	342-343	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	product[7]	https://en.wikipedia.org/wiki/Romeo\_and\_Juliet\_(Prokofiev)[7]	*->1-4	*[1]	punct	basic	3-5	
+3-9	344-354	piedzīvoja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnist230an	*	piedzīvot	_	_	_	_	root	basic	3-9	
+3-10	355-360	1938.	*	*	*	*	*	*	*	*	Ord	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	1938.	time[8]	*[8]	_	_	amod	basic	3-11	
+3-11	360-364	gadā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	gads	time[8]	*[8]	_	_	obl	basic	3-9	
+3-12	365-369	Brno	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	np0000	*	Brno	GPE	https://en.wikipedia.org/wiki/Brno	_	_	obl	basic	3-9	
+3-13	369-370	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-9	
+
+#Text=Latvijā līdz šim tas iestudēts trīs reizes - 1953.gadā, 1982.gadā un 1999.gadā.
+4-1	371-378	Latvijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	_	_	obl	basic	4-5	
+4-2	379-383	līdz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsd	*	līdz	_	_	_	_	case	basic	4-3	
+4-3	384-387	šim	*	*	Dat	*	*	Masc	*	*	*	Sing	3	*	Dem	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msdn	*	šis	_	_	_	_	obl	basic	4-5	
+4-4	388-391	tas	*	*	Nom	*	*	Masc	*	*	*	Sing	3	*	Dem	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Dem	*	*	pd3msnn	*	tas	_	_	*->1-5	*[1]	nsubj:pass	basic	4-5	
+4-5	392-401	iestudēts	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmsnpsnpn	*	iestudēt	_	_	_	_	root	basic	4-5	
+4-6	402-406	trīs	*	*	Acc	*	*	Fem	*	*	Card	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur\|NumType=Card	*	*	mcsfpa	*	trīs	_	_	_	_	nummod	basic	4-7	
+4-7	407-413	reizes	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur	*	*	ncfpa5	*	reize	_	_	_	_	obl	basic	4-5	
+4-8	414-415	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	-	_	_	_	_	punct	basic	4-10	
+4-9	416-421	1953.	*	*	*	*	*	*	*	*	Ord	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	1953.	time[9]	*[9]	_	_	amod	basic	4-10	
+4-10	421-425	gadā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	gads	time[9]	*[9]	_	_	acl	basic	4-7	
+4-11	425-426	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-13	
+4-12	427-432	1982.	*	*	*	*	*	*	*	*	Ord	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	1982.	time[10]	*[10]	_	_	amod	basic	4-13	
+4-13	432-436	gadā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	gads	time[10]	*[10]	_	_	conj	basic	4-10	
+4-14	437-439	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	4-16	
+4-15	440-445	1999.	*	*	*	*	*	*	*	*	Ord	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	1999.	time[11]	*[11]	_	_	amod	basic	4-16	
+4-16	445-449	gadā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	gads	time[11]	*[11]	_	_	conj	basic	4-10	
+4-17	449-450	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	4-5	

@@ -1,0 +1,30 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Latvijā iemīļotie skatuves mākslinieki Žoržs Siksna, Roberto Meloni un Kaspars Antess apvienojušies muzikālajā projektā, bruņiniecisku jūtu aizkustināti.
+1-1	0-7	Latvijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	npfsl4	*	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	_	_	obl	basic	1-2	
+1-2	8-17	iemīļotie	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmpnpsypn	*	iemīļot	_	_	*->1-1	*[1]	amod	basic	1-4	
+1-3	18-26	skatuves	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	skatuve	_	_	*->1-1	*[1]	nmod	basic	1-4	
+1-4	27-38	mākslinieki	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	mākslinieks	_	_	*->1-1	*[1]	nmod	basic	1-5	
+1-5	39-44	Žoržs	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Žoržs	person[1]	https://lv.wikipedia.org/wiki/Žoržs\_Siksna[1]	*->1-2	*[1]	nsubj	basic	1-13	
+1-6	45-51	Siksna	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn4	*	Siksna	person[1]	https://lv.wikipedia.org/wiki/Žoržs\_Siksna[1]	*->1-2	*[1]	flat:name	basic	1-5	
+1-7	51-52	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	*->1-2	*[1]	punct	basic	1-8	
+1-8	53-60	Roberto	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	np0000	*	Roberto	person[2]	https://en.wikipedia.org/wiki/Roberto\_Meloni\_(singer)[2]	*->1-2	*[1]	conj	basic	1-5	
+1-9	61-67	Meloni	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	np0000	*	Meloni	person[2]	https://en.wikipedia.org/wiki/Roberto\_Meloni\_(singer)[2]	*->1-2	*[1]	flat:name	basic	1-8	
+1-10	68-70	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	*->1-2	*[1]	cc	basic	1-11	
+1-11	71-78	Kaspars	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Kaspars	person[3]	*[3]	*->1-2	*[1]	conj	basic	1-5	
+1-12	79-85	Antess	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Antess	person[3]	*[3]	*->1-2	*[1]	flat:name	basic	1-11	
+1-13	86-99	apvienojušies	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	Yes	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Part\|Voice=Act	Part	Act	vmypdmpnasnpn	*	apvienoties	_	_	_	_	root	basic	1-13	
+1-14	100-110	muzikālajā	*	*	Loc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmslyp	*	muzikāls	_	_	_	_	amod	basic	1-15	
+1-15	111-119	projektā	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl1	*	projekts	_	_	_	_	obl	basic	1-13	
+1-16	119-120	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-19	
+1-17	121-134	bruņiniecisku	*	*	Gen	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	arfpgnp	*	bruņiniecisks	_	_	_	_	amod	basic	1-19	
+1-18	135-139	jūtu	*	*	Gen	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Ptan	*	*	ncfdg4	*	jūtas	_	_	_	_	nmod	basic	1-19	
+1-19	140-152	aizkustināti	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Polarity=Pos\|Tense=Past\|VerbForm=Part\|Voice=Pass	Part	Pass	vmnpdmpnpsnpn	*	aizkustināt	_	_	_	_	acl	basic	1-13	
+1-20	152-153	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-13	

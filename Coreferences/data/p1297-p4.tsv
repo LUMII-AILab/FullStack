@@ -1,268 +1,268 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Jēkaba mūžs nav bijis viegls.
-1-1	0-6	Jēkaba	npmsg1	Jēkaba	person	*	*[7]	*->7-1	nmod	basic	1-2	
-1-2	7-11	mūžs	ncmsn1	mūžs	_	_	_	_	nsubj	basic	1-5	
-1-3	12-15	nav	vcnipii30ay	nebūt	_	_	_	_	aux	basic	1-5	
-1-4	16-21	bijis	vcnpdmsnasnp	būt	_	_	_	_	cop	basic	1-5	
-1-5	22-28	viegls	afmsnnp	viegls	_	_	_	_	root	basic	1-5	
-1-6	28-29	.	zs	.	_	_	_	_	punct	basic	1-5	
+1-1	0-6	Jēkaba	npmsg1	*	Jēkaba	person	*	*->7-1	*[7]	nmod	basic	1-2	
+1-2	7-11	mūžs	ncmsn1	*	mūžs	_	_	_	_	nsubj	basic	1-5	
+1-3	12-15	nav	vcnipii30ay	*	nebūt	_	_	_	_	aux	basic	1-5	
+1-4	16-21	bijis	vcnpdmsnasnp	*	būt	_	_	_	_	cop	basic	1-5	
+1-5	22-28	viegls	afmsnnp	*	viegls	_	_	_	_	root	basic	1-5	
+1-6	28-29	.	zs	*	.	_	_	_	_	punct	basic	1-5	
 
 #Text=Zēns agri zaudējis mammu, bet tēvs bijis bargs.
-2-1	31-35	Zēns	ncmsn1	zēns	_	_	*[7]	*->7-2	nsubj	basic	2-3	
-2-2	36-40	agri	rpt	agri	_	_	_	_	advmod	basic	2-3	
-2-3	41-49	zaudējis	vmnpdmsnasnp	zaudēt	_	_	_	_	root	basic	2-3	
-2-4	50-55	mammu	ncfsa4	mamma	_	_	_	_	obj	basic	2-3	
-2-5	55-56	,	zc	,	_	_	_	_	punct	basic	2-9	
-2-6	57-60	bet	cc	bet	_	_	_	_	cc	basic	2-9	
-2-7	61-65	tēvs	ncmsn1	tēvs	_	_	_	_	nsubj	basic	2-9	
-2-8	66-71	bijis	vcnpdmsnasnp	būt	_	_	_	_	cop	basic	2-9	
-2-9	72-77	bargs	afmsnnp	bargs	_	_	_	_	conj	basic	2-3	
-2-10	77-78	.	zs	.	_	_	_	_	punct	basic	2-3	
+2-1	31-35	Zēns	ncmsn1	*	zēns	_	_	*->7-2	*[7]	nsubj	basic	2-3	
+2-2	36-40	agri	rpt	*	agri	_	_	_	_	advmod	basic	2-3	
+2-3	41-49	zaudējis	vmnpdmsnasnp	*	zaudēt	_	_	_	_	root	basic	2-3	
+2-4	50-55	mammu	ncfsa4	*	mamma	_	_	_	_	obj	basic	2-3	
+2-5	55-56	,	zc	*	,	_	_	_	_	punct	basic	2-9	
+2-6	57-60	bet	cc	*	bet	_	_	_	_	cc	basic	2-9	
+2-7	61-65	tēvs	ncmsn1	*	tēvs	_	_	_	_	nsubj	basic	2-9	
+2-8	66-71	bijis	vcnpdmsnasnp	*	būt	_	_	_	_	cop	basic	2-9	
+2-9	72-77	bargs	afmsnnp	*	bargs	_	_	_	_	conj	basic	2-3	
+2-10	77-78	.	zs	*	.	_	_	_	_	punct	basic	2-3	
 
 #Text=Bagātajos Ēdoles pagasta Bukos drīz sākusi saimniekot pamāte, kas gan Jēkaba, gan māsas bērnību darījusi sūru.
-3-1	80-89	Bagātajos	afmplyp	bagāts	_	_	_	_	amod	basic	3-4	
-3-2	90-96	Ēdoles	npfsg5	Ēdole	GPE[1]	https://en.wikipedia.org/wiki/Ēdole\_Parish[1]	_	_	nmod	basic	3-3	
-3-3	97-104	pagasta	ncmsg1	pagasts	GPE[1]	https://en.wikipedia.org/wiki/Ēdole\_Parish[1]	_	_	nmod	basic	3-4	
-3-4	105-110	Bukos	npmpl1	buks	location	*	_	_	obl	basic	3-6	
-3-5	111-115	drīz	r0t	drīz	_	_	_	_	advmod	basic	3-6	
-3-6	116-122	sākusi	vpnpdfsnasnp	sākt	_	_	_	_	root	basic	3-6	
-3-7	123-133	saimniekot	vmnn0i2000n	saimniekot	_	_	_	_	xcomp	basic	3-6	
-3-8	134-140	pamāte	ncfsn5	pamāte	_	_	_	_	nsubj	basic	3-6	
-3-9	140-141	,	zc	,	_	_	_	_	punct	basic	3-17	
-3-10	142-145	kas	pr000nn	kas	_	_	_	_	nsubj	basic	3-17	
-3-11	146-149	gan	cc	gan	_	_	_	_	cc	basic	3-12	
-3-12	150-156	Jēkaba	npmsg1	Jēkabs	person	*	*[7]	*->7-3	nmod	basic	3-16	
-3-13	156-157	,	zc	,	_	_	_	_	punct	basic	3-15	
-3-14	158-161	gan	cc	gan	_	_	_	_	cc	basic	3-15	
-3-15	162-167	māsas	ncfsg4	māsa	_	_	_	_	conj	basic	3-12	
-3-16	168-175	bērnību	ncfsa4	bērnība	_	_	_	_	obj	basic	3-17	
-3-17	176-184	darījusi	vmnpdfsnasnp	darīt	_	_	_	_	acl	basic	3-8	
-3-18	185-189	sūru	afmsanp	sūrs	_	_	_	_	acl	basic	3-17	
-3-19	189-190	.	zs	.	_	_	_	_	punct	basic	3-6	
+3-1	80-89	Bagātajos	afmplyp	*	bagāts	_	_	_	_	amod	basic	3-4	
+3-2	90-96	Ēdoles	npfsg5	*	Ēdole	GPE[1]	https://en.wikipedia.org/wiki/Ēdole\_Parish[1]	_	_	nmod	basic	3-3	
+3-3	97-104	pagasta	ncmsg1	*	pagasts	GPE[1]	https://en.wikipedia.org/wiki/Ēdole\_Parish[1]	_	_	nmod	basic	3-4	
+3-4	105-110	Bukos	npmpl1	*	buks	location	*	_	_	obl	basic	3-6	
+3-5	111-115	drīz	r0t	*	drīz	_	_	_	_	advmod	basic	3-6	
+3-6	116-122	sākusi	vpnpdfsnasnp	*	sākt	_	_	_	_	root	basic	3-6	
+3-7	123-133	saimniekot	vmnn0i2000n	*	saimniekot	_	_	_	_	xcomp	basic	3-6	
+3-8	134-140	pamāte	ncfsn5	*	pamāte	_	_	_	_	nsubj	basic	3-6	
+3-9	140-141	,	zc	*	,	_	_	_	_	punct	basic	3-17	
+3-10	142-145	kas	pr000nn	*	kas	_	_	_	_	nsubj	basic	3-17	
+3-11	146-149	gan	cc	*	gan	_	_	_	_	cc	basic	3-12	
+3-12	150-156	Jēkaba	npmsg1	*	Jēkabs	person	*	*->7-3	*[7]	nmod	basic	3-16	
+3-13	156-157	,	zc	*	,	_	_	_	_	punct	basic	3-15	
+3-14	158-161	gan	cc	*	gan	_	_	_	_	cc	basic	3-15	
+3-15	162-167	māsas	ncfsg4	*	māsa	_	_	_	_	conj	basic	3-12	
+3-16	168-175	bērnību	ncfsa4	*	bērnība	_	_	_	_	obj	basic	3-17	
+3-17	176-184	darījusi	vmnpdfsnasnp	*	darīt	_	_	_	_	acl	basic	3-8	
+3-18	185-189	sūru	afmsanp	*	sūrs	_	_	_	_	acl	basic	3-17	
+3-19	189-190	.	zs	*	.	_	_	_	_	punct	basic	3-6	
 
 #Text=Bijis kopā ar kalpiem smagi jāstrādā, bet alga gan nav maksāta.
-4-1	192-197	Bijis	vcnpdmsnasnp	būt	_	_	_	_	aux	basic	4-6	
-4-2	198-202	kopā	r0m	kopā	_	_	_	_	advmod	basic	4-6	
-4-3	203-205	ar	sppd	ar	_	_	_	_	case	basic	4-4	
-4-4	206-213	kalpiem	ncmpd1	kalps	_	_	_	_	iobj	basic	4-2	
-4-5	214-219	smagi	rpm	smagi	_	_	_	_	advmod	basic	4-6	
-4-6	220-228	jāstrādā	vmnd0t200an	strādāt	_	_	_	_	root	basic	4-6	
-4-7	228-229	,	zc	,	_	_	_	_	punct	basic	4-12	
-4-8	230-233	bet	cc	bet	_	_	_	_	cc	basic	4-12	
-4-9	234-238	alga	ncfsn4	alga	_	_	_	_	nsubj:pass	basic	4-12	
-4-10	239-242	gan	q	gan	_	_	_	_	discourse	basic	4-9	
-4-11	243-246	nav	vcnipii30ay	nebūt	_	_	_	_	aux	basic	4-12	
-4-12	247-254	maksāta	vmnpdfsnpsnp	maksāt	_	_	_	_	conj	basic	4-6	
-4-13	254-255	.	zs	.	_	_	_	_	punct	basic	4-6	
+4-1	192-197	Bijis	vcnpdmsnasnp	*	būt	_	_	_	_	aux	basic	4-6	
+4-2	198-202	kopā	r0m	*	kopā	_	_	_	_	advmod	basic	4-6	
+4-3	203-205	ar	sppd	*	ar	_	_	_	_	case	basic	4-4	
+4-4	206-213	kalpiem	ncmpd1	*	kalps	_	_	_	_	iobj	basic	4-2	
+4-5	214-219	smagi	rpm	*	smagi	_	_	_	_	advmod	basic	4-6	
+4-6	220-228	jāstrādā	vmnd0t200an	*	strādāt	_	_	_	_	root	basic	4-6	
+4-7	228-229	,	zc	*	,	_	_	_	_	punct	basic	4-12	
+4-8	230-233	bet	cc	*	bet	_	_	_	_	cc	basic	4-12	
+4-9	234-238	alga	ncfsn4	*	alga	_	_	_	_	nsubj:pass	basic	4-12	
+4-10	239-242	gan	q	*	gan	_	_	_	_	discourse	basic	4-9	
+4-11	243-246	nav	vcnipii30ay	*	nebūt	_	_	_	_	aux	basic	4-12	
+4-12	247-254	maksāta	vmnpdfsnpsnp	*	maksāt	_	_	_	_	conj	basic	4-6	
+4-13	254-255	.	zs	*	.	_	_	_	_	punct	basic	4-6	
 
 #Text=Kad Ēdoles barons nopircis mašīnu, tad puikas skrējuši skatīties, kā tā rūcošā kariete pārvietojas.
-5-1	257-260	Kad	r0t	kad	_	_	_	_	advmod	basic	5-4	
-5-2	261-267	Ēdoles	npfsg5	Ēdole	GPE	https://lv.wikipedia.org/wiki/Ēdole	_	_	nmod	basic	5-3	
-5-3	268-274	barons	ncmsn1	barons	_	_	_	_	nsubj	basic	5-4	
-5-4	275-283	nopircis	vmnpdmsnasnp	nopirkt	_	_	_	_	advcl	basic	5-9	
-5-5	284-290	mašīnu	ncfsa4	mašīna	_	_	_	_	obj	basic	5-4	
-5-6	290-291	,	zc	,	_	_	_	_	punct	basic	5-4	
-5-7	292-295	tad	r0t	tad	_	_	_	_	advmod	basic	5-9	
-5-8	296-302	puikas	ncmpn4	puika	_	_	_	_	nsubj	basic	5-9	
-5-9	303-311	skrējuši	vmnpdmpnasnp	skriet	_	_	_	_	root	basic	5-9	
-5-10	312-321	skatīties	vmyn0t3000n	skatīties	_	_	_	_	ccomp	basic	5-9	
-5-11	321-322	,	zc	,	_	_	_	_	punct	basic	5-16	
-5-12	323-325	kā	r0m	kā	_	_	_	_	advmod	basic	5-16	
-5-13	326-328	tā	pd0fsnn	tā	_	_	_	_	det	basic	5-15	
-5-14	329-335	rūcošā	vmnpdfsnapyp	rūkt	_	_	_	_	amod	basic	5-15	
-5-15	336-343	kariete	ncfsn5	kariete	_	_	_	_	nsubj	basic	5-16	
-5-16	344-355	pārvietojas	vmyipi230an	pārvietoties	_	_	_	_	ccomp	basic	5-10	
-5-17	355-356	.	zs	.	_	_	_	_	punct	basic	5-9	
+5-1	257-260	Kad	r0t	*	kad	_	_	_	_	advmod	basic	5-4	
+5-2	261-267	Ēdoles	npfsg5	*	Ēdole	GPE	https://lv.wikipedia.org/wiki/Ēdole	_	_	nmod	basic	5-3	
+5-3	268-274	barons	ncmsn1	*	barons	_	_	_	_	nsubj	basic	5-4	
+5-4	275-283	nopircis	vmnpdmsnasnp	*	nopirkt	_	_	_	_	advcl	basic	5-9	
+5-5	284-290	mašīnu	ncfsa4	*	mašīna	_	_	_	_	obj	basic	5-4	
+5-6	290-291	,	zc	*	,	_	_	_	_	punct	basic	5-4	
+5-7	292-295	tad	r0t	*	tad	_	_	_	_	advmod	basic	5-9	
+5-8	296-302	puikas	ncmpn4	*	puika	_	_	_	_	nsubj	basic	5-9	
+5-9	303-311	skrējuši	vmnpdmpnasnp	*	skriet	_	_	_	_	root	basic	5-9	
+5-10	312-321	skatīties	vmyn0t3000n	*	skatīties	_	_	_	_	ccomp	basic	5-9	
+5-11	321-322	,	zc	*	,	_	_	_	_	punct	basic	5-16	
+5-12	323-325	kā	r0m	*	kā	_	_	_	_	advmod	basic	5-16	
+5-13	326-328	tā	pd0fsnn	*	tā	_	_	_	_	det	basic	5-15	
+5-14	329-335	rūcošā	vmnpdfsnapyp	*	rūkt	_	_	_	_	amod	basic	5-15	
+5-15	336-343	kariete	ncfsn5	*	kariete	_	_	_	_	nsubj	basic	5-16	
+5-16	344-355	pārvietojas	vmyipi230an	*	pārvietoties	_	_	_	_	ccomp	basic	5-10	
+5-17	355-356	.	zs	*	.	_	_	_	_	punct	basic	5-9	
 
 #Text=Skolā piedzīvots, ka vadība klasē paziņo par iegūto Latvijas neatkarību.
-6-1	358-363	Skolā	ncfsl4	skola	_	_	_	_	obl	basic	6-2	
-6-2	364-374	piedzīvots	vmnpdmsnpsnp	piedzīvot	_	_	_	_	root	basic	6-2	
-6-3	374-375	,	zc	,	_	_	_	_	punct	basic	6-7	
-6-4	376-378	ka	cs	ka	_	_	_	_	mark	basic	6-7	
-6-5	379-385	vadība	ncfsn4	vadība	_	_	_	_	nsubj	basic	6-7	
-6-6	386-391	klasē	ncfsl5	klase	_	_	_	_	obl	basic	6-7	
-6-7	392-398	paziņo	vmnipt230an	paziņot	_	_	_	_	csubj:pass	basic	6-2	
-6-8	399-402	par	spsa	par	_	_	_	_	case	basic	6-11	
-6-9	403-409	iegūto	vmnpdfsapsyp	iegūt	_	_	_	_	amod	basic	6-11	
-6-10	410-418	Latvijas	npfsg4	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	_	_	nmod	basic	6-11	
-6-11	419-429	neatkarību	ncfsa4	neatkarība	_	_	_	_	iobj	basic	6-7	
-6-12	429-430	.	zs	.	_	_	_	_	punct	basic	6-2	
+6-1	358-363	Skolā	ncfsl4	*	skola	_	_	_	_	obl	basic	6-2	
+6-2	364-374	piedzīvots	vmnpdmsnpsnp	*	piedzīvot	_	_	_	_	root	basic	6-2	
+6-3	374-375	,	zc	*	,	_	_	_	_	punct	basic	6-7	
+6-4	376-378	ka	cs	*	ka	_	_	_	_	mark	basic	6-7	
+6-5	379-385	vadība	ncfsn4	*	vadība	_	_	_	_	nsubj	basic	6-7	
+6-6	386-391	klasē	ncfsl5	*	klase	_	_	_	_	obl	basic	6-7	
+6-7	392-398	paziņo	vmnipt230an	*	paziņot	_	_	_	_	csubj:pass	basic	6-2	
+6-8	399-402	par	spsa	*	par	_	_	_	_	case	basic	6-11	
+6-9	403-409	iegūto	vmnpdfsapsyp	*	iegūt	_	_	_	_	amod	basic	6-11	
+6-10	410-418	Latvijas	npfsg4	*	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	_	_	nmod	basic	6-11	
+6-11	419-429	neatkarību	ncfsa4	*	neatkarība	_	_	_	_	iobj	basic	6-7	
+6-12	429-430	.	zs	*	.	_	_	_	_	punct	basic	6-2	
 
 #Text=Kad vecāki lieguši precēties ar izraudzīto kalpu meitu, tad Jēkabs no tēva mājām aizgājis uz Liepājas rajona Sakas pagastu.
-7-1	432-435	Kad	r0t	kad	_	_	_	_	advmod	basic	7-3	
-7-2	436-442	vecāki	afmpnnc	vecs	_	_	_	_	nsubj	basic	7-3	
-7-3	443-450	lieguši	vmnpdmpnasnp	liegt	_	_	_	_	advcl	basic	7-10	
-7-4	451-460	precēties	vmyn0i3000n	precēties	_	_	_	_	ccomp	basic	7-3	
-7-5	461-463	ar	spsa	ar	_	_	_	_	case	basic	7-8	
-7-6	464-474	izraudzīto	vmnpdmsapsyp	izraudzīt	_	_	_	_	amod	basic	7-8	
-7-7	475-480	kalpu	ncmpg1	kalps	_	_	_	_	nmod	basic	7-8	
-7-8	481-486	meitu	ncfsa4	meita	_	_	_	_	iobj	basic	7-4	
-7-9	486-487	,	zc	,	_	_	_	_	punct	basic	7-3	
-7-10	488-491	tad	r0t	tad	_	_	_	_	advmod	basic	7-15	
-7-11	492-498	Jēkabs	npmsn1	Jēkabs	person	*	*[7]	*->7-4	obl	basic	7-15	
-7-12	499-501	no	spsg	no	_	_	_	_	case	basic	7-14	
-7-13	502-506	tēva	ncmsg1	tēvs	_	_	_	_	nmod	basic	7-14	
-7-14	507-512	mājām	ncfpd4	māja	_	_	_	_	obl	basic	7-15	
-7-15	513-521	aizgājis	vmnpdmsnasnp	aiziet	_	_	_	_	root	basic	7-15	
-7-16	522-524	uz	spsg	uz	_	_	_	_	case	basic	7-20	
-7-17	525-533	Liepājas	npfsg4	Liepāja	GPE[2]	https://en.wikipedia.org/wiki/Liepāja\_District[2]	_	_	nmod	basic	7-18	
-7-18	534-540	rajona	ncmsg1	rajons	GPE[2]	https://en.wikipedia.org/wiki/Liepāja\_District[2]	_	_	nmod	basic	7-20	
-7-19	541-546	Sakas	npfsg4	Saka	GPE[3]	https://en.wikipedia.org/wiki/Saka\_Parish[3]	_	_	nmod	basic	7-20	
-7-20	547-554	pagastu	ncmsa1	pagasts	GPE[3]	https://en.wikipedia.org/wiki/Saka\_Parish[3]	_	_	obl	basic	7-15	
-7-21	554-555	.	zs	.	_	_	_	_	punct	basic	7-15	
+7-1	432-435	Kad	r0t	*	kad	_	_	_	_	advmod	basic	7-3	
+7-2	436-442	vecāki	afmpnnc	*	vecs	_	_	_	_	nsubj	basic	7-3	
+7-3	443-450	lieguši	vmnpdmpnasnp	*	liegt	_	_	_	_	advcl	basic	7-10	
+7-4	451-460	precēties	vmyn0i3000n	*	precēties	_	_	_	_	ccomp	basic	7-3	
+7-5	461-463	ar	spsa	*	ar	_	_	_	_	case	basic	7-8	
+7-6	464-474	izraudzīto	vmnpdmsapsyp	*	izraudzīt	_	_	_	_	amod	basic	7-8	
+7-7	475-480	kalpu	ncmpg1	*	kalps	_	_	_	_	nmod	basic	7-8	
+7-8	481-486	meitu	ncfsa4	*	meita	_	_	_	_	iobj	basic	7-4	
+7-9	486-487	,	zc	*	,	_	_	_	_	punct	basic	7-3	
+7-10	488-491	tad	r0t	*	tad	_	_	_	_	advmod	basic	7-15	
+7-11	492-498	Jēkabs	npmsn1	*	Jēkabs	person	*	*->7-4	*[7]	obl	basic	7-15	
+7-12	499-501	no	spsg	*	no	_	_	_	_	case	basic	7-14	
+7-13	502-506	tēva	ncmsg1	*	tēvs	_	_	_	_	nmod	basic	7-14	
+7-14	507-512	mājām	ncfpd4	*	māja	_	_	_	_	obl	basic	7-15	
+7-15	513-521	aizgājis	vmnpdmsnasnp	*	aiziet	_	_	_	_	root	basic	7-15	
+7-16	522-524	uz	spsg	*	uz	_	_	_	_	case	basic	7-20	
+7-17	525-533	Liepājas	npfsg4	*	Liepāja	GPE[2]	https://en.wikipedia.org/wiki/Liepāja\_District[2]	_	_	nmod	basic	7-18	
+7-18	534-540	rajona	ncmsg1	*	rajons	GPE[2]	https://en.wikipedia.org/wiki/Liepāja\_District[2]	_	_	nmod	basic	7-20	
+7-19	541-546	Sakas	npfsg4	*	Saka	GPE[3]	https://en.wikipedia.org/wiki/Saka\_Parish[3]	_	_	nmod	basic	7-20	
+7-20	547-554	pagastu	ncmsa1	*	pagasts	GPE[3]	https://en.wikipedia.org/wiki/Saka\_Parish[3]	_	_	obl	basic	7-15	
+7-21	554-555	.	zs	*	.	_	_	_	_	punct	basic	7-15	
 
 #Text=Pēc laika izrādījies, ka uz labu tas bijis, jo nav kā lielsaimnieks uz Sibīriju aizvests, bet izsūtīšana darbos uz Vāciju nav gājusi garām.
-8-1	557-560	Pēc	spsg	pēc	_	_	_	_	case	basic	8-2	
-8-2	561-566	laika	ncmsg1	laiks	_	_	_	_	obl	basic	8-3	
-8-3	567-577	izrādījies	vmypdmsnasnp	izrādīties	_	_	_	_	root	basic	8-3	
-8-4	577-578	,	zc	,	_	_	_	_	punct	basic	8-7	
-8-5	579-581	ka	cs	ka	_	_	_	_	mark	basic	8-7	
-8-6	582-584	uz	spsa	uz	_	_	_	_	case	basic	8-7	
-8-7	585-589	labu	afmsanp	labs	_	_	_	_	csubj	basic	8-3	
-8-8	590-593	tas	pd0msnn	tas	_	_	_	_	nsubj	basic	8-7	
-8-9	594-599	bijis	vcnpdmsnasnp	būt	_	_	_	_	cop	basic	8-7	
-8-10	599-600	,	zc	,	_	_	_	_	punct	basic	8-17	
-8-11	601-603	jo	cs	jo	_	_	_	_	mark	basic	8-17	
-8-12	604-607	nav	vcnipii30ay	nebūt	_	_	_	_	aux	basic	8-17	
-8-13	608-610	kā	cs	kā	_	_	_	_	mark	basic	8-14	
-8-14	611-624	lielsaimnieks	ncmsn1	lielsaimnieks	_	_	_	_	acl	basic	8-17	
-8-15	625-627	uz	spsa	uz	_	_	_	_	case	basic	8-16	
-8-16	628-636	Sibīriju	npfsa4	Sibīrija	location	https://en.wikipedia.org/wiki/Siberia	_	_	obl	basic	8-17	
-8-17	637-645	aizvests	vmnpdmsnpsnp	aizvest	_	_	_	_	advcl	basic	8-7	
-8-18	645-646	,	zc	,	_	_	_	_	punct	basic	8-25	
-8-19	647-650	bet	cc	bet	_	_	_	_	cc	basic	8-25	
-8-20	651-661	izsūtīšana	ncfsn4	izsūtīšana	_	_	_	_	nsubj	basic	8-25	
-8-21	662-668	darbos	ncmpl1	darbs	_	_	_	_	acl	basic	8-20	
-8-22	669-671	uz	spsa	uz	_	_	_	_	case	basic	8-23	
-8-23	672-678	Vāciju	npfsa4	Vācija	GPE	https://en.wikipedia.org/wiki/Germany	*[1]	*->1-1	obl	basic	8-25	
-8-24	679-682	nav	vcnipii30ay	nebūt	_	_	_	_	aux	basic	8-25	
-8-25	683-689	gājusi	vmnpdfsnasnp	iet	_	_	_	_	conj	basic	8-3	
-8-26	690-695	garām	rrp	garām	_	_	_	_	advmod	basic	8-25	
-8-27	695-696	.	zs	.	_	_	_	_	punct	basic	8-3	
+8-1	557-560	Pēc	spsg	*	pēc	_	_	_	_	case	basic	8-2	
+8-2	561-566	laika	ncmsg1	*	laiks	_	_	_	_	obl	basic	8-3	
+8-3	567-577	izrādījies	vmypdmsnasnp	*	izrādīties	_	_	_	_	root	basic	8-3	
+8-4	577-578	,	zc	*	,	_	_	_	_	punct	basic	8-7	
+8-5	579-581	ka	cs	*	ka	_	_	_	_	mark	basic	8-7	
+8-6	582-584	uz	spsa	*	uz	_	_	_	_	case	basic	8-7	
+8-7	585-589	labu	afmsanp	*	labs	_	_	_	_	csubj	basic	8-3	
+8-8	590-593	tas	pd0msnn	*	tas	_	_	_	_	nsubj	basic	8-7	
+8-9	594-599	bijis	vcnpdmsnasnp	*	būt	_	_	_	_	cop	basic	8-7	
+8-10	599-600	,	zc	*	,	_	_	_	_	punct	basic	8-17	
+8-11	601-603	jo	cs	*	jo	_	_	_	_	mark	basic	8-17	
+8-12	604-607	nav	vcnipii30ay	*	nebūt	_	_	_	_	aux	basic	8-17	
+8-13	608-610	kā	cs	*	kā	_	_	_	_	mark	basic	8-14	
+8-14	611-624	lielsaimnieks	ncmsn1	*	lielsaimnieks	_	_	_	_	acl	basic	8-17	
+8-15	625-627	uz	spsa	*	uz	_	_	_	_	case	basic	8-16	
+8-16	628-636	Sibīriju	npfsa4	*	Sibīrija	location	https://en.wikipedia.org/wiki/Siberia	_	_	obl	basic	8-17	
+8-17	637-645	aizvests	vmnpdmsnpsnp	*	aizvest	_	_	_	_	advcl	basic	8-7	
+8-18	645-646	,	zc	*	,	_	_	_	_	punct	basic	8-25	
+8-19	647-650	bet	cc	*	bet	_	_	_	_	cc	basic	8-25	
+8-20	651-661	izsūtīšana	ncfsn4	*	izsūtīšana	_	_	_	_	nsubj	basic	8-25	
+8-21	662-668	darbos	ncmpl1	*	darbs	_	_	_	_	acl	basic	8-20	
+8-22	669-671	uz	spsa	*	uz	_	_	_	_	case	basic	8-23	
+8-23	672-678	Vāciju	npfsa4	*	Vācija	GPE	https://en.wikipedia.org/wiki/Germany	*->1-1	*[1]	obl	basic	8-25	
+8-24	679-682	nav	vcnipii30ay	*	nebūt	_	_	_	_	aux	basic	8-25	
+8-25	683-689	gājusi	vmnpdfsnasnp	*	iet	_	_	_	_	conj	basic	8-3	
+8-26	690-695	garām	rrp	*	garām	_	_	_	_	advmod	basic	8-25	
+8-27	695-696	.	zs	*	.	_	_	_	_	punct	basic	8-3	
 
 #Text=Pēc diviem tur pavadītiem gadiem kopā ar vēl dažiem biedriem nākuši kājām atpakaļ uz Latviju, ko pēc trim mēnešiem arī sasnieguši.
-9-1	698-701	Pēc	sppd	pēc	_	_	_	_	case	basic	9-5	
-9-2	702-708	diviem	mcsmpd	divi	_	_	_	_	nummod	basic	9-5	
-9-3	709-712	tur	r0p	tur	_	_	*[1]	*->1-2	dep	basic	9-4	
-9-4	713-723	pavadītiem	vmnpdmpdpsnp	pavadīt	_	_	_	_	amod	basic	9-5	
-9-5	724-730	gadiem	ncmpd1	gads	_	_	_	_	obl	basic	9-11	
-9-6	731-735	kopā	r0m	kopā	_	_	_	_	advmod	basic	9-11	
-9-7	736-738	ar	spsa	ar	_	_	_	_	case	basic	9-10	
-9-8	739-742	vēl	r0t	vēl	_	_	_	_	advmod	basic	9-9	
-9-9	743-749	dažiem	pi0mpdn	dažs	_	_	_	_	det	basic	9-10	
-9-10	750-758	biedriem	ncmpd1	biedrs	_	_	_	_	iobj	basic	9-6	
-9-11	759-765	nākuši	vmnpdmpnasnp	nākt	_	_	_	_	root	basic	9-11	
-9-12	766-771	kājām	ncfpd4	kāja	_	_	_	_	obl	basic	9-11	
-9-13	772-779	atpakaļ	r0p	atpakaļ	_	_	_	_	advmod	basic	9-11	
-9-14	780-782	uz	spsa	uz	_	_	_	_	case	basic	9-15	
-9-15	783-790	Latviju	npfsa4	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	*[2]	*->2-1	obl	basic	9-11	
-9-16	790-791	,	zc	,	_	_	_	_	punct	basic	9-22	
-9-17	792-794	ko	pr000an	kas	_	_	*[2]	*->2-2	obj	basic	9-22	
-9-18	795-798	pēc	sppd	pēc	_	_	_	_	case	basic	9-20	
-9-19	799-803	trim	mcsmpd	trīs	_	_	_	_	nummod	basic	9-20	
-9-20	804-812	mēnešiem	ncmpd2	mēnesis	_	_	_	_	obl	basic	9-22	
-9-21	813-816	arī	q	arī	_	_	_	_	discourse	basic	9-22	
-9-22	817-827	sasnieguši	vmnpdmpnasnp	sasniegt	_	_	_	_	acl	basic	9-15	
-9-23	827-828	.	zs	.	_	_	_	_	punct	basic	9-11	
+9-1	698-701	Pēc	sppd	*	pēc	_	_	_	_	case	basic	9-5	
+9-2	702-708	diviem	mcsmpd	*	divi	_	_	_	_	nummod	basic	9-5	
+9-3	709-712	tur	r0p	*	tur	_	_	*->1-2	*[1]	dep	basic	9-4	
+9-4	713-723	pavadītiem	vmnpdmpdpsnp	*	pavadīt	_	_	_	_	amod	basic	9-5	
+9-5	724-730	gadiem	ncmpd1	*	gads	_	_	_	_	obl	basic	9-11	
+9-6	731-735	kopā	r0m	*	kopā	_	_	_	_	advmod	basic	9-11	
+9-7	736-738	ar	spsa	*	ar	_	_	_	_	case	basic	9-10	
+9-8	739-742	vēl	r0t	*	vēl	_	_	_	_	advmod	basic	9-9	
+9-9	743-749	dažiem	pi0mpdn	*	dažs	_	_	_	_	det	basic	9-10	
+9-10	750-758	biedriem	ncmpd1	*	biedrs	_	_	_	_	iobj	basic	9-6	
+9-11	759-765	nākuši	vmnpdmpnasnp	*	nākt	_	_	_	_	root	basic	9-11	
+9-12	766-771	kājām	ncfpd4	*	kāja	_	_	_	_	obl	basic	9-11	
+9-13	772-779	atpakaļ	r0p	*	atpakaļ	_	_	_	_	advmod	basic	9-11	
+9-14	780-782	uz	spsa	*	uz	_	_	_	_	case	basic	9-15	
+9-15	783-790	Latviju	npfsa4	*	Latvija	GPE	https://en.wikipedia.org/wiki/Latvia	*->2-1	*[2]	obl	basic	9-11	
+9-16	790-791	,	zc	*	,	_	_	_	_	punct	basic	9-22	
+9-17	792-794	ko	pr000an	*	kas	_	_	*->2-2	*[2]	obj	basic	9-22	
+9-18	795-798	pēc	sppd	*	pēc	_	_	_	_	case	basic	9-20	
+9-19	799-803	trim	mcsmpd	*	trīs	_	_	_	_	nummod	basic	9-20	
+9-20	804-812	mēnešiem	ncmpd2	*	mēnesis	_	_	_	_	obl	basic	9-22	
+9-21	813-816	arī	q	*	arī	_	_	_	_	discourse	basic	9-22	
+9-22	817-827	sasnieguši	vmnpdmpnasnp	*	sasniegt	_	_	_	_	acl	basic	9-15	
+9-23	827-828	.	zs	*	.	_	_	_	_	punct	basic	9-11	
 
 #Text=Jēkabam izdzīvot palīdzējis tas, ka vienmēr pratis ievērot mērenību, arī ēšanā.
-10-1	830-837	Jēkabam	npmsd1	Jēkabs	person	*	*[7]	*->7-5	iobj	basic	10-3	
-10-2	838-846	izdzīvot	vmnn0t2000n	izdzīvot	_	_	_	_	ccomp	basic	10-3	
-10-3	847-857	palīdzējis	vmnpdmsnasnp	palīdzēt	_	_	_	_	root	basic	10-3	
-10-4	858-861	tas	pd0msnn	tas	_	_	_	_	nsubj	basic	10-3	
-10-5	861-862	,	zc	,	_	_	_	_	punct	basic	10-8	
-10-6	863-865	ka	cs	ka	_	_	_	_	mark	basic	10-8	
-10-7	866-873	vienmēr	r0t	vienmēr	_	_	_	_	advmod	basic	10-8	
-10-8	874-880	pratis	vmnpdmsnasnp	prast	_	_	_	_	acl	basic	10-4	
-10-9	881-888	ievērot	vmnn0t2000n	ievērot	_	_	_	_	xcomp	basic	10-8	
-10-10	889-897	mērenību	ncfsa4	mērenība	_	_	_	_	obj	basic	10-8	
-10-11	897-898	,	zc	,	_	_	_	_	punct	basic	10-13	
-10-12	899-902	arī	q	arī	_	_	_	_	discourse	basic	10-13	
-10-13	903-908	ēšanā	ncfsl4	ēšana	_	_	_	_	acl	basic	10-8	
-10-14	908-909	.	zs	.	_	_	_	_	punct	basic	10-3	
+10-1	830-837	Jēkabam	npmsd1	*	Jēkabs	person	*	*->7-5	*[7]	iobj	basic	10-3	
+10-2	838-846	izdzīvot	vmnn0t2000n	*	izdzīvot	_	_	_	_	ccomp	basic	10-3	
+10-3	847-857	palīdzējis	vmnpdmsnasnp	*	palīdzēt	_	_	_	_	root	basic	10-3	
+10-4	858-861	tas	pd0msnn	*	tas	_	_	_	_	nsubj	basic	10-3	
+10-5	861-862	,	zc	*	,	_	_	_	_	punct	basic	10-8	
+10-6	863-865	ka	cs	*	ka	_	_	_	_	mark	basic	10-8	
+10-7	866-873	vienmēr	r0t	*	vienmēr	_	_	_	_	advmod	basic	10-8	
+10-8	874-880	pratis	vmnpdmsnasnp	*	prast	_	_	_	_	acl	basic	10-4	
+10-9	881-888	ievērot	vmnn0t2000n	*	ievērot	_	_	_	_	xcomp	basic	10-8	
+10-10	889-897	mērenību	ncfsa4	*	mērenība	_	_	_	_	obj	basic	10-8	
+10-11	897-898	,	zc	*	,	_	_	_	_	punct	basic	10-13	
+10-12	899-902	arī	q	*	arī	_	_	_	_	discourse	basic	10-13	
+10-13	903-908	ēšanā	ncfsl4	*	ēšana	_	_	_	_	acl	basic	10-8	
+10-14	908-909	.	zs	*	.	_	_	_	_	punct	basic	10-3	
 
 #Text=Vairāki biedri nomiruši pēc kārtīgas maltītes, ko baudījuši pēc vairākām badošanās dienām.
-11-1	911-918	Vairāki	pi0mpnn	vairāki	_	_	_	_	det	basic	11-2	
-11-2	919-925	biedri	ncmpn1	biedrs	_	_	_	_	nsubj	basic	11-3	
-11-3	926-934	nomiruši	vmnpdmpnasnp	nomirt	_	_	_	_	root	basic	11-3	
-11-4	935-938	pēc	spsg	pēc	_	_	_	_	case	basic	11-6	
-11-5	939-947	kārtīgas	affsgnp	kārtīga	_	_	_	_	amod	basic	11-6	
-11-6	948-956	maltītes	ncfsg5	maltīte	_	_	*[3]	*->3-1	obl	basic	11-3	
-11-7	956-957	,	zc	,	_	_	_	_	punct	basic	11-9	
-11-8	958-960	ko	pr000an	kas	_	_	*[3]	*->3-2	obj	basic	11-9	
-11-9	961-970	baudījuši	vmnpdmpnasnp	baudīt	_	_	_	_	acl	basic	11-6	
-11-10	971-974	pēc	sppd	pēc	_	_	_	_	case	basic	11-13	
-11-11	975-983	vairākām	pi0fpdn	vairākas	_	_	_	_	det	basic	11-13	
-11-12	984-993	badošanās	ncfsgr	badošanās	_	_	_	_	nmod	basic	11-13	
-11-13	994-1000	dienām	ncfpd4	diena	_	_	_	_	obl	basic	11-9	
-11-14	1000-1001	.	zs	.	_	_	_	_	punct	basic	11-3	
+11-1	911-918	Vairāki	pi0mpnn	*	vairāki	_	_	_	_	det	basic	11-2	
+11-2	919-925	biedri	ncmpn1	*	biedrs	_	_	_	_	nsubj	basic	11-3	
+11-3	926-934	nomiruši	vmnpdmpnasnp	*	nomirt	_	_	_	_	root	basic	11-3	
+11-4	935-938	pēc	spsg	*	pēc	_	_	_	_	case	basic	11-6	
+11-5	939-947	kārtīgas	affsgnp	*	kārtīga	_	_	_	_	amod	basic	11-6	
+11-6	948-956	maltītes	ncfsg5	*	maltīte	_	_	*->3-1	*[3]	obl	basic	11-3	
+11-7	956-957	,	zc	*	,	_	_	_	_	punct	basic	11-9	
+11-8	958-960	ko	pr000an	*	kas	_	_	*->3-2	*[3]	obj	basic	11-9	
+11-9	961-970	baudījuši	vmnpdmpnasnp	*	baudīt	_	_	_	_	acl	basic	11-6	
+11-10	971-974	pēc	sppd	*	pēc	_	_	_	_	case	basic	11-13	
+11-11	975-983	vairākām	pi0fpdn	*	vairākas	_	_	_	_	det	basic	11-13	
+11-12	984-993	badošanās	ncfsgr	*	badošanās	_	_	_	_	nmod	basic	11-13	
+11-13	994-1000	dienām	ncfpd4	*	diena	_	_	_	_	obl	basic	11-9	
+11-14	1000-1001	.	zs	*	.	_	_	_	_	punct	basic	11-3	
 
 #Text=Ja katram līdzi iedots maizes kukulītis, tad viņam tas vēl bijis pusē, kad citiem jau notiesāts.
-12-1	1003-1005	Ja	cs	ja	_	_	_	_	mark	basic	12-4	
-12-2	1006-1012	katram	pg0msdn	katrs	_	_	_	_	iobj	basic	12-4	
-12-3	1013-1018	līdzi	rrp	līdzi	_	_	_	_	advmod	basic	12-4	
-12-4	1019-1025	iedots	vmnpdmsnpsnp	iedot	_	_	_	_	advcl	basic	12-13	
-12-5	1026-1032	maizes	ncfsg5	maize	_	_	*[4]	*->4-1	nmod	basic	12-6	
-12-6	1033-1042	kukulītis	ncmsn2	kukulītis	_	_	*[4]	*->4-1	nsubj:pass	basic	12-4	
-12-7	1042-1043	,	zc	,	_	_	_	_	punct	basic	12-4	
-12-8	1044-1047	tad	r0t	tad	_	_	_	_	advmod	basic	12-13	
-12-9	1048-1053	viņam	pp3msdn	viņš	_	_	*[7]	*->7-6	obl	basic	12-13	
-12-10	1054-1057	tas	pd0msnn	tas	_	_	*[4]	*->4-2	nsubj	basic	12-13	
-12-11	1058-1061	vēl	r0t	vēl	_	_	_	_	advmod	basic	12-13	
-12-12	1062-1067	bijis	vcnpdmsnasnp	būt	_	_	_	_	cop	basic	12-13	
-12-13	1068-1072	pusē	ncfsl5	puse	_	_	_	_	root	basic	12-13	
-12-14	1072-1073	,	zc	,	_	_	_	_	punct	basic	12-18	
-12-15	1074-1077	kad	r0t	kad	_	_	_	_	advmod	basic	12-18	
-12-16	1078-1084	citiem	pi0mpdn	cits	_	_	_	_	obl	basic	12-18	
-12-17	1085-1088	jau	r0t	jau	_	_	_	_	advmod	basic	12-18	
-12-18	1089-1098	notiesāts	vmnpdmsnpsnp	notiesāt	_	_	_	_	advcl	basic	12-13	
-12-19	1098-1099	.	zs	.	_	_	_	_	punct	basic	12-13	
+12-1	1003-1005	Ja	cs	*	ja	_	_	_	_	mark	basic	12-4	
+12-2	1006-1012	katram	pg0msdn	*	katrs	_	_	_	_	iobj	basic	12-4	
+12-3	1013-1018	līdzi	rrp	*	līdzi	_	_	_	_	advmod	basic	12-4	
+12-4	1019-1025	iedots	vmnpdmsnpsnp	*	iedot	_	_	_	_	advcl	basic	12-13	
+12-5	1026-1032	maizes	ncfsg5	*	maize	_	_	*->4-1	*[4]	nmod	basic	12-6	
+12-6	1033-1042	kukulītis	ncmsn2	*	kukulītis	_	_	*->4-1	*[4]	nsubj:pass	basic	12-4	
+12-7	1042-1043	,	zc	*	,	_	_	_	_	punct	basic	12-4	
+12-8	1044-1047	tad	r0t	*	tad	_	_	_	_	advmod	basic	12-13	
+12-9	1048-1053	viņam	pp3msdn	*	viņš	_	_	*->7-6	*[7]	obl	basic	12-13	
+12-10	1054-1057	tas	pd0msnn	*	tas	_	_	*->4-2	*[4]	nsubj	basic	12-13	
+12-11	1058-1061	vēl	r0t	*	vēl	_	_	_	_	advmod	basic	12-13	
+12-12	1062-1067	bijis	vcnpdmsnasnp	*	būt	_	_	_	_	cop	basic	12-13	
+12-13	1068-1072	pusē	ncfsl5	*	puse	_	_	_	_	root	basic	12-13	
+12-14	1072-1073	,	zc	*	,	_	_	_	_	punct	basic	12-18	
+12-15	1074-1077	kad	r0t	*	kad	_	_	_	_	advmod	basic	12-18	
+12-16	1078-1084	citiem	pi0mpdn	*	cits	_	_	_	_	obl	basic	12-18	
+12-17	1085-1088	jau	r0t	*	jau	_	_	_	_	advmod	basic	12-18	
+12-18	1089-1098	notiesāts	vmnpdmsnpsnp	*	notiesāt	_	_	_	_	advcl	basic	12-13	
+12-19	1098-1099	.	zs	*	.	_	_	_	_	punct	basic	12-13	
 
 #Text=Pēc kara Jēkabs apprecējies, bet, kad sieva aizgājusi aizsaulē, tika apņemta otra, kura nu jau arī atdusas Dieva valstībā.
-13-1	1101-1104	Pēc	spsg	pēc	_	_	_	_	case	basic	13-2	
-13-2	1105-1109	kara	ncmsg1	karš	_	_	_	_	obl	basic	13-4	
-13-3	1110-1116	Jēkabs	npmsn1	Jēkabs	person	*	*[7]	*->7-7	nsubj	basic	13-4	
-13-4	1117-1128	apprecējies	vmypdmsnasnp	apprecēties	_	_	_	_	root	basic	13-4	
-13-5	1128-1129	,	zc	,	_	_	_	_	punct	basic	13-14	
-13-6	1130-1133	bet	cc	bet	_	_	_	_	cc	basic	13-14	
-13-7	1133-1134	,	zc	,	_	_	_	_	punct	basic	13-10	
-13-8	1135-1138	kad	r0t	kad	_	_	_	_	advmod	basic	13-10	
-13-9	1139-1144	sieva	ncfsn4	sieva	_	_	_	_	nsubj	basic	13-10	
-13-10	1145-1154	aizgājusi	vmnpdfsnasnp	aiziet	_	_	_	_	advcl	basic	13-14	
-13-11	1155-1163	aizsaulē	ncfsl5	aizsaule	_	_	_	_	obl	basic	13-10	
-13-12	1163-1164	,	zc	,	_	_	_	_	punct	basic	13-10	
-13-13	1165-1169	tika	vtnisi130an	tikt	_	_	_	_	aux	basic	13-14	
-13-14	1170-1177	apņemta	vmnpdfsnpsnp	apņemt	_	_	_	_	conj	basic	13-4	
-13-15	1178-1182	otra	mcsfsn	otra	_	_	*[5]	*->5-1	nsubj:pass	basic	13-14	
-13-16	1182-1183	,	zc	,	_	_	_	_	punct	basic	13-21	
-13-17	1184-1188	kura	pr0fsnn	kura	_	_	*[5]	*->5-2	nsubj	basic	13-21	
-13-18	1189-1191	nu	r0t	nu	_	_	_	_	advmod	basic	13-21	
-13-19	1192-1195	jau	q	jau	_	_	_	_	discourse	basic	13-21	
-13-20	1196-1199	arī	q	arī	_	_	_	_	discourse	basic	13-21	
-13-21	1200-1207	atdusas	vmyipi330an	atdusēties	_	_	_	_	acl	basic	13-15	
-13-22	1208-1213	Dieva	ncmsg1	dievs	person	https://en.wikipedia.org/wiki/God	_	_	nmod	basic	13-23	
-13-23	1214-1222	valstībā	ncfsl4	valstība	_	_	_	_	obl	basic	13-21	
-13-24	1222-1223	.	zs	.	_	_	_	_	punct	basic	13-4	
+13-1	1101-1104	Pēc	spsg	*	pēc	_	_	_	_	case	basic	13-2	
+13-2	1105-1109	kara	ncmsg1	*	karš	_	_	_	_	obl	basic	13-4	
+13-3	1110-1116	Jēkabs	npmsn1	*	Jēkabs	person	*	*->7-7	*[7]	nsubj	basic	13-4	
+13-4	1117-1128	apprecējies	vmypdmsnasnp	*	apprecēties	_	_	_	_	root	basic	13-4	
+13-5	1128-1129	,	zc	*	,	_	_	_	_	punct	basic	13-14	
+13-6	1130-1133	bet	cc	*	bet	_	_	_	_	cc	basic	13-14	
+13-7	1133-1134	,	zc	*	,	_	_	_	_	punct	basic	13-10	
+13-8	1135-1138	kad	r0t	*	kad	_	_	_	_	advmod	basic	13-10	
+13-9	1139-1144	sieva	ncfsn4	*	sieva	_	_	_	_	nsubj	basic	13-10	
+13-10	1145-1154	aizgājusi	vmnpdfsnasnp	*	aiziet	_	_	_	_	advcl	basic	13-14	
+13-11	1155-1163	aizsaulē	ncfsl5	*	aizsaule	_	_	_	_	obl	basic	13-10	
+13-12	1163-1164	,	zc	*	,	_	_	_	_	punct	basic	13-10	
+13-13	1165-1169	tika	vtnisi130an	*	tikt	_	_	_	_	aux	basic	13-14	
+13-14	1170-1177	apņemta	vmnpdfsnpsnp	*	apņemt	_	_	_	_	conj	basic	13-4	
+13-15	1178-1182	otra	mcsfsn	*	otra	_	_	*->5-1	*[5]	nsubj:pass	basic	13-14	
+13-16	1182-1183	,	zc	*	,	_	_	_	_	punct	basic	13-21	
+13-17	1184-1188	kura	pr0fsnn	*	kura	_	_	*->5-2	*[5]	nsubj	basic	13-21	
+13-18	1189-1191	nu	r0t	*	nu	_	_	_	_	advmod	basic	13-21	
+13-19	1192-1195	jau	q	*	jau	_	_	_	_	discourse	basic	13-21	
+13-20	1196-1199	arī	q	*	arī	_	_	_	_	discourse	basic	13-21	
+13-21	1200-1207	atdusas	vmyipi330an	*	atdusēties	_	_	_	_	acl	basic	13-15	
+13-22	1208-1213	Dieva	ncmsg1	*	dievs	person	https://en.wikipedia.org/wiki/God	_	_	nmod	basic	13-23	
+13-23	1214-1222	valstībā	ncfsl4	*	valstība	_	_	_	_	obl	basic	13-21	
+13-24	1222-1223	.	zs	*	.	_	_	_	_	punct	basic	13-4	
 
 #Text=Pašam bērnu nav bijis, bet māsasdēla Ludviga ģimenē viņš jūtoties ļoti labi.
-14-1	1225-1230	Pašam	pg0msdn	pats	_	_	*[7]	*->7-8	obl	basic	14-4	
-14-2	1231-1236	bērnu	ncmpg1	bērns	_	_	_	_	nsubj	basic	14-4	
-14-3	1237-1240	nav	vcnipii30ay	nebūt	_	_	_	_	aux	basic	14-4	
-14-4	1241-1246	bijis	vcnpdmsnasnp	būt	_	_	_	_	root	basic	14-4	
-14-5	1246-1247	,	zc	,	_	_	_	_	punct	basic	14-11	
-14-6	1248-1251	bet	cc	bet	_	_	_	_	cc	basic	14-11	
-14-7	1252-1261	māsasdēla	ncmsg1	māsasdēls	_	_	*[6]	*->6-1	nmod	basic	14-8	
-14-8	1262-1269	Ludviga	npmsg1	Ludvigs	person	*	*[6]	*->6-2	nmod	basic	14-9	
-14-9	1270-1276	ģimenē	ncfsl5	ģimene	_	_	_	_	obl	basic	14-11	
-14-10	1277-1281	viņš	pp3msnn	viņš	_	_	*[7]	*->7-9	nsubj	basic	14-11	
-14-11	1282-1290	jūtoties	vmyrpi100an	justies	_	_	_	_	conj	basic	14-4	
-14-12	1291-1295	ļoti	r0q	ļoti	_	_	_	_	advmod	basic	14-13	
-14-13	1296-1300	labi	rpm	labi	_	_	_	_	advmod	basic	14-11	
-14-14	1300-1301	.	zs	.	_	_	_	_	punct	basic	14-4	
+14-1	1225-1230	Pašam	pg0msdn	*	pats	_	_	*->7-8	*[7]	obl	basic	14-4	
+14-2	1231-1236	bērnu	ncmpg1	*	bērns	_	_	_	_	nsubj	basic	14-4	
+14-3	1237-1240	nav	vcnipii30ay	*	nebūt	_	_	_	_	aux	basic	14-4	
+14-4	1241-1246	bijis	vcnpdmsnasnp	*	būt	_	_	_	_	root	basic	14-4	
+14-5	1246-1247	,	zc	*	,	_	_	_	_	punct	basic	14-11	
+14-6	1248-1251	bet	cc	*	bet	_	_	_	_	cc	basic	14-11	
+14-7	1252-1261	māsasdēla	ncmsg1	*	māsasdēls	_	_	*->6-1	*[6]	nmod	basic	14-8	
+14-8	1262-1269	Ludviga	npmsg1	*	Ludvigs	person	*	*->6-2	*[6]	nmod	basic	14-9	
+14-9	1270-1276	ģimenē	ncfsl5	*	ģimene	_	_	_	_	obl	basic	14-11	
+14-10	1277-1281	viņš	pp3msnn	*	viņš	_	_	*->7-9	*[7]	nsubj	basic	14-11	
+14-11	1282-1290	jūtoties	vmyrpi100an	*	justies	_	_	_	_	conj	basic	14-4	
+14-12	1291-1295	ļoti	r0q	*	ļoti	_	_	_	_	advmod	basic	14-13	
+14-13	1296-1300	labi	rpm	*	labi	_	_	_	_	advmod	basic	14-11	
+14-14	1300-1301	.	zs	*	.	_	_	_	_	punct	basic	14-4	

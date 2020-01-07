@@ -1,107 +1,107 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=- Nu kā - viņa saposušies - ne pārlieku, bet tomēr.
-1-1	0-1	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	_	_	punct	basic	1-6	
-1-2	2-4	Nu	_	_	_	_	_	_	_	_	_	_	_	_	q	nu	_	_	_	_	discourse	basic	1-6	
-1-3	5-7	kā	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0m	kā	_	_	_	_	flat	basic	1-2	
-1-4	8-9	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	_	_	punct	basic	1-2	
-1-5	10-14	viņa	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsnn	viņa	_	_	*[2]	*->2-1	nsubj	basic	1-6	
-1-6	15-25	saposušies	Masc	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	Perf	vmypdmpnasnpn	saposties	_	_	_	_	root	basic	1-6	
-1-7	26-27	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	_	_	punct	basic	1-9	
-1-8	28-30	ne	_	_	_	_	_	_	_	_	_	_	_	_	q	ne	_	_	_	_	discourse	basic	1-9	
-1-9	31-39	pārlieku	_	_	_	_	_	_	_	_	_	_	_	_	r0q	pārlieku	_	_	_	_	advcl	basic	1-6	
-1-10	39-40	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-11	
-1-11	41-44	bet	_	_	_	_	_	_	_	_	_	_	_	_	cs	bet	_	_	_	_	discourse	basic	1-9	
-1-12	45-50	tomēr	_	_	_	_	_	_	_	_	_	_	_	_	q	tomēr	_	_	_	_	flat	basic	1-11	
-1-13	50-51	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-6	
+1-1	0-1	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	-	_	_	_	_	punct	basic	1-6	
+1-2	2-4	Nu	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	nu	_	_	_	_	discourse	basic	1-6	
+1-3	5-7	kā	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Int	*	*	r0m	*	kā	_	_	_	_	flat	basic	1-2	
+1-4	8-9	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	-	_	_	_	_	punct	basic	1-2	
+1-5	10-14	viņa	*	*	Nom	*	*	Fem	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3fsnn	*	viņa	_	_	*->2-1	*[2]	nsubj	basic	1-6	
+1-6	15-25	saposušies	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	*	vmypdmpnasnpn	*	saposties	_	_	_	_	root	basic	1-6	
+1-7	26-27	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	-	_	_	_	_	punct	basic	1-9	
+1-8	28-30	ne	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	ne	_	_	_	_	discourse	basic	1-9	
+1-9	31-39	pārlieku	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	pārlieku	_	_	_	_	advcl	basic	1-6	
+1-10	39-40	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-11	
+1-11	41-44	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	bet	_	_	_	_	discourse	basic	1-9	
+1-12	45-50	tomēr	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tomēr	_	_	_	_	flat	basic	1-11	
+1-13	50-51	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-6	
 
 #Text=Var redzēt, gatavojusies randiņam.
-2-1	53-56	Var	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vonipt330an	varēt	_	_	_	_	root	basic	2-1	
-2-2	57-63	redzēt	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	redzēt	_	_	_	_	xcomp	basic	2-1	
-2-3	63-64	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-4	
-2-4	65-77	gatavojusies	Fem	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	Perf	vmypdfsnasnpn	gatavoties	_	_	_	_	ccomp	basic	2-2	
-2-5	78-86	randiņam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	npmsd1	Randiņš	_	_	_	_	iobj	basic	2-4	
-2-6	86-87	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-1	
+2-1	53-56	Var	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vonipt330an	*	varēt	_	_	_	_	root	basic	2-1	
+2-2	57-63	redzēt	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0t3000n	*	redzēt	_	_	_	_	xcomp	basic	2-1	
+2-3	63-64	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-4	
+2-4	65-77	gatavojusies	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	*	vmypdfsnasnpn	*	gatavoties	_	_	_	_	ccomp	basic	2-2	
+2-5	78-86	randiņam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	npmsd1	*	Randiņš	_	_	_	_	iobj	basic	2-4	
+2-6	86-87	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-1	
 
 #Text=Viņai rokas somiņa tikai, un maza - tātad nenāk tieši no darba.
-3-1	89-94	Viņai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3fsdn	viņa	_	_	*[2]	*->2-2	obl	basic	3-3	
-3-2	95-100	rokas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	roka	_	_	_	_	nmod	basic	3-3	
-3-3	101-107	somiņa	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	somiņa	_	_	_	_	root	basic	3-3	
-3-4	108-113	tikai	_	_	_	_	_	_	_	_	_	_	_	_	q	tikai	_	_	_	_	discourse	basic	3-3	
-3-5	113-114	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	3-7	
-3-6	115-117	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	3-7	
-3-7	118-122	maza	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	maza	_	_	_	_	parataxis	basic	3-3	
-3-8	123-124	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	_	_	punct	basic	3-10	
-3-9	125-130	tātad	_	_	_	_	_	_	_	_	_	_	_	_	r0q	tātad	_	_	_	_	advmod	basic	3-10	
-3-10	131-136	nenāk	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipi130ay	nenākt	_	_	_	_	conj	basic	3-3	
-3-11	137-142	tieši	_	_	_	_	_	_	_	_	_	_	_	_	q	tieši	_	_	_	_	discourse	basic	3-13	
-3-12	143-145	no	_	_	_	_	_	_	_	_	_	_	_	_	spsg	no	_	_	_	_	case	basic	3-13	
-3-13	146-151	darba	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	darbs	_	_	_	_	obl	basic	3-10	
-3-14	151-152	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	3-3	
+3-1	89-94	Viņai	*	*	Dat	*	*	Fem	*	*	*	Sing	3	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3fsdn	*	viņa	_	_	*->2-2	*[2]	obl	basic	3-3	
+3-2	95-100	rokas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	roka	_	_	_	_	nmod	basic	3-3	
+3-3	101-107	somiņa	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	somiņa	_	_	_	_	root	basic	3-3	
+3-4	108-113	tikai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tikai	_	_	_	_	discourse	basic	3-3	
+3-5	113-114	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	3-7	
+3-6	115-117	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	3-7	
+3-7	118-122	maza	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	*	maza	_	_	_	_	parataxis	basic	3-3	
+3-8	123-124	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	-	_	_	_	_	punct	basic	3-10	
+3-9	125-130	tātad	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	tātad	_	_	_	_	advmod	basic	3-10	
+3-10	131-136	nenāk	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipi130ay	*	nenākt	_	_	_	_	conj	basic	3-3	
+3-11	137-142	tieši	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tieši	_	_	_	_	discourse	basic	3-13	
+3-12	143-145	no	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	no	_	_	_	_	case	basic	3-13	
+3-13	146-151	darba	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	darbs	_	_	_	_	obl	basic	3-10	
+3-14	151-152	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	3-3	
 
 #Text=Bet vīrietis - ne tā, ne šitā.
-4-1	154-157	Bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	_	_	cc	basic	4-3	
-4-2	158-166	vīrietis	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	vīrietis	_	_	*[1]	*->1-1	nsubj	basic	4-3	
-4-3	167-168	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	_	_	root	basic	4-3	
-4-4	169-171	ne	_	_	_	_	_	_	_	_	_	_	_	_	cc	ne	_	_	_	_	cc	basic	4-5	
-4-5	172-174	tā	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0m	tā	_	_	_	_	advmod	basic	4-3	
-4-6	174-175	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	4-8	
-4-7	176-178	ne	_	_	_	_	_	_	_	_	_	_	_	_	cc	ne	_	_	_	_	cc	basic	4-8	
-4-8	179-183	šitā	_	_	_	_	_	_	_	_	_	_	_	_	r0m	šitā	_	_	_	_	conj	basic	4-5	
-4-9	183-184	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	4-3	
+4-1	154-157	Bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	_	_	cc	basic	4-3	
+4-2	158-166	vīrietis	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	vīrietis	_	_	*->1-1	*[1]	nsubj	basic	4-3	
+4-3	167-168	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	-	_	_	_	_	root	basic	4-3	
+4-4	169-171	ne	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	ne	_	_	_	_	cc	basic	4-5	
+4-5	172-174	tā	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0m	*	tā	_	_	_	_	advmod	basic	4-3	
+4-6	174-175	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	4-8	
+4-7	176-178	ne	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	ne	_	_	_	_	cc	basic	4-8	
+4-8	179-183	šitā	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	šitā	_	_	_	_	conj	basic	4-5	
+4-9	183-184	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	4-3	
 
 #Text=Pavisam ikdienišķi ģērbies.
-5-1	186-193	Pavisam	_	_	_	_	_	_	_	_	_	_	_	_	r0q	pavisam	_	_	_	_	advmod	basic	5-2	
-5-2	194-204	ikdienišķi	_	_	_	_	_	_	_	_	_	_	_	_	r0m	ikdienišķi	_	_	_	_	advmod	basic	5-3	
-5-3	205-212	ģērbies	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	Perf	vmypdmsnasnpn	ģērbties	_	_	_	_	root	basic	5-3	
-5-4	212-213	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	5-3	
+5-1	186-193	Pavisam	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	pavisam	_	_	_	_	advmod	basic	5-2	
+5-2	194-204	ikdienišķi	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	ikdienišķi	_	_	_	_	advmod	basic	5-3	
+5-3	205-212	ģērbies	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	*	vmypdmsnasnpn	*	ģērbties	_	_	_	_	root	basic	5-3	
+5-4	212-213	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	5-3	
 
 #Text=Un divas «Rimi» kulītes ar pirkumiem aiz krēsla.
-6-1	215-217	Un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	6-6	
-6-2	218-223	divas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|NumType=Card	*	*	mcsfpn	divas	_	_	_	_	nummod	basic	6-6	
-6-3	224-225	«	_	_	_	_	_	_	_	_	_	_	_	_	zq	«	organization[1]	*[1]	_	_	punct	basic	6-4	
-6-4	225-229	Rimi	_	_	_	_	_	_	_	_	_	_	_	_	np0000	Rimi	organization[1]	*[1]	_	_	nmod	basic	6-6	
-6-5	229-230	»	_	_	_	_	_	_	_	_	_	_	_	_	zq	»	organization[1]	*[1]	_	_	punct	basic	6-4	
-6-6	231-238	kulītes	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn5	kulīte	_	_	_	_	root	basic	6-6	
-6-7	239-241	ar	_	_	_	_	_	_	_	_	_	_	_	_	sppd	ar	_	_	_	_	case	basic	6-8	
-6-8	242-251	pirkumiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	pirkums	_	_	_	_	nmod	basic	6-6	
-6-9	252-255	aiz	_	_	_	_	_	_	_	_	_	_	_	_	spsg	aiz	_	_	_	_	case	basic	6-10	
-6-10	256-262	krēsla	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	krēsls	_	_	_	_	obl	basic	6-6	
-6-11	262-263	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	6-6	
+6-1	215-217	Un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	6-6	
+6-2	218-223	divas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|NumType=Card	*	*	mcsfpn	*	divas	_	_	_	_	nummod	basic	6-6	
+6-3	224-225	«	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	«	organization[1]	*[1]	_	_	punct	basic	6-4	
+6-4	225-229	Rimi	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	np0000	*	Rimi	organization[1]	*[1]	_	_	nmod	basic	6-6	
+6-5	229-230	»	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	»	organization[1]	*[1]	_	_	punct	basic	6-4	
+6-6	231-238	kulītes	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn5	*	kulīte	_	_	_	_	root	basic	6-6	
+6-7	239-241	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	_	_	case	basic	6-8	
+6-8	242-251	pirkumiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	pirkums	_	_	_	_	nmod	basic	6-6	
+6-9	252-255	aiz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	aiz	_	_	_	_	case	basic	6-10	
+6-10	256-262	krēsla	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	krēsls	_	_	_	_	obl	basic	6-6	
+6-11	262-263	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	6-6	
 
 #Text=Un slepus ik pa brīdim pulkstenī ieskatās.
-7-1	265-267	Un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	7-7	
-7-2	268-274	slepus	_	_	_	_	_	_	_	_	_	_	_	_	r0m	slepus	_	_	_	_	advmod	basic	7-7	
-7-3	275-277	ik	_	_	_	_	_	_	_	_	_	_	_	_	q	ik	_	_	_	_	discourse	basic	7-5	
-7-4	278-280	pa	_	_	_	_	_	_	_	_	_	_	_	_	spsd	pa	_	_	_	_	case	basic	7-5	
-7-5	281-287	brīdim	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd2	brīdis	_	_	_	_	obl	basic	7-7	
-7-6	288-297	pulkstenī	Masc	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	pulkstenis	_	_	_	_	obl	basic	7-7	
-7-7	298-306	ieskatās	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipt330an	ieskatīties	_	_	_	_	root	basic	7-7	
-7-8	306-307	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	7-7	
+7-1	265-267	Un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	7-7	
+7-2	268-274	slepus	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	slepus	_	_	_	_	advmod	basic	7-7	
+7-3	275-277	ik	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	ik	_	_	_	_	discourse	basic	7-5	
+7-4	278-280	pa	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsd	*	pa	_	_	_	_	case	basic	7-5	
+7-5	281-287	brīdim	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd2	*	brīdis	_	_	_	_	obl	basic	7-7	
+7-6	288-297	pulkstenī	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	*	pulkstenis	_	_	_	_	obl	basic	7-7	
+7-7	298-306	ieskatās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmyipt330an	*	ieskatīties	_	_	_	_	root	basic	7-7	
+7-8	306-307	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	7-7	
 
 #Text=Tātad - sievai pieteicies uz veikalu iziet.
-8-1	309-314	Tātad	_	_	_	_	_	_	_	_	_	_	_	_	q	tātad	_	_	_	_	discourse	basic	8-4	
-8-2	315-316	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	_	_	punct	basic	8-1	
-8-3	317-323	sievai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	sieva	_	_	_	_	iobj	basic	8-4	
-8-4	324-334	pieteicies	Masc	Sing	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	Perf	vmypdmsnasnpn	pieteikties	_	_	_	_	root	basic	8-4	
-8-5	335-337	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsa	uz	_	_	_	_	case	basic	8-6	
-8-6	338-345	veikalu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	veikals	_	_	_	_	obl	basic	8-7	
-8-7	346-351	iziet	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0i1000n	iziet	_	_	_	_	ccomp	basic	8-4	
-8-8	351-352	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	8-4	
+8-1	309-314	Tātad	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	tātad	_	_	_	_	discourse	basic	8-4	
+8-2	315-316	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	-	_	_	_	_	punct	basic	8-1	
+8-3	317-323	sievai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd4	*	sieva	_	_	_	_	iobj	basic	8-4	
+8-4	324-334	pieteicies	*	Perf	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Sing\|Reflex=Yes\|Tense=Past\|VerbForm=Part	*	*	vmypdmsnasnpn	*	pieteikties	_	_	_	_	root	basic	8-4	
+8-5	335-337	uz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	uz	_	_	_	_	case	basic	8-6	
+8-6	338-345	veikalu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	veikals	_	_	_	_	obl	basic	8-7	
+8-7	346-351	iziet	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Inf	*	*	vmnn0i1000n	*	iziet	_	_	_	_	ccomp	basic	8-4	
+8-8	351-352	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	8-4	
 
 #Text=Un maisiņi ar iepirkumiem ir viņa alibi.
-9-1	354-356	Un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc	basic	9-7	
-9-2	357-364	maisiņi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	maisiņš	_	_	_	_	nsubj	basic	9-7	
-9-3	365-367	ar	_	_	_	_	_	_	_	_	_	_	_	_	sppd	ar	_	_	_	_	case	basic	9-4	
-9-4	368-379	iepirkumiem	Masc	Plur	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	iepirkums	_	_	_	_	nmod	basic	9-2	
-9-5	380-382	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	_	_	cop	basic	9-7	
-9-6	383-387	viņa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msgn	viņš	_	_	*[1]	*->1-2	det	basic	9-7	
-9-7	388-393	alibi	_	_	_	_	_	_	_	_	_	_	_	_	nc0000	alibi	_	_	_	_	root	basic	9-7	
-9-8	393-394	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	9-7	
+9-1	354-356	Un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc	basic	9-7	
+9-2	357-364	maisiņi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	maisiņš	_	_	_	_	nsubj	basic	9-7	
+9-3	365-367	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	sppd	*	ar	_	_	_	_	case	basic	9-4	
+9-4	368-379	iepirkumiem	*	*	Dat	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Plur	*	*	ncmpd1	*	iepirkums	_	_	_	_	nmod	basic	9-2	
+9-5	380-382	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	_	_	cop	basic	9-7	
+9-6	383-387	viņa	*	*	Gen	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msgn	*	viņš	_	_	*->1-2	*[1]	det	basic	9-7	
+9-7	388-393	alibi	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	nc0000	*	alibi	_	_	_	_	root	basic	9-7	
+9-8	393-394	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	9-7	

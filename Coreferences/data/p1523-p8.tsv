@@ -1,57 +1,57 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Vienīgais domes deputāts, kurš ieradās uz mītiņu, bija Rihards Eigims.
-1-1	0-9	Vienīgais	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsnyp	vienīgs	_	_	_	_	amod|amod	basic|enhanced	1-3|1-3	
-1-2	10-15	domes	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	dome	_	_	_	_	nmod|nmod	basic|enhanced	1-3|1-3	
-1-3	16-24	deputāts	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	deputāts	_	_	*[1]	*->1-1	root|root	basic|enhanced	1-3|1-3	
-1-4	24-25	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-6|1-6	
-1-5	26-30	kurš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msnn	kurš	_	_	*[1]	*->1-2	nsubj|nsubj	basic|enhanced	1-6|1-6	
-1-6	31-38	ieradās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi130an	ierasties	_	_	_	_	acl|acl	basic|enhanced	1-3|1-3	
-1-7	39-41	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsa	uz	_	_	_	_	case|case	basic|enhanced	1-8|1-8	
-1-8	42-48	mītiņu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	mītiņš	_	_	_	_	obl|obl	basic|enhanced	1-6|1-6	
-1-9	48-49	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	1-6|1-6	
-1-10	50-54	bija	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vcnisii30an	būt	_	_	_	_	cop|cop	basic|enhanced	1-3|1-3	
-1-11	55-62	Rihards	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Rihards	person[1]	https://lv.wikipedia.org/wiki/Rihards\_Eigims[1]	*[3]	*->3-1	nsubj|nsubj	basic|enhanced	1-3|1-3	
-1-12	63-69	Eigims	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Eigims	person[1]	https://lv.wikipedia.org/wiki/Rihards\_Eigims[1]	*[3]	*->3-1	flat:name|flat	basic|enhanced	1-11|1-11	
-1-13	69-70	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	1-3|1-3	
+1-1	0-9	Vienīgais	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsnyp	*	vienīgs	_	_	_	_	amod|amod	basic|enhanced	1-3|1-3	
+1-2	10-15	domes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	dome	_	_	_	_	nmod|nmod	basic|enhanced	1-3|1-3	
+1-3	16-24	deputāts	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	deputāts	_	_	*->1-1	*[1]	root|root	basic|enhanced	1-3|1-3	
+1-4	24-25	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	1-6|1-6	
+1-5	26-30	kurš	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msnn	*	kurš	_	_	*->1-2	*[1]	nsubj|nsubj	basic|enhanced	1-6|1-6	
+1-6	31-38	ieradās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmyisi130an	*	ierasties	_	_	_	_	acl|acl	basic|enhanced	1-3|1-3	
+1-7	39-41	uz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	uz	_	_	_	_	case|case	basic|enhanced	1-8|1-8	
+1-8	42-48	mītiņu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	mītiņš	_	_	_	_	obl|obl	basic|enhanced	1-6|1-6	
+1-9	48-49	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	1-6|1-6	
+1-10	50-54	bija	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vcnisii30an	*	būt	_	_	_	_	cop|cop	basic|enhanced	1-3|1-3	
+1-11	55-62	Rihards	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Rihards	person[1]	https://lv.wikipedia.org/wiki/Rihards\_Eigims[1]	*->3-1	*[3]	nsubj|nsubj	basic|enhanced	1-3|1-3	
+1-12	63-69	Eigims	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Eigims	person[1]	https://lv.wikipedia.org/wiki/Rihards\_Eigims[1]	*->3-1	*[3]	flat:name|flat	basic|enhanced	1-11|1-11	
+1-13	69-70	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	1-3|1-3	
 
 #Text=Viņš apstājās pie stenda, uz kura atradās viņa karikatūra, un vairākas minūtes pozēja.
-2-1	72-76	Viņš	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msnn	viņš	_	_	*[3]	*->3-2	nsubj|nsubj	basic|enhanced	2-2|2-2	
-2-2	77-85	apstājās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi130an	apstāties	_	_	_	_	root|root	basic|enhanced	2-2|2-2	
-2-3	86-89	pie	_	_	_	_	_	_	_	_	_	_	_	_	spsg	pie	_	_	_	_	case|case	basic|enhanced	2-4|2-4	
-2-4	90-96	stenda	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	stends	_	_	*[2]	*->2-1	obl|obl	basic|enhanced	2-2|2-2	
-2-5	96-97	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-8|2-8	
-2-6	98-100	uz	_	_	_	_	_	_	_	_	_	_	_	_	spsg	uz	_	_	*[2]	*->2-2	case|case	basic|enhanced	2-7|2-7	
-2-7	101-105	kura	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msgn	kurš	_	_	*[2]	*->2-2	obl|obl	basic|enhanced	2-8|2-8	
-2-8	106-113	atradās	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmyisi130an	atrasties	_	_	_	_	acl|acl	basic|enhanced	2-4|2-4	
-2-9	114-118	viņa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	3	*	pp3msgn	viņš	_	_	*[3]	*->3-3	det|det	basic|enhanced	2-10|2-10	
-2-10	119-129	karikatūra	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	karikatūra	_	_	_	_	nsubj|nsubj	basic|enhanced	2-8|2-8	
-2-11	129-130	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	2-8|2-8	
-2-12	131-133	un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	_	_	cc|cc	basic|enhanced	2-15|2-15	
-2-13	134-142	vairākas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|PronType=Ind	*	*	pi0fpnn	vairākas	_	_	_	_	det|det	basic|enhanced	2-14|2-14	
-2-14	143-150	minūtes	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn5	minūte	_	_	_	_	obl|obl	basic|enhanced	2-15|2-15	
-2-15	151-157	pozēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnisi230an	pozēt	_	_	_	_	conj|conj	basic|enhanced	2-2|2-2	
-2-16	157-158	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	2-2|2-2	
+2-1	72-76	Viņš	*	*	Nom	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msnn	*	viņš	_	_	*->3-2	*[3]	nsubj|nsubj	basic|enhanced	2-2|2-2	
+2-2	77-85	apstājās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmyisi130an	*	apstāties	_	_	_	_	root|root	basic|enhanced	2-2|2-2	
+2-3	86-89	pie	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pie	_	_	_	_	case|case	basic|enhanced	2-4|2-4	
+2-4	90-96	stenda	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	stends	_	_	*->2-1	*[2]	obl|obl	basic|enhanced	2-2|2-2	
+2-5	96-97	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	2-8|2-8	
+2-6	98-100	uz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	uz	_	_	*->2-2	*[2]	case|case	basic|enhanced	2-7|2-7	
+2-7	101-105	kura	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|PronType=Rel	*	*	pr0msgn	*	kurš	_	_	*->2-2	*[2]	obl|obl	basic|enhanced	2-8|2-8	
+2-8	106-113	atradās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmyisi130an	*	atrasties	_	_	_	_	acl|acl	basic|enhanced	2-4|2-4	
+2-9	114-118	viņa	*	*	Gen	*	*	Masc	*	*	*	Sing	3	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing\|Person=3\|PronType=Prs	*	*	pp3msgn	*	viņš	_	_	*->3-3	*[3]	det|det	basic|enhanced	2-10|2-10	
+2-10	119-129	karikatūra	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	karikatūra	_	_	_	_	nsubj|nsubj	basic|enhanced	2-8|2-8	
+2-11	129-130	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	2-8|2-8	
+2-12	131-133	un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	_	_	cc|cc	basic|enhanced	2-15|2-15	
+2-13	134-142	vairākas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur\|PronType=Ind	*	*	pi0fpnn	*	vairākas	_	_	_	_	det|det	basic|enhanced	2-14|2-14	
+2-14	143-150	minūtes	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn5	*	minūte	_	_	_	_	obl|obl	basic|enhanced	2-15|2-15	
+2-15	151-157	pozēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnisi230an	*	pozēt	_	_	_	_	conj|conj	basic|enhanced	2-2|2-2	
+2-16	157-158	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	2-2|2-2	
 
 #Text=Izņemot dažas sniega pikas, R. Eigims, protams, ieguva arī plusus.
-3-1	160-167	Izņemot	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000	izņemt	_	_	_	_	advcl|advcl	basic|enhanced	3-11|3-11	
-3-2	168-173	dažas	Fem	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur\|PronType=Ind	*	*	pi0fpan	daža	_	_	_	_	det|det	basic|enhanced	3-4|3-4	
-3-3	174-180	sniega	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	sniegs	_	_	_	_	nmod|nmod	basic|enhanced	3-4|3-4	
-3-4	181-186	pikas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	pika	_	_	_	_	iobj|iobj	basic|enhanced	3-1|3-1	
-3-5	186-187	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	3-1|3-1	
-3-6	188-190	R.	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	r.	person[2]	https://lv.wikipedia.org/wiki/Rihards\_Eigims[2]	*[3]	*->3-4	nsubj|nsubj	basic|enhanced	3-11|3-11	
-3-7	191-197	Eigims	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	Eigims	person[2]	https://lv.wikipedia.org/wiki/Rihards\_Eigims[2]	*[3]	*->3-4	flat:name|flat	basic|enhanced	3-6|3-6	
-3-8	197-198	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	3-9|3-9	
-3-9	199-206	protams	_	_	_	_	_	_	_	_	_	_	_	_	q	protams	_	_	_	_	parataxis|parataxis	basic|enhanced	3-11|3-11	
-3-10	206-207	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct|punct	basic|enhanced	3-9|3-9	
-3-11	208-214	ieguva	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist130an	iegūt	_	_	_	_	root|root	basic|enhanced	3-11|3-11	
-3-12	215-218	arī	_	_	_	_	_	_	_	_	_	_	_	_	q	arī	_	_	_	_	discourse|discourse	basic|enhanced	3-13|3-13	
-3-13	219-225	plusus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	pluss	_	_	_	_	obj|obj	basic|enhanced	3-11|3-11	
-3-14	225-226	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct|punct	basic|enhanced	3-11|3-11	
+3-1	160-167	Izņemot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	VerbForm=Conv	*	*	vmnpu0000000	*	izņemt	_	_	_	_	advcl|advcl	basic|enhanced	3-11|3-11	
+3-2	168-173	dažas	*	*	Acc	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Plur\|PronType=Ind	*	*	pi0fpan	*	daža	_	_	_	_	det|det	basic|enhanced	3-4|3-4	
+3-3	174-180	sniega	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	sniegs	_	_	_	_	nmod|nmod	basic|enhanced	3-4|3-4	
+3-4	181-186	pikas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	pika	_	_	_	_	iobj|iobj	basic|enhanced	3-1|3-1	
+3-5	186-187	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	3-1|3-1	
+3-6	188-190	R.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	r.	person[2]	https://lv.wikipedia.org/wiki/Rihards\_Eigims[2]	*->3-4	*[3]	nsubj|nsubj	basic|enhanced	3-11|3-11	
+3-7	191-197	Eigims	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Eigims	person[2]	https://lv.wikipedia.org/wiki/Rihards\_Eigims[2]	*->3-4	*[3]	flat:name|flat	basic|enhanced	3-6|3-6	
+3-8	197-198	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	3-9|3-9	
+3-9	199-206	protams	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	protams	_	_	_	_	parataxis|parataxis	basic|enhanced	3-11|3-11	
+3-10	206-207	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct|punct	basic|enhanced	3-9|3-9	
+3-11	208-214	ieguva	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist130an	*	iegūt	_	_	_	_	root|root	basic|enhanced	3-11|3-11	
+3-12	215-218	arī	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	arī	_	_	_	_	discourse|discourse	basic|enhanced	3-13|3-13	
+3-13	219-225	plusus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	pluss	_	_	_	_	obj|obj	basic|enhanced	3-11|3-11	
+3-14	225-226	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct|punct	basic|enhanced	3-11|3-11	

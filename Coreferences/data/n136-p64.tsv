@@ -1,48 +1,48 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=1. Ja uzņēmums, kas darbojas vismaz divu dalībvalstu teritorijā, ir maksātnespējīgs 2. panta 1. punkta nozīmē, tad par darbinieku neapmaksāto prasījumu apmierināšanu ir atbildīga tās dalībvalsts iestāde, kuras teritorijā viņi strādā vai parasti strādā.
-1-1	0-2	1.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	1.	_	_	obl	basic	1-27	
-1-2	3-5	Ja	_	_	_	_	_	_	_	_	_	_	_	_	cs	ja	_	_	mark	basic	1-13	
-1-3	6-14	uzņēmums	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	uzņēmums	*[1]	*->1-1	nsubj	basic	1-13	
-1-4	14-15	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-6	
-1-5	16-19	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	*[1]	*->1-2	nsubj	basic	1-6	
-1-6	20-28	darbojas	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmyipi230an	darboties	_	_	acl	basic	1-3	
-1-7	29-35	vismaz	_	_	_	_	_	_	_	_	_	_	_	_	r0q	vismaz	_	_	advmod	basic	1-8	
-1-8	36-40	divu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur\|NumType=Card	*	*	mcsfpg	divas	_	_	nummod	basic	1-9	
-1-9	41-52	dalībvalstu	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg6	dalībvalsts	_	_	nmod	basic	1-10	
-1-10	53-63	teritorijā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	teritorija	_	_	obl	basic	1-6	
-1-11	63-64	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-6	
-1-12	65-67	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	cop	basic	1-13	
-1-13	68-83	maksātnespējīgs	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsnnp	maksātnespējīgs	_	_	advcl	basic	1-27	
-1-14	84-86	2.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	2.	_	_	amod	basic	1-15	
-1-15	87-92	panta	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	pants	_	_	nmod	basic	1-17	
-1-16	93-95	1.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	1.	_	_	amod	basic	1-17	
-1-17	96-102	punkta	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	punkts	_	_	nmod	basic	1-18	
-1-18	103-109	nozīmē	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	nozīme	_	_	obl	basic	1-13	
-1-19	109-110	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-13	
-1-20	111-114	tad	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	tad	_	_	advmod	basic	1-27	
-1-21	115-118	par	_	_	_	_	_	_	_	_	_	_	_	_	spsa	par	_	_	case	basic	1-25	
-1-22	119-129	darbinieku	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	darbinieks	*[3]	*->3-1	nmod	basic	1-24	
-1-23	130-141	neapmaksāto	Masc	Plur	Gen	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpgpsyp\_	neapmaksāt	_	_	amod	basic	1-24	
-1-24	142-151	prasījumu	Masc	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	prasījums	_	_	nmod	basic	1-25	
-1-25	152-165	apmierināšanu	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	apmierināšana	_	_	iobj	basic	1-27	
-1-26	166-168	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	cop	basic	1-27	
-1-27	169-178	atbildīga	Fem	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	atbildīga	_	_	root	basic	1-27	
-1-28	179-182	tās	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsgn	tā	_	_	det	basic	1-29	
-1-29	183-194	dalībvalsts	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	dalībvalsts	_	_	nmod	basic	1-30	
-1-30	195-202	iestāde	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	iestāde	*[2]	*->2-1	nsubj	basic	1-27	
-1-31	202-203	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-35	
-1-32	204-209	kuras	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsgn	kura	*[2]	*->2-2	det	basic	1-33	
-1-33	210-220	teritorijā	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	teritorija	_	_	obl	basic	1-35	
-1-34	221-225	viņi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Prs	3	*	pp3mpnn	viņš	*[3]	*->3-2	nsubj	basic	1-35	
-1-35	226-232	strādā	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt230an	strādāt	_	_	acl	basic	1-30	
-1-36	233-236	vai	_	_	_	_	_	_	_	_	_	_	_	_	cc	vai	_	_	cc	basic	1-38	
-1-37	237-244	parasti	_	_	_	_	_	_	_	_	_	_	_	_	r0t	parasti	_	_	advmod	basic	1-38	
-1-38	245-251	strādā	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt230an	strādāt	_	_	conj	basic	1-35	
-1-39	251-252	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	1-27	
+1-1	0-2	1.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	1.	_	_	obl	basic	1-27	
+1-2	3-5	Ja	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ja	_	_	mark	basic	1-13	
+1-3	6-14	uzņēmums	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	uzņēmums	*->1-1	*[1]	nsubj	basic	1-13	
+1-4	14-15	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-6	
+1-5	16-19	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	*->1-2	*[1]	nsubj	basic	1-6	
+1-6	20-28	darbojas	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmyipi230an	*	darboties	_	_	acl	basic	1-3	
+1-7	29-35	vismaz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	vismaz	_	_	advmod	basic	1-8	
+1-8	36-40	divu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur\|NumType=Card	*	*	mcsfpg	*	divas	_	_	nummod	basic	1-9	
+1-9	41-52	dalībvalstu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg6	*	dalībvalsts	_	_	nmod	basic	1-10	
+1-10	53-63	teritorijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	teritorija	_	_	obl	basic	1-6	
+1-11	63-64	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-6	
+1-12	65-67	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	cop	basic	1-13	
+1-13	68-83	maksātnespējīgs	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsnnp	*	maksātnespējīgs	_	_	advcl	basic	1-27	
+1-14	84-86	2.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	2.	_	_	amod	basic	1-15	
+1-15	87-92	panta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	pants	_	_	nmod	basic	1-17	
+1-16	93-95	1.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	1.	_	_	amod	basic	1-17	
+1-17	96-102	punkta	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	punkts	_	_	nmod	basic	1-18	
+1-18	103-109	nozīmē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	*	nozīme	_	_	obl	basic	1-13	
+1-19	109-110	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-13	
+1-20	111-114	tad	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	PronType=Dem	*	*	r0t	*	tad	_	_	advmod	basic	1-27	
+1-21	115-118	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	case	basic	1-25	
+1-22	119-129	darbinieku	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	darbinieks	*->3-1	*[3]	nmod	basic	1-24	
+1-23	130-141	neapmaksāto	*	Perf	Gen	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Gen\|Definite=Def\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	*	vmnpdmpgpsyp\_	*	neapmaksāt	_	_	amod	basic	1-24	
+1-24	142-151	prasījumu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg1	*	prasījums	_	_	nmod	basic	1-25	
+1-25	152-165	apmierināšanu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	apmierināšana	_	_	iobj	basic	1-27	
+1-26	166-168	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	cop	basic	1-27	
+1-27	169-178	atbildīga	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnnp	*	atbildīga	_	_	root	basic	1-27	
+1-28	179-182	tās	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsgn	*	tā	_	_	det	basic	1-29	
+1-29	183-194	dalībvalsts	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	*	dalībvalsts	_	_	nmod	basic	1-30	
+1-30	195-202	iestāde	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	iestāde	*->2-1	*[2]	nsubj	basic	1-27	
+1-31	202-203	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-35	
+1-32	204-209	kuras	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing\|PronType=Rel	*	*	pr0fsgn	*	kura	*->2-2	*[2]	det	basic	1-33	
+1-33	210-220	teritorijā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	teritorija	_	_	obl	basic	1-35	
+1-34	221-225	viņi	*	*	Nom	*	*	Masc	*	*	*	Plur	3	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|Person=3\|PronType=Prs	*	*	pp3mpnn	*	viņš	*->3-2	*[3]	nsubj	basic	1-35	
+1-35	226-232	strādā	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt230an	*	strādāt	_	_	acl	basic	1-30	
+1-36	233-236	vai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	vai	_	_	cc	basic	1-38	
+1-37	237-244	parasti	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	parasti	_	_	advmod	basic	1-38	
+1-38	245-251	strādā	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt230an	*	strādāt	_	_	conj	basic	1-35	
+1-39	251-252	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	1-27	

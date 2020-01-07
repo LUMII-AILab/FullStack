@@ -1,45 +1,45 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Rīga, 6.dec., NOZARE.LV.
-1-1	0-4	Rīga	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	Rīga	GPE	*	_	_	root	basic	1-1	
-1-2	4-5	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-4	
-1-3	6-8	6.	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	6.	time[1]	*[1]	_	_	amod	basic	1-4	
-1-4	8-12	dec.	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	dec.	time[1]	*[1]	_	_	parataxis	basic	1-1	
-1-5	12-13	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	1-6	
-1-6	14-23	NOZARE.LV	_	_	_	_	_	_	_	_	_	_	_	_	xu	Nozare.lv	organization	*	*[3]	*->3-1	parataxis	basic	1-1	
-1-7	23-24	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	1-1	
+1-1	0-4	Rīga	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Rīga	GPE	*	_	_	root	basic	1-1	
+1-2	4-5	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-4	
+1-3	6-8	6.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	NumType=Ord	*	*	xo	*	6.	time[1]	*[1]	_	_	amod	basic	1-4	
+1-4	8-12	dec.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	*	dec.	time[1]	*[1]	_	_	parataxis	basic	1-1	
+1-5	12-13	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-6	
+1-6	14-23	NOZARE.LV	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	xu	*	Nozare.lv	organization	*	*->3-1	*[3]	parataxis	basic	1-1	
+1-7	23-24	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-1	
 
 #Text=Notikušas izmaiņas būvfirmas SIA "Re&Re" valdē, biznesa portālu "Nozare.lv" informēja "Re&Re" pārstāve Mārīte Straume.
-2-1	26-35	Notikušas	Fem	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdfpnasnp	notikt	_	_	_	_	ccomp	basic	2-17	
-2-2	36-44	izmaiņas	Fem	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	izmaiņa	_	_	_	_	nsubj	basic	2-1	
-2-3	45-54	būvfirmas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	būvfirma	_	_	*[1]	*->1-1	nmod	basic	2-6	
-2-4	55-58	SIA	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	SIA	organization[2]	*[2]	*[1]	*->1-2	nmod	basic	2-6	
-2-5	59-60	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[2]	*[2]	*[1]	*->1-2	punct	basic	2-6	
-2-6	60-62	Re	_	_	_	_	_	_	_	_	_	_	_	_	xx	Re	organization[2]	*[2]	*[1]	*->1-2	nmod	basic	2-10	
-2-7	62-63	&	_	_	_	_	_	_	_	_	_	_	_	_	xx	&	organization[2]	*[2]	*[1]	*->1-2	flat:name	basic	2-6	
-2-8	63-65	Re	_	_	_	_	_	_	_	_	_	_	_	_	xx	Re	organization[2]	*[2]	*[1]	*->1-2	flat:name	basic	2-6	
-2-9	65-66	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[2]	*[2]	*[1]	*->1-2	punct	basic	2-6	
-2-10	67-72	valdē	Fem	Sing	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	valde	_	_	_	_	obl	basic	2-1	
-2-11	72-73	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	_	_	punct	basic	2-1	
-2-12	74-81	biznesa	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	bizness	_	_	*[3]	*->3-2	nmod	basic	2-13	
-2-13	82-89	portālu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	portāls	_	_	*[3]	*->3-2	nmod	basic	2-15	
-2-14	90-91	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[3]	*[3]	*[3]	*->3-3	punct	basic	2-15	
-2-15	91-100	Nozare.lv	_	_	_	_	_	_	_	_	_	_	_	_	xu	Nozare.lv	organization[3]	*[3]	*[3]	*->3-3	obj	basic	2-17	
-2-16	100-101	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[3]	*[3]	*[3]	*->3-3	punct	basic	2-15	
-2-17	102-111	informēja	*	*	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	3	*	vmnist230an	informēt	_	_	_	_	root	basic	2-17	
-2-18	112-113	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[4]	*[4]	*[1]	*->1-3	punct	basic	2-19	
-2-19	113-115	Re	_	_	_	_	_	_	_	_	_	_	_	_	xx	Re	organization[4]	*[4]	*[1]	*->1-3	nmod	basic	2-23	
-2-20	115-116	&	_	_	_	_	_	_	_	_	_	_	_	_	xx	&	organization[4]	*[4]	*[1]	*->1-3	flat:name	basic	2-19	
-2-21	116-118	Re	_	_	_	_	_	_	_	_	_	_	_	_	xx	Re	organization[4]	*[4]	*[1]	*->1-3	flat:name	basic	2-19	
-2-22	118-119	"	_	_	_	_	_	_	_	_	_	_	_	_	zq	"	organization[4]	*[4]	*[1]	*->1-3	punct	basic	2-19	
-2-23	120-128	pārstāve	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	pārstāve	_	_	*[2]	*->2-1	nmod	basic	2-24	
-2-24	129-135	Mārīte	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	Mārīte	person[5]	*[5]	*[2]	*->2-2	nsubj	basic	2-17	
-2-25	136-143	Straume	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	Straume	person[5]	*[5]	*[2]	*->2-2	flat:name	basic	2-24	
-2-26	143-144	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	_	_	punct	basic	2-17	
+2-1	26-35	Notikušas	*	Perf	Nom	*	Pos	Fem	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Plur\|Tense=Past\|VerbForm=Part	*	*	vmnpdfpnasnp	*	notikt	_	_	_	_	ccomp	basic	2-17	
+2-2	36-44	izmaiņas	*	*	Nom	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Plur	*	*	ncfpn4	*	izmaiņa	_	_	_	_	nsubj	basic	2-1	
+2-3	45-54	būvfirmas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	būvfirma	_	_	*->1-1	*[1]	nmod	basic	2-6	
+2-4	55-58	SIA	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yn	*	SIA	organization[2]	*[2]	*->1-2	*[1]	nmod	basic	2-6	
+2-5	59-60	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[2]	*[2]	*->1-2	*[1]	punct	basic	2-6	
+2-6	60-62	Re	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	xx	*	Re	organization[2]	*[2]	*->1-2	*[1]	nmod	basic	2-10	
+2-7	62-63	&	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	xx	*	&	organization[2]	*[2]	*->1-2	*[1]	flat:name	basic	2-6	
+2-8	63-65	Re	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	xx	*	Re	organization[2]	*[2]	*->1-2	*[1]	flat:name	basic	2-6	
+2-9	65-66	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[2]	*[2]	*->1-2	*[1]	punct	basic	2-6	
+2-10	67-72	valdē	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl5	*	valde	_	_	_	_	obl	basic	2-1	
+2-11	72-73	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-1	
+2-12	74-81	biznesa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	bizness	_	_	*->3-2	*[3]	nmod	basic	2-13	
+2-13	82-89	portālu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	portāls	_	_	*->3-2	*[3]	nmod	basic	2-15	
+2-14	90-91	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[3]	*[3]	*->3-3	*[3]	punct	basic	2-15	
+2-15	91-100	Nozare.lv	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	xu	*	Nozare.lv	organization[3]	*[3]	*->3-3	*[3]	obj	basic	2-17	
+2-16	100-101	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[3]	*[3]	*->3-3	*[3]	punct	basic	2-15	
+2-17	102-111	informēja	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist230an	*	informēt	_	_	_	_	root	basic	2-17	
+2-18	112-113	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[4]	*[4]	*->1-3	*[1]	punct	basic	2-19	
+2-19	113-115	Re	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	xx	*	Re	organization[4]	*[4]	*->1-3	*[1]	nmod	basic	2-23	
+2-20	115-116	&	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	xx	*	&	organization[4]	*[4]	*->1-3	*[1]	flat:name	basic	2-19	
+2-21	116-118	Re	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	xx	*	Re	organization[4]	*[4]	*->1-3	*[1]	flat:name	basic	2-19	
+2-22	118-119	"	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zq	*	"	organization[4]	*[4]	*->1-3	*[1]	punct	basic	2-19	
+2-23	120-128	pārstāve	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	pārstāve	_	_	*->2-1	*[2]	nmod	basic	2-24	
+2-24	129-135	Mārīte	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	*	Mārīte	person[5]	*[5]	*->2-2	*[2]	nsubj	basic	2-17	
+2-25	136-143	Straume	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	*	Straume	person[5]	*[5]	*->2-2	*[2]	flat:name	basic	2-24	
+2-26	143-144	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-17	

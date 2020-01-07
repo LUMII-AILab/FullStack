@@ -1,62 +1,62 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Rudbāržu komandas treneris un jaunsargu sabiedriskais instruktors Ilgvars Veļika pastāstīja, ka viņa audzēkņi tiesības piedalīties Eiropas klubu sacensībās izcīnījuši, iegūstot 2. vietu Latvijas kausa izcīņā.
-1-1	0-8	Rudbāržu	npmdg2	Rudbārži	organization[1]|GPE[2]	*[1]|https://en.wikipedia.org/wiki/Rudbārži\_Parish[2]	_	_	nmod	basic	1-2	
-1-2	9-17	komandas	ncfsg4	komanda	organization[1]	*[1]	_	_	nmod	basic	1-3	
-1-3	18-26	treneris	ncmsn2	treneris	_	_	*[1]	*->1-1	nmod	basic	1-8	
-1-4	27-29	un	cc	un	_	_	_	_	cc	basic	1-7	
-1-5	30-39	jaunsargu	ncmpg1	jaunsargs	_	_	_	_	nmod	basic	1-7	
-1-6	40-53	sabiedriskais	afmsnyp	sabiedrisks	_	_	_	_	amod	basic	1-7	
-1-7	54-65	instruktors	ncmsn1	instruktors	_	_	*[1]	*->1-2	conj	basic	1-3	
-1-8	66-73	Ilgvars	npmsn1	Ilgvars	person[3]	*[3]	*[1]	*->1-3	nsubj	basic	1-10	
-1-9	74-80	Veļika	npmsn4	Veļika	person[3]	*[3]	*[1]	*->1-3	flat:name	basic	1-8	
-1-10	81-91	pastāstīja	vmnist330an	pastāstīt	_	_	_	_	root	basic	1-10	
-1-11	91-92	,	zc	,	_	_	_	_	punct	basic	1-20	
-1-12	93-95	ka	cs	ka	_	_	_	_	mark	basic	1-20	
-1-13	96-100	viņa	pp3msgn	viņš	_	_	*[1]	*->1-4	det	basic	1-14	
-1-14	101-109	audzēkņi	ncmpn2	audzēknis	_	_	*[2]	*->2-1	nsubj	basic	1-20	
-1-15	110-118	tiesības	ncfda4	tiesības	_	_	_	_	obj	basic	1-20	
-1-16	119-130	piedalīties	vmyn0i3000n	piedalīties	_	_	_	_	acl	basic	1-15	
-1-17	131-138	Eiropas	npfsg4	Eiropa	location	https://en.wikipedia.org/wiki/Europe	_	_	nmod	basic	1-18	
-1-18	139-144	klubu	ncmpg1	klubs	_	_	_	_	nmod	basic	1-19	
-1-19	145-155	sacensībās	ncfpl4	sacensība	_	_	_	_	obl	basic	1-16	
-1-20	156-166	izcīnījuši	vmnpdmpnasnp	izcīnīt	_	_	_	_	ccomp	basic	1-10	
-1-21	166-167	,	zc	,	_	_	_	_	punct	basic	1-22	
-1-22	168-176	iegūstot	vmnpu0000000	iegūt	_	_	_	_	advcl	basic	1-20	
-1-23	177-179	2.	xo	2.	_	_	_	_	amod	basic	1-24	
-1-24	180-185	vietu	ncfpg4	vieta	_	_	_	_	iobj	basic	1-22	
-1-25	186-194	Latvijas	npfsg4	Latvija	event[4]|GPE[5]	*[4]|https://en.wikipedia.org/wiki/Latvia[5]	_	_	nmod	basic	1-26	
-1-26	195-200	kausa	ncmsg1	kauss	event[4]	*[4]	_	_	nmod	basic	1-27	
-1-27	201-207	izcīņā	ncfsl4	izcīņa	_	_	_	_	obl	basic	1-22	
-1-28	207-208	.	zs	.	_	_	_	_	punct	basic	1-10	
+1-1	0-8	Rudbāržu	npmdg2	*	Rudbārži	organization[1]|GPE[2]	*[1]|https://en.wikipedia.org/wiki/Rudbārži\_Parish[2]	_	_	nmod	basic	1-2	
+1-2	9-17	komandas	ncfsg4	*	komanda	organization[1]	*[1]	_	_	nmod	basic	1-3	
+1-3	18-26	treneris	ncmsn2	*	treneris	_	_	*->1-1	*[1]	nmod	basic	1-8	
+1-4	27-29	un	cc	*	un	_	_	_	_	cc	basic	1-7	
+1-5	30-39	jaunsargu	ncmpg1	*	jaunsargs	_	_	_	_	nmod	basic	1-7	
+1-6	40-53	sabiedriskais	afmsnyp	*	sabiedrisks	_	_	_	_	amod	basic	1-7	
+1-7	54-65	instruktors	ncmsn1	*	instruktors	_	_	*->1-2	*[1]	conj	basic	1-3	
+1-8	66-73	Ilgvars	npmsn1	*	Ilgvars	person[3]	*[3]	*->1-3	*[1]	nsubj	basic	1-10	
+1-9	74-80	Veļika	npmsn4	*	Veļika	person[3]	*[3]	*->1-3	*[1]	flat:name	basic	1-8	
+1-10	81-91	pastāstīja	vmnist330an	*	pastāstīt	_	_	_	_	root	basic	1-10	
+1-11	91-92	,	zc	*	,	_	_	_	_	punct	basic	1-20	
+1-12	93-95	ka	cs	*	ka	_	_	_	_	mark	basic	1-20	
+1-13	96-100	viņa	pp3msgn	*	viņš	_	_	*->1-4	*[1]	det	basic	1-14	
+1-14	101-109	audzēkņi	ncmpn2	*	audzēknis	_	_	*->2-1	*[2]	nsubj	basic	1-20	
+1-15	110-118	tiesības	ncfda4	*	tiesības	_	_	_	_	obj	basic	1-20	
+1-16	119-130	piedalīties	vmyn0i3000n	*	piedalīties	_	_	_	_	acl	basic	1-15	
+1-17	131-138	Eiropas	npfsg4	*	Eiropa	location	https://en.wikipedia.org/wiki/Europe	_	_	nmod	basic	1-18	
+1-18	139-144	klubu	ncmpg1	*	klubs	_	_	_	_	nmod	basic	1-19	
+1-19	145-155	sacensībās	ncfpl4	*	sacensība	_	_	_	_	obl	basic	1-16	
+1-20	156-166	izcīnījuši	vmnpdmpnasnp	*	izcīnīt	_	_	_	_	ccomp	basic	1-10	
+1-21	166-167	,	zc	*	,	_	_	_	_	punct	basic	1-22	
+1-22	168-176	iegūstot	vmnpu0000000	*	iegūt	_	_	_	_	advcl	basic	1-20	
+1-23	177-179	2.	xo	*	2.	_	_	_	_	amod	basic	1-24	
+1-24	180-185	vietu	ncfpg4	*	vieta	_	_	_	_	iobj	basic	1-22	
+1-25	186-194	Latvijas	npfsg4	*	Latvija	event[4]|GPE[5]	*[4]|https://en.wikipedia.org/wiki/Latvia[5]	_	_	nmod	basic	1-26	
+1-26	195-200	kausa	ncmsg1	*	kauss	event[4]	*[4]	_	_	nmod	basic	1-27	
+1-27	201-207	izcīņā	ncfsl4	*	izcīņa	_	_	_	_	obl	basic	1-22	
+1-28	207-208	.	zs	*	.	_	_	_	_	punct	basic	1-10	
 
 #Text=Iespēja braukt bijusi arī pērn, bet tad pašiem jāsameklē finansējums.
-2-1	210-217	Iespēja	ncfsn4	iespēja	_	_	_	_	nsubj	basic	2-3	
-2-2	218-224	braukt	vmnn0t1000n	braukt	_	_	_	_	acl	basic	2-1	
-2-3	225-231	bijusi	vmnpdfsnasnp	būt	_	_	_	_	root	basic	2-3	
-2-4	232-235	arī	q	arī	_	_	_	_	discourse	basic	2-5	
-2-5	236-240	pērn	r0t	pērn	_	_	_	_	advmod	basic	2-3	
-2-6	240-241	,	zc	,	_	_	_	_	punct	basic	2-10	
-2-7	242-245	bet	cc	bet	_	_	_	_	cc	basic	2-10	
-2-8	246-249	tad	r0t	tad	_	_	_	_	advmod	basic	2-10	
-2-9	250-256	pašiem	pg0mpdn	pats	_	_	*[2]	*->2-2	nsubj	basic	2-10	
-2-10	257-266	jāsameklē	vmnd0t200an	sameklēt	_	_	_	_	conj	basic	2-3	
-2-11	267-278	finansējums	ncmsn1	finansējums	_	_	_	_	obj	basic	2-10	
-2-12	278-279	.	zs	.	_	_	_	_	punct	basic	2-3	
+2-1	210-217	Iespēja	ncfsn4	*	iespēja	_	_	_	_	nsubj	basic	2-3	
+2-2	218-224	braukt	vmnn0t1000n	*	braukt	_	_	_	_	acl	basic	2-1	
+2-3	225-231	bijusi	vmnpdfsnasnp	*	būt	_	_	_	_	root	basic	2-3	
+2-4	232-235	arī	q	*	arī	_	_	_	_	discourse	basic	2-5	
+2-5	236-240	pērn	r0t	*	pērn	_	_	_	_	advmod	basic	2-3	
+2-6	240-241	,	zc	*	,	_	_	_	_	punct	basic	2-10	
+2-7	242-245	bet	cc	*	bet	_	_	_	_	cc	basic	2-10	
+2-8	246-249	tad	r0t	*	tad	_	_	_	_	advmod	basic	2-10	
+2-9	250-256	pašiem	pg0mpdn	*	pats	_	_	*->2-2	*[2]	nsubj	basic	2-10	
+2-10	257-266	jāsameklē	vmnd0t200an	*	sameklēt	_	_	_	_	conj	basic	2-3	
+2-11	267-278	finansējums	ncmsn1	*	finansējums	_	_	_	_	obj	basic	2-10	
+2-12	278-279	.	zs	*	.	_	_	_	_	punct	basic	2-3	
 
 #Text=Nauda nav atradusies, tāpēc brauciens nav noticis.
-3-1	281-286	Nauda	ncfsn4	nauda	_	_	_	_	nsubj	basic	3-3	
-3-2	287-290	nav	vcnipii30ay	nebūt	_	_	_	_	aux	basic	3-3	
-3-3	291-301	atradusies	vmypdfsnasnp	atrasties	_	_	_	_	root	basic	3-3	
-3-4	301-302	,	zc	,	_	_	_	_	punct	basic	3-8	
-3-5	303-308	tāpēc	r0c	tāpēc	_	_	_	_	cc	basic	3-8	
-3-6	309-318	brauciens	ncmsn1	brauciens	_	_	_	_	nsubj	basic	3-8	
-3-7	319-322	nav	vcnipii30ay	nebūt	_	_	_	_	aux	basic	3-8	
-3-8	323-330	noticis	vmnpdmsnasnp	notikt	_	_	_	_	conj	basic	3-3	
-3-9	330-331	.	zs	.	_	_	_	_	punct	basic	3-3	
+3-1	281-286	Nauda	ncfsn4	*	nauda	_	_	_	_	nsubj	basic	3-3	
+3-2	287-290	nav	vcnipii30ay	*	nebūt	_	_	_	_	aux	basic	3-3	
+3-3	291-301	atradusies	vmypdfsnasnp	*	atrasties	_	_	_	_	root	basic	3-3	
+3-4	301-302	,	zc	*	,	_	_	_	_	punct	basic	3-8	
+3-5	303-308	tāpēc	r0c	*	tāpēc	_	_	_	_	cc	basic	3-8	
+3-6	309-318	brauciens	ncmsn1	*	brauciens	_	_	_	_	nsubj	basic	3-8	
+3-7	319-322	nav	vcnipii30ay	*	nebūt	_	_	_	_	aux	basic	3-8	
+3-8	323-330	noticis	vmnpdmsnasnp	*	notikt	_	_	_	_	conj	basic	3-3	
+3-9	330-331	.	zs	*	.	_	_	_	_	punct	basic	3-3	

@@ -1,56 +1,56 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Ir radīti speciāli medikamenti, kas pazemina holesterīna līmeni, bet pirms to lietošanas obligāti jākonsultējas ar ārstu, jo holesterīns nav vienīgais faktors, kas veicina aterosklerozi asinsvados.
-1-1	0-2	Ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30an	būt	_	_	aux:pass	basic	1-2	
-1-2	3-9	radīti	Masc	Plur	Nom	Pos	*	Past	*	*	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	Perf	vmnpdmpnpsnpn	radīt	_	_	root	basic	1-2	
-1-3	10-18	speciāli	Masc	Plur	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpnnp	speciāls	*[1]	*->1-1	amod	basic	1-4	
-1-4	19-30	medikamenti	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	medikaments	*[1]	*->1-1	nsubj:pass	basic	1-2	
-1-5	30-31	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-7	
-1-6	32-35	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	*[1]	*->1-2	nsubj	basic	1-7	
-1-7	36-44	pazemina	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	pazemināt	_	_	acl	basic	1-4	
-1-8	45-56	holesterīna	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	holesterīns	_	_	nmod	basic	1-9	
-1-9	57-63	līmeni	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	līmenis	_	_	obj	basic	1-7	
-1-10	63-64	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-16	
-1-11	65-68	bet	_	_	_	_	_	_	_	_	_	_	_	_	cc	bet	_	_	cc	basic	1-16	
-1-12	69-74	pirms	_	_	_	_	_	_	_	_	_	_	_	_	spsg	pirms	_	_	case	basic	1-14	
-1-13	75-77	to	Fem	Plur	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur\|PronType=Dem	*	*	pd0fpgn	tas	*[1]	*->1-3	det	basic	1-14	
-1-14	78-88	lietošanas	Fem	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	lietošana	_	_	obl	basic	1-16	
-1-15	89-97	obligāti	_	_	_	_	_	_	_	_	_	_	_	_	r0m	obligāti	_	_	advmod	basic	1-16	
-1-16	98-111	jākonsultējas	*	*	*	*	*	*	Nec	Act	*	Mood=Nec\|Polarity=Pos\|Reflex=Yes\|VerbForm=Fin\|Voice=Act	*	*	vmyd0i200an	konsultēties	_	_	conj	basic	1-2	
-1-17	112-114	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	case	basic	1-18	
-1-18	115-120	ārstu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	ārsts	_	_	iobj	basic	1-16	
-1-19	120-121	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-24	
-1-20	122-124	jo	_	_	_	_	_	_	_	_	_	_	_	_	cs	jo	_	_	mark	basic	1-24	
-1-21	125-136	holesterīns	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	holesterīns	_	_	nsubj	basic	1-24	
-1-22	137-140	nav	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vcnipii30ay	nebūt	_	_	cop	basic	1-24	
-1-23	141-150	vienīgais	Masc	Sing	Nom	Pos	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsnyp	vienīgs	*[2]	*->2-1	amod	basic	1-24	
-1-24	151-158	faktors	Masc	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	faktors	*[2]	*->2-1	advcl	basic	1-16	
-1-25	158-159	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-27	
-1-26	160-163	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	*[2]	*->2-2	nsubj	basic	1-27	
-1-27	164-171	veicina	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipt330an	veicināt	_	_	acl	basic	1-24	
-1-28	172-185	aterosklerozi	Fem	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	ateroskleroze	_	_	obj	basic	1-27	
-1-29	186-196	asinsvados	Masc	Plur	Loc	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	asinsvads	_	_	acl	basic	1-28	
-1-30	196-197	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	1-2	
+1-1	0-2	Ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30an	*	būt	_	_	aux:pass	basic	1-2	
+1-2	3-9	radīti	*	Perf	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Masc\|Number=Plur\|Tense=Past\|VerbForm=Part	*	*	vmnpdmpnpsnpn	*	radīt	_	_	root	basic	1-2	
+1-3	10-18	speciāli	*	*	Nom	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	armpnnp	*	speciāls	*->1-1	*[1]	amod	basic	1-4	
+1-4	19-30	medikamenti	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	medikaments	*->1-1	*[1]	nsubj:pass	basic	1-2	
+1-5	30-31	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-7	
+1-6	32-35	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	*->1-2	*[1]	nsubj	basic	1-7	
+1-7	36-44	pazemina	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	pazemināt	_	_	acl	basic	1-4	
+1-8	45-56	holesterīna	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	holesterīns	_	_	nmod	basic	1-9	
+1-9	57-63	līmeni	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa2	*	līmenis	_	_	obj	basic	1-7	
+1-10	63-64	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-16	
+1-11	65-68	bet	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	bet	_	_	cc	basic	1-16	
+1-12	69-74	pirms	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pirms	_	_	case	basic	1-14	
+1-13	75-77	to	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur\|PronType=Dem	*	*	pd0fpgn	*	tas	*->1-3	*[1]	det	basic	1-14	
+1-14	78-88	lietošanas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	lietošana	_	_	obl	basic	1-16	
+1-15	89-97	obligāti	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0m	*	obligāti	_	_	advmod	basic	1-16	
+1-16	98-111	jākonsultējas	*	*	*	*	*	*	Nec	*	*	*	*	*	*	*	*	*	Mood=Nec\|Polarity=Pos\|Reflex=Yes\|VerbForm=Fin\|Voice=Act	*	Act	vmyd0i200an	*	konsultēties	_	_	conj	basic	1-2	
+1-17	112-114	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	case	basic	1-18	
+1-18	115-120	ārstu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	ārsts	_	_	iobj	basic	1-16	
+1-19	120-121	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-24	
+1-20	122-124	jo	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	jo	_	_	mark	basic	1-24	
+1-21	125-136	holesterīns	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	holesterīns	_	_	nsubj	basic	1-24	
+1-22	137-140	nav	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Neg\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vcnipii30ay	*	nebūt	_	_	cop	basic	1-24	
+1-23	141-150	vienīgais	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	armsnyp	*	vienīgs	*->2-1	*[2]	amod	basic	1-24	
+1-24	151-158	faktors	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	faktors	*->2-1	*[2]	advcl	basic	1-16	
+1-25	158-159	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-27	
+1-26	160-163	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	*->2-2	*[2]	nsubj	basic	1-27	
+1-27	164-171	veicina	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	veicināt	_	_	acl	basic	1-24	
+1-28	172-185	aterosklerozi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	ateroskleroze	_	_	obj	basic	1-27	
+1-29	186-196	asinsvados	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	*	asinsvads	_	_	acl	basic	1-28	
+1-30	196-197	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	1-2	
 
 #Text=Ir vēl citi rādītāji, kas jānosaka, lai izvēlētos katram cilvēkam vispiemērotākos medikamentus.
-2-1	199-201	Ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipii30an	būt	_	_	root	basic	2-1	
-2-2	202-205	vēl	_	_	_	_	_	_	_	_	_	_	_	_	r0t	vēl	_	_	advmod	basic	2-3	
-2-3	206-210	citi	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Ind	*	*	pi0mpnn	cits	*[3]	*->3-1	det	basic	2-4	
-2-4	211-219	rādītāji	Masc	Plur	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	rādītājs	*[3]	*->3-1	nsubj	basic	2-1	
-2-5	219-220	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	2-7	
-2-6	221-224	kas	*	*	Nom	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	kas	*[3]	*->3-2	nsubj	basic	2-7	
-2-7	225-233	jānosaka	*	*	*	*	*	*	Nec	Act	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	*	vmnd0t300an	nosacīt	_	_	acl	basic	2-4	
-2-8	233-234	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	2-10	
-2-9	235-238	lai	_	_	_	_	_	_	_	_	_	_	_	_	cs	lai	_	_	mark	basic	2-10	
-2-10	239-248	izvēlētos	*	*	*	*	*	*	Cnd	Act	*	Mood=Cnd\|Polarity=Pos\|Reflex=Yes\|VerbForm=Fin\|Voice=Act	*	*	vmyc0i300an	izvēlēties	_	_	advcl	basic	2-7	
-2-11	249-255	katram	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msdn	katrs	_	_	det	basic	2-12	
-2-12	256-264	cilvēkam	Masc	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	cilvēks	_	_	iobj	basic	2-13	
-2-13	265-280	vispiemērotākos	Masc	Plur	Acc	Sup	*	*	*	*	*	Case=Acc\|Degree=Sup\|Gender=Masc\|Number=Plur	*	*	afmpays	piemērots	_	_	amod	basic	2-14	
-2-14	281-293	medikamentus	Masc	Plur	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	medikaments	_	_	obj	basic	2-10	
-2-15	293-294	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	2-1	
+2-1	199-201	Ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipii30an	*	būt	_	_	root	basic	2-1	
+2-2	202-205	vēl	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	vēl	_	_	advmod	basic	2-3	
+2-3	206-210	citi	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur\|PronType=Ind	*	*	pi0mpnn	*	cits	*->3-1	*[3]	det	basic	2-4	
+2-4	211-219	rādītāji	*	*	Nom	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Plur	*	*	ncmpn1	*	rādītājs	*->3-1	*[3]	nsubj	basic	2-1	
+2-5	219-220	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	2-7	
+2-6	221-224	kas	*	*	Nom	*	*	*	*	*	*	*	*	*	*	*	*	*	Case=Nom\|PronType=Rel	*	*	pr000nn	*	kas	*->3-2	*[3]	nsubj	basic	2-7	
+2-7	225-233	jānosaka	*	*	*	*	*	*	Nec	*	*	*	*	*	*	*	*	*	Mood=Nec\|Polarity=Pos\|VerbForm=Fin\|Voice=Act	*	Act	vmnd0t300an	*	nosacīt	_	_	acl	basic	2-4	
+2-8	233-234	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	2-10	
+2-9	235-238	lai	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	lai	_	_	mark	basic	2-10	
+2-10	239-248	izvēlētos	*	*	*	*	*	*	Cnd	*	*	*	*	*	*	*	*	*	Mood=Cnd\|Polarity=Pos\|Reflex=Yes\|VerbForm=Fin\|Voice=Act	*	Act	vmyc0i300an	*	izvēlēties	_	_	advcl	basic	2-7	
+2-11	249-255	katram	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing\|PronType=Tot	*	*	pg0msdn	*	katrs	_	_	det	basic	2-12	
+2-12	256-264	cilvēkam	*	*	Dat	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Masc\|Number=Sing	*	*	ncmsd1	*	cilvēks	_	_	iobj	basic	2-13	
+2-13	265-280	vispiemērotākos	*	*	Acc	*	Sup	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Degree=Sup\|Gender=Masc\|Number=Plur	*	*	afmpays	*	piemērots	_	_	amod	basic	2-14	
+2-14	281-293	medikamentus	*	*	Acc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Plur	*	*	ncmpa1	*	medikaments	_	_	obj	basic	2-10	
+2-15	293-294	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	2-1	

@@ -1,64 +1,64 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
 #T_SP=webanno.custom.NEtypeslinks|category|link
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=Krāns nekādas nelietības nenostrādā.
-1-1	0-5	Krāns	ncmsn1	krāns	_	_	_	_	nsubj	basic	1-4	
-1-2	6-13	nekādas	pi0fpay	nekāda	_	_	_	_	det	basic	1-3	
-1-3	14-24	nelietības	ncfpa4	nelietība	_	_	_	_	obj	basic	1-4	
-1-4	25-35	nenostrādā	vmnipt230ay	nenostrādāt	_	_	_	_	root	basic	1-4	
-1-5	35-36	.	zs	.	_	_	_	_	punct	basic	1-4	
+1-1	0-5	Krāns	ncmsn1	*	krāns	_	_	_	_	nsubj	basic	1-4	
+1-2	6-13	nekādas	pi0fpay	*	nekāda	_	_	_	_	det	basic	1-3	
+1-3	14-24	nelietības	ncfpa4	*	nelietība	_	_	_	_	obj	basic	1-4	
+1-4	25-35	nenostrādā	vmnipt230ay	*	nenostrādāt	_	_	_	_	root	basic	1-4	
+1-5	35-36	.	zs	*	.	_	_	_	_	punct	basic	1-4	
 
 #Text=Padarījusi darāmo, Irmgarde kāpj lejā uz virtuvi.
-2-1	38-48	Padarījusi	vmnpdfsnasnp	padarīt	_	_	_	_	acl	basic	2-5	
-2-2	49-55	darāmo	vmnpdmsappyp	darīt	_	_	_	_	obj	basic	2-1	
-2-3	55-56	,	zc	,	_	_	_	_	punct	basic	2-1	
-2-4	57-65	Irmgarde	npfsn5	Irmgarde	person	*	*[1]	*->1-1	nsubj	basic	2-5	
-2-5	66-70	kāpj	vmnipt130an	kāpt	_	_	_	_	root	basic	2-5	
-2-6	71-75	lejā	r0p	lejā	_	_	_	_	advmod	basic	2-5	
-2-7	76-78	uz	spsa	uz	_	_	_	_	case	basic	2-8	
-2-8	79-86	virtuvi	ncfsa5	virtuve	_	_	_	_	obl	basic	2-5	
-2-9	86-87	.	zs	.	_	_	_	_	punct	basic	2-5	
+2-1	38-48	Padarījusi	vmnpdfsnasnp	*	padarīt	_	_	_	_	acl	basic	2-5	
+2-2	49-55	darāmo	vmnpdmsappyp	*	darīt	_	_	_	_	obj	basic	2-1	
+2-3	55-56	,	zc	*	,	_	_	_	_	punct	basic	2-1	
+2-4	57-65	Irmgarde	npfsn5	*	Irmgarde	person	*	*->1-1	*[1]	nsubj	basic	2-5	
+2-5	66-70	kāpj	vmnipt130an	*	kāpt	_	_	_	_	root	basic	2-5	
+2-6	71-75	lejā	r0p	*	lejā	_	_	_	_	advmod	basic	2-5	
+2-7	76-78	uz	spsa	*	uz	_	_	_	_	case	basic	2-8	
+2-8	79-86	virtuvi	ncfsa5	*	virtuve	_	_	_	_	obl	basic	2-5	
+2-9	86-87	.	zs	*	.	_	_	_	_	punct	basic	2-5	
 
 #Text=Salst galva.
-3-1	89-94	Salst	vmnipi130an	salt	_	_	_	_	root	basic	3-1	
-3-2	95-100	galva	ncfsn4	galva	_	_	_	_	nsubj	basic	3-1	
-3-3	100-101	.	zs	.	_	_	_	_	punct	basic	3-1	
+3-1	89-94	Salst	vmnipi130an	*	salt	_	_	_	_	root	basic	3-1	
+3-2	95-100	galva	ncfsn4	*	galva	_	_	_	_	nsubj	basic	3-1	
+3-3	100-101	.	zs	*	.	_	_	_	_	punct	basic	3-1	
 
 #Text=Atvāzusi cepeškrāsns durtiņas, viņa aizdedz gāzi un noliek priekšā gāzes plītij zemu soliņu.
-4-1	103-111	Atvāzusi	vmnpdfsnasnp	atvāzt	_	_	_	_	acl	basic	4-6	
-4-2	112-123	cepeškrāsns	ncmsg1	cepeškrāsns	_	_	_	_	nmod	basic	4-3	
-4-3	124-132	durtiņas	ncfda4	durtiņas	_	_	_	_	obj	basic	4-1	
-4-4	132-133	,	zc	,	_	_	_	_	punct	basic	4-1	
-4-5	134-138	viņa	pp3fsnn	viņa	_	_	*[1]	*->1-2	nsubj	basic	4-6	
-4-6	139-146	aizdedz	vmnipt130an	aizdegt	_	_	_	_	root	basic	4-6	
-4-7	147-151	gāzi	ncfsa5	gāze	_	_	_	_	obj	basic	4-6	
-4-8	152-154	un	cc	un	_	_	_	_	cc	basic	4-9	
-4-9	155-161	noliek	vmnipt130an	nolikt	_	_	_	_	conj	basic	4-6	
-4-10	162-169	priekšā	rrp	priekšā	_	_	_	_	case	basic	4-12	
-4-11	170-175	gāzes	ncfsg5	gāze	_	_	_	_	nmod	basic	4-12	
-4-12	176-182	plītij	ncfsd6	plīts	_	_	_	_	obl	basic	4-9	
-4-13	183-187	zemu	afmsanp	zems	_	_	_	_	amod	basic	4-14	
-4-14	188-194	soliņu	ncmsa1	soliņš	_	_	_	_	obj	basic	4-9	
-4-15	194-195	.	zs	.	_	_	_	_	punct	basic	4-6	
+4-1	103-111	Atvāzusi	vmnpdfsnasnp	*	atvāzt	_	_	_	_	acl	basic	4-6	
+4-2	112-123	cepeškrāsns	ncmsg1	*	cepeškrāsns	_	_	_	_	nmod	basic	4-3	
+4-3	124-132	durtiņas	ncfda4	*	durtiņas	_	_	_	_	obj	basic	4-1	
+4-4	132-133	,	zc	*	,	_	_	_	_	punct	basic	4-1	
+4-5	134-138	viņa	pp3fsnn	*	viņa	_	_	*->1-2	*[1]	nsubj	basic	4-6	
+4-6	139-146	aizdedz	vmnipt130an	*	aizdegt	_	_	_	_	root	basic	4-6	
+4-7	147-151	gāzi	ncfsa5	*	gāze	_	_	_	_	obj	basic	4-6	
+4-8	152-154	un	cc	*	un	_	_	_	_	cc	basic	4-9	
+4-9	155-161	noliek	vmnipt130an	*	nolikt	_	_	_	_	conj	basic	4-6	
+4-10	162-169	priekšā	rrp	*	priekšā	_	_	_	_	case	basic	4-12	
+4-11	170-175	gāzes	ncfsg5	*	gāze	_	_	_	_	nmod	basic	4-12	
+4-12	176-182	plītij	ncfsd6	*	plīts	_	_	_	_	obl	basic	4-9	
+4-13	183-187	zemu	afmsanp	*	zems	_	_	_	_	amod	basic	4-14	
+4-14	188-194	soliņu	ncmsa1	*	soliņš	_	_	_	_	obj	basic	4-9	
+4-15	194-195	.	zs	*	.	_	_	_	_	punct	basic	4-6	
 
 #Text=Irmgarde žāvē matus.
-5-1	197-205	Irmgarde	npfsn5	Irmgarde	person	*	*[1]	*->1-3	nsubj	basic	5-2	
-5-2	206-210	žāvē	vmnipt230an	žāvēt	_	_	_	_	root	basic	5-2	
-5-3	211-216	matus	ncmpa1	mats	_	_	_	_	obj	basic	5-2	
-5-4	216-217	.	zs	.	_	_	_	_	punct	basic	5-2	
+5-1	197-205	Irmgarde	npfsn5	*	Irmgarde	person	*	*->1-3	*[1]	nsubj	basic	5-2	
+5-2	206-210	žāvē	vmnipt230an	*	žāvēt	_	_	_	_	root	basic	5-2	
+5-3	211-216	matus	ncmpa1	*	mats	_	_	_	_	obj	basic	5-2	
+5-4	216-217	.	zs	*	.	_	_	_	_	punct	basic	5-2	
 
 #Text=Galvu dziļi bāzt plītī nedrīkst, var aizsvilties.
-6-1	219-224	Galvu	ncfsa4	galva	_	_	_	_	obj	basic	6-3	
-6-2	225-230	dziļi	rpp	dziļi	_	_	_	_	advmod	basic	6-3	
-6-3	231-235	bāzt	vmnn0t1000n	bāzt	_	_	_	_	root	basic	6-3	
-6-4	236-241	plītī	ncfsl6	plīts	_	_	_	_	obl	basic	6-3	
-6-5	242-250	nedrīkst	vonipt330ay	nedrīkstēt	_	_	_	_	xcomp	basic	6-3	
-6-6	250-251	,	zc	,	_	_	_	_	punct	basic	6-7	
-6-7	252-255	var	vonipt330an	varēt	_	_	_	_	conj	basic	6-3	
-6-8	256-267	aizsvilties	vmyn0i1000n	aizsvilties	_	_	_	_	xcomp	basic	6-7	
-6-9	267-268	.	zs	.	_	_	_	_	punct	basic	6-3	
+6-1	219-224	Galvu	ncfsa4	*	galva	_	_	_	_	obj	basic	6-3	
+6-2	225-230	dziļi	rpp	*	dziļi	_	_	_	_	advmod	basic	6-3	
+6-3	231-235	bāzt	vmnn0t1000n	*	bāzt	_	_	_	_	root	basic	6-3	
+6-4	236-241	plītī	ncfsl6	*	plīts	_	_	_	_	obl	basic	6-3	
+6-5	242-250	nedrīkst	vonipt330ay	*	nedrīkstēt	_	_	_	_	xcomp	basic	6-3	
+6-6	250-251	,	zc	*	,	_	_	_	_	punct	basic	6-7	
+6-7	252-255	var	vonipt330an	*	varēt	_	_	_	_	conj	basic	6-3	
+6-8	256-267	aizsvilties	vmyn0i1000n	*	aizsvilties	_	_	_	_	xcomp	basic	6-7	
+6-9	267-268	.	zs	*	.	_	_	_	_	punct	basic	6-3	

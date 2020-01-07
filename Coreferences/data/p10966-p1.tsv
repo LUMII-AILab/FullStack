@@ -1,0 +1,30 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Arot zemi, apgāzies traktors.
+1-1	0-4	Arot	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Polarity=Pos\|VerbForm=Conv	Conv	*	vmnpu0000000n	*	art	_	_	_	_	advcl	basic	1-4	
+1-2	5-9	zemi	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa5	*	zeme	_	_	_	_	obj	basic	1-1	
+1-3	9-10	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	1-1	
+1-4	11-19	apgāzies	*	*	*	*	*	*	Imp	*	*	Sing	2	*	*	Yes	*	*	Mood=Imp\|Number=Sing\|Person=2\|Polarity=Pos\|Reflex=Yes\|VerbForm=Fin\|Voice=Act	Fin	Act	vmym0i12san	*	apgāzties	_	_	_	_	root	basic	1-4	
+1-5	20-28	traktors	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	traktors	_	_	_	_	nsubj	basic	1-4	
+1-6	28-29	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-4	
+
+#Text=Tā ziņo Valsts policijas Zemgales reģiona pārvaldes galvenā speciāliste Ieva Sietniece.
+2-1	30-32	Tā	*	*	*	*	*	*	*	*	*	*	*	*	Dem	*	*	*	PronType=Dem	*	*	r0m	*	tā	_	_	_	_	advmod	basic	2-2	
+2-2	33-37	ziņo	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	Fin	Act	vmnipt230an	*	ziņot	_	_	_	_	root	basic	2-2	
+2-3	38-44	Valsts	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg6	*	valsts	organization[1]|organization[2]	*[1]|https://lv.wikipedia.org/wiki/Latvijas\_Valsts\_policija[2]	*->1-1	*[1]	nmod	basic	2-4	
+2-4	45-54	policijas	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg4	*	policija	organization[1]|organization[2]	*[1]|https://lv.wikipedia.org/wiki/Latvijas\_Valsts\_policija[2]	*->1-1	*[1]	nmod	basic	2-7	
+2-5	55-63	Zemgales	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	npfsg5	*	Zemgale	organization[1]|location[3]	*[1]|https://en.wikipedia.org/wiki/Semigallia[3]	*->1-1	*[1]	nmod	basic	2-6	
+2-6	64-71	reģiona	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	reģions	organization[1]	*[1]	*->1-1	*[1]	nmod	basic	2-7	
+2-7	72-81	pārvaldes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	pārvalde	organization[1]	*[1]	*->1-1	*[1]	nmod	basic	2-9	
+2-8	82-89	galvenā	*	*	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsnyp	*	galvens	_	_	*->1-1	*[1]	amod	basic	2-9	
+2-9	90-101	speciāliste	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	speciāliste	_	_	*->1-1	*[1]	nmod	basic	2-10	
+2-10	102-106	Ieva	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn4	*	Ieva	person[4]	*[4]	*->1-2	*[1]	nsubj	basic	2-2	
+2-11	107-116	Sietniece	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	npfsn5	*	Sietniece	person[4]	*[4]	*->1-2	*[1]	flat:name	basic	2-10	
+2-12	116-117	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-2	

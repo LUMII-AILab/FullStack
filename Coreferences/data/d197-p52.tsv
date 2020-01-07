@@ -1,32 +1,32 @@
 #FORMAT=WebAnno TSV 3.2
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|gender|number|case|degree|transitivity|tense|mood|voice|definiteness|value|person|aspect
-#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
 #T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
-#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceType|referenceRelation
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
 #T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 
 
 #Text=- Nē, rakstniece, - es teicu.
-1-1	0-1	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	punct	basic	1-4	
-1-2	2-4	Nē	_	_	_	_	_	_	_	_	_	_	_	_	q	nē	_	_	discourse	basic	1-4	
-1-3	4-5	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-2	
-1-4	6-16	rakstniece	Fem	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	rakstniece	*[1]	*->1-1	parataxis	basic	1-8	
-1-5	16-17	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	1-4	
-1-6	18-19	-	_	_	_	_	_	_	_	_	_	_	_	_	zd	-	_	_	punct	basic	1-4	
-1-7	20-22	es	*	Sing	Nom	*	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	1	*	pp10snn	es	*[1]	*->1-2	nsubj	basic	1-8	
-1-8	23-28	teicu	*	Sing	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	1	*	vmnipt11san	teikt	_	_	root	basic	1-8	
-1-9	28-29	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	1-8	
+1-1	0-1	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	-	_	_	punct	basic	1-4	
+1-2	2-4	Nē	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	q	*	nē	_	_	discourse	basic	1-4	
+1-3	4-5	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-2	
+1-4	6-16	rakstniece	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn5	*	rakstniece	*->1-1	*[1]	parataxis	basic	1-8	
+1-5	16-17	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	1-4	
+1-6	18-19	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zd	*	-	_	_	punct	basic	1-4	
+1-7	20-22	es	*	*	Nom	*	*	*	*	*	*	Sing	1	*	*	*	*	*	Case=Nom\|Number=Sing\|Person=1\|PronType=Prs	*	*	pp10snn	*	es	*->1-2	*[1]	nsubj	basic	1-8	
+1-8	23-28	teicu	*	*	*	*	*	*	Ind	*	*	Sing	1	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt11san	*	teikt	_	_	root	basic	1-8	
+1-9	28-29	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	1-8	
 
 #Text=Un nodomāju, ka šai atbildei ir maz sakara ar jautājumu.
-2-1	31-33	Un	_	_	_	_	_	_	_	_	_	_	_	_	cc	un	_	_	cc	basic	2-2	
-2-2	34-42	nodomāju	*	Sing	*	*	*	Past	Ind	Act	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	1	*	vmnist21san	nodomāt	_	_	root	basic	2-2	
-2-3	42-43	,	_	_	_	_	_	_	_	_	_	_	_	_	zc	,	_	_	punct	basic	2-7	
-2-4	44-46	ka	_	_	_	_	_	_	_	_	_	_	_	_	cs	ka	_	_	mark	basic	2-7	
-2-5	47-50	šai	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsdn	šī	_	_	det	basic	2-6	
-2-6	51-59	atbildei	Fem	Sing	Dat	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd5	atbilde	_	_	obl	basic	2-7	
-2-7	60-62	ir	*	*	*	*	*	Pres	Ind	Act	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	3	*	vmnipii30an	būt	_	_	ccomp	basic	2-2	
-2-8	63-66	maz	_	_	_	_	_	_	_	_	_	_	_	_	r0q	maz	_	_	advmod	basic	2-9	
-2-9	67-73	sakara	Masc	Sing	Gen	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	sakars	_	_	nsubj	basic	2-7	
-2-10	74-76	ar	_	_	_	_	_	_	_	_	_	_	_	_	spsa	ar	_	_	case	basic	2-11	
-2-11	77-86	jautājumu	Masc	Sing	Acc	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	jautājums	_	_	iobj	basic	2-7	
-2-12	86-87	.	_	_	_	_	_	_	_	_	_	_	_	_	zs	.	_	_	punct	basic	2-2	
+2-1	31-33	Un	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	un	_	_	cc	basic	2-2	
+2-2	34-42	nodomāju	*	*	*	*	*	*	Ind	*	*	Sing	1	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Number=Sing\|Person=1\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist21san	*	nodomāt	_	_	root	basic	2-2	
+2-3	42-43	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	punct	basic	2-7	
+2-4	44-46	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	mark	basic	2-7	
+2-5	47-50	šai	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing\|PronType=Dem	*	*	pd0fsdn	*	šī	_	_	det	basic	2-6	
+2-6	51-59	atbildei	*	*	Dat	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Dat\|Gender=Fem\|Number=Sing	*	*	ncfsd5	*	atbilde	_	_	obl	basic	2-7	
+2-7	60-62	ir	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipii30an	*	būt	_	_	ccomp	basic	2-2	
+2-8	63-66	maz	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0q	*	maz	_	_	advmod	basic	2-9	
+2-9	67-73	sakara	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	sakars	_	_	nsubj	basic	2-7	
+2-10	74-76	ar	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	ar	_	_	case	basic	2-11	
+2-11	77-86	jautājumu	*	*	Acc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Masc\|Number=Sing	*	*	ncmsa1	*	jautājums	_	_	iobj	basic	2-7	
+2-12	86-87	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	punct	basic	2-2	

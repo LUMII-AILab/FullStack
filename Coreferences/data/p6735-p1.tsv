@@ -1,0 +1,54 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures|animacy|aspect|case|definiteness|degree|gender|mood|negative|numType|number|person|possessive|pronType|reflex|tense|transitivity|value|verbForm|voice
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS|PosValue|coarseValue
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma|value
+#T_SP=webanno.custom.NEtypeslinks|category|link
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+#T_RL=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency|DependencyType|flavor|BT_de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
+
+
+#Text=Maija beigās latviešu režisors Dž.Dž.Džilindžers par sesto sievu apņēma Ingu Grencberu.
+1-1	0-5	Maija	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	maijs	time[1]	*[1]	_	_	dep	basic	1-2	
+1-2	6-12	beigās	*	*	Loc	*	*	Fem	*	*	*	Ptan	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Ptan	*	*	ncfdl4	*	beigas	time[1]	*[1]	_	_	obl	basic	1-11	
+1-3	13-21	latviešu	*	*	Gen	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Plur	*	*	ncmpg2	*	latvietis	_	_	*->1-1	*[1]	nmod	basic	1-4	
+1-4	22-30	režisors	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn1	*	režisors	_	_	*->1-1	*[1]	nmod	basic	1-5	
+1-5	31-34	Dž.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	Dž.	person[2]	https://lv.wikipedia.org/wiki/Dž.\_Dž.\_Džilindžers[2]	*->1-2	*[1]	nsubj	basic	1-11	
+1-6	34-37	Dž.	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	Abbr=Yes	*	*	yp	*	Dž.	person[2]	https://lv.wikipedia.org/wiki/Dž.\_Dž.\_Džilindžers[2]	*->1-2	*[1]	flat:name	basic	1-5	
+1-7	37-48	Džilindžers	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	npmsn1	*	Džilindžers	person[2]	https://lv.wikipedia.org/wiki/Dž.\_Dž.\_Džilindžers[2]	*->1-2	*[1]	flat:name	basic	1-5	
+1-8	49-52	par	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	par	_	_	_	_	case	basic	1-10	
+1-9	53-58	sesto	*	*	Acc	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Definite=Def\|Degree=Pos\|Gender=Fem\|Number=Sing\|NumType=Ord	*	*	mosfsa	*	sestā	_	_	_	_	amod	basic	1-10	
+1-10	59-64	sievu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	ncfsa4	*	sieva	_	_	_	_	xcomp	basic	1-11	
+1-11	65-71	apņēma	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmnist130an	*	apņemt	_	_	_	_	root	basic	1-11	
+1-12	72-76	Ingu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	*	Inga	person[3]	*[3]	*->2-1	*[2]	obj	basic	1-11	
+1-13	77-86	Grencberu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	*	Grencbera	person[3]	*[3]	*->2-1	*[2]	flat:name	basic	1-12	
+1-14	86-87	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	1-11	
+
+#Text=Jaunais pāris pēc lielā notikuma devās vairāku nedēļu ilgā medusmēnesī pa Eiropu, tomēr šobrīd Grencberga sociālajos tīklos vēsta, ka nonākusi Paula Stradiņa Klīniskās universitātes slimnīcā.
+2-1	89-96	Jaunais	*	*	Nom	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsnyp	*	jauns	_	_	_	_	amod	basic	2-2	
+2-2	97-102	pāris	*	*	Nom	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Masc\|Number=Sing	*	*	ncmsn2	*	pāris	_	_	_	_	nsubj	basic	2-6	
+2-3	103-106	pēc	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsg	*	pēc	_	_	_	_	case	basic	2-5	
+2-4	107-112	lielā	*	*	Gen	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmsgyp	*	liels	_	_	_	_	amod	basic	2-5	
+2-5	113-121	notikuma	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	ncmsg1	*	notikums	_	_	_	_	obl	basic	2-6	
+2-6	122-127	devās	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Past	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Reflex=Yes\|Tense=Past\|VerbForm=Fin\|Voice=Act	*	Act	vmyisi130an	*	doties	_	_	_	_	root	basic	2-6	
+2-7	128-135	vairāku	*	*	Gen	*	Pos	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Plur	*	*	arfpgnp	*	vairākas	_	_	_	_	det	basic	2-8	
+2-8	136-142	nedēļu	*	*	Gen	*	*	Fem	*	*	*	Plur	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Plur	*	*	ncfpg4	*	nedēļa	_	_	_	_	obl	basic	2-9	
+2-9	143-147	ilgā	*	*	Loc	*	Pos	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Sing	*	*	afmslnp	*	ilgs	_	_	_	_	amod	basic	2-10	
+2-10	148-159	medusmēnesī	*	*	Loc	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Sing	*	*	ncmsl2	*	medusmēnesis	_	_	_	_	obl	basic	2-6	
+2-11	160-162	pa	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	spsa	*	pa	_	_	_	_	case	basic	2-12	
+2-12	163-169	Eiropu	*	*	Acc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Acc\|Gender=Fem\|Number=Sing	*	*	npfsa4	*	Eiropa	location	https://en.wikipedia.org/wiki/Europe	_	_	obl	basic	2-6	
+2-13	169-170	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-19	
+2-14	171-176	tomēr	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cc	*	tomēr	_	_	_	_	cc	basic	2-19	
+2-15	177-183	šobrīd	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	r0t	*	šobrīd	_	_	_	_	advmod	basic	2-19	
+2-16	184-194	Grencberga	*	*	Nom	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Nom\|Gender=Fem\|Number=Sing	*	*	ncfsn4	*	Grencberga	person	*	*->2-2	*[2]	nmod	basic	2-19	
+2-17	195-205	sociālajos	*	*	Loc	*	Pos	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Degree=Pos\|Gender=Masc\|Number=Plur	*	*	afmplyp	*	sociāls	_	_	_	_	amod	basic	2-18	
+2-18	206-212	tīklos	*	*	Loc	*	*	Masc	*	*	*	Plur	*	*	*	*	*	*	Case=Loc\|Gender=Masc\|Number=Plur	*	*	ncmpl1	*	tīkls	_	_	_	_	obl	basic	2-19	
+2-19	213-218	vēsta	*	*	*	*	*	*	Ind	*	*	*	3	*	*	*	Pres	*	Evident=Fh\|Mood=Ind\|Person=3\|Polarity=Pos\|Tense=Pres\|VerbForm=Fin\|Voice=Act	*	Act	vmnipt330an	*	vēstīt	_	_	_	_	conj	basic	2-6	
+2-20	218-219	,	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zc	*	,	_	_	_	_	punct	basic	2-22	
+2-21	220-222	ka	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	cs	*	ka	_	_	_	_	mark	basic	2-22	
+2-22	223-231	nonākusi	*	Perf	Nom	*	Pos	Fem	*	*	*	Sing	*	*	*	*	Past	*	Aspect=Perf\|Case=Nom\|Definite=Ind\|Degree=Pos\|Gender=Fem\|Number=Sing\|Polarity=Pos\|Tense=Past\|VerbForm=Part	*	*	vmnpdfsnasnpn	*	nonākt	_	_	_	_	ccomp	basic	2-19	
+2-23	232-237	Paula	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Pauls	location[4]|person[5]	https://en.wikipedia.org/wiki/Pauls\_Stradiņš\_Clinical\_University\_Hospital[4]|*[5]	_	_	nmod	basic	2-26	
+2-24	238-246	Stradiņa	*	*	Gen	*	*	Masc	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Masc\|Number=Sing	*	*	npmsg1	*	Stradiņš	location[4]|person[5]	https://en.wikipedia.org/wiki/Pauls\_Stradiņš\_Clinical\_University\_Hospital[4]|*[5]	_	_	flat:name	basic	2-23	
+2-25	247-256	Klīniskās	*	*	Gen	*	Pos	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Degree=Pos\|Gender=Fem\|Number=Sing	*	*	affsgyp	*	klīniska	location[4]	https://en.wikipedia.org/wiki/Pauls\_Stradiņš\_Clinical\_University\_Hospital[4]	_	_	amod	basic	2-26	
+2-26	257-270	universitātes	*	*	Gen	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Gen\|Gender=Fem\|Number=Sing	*	*	ncfsg5	*	universitāte	location[4]	https://en.wikipedia.org/wiki/Pauls\_Stradiņš\_Clinical\_University\_Hospital[4]	_	_	nmod	basic	2-27	
+2-27	271-279	slimnīcā	*	*	Loc	*	*	Fem	*	*	*	Sing	*	*	*	*	*	*	Case=Loc\|Gender=Fem\|Number=Sing	*	*	ncfsl4	*	slimnīca	location[4]	https://en.wikipedia.org/wiki/Pauls\_Stradiņš\_Clinical\_University\_Hospital[4]	_	_	obl	basic	2-22	
+2-28	279-280	.	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	zs	*	.	_	_	_	_	punct	basic	2-6	

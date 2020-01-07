@@ -14,28 +14,29 @@
 
 ## Current statistics
 
-* 3,505 paragraphs (text units)
+* __3,947__ paragraphs (text units)
 
-* 8,303 outer entities:
-  - 2,802 person
-  - 1,692 GPE
-  - 1,554 organization
-  - 988 time
-  - 593 location
-  - 238 product
-  - 221 event
-  - 186 entity
-  - 29 money
+* __9,697__ outer entities:
+  - 3,104 person
+  - 2,031 GPE
+  - 1,847 organization
+  - 1,227 time
+  - 677 location
+  - 293 product
+  - 259 event
+  - 215 entity
+  - 44 money
 
-* 771 inner entities:
-  - 459 GPE
-  - 133 organization
-  - 98 location
-  - 41 person
-  - 18 time
-  - 11 entity
-  - 10 event
-  - 1 product
+* __944__ inner entities:
+  - 543 GPE
+  - 154 organization
+  - 129 location
+  - 51 person
+  - 28 time
+  - 15 entity
+  - 19 event
+  - 4 product
+  - 1 money
 
-* 2,860 Wikipedia links from outer entities (34%)
-* 408 Wikipedia links from inner entities (53%)
+* __3,650__ Wikipedia links from ambiguous outer entities (38%)
+* __526__ Wikipedia links from ambiguous inner entities (56%)

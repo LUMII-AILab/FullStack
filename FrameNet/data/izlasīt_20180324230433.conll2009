@@ -8,7 +8,7 @@
 6	,	,	PUNCT	zc	_	8	punct	8:punct	_	_	_
 7	lai	lai	SCONJ	cs	_	8	mark	8:mark	_	_	_
 8	izlasītu	izlasīt	VERB	vmnc0t300an	Mood=Cnd|Polarity=Pos|VerbForm=Fin|Voice=Act	2	advcl	2:advcl	Y	Reading_perception	_
-9	smalko	smalks	ADJ	affsayp	Case=Acc|Degree=Pos|Gender=Fem|Number=Sing	10	amod	10:amod	_	_	_
+9	smalko	smalks	ADJ	affsayp	Case=Acc|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	10	amod	10:amod	_	_	_
 10	druku	druka	NOUN	ncfsa4	Case=Acc|Gender=Fem|Number=Sing	8	obj	8:obj	_	_	Text
 11	.	.	PUNCT	zs	_	2	punct	2:punct	_	_	_
 
@@ -97,7 +97,7 @@
 # sent_id = a-d21-p6s6
 # text = Pēc tam jau viņa man teica, ka esot iegaumējusi pat manu vārdu — kā pirmoreiz izlasījusi uz bankas kartes, tā paturējusi prātā.
 1	Pēc	pēc	ADP	spsd	_	2	case	2:case	_	_	_
-2	tam	tas	PRON	pd3msdn	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Dem	6	obl	6:obl	_	_	_
+2	tam	tas	PRON	pd3msdn	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Dem	6	obl	6:obl:pēc	_	_	_
 3	jau	jau	ADV	r0t	_	6	advmod	6:advmod	_	_	_
 4	viņa	viņa	PRON	pp3fsnn	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	6	nsubj	6:nsubj	_	_	Reader
 5	man	es	PRON	pp10sdn	Case=Dat|Number=Sing|Person=1|PronType=Prs	6	iobj	6:iobj	_	_	_
@@ -115,7 +115,7 @@
 17	izlasījusi	izlasīt	VERB	vmnpdfsnasnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	6	conj	6:conj	Y	Reading_perception	_
 18	uz	uz	ADP	spsg	_	20	case	20:case	_	_	_
 19	bankas	banka	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	20	nmod	20:nmod:gen	_	_	_
-20	kartes	karte	NOUN	ncfsg5	Case=Gen|Gender=Fem|Number=Sing	17	obl	17:obl	_	_	Place
+20	kartes	karte	NOUN	ncfsg5	Case=Gen|Gender=Fem|Number=Sing	17	obl	17:obl:uz	_	_	Place
 21	,	,	PUNCT	zc	_	23	punct	23:punct	_	_	_
 22	tā	tā	SCONJ	cs	_	23	cc	23:cc	_	_	_
 23	paturējusi	paturēt	VERB	vmnpdfsnasnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	17	conj	17:conj	_	_	_
@@ -133,7 +133,7 @@
 # sent_id = a-p3005-p18s2
 # text = Pirms tam gan rūpīgi izlasi derīguma termiņus un novērtē, vai varēsi izlietot produktu līdz derīguma termiņa beigām.
 1	Pirms	pirms	ADP	sppd	_	2	case	2:case	_	_	_
-2	tam	tas	PRON	pd3msdn	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Dem	5	obl	5:obl|9:obl	_	_	Time
+2	tam	tas	PRON	pd3msdn	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Dem	5	obl	5:obl:pirms|9:obl:pirms	_	_	Time
 3	gan	gan	PART	q	_	5	discourse	5:discourse|9:discourse	_	_	_
 4	rūpīgi	rūpīgi	ADV	rpm	Degree=Pos	5	advmod	5:advmod	_	_	_
 5	izlasi	izlasīt	VERB	vmnm0t32san	Mood=Imp|Number=Sing|Person=2|Polarity=Pos|VerbForm=Fin|Voice=Act	0	root	0:root	Y	Reading_perception	_
@@ -149,7 +149,7 @@
 15	līdz	līdz	ADP	spsd	_	18	case	18:case	_	_	_
 16	derīguma	derīgums	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	17	nmod	17:nmod:gen	_	_	_
 17	termiņa	termiņš	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	18	nmod	18:nmod:gen	_	_	_
-18	beigām	beigas	NOUN	ncfdd4	Case=Dat|Gender=Fem|Number=Ptan	13	obl	13:obl	_	_	_
+18	beigām	beigas	NOUN	ncfdd4	Case=Dat|Gender=Fem|Number=Ptan	13	obl	13:obl:līdz	_	_	_
 19	.	.	PUNCT	zs	_	5	punct	5:punct	_	_	_
 
 # sent_id = a-p3316-p17s2
@@ -169,13 +169,13 @@
 13	,	,	PUNCT	zc	_	15	punct	15:punct	_	_	_
 14	tas	tas	PRON	pd3msnn	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Dem	15	nsubj	15:nsubj	_	_	_
 15	palīdz	palīdzēt	VERB	vmnipt330an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	3	parataxis	3:parataxis|6:parataxis	_	_	_
-16	enerģētiskā	enerģētisks	ADJ	armslnp	Case=Loc|Degree=Pos|Gender=Masc|Number=Sing	17	amod	17:amod	_	_	_
+16	enerģētiskā	enerģētisks	ADJ	armslnp	Case=Loc|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	17	amod	17:amod	_	_	_
 17	līmenī	līmenis	NOUN	ncmsl2	Case=Loc|Gender=Masc|Number=Sing	15	obl	15:obl:loc	_	_	_
 18	,	,	PUNCT	zc	_	15	punct	15:punct	_	_	_
 19	vari	varēt	VERB	vonm0i32san	Mood=Imp|Number=Sing|Person=2|Polarity=Pos|VerbForm=Fin|Voice=Act	2	conj	2:conj	_	_	_
 20	izskraidīt	izskraidīt	VERB	vmnn0t3000n	Polarity=Pos|VerbForm=Inf	19	xcomp	19:xcomp	_	_	_
 21	visus	viss	DET	pg0mpan	Case=Acc|Gender=Masc|Number=Plur|PronType=Tot	23	det	23:det	_	_	_
-22	iespējamos	iespējams	ADJ	armpayp	Case=Acc|Degree=Pos|Gender=Masc|Number=Plur	23	amod	23:amod	_	_	_
+22	iespējamos	iespējams	ADJ	armpayp	Case=Acc|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	23	amod	23:amod	_	_	_
 23	seminārus	seminārs	NOUN	ncmpa1	Case=Acc|Gender=Masc|Number=Plur	20	obj	20:obj	_	_	_
 24	un	un	CCONJ	cc	_	25	cc	25:cc	_	_	_
 25	izlasīt	izlasīt	VERB	vmnn0t3000n	Polarity=Pos|VerbForm=Inf	20	conj	19:xcomp|20:conj	Y	Reading_perception	_
@@ -183,14 +183,14 @@
 27	grāmatas	grāmata	NOUN	ncfpa4	Case=Acc|Gender=Fem|Number=Plur	25	obj	25:obj	_	_	Text
 28	,	,	PUNCT	zc	_	34	punct	34:punct	_	_	_
 29	kļūt	kļūt	AUX	vtnn0i1000n	Polarity=Pos|VerbForm=Inf	34	cop	34:cop	_	_	_
-30	pat	par	ADP	spsa	_	34	case	34:case	_	_	_
+30	pat	par	ADP	spsa	Typo=Yes	34	case	34:case	_	_	_
 31	tādu	tāda	DET	pd0fsan	Case=Acc|Gender=Fem|Number=Sing|PronType=Dem	34	det	34:det	_	_	_
 32	kā	kā	SCONJ	cs	_	31	fixed	31:fixed	_	_	_
 33	staigājošu	staigāt	VERB	vmnpdfsaapnpn	Aspect=Imp|Case=Acc|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Pres|VerbForm=Part|Voice=Act	34	amod	34:amod	_	_	_
 34	bibliotēku	bibliotēka	NOUN	ncfsa4	Case=Acc|Gender=Fem|Number=Sing	20	conj	19:xcomp|20:conj	_	_	_
 35	,	,	PUNCT	zc	_	36	punct	36:punct	_	_	_
 36	zināt	zināt	VERB	vmnn0t3000n	Polarity=Pos|VerbForm=Inf	20	conj	19:xcomp|20:conj	_	_	_
-37	dažādas	dažāds	ADJ	arfpanp	Case=Acc|Degree=Pos|Gender=Fem|Number=Plur	38	amod	38:amod|40:amod	_	_	_
+37	dažādas	dažāds	ADJ	arfpanp	Case=Acc|Definite=Ind|Degree=Pos|Gender=Fem|Number=Plur	38	amod	38:amod|40:amod	_	_	_
 38	teorijas	teorija	NOUN	ncfpa4	Case=Acc|Gender=Fem|Number=Plur	36	obj	36:obj	_	_	_
 39	un	un	CCONJ	cc	_	40	cc	40:cc	_	_	_
 40	prakses	prakse	NOUN	ncfpa5	Case=Acc|Gender=Fem|Number=Plur	38	conj	36:obj|38:conj	_	_	_
@@ -217,7 +217,7 @@
 61	vienu	viens	NUM	mcsmsa	Case=Acc|Gender=Masc|Number=Sing|NumType=Card	62	nummod	62:nummod	_	_	_
 62	solīti	solītis	NOUN	ncmsa2	Case=Acc|Gender=Masc|Number=Sing	60	obj	60:obj	_	_	_
 63	tuvāk	tuvāk	ADV	rcp	Degree=Cmp	60	advmod	60:advmod	_	_	_
-64	finansiālai	finansiāls	ADJ	arfsdnp	Case=Dat|Degree=Pos|Gender=Fem|Number=Sing	65	amod	65:amod	_	_	_
+64	finansiālai	finansiāls	ADJ	arfsdnp	Case=Dat|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	65	amod	65:amod	_	_	_
 65	brīvībai	brīvība	NOUN	ncfsd4	Case=Dat|Gender=Fem|Number=Sing	63	iobj	63:iobj	_	_	_
 66	,	,	PUNCT	zc	_	68	punct	68:punct	_	_	_
 67	ja	ja	SCONJ	cs	_	68	mark	68:mark	_	_	_
@@ -271,9 +271,9 @@
 17	neesmu	būt	AUX	vcnipii1say	Evident=Fh|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Pres|VerbForm=Fin|Voice=Act	18	aux	18:aux	_	_	_
 18	izlasījusi	izlasīt	VERB	vmnpdfsnasnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	0	root	0:root	Y	Reading_perception	_
 19	no	no	ADP	spsg	_	20	case	20:case	_	_	_
-20	sākuma	sākums	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	18	obl	18:obl	_	_	_
+20	sākuma	sākums	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	18	obl	18:obl:no	_	_	_
 21	līdz	līdz	ADP	sppd	_	22	case	22:case	_	_	_
-22	beigām	beigas	NOUN	ncfdd4	Case=Dat|Gender=Fem|Number=Ptan	18	obl	18:obl	_	_	_
+22	beigām	beigas	NOUN	ncfdd4	Case=Dat|Gender=Fem|Number=Ptan	18	obl	18:obl:līdz	_	_	_
 23	.	.	PUNCT	zs	_	18	punct	18:punct	_	_	_
 
 # sent_id = a-s19-p85s7

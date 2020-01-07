@@ -1,7 +1,7 @@
 # sent_id = a-n136-p23s1
 # text = (12) Komisijai jāiesniedz Eiropas Parlamentam un Padomei ziņojums par šīs direktīvas ieviešanu un piemērošanu jo īpaši attiecībā uz jauniem nodarbinātības veidiem, kas rodas dalībvalstīs,
 1	(	(	PUNCT	zb	_	2	punct	2:punct	_	_	_
-2	12	12	NUM	xn	NumType=Card	5	discourse	5:discourse	_	_	_
+2	12	12	NUM	xn	NumType=Card	5	parataxis	5:parataxis	_	_	_
 3	)	)	PUNCT	zb	_	2	punct	2:punct	_	_	_
 4	Komisijai	komisija	NOUN	ncfsd4	Case=Dat|Gender=Fem|Number=Sing	5	nsubj	5:nsubj	_	_	Submittor
 5	jāiesniedz	iesniegt	VERB	vmnd0t300an	Mood=Nec|Polarity=Pos|VerbForm=Fin|Voice=Act	0	root	0:root	Y	Submitting_documents	_
@@ -18,9 +18,9 @@
 16	piemērošanu	piemērošana	NOUN	ncfsa4	Case=Acc|Gender=Fem|Number=Sing	14	conj	10:nmod:acc|14:conj	_	_	_
 17	jo	jo	PART	q	_	18	discourse	18:discourse	_	_	_
 18	īpaši	īpaši	ADV	r0m	_	19	advmod	19:advmod	_	_	_
-19	attiecībā	attiecība	NOUN	ncfsl4	Case=Loc|Gender=Fem|Number=Sing	16	acl	16:acl:loc	_	_	_
+19	attiecībā	attiecība	NOUN	ncfsl4	Case=Loc|Gender=Fem|Number=Sing	16	nmod	16:nmod:loc	_	_	_
 20	uz	uz	ADP	sppd	_	23	case	23:case	_	_	_
-21	jauniem	jauns	ADJ	afmpdnp	Case=Dat|Degree=Pos|Gender=Masc|Number=Plur	23	amod	23:amod	_	_	_
+21	jauniem	jauns	ADJ	afmpdnp	Case=Dat|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur	23	amod	23:amod	_	_	_
 22	nodarbinātības	nodarbinātība	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	23	nmod	23:nmod:gen	_	_	_
 23	veidiem	veids	NOUN	ncmpd1	Case=Dat|Gender=Masc|Number=Plur	19	iobj	19:iobj	_	_	_
 24	,	,	PUNCT	zc	_	26	punct	26:punct	_	_	_
@@ -33,18 +33,18 @@
 # text = Komisija, vēlākais, līdz 2010. gada 8. oktobrim iesniedz Eiropas Parlamentam un Padomei ziņojumu par šīs direktīvas īstenošanu un piemērošanu dalībvalstīs.
 1	Komisija	komisija	NOUN	ncfsn4	Case=Nom|Gender=Fem|Number=Sing	10	nsubj	10:nsubj	_	_	Submittor
 2	,	,	PUNCT	zc	_	3	punct	3:punct	_	_	_
-3	vēlākais	vēls	ADJ	afmsnyc	Case=Nom|Degree=Cmp|Gender=Masc|Number=Sing	9	acl	9:acl:nom	_	_	_
+3	vēlākais	vēls	ADJ	afmsnyc	Case=Nom|Definite=Def|Degree=Cmp|Gender=Masc|Number=Sing	9	acl	9:acl	_	_	_
 4	,	,	PUNCT	zc	_	3	punct	3:punct	_	_	_
 5	līdz	līdz	ADP	sppd	_	9	case	9:case	_	_	_
 6	2010.	2010.	ADJ	xo	NumType=Ord	7	amod	7:amod	_	_	_
 7	gada	gads	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	9	nmod	9:nmod:gen	_	_	_
 8	8.	8.	ADJ	xo	NumType=Ord	9	amod	9:amod	_	_	_
-9	oktobrim	oktobris	NOUN	ncmsd2	Case=Dat|Gender=Masc|Number=Sing	10	obl	10:obl	_	_	Time
+9	oktobrim	oktobris	NOUN	ncmsd2	Case=Dat|Gender=Masc|Number=Sing	10	obl	10:obl:līdz	_	_	Time
 10	iesniedz	iesniegt	VERB	vmnipt130an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	0:root	Y	Submitting_documents	_
 11	Eiropas	Eiropa	PROPN	npfsg4	Case=Gen|Gender=Fem|Number=Sing	12	nmod	12:nmod:gen	_	_	_
-12	Parlamentam	parlaments	NOUN	ncmsd1	Case=Dat|Gender=Masc|Number=Sing	15	iobj	15:iobj	_	_	Authority
+12	Parlamentam	parlaments	NOUN	ncmsd1	Case=Dat|Gender=Masc|Number=Sing	10	iobj	10:iobj	_	_	Authority
 13	un	un	CCONJ	cc	_	14	cc	14:cc	_	_	_
-14	Padomei	padome	NOUN	ncfsd5	Case=Dat|Gender=Fem|Number=Sing	12	conj	12:conj|15:iobj	_	_	_
+14	Padomei	padome	NOUN	ncfsd5	Case=Dat|Gender=Fem|Number=Sing	12	conj	10:iobj|12:conj	_	_	_
 15	ziņojumu	ziņojums	NOUN	ncmsa1	Case=Acc|Gender=Masc|Number=Sing	10	obj	10:obj	_	_	Documents
 16	par	par	ADP	spsa	_	19	case	19:case|21:case	_	_	_
 17	šīs	šī	DET	pd3fsgn	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Dem	18	det	18:det	_	_	_
@@ -67,7 +67,7 @@
 8	,	,	PUNCT	zc	_	5	punct	5:punct	_	_	_
 9	to	tas	PRON	pd3msan	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Dem	10	obj	10:obj	_	_	_
 10	izmaksā	izmaksāt	VERB	vmnipt230an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	0:root	_	_	_
-11	vienādās	vienāds	ADJ	arfplnp	Case=Loc|Degree=Pos|Gender=Fem|Number=Plur	12	amod	12:amod	_	_	_
+11	vienādās	vienāds	ADJ	arfplnp	Case=Loc|Definite=Ind|Degree=Pos|Gender=Fem|Number=Plur	12	amod	12:amod	_	_	_
 12	daļās	daļa	NOUN	ncfpl4	Case=Loc|Gender=Fem|Number=Plur	10	obl	10:obl:loc	_	_	_
 13	visām	visa	DET	pg0fpdn	Case=Dat|Gender=Fem|Number=Plur|PronType=Tot	16	det	16:det	_	_	_
 14	pieprasījumu	pieprasījums	NOUN	ncmsa1	Case=Acc|Gender=Masc|Number=Sing	15	obj	15:obj	_	_	_
@@ -90,7 +90,7 @@
 5	kārtot	kārtot	VERB	vmnn0t2000n	Polarity=Pos|VerbForm=Inf	4	xcomp	4:xcomp	_	_	_
 6	tikai	tikai	PART	q	_	7	discourse	7:discourse	_	_	_
 7	reizi	reize	NOUN	ncfsa5	Case=Acc|Gender=Fem|Number=Sing	4	obl	4:obl:acc	_	_	_
-8	gadā	gads	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	7	acl	7:acl:loc	_	_	_
+8	gadā	gads	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	7	nmod	7:nmod:loc	_	_	_
 9	,	,	PUNCT	zc	_	12	punct	12:punct	_	_	_
 10	taču	taču	CCONJ	cc	_	12	cc	12:cc	_	_	_
 11	LZNP	LZNP	PROPN	yp	Abbr=Yes	12	nsubj	12:nsubj	_	_	Submittor
@@ -127,11 +127,11 @@
 15	Saeimā	Saeima	PROPN	npfsl4	Case=Loc|Gender=Fem|Number=Sing	14	obl	14:obl:loc	_	_	Authority
 16	līdz	līdz	ADP	spsd	_	18	case	18:case	_	_	_
 17	1.	1.	ADJ	xo	NumType=Ord	18	amod	18:amod	_	_	_
-18	martam	marts	NOUN	ncmsd1	Case=Dat|Gender=Masc|Number=Sing	12	obl	12:obl|14:obl	_	_	Time
-19	nepieciešamos	nepieciešams	ADJ	afmpayp	Case=Acc|Degree=Pos|Gender=Masc|Number=Plur	20	amod	20:amod	_	_	_
+18	martam	marts	NOUN	ncmsd1	Case=Dat|Gender=Masc|Number=Sing	12	obl	12:obl:līdz|14:obl:līdz	_	_	Time
+19	nepieciešamos	nepieciešams	ADJ	afmpayp	Case=Acc|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	20	amod	20:amod	_	_	_
 20	grozījumus	grozījums	NOUN	ncmpa1	Case=Acc|Gender=Masc|Number=Plur	12	obj	12:obj|14:obj	_	_	Documents
 21	citos	cits	DET	pi0mpln	Case=Loc|Gender=Masc|Number=Plur|PronType=Ind	22	det	22:det	_	_	_
-22	likumos	likums	NOUN	ncmpl1	Case=Loc|Gender=Masc|Number=Plur	20	acl	20:acl:loc	_	_	_
+22	likumos	likums	NOUN	ncmpl1	Case=Loc|Gender=Masc|Number=Plur	20	nmod	20:nmod:loc	_	_	_
 23	.	.	PUNCT	zs	_	2	punct	2:punct	_	_	_
 
 # sent_id = a-p2899-p3s1
@@ -145,13 +145,13 @@
 7	uzņēmēju	uzņēmējs	NOUN	ncmpg1	Case=Gen|Gender=Masc|Number=Plur	8	nmod	8:nmod:gen	_	_	_
 8	starpā	starpa	NOUN	ncfsl4	Case=Loc|Gender=Fem|Number=Sing	9	obl	9:obl:loc	_	_	_
 9	valda	valdīt	VERB	vmnipt330an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	3	ccomp	3:ccomp	_	_	_
-10	liela	liels	ADJ	affsnnp	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	11	amod	11:amod	_	_	_
+10	liela	liels	ADJ	affsnnp	Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	11	amod	11:amod	_	_	_
 11	konkurence	konkurence	NOUN	ncfsn5	Case=Nom|Gender=Fem|Number=Sing	9	nsubj	9:nsubj	_	_	_
 12	,	,	PUNCT	zc	_	9	punct	9:punct	_	_	_
 13	ir	būt	AUX	vcnipii30an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	14	aux:pass	14:aux:pass	_	_	_
 14	pavērtas	pavērt	VERB	vmnpdfpnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	0	root	0:root	_	_	_
 15	iespējas	iespēja	NOUN	ncfpn4	Case=Nom|Gender=Fem|Number=Plur	14	nsubj:pass	14:nsubj:pass	_	_	_
-16	negodīgā	negodīgs	ADJ	afmslnp	Case=Loc|Degree=Pos|Gender=Masc|Number=Sing	17	amod	17:amod	_	_	_
+16	negodīgā	negodīgs	ADJ	afmslnp	Case=Loc|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	17	amod	17:amod	_	_	_
 17	veidā	veids	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	18	obl	18:obl:loc	_	_	_
 18	izrēķināties	izrēķināties	VERB	vmyn0i3000n	Polarity=Pos|Reflex=Yes|VerbForm=Inf	15	acl	15:acl	_	_	_
 19	ar	ar	ADP	sppd	_	21	case	21:case	_	_	_
@@ -161,7 +161,7 @@
 23	iesniedzot	iesniegt	VERB	vmnpu0000000n	Polarity=Pos|VerbForm=Conv	18	advcl	18:advcl	Y	Submitting_documents	_
 24	nepamatotu	pamatot	VERB	vmnpdfsapsnpy	Aspect=Perf|Case=Acc|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Neg|Tense=Past|VerbForm=Part|Voice=Pass	25	amod	25:amod	_	_	_
 25	prasību	prasība	NOUN	ncfsa4	Case=Acc|Gender=Fem|Number=Sing	23	obj	23:obj	_	_	Documents
-26	tiesā	tiesa	NOUN	ncfsl4	Case=Loc|Gender=Fem|Number=Sing	23	acl	23:acl:loc	_	_	Authority
+26	tiesā	tiesa	NOUN	ncfsl4	Case=Loc|Gender=Fem|Number=Sing	23	obl	23:obl:loc	_	_	Authority
 27	un	un	CCONJ	cc	_	29	cc	29:cc	_	_	_
 28	tādējādi	tādējādi	ADV	r0m	_	29	advmod	29:advmod	_	_	_
 29	iznīcinot	iznīcināt	VERB	vmnpu0000000n	Polarity=Pos|VerbForm=Conv	23	conj	18:advcl|23:conj	_	_	_
@@ -171,7 +171,7 @@
 
 # sent_id = a-p3289-p17s3
 # text = Padzirdējusi šo vēsti, nekavējoties šķiršanās prasību iesniedza Mika likumīgā sieva Džerija Hola (pēc profesijas arī modele, starp citu) un paģērēja kompensācijā viņai izmaksāt 50 miljonus dolāru.
-1	Padzirdējusi	padzirdēt	VERB	vmnpdfsnasnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	8	acl	8:acl:nom|24:acl:nom	_	_	_
+1	Padzirdējusi	padzirdēt	VERB	vmnpdfsnasnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	8	xcomp	8:xcomp|24:xcomp	_	_	_
 2	šo	šī	DET	pd3fsan	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Dem	3	det	3:det	_	_	_
 3	vēsti	vēsts	NOUN	ncfsa6	Case=Acc|Gender=Fem|Number=Sing	1	obj	1:obj	_	_	_
 4	,	,	PUNCT	zc	_	1	punct	1:punct	_	_	_
@@ -180,15 +180,15 @@
 7	prasību	prasība	NOUN	ncfsa4	Case=Acc|Gender=Fem|Number=Sing	8	obj	8:obj	_	_	Documents
 8	iesniedza	iesniegt	VERB	vmnist130an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	0	root	0:root	Y	Submitting_documents	_
 9	Mika	Miks	PROPN	npmsg1	Case=Gen|Gender=Masc|Number=Sing	11	nmod	11:nmod:gen	_	_	_
-10	likumīgā	likumīgs	ADJ	arfsnyp	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	11	amod	11:amod	_	_	_
+10	likumīgā	likumīgs	ADJ	arfsnyp	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	11	amod	11:amod	_	_	_
 11	sieva	sieva	NOUN	ncfsn4	Case=Nom|Gender=Fem|Number=Sing	12	nmod	12:nmod	_	_	_
 12	Džerija	Džerija	PROPN	npfsn4	Case=Nom|Gender=Fem|Number=Sing	8	nsubj	8:nsubj	_	_	Submittor
 13	Hola	Hola	PROPN	npfsn4	Case=Nom|Gender=Fem|Number=Sing	12	flat:name	12:flat:name	_	_	_
 14	(	(	PUNCT	zb	_	18	punct	18:punct	_	_	_
 15	pēc	pēc	ADP	spsg	_	16	case	16:case	_	_	_
-16	profesijas	profesija	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	18	obl	18:obl	_	_	_
+16	profesijas	profesija	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	18	obl	18:obl:pēc	_	_	_
 17	arī	arī	PART	q	_	18	discourse	18:discourse	_	_	_
-18	modele	modele	NOUN	ncfsn5	Case=Nom|Gender=Fem|Number=Sing	12	discourse	12:discourse	_	_	_
+18	modele	modele	NOUN	ncfsn5	Case=Nom|Gender=Fem|Number=Sing	12	parataxis	12:parataxis	_	_	_
 19	,	,	PUNCT	zc	_	21	punct	21:punct	_	_	_
 20	starp	starp	ADP	spsa	_	21	case	21:case	_	_	_
 21	citu	cits	PRON	pi0msan	Case=Acc|Gender=Masc|Number=Sing|PronType=Ind	18	discourse	18:discourse	_	_	_
@@ -215,11 +215,11 @@
 8	,	,	PUNCT	zc	_	13	punct	13:punct	_	_	_
 9	ar	ar	ADP	spsa	_	11	case	11:case	_	_	_
 10	kuru	kurš	DET	pr0mpgn	Case=Gen|Gender=Masc|Number=Plur|PronType=Rel	11	det	11:det	_	_	_
-11	palīdzību	palīdzība	NOUN	ncfsa4	Case=Acc|Gender=Fem|Number=Sing	13	obl	13:obl|24:obl	_	_	_
+11	palīdzību	palīdzība	NOUN	ncfsa4	Case=Acc|Gender=Fem|Number=Sing	13	obl	13:obl:ar|24:obl:ar	_	_	_
 12	tiks	tikt	AUX	vtnifi130an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Fut|VerbForm=Fin|Voice=Act	13	aux:pass	13:aux:pass	_	_	_
 13	nodrošināts	nodrošināt	VERB	vmnpdmsnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	7	acl	7:acl	_	_	_
 14	pašvaldības	pašvaldība	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	16	nmod	16:nmod:gen	_	_	_
-15	institucionālās	institucionāls	ADJ	arfsgyp	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	16	amod	16:amod	_	_	_
+15	institucionālās	institucionāls	ADJ	arfsgyp	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	16	amod	16:amod	_	_	_
 16	sistēmas	sistēma	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	21	nmod	21:nmod:gen	_	_	_
 17	un	un	CCONJ	cc	_	20	cc	20:cc	_	_	_
 18	aģentūru	aģentūra	NOUN	ncfpg4	Case=Gen|Gender=Fem|Number=Plur	20	nmod	20:nmod:gen	_	_	_
@@ -256,14 +256,14 @@
 8	ka	ka	SCONJ	cs	_	15	mark	15:mark	_	_	_
 9	pašvaldība	pašvaldība	NOUN	ncfsn4	Case=Nom|Gender=Fem|Number=Sing	15	nsubj	15:nsubj	_	_	Submittor
 10	līdz	līdz	ADP	spsd	_	13	case	13:case	_	_	_
-11	nākamās	nākamais	ADJ	affsgyp	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	12	amod	12:amod	_	_	_
+11	nākamās	nākamais	ADJ	affsgyp	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	12	amod	12:amod	_	_	_
 12	nedēļas	nedēļa	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	13	nmod	13:nmod:gen	_	_	_
-13	beigām	beigas	NOUN	ncfpd4	Case=Dat|Gender=Fem|Number=Plur	15	obl	15:obl	_	_	Time
+13	beigām	beigas	NOUN	ncfdd4	Case=Dat|Gender=Fem|Number=Ptan	15	obl	15:obl:līdz	_	_	Time
 14	ministrijā	ministrija	NOUN	ncfsl4	Case=Loc|Gender=Fem|Number=Sing	15	obl	15:obl:loc	_	_	Authority
 15	iesniegs	iesniegt	VERB	vmnift130an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Fut|VerbForm=Fin|Voice=Act	6	acl	6:acl	Y	Submitting_documents	_
 16	detalizētus	detalizēt	VERB	vmnpdmpapsnpn	Aspect=Perf|Case=Acc|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	18	amod	18:amod	_	_	_
 17	pasākumu	pasākums	NOUN	ncmpg1	Case=Gen|Gender=Masc|Number=Plur	18	nmod	18:nmod:gen	_	_	_
-18	plānus	plāns	ADJ	afmpanp	Case=Acc|Degree=Pos|Gender=Masc|Number=Plur	15	obj	15:obj	_	_	Documents
+18	plānus	plāns	ADJ	afmpanp	Case=Acc|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur	15	obj	15:obj	_	_	Documents
 19	par	par	ADP	spsa	_	20	case	20:case	_	_	_
 20	to	tas	DET	pd3msan	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Dem	18	det	18:det	_	_	_
 21	,	,	PUNCT	zc	_	28	punct	28:punct	_	_	_
@@ -309,17 +309,17 @@
 5	ar	ar	ADP	sppd	_	8	case	8:case	_	_	_
 6	pusotra	pusotrs	ADJ	mocmsg	Case=Gen|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing|NumType=Ord	7	amod	7:amod	_	_	_
 7	mēneša	mēnesis	NOUN	ncmsg2	Case=Gen|Gender=Masc|Number=Sing	8	nmod	8:nmod:gen	_	_	_
-8	kavēšanos	kavēšanās	NOUN	ncfsar	Case=Acc|Gender=Fem|Number=Sing	11	obl	11:obl	_	_	_
+8	kavēšanos	kavēšanās	NOUN	ncfsar	Case=Acc|Gender=Fem|Number=Sing	11	obl	11:obl:ar	_	_	_
 9	valdībā	valdība	NOUN	ncfsl4	Case=Loc|Gender=Fem|Number=Sing	11	obl	11:obl:loc	_	_	Authority
 10	tiks	tikt	AUX	vtnifi130an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Fut|VerbForm=Fin|Voice=Act	11	aux:pass	11:aux:pass	_	_	_
 11	iesniegti	iesniegt	VERB	vmnpdmpnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	2	ccomp	2:ccomp	Y	Submitting_documents	_
 12	grozījumi	grozījums	NOUN	ncmpn1	Case=Nom|Gender=Masc|Number=Plur	11	nsubj:pass	11:nsubj:pass	_	_	Documents
-13	likumos	likums	NOUN	ncmpl1	Case=Loc|Gender=Masc|Number=Plur	12	acl	12:acl:loc	_	_	_
+13	likumos	likums	NOUN	ncmpl1	Case=Loc|Gender=Masc|Number=Plur	12	nmod	12:nmod:loc	_	_	_
 14	,	,	PUNCT	zc	_	16	punct	16:punct	_	_	_
 15	kas	kas	PRON	pq000nn	Case=Nom|PronType=Int	16	nsubj	16:nsubj	_	_	_
 16	ļaus	ļaut	VERB	vmnift130an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Fut|VerbForm=Fin|Voice=Act	12	acl	12:acl	_	_	_
 17	veidot	veidot	VERB	vmnn0t2000n	Polarity=Pos|VerbForm=Inf	16	ccomp	16:ccomp	_	_	_
-18	vienoto	vienots	ADJ	armsayp	Case=Acc|Degree=Pos|Gender=Masc|Number=Sing	23	amod	23:amod	_	_	_
+18	vienoto	vienots	ADJ	armsayp	Case=Acc|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	23	amod	23:amod	_	_	_
 19	valsts	valsts	NOUN	ncfsg6	Case=Gen|Gender=Fem|Number=Sing	22	nmod	22:nmod:gen	_	_	_
 20	un	un	CCONJ	cc	_	21	cc	21:cc	_	_	_
 21	pašvaldību	pašvaldība	NOUN	ncfpg4	Case=Gen|Gender=Fem|Number=Plur	19	conj	19:conj|22:nmod:gen	_	_	_
@@ -336,7 +336,7 @@
 3	pārņemta	pārņemt	VERB	vmnpdfsnpsnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	0	root	0:root	_	_	_
 4	no	no	ADP	spsg	_	6	case	6:case	_	_	_
 5	vācu	vācu	NOUN	ncmdgg	Case=Gen|Gender=Masc|Number=Ptan	6	nmod	6:nmod:gen	_	_	_
-6	kolēģiem	kolēģis	NOUN	ncmpd2	Case=Dat|Gender=Masc|Number=Plur	3	obl	3:obl	_	_	_
+6	kolēģiem	kolēģis	NOUN	ncmpd2	Case=Dat|Gender=Masc|Number=Plur	3	obl	3:obl:no	_	_	_
 7	un	un	CCONJ	cc	_	10	cc	10:cc	_	_	_
 8	projekts	projekts	NOUN	ncmsn1	Case=Nom|Gender=Masc|Number=Sing	10	nsubj:pass	10:nsubj:pass	_	_	Documents
 9	vērtēšanai	vērtēšana	NOUN	ncfsd4	Case=Dat|Gender=Fem|Number=Sing	10	obl	10:obl:dat	_	_	_

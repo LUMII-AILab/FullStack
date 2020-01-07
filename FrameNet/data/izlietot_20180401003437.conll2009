@@ -1,7 +1,7 @@
 # sent_id = a-p3005-p18s2
 # text = Pirms tam gan rūpīgi izlasi derīguma termiņus un novērtē, vai varēsi izlietot produktu līdz derīguma termiņa beigām.
 1	Pirms	pirms	ADP	sppd	_	2	case	2:case	_	_	_
-2	tam	tas	PRON	pd3msdn	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Dem	5	obl	5:obl|9:obl	_	_	_
+2	tam	tas	PRON	pd3msdn	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Dem	5	obl	5:obl:pirms|9:obl:pirms	_	_	_
 3	gan	gan	PART	q	_	5	discourse	5:discourse|9:discourse	_	_	_
 4	rūpīgi	rūpīgi	ADV	rpm	Degree=Pos	5	advmod	5:advmod	_	_	_
 5	izlasi	izlasīt	VERB	vmnm0t32san	Mood=Imp|Number=Sing|Person=2|Polarity=Pos|VerbForm=Fin|Voice=Act	0	root	0:root	_	_	_
@@ -17,7 +17,7 @@
 15	līdz	līdz	ADP	spsd	_	18	case	18:case	_	_	_
 16	derīguma	derīgums	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	17	nmod	17:nmod:gen	_	_	_
 17	termiņa	termiņš	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	18	nmod	18:nmod:gen	_	_	_
-18	beigām	beigas	NOUN	ncfdd4	Case=Dat|Gender=Fem|Number=Ptan	13	obl	13:obl	_	_	Time
+18	beigām	beigas	NOUN	ncfdd4	Case=Dat|Gender=Fem|Number=Ptan	13	obl	13:obl:līdz	_	_	Time
 19	.	.	PUNCT	zs	_	5	punct	5:punct	_	_	_
 
 # sent_id = a-p3005-p24s1
@@ -44,7 +44,7 @@
 5	un	un	CCONJ	cc	_	6	cc	6:cc	_	_	_
 6	dodas	doties	VERB	vmyipti30an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Reflex=Yes|Tense=Pres|VerbForm=Fin|Voice=Act	4	conj	4:conj	_	_	_
 7	meklēt	meklēt	VERB	vmnn0t2000n	Polarity=Pos|VerbForm=Inf	6	ccomp	6:ccomp	_	_	_
-8	nākamo	nākamais	ADJ	armsayp	Case=Acc|Degree=Pos|Gender=Masc|Number=Sing	9	amod	9:amod	_	_	_
+8	nākamo	nākamais	ADJ	armsayp	Case=Acc|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	9	amod	9:amod	_	_	_
 9	upuri	upuris	NOUN	ncmsa2	Case=Acc|Gender=Masc|Number=Sing	7	obj	7:obj	_	_	_
 10	.	.	PUNCT	zs	_	4	punct	4:punct	_	_	_
 
@@ -57,7 +57,7 @@
 5	,	,	PUNCT	zc	_	2	punct	2:punct	_	_	_
 6	aģentūra	aģentūra	NOUN	ncfsn4	Case=Nom|Gender=Fem|Number=Sing	8	nmod	8:nmod	_	_	_
 7	"	"	PUNCT	zq	_	8	punct	8:punct	_	_	_
-8	Pilsētsaimniecība	Pilsētsaimniecība	PROPN	npfsn4	Case=Nom|Gender=Fem|Number=Sing	11	acl	11:acl:nom	_	_	Agent
+8	Pilsētsaimniecība	Pilsētsaimniecība	PROPN	npfsn4	Case=Nom|Gender=Fem|Number=Sing	11	xcomp	11:xcomp	_	_	Agent
 9	"	"	PUNCT	zq	_	8	punct	8:punct	_	_	_
 10	ir	būt	AUX	vcnipii30an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	11	aux	11:aux	_	_	_
 11	izlietojusi	izlietot	VERB	vmnpdfsnasnpn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	0	root	0:root	Y	Using_resource	_
@@ -66,7 +66,7 @@
 14	atlīdzībai	atlīdzība	NOUN	ncfsd4	Case=Dat|Gender=Fem|Number=Sing	11	iobj	11:iobj	_	_	Purpose
 15	un	un	CCONJ	cc	_	19	cc	19:cc	_	_	_
 16	valsts	valsts	NOUN	ncfsg6	Case=Gen|Gender=Fem|Number=Sing	18	nmod	18:nmod:gen	_	_	_
-17	sociālās	sociāls	ADJ	arfsgyp	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	18	amod	18:amod	_	_	_
+17	sociālās	sociāls	ADJ	arfsgyp	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	18	amod	18:amod	_	_	_
 18	apdrošināšanas	apdrošināšana	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	19	nmod	19:nmod:gen	_	_	_
 19	iemaksām	iemaksa	NOUN	ncfpd4	Case=Dat|Gender=Fem|Number=Plur	14	conj	11:iobj|14:conj	_	_	_
 20	par	par	ADP	spsa	_	21	case	21:case	_	_	_
@@ -84,13 +84,13 @@
 32	"	"	PUNCT	zq	_	37	punct	37:punct	_	_	_
 33	Pašvaldības	pašvaldība	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	37	nmod	37:nmod:gen	_	_	_
 34	un	un	CCONJ	cc	_	36	cc	36:cc	_	_	_
-35	privātās	privāts	ADJ	affsgyp	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	36	amod	36:amod	_	_	_
+35	privātās	privāts	ADJ	affsgyp	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	36	amod	36:amod	_	_	_
 36	partnerības	partnerība	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	33	conj	33:conj|37:nmod:gen	_	_	_
 37	veicināšana	veicināšana	NOUN	ncfsn4	Case=Nom|Gender=Fem|Number=Sing	43	nmod	43:nmod:gen	_	_	_
 38	Jelgavas	Jelgava	PROPN	npfsg4	Case=Gen|Gender=Fem|Number=Sing	39	nmod	39:nmod:gen	_	_	_
 39	pilsētas	pilsēta	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	40	nmod	40:nmod:gen	_	_	_
 40	ielu	iela	NOUN	ncfpg4	Case=Gen|Gender=Fem|Number=Plur	41	nmod	41:nmod:gen	_	_	_
-41	apsaimniekošanā	apsaimniekošana	NOUN	ncfsl4	Case=Loc|Gender=Fem|Number=Sing	37	acl	37:acl:loc	_	_	_
+41	apsaimniekošanā	apsaimniekošana	NOUN	ncfsl4	Case=Loc|Gender=Fem|Number=Sing	37	nmod	37:nmod:loc	_	_	_
 42	"	"	PUNCT	zq	_	37	punct	37:punct	_	_	_
 43	īstenošanā	īstenošana	NOUN	ncfsl4	Case=Loc|Gender=Fem|Number=Sing	30	obl	30:obl:loc	_	_	_
 44	,	,	PUNCT	zc	_	47	punct	47:punct	_	_	_
@@ -100,7 +100,7 @@
 48	atlīdzību	atlīdzība	NOUN	ncfsa4	Case=Acc|Gender=Fem|Number=Sing	47	obj	47:obj	_	_	_
 49	no	no	ADP	sppd	_	51	case	51:case	_	_	_
 50	projekta	projekts	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	51	nmod	51:nmod:gen	_	_	_
-51	līdzekļiem	līdzeklis	NOUN	ncmpd2	Case=Dat|Gender=Masc|Number=Plur	47	obl	47:obl	_	_	_
+51	līdzekļiem	līdzeklis	NOUN	ncmpd2	Case=Dat|Gender=Masc|Number=Plur	47	obl	47:obl:no	_	_	_
 52	.	.	PUNCT	zs	_	11	punct	11:punct	_	_	_
 
 # sent_id = a-p3731-p7s2
@@ -131,7 +131,7 @@
 24	jāveic	veikt	VERB	vmnd0t100an	Mood=Nec|Polarity=Pos|VerbForm=Fin|Voice=Act	15	acl	15:acl	_	_	_
 25	par	par	ADP	sppd	_	27	case	27:case	_	_	_
 26	saviem	savs	DET	ps0mpdn	Case=Dat|Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	27	det	27:det	_	_	_
-27	līdzekļiem	līdzeklis	NOUN	ncmpd2	Case=Dat|Gender=Masc|Number=Plur	24	obl	24:obl	_	_	_
+27	līdzekļiem	līdzeklis	NOUN	ncmpd2	Case=Dat|Gender=Masc|Number=Plur	24	obl	24:obl:par	_	_	_
 28	.	.	PUNCT	zs	_	8	punct	8:punct	_	_	_
 
 # sent_id = a-p3731-p8s1
@@ -160,11 +160,11 @@
 22	kausēšanas	kausēšana	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	23	nmod	23:nmod:gen	_	_	_
 23	pakalpojumus	pakalpojums	NOUN	ncmpa1	Case=Acc|Gender=Masc|Number=Plur	20	obj	20:obj	_	_	_
 24	no	no	ADP	spsg	_	25	case	25:case	_	_	_
-25	komersanta	komersants	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	20	obl	20:obl	_	_	_
+25	komersanta	komersants	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	20	obl	20:obl:no	_	_	_
 26	,	,	PUNCT	zc	_	35	punct	35:punct	_	_	_
 27	kuram	kurš	PRON	pr0msdn	Case=Dat|Gender=Masc|Number=Sing|PronType=Rel	35	nsubj	35:nsubj	_	_	_
 28	atbilstoši	atbilstoši	ADV	r0m	_	35	advmod	35:advmod	_	_	_
-29	savstarpējā	savstarpējs	ADJ	armslnp	Case=Loc|Degree=Pos|Gender=Masc|Number=Sing	30	amod	30:amod	_	_	_
+29	savstarpējā	savstarpējs	ADJ	armslnp	Case=Loc|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	30	amod	30:amod	_	_	_
 30	līgumā	līgums	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	31	obl	31:obl:loc	_	_	_
 31	noteiktajam	noteikt	VERB	vmnpdmsdpsypn	Aspect=Perf|Case=Dat|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	28	iobj	28:iobj	_	_	_
 32	Jelgavas	Jelgava	PROPN	npfsg4	Case=Gen|Gender=Fem|Number=Sing	33	nmod	33:nmod:gen	_	_	_
@@ -198,7 +198,7 @@
 18	uzņēmuma	uzņēmums	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	19	nmod	19:nmod:gen	_	_	_
 19	līgumu	līgums	NOUN	ncmsa1	Case=Acc|Gender=Masc|Number=Sing	16	iobj	16:iobj	_	_	_
 20	par	par	ADP	spsa	_	25	case	25:case	_	_	_
-21	sabiedrisko	sabiedrisks	ADJ	affpgyp	Case=Gen|Degree=Pos|Gender=Fem|Number=Plur	22	amod	22:amod	_	_	_
+21	sabiedrisko	sabiedrisks	ADJ	affpgyp	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Plur	22	amod	22:amod	_	_	_
 22	attiecību	attiecība	NOUN	ncfpg4	Case=Gen|Gender=Fem|Number=Plur	23	nmod	23:nmod:gen	_	_	_
 23	speciālista	speciālists	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	24	nmod	24:nmod:gen	_	_	_
 24	pienākumu	pienākums	NOUN	ncmpg1	Case=Gen|Gender=Masc|Number=Plur	25	nmod	25:nmod:gen	_	_	_
@@ -255,7 +255,7 @@
 18	uzņēmuma	uzņēmums	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	19	nmod	19:nmod:gen	_	_	_
 19	līgumu	līgums	NOUN	ncmsa1	Case=Acc|Gender=Masc|Number=Sing	16	iobj	16:iobj	_	_	_
 20	par	par	ADP	spsa	_	25	case	25:case	_	_	_
-21	sabiedrisko	sabiedrisks	ADJ	affpgyp	Case=Gen|Degree=Pos|Gender=Fem|Number=Plur	22	amod	22:amod	_	_	_
+21	sabiedrisko	sabiedrisks	ADJ	affpgyp	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Plur	22	amod	22:amod	_	_	_
 22	attiecību	attiecība	NOUN	ncfpg4	Case=Gen|Gender=Fem|Number=Plur	23	nmod	23:nmod:gen	_	_	_
 23	speciālista	speciālists	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	24	nmod	24:nmod:gen	_	_	_
 24	pienākumu	pienākums	NOUN	ncmpg1	Case=Gen|Gender=Masc|Number=Plur	25	nmod	25:nmod:gen	_	_	_
@@ -308,7 +308,7 @@
 14	atlīdzībai	atlīdzība	NOUN	ncfsd4	Case=Dat|Gender=Fem|Number=Sing	11	obj	11:iobj	_	_	Purpose
 15	un	un	CCONJ	cc	_	19	cc	19:cc	_	_	_
 16	valsts	valsts	NOUN	ncfsg6	Case=Gen|Gender=Fem|Number=Sing	18	nmod	18:nmod:gen	_	_	_
-17	sociālās	sociāls	ADJ	arfsgyp	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	18	amod	18:amod	_	_	_
+17	sociālās	sociāls	ADJ	arfsgyp	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	18	amod	18:amod	_	_	_
 18	apdrošināšanas	apdrošināšana	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	19	nmod	19:nmod:gen	_	_	_
 19	iemaksām	iemaksa	NOUN	ncfpd4	Case=Dat|Gender=Fem|Number=Plur	14	conj	11:iobj|14:conj	_	_	_
 20	par	par	ADP	spsa	_	21	case	21:case	_	_	_
@@ -326,23 +326,23 @@
 32	"	"	PUNCT	zq	_	37	punct	37:punct	_	_	_
 33	Pašvaldības	pašvaldība	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	36	nmod	36:nmod:gen	_	_	_
 34	un	un	CCONJ	cc	_	35	cc	35:cc	_	_	_
-35	privātās	privāts	ADJ	affsgyp	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	33	conj	33:conj|36:amod	_	_	_
+35	privātās	privāts	ADJ	affsgyp	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	33	conj	33:conj|36:amod	_	_	_
 36	partnerības	partnerība	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	37	nmod	37:nmod:gen	_	_	_
 37	veicināšana	veicināšana	NOUN	ncfsn4	Case=Nom|Gender=Fem|Number=Sing	43	nmod	43:nmod:gen	_	_	_
 38	Jelgavas	Jelgava	PROPN	npfsg4	Case=Gen|Gender=Fem|Number=Sing	39	nmod	39:nmod:gen	_	_	_
 39	pilsētas	pilsēta	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	40	nmod	40:nmod:gen	_	_	_
 40	ielu	iela	NOUN	ncfpg4	Case=Gen|Gender=Fem|Number=Plur	41	nmod	41:nmod:gen	_	_	_
-41	apsaimniekošanā	apsaimniekošana	NOUN	ncfsl4	Case=Loc|Gender=Fem|Number=Sing	37	acl	37:acl:loc	_	_	_
+41	apsaimniekošanā	apsaimniekošana	NOUN	ncfsl4	Case=Loc|Gender=Fem|Number=Sing	37	nmod	37:nmod:loc	_	_	_
 42	"	"	PUNCT	zq	_	37	punct	37:punct	_	_	_
 43	īstenošanā	īstenošana	NOUN	ncfsl4	Case=Loc|Gender=Fem|Number=Sing	30	obl	30:obl:loc	_	_	_
 44	,	,	PUNCT	zc	_	47	punct	47:punct	_	_	_
 45	par	par	ADP	spsa	_	46	case	46:case	_	_	_
-46	ko	kas	PRON	pi000an	Case=Acc|PronType=Ind	47	obl	47:obl	_	_	_
+46	ko	kas	PRON	pi000an	Case=Acc|PronType=Ind	47	obl	47:obl:par	_	_	_
 47	saņēma	saņemt	VERB	vmnist130an	Evident=Fh|Mood=Ind|Person=3|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	30	conj	21:acl|30:conj	_	_	_
 48	atlīdzību	atlīdzība	NOUN	ncfsa4	Case=Acc|Gender=Fem|Number=Sing	47	obj	47:obj	_	_	_
 49	no	no	ADP	sppd	_	51	case	51:case	_	_	_
 50	projekta	projekts	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	51	nmod	51:nmod:gen	_	_	_
-51	līdzekļiem	līdzeklis	NOUN	ncmpd2	Case=Dat|Gender=Masc|Number=Plur	47	obl	47:obl	_	_	_
+51	līdzekļiem	līdzeklis	NOUN	ncmpd2	Case=Dat|Gender=Masc|Number=Plur	47	obl	47:obl:no	_	_	_
 52	.	.	PUNCT	zs	_	11	punct	11:punct	_	_	_
 
 # sent_id = a-p3732-p8s2
@@ -374,7 +374,7 @@
 25	jāveic	veikt	VERB	vmnd0t100an	Mood=Nec|Polarity=Pos|VerbForm=Fin|Voice=Act	16	acl	16:acl	_	_	_
 26	par	par	ADP	sppd	_	28	case	28:case	_	_	_
 27	saviem	savs	DET	ps0mpdn	Case=Dat|Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	28	det	28:det	_	_	_
-28	līdzekļiem	līdzeklis	NOUN	ncmpd2	Case=Dat|Gender=Masc|Number=Plur	25	obl	25:obl	_	_	_
+28	līdzekļiem	līdzeklis	NOUN	ncmpd2	Case=Dat|Gender=Masc|Number=Plur	25	obl	25:obl:par	_	_	_
 29	.	.	PUNCT	zs	_	9	punct	9:punct	_	_	_
 
 # sent_id = a-p3732-p9s1
@@ -407,7 +407,7 @@
 26	,	,	PUNCT	zc	_	35	punct	35:punct	_	_	_
 27	kuram	kurš	PRON	pr0msdn	Case=Dat|Gender=Masc|Number=Sing|PronType=Rel	35	nsubj	35:nsubj	_	_	_
 28	atbilstoši	atbilstoši	ADV	r0m	_	35	advmod	35:advmod	_	_	_
-29	savstarpējā	savstarpējs	ADJ	armslnp	Case=Loc|Degree=Pos|Gender=Masc|Number=Sing	30	amod	30:amod	_	_	_
+29	savstarpējā	savstarpējs	ADJ	armslnp	Case=Loc|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	30	amod	30:amod	_	_	_
 30	līgumā	līgums	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	31	obl	31:obl:loc	_	_	_
 31	noteiktajam	noteikt	VERB	vmnpdmsdpsypn	Aspect=Perf|Case=Dat|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	28	iobj	28:iobj	_	_	_
 32	Jelgavas	Jelgava	PROPN	npfsg4	Case=Gen|Gender=Fem|Number=Sing	33	nmod	33:nmod:gen	_	_	_
@@ -423,7 +423,7 @@
 # text = No valsts budžeta 2007./08. studiju gadam izglītības jomā par budžeta vietām tika izlietots ap pieciem miljoniem latu gadā (Izglītības un zinātnes ministrija Augstākās izglītības departaments, 2008).
 1	No	no	ADP	spsg	_	3	case	3:case	_	_	_
 2	valsts	valsts	NOUN	ncfsg6	Case=Gen|Gender=Fem|Number=Sing	3	nmod	3:nmod:gen	_	_	_
-3	budžeta	budžets	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	15	obl	15:obl	_	_	_
+3	budžeta	budžets	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	15	obl	15:obl:no	_	_	_
 4	2007.	2007.	ADJ	xo	NumType=Ord	8	amod	8:amod	_	_	_
 5	/	/	PUNCT	zx	_	6	punct	6:punct	_	_	_
 6	08.	08.	ADJ	xo	NumType=Ord	4	conj	4:conj|8:amod	_	_	_
@@ -440,17 +440,17 @@
 17	pieciem	pieci	NUM	mcsmpd	Case=Dat|Gender=Masc|Number=Plur|NumType=Card	18	nummod	18:nummod	_	_	_
 18	miljoniem	miljons	NOUN	ncmpd1	Case=Dat|Gender=Masc|Number=Plur	19	nmod	19:nmod:dat	_	_	_
 19	latu	lats	NOUN	ncmpg1	Case=Gen|Gender=Masc|Number=Plur	15	nsubj:pass	15:nsubj:pass	_	_	Resource
-20	gadā	gads	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	19	acl	19:acl:loc	_	_	_
+20	gadā	gads	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	19	nmod	19:nmod:loc	_	_	_
 21	(	(	PUNCT	zb	_	28	punct	28:punct	_	_	_
 22	Izglītības	izglītība	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	25	nmod	25:nmod:gen	_	_	_
 23	un	un	CCONJ	cc	_	24	cc	24:cc	_	_	_
 24	zinātnes	zinātne	NOUN	ncfsg5	Case=Gen|Gender=Fem|Number=Sing	22	conj	22:conj|25:nmod:gen	_	_	_
-25	ministrija	ministrija	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	28	nmod	28:nmod:gen	_	_	_
-26	Augstākās	augsts	ADJ	affsgyc	Case=Gen|Degree=Cmp|Gender=Fem|Number=Sing	27	amod	27:amod	_	_	_
+25	ministrija	ministrija	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing|Typo=Yes	28	nmod	28:nmod:gen	_	_	_
+26	Augstākās	augsts	ADJ	affsgyc	Case=Gen|Definite=Def|Degree=Cmp|Gender=Fem|Number=Sing	27	amod	27:amod	_	_	_
 27	izglītības	izglītība	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	28	nmod	28:nmod:gen	_	_	_
-28	departaments	departaments	NOUN	ncmsn1	Case=Nom|Gender=Masc|Number=Sing	15	discourse	15:discourse	_	_	_
+28	departaments	departaments	NOUN	ncmsn1	Case=Nom|Gender=Masc|Number=Sing	15	parataxis	15:parataxis	_	_	_
 29	,	,	PUNCT	zc	_	30	punct	30:punct	_	_	_
-30	2008	2008	NUM	xn	NumType=Card	28	acl	28:acl	_	_	_
+30	2008	2008	NUM	xn	NumType=Card	28	dep	28:dep	_	_	_
 31	)	)	PUNCT	zb	_	28	punct	28:punct	_	_	_
 32	.	.	PUNCT	zs	_	15	punct	15:punct	_	_	_
 

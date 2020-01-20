@@ -10,4 +10,4 @@ An automatically derived AMR annotation layer of the FullStack multi-layer text 
 
 ## Current statistics
 
-* __12,269__ whole-sentence AMR graphs
+* __12,691__ whole-sentence AMR graphs

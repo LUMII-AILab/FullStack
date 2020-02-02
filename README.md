@@ -2,17 +2,17 @@
 
 ## Introduction
 
-This repository contains a work-in-progress data set - a multilayer text corpus of Latvian. The broad application area we address is natural language understanding (NLU) and generation (NLG), and the aim of the corpus creation is to develop a data-driven NLU and NLG [toolchain for Latvian](http://nlp.ailab.lv/). Both the multilayered corpus and the downstream applications are anchored in cross-lingual state-of-the-art representations: [Universal Dependencies](http://universaldependencies.org/) (UD), [FrameNet](https://framenet.icsi.berkeley.edu/fndrupal/), [PropBank](https://propbank.github.io/) and [Abstract Meaning Representation](https://amr.isi.edu/) (AMR). A complementary representation, language resource and technology for NLG, which is being developed separately, is [Grammatical Framework](http://www.grammaticalframework.org/) (GF).
+This repository contains a multilayer text corpus of Latvian. The broad application area we address is natural language understanding (NLU) and generation (NLG), and the aim of the corpus is to develop a data-driven NLU and NLG [toolchain for Latvian](http://nlp.ailab.lv/), as well as to use it in linguistic studies. Both the multilayer corpus and the downstream applications are anchored in cross-lingual state-of-the-art representations: [Universal Dependencies](http://universaldependencies.org/) (UD), [FrameNet](https://framenet.icsi.berkeley.edu/fndrupal/), [PropBank](https://propbank.github.io/) and [Abstract Meaning Representation](https://amr.isi.edu/) (AMR). A complementary representation, language resource and technology for NLG, which is being developed separately (incl. the Latvian resource grammar), is [Grammatical Framework](http://www.grammaticalframework.org/) (GF).
 
 The UD representation is automatically derived from a more elaborated and manually annotated [hybrid dependency-constituency representation](http://sintakse.korpuss.lv/).
 The FrameNet annotations are manually added, guided by the underlying UD annotations. Consequently, frame elements are represented by the root nodes of the respective subtrees instead of text spans; the spans can be easily calculated from the subtrees.
 The PropBank layer is automatically derived from the FrameNet and UD annotations, provided a manual mapping from FrameNet lexical units to PropBank frames, and a mapping from FrameNet frame elements to PropBank semantic roles for the given pair of FrameNet and PropBank frames.
-Draft AMR graphs are to be derived from the UD and PropBank layers, as well as auxiliary layers containing named entity and coreference annotation. The semantically rich FrameNet annotations are also helpful in acquiring more accurate AMR graphs.
+Draft AMR graphs are derived from the PropBank and UD layers, as well as auxiliary layers containing named entity and coreference annotations. The semantically rich FrameNet annotations are also helpful in acquiring more accurate AMR graphs.
 
-We are aiming at a medium-sized corpus: 10-15 thousand sentences annotated at all layers. Therefore it is important to ensure that the multilayer corpus is balanced not only in terms of text genres and writing styles but also in terms of lexical units.
+We aim at a medium-sized corpus: 10-15 thousand sentences annotated at all layers. Therefore it is important to ensure that the multilayer corpus is balanced not only in terms of text genres and writing styles but also in terms of lexical units.
 A fundamental design decision is that the text unit is an isolated paragraph. The multilayer corpus therefore consists of manually selected paragraphs from many different texts of various types. Representative paragraphs are selected in different proportions from a balanced 10-million-word text corpus: 60% news sources, 20% fiction, 10% legal texts, 5% spoken language, 5% miscellaneous.
 
-As for the lexical units, our goal is to cover 1,000-2,000 most frequently occurring verbs, calculated from the 10-million-word corpus. Since the most frequent verbs tend to be the most polysemous, we expect that the number of lexical units (verb senses w.r.t. semantic frames) will be considerably larger. We assume that the corpus will turn out to be rather balanced also w.r.t. nominal lexical units.
+As for lexical units, the goal is to cover 1,000-2,000 most frequently occurring verbs, calculated from the 10-million-word corpus. Since the most frequent verbs tend to be the most polysemous, we expect that the number of lexical units (verb senses w.r.t. semantic frames) will be considerably larger (2,000-4,000). We expect that the corpus is rather balanced also w.r.t. nominal lexical units.
 
 ## Annotation layers
 
@@ -47,9 +47,11 @@ The treebank layer from which the UD reresentation is derived has been annotated
 
 ## Licence
 
-This data set by [AiLab](http://ailab.lv) is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
+These data sets by [AiLab](http://ailab.lv) are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
 
-By using this data set, you agree to comply with the European Intellectual Property Rights and the European General Data Protection Regulation.
+By using these data sets, you agree to comply with the European Intellectual Property Rights and the European General Data Protection Regulation.
+
+Please, cite the relevant [publications](https://github.com/LUMII-AILab/FullStack#publications) if you use this data in your research. Please, [let us know](mailto:fullstack@ailab.lv) if you use this data in the development of products or services. Your citations and feedback are important to secure funding for the further development of these data sets.
 
 ## Contacts
 

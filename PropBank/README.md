@@ -19,8 +19,8 @@ __Note__ that each corpus example contains one PropBank annotation set. If there
 
 ## Current statistics
 
-* [_Mapping_] Target verbs: __1,291__ out of 1,358 (95%) - cf. [Latvian FrameNet](https://github.com/LUMII-AILab/FullStack/tree/master/FrameNet)
-* [_Mapping_] FrameNet frames: __514__ out of 540 (95%) - cf. [Latvian FrameNet](https://github.com/LUMII-AILab/FullStack/tree/master/FrameNet)
-* [_Mapping_] FrameNet lexical units: __2,282__ out of 2,577 (89%) - cf. [Latvian FrameNet](https://github.com/LUMII-AILab/FullStack/tree/master/FrameNet)
-* [_Mapping_] PropBank predicates: __1,006__ out of 7,311 (14%) - cf. [English PropBank](https://propbank.github.io/)
-* [_Data_] Annotation sets: __19,679__ out of 20,879 (94%) - cf. [Latvian FrameNet](https://github.com/LUMII-AILab/FullStack/tree/master/FrameNet)
+* [_Mapping_] Target verbs: __1,322__ out of 1,358 (97.3%) - cf. [Latvian FrameNet](https://github.com/LUMII-AILab/FullStack/tree/master/FrameNet)
+* [_Mapping_] FrameNet frames: __521__ out of 540 (96.5%) - cf. [Latvian FrameNet](https://github.com/LUMII-AILab/FullStack/tree/master/FrameNet)
+* [_Mapping_] FrameNet lexical units: __2,377__ out of 2,577 (92.2%) - cf. [Latvian FrameNet](https://github.com/LUMII-AILab/FullStack/tree/master/FrameNet)
+* [_Mapping_] PropBank predicates: __1,033__ out of 10,687 (9.7%) - cf. [English PropBank](https://propbank.github.io/)
+* [_Data_] Annotation sets: __20,054__ out of 20,879 (96.0%) - cf. [Latvian FrameNet](https://github.com/LUMII-AILab/FullStack/tree/master/FrameNet)

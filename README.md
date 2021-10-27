@@ -1,4 +1,4 @@
-# Full Stack of Latvian Language Resources for NLU and NLG
+# FullStack-LV: Full Stack of Latvian Language Resources for NLU and NLG
 
 ## Introduction
 

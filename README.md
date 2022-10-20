@@ -1,5 +1,10 @@
 # FullStack-LV: Full Stack of Latvian Language Resources for NLU and NLG
 
+<p>
+<a href="https://console.tiyaro.ai/explore?q=Davlan/&pub=Davlan"> <img src="https://tiyaro-public-docs.s3.us-west-2.amazonaws.com/assets/try_on_tiyaro_badge.svg"></a>
+</p>
+
+
 ## Introduction
 
 This repository contains a multilayer text corpus of Latvian. The broad application area we address is natural language understanding (NLU) and generation (NLG), and the aim of the corpus is to develop a data-driven NLU and NLG [toolchain for Latvian](http://nlp.ailab.lv/), as well as to use it in linguistic studies. Both the multilayer corpus and the downstream applications are anchored in cross-lingual state-of-the-art representations: [Universal Dependencies](http://universaldependencies.org/) (UD), [FrameNet](https://framenet.icsi.berkeley.edu/fndrupal/), [PropBank](https://propbank.github.io/) and [Abstract Meaning Representation](https://amr.isi.edu/) (AMR). A complementary representation, language resource and technology for NLG, which is being developed separately (incl. the Latvian resource grammar), is [Grammatical Framework](http://www.grammaticalframework.org/) (GF).
